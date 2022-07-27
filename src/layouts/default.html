@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <script src="/js/alpine.js?v={% version %}" defer></script>
+
+    <!-- Favicons and theme color -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f172a">
+    <meta name="msapplication-TileColor" content="#0f172a">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.camino.foundation/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Camino - Join the travel revolution now. Be part of the future.">
+    <meta property="og:description" content="Camino is the facilitator of the Camino consortium blockchain, a new disruptive approach to trade touristic products B2B and B2C.">
+    <meta property="og:image" content="https://camino-website.netlify.app/images/social.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CaminoFndtn" />
+    <meta name="twitter:title" content="Camino - Join the travel revolution now. Be part of the future.">
+    <meta name="twitter:description" content="Camino is the facilitator of the Camino consortium blockchain, a new disruptive approach to trade touristic products B2B and B2C.">
+    <meta name="twitter:image" content="https://camino-website.netlify.app/images/social.png">
+
+</head>
+<body class="bg-gray-900 text-white">
+    {{ content | safe }}
+</body>
+</html>
