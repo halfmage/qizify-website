@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}</title>
+  <link rel="stylesheet" href="/style.css?v={% version %}"/>
+  <script src="/js/alpine.js?v={% version %}" defer></script>
+</head>
+<body>
+  
+  {% include "partials/header.njk" %}
+
+  {% block content %}{% endblock %}
+
+  {% include "partials/footer.njk" %}
+
+</body>
+</html>

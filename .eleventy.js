@@ -3,6 +3,19 @@ const htmlmin = require('html-minifier')
 
 module.exports = function (eleventyConfig) {
 
+  // English
+  eleventyConfig.addCollection("posts_en", require("./src/_11ty/collections/posts_en.js"));
+
+  // German
+  eleventyConfig.addCollection("posts_de", require("./src/_11ty/collections/posts_de.js"));
+
+  // FILTERS
+  eleventyConfig.addFilter("dateFeed", require("./src/_11ty/filters/date.js").dateFeed);
+  eleventyConfig.addFilter("dateFormat", require("./src/_11ty/filters/date.js").dateFormat);
+  eleventyConfig.addFilter("dateFull", require("./src/_11ty/filters/date.js").dateFull);
+  eleventyConfig.addFilter("dateIso", require("./src/_11ty/filters/date.js").dateIso);
+  eleventyConfig.addFilter("dateYear", require("./src/_11ty/filters/date.js").dateYear);
+
 	// Tailwind stuff
 	eleventyConfig.addWatchTarget('./src/styles/tailwind.config.js')
   eleventyConfig.addWatchTarget('./src/styles/tailwind.css')
@@ -45,12 +58,10 @@ module.exports = function (eleventyConfig) {
     })
   
   return {
+    markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dir: {
         input: "src",
-        data: "data",
-        layouts: "layouts",
-        includes: "includes"
     }
   };
 };
