@@ -9,23 +9,12 @@ translationKey: "homepage"
 
 {% block content %}
 
-  <h2>Événements</h2>
-  {% set events = collections["events_" ~ locale] %}
-  {% for event in events | reverse %}
-    {% if loop.first %}<ul>{% endif %}
-      <li>
-        
-        <article>
-          <p><time datetime="{{ event.data.startDate | dateIso }}">{{ event.data.startDate | dateFull(locale) }}</time></p>
-          <h2>{{ event.data.title }}</h2>
-        </article>
+  {% include "partials/hero.html" %}
 
-      </li>
-    {% if loop.last %}</ul>{% endif %}
-  {% endfor %}
+<div class="container">
 
   <h2>Blog</h2>
-  {% for post in collections.posts_fr %}
+  {% for post in collections.posts_de %}
     {% if loop.first %}<ul>{% endif %}
       <li>
 
@@ -38,5 +27,6 @@ translationKey: "homepage"
 
     {% if loop.last %}</ul>{% endif %}
   {% endfor %}
+</div>
 
 {% endblock %}

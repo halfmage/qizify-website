@@ -1,5 +1,5 @@
 {% for lgg in languages %}
-  {% if loop.first %}<ul class="c-lggnav">{% endif %}
+  {% if loop.first %}<ul class="flex">{% endif %}
 
   {# set translatedUrl to the homepage of that language by default #}
   {% set translatedUrl %}/{{lgg.locale}}/{% endset %}
@@ -21,7 +21,7 @@
   {% endfor%}
 
   <li class="c-lggnav__item">
-    <a class="c-lggnav__link  {{ activeClass }}" {{ activeAria }} href="{{ translatedUrl }}">{{ lgg.label }}</a>
+    <a class="ml-2  {{ activeClass }}" {{ activeAria }} href="{{ translatedUrl }}">{{ lgg.label }}</a>
   </li>
 
   {% if loop.last %}</ul>{% endif %}
