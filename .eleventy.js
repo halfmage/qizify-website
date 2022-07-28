@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ './node_modules/alpinejs/dist/cdn.js': './js/alpine.js', })
 
 	// Assets
-  // eleventyConfig.addPassthroughCopy('src/images')
+  eleventyConfig.addPassthroughCopy('src/assets')
   // eleventyConfig.addPassthroughCopy('src/static')
   // eleventyConfig.addPassthroughCopy('robots.txt')
   
