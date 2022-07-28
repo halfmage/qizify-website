@@ -1,5 +1,5 @@
-<div class="bg-gray-800 overflow-hidden" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
-    <div class="container pt-24 flex flex-col items-center">
+<div class="overflow-hidden" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
+    <div class="container pt-44 flex flex-col items-center">
         <div class="max-w-screen-md mx-auto text-7xl font-extrabold text-center mb-8">
             {{ hero[locale].title }}
         </div>
@@ -13,10 +13,10 @@
             <div :class="{ 'bg-white text-gray-900': tab === 'screen4' }" @click.prevent="tab = 'screen4'; window.location.hash = 'screen4'" class="font-medium px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full">{{ hero[locale].screen4 }}</div>
         </div>
         <div class="relative">
-            <div x-cloak x-show="tab === 'screen1'"><img src="../assets/images/screen1.png" class="relative z-10 rounded-t-3xl" alt=""></div>
-            <div x-cloak x-show="tab === 'screen2'"><img src="../assets/images/screen2.png" class="relative z-10 rounded-t-3xl" alt=""></div>
-            <div x-cloak x-show="tab === 'screen3'"><img src="../assets/images/screen1.png" class="relative z-10 rounded-t-3xl" alt=""></div>
-            <div x-cloak x-show="tab === 'screen4'"><img src="../assets/images/screen2.png" class="relative z-10 rounded-t-3xl" alt=""></div>
+            <div x-cloak x-show="tab === 'screen1'"><img src="../assets/images/screen1.png" class="max-w-screen-xl relative z-10 rounded-t-3xl" alt=""></div>
+            <div x-cloak x-show="tab === 'screen2'"><img src="../assets/images/screen2.png" class="max-w-screen-xl relative z-10 rounded-t-3xl" alt=""></div>
+            <div x-cloak x-show="tab === 'screen3'"><img src="../assets/images/screen1.png" class="max-w-screen-xl relative z-10 rounded-t-3xl" alt=""></div>
+            <div x-cloak x-show="tab === 'screen4'"><img src="../assets/images/screen2.png" class="max-w-screen-xl relative z-10 rounded-t-3xl" alt=""></div>
             <div class="bg-gradient-to-tl from-primary to-secondary rounded-3xl absolute -inset-12 z-0 blur-3xl"></div>
         </div>
     </div>  
