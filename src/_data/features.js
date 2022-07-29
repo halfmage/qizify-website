@@ -11,19 +11,27 @@ module.exports = {
         {
             label: "Eigenständige Datenbank",
             url: "/de/blog/"
+        },
+        {
+            label: "Eigenständige Datenbank",
+            url: "/de/blog/"
         }
         ],
         en: [
         {
-            label: "Feature 1",
+            label: "SSL & 100 % DSGVO-compliant",
             url: "/en/"
         },
         {
-            label: "Feature 2",
+            label: "Hosted and made in Germany",
             url: "/en/blog/"
         },
         {
-            label: "Feature 3",
+            label: "Dedicated learning space for your university",
+            url: "/en/blog/"
+        },
+        {
+            label: "Customisation for your learning concept",
             url: "/en/blog/"
         }
         ]
