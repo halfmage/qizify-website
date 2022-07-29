@@ -1,0 +1,15 @@
+# Important: Per shadowing rules (force = false) URLs for the
+# language-specific content files are served without redirects.
+
+# Redirect for end-user’s browser preference override
+[[redirects]]
+  from = "/*"
+  to = "/de/:splat"
+  status = 302
+  conditions = {Language = ["de"]}
+
+# Default
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302
