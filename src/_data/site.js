@@ -1,8 +1,10 @@
 module.exports = {
   de: {
-    title: "Mon site"
+    title: "Qizify",
+    featuresSecureTitle: "Funktionen für die Sicherheit"
   },
   en: {
-    title: "My website"
+    title: "My website",
+    featuresSecureTitle: "Features for security"
   }
 }

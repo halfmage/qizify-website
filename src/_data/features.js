@@ -1,38 +1,36 @@
 module.exports = {
     de: [
         {
-            label: "SSL & 100 % DSGVO-konform",
-            url: "/de/"
+            label: "Komplett GDPR-konform",
+            text: "Wir schützen personenbezogene Daten aller Benutzer und Organisationen nach aktuellen und GDPR-konformen Datenschutzrichtlinien.",
+            image: "feature-eu.png"
         },
         {
-            label: "Infrastruktur in Deutschland",
-            url: "/de/blog/"
+            label: "Abgesichert durch SSL-Verbindung",
+            text: "Die Datenübertragung zwischen Ihrem Client und einer Datenbankinstanz wird durch SSL/TLS-Verbindungen verschlüsselt, wodurch eine zusätzliche Schutzebene hinzugefügt wird.",
+            image: "feature-lock.png"
         },
         {
-            label: "Eigenständige Datenbank",
-            url: "/de/blog/"
-        },
-        {
-            label: "Eigenständige Datenbank",
-            url: "/de/blog/"
+            label: "Gehostet & hergestellt in Deutschland",
+            text: "Unsere komplette Server- und Dateninfrastruktur befindet sich innerhalb Deutschland und wird ebenfalls in dort betreut und gepflegt.",
+            image: "feature-de.png"
         }
         ],
         en: [
         {
-            label: "SSL & 100 % DSGVO-compliant",
-            url: "/en/"
+            label: "100% GDPR-compliant",
+            text: "We protect personal data of all users and organizations according to current and GDPR-compliant data protection guidelines.",
+            image: "feature-eu.png"
         },
         {
             label: "Hosted and made in Germany",
-            url: "/en/blog/"
+            text: "Data transfer between your client and a database instance is encrypted by SSL/TLS connections, adding an extra layer of protection.",
+            image: "feature-lock.png"
         },
         {
             label: "Dedicated learning space for your university",
-            url: "/en/blog/"
-        },
-        {
-            label: "Customisation for your learning concept",
-            url: "/en/blog/"
+            text: "Our complete server and data infrastructure is located in Germany and is also looked after and maintained there.",
+            image: "feature-de.png"
         }
         ]
 };
