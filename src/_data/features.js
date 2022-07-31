@@ -1,8 +1,8 @@
 module.exports = {
     de: [
         {
-            label: "Komplett GDPR-konform",
-            text: "Wir schützen personenbezogene Daten aller Benutzer und Organisationen nach aktuellen und GDPR-konformen Datenschutzrichtlinien.",
+            label: "Komplett DSGVO-konform",
+            text: "Wir schützen personenbezogene Daten aller Benutzer und Organisationen nach aktuellen und DSGVO-konformen Datenschutzrichtlinien.",
             image: "feature-eu.png"
         },
         {
@@ -18,17 +18,17 @@ module.exports = {
         ],
         en: [
         {
-            label: "100% GDPR-compliant",
+            label: "Fully GDPR compliant",
             text: "We protect personal data of all users and organizations according to current and GDPR-compliant data protection guidelines.",
             image: "feature-eu.png"
         },
         {
-            label: "Hosted and made in Germany",
+            label: "Secured by SSL connection",
             text: "Data transfer between your client and a database instance is encrypted by SSL/TLS connections, adding an extra layer of protection.",
             image: "feature-lock.png"
         },
         {
-            label: "Dedicated learning space for your university",
+            label: "Hosted and made in Germany",
             text: "Our complete server and data infrastructure is located in Germany and is also looked after and maintained there.",
             image: "feature-de.png"
         }

@@ -3,6 +3,10 @@
 {% set metaTitle = title %}
 
 {% block content %}
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
+  <div class="container">
+    <div class="prose prose-invert max-w-4xl mx-auto">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </div>
+  </div>
 {% endblock %}
