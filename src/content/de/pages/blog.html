@@ -1,0 +1,36 @@
+---
+permalink: "/{{ locale }}/blog/index.html"
+translationKey: "blogpage"
+---
+
+{% extends "layouts/default.html" %}
+
+{% set metaTitle= "Archives du blog" %}
+
+{% block content %}
+
+<div class="overflow-hidden" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
+  <div class="max-w-screen-xl mx-auto text-7xl font-extrabold text-center mb-8">
+    {{ hero[locale].title }}
+  </div>
+</div>
+
+<div class="container">
+  {% for post in collections.posts_de %}
+    {% if loop.first %}<div class="grid grid-cols-3 gap-6">{% endif %}
+      <a href="{{ post.url }}" class="group">
+        <article class="col-span-1 border-2 border-gray-700 rounded-xl overflow-hidden group-hover:border-primary transition-colors">
+          <img class="w-full h-60 object-cover" src="{{ post.data.image }}" />
+          <div class="p-6">
+            <p class="text-gray-400"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateFull(locale) }}</time></p>
+            <h3 class="text-xl md:text-3xl font-bold my-4">{{ post.data.title }}</h3>
+            <p class="text-gray-400">{{ post.data.experpt }}</p>
+          </div>
+        </article>
+      </a>
+
+    {% if loop.last %}</div>{% endif %}
+  {% endfor %}
+</div>
+
+{% endblock %}

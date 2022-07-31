@@ -2,6 +2,7 @@
 title: "Erster Blogeintrag"
 translationKey: "blogpost20190412"
 image: "../../assets/images/blogpost-test.png"
+experpt: "Pariatur eum inventore quidem sint porro esse recusandae expedita quibusdam ullam numquam"
 ---
 
 # Das ist der erste Blogeintrag in diesem Blog!
