@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image-gradient {
+    box-shadow:
+    -32px -32px 64px 0 rgba(29, 225, 238, .5),
+    0px 1px 64px 0 rgba(139, 67, 254, .5),
+    32px 32px 64px 0 rgba(229, 12, 234, .5);
+}

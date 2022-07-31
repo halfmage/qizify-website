@@ -5,7 +5,7 @@ translationKey: "homepage"
 
 {% extends "layouts/default.html" %}
 
-{% set metaTitle= "Startseite" %}
+{% set metaTitle= "Home" %}
 
 {% block content %}
 
@@ -13,11 +13,13 @@ translationKey: "homepage"
   {% include "partials/partner-uni.html" %}
   {% include "partials/features.html" %}
   {% include "partials/content-for-students.html" %}
+  {% include "partials/content-for-teachers.html" %}
+  {% include "partials/features-software.html" %}
 
-<div class="container">
+  <div class="container">
 
   <h2>Blog</h2>
-  {% for post in collections.posts_de %}
+  {% for post in collections.posts_en %}
     {% if loop.first %}<ul>{% endif %}
       <li>
 
@@ -27,7 +29,6 @@ translationKey: "homepage"
         </article>
 
       </li>
-
     {% if loop.last %}</ul>{% endif %}
   {% endfor %}
 </div>
