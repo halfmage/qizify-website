@@ -5,7 +5,7 @@
   {% set translatedUrl %}/{{lgg.locale}}/{% endset %}
 
   {# set current language class #}
-  {% set activeClass = "" %}
+  {% set activeClass = "text-gray-300 no-underline cursor-none pointer-events-none" %}
   {% set activeAria = "" %}
   {% if lgg.locale === locale %}
     {% set activeClass = "underline" %}
@@ -21,7 +21,7 @@
   {% endfor%}
 
   <li class="c-lggnav__item">
-    <a class="ml-2  {{ activeClass }}" {{ activeAria }} href="{{ translatedUrl }}">{{ lgg.label }}</a>
+    <a class="ml-2 underline hover:text-secondary {{ activeClass }}" {{ activeAria }} href="{{ translatedUrl }}">{{ lgg.label }}</a>
   </li>
 
   {% if loop.last %}</ul>{% endif %}
