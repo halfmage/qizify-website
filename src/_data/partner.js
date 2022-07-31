@@ -1,10 +1,10 @@
 module.exports = {
     de: {
-        title: "Unsere Partner-Universität",
-        text: "Die Fachhochschule Dortmund hat uns seit Beginn der Entwicklung von Qizify aktiv unterstützt. Dadurch haben wir nun die Möglichkeit, Qizify für alle Universitäten und schulischen Einrichtungen anbieten zu können.",
+        title: "Unser Partner",
+        text: "Die Fachhochschule Dortmund – University of Applied Sciences and Arts ist unser Berater seit der Idee von Qizify Learning. Wir freuen uns, Studierende und Lehrende der FH Dortmund mit unserer Plattform zu unterstützen und ihre Digitalisierung des Lernens auf das nächste Level zu bringen.",
     },
     en: {
-        title: "Our partner university",
-        text: "The Dortmund University of Applied Sciences has actively supported us since the beginning of the development of Qizify. As a result, we now have the opportunity to offer Qizify for all universities and school institutions.",
+        title: "Our partner",
+        text: "Fachhochschule Dortmund – University of Applied Sciences and Arts has been our advisor since ideation of Qizify Learning. We are happy to support students and lecturers of FH Dortmund with our platform and bring their digitalization of learning to the next level.",
     }
 };
