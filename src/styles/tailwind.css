@@ -4,7 +4,11 @@
 
 .image-gradient {
     box-shadow:
-    -32px -32px 64px 0 rgba(29, 225, 238, .5),
-    0px 1px 64px 0 rgba(139, 67, 254, .5),
-    32px 32px 64px 0 rgba(229, 12, 234, .5);
+    24px 24px 64px 0 rgba(75, 166, 238, .5),
+    -24px -24px 64px 0 rgba(180, 64, 252, .5);
+}
+
+.gradient {
+    @apply bg-gradient-to-br from-secondary via-[#8B43FE] to-primary;
+    box-shadow: 0 8px 16px rgba(0,0,0,.3), 12px 12px 32px 0 rgba(75, 166, 238, .5), -12px -12px 32px 0 rgba(180, 64, 252, .5);
 }

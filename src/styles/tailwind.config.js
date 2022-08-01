@@ -12,6 +12,7 @@ module.exports = {
             gray: colors.stone,
             primary: '#4BA6EE',
             secondary: '#B440FC',
+            green: colors.lime,
         },
         container: {
             center: true,
