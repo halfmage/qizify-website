@@ -5,10 +5,10 @@
   {% set translatedUrl %}/{{lgg.locale}}/{% endset %}
 
   {# set current language class #}
-  {% set activeClass = "text-gray-300 no-underline cursor-none pointer-events-none" %}
+  {% set activeClass = "" %}
   {% set activeAria = "" %}
   {% if lgg.locale === locale %}
-    {% set activeClass = "underline" %}
+    {% set activeClass = "text-gray-300 no-underline cursor-none pointer-events-none" %}
     {% set activeAria = 'aria-current="page"' | safe %}
   {% endif %}
 

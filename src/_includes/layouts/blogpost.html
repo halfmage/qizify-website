@@ -3,9 +3,14 @@
 {% set metaTitle = title %}
 
 {% block content %}
-  <div class="container">
+  <div class="container overflow-hidden">
+    {% for navitem in mainnav[locale] %}
+  {% if navitem.label === "Blog" %}
+  <a class="mr-2" href="{{ navitem.url }}">{{ navitem.blogPostLabel }}</a>
+  {% endif %}
+{% endfor %}
+    <h1 class="mx-auto max-w-4xl text-2xl md:text-4xl lg:text-6xl font-extrabold my-4 md:mt-12 md:mb-8">{{ title }}</h1>
     <div class="prose prose-invert max-w-4xl mx-auto">
-    <h1>{{ title }}</h1>
     {{ content | safe }}
   </div>
   </div>

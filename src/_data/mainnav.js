@@ -6,7 +6,8 @@ module.exports = {
     },
     {
       label: "Blog",
-      url: "/de/blog/"
+      url: "/de/blog/",
+      blogPostLabel: "Alle Blogeinträge"
     }
   ],
   en: [
@@ -16,7 +17,8 @@ module.exports = {
     },
     {
       label: "Blog",
-      url: "/en/blog/"
+      url: "/en/blog/",
+      blogPostLabel: "All blogpost"
     }
   ]
 };
