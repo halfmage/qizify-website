@@ -1,11 +1,11 @@
-<div class="overflow-hidden border-b border-gray-600" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
+<div class="overflow-hidden border-b border-gray-700" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
     <div class="container flex flex-col items-center">
-        <div class="max-w-screen-xl mx-auto text-2xl md:text-4xl lg:text-6xl font-extrabold text-center my-4 md:mt-12 md:mb-8">
+        <div class="max-w-screen-xl mx-auto text-headline text-center mt-4 md:mt-8">
             {{ hero[locale].title }}
             <br>
             {{ hero[locale].subtitle }}
         </div>
-        <p class="text-center lg:text-2xl max-w-screen-md mx-auto text-gray-400">
+        <p class="text-center lg:text-lg max-w-screen-sm mx-auto text-gray-400">
             {{ hero[locale].text }}
         </p>
         <div class="inline-flex my-8 text-center mx-auto p-2 bg-white/10 rounded-full">

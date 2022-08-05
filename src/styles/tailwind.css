@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-headline {
+    @apply text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-4 md:mb-8
+}
+
 .image-gradient {
     box-shadow:
     24px 24px 64px 0 rgba(75, 166, 238, .5),
