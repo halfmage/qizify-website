@@ -11,28 +11,31 @@ translationKey: "blogpage"
 
 <div class="overflow-hidden" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
   <div class="max-w-screen-xl mx-auto text-2xl md:text-4xl lg:text-6xl font-extrabold text-center my-4 md:mt-12 md:mb-8">
-    {{ hero[locale].title }}
+    {{ hero[locale].titleBlog }}
   </div>
   <p class="text-center lg:text-2xl max-w-screen-lg mx-auto text-gray-400 mb-16">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae aperiam repellat placeat ipsam, sint iusto expedita fuga eius, dolorum culpa dolorem quam id.
+    {{ hero[locale].textBlog }}
   </p>
 </div>
 
-<div class="container">
+<div class="container grid grid-cols-12 gap-8">
   {% for post in collections.posts_de %}
-    {% if loop.first %}<div class="grid grid-cols-3 gap-8">{% endif %}
-      <a href="{{ post.url }}" class="group">
-        <article class="col-span-1 bg-gray-800 rounded-xl overflow-hidden group-hover:border-primary transition-colors">
-          <img class="w-full h-60 object-cover" src="{{ post.data.image }}" />
-          <div class="p-4 md:p-8">
-            <p class="text-gray-400"><time datetime="{{ post.date | dateIso }}">{{ post.date | dateFull(locale) }}</time></p>
-            <h3 class="text-xl md:text-3xl font-bold my-2 md:my-4">{{ post.data.title }}</h3>
-            <p class="text-gray-400">{{ post.data.experpt }}</p>
-          </div>
-        </article>
+    <article class="group col-span-12 md:col-span-6 bg-gray-800 rounded-xl overflow-hidden hover:border-primary transition-colors">
+      <a href="{{ post.url }}">
+        <img class="w-full h-60 object-cover" src="{{ post.data.image }}" />
       </a>
-
-    {% if loop.last %}</div>{% endif %}
+      <div class="p-4 md:p-8">
+        <p class="text-gray-400">
+          <time datetime="{{ post.date | dateIso }}">{{ post.date | dateFull(locale) }}</time>
+        </p>
+        <a href="{{ post.url }}">
+          <h3 class="text-xl md:text-3xl font-bold my-2 md:my-4">{{ post.data.title }}</h3>
+        </a>
+        <p class="text-gray-400">
+          {{ post.data.experpt }}
+        </p>
+      </div>
+    </article>
   {% endfor %}
 </div>
 

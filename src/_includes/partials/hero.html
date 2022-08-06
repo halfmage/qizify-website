@@ -8,7 +8,7 @@
         <p class="text-center lg:text-lg max-w-screen-sm mx-auto text-gray-400">
             {{ hero[locale].text }}
         </p>
-        <div class="inline-flex my-8 text-center mx-auto p-2 bg-white/10 rounded-full">
+        <div class="inline-flex my-8 text-center mx-auto p-2 bg-white/10 rounded-full backdrop-blur">
             <div :class="{ 'bg-white text-gray-900': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen1 }}</div>
             <div :class="{ 'bg-white text-gray-900': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen2 }}</div>
             <div :class="{ 'bg-white text-gray-900': tab === 'screen3' }" @click.prevent="tab = 'screen3'; window.location.hash = 'screen3'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen3 }}</div>

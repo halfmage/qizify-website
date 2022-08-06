@@ -7,6 +7,7 @@ module.exports = {
       screen2: "Leistung",
       screen3: "Bestenliste",
       screen4: "Mitteilungen",
+      titleBlog: "Blog"
     },
     en: {
       title: "Teach with Qizify Learning.",
@@ -16,6 +17,7 @@ module.exports = {
       screen2: "Performance",
       screen3: "Leaderboard",
       screen4: "Notifications",
+      titleBlog: "Blog"
     }
   };
   
