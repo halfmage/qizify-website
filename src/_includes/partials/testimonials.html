@@ -1,0 +1,19 @@
+<section class="">
+
+  <div class="container py-24">
+    <h2 class="text-headline text-center">
+      {{ site[locale].testimonials }}
+    </h2>
+    <div class="grid grid-cols-12 gap-8">
+        {% for testimonial in testimonials[locale] %}
+            <div class="lg:col-span-4">
+                <div class="text-center bg-gray-800 p-8 rounded-xl h-full flex flex-col items-center">
+                    <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="../assets/images/{{testimonial.image}}">
+                    <p class="font-bold leading-snug italic text-lg mb-4">{{ testimonial.quote }}</p>
+                    <h2 class="text-primary font-medium title-font tracking-wider text-sm mt-auto">{{ testimonial.name }}</h2>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+  </div>
+</section>

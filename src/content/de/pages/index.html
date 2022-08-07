@@ -18,7 +18,7 @@ translationKey: "homepage"
 
 
 <div class="container">
-  <h2 class="text-headline">
+  <h2 class="text-headline text-center">
     {{ site[locale].latestBlogPosts }}
   </h2>
   <div class="grid grid-cols-12 gap-8">
@@ -44,5 +44,7 @@ translationKey: "homepage"
     {% endfor %}
   </div>
 </div>
+
+{% include "partials/testimonials.html" %}
 
 {% endblock %}
