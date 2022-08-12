@@ -1,0 +1,5 @@
+{% for navitem in mainnav[locale] %}
+  {% if loop.first %}<div class="flex">{% endif %}
+    <a class="text-gray-300 py-2 px-4 rounded hover:bg-gray-100/10 hover:text-white transition-colors href="{{ navitem.url }}">{{ navitem.label }}</a>
+  {% if loop.last %}</div>{% endif %}
+{% endfor %}
