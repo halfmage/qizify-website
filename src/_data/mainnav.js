@@ -6,11 +6,6 @@ module.exports = {
       slug: "home"
     },
     {
-      label: "Funktionen",
-      url: "/de/funktionen",
-      slug: "features"
-    },
-    {
       label: "Preise",
       url: "/de/preise",
       slug: "pricing"
@@ -32,11 +27,6 @@ module.exports = {
       label: "Home",
       url: "/en/",
       slug: "home"
-    },
-    {
-      label: "Features",
-      url: "/en/features",
-      slug: "features"
     },
     {
       label: "Pricing",

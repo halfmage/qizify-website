@@ -1,5 +1,5 @@
 {% for lgg in languages %}
-  {% if loop.first %}<ul class="flex">{% endif %}
+  {% if loop.first %}<div class="flex items-center">{% endif %}
 
   {# set translatedUrl to the homepage of that language by default #}
   {% set translatedUrl %}/{{lgg.locale}}/{% endset %}
@@ -8,7 +8,7 @@
   {% set activeClass = "" %}
   {% set activeAria = "" %}
   {% if lgg.locale === locale %}
-    {% set activeClass = "text-gray-300 no-underline cursor-none pointer-events-none" %}
+    {% set activeClass = "text-gray-400 cursor-none pointer-events-none" %}
     {% set activeAria = 'aria-current="page"' | safe %}
   {% endif %}
 
@@ -20,9 +20,8 @@
     {% endif %}
   {% endfor%}
 
-  <li class="c-lggnav__item">
-    <a class="ml-2 underline hover:text-secondary {{ activeClass }}" {{ activeAria }} href="{{ translatedUrl }}">{{ lgg.label }}</a>
-  </li>
-
-  {% if loop.last %}</ul>{% endif %}
+  <a class="inline-block py-2 px-4 rounded-xl hover:bg-gray-100/10 hover:text-white {{ activeClass }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
+  {% if loop.last %}
+  <a class="whitespace-nowrap ml-4 bg-gradient-to-br from-primary to-secondary py-2 px-4 rounded-xl hover:brightness-110" href="">{{ site[locale].requestDemo }}</a>
+  </div>{% endif %}
 {% endfor %}
