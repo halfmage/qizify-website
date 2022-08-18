@@ -11,6 +11,11 @@ module.exports = {
       slug: "team"
     },
     {
+      label: "FAQ",
+      url: "/de/faq",
+      slug: "faq"
+    },
+    {
       label: "Blog",
       url: "/de/blog/",
       slug: "blog",
@@ -27,6 +32,11 @@ module.exports = {
       label: "Team",
       url: "/en/team",
       slug: "team"
+    },
+    {
+      label: "FAQ",
+      url: "/en/faq",
+      slug: "faq"
     },
     {
       label: "Blog",

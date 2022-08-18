@@ -9,7 +9,7 @@ translationKey: "blogpage"
 
 {% block content %}
 
-<div class="overflow-hidden" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
+<div class="overflow-hidden py-16 md:py-24">
   <div class="max-w-screen-xl mx-auto text-2xl md:text-4xl lg:text-6xl font-extrabold text-center my-4 md:mt-12 md:mb-8">
     {{ hero[locale].titleBlog }}
   </div>
@@ -18,7 +18,7 @@ translationKey: "blogpage"
   </p>
 </div>
 
-<div class="container grid grid-cols-12 gap-8">
+<div class="container grid grid-cols-12 gap-8 py-16 md:py-24">
   {% for post in collections.posts_de %}
     <article class="blog-card">
       <a href="{{ post.url }}">
