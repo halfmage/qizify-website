@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .text-headline {
-    @apply text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-4 md:mb-8
+    @apply text-2xl md:text-3xl lg:text-5xl text-white font-bold mb-4 md:mb-8
 }
 
 .image-gradient {
@@ -15,4 +15,8 @@
 .gradient {
     @apply bg-gradient-to-br from-secondary via-[#8B43FE] to-primary;
     box-shadow: 0 8px 16px rgba(0,0,0,.3), 12px 12px 32px 0 rgba(75, 166, 238, .5), -12px -12px 32px 0 rgba(180, 64, 252, .5);
+}
+
+.blog-card {
+    @apply col-span-12 md:col-span-6 border-2 border-gray-700 rounded-xl overflow-hidden transition-colors hover:border-gray-500
 }

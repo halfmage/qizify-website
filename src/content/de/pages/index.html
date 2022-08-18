@@ -17,14 +17,14 @@ translationKey: "homepage"
   {% include "partials/features-software.html" %}
 
 
-<div class="container">
+<div class="container py-16 md:py-24">
   <h2 class="text-headline text-center">
     {{ site[locale].latestBlogPosts }}
   </h2>
   <div class="grid grid-cols-12 gap-8">
     {% for post in collections.posts_de %}
       {% if loop.index0 < 2 %}
-          <article class="group col-span-12 md:col-span-6 bg-gray-800 rounded-xl overflow-hidden hover:border-primary transition-colors">
+          <article class="blog-card">
             <a href="{{ post.url }}">
               <img class="w-full h-60 object-cover" src="{{ post.data.image }}" />
             </a>
