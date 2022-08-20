@@ -8,7 +8,9 @@ module.exports = {
       screen3: "Bestenliste",
       screen4: "Mitteilungen",
       titleBlog: "Blog",
-      titleFAQ: "Häufig gestellte Fragen"
+      titleFAQ: "Häufig gestellte Fragen",
+      titleTeam: "Das Qizify Learning Team",
+      textTeam: "Das Team, das uns erfolgreich gemacht hat"
     },
     en: {
       title: "Teach with Qizify Learning.",
@@ -19,7 +21,9 @@ module.exports = {
       screen3: "Leaderboard",
       screen4: "Notifications",
       titleBlog: "Blog",
-      titleFAQ: "Frequently asked questions"
+      titleFAQ: "Frequently asked questions",
+      titleTeam: "The Qizify Learning Team",
+      textTeam: "The Team that made us successful"
     }
   };
   

@@ -20,3 +20,12 @@
 .blog-card {
     @apply col-span-12 md:col-span-6 border-2 border-gray-700 rounded-xl overflow-hidden transition-colors hover:border-gray-500
 }
+
+.container-hero {
+    position: relative;
+}
+
+.container-hero:after {
+    content: '';
+    @apply bg-gradient-to-br from-secondary via-[#8B43FE] to-primary block w-full h-64 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 -z-10 blur-[128px] opacity-60 rounded-full;
+}
