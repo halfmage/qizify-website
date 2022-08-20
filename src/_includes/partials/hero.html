@@ -1,25 +1,23 @@
-<div class="overflow-hidden border-b border-gray-700" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
-    <div class="container flex flex-col items-center">
+<div class="overflow-hidden border-b border-gray-700 pt-8" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
+    <div class="container flex flex-col items-center relative">
         <div class="max-w-screen-xl mx-auto text-headline text-center mt-4 md:mt-8">
             {{ hero[locale].title }}
-            <br>
-            {{ hero[locale].subtitle }}
         </div>
-        <p class="text-center lg:text-lg max-w-screen-sm mx-auto text-gray-400">
+        <p class="text-center lg:text-xl max-w-screen-md mx-auto text-gray-200/75 mb-8 z-10">
             {{ hero[locale].text }}
         </p>
-        <div class="inline-flex my-8 text-center mx-auto p-2 bg-white/10 rounded-full backdrop-blur">
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen1 }}</div>
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen2 }}</div>
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen3' }" @click.prevent="tab = 'screen3'; window.location.hash = 'screen3'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen3 }}</div>
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen4' }" @click.prevent="tab = 'screen4'; window.location.hash = 'screen4'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full">{{ hero[locale].screen4 }}</div>
-        </div>
-        <div class="relative">
+        <div class="relative z-0">
             <div x-cloak x-show="tab === 'screen1'"><img src="../assets/images/screen1.png" class="max-w-screen-lg w-full relative z-10 rounded-t-xl" alt=""></div>
             <div x-cloak x-show="tab === 'screen2'"><img src="../assets/images/screen2.png" class="max-w-screen-lg w-full relative z-10 rounded-t-xl" alt=""></div>
             <div x-cloak x-show="tab === 'screen3'"><img src="../assets/images/screen3.png" class="max-w-screen-lg w-full relative z-10 rounded-t-xl" alt=""></div>
             <div x-cloak x-show="tab === 'screen4'"><img src="../assets/images/screen4.png" class="max-w-screen-lg w-full relative z-10 rounded-t-xl" alt=""></div>
-            <div class="bg-gradient-to-tl from-primary to-secondary rounded-3xl absolute -inset-12 z-0 blur-3xl"></div>
+            <div class="bg-gradient-to-tl from-primary to-secondary rounded-full absolute -inset-12 z-0 blur-3xl"></div>
+        </div>
+        <div class="absolute z-10 bottom-4 inline-flex text-center mx-auto p-2 bg-gray-800/20 border border-white/20 rounded-full backdrop-blur">
+            <div :class="{ 'bg-white text-gray-900': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen1 }}</div>
+            <div :class="{ 'bg-white text-gray-900': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen2 }}</div>
+            <div :class="{ 'bg-white text-gray-900': tab === 'screen3' }" @click.prevent="tab = 'screen3'; window.location.hash = 'screen3'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen3 }}</div>
+            <div :class="{ 'bg-white text-gray-900': tab === 'screen4' }" @click.prevent="tab = 'screen4'; window.location.hash = 'screen4'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full">{{ hero[locale].screen4 }}</div>
         </div>
     </div>  
 </div>
