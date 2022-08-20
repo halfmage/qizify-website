@@ -1,6 +1,6 @@
 ---
 permalink: "/{{ locale }}/team/index.html"
-translationKey: "faq"
+translationKey: "team"
 ---
 
 {% extends "layouts/default.html" %}
@@ -18,7 +18,7 @@ translationKey: "faq"
   </p>
 </div>
 
-<div class="container grid gap-8 lg:gap-16 grid-cols-4">
+<div class="container py-16 md:py-24 grid gap-8 lg:gap-16 grid-cols-4">
   {% for member in team[locale] %}
   <div class="col-span-4 md:col-span-2 lg:col-span-1 text-center">
     <img alt="team-member-{{member.image}}" class="image-gradient max-w-[128px] lg:max-w-[200px] max-h-[128px] xl:max-h-[200px] mx-auto rounded-full object-cover" src="../../../assets/images/{{member.image}}.png">
