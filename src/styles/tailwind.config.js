@@ -10,8 +10,8 @@ module.exports = {
         colors: {
             white: '#fff',
             gray: colors.stone,
-            primary: '#4BA6EE',
-            secondary: '#B440FC',
+            primary: '#1DE1EE',
+            secondary: '#E50CEA',
             green: colors.lime,
         },
         container: {

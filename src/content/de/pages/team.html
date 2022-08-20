@@ -9,7 +9,7 @@ translationKey: "faq"
 
 {% block content %}
 
-<div class="py-16 md:py-24 container container-hero">
+<div class="py-16 md:py-24 container ">
   <div class="max-w-screen-xl mx-auto text-2xl md:text-4xl lg:text-6xl font-extrabold text-center my-4 md:mt-12 md:mb-8">
     {{ hero[locale].titleTeam }}
   </div>
@@ -21,10 +21,10 @@ translationKey: "faq"
     <div class="container grid gap-4 lg:gap-16 grid-cols-4">
       {% for member in team[locale] %}
       <div class="col-span-4 md:col-span-2 lg:col-span-1 text-center">
-          <img alt="team" class="w-full h-80 object-cover" src="../../../assets/images/{{member.image}}.png">
-            <h2 class="text-2xl font-bold text-white mt-4">{{ member.name }}</h2>
-            <h3 class="text-gray-400 mt-2 mb-4">{{ member.position }}</h3>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur possimus itaque placeat quibusdam consectetur earum?</p>
+          <img alt="team" class="image-gradient max-w-[200px] max-h-[200px] mx-auto rounded-full object-cover" src="../../../assets/images/{{member.image}}.png">
+            <h2 class="text-2xl font-bold text-white mt-6">{{ member.name }}</h2>
+            <h3 class="text-primary uppercase tracking-wider text-sm mt-2 mb-4">{{ member.position }}</h3>
+            <p class="mb-4 text-gray-400">{{ member.description }}</p>
       </div>
       {% endfor %}
     </div>

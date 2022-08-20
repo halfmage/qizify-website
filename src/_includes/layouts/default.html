@@ -17,11 +17,11 @@
   <link rel="stylesheet" href="/style.css?v={% version %}"/>
   <script src="/js/alpine.js?v={% version %}" defer></script>
 </head>
-<body class="bg-gray-900 text-gray-100">
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
   
   {% include "partials/header.html" %}
 
-  <div class="my-20">
+  <div class="my-20 flex-1">
     {% block content %}{% endblock %}
   </div>
 
