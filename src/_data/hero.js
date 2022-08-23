@@ -1,8 +1,7 @@
 module.exports = {
     de: {
-      title: "Die digitale Lern-Platform für Universitäten",
-      subtitle: "Überall & jederzeit",
-      text: "Eine Online-Plattform für Lernende und Lehrende, die die Vorbereitung auf Prüfungen mithilfe von studiengangbezogenen Quizzes erleichtert.",
+      title: "Unterrichten vereinfacht",
+      text: "Eine Online-Lernplattform, die es Studenten ermöglicht, durch das Erstellen und Lösen von Quizzen passend zum Studium zu lernen und ihre Leistung zu messen.",
       screen1: "Quizze",
       screen2: "Leistung",
       screen3: "Bestenliste",
@@ -13,9 +12,8 @@ module.exports = {
       textTeam: "Das Team, das uns erfolgreich gemacht hat"
     },
     en: {
-      title: "The digital learning platform for universities",
-      subtitle: "Anytime & anywhere",
-      text: "An online platform for learners and lecturers that facilitates self-preparation for exams with the help of quizzes related to a study program.",
+      title: "Teaching simplified",
+      text: "An online learning platform that empowers students to learn by creating and solving quizzes related to their study program while tracking performance.",
       screen1: "Quizzes",
       screen2: "Performance",
       screen3: "Leaderboard",
