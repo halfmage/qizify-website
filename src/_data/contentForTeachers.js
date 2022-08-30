@@ -8,11 +8,11 @@ module.exports = {
     listitem4: "Überprüfung, Analyse und Verbesserung der eigenen Lernleistung.",
   },
   en: {
-    title: "As a lecturer, you can easily check and improve learning content",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda est quibusdam aut adipisci corrupti, inventore veniam!",
+    title: "As a lecturer, you can check and improve learning content.",
+    text: "",
     listitem1: "Create, review and verify quizzes.",
-    listitem2: "Send feedback to a quiz author to improve it.",
+    listitem2: "Share feedback with a quiz author to improve it.",
     listitem3: "Check learners' performance per quiz",
-    listitem4: "Navigate learners to the suitable study material."
+    listitem4: "Navigate learners to suitable study material."
   }
 };

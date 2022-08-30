@@ -9,9 +9,9 @@ module.exports = {
   },
   en: {
     title: "Optimized features for learners",
-    text: "We specifically looked for the essential functions that students need to learn effectively. We use an optimal mixture of performance, playfulness and competition",
-    listitem1: "Create quizzes based on their study content and share them with group mates.",
-    listitem2: "Get Karma points if their quiz is verified by a lecturer or liked by other learners, and participate in the leaderboard.",
+    text: "We looked for the essential functions that students need to learn effectively. We use an optimal for modern learning mixture of performance, gamification, and competition.",
+    listitem1: "Create quizzes based on study content and share them with group mates.",
+    listitem2: "Get Karma points if a quiz is verified by a lecturer or liked by other learners, and participate in the leaderboard.",
     listitem3: "Play quizzes created by other learners.",
     listitem4: "Review, analyze, and improve own learning performance.",
   }

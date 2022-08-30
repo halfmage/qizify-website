@@ -22,10 +22,10 @@
 }
 
 .container-hero {
-    position: relative;
+    @apply relative py-12 md:py-24 md:mb-12 container
 }
 
-.container-hero:after {
+.container-hero22:after {
     content: '';
     @apply bg-gradient-to-br from-secondary via-[#8B43FE] to-primary block w-full h-64 absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 -z-10 blur-[128px] opacity-60 rounded-full;
 }
