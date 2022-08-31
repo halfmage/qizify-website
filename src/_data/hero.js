@@ -8,6 +8,7 @@ module.exports = {
       screen4: "Mitteilungen",
       titleBlog: "Blog",
       titleFAQ: "Häufig gestellte Fragen",
+      titlePricing: "Preise",
       titleTeam: "Das Qizify Learning Team",
       textTeam: "Das Team, das uns erfolgreich gemacht hat"
     },
@@ -20,6 +21,7 @@ module.exports = {
       screen4: "Notifications",
       titleBlog: "Blog",
       titleFAQ: "Frequently asked questions",
+      titlePricing: "Pricing",
       titleTeam: "The Qizify Learning Team",
       textTeam: "The Team that made us successful"
     }

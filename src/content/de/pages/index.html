@@ -15,36 +15,6 @@ translationKey: "homepage"
   {% include "partials/content-for-students.html" %}
   {% include "partials/content-for-teachers.html" %}
   {% include "partials/features-software.html" %}
-
-
-<div class="container py-16 md:py-24">
-  <h2 class="text-headline text-center">
-    {{ site[locale].latestBlogPosts }}
-  </h2>
-  <div class="grid grid-cols-12 gap-8">
-    {% for post in collections.posts_de %}
-      {% if loop.index0 < 2 %}
-          <article class="blog-card">
-            <a href="{{ post.url }}">
-              <img class="w-full h-60 object-cover" src="{{ post.data.image }}" />
-            </a>
-            <div class="p-4 md:p-8">
-              <p class="text-gray-400">
-                <time datetime="{{ post.date | dateIso }}">{{ post.date | dateFull(locale) }}</time>
-              </p>
-              <a href="{{ post.url }}">
-                <h3 class="text-xl md:text-3xl font-bold my-2 md:my-4">{{ post.data.title }}</h3>
-              </a>
-              <p class="text-gray-400">
-                {{ post.data.experpt }}
-              </p>
-            </div>
-          </article>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
-
 {% include "partials/testimonials.html" %}
 
 {% endblock %}

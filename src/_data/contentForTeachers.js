@@ -1,7 +1,6 @@
 module.exports = {
   de: {
     title: "Als Lehrbeauftragter können Sie Lerninhalte einfach kontrollieren und verbessern",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda est quibusdam aut adipisci corrupti, inventore veniam!",
     listitem1: "Erstellen Sie Quizze basierend auf ihren Lerninhalten und teilen Sie sie mit Gruppenkollegen.",
     listitem2: "Erhalten Sie Karma-Punkte, wenn ihr Quiz von einem Dozenten bestätigt oder von anderen Lernenden gemocht wird, und nehmen Sie an der Rangliste teil.",
     listitem3: "Spielen Sie Quizzes, die von anderen Lernenden erstellt wurden.",

@@ -22,7 +22,7 @@
 }
 
 .container-hero {
-    @apply relative py-12 md:py-24 md:mb-12 container
+    @apply relative py-12 md:mb-12 container
 }
 
 .container-hero22:after {

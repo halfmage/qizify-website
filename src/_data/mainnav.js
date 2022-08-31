@@ -2,7 +2,7 @@ module.exports = {
   de: [
     {
       label: "Preise",
-      url: "/de/preise",
+      url: "/de/pricing",
       slug: "pricing"
     },
     {
