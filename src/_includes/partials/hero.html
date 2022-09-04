@@ -10,11 +10,11 @@
             {{ hero[locale].text }}
         </p>
 
-        <div class="my-4 md:my-8 relative z-10 inline-flex text-center mx-auto p-2 bg-gray-800/20 border border-white/20 rounded-full backdrop-blur">
+        <div class="my-6 md:my-8 relative z-10 inline-flex text-center mx-auto p-2 bg-gray-800/20 border border-white/20 rounded-full backdrop-blur">
             <!-- 🍱 Screenshot menu -->
-            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen1 }}</div>
-            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen2 }}</div>
-            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen3' }" @click.prevent="tab = 'screen3'; window.location.hash = 'screen3'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen3 }}</div>
+            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full mr-1">{{ hero[locale].screen1 }}</div>
+            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full mr-1">{{ hero[locale].screen2 }}</div>
+            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen3' }" @click.prevent="tab = 'screen3'; window.location.hash = 'screen3'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full mr-1">{{ hero[locale].screen3 }}</div>
             <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen4' }" @click.prevent="tab = 'screen4'; window.location.hash = 'screen4'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full">{{ hero[locale].screen4 }}</div>
         </div>
 

@@ -1,25 +1,28 @@
 <div x-data="{ atTop : true }">
-<header class="w-full fixed top-0 left-0 right-0 z-50 transition-all py-2 md:py-6" :class="{'bg-gray-900/75 backdrop-blur-lg' : !atTop}" @scroll.window="atTop = ( window.pageYOffset > 0 ) ? false : true">
+<header class="w-full fixed top-0 left-0 right-0 z-50 transition-all py-4 md:py-6" :class="{'bg-gray-900/75 backdrop-blur-lg' : !atTop}" @scroll.window="atTop = ( window.pageYOffset > 0 ) ? false : true">
 
   <div class="container flex items-center justify-between">
     <a href="/" class="font-bold hover:brightness-125 transition-transform">
-      <img class="h-10" src="/assets/images/logo.svg" alt="">
+      <img class="h-8 md:h-10" src="/assets/images/logo.svg" alt="">
     </a>
 
     
+    {% include "partials/mobile-menu.html" %}
 
-    {% for navitem in mainnav[locale] %}
+    <div class="hidden lg:block">
+      {% for navitem in mainnav[locale] %}
       {% if loop.first %}
-      <div class="flex absolute left-1/2 -translate-x-1/2">{% endif %}
+      <div class="flex absolute top-6 left-1/2 -translate-x-1/2">{% endif %}
         <a class="text-gray-400 mx-1 py-2 px-2 xl:px-4 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20 pointer-events-none' if navitem.url in page.url }}" href="{{ navitem.url }}">
           {{ navitem.label }}
         </a>
         {% if loop.last %}
       </div>{% endif %}
     {% endfor %}
+    </div>
   
 
-    {% include "partials/lggnav.html" %}
+    {% include "partials/language-nav.html" %}
   </div>
 </header>
 </div>

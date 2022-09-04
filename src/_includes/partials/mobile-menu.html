@@ -1,0 +1,57 @@
+<div x-data="{ menuOpen: false }" class="ml-auto">
+    <!-- Mobile trigger -->
+    <div class="w-12 h-12 flex lg:hidden items-center justify-center" @click="menuOpen = !menuOpen" tabindex="0">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+        </svg>
+    </div>
+    <!-- Mobile menu -->
+    <nav x-cloak x-show="menuOpen" x-transition.duration.250ms @click.away="menuOpen = false" class="p-8 pt-20 fixed top-0 left-0 right-0 bg-gray-900 border-b-2 border-gray-700 z-50 flex flex-col items-center text-base justify-center">
+
+        <div class="w-12 h-12 flex items-center justify-center absolute top-4 right-4" @click="menuOpen = !menuOpen" tabindex="0">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4z"/>
+            </svg>
+        </div>
+
+        {% for navitem in mainnav[locale] %}
+        {% if loop.first %}
+            <div class="w-full flex flex-col">{% endif %}
+                <a @click="menuOpen = !menuOpen" class="text-gray-400 p-4 text-center mt-2 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20 pointer-events-none' if navitem.url in page.url }}" href="{{ navitem.url }}">
+                    {{ navitem.label }}
+                </a>
+                {% if loop.last %}
+            </div>{% endif %}
+        {% endfor %}
+
+        {% for lgg in languages %}
+        {% if loop.first %}
+        <div class="flex items-center w-full">
+        {% endif %}
+
+        {% set translatedUrl %}/{{lgg.locale}}/{% endset %}
+
+        {% set activeClass = "" %}
+        {% set activeAria = "" %}
+        {% if lgg.locale === locale %}
+        {% set activeClass = "hidden" %}
+        {% set activeAria = 'aria-current="page"' | safe %}
+        {% endif %}
+
+        {% for item in collections.all %}
+        {% if item.data.translationKey == translationKey and item.data.locale == lgg.locale %}
+            {% set translatedUrl = item.url %}
+        {% endif %}
+        {% endfor%}
+
+        <a @click="menuOpen = !menuOpen" class="flex-1 p-4 my-4 rounded-xl border border-gray-700 hover:bg-gray-100/10 hover:text-white text-lg text-center {{ activeClass }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
+        {% if loop.last %}
+        </div>
+
+        <a @click="menuOpen = !menuOpen" class="flex-1 whitespace-nowrap bg-gradient-to-br from-primary to-secondary p-4 font-medium w-full rounded-xl text-center" href="">{{ site[locale].requestDemo }}</a>
+
+        {% endif %}
+        {% endfor %}
+
+    </nav>
+</div>
