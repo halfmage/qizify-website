@@ -1,0 +1,55 @@
+<h2 class="text-headline-sm">{{ site[locale].requestDemo }}</h2>
+
+<a
+    href="https://calendly.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 block mb-2"
+    >
+        {{ site[locale].contactCalendly }}
+</a>
+
+<p class="text-center text-sm text-gray-400 mb-4">{{ site[locale].contactCalendlySubline }}</p>
+
+<hr class="border-gray-600 my-8">
+
+<h2 class="text-headline-sm">{{ site[locale].contact }}</h2>
+
+<form 
+    name="qizify-contact" 
+    method="POST" 
+    action="/contact-success" 
+    data-netlify="true" 
+    netlify-honeypot="bot-field" 
+    class="text-left"
+>
+<p class="hidden">
+    <label>
+    Don't fill this out if you're human: <input name="bot-field" />
+    </label>
+</p>
+<p class="">
+    <label class="">{{ site[locale].contactName }}:
+    <input class="input-field" required type="text" name="name" />
+    </label>
+</p>
+<p class="mt-4">
+    <label class="">{{ site[locale].contactMail }}:
+    <input class="input-field" required type="email" name="email" />
+    </label>
+</p>
+<p class="mt-4">
+    <label class="">{{ site[locale].contactMessage }}:
+    <textarea class="input-field" required name="message"></textarea>
+    </label>
+</p>
+<p class="mt-4">
+    <div class="flex text-base">
+    <input required type="checkbox" name="agreement" id="agreement" class="rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
+    <label for="agreement" class="ml-4 text-gray-400">{{ site[locale].contactBox }}</label>
+    </div>
+</p>
+<p>
+    <button class="whitespace-nowrap bg-gray-700 hover:bg-gray-600 py-3 font-medium px-4 rounded-xl hover:brightness-110 w-full mt-4" type="submit">{{ site[locale].contactSend }}</button>
+</p>
+</form>

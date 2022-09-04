@@ -6,6 +6,10 @@
     @apply text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-4 md:mb-8
 }
 
+.text-headline-sm {
+    @apply text-xl md:text-2xl lg:text-3xl text-white font-bold mb-4 md:mb-8
+}
+
 .image-gradient {
     box-shadow:
     24px 24px 64px 0 rgba(75, 166, 238, .5),
@@ -13,8 +17,8 @@
 }
 
 .gradient {
-    @apply bg-gradient-to-br from-secondary via-[#8B43FE] to-primary;
-    box-shadow: 0 8px 16px rgba(0,0,0,.3), 12px 12px 32px 0 rgba(75, 166, 238, .5), -12px -12px 32px 0 rgba(180, 64, 252, .5);
+    @apply bg-gradient-to-br from-primary via-[#8B43FE] to-secondary;
+    box-shadow: 0 8px 16px rgba(0,0,0,.3), 6px 6px 32px 0 rgba(75, 166, 238, .5), -6px -6px 32px 0 rgba(180, 64, 252, .5);
 }
 
 .blog-card {
@@ -32,4 +36,8 @@
 
 .prose img {
     @apply mx-auto
+}
+
+.input-field {
+    @apply p-3 block w-full rounded-xl bg-gray-700 mt-2
 }
