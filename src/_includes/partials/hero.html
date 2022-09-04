@@ -2,25 +2,36 @@
     <div class="container flex flex-col items-center relative">
 
         <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-5xl text-3xl md:mb-6 mb-4 font-extrabold text-center">
+            <!-- Hero main headline -->
             {{ hero[locale].title }}
         </div>
         <p class="text-center lg:text-xl max-w-screen-md mx-auto text-gray-200/75 z-10">
+            <!-- Hero subtitle / text -->
             {{ hero[locale].text }}
         </p>
 
-        <div class="my-4 md:my-8 2xl:my-12 relative z-10 inline-flex text-center mx-auto p-2 bg-gray-800/20 border border-white/20 rounded-full backdrop-blur">
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen1 }}</div>
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen2 }}</div>
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen3' }" @click.prevent="tab = 'screen3'; window.location.hash = 'screen3'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen3 }}</div>
-            <div :class="{ 'bg-white text-gray-900': tab === 'screen4' }" @click.prevent="tab = 'screen4'; window.location.hash = 'screen4'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors cursor-pointer rounded-full">{{ hero[locale].screen4 }}</div>
+        <div class="my-4 md:my-8 relative z-10 inline-flex text-center mx-auto p-2 bg-gray-800/20 border border-white/20 rounded-full backdrop-blur">
+            <!-- 🍱 Screenshot menu -->
+            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen1 }}</div>
+            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen2 }}</div>
+            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen3' }" @click.prevent="tab = 'screen3'; window.location.hash = 'screen3'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full md:mr-1">{{ hero[locale].screen3 }}</div>
+            <div :class="{ 'bg-gradient-to-br from-primary to-secondary text-white': tab === 'screen4' }" @click.prevent="tab = 'screen4'; window.location.hash = 'screen4'" class="font-medium text-xs md:text-base px-3 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full">{{ hero[locale].screen4 }}</div>
         </div>
 
         <div class="relative z-0">
+            <!-- 📷 Product screenshots -->
             <div x-cloak x-show="tab === 'screen1'"><img src="../assets/images/screen1.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl" alt=""></div>
             <div x-cloak x-show="tab === 'screen2'"><img src="../assets/images/screen2.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl" alt=""></div>
             <div x-cloak x-show="tab === 'screen3'"><img src="../assets/images/screen3.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl" alt=""></div>
             <div x-cloak x-show="tab === 'screen4'"><img src="../assets/images/screen4.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl" alt=""></div>
             <div class="bg-gradient-to-tl from-primary to-secondary rounded-full absolute -inset-12 z-0 blur-3xl"></div>
+
+            <!-- ✨ Sparkles -->
+            <div class="absolute right-16 -top-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute right-4 -top-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute -left-4 bottom-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute -left-16 bottom-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
+
         </div>
     </div>  
 </div>
