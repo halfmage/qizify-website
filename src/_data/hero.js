@@ -1,7 +1,7 @@
 module.exports = {
     de: {
       title: "Unterrichten vereinfacht",
-      text: "Eine Online-Lernplattform, die es Studenten ermöglicht, durch das Erstellen und Lösen von Quizzen passend zum Studium zu lernen und ihre Leistung zu messen.",
+      text: "Eine Online-Lernplattform, die es Ihren Schülern ermöglicht, durch das Erstellen und Lösen von Quizfragen zu ihrem Studienprogramm zu lernen und gleichzeitig die Leistung zu verfolgen.",
       screen1: "Quizze",
       screen2: "Leistung",
       screen3: "Bestenliste",
@@ -14,7 +14,7 @@ module.exports = {
     },
     en: {
       title: "Teaching simplified",
-      text: "An online learning platform that empowers students to learn by creating and solving quizzes related to their study program while tracking performance.",
+      text: "An online learning platform that empowers your students to learn by creating and solving quizzes related to their study program while tracking performance.",
       screen1: "Quizzes",
       screen2: "Performance",
       screen3: "Leaderboard",
