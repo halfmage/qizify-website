@@ -1,14 +1,14 @@
 <section>
   <div class="container flex py-12 md:py-24 md:flex-row flex-col items-center">
-    <div class="lg:w-6/12 md:w-1/2 w-5/6">
+    <div class="hidden md:block lg:w-6/12 md:w-1/2 w-5/6">
       <img class="image-gradient object-cover object-center rounded-3xl w-full h-96" alt="hero" src="https://images.unsplash.com/photo-1567168544646-208fa5d408fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHVuaXZlcnNpdHl8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
     </div>
-    <div class="lg:flex-grow md:w-9/12 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center text-gray-300">
-      <h2 class="text-headline">
+    <div class="lg:flex-grow md:w-9/12 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-gray-300">
+      <h2 class="text-headline w-full">
         {{ contentForTeachers[locale].title }}
       </h2>
-      <ul>
-        <li class="flex items-center py-2 text-white md:text-lg">
+      <ul class="w-full">
+        <li class="flex py-2 text-white md:text-lg">
           <svg class="w-8 h-8 text-green-600 flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           {{ contentForTeachers[locale].listitem1 }}
         </li>

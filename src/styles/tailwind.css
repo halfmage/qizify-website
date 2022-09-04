@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .text-headline {
-    @apply text-2xl md:text-3xl lg:text-5xl text-white font-bold mb-4 md:mb-8
+    @apply text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-4 md:mb-8
 }
 
 .image-gradient {
