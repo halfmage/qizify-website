@@ -1,6 +1,6 @@
 module.exports = {
   de: {
-    title: "Qizify",
+    title: "Qizify Learning",
     featuresSecureTitle: "Funktionen für die Sicherheit",
     featuresSoftwareTitle: "Funktionen die uns ausmachen",
     latestBlogPosts: "Letzte Blog Artikel",
@@ -8,7 +8,7 @@ module.exports = {
     requestDemo: "Demo anfordern"
   },
   en: {
-    title: "My website",
+    title: "Qizify Learning",
     featuresSecureTitle: "Features for security",
     featuresSoftwareTitle: "Functions that define us",
     latestBlogPosts: "Latest blog posts",
