@@ -17,7 +17,7 @@ module.exports = {
       text: "An online learning platform that empowers your students to learn by creating and solving quizzes related to their study program while tracking performance.",
       screen1: "Quizzes",
       screen2: "Performance",
-      screen3: "Leaderboard",
+      screen3: "Ranking",
       screen4: "Notifications",
       titleBlog: "Blog",
       titleFAQ: "Frequently asked questions",

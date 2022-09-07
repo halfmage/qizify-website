@@ -19,7 +19,7 @@ module.exports = {
             name: "Gerrit Halfmann",
             position: "UI/UX Design",
             description: "Ein begeisterter Gestalter",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, qui dolorem soluta nemo rem molestias atque ipsa, temporibus fuga dolores eveniet. Nostrum odit magni id? Illo nihil ea quam rem beatae odit?"
+            text: "Mit mehr als 10 Jahren Erfahrung, suche ich immer nach spannenden Herausforderungen für meine berufliche Karriere. Eine zukunftsorientierte, komplexe und gleichzeitig einfach zu erfassende Plattform zu gestalten passt da genau rein. Qizify vereint die Möglichkeit, fokussiert und gezielt lernen zu können mit einer gesunden Portion verspielter Interaktivität."
         },
         {
             image: "isabell",
@@ -49,7 +49,7 @@ module.exports = {
             name: "Gerrit Halfmann",
             position: "UI/UX Design",
             description: "Enthusiastic visual creator",
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, qui dolorem soluta nemo rem molestias atque ipsa, temporibus fuga dolores eveniet. Nostrum odit magni id? Illo nihil ea quam rem beatae odit?"
+            text: "With more than 10 years of experience, I am always looking for exciting challenges for my professional career. Designing a future-oriented, complex and at the same time easy-to-understand platform fits right in. Qizify combines the ability to learn competently and purposefully with a healthy dose of playful interactivity."
         },
         {
             image: "isabell",
