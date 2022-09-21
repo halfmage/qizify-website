@@ -5,6 +5,7 @@ module.exports = {
     safelist: [],
     plugins: [
         require('@tailwindcss/typography'),
+        require('@tailwindcss/line-clamp')
     ],
     theme: {
         colors: {
