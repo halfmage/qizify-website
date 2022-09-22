@@ -22,7 +22,7 @@
 }
 
 .blog-card {
-    @apply col-span-12 md:col-span-6 border-2 border-gray-700 rounded-xl overflow-hidden transition-colors hover:border-gray-500
+    @apply col-span-12 md:col-span-12 border-2 border-gray-700 rounded-xl overflow-hidden transition-colors hover:border-gray-500
 }
 
 .container-hero {

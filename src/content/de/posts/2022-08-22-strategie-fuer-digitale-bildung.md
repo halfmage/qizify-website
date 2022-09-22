@@ -1,7 +1,7 @@
 ---
 title: "Strategie für digitale Bildung"
-translationKey: "2022-05-22-strategie-fuer-digitale-bildung"
-image: "../../assets/images/blogpost-test.png"
+translationKey: "2022-08-22-strategie-fuer-digitale-bildung"
+image: "../../assets/images/blog/cover02.png"
 experpt: "Die Digitalisierung erfasst das gesamte gesellschaftliche Leben und den Alltag jedes einzelnen Menschen. Dazu stellten Kultusminister Dr. Ludwig Spaenle und Staatssekretär Georg Eisenreich die Zukunftsstrategie der Bayerischen Staatsregierung „Digitale Bildung in Schule, Hochschule und Kultur“ vor."
 ---
 

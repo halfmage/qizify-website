@@ -1,7 +1,7 @@
 ---
 title: "Lernplattformen für Schüler"
-translationKey: "2022-05-22-lernplattform-fuer-schueler"
-image: "../../assets/images/blogpost-test.png"
+translationKey: "2022-09-05-lernplattform-fuer-schueler"
+image: "../../assets/images/blog/cover01.png"
 experpt: "Lernplattformen für Studierende sind in den letzten Jahren immer beliebter. Unsere Plattform ermöglicht Studierenden den Zugang zu einer Vielzahl von Ressourcen, darunter Lehrvideos, Vorlesungen und Textmaterialien."
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Lernmanagement-System (LMS)"
-translationKey: "2022-05-22-lernmanagement-system"
-image: "../../assets/images/blogpost-test.png"
+translationKey: "2022-09-13-lernmanagement-system"
+image: "../../assets/images/blog/cover03.png"
 experpt: "Ein Lernmanagement-System (LMS) ist eine webbasierte Softwareanwendung, die Online-Kursinhalte und Lernfortschritte verwaltet."
 ---
 
