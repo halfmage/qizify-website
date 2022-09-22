@@ -21,10 +21,6 @@
     box-shadow: 0 8px 16px rgba(0,0,0,.3), 6px 6px 32px 0 rgba(75, 166, 238, .5), -6px -6px 32px 0 rgba(180, 64, 252, .5);
 }
 
-.blog-card {
-    @apply col-span-12 md:col-span-12 border-2 border-gray-700 rounded-xl overflow-hidden transition-colors hover:border-gray-500
-}
-
 .container-hero {
     @apply relative py-12 md:mb-12 container
 }
