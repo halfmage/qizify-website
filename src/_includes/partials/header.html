@@ -12,7 +12,7 @@
       {% for navitem in mainnav[locale] %}
       {% if loop.first %}
       <div class="flex absolute top-6 left-1/2 -translate-x-1/2">{% endif %}
-        <a class="text-gray-400 mx-1 py-2 px-2 xl:px-4 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20 pointer-events-none' if navitem.url in page.url }}" href="{{ navitem.url }}">
+        <a class="text-gray-400 mx-1 py-2 px-2 xl:px-4 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20' if navitem.url in page.url }}" href="{{ navitem.url }}">
           {{ navitem.label }}
         </a>
         {% if loop.last %}
