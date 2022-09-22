@@ -2,7 +2,7 @@
 title: "4 Trends in education industry in 2022"
 translationKey: "2022-08-22-4-trends-in-education-industry-in-2022"
 image: "../../assets/images/blog/cover06.png"
-experpt: "Pariatur eum inventore quidem sint porro esse recusandae expedita quibusdam ullam numquam"
+experpt: "Modern technologies influenced the way students find and process information. In 2020, in particular, the nature of studying changed drastically. The majority of universities and schools had to go online to continue the educational process."
 ---
 
 ## 1. Using effective online tools for teaching
