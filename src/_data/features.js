@@ -19,7 +19,7 @@ module.exports = {
         en: [
         {
             label: "Fully GDPR compliant",
-            text: "We protect personal data of each user and organization according to GDPR data protection guidelines.",
+            text: "We protect personal data of each user and organization according to General Data Protection Regulation (GDPR)",
             image: "feature-eu.png"
         },
         {

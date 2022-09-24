@@ -19,7 +19,7 @@ module.exports = {
         en: [
         {
             label: "Dedicated learning space",
-            text: "We provide a learning space for your university or school.",
+            text: "We provide a dedicated learning space for your university or school.",
             icon: "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
         },
         {
