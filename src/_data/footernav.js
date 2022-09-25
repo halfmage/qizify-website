@@ -1,6 +1,11 @@
 module.exports = {
 de: [
     {
+    label: "Games",
+    url: "https://games.qizify.com",
+    slug: "games"
+    },
+    {
     label: "Impressum",
     url: "/de/imprint",
     slug: "imprint"
@@ -17,6 +22,11 @@ de: [
     }
 ],
 en: [
+    {
+    label: "Games",
+    url: "https://games.qizify.com",
+    slug: "games"
+    },
     {
     label: "Imprint",
     url: "/en/imprint",
