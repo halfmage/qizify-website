@@ -13,6 +13,8 @@ module.exports = {
     contactMail: "Deine E-Mail-Adresse",
     contactMessage: "Deine Nachricht",
     contactSend: "Absenden",
+    contactSuccessTitle: "Vielen Dank für Ihre Nachricht!",
+    contactSuccessSubtitle: "Ihre Nachricht wurde erfolgreich übermittelt.",
     contactKoalendar: "Buchen Sie einen Demo-Termin",
     contactKoalendarSubline: "Ganz bequem einen freien Online-Termin auf Koalendar auswählen.",
     contactBox: "Ich stimme der Datenschutzerklärung zu und stimme zu, von Qizify per E-Mail kontaktiert zu werden. Ich stimme der Speicherung meiner übermittelten Daten für den erforderlichen Zeitraum zu."
@@ -30,6 +32,8 @@ module.exports = {
     contactMail: "Your email",
     contactMessage: "Your message",
     contactSend: "Send",
+    contactSuccessTitle: "Thank you for your message!",
+    contactSuccessSubtitle: "Your message has been sent successfully.",
     contactKoalendar: "Book a demo appointment",
     contactKoalendarSubline: "Easily select a free online appointment on Koalendar.",
     contactBox: "I agree to the privacy policy and I consent to being contacted by Qizify via email. I agree to the storage of my transmitted data for the required period of time."
