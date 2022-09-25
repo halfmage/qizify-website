@@ -1,4 +1,5 @@
 module.exports = {
+  url: "https://qizify.com",
   de: {
     title: "Qizify Learning",
     description: "Qizify Learning ist eine Online-Plattform für Lernende und Lehrende, die mit studiengangsbezogenen Quizzes die Selbstvorbereitung auf Prüfungen erleichtert.",
