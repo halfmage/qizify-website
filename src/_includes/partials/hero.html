@@ -12,7 +12,7 @@
             </p>
         </div>
 
-        <div class="my-6 md:my-8 relative z-10 inline-flex text-center mx-auto p-2 bg-gray-800/20 border border-white/20 rounded-full backdrop-blur" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500">
+        <div class="my-6 md:my-8 relative z-10 inline-flex text-center mx-auto p-2 bg-gray-800/20 border border-white/20 rounded-full backdrop-blur" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
             <!-- 🍱 Screenshot menu -->
             <div :class="{ 'gradient text-white': tab === 'screen1' }" @click.prevent="tab = 'screen1'; window.location.hash = 'screen1'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full mr-1">{{ hero[locale].screen1 }}</div>
             <div :class="{ 'gradient text-white': tab === 'screen2' }" @click.prevent="tab = 'screen2'; window.location.hash = 'screen2'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full mr-1">{{ hero[locale].screen2 }}</div>
@@ -20,13 +20,13 @@
             <div :class="{ 'gradient text-white': tab === 'screen4' }" @click.prevent="tab = 'screen4'; window.location.hash = 'screen4'" class="font-medium text-xs md:text-base px-2 md:px-4 py-2 hover:bg-white/25 transition-colors cursor-pointer rounded-full">{{ hero[locale].screen4 }}</div>
         </div>
 
-        <div class="relative z-0" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500">
+        <div class="relative z-0">
             <!-- 📷 Product screenshots -->
-            <div  x-cloak x-show="tab === 'screen1'"><img src="../assets/images/screen1.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
-            <div x-cloak x-show="tab === 'screen2'"><img src="../assets/images/screen2.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
-            <div x-cloak x-show="tab === 'screen3'"><img src="../assets/images/screen3.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
-            <div x-cloak x-show="tab === 'screen4'"><img src="../assets/images/screen4.png" class="2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
-            <div class="bg-gradient-to-tl from-primary to-secondary rounded-t-xl md:rounded-t-3xl absolute -inset-2 z-0 blur-2xl"></div>
+            <div data-sal="slide-up" data-sal-duration="500" data-sal-delay="400" x-cloak x-show="tab === 'screen1'"><img src="../assets/images/screen1.png" class="border-4 md:border-8 border-b-0 md:border-b-0 border-white/10 2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
+            <div data-sal="slide-up" data-sal-duration="500" data-sal-delay="400" x-cloak x-show="tab === 'screen2'"><img src="../assets/images/screen2.png" class="border-4 md:border-8 border-b-0 md:border-b-0 border-white/10 2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
+            <div data-sal="slide-up" data-sal-duration="500" data-sal-delay="400" x-cloak x-show="tab === 'screen3'"><img src="../assets/images/screen3.png" class="border-4 md:border-8 border-b-0 md:border-b-0 border-white/10 2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
+            <div data-sal="slide-up" data-sal-duration="500" data-sal-delay="400" x-cloak x-show="tab === 'screen4'"><img src="../assets/images/screen4.png" class="border-4 md:border-8 border-b-0 md:border-b-0 border-white/10 2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-3xl" alt=""></div>
+            <div data-sal="slide-up" data-sal-duration="500" data-sal-delay="950" class="bg-gradient-to-tl from-primary to-secondary rounded-t-xl md:rounded-t-3xl absolute -inset-2 z-0 blur-2xl"></div>
 
             <!-- ✨ Sparkles -->
             <div class="absolute right-16 -top-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
