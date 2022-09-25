@@ -2,9 +2,10 @@
 <html lang="{{ locale }}">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}</title>
-
+  <meta name="description" content="{{ description }}">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
@@ -14,8 +15,27 @@
   <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#222222">
   <meta name="theme-color" content="#222">
 
+  <!-- Tailwind and Alpine -->
   <link rel="stylesheet" href="/style.css?v={% version %}"/>
   <script src="/js/alpine.js?v={% version %}" defer></script>
+
+  <!-- Sal.js -->
+  <link rel="stylesheet" href="https://unpkg.com/sal.js@0.8.5/dist/sal.css">
+  <script src="https://unpkg.com/sal.js@0.8.5/dist/sal.js"></script>
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://www.qizify.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qizify Learning - Teaching simplified ">
+  <meta property="og:description" content="Qizify Learning is an online platform for learners and lecturers (a learning management system - LMS) that facilitates self-preparation for exams with the help of quizzes related to a study program.">
+  <meta property="og:image" content="https://www.qizify.com/assets/images/social.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Qizify Learning - Teaching simplified ">
+  <meta name="twitter:description" content="Qizify Learning is an online platform for learners and lecturers (a learning management system - LMS) that facilitates self-preparation for exams with the help of quizzes related to a study program.">
+  <meta name="twitter:image" content="https://www.qizify.com/assets/images/social.png">
+
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col" x-data="{ ContactModal: false }">
   
@@ -41,4 +61,7 @@
   </div>
 
 </body>
+
+<script>sal();</script>
+
 </html>
