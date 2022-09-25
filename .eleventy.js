@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
 	// Assets
   eleventyConfig.addPassthroughCopy('src/assets')
   // eleventyConfig.addPassthroughCopy('src/static')
-  // eleventyConfig.addPassthroughCopy('robots.txt')
+  eleventyConfig.addPassthroughCopy('src/robots.txt')
   
 	// SEO and Opengraph stuff
   eleventyConfig.addPassthroughCopy('src/assets/images/favicon.ico')

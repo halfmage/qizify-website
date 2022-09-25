@@ -24,7 +24,7 @@ module.exports = {
         perUser: "per user",
         monthly: "Monthly Fees",
         adjustments: "adjustments possible",
-        boxListItem1: "Includes lecturer onboarding, software updates and support.",
+        boxListItem1: "Includes lecturer onboarding, software updates, and support.",
         boxListItem2: "The contract period is at least 6 months.",
         boxListItem3: "No automatic contract extension.",
         boxListItem4: "Price discount for large facilities & live demo on request.",

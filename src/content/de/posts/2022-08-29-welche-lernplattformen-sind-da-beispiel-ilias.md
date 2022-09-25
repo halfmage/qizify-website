@@ -1,6 +1,6 @@
 ---
-title: "Lernplattform ILIAS"
-translationKey: "2022-08-29-lernplattform-ilias"
+title: "Welche Lernplattformen sind da? Beispiel: ILIAS"
+translationKey: "2022-08-29-welche-lernplattformen-sind-da-beispiel-ilias"
 image: "../../assets/images/blog/cover04.png"
 experpt: "ILIAS ist ein Lernmanagementsystem (LMS), das von Universitäten und Unternehmen auf der ganzen Welt genutzt wird."
 ---

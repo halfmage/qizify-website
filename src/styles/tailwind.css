@@ -4,6 +4,12 @@
 
 [x-cloak] { display: none !important; }
 
+*[id]:target {
+    padding-top: 200px;
+    margin-top: -200px;
+    outline: 0;
+}
+
 .text-headline {
     @apply text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-4 md:mb-8
 }

@@ -20,7 +20,7 @@ translationKey: "blogpage"
 
 <div class="container">
   {% for post in collections.posts_en | reverse %}
-    <article class="border-b border-gray-700 pb-8 md:pb-12 mb-8 md:mb-12 last:border-b-0">
+    <article class="border-b border-gray-700 pb-8 md:pb-12 mb-8 md:mb-12 last:border-b-0" id="{{ post.data.translationKey }}">
       <a href="{{ post.url }}" class="md:flex items-center hover:brightness-105 transition-all">
         <img class="image-gradient w-full h-48 md:h-60 md:w-56 lg:w-96 rounded-xl object-cover" src="{{ post.data.image }}" />
         <div class="pt-8 md:p-16">

@@ -57,4 +57,6 @@ Teachers face some challenges, as they need to develop soft skills such as leade
 
 ---
 
-Students will learn best when teachers can help them take ownership of their learning.
+![ Your Qizify Learning team](/assets/images/blog/cover09.jpg " Your Qizify Learning team")
+
+> Students will learn best when teachers can help them take ownership of their learning.

@@ -1,11 +1,11 @@
 ---
 title: "What is the focus in education industry in 2022?"
 translationKey: "2022-09-14-what-is-the-focus-in-education-industry-in-2022"
-image: "../../assets/images/blog/cover03.png"
+image: "../../assets/images/blog/cover08.png"
 experpt: "We live in a fast-developing digital age. Things develop quickly, but also quickly become outdated. This process can especially be seen in e-learning: the most cutting-edge technology of today may no longer be relevant tomorrow."
 ---
 
-We live in a fast-developing digital age. Things develop quickly, but also quickly become outdated. This process can especially be seen in e-learning: the most cutting-edge technology of today may no longer be relevant tomorrow. Therefore, it is much more important to focus on those learning trends and tools which will endure as they become part of our learning path. As we get used to the tools we use for studying, they become part of our knowledge.
+We live in a fast-developing digital age. Things develop quickly but also quickly become outdated. This process can especially be seen in e-learning: the most cutting-edge technology of today may no longer be relevant tomorrow. Therefore, it is much more important to focus on those learning trends and tools which will endure as they become part of our learning path. As we get used to the tools we use for studying, they become part of our knowledge.
 
 Propitious new learning programs are constantly appearing in the market. The selection is constantly growing. 
 

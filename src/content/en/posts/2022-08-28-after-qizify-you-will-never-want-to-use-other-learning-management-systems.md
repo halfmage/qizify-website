@@ -5,7 +5,11 @@ image: "../../assets/images/blog/cover05.png"
 experpt: "A learning management system (LMS or Lernmanagement-System (in German) is a platform for the execution of e-learning. Choosing the right learning management system is critical not only for learners, but for universities and schools too."
 ---
 
+> The beautiful thing about learning is nobody can take it away from you.– B.B. King
+
 A learning management system (LMS or Lernmanagement-System (in German) is a platform for the execution of e-learning. Choosing the right learning management system is critical not only for learners, but for universities and schools too. Learning takes time, and it is crucial to invest that time efficiently to get the best results. Nowadays, there are many e-learning providers in the market. But how to find the right tool relevant to your learners' content? How about an application to create this content yourself!
+
+![Qizify Quiz Page](/assets/images/screen1.png "Qizify Quiz Page")
 
 The important criteria for educational institutions are:
 
