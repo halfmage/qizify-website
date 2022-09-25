@@ -46,7 +46,13 @@
 <p class="mt-4">
     <div class="flex text-base">
     <input required type="checkbox" name="agreement" id="agreement" class="rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
-    <label for="agreement" class="ml-4 text-gray-400">{{ site[locale].contactBox }}</label>
+    <label for="agreement" class="ml-4 text-gray-400">
+        {{ site[locale].contactBoxText }}
+        <a class="text-white hover:text-primary" href="/{{locale}}/privacy">{{ site[locale].contactPrivacyLink }}</a>
+        {{ site[locale].contactAnd }}
+        <a class="text-white hover:text-primary" href="/{{locale}}/terms-of-use">{{ site[locale].contactTermsLink }}</a>
+        {{ site[locale].contactBoxText2 }}
+    </label>
     </div>
 </p>
 <p>
