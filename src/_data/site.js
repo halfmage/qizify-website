@@ -1,6 +1,7 @@
 module.exports = {
   de: {
     title: "Qizify Learning",
+    description: "Qizify Learning ist eine Online-Plattform für Lernende und Lehrende, die mit studiengangsbezogenen Quizzes die Selbstvorbereitung auf Prüfungen erleichtert.",
     featuresSecureTitle: "Funktionen für die Sicherheit",
     featuresSoftwareTitle: "Funktionen die uns ausmachen",
     latestBlogPosts: "Letzte Blog Artikel",
@@ -17,6 +18,7 @@ module.exports = {
   },
   en: {
     title: "Qizify Learning",
+    description: "Qizify Learning is an online platform for learners and lecturers that facilitates self-preparation for exams with quizzes related to a study program.",
     featuresSecureTitle: "Features for security",
     featuresSoftwareTitle: "Functions that define us",
     latestBlogPosts: "Latest blog posts",

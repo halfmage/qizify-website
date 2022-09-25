@@ -29,12 +29,12 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPassthroughCopy('robots.txt')
   
 	// SEO and Opengraph stuff
-  // eleventyConfig.addPassthroughCopy('src/static/favicon.ico')
-  // eleventyConfig.addPassthroughCopy('src/static/favicon-16x16.png')
-  // eleventyConfig.addPassthroughCopy('src/static/favicon-32x32.png')
-  // eleventyConfig.addPassthroughCopy('src/static/android-chrome-192x192.png')
-  // eleventyConfig.addPassthroughCopy('src/static/android-chrome-512x512.png')
-  // eleventyConfig.addPassthroughCopy('src/static/site.webmanifest')
+  eleventyConfig.addPassthroughCopy('src/assets/images/favicon.ico')
+  eleventyConfig.addPassthroughCopy('src/assets/images/favicon-16x16.png')
+  eleventyConfig.addPassthroughCopy('src/assets/images/favicon-32x32.png')
+  eleventyConfig.addPassthroughCopy('src/assets/images/android-chrome-192x192.png')
+  eleventyConfig.addPassthroughCopy('src/assets/images/android-chrome-512x512.png')
+  eleventyConfig.addPassthroughCopy('src/assets/images/site.webmanifest')
 
   eleventyConfig.addShortcode('version', function () {
     return now
