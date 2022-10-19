@@ -17,12 +17,12 @@
 # From learning to en
 [[redirects]]
   from = "/learning"
-  to = "/en/:splat"
+  to = "/en"
   status = 302
 
 # Form learning to de
 [[redirects]]
   from = "/learning"
-  to = "/de/:splat"
+  to = "/de"
   status = 302
   conditions = {Language = ["de"]}
