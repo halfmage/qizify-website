@@ -25,7 +25,6 @@ module.exports = function (eleventyConfig) {
 
 	// Assets
   eleventyConfig.addPassthroughCopy('src/assets')
-  eleventyConfig.addPassthroughCopy('src/.htaccess')
   eleventyConfig.addPassthroughCopy('src/robots.txt')
   
 	// SEO and Opengraph stuff
