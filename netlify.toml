@@ -13,3 +13,16 @@
   from = "/*"
   to = "/en/:splat"
   status = 302
+
+# From learning to en
+[[redirects]]
+  from = "/learning"
+  to = "/en/:splat"
+  status = 302
+
+# Form learning to de
+[[redirects]]
+  from = "/learning"
+  to = "/de/:splat"
+  status = 302
+  conditions = {Language = ["de"]}
