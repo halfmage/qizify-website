@@ -7,6 +7,19 @@
   <title>{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}</title>
   <meta name="description" content="{{ site[locale].description }}">
 
+  <!-- Unregister service-workers if exists -->
+  <script>
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          registration.unregister().then(function () {
+            return null
+          })
+        }
+      })
+    })
+  </script>
+
   <!-- 100% privacy friendly analytics -->
   <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
