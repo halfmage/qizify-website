@@ -24,7 +24,7 @@
 
   <a class="inline-block py-2 px-4 rounded-xl text-lg hover:bg-gray-100/10 hover:text-white {{ activeClass }}" href="{{ translatedUrl }}">{{ lgg.label }}</a>
   {% if loop.last %}
-  <a class="whitespace-nowrap ml-4 gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</a>
+  <div class="whitespace-nowrap ml-4 gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
 
   </div>
 

@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}</title>
-  <meta name="description" content="{{ site[local].description }}">
+  <meta name="description" content="{{ site[locale].description }}">
 
   <!-- 100% privacy friendly analytics -->
   <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
@@ -42,7 +42,6 @@
 
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col" x-data="{ ContactModal: false }">
-  
   {% include "partials/header.html" %}
 
   <div class="my-20 md:my-24 flex-1">
