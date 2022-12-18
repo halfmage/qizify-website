@@ -11,12 +11,12 @@ de: [
     slug: "imprint"
     },
     {
-    label: "Datenschutz",
-    url: "/de/privacy",
+    label: "Datenschutzerklaerung",
+    url: "/de/datenschutzerklaerung",
     slug: "privacy"
     },
     {
-    label: "Nutzungsbedingungen",
+    label: "Allgemeine Geschäftsbedingungen (AGB)",
     url: "/de/terms-of-use",
     slug: "terms-of-use"
     }
