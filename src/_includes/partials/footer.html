@@ -9,7 +9,7 @@
       {% for navitem in footernav[locale] %}
       {% if loop.first %}
       <div class="flex flex-col lg:flex-row text-center">{% endif %}
-        <a class="text-gray-400 py-2 px-3 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20 pointer-events-none' if navitem.url in page.url }}" href="{{ navitem.url }}">
+        <a class="ml-1 text-gray-400 py-2 px-3 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20 pointer-events-none' if navitem.url in page.url }}" href="{{ navitem.url }}">
           {{ navitem.label }}
         </a>
         {% if loop.last %}
