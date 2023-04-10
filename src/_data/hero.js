@@ -1,7 +1,8 @@
 module.exports = {
     de: {
-      title: "Unterrichten vereinfacht",
-      text: "Eine Online-Lernplattform, die es Ihren Schülern ermöglicht, durch das Erstellen und Lösen von Quizfragen zu ihrem Studienprogramm zu lernen und gleichzeitig die Leistung zu verfolgen.",
+      title: "Lernende besser stärken.",
+      subtitle: "Lehrkraft-Auslastung reduzieren.",
+      text: "Personalisiertes und spielerisches Lernen mit unserer Plattform. Qizify hilft Ihren Lernenden, mit selbst erstellten Quizfragen, ihren Fortschritt im Studienprogramm mit On-Demand-Support zu verbessern und zu überwachen.",
       screen1: "Quizze",
       screen2: "Leistung",
       screen3: "Bestenliste",
@@ -13,8 +14,9 @@ module.exports = {
       textTeam: "Das Team, das uns erfolgreich gemacht hat"
     },
     en: {
-      title: "Teaching simplified",
-      text: "An online learning platform that empowers your students to learn by creating and solving quizzes related to their study program while tracking performance.",
+      title: "Empower your learners.",
+      subtitle: "Ease educator workload.",
+      text: "Unlock personalized and gamified self-learning and exam preparation with our online platform. Qizify helps your learners improve and monitor progress with self-designed quizzes aligned with study program, and on-demand support.",
       screen1: "Quizzes",
       screen2: "Performance",
       screen3: "Ranking",

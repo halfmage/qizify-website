@@ -11,7 +11,7 @@ module.exports = {
             image: "feature-lock.png"
         },
         {
-            label: "Gehostet & hergestellt in Deutschland",
+            label: "Made with ❤️ in Germany",
             text: "Unsere komplette Server- und Dateninfrastruktur befindet sich innerhalb Deutschland und wird ebenfalls in dort betreut und gepflegt.",
             image: "feature-de.png"
         }
@@ -28,7 +28,7 @@ module.exports = {
             image: "feature-lock.png"
         },
         {
-            label: "Hosted and made in Germany",
+            label: "Made with ❤️ in Germany",
             text: "Our complete server and data infrastructure is located in Germany and is also looked after and maintained there.",
             image: "feature-de.png"
         }

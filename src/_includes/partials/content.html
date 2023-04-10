@@ -1,0 +1,81 @@
+<section class="py-12 md:py-24 ">
+    <div class="container px-4 flex flex-col md:flex-row w-full">
+
+        <div class="md:w-1/2 flex-shrink-0 md:pr-16 mb-16 md:mb-0">
+            <h2 class="font-bold text-primary text-xl uppercase flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" class="mr-4 text-primary w-8 md:w-16">
+                    <path fill="currentColor" d="M53.333 45.334c2.934 0 5.334-2.4 5.334-5.334V10.667c0-2.933-2.4-5.333-5.334-5.333h-28c.8 1.6 1.334 3.466 1.334 5.333h26.666V40h-24v5.334M40 18.666V24H24v34.667h-5.333v-16h-5.334v16H8V37.333H4V24c0-2.933 2.4-5.333 5.333-5.333H40Zm-18.667-8C21.333 13.6 18.933 16 16 16c-2.933 0-5.333-2.4-5.333-5.333 0-2.933 2.4-5.333 5.333-5.333 2.933 0 5.333 2.4 5.333 5.333Zm24 5.333h5.334v21.334h-5.334V16Zm-8 10.667h5.334v10.666h-5.334V26.668Zm-8 0h5.334v10.666h-5.334V26.668Z"/>
+                </svg>
+                {{ contentForTeachers[locale].label }}
+            </h2>
+            <div class="text-headline my-4 md:my-6">
+                {{ contentForTeachers[locale].title }}
+            </div>
+            <p class="text-body">
+                {{ contentForTeachers[locale].text }}
+            </p>
+            <ul class="w-full">
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-primary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForTeachers[locale].listitem1 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-primary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForTeachers[locale].listitem2 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-primary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForTeachers[locale].listitem3 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-primary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForTeachers[locale].listitem4 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-primary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForTeachers[locale].listitem5 }}
+                </li>
+            </ul>
+            <p class="text-body mt-4 md:mt-8">
+                {{ contentForTeachers[locale].subtext }}
+            </p>
+        </div>
+
+        <div class="md:w-1/2 flex-shrink-0 md:pl-16">
+            <h2 class="font-bold text-secondary text-xl uppercase flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" class="mr-4 text-secondary w-8 md:w-16">
+                    <path fill="currentColor" d="M42.666 23.334A10.662 10.662 0 0 1 32 34c-5.893 0-10.667-4.773-10.667-10.666l.294-2.507-8.294-4.16L32 7.333l18.666 9.334V30H48V18l-5.627 2.827.294 2.506ZM32 39.334c11.786 0 21.333 4.773 21.333 10.666v5.334H10.667V50c0-5.893 9.546-10.666 21.333-10.666Z"/>
+                </svg>
+                {{ contentForStudents[locale].label }}
+            </h2>
+            <div class="text-headline my-4 md:my-6">
+                {{ contentForStudents[locale].title }}
+            </div>
+            <ul class="w-full">
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-secondary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForStudents[locale].listitem1 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-secondary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForStudents[locale].listitem2 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-secondary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForStudents[locale].listitem3 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-secondary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForStudents[locale].listitem4 }}
+                </li>
+                <li class="flex items-start py-2 text-white md:text-lg">
+                <svg class="w-6 h-6 mt-0.5 text-secondary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {{ contentForStudents[locale].listitem5 }}
+                </li>
+            </ul>
+            <p class="text-body mt-4 md:mt-8">
+                {{ contentForStudents[locale].subtext }}
+            </p>
+        </div>
+    </div>
+</section>
