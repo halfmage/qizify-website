@@ -1,12 +1,14 @@
 module.exports = {
   de: {
     label: "Für Lernende",
-    title: "Qizify spart Lehrkräften Zeit.",
-    text: "Wir haben gezielt nach den essenziellen Funktionen gesucht, die Studenten und Schüler brauchen, um effektiv zu lernen. Dabei nutzen wir eine optimale Mischung von Leistung, Spieltrieb und Wettbewerb",
-    listitem1: "Erstellen Sie Quizze basierend auf ihren Lerninhalten und teilen Sie sie mit Gruppenkollegen.",
-    listitem2: "Erhalten Sie Karma-Punkte, wenn ihr Quiz von einem Dozenten bestätigt oder von anderen Lernenden gemocht wird, und nehmen Sie an der Rangliste teil.",
-    listitem3: "Spielen Sie Quizzes, die von anderen Lernenden erstellt wurden.",
-    listitem4: "Überprüfung, Analyse und Verbesserung der eigenen Lernleistung.",
+    title: "Spielbasierte Prüfungsvorbereitung für bessere Noten.",
+    text: "Wir haben nach den wesentlichen Funktionen gesucht, die Schülerinnen und Schüler benötigen, um effektiv zu lernen. Wir verwenden eine optimale Mischung aus Leistung, Gamification und Wettbewerb, die für das moderne Lernen geeignet ist.",
+    listitem1: "Erstellen Sie Multiple-Choice-, offene und Bewertungs-Quizze mit Lernmaterial und teilen Sie diese automatisch mit anderen Lernenden.",
+    listitem2: "Verdienen Sie Karma-Punkte durch Quiz-Überprüfung durch Pädagogen oder Likes von anderen Lernenden.",
+    listitem3: "Nehmen Sie am Leaderboard teil.",
+    listitem4: "Spielen Sie Quizze, die von anderen Lernenden erstellt wurden.",
+    listitem5: "Überprüfen, analysieren und verbessern Sie die eigene Lernleistung.",
+    subtext: "Alle Quizze, die von Lernenden oder Pädagogen veröffentlicht wurden, sind automatisch für alle anderen Benutzer innerhalb einer Universität oder Schule verfügbar."    
   },
   en: {
     label: "For learners",

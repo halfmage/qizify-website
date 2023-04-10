@@ -1,11 +1,14 @@
 module.exports = {
   de: {
     label: "Für Lehrkräfte und Dozierende",
-    title: "Spielbasierte Prüfungsvorbereitung für bessere Noten.",
-    listitem1: "Quizze erstellen, prüfen und verifizieren.",
-    listitem2: "Quizautoren Feedback geben, um Kenntnisse und Inhalte zu verbessern.",
-    listitem3: "Die Leistung der Lernenden pro Quiz überprüfen.",
-    listitem4: "Lernende zu geeigneten Lernmaterialien navigieren."
+    title: "Qizify spart wertvolle Zeit für Lehrkräfte.",
+    listitem1: "Analysieren Sie die Leistung Ihrer Lernenden pro Quiz und identifizieren Sie, wo sie Ihre Unterstützung benötigen.",
+    listitem2: "Identifizieren Sie den Lernverlauf pro Thema.",
+    listitem3: "Erstellen und veröffentlichen Sie Ihre eigenen Quizze.",
+    listitem4: "Überprüfen und bestätigen Sie Quizze, die von Ihren Lernenden erstellt wurden.",
+    listitem5: "Geben Sie Feedback an den Autor eines Quiz, um sein Wissen und die Qualität des Quiz zu verbessern.",
+    subtext: "Lernende des nächsten Semesters können bereits erstellte und verifizierte Quizze erneut verwenden."
+    
   },
   en: {
     label: "For lecturers and teachers",
