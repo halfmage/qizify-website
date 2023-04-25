@@ -1,7 +1,7 @@
 module.exports = {
   de: {
     label: "Für Lernende",
-    title: "Spielbasierte Prüfungsvorbereitung für bessere Noten.",
+    title: "Spielbasierte Vorbereitung für Prüfungen und bessere Noten.",
     text: "Wir haben nach den wesentlichen Funktionen gesucht, die Schülerinnen und Schüler benötigen, um effektiv zu lernen. Wir verwenden eine optimale Mischung aus Leistung, Gamification und Wettbewerb, die für das moderne Lernen geeignet ist.",
     listitem1: "Erstellen Sie Multiple-Choice-, offene und Bewertungs-Quizze mit Lernmaterial und teilen Sie diese automatisch mit anderen Lernenden.",
     listitem2: "Verdienen Sie Karma-Punkte durch Quiz-Überprüfung durch Pädagogen oder Likes von anderen Lernenden.",

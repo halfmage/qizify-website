@@ -1,6 +1,6 @@
 module.exports = {
   de: {
-    label: "Für Lehrkräfte und Dozierende",
+    label: "Für Lehrkräfte & Dozierende",
     title: "Qizify spart wertvolle Zeit für Lehrkräfte.",
     listitem1: "Analysieren Sie die Leistung Ihrer Lernenden pro Quiz und identifizieren Sie, wo sie Ihre Unterstützung benötigen.",
     listitem2: "Identifizieren Sie den Lernverlauf pro Thema.",

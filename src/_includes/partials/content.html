@@ -1,20 +1,20 @@
 <section class="py-12 md:py-24 ">
-    <div class="container px-4 flex flex-col md:flex-row w-full">
+    <div class="container px-4 flex flex-col md:flex-row w-full items-stretch">
 
-        <div class="md:w-1/2 flex-shrink-0 md:pr-16 mb-16 md:mb-0">
+        <div class="md:w-1/2 flex-shrink-0 md:pr-16 mb-16 md:mb-0 flex flex-col">
             <h2 class="font-bold text-primary text-xl uppercase flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" class="mr-4 text-primary w-8 md:w-16">
                     <path fill="currentColor" d="M53.333 45.334c2.934 0 5.334-2.4 5.334-5.334V10.667c0-2.933-2.4-5.333-5.334-5.333h-28c.8 1.6 1.334 3.466 1.334 5.333h26.666V40h-24v5.334M40 18.666V24H24v34.667h-5.333v-16h-5.334v16H8V37.333H4V24c0-2.933 2.4-5.333 5.333-5.333H40Zm-18.667-8C21.333 13.6 18.933 16 16 16c-2.933 0-5.333-2.4-5.333-5.333 0-2.933 2.4-5.333 5.333-5.333 2.933 0 5.333 2.4 5.333 5.333Zm24 5.333h5.334v21.334h-5.334V16Zm-8 10.667h5.334v10.666h-5.334V26.668Zm-8 0h5.334v10.666h-5.334V26.668Z"/>
                 </svg>
                 {{ contentForTeachers[locale].label }}
             </h2>
-            <div class="text-headline my-4 md:my-6">
+            <div class="text-2xl md:text-2xl 2xl:text-5xl text-white font-bold mb-4 md:mb-8 my-4 md:my-6">
                 {{ contentForTeachers[locale].title }}
             </div>
             <p class="text-body">
                 {{ contentForTeachers[locale].text }}
             </p>
-            <ul class="w-full">
+            <ul class="w-full mb-4">
                 <li class="flex items-start py-2 text-white md:text-lg">
                 <svg class="w-6 h-6 mt-0.5 text-primary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 {{ contentForTeachers[locale].listitem1 }}
@@ -36,7 +36,7 @@
                 {{ contentForTeachers[locale].listitem5 }}
                 </li>
             </ul>
-            <p class="text-body mt-4 md:mt-8">
+            <p class="text-body mt-auto text-gray-300">
                 {{ contentForTeachers[locale].subtext }}
             </p>
         </div>
@@ -48,10 +48,10 @@
                 </svg>
                 {{ contentForStudents[locale].label }}
             </h2>
-            <div class="text-headline my-4 md:my-6">
+            <div class="text-2xl md:text-2xl 2xl:text-5xl text-white font-bold mb-4 md:mb-8 my-4 md:my-6">
                 {{ contentForStudents[locale].title }}
             </div>
-            <ul class="w-full">
+            <ul class="w-full mb-4">
                 <li class="flex items-start py-2 text-white md:text-lg">
                 <svg class="w-6 h-6 mt-0.5 text-secondary flex-shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 {{ contentForStudents[locale].listitem1 }}
@@ -73,7 +73,7 @@
                 {{ contentForStudents[locale].listitem5 }}
                 </li>
             </ul>
-            <p class="text-body mt-4 md:mt-8">
+            <p class="text-body mt-auto text-gray-300">
                 {{ contentForStudents[locale].subtext }}
             </p>
         </div>
