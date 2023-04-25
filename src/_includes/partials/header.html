@@ -1,7 +1,7 @@
 <div x-data="{ atTop : true }">
 <header class="w-full fixed top-0 left-0 right-0 z-50 transition-all bg-gray-900/75 py-4 md:py-6" :class="{'backdrop-blur-lg' : !atTop}" @scroll.window="atTop = ( window.pageYOffset > 0 ) ? false : true">
 
-  <div class="container flex items-center justify-between">
+  <div class="container px-4 flex items-center justify-between">
     <a href="/{{ locale }}" class="font-bold hover:brightness-125 transition-transform">
       <img class="h-8 md:h-10" src="/assets/images/logo.svg" alt="">
     </a>
