@@ -48,9 +48,21 @@
     <input required type="checkbox" name="agreement" id="agreement" class="rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
     <label for="agreement" class="ml-4 text-gray-400">
         {{ site[locale].contactBoxText }}
-        <a class="text-white hover:text-primary" href="/{{locale}}/privacy">{{ site[locale].contactPrivacyLink }}</a>
+
+        {% if locale === "de" %}
+        <a class="text-white hover:text-primary" href="/de/datenschutzerklaerung">{{ site[locale].contactPrivacyLink }}</a>
+        {% else %}
+        <a class="text-white hover:text-primary" href="/en/privacy">{{ site[locale].contactPrivacyLink }}</a>
+        {% endif %}
+        
         {{ site[locale].contactAnd }}
-        <a class="text-white hover:text-primary" href="/{{locale}}/terms-of-use">{{ site[locale].contactTermsLink }}</a>
+
+        {% if locale === "de" %}
+        <a class="text-white hover:text-primary" href="/de/agb">{{ site[locale].contactTermsLink }}</a>
+        {% else %}
+        <a class="text-white hover:text-primary" href="/en/terms-of-use">{{ site[locale].contactTermsLink }}</a>
+        {% endif %}
+        
         {{ site[locale].contactBoxText2 }}
     </label>
     </div>
