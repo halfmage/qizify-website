@@ -3,7 +3,7 @@
 
   <div class="container px-4 flex items-center justify-between">
     <a href="/{{ locale }}" class="font-bold hover:brightness-125 transition-transform">
-      <img class="h-8 md:h-10" src="/assets/images/logo.svg" alt="">
+      <img class="h-8" src="/assets/images/logo.svg" alt="">
     </a>
 
     {% include "partials/mobile-menu.html" %}
@@ -11,7 +11,7 @@
     <div class="hidden lg:block">
       <div class="flex absolute top-6 left-1/2 -translate-x-1/2">
       {% for navitem in mainnav[locale] %}
-          <a class="text-gray-400 mx-1 py-2 px-2 xl:px-4 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20' if navitem.url in page.url }}" href="{{ navitem.url }}">
+          <a class="py-2 px-2 rounded-xl mx-1 hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20' if navitem.url in page.url }}" href="{{ navitem.url }}">
             {{ navitem.label }}
           </a>
       {% endfor %}

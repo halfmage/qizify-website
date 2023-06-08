@@ -1,6 +1,26 @@
 module.exports = {
   de: [
     {
+      label: "Schulen",
+      url: "/de/pricing",
+      slug: "pricing"
+    },
+    {
+      label: "Universitäten",
+      url: "/de/pricing",
+      slug: "pricing"
+    },
+    {
+      label: "Unternehmen",
+      url: "/de/companies",
+      slug: "companies"
+    },
+    {
+      label: "Coaches",
+      url: "/de/pricing",
+      slug: "pricing"
+    },
+    {
       label: "Preise",
       url: "/de/pricing",
       slug: "pricing"
