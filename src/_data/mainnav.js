@@ -44,6 +44,26 @@ module.exports = {
   ],
   en: [
     {
+      label: "Schools",
+      url: "/en/pricing",
+      slug: "pricing"
+    },
+    {
+      label: "Universities",
+      url: "/en/pricing",
+      slug: "pricing"
+    },
+    {
+      label: "Companies",
+      url: "/en/companies",
+      slug: "companies"
+    },
+    {
+      label: "Coaches",
+      url: "/en/pricing",
+      slug: "pricing"
+    },
+    {
       label: "Pricing",
       url: "/en/pricing",
       slug: "pricing"
