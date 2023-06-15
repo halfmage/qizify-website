@@ -2,13 +2,13 @@ module.exports = {
   de: [
     {
       label: "Schulen",
-      url: "/de/pricing",
-      slug: "pricing"
+      url: "/de/schools",
+      slug: "schools"
     },
     {
       label: "Universitäten",
-      url: "/de/pricing",
-      slug: "pricing"
+      url: "/de/universities",
+      slug: "universities"
     },
     {
       label: "Unternehmen",
@@ -17,8 +17,8 @@ module.exports = {
     },
     {
       label: "Coaches",
-      url: "/de/pricing",
-      slug: "pricing"
+      url: "/de/coaches",
+      slug: "coaches"
     },
     {
       label: "Preise",
@@ -45,13 +45,13 @@ module.exports = {
   en: [
     {
       label: "Schools",
-      url: "/en/pricing",
-      slug: "pricing"
+      url: "/en/schools",
+      slug: "schools"
     },
     {
       label: "Universities",
-      url: "/en/pricing",
-      slug: "pricing"
+      url: "/en/universities",
+      slug: "universities"
     },
     {
       label: "Companies",
@@ -60,8 +60,8 @@ module.exports = {
     },
     {
       label: "Coaches",
-      url: "/en/pricing",
-      slug: "pricing"
+      url: "/en/coaches",
+      slug: "coaches"
     },
     {
       label: "Pricing",
