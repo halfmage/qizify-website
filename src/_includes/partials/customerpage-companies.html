@@ -1,11 +1,11 @@
 <div class="overflow-hidden py-16 md:py-24 border-b border-gray-700">
     <div class="container flex flex-col items-center relative">
         <div data-sal="fade" data-sal-duration="500" data-sal-once>
-            <img class="w-full max-h-[500px] mx-auto -mt-16 md:-mt-24 md:-mb-8" src="../../assets/images/hero-companies.svg" alt="">
+            <img class="border border-white/25 rounded-2xl w-full max-w-screen-md mx-auto mb-6 image-gradient" src="../../assets/images/qizify-dashboard.png" alt="">
             <div class="uppercase text-secondary text-center font-bold tracking-wider text-xs md:text-sm">
                 {{ customers[locale].chl }}
             </div>
-            <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-3xl text-2xl md:my-6 my-4 font-extrabold text-center">
+            <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-3xl text-3xl md:my-6 my-4 font-extrabold text-center">
                 {{ customers[locale].cht }}
             </div>
             <p class="text-center md:text-xl max-w-screen-md mx-auto text-gray-200/75 z-10">
@@ -30,7 +30,7 @@
                 </p>
             </div>
             <div class="order-first md:order-none">
-                <img class="w-full h-auto object-cover rounded-2xl" src="https://images.pexels.com/photos/7013913/pexels-photo-7013913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this1.jpg" alt="">
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
     <div class="container py-12 md:py-24">
         <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
             <div class="order-first md:order-none">
-                <img class="w-full h-auto object-cover rounded-2xl" src="https://images.pexels.com/photos/2873277/pexels-photo-2873277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this5.jpg" alt="">
             </div>
             <div>
                 <h2 class="text-2xl md:text-4xl font-bold">
@@ -72,7 +72,7 @@
                 </p>
             </div>
             <div class="order-first md:order-none">
-                <img class="w-full h-auto object-cover rounded-2xl" src="https://images.pexels.com/photos/2041393/pexels-photo-2041393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this4.jpg" alt="">
             </div>
         </div>
     </div>
@@ -122,12 +122,12 @@
     </div>
 </div>
 
-<div class=" py-6 sm:py-8 lg:py-12">
+<div class="py-12 md:py-24 bg-gradient-to-r from-primary to-secondary">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
 
         <div class="grid gap-4 sm:grid-cols-2 md:gap-8">
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800">
+            <div class="flex items-center bg-gray-800/70 rounded-2xl">
                 <div class="flex items-center p-2 text-green-400 md:p-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -141,7 +141,7 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800">
+            <div class="flex items-center bg-gray-800/70 rounded-2xl">
                 <div class="flex items-center p-2 text-green-400 md:p-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -155,7 +155,7 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800">
+            <div class="flex items-center bg-gray-800/70 rounded-2xl">
                 <div class="flex items-center p-2 text-green-400 md:p-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -169,7 +169,7 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800">
+            <div class="flex items-center bg-gray-800/70 rounded-2xl">
                 <div class="flex items-center p-2 text-green-400 md:p-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -182,5 +182,12 @@
             </div>
             <!-- feature - end -->
         </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24 bg-gray-800">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8 text-center">   
+        <h2 class="text-headline-sm">{{ site[locale].requestDemo }}</h2> 
+        <a class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer inline-block" @click="ContactModal = true">{{ site[locale].requestDemo }}</a>
     </div>
 </div>

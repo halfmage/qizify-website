@@ -1,5 +1,5 @@
 module.exports = {
-    de: {
+    en: {
             st: "Schulen",
             shl: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             sht: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -12,7 +12,7 @@ module.exports = {
             
             ct: "Unternehmen",
             chl: "Qizify Learning for companies",
-            cht: "A dedicated platform for your employee's knowledge sharing, growth and engagement",
+            cht: "A dedicated platform for your employee's knowledge sharing, growth, peer-to-peer mentoring, and engagement.",
             chp: "",
             ct_feature1_Headline: "Peer-to-peer mentoring support",
             ct_feature1_Headline2: "Let specialists in your company learn from each other and feel that they belong!",
@@ -29,8 +29,8 @@ module.exports = {
             ct_other2_Text: "By gamifying the learning experience, Qizify enhances employee engagement and motivation. Employees can earn Karma points through quiz verification by trainers or likes from their colleagues, creating a sense of achievement and friendly competition. Additionally, participating in leaderboards and playing quizzes created by others adds an element of fun and excitement, making the learning process more enjoyable and encouraging active participation.",
             ct_other3_Headline: "Centralized Repository of Quizzes for Consistent Learning",
             ct_other3_Text: "Qizify provides a centralized repository of relevant information within a company, ensuring consistent learning experiences across teams and departments. Quizzes created by employees or trainers are automatically available to all other users, promoting knowledge sharing and standardization of learning materials. This helps companies maintain a cohesive learning environment and facilitates the seamless transfer of knowledge and skills.",
-            ct_addon1: "Content generation is supported by AI-Assistant.",
-            ct_addon2: "5000 ready-made quizzes on topics like leadership, cyber-security, programming, etc.",
+            ct_addon1: "Content generation is supported by AI-Assistant. Create relevant for your company quizzes 15 times faster!",
+            ct_addon2: "5000 ready-made quizzes on hot topics (Leadership, cyber-security, programming, etc)",
             ct_addon3: "Higher security with SSO integration",
             ct_addon4: "Custom company branding at request",
 
@@ -39,7 +39,7 @@ module.exports = {
                 csht: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 cshp: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
-    en: {
+    de: {
             st: "Schulen",
             shl: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             sht: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -49,21 +49,31 @@ module.exports = {
             uhl: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             uht: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             uhp: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-
-            c: "Unternehmen",
-            chl: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            cht: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            chp: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-
-            ct_feature1_Headline: "Peer-to-peer mentoring support",
-            ct_feature1_Headline2: "Let specialists in your company learn from each other and feel that they belong!",
-            ct_feature1_Text1: "Employees can create quizzes based on their expertise and answer questions from colleagues on a topic, enabling them to benefit from specialists´ insights. This fosters a culture of knowledge exchange, where employees can learn from each other and leverage their collective expertise for mutual growth and innovation.",
+            
+            ct: "Unternehmen",
+            chl: "Qizify Learning für Unternehmen",
+            cht: "Eine dedizierte Plattform für den Wissensaustausch Ihrer Mitarbeiter.",
+            chp: "",
+            ct_feature1_Headline: "Unterstützung durch Peer-to-Peer-Mentoring",
+            ct_feature1_Headline2: "Lassen Sie Fachleute in Ihrem Unternehmen voneinander lernen und sich zugehörig fühlen!",
+            ct_feature1_Text1: "Mitarbeiter können Quizze basierend auf ihrem Fachwissen erstellen und Fragen von Kollegen zu einem bestimmten Thema beantworten, was es ihnen ermöglicht, von den Erkenntnissen der Fachleute zu profitieren. Dadurch wird eine Kultur des Wissensaustauschs gefördert, in der Mitarbeiter voneinander lernen und ihr gemeinsames Fachwissen für gegenseitiges Wachstum und Innovation nutzen können.",
             ct_feature2_Headline: "Upskilling",
-            ct_feature2_Headline2: "Boost Employee Learning and Skills Development.",
-            ct_feature2_Text1: "Unlock the potential of your employees without external support! Quickly generate and tailor relevant for your company's interactive learning content. Our platform allows your employees to identify the level of expertise in a topic and engages with quizzes aligned with their professional development goals, while your company fosters a culture of continuous learning. Employees can improve their skills, acquire new knowledge, and stay up-to-date with industry trends, enhancing job performance and company satisfaction.",
+            ct_feature2_Headline2: "Steigern Sie das Lernen und die Kompetenzentwicklung Ihrer Mitarbeiter. Entfesseln Sie das Potenzial Ihrer Mitarbeiter ohne externe Unterstützung!",
+            ct_feature2_Text1: "Generieren Sie schnell und maßgeschneiderte, relevante interaktive Lerninhalte für Ihr Unternehmen. Unsere Plattform ermöglicht es Ihren Mitarbeitern, ihr Kompetenzniveau in einem Thema zu bestimmen und sich mit Quizzen zu beschäftigen, die auf ihre beruflichen Entwicklungsziele ausgerichtet sind, während Ihr Unternehmen eine Kultur des kontinuierlichen Lernens fördert. Mitarbeiter können ihre Fähigkeiten verbessern, neues Wissen erwerben und auf dem neuesten Stand der Branchentrends bleiben, um die Arbeitsleistung und die Zufriedenheit im Unternehmen zu steigern.",
             ct_feature3_Headline: "Onboarding",
-            ct_feature3_Headline2: "Before the new employee joins the company, you can create pre-onboarding quizzes that provide essential information about the company, its values, culture, policies, and procedures, team introductions, product knowledge, compliance training, and more.",
-            ct_feature3_Text1: "Use Qizify to develop quizzes that cover various aspects of the onboarding process, including orientation sessions and training modules. It provides new employees with an interactive and engaging way to absorb the necessary information. By leveraging Qizify for employee onboarding, companies can streamline the process, ensure consistent delivery of information, and create an engaging and interactive learning experience for new hires. It not only accelerates the onboarding timeline but also sets the foundation for continuous learning and growth within the organization.",
+            ct_feature3_Headline2: "Vor dem Einstieg neuer Mitarbeiter können Sie vorbereitende Quizze erstellen, die wichtige Informationen über Ihr Unternehmen, Werte, Kultur, Richtlinien, Teamvorstellungen, Produktkenntnisse, Schulungen und mehr vermitteln.",
+            ct_feature3_Text1: "Qizify ermöglicht interaktive Quizze für die Einführung, einschließlich Orientierung und Schulung. Ihre neue Mitarbeiter können so auf engagierte Weise die notwendigen Informationen aufnehmen. Mit Qizify wird die Mitarbeiter-Einführung optimiert, die Informationsvermittlung ist konsistent und es entsteht ein ansprechendes Lernerlebnis. Dadurch beschleunigt sich die Einführung und es wird eine Grundlage für kontinuierliches Lernen und Wachstum geschaffen.",
+
+            ct_other1_Headline: "Effiziente Leistungsanalyse für das Wachstum Ihrer Mitarbeiter",
+            ct_other1_Text: "Qizify unterstützt Unternehmen dabei, die Leistung ihrer Mitarbeiter bei Quizzen zu analysieren und Bereiche zu identifizieren, in denen zusätzliche Unterstützung oder Schulungen erforderlich sein können. Durch das Verständnis der Stärken und Schwächen Ihrer Belegschaft können Sie Ihre Schulungsprogramme an spezifische Bedürfnisse anpassen, was zu gezielter Kompetenzentwicklung und insgesamt verbesserten Leistungen führt.",
+            ct_other2_Headline: "Steigern Sie die Mitarbeiterbindung und Motivation",
+            ct_other2_Text: "Durch die Integration von Spielmechaniken in das Lernerlebnis fördert Qizify die Mitarbeiterbindung und Motivation. Mitarbeiter können Karma-Punkte durch Quizbestätigung durch Trainer oder Likes von Kollegen verdienen, was ein Gefühl von Erfolg und freundlichem Wettbewerb schafft. Darüber hinaus sorgen Teilnahme an Bestenlisten und das Spielen von Quizzen, die von anderen erstellt wurden, für Spaß und Spannung, was den Lernprozess angenehmer gestaltet und aktive Teilnahme fördert.",
+            ct_other3_Headline: "Zentralisiertes Repository relevanter Quizze für konsistentes Lernen, die für Sie relevant sind.",
+            ct_other3_Text: "Qizify bietet ein zentralisiertes Repository relevanter Informationen innerhalb eines Unternehmens und gewährleistet so konsistente Lernerfahrungen über Teams und Abteilungen hinweg. Quizze, die von Mitarbeitern oder Trainern erstellt werden, stehen automatisch allen anderen Benutzern zur Verfügung und fördern den Wissensaustausch und die Standardisierung von Lernmaterialien. Dies hilft Unternehmen dabei, eine kohärente Lernumgebung aufrechtzuerhalten und den nahtlosen Transfer von Wissen und Fähigkeiten zu erleichtern.",
+            ct_addon1: "Die Inhaltsentwicklung wird durch KI-Assistenten unterstützt. Erstellen Sie Quizze, die für Ihr Unternehmen relevant sind, 15-mal schneller!",
+            ct_addon2: "5000 vorgefertigte Quizze zu aktuellen Themen (Leadership, Cybersicherheit, Programmierung, usw.)",
+            ct_addon3: "Mehr Sicherheit dank SSO-Integration",
+            ct_addon4: "Auf Ihr Unternehmen zugeschnittene Anpassungen",
 
             cst: "Coaches",
             cshl: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
