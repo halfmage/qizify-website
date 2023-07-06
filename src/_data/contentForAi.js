@@ -1,7 +1,7 @@
 module.exports = {
     de: {
         badge: "Quizze 15-mal schneller mit KI erstellen!",
-        learnmore: "Mehr erfahren",
+        learnmore: "Mehr",
         title: "Quizze 15-mal schneller erstellen!",
         text: "Entdecken Sie unsere innovative Funktion, die Lernenden und Lehrenden ermöglicht, innerhalb ihrer Organisation relevante Bewertungen 15-mal schneller zu erstellen, überprüfen, anzupassen und zu teilen! Verabschieden Sie sich von zeitaufwändiger Prüfungsvorbereitung und der Erstellung obligatorischer Tests. Erreichen Sie eine neue Ebene der Bildungsexzellenz mit Leichtigkeit.",
         list1: "KI füllt Fragekarten automatisch für die Überprüfung und Anpassung durch Menschen aus und spart dabei 93% wertvolle Zeit.",
