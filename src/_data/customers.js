@@ -12,7 +12,7 @@ module.exports = {
             
             ct: "Unternehmen",
             chl: "Qizify Learning for companies",
-            cht: "A dedicated platform for your employee's knowledge sharing, growth, peer-to-peer mentoring, and engagement.",
+            cht: "A dedicated platform for your employee's knowledge exchange",
             chp: "",
             ct_feature1_Headline: "Peer-to-peer mentoring support",
             ct_feature1_Headline2: "Let specialists in your company learn from each other and feel that they belong!",
