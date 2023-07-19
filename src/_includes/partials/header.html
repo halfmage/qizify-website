@@ -11,7 +11,7 @@
     <div class="hidden lg:block">
       <div class="flex absolute top-6 left-1/2 -translate-x-1/2">
       {% for navitem in mainnav[locale] %}
-          <a class="py-2 px-2 rounded-xl mx-1 hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20' if navitem.url in page.url }}" href="{{ navitem.url }}">
+          <a class="py-2 px-2 rounded-xl mr-1 hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20' if navitem.url in page.url }}" href="{{ navitem.url }}">
             {{ navitem.label }}
           </a>
       {% endfor %}

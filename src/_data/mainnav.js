@@ -1,9 +1,24 @@
 module.exports = {
   de: [
     {
-      label: "Für Unternehmen",
+      label: "Schulen",
+      url: "/de/schools",
+      slug: "schools"
+    },
+    {
+      label: "Universitäten",
+      url: "/de/universities",
+      slug: "universities"
+    },
+    {
+      label: "Unternehmen",
       url: "/de/companies",
       slug: "companies"
+    },
+    {
+      label: "Coaches",
+      url: "/de/coaches",
+      slug: "coaches"
     },
     {
       label: "Preise",
@@ -29,9 +44,24 @@ module.exports = {
   ],
   en: [
     {
-      label: "For Companies",
+      label: "Schools",
+      url: "/en/schools",
+      slug: "schools"
+    },
+    {
+      label: "Universities",
+      url: "/en/universities",
+      slug: "universities"
+    },
+    {
+      label: "Companies",
       url: "/en/companies",
       slug: "companies"
+    },
+    {
+      label: "Coaches",
+      url: "/en/coaches",
+      slug: "coaches"
     },
     {
       label: "Pricing",

@@ -1,81 +1,29 @@
-<div class="overflow-hidden py-16 md:py-24 border-b border-gray-700">
-    <div class="container flex flex-col items-center relative">
-        <div data-sal="fade" data-sal-duration="500" data-sal-once>
-            <img class="border border-white/25 rounded-2xl w-full max-w-screen-md mx-auto mb-6 image-gradient" src="../../assets/images/qizify-dashboard.png" alt="">
-            <div class="uppercase text-secondary text-center font-bold tracking-wider text-xs md:text-sm">
-                {{ customers[locale].chl }}
-            </div>
-            <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-3xl text-3xl md:my-6 my-4 font-extrabold text-center">
+<div class="overflow-hidden pt-16 bg-gray-900 border-b border-gray-700">
+    <div class="container flex flex-col items-center justify-center relative">
+
+        <div data-sal="fade" data-sal-duration="500" data-sal-once class="flex flex-col justify-center mb-12">
+            <div class="max-w-screen-xl mx-auto lg:text-6xl md:text-3xl text-2xl md:mb-6 mb-4 font-extrabold text-center">
+                <!-- Hero main headline -->
                 {{ customers[locale].cht }}
             </div>
             <p class="text-center md:text-xl max-w-screen-md mx-auto text-gray-200/75 z-10">
+                <!-- Hero subtitle / text -->
                 {{ customers[locale].chp }}
             </p>
         </div>
+
+        <div class="relative z-0 sm:h-[288px] md:h-[352px] lg:h-[384px] 2xl:h-[512px]" data-sal="fade" data-sal-duration="500" data-sal-delay="400" data-sal-once>
+            <!-- 📷 Product screenshots -->
+            <div x-cloak"><img src="../../assets/images/qizify-dashboard.png" class="image-gradient 2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-xl" alt=""></div>
+
+            <!-- ✨ Sparkles -->
+            <div class="absolute right-16 -top-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-24 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-24 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute right-4 -top-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute -left-4 bottom-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-24 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-24 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute -left-16 bottom-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
+
+        </div>
     </div>  
-</div>
-
-<div class="bg-gray-800">
-    <div class="container py-12 md:py-24">
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
-            <div>
-                <h2 class="text-2xl md:text-4xl font-bold">
-                    {{ customers[locale].ct_feature1_Headline }}
-                </h2>
-                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
-                    {{ customers[locale].ct_feature1_Headline2 }}
-                </p>
-                <p class="leading-relaxed text-gray-400">
-                    {{ customers[locale].ct_feature1_Text1 }}
-                </p>
-            </div>
-            <div class="order-first md:order-none">
-                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this1.jpg" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="bg-gray-800">
-    <div class="container py-12 md:py-24">
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
-            <div class="order-first md:order-none">
-                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this5.jpg" alt="">
-            </div>
-            <div>
-                <h2 class="text-2xl md:text-4xl font-bold">
-                    {{ customers[locale].ct_feature2_Headline }}
-                </h2>
-                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
-                    {{ customers[locale].ct_feature2_Headline2 }}
-                </p>
-                <p class="leading-relaxed text-gray-400">
-                    {{ customers[locale].ct_feature2_Text1 }}
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="bg-gray-800">
-    <div class="container py-12 md:py-24">
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
-            <div>
-                <h2 class="text-2xl md:text-4xl font-bold">
-                    {{ customers[locale].ct_feature3_Headline }}
-                </h2>
-                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
-                    {{ customers[locale].ct_feature3_Headline2 }}
-                </p>
-                <p class="leading-relaxed text-gray-400">
-                    {{ customers[locale].ct_feature3_Text1 }}
-                </p>
-            </div>
-            <div class="order-first md:order-none">
-                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this4.jpg" alt="">
-            </div>
-        </div>
-    </div>
 </div>
 
 <div class="container py-12 md:py-24">
@@ -122,61 +70,120 @@
     </div>
 </div>
 
-<div class="py-12 md:py-24 bg-gradient-to-r from-primary to-secondary">
+<div class="bg-gray-800">
+    <div class="container py-12 md:py-24">
+        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold">
+                    {{ customers[locale].ct_feature1_Headline }}
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
+                    {{ customers[locale].ct_feature1_Headline2 }}
+                </p>
+                <p class="leading-relaxed text-gray-400">
+                    {{ customers[locale].ct_feature1_Text1 }}
+                </p>
+            </div>
+            <div class="order-first md:order-none">
+                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gray-900">
+    <div class="container py-12 md:py-24">
+        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
+            <div class="order-first md:order-none">
+                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this5.jpg" alt="">
+            </div>
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold">
+                    {{ customers[locale].ct_feature2_Headline }}
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
+                    {{ customers[locale].ct_feature2_Headline2 }}
+                </p>
+                <p class="leading-relaxed text-gray-400">
+                    {{ customers[locale].ct_feature2_Text1 }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gray-800">
+    <div class="container py-12 md:py-24">
+        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold">
+                    {{ customers[locale].ct_feature3_Headline }}
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
+                    {{ customers[locale].ct_feature3_Headline2 }}
+                </p>
+                <p class="leading-relaxed text-gray-400">
+                    {{ customers[locale].ct_feature3_Text1 }}
+                </p>
+            </div>
+            <div class="order-first md:order-none">
+                <img class="w-full h-auto object-cover rounded-2xl" src="../../assets/images/this4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
 
-        <div class="grid gap-4 sm:grid-cols-2 md:gap-8">
+        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-8">
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800/70 rounded-2xl">
-                <div class="flex items-center p-2 text-green-400 md:p-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                </div>
-
-                <div class="p-4 md:p-6">
+            <div class="p-1 bg-gradient-to-br from-primary to-secondary rounded-3xl">
+                <div class="bg-gray-900 rounded-2xl h-full p-4 md:p-8">
+                    <div class="flex text-green-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
                     <h3 class="text-lg font-semibold md:text-xl">{{ customers[locale].ct_addon1 }}</h3>
                 </div>
             </div>
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800/70 rounded-2xl">
-                <div class="flex items-center p-2 text-green-400 md:p-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                </div>
-
-                <div class="p-4 md:p-6">
+            <div class="p-1 bg-gradient-to-br from-primary to-secondary rounded-3xl">
+                <div class="bg-gray-900 rounded-2xl h-full p-4 md:p-8">
+                    <div class="flex text-green-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
                     <h3 class="text-lg font-semibold md:text-xl">{{ customers[locale].ct_addon2 }}</h3>
                 </div>
             </div>
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800/70 rounded-2xl">
-                <div class="flex items-center p-2 text-green-400 md:p-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                </div>
-
-                <div class="p-4 md:p-6">
+            <div class="p-1 bg-gradient-to-br from-primary to-secondary rounded-3xl">
+                <div class="bg-gray-900 rounded-2xl h-full p-4 md:p-8">
+                    <div class="flex text-green-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
                     <h3 class="text-lg font-semibold md:text-xl">{{ customers[locale].ct_addon3 }}</h3>
                 </div>
             </div>
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="flex items-center bg-gray-800/70 rounded-2xl">
-                <div class="flex items-center p-2 text-green-400 md:p-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                </div>
-
-                <div class="p-4 md:p-6">
+            <div class="p-1 bg-gradient-to-br from-primary to-secondary rounded-3xl">
+                <div class="bg-gray-900 rounded-2xl h-full p-4 md:p-8">
+                    <div class="flex text-green-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
                     <h3 class="text-lg font-semibold md:text-xl">{{ customers[locale].ct_addon4 }}</h3>
                 </div>
             </div>

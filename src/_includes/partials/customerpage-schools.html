@@ -1,16 +1,50 @@
-<div class="overflow-hidden py-16 md:py-24 border-b border-gray-700">
-    <div class="container flex flex-col items-center relative">
-        <div data-sal="fade" data-sal-duration="500" data-sal-once>
-            <img class="w-full max-h-[500px] mx-auto -mt-16 md:-mt-24 md:-mb-8" src="../../assets/images/hero-companies.svg" alt="">
-            <div class="uppercase text-secondary text-center font-bold tracking-wider text-xs md:text-sm">
-                {{ customers[locale].shl }}
-            </div>
-            <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-3xl text-2xl md:my-6 my-4 font-extrabold text-center">
-                {{ customers[locale].sht }}
+<div class="overflow-hidden pt-16 bg-gray-900 border-b border-gray-700">
+    <div class="container flex flex-col items-center justify-center relative">
+
+        <div data-sal="fade" data-sal-duration="500" data-sal-once class="flex flex-col justify-center mb-12">
+            <div class="max-w-screen-xl mx-auto lg:text-6xl md:text-3xl text-2xl md:mb-6 mb-4 font-extrabold text-center">
+                <!-- Hero main headline -->
+                {{ contentSchools[locale].heroTitle }}
             </div>
             <p class="text-center md:text-xl max-w-screen-md mx-auto text-gray-200/75 z-10">
-                {{ customers[locale].shp }}
+                <!-- Hero subtitle / text -->
+                {{ contentSchools[locale].heroText }}
             </p>
+        </div>
+
+        <div class="relative z-0 sm:h-[288px] md:h-[352px] lg:h-[384px] 2xl:h-[512px]" data-sal="fade" data-sal-duration="500" data-sal-delay="400" data-sal-once>
+            <!-- 📷 Product screenshots -->
+            <div x-cloak"><img src="../../assets/images/qizify-dashboard.png" class="image-gradient 2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-xl" alt=""></div>
+
+            <!-- ✨ Sparkles -->
+            <div class="absolute right-16 -top-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-24 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-24 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute right-4 -top-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute -left-4 bottom-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-24 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-24 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute -left-16 bottom-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
+
         </div>
     </div>  
 </div>
+
+<div class="">
+    <div class="container px-4 py-12 md:py-24">
+        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold">
+                    {{ contentSchools[locale].Content_1_Title }}
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
+                    {{ contentSchools[locale].Content_1_Subtitle }}
+                </p>
+                <p class="leading-relaxed text-gray-400">
+                    {{ contentSchools[locale].Content_1_Text }}
+                </p>
+            </div>
+            <div class="order-first md:order-none">
+                <video class="w-full h-auto object-cover rounded-2xl" src="../../assets/videos/a-woman-teaching-her-students-using-computer.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "partials/content.html" %}

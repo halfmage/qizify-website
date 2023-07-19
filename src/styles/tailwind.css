@@ -29,7 +29,7 @@ html {
 }
 
 .gradient {
-    @apply bg-gradient-to-r from-primary via-[#8B43FE] to-secondary;
+    @apply bg-gradient-to-br from-primary via-[#8B43FE] to-secondary;
     box-shadow: 0 8px 16px rgba(0,0,0,.3), 6px 6px 32px 0 rgba(75, 166, 238, .5), -6px -6px 32px 0 rgba(180, 64, 252, .5);
 }
 
