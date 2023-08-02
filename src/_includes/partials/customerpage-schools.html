@@ -1,4 +1,4 @@
-<div class="overflow-hidden pt-16 bg-gray-900 border-b border-gray-700">
+<div class="overflow-hidden pt-16 bg-gradient-to-b from-gray-900 border-b border-gray-700">
     <div class="container flex flex-col items-center justify-center relative">
 
         <div data-sal="fade" data-sal-duration="500" data-sal-once class="flex flex-col justify-center mb-12">
@@ -26,24 +26,26 @@
     </div>  
 </div>
 
-<div class="">
-    <div class="container px-4 py-12 md:py-24">
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
-            <div>
-                <h2 class="text-2xl md:text-4xl font-bold">
-                    {{ contentEducation[locale].Content_1_Title }}
-                </h2>
-                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
-                    {{ contentEducation[locale].Content_1_Subtitle }}
-                </p>
-                <p class="leading-relaxed text-gray-400">
-                    {{ contentEducation[locale].Content_1_Text }}
-                </p>
-            </div>
-            <div class="order-first md:order-none">
-                <video class="w-full h-auto object-cover rounded-2xl" src="../../assets/videos/professor-teaching-the-students-in-the-classroom.mp4" muted autoplay loop></video>
-            </div>
-        </div>
+<div class="py-12 md:py-48">
+    <div class="max-w-screen-md px-4 mx-auto text-center relative">
+        <h2 class="text-2xl md:text-2xl 2xl:text-5xl text-white font-medium tracking-tight">
+            {{ contentEducation[locale].Content_1_Title }}
+        </h2>
+        <video
+            class="w-full h-auto object-cover rounded-xl my-12 image-gradient"
+            src="../../assets/videos/professor-teaching-the-students-in-the-classroom.mp4"
+            muted
+            autoplay
+            loop
+            data-sal="zoom-out" data-sal-duration="2000" data-sal-delay="0"
+        >
+        </video>
+        <p class="mt-8 max-w-prose text-xl text-gray-300" data-sal="zoom-out" data-sal-duration="2000" data-sal-delay="250">
+            {{ contentEducation[locale].Content_1_Subtitle }}
+        </p>
+        <p class="mt-8 max-w-prose text-xl text-gray-300" data-sal="zoom-out" data-sal-duration="2000" data-sal-delay="500">
+            {{ contentEducation[locale].Content_1_Text }}
+        </p>
     </div>
 </div>
 
@@ -53,60 +55,66 @@
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <h2 class="text-headline-sm text-center">{{ contentEducation[locale].Use_Case_Title }}</h2> 
         <div class="grid gap-4 grid-cols-1 md:grid-cols-3 md:gap-12">
-            <div class="">
-                <img src="../../assets/images/qizify-quizzes.png" class="h-64 object-cover w-full mb-6 border border-gray-600 rounded-2xl" alt="">
-                <h3 class="text-lg font-medium md:text-xl mb-2">{{ contentEducation[locale].Use_Case_1_Title }}</h3>
-                <p class="text-gray-300">{{ contentEducation[locale].Use_Case_1_Text }}</p>
+            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-800" data-sal="slide-up" data-sal-duration="500" data-sal-delay="0">
+                <img src="../../assets/images/qizify-quizzes.png" class="h-64 object-cover w-full" alt="qizify-quizzes">
+                <div class="p-6">
+                    <h3 class="text-lg font-medium md:text-2xl mb-2">{{ contentEducation[locale].Use_Case_1_Title }}</h3>
+                    <p class="text-gray-300 text-sm">{{ contentEducation[locale].Use_Case_1_Text }}</p>
+                </div>
             </div>
 
-            <div class="">
-                <img src="../../assets/images/qizify-question.png" class="h-64 object-cover w-full mb-6 border border-gray-600 rounded-2xl" alt="">
-                <h3 class="text-lg font-medium md:text-xl mb-2">{{ contentEducation[locale].Use_Case_2_Title }}</h3>
-                <p class="text-gray-300">{{ contentEducation[locale].Use_Case_2_Text }}</p>
+            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-800" data-sal="slide-down" data-sal-duration="500" data-sal-delay="250">
+                <img src="../../assets/images/qizify-question.png" class="h-64 object-cover w-full" alt="qizify-question">
+                <div class="p-6">
+                    <h3 class="text-lg font-medium md:text-2xl mb-2">{{ contentEducation[locale].Use_Case_2_Title }}</h3>
+                    <p class="text-gray-300 text-sm">{{ contentEducation[locale].Use_Case_2_Text }}</p>
+                </div>
             </div>
 
-            <div class="">
-                <img src="../../assets/images/qizify-assesment.png" class="h-64 object-cover w-full mb-6 border border-gray-600 rounded-2xl" alt="">
-                <h3 class="text-lg font-medium md:text-xl mb-2">{{ contentEducation[locale].Use_Case_3_Title }}</h3>
-                <p class="text-gray-300">{{ contentEducation[locale].Use_Case_3_Text }}</p>
+            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-800" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500">
+                <img src="../../assets/images/qizify-assesment.png" class="h-64 object-cover w-full" alt="qizify-assesment">
+                <div class="p-6">
+                    <h3 class="text-lg font-medium md:text-2xl mb-2">{{ contentEducation[locale].Use_Case_3_Title }}</h3>
+                    <p class="text-gray-300 text-sm">{{ contentEducation[locale].Use_Case_3_Text }}</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="py-12 md:py-24 bg-gradient-to-b from-gray-900 to-primary/20">
-    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+<div class="py-12 md:py-24 bg-gradient-to-r from-fuchsia-500 to-cyan-500">
+    <div class="mx-auto max-w-screen-xl px-4 md:px-8">
         <h2 class="text-headline-sm text-center">{{ contentEducation[locale].Feature_Title }}</h2> 
-        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 md:gap-8 mb-4 md:mb-8">
-            <div class="bg-gray-900/75 border border-primary/25 rounded-2xl h-full p-4 md:p-6">
-                <svg class="w-12 mb-4 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>shape</title><path fill="currentColor" d="M11,13.5V21.5H3V13.5H11M12,2L17.5,11H6.5L12,2M17.5,13C20,13 22,15 22,17.5C22,20 20,22 17.5,22C15,22 13,20 13,17.5C13,15 15,13 17.5,13Z" /></svg>
-                <h3 class="text-lg font-semibold md:text-xl mb-4">{{ contentEducation[locale].Feature_1_Title }}</h3>
+        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 md:gap-12 mb-4 md:mb-8">
+
+            <div data-sal="flip-up" data-sal-duration="750" data-sal-delay="0" class="border border-gray-800 bg-gradient-to-b from-gray-900 to-primary/10 rounded-2xl h-full p-4 md:p-10 flex flex-col items-center text-center">
+                <svg class="w-16 mb-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>shape</title><path fill="currentColor" d="M11,13.5V21.5H3V13.5H11M12,2L17.5,11H6.5L12,2M17.5,13C20,13 22,15 22,17.5C22,20 20,22 17.5,22C15,22 13,20 13,17.5C13,15 15,13 17.5,13Z" /></svg>
+                <h3 class="text-2xl md:text-2xl 2xl:text-4xl text-white font-medium tracking-tight mb-4">{{ contentEducation[locale].Feature_1_Title }}</h3>
                 <p class="text-gray-300">{{ contentEducation[locale].Feature_1_Text }}</p>
             </div>
 
-            <div class="bg-gray-900/75 border border-primary/25 rounded-2xl h-full p-4 md:p-6">
-                <svg class="w-12 mb-4 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>book-open-page-variant</title><path fill="currentColor" d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" /></svg>
-                <h3 class="text-lg font-semibold md:text-xl mb-4">{{ contentEducation[locale].Feature_2_Title }}</h3>
+            <div data-sal="flip-right" data-sal-duration="750" data-sal-delay="250" class="border border-gray-800 bg-gradient-to-b from-gray-900 to-primary/10 rounded-2xl h-full p-4 md:p-10 flex flex-col items-center text-center">
+                <svg class="w-16 mb-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>book-open-page-variant</title><path fill="currentColor" d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" /></svg>
+                <h3 class="text-2xl md:text-2xl 2xl:text-4xl text-white font-medium tracking-tight mb-4">{{ contentEducation[locale].Feature_2_Title }}</h3>
                 <p class="text-gray-300">{{ contentEducation[locale].Feature_2_Text }}</p>
             </div>
-        </div>
-        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 md:gap-8">
-            <div class="bg-gray-900/75 border border-primary/25 rounded-2xl h-full p-4 md:p-6">
-                <svg class="w-12 mb-4 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chart-bar-stacked</title><path fill="currentColor" d="M22,21H2V3H4V19H6V17H10V19H12V16H16V19H18V17H22V21M18,14H22V16H18V14M12,6H16V9H12V6M16,15H12V10H16V15M6,10H10V12H6V10M10,16H6V13H10V16Z" /></svg>
-                <h3 class="text-lg font-semibold md:text-xl mb-4">{{ contentEducation[locale].Feature_3_Title }}</h3>
+            <div data-sal="flip-left" data-sal-duration="750" data-sal-delay="750" class="border border-gray-800 bg-gradient-to-b from-gray-900 to-primary/10 rounded-2xl h-full p-4 md:p-10 flex flex-col items-center text-center">
+                <svg class="w-16 mb-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chart-bar-stacked</title><path fill="currentColor" d="M22,21H2V3H4V19H6V17H10V19H12V16H16V19H18V17H22V21M18,14H22V16H18V14M12,6H16V9H12V6M16,15H12V10H16V15M6,10H10V12H6V10M10,16H6V13H10V16Z" /></svg>
+                <h3 class="text-2xl md:text-2xl 2xl:text-4xl text-white font-medium tracking-tight mb-4">{{ contentEducation[locale].Feature_3_Title }}</h3>
                 <p class="text-gray-300">{{ contentEducation[locale].Feature_3_Text }}</p>
             </div>
 
-            <div class="bg-gray-900/75 border border-primary/25 rounded-2xl h-full p-4 md:p-6">
-                <svg class="w-12 mb-4 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>gamepad-variant</title><path fill="currentColor" d="M7,6H17A6,6 0 0,1 23,12A6,6 0 0,1 17,18C15.22,18 13.63,17.23 12.53,16H11.47C10.37,17.23 8.78,18 7,18A6,6 0 0,1 1,12A6,6 0 0,1 7,6M6,9V11H4V13H6V15H8V13H10V11H8V9H6M15.5,12A1.5,1.5 0 0,0 14,13.5A1.5,1.5 0 0,0 15.5,15A1.5,1.5 0 0,0 17,13.5A1.5,1.5 0 0,0 15.5,12M18.5,9A1.5,1.5 0 0,0 17,10.5A1.5,1.5 0 0,0 18.5,12A1.5,1.5 0 0,0 20,10.5A1.5,1.5 0 0,0 18.5,9Z" /></svg>
-                <h3 class="text-lg font-semibold md:text-xl mb-4">{{ contentEducation[locale].Feature_4_Title }}</h3>
+            <div data-sal="flip-down" data-sal-duration="750" data-sal-delay="1000" class="border border-gray-800 bg-gradient-to-b from-gray-900 to-primary/10 rounded-2xl h-full p-4 md:p-10 flex flex-col items-center text-center">
+                <svg class="w-16 mb-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>gamepad-variant</title><path fill="currentColor" d="M7,6H17A6,6 0 0,1 23,12A6,6 0 0,1 17,18C15.22,18 13.63,17.23 12.53,16H11.47C10.37,17.23 8.78,18 7,18A6,6 0 0,1 1,12A6,6 0 0,1 7,6M6,9V11H4V13H6V15H8V13H10V11H8V9H6M15.5,12A1.5,1.5 0 0,0 14,13.5A1.5,1.5 0 0,0 15.5,15A1.5,1.5 0 0,0 17,13.5A1.5,1.5 0 0,0 15.5,12M18.5,9A1.5,1.5 0 0,0 17,10.5A1.5,1.5 0 0,0 18.5,12A1.5,1.5 0 0,0 20,10.5A1.5,1.5 0 0,0 18.5,9Z" /></svg>
+                <h3 class="text-2xl md:text-2xl 2xl:text-4xl text-white font-medium tracking-tight mb-4">{{ contentEducation[locale].Feature_4_Title }}</h3>
                 <p class="text-gray-300">{{ contentEducation[locale].Feature_4_Text }}</p>
             </div>
+
         </div>
     </div>
 </div>
 
-<div class="py-12 md:py-24 bg-primary/20">
+<div class="py-12 md:py-24">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8 text-center">   
         <h2 class="text-headline-sm">{{ site[locale].requestDemo }}</h2> 
         <a class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer inline-block" @click="ContactModal = true">{{ site[locale].requestDemo }}</a>
