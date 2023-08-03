@@ -1,6 +1,7 @@
 module.exports = {
     en: {
-        heroTitle: "Empower your learners. Ease educator workload.",
+        heroTitle: "Empower your learners.",
+        heroTitle2: "Ease educator workload.",
         heroText: "We help you increase the engagement and knowledge of your learners by providing them with playful interaction and exam preparation tool.",
         Content_1_Title: "How Qizify helps learning", 
         Content_1_Subtitle: "Learners and educators create, automatically share and play multiple-choice, open-ended, assessment quizzes within their educational institution to playfully prepare for exams and tests.",
@@ -26,7 +27,8 @@ module.exports = {
     },
 
     de: {
-        heroTitle: "Lernende besser stärken. Lehrkraft-Auslastung reduzieren.",
+        heroTitle: "Lernende besser stärken.",
+        heroTitle2: "Lehrkraft-Auslastung reduzieren.",
         heroText: "Wir helfen Ihnen, das Engagement und Wissen ihrer Lernenden zu steigern, indem wir ihnen spielerischen Austausch und Vorbereitung auf Prüfungen ermöglichen.",
         Content_1_Title: "Wie Qizify beim Lernen hilft", 
         Content_1_Subtitle: "Lernende und Pädagogen erstellen, spielen und teilen automatisch Multiple-Choice-, offene Frage- und Bewertungs-Quizze innerhalb Ihrer Bildungseinrichtung, um sich spielerisch zur Prüfung zu vorbereiten.",

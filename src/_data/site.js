@@ -6,7 +6,7 @@ module.exports = {
     featuresSecureTitle: "Funktionen für Ihre Sicherheit",
     featuresSoftwareTitle: "Features zur einfachen Integration in Ihr Lehrkonzept",
     latestBlogPosts: "Letzte Blog Artikel",
-    testimonials: "Studierende von acht europäischen Universitäten haben Qizify getestet und lieben es.",
+    testimonials: "Studierende von neun europäischen Universitäten haben Qizify getestet und lieben es.",
     contact: "Kontakt",
     requestDemo: "Demo & Kontakt",
     contactName: "Ihr Name",
