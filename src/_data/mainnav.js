@@ -35,7 +35,7 @@ module.exports = {
   en: [
     {
       label: "Education",
-      url: "/de/education",
+      url: "/en/education",
       slug: "education"
     },
     {
