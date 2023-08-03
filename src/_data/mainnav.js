@@ -1,7 +1,12 @@
 module.exports = {
   de: [
     {
-      label: "Für Unternehmen",
+      label: "Bildung",
+      url: "/de/education",
+      slug: "education"
+    },
+    {
+      label: "Unternehmen",
       url: "/de/companies",
       slug: "companies"
     },
@@ -29,7 +34,12 @@ module.exports = {
   ],
   en: [
     {
-      label: "For Companies",
+      label: "Education",
+      url: "/de/education",
+      slug: "education"
+    },
+    {
+      label: "Companies",
       url: "/en/companies",
       slug: "companies"
     },

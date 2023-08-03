@@ -1,8 +1,8 @@
 module.exports = {
     de: {
       title: "Lernende besser stärken.",
-      subtitle: "Lehrkraft-Auslastung reduzieren.",
-      text: "Personalisiertes und spielerisches Lernen mit unserer Plattform. Qizify hilft Ihren Lernenden, mit selbst erstellten Quizfragen, ihren Fortschritt im Studienprogramm mit On-Demand-Support zu verbessern und zu überwachen.",
+      subtitle: "Wissensaustausch fördern.",
+      text: "Personalisiertes und spielerisches Lernen mit unserer Plattform. Qizify hilft Ihren Lernenden, mit selbst erstellten Quizfragen, ihren Fortschritt mit On-Demand-Support zu verbessern und zu überwachen.",
       screen1: "Quizze",
       screen2: "Leistung",
       screen3: "Bestenliste",
@@ -15,8 +15,8 @@ module.exports = {
     },
     en: {
       title: "Empower your learners.",
-      subtitle: "Ease educator workload.",
-      text: "Unlock personalized and gamified self-learning and exam preparation with our online platform. Qizify helps your learners improve and monitor progress with self-designed quizzes aligned with study program, and on-demand support.",
+      subtitle: "Promote collaborative education.",
+      text: "Personalized, gamified self-learning and assessments with our online platform. Qizify helps your learners improve and monitor progress with self-designed quizzes supported on-demand.",
       screen1: "Quizzes",
       screen2: "Performance",
       screen3: "Ranking",

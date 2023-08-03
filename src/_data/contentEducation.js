@@ -1,0 +1,56 @@
+module.exports = {
+    en: {
+        heroTitle: "Empower your learners.",
+        heroTitle2: "Ease educator workload.",
+        heroText: "We help you increase the engagement and knowledge of your learners by providing them with playful interaction and exam preparation tool.",
+        Content_1_Title: "How Qizify helps learning", 
+        Content_1_Subtitle: "Learners and educators create, automatically share and play multiple-choice, open-ended, assessment quizzes within their educational institution to playfully prepare for exams and tests.",
+        Content_1_Text: "Assessing the depth of knowledge, performance levels, and identifying knowledge gaps of learners across various subjects and topics enables you, as educator, to pinpoint areas where learners require your assistance and support",
+        
+        Use_Case_Title: "Your use cases",
+        Use_Case_Subtitle: "Qizify is ideal for gamified homework, seminar exercises, exam preparation, personalized self-learning, and peer-to-peer learning for better grades.",
+        Use_Case_1_Title: "Formative Assessments",
+        Use_Case_1_Text: "Qizify Learning is a platform for creating and administering interactive quizzes. It helps educators design engaging assessments, automatically grades them, and provides instant feedback to students, saving time for educators.",
+        Use_Case_2_Title: "Quiz as homework",
+        Use_Case_2_Text: "Qizify can be used for homework assignments, where learners create quizzes beforehand and present them during the class. By presenting their quizzes to peers, learners engage in collaborative learning, fostering active participation and deeper understanding of the subject matter.",
+        Use_Case_3_Title: "Flipped Classroom Approach",
+        Use_Case_3_Text: "The teachers create quizzes or interactive lessons so that their learners can familiarize themselves with the content and acquire fundamental knowledge before class. This allows more time in the classroom for interactive discussions, problem-solving, and collaboration among the learners.",
+        
+        Feature_Title: "Our top benefits",
+        Feature_1_Title: "Personalised Learning",
+        Feature_1_Text: "Learners take a self-assessment quiz to determine their level of knowledge and to see which quiz should be taken next to improve their proficiency.",
+        Feature_2_Title: "Self-Learning and Exam Preparation",
+        Feature_2_Text: "Educators offer access to practice questions and past exam papers, fostering self-directed learning and boosting students' confidence in their knowledge and exam skills.",
+        Feature_3_Title: "Data-Driven Instruction",
+        Feature_3_Text: "Educators analyze the data to identify learning trends, gaps in understanding, and areas for improvement for instructional planning and curriculum adjustments.",
+        Feature_4_Text: "Your learners compete, earn Karma-points, and unlock achievements, fostering a sense of accomplishment and active participation in learning.",
+    },
+
+    de: {
+        heroTitle: "Lernende besser stärken.",
+        heroTitle2: "Lehrkraft-Auslastung reduzieren.",
+        heroText: "Wir helfen Ihnen, das Engagement und Wissen ihrer Lernenden zu steigern, indem wir ihnen spielerischen Austausch und Vorbereitung auf Prüfungen ermöglichen.",
+        Content_1_Title: "Wie Qizify beim Lernen hilft", 
+        Content_1_Subtitle: "Lernende und Pädagogen erstellen, spielen und teilen automatisch Multiple-Choice-, offene Frage- und Bewertungs-Quizze innerhalb Ihrer Bildungseinrichtung, um sich spielerisch zur Prüfung zu vorbereiten.",
+        Content_1_Text: "Analyse des Wissensstands und der Leistung der Lernenden pro Thema und Fach ermöglicht für Ihnen automatische Identifikation ihrer Unterstützungsbedürfnisse.",
+
+        Use_Case_Title: "Ihre Anwendungsfälle",
+        Use_Case_Subtitle: "Qizify ist ideal für gamifizierte Hausaufgaben, Übungen im Seminar, Prüfungsvorbereitung, personalisiertes Selbstlernen und Peer-to-Peer-Lernen zur Verbesserung der Noten.",
+        Use_Case_1_Title: "Formative Assessments",
+        Use_Case_1_Text: "Qizify Learning ist eine Plattform zur Erstellung und Durchführung interaktiver Quizze. Sie unterstützt Pädogoge dabei, ansprechende Bewertungen zu entwerfen und gibt den Lernenden sofortiges Feedback, was Zeit für Pädagogen spart.",
+        Use_Case_2_Title: "Quiz als Hausaufgabe",
+        Use_Case_2_Text: "Das Tool kann für Hausaufgaben verwendet werden, bei denen die Lernenden Quizze im Voraus erstellen und sie während des Unterrichts präsentieren. Durch die Präsentation ihrer Quizze vor ihren Mitschülern beteiligen sie sich am kooperativen Lernen, fördern aktive Teilnahme und ein tiefes Verständnis der Thematik.",
+        Use_Case_3_Title: "Umgedrehter Unterrichtsansatz",
+        Use_Case_3_Text: "Mit Qizify Learning können Lehrende vor dem Unterricht Quizze oder interaktive Lektionen erstellen. Die Lernenden können vor dem Unterricht auf diese Materialien zugreifen, um sich mit dem Inhalt vertraut zu machen und grundlegendes Wissen zu erwerben. Dadurch entsteht im Unterricht mehr Zeit für interaktive Diskussionen, Problemlösungsaktivitäten und Zusammenarbeit zwischen den Lernenden.",
+
+        Feature_Title: "Unsere Top-Vorteile",
+        Feature_1_Title: "Personalisiertes Lernen",
+        Feature_1_Text: "Lernende absolvieren ein Selbstbewertungs-Quiz, um ihr Kenntnisniveau in einem bestimmten Fach zu ermitteln und zu sehen, welches Quiz als nächstes gemacht werden soll, um das Niveau zu verbessern.",
+        Feature_2_Title: "Selbstlernen und Prüfungsvorbereitung",
+        Feature_2_Text: "Lehrkräfte stellen Übungsfragen und frühere Prüfungsaufgaben bereit, um selbstgesteuertes Lernen zu fördern und das Vertrauen der Lernenden in ihre Prüfungsfähigkeiten zu stärken.",
+        Feature_3_Title: "Datenbasierte Unterrichtsmethoden",
+        Feature_3_Text: "Pädagogen analysieren die Daten, um Lernmuster, Verständnislücken und Verbesserungsbereiche für die Unterrichtsplanung und Lehrplananpassungen zu identifizieren.",
+        Feature_4_Title: "Gamification und Engagement",
+        Feature_4_Text: "Ihe Lernende konkurrieren, verdienen Karma-Punkte und schalten Erfolge frei, was ein Gefühl von Erfolg und aktiver Teilnahme am Lernen fördert.",
+    }
+};

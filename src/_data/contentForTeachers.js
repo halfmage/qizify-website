@@ -1,7 +1,7 @@
 module.exports = {
   de: {
-    label: "Für Lehrkräfte & Dozierende",
-    title: "Qizify spart wertvolle Zeit für Lehrkräfte.",
+    label: "Für Dozenten & Lehrer",
+    title: "Qizify spart wertvolle Zeit für Lehrkräfte",
     listitem1: "Analysieren Sie die Leistung Ihrer Lernenden pro Quiz und identifizieren Sie, wo sie Ihre Unterstützung benötigen.",
     listitem2: "Identifizieren Sie den Lernverlauf pro Thema.",
     listitem3: "Erstellen und veröffentlichen Sie Ihre eigenen Quizze.",
@@ -11,8 +11,8 @@ module.exports = {
     
   },
   en: {
-    label: "For lecturers and teachers",
-    title: "Qizify saves educator valuable time.",
+    label: "For lecturer & teacher",
+    title: "Qizify saves educator valuable time",
     listitem1: "Analyze your learners' performance per quiz and identify where they need your support.",
     listitem2: "Identify the learning trend per topic.",
     listitem3: "Create and publish your own quizzes.",
