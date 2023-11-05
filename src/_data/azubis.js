@@ -1,7 +1,7 @@
 module.exports = {
     de: {
         heroLabel: "Bilden, Halten, Aufrechterhalten",
-        heroTitle: "Vollständige Lehrlingsausbildungen sparen Geld und Zeit",
+        heroTitle: "Vollständige Lehrlings-ausbildungen sparen Geld und Zeit",
         heroText: "Steigern Sie die Motivation und das Wissen Ihrer Lehrlinge mit Qizify!",
         heroButton: "Kontakt / Demo",
         textImageTitle: "Probleme mit unmotivierten Lehrlingen, die vorzeitig das Unternehmen verlassen?",
