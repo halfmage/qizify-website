@@ -11,6 +11,11 @@ module.exports = {
       slug: "companies"
     },
     {
+      label: "Ausbildung",
+      url: "/de/ausbildung",
+      slug: "ausbildung"
+    },
+    {
       label: "Preise",
       url: "/de/pricing",
       slug: "pricing"
@@ -42,6 +47,11 @@ module.exports = {
       label: "Companies",
       url: "/en/companies",
       slug: "companies"
+    },
+    {
+      label: "Apprenticeship",
+      url: "/de/apprenticeship",
+      slug: "ausbildung"
     },
     {
       label: "Pricing",
