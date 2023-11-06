@@ -12,8 +12,8 @@ module.exports = {
     },
     {
       label: "Ausbildung",
-      url: "/de/ausbildung",
-      slug: "ausbildung"
+      url: "/de/apprenticeship",
+      slug: "apprenticeship"
     },
     {
       label: "Preise",
@@ -50,8 +50,8 @@ module.exports = {
     },
     {
       label: "Apprenticeship",
-      url: "/de/apprenticeship",
-      slug: "ausbildung"
+      url: "/en/apprenticeship",
+      slug: "apprenticeship"
     },
     {
       label: "Pricing",
