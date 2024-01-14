@@ -14,6 +14,7 @@ module.exports = {
             primary: '#1DE1EE',
             secondary: '#E50CEA',
             green: colors.lime,
+            accent: "#FFC129"
         },
         container: {
             center: true,
