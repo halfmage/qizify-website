@@ -1,8 +1,8 @@
 module.exports = {
     de: {
-      title: "Lernende besser stärken.",
+      title: "Lernende besser motivieren.",
       subtitle: "Wissensaustausch fördern.",
-      text: "Personalisiertes und spielerisches Lernen mit unserer Plattform. Qizify hilft Ihren Lernenden, mit selbst erstellten Quizfragen, ihren Fortschritt mit On-Demand-Support zu verbessern und zu überwachen.",
+      text: "Verwandle mit unserer KI schwierige Inhalte in nur 15 Sekunden in spannende Quizze. Deine Lernenden werden durch Gamification motiviert, effektiv zu lernen.",
       screen1: "Quizze",
       screen2: "Leistung",
       screen3: "Bestenliste",
@@ -14,9 +14,9 @@ module.exports = {
       textTeam: "Das Team, das uns erfolgreich gemacht hat"
     },
     en: {
-      title: "Empower your learners.",
+      title: "Motivate your learners.",
       subtitle: "Promote collaborative education.",
-      text: "Personalized, gamified self-learning and assessments with our online platform. Qizify helps your learners improve and monitor progress with self-designed quizzes supported on-demand.",
+      text: "Break down complex topics and documents into fun quizzes in just 15 seconds using our AI assistant. Motivate your learners to learn effectively through gamification!",
       screen1: "Quizzes",
       screen2: "Performance",
       screen3: "Ranking",
