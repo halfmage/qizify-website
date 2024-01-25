@@ -34,104 +34,101 @@
 
             <div class="rounded-xl overflow-hidden border-2 border-gray-700">
                 <!-- Pricing card header -->
-                <div class="bg-gray-800 p-6">
+                <div class="h-60 bg-gray-800 p-6">
                     <div class="w-14 h-14 bg-gradient-to-r from-white to-accent rounded-full"></div>
-                    <h3 class="text-3xl font-bold my-4">Basic + <span class="text-accent"> LearnAI</span></h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non explicabo quo officia sed quidem esse.</p>
+                    <h3 class="text-3xl font-bold my-4">{{ pricing[locale].standardTitle }} <span class="text-accent"> LearnAI</span></h3>
+                    <p class="text-gray-400">{{ pricing[locale].standardText }}</p>
                 </div>
                 <!-- Pricing card content -->
                 <div class="p-6 flex flex-col gap-5">
-                    <div class="flex items-center gap-4 justify-between">
-                        <div class="text-4xl font-bold">7,50 €</div>
-                        <p class="text-gray-400 text-right">per user / per year <br> billed annually</p>
-                    </div>
                     <div>
-                        <a href="#" class="font-semibold bg-gray-200 hover:bg-white text-gray-900 py-3 px-4 block text-center rounded-lg">Contact Sales</a>
-                        <a href="#" class="font-semibold border border-gray-700 mt-3 py-3 px-4 block text-center rounded-lg">Book a call</a>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between border-b border-gray-700 pb-2">
+                            <div class="text-gray-300 font-mono">> 50 users</div>
+                            <div class="font-bold text-2xl">399,- €</div>
                         </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between border-b border-gray-700 py-2">
+                            <div class="text-gray-300 font-mono">> 300 users</div>
+                            <div class="font-bold text-2xl">499,- €</div>
                         </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="text-gray-300 font-mono">> 1000 users</div>
+                            <div class="font-bold text-2xl">599,- €</div>
                         </div>
                     </div>
+                    <p class="text-gray-400">{{pricing[locale].payment}}</p>
+                    <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
+                    <ul class="list-disc pl-4 text-gray-300">
+                        {% for item in pricing[locale].standardList %}
+                            <li class="py-1">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
 
             <div class="rounded-xl overflow-hidden border-2 border-secondary">
                 <!-- Pricing card header -->
-                <div class="bg-gray-800 p-6 relative">
-                    <div class="w-14 h-14 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
-                    <h3 class="text-3xl font-bold my-4">Plus + <span class="text-accent"> LearnAI</span></h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non explicabo quo officia sed quidem esse.</p>
+                <div class="h-60 bg-gray-800 p-6 relative">
                     <div class="bg-secondary pt-2 pb-3 px-4 uppercase rounded-bl-xl font-bold text-sm absolute top-0 right-0">Popular</div>
+                    <div class="w-14 h-14 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
+                    <h3 class="text-3xl font-bold my-4">{{ pricing[locale].premiumTitle }} <span class="text-accent"> LearnAI</span></h3>
+                    <p class="text-gray-400">{{ pricing[locale].premiumText }}</p>
                 </div>
                 <!-- Pricing card content -->
                 <div class="p-6 flex flex-col gap-5">
-                    <div class="flex items-center gap-4 justify-between">
-                        <div class="text-4xl font-bold">7,50 €</div>
-                        <p class="text-gray-400 text-right">per user / per year <br> billed annually</p>
-                    </div>
                     <div>
-                        <a href="#" class="font-semibold gradient py-3 px-4 block text-center rounded-lg">Get started</a>
-                        <a href="#" class="font-semibold border border-gray-700 mt-3 py-3 px-4 block text-center rounded-lg">Book a call</a>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between border-b border-gray-700 pb-2">
+                            <div class="text-gray-300 font-mono">> 50 users</div>
+                            <div class="font-bold text-2xl">399,- €</div>
                         </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between border-b border-gray-700 py-2">
+                            <div class="text-gray-300 font-mono">> 300 users</div>
+                            <div class="font-bold text-2xl">499,- €</div>
                         </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="text-gray-300 font-mono">> 1000 users</div>
+                            <div class="font-bold text-2xl">599,- €</div>
                         </div>
                     </div>
+                    <p class="text-gray-400">{{pricing[locale].payment}}</p>
+                    <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
+                    <ul class="list-disc pl-4 text-gray-300">
+                        {% for item in pricing[locale].premiumList %}
+                            <li class="py-1">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
 
             <div class="rounded-xl overflow-hidden border-2 border-gray-700">
                 <!-- Pricing card header -->
-                <div class="bg-gray-800 p-6">
+                <div class="h-60 bg-gray-800 p-6">
                     <div class="w-14 h-14 bg-gradient-to-r from-primary to-accent rounded-full"></div>
-                    <h3 class="text-3xl font-bold my-4">Ultimate + <span class="text-accent"> LearnAI</span></h3>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non explicabo quo officia sed quidem esse.</p>
+                    <h3 class="text-3xl font-bold my-4">{{ pricing[locale].ultimateTitle }} <span class="text-accent"> LearnAI</span></h3>
+                    <p class="text-gray-400">{{ pricing[locale].ultimateText }}</p>
                 </div>
                 <!-- Pricing card content -->
                 <div class="p-6 flex flex-col gap-5">
-                    <div class="flex items-center gap-4 justify-between">
-                        <div class="text-4xl font-bold">Custom</div>
-                        <p class="text-gray-400 text-right">You will get an <br> offer from our team</p>
-                    </div>
                     <div>
-                        <a href="#" class="font-semibold bg-gray-200 hover:bg-white text-gray-900 py-3 px-4 block text-center rounded-lg">Contact Sales</a>
-                        <a href="#" class="font-semibold border border-gray-700 mt-3 py-3 px-4 block text-center rounded-lg opacity-0">Book a call</a>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between border-b border-gray-700 pb-2">
+                            <div class="text-gray-300 font-mono">> 50 users</div>
+                            <div class="font-bold text-2xl">399,- €</div>
                         </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between border-b border-gray-700 py-2">
+                            <div class="text-gray-300 font-mono">> 300 users</div>
+                            <div class="font-bold text-2xl">499,- €</div>
                         </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="text-gray-300 font-mono">> 1000 users</div>
+                            <div class="font-bold text-2xl">599,- €</div>
                         </div>
                     </div>
+                    <p class="text-gray-400">{{pricing[locale].payment}}</p>
+                    <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
+                    <ul class="list-disc pl-4 text-gray-300">
+                        {% for item in pricing[locale].ultimateList %}
+                            <li class="py-1">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
 

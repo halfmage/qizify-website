@@ -1,19 +1,4 @@
-<h2 class="text-headline-sm">{{ site[locale].requestDemo }}</h2>
-
-<a
-    href="https://calendly.com/alesiakunts/30min"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 block mb-2"
-    >
-        {{ site[locale].contactBookDemo }}
-</a>
-
-<p class="text-center text-sm text-gray-400 mb-4">{{ site[locale].contactBookDemoSubline }}</p>
-
-<hr class="border-gray-600 my-8">
-
-<h2 class="text-headline-sm">{{ site[locale].contact }}</h2>
+<h2 class="text-headline-sm text-left">{{ site[locale].contact }}</h2>
 
 <form 
     name="qizify-contact" 
@@ -28,20 +13,44 @@
     Don't fill this out if you're human: <input name="bot-field" />
     </label>
 </p>
-<p class="">
-    <label class="">{{ site[locale].contactName }}:
-    <input class="input-field" required type="text" name="name" />
-    </label>
-</p>
-<p class="mt-4">
-    <label class="">{{ site[locale].contactMail }}:
-    <input class="input-field" required type="email" name="email" />
-    </label>
-</p>
+<div class="flex flex-col md:flex-row items-center gap-4">
+    <p class="w-full">
+        <label class="">{{ site[locale].contactName }}:
+        <input class="input-field" required type="text" name="name" />
+        </label>
+    </p>
+    <p class="w-full">
+        <label class="">{{ site[locale].contactMail }}:
+        <input class="input-field" required type="email" name="email" />
+        </label>
+    </p>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-4 mt-4">
+    <p class="w-full">
+        <label class="">{{ site[locale].contactCompanyName }}:
+        <input class="input-field" required type="email" name="email" />
+        </label>
+    </p>
+    <p class="w-full">
+        <label>{{ site[locale].contactAmountOfUsers }} <select class="input-field" name="amountOfUsers[]">
+        <option value="leader">50</option>
+        <option value="follower">300</option>
+        <option value="follower">1000</option>
+        </select></label>
+    </p>
+</div>
 <p class="mt-4">
     <label class="">{{ site[locale].contactMessage }}:
     <textarea class="input-field" required name="message"></textarea>
     </label>
+</p>
+<p class="mt-4">
+    <div class="flex text-base">
+    <input required type="checkbox" name="agreement" id="agreement" class="rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
+    <label for="agreement" class="ml-4 text-gray-400">
+        {{ site[locale].contactNewsletter }}
+    </label>
+    </div>
 </p>
 <p class="mt-4">
     <div class="flex text-base">
@@ -67,7 +76,16 @@
     </label>
     </div>
 </p>
-<p>
-    <button class="whitespace-nowrap bg-gray-300 hover:bg-gray-100 text-gray-900 py-3 font-medium px-4 rounded-xl hover:brightness-110 w-full mt-4" type="submit">{{ site[locale].contactSend }}</button>
+<p class="mt-4 flex items-center gap-4">
+    <button class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 block w-full" type="submit">{{ site[locale].contactSend }}</button>
+    {{ site[locale].contactOr }}
+    <a
+        href="https://calendly.com/alesiakunts/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whitespace-nowrap bg-gray-700 hover:bg-gray-500 py-3 text-center font-medium px-4 rounded-xl hover:brightness-110 w-full"
+        >
+            {{ site[locale].contactBookDemo }}
+    </a>
 </p>
 </form>
