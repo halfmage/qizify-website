@@ -1,6 +1,6 @@
 
 <div class="container px-4 text-2xl md:text-4xl lg:text-6xl font-extrabold py-8 md:py-12">
-    {{ hero[locale].titlePricing }}
+    {{ pricing[locale].title }}
 </div>
 
 <div class="container px-4 pb-12 md:pb-24" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'education' }">
@@ -12,20 +12,20 @@
                 @click.prevent="tab = 'education'; window.location.hash = 'education'"   
                 class="flex-1 text-center px-6 py-3 cursor-pointer rounded-lg text-xl font-medium hover:bg-gray-700 transition-colors"
                 :class="{'bg-white text-gray-800 hover:bg-white': tab === 'education'}">
-                Education
+                    {{ pricing[locale].education }}
             </div>
             <div
                 @click.prevent="tab = 'business'; window.location.hash = 'business'"   
                 class="flex-1 text-center px-6 py-3 cursor-pointer rounded-lg text-xl font-medium hover:bg-gray-700 transition-colors"
                 :class="{'bg-white text-gray-800 hover:bg-white': tab === 'business'}">
-                Business
+                    {{ pricing[locale].business }}
             </div>
         </div>
 
         <!-- Further information -->
         <div class="text-center md:text-right">
-            <p class="">All tiers include our LearnAI Assistant.</p>
-            <p class="">After payment the setup takes ~2 days.</p>
+            <p class="">{{ pricing[locale].info1 }}</p>
+            <p class="">{{ pricing[locale].info2 }}</p>
         </div>
     </div>
 
@@ -42,24 +42,24 @@
                 <!-- Pricing card content -->
                 <div class="p-6 flex flex-col gap-5">
                     <div>
-                        <div class="flex items-center justify-between border-b border-gray-700 pb-2">
-                            <div class="text-gray-300 font-mono">> 50 users</div>
+                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
+                            <div class="text-gray-300 font-mono">> 50 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">399,- €</div>
                         </div>
-                        <div class="flex items-center justify-between border-b border-gray-700 py-2">
-                            <div class="text-gray-300 font-mono">> 300 users</div>
+                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
+                            <div class="text-gray-300 font-mono">> 300 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">499,- €</div>
                         </div>
                         <div class="flex items-center justify-between pt-2">
-                            <div class="text-gray-300 font-mono">> 1000 users</div>
+                            <div class="text-gray-300 font-mono">> 1000 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">599,- €</div>
                         </div>
                     </div>
                     <p class="text-gray-400">{{pricing[locale].payment}}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
-                    <ul class="list-disc pl-4 text-gray-300">
+                    <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].standardList %}
-                            <li class="py-1">{{ item }}</li>
+                            <li class="py-1 pl-1">{{ item }}</li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -68,7 +68,7 @@
             <div class="rounded-xl overflow-hidden border-2 border-secondary">
                 <!-- Pricing card header -->
                 <div class="h-60 bg-gray-800 p-6 relative">
-                    <div class="bg-secondary pt-2 pb-3 px-4 uppercase rounded-bl-xl font-bold text-sm absolute top-0 right-0">Popular</div>
+                    <div class="bg-secondary pt-2 pb-3 px-4 uppercase rounded-bl-xl font-bold text-sm absolute top-0 right-0">{{ pricing[locale].popular }}</div>
                     <div class="w-14 h-14 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
                     <h3 class="text-3xl font-bold my-4">{{ pricing[locale].premiumTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].premiumText }}</p>
@@ -76,24 +76,24 @@
                 <!-- Pricing card content -->
                 <div class="p-6 flex flex-col gap-5">
                     <div>
-                        <div class="flex items-center justify-between border-b border-gray-700 pb-2">
-                            <div class="text-gray-300 font-mono">> 50 users</div>
+                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
+                            <div class="text-gray-300 font-mono">> 50 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">399,- €</div>
                         </div>
-                        <div class="flex items-center justify-between border-b border-gray-700 py-2">
-                            <div class="text-gray-300 font-mono">> 300 users</div>
+                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
+                            <div class="text-gray-300 font-mono">> 300 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">499,- €</div>
                         </div>
                         <div class="flex items-center justify-between pt-2">
-                            <div class="text-gray-300 font-mono">> 1000 users</div>
+                            <div class="text-gray-300 font-mono">> 1000 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">599,- €</div>
                         </div>
                     </div>
                     <p class="text-gray-400">{{pricing[locale].payment}}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
-                    <ul class="list-disc pl-4 text-gray-300">
+                    <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].premiumList %}
-                            <li class="py-1">{{ item }}</li>
+                            <li class="py-1 pl-1">{{ item }}</li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -109,24 +109,24 @@
                 <!-- Pricing card content -->
                 <div class="p-6 flex flex-col gap-5">
                     <div>
-                        <div class="flex items-center justify-between border-b border-gray-700 pb-2">
-                            <div class="text-gray-300 font-mono">> 50 users</div>
+                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
+                            <div class="text-gray-300 font-mono">> 50 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">399,- €</div>
                         </div>
-                        <div class="flex items-center justify-between border-b border-gray-700 py-2">
-                            <div class="text-gray-300 font-mono">> 300 users</div>
+                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
+                            <div class="text-gray-300 font-mono">> 300 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">499,- €</div>
                         </div>
                         <div class="flex items-center justify-between pt-2">
-                            <div class="text-gray-300 font-mono">> 1000 users</div>
+                            <div class="text-gray-300 font-mono">> 1000 {{pricing[locale].users}}</div>
                             <div class="font-bold text-2xl">599,- €</div>
                         </div>
                     </div>
                     <p class="text-gray-400">{{pricing[locale].payment}}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
-                    <ul class="list-disc pl-4 text-gray-300">
+                    <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].ultimateList %}
-                            <li class="py-1">{{ item }}</li>
+                            <li class="py-1 pl-1">{{ item }}</li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -141,48 +141,20 @@
             <div class="rounded-xl overflow-hidden border-2 border-gray-700 col-span-3 xl:col-span-2 flex flex-col md:flex-row">
                 <!-- Pricing card header -->
                 <div class="bg-gray-800 p-6 flex-1">
-                    <div class="w-14 h-14 bg-gradient-to-r from-accent to-secondary rounded-full"></div>
-                    <h3 class="text-3xl font-bold my-4">Ultimate + <span class="text-accent"> LearnAI</span></h3>
-                    <p class="text-gray-400 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis eveniet, nihil voluptatum porro obcaecati recusandae, nostrum temporibus quae tempore aperiam, aliquid saepe perspiciatis quo!</p>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
-                        </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
-                        </div>
-                    </div>
+                    <div class="w-14 h-14 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+                    <h3 class="text-3xl font-bold my-4">{{ pricing[locale].businessUltimateTitle }} <span class="text-accent"> LearnAI</span></h3>
+                    <p class="text-gray-400">{{ pricing[locale].businessUltimateText }}</p>
                 </div>
                 <!-- Pricing card content -->
                 <div class="p-6 flex flex-col gap-5 flex-1">
-                    <div class="flex items-center gap-4 justify-between">
-                        <div class="text-3xl font-bold">Custom price</div>
-                        <p class="text-gray-400 text-right">You will get an <br> offer from our team</p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
-                        </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
-                        </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
-                        </div>
-                        <div class="flex gap-2">
-                            <svg class="w-6 flex-shrink-0" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4.5 12.75 6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                            Dedicated learning space
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#" class="font-semibold bg-white text-gray-900 py-3 px-4 block text-center rounded-lg">Contact Sales</a>
-                        <a href="#" class="font-semibold border border-gray-700 mt-3 py-3 px-4 block text-center rounded-lg">Book a call</a>
-                    </div>
+                    <div class="text-3xl font-bold">{{ pricing[locale].businessCustom }}</div>
+                    <p class="text-gray-400">{{ pricing[locale].businessExtra }}</p>
+                    <ul class="list-image-checkmark pl-4 text-gray-300">
+                        {% for item in pricing[locale].businessUltimateList %}
+                            <li class="py-1 pl-1">{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                    <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
                 </div>
             </div>
 

@@ -1,5 +1,12 @@
 module.exports = {
     de: {
+        education: "Bildung",
+        business: "Unternehmen",
+        popular: "Beliebt",
+        users: "Nutzer",
+        info1: "Alle Stufen beinhalten unseren LearnAI Assistant.",
+        info2: "Nach der Zahlung dauert die Einrichtung ~2 Tage.",
+
         payment: "Pro Monat. Jährliche Abrechnung.",
         title: "Ein kalkulierbares, einfaches Bezahlsystem",
 
@@ -34,10 +41,30 @@ module.exports = {
             "Unbegrenzte Beratung während der Geschäftszeiten",
         ],
 
+        businessUltimateTitle: "Ultimate mit",
+        businessUltimateText: "Über Inhalte hinaus, gestalte Lernreise und Softwarefunktionen individuell. Verbessere Bildung, einzigartig für Ihr Unternehmen!",
+        businessUltimateList: [
+            "Alles aus Premium",
+            "Single-Sign-On-Integration",
+            "Premium-maßgeschneidertes Design",
+            "Umfassende unternehmensspezifische Funktionen",
+            "Unbegrenzte Beratung während der Geschäftszeiten",
+        ],
+        businessExtra: "Sie erhalten ein Angebot von unserem Team",
+        businessCustom: "Individuell"
+
     },
     en: {
+        education: "Education",
+        business: "Companies",
+        popular: "Popular",
+        users: "Users",
+        info1: "All tiers include our LearnAI Assistant.",
+        info2: "After payment the setup takes ~2 days.",
+
+
         payment: "Per month. Billed annually.",
-        title: "A calculable, simple payment system",
+        title: "A predictable, simple payment system",
 
         standardTitle: "Standard with",
         standardText: "Elevate Your Gamified Experience! Organize 15x faster with the magic of LearnAI.",
@@ -69,5 +96,17 @@ module.exports = {
             "Extensive Company-Specific Functionalities",
             "Unlimited Consulting During Business Hours",
         ],
+
+        businessUltimateTitle: "Ultimate mit",
+        businessUltimateText: "Über Inhalte hinaus, gestalte Lernreise und Softwarefunktionen individuell. Verbessere Bildung, einzigartig für Ihr Unternehmen!",
+        businessUltimateList: [
+            "Alles aus Premium",
+            "Single-Sign-On-Integration",
+            "Premium-maßgeschneidertes Design",
+            "Umfassende unternehmensspezifische Funktionen",
+            "Unbegrenzte Beratung während der Geschäftszeiten",
+        ],
+        businessExtra: "You will get an offer from our team",
+        businessCustom: "Custom"
     }
 };
