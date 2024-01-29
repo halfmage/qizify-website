@@ -4,10 +4,13 @@ module.exports = {
         business: "Unternehmen",
         popular: "Beliebt",
         users: "Nutzer",
-        info1: "Alle Stufen beinhalten unseren LearnAI Assistant.",
+        info1: "Kein Risiko: Kündigungsfrist 7 Tage",
         info2: "Nach der Zahlung dauert die Einrichtung ~2 Tage.",
+        unlimited: "Unbegrenzt",
+        custom: "Individuell",
+        orderOffer: "Angebot anfordern",
 
-        payment: "Pro Monat. Jährliche Abrechnung.",
+        payment: "Pro Nutzer / Monat. Abrechnung jährlich.",
         title: "Ein kalkulierbares, einfaches Bezahlsystem",
 
         standardTitle: "Standard mit",
@@ -59,11 +62,14 @@ module.exports = {
         business: "Companies",
         popular: "Popular",
         users: "Users",
-        info1: "All tiers include our LearnAI Assistant.",
+        info1: "No risk: 7 days free testing.",
         info2: "After payment the setup takes ~2 days.",
+        unlimited: "Unlimited",
+        custom: "Custom",
+        orderOffer: "Request a quote",
 
 
-        payment: "Per month. Billed annually.",
+        payment: "Per User / month. Billed annually.",
         title: "A predictable, simple payment system",
 
         standardTitle: "Standard with",
@@ -98,7 +104,7 @@ module.exports = {
         ],
 
         businessUltimateTitle: "Ultimate mit",
-        businessUltimateText: "Über Inhalte hinaus, gestalte Lernreise und Softwarefunktionen individuell. Verbessere Bildung, einzigartig für Ihr Unternehmen!",
+        businessUltimateText: "Beyond content, customize the learning journey and software features. Improve education, unique to your company!",
         businessUltimateList: [
             "Alles aus Premium",
             "Single-Sign-On-Integration",
