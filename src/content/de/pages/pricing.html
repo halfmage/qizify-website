@@ -9,64 +9,6 @@ translationKey: "pricing"
 
 {% block content %}
 
-<div class="container-hero">
-    <div class="max-w-screen-xl mx-auto text-2xl md:text-4xl lg:text-6xl font-extrabold text-center md:mb-8">
-        {{ hero[locale].titlePricing }}
-    </div>
-</div>
-
-<div class="container pb-12 md:pb-24">
-    <div class="grid grid-cols-12 items-center">
-        <div class="col-span-12 md:col-span-7 md:pr-16 xl:pr-48 order-last md:order-first">
-            <h2 class="text-headline">
-                {{ pricing[locale].title }}
-            </h2>
-            <p class="mb-8">
-                {{ pricing[locale].text }}                
-            </p>
-            <p class="py-4 mb-4 rounded-2xl flex items-center">
-                <svg class="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
-                <span class="ml-6">{{ pricing[locale].textListItem1 }}</span>
-            </p>
-            <p class="py-4 mb-4 rounded-2xl flex items-center">
-                <svg class="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                <span class="ml-6">{{ pricing[locale].textListItem2 }}</span>
-            </p>
-            <p class="py-4 mb-4 rounded-2xl flex items-center">
-                <svg class="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                <span class="ml-6">{{ pricing[locale].textListItem3 }}</span>
-            </p>
-        </div>
-        <div class="col-span-12 md:col-span-5 relative order-first md:order-last mb-24 md:mb-0">
-            <div class="bg-gray-900 p-8 rounded-2xl relative z-10 lg:text-lg max-w-md md:max-w-full mx-auto">
-                <h2 class="text-3xl lg:text-5xl text-white font-extrabold flex flex-col items-center justify-center">
-                    <svg class="w-8 lg:w-12 h-8 lg:h-12 text-gray-300 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <span class="text-xl font-normal text-gray-200">{{ pricing[locale].perUser }}</span>
-                </h2>
-                <a class="whitespace-nowrap block text-center bg-gradient-to-r from-primary to-secondary py-4 mt-4 font-medium cursor-pointer px-4 rounded-xl hover:brightness-110" @click="ContactModal = true">
-                    {{ pricing[locale].buttonLabel }}
-                </a>
-                <p class="text-center my-4 pb-4 border-b border-gray-700 text-gray-500">{{ pricing[locale].monthly }} &bull; {{ pricing[locale].adjustments }}</p>
-                <p class="py-4 flex items-center">
-                    <svg class="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0 text-[yellow]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
-                    <span class="ml-6">{{ pricing[locale].boxListItem1 }}</span>
-                </p>
-                <p class="py-4 flex items-center">
-                    <svg class="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0 text-[lightgreen]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    <span class="ml-6">{{ pricing[locale].boxListItem2 }}</span>
-                </p>
-                <p class="py-4 flex items-center">
-                    <svg class="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0 text-[lightsalmon]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
-                    <span class="ml-6">{{ pricing[locale].boxListItem3 }}</span>
-                </p>
-                <p class="py-4 flex items-center">
-                    <svg class="w-6 h-6 lg:w-8 lg:h-8 flex-shrink-0 text-[lightblue]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"></path></svg>
-                    <span class="ml-6">{{ pricing[locale].boxListItem4 }}</span>
-                </p>
-            </div>
-            <div class="gradient absolute inset-6 md:-inset-4 blur-3xl"></div>
-        </div>
-    </div>
-</div>
+{% include "partials/pricing.html" %}
 
 {% endblock %}

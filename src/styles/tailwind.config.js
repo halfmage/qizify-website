@@ -8,12 +8,18 @@ module.exports = {
         require('@tailwindcss/line-clamp')
     ],
     theme: {
+        extend: {
+            listStyleImage: {
+                checkmark: 'url("/assets/images/checkmark.png")',
+            },
+        },
         colors: {
             white: '#fff',
             gray: colors.zinc,
             primary: '#1DE1EE',
             secondary: '#E50CEA',
             green: colors.lime,
+            accent: "#FFC129"
         },
         container: {
             center: true,
