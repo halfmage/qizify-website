@@ -1,7 +1,7 @@
 <h2 class="text-headline-sm text-left">{{ site[locale].contact }}</h2>
 
 <form 
-    name="qizify-contact" 
+    name="qizify-contact-new" 
     method="POST" 
     action="/{{ locale }}/contact-success" 
     data-netlify="true" 
@@ -13,48 +13,57 @@
     Don't fill this out if you're human: <input name="bot-field" />
     </label>
 </p>
-<div class="flex flex-col md:flex-row items-center gap-4">
+<p class="w-full">
+    <label>{{ site[locale].contactInterest }} <select class="input-field pr-12" name="contactInterest[]">
+    <option value="purchase">{{ site[locale].contactInterestOption3 }}</option>
+    <option value="standard">{{ site[locale].contactInterestOption2 }} {{ pricing[locale].standardTitle }} LearnAI</option>
+    <option value="premium">{{ site[locale].contactInterestOption2 }} {{ pricing[locale].premiumTitle }} LearnAI</option>
+    <option value="ultimate">{{ site[locale].contactInterestOption2 }} {{ pricing[locale].ultimateTitle }} LearnAI</option>
+    </select></label>
+</p>
+<div class="flex flex-col md:flex-row items-center gap-4 mt-4">
     <p class="w-full">
         <label class="">{{ site[locale].contactName }}:
-        <input class="input-field" required type="text" name="name" />
+        <input class="input-field" required type="text" name="contactName" />
         </label>
     </p>
     <p class="w-full">
         <label class="">{{ site[locale].contactMail }}:
-        <input class="input-field" required type="email" name="email" />
+        <input class="input-field" required type="email" name="contactMail" />
         </label>
     </p>
 </div>
 <div class="flex flex-col md:flex-row items-center gap-4 mt-4">
     <p class="w-full">
         <label class="">{{ site[locale].contactCompanyName }}:
-        <input class="input-field" required type="email" name="email" />
+        <input class="input-field" required type="text" name="contactCompanyName" />
         </label>
     </p>
     <p class="w-full">
-        <label>{{ site[locale].contactAmountOfUsers }} <select class="input-field" name="amountOfUsers[]">
-        <option value="leader">50</option>
-        <option value="follower">300</option>
-        <option value="follower">1000</option>
+        <label>{{ site[locale].contactAmountOfUsers }} <select class="input-field pr-12" name="amountOfUsers[]">
+        <option value="0">< 100</option>
+        <option value="300">< 300</option>
+        <option value="1000">< 1000</option>
+        <option value="1000+">1000+</option>
         </select></label>
     </p>
 </div>
 <p class="mt-4">
     <label class="">{{ site[locale].contactMessage }}:
-    <textarea class="input-field" required name="message"></textarea>
+    <textarea class="input-field" name="message"></textarea>
     </label>
 </p>
 <p class="mt-4">
     <div class="flex text-base">
-    <input required type="checkbox" name="agreement" id="agreement" class="rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
-    <label for="agreement" class="ml-4 text-gray-400">
+    <input type="checkbox" name="newsletter" id="newsletter" class="flex-shrink-0 rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
+    <label for="newsletter" class="ml-4 text-gray-400">
         {{ site[locale].contactNewsletter }}
     </label>
     </div>
 </p>
 <p class="mt-4">
     <div class="flex text-base">
-    <input required type="checkbox" name="agreement" id="agreement" class="rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
+    <input required type="checkbox" name="agreement" id="agreement" class="flex-shrink-0 rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
     <label for="agreement" class="ml-4 text-gray-400">
         {{ site[locale].contactBoxText }}
 

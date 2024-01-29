@@ -9,6 +9,7 @@ module.exports = {
         unlimited: "Unbegrenzt",
         custom: "Individuell",
         orderOffer: "Angebot anfordern",
+        upTo: "Bis zu",
 
         payment: "Pro Nutzer / Monat. Abrechnung jährlich.",
         title: "Ein kalkulierbares, einfaches Bezahlsystem",
@@ -16,11 +17,11 @@ module.exports = {
         standardTitle: "Standard mit",
         standardText: "Bring deine gamifizierte Erfahrung auf ein neues Level! Organisiere 15-mal schneller mit der Magie von LearnAI.",
         standardList: [
-            "Private platform with customized learning modules (White-label)",
-            "Question generator based on modules and topics (AI-assisted)",
-            "Detailed dashboards for tracking engagement",
-            "5 hours of personalized consulting",
-            "All data stored securely in Germany"         
+            "Private Plattform mit maßgeschneiderten Lernmodulen (White-Label)",
+            "Fragegenerator basierend auf Modulen und Themen (unterstützt durch KI)",
+            "Detaillierte Dashboards zur Verfolgung der Beteiligung",
+            "Bis 5 Stunden persönliche Beratung",
+            "Alle Daten sicher in 🇩🇪 Deutschland gespeichert",
         ],
 
         premiumTitle: "Premium mit",
@@ -54,7 +55,15 @@ module.exports = {
             "Unbegrenzte Beratung während der Geschäftszeiten",
         ],
         businessExtra: "Sie erhalten ein Angebot von unserem Team",
-        businessCustom: "Individuell"
+        businessCustom: "Individuell",
+        businessPremiumList: [
+            "Alles aus Standard",
+            "PDF-to-Quiz-Generator (unterstützt durch KI)",
+            "Text-to-Quiz-Generator (unterstützt durch KI)",
+            "Maßgeschneiderter Quizinhalt für Ihr Unternehmen",
+            "Premium-Bildbibliothek",
+            "Bis 10 Stunden persönliche Beratung",
+        ],
 
     },
     en: {
@@ -67,6 +76,7 @@ module.exports = {
         unlimited: "Unlimited",
         custom: "Custom",
         orderOffer: "Request a quote",
+        upTo: "Up to",
 
 
         payment: "Per User / month. Billed annually.",
@@ -79,7 +89,7 @@ module.exports = {
             "Question generator based on modules and topics (AI-assisted)",
             "Detailed dashboards for tracking engagement",
             "5 hours of personalized consulting",
-            "All data stored securely in Germany"         
+            "All data stored securely in 🇩🇪 Germany"         
         ],
 
         premiumTitle: "Premium with",
@@ -106,13 +116,21 @@ module.exports = {
         businessUltimateTitle: "Ultimate mit",
         businessUltimateText: "Beyond content, customize the learning journey and software features. Improve education, unique to your company!",
         businessUltimateList: [
-            "Alles aus Premium",
-            "Single-Sign-On-Integration",
-            "Premium-maßgeschneidertes Design",
-            "Umfassende unternehmensspezifische Funktionen",
-            "Unbegrenzte Beratung während der Geschäftszeiten",
+            "Everything in Premium",
+            "Single-Sign-On Integration",
+            "Premium Customized Design",
+            "Extensive Company-Specific Functionalities",
+            "Unlimited Consulting During Business Hours",
         ],
         businessExtra: "You will get an offer from our team",
-        businessCustom: "Custom"
+        businessCustom: "Custom",
+        businessPremiumList: [
+            "Everything in Standard",
+            "PDF-to-Quiz generator (AI-assisted)",
+            "Text-to-Quiz generator (AI-assisted)",
+            "Tailored quiz content for your company",
+            "Premium Image library",
+            "10 hours of personalized consultation",
+        ],
     }
 };
