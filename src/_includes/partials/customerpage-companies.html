@@ -1,12 +1,12 @@
-<div class="overflow-hidden pt-16 bg-gray-900 border-b border-gray-700">
-    <div class="container flex flex-col items-center justify-center relative">
+<div class="pt-16 overflow-hidden bg-gray-900 border-b border-gray-700">
+    <div class="container relative flex flex-col items-center justify-center">
 
         <div data-sal="fade" data-sal-duration="500" data-sal-once class="flex flex-col justify-center mb-12">
-            <div class="max-w-screen-xl mx-auto lg:text-6xl md:text-3xl text-2xl md:mb-6 mb-4 font-extrabold text-center">
+            <div class="max-w-screen-xl mx-auto mb-4 text-2xl font-extrabold text-center lg:text-6xl md:text-3xl md:mb-6">
                 <!-- Hero main headline -->
                 {{ customers[locale].cht }}
             </div>
-            <p class="text-center md:text-xl max-w-screen-md mx-auto text-gray-200/75 z-10">
+            <p class="z-10 max-w-screen-md mx-auto text-center md:text-xl text-gray-200/75">
                 <!-- Hero subtitle / text -->
                 {{ customers[locale].chp }}
             </p>
@@ -14,13 +14,13 @@
 
         <div class="relative z-0 sm:h-[288px] md:h-[352px] lg:h-[384px] 2xl:h-[512px]" data-sal="fade" data-sal-duration="500" data-sal-delay="400" data-sal-once>
             <!-- 📷 Product screenshots -->
-            <div x-cloak"><img src="../../assets/images/hero-company.png" class="image-gradient 2xl:max-w-screen-lg max-w-screen-md w-full relative z-10 rounded-t-xl md:rounded-t-xl" alt="Hero for Companies"></div>
+            <div x-cloak"><img src="../../assets/images/hero-company.png" class="relative z-10 w-full max-w-screen-md image-gradient 2xl:max-w-screen-lg rounded-t-xl md:rounded-t-xl" alt="Hero for Companies"></div>
 
             <!-- ✨ Sparkles -->
-            <div class="absolute right-16 -top-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-24 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-24 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
-            <div class="absolute right-4 -top-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
-            <div class="absolute -left-4 bottom-20 rotate-6 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-24 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-20 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-24 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-20 absolute -translate-y-1/2 blur-sm"></div></div>
-            <div class="absolute -left-16 bottom-8 rotate-12 animate-pulse"><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2"></div><div class="bg-gradient-to-r from-white/0 via-white to-white/0 h-px w-12 absolute -translate-x-1/2 blur-sm"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2"></div><div class="bg-gradient-to-t from-white/0 via-white to-white/0 w-px h-12 absolute -translate-y-1/2 blur-sm"></div></div>
+            <div class="absolute right-16 -top-20 rotate-6 animate-pulse"><div class="absolute w-24 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0"></div><div class="absolute w-20 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0 blur-sm"></div><div class="absolute w-px h-24 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0"></div><div class="absolute w-px h-20 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0 blur-sm"></div></div>
+            <div class="absolute right-4 -top-8 rotate-12 animate-pulse"><div class="absolute w-12 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0"></div><div class="absolute w-12 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0 blur-sm"></div><div class="absolute w-px h-12 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0"></div><div class="absolute w-px h-12 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0 blur-sm"></div></div>
+            <div class="absolute -left-4 bottom-20 rotate-6 animate-pulse"><div class="absolute w-24 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0"></div><div class="absolute w-20 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0 blur-sm"></div><div class="absolute w-px h-24 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0"></div><div class="absolute w-px h-20 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0 blur-sm"></div></div>
+            <div class="absolute -left-16 bottom-8 rotate-12 animate-pulse"><div class="absolute w-12 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0"></div><div class="absolute w-12 h-px -translate-x-1/2 bg-gradient-to-r from-white/0 via-white to-white/0 blur-sm"></div><div class="absolute w-px h-12 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0"></div><div class="absolute w-px h-12 -translate-y-1/2 bg-gradient-to-t from-white/0 via-white to-white/0 blur-sm"></div></div>
 
         </div>
     </div>  
@@ -28,12 +28,12 @@
 
 <div class="">
     <div class="container py-12 md:py-24">
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-24 items-center">
+        <div class="grid items-center gap-8 md:grid-cols-2 lg:gap-24">
             <div data-sal="slide-right" data-sal-duration="500" data-sal-delay="0">
-                <h2 class="text-2xl md:text-4xl font-bold">
+                <h2 class="text-2xl font-bold md:text-4xl">
                     {{ customers[locale].ct_feature1_Headline }}
                 </h2>
-                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
+                <p class="my-4 text-xl leading-relaxed text-gray-200 md:my-6">
                     {{ customers[locale].ct_feature1_Headline2 }}
                 </p>
                 <p class="leading-relaxed text-gray-400">
@@ -41,7 +41,7 @@
                 </p>
             </div>
             <div class="order-first md:order-none" data-sal="slide-left" data-sal-duration="500" data-sal-delay="500">
-                <img class="image-gradient w-full h-auto object-cover rounded-2xl" src="../../assets/images/this1.jpg" alt="Two people looking at a tablet">
+                <img class="object-cover w-full h-auto image-gradient rounded-2xl" src="../../assets/images/this1.jpg" alt="Two people looking at a tablet">
             </div>
         </div>
     </div>
@@ -49,15 +49,15 @@
 
 <div class="">
     <div class="container py-12 md:py-24">
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-24 items-center">
+        <div class="grid items-center gap-8 md:grid-cols-2 lg:gap-24">
             <div class="order-first md:order-none" data-sal="slide-right" data-sal-duration="500" data-sal-delay="0">
-                <img class="image-gradient w-full h-auto object-cover rounded-2xl" src="../../assets/images/this5.jpg" alt="Two women looking at a display">
+                <img class="object-cover w-full h-auto image-gradient rounded-2xl" src="../../assets/images/this5.jpg" alt="Two women looking at a display">
             </div>
             <div data-sal="slide-left" data-sal-duration="500" data-sal-delay="500">
-                <h2 class="text-2xl md:text-4xl font-bold">
+                <h2 class="text-2xl font-bold md:text-4xl">
                     {{ customers[locale].ct_feature2_Headline }}
                 </h2>
-                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
+                <p class="my-4 text-xl leading-relaxed text-gray-200 md:my-6">
                     {{ customers[locale].ct_feature2_Headline2 }}
                 </p>
                 <p class="leading-relaxed text-gray-400">
@@ -70,12 +70,12 @@
 
 <div class="">
     <div class="container py-12 md:py-24">
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-24 items-center">
+        <div class="grid items-center gap-8 md:grid-cols-2 lg:gap-24">
             <div data-sal="slide-right" data-sal-duration="500" data-sal-delay="0">
-                <h2 class="text-2xl md:text-4xl font-bold">
+                <h2 class="text-2xl font-bold md:text-4xl">
                     {{ customers[locale].ct_feature3_Headline }}
                 </h2>
-                <p class="text-xl leading-relaxed text-gray-200 my-4 md:my-6">
+                <p class="my-4 text-xl leading-relaxed text-gray-200 md:my-6">
                     {{ customers[locale].ct_feature3_Headline2 }}
                 </p>
                 <p class="leading-relaxed text-gray-400">
@@ -83,7 +83,7 @@
                 </p>
             </div>
             <div class="order-first md:order-none" data-sal="slide-left" data-sal-duration="500" data-sal-delay="500">
-                <img class="image-gradient w-full h-auto object-cover rounded-2xl" src="../../assets/images/this4.jpg" alt="A woman and a man looking at a display">
+                <img class="object-cover w-full h-auto image-gradient rounded-2xl" src="../../assets/images/this4.jpg" alt="A woman and a man looking at a display">
             </div>
         </div>
     </div>
@@ -91,12 +91,12 @@
 
 <div class="container py-12 md:py-24">
     <div class="flex flex-wrap -mx-8">
-        <div class="p-8 md:w-1/3 flex flex-col" data-sal="slide-down" data-sal-duration="500" data-sal-delay="0">
+        <div class="flex flex-col p-8 md:w-1/3" data-sal="slide-down" data-sal-duration="500" data-sal-delay="0">
             <div class="flex-grow">
-                <svg class="text-primary w-16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-16 text-primary" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <h2 class="text-lg md:text-2xl font-bold mt-6 mb-4">
+                <h2 class="mt-6 mb-4 text-lg font-bold md:text-2xl">
                     {{ customers[locale].ct_other1_Headline }}
                 </h2>
                 <p class="leading-relaxed text-gray-400">
@@ -104,12 +104,12 @@
                 </p>
             </div>
         </div>
-        <div class="p-8 md:w-1/3 flex flex-col" data-sal="slide-down" data-sal-duration="500" data-sal-delay="500">
+        <div class="flex flex-col p-8 md:w-1/3" data-sal="slide-down" data-sal-duration="500" data-sal-delay="500">
             <div class="flex-grow">
-                <svg class="text-primary w-16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-16 text-primary" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <h2 class="text-lg md:text-2xl font-bold mt-6 mb-4">
+                <h2 class="mt-6 mb-4 text-lg font-bold md:text-2xl">
                     {{ customers[locale].ct_other2_Headline }}
                 </h2>
                 <p class="leading-relaxed text-gray-400">
@@ -117,12 +117,12 @@
                 </p>
             </div>
         </div>
-        <div class="p-8 md:w-1/3 flex flex-col" data-sal="slide-down" data-sal-duration="500" data-sal-delay="1000">
+        <div class="flex flex-col p-8 md:w-1/3" data-sal="slide-down" data-sal-duration="500" data-sal-delay="1000">
             <div class="flex-grow">
-                <svg class="text-primary w-16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-16 text-primary" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <h2 class="text-lg md:text-2xl font-bold mt-6 mb-4">
+                <h2 class="mt-6 mb-4 text-lg font-bold md:text-2xl">
                     {{ customers[locale].ct_other3_Headline }}
                 </h2>
                 <p class="leading-relaxed text-gray-400">
@@ -134,13 +134,13 @@
 </div>
 
 <div class="py-12 md:py-24 bg-gradient-to-br from-primary to-secondary">
-    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+    <div class="px-4 mx-auto max-w-screen-2xl md:px-8">
 
-        <div class="grid gap-4 grid-cols-1 md:grid-cols-2 md:gap-8">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
             <!-- feature - start -->
-            <div class="bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl h-full p-4 md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="0">
+            <div class="h-full p-4 bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="0">
                 <div class="flex text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <h3 class="font-medium md:text-2xl">{{ customers[locale].ct_addon1 }}</h3>
@@ -149,9 +149,9 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl h-full p-4 md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="250">
+            <div class="h-full p-4 bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="250">
                 <div class="flex text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <h3 class="font-medium md:text-2xl">{{ customers[locale].ct_addon2 }}</h3>
@@ -160,9 +160,9 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl h-full p-4 md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500">
+            <div class="h-full p-4 bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500">
                 <div class="flex text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <h3 class="font-medium md:text-2xl">{{ customers[locale].ct_addon3 }}</h3>
@@ -171,9 +171,9 @@
             <!-- feature - end -->
 
             <!-- feature - start -->
-            <div class="bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl h-full p-4 md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="750">
+            <div class="h-full p-4 bg-gradient-to-br from-gray-900/20 to-gray-900/60 rounded-2xl md:p-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="750">
                 <div class="flex text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-12 md:w-12 mr-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-4 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <h3 class="font-medium md:text-2xl">{{ customers[locale].ct_addon4 }}</h3>
@@ -185,8 +185,8 @@
 </div>
 
 <div class="py-12 md:py-24">
-    <div class="mx-auto max-w-screen-2xl px-4 md:px-8 text-center">   
+    <div class="px-4 mx-auto text-center max-w-screen-2xl md:px-8">   
         <h2 class="text-headline-sm">{{ site[locale].requestDemo }}</h2> 
-        <a class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer inline-block" @click="ContactModal = true">{{ site[locale].requestDemo }}</a>
+        <div class="inline-block px-4 py-3 font-medium cursor-pointer whitespace-nowrap gradient rounded-xl hover:brightness-110" @click="ContactModal = true">{{ site[locale].requestDemo }}</div>
     </div>
 </div>

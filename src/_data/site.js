@@ -10,7 +10,6 @@ module.exports = {
     contact: "Bestellen Sie jetzt Ihr Qizify-Paket!",
     requestDemo: "Kostenlos testen",
     getstarted: "Loslegen",
-    learnmore: "Mehr erfahren",
     contactName: "Vor- und Nachname",
     contactCompanyName: "Firmenname",
     contactMail: "E-Mail-Adresse",
@@ -32,6 +31,7 @@ module.exports = {
     contactAnd: "und",
     contactOr: "oder",
     contactTermsLink: "Nutzungsbedingungen",
+    edutainerinWebsite: "Zur Webseite",
     edutainerin: [
       "Unsere Partnerin: Die Edutainerin",
       "Die Workshops & Services von unserer Partnerin Die Edutainerin bringen noch mehr Lebendigkeit und Freude in Ihren Lehralltag.",
@@ -50,7 +50,6 @@ module.exports = {
     contact: "Order your Qizify package now!",
     requestDemo: "Free trial",
     getstarted: "Get started",
-    learnmore: "Learn more",
     contactName: "First and last name",
     contactCompanyName: "Company name",
     contactMail: "Email",
@@ -72,6 +71,7 @@ module.exports = {
     contactAnd: "and",
     contactOr: "or",
     contactTermsLink: "Terms of Use",
+    edutainerinWebsite: "To the website",
     edutainerin: [
       "Our partner: Die Edutainerin",
       "The workshops & services of our partner  bring even more liveliness and joy to your teaching routine.",
