@@ -10,6 +10,7 @@ module.exports = {
     contact: "Bestellen Sie jetzt Ihr Qizify-Paket!",
     requestDemo: "Kostenlos testen",
     getstarted: "Loslegen",
+    learnmore: "Mehr erfahren",
     contactName: "Vor- und Nachname",
     contactCompanyName: "Firmenname",
     contactMail: "E-Mail-Adresse",
@@ -30,7 +31,14 @@ module.exports = {
     contactPrivacyLink: "Datenschutzerklärung",
     contactAnd: "und",
     contactOr: "oder",
-    contactTermsLink: "Nutzungsbedingungen"
+    contactTermsLink: "Nutzungsbedingungen",
+    edutainerin: [
+      "Unsere Partnerin: Die Edutainerin",
+      "Die Workshops & Services von unserer Partnerin Die Edutainerin bringen noch mehr Lebendigkeit und Freude in Ihren Lehralltag.",
+      "Steigern Sie mit interaktiven Lernspielen die Motivation der Teilnehmenden. Inspirieren Sie durch Edutainment = Education & Entertainment, und halten Sie den Energielevel hoch.",
+      "Sparen Sie sich Ihre wertvolle Zeit durch interaktive Methoden, die sofort in Ihrer Lehre einsetzbar sind.",
+      "Sonderangebot: Hol dir jetzt einen exklusiven Rabatt von 8 % mit dem Code “Edutainerin-08”!"
+    ]
   },
   en: {
     title: "Qizify Learning",
@@ -42,6 +50,7 @@ module.exports = {
     contact: "Order your Qizify package now!",
     requestDemo: "Free trial",
     getstarted: "Get started",
+    learnmore: "Learn more",
     contactName: "First and last name",
     contactCompanyName: "Company name",
     contactMail: "Email",
@@ -62,6 +71,13 @@ module.exports = {
     contactPrivacyLink: "Privacy Policy",
     contactAnd: "and",
     contactOr: "or",
-    contactTermsLink: "Terms of Use"
+    contactTermsLink: "Terms of Use",
+    edutainerin: [
+      "Our partner: Die Edutainerin",
+      "The workshops & services of our partner  bring even more liveliness and joy to your teaching routine.",
+      "Increase the motivation of the participants with interactive learning games. Inspire through Edutainment = Education & Entertainment, and keep the energy level high.",
+      "Save your valuable time with interactive methods that can be used immediately in your teaching.",
+      "Special offer: Get an exclusive discount of 8 % with the code “Edutainerin-08”!"
+    ]
   }
 }
