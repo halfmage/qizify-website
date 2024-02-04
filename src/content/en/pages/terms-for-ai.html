@@ -1,0 +1,72 @@
+---
+permalink: "/{{ locale }}/terms-for-ai/"
+translationKey: "terms-for-ai"
+---
+
+{% extends "layouts/default.html" %}
+
+{% set metaTitle= "AI-supported features and their availability" %}
+
+{% block content %}
+
+<div class="max-w-4xl mx-auto mt-16 prose prose-lg prose-invert">
+
+<h1>AI-supported features and their availability</h1>
+
+<p><strong>Qizify LearnAI AI-assisted creator</strong> to reduce the time it takes to make quizzes</p>
+<p>To reduce the time spent on creating quizzes, Qizify Learning uses a large language model to propose questions based on input from the user.</p>
+<p><strong>Text-to-Quiz and PDF-to-Quiz</strong> to reduce the time spent on making a tailored quizzes</p>
+<p>Qizify Learning uses AI to make it easier for users by generating questions, answers and content based on the content of a PDF provided by the user.</p>
+<p>This feature is available to users on <strong>Premium with LearnAI and Ultimate with LearnAI Licence Models</strong>.</p>
+
+<h2>Key principles for usage of AI in Qizify Learning</h2>
+
+<p>Qizify Learning uses public AI-models from third party vendors and does not build its own models.</p>
+<p>Qizify Learning´s partner and content provider for its AI features is OpenAI L.L.C. Qizify Learning has integrated with OpenAI through our backend to avoid unknown information from the browser or client being sent to OpenAI L.L.C..</p>
+<p>Data inserted into AI features in Qizify Learning is sent to OpenAI for processing and to generate AI output. The information Qizify Learning sends to the APIs of OpenAI is what we call the prompt. Qizify Learning does not knowingly provide any user information, personal data or previous prompts to OpenAI in providing its AI features and advises users against providing same in prompts or upload files.</p>
+<p>The processing of the information sent by Qizify Learning to OpenAI is performed according to OpenAI’s standard terms and conditions, which may be found here.</p>
+<p>OpenAI describes how it processes, used and stores the data it <a href="https://openai.com/policies/eu-privacy-policy" target="_blank" rel="noopener noreferrer">receives here</a>.</p>
+<p>Without warranting the content of the information, Qizify Learning assumes that this information is correct and accurate also regarding customer data transferred by Qizify Learning to OpenAI for processing:</p>
+
+<h3>Important</h3>
+
+<p>Your prompts (inputs) and completions (outputs), your embeddings, and your training data:</p>
+
+<ul>
+    <li>are NOT available to other customers.</li>
+    <li>are NOT used to improve Qizify Learning, OpenAI or 3rd party product services.</li>
+    <li>are NOT used for automatically improving OpenAI models for your use in your resource (The models are stateless, unless you explicitly fine-tune models with your training data).</li>
+    <li>are NOT used to train our models on inputs and outputs through Qizify Learning API.</li>
+    <li>are automatically deleted from OpenAI database after content is generated.</li>
+</ul>
+
+<p>Beta features can change or evolve at any time. You may experience bugs or performance issues while using such features. Qizify Learning reserves the right to cap or disable beta feature usage at any time, including due to high demand.</p>
+    
+<h2>Important considerations for users</h2>
+<p>While AI text-generation services can save you a lot of time, they sometimes provide inaccurate or untrue responses. Please carefully review any AI-generated content for accuracy before using it.</p>
+<p>Please note that you as the author of a Qizify Learning utilizing Topic-to-Quiz,, Text-to-Quiz or PDF-to-Quiz generator remain responsible for the accuracy and suitability of the content contained therein, as well as its compliance with Qizify Learning’s <a href="https://qizify.com/en/terms-of-use/">terms and conditions</a> and <a href="https://qizify.com/en/privacy/">privacy policies</a>.</p>
+<p>You should not:</p>
+
+<ul>
+    <li>include any personal data in your use of the AI features, such as within the search field, AI-assisted generator prompt or in PDFs you upload</li>
+    <li>include or upload any offensive or infringing material, confidential information or other content violating our <a href="https://qizify.com/en/terms-of-use/">terms and conditions</a>.</li>
+</ul>
+    
+<h2>Data processing and technical information</h2>
+
+<p>Key technical information related to the features:</p>
+
+<h3>Topic-to-Quiz LearnAI generator</h3>
+<p>The model currently used is “GPT 3.5 turbo”. The prompt permits a user to enter up to 120 characters of text to better ensure a proposed set of relevant questions and answer alternatives. The information processed by OpenAI is the text entered by the user.</p>
+
+<h3>Text-to-Quiz and PDF-to-Quiz</h3>
+<p>The model currently used is “gpt-35-turbo-16k”. PDFs provided by users are rendered in the user’s browser and never shared or stored by Qizify Learning or its partners. Text in a PDF will be processed by OpenAI to create suggested questions and answers for a quiz. The generated quiz is stored by Qizify Learning in our German-based storage and is not made available to other users.</p>
+    
+<h2>Additional information</h2>
+<p>Should you have any questions regarding these features, please contact our support team at info@qizify.com</p>
+    
+
+</div>
+
+
+{% endblock %}

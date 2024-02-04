@@ -1,0 +1,57 @@
+---
+permalink: "/de/terms-for-ai/"
+translationKey: "terms-for-ai"
+---
+
+{% extends "layouts/default.html" %}
+
+{% set metaTitle= "KI-unterstützte Funktionen und deren Verfügbarkeit" %}
+
+{% block content %}
+
+<div class="max-w-4xl mx-auto mt-16 prose prose-lg prose-invert">
+
+    <h1>KI-unterstützte Funktionen und deren Verfügbarkeit</h1>
+    <p><strong>Qizify LearnAI KI-gestützter Ersteller</strong>, um die Zeit für die Erstellung von Quizzen zu verkürzen</p>
+    <p>Um die Zeit für die Erstellung von Quizzen zu reduzieren, verwendet Qizify Learning ein großes Sprachmodell, um Fragen basierend auf Eingaben der Benutzer vorzuschlagen.</p>
+    <p><strong>Text-zu-Quiz und PDF-zu-Quiz</strong>, um die Zeit für die Erstellung von maßgeschneiderten Quizzen zu verkürzen</p>
+    <p>Qizify Learning verwendet KI, um es den Benutzern zu erleichtern, indem es Fragen, Antworten und Inhalte basierend auf dem Inhalt einer vom Benutzer bereitgestellten PDF generiert.</p>
+    <p>Diese Funktion steht Benutzern in den <strong>Premium mit LearnAI und Ultimate mit LearnAI Lizenzmodellen</strong> zur Verfügung.</p>
+    <h2>Grundprinzipien für die Nutzung von KI in Qizify Learning</h2>
+    <p>Qizify Learning verwendet öffentliche KI-Modelle von Drittanbietern und entwickelt keine eigenen Modelle.</p>
+    <p>Partner und Inhaltsanbieter für die KI-Funktionen von Qizify Learning ist OpenAI L.L.C. Qizify Learning hat sich mit OpenAI über unser Backend integriert, um zu verhindern, dass unbekannte Informationen aus dem Browser oder Client an OpenAI L.L.C. gesendet werden.</p>
+    <p>Die in die KI-Funktionen von Qizify Learning eingegebenen Daten werden an OpenAI zur Verarbeitung gesendet und um KI-Ausgaben zu generieren. Die Informationen, die Qizify Learning an die APIs von OpenAI sendet, nennen wir den Prompt. Qizify Learning stellt wissentlich keine Benutzerinformationen, persönlichen Daten oder vorherigen Prompts zur Verfügung, wenn es seine KI-Funktionen bereitstellt, und rät Benutzern davon ab, dies in Prompts oder Upload-Dateien zu tun.</p>
+    <p>Die Verarbeitung der Informationen, die von Qizify Learning an OpenAI gesendet werden, erfolgt gemäß den Standard-Geschäftsbedingungen von OpenAI, die hier gefunden werden können.</p>
+    <p><a href="https://openai.com/policies/eu-privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI beschreibt hier</a> , wie es die erhaltenen Daten verarbeitet, verwendet und speichert.</p>
+    <p>Ohne den Inhalt der Informationen zu gewährleisten, geht Qizify Learning davon aus, dass diese Informationen auch hinsichtlich der von Qizify Learning an OpenAI zur Verarbeitung übertragenen Kundendaten korrekt und genau sind:</p>
+    <h3>Wichtig</h3>
+    <p>Ihre Prompts (Eingaben) und Vervollständigungen (Ausgaben), Ihre Einbettungen und Ihre Trainingsdaten:</p>
+    <ul>
+        <li>sind NICHT für andere Kunden verfügbar.</li>
+        <li>werden NICHT verwendet, um Qizify Learning, OpenAI oder Dienstleistungen von Drittanbietern zu verbessern.</li>
+        <li>werden NICHT für die automatische Verbesserung von OpenAI-Modellen für Ihre Nutzung in Ihrer Ressource verwendet (Die Modelle sind zustandslos, es sei denn, Sie stimmen Modelle explizit mit Ihren Trainingsdaten ab).</li>
+        <li>werden NICHT verwendet, um unsere Modelle anhand von Eingaben und Ausgaben über die Qizify Learning API zu trainieren.</li>
+        <li>werden automatisch aus der OpenAI-Datenbank gelöscht, nachdem der Inhalt generiert wurde.</li>
+    </ul>
+    <p>Beta-Funktionen können sich jederzeit ändern oder weiterentwickeln. Während der Nutzung solcher Funktionen können Sie auf Fehler oder Leistungsprobleme stoßen. Qizify Learning behält sich das Recht vor, die Nutzung von Beta-Funktionen jederzeit zu begrenzen oder zu deaktivieren, auch aufgrund hoher Nachfrage.</p>
+    <h2>Wichtige Überlegungen für Benutzer</h2>
+    <p>Während KI-Textgenerierungsdienste Ihnen viel Zeit sparen können, liefern sie manchmal ungenaue oder unwahre Antworten. Bitte überprüfen Sie alle KI-generierten Inhalte sorgfältig auf ihre Richtigkeit, bevor Sie sie verwenden.</p>
+    <p>Bitte beachten Sie, dass Sie als Autor eines Qizify Learning, das Topic-to-Quiz, Text-to-Quiz oder PDF-to-Quiz Generator nutzt, für die Richtigkeit und Eignung des darin enthaltenen Inhalts sowie dessen Einhaltung der <a href="https://qizify.com/de/agb">Geschäftsbedingungen</a> und <a href="https://qizify.com/de/datenschutzerklaerung">Datenschutzrichtlinien</a> von Qizify Learning verantwortlich bleiben.</p>
+    <p>Sie sollten nicht:</p>
+    <ul>
+        <li>persönliche Daten in Ihrer Nutzung der KI-Funktionen einbeziehen, wie innerhalb des Suchfeldes, KI-gestützten Ersteller-Prompts oder in PDFs, die Sie hochladen</li>
+        <li>anstößiges oder rechtsverletzendes Material, vertrauliche Informationen oder andere Inhalte, die gegen unsere <a href="https://qizify.com/de/agb">Geschäftsbedingungen</a> verstoßen, einbeziehen oder hochladen.</li>
+    </ul>
+    <h2>Datenverarbeitung und technische Informationen</h2>
+    <p>Wichtige technische Informationen zu den Funktionen:</p>
+    <h3>Topic-to-Quiz LearnAI Generator</h3>
+    <p>Das derzeit verwendete Modell ist „GPT 3.5 turbo“. Der Prompt ermöglicht es einem Benutzer, bis zu 120 Zeichen Text einzugeben, um einen vorgeschlagenen Satz relevanter Fragen und Antwortalternativen besser zu gewährleisten. Die von OpenAI verarbeiteten Informationen sind der vom Benutzer eingegebene Text.</p>
+    <h3>Text-zu-Quiz und PDF-zu-Quiz</h3>
+    <p>Das derzeit verwendete Modell ist „gpt-35-turbo-16k“. PDFs, die von Benutzern bereitgestellt werden, werden im Browser des Benutzers gerendert und weder von Qizify Learning noch von seinen Partnern geteilt oder gespeichert. Der Text in einer PDF wird von OpenAI verarbeitet, um vorgeschlagene Fragen und Antworten für ein Quiz zu erstellen. Das generierte Quiz wird von Qizify Learning in unserem in Deutschland ansässigen Speicher gespeichert und ist nicht für andere Benutzer verfügbar.</p>
+    <h2>Zusätzliche Informationen</h2>
+    <p>Sollten Sie Fragen zu diesen Funktionen haben, kontaktieren Sie bitte unser Support-Team unter info@qizify.com</p>
+
+</div>
+
+
+{% endblock %}
