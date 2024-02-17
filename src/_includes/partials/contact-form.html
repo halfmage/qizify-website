@@ -1,5 +1,3 @@
-<h2 class="text-headline-sm text-left">{{ site[locale].contact }}</h2>
-
 <form 
     name="qizify-contact-new" 
     method="POST" 
@@ -14,14 +12,14 @@
     </label>
 </p>
 <p class="w-full">
-    <label>{{ site[locale].contactInterest }} <select class="input-field pr-12" name="contactInterest[]">
+    <label>{{ site[locale].contactInterest }} <select class="pr-12 input-field" name="contactInterest[]">
     <option value="Wants Standard Package">{{ site[locale].contactInterestOption2 }} {{ pricing[locale].standardTitle }} LearnAI</option>
     <option value="Wants Premium Package">{{ site[locale].contactInterestOption2 }} {{ pricing[locale].premiumTitle }} LearnAI</option>
     <option value="Wants Ultimate Package">{{ site[locale].contactInterestOption2 }} {{ pricing[locale].ultimateTitle }} LearnAI</option>
     <option value="Wants demo">{{ site[locale].contactInterestOption3 }}</option>
     </select></label>
 </p>
-<div class="flex flex-col md:flex-row items-center gap-4 mt-4">
+<div class="flex flex-col items-center gap-4 mt-4 md:flex-row">
     <p class="w-full">
         <label class="">{{ site[locale].contactName }}:
         <input class="input-field" required type="text" name="contactName" />
@@ -33,14 +31,14 @@
         </label>
     </p>
 </div>
-<div class="flex flex-col md:flex-row items-center gap-4 mt-4">
+<div class="flex flex-col items-center gap-4 mt-4 md:flex-row">
     <p class="w-full">
         <label class="">{{ site[locale].contactCompanyName }}:
         <input class="input-field" required type="text" name="contactCompanyName" />
         </label>
     </p>
     <p class="w-full">
-        <label>{{ site[locale].contactAmountOfUsers }} <select class="input-field pr-12" name="amountOfUsers[]">
+        <label>{{ site[locale].contactAmountOfUsers }} <select class="pr-12 input-field" name="amountOfUsers[]">
         <option value="less than 100">< 100</option>
         <option value="less than 300">< 300</option>
         <option value="less than 1000">< 1000</option>
@@ -55,7 +53,7 @@
 </p>
 <p class="mt-4">
     <div class="flex text-base">
-    <input type="checkbox" name="newsletter" id="newsletter" class="flex-shrink-0 rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
+    <input type="checkbox" name="newsletter" id="newsletter" class="flex-shrink-0 w-6 h-6 rounded cursor-pointer bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark">
     <label for="newsletter" class="ml-4 text-gray-400">
         {{ site[locale].contactNewsletter }}
     </label>
@@ -63,7 +61,7 @@
 </p>
 <p class="mt-4">
     <div class="flex text-base">
-    <input required type="checkbox" name="agreement" id="agreement" class="flex-shrink-0 rounded w-6 h-6 bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark cursor-pointer">
+    <input required type="checkbox" name="agreement" id="agreement" class="flex-shrink-0 w-6 h-6 rounded cursor-pointer bg-dark border-secondary text-secondary focus:ring-secondary focus:ring-offset-dark">
     <label for="agreement" class="ml-4 text-gray-400">
         {{ site[locale].contactBoxText }}
 
@@ -85,14 +83,14 @@
     </label>
     </div>
 </p>
-<p class="mt-4 flex items-center gap-4">
-    <button class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 block w-full" type="submit">{{ site[locale].contactSend }}</button>
+<p class="flex items-center gap-4 mt-4">
+    <button class="block w-full px-4 py-3 font-medium whitespace-nowrap gradient rounded-xl hover:brightness-110" type="submit">{{ site[locale].contactSend }}</button>
     {{ site[locale].contactOr }}
     <a
         href="https://calendly.com/alesiakunts/30min"
         target="_blank"
         rel="noopener noreferrer"
-        class="whitespace-nowrap bg-gray-700 hover:bg-gray-500 py-3 text-center font-medium px-4 rounded-xl hover:brightness-110 w-full"
+        class="w-full px-4 py-3 font-medium text-center bg-gray-700 whitespace-nowrap hover:bg-gray-500 rounded-xl hover:brightness-110"
         >
             {{ site[locale].contactBookDemo }}
     </a>
