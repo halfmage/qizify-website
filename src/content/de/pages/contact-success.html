@@ -1,5 +1,5 @@
 ---
-permalink: "/{{ locale }}/contact-success.html"
+permalink: "/{{ locale }}/contact-success/"
 translationKey: "contactSuccess"
 ---
 
@@ -9,14 +9,14 @@ translationKey: "contactSuccess"
 
 {% block content %}
 
-<div class="container-hero text-center">
-  <div class="max-w-screen-xl mx-auto text-2xl md:text-4xl lg:text-6xl font-extrabold text-center md:mb-8">
+<div class="text-center container-hero">
+  <div class="max-w-screen-xl mx-auto text-2xl font-extrabold text-center md:text-4xl lg:text-6xl md:mb-8">
     {{ site[locale].contactSuccessTitle }}
   </div>
-  <p class="text-center lg:text-2xl max-w-screen-lg mx-auto text-gray-400">
+  <p class="max-w-screen-lg mx-auto text-center text-gray-400 lg:text-2xl">
     {{ site[locale].contactSuccessSubtitle }}
   </p>
-  <a href="/{{ locale }}" class="whitespace-nowrap ml-4 gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer inline-block mt-16">Homepage</a>
+  <a href="/{{ locale }}" class="inline-block px-4 py-3 mt-16 ml-4 font-medium cursor-pointer whitespace-nowrap gradient rounded-xl hover:brightness-110">Homepage</a>
 </div>
 
 {% endblock %}
