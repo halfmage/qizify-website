@@ -40,6 +40,6 @@ The features of blended learning are easy to summarize under 3 points:
 2. Other courses take place in a teacher-led classroom in person;
 3. An integrated learning environment comes from a combination of online and face-to-face classes.
 
-A practical tool to assist universities in blended and collaborative learning is Qizify learning. It creates an engaging environment for learners and lecturers to work mutually on learning material. Sounds interesting? Then get in touch with us or click here to get more insights.
+A practical tool to assist universities in blended and collaborative learning is LearnSlice. It creates an engaging environment for learners and lecturers to work mutually on learning material. Sounds interesting? Then get in touch with us or click here to get more insights.
 
 Each e-Learning method matches a specific environment or preference. Understand what works well for you and your learners before choosing an option.

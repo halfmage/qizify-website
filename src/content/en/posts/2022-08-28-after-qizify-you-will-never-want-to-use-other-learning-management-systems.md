@@ -1,5 +1,5 @@
 ---
-title: "After Qizify, You will never want to use other learning management systems."
+title: "After LearnSlice, You will never want to use other learning management systems."
 translationKey: "2022-08-28- after-qizify-you-will-never-want-to-use-other-learning-management-systems"
 image: "../../assets/images/blog/cover05.png"
 experpt: "A learning management system (LMS or Lernmanagement-System (in German) is a platform for the execution of e-learning. Choosing the right learning management system is critical not only for learners, but for universities and schools too."
@@ -9,7 +9,7 @@ experpt: "A learning management system (LMS or Lernmanagement-System (in German)
 
 A learning management system (LMS or Lernmanagement-System (in German) is a platform for the execution of e-learning. Choosing the right learning management system is critical not only for learners, but for universities and schools too. Learning takes time, and it is crucial to invest that time efficiently to get the best results. Nowadays, there are many e-learning providers in the market. But how to find the right tool relevant to your learners' content? How about an application to create this content yourself!
 
-![Qizify Quiz Page](/assets/images/screen1.png "Qizify Quiz Page")
+![LearnSlice Quiz Page](/assets/images/screen1.png "LearnSlice Quiz Page")
 
 The important criteria for educational institutions are:
 
@@ -25,7 +25,7 @@ It's easy: to address their learning needs directly.
 
 > 60% of university students are worried about their academic performance, and around 70% experience trouble focusing. [Deutsche Welle](https://www.dw.com/en/university-students-in-the-pandemic-they-forgot-about-us/a-58323230)
 
-## How Qizify learning tackles these challenges:
+## How LearnSlice tackles these challenges:
 
 It helps educational institutions to support their learners in preparation for exams and tests.
 
@@ -42,8 +42,8 @@ Learning in small units (quizzes) is proven to be more effective.
 ### Multilingual - English and German.
 Thus, it expands the target group of international users.
 
-You and your students are sure to enjoy Qizify - a new level of learning management system.
+You and your students are sure to enjoy LearnSlice - a new level of learning management system.
 
 Get in touch with us today!
 
-Your Qizify team
+Your LearnSlice team

@@ -1,7 +1,7 @@
 module.exports = {
     de: [
         {
-            quote: "Ich mag Qizify, weil es mir ermöglicht, mein Wissen in einer spielähnlichen Umgebung zu testen – es ist sicher, Fehler zu machen, und ich fühle mich zum Lernen motiviert.",
+            quote: "Ich mag LearnSlice, weil es mir ermöglicht, mein Wissen in einer spielähnlichen Umgebung zu testen – es ist sicher, Fehler zu machen, und ich fühle mich zum Lernen motiviert.",
             name: "Pavel Raschetnov, student of RWTH Aachen",
         },
         {
@@ -13,7 +13,7 @@ module.exports = {
             name: "Studentin der Fakultät für Design, Hochschule Düsseldorf",
         },
         {
-            quote: "Ich mag das Qizify-Tool, weil es mir ermöglicht, Freiheit beim Lernen zu gewinnen und Quizfragen zu kontrollieren.",
+            quote: "Ich mag das LearnSlice-Tool, weil es mir ermöglicht, Freiheit beim Lernen zu gewinnen und Quizfragen zu kontrollieren.",
             name: "Student der Wirtschaftsfakultät, Fachhochschule Dortmund",
         },
         {
@@ -23,7 +23,7 @@ module.exports = {
     ],
     en: [
         {
-            quote: "I like Qizify because it allows me to test my knowledge in a game-like environment - it is safe to make mistakes, and I feel motivated to study.",
+            quote: "I like LearnSlice because it allows me to test my knowledge in a game-like environment - it is safe to make mistakes, and I feel motivated to study.",
             name: "Pavel Raschetnov, student of RWTH Aachen",
         },
         {
@@ -35,7 +35,7 @@ module.exports = {
             name: "Student of Design faculty, University of Applied Science Düsseldorf",
         },
         {
-            quote: "I like the Qizify tool because it gives me the ability to gain freedom in studying and control quizzes.",
+            quote: "I like the LearnSlice tool because it gives me the ability to gain freedom in studying and control quizzes.",
             name: "Student of the Faculty of Business Studies, University of Applied Science Dortmund",
         },
         {

@@ -37,13 +37,13 @@ Those who have graduated from school or college understand how costly education 
 
 Some courses offered on online sites can help you gain experience in a small sector with a low salary package, but they are not supposed to give you a paying job either. Thus, first, identify your learning goals and list a few essential courses that will bring you to your target.
 
-While developing Qizify Learning platform, we kept in mind all of mentioned above points and integrated them into our learning management system as features, for instance:
+While developing LearnSlice platform, we kept in mind all of mentioned above points and integrated them into our learning management system as features, for instance:
 
 - **Relevant content**: First, for us, students must work with relevant content. Who knows better what is the right content for you than you? Thus, on our platform learners and teachers create games as quizzes based on their study material, and share with other learners of their dedicated space.
 
 - **Performance tracking**: Learners can find their key performance indicators on the profile page. This data is, of course, visible to the learner only.
 
-![Qizify Analytics](/assets/images/screen2.png "Qizify Analytics")
+![LearnSlice Analytics](/assets/images/screen2.png "LearnSlice Analytics")
 
 - **Gamification**. According to specialists in the education domain, gamification help learners understand and remember the study material better than while using the classical approaches.
 

@@ -17,7 +17,7 @@ Eine Lernplattform ist eine digitale Plattform, die es Lehrkräften ermöglicht,
 
 Lernplattformen lassen sich grob in zwei Kategorien einteilen: online und offline. Zu den Online-Lernplattformen gehören Websites, Blogs, Websites sozialer Medien und Video-Streaming-Dienste. Offline-Lernplattformen sind Bücher, Vorlesungen, Workshops und Präsenz- oder Onlinekurse. Beide Arten von Medien werden manchmal zusammen verwendet, um das traditionellen Unterricht zu ergänzen. Es gibt viele verschiedene Lernplattformen, jede mit ihren Stärken und Schwächen. Einige sind besser geeignet für neue Informationen schnell aufzunehmen. Andere hingegen sind besser geeignet, um Daten Daten über einen längeren Zeitraum zu behalten. Einige richten sich an Studenten oder Fachleute, während andere von jedermann genutzt werden können. Die Wahl der richtigen Plattform für die jeweilige Aufgabe ist entscheidend, da jede Plattform ihre eigenen Merkmale und Vorteile hat.
 
-## Vorteile der Lernplattform Qizify.
+## Vorteile der Lernplattform LearnSlice.
 
 Wenn Sie Feedback zu Ihrem Quiz von einem Professor oder anderen Studenten erhalten möchten können Sie dies mit dieser neuen Funktion tun! Studenten können Prüfungen auf der Grundlage von Studieninhalten erstellen und diese von Dozenten überprüfen lassen, die wertvolles Feedback zu ihrer Leistung geben. Wenn der Professor (oder jemand anderes) gefällt, was wir im Unterricht mit unseren Studien gemacht haben, gibt es fünf Karmapunkte. +1 Karmapunkt wird vergeben; wenn jedoch ein anderer Student bereits vor mir geantwortet hat vor mir geantwortet hat, gibt es nur vier, egal wie oft ich antworte, aber Wenigstens weiß jetzt jeder, wo meine Stärken liegen:)
 

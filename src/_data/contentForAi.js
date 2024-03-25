@@ -1,6 +1,6 @@
 module.exports = {
     de: {
-        badge2: "Generiere mit dem Qizify AI-Assistant relevante Inhalte 15-mal schneller!",
+        badge2: "Generiere mit dem LearnSlice AI-Assistant relevante Inhalte 15-mal schneller!",
         badge: "Quizze 15-mal schneller mit KI erstellen!",
         learnmore: "Mehr",
         title: "Quizze 15-mal schneller erstellen!",
@@ -12,7 +12,7 @@ module.exports = {
         list5: "Verfügbar für Multiple-Choice, offene Fragen und Wissenstest-Quiz!"
     },
     en: {
-        badge2: "Generate relevant content 15 times faster with Qizify AI-Assistant!",
+        badge2: "Generate relevant content 15 times faster with LearnSlice AI-Assistant!",
         badge: "Create quizzes 15x faster with AI!",
         learnmore: "Learn more",
         title: "Create quizzes 15x faster!",

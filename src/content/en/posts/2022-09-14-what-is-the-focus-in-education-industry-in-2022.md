@@ -44,4 +44,4 @@ Because of the challenges of learning in person, many learners switched to onlin
 
 ## Conclusion
 
-Qizify, knowing these pains, focuses on providing learners with the relevant content by driving them to create learning units themselves based on the study program. Lecturers verify new content to ensure the quality and relevance of the units. Students of 4 German universities have approved the Qizify learning approach. Interested? Don’t hesitate to get in touch with us!
+LearnSlice, knowing these pains, focuses on providing learners with the relevant content by driving them to create learning units themselves based on the study program. Lecturers verify new content to ensure the quality and relevance of the units. Students of 4 German universities have approved the LearnSlice approach. Interested? Don’t hesitate to get in touch with us!

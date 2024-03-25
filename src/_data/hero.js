@@ -10,7 +10,7 @@ module.exports = {
       titleBlog: "Blog",
       titleFAQ: "Häufig gestellte Fragen",
       titlePricing: "Ein kalkulierbares, einfaches Zahlungssystem",
-      titleTeam: "Das Qizify Learning Team",
+      titleTeam: "Das LearnSlice Team",
       textTeam: "Das Team, das uns erfolgreich gemacht hat"
     },
     en: {
@@ -24,7 +24,7 @@ module.exports = {
       titleBlog: "Blog",
       titleFAQ: "Frequently asked questions",
       titlePricing: "A calculable, simple payment system",
-      titleTeam: "The Qizify Learning Team",
+      titleTeam: "The LearnSlice Team",
       textTeam: "The Team that made us successful"
     }
   };
