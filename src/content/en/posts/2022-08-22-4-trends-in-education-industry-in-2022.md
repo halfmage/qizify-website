@@ -23,7 +23,7 @@ New benefits are available to instructors and their institutions with the advent
 
 ---
 
-LearnSlice is one of the most effective tools for online learning. [Get in touch to request a demo](https://www.qizify.com/pricing).
+LearnSlice is one of the most effective tools for online learning. [Get in touch to request a demo](https://www.learnslice.com/pricing).
 
 ---
 
@@ -53,7 +53,7 @@ However, schools that focus on learning these skills can keep in touch with thei
 
 With the vast supply of information, many students prefer less of a top-down delivery method. Instead, teachers now act as navigators and supporters. They help students uncover and understand information and teach them how to learn.
 
-Teachers face some challenges, as they need to develop soft skills such as leadership and problem-solving. The emphasis is on teamwork and conversations. Teachers will also gain immediate feedback from students as they become more involved in the learning process. [LearnSlice's new model](https://www.qizify.com/) is particularly rewarding for those who wish to concentrate more on student development than simply knowledge delivery.
+Teachers face some challenges, as they need to develop soft skills such as leadership and problem-solving. The emphasis is on teamwork and conversations. Teachers will also gain immediate feedback from students as they become more involved in the learning process. [LearnSlice's new model](https://www.learnslice.com/) is particularly rewarding for those who wish to concentrate more on student development than simply knowledge delivery.
 
 ---
 

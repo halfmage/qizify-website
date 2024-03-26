@@ -1,4 +1,4 @@
-Sitemap: https://www.qizify.com/sitemap.xml
+Sitemap: https://www.learnslice.com/sitemap.xml
 
 User-agent: *
 Disallow:
