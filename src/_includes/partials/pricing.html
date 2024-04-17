@@ -46,18 +46,18 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">0,69 €</div>
+                            <div class="font-bold text-xl md:text-2xl">2,49 €</div>
                         </div>
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">0,64 €</div>
+                            <div class="font-bold text-xl md:text-2xl">2,19 €</div>
                         </div>
                         <div class="flex items-center justify-between pt-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">0,59 €</div>
+                            <div class="font-bold text-xl md:text-2xl">1,99 €</div>
                         </div>
                     </div>
-                    <p class="text-gray-400">{{pricing[locale].payment}}</p>
+                    <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].getstarted }}</div>
                     <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].standardList %}
@@ -67,9 +67,10 @@
                 </div>
             </div>
 
-            <div class="rounded-xl overflow-hidden border-2 border-gray-700">
+            <div class="rounded-xl overflow-hidden border-2 border-secondary">
                 <!-- Pricing card header -->
-                <div class="h-60 bg-gray-800 p-6">
+                <div class="h-60 bg-gray-800 p-6 relative">
+                    <div class="bg-secondary pt-2 pb-3 px-4 uppercase rounded-bl-xl font-bold text-sm absolute top-0 right-0">{{ pricing[locale].popular }}</div>
                     <div class="w-14 h-14 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
                     <h3 class="text-2xl md:text-3xl font-bold my-4">{{ pricing[locale].premiumTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].premiumText }}</p>
@@ -79,18 +80,18 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">1,09 €</div>
+                            <div class="font-bold text-xl md:text-2xl">3,49 €</div>
                         </div>
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">1,04 €</div>
+                            <div class="font-bold text-xl md:text-2xl">3,19 €</div>
                         </div>
                         <div class="flex items-center justify-between pt-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">0,99 €</div>
+                            <div class="font-bold text-xl md:text-2xl">2,99 €</div>
                         </div>
                     </div>
-                    <p class="text-gray-400">{{pricing[locale].payment}}</p>
+                    <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].getstarted }}</div>
                     <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].premiumList %}
@@ -123,7 +124,7 @@
                             <div class="font-bold text-xl md:text-2xl">-</div>
                         </div>
                     </div>
-                    <p class="text-gray-400 opacity-0 hidden xl:flex">{{pricing[locale].payment}}</p>
+                    <p class="text-gray-400 opacity-0 hidden xl:flex">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ pricing[locale].orderOffer }}</div>
                     <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].ultimateList %}
@@ -137,8 +138,6 @@
     </div>
 
     <div x-cloak x-show="tab === 'business'">
-
-
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
 
             <div class="rounded-xl overflow-hidden border-2 border-gray-700">
@@ -153,18 +152,18 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">2,59 €</div>
+                            <div class="font-bold text-xl md:text-2xl">12,59 €</div>
                         </div>
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">2,39 €</div>
+                            <div class="font-bold text-xl md:text-2xl">11,99 €</div>
                         </div>
                         <div class="flex items-center justify-between pt-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">1,99 €</div>
+                            <div class="font-bold text-xl md:text-2xl">11,49 €</div>
                         </div>
                     </div>
-                    <p class="text-gray-400">{{pricing[locale].payment}}</p>
+                    <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].getstarted }}</div>
                     <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].standardList %}
@@ -187,18 +186,18 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">4,99 €</div>
+                            <div class="font-bold text-xl md:text-2xl">14,99 €</div>
                         </div>
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">4,79 €</div>
+                            <div class="font-bold text-xl md:text-2xl">13,99 €</div>
                         </div>
                         <div class="flex items-center justify-between pt-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">4,39 €</div>
+                            <div class="font-bold text-xl md:text-2xl">13,49 €</div>
                         </div>
                     </div>
-                    <p class="text-gray-400">{{pricing[locale].payment}}</p>
+                    <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ site[locale].getstarted }}</div>
                     <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].businessPremiumList %}
@@ -231,7 +230,7 @@
                             <div class="font-bold text-xl md:text-2xl">-</div>
                         </div>
                     </div>
-                    <p class="text-gray-400 opacity-0 hidden xl:flex">{{pricing[locale].businessExtra}}</p>
+                    <p class="text-gray-400 opacity-0 hidden xl:flex">{{pricing[locale].businessExtra}} <br> {{ pricing[locale].info3 }} </p>
                     <div class="whitespace-nowrap gradient py-3 font-medium text-center rounded-xl hover:brightness-110 cursor-pointer" @click="ContactModal = true">{{ pricing[locale].orderOffer }}</div>
                     <ul class="list-image-checkmark pl-4 text-gray-300">
                         {% for item in pricing[locale].businessUltimateList %}
