@@ -47,7 +47,7 @@ While developing LearnSlice platform, we kept in mind all of mentioned above poi
 
 - **Gamification**. According to specialists in the education domain, gamification help learners understand and remember the study material better than while using the classical approaches.
 
-If you want to know more about our platform, please visit our website or contact us at info@qizify.com.
+If you want to know more about our platform, please visit our website or contact us at info@learnslice.com.
 
 
 

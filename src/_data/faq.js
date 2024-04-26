@@ -50,11 +50,11 @@ module.exports = {
     },
     {
       title: "Wie kann ich eine Lizenz erwerben?",
-      text: "Um eine Lizenz als Universität oder Schule zu erwerben, kontaktieren Sie uns bitte per E-Mail unter alesia@qizify.com, mobil unter +4915783914112 oder über das Kontaktformular https://www.learnslice.com/contact"
+      text: "Um eine Lizenz als Universität oder Schule zu erwerben, kontaktieren Sie uns bitte per E-Mail unter info@learnslice.com, mobil unter +4915783914112 oder über das Kontaktformular https://www.learnslice.com/contact"
     },
     {
       title: "Ich habe eine Frage, ein Anliegen oder Feedback. An wen kann ich mich wenden?",
-      text: "Sie erreichen uns per Whatsapp/Telegram unter +4915783914112, über das Kontaktformular unter https://www.learnslice.com/contact oder per E-Mail unter info@qizify.com."
+      text: "Sie erreichen uns per Whatsapp/Telegram unter +4915783914112, über das Kontaktformular unter https://www.learnslice.com/contact oder per E-Mail unter info@learnslice.com."
     },
   ],
   en: [
@@ -108,11 +108,11 @@ module.exports = {
     },
     {
       title: "How can I purchase a license?",
-      text: "To purchase a license as a university or school please get in touch with us via email at alesia@qizify.com, via mobile at +4915783914112, or via contact form https://www.learnslice.com/contact"
+      text: "To purchase a license as a university or school please get in touch with us via email at info@learnslice.com, via mobile at +4915783914112, or via contact form https://www.learnslice.com/contact"
     },
     {
       title: "I have a question, concern, or feedback. Who can I contact?",
-      text: "You can contact us via Whatsapp/ Telegram at +4915783914112, via the contact form at https://www.learnslice.com/contact, or via email at info@qizify.com."
+      text: "You can contact us via Whatsapp/ Telegram at +4915783914112, via the contact form at https://www.learnslice.com/contact, or via email at info@learnslice.com."
     }
   ]
 };
