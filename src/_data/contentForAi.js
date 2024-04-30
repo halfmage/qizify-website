@@ -3,24 +3,36 @@ module.exports = {
         badge2: "Generiere mit dem LearnSlice AI-Assistant relevante Inhalte 15-mal schneller!",
         badge: "Quizze 15-mal schneller mit KI erstellen!",
         learnmore: "Mehr",
-        title: "Quizze 15-mal schneller erstellen!",
-        text: "Entdecken Sie unsere innovative Funktion, die Lernenden und Lehrenden ermöglicht, innerhalb ihrer Organisation relevante Bewertungen 15-mal schneller zu erstellen, überprüfen, anzupassen und zu teilen! Verabschieden Sie sich von zeitaufwändiger Prüfungsvorbereitung und der Erstellung obligatorischer Tests. Erreichen Sie eine neue Ebene der Bildungsexzellenz mit Leichtigkeit.",
-        list1: "KI füllt Fragekarten automatisch für die Überprüfung und Anpassung durch Menschen aus und spart dabei 93% wertvolle Zeit.",
-        list2: "Generieren Sie blitzschnell bis zu 10 Fragen mit Antworten.",
-        list3: "KI erstellt falsche Antwortoptionen zur Begleitung der richtigen Antwort.",
-        list4: "KI bietet erläuternde Kommentare zu richtigen Antworten.",
-        list5: "Verfügbar für Multiple-Choice, offene Fragen und Wissenstest-Quiz!"
+        title: "Lernen ohne Teststress – So geht's!",
+        text: "Stellen Sie sich vor: Sie erstellen individuelle, interaktive Tests in Sekundenschnelle. Laden Sie einfach ein beliebiges Dokument hoch und unsere LearnAI generiert im Handumdrehen ein maßgeschneidertes Quiz, das sich genau auf das Wissen Ihrer Lernenden konzentriert. All das verfügbar in 10+ Sprachen.",
+
+        text2: "Das ist nicht nur schnell, sondern auch intelligent! Unsere KI geht weit über die einfache Erstellung von Fragen hinaus:",
+        list1: "Mühelose Effizienz: Laden Sie ein Dokument beliebiger Länge hoch und erhalten Sie innerhalb von Sekunden ein Quiz – sparen Sie 93% Ihrer Zeit!",
+        list2: "KI-gestütztes Lernen: Unsere KI füllt automatisch Quizkarten vor, generiert falsche Antwortmöglichkeiten und liefert Erklärungen zu den richtigen Antworten.",
+        list3: "Intelligente Fragenvorschläge: Erhalten Sie Quiz-Empfehlungen basierend auf den Erfahrungen Ihrer Lernenden, um das richtige Schwierigkeitsniveau zu gewährleisten.",
+        list4: "Lernen in jeder Sprache! Laden Sie Dokumente auf Englisch oder Deutsch hoch und erhalten Sie Quizfragen in der Muttersprache Ihrer Lernenden (Deutsch, Englisch, Polnisch, Ukrainisch, Bulgarisch, Rumänisch usw.).",
+
+        listTwoTitle: "Machen Sie Schluss mit:",
+        listTwo1: "Zeitraubendem Erstellen von Tests",
+        listTwo2: "Nutzlosen 08/15-Quizzen",
+        listTwo3: "Der Suche nach der richtigen Bewertung für Ihre Bedürfnisse"
     },
     en: {
         badge2: "Generate relevant content 15 times faster with LearnSlice AI-Assistant!",
         badge: "Create quizzes 15x faster with AI!",
         learnmore: "Learn more",
-        title: "Create quizzes 15x faster!",
-        text: "Introducing our groundbreaking feature that empowers learners and educators to create, review, adjust, and share relevant assessments within their organisation at an impressive 15 times the speed! Say goodbye to time-consuming exam preparations and creation of mandatory tests. Embrace a future where educational mastery is within your reach like never before.",
-        list1: "AI autofills quiz cards for human review and adjustments, saving 93% of time.",
-        list2: "Generate up to 10 questions with answer options in a matter of seconds.",
-        list3: "AI generates incorrect answer options alongside the correct answer.",
-        list4: "AI provides comments to offer further explanations for the correct answers.",
-        list5: "Available for multiple-choice, open-ended, and knowledge level quiz types!"
+        title: "Tired of Wasting Time Building Tests?",
+        text: "Imagine creating personalized, interactive assessments in seconds – no more sifting through generic test banks. Upload any document, and our LearnAI instantly generates a tailored quiz that focuses on exactly what your learners need to know. Available in 10+ Languages!",
+
+        text2: "This isn't just fast – it's smart. Our AI goes beyond basic question creation:",
+        list1: "Effortless Efficiency: Upload a document of any length and get a quiz in seconds – that's 93% of your time saved!",
+        list2: "AI-Powered Learning: Our AI autofills quiz cards, generates incorrect answer options, and provides explanations for the correct ones.",
+        list3: "Smart Question Suggestions: Get quiz recommendations based on your learners' experience, ensuring the right level of challenge.",
+        list4: "Learn in any language! Upload documents in English or German and get quizzes in your learners' native tongue (German, English, Polish, Ukrainian, Bulgarian, Romanian, etc.).",
+
+        listTwoTitle: "Say goodbye to:",
+        listTwo1: "Time-consuming test creation",
+        listTwo2: "Generic, one-size-fits-all quizzes",
+        listTwo3: "The struggle to find the right assessment for your needs"
     }
 };  
