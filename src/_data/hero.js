@@ -1,7 +1,7 @@
 module.exports = {
     de: {
-      title: "Lernende besser motivieren.",
-      subtitle: "Wissensaustausch fördern.",
+      title: "Mitarbeiter motivieren.",
+      subtitle: "Einstellungskosten reduzieren.",
       text: "Verwandle mit unserer KI schwierige Inhalte in nur 15 Sekunden in spannende Quizze. Deine Lernenden werden durch Gamification motiviert, effektiv zu lernen.",
       screen1: "Quizze",
       screen2: "Leistung",
@@ -14,8 +14,8 @@ module.exports = {
       textTeam: "Das Team, das uns erfolgreich gemacht hat"
     },
     en: {
-      title: "Motivate your learners.",
-      subtitle: "Promote collaborative education.",
+      title: "Motivate colleagues.",
+      subtitle: "Cut hiring costs.",
       text: "Break down complex topics and documents into fun quizzes in just 15 seconds using our AI assistant. Motivate your learners to learn effectively through gamification!",
       screen1: "Quizzes",
       screen2: "Performance",
