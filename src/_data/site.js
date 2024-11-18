@@ -1,5 +1,5 @@
 module.exports = {
-  url: "https://qizify.com",
+  url: "https://learnslice.com",
   de: {
     title: "LearnSlice",
     description: "LearnSlice ist eine Online-Plattform für Lernende und Lehrende, die mit studiengangsbezogenen Quizzes die Selbstvorbereitung auf Prüfungen erleichtert.",
