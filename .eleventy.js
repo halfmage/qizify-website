@@ -1,7 +1,10 @@
 const now = String(Date.now())
-const htmlmin = require('html-minifier')
+const htmlmin = require('html-minifier-terser')
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('src/img')
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
   // English
   eleventyConfig.addCollection("posts_en", require("./src/_11ty/collections/posts_en.js"));
@@ -34,13 +37,13 @@ module.exports = function (eleventyConfig) {
     return now
   })
 
-  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+  eleventyConfig.addTransform('htmlmin', async function (content, outputPath) {
     if (
       process.env.ELEVENTY_PRODUCTION &&
       outputPath &&
       outputPath.endsWith('.html')
     ) {
-      let minified = htmlmin.minify(content, {
+      let minified = await htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
@@ -48,8 +51,8 @@ module.exports = function (eleventyConfig) {
       return minified
     }
 
-        return content
-    })
+    return content
+  })
   
   return {
     markdownTemplateEngine: "njk",

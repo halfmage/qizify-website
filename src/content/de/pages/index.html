@@ -1,21 +1,11 @@
 ---
 permalink: "/{{ locale }}/index.html"
 translationKey: "homepage"
+layout: default
 ---
 
-{% extends "layouts/default.html" %}
-
-{% set metaTitle= "Startseite" %}
-
-{% block content %}
-
-{% include "partials/banner.html" %}
-{% include "partials/hero.html" %}
-{% include "partials/partner.html" %}
-{% include "partials/content-ai.html" %}
-{% include "partials/features.html" %}
-{% include "partials/testimonials.html" %}
-{% include "partials/edutainerin.html" %}
-{% include "partials/features-software.html" %}
-
-{% endblock %}
+{% include "hero.html" %}
+{% include "logowall.html" %}
+{% include "comparison.html" %}
+{% include "artificial.html" %}
+{% include "pricing.html" %}
