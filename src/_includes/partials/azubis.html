@@ -1,0 +1,89 @@
+<div class="overflow-hidden py-16 md:py-24 bg-gray-900 border-b border-gray-700">
+    <div class="container md:flex gap-24 items-center relative">
+        <div data-sal="fade" data-sal-duration="500" data-sal-once class="mb-12 text-center md:text-left">
+            <div class="text-xs md:text-sm font-semibold items-center bg-green-400 rounded-full mb-8 inline-flex shadow-lg shadow-green-800 px-4 py-2 text-gray-900">
+                {{ azubis[locale].heroLabel }}
+            </div>
+            <h2 class="mx-auto lg:text-7xl md:text-3xl tracking-tight text-2xl font-extrabold">
+                {{ azubis[locale].heroTitle }}
+            </h2>
+            <p class="md:text-2xl my-8 max-w-screen-md mx-auto text-gray-200/75 z-10">
+                {{ azubis[locale].heroText }}
+            </p>
+            <a href="mailto:alesia@learnslice.com" class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer inline-block">
+                {{ azubis[locale].heroButton }}
+            </a>
+        </div>
+        <img class="image-gradient flex-shrink-0 object-cover w-full md:w-2/5 rounded-2xl" src="../../assets/images/pexels-andrea-piacquadio-3846262.jpg" alt="">
+    </div>  
+</div>
+
+<div class="">
+    <div class="container py-12 md:py-24">
+        <div class="grid gap-8 md:grid-cols-2 lg:gap-24 items-center">
+            <div class="order-first md:order-none" data-sal="slide-left" data-sal-duration="500" data-sal-delay="500">
+                <img class="image-gradient w-full h-auto object-cover rounded-2xl" src="../../assets/images/pexels-fauxels-3182781.jpg" alt="Two people looking at a tablet">
+            </div>
+            <div data-sal="slide-right" data-sal-duration="500" data-sal-delay="0">
+                <h2 class="text-3xl font-bold mb-6">
+                    {{ azubis[locale].textImageTitle }}
+                </h2>
+                <p class="text-xl leading-relaxed text-gray-300 mb-6">
+                    {{ azubis[locale].textImageText1 }}
+                </p>
+                <p class="text-xl leading-relaxed text-gray-300">
+                    {{ azubis[locale].textImageText2 }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="">
+    <div class="container py-12 md:py-24">
+        <div class="text-2xl md:text-4xl text-center font-bold mb-6">
+            {{ azubis[locale].benefitsTitle }}
+        </div>
+        <div class="grid grid-cols-12 grid-rows-2 gap-8 text-gray-300">
+            <div class="col-span-12 md:col-span-4 bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 p-8 rounded-xl text-center flex flex-col items-center">
+                <div class="font-bold mb-4 text-2xl text-white">{{ azubis[locale].benefits1Title }}</div>
+                <p>{{ azubis[locale].benefits1Text }}</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 p-8 rounded-xl text-center flex flex-col items-center">
+                <div class="font-bold mb-4 text-2xl text-white">{{ azubis[locale].benefits2Title }}</div>
+                <p>{{ azubis[locale].benefits2Text }}</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 p-8 rounded-xl text-center flex flex-col items-center">
+                <div class="font-bold mb-4 text-2xl text-white">{{ azubis[locale].benefits3Title }}</div>
+                <p>{{ azubis[locale].benefits3Text }}</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 p-8 rounded-xl text-center flex flex-col items-center">
+                <div class="font-bold mb-4 text-2xl text-white">{{ azubis[locale].benefits4Title }}</div>
+                <p>{{ azubis[locale].benefits4Text }}</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 p-8 rounded-xl text-center flex flex-col items-center">
+                <div class="font-bold mb-4 text-2xl text-white">{{ azubis[locale].benefits5Title }}</div>
+                <p>{{ azubis[locale].benefits5Text }}</p>
+            </div>
+            <div class="col-span-12 md:col-span-4 bg-gradient-to-b from-gray-900 to-gray-800 border border-gray-700 p-8 rounded-xl text-center flex flex-col items-center">
+                <div class="font-bold mb-4 text-2xl text-white">{{ azubis[locale].benefits6Title }}</div>
+                <p>{{ azubis[locale].benefits6Text }}</p>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<div class="py-12 md:py-24 bg-gray-800">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8 text-center">   
+        <h2 class="text-headline max-w-screen-md mx-auto">
+            {{ azubis[locale].ctaTitle }}
+        </h2> 
+        <p class="mt-6 mb-6 text-gray-300 max-w-xl mx-auto">
+            {{ azubis[locale].ctaText }}
+        </p>
+        <img class="object-cover aspect-video w-72 mb-6 rounded-xl mx-auto" src="../../assets/images/alesia-und-gerrit.jpg" alt="Two people looking at a tablet">
+        <a href="mailto:alesia@learnslice.com" class="whitespace-nowrap gradient py-3 font-medium px-4 rounded-xl hover:brightness-110 cursor-pointer inline-block">
+            {{ azubis[locale].ctaButton }}
+        </a>
+    </div>
+</div>

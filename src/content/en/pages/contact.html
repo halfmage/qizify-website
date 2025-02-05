@@ -1,0 +1,22 @@
+---
+permalink: "/{{ locale }}/contact/"
+translationKey: "contact"
+---
+
+{% extends "layouts/default.html" %}
+
+{% set metaTitle = "Contact" %}
+
+{% block content %}
+
+<div class="container-hero">
+    <div class="max-w-screen-xl mx-auto text-2xl font-extrabold text-center md:text-4xl lg:text-6xl md:mb-8">
+        {{ site[locale].contact }}
+    </div>
+</div>
+
+<div class="max-w-screen-md px-4 mx-auto">
+    {% include "partials/contact-form.html" %}
+</div>
+
+{% endblock %}

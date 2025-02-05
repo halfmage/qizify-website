@@ -1,0 +1,24 @@
+<div x-data="{ atTop : true }">
+<header class="w-full fixed top-0 left-0 right-0 z-50 transition-all bg-gray-900/75 py-4 md:py-6" :class="{'backdrop-blur-lg' : !atTop}" @scroll.window="atTop = ( window.pageYOffset > 0 ) ? false : true">
+
+  <div class="container px-4 flex items-center justify-between">
+      <a href="/{{ locale }}" class="relative flex items-center gap-3"> <svg class="relative w-12 h-12 overflow-hidden flex rounded-xl" width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_87_1599)"> <path d="M30.1538 17.0307C30.1538 13.3407 33.453 10.5252 37.097 11.1053L75.3534 17.1951C78.2663 17.6588 80.4102 20.1709 80.4102 23.1205V60.8796C80.4102 63.8292 78.2663 66.3413 75.3534 66.805L37.097 72.8948C33.453 73.4748 30.1538 70.6593 30.1538 66.9694V17.0307Z" fill="url(#paint0_linear_87_1599)"></path> <path d="M26.1333 18.811C26.1333 17.0317 23.9841 16.1382 22.7227 17.3932L21.8708 18.2408C20.7389 19.3669 20.1026 20.8977 20.1026 22.4943V61.5057C20.1026 63.1024 20.7389 64.6331 21.8708 65.7592L22.7227 66.6068C23.9841 67.8618 26.1333 66.9683 26.1333 65.189V18.811Z" fill="url(#paint1_linear_87_1599)"></path> <path d="M16.082 25.7265C16.082 24.1312 14.306 23.178 12.9766 24.0598L12.7348 24.2201C11.0589 25.3317 10.0513 27.2091 10.0513 29.2202V54.7798C10.0513 56.7909 11.0589 58.6683 12.7349 59.7799L12.9766 59.9403C14.306 60.822 16.082 59.8688 16.082 58.2736V25.7265Z" fill="url(#paint2_linear_87_1599)"></path> <path d="M6.03076 31.7265C6.03076 30.1312 4.25471 29.178 2.92529 30.0598L2.68358 30.2201C1.00759 31.3317 0 33.2091 0 35.2202V48.7798C0 50.7909 1.00759 52.6683 2.68358 53.7799L2.92529 53.9403C4.25471 54.822 6.03076 53.8688 6.03076 52.2736V31.7265Z" fill="url(#paint3_linear_87_1599)"></path> </g> <defs> <linearGradient id="paint0_linear_87_1599" x1="0" y1="11.0293" x2="87.5957" y2="60.1594" gradientUnits="userSpaceOnUse"> <stop stop-color="#1DE1EE"></stop> <stop offset="0.493582" stop-color="#8B43FE"></stop> <stop offset="1" stop-color="#E50CEA"></stop> </linearGradient> <linearGradient id="paint1_linear_87_1599" x1="0" y1="11.0293" x2="87.5957" y2="60.1594" gradientUnits="userSpaceOnUse"> <stop stop-color="#1DE1EE"></stop> <stop offset="0.493582" stop-color="#8B43FE"></stop> <stop offset="1" stop-color="#E50CEA"></stop> </linearGradient> <linearGradient id="paint2_linear_87_1599" x1="0" y1="11.0293" x2="87.5957" y2="60.1594" gradientUnits="userSpaceOnUse"> <stop stop-color="#1DE1EE"></stop> <stop offset="0.493582" stop-color="#8B43FE"></stop> <stop offset="1" stop-color="#E50CEA"></stop> </linearGradient> <linearGradient id="paint3_linear_87_1599" x1="0" y1="11.0293" x2="87.5957" y2="60.1594" gradientUnits="userSpaceOnUse"> <stop stop-color="#1DE1EE"></stop> <stop offset="0.493582" stop-color="#8B43FE"></stop> <stop offset="1" stop-color="#E50CEA"></stop> </linearGradient> <clipPath id="clip0_87_1599"> <rect width="80.4102" height="80" fill="white"></rect> </clipPath> </defs> </svg> <div class="inline-flex text-xl font-bold text-heading-1">
+LearnSlice
+</div> </a>
+
+    {% include "partials/mobile-menu.html" %}
+
+    <div class="hidden lg:block">
+      <div class="flex absolute top-6 left-1/2 -translate-x-1/2">
+      {% for navitem in mainnav[locale] %}
+          <a class="py-2 px-2 text-sm md:text-base rounded-xl mr-1 hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20' if navitem.url in page.url }}" href="{{ navitem.url }}">
+            {{ navitem.label }}
+          </a>
+      {% endfor %}
+    </div>
+    </div>
+  
+    {% include "partials/language-nav.html" %}
+  </div>
+</header>
+</div>

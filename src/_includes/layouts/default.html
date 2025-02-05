@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}</title>
+  <meta name="description" content="{{ site[locale].description }}">
+
+  <!-- Unregister service-workers if exists -->
+  <script>
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          registration.unregister().then(function () {
+            return null
+          })
+        }
+      })
+    })
+  </script>
+
+  <!-- 100% privacy friendly analytics -->
+  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#222">
+
+  <!-- Tailwind and Alpine -->
+  <link rel="stylesheet" href="/style.css?v={% version %}"/>
+  <script src="/js/alpine.js?v={% version %}" defer></script>
+
+  <!-- Sal.js -->
+  <link rel="stylesheet" href="https://unpkg.com/sal.js@0.8.5/dist/sal.css">
+  <script src="https://unpkg.com/sal.js@0.8.5/dist/sal.js"></script>
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://www.learnslice.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}">
+  <meta property="og:description" content="LearnSlice is an online platform for learners and lecturers that facilitates self-preparation for exams with quizzes related to a study program.">
+  <meta property="og:image" content="https://learnslice.com/assets/images/social.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}">
+  <meta name="twitter:description" content="LearnSlice is an online platform for learners and lecturers that facilitates self-preparation for exams with quizzes related to a study program.">
+  <meta name="twitter:image" content="https://learnslice.com/assets/images/social.png">
+
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col" x-data="{ ContactModal: false }">
+  {% include "partials/header.html" %}
+
+  <div class="my-20 md:my-24 flex-1">
+    {% block content %}{% endblock %}
+  </div>
+
+  {% include "partials/footer.html" %}
+
+  <!-- Contact Modal -->
+  <div x-cloak x-transition x-show="ContactModal" class="bg-white/5 backdrop-blur-3xl mx-auto fixed top-0 left-0 w-full h-full flex md:items-center overflow-y-auto z-50">
+    <div class="max-w-screen-md mx-auto p-4 rounded overflow-y-auto">
+      <div class="bg-gray-900 rounded-2xl p-8 text-center shadow-lg relative" @click.away="ContactModal = false">
+        <div @click="ContactModal = !ContactModal" class="cursor-pointer absolute right-2 top-2 inline-block p-4 bg-gray-800 hover:bg-gray-700 text-white rounded-full">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </div>
+        {% include "partials/contact-form.html" %}
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>sal();</script>
+
+</html>

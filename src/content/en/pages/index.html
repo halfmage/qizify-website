@@ -1,0 +1,20 @@
+---
+permalink: "/{{ locale }}/index.html"
+translationKey: "homepage"
+---
+
+{% extends "layouts/default.html" %}
+
+{% set metaTitle= "Home" %}
+
+{% block content %}
+
+{% include "partials/hero.html" %}
+{% include "partials/partner.html" %}
+{% include "partials/content-ai.html" %}
+{% include "partials/features.html" %}
+{% include "partials/testimonials.html" %}
+{% include "partials/edutainerin.html" %}
+{% include "partials/features-software.html" %}
+
+{% endblock %}
