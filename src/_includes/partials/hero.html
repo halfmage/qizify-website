@@ -1,8 +1,8 @@
-<div class="overflow-hidden pt-16 bg-gradient-to-r from-secondary/30 to-primary/30 border-b border-gray-700" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
+<div class="overflow-hidden pt-12 md:pt-16 bg-gradient-to-r from-secondary/30 to-primary/30 border-b border-gray-700" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
     <div class="container flex flex-col items-center justify-center relative">
 
         <div data-sal="fade" data-sal-duration="500" data-sal-once class="flex flex-col justify-center">
-            <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-3xl text-2xl md:mb-6 mb-4 font-extrabold text-center">
+            <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-5xl text-4xl md:mb-6 mb-4 font-extrabold text-center">
                 <!-- Hero main headline -->
                 {{ hero[locale].title }}
             </div>
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <p class="text-center text-gray-200/50 mb-12">{{ hero[locale].videoCaption }}</p>
+        <p class="text-center text-sm text-gray-200/50 mb-12">{{ hero[locale].videoCaption }}</p>
         
     </div>  
 </div>

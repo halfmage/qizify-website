@@ -1,6 +1,6 @@
 module.exports = {
     de: {
-      title: "Ihr Unternehmenswissen als interaktive Quizze",
+      title: "Ihre Business Daten direkt als interaktive Quizze",
       subtitle: "Einstellungskosten reduzieren.",
       text: "Revolutioniere das Lernen am Arbeitsplatz mit KI-gestützten Quizzen! Sie machen Lernen spannend, helfen Mitarbeitern, sich Wissen besser zu merken, und senken die Einstellungskosten – und das in nur wenigen Sekunden.",
       videoCaption: "Sehen Sie, wie wir Unternehmen dabei helfen, ihr Unternehmenswissen für Mitarbeiter interaktiv zu gestalten",
