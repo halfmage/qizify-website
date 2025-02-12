@@ -36,8 +36,7 @@
 
             <div class="rounded-xl overflow-hidden border-2 border-gray-700">
                 <!-- Pricing card header -->
-                <div class="h-60 bg-gray-800 p-6">
-                    <div class="w-14 h-14 bg-gradient-to-r from-white to-accent rounded-full"></div>
+                <div class="h-48 bg-gray-800 p-6">
                     <h3 class="text-2xl md:text-3xl font-bold my-4">{{ pricing[locale].standardTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].standardText }}</p>
                 </div>
@@ -46,15 +45,7 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">2,49 €</div>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">2,19 €</div>
-                        </div>
-                        <div class="flex items-center justify-between pt-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">1,99 €</div>
+                            <div class="font-bold text-xl md:text-2xl">2,50 €</div>
                         </div>
                     </div>
                     <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
@@ -69,9 +60,8 @@
 
             <div class="rounded-xl overflow-hidden border-2 border-secondary">
                 <!-- Pricing card header -->
-                <div class="h-60 bg-gray-800 p-6 relative">
+                <div class="h-48 bg-gray-800 p-6 relative">
                     <div class="bg-secondary pt-2 pb-3 px-4 uppercase rounded-bl-xl font-bold text-sm absolute top-0 right-0">{{ pricing[locale].popular }}</div>
-                    <div class="w-14 h-14 bg-gradient-to-r from-secondary to-accent rounded-full"></div>
                     <h3 class="text-2xl md:text-3xl font-bold my-4">{{ pricing[locale].premiumTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].premiumText }}</p>
                 </div>
@@ -80,15 +70,7 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">3,49 €</div>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">3,19 €</div>
-                        </div>
-                        <div class="flex items-center justify-between pt-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">2,99 €</div>
+                            <div class="font-bold text-xl md:text-2xl">3,50 €</div>
                         </div>
                     </div>
                     <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
@@ -103,8 +85,7 @@
 
             <div class="rounded-xl overflow-hidden border-2 border-gray-700">
                 <!-- Pricing card header -->
-                <div class="h-60 bg-gray-800 p-6">
-                    <div class="w-14 h-14 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+                <div class="h-48 bg-gray-800 p-6">
                     <h3 class="text-2xl md:text-3xl font-bold my-4">{{ pricing[locale].ultimateTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].ultimateText }}</p>
                 </div>
@@ -112,16 +93,8 @@
                 <div class="p-6 flex flex-col gap-5">
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
-                            <div class="text-gray-300">{{ pricing[locale].unlimited }}</div>
+                            <div class="text-gray-300">100+ {{pricing[locale].users}}</div>
                             <div class="font-bold text-xl md:text-2xl">{{ pricing[locale].custom }}</div>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2 opacity-0 hidden xl:flex">
-                            <div class="text-gray-300">-</div>
-                            <div class="font-bold text-xl md:text-2xl">-</div>
-                        </div>
-                        <div class="flex items-center justify-between pt-2 opacity-0 hidden xl:flex">
-                            <div class="text-gray-300">-</div>
-                            <div class="font-bold text-xl md:text-2xl">-</div>
                         </div>
                     </div>
                     <p class="text-gray-400 opacity-0 hidden xl:flex">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
@@ -142,8 +115,7 @@
 
             <div class="rounded-xl overflow-hidden border-2 border-gray-700">
                 <!-- Pricing card header -->
-                <div class="h-60 bg-gray-800 p-6">
-                    <div class="w-14 h-14 bg-gradient-to-r from-primary to-white rounded-full"></div>
+                <div class="h-48 bg-gray-800 p-6">
                     <h3 class="text-2xl md:text-3xl font-bold my-4">{{ pricing[locale].standardTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].standardText }}</p>
                 </div>
@@ -152,15 +124,7 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">12,59 €</div>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">11,99 €</div>
-                        </div>
-                        <div class="flex items-center justify-between pt-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">11,49 €</div>
+                            <div class="font-bold text-xl md:text-2xl">7,00 €</div>
                         </div>
                     </div>
                     <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
@@ -175,9 +139,8 @@
 
             <div class="rounded-xl overflow-hidden border-2 border-secondary">
                 <!-- Pricing card header -->
-                <div class="h-60 bg-gray-800 p-6 relative">
+                <div class="h-48 bg-gray-800 p-6 relative">
                     <div class="bg-secondary pt-2 pb-3 px-4 uppercase rounded-bl-xl font-bold text-sm absolute top-0 right-0">{{ pricing[locale].popular }}</div>
-                    <div class="w-14 h-14 bg-gradient-to-r from-white to-secondary rounded-full"></div>
                     <h3 class="text-2xl md:text-3xl font-bold my-4">{{ pricing[locale].premiumTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].premiumText }}</p>
                 </div>
@@ -186,15 +149,7 @@
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
                             <div class="text-gray-300">{{pricing[locale].upTo}} 100 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">14,99 €</div>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 300 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">13,99 €</div>
-                        </div>
-                        <div class="flex items-center justify-between pt-2">
-                            <div class="text-gray-300">{{pricing[locale].upTo}} 1000 {{pricing[locale].users}}</div>
-                            <div class="font-bold text-xl md:text-2xl">13,49 €</div>
+                            <div class="font-bold text-xl md:text-2xl">13,00 €</div>
                         </div>
                     </div>
                     <p class="text-gray-400">{{pricing[locale].payment}} <br> {{ pricing[locale].info3 }}</p>
@@ -209,8 +164,7 @@
 
             <div class="rounded-xl overflow-hidden border-2 border-gray-700">
                 <!-- Pricing card header -->
-                <div class="h-60 bg-gray-800 p-6">
-                    <div class="w-14 h-14 bg-gradient-to-r from-secondary to-primary rounded-full"></div>
+                <div class="h-48 bg-gray-800 p-6">
                     <h3 class="text-2xl md:text-3xl font-bold my-4">{{ pricing[locale].businessUltimateTitle }} <span class="text-accent"> LearnAI</span></h3>
                     <p class="text-gray-400">{{ pricing[locale].businessUltimateText }}</p>
                 </div>
@@ -218,16 +172,8 @@
                 <div class="p-6 flex flex-col gap-5">
                     <div class="font-mono">
                         <div class="flex items-center justify-between border-b border-dashed border-gray-600 pb-2">
-                            <div class="text-gray-300">{{ pricing[locale].unlimited }}</div>
+                            <div class="text-gray-300">100+ {{pricing[locale].users}}</div>
                             <div class="font-bold text-xl md:text-2xl">{{ pricing[locale].custom }}</div>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-dashed border-gray-600 py-2 opacity-0 hidden xl:flex">
-                            <div class="text-gray-300">-</div>
-                            <div class="font-bold text-xl md:text-2xl">-</div>
-                        </div>
-                        <div class="flex items-center justify-between pt-2 opacity-0 hidden xl:flex">
-                            <div class="text-gray-300">-</div>
-                            <div class="font-bold text-xl md:text-2xl">-</div>
                         </div>
                     </div>
                     <p class="text-gray-400 opacity-0 hidden xl:flex">{{pricing[locale].businessExtra}} <br> {{ pricing[locale].info3 }} </p>
