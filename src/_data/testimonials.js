@@ -1,46 +1,22 @@
 module.exports = {
     de: [
         {
-            quote: "Ich mag LearnSlice, weil es mir ermöglicht, mein Wissen in einer spielähnlichen Umgebung zu testen – es ist sicher, Fehler zu machen, und ich fühle mich zum Lernen motiviert.",
-            name: "Pavel Raschetnov, student of RWTH Aachen",
+            quote: "Unser Ziel als Wirtschaftsförderung ist es Unternehmen in der Region zu beraten und zu unterstützen sowie die Fachkräfteentwicklung in der Region zu stärken. Dabei wollen wir auch neue und innovative Möglichkeiten nutzen. Mit Learnslice haben wir einen Kooperationspartner gefunden, der nicht nur die neuste Technologie nutzt, sondern auch out of the Box denkt. Unsere Zusammenarbeit zeichnet sich durch Vertrauen, Offenheit und Ideenreichtum aus.",
+            name: "Kinga Patrycja Peters, Regionalagentur Westfälisches Ruhrgebiet"
         },
         {
-            quote: "Ich bin sehr zufrieden mit der Übersicht von meinem Lernerfolg sowie der regelmäßigen Dozentenüberprüfung meiner Quizze. Die Möglichkeit, Quizze zur Selbstüberprüfung zu erstellen, hat mir dabei geholfen, mein Wissen effektiv zu festigen und meinen Fortschritt kontinuierlich zu verfolgen.",
-            name: "Student der Humanwissenschaftliche Fakultät, Universität zu Köln",
-        },
-        {
-            quote: "Wenn meine Aufgabe schön und modern aussieht, habe ich mehr Motivation, mich ans Lernen zu machen.",
-            name: "Studentin der Fakultät für Design, Hochschule Düsseldorf",
-        },
-        {
-            quote: "Ich mag das LearnSlice-Tool, weil es mir ermöglicht, Freiheit beim Lernen zu gewinnen und Quizfragen zu kontrollieren.",
-            name: "Student der Wirtschaftsfakultät, Fachhochschule Dortmund",
-        },
-        {
-            quote: "Mir gefällt der Gaming-Aspekt. Das Tool ist ziemlich einfach zu nutzen.",
-            name: "Studentin der Wirtschaftsfakultät, Fachhochschule Dortmund",
+            quote: "Wir sind mit Learnslice sehr zufrieden. Bereits zu Beginn hat das Team für uns in kürzester Zeit die von uns zur Verfügung gestellten Unterlagen in präzise und lernwirksame Quizze umgewandelt. Die Fragen sind didaktisch gut durchdacht und tragen spürbar zur Wissensvermittlung bei. Auch die KI-gestützte Erstellung der Inhalte überzeugt uns durch ihre Qualität und Effizienz. Besonders hervorheben möchten wir den hervorragenden Support: Rückfragen werden schnell beantwortet und bei Herausforderungen wird direkt proaktiv nach Lösungen gesucht. Wir schätzen diese partnerschaftliche Zusammenarbeit sehr und können Learnslice als innovatives Lern-Tool uneingeschränkt weiterempfehlen.",
+            name: "Lienne Julie Wolff, Tremonia Mobility"
         }
     ],
     en: [
         {
-            quote: "I like LearnSlice because it allows me to test my knowledge in a game-like environment - it is safe to make mistakes, and I feel motivated to study.",
-            name: "Pavel Raschetnov, student of RWTH Aachen",
+            quote: "As an economic development agency, our goal is to advise and support companies in the region while strengthening workforce development. We also want to utilize new and innovative approaches. With Learnslice, we've found a cooperation partner who not only uses the latest technology but also thinks outside the box. Our collaboration is characterized by trust, openness, and creativity.",
+            name: "Kinga Patrycja Peters, Regional Agency Westphalian Ruhr Area"
         },
         {
-            quote: "I am very satisfied with the overview of my learning progress and the regular veifications of my quizzes by the instructors. The ability to create self-assessment quizzes has helped me solidify my knowledge effectively and track my progress continuously.",
-            name: "Student of the Faculty of Human Science, University of Cologne",
+            quote: "We are very satisfied with Learnslice. Right from the start, the team quickly transformed our provided materials into precise and effective learning quizzes. The questions are pedagogically well thought out and noticeably contribute to knowledge transfer. The AI-supported content creation also convinces us with its quality and efficiency. We particularly want to highlight the excellent support: inquiries are answered quickly, and when challenges arise, solutions are proactively sought. We highly value this partnership and can wholeheartedly recommend Learnslice as an innovative learning tool.",
+            name: "Lienne Julie Wolff, Tremonia Mobility"
         },
-        {
-            quote: "When my task looks nice and modern, I feel more motivated to start studying.",
-            name: "Student of Design faculty, University of Applied Science Düsseldorf",
-        },
-        {
-            quote: "I like the LearnSlice tool because it gives me the ability to gain freedom in studying and control quizzes.",
-            name: "Student of the Faculty of Business Studies, University of Applied Science Dortmund",
-        },
-        {
-            quote: "I like the gaming aspect. It is quite simple to use.",
-            name: "Student of the Faculty of Business Studies, University of Applied Science Dortmund",
-        }
     ]
 };
