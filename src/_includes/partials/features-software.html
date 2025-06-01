@@ -1,4 +1,4 @@
-<div class="bg-gray-800">
+<section class="bg-gray-800">
     <div class="container py-12 md:py-24">
         <h2 class="text-headline text-center">
             {{ site[locale].featuresSoftwareTitle }}
@@ -6,19 +6,19 @@
         <div class="grid grid-cols-12 gap-4">
             {% for feature in featuresSoftware[locale] %}
                 {% if loop.first %}{% endif %}
-                    <div class="p-4 col-span-12 lg:col-span-4 flex flex-col text-center items-center">
+                    <article class="p-4 col-span-12 lg:col-span-4 flex flex-col text-center items-center">
                         <div class="p-6 rounded-full gradient mb-5">
                             <svg class="w-6 lg:w-10 h-6 lg:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="{{ feature.icon }}"></path></svg>
                         </div>
                         <div class="flex-grow">
-                            <h2 class="text-lg md:text-2xl font-bold mb-3">{{feature.label}}</h2>
+                            <h3 class="text-lg md:text-2xl font-bold mb-3">{{feature.label}}</h3>
                             <p class="leading-relaxed text-gray-400">
                                 {{feature.text}}
                             </p>
                         </div>
-                    </div>
+                    </article>
                 {% if loop.last %}{% endif %}
             {% endfor %}
         </div>
     </div>
-</div>
+</section>

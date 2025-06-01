@@ -1,11 +1,11 @@
-<div>
+<footer>
 
   <section class="">
     <div class="container mx-auto py-6 md:py-12">
       <div class="text-center">
-        <div class="mb-8 text-gray-300">
+        <h2 class="mb-8 text-gray-300">
           {{ partner[locale].footerTitle }}
-        </div>
+        </h2>
       </div>
       <div class="flex flex-wrap items-center gap-8 justify-evenly">
         <span class="opacity-90 hover:opacity-100">
@@ -27,7 +27,7 @@
     </div>
   </section>
 
-  <header class="w-full transition-all bg-gray-900 border-t border-gray-800 py-8 lg:py-16">
+  <div class="w-full transition-all bg-gray-900 border-t border-gray-800 py-8 lg:py-16">
 
     <div class="container flex flex-col lg:flex-row items-center justify-between">
       <a href="/{{ locale }}" class="relative flex items-center gap-3">
@@ -83,6 +83,7 @@
         </div>
       </a>
 
+      <nav>
       {% for navitem in footernav[locale] %}
       {% if loop.first %}
       <div class="flex flex-col lg:flex-row text-center">{% endif %}
@@ -93,6 +94,7 @@
         {% if loop.last %}
       </div>{% endif %}
       {% endfor %}
+      </nav>
     </div>
-  </header>
-</div>
+  </div>
+</footer>

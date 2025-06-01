@@ -1,11 +1,11 @@
-<div class="overflow-hidden pt-12 md:pt-16 bg-gradient-to-r from-secondary/30 to-primary/30 border-b border-gray-700" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
+<section class="overflow-hidden pt-12 md:pt-16 bg-gradient-to-r from-secondary/30 to-primary/30 border-b border-gray-700" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'screen1' }" id="tab_wrapper">
     <div class="container flex flex-col items-center justify-center relative">
 
         <div data-sal="fade" data-sal-duration="500" data-sal-once class="flex flex-col justify-center">
-            <div class="max-w-screen-xl mx-auto lg:text-7xl md:text-5xl text-4xl md:mb-6 mb-4 font-extrabold text-center">
+            <h1 class="max-w-screen-xl mx-auto lg:text-7xl md:text-5xl text-4xl md:mb-6 mb-4 font-extrabold text-center">
                 <!-- Hero main headline -->
                 {{ hero[locale].title }}
-            </div>
+            </h1>
             <p class="text-center md:text-xl max-w-screen-md mx-auto text-gray-200/75 z-10">
                 <!-- Hero subtitle / text -->
                 {{ hero[locale].text }}
@@ -45,4 +45,4 @@
         <p class="text-center text-sm text-gray-200/50 mb-12">{{ hero[locale].videoCaption }}</p>
         
     </div>  
-</div>
+</section>
