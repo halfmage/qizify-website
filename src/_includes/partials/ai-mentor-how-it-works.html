@@ -1,0 +1,25 @@
+<section id="how-it-works" class="py-12 md:py-16 bg-gray-900">
+    <div class="container max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-sal="fade" data-sal-duration="500" data-sal-once>
+            {{ aiMentor[locale].howItWorks.title }}
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {% for step in aiMentor[locale].howItWorks.steps %}
+            <div 
+                class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl p-6 border border-gray-700/50 relative overflow-hidden"
+                data-sal="slide-up" 
+                data-sal-duration="500" 
+                data-sal-delay="{{ loop.index0 * 150 }}"
+                data-sal-once
+            >
+                <div class="absolute top-4 right-4 w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span class="text-primary font-bold text-xl">{{ step.number }}</span>
+                </div>
+                <h3 class="text-xl font-bold mb-4 mt-8 text-white">{{ step.title }}</h3>
+                <p class="text-gray-300">{{ step.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

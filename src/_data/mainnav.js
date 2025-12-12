@@ -1,78 +1,88 @@
 module.exports = {
   de: [
     {
-      label: "Bildung",
-      url: "/de/education",
-      slug: "education"
+      label: "KI-Mentor",
+      url: "/de#hero",
+      slug: "ai-mentor",
+      anchor: true
     },
     {
-      label: "Unternehmen",
-      url: "/de/companies",
-      slug: "companies"
+      label: "So funktioniert's",
+      url: "/de#how-it-works",
+      slug: "how-it-works",
+      anchor: true
     },
     {
-      label: "Ausbildung",
-      url: "/de/apprenticeship",
-      slug: "apprenticeship"
+      label: "Anwendungsfälle",
+      url: "/de#use-cases",
+      slug: "use-cases",
+      anchor: true
     },
     {
-      label: "Preise",
-      url: "/de/pricing",
-      slug: "pricing"
+      label: "Geschäftsauswirkungen",
+      url: "/de#business-impact",
+      slug: "business-impact",
+      anchor: true
     },
     {
-      label: "Team",
-      url: "/de/team",
-      slug: "team"
+      label: "Pilotprogramm",
+      url: "/de#cta",
+      slug: "pilot-program",
+      anchor: true
     },
     {
       label: "FAQ",
-      url: "/de/faq",
-      slug: "faq"
+      url: "/de#faq",
+      slug: "faq",
+      anchor: true
     },
     {
-      label: "Blog",
-      url: "/de/blog/",
-      slug: "blog",
-      blogPostLabel: "Alle Blogeinträge"
+      label: "Lernplattform",
+      url: "/de/platform",
+      slug: "platform"
     }
   ],
   en: [
     {
-      label: "Education",
-      url: "/en/education",
-      slug: "education"
+      label: "AI Mentor",
+      url: "/en#hero",
+      slug: "ai-mentor",
+      anchor: true
     },
     {
-      label: "Companies",
-      url: "/en/companies",
-      slug: "companies"
+      label: "How It Works",
+      url: "/en#how-it-works",
+      slug: "how-it-works",
+      anchor: true
     },
     {
-      label: "Apprenticeship",
-      url: "/en/apprenticeship",
-      slug: "apprenticeship"
+      label: "Use Cases",
+      url: "/en#use-cases",
+      slug: "use-cases",
+      anchor: true
     },
     {
-      label: "Pricing",
-      url: "/en/pricing",
-      slug: "pricing"
+      label: "Business Impact",
+      url: "/en#business-impact",
+      slug: "business-impact",
+      anchor: true
     },
     {
-      label: "Team",
-      url: "/en/team",
-      slug: "team"
+      label: "Pilot Program",
+      url: "/en#cta",
+      slug: "pilot-program",
+      anchor: true
     },
     {
       label: "FAQ",
-      url: "/en/faq",
-      slug: "faq"
+      url: "/en#faq",
+      slug: "faq",
+      anchor: true
     },
     {
-      label: "Blog",
-      url: "/en/blog/",
-      slug: "blog",
-      blogPostLabel: "All blogpost"
+      label: "Learning Platform",
+      url: "/en/platform",
+      slug: "platform"
     }
   ]
 };

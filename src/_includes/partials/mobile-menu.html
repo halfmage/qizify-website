@@ -17,9 +17,18 @@
         {% for navitem in mainnav[locale] %}
         {% if loop.first %}
             <div class="flex flex-col w-full">{% endif %}
+                {% if navitem.anchor %}
+                <a 
+                    @click.prevent="menuOpen = false; const hash = '{{ navitem.url }}'.split('#')[1]; const target = document.getElementById(hash); if (target) { setTimeout(() => { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); window.history.pushState(null, '', '{{ navitem.url }}'); }, 100); }"
+                    class="text-gray-400 p-4 text-center mt-2 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors"
+                >
+                    {{ navitem.label }}
+                </a>
+                {% else %}
                 <a @click="menuOpen = !menuOpen" class="text-gray-400 p-4 text-center mt-2 text-lg rounded-xl hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20 pointer-events-none' if navitem.url in page.url }}" href="{{ navitem.url }}">
                     {{ navitem.label }}
                 </a>
+                {% endif %}
                 {% if loop.last %}
             </div>{% endif %}
         {% endfor %}

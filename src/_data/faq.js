@@ -1,6 +1,26 @@
 module.exports = {
   de: [
     {
+      title: "Ist LearnSlice DSGVO-konform?",
+      text: "Ja. Alle Daten werden in Deutschland oder in kundeneigenen Systemen gehostet.",
+      enterprise: true
+    },
+    {
+      title: "Kann LearnSlice unser internes Unternehmenswissen nutzen?",
+      text: "Ja. Der KI-Mentor kann mit unternehmensspezifischen Dokumenten, Prozessen und Terminologie arbeiten.",
+      enterprise: true
+    },
+    {
+      title: "Ist LearnSlice eine Lernplattform?",
+      text: "Nein. LearnSlice ist ein KI-Lernmentor, der traditionelle Schulungssysteme ergänzt oder ersetzt.",
+      enterprise: true
+    },
+    {
+      title: "Wie lange dauert ein Pilotprogramm typischerweise?",
+      text: "Die meisten Pilotprogramme laufen einige Wochen, abhängig vom Umfang und den Integrationen.",
+      enterprise: true
+    },
+    {
       title: "Was ist LearnSlice?",
       text: "LearnSlice ist eine Online-Plattform für Lernende und Lehrende (ein Learning Management System - LMS), die die Selbstvorbereitung auf Prüfungen mit Hilfe von studiengangsbezogenen Quizzes erleichtert."
     },
@@ -58,6 +78,26 @@ module.exports = {
     },
   ],
   en: [
+    {
+      title: "Is LearnSlice GDPR-compliant?",
+      text: "Yes. All data is hosted in Germany or within customer-controlled systems.",
+      enterprise: true
+    },
+    {
+      title: "Can LearnSlice use our internal company knowledge?",
+      text: "Yes. The AI mentor can work with company-specific documents, processes, and terminology.",
+      enterprise: true
+    },
+    {
+      title: "Is LearnSlice a learning platform?",
+      text: "No. LearnSlice is an AI learning mentor that complements or replaces traditional training systems.",
+      enterprise: true
+    },
+    {
+      title: "How long does a pilot typically take?",
+      text: "Most pilots run for a few weeks, depending on scope and integrations.",
+      enterprise: true
+    },
     {
       title: "What is LearnSlice?",
       text: "LearnSlice is an online platform for learners and lecturers (a learning management system - LMS) that facilitates self-preparation for exams with the help of quizzes related to a study program."

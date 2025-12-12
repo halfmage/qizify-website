@@ -1,0 +1,27 @@
+<section id="use-cases" class="py-12 md:py-16 bg-gray-800/30">
+    <div class="container max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-sal="fade" data-sal-duration="500" data-sal-once>
+            {{ aiMentor[locale].useCases.title }}
+        </h2>
+        <p class="text-center text-lg text-gray-300 mb-8" data-sal="fade" data-sal-duration="500" data-sal-once>
+            {{ aiMentor[locale].useCases.description }}
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {% for item in aiMentor[locale].useCases.items %}
+            <div 
+                class="bg-gray-900/50 rounded-lg p-5 border border-gray-700/50"
+                data-sal="zoom-in" 
+                data-sal-duration="500" 
+                data-sal-delay="{{ loop.index0 * 100 }}"
+                data-sal-once
+            >
+                <p class="text-gray-200 flex items-center gap-3">
+                    <span class="text-primary">→</span>
+                    {{ item }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

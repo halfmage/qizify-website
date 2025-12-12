@@ -5,15 +5,22 @@ translationKey: "homepage"
 
 {% extends "layouts/default.html" %}
 
-{% set metaTitle= "Business Daten direkt als interaktive Quizze" %}
+{% set metaTitle= "KI-Lernmentor für Unternehmen | LearnSlice" %}
+{% set metaDescription= "LearnSlice ist ein KI-Mentor-Chatbot, der Mitarbeiter bei Onboarding und Weiterbildung unterstützt – mit rollenspezifischer Anleitung, Übung und Feedback direkt im Gespräch." %}
 
 {% block content %}
 
-{% include "partials/hero.html" %}
+{% include "partials/ai-mentor-hero.html" %}
 {% include "partials/partner.html" %}
-{% include "partials/content-ai.html" %}
-{% include "partials/features.html" %}
-{% include "partials/testimonials.html" %}
-{% include "partials/features-software.html" %}
+{% include "partials/ai-mentor-problem.html" %}
+{% include "partials/ai-mentor-solution.html" %}
+{% include "partials/ai-mentor-how-it-works.html" %}
+{% include "partials/ai-mentor-use-cases.html" %}
+{% include "partials/ai-mentor-features.html" %}
+{% include "partials/ai-mentor-impact.html" %}
+{% include "partials/ai-mentor-why.html" %}
+{% include "partials/ai-mentor-vision.html" %}
+{% include "partials/ai-mentor-cta.html" %}
+{% include "partials/ai-mentor-faq.html" %}
 
 {% endblock %}

@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}</title>
-  <meta name="description" content="{{ site[locale].description }}">
+  <meta name="description" content="{% if metaDescription %}{{ metaDescription }}{% else %}{{ site[locale].description }}{% endif %}">
 
   <!-- Unregister service-workers if exists -->
   <script>
@@ -30,27 +30,61 @@
 
   <!-- Tailwind and Alpine -->
   <link rel="stylesheet" href="/style.css?v={% version %}"/>
-  <script src="/js/alpine.js?v={% version %}" defer></script>
+  
+  <!-- Smooth scrolling -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
 
   <!-- Sal.js -->
   <link rel="stylesheet" href="https://unpkg.com/sal.js@0.8.5/dist/sal.css">
   <script src="https://unpkg.com/sal.js@0.8.5/dist/sal.js"></script>
 
+  <!-- Motion.dev - Load before Alpine.js -->
+  <script type="module">
+    (async function() {
+      try {
+        // Try esm.sh first (designed for ES modules)
+        const { animate, stagger } = await import('https://esm.sh/motion@12.23.26');
+        window.motion = { animate, stagger };
+        window.dispatchEvent(new CustomEvent('motion-ready'));
+      } catch (e) {
+        // Fallback to official jsdelivr format
+        try {
+          const { animate, stagger } = await import('https://cdn.jsdelivr.net/npm/motion@12.23.26/+esm');
+          window.motion = { animate, stagger };
+          window.dispatchEvent(new CustomEvent('motion-ready'));
+        } catch (e2) {
+          console.error('Failed to load Motion library:', e2);
+        }
+      }
+    })();
+  </script>
+  
+  <script src="/js/alpine.js?v={% version %}" defer></script>
+
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://www.learnslice.com">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}">
-  <meta property="og:description" content="LearnSlice is an online platform for learners and lecturers that facilitates self-preparation for exams with quizzes related to a study program.">
+  <meta property="og:description" content="{% if metaDescription %}{{ metaDescription }}{% else %}LearnSlice is an online platform for learners and lecturers that facilitates self-preparation for exams with quizzes related to a study program.{% endif %}">
   <meta property="og:image" content="https://learnslice.com/assets/images/social.png">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if metaTitle %}{{ metaTitle }} - {% endif %}{{ site[locale].title }}">
-  <meta name="twitter:description" content="LearnSlice is an online platform for learners and lecturers that facilitates self-preparation for exams with quizzes related to a study program.">
+  <meta name="twitter:description" content="{% if metaDescription %}{{ metaDescription }}{% else %}LearnSlice is an online platform for learners and lecturers that facilitates self-preparation for exams with quizzes related to a study program.{% endif %}">
   <meta name="twitter:image" content="https://learnslice.com/assets/images/social.png">
 
 </head>
-<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col" x-data="{ ContactModal: false }">
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col" x-data="{ ContactModal: false, DemoModal: false }">
   {% include "partials/header.html" %}
 
   <main class="my-20 md:my-24 flex-1">
@@ -70,6 +104,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Demo Modal -->
+  {% include "partials/demo-modal.html" %}
 
 </body>
 

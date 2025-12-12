@@ -1,0 +1,35 @@
+<div 
+    x-cloak 
+    x-transition 
+    x-show="DemoModal" 
+    class="bg-white/5 backdrop-blur-3xl mx-auto fixed top-0 left-0 w-full h-full flex md:items-center overflow-y-auto z-50"
+    @keydown.escape.window="DemoModal = false"
+    @click.away="DemoModal = false"
+>
+    <div class="max-w-screen-lg mx-auto p-4 rounded overflow-y-auto w-full">
+        <div class="bg-gray-900 rounded-2xl p-8 text-center shadow-lg relative" @click.stop>
+            <div 
+                @click="DemoModal = false" 
+                class="cursor-pointer absolute right-2 top-2 inline-block p-4 bg-gray-800 hover:bg-gray-700 text-white rounded-full z-10"
+            >
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </div>
+            <div class="relative w-full aspect-video rounded-lg overflow-hidden mt-4">
+                <div x-show="DemoModal">
+                    <iframe
+                        x-init="let iframeSrc = ''; $watch('DemoModal', value => { if (value && !iframeSrc) { iframeSrc = 'https://www.youtube.com/embed/w23A5JYttlk?autoplay=1'; $el.src = iframeSrc; } })"
+                        class="w-full h-full"
+                        src=""
+                        title="LearnSlice AI Mentor Demo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

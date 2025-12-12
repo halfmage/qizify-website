@@ -1,0 +1,24 @@
+<section id="faq" class="py-12 md:py-16 bg-gray-800/30">
+    <div class="container max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-sal="fade" data-sal-duration="500" data-sal-once>
+            {{ site[locale].faqTitle }}
+        </h2>
+        <div class="space-y-4">
+            {% for item in faq[locale] %}
+                {% if item.enterprise %}
+                <div 
+                    class="bg-gray-900/50 rounded-lg p-6 border border-gray-700/50"
+                    data-sal="fade" 
+                    data-sal-duration="500" 
+                    data-sal-delay="{{ loop.index0 * 50 }}"
+                    data-sal-once
+                >
+                    <h3 class="text-xl font-bold mb-3 text-white">{{ item.title }}</h3>
+                    <p class="text-gray-300">{{ item.text }}</p>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

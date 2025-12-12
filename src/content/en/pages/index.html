@@ -5,15 +5,22 @@ translationKey: "homepage"
 
 {% extends "layouts/default.html" %}
 
-{% set metaTitle= "Your Company Knowledge Instantly Interactive" %}
+{% set metaTitle= "AI Learning Mentor for Enterprises | LearnSlice" %}
+{% set metaDescription= "LearnSlice is an AI mentor chatbot that supports employees during onboarding and upskilling — delivering job-specific guidance, practice, and feedback directly in conversation." %}
 
 {% block content %}
 
-{% include "partials/hero.html" %}
+{% include "partials/ai-mentor-hero.html" %}
 {% include "partials/partner.html" %}
-{% include "partials/content-ai.html" %}
-{% include "partials/features.html" %}
-{% include "partials/testimonials.html" %}
-{% include "partials/features-software.html" %}
+{% include "partials/ai-mentor-problem.html" %}
+{% include "partials/ai-mentor-solution.html" %}
+{% include "partials/ai-mentor-how-it-works.html" %}
+{% include "partials/ai-mentor-use-cases.html" %}
+{% include "partials/ai-mentor-features.html" %}
+{% include "partials/ai-mentor-impact.html" %}
+{% include "partials/ai-mentor-why.html" %}
+{% include "partials/ai-mentor-vision.html" %}
+{% include "partials/ai-mentor-cta.html" %}
+{% include "partials/ai-mentor-faq.html" %}
 
 {% endblock %}

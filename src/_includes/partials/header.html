@@ -11,9 +11,19 @@ LearnSlice
     <nav class="hidden lg:block">
       <div class="flex absolute top-6 left-1/2 -translate-x-1/2">
       {% for navitem in mainnav[locale] %}
+          {% if navitem.anchor %}
+          <a 
+            class="py-2 px-2 text-sm md:text-base rounded-xl mr-1 hover:bg-gray-100/10 hover:text-white transition-colors" 
+            href="{{ navitem.url }}"
+            @click.prevent="const hash = '{{ navitem.url }}'.split('#')[1]; const target = document.getElementById(hash); if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); window.history.pushState(null, '', '{{ navitem.url }}'); }"
+          >
+            {{ navitem.label }}
+          </a>
+          {% else %}
           <a class="py-2 px-2 text-sm md:text-base rounded-xl mr-1 hover:bg-gray-100/10 hover:text-white transition-colors {{ 'text-white bg-white/20' if navitem.url in page.url }}" href="{{ navitem.url }}">
             {{ navitem.label }}
           </a>
+          {% endif %}
       {% endfor %}
     </div>
     </nav>

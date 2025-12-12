@@ -1,0 +1,36 @@
+<section class="py-12 md:py-16 bg-gray-800/30">
+    <div class="container max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-sal="fade" data-sal-duration="500" data-sal-once>
+            {{ aiMentor[locale].why.title }}
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div data-sal="slide-right" data-sal-duration="500" data-sal-once>
+                <h3 class="text-2xl font-bold mb-4 text-red-400">
+                    {% if locale === "de" %}LearnSlice ist nicht:{% else %}LearnSlice is not:{% endif %}
+                </h3>
+                <ul class="space-y-3">
+                    {% for item in aiMentor[locale].why.not %}
+                    <li class="flex items-start gap-3 text-gray-300">
+                        <span class="text-red-400 font-bold">✗</span>
+                        <span>{{ item }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div data-sal="slide-left" data-sal-duration="500" data-sal-once>
+                <h3 class="text-2xl font-bold mb-4 text-primary">
+                    {% if locale === "de" %}LearnSlice ist:{% else %}LearnSlice is:{% endif %}
+                </h3>
+                <ul class="space-y-3">
+                    {% for item in aiMentor[locale].why.is %}
+                    <li class="flex items-start gap-3 text-gray-300">
+                        <span class="text-primary font-bold">✓</span>
+                        <span>{{ item }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
