@@ -1,24 +1,47 @@
-<section id="use-cases" class="py-12 md:py-16 bg-gray-800/30">
-    <div class="container max-w-4xl">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-sal="fade" data-sal-duration="500" data-sal-once>
+<section id="use-cases" class="py-16 md:py-20 bg-gray-800/30">
+    <div class="container max-w-7xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-sal="fade" data-sal-duration="600" data-sal-once>
             {{ aiMentor[locale].useCases.title }}
         </h2>
+        {% if aiMentor[locale].useCases.description %}
         <p class="text-center text-lg text-gray-300 mb-8" data-sal="fade" data-sal-duration="500" data-sal-once>
             {{ aiMentor[locale].useCases.description }}
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {% endif %}
+        <div class="space-y-8 md:space-y-10">
             {% for item in aiMentor[locale].useCases.items %}
             <div 
-                class="bg-gray-900/50 rounded-lg p-5 border border-gray-700/50"
-                data-sal="zoom-in" 
-                data-sal-duration="500" 
-                data-sal-delay="{{ loop.index0 * 100 }}"
+                class="bg-gradient-to-br from-gray-900/70 to-gray-800/70 rounded-2xl p-6 md:p-8 border-2 border-gray-700/50 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10"
+                data-sal="slide-up" 
+                data-sal-duration="700" 
+                data-sal-delay="{{ loop.index0 * 150 }}"
                 data-sal-once
             >
-                <p class="text-gray-200 flex items-center gap-3">
-                    <span class="text-primary">→</span>
-                    {{ item }}
-                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-3 text-primary">{{ item.title }}</h3>
+                        <p class="text-lg md:text-xl font-semibold text-gray-200 mb-5">{{ item.subtitle }}</p>
+                        <p class="text-gray-300 mb-3 leading-relaxed">{{ item.problem }}</p>
+                        <p class="text-gray-300 mb-4 leading-relaxed font-medium">{{ item.solution }}</p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-xl p-5 border border-primary/20">
+                        <h4 class="text-lg md:text-xl font-semibold text-primary mb-4">Results:</h4>
+                        <ul class="space-y-3">
+                            {% for result in item.results %}
+                            <li 
+                                class="flex items-start gap-3 text-gray-300"
+                                data-sal="fade" 
+                                data-sal-duration="400" 
+                                data-sal-delay="{{ loop.index0 * 50 + 300 }}"
+                                data-sal-once
+                            >
+                                <span class="text-primary font-bold text-lg flex-shrink-0 mt-0.5">✓</span>
+                                <span class="text-base leading-relaxed">{{ result }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             </div>
             {% endfor %}
         </div>

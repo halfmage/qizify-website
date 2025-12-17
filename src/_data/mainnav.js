@@ -1,15 +1,15 @@
 module.exports = {
   de: [
     {
-      label: "KI-Mentor",
-      url: "/de#hero",
-      slug: "ai-mentor",
-      anchor: true
-    },
-    {
       label: "So funktioniert's",
       url: "/de#how-it-works",
       slug: "how-it-works",
+      anchor: true
+    },
+    {
+      label: "Funktionen",
+      url: "/de#key-features",
+      slug: "features",
       anchor: true
     },
     {
@@ -19,15 +19,15 @@ module.exports = {
       anchor: true
     },
     {
-      label: "Geschäftsauswirkungen",
-      url: "/de#business-impact",
-      slug: "business-impact",
+      label: "Kundenstimmen",
+      url: "/de#testimonials",
+      slug: "testimonials",
       anchor: true
     },
     {
-      label: "Pilotprogramm",
-      url: "/de#cta",
-      slug: "pilot-program",
+      label: "Warum wir",
+      url: "/de#why",
+      slug: "why-us",
       anchor: true
     },
     {
@@ -37,22 +37,22 @@ module.exports = {
       anchor: true
     },
     {
-      label: "Lernplattform",
+      label: "Quiz-Plattform",
       url: "/de/platform",
       slug: "platform"
     }
   ],
   en: [
     {
-      label: "AI Mentor",
-      url: "/en#hero",
-      slug: "ai-mentor",
-      anchor: true
-    },
-    {
       label: "How It Works",
       url: "/en#how-it-works",
       slug: "how-it-works",
+      anchor: true
+    },
+    {
+      label: "Features",
+      url: "/en#key-features",
+      slug: "features",
       anchor: true
     },
     {
@@ -62,15 +62,15 @@ module.exports = {
       anchor: true
     },
     {
-      label: "Business Impact",
-      url: "/en#business-impact",
-      slug: "business-impact",
+      label: "Testimonials",
+      url: "/en#testimonials",
+      slug: "testimonials",
       anchor: true
     },
     {
-      label: "Pilot Program",
-      url: "/en#cta",
-      slug: "pilot-program",
+      label: "Why Us",
+      url: "/en#why",
+      slug: "why-us",
       anchor: true
     },
     {
@@ -80,7 +80,7 @@ module.exports = {
       anchor: true
     },
     {
-      label: "Learning Platform",
+      label: "Quiz Platform",
       url: "/en/platform",
       slug: "platform"
     }

@@ -20,9 +20,11 @@
             </li>
             {% endfor %}
         </ul>
+        {% if aiMentor[locale].problem.conclusion %}
         <p class="text-center text-xl font-semibold text-primary" data-sal="fade" data-sal-duration="500" data-sal-once>
             {{ aiMentor[locale].problem.conclusion }}
         </p>
+        {% endif %}
     </div>
 </section>
 

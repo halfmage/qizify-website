@@ -1,0 +1,36 @@
+{% if aiMentor[locale].testimonials %}
+<section id="testimonials" class="py-16 md:py-20 bg-gray-900">
+    <div class="container max-w-7xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-sal="fade" data-sal-duration="600" data-sal-once>
+            {{ aiMentor[locale].testimonials.title }}
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {% for testimonial in aiMentor[locale].testimonials.items %}
+            <div 
+                class="bg-gradient-to-br from-gray-800/70 to-gray-900/70 rounded-2xl p-6 md:p-8 border-2 border-gray-700/50 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                data-sal="slide-up" 
+                data-sal-duration="700" 
+                data-sal-delay="{{ loop.index0 * 150 }}"
+                data-sal-once
+            >
+                <div class="flex flex-col items-center mb-6">
+                    <img 
+                        src="/assets/images/{{ testimonial.image }}" 
+                        alt="{{ testimonial.name }}"
+                        class="w-20 h-20 rounded-full object-cover border-2 border-primary/30 mb-4"
+                    >
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold text-white mb-1">{{ testimonial.name }}</h3>
+                        <p class="text-sm text-gray-400">{{ testimonial.company }}</p>
+                    </div>
+                </div>
+                <blockquote class="text-gray-300 text-base leading-relaxed italic">
+                    "{{ testimonial.quote }}"
+                </blockquote>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+

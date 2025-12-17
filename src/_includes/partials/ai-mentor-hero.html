@@ -7,41 +7,47 @@
         <div class="absolute left-1/4 bottom-1/4 w-36 h-36 bg-white/20 rounded-full blur-2xl animate-pulse" style="animation-delay: 1.5s;"></div>
     </div>
 
-    <div class="container flex flex-col items-center justify-center relative z-10">
+    <div class="container flex flex-col items-center justify-center relative z-10 py-12 md:py-16">
         <div 
             data-sal="fade" 
-            data-sal-duration="600" 
+            data-sal-duration="800" 
             data-sal-once 
-            class="flex flex-col justify-center"
+            class="flex flex-col justify-center max-w-5xl mx-auto"
         >
-            <h1 class="max-w-screen-xl mx-auto lg:text-7xl md:text-5xl text-4xl md:mb-6 mb-4 font-extrabold text-center">
-                {{ aiMentor[locale].hero.title }}
+            <h1 class="mx-auto text-4xl md:text-5xl lg:text-6xl font-bold text-center leading-tight mb-4 md:mb-6">
+                <span class="block">{{ aiMentor[locale].hero.title }}</span>
+                {% if aiMentor[locale].hero.title2 %}
+                <span class="block">{{ aiMentor[locale].hero.title2 }}</span>
+                {% endif %}
             </h1>
-            <p class="text-center md:text-xl max-w-screen-md mx-auto text-gray-200/75 z-10 mb-10 md:mb-12">
+            {% if aiMentor[locale].hero.subtitle %}
+            <p class="text-center text-lg md:text-xl max-w-4xl mx-auto text-gray-200/90 z-10 mb-4 font-medium">
                 {{ aiMentor[locale].hero.subtitle }}
             </p>
+            {% endif %}
+            {% if aiMentor[locale].hero.subtitle2 %}
+            <p class="text-center text-base md:text-lg max-w-3xl mx-auto text-gray-300/80 z-10 mb-8 md:mb-10">
+                {{ aiMentor[locale].hero.subtitle2 }}
+            </p>
+            {% endif %}
         </div>
 
+        {% if aiMentor[locale].hero.primaryCta %}
         <div 
-            class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-6 md:mt-8" 
+            class="flex justify-center" 
             data-sal="slide-up" 
-            data-sal-duration="600" 
-            data-sal-delay="100"
+            data-sal-duration="700" 
+            data-sal-delay="200"
             data-sal-once
         >
             <button 
                 @click="window.location.hash = 'cta'; setTimeout(() => { document.getElementById('cta').scrollIntoView({ behavior: 'smooth' }); }, 100);"
-                class="inline-block whitespace-nowrap gradient py-3 px-6 md:py-4 md:px-8 font-medium rounded-xl hover:brightness-110 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
+                class="inline-block whitespace-nowrap gradient py-4 px-8 md:py-5 md:px-10 font-semibold text-lg rounded-xl hover:brightness-110 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50 transform"
             >
                 {{ aiMentor[locale].hero.primaryCta }}
             </button>
-            <button 
-                @click="DemoModal = true"
-                class="inline-block whitespace-nowrap border border-gray-500 py-3 px-6 md:py-4 md:px-8 font-medium rounded-xl hover:brightness-110 cursor-pointer transition-all duration-300 hover:scale-105 hover:border-gray-400 hover:bg-gray-800/50"
-            >
-                {{ aiMentor[locale].hero.secondaryCta }}
-            </button>
         </div>
+        {% endif %}
 
         <!-- Video preview thumbnail -->
         <div 

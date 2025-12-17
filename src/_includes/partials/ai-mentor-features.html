@@ -1,24 +1,29 @@
-<section id="business-impact" class="py-12 md:py-16 bg-gradient-to-r from-secondary/20 to-primary/20">
-    <div class="container max-w-4xl">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8" data-sal="fade" data-sal-duration="500" data-sal-once>
+<section id="key-features" class="py-16 md:py-20 bg-gradient-to-br from-gray-800/30 via-gray-900/50 to-gray-800/30">
+    <div class="container max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-sal="fade" data-sal-duration="600" data-sal-once>
             {{ aiMentor[locale].features.title }}
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {% for item in aiMentor[locale].features.items %}
             <div 
-                class="bg-gray-900/50 rounded-lg p-5 border border-gray-700/50"
-                data-sal="fade" 
-                data-sal-duration="500" 
-                data-sal-delay="{{ loop.index0 * 75 }}"
+                class="bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-xl p-6 border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:scale-105 transform group"
+                data-sal="zoom-in" 
+                data-sal-duration="600" 
+                data-sal-delay="{{ loop.index0 * 100 }}"
                 data-sal-once
             >
-                <p class="text-gray-200 flex items-center gap-3">
-                    <span class="text-secondary font-bold">✓</span>
-                    {{ item }}
-                </p>
+                <div class="flex items-start gap-3">
+                    <span class="text-primary text-2xl font-bold flex-shrink-0 group-hover:scale-110 transition-transform duration-300">✓</span>
+                    <p class="text-gray-200 text-base leading-relaxed">{{ item }}</p>
+                </div>
             </div>
             {% endfor %}
         </div>
+        {% if aiMentor[locale].features.footer %}
+        <p class="text-center text-sm text-gray-400 mt-8" data-sal="fade" data-sal-duration="500" data-sal-once>
+            {{ aiMentor[locale].features.footer }}
+        </p>
+        {% endif %}
     </div>
 </section>
 
