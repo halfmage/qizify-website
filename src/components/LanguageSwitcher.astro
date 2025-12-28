@@ -1,0 +1,31 @@
+---
+interface Props {
+	currentLang: 'en' | 'de';
+	currentPath: string;
+}
+
+const { currentLang, currentPath } = Astro.props;
+
+// Determine alternate language path
+const alternatePath = currentLang === 'en' ? '/de' : '/';
+---
+
+<nav class="flex items-center gap-2" aria-label="Language selection">
+	<a
+		href={currentLang === 'en' ? '#' : alternatePath}
+		class={`text-white no-underline font-medium text-sm py-1 px-2 transition-opacity duration-200 ${currentLang === 'en' ? 'text-primary pointer-events-none' : 'hover:opacity-70'}`}
+		aria-current={currentLang === 'en' ? 'page' : undefined}
+		aria-label="Switch to English"
+	>
+		EN
+	</a>
+	<span class="text-gray select-none" aria-hidden="true">|</span>
+	<a
+		href={currentLang === 'de' ? '#' : alternatePath}
+		class={`text-white no-underline font-medium text-sm py-1 px-2 transition-opacity duration-200 ${currentLang === 'de' ? 'text-primary pointer-events-none' : 'hover:opacity-70'}`}
+		aria-current={currentLang === 'de' ? 'page' : undefined}
+		aria-label="Switch to German"
+	>
+		DE
+	</a>
+</nav>

@@ -1,0 +1,132 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface MenuItem {
+	label: string;
+	sectionId: string;
+}
+
+interface Props {
+	logo: string;
+	menu: MenuItem[];
+	cta: string;
+	currentLang: 'en' | 'de';
+	currentPath: string;
+}
+
+const { logo, menu, cta, currentLang, currentPath } = Astro.props;
+---
+
+<header class="fixed top-0 left-0 right-0 z-[1000] bg-black/95 backdrop-blur-md border-b border-gray transition-all duration-300" id="header">
+	<div class="max-w-container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between gap-8">
+		<a href={currentLang === 'en' ? '/' : '/de'} class="flex items-center no-underline" aria-label="LearnSlice Home">
+			<img src="/images/learnslice-logo.svg" alt={logo} class="h-8 md:h-10 w-auto" />
+		</a>
+		
+		<nav class="hidden lg:block" aria-label="Main navigation">
+			<ul class="flex items-center gap-8 list-none m-0 p-0">
+				{menu.map((item) => (
+					<li>
+						<a href={`#${item.sectionId}`} class="text-white no-underline font-medium text-[0.9375rem] hover:text-primary transition-colors duration-200 relative">
+							{item.label}
+						</a>
+					</li>
+				))}
+			</ul>
+		</nav>
+		
+		<div class="flex items-center gap-4 lg:gap-6">
+			<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
+			<button class="hidden lg:block bg-primary text-white border-none px-6 py-3 text-[0.9375rem] font-semibold rounded-lg cursor-pointer hover:bg-[#5554d1] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 font-sans whitespace-nowrap" data-modal-trigger="demo-request" aria-label={cta}>
+				{cta}
+			</button>
+		</div>
+		
+		<button class="flex lg:hidden flex-col gap-1 bg-transparent border-none cursor-pointer p-2 z-[1001]" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
+			<span class="w-6 h-0.5 bg-white rounded transition-all duration-300 origin-center" id="hamburger-line-1"></span>
+			<span class="w-6 h-0.5 bg-white rounded transition-all duration-300" id="hamburger-line-2"></span>
+			<span class="w-6 h-0.5 bg-white rounded transition-all duration-300 origin-center" id="hamburger-line-3"></span>
+		</button>
+	</div>
+	
+	<!-- Mobile Menu -->
+	<nav class="lg:hidden absolute top-full left-0 right-0 bg-black/[0.98] border-t border-gray p-8 -translate-y-full opacity-0 pointer-events-none transition-all duration-300" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+		<ul class="list-none m-0 p-0 flex flex-col gap-6">
+			{menu.map((item) => (
+				<li>
+					<a href={`#${item.sectionId}`} class="text-white no-underline font-medium text-lg hover:text-primary transition-colors duration-200 block py-2">
+						{item.label}
+					</a>
+				</li>
+			))}
+			<li>
+				<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
+			</li>
+			<li>
+				<button class="bg-primary text-white border-none px-6 py-3.5 text-base font-semibold rounded-lg cursor-pointer hover:bg-[#5554d1] transition-all duration-200 font-sans w-full mt-2" data-modal-trigger="demo-request">
+					{cta}
+				</button>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<script>
+	// Mobile menu toggle functionality
+	const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+	const mobileMenu = document.getElementById('mobile-menu');
+	const line1 = document.getElementById('hamburger-line-1');
+	const line2 = document.getElementById('hamburger-line-2');
+	const line3 = document.getElementById('hamburger-line-3');
+	
+	if (mobileMenuToggle && mobileMenu) {
+		mobileMenuToggle.addEventListener('click', () => {
+			const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+			mobileMenuToggle.setAttribute('aria-expanded', (!isExpanded).toString());
+			mobileMenu.setAttribute('aria-hidden', isExpanded.toString());
+			
+			if (!isExpanded) {
+				mobileMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+				mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+				// Animate hamburger to X
+				line1?.classList.add('rotate-45', 'translate-y-1.5');
+				line2?.classList.add('opacity-0');
+				line3?.classList.add('-rotate-45', '-translate-y-1.5');
+			} else {
+				mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+				mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+				// Animate X back to hamburger
+				line1?.classList.remove('rotate-45', 'translate-y-1.5');
+				line2?.classList.remove('opacity-0');
+				line3?.classList.remove('-rotate-45', '-translate-y-1.5');
+			}
+		});
+		
+		// Close mobile menu when clicking on a link
+		const mobileLinks = mobileMenu.querySelectorAll('a');
+		mobileLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				mobileMenuToggle.setAttribute('aria-expanded', 'false');
+				mobileMenu.setAttribute('aria-hidden', 'true');
+				mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+				mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+				line1?.classList.remove('rotate-45', 'translate-y-1.5');
+				line2?.classList.remove('opacity-0');
+				line3?.classList.remove('-rotate-45', '-translate-y-1.5');
+			});
+		});
+	}
+	
+	// Sticky header on scroll
+	const header = document.getElementById('header');
+	if (header) {
+		window.addEventListener('scroll', () => {
+			const currentScroll = window.pageYOffset;
+			if (currentScroll > 100) {
+				header.classList.add('bg-black/[0.98]', 'shadow-lg');
+			} else {
+				header.classList.remove('bg-black/[0.98]', 'shadow-lg');
+			}
+		});
+	}
+</script>

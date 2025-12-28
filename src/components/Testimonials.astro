@@ -1,0 +1,67 @@
+---
+interface Testimonial {
+	name: string;
+	title: string;
+	company: string;
+	quote: string;
+}
+
+interface Props {
+	headline: string;
+	items: Testimonial[];
+	currentLang: 'en' | 'de';
+}
+
+const { headline, items, currentLang } = Astro.props;
+
+// Map testimonial names to image filenames
+const testimonialImages: Record<string, string> = {
+	'Lienne Julie Wolff': 'lienne-julie-wolff.webp',
+	'Kinga Patrycja Peters': 'kinga-patrycja-peters.webp',
+	'Philipp Schulte': 'philipp-schulte.webp',
+};
+---
+
+<section class="py-12 md:py-20 px-4 md:px-8 bg-dark" id="testimonials">
+	<div class="max-w-container mx-auto">
+		<h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-12 md:mb-16">
+			{headline}
+		</h2>
+		
+		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+			{items.map((testimonial) => {
+				const imageFile = testimonialImages[testimonial.name] || 'placeholder.webp';
+				return (
+					<div class="bg-gray/30 border border-gray rounded-2xl p-6 md:p-8 flex flex-col gap-4 md:gap-6 hover:-translate-y-1 hover:border-primary transition-all duration-300">
+						<div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
+							<div class="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-2 border-primary bg-gray/50">
+								<img 
+									src={`/images/testimonials/${imageFile}`}
+									alt={`${testimonial.name}, ${testimonial.title} at ${testimonial.company}`}
+									class="w-full h-full object-cover object-center"
+									loading="lazy"
+									width="240"
+									height="240"
+								/>
+							</div>
+							<div class="flex-1 flex flex-col gap-1">
+								<h3 class="text-lg md:text-xl font-semibold text-white m-0 leading-snug">
+									{testimonial.name}
+								</h3>
+								<p class="text-sm md:text-base text-white/80 m-0 leading-snug">
+									{testimonial.title}
+								</p>
+								<p class="text-sm text-primary m-0 font-medium">
+									{testimonial.company}
+								</p>
+							</div>
+						</div>
+						<blockquote class="text-base leading-relaxed text-white/90 m-0 relative">
+							{testimonial.quote}
+						</blockquote>
+					</div>
+				);
+			})}
+		</div>
+	</div>
+</section>

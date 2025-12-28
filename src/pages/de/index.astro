@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import LogosSlider from '../../components/LogosSlider.astro';
+import SavingsComparison from '../../components/SavingsComparison.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import LearningResults from '../../components/LearningResults.astro';
+import CompanySlider from '../../components/CompanySlider.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import WhyChooseUs from '../../components/WhyChooseUs.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTAFooter from '../../components/CTAFooter.astro';
+import DemoRequestModal from '../../components/DemoRequestModal.astro';
+import deContent from '../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de';
+---
+
+<BaseLayout 
+	title="LearnSlice - KI-gestützte Lernplattform für Ausbildung & Onboarding" 
+	description="Automatisieren Sie Mentoring und sparen Sie Kosten mit LearnSlice. Prüfungs- und jobbezogene Lernpfade, 24/7 KI-Coaching und Entlastung erfahrener Mitarbeitender."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header 
+		logo={deContent.nav.logo}
+		menu={deContent.nav.menu}
+		cta={deContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+	
+	<Hero 
+		badge={deContent.hero.badge}
+		headline={deContent.hero.headline}
+		subheadline={deContent.hero.subheadline}
+		ctaPrimary={deContent.hero.ctaPrimary}
+		ctaSecondary={deContent.hero.ctaSecondary}
+		currentLang={lang}
+	/>
+	
+	<LogosSlider 
+		headline={deContent.trustedBy.headline}
+		logos={deContent.trustedBy.logos}
+	/>
+	
+	<SavingsComparison 
+		headline={deContent.savingsComparison.headline}
+		without={deContent.savingsComparison.without}
+		with={deContent.savingsComparison.with}
+	/>
+	
+	<HowItWorks 
+		badge={deContent.howItWorks.badge}
+		headline={deContent.howItWorks.headline}
+		steps={deContent.howItWorks.steps}
+	/>
+	
+	<LearningResults 
+		badge={deContent.learningResults.badge}
+		headline={deContent.learningResults.headline}
+		features={deContent.learningResults.features}
+		compliance={deContent.learningResults.compliance}
+	/>
+	
+	<CompanySlider 
+		headline={deContent.madeForCompany.headline}
+		tabs={deContent.madeForCompany.tabs}
+	/>
+	
+	<Testimonials 
+		headline={deContent.testimonials.headline}
+		items={deContent.testimonials.items}
+		currentLang={lang}
+	/>
+	
+	<WhyChooseUs 
+		headline={deContent.whyChooseUs.headline}
+		items={deContent.whyChooseUs.items}
+	/>
+	
+	<FAQ 
+		headline={deContent.faq.headline}
+		items={deContent.faq.items}
+	/>
+	
+	<CTAFooter 
+		headline={deContent.cta.headline}
+		subheadline={deContent.cta.subheadline}
+		button={deContent.cta.button}
+		currentLang={lang}
+	/>
+	
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>
+

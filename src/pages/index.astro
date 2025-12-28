@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import LogosSlider from '../components/LogosSlider.astro';
+import SavingsComparison from '../components/SavingsComparison.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import LearningResults from '../components/LearningResults.astro';
+import CompanySlider from '../components/CompanySlider.astro';
+import Testimonials from '../components/Testimonials.astro';
+import WhyChooseUs from '../components/WhyChooseUs.astro';
+import FAQ from '../components/FAQ.astro';
+import CTAFooter from '../components/CTAFooter.astro';
+import DemoRequestModal from '../components/DemoRequestModal.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+const currentPath = '/';
+---
+
+<BaseLayout 
+	title="LearnSlice - AI-Powered Learning Platform for Apprenticeships" 
+	description="Automate mentoring and save money with LearnSlice. Best of exam and job-specific learning paths, 24/7 AI coaching, and trainer relief. No theory fluff."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header 
+		logo={enContent.nav.logo}
+		menu={enContent.nav.menu}
+		cta={enContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+	
+	<Hero 
+		badge={enContent.hero.badge}
+		headline={enContent.hero.headline}
+		subheadline={enContent.hero.subheadline}
+		ctaPrimary={enContent.hero.ctaPrimary}
+		ctaSecondary={enContent.hero.ctaSecondary}
+		currentLang={lang}
+	/>
+	
+	<LogosSlider 
+		headline={enContent.trustedBy.headline}
+		logos={enContent.trustedBy.logos}
+	/>
+	
+	<SavingsComparison 
+		headline={enContent.savingsComparison.headline}
+		without={enContent.savingsComparison.without}
+		with={enContent.savingsComparison.with}
+	/>
+	
+	<HowItWorks 
+		badge={enContent.howItWorks.badge}
+		headline={enContent.howItWorks.headline}
+		steps={enContent.howItWorks.steps}
+	/>
+	
+	<LearningResults 
+		badge={enContent.learningResults.badge}
+		headline={enContent.learningResults.headline}
+		features={enContent.learningResults.features}
+		compliance={enContent.learningResults.compliance}
+	/>
+	
+	<CompanySlider 
+		headline={enContent.madeForCompany.headline}
+		tabs={enContent.madeForCompany.tabs}
+	/>
+	
+	<Testimonials 
+		headline={enContent.testimonials.headline}
+		items={enContent.testimonials.items}
+		currentLang={lang}
+	/>
+	
+	<WhyChooseUs 
+		headline={enContent.whyChooseUs.headline}
+		items={enContent.whyChooseUs.items}
+	/>
+	
+	<FAQ 
+		headline={enContent.faq.headline}
+		items={enContent.faq.items}
+	/>
+	
+	<CTAFooter 
+		headline={enContent.cta.headline}
+		subheadline={enContent.cta.subheadline}
+		button={enContent.cta.button}
+		currentLang={lang}
+	/>
+	
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

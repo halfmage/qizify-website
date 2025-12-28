@@ -1,0 +1,70 @@
+---
+import Button from './Button.astro';
+
+interface Props {
+	badge: string;
+	headline: string;
+	subheadline: string;
+	ctaPrimary: string;
+	ctaSecondary: string;
+	currentLang: 'en' | 'de';
+}
+
+const { badge, headline, subheadline, ctaPrimary, ctaSecondary, currentLang } = Astro.props;
+
+// Split headline by newlines for proper formatting
+const headlineLines = headline.split('\n');
+---
+
+<section class="relative min-h-screen flex items-center justify-start overflow-hidden pt-20" id="hero">
+	<div class="absolute inset-0 z-0">
+		<img 
+			src="/images/hero/hero-background.webp" 
+			alt={currentLang === 'en' ? 'LearnSlice AI-powered learning platform background' : 'LearnSlice KI-gestützte Lernplattform Hintergrund'} 
+			class="w-full h-full object-cover object-center"
+			loading="eager"
+			decoding="async"
+			width="1920"
+			height="1080"
+		/>
+		<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/80 z-[1]"></div>
+	</div>
+	
+	<div class="relative z-[2] max-w-container mx-auto w-full px-4 md:px-8 text-left flex flex-col items-start gap-6">
+		<div class="learnslice-gradient-low py-2 px-4 rounded-lg text-white text-sm font-bold uppercase tracking-wider mb-2">
+			{badge}
+		</div>
+		
+		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white m-0 max-w-[900px]">
+			{headlineLines.map((line, index) => (
+				<>
+					{line}
+					{index < headlineLines.length - 1 && <br />}
+				</>
+			))}
+		</h1>
+		
+		<p class="text-lg md:text-xl leading-relaxed text-white/90 max-w-[700px] m-0">
+			{subheadline}
+		</p>
+		
+		<div class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto justify-center">
+			<Button 
+				variant="primary" 
+				href={`#demo-request`}
+				aria-label={ctaPrimary}
+				class="min-w-[160px] w-full sm:w-auto"
+			>
+				{ctaPrimary}
+			</Button>
+			<Button 
+				variant="secondary" 
+				href={`#how-it-works`}
+				aria-label={ctaSecondary}
+				class="min-w-[160px] w-full sm:w-auto"
+			>
+				{ctaSecondary}
+			</Button>
+		</div>
+	</div>
+</section>

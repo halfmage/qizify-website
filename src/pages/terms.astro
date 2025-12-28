@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+const currentPath = '/terms';
+---
+
+<BaseLayout 
+	title="Terms of Use - LearnSlice" 
+	description="LearnSlice Terms of Use"
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header 
+		logo={enContent.nav.logo}
+		menu={enContent.nav.menu}
+		cta={enContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+	
+	<main class="container mx-auto px-6 py-16 max-w-4xl">
+		<h1 class="text-4xl font-bold mb-8">Terms of Use</h1>
+		
+		<div class="prose prose-invert max-w-none">
+			<p class="text-gray-400 mb-4">
+				Content to be provided later.
+			</p>
+		</div>
+	</main>
+</BaseLayout>
+

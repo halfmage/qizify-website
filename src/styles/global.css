@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'Poppins', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		@apply bg-dark text-white leading-relaxed min-h-screen overflow-x-hidden;
+	}
+
+	/* Focus styles for accessibility (WCAG AA compliant) */
+	a:focus-visible,
+	button:focus-visible,
+	input:focus-visible,
+	textarea:focus-visible,
+	select:focus-visible {
+		@apply outline-2 outline-offset-2 outline-primary rounded-sm;
+	}
+
+	/* Skip to main content link for accessibility */
+	.skip-to-main {
+		@apply absolute -left-[9999px] z-[999] p-4 bg-primary text-white no-underline font-semibold;
+	}
+
+	.skip-to-main:focus {
+		@apply left-1/2 -translate-x-1/2 top-4;
+	}
+
+	/* Screen reader only utility */
+	.sr-only {
+		@apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+		clip: rect(0, 0, 0, 0);
+	}
+
+	.learnslice-gradient {
+		@apply bg-gradient-to-r from-[#6665F1] via-[#D548EF] to-[#FB7286];
+	}
+
+	.learnslice-gradient-low {
+		@apply bg-gradient-to-r from-[#6665F150] via-[#D548EF50] to-[#FB728650];
+	}
+}
+
+@layer utilities {
+	/* Reduced motion preference */
+	@media (prefers-reduced-motion: reduce) {
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+		
+		html {
+			scroll-behavior: auto;
+		}
+	}
+}

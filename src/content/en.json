@@ -1,0 +1,285 @@
+{
+  "nav": {
+    "logo": "LearnSlice",
+    "menu": [
+      { "label": "AI Mentor", "sectionId": "learning-results" },
+      { "label": "How It Works", "sectionId": "how-it-works" },
+      { "label": "Use Cases", "sectionId": "made-for-company" },
+      { "label": "FAQ", "sectionId": "faq" }
+    ],
+    "cta": "Request Demo"
+  },
+  "hero": {
+    "badge": "Exam Material + Company Data",
+    "headline": "Automate mentoring.\nSave money now.",
+    "subheadline": "Best of exam and job-specific learning paths, 24/7 AI coaching, and trainer relief. No theory fluff.",
+    "ctaPrimary": "Request Demo",
+    "ctaSecondary": "How it works"
+  },
+  "trustedBy": {
+    "headline": "You are in good company",
+    "logos": [
+      "EMC Test",
+      "Tremonia",
+      "Fachhochschule Dortmund",
+      "Universität zu Köln",
+      "Carl-Severing-Berufskolleg",
+      "DCI",
+      "EMIT",
+      "Jäger Gruppe",
+      "International School Stuttgart"
+    ]
+  },
+  "savingsComparison": {
+    "headline": "€32K–€41K saved per young talent.\nBig savings, quick ROI.",
+    "without": {
+      "title": "Companies\nWithout LearnSlice",
+      "points": [
+        "Apprentices need 4-6 months to productivity",
+        "8–12 hrs of trainer time per apprentice weekly",
+        "30 % dropout",
+        "Delayed revenue from slow productivity"
+      ]
+    },
+    "with": {
+      "title": "Companies\nWith LearnSlice",
+      "points": [
+        "65 % faster to productivity (4-6 months → 8 weeks)",
+        "50% less trainer time = €10K saved per apprentice",
+        "Dropout reduced: 30 % → 15%",
+        "Turn −€29K into €32K–€41K with our solution"
+      ]
+    }
+  },
+  "howItWorks": {
+    "badge": "LearnSlice AI Mentor",
+    "headline": "How it works",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Built-in IHK learning path",
+        "description": "Prebuilt curriculum mapped to regional IHK requirements: the complete content & learning path every Azubi needs to pass.\nGuaranteed compliance, zero curriculum work, exam-ready from day one."
+      },
+      {
+        "number": "2",
+        "title": "Job simulations + your company input",
+        "description": "Ready-made role-specific tasks and simulations are included. Companies can optionally upload documents to tailor training to their processes and products — for custom onboarding, upskilling, lateral entry, and more."
+      },
+      {
+        "number": "3",
+        "title": "Personalised coaching",
+        "description": "The AI acts as a personal mentor: it diagnoses each employee, creates a tailored learning plan, gives continuous feedback and adaptive coaching, and validates competency in real time against actual daily tasks and exam requirements."
+      }
+    ]
+  },
+  "learningResults": {
+    "badge": "Automate Mentoring with AI",
+    "headline": "Learning Built for Results",
+    "features": [
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "AI Mentor That Adapts 24/7",
+        "description": "Predicts issues, auto-adjusts. Plans, feedback, always on."
+      },
+      {
+        "icon": "hugeicons:book-02",
+        "title": "Bulletproof Assessments",
+        "description": "Quizzes, cases, deep dives. Instant scores, gaps, badges."
+      },
+      {
+        "icon": "hugeicons:award-04",
+        "title": "Executive Analytics",
+        "description": "Dashboards: status, progress, trends. Track & optimize."
+      },
+      {
+        "icon": "hugeicons:pencil-edit-02",
+        "title": "Proven Gamification",
+        "description": "Points, badges, leaderboards. Rewards, streaks, comps."
+      }
+    ],
+    "compliance": "100% GDPR-compliant. Hosted in Germany or your infrastructure."
+  },
+  "madeForCompany": {
+    "headline": "Made for industries that count",
+    "tabs": [
+      {
+        "tabLabel": "SMEs & Companies",
+        "audience": "CEOs · HR · Trainers",
+        "image": "/images/company-slider/ceos-hr-trainers.webp",
+        "points": [
+          {
+            "text": "Up to 65 % faster time-to-productivity. New hires work on real, job-critical tasks using your company knowledge from day one — not generic training content.",
+            "highlight": "Up to 65 % faster time-to-productivity."
+          },
+          {
+            "text": "Up to 15 % fewer dropouts during onboarding and apprenticeship. Personalised learning paths and continuous AI feedback keep apprentices and early-career talent on track.",
+            "highlight": "Up to 15 % fewer dropouts during onboarding and apprenticeship."
+          },
+          {
+            "text": "Up to 50 % less training effort for senior teams.",
+            "highlight": "Up to 50 % less training effort for senior teams."
+          }
+        ],
+        "note": "The AI mentor handles standard knowledge and daily practice: experts focus on value creation, not basic instruction."
+      },
+      {
+        "tabLabel": "Agencies",
+        "audience": "IHK · HWK · Economic Development Agencies",
+        "image": "/images/company-slider/ihk-hwk-agencies.webp",
+        "points": [
+          {
+            "text": "Makes modern training affordable for SMEs and resource-constrained companies. Shared license models enable AI mentoring without internal budgets or IT capacity.",
+            "highlight": "Makes modern training affordable for SMEs and resource-constrained companies."
+          },
+          {
+            "text": "Reduces apprenticeship dropouts measurably (−10–15 %). Job-relevant tasks and exam-level simulations stabilise apprentices in daily work and training.",
+            "highlight": "Reduces apprenticeship dropouts measurably (−10–15 %)."
+          },
+          {
+            "text": "Relieves overloaded trainers in SMEs (−45–50 % supervision effort).",
+            "highlight": "Relieves overloaded trainers in SMEs (−45–50 % supervision effort)."
+          }
+        ],
+        "note": "The AI mentor provides daily guidance and standard instruction, enabling companies to support apprentices consistently."
+      },
+      {
+        "tabLabel": "Schools",
+        "audience": "Vocational Colleges · Schools",
+        "image": "/images/company-slider/schools-vocational.webp",
+        "points": [
+          {
+            "text": "15–25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high level job preparation.",
+            "highlight": "15–25% higher transition rate into apprenticeship and employment."
+          },
+          {
+            "text": "30 % fewer dropouts in the first year of apprenticeship.",
+            "highlight": "30 % fewer dropouts in the first year of apprenticeship."
+          },
+          {
+            "text": "Up to 25 % time saved for teachers. Automated exercises, simulations and feedback reduce preparation and grading workload.",
+            "highlight": "Up to 25 % time saved for teachers."
+          }
+        ],
+        "note": "Early skills diagnostics and individual AI coaching prevent overload and disengagement."
+      }
+    ]
+  },
+  "testimonials": {
+    "headline": "What Our Customers Say",
+    "items": [
+      {
+        "name": "Lienne Julie Wolff",
+        "title": "Apprentice Industrial Clerk",
+        "company": "Tremonia Mobility GmbH",
+        "quote": "We're very satisfied with LearnSlice. The team quickly transformed our materials into precise, effective quizzes with high quality and efficiency. Questions boost knowledge transfer. Excellent support team answers fast and proactively solves our challenges. We highly recommend this innovative tool."
+      },
+      {
+        "name": "Kinga Patrycja Peters",
+        "title": "Employment Promotion",
+        "company": "Regional Agency Westphalian Ruhr Area",
+        "quote": "Our goal is to advise and support companies in the region while strengthening workforce development. With LearnSlice, we've found a cooperation partner who not only uses the latest technology but also thinks outside the box. Our collaboration is characterized by trust, openness, and creativity."
+      },
+      {
+        "name": "Philipp Schulte",
+        "title": "Director of Studies",
+        "company": "Carl-Severing Vocational College",
+        "quote": "LearnSlice significantly increases learner motivation and enables effective, differentiated exam preparation using modern technologies such as AI. The software enhances traditional teaching methods, encourages interactive collaboration, and prepares learners for the demands of working world"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "headline": "Why companies choose us",
+    "items": [
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "30+ German companies",
+        "description": "IT Services, Manufacturing, Insurance, Healthcare, Government"
+      },
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "FH Dortmund Didactics Partner",
+        "description": "Science-proven learning methods, tested by young professionals"
+      },
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "BMWK AI Prize 2025 Winner",
+        "description": "Federal Ministry award"
+      },
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "Made in\nGermany",
+        "description": "GDPR, German servers, Local LLM."
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is LearnSlice AI-Mentor?",
+        "answer": "A personal chat-based AI mentor for early-career talent that delivers personalized onboarding, continuous upskilling and on-the-job practice. From day one."
+      },
+      {
+        "question": "Is the content exam-aligned?",
+        "answer": "Yes. The platform recreates realistic IHK and university exam scenarios and maps learning paths to regional IHK requirements."
+      },
+      {
+        "question": "Can we customise training for our company?",
+        "answer": "Absolutely. Ready-made role simulations are included out-of-the-box, and you can optionally upload internal documents to tailor onboarding, upskilling and lateral-entry (Quereinstieg) scenarios."
+      },
+      {
+        "question": "How does the AI personalise learning?",
+        "answer": "The AI profiles each learner (skills, goals, company needs), creates a bespoke learning plan, and adapts tasks in real time to close knowledge gaps."
+      },
+      {
+        "question": "How is competency proven?",
+        "answer": "Competency is validated continuously with job-relevant checks (quizzes, deep dives and case studies) and realistic simulations — measurable job-readiness, not just completion certificates."
+      },
+      {
+        "question": "What engagement mechanics are included?",
+        "answer": "Built-in gamification: points, badges and levels to boost motivation, focus and completion rates."
+      },
+      {
+        "question": "Is my data safe / GDPR compliant?",
+        "answer": "Yes. 100% GDPR-compliant. Data can be stored on German, European or your company systems per your policy."
+      },
+      {
+        "question": "How does this help reduce dropout and trainer load?",
+        "answer": "Targeted, practice-led learning shortens ramp time, reduces friction and keeps talent engaged, freeing senior staff to focus on strategic work. The platform is designed to lower dropouts and cut trainer hours."
+      },
+      {
+        "question": "How does pricing & integration work?",
+        "answer": "Billed annually. Core functionality is included; optional customisation or platform integrations may incur additional costs. Free support is provided."
+      },
+      {
+        "question": "How fast can we get started?",
+        "answer": "Implementation is designed to be quick: out-of-the-box simulations work immediately, and optional company customisation can be rolled in as needed. Contact us for a tailored onboarding timeline."
+      },
+      {
+        "question": "How can I purchase a license?",
+        "answer": "To purchase a license, please get in touch with us via email at info@learnslice.com, via mobile at +49 1578 3914112, or via the contact form on our website."
+      },
+      {
+        "question": "I have a question, concern, or feedback. Who can I contact?",
+        "answer": "You can contact us via WhatsApp/Telegram at +49 1578 3914112, via the contact form on our website, or via email at info@learnslice.com."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Start Today",
+    "subheadline": "€4K saved per apprentice. €20K per 5 apprentices. No risk. Cancel anytime.",
+    "button": "Request Demo"
+  },
+  "footer": {
+    "logo": "LearnSlice",
+    "menu": [
+      "AI Mentor",
+      "How It Works",
+      "Use Cases",
+      "Pilot Program",
+      "FAQ"
+    ],
+    "cta": "Request Demo"
+  }
+}
+

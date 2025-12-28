@@ -1,0 +1,172 @@
+---
+interface Step {
+	number: string;
+	title: string;
+	description: string;
+	image?: string;
+}
+
+interface Props {
+	badge: string;
+	headline: string;
+	steps: Step[];
+}
+
+const { badge, headline, steps } = Astro.props;
+
+// For now we only have one image, but structure supports multiple
+const defaultImage = "/images/screenshots/learnslice-copilot-04.webp";
+---
+
+<section class="py-12 md:py-20 px-4 md:px-8 bg-dark" id="how-it-works">
+	<div class="max-w-container mx-auto">
+		<div class="text-center mb-12 md:mb-16">
+			<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-4">
+				{badge}
+			</div>
+			<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white m-0">
+				{headline}
+			</h2>
+		</div>
+		
+		<!-- Two Column Tab Layout -->
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+			<!-- Left: Tab Cards -->
+			<div class="flex flex-col gap-4" id="how-it-works-tabs">
+				{steps.map((step, index) => (
+					<button 
+						class:list={[
+							"how-it-works-tab",
+							"bg-dark border-2 rounded-2xl p-4 md:p-5 flex gap-4 items-start text-left transition-all duration-300 cursor-pointer",
+							index === 0 ? "border-white active" : "border-gray hover:border-gray/70"
+						]}
+						data-tab-index={index}
+						data-image={step.image || defaultImage}
+						aria-selected={index === 0 ? "true" : "false"}
+					>
+						<div class:list={[
+							"w-10 h-10 rounded-full flex items-center justify-center text-base font-semibold text-white flex-shrink-0 border-2 transition-all duration-300",
+							index === 0 ? "border-white" : "border-gray"
+						]}>
+							{step.number}
+						</div>
+						<div class="flex-1 flex flex-col gap-2">
+							<h3 class:list={[
+								"text-lg md:text-xl font-bold text-white m-0 leading-tight transition-opacity duration-300",
+								index === 0 ? "opacity-100" : "opacity-70"
+							]}>
+								{step.title}
+							</h3>
+							<p class:list={[
+								"text-sm leading-relaxed text-white m-0 transition-opacity duration-300",
+								index === 0 ? "opacity-90" : "opacity-70"
+							]}>
+								{step.description}
+							</p>
+						</div>
+					</button>
+				))}
+			</div>
+			
+			<!-- Right: Image Panel -->
+			<div class="relative rounded-3xl overflow-hidden p-6" id="how-it-works-image-panel">
+				<!-- Decorative gradient background -->
+				<div class="absolute inset-0 learnslice-gradient pointer-events-none"></div>
+				
+				<!-- Decorative blurs -->
+				<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+				<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+				
+				<div class="relative rounded-2xl overflow-hidden border border-white/20">
+					<img 
+						src={defaultImage}
+						alt="LearnSlice AI-powered learning platform interface showing personalized coaching and learning paths"
+						class="w-full h-auto block object-contain transition-opacity duration-300"
+						loading="lazy"
+						width="1200"
+						height="800"
+						id="how-it-works-image"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	function initHowItWorksTabs() {
+		const tabs = document.querySelectorAll('.how-it-works-tab');
+		const image = document.getElementById('how-it-works-image') as HTMLImageElement;
+		
+		if (!tabs.length || !image) return;
+		
+		tabs.forEach((tab) => {
+			tab.addEventListener('click', () => {
+				// Remove active state from all tabs
+				tabs.forEach((t) => {
+					t.classList.remove('active', 'border-white');
+					t.classList.add('border-gray');
+					t.setAttribute('aria-selected', 'false');
+					
+					// Update number circle border
+					const circle = t.querySelector('div:first-child');
+					if (circle) {
+						circle.classList.remove('border-white');
+						circle.classList.add('border-gray');
+					}
+					
+					// Update title and description opacity
+					const title = t.querySelector('h3');
+					const desc = t.querySelector('p');
+					if (title) {
+						title.classList.remove('opacity-100');
+						title.classList.add('opacity-70');
+					}
+					if (desc) {
+						desc.classList.remove('opacity-90');
+						desc.classList.add('opacity-70');
+					}
+				});
+				
+				// Add active state to clicked tab
+				tab.classList.add('active', 'border-white');
+				tab.classList.remove('border-gray');
+				tab.setAttribute('aria-selected', 'true');
+				
+				// Update number circle border
+				const activeCircle = tab.querySelector('div:first-child');
+				if (activeCircle) {
+					activeCircle.classList.remove('border-gray');
+					activeCircle.classList.add('border-white');
+				}
+				
+				// Update title and description opacity
+				const activeTitle = tab.querySelector('h3');
+				const activeDesc = tab.querySelector('p');
+				if (activeTitle) {
+					activeTitle.classList.remove('opacity-70');
+					activeTitle.classList.add('opacity-100');
+				}
+				if (activeDesc) {
+					activeDesc.classList.remove('opacity-70');
+					activeDesc.classList.add('opacity-90');
+				}
+				
+				// Update image with fade effect
+				const newImageSrc = tab.getAttribute('data-image');
+				if (newImageSrc && image.src !== newImageSrc) {
+					image.style.opacity = '0';
+					setTimeout(() => {
+						image.src = newImageSrc;
+						image.style.opacity = '1';
+					}, 150);
+				}
+			});
+		});
+	}
+	
+	// Initialize on page load
+	document.addEventListener('DOMContentLoaded', initHowItWorksTabs);
+	// Re-initialize on Astro page transitions
+	document.addEventListener('astro:page-load', initHowItWorksTabs);
+</script>

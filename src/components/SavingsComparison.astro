@@ -1,0 +1,101 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+	headline: string;
+	without: {
+		title: string;
+		points: string[];
+	};
+	with: {
+		title: string;
+		points: string[];
+	};
+}
+
+const { headline, without, with: withLearnSlice } = Astro.props;
+
+// Split headline by newlines
+const headlineLines = headline.split('\n');
+const withoutTitleLines = without.title.split('\n');
+const withTitleLines = withLearnSlice.title.split('\n');
+---
+
+<section class="py-12 md:py-20 px-4 md:px-8 bg-dark" id="savings-comparison">
+	<div class="max-w-container mx-auto">
+		<h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-bold leading-snug text-white mb-12 md:mb-16 max-w-[900px] mx-auto">
+			{headlineLines.map((line, index) => (
+				<>
+					{line}
+					{index < headlineLines.length - 1 && <br />}
+				</>
+			))}
+		</h2>
+		
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
+			<!-- Without LearnSlice Card -->
+			<div class="bg-gray/30 border border-gray rounded-2xl overflow-hidden flex flex-col">
+				<div class="w-full h-48 md:h-64 overflow-hidden relative">
+					<img 
+						src="/images/comparison/without-learnslice.webp"
+						alt="Companies without LearnSlice"
+						class="w-full h-full object-cover object-center grayscale opacity-50"
+						loading="lazy"
+						width="800"
+						height="600"
+					/>
+				</div>
+				<div class="p-6 md:p-8 flex-1 flex flex-col">
+					<h3 class="text-xl md:text-2xl font-semibold text-white mb-4 md:mb-6 leading-snug">
+						{withoutTitleLines.map((line, index) => (
+							<>
+								{line}
+								{index < withoutTitleLines.length - 1 && <br />}
+							</>
+						))}
+					</h3>
+					<ul class="list-none m-0 p-0 flex flex-col gap-3 md:gap-4 flex-1">
+						{without.points.map((point) => (
+							<li class="flex items-start gap-3 text-base leading-relaxed text-white/70">
+								<Icon name="hugeicons:circle-arrow-left-02" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white/50" />
+								<span class="flex-1">{point}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
+			
+			<!-- With LearnSlice Card -->
+			<div class="learnslice-gradient-low rounded-2xl overflow-hidden flex flex-col">
+				<div class="w-full h-48 md:h-64 overflow-hidden relative">
+					<img 
+						src="/images/comparison/with-learnslice.webp"
+						alt="Companies with LearnSlice"
+						class="w-full h-full object-cover object-center"
+						loading="lazy"
+						width="800"
+						height="600"
+					/>
+				</div>
+				<div class="p-6 md:p-8 flex-1 flex flex-col">
+					<h3 class="text-xl md:text-2xl font-semibold text-white mb-4 md:mb-6 leading-snug">
+						{withTitleLines.map((line, index) => (
+							<>
+								{line}
+								{index < withTitleLines.length - 1 && <br />}
+							</>
+						))}
+					</h3>
+					<ul class="list-none m-0 p-0 flex flex-col gap-3 md:gap-4 flex-1">
+						{withLearnSlice.points.map((point) => (
+							<li class="flex items-center gap-3 text-base leading-relaxed text-white/95">
+								<Icon name="hugeicons:circle-arrow-right-02" class="w-8 h-8 flex-shrink-0 mt-0.5 text-primary" />
+								<span class="flex-1">{point}</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

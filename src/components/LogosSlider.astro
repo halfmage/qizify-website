@@ -1,0 +1,140 @@
+---
+interface Props {
+	headline: string;
+	logos: string[];
+}
+
+const { headline, logos } = Astro.props;
+
+// Logo file mapping (logo name to filename)
+const logoMap: Record<string, string> = {
+	'EMC Test': 'emctest.png',
+	'Tremonia': 'tremonia.png',
+	'Fachhochschule Dortmund': 'fhdortmund-logo.png',
+	'Universität zu Köln': 'uni-cologne.png',
+	'Carl-Severing-Berufskolleg': 'csb.png',
+	'DCI': 'dci.png',
+	'EMIT': 'emit-logo.png',
+	'Jäger Gruppe': 'jaeger-gruppe-logo.png',
+	'International School Stuttgart': 'international-school-stuttgart.png',
+};
+---
+
+<section class="py-12 md:py-20 px-4 md:px-8 bg-dark" id="trusted-by">
+	<div class="max-w-container mx-auto">
+		<h2 class="text-center text-2xl md:text-3xl font-semibold text-white mb-8 md:mb-12">
+			{headline}
+		</h2>
+		
+		<div class="relative w-full">
+			<!-- Swiper Container -->
+			<div class="swiper w-full py-8" id="logos-swiper">
+				<div class="swiper-wrapper">
+					{logos.map((logoName) => {
+						const logoFile = logoMap[logoName] || `${logoName.toLowerCase().replace(/\s+/g, '-')}.png`;
+						return (
+							<div class="swiper-slide !flex items-center justify-center h-auto">
+								<div class="flex items-center justify-center w-full h-20 p-4 opacity-70 hover:opacity-100 transition-opacity duration-300">
+									<img 
+										src={`/images/logos/${logoFile}`}
+										alt={logoName}
+										class="max-w-full max-h-full w-auto h-auto object-contain grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-300"
+										loading="lazy"
+									/>
+								</div>
+							</div>
+						);
+					})}
+				</div>
+			</div>
+			
+			<!-- Fallback static grid (shown if Swiper fails to load) -->
+			<div class="hidden grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 py-8" id="logos-fallback">
+				{logos.map((logoName) => {
+					const logoFile = logoMap[logoName] || `${logoName.toLowerCase().replace(/\s+/g, '-')}.png`;
+					return (
+						<div class="flex items-center justify-center w-full h-20 p-4 opacity-70 hover:opacity-100 transition-opacity duration-300">
+							<img 
+								src={`/images/logos/${logoFile}`}
+								alt={logoName}
+								class="max-w-full max-h-full w-auto h-auto object-contain grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-300"
+								loading="lazy"
+							/>
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	import Swiper from 'swiper';
+	import { Autoplay, FreeMode } from 'swiper/modules';
+	import 'swiper/css';
+
+	// Initialize Swiper when DOM is ready
+	function initLogosSwiper() {
+		const swiperEl = document.getElementById('logos-swiper');
+		const fallbackEl = document.getElementById('logos-fallback');
+		
+		if (!swiperEl) return;
+		
+		try {
+			const swiper = new Swiper('#logos-swiper', {
+				modules: [Autoplay, FreeMode],
+				slidesPerView: 3,
+				spaceBetween: 40,
+				loop: true,
+				freeMode: true,
+				speed: 5000,
+				autoplay: {
+					delay: 0,
+					disableOnInteraction: false,
+				},
+				breakpoints: {
+					640: {
+						slidesPerView: 4,
+						spaceBetween: 40,
+					},
+					768: {
+						slidesPerView: 6,
+						spaceBetween: 50,
+					},
+					1024: {
+						slidesPerView: 8,
+						spaceBetween: 60,
+					},
+				},
+			});
+			
+			// Hide fallback if Swiper initialized successfully
+			if (fallbackEl) {
+				fallbackEl.classList.add('hidden');
+				fallbackEl.classList.remove('grid');
+			}
+		} catch (error) {
+			console.error('Swiper initialization failed:', error);
+			// Show fallback if Swiper fails
+			if (swiperEl) swiperEl.classList.add('hidden');
+			if (fallbackEl) {
+				fallbackEl.classList.remove('hidden');
+				fallbackEl.classList.add('grid');
+			}
+		}
+	}
+
+	// Run when DOM is ready
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initLogosSwiper);
+	} else {
+		initLogosSwiper();
+	}
+</script>
+
+<style>
+	/* Make the slider transition linear for smooth continuous scrolling */
+	#logos-swiper .swiper-wrapper {
+		transition-timing-function: linear !important;
+	}
+</style>

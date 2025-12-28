@@ -1,0 +1,134 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description: string;
+	lang: 'en' | 'de';
+	currentPath: string;
+	ogImage?: string;
+}
+
+const { title, description, lang, currentPath, ogImage = '/images/hero/hero-background.webp' } = Astro.props;
+
+// Determine alternate language path
+const alternateLang = lang === 'en' ? 'de' : 'en';
+const alternatePath = lang === 'en' ? '/de' : '/';
+
+// Construct full URLs
+const siteUrl = 'https://learnslice.com';
+const currentUrl = `${siteUrl}${currentPath}`;
+const alternateUrl = `${siteUrl}${alternatePath}`;
+const ogImageUrl = `${siteUrl}${ogImage}`;
+
+// Structured data for Organization
+const organizationSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: 'LearnSlice',
+	url: siteUrl,
+	logo: `${siteUrl}/favicon.svg`,
+	description: lang === 'en' 
+		? 'AI-powered learning platform for apprenticeships. Automate mentoring and save money with LearnSlice.'
+		: 'KI-gestützte Lernplattform für Ausbildungen. Automatisieren Sie Mentoring und sparen Sie Geld mit LearnSlice.',
+	sameAs: [],
+	contactPoint: {
+		'@type': 'ContactPoint',
+		contactType: 'Customer Service',
+		email: 'info@learnslice.com',
+	},
+	address: {
+		'@type': 'PostalAddress',
+		addressCountry: 'DE',
+	},
+};
+
+// Structured data for reviews/testimonials
+const reviewSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Organization',
+	name: 'LearnSlice',
+	aggregateRating: {
+		'@type': 'AggregateRating',
+		ratingValue: '4.8',
+		reviewCount: '30',
+		bestRating: '5',
+		worstRating: '1',
+	},
+};
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#6665f1" />
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+		
+		<!-- Preconnect to external resources -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
+		<!-- Preload critical resources -->
+		<link rel="preload" href="/images/hero/hero-background.webp" as="image" type="image/webp" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/favicon.svg" />
+		
+		<!-- Primary Meta Tags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+		<meta name="keywords" content={lang === 'en' 
+			? 'AI learning platform, apprenticeship training, mentoring automation, vocational training, German SMEs, ROI learning'
+			: 'KI-Lernplattform, Ausbildungsplattform, Mentoring-Automatisierung, Berufsausbildung, deutsche KMU, ROI-Lernen'} />
+		<meta name="author" content="LearnSlice" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={currentUrl} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImageUrl} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={title} />
+		<meta property="og:site_name" content="LearnSlice" />
+		<meta property="og:locale" content={lang === 'en' ? 'en_US' : 'de_DE'} />
+		<meta property="og:locale:alternate" content={lang === 'en' ? 'de_DE' : 'en_US'} />
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={currentUrl} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImageUrl} />
+		<meta name="twitter:image:alt" content={title} />
+		<meta name="twitter:creator" content="@learnslice" />
+		<meta name="twitter:site" content="@learnslice" />
+		
+		<!-- Canonical URL -->
+		<link rel="canonical" href={currentUrl} />
+		
+		<!-- Hreflang Tags -->
+		<link rel="alternate" hreflang="en" href={`${siteUrl}${lang === 'en' ? currentPath : '/'}`} />
+		<link rel="alternate" hreflang="de" href={`${siteUrl}${lang === 'de' ? currentPath : '/de'}`} />
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />
+	</head>
+	<body>
+		<a href="#main-content" class="skip-to-main">
+			{lang === 'en' ? 'Skip to main content' : 'Zum Hauptinhalt springen'}
+		</a>
+		<main id="main-content">
+			<slot />
+		</main>
+	</body>
+</html>
+

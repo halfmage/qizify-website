@@ -1,0 +1,284 @@
+{
+  "nav": {
+    "logo": "LearnSlice",
+    "menu": [
+      { "label": "KI-Mentor", "sectionId": "learning-results" },
+      { "label": "So funktioniert's", "sectionId": "how-it-works" },
+      { "label": "Use Cases", "sectionId": "made-for-company" },
+      { "label": "FAQ", "sectionId": "faq" }
+    ],
+    "cta": "Demo anfordern"
+  },
+  "hero": {
+    "badge": "Prüfungsunterlagen + Unternehmensdaten",
+    "headline": "Ausbildung automatisieren.\nSofort Kosten sparen.",
+    "subheadline": "Prüfungs- und jobbezogene Lernpfade, 24/7 KI-Mentoring und Entlastung erfahrener Mitarbeitender. Ohne Theorieballast.",
+    "ctaPrimary": "Demo anfordern",
+    "ctaSecondary": "So funktioniert's"
+  },
+  "trustedBy": {
+    "headline": "Sie sind in guter Gesellschaft",
+    "logos": [
+      "EMC Test",
+      "Tremonia",
+      "Fachhochschule Dortmund",
+      "Universität zu Köln",
+      "Carl-Severing-Berufskolleg",
+      "DCI",
+      "EMIT",
+      "Jäger Gruppe",
+      "International School Stuttgart"
+    ]
+  },
+  "savingsComparison": {
+    "headline": "32K–41K € pro Nachwuchskraft gespart. Hohe Einsparungen, schneller ROI.",
+    "without": {
+      "title": "Unternehmen\nohne LearnSlice",
+      "points": [
+        "Produktivität: Auszubildende erst nach 4–6 Monaten einsatzfähig.",
+        "Betreuungsaufwand: 8–12 Std. Ausbilderzeit pro Azubi/Woche.",
+        "Abbruchquote: rund 30 % in der Ausbildung.",
+        "Umsatzverlust: verzögerte Produktivität bremst Erlöse."
+      ]
+    },
+    "with": {
+      "title": "Unternehmen\nmit LearnSlice",
+      "points": [
+        "65 % schneller einsatzbereit (4–6 Monate → 8 Wochen).",
+        "50 % weniger Ausbilderzeit = 10K € Ersparnis pro Azubi.",
+        "Abbruchquote: halbiert von 30 % auf 15 %.",
+        "ROI: Aus −29K € werden 41K € mit unserer Lösung."
+      ]
+    }
+  },
+  "howItWorks": {
+    "badge": "LearnSlice KI Mentor",
+    "headline": "So funktioniert's",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Integrierter IHK-Lernpfad",
+        "description": "Vorgefertigtes Curriculum, abgestimmt auf regionale IHK-Vorgaben: vollständige Inhalte & Lernpfad, den jeder Azubi zur Prüfung braucht. Konform, kein Curriculum-Aufwand, prüfungsbereit ab Tag 1."
+      },
+      {
+        "number": "2",
+        "title": "Job-Simulationen + Unternehmensdaten",
+        "description": "Fertige, rollenspezifische Aufgaben und Simulationen sind inklusive. Ihr Unternehmen kann Dokumente hochladen, um Training an Prozesse und Produkte anzupassen. Für Onboarding, Upskilling oder Quereinstieg."
+      },
+      {
+        "number": "3",
+        "title": "Personalisierte Betreuung",
+        "description": "Die KI fungiert als persönlicher Mentor: sie diagnostiziert jede/n Mitarbeitende/n, erstellt einen individuellen Lernplan, liefert kontinuierliches Feedback und adaptives Coaching und validiert Kompetenzen in Echtzeit anhand tatsächlicher Arbeitsaufgaben und Prüfungsanforderungen."
+      }
+    ]
+  },
+  "learningResults": {
+    "badge": "Mentoring mit KI automatisieren",
+    "headline": "Lernen für echte Ergebnisse",
+    "features": [
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "24/7 adaptiver KI-Mentor.",
+        "description": "Erkennt Probleme, passt automatisch an. Plant, gibt Feedback, immer verfügbar."
+      },
+      {
+        "icon": "hugeicons:book-02",
+        "title": "Zuverlässige Assessments.",
+        "description": "Quiz, Fallstudien, Deep-Dives. Sofort-Ergebnisse, Lückenanalyse, Badges."
+      },
+      {
+        "icon": "hugeicons:award-04",
+        "title": "Management-Analytics.",
+        "description": "Dashboards: Status, Fortschritt, Trends. Verfolgen & optimieren."
+      },
+      {
+        "icon": "hugeicons:pencil-edit-02",
+        "title": "Gamification, die motiviert.",
+        "description": "Punkte, Badges, Ranglisten. Belohnungen, Erfolge, Wettbewerbe."
+      }
+    ],
+    "compliance": "100 % DSGVO-konform. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur"
+  },
+  "madeForCompany": {
+    "headline": "Für Ihr Unternehmen entwickelt",
+    "tabs": [
+      {
+        "tabLabel": "KMU & Unternehmen",
+        "audience": "CEOs · HR · Ausbilder (KMU)",
+        "image": "/images/company-slider/ceos-hr-trainers.webp",
+        "points": [
+          {
+            "text": "Bis zu 65 % schnellere Einsatzbereitschaft. Neue Mitarbeitende bearbeiten ab Tag 1 echte, jobkritische Aufgaben mit Ihrem Unternehmenswissen — keine generischen Trainingsinhalte.",
+            "highlight": "Bis zu 65 % schnellere Einsatzbereitschaft."
+          },
+          {
+            "text": "Bis zu 15 % weniger Abbrüche beim Onboarding & in der Ausbildung. Personalisierte Lernpfade und kontinuierliches KI-Feedback halten Azubis und Nachwuchskräfte auf Kurs.",
+            "highlight": "Bis zu 15 % weniger Abbrüche beim Onboarding & in der Ausbildung."
+          },
+          {
+            "text": "Bis zu 50 % weniger Schulungsaufwand für erfahrene Teams.",
+            "highlight": "Bis zu 50 % weniger Schulungsaufwand für erfahrene Teams."
+          }
+        ],
+        "note": "Der KI-Mentor übernimmt Standardwissen und Routinepraxis. Erfahrene Mitarbeitende konzentrieren sich auf Wertschöpfung."
+      },
+      {
+        "tabLabel": "IHK & Förderung",
+        "audience": "IHK · HWK · Wirtschaftsförderung",
+        "image": "/images/company-slider/ihk-hwk-agencies.webp",
+        "points": [
+          {
+            "text": "Modernes Training für KMU bezahlbar machen. Geförderte Lizenzmodelle ermöglichen KI-Mentoring ohne internes Budget oder IT-Kapazitäten.",
+            "highlight": "Modernes Training für KMU bezahlbar machen."
+          },
+          {
+            "text": "Abbrüche in der Ausbildung messbar senken (−10–15 %). Jobrelevante Aufgaben und prüfungsnahe Simulationen stabilisieren Azubis im Arbeitsalltag.",
+            "highlight": "Abbrüche in der Ausbildung messbar senken (−10–15 %)."
+          },
+          {
+            "text": "Entlastung überlasteter Ausbilder in KMU (−45–50 % Betreuungsaufwand).",
+            "highlight": "Entlastung überlasteter Ausbilder in KMU (−45–50 % Betreuungsaufwand)."
+          }
+        ],
+        "note": "Der KI-Mentor liefert tägliche Anleitung und Standardwissen, sodass Unternehmen ihre Azubis kontinuierlich unterstützen können."
+      },
+      {
+        "tabLabel": "Schulen",
+        "audience": "Berufsschulen · Schulen",
+        "image": "/images/company-slider/schools-vocational.webp",
+        "points": [
+          {
+            "text": "15–25 % höhere Übergangsquote in Ausbildung und Job. Praxisnahe Lernpfade machen Schüler sofort einsetzbar. Berufsschulen glänzen mit zusätzlicher Jobvorbereitung.",
+            "highlight": "15–25 % höhere Übergangsquote in Ausbildung und Job."
+          },
+          {
+            "text": "30 % weniger Abbrüche im ersten Ausbildungsjahr.",
+            "highlight": "30 % weniger Abbrüche im ersten Ausbildungsjahr."
+          },
+          {
+            "text": "Bis zu 25 % Zeitersparnis für Lehrkräfte. Automatisierte Übungen, Simulationen und Feedback reduzieren Vorbereitungs- und Korrekturaufwand.",
+            "highlight": "Bis zu 25 % Zeitersparnis für Lehrkräfte."
+          }
+        ],
+        "note": "Frühe Kompetenzdiagnose und individuelles KI-Coaching verhindern Überlastung und Demotivation."
+      }
+    ]
+  },
+  "testimonials": {
+    "headline": "Erfolgsgeschichten unserer Kunden",
+    "items": [
+      {
+        "name": "Lienne Julie Wolff",
+        "title": "Auszubildene zur Industriekauffrau",
+        "company": "Tremonia Mobility GmbH",
+        "quote": "Wir sind sehr zufrieden mit LearnSlice. Das Team hat unsere Materialien schnell in präzise, effektive Quizfragen umgesetzt, hochwertig und effizient. Die Fragen fördern den Wissenstransfer. Das Support-Team reagiert schnell und löst Herausforderungen proaktiv. Wir empfehlen dieses innovative Tool uneingeschränkt."
+      },
+      {
+        "name": "Kinga Patrycja Peters",
+        "title": "Beschäftigungsförderung",
+        "company": "Wirtschaftsförderung Dortmund",
+        "quote": "Unser Ziel ist es, Unternehmen in der Region zu beraten, zu unterstützen und gleichzeitig die Fachkräfteentwicklung zu stärken. Mit LearnSlice haben wir einen Kooperationspartner gefunden, der nicht nur modernste Technologie nutzt, sondern auch kreativ denkt. Unsere Zusammenarbeit ist von Vertrauen, Offenheit und Kreativität geprägt."
+      },
+      {
+        "name": "Philipp Schulte",
+        "title": "Studiendirektor",
+        "company": "Carl-Severing-Berufskolleg",
+        "quote": "LearnSlice steigert die Lernmotivation deutlich und ermöglicht eine effektive, differenzierte Prüfungsvorbereitung mit modernen Technologien wie KI. Die Software ergänzt den klassischen Unterricht, fördert interaktive Zusammenarbeit und bereitet Lernende optimal auf die Anforderungen der Arbeitswelt vor."
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "headline": "Darum vertrauen uns Unternehmen",
+    "items": [
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "30+ deutsche Unternehmen",
+        "description": "IT-Firmen, Produktion, Versicherungen, Gesundheitswesen, öffentliche Verwaltung"
+      },
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "FH Dortmund Didaktikpartner",
+        "description": "Wissenschaftlich geprüfte Lernmethoden, getestet von Nachwuchskräften"
+      },
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "BMWK KI-Preis 2025 Gewinner",
+        "description": "Unterstützt durch das Bundesministerium"
+      },
+      {
+        "icon": "hugeicons:sparkles",
+        "title": "Made in\nGermany",
+        "description": "DSGVO-konform, Server in Deutschland, Lokales LLM"
+      }
+    ]
+  },
+  "faq": {
+    "headline": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Was ist der LearnSlice KI-Mentor?",
+        "answer": "Ein persönlicher, chatbasierter KI-Mentor für junge Talente, der personalisiertes Onboarding, kontinuierliches Upskilling und praxisnahes Lernen im Arbeitsalltag ermöglicht – ab dem ersten Tag."
+      },
+      {
+        "question": "Ist der Inhalt prüfungsrelevant?",
+        "answer": "Ja. Die Plattform stellt realistische IHK- und Hochschulprüfungen nach und richtet die Lernpfade an den regionalen IHK-Anforderungen aus."
+      },
+      {
+        "question": "Können wir die Inhalte für unser Unternehmen anpassen?",
+        "answer": "Absolut. Vorgefertigte berufsspezifische Simulationen sind sofort einsatzbereit. Zusätzlich können optional interne Dokumente hochgeladen werden, um Onboarding, Upskilling und Quereinstieg gezielt an Ihr Unternehmen anzupassen."
+      },
+      {
+        "question": "Wie personalisiert die KI das Lernen?",
+        "answer": "Die KI analysiert die Fähigkeiten, Ziele und Unternehmensanforderungen jedes Lernenden, erstellt einen individuellen Lernplan und passt Aufgaben in Echtzeit an, um Wissenslücken gezielt zu schließen."
+      },
+      {
+        "question": "Wie wird Kompetenz nachgewiesen?",
+        "answer": "Kompetenzen werden kontinuierlich durch praxisnahe Checks (Quizzes, Deep Dives und Fallstudien) sowie realistische Simulationen validiert. Messbare Job-Readiness statt reiner Teilnahmezertifikate."
+      },
+      {
+        "question": "Welche Motivationsmechaniken sind enthalten?",
+        "answer": "Integrierte Gamification mit Punkten, Badges und Levels zur Steigerung von Motivation, Fokus und Abschlussquoten."
+      },
+      {
+        "question": "Sind meine Daten sicher / DSGVO-konform?",
+        "answer": "Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden."
+      },
+      {
+        "question": "Wie hilft LearnSlice, Abbrüche und Traineraufwand zu reduzieren?",
+        "answer": "Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert – während Ausbilder entlastet werden und sich auf strategische Aufgaben konzentrieren können."
+      },
+      {
+        "question": "Wie sehen die Preise und Integration aus?",
+        "answer": "Die Abrechnung erfolgt jährlich. Der Funktionsumfang ist standardmäßig enthalten; optionale Individualanpassungen oder Integrationen können zusätzliche Kosten verursachen. Support ist inklusive."
+      },
+      {
+        "question": "Wie schnell können wir starten?",
+        "answer": "Der Einstieg ist schnell möglich: Die Standard-Simulationen sind sofort nutzbar, optionale Unternehmensanpassungen können schrittweise ergänzt werden. Kontaktieren Sie uns für einen individuellen Onboarding-Plan."
+      },
+      {
+        "question": "Wie kann ich eine Lizenz erwerben?",
+        "answer": "Für den Erwerb einer Lizenz kontaktieren Sie uns bitte per E-Mail unter info@learnslice.com, telefonisch unter +49 1578 3914112 oder über das Kontaktformular auf unserer Website."
+      },
+      {
+        "question": "Ich habe eine Frage, Anmerkung oder Feedback – an wen kann ich mich wenden?",
+        "answer": "Sie erreichen uns per WhatsApp/Telegram unter +49 1578 3914112, über das Kontaktformular auf unserer Website oder per E-Mail an info@learnslice.com."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Jetzt starten",
+    "subheadline": "4.000 € Ersparnis pro Azubi,\n20.000 € bei 5 Azubis. Kein Risiko. Jederzeit kündbar.",
+    "button": "Demo anfordern"
+  },
+  "footer": {
+    "logo": "LearnSlice",
+    "menu": [
+      "KI-Mentor",
+      "So funktioniert's",
+      "Use Cases",
+      "FAQ"
+    ],
+    "cta": "Demo anfordern"
+  }
+}
+

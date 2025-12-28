@@ -1,0 +1,146 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Point {
+	text: string;
+	highlight: string;
+}
+
+interface Tab {
+	tabLabel: string;
+	audience: string;
+	image: string;
+	points: Point[];
+	note: string;
+}
+
+interface Props {
+	headline: string;
+	tabs: Tab[];
+}
+
+const { headline, tabs } = Astro.props;
+---
+
+<section class="py-12 md:py-20 px-4 md:px-8 bg-dark" id="made-for-company">
+	<div class="max-w-container mx-auto">
+		<h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 md:mb-12">
+			{headline}
+		</h2>
+		
+		<!-- Tab Navigation -->
+		<div class="flex justify-center mb-8 md:mb-12">
+			<div class="inline-flex flex-wrap justify-center gap-2 md:gap-3 p-1.5 bg-[#18181b] rounded-xl border border-[#434354]">
+				{tabs.map((tab, index) => (
+					<button 
+						class={`company-tab px-4 md:px-6 py-2.5 md:py-3 rounded-lg text-sm md:text-base font-medium transition-all duration-300 whitespace-nowrap ${index === 0 ? 'bg-primary text-white' : 'text-white/60 hover:text-white hover:bg-white/10'}`}
+						data-tab-index={index}
+					>
+						{tab.tabLabel}
+					</button>
+				))}
+			</div>
+		</div>
+		
+		<!-- Tab Content -->
+		<div class="max-w-5xl mx-auto">
+			{tabs.map((tab, index) => (
+				<div 
+					class={`company-tab-content ${index === 0 ? 'block' : 'hidden'}`}
+					data-content-index={index}
+				>
+					<div class="company-card bg-[#18181b] border-2 border-[#434354] rounded-2xl overflow-hidden w-full flex flex-col lg:flex-row">
+						<!-- Content Side -->
+						<div class="flex-1 p-6 md:p-8 flex flex-col gap-4 md:gap-6">
+							<!-- Audience Title -->
+							<h3 class="text-xl md:text-2xl font-bold text-white leading-tight">
+								{tab.audience}
+							</h3>
+							
+							<!-- Points List -->
+							<ul class="list-none m-0 p-0 flex flex-col gap-3 flex-1">
+								{tab.points.map((point) => {
+									const highlightIndex = point.text.indexOf(point.highlight);
+									const beforeHighlight = highlightIndex >= 0 ? point.text.substring(0, highlightIndex) : '';
+									const afterHighlight = highlightIndex >= 0 ? point.text.substring(highlightIndex + point.highlight.length) : point.text;
+									
+									return (
+										<li class="flex items-start gap-2">
+											<span class="text-lg shrink-0 w-7 text-center leading-5">✅</span>
+											<p class="text-sm leading-5 tracking-tight text-white">
+												{beforeHighlight && <span class="font-normal">{beforeHighlight}</span>}
+												<span class="font-bold">{point.highlight}</span>
+												{afterHighlight && <span class="font-normal">{afterHighlight}</span>}
+											</p>
+										</li>
+									);
+								})}
+							</ul>
+							
+							<!-- AI Note Box -->
+							<div class="learnslice-gradient-low relative rounded-lg px-5 py-4 flex items-center gap-3 overflow-hidden">
+								<div class="ai-note-bg absolute inset-0 opacity-90"></div>
+								<div class="relative z-10 shrink-0">
+									<Icon name="hugeicons:sparkles" class="w-8 h-8 text-white" />
+								</div>
+								<p class="relative z-10 text-sm md:text-base font-semibold text-white leading-5 tracking-tight">
+									{tab.note}
+								</p>
+							</div>
+						</div>
+						
+						<!-- Image Side -->
+						<div class="relative w-full lg:w-[45%] h-48 sm:h-64 lg:h-auto lg:min-h-[440px] shrink-0 order-first lg:order-last">
+							<img 
+								src={tab.image} 
+								alt={tab.audience}
+								class="absolute inset-0 w-full h-full object-cover"
+								loading="lazy"
+							/>
+						</div>
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</section>
+
+<script>
+	function initCompanyTabs() {
+		const tabButtons = document.querySelectorAll('.company-tab');
+		const tabContents = document.querySelectorAll('.company-tab-content');
+		
+		tabButtons.forEach((button) => {
+			button.addEventListener('click', () => {
+				const index = button.getAttribute('data-tab-index');
+				
+				// Update button states
+				tabButtons.forEach((btn) => {
+					btn.classList.remove('bg-primary', 'text-white');
+					btn.classList.add('text-white/60', 'hover:text-white', 'hover:bg-white/10');
+				});
+				button.classList.add('bg-primary', 'text-white');
+				button.classList.remove('text-white/60', 'hover:text-white', 'hover:bg-white/10');
+				
+				// Update content visibility
+				tabContents.forEach((content) => {
+					const contentIndex = content.getAttribute('data-content-index');
+					if (contentIndex === index) {
+						content.classList.remove('hidden');
+						content.classList.add('block');
+					} else {
+						content.classList.add('hidden');
+						content.classList.remove('block');
+					}
+				});
+			});
+		});
+	}
+
+	// Run when DOM is ready
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initCompanyTabs);
+	} else {
+		initCompanyTabs();
+	}
+</script>
