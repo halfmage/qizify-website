@@ -14,31 +14,43 @@ const { headline, subheadline, button, currentLang } = Astro.props;
 const subheadlineLines = subheadline.split('\n');
 ---
 
-<section class="py-12 md:py-20 px-4 md:px-8 bg-dark relative overflow-hidden" id="cta-footer">
-	<div class="max-w-container mx-auto relative z-10">
-		<div class="text-center flex flex-col items-center gap-4 md:gap-6 relative z-20">
-			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white m-0 leading-snug">
-				{headline}
-			</h2>
-			<p class="text-lg md:text-xl leading-relaxed text-white/90 m-0 max-w-[700px]">
-				{subheadlineLines.map((line, index) => (
-					<>
-						{line}
-						{index < subheadlineLines.length - 1 && <br />}
-					</>
-				))}
-			</p>
-			<div class="mt-4">
-				<Button 
-					variant="primary" 
-					href={`#demo-request`}
-					aria-label={button}
-					class="min-w-[200px] text-lg px-8 py-4 w-full sm:w-auto"
-				>
-					{button}
-				</Button>
+<section class="py-16 md:py-24 px-4 md:px-8 relative overflow-hidden" id="cta-footer">
+	<!-- Background Image -->
+	<div class="absolute inset-0 z-0 opacity-75">
+		<img 
+			src="/images/blurredbackground.png" 
+			alt="" 
+			class="w-full h-full object-fit"
+			aria-hidden="true"
+		/>
+	</div>
+	
+	<!-- Content Card -->
+	<div class="max-w-3xl mx-auto relative z-10">
+		<div class="bg-dark/50 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/10">
+			<div class="text-center flex flex-col items-center gap-4 md:gap-6">
+				<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white m-0 leading-snug">
+					{headline}
+				</h2>
+				<p class="text-lg md:text-xl leading-relaxed text-white/90 m-0 max-w-[700px]">
+					{subheadlineLines.map((line, index) => (
+						<>
+							{line}
+							{index < subheadlineLines.length - 1 && <br />}
+						</>
+					))}
+				</p>
+				<div class="mt-4">
+					<Button 
+						variant="primary" 
+						href={`#demo-request`}
+						aria-label={button}
+						class="min-w-[200px] text-lg px-8 py-4 w-full sm:w-auto"
+					>
+						{button}
+					</Button>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(102,101,241,0.1)_0%,transparent_70%)] z-0 pointer-events-none"></div>
 </section>

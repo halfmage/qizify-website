@@ -1,0 +1,186 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import deContent from '../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de/imprint';
+---
+
+<BaseLayout 
+	title="Impressum - LearnSlice" 
+	description="LearnSlice Impressum - Rechtliche Angaben und Unternehmensinformationen."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header 
+		logo={deContent.nav.logo}
+		menu={deContent.nav.menu}
+		cta={deContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+	
+	<main class="container mx-auto px-6 py-32 max-w-4xl">
+		<h1 class="text-4xl font-bold mb-8">Impressum</h1>
+		
+		<div class="prose prose-invert max-w-none legal-content">
+			<h2>Unternehmensinformationen</h2>
+			
+			<div class="info-grid">
+				<div class="info-item">
+					<span class="info-label">Firmenname:</span>
+					<span class="info-value">LearnSlice UG (haftungsbeschränkt)</span>
+				</div>
+				<div class="info-item">
+					<span class="info-label">Adresse:</span>
+					<span class="info-value">Luisenstraße 66<br />40215 Düsseldorf</span>
+				</div>
+				<div class="info-item">
+					<span class="info-label">Registrierung:</span>
+					<span class="info-value">Handelsregister: HRB 108192<br />Registergericht: Amtsgerichts Düsseldorf</span>
+				</div>
+				<div class="info-item">
+					<span class="info-label">Vertreten durch:</span>
+					<span class="info-value">Alesia Kunz</span>
+				</div>
+			</div>
+
+			<h2>Kontaktinformationen</h2>
+			
+			<div class="info-grid">
+				<div class="info-item">
+					<span class="info-label">Telefon:</span>
+					<span class="info-value"><a href="tel:+4915783914112">+49 15783914112</a></span>
+				</div>
+				<div class="info-item">
+					<span class="info-label">E-Mail:</span>
+					<span class="info-value"><a href="mailto:info@learnslice.com">info@learnslice.com</a></span>
+				</div>
+				<div class="info-item">
+					<span class="info-label">Internetadresse:</span>
+					<span class="info-value"><a href="https://www.learnslice.com" target="_blank" rel="noopener">www.learnslice.com</a></span>
+				</div>
+			</div>
+
+			<p class="mt-6">Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: <strong>DE454277124</strong></p>
+			<p>Steuernummer: <strong>106/5769/1318</strong></p>
+
+			<h2>Aufsichtsbehörde</h2>
+			<p>Gewerbeerlaubnis gemäß § 15 Abs.1 GewO</p>
+			<address class="not-italic bg-white/5 p-4 rounded-lg">
+				Landeshauptstadt Düsseldorf, Ordnungsamt<br />
+				Worringer Str. 111<br />
+				40210 Düsseldorf<br />
+				<a href="https://service.duesseldorf.de" target="_blank" rel="noopener">https://service.duesseldorf.de</a>
+			</address>
+			<p class="mt-4">Kammer: <strong>IHK Düsseldorf</strong></p>
+
+			<h2>Bildernachweis</h2>
+			<ul>
+				<li><a href="https://www.pexels.com" target="_blank" rel="noopener">www.pexels.com</a></li>
+				<li><a href="https://www.unsplash.com" target="_blank" rel="noopener">www.unsplash.com</a></li>
+				<li><a href="https://www.freepik.com" target="_blank" rel="noopener">www.freepik.com</a></li>
+			</ul>
+
+			<h2>Haftungsausschluss</h2>
+			
+			<h3>Haftung für Inhalte dieser Website</h3>
+			<p>Wir entwickeln die Inhalte dieser Webseite ständig weiter und bemühen uns korrekte und aktuelle Informationen bereitzustellen. Laut Telemediengesetz (TMG) §7 (1) sind wir als Diensteanbieter für eigene Informationen, die wir zur Nutzung bereitstellen, nach den allgemeinen Gesetzen verantwortlich. Leider können wir keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene die seitens Dritter bereitgestellt wurden. Als Diensteanbieter im Sinne der §§ 8 bis 10 sind wir nicht verpflichtet, die von ihnen übermittelten oder gespeicherten Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Unsere Verpflichtungen zur Entfernung von Informationen oder zur Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen aufgrund von gerichtlichen oder behördlichen Anordnungen bleiben auch im Falle unserer Nichtverantwortlichkeit nach den §§ 8 bis 10 unberührt. Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitte wir Sie uns umgehend zu kontaktieren, damit wir die rechtswidrigen Inhalte entfernen können. Sie finden die Kontaktdaten im Impressum.</p>
+
+			<h3>Haftung für Links auf dieser Website</h3>
+			<p>Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Haftung für verlinkte Websites besteht für uns nicht, da wir keine Kenntnis rechtswidriger Tätigkeiten hatten und haben, uns solche Rechtswidrigkeiten auch bisher nicht aufgefallen sind und wir Links sofort entfernen würden, wenn uns Rechtswidrigkeiten bekannt werden. Wenn Ihnen rechtswidrige Links auf unserer Website auffallen, bitte wir Sie uns zu kontaktieren. Sie finden die Kontaktdaten im Impressum.</p>
+
+			<h3>Urheberrechtshinweis</h3>
+			<p>Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht der Bundesrepublik Deutschland. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen Websites erneut veröffentlichen. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen. Sollten Sie auf dieser Webseite Inhalte finden, die das Urheberrecht verletzen, bitten wir Sie uns zu kontaktieren.</p>
+		</div>
+	</main>
+
+	<Footer 
+		currentLang={lang}
+		privacyLabel={deContent.footer.privacyLabel}
+		termsLabel={deContent.footer.termsLabel}
+	/>
+</BaseLayout>
+
+<style>
+	.legal-content {
+		color: rgba(255, 255, 255, 0.8);
+	}
+	
+	.legal-content h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-top: 2.5rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+	
+	.legal-content h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+		color: white;
+	}
+	
+	.legal-content p {
+		margin-bottom: 1rem;
+		line-height: 1.625;
+	}
+	
+	.legal-content ul {
+		margin-bottom: 1rem;
+		padding-left: 1.5rem;
+		list-style-type: disc;
+	}
+	
+	.legal-content li {
+		margin-bottom: 0.5rem;
+	}
+	
+	.legal-content a {
+		color: #6665f1;
+		text-decoration: underline;
+	}
+	
+	.legal-content a:hover {
+		color: #8584f3;
+	}
+	
+	.legal-content address {
+		background-color: rgba(255, 255, 255, 0.05);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin-top: 1rem;
+	}
+	
+	.info-grid {
+		background-color: rgba(255, 255, 255, 0.05);
+		border-radius: 0.5rem;
+		padding: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	.info-item {
+		margin-bottom: 1rem;
+	}
+	
+	.info-item:last-child {
+		margin-bottom: 0;
+	}
+	
+	.info-label {
+		display: block;
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 0.875rem;
+		margin-bottom: 0.25rem;
+	}
+	
+	.info-value {
+		display: block;
+		color: white;
+	}
+</style>
+

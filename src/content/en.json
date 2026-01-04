@@ -212,6 +212,37 @@
       }
     ]
   },
+  "vocationalProfessions": {
+    "headline": "Vocational Professions",
+    "items": [
+      {
+        "icon": "hugeicons:briefcase-02",
+        "title": "Commercial",
+        "professions": [
+          "Office Management Clerk",
+          "Forwarding and Logistics Services Clerk",
+          "Warehouse Logistics Specialist"
+        ]
+      },
+      {
+        "icon": "hugeicons:source-code",
+        "title": "Information Technology",
+        "professions": [
+          "IT Specialist – System Integration",
+          "IT Specialist – Application Development",
+          "IT Specialist – Digital Networking",
+          "IT Specialist – Data and Process Analysis"
+        ]
+      },
+      {
+        "icon": "hugeicons:wrench-01",
+        "title": "Technical Trades",
+        "professions": [
+          "Automotive Mechatronics Technician"
+        ]
+      }
+    ]
+  },
   "faq": {
     "headline": "Frequently Asked Questions",
     "items": [
@@ -279,7 +310,9 @@
       "Pilot Program",
       "FAQ"
     ],
-    "cta": "Request Demo"
+    "cta": "Request Demo",
+    "privacyLabel": "Privacy Policy",
+    "termsLabel": "Terms & Conditions"
   }
 }
 

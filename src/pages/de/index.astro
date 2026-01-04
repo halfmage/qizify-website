@@ -9,8 +9,10 @@ import LearningResults from '../../components/LearningResults.astro';
 import CompanySlider from '../../components/CompanySlider.astro';
 import Testimonials from '../../components/Testimonials.astro';
 import WhyChooseUs from '../../components/WhyChooseUs.astro';
+import VocationalProfessions from '../../components/VocationalProfessions.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTAFooter from '../../components/CTAFooter.astro';
+import Footer from '../../components/Footer.astro';
 import DemoRequestModal from '../../components/DemoRequestModal.astro';
 import deContent from '../../content/de.json';
 
@@ -81,6 +83,11 @@ const currentPath = '/de';
 		items={deContent.whyChooseUs.items}
 	/>
 	
+	<VocationalProfessions 
+		headline={deContent.vocationalProfessions.headline}
+		items={deContent.vocationalProfessions.items}
+	/>
+	
 	<FAQ 
 		headline={deContent.faq.headline}
 		items={deContent.faq.items}
@@ -91,6 +98,12 @@ const currentPath = '/de';
 		subheadline={deContent.cta.subheadline}
 		button={deContent.cta.button}
 		currentLang={lang}
+	/>
+	
+	<Footer 
+		currentLang={lang}
+		privacyLabel={deContent.footer.privacyLabel}
+		termsLabel={deContent.footer.termsLabel}
 	/>
 	
 	<DemoRequestModal currentLang={lang} />

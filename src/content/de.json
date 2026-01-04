@@ -212,6 +212,37 @@
       }
     ]
   },
+  "vocationalProfessions": {
+    "headline": "Ausbildungsberufe",
+    "items": [
+      {
+        "icon": "hugeicons:briefcase-02",
+        "title": "Kaufmännisch",
+        "professions": [
+          "Kaufmann/-frau für Büromanagement",
+          "Kaufmann für Spedition und Logistikdienstleistung",
+          "Fachkraft für Lagerlogistik"
+        ]
+      },
+      {
+        "icon": "hugeicons:source-code",
+        "title": "Informationstechnik",
+        "professions": [
+          "Fachinformatiker/-in Fachrichtung Systemintegration",
+          "Fachinformatiker/-in Fachrichtung Anwendungsentwicklung",
+          "Fachinformatiker/-in Fachrichtung Digitale Vernetzung",
+          "Fachinformatiker/-in Fachrichtung Daten- und Prozessanalyse"
+        ]
+      },
+      {
+        "icon": "hugeicons:wrench-01",
+        "title": "Gewerblich-technisch",
+        "professions": [
+          "Kfz-Mechatroniker/-in"
+        ]
+      }
+    ]
+  },
   "faq": {
     "headline": "Häufig gestellte Fragen",
     "items": [
@@ -278,7 +309,9 @@
       "Use Cases",
       "FAQ"
     ],
-    "cta": "Demo anfordern"
+    "cta": "Demo anfordern",
+    "privacyLabel": "Datenschutz",
+    "termsLabel": "AGB"
   }
 }
 

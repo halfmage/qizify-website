@@ -1,0 +1,58 @@
+---
+interface Props {
+	currentLang: 'en' | 'de';
+	privacyLabel: string;
+	termsLabel: string;
+	imprintLabel?: string;
+}
+
+const { currentLang, privacyLabel, termsLabel, imprintLabel } = Astro.props;
+
+const currentYear = new Date().getFullYear();
+const basePath = currentLang === 'de' ? '/de' : '';
+const defaultImprintLabel = currentLang === 'de' ? 'Impressum' : 'Imprint';
+---
+
+<footer class="py-8 px-4 md:px-8 bg-dark border-t border-white/10">
+	<div class="max-w-container mx-auto">
+		<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+			<!-- Logo / Brand -->
+			<div class="flex items-center gap-2">
+				<img 
+					src="/images/learnslice-logo.svg" 
+					alt="LearnSlice" 
+					class="h-8 w-auto"
+				/>
+				<span class="text-white font-semibold">LearnSlice</span>
+			</div>
+			
+			<!-- Links -->
+			<nav class="flex items-center gap-6">
+				<a 
+					href={`${basePath}/privacy`}
+					class="text-white/70 hover:text-white transition-colors text-sm"
+				>
+					{privacyLabel}
+				</a>
+				<a 
+					href={`${basePath}/terms`}
+					class="text-white/70 hover:text-white transition-colors text-sm"
+				>
+					{termsLabel}
+				</a>
+				<a 
+					href={`${basePath}/imprint`}
+					class="text-white/70 hover:text-white transition-colors text-sm"
+				>
+					{imprintLabel || defaultImprintLabel}
+				</a>
+			</nav>
+			
+			<!-- Copyright -->
+			<p class="text-white/50 text-sm m-0">
+				© {currentYear} LearnSlice
+			</p>
+		</div>
+	</div>
+</footer>
+
