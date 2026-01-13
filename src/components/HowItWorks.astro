@@ -14,8 +14,14 @@ interface Props {
 
 const { badge, headline, steps } = Astro.props;
 
-// For now we only have one image, but structure supports multiple
-const defaultImage = "/images/screenshots/learnslice-copilot-04.webp";
+// Images for each step (indexed by step number)
+const stepImages = [
+	"/images/screenshots/learnslice-copilot-02.jpg",
+	"/images/screenshots/learnslice-copilot-03.jpg",
+	"/images/screenshots/learnslice-copilot-06.jpg",
+];
+
+const getStepImage = (index: number) => stepImages[index] || stepImages[0];
 ---
 
 <section class="py-12 md:py-20 px-4 md:px-8 bg-dark" id="how-it-works">
@@ -37,11 +43,11 @@ const defaultImage = "/images/screenshots/learnslice-copilot-04.webp";
 					<button 
 						class:list={[
 							"how-it-works-tab",
-							"bg-dark border-2 rounded-2xl p-4 md:p-5 flex gap-4 items-start text-left transition-all duration-300 cursor-pointer",
+							"bg-dark border-2 rounded-2xl p-4 md:p-5 flex gap-4 items-center md:items-start text-left transition-all duration-300 cursor-pointer",
 							index === 0 ? "border-white active" : "border-gray hover:border-gray/70"
 						]}
 						data-tab-index={index}
-						data-image={step.image || defaultImage}
+						data-image={getStepImage(index)}
 						aria-selected={index === 0 ? "true" : "false"}
 					>
 						<div class:list={[
@@ -58,7 +64,7 @@ const defaultImage = "/images/screenshots/learnslice-copilot-04.webp";
 								{step.title}
 							</h3>
 							<p class:list={[
-								"text-sm leading-relaxed text-white m-0 transition-opacity duration-300",
+								"text-sm leading-relaxed text-white m-0 transition-opacity duration-300 hidden md:block",
 								index === 0 ? "opacity-90" : "opacity-70"
 							]}>
 								{step.description}
@@ -77,9 +83,9 @@ const defaultImage = "/images/screenshots/learnslice-copilot-04.webp";
 				<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
 				<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
 				
-				<div class="relative rounded-2xl overflow-hidden border border-white/20">
+				<div class="relative rounded-2xl overflow-hidden border border-black/20 shadow-lg">
 					<img 
-						src={defaultImage}
+						src={stepImages[0]}
 						alt="LearnSlice AI-powered learning platform interface showing personalized coaching and learning paths"
 						class="w-full h-auto block object-contain transition-opacity duration-300"
 						loading="lazy"

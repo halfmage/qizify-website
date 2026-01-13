@@ -1,5 +1,6 @@
 ---
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import Button from './Button.astro';
 
 interface MenuItem {
 	label: string;
@@ -37,9 +38,14 @@ const { logo, menu, cta, currentLang, currentPath } = Astro.props;
 		
 		<div class="flex items-center gap-4 lg:gap-6">
 			<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
-			<button class="hidden lg:block bg-primary text-white border-none px-6 py-3 text-[0.9375rem] font-semibold rounded-lg cursor-pointer hover:bg-[#5554d1] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 font-sans whitespace-nowrap" data-modal-trigger="demo-request" aria-label={cta}>
+			<Button 
+				variant="primary" 
+				data-modal-trigger="demo-request" 
+				aria-label={cta}
+				class="hidden lg:block whitespace-nowrap"
+			>
 				{cta}
-			</button>
+			</Button>
 		</div>
 		
 		<button class="flex lg:hidden flex-col gap-1 bg-transparent border-none cursor-pointer p-2 z-[1001]" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
@@ -63,9 +69,13 @@ const { logo, menu, cta, currentLang, currentPath } = Astro.props;
 				<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
 			</li>
 			<li>
-				<button class="bg-primary text-white border-none px-6 py-3.5 text-base font-semibold rounded-lg cursor-pointer hover:bg-[#5554d1] transition-all duration-200 font-sans w-full mt-2" data-modal-trigger="demo-request">
+				<Button 
+					variant="primary" 
+					data-modal-trigger="demo-request"
+					class="w-full mt-2"
+				>
 					{cta}
-				</button>
+				</Button>
 			</li>
 		</ul>
 	</nav>

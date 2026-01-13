@@ -11,7 +11,7 @@
   },
   "hero": {
     "badge": "Exam Material + Company Data",
-    "headline": "Automate mentoring.\nSave money now.",
+    "headline": "Now or never.\nAutomate mentoring.",
     "subheadline": "Best of exam and job-specific learning paths, 24/7 AI coaching, and trainer relief. No theory fluff.",
     "ctaPrimary": "Request Demo",
     "ctaSecondary": "How it works"
@@ -103,7 +103,7 @@
     "headline": "Made for industries that count",
     "tabs": [
       {
-        "tabLabel": "SMEs & Companies",
+        "tabLabel": "Companies",
         "audience": "CEOs · HR · Trainers",
         "image": "/images/company-slider/ceos-hr-trainers.webp",
         "points": [
@@ -191,22 +191,22 @@
     "headline": "Why companies choose us",
     "items": [
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:building-06",
         "title": "30+ German companies",
         "description": "IT Services, Manufacturing, Insurance, Healthcare, Government"
       },
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:mortarboard-02",
         "title": "FH Dortmund Didactics Partner",
         "description": "Science-proven learning methods, tested by young professionals"
       },
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:champion",
         "title": "BMWK AI Prize 2025 Winner",
         "description": "Federal Ministry award"
       },
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:security-check",
         "title": "Made in\nGermany",
         "description": "GDPR, German servers, Local LLM."
       }

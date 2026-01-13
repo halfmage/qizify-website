@@ -11,8 +11,8 @@
   },
   "hero": {
     "badge": "Prüfungsunterlagen + Unternehmensdaten",
-    "headline": "Ausbildung automatisieren.\nSofort Kosten sparen.",
-    "subheadline": "Prüfungs- und jobbezogene Lernpfade, 24/7 KI-Mentoring und Entlastung erfahrener Mitarbeitender. Ohne Theorieballast.",
+    "headline": "Jetzt oder nie.\nAusbildung automatisieren.",
+    "subheadline": "Beste Prüfungs- und jobbezogene Lernpfade, 24/7 KI-Mentoring und Entlastung erfahrener Mitarbeitender. Ohne Theorieballast.",
     "ctaPrimary": "Demo anfordern",
     "ctaSecondary": "So funktioniert's"
   },
@@ -103,8 +103,8 @@
     "headline": "Für Ihr Unternehmen entwickelt",
     "tabs": [
       {
-        "tabLabel": "KMU & Unternehmen",
-        "audience": "CEOs · HR · Ausbilder (KMU)",
+        "tabLabel": "Unternehmen",
+        "audience": "CEOs · HR · Ausbilder",
         "image": "/images/company-slider/ceos-hr-trainers.webp",
         "points": [
           {
@@ -191,22 +191,22 @@
     "headline": "Darum vertrauen uns Unternehmen",
     "items": [
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:building-06",
         "title": "30+ deutsche Unternehmen",
         "description": "IT-Firmen, Produktion, Versicherungen, Gesundheitswesen, öffentliche Verwaltung"
       },
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:mortarboard-02",
         "title": "FH Dortmund Didaktikpartner",
         "description": "Wissenschaftlich geprüfte Lernmethoden, getestet von Nachwuchskräften"
       },
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:champion",
         "title": "BMWK KI-Preis 2025 Gewinner",
         "description": "Unterstützt durch das Bundesministerium"
       },
       {
-        "icon": "hugeicons:sparkles",
+        "icon": "hugeicons:security-check",
         "title": "Made in\nGermany",
         "description": "DSGVO-konform, Server in Deutschland, Lokales LLM"
       }

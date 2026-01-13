@@ -6,6 +6,7 @@ interface Props {
 	onClick?: string;
 	class?: string;
 	'aria-label'?: string;
+	'data-modal-trigger'?: string;
 }
 
 const { 
@@ -14,12 +15,13 @@ const {
 	type = 'button',
 	onClick,
 	class: className = '',
-	'aria-label': ariaLabel
+	'aria-label': ariaLabel,
+	'data-modal-trigger': modalTrigger
 } = Astro.props;
 
 const baseClasses = 'inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black';
 const variantClasses = {
-	primary: 'bg-[#5554d1] text-white hover:bg-[#5554d1] hover:transform hover:-translate-y-0.5 active:transform active:translate-y-0 focus:ring-[var(--color-primary)]',
+	primary: 'bg-white text-black hover:transform hover:-translate-y-0.5 active:transform active:translate-y-0 focus:ring-[var(--color-primary)]',
 	secondary: 'bg-transparent border-2 border-[var(--color-gray)] text-white hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] focus:ring-[var(--color-primary)]'
 };
 
@@ -27,7 +29,7 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${className}`;
 ---
 
 {href ? (
-	<a href={href} class={classes} aria-label={ariaLabel}>
+	<a href={href} class={classes} aria-label={ariaLabel} data-modal-trigger={modalTrigger}>
 		<slot />
 	</a>
 ) : (
@@ -35,6 +37,7 @@ const classes = `${baseClasses} ${variantClasses[variant]} ${className}`;
 		type={type} 
 		class={classes}
 		aria-label={ariaLabel}
+		data-modal-trigger={modalTrigger}
 		{...(onClick && { onClick: onClick })}
 	>
 		<slot />
