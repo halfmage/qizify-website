@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clear": "rimraf './_site/'",
-    "start": "npx @11ty/eleventy --serve & npx tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o _site/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true npm run clear & npx @11ty/eleventy && NODE_ENV=production npx tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o _site/style.css --minify"
+    "clear": "rimraf './dist/'",
+    "start": "npx @11ty/eleventy --serve & npx tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o dist/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true npm run clear & npx @11ty/eleventy && NODE_ENV=production npx tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o dist/style.css --minify"
   },
   "repository": {
     "type": "git",

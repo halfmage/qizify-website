@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-    content: ['_site/**/*.html'],
+    content: ['dist/**/*.html'],
     safelist: [],
     plugins: [
         require('@tailwindcss/typography'),
