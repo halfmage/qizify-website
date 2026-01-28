@@ -122,6 +122,9 @@ const reviewSchema = {
 		<link rel="alternate" hreflang="de" href={`${siteUrl}${lang === 'de' ? currentPath : '/de'}`} />
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 		
+		<!-- Sitemap -->
+		<link rel="sitemap" href="/sitemap.xml" />
+		
 		<!-- Structured Data -->
 		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
 		<script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />
