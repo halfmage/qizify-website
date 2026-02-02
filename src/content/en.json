@@ -2,7 +2,7 @@
   "nav": {
     "logo": "LearnSlice",
     "menu": [
-      { "label": "AI Mentor", "sectionId": "learning-results" },
+      { "label": "AI Catalyst", "sectionId": "learning-results" },
       { "label": "How It Works", "sectionId": "how-it-works" },
       { "label": "Use Cases", "sectionId": "made-for-company" },
       { "label": "FAQ", "sectionId": "faq" }
@@ -10,9 +10,9 @@
     "cta": "Request Demo"
   },
   "hero": {
-    "badge": "Exam Material + Company Data",
-    "headline": "Now or never.\nAutomate mentoring.",
-    "subheadline": "Best of exam and job-specific learning paths, 24/7 AI coaching, and trainer relief. No theory fluff.",
+    "badge": "Exam Material + Company Knowledge",
+    "headline": "Performance fast-track. \n Now or never.",
+    "subheadline": "Best of exam and company knowledge learning paths for your young talents, 24/7 AI coaching, and trainer relief. Boost onboarding experience and reduce dropout. No theory fluff.",
     "ctaPrimary": "Request Demo",
     "ctaSecondary": "How it works"
   },
@@ -52,7 +52,7 @@
     }
   },
   "howItWorks": {
-    "badge": "LearnSlice AI Mentor",
+    "badge": "LearnSlice AI",
     "headline": "How it works",
     "steps": [
       {
@@ -68,17 +68,17 @@
       {
         "number": "3",
         "title": "Personalised coaching",
-        "description": "The AI acts as a personal mentor: it diagnoses each employee, creates a tailored learning plan, gives continuous feedback and adaptive coaching, and validates competency in real time against actual daily tasks and exam requirements."
+        "description": "The AI acts as a personal performance catalyst: it diagnoses each employee, creates a tailored learning plan, gives continuous feedback and adaptive coaching, and validates competency in real time against actual daily tasks and exam requirements."
       }
     ]
   },
   "learningResults": {
-    "badge": "Automate Mentoring with AI",
+    "badge": "AI Performance Catalyst",
     "headline": "Learning Built for Results",
     "features": [
       {
         "icon": "hugeicons:sparkles",
-        "title": "AI Mentor That Adapts 24/7",
+        "title": "AI Performance Catalyst That Adapts 24/7",
         "description": "Predicts issues, auto-adjusts. Plans, feedback, always on."
       },
       {
@@ -202,7 +202,7 @@
       },
       {
         "icon": "hugeicons:champion",
-        "title": "BMWK AI Prize 2025 Winner",
+        "title": "BMWE AI Prize 2025 Winner",
         "description": "Federal Ministry award"
       },
       {

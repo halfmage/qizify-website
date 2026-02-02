@@ -2,7 +2,7 @@
   "nav": {
     "logo": "LearnSlice",
     "menu": [
-      { "label": "KI-Mentor", "sectionId": "learning-results" },
+      { "label": "KI Katalysator", "sectionId": "learning-results" },
       { "label": "So funktioniert's", "sectionId": "how-it-works" },
       { "label": "Use Cases", "sectionId": "made-for-company" },
       { "label": "FAQ", "sectionId": "faq" }
@@ -11,8 +11,8 @@
   },
   "hero": {
     "badge": "Prüfungsunterlagen + Unternehmensdaten",
-    "headline": "Jetzt oder nie.\nAusbildung automatisieren.",
-    "subheadline": "Beste Prüfungs- und jobbezogene Lernpfade, 24/7 KI-Mentoring und Entlastung erfahrener Mitarbeitender. Ohne Theorieballast.",
+    "headline": "Die Performance Überholspur. Jetzt oder nie.",
+    "subheadline": "Beste Prüfungs- und Unternehmenswissen Lernpfade für Ihre Nachwuchskräfte, 24/7 KI-Training und Entlastung erfahrener Mitarbeitender. Boost Onboarding Experience und reduziere Abbruchquote. Keine Theoriefloskel.",
     "ctaPrimary": "Demo anfordern",
     "ctaSecondary": "So funktioniert's"
   },
@@ -52,7 +52,7 @@
     }
   },
   "howItWorks": {
-    "badge": "LearnSlice KI Mentor",
+    "badge": "Die LearnSlice KI",
     "headline": "So funktioniert's",
     "steps": [
       {
@@ -68,17 +68,17 @@
       {
         "number": "3",
         "title": "Personalisierte Betreuung",
-        "description": "Die KI fungiert als persönlicher Mentor: sie diagnostiziert jede/n Mitarbeitende/n, erstellt einen individuellen Lernplan, liefert kontinuierliches Feedback und adaptives Coaching und validiert Kompetenzen in Echtzeit anhand tatsächlicher Arbeitsaufgaben und Prüfungsanforderungen."
+        "description": "Die KI fungiert als persönlicher Katalysator: sie diagnostiziert jede/n Mitarbeitende/n, erstellt einen individuellen Lernplan, liefert kontinuierliches Feedback und adaptives Coaching und validiert Kompetenzen in Echtzeit anhand tatsächlicher Arbeitsaufgaben und Prüfungsanforderungen."
       }
     ]
   },
   "learningResults": {
-    "badge": "Mentoring mit KI automatisieren",
-    "headline": "Lernen für echte Ergebnisse",
+    "badge": "KI Katalysator",
+    "headline": "Lernen für tatsächliche Ergebnisse",
     "features": [
       {
         "icon": "hugeicons:sparkles",
-        "title": "24/7 adaptiver KI-Mentor.",
+        "title": "24/7 adaptiver KI Katalysator.",
         "description": "Erkennt Probleme, passt automatisch an. Plant, gibt Feedback, immer verfügbar."
       },
       {
@@ -202,7 +202,7 @@
       },
       {
         "icon": "hugeicons:champion",
-        "title": "BMWK KI-Preis 2025 Gewinner",
+        "title": "BMWE KI-Preis 2025 Gewinner",
         "description": "Unterstützt durch das Bundesministerium"
       },
       {
