@@ -11,14 +11,13 @@ interface Props {
 
 const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg' } = Astro.props;
 
-// Determine alternate language path
-const alternateLang = lang === 'en' ? 'de' : 'en';
-const alternatePath = lang === 'en' ? '/de' : '/';
+import { getAlternatePath } from '../utils/i18n';
 
 // Construct full URLs
 const siteUrl = 'https://learnslice.com';
 const currentUrl = `${siteUrl}${currentPath}`;
-const alternateUrl = `${siteUrl}${alternatePath}`;
+const enPath = lang === 'en' ? currentPath : getAlternatePath(currentPath, 'de');
+const dePath = lang === 'de' ? currentPath : getAlternatePath(currentPath, 'en');
 const ogImageUrl = `${siteUrl}${ogImage}`;
 
 // Structured data for Organization
@@ -96,6 +95,7 @@ const softwareSchema = {
 		<!-- Preconnect to external resources -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 		
 		<!-- Preload critical resources -->
 		<link rel="preload" href="/images/hero/hero-background.webp" as="image" type="image/webp" />
@@ -144,12 +144,12 @@ const softwareSchema = {
 		<link rel="canonical" href={currentUrl} />
 		
 		<!-- Hreflang Tags -->
-		<link rel="alternate" hreflang="en" href={`${siteUrl}${lang === 'en' ? currentPath : '/'}`} />
-		<link rel="alternate" hreflang="de" href={`${siteUrl}${lang === 'de' ? currentPath : '/de'}`} />
-		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+		<link rel="alternate" hreflang="en" href={`${siteUrl}${enPath}`} />
+		<link rel="alternate" hreflang="de" href={`${siteUrl}${dePath}`} />
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}${enPath}`} />
 		
 		<!-- Sitemap -->
-		<link rel="sitemap" href="/sitemap.xml" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		
 		<!-- Structured Data -->
 		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />

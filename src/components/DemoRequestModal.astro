@@ -43,10 +43,20 @@ const consent = consentText[currentLang];
 		</button>
 		
 		<div class="p-6 md:p-10">
-			<h2 class="text-2xl md:text-3xl font-bold text-white m-0 mb-6 md:mb-8 text-center" id="modal-title">
-				{currentLang === 'en' ? 'Request Demo' : 'Demo anfordern'}
+			<h2 class="text-2xl md:text-3xl font-bold text-white m-0 mb-2 text-center" id="modal-title">
+				{currentLang === 'en' ? 'Book Your Free Demo' : 'Kostenlose Demo buchen'}
 			</h2>
-			
+			<p class="text-white/60 text-sm text-center mb-2 mt-0">
+				{currentLang === 'en'
+					? 'Join 30+ German companies already using LearnSlice'
+					: 'Schließen Sie sich 30+ deutschen Unternehmen an'}
+			</p>
+			<div class="flex items-center justify-center gap-4 mb-6 opacity-60">
+				<img src="/images/logos/tremonia.png" alt="Tremonia" class="h-6 w-auto grayscale" loading="lazy" />
+				<img src="/images/logos/fhdortmund-logo.png" alt="FH Dortmund" class="h-6 w-auto grayscale" loading="lazy" />
+				<img src="/images/logos/csb.png" alt="Carl-Severing" class="h-6 w-auto grayscale" loading="lazy" />
+			</div>
+
 			<form class="flex flex-col gap-5 md:gap-6" id="demo-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 				<input type="hidden" name="form-name" value="demo-request" />
 				
@@ -100,16 +110,14 @@ const consent = consentText[currentLang];
 				
 				<div class="flex flex-col gap-2">
 					<label for="message" class="text-[0.9375rem] font-medium text-white">
-						{currentLang === 'en' ? 'Message' : 'Nachricht'}
-						<span class="text-primary ml-1">*</span>
+						{currentLang === 'en' ? 'Message (optional)' : 'Nachricht (optional)'}
 					</label>
-					<textarea 
-						id="message" 
-						name="message" 
-						class="bg-gray/30 border border-gray rounded-lg px-4 py-3 text-base text-white font-sans w-full min-h-[100px] resize-y focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 placeholder:text-white/40" 
-						rows="4" 
-						required 
-						aria-required="true"
+					<textarea
+						id="message"
+						name="message"
+						class="bg-gray/30 border border-gray rounded-lg px-4 py-3 text-base text-white font-sans w-full min-h-[100px] resize-y focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 placeholder:text-white/40"
+						rows="4"
+						placeholder={currentLang === 'en' ? 'Any questions or details? (optional)' : 'Fragen oder Details? (optional)'}
 					></textarea>
 				</div>
 				
@@ -146,7 +154,7 @@ const consent = consentText[currentLang];
 				</div>
 				
 				<button type="submit" class="bg-primary text-white border-none rounded-lg px-8 py-4 text-base font-semibold cursor-pointer hover:bg-[#5554d1] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 font-sans mt-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none">
-					{currentLang === 'en' ? 'Send' : 'Senden'}
+					{currentLang === 'en' ? 'Get My Free Demo' : 'Kostenlose Demo sichern'}
 				</button>
 			</form>
 		</div>

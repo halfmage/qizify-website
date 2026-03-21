@@ -9,6 +9,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://learnslice.com',
 	output: 'static',
+	trailingSlash: 'never',
 	integrations: [
 		tailwind(),
 		icon(),

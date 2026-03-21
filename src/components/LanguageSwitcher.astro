@@ -1,4 +1,6 @@
 ---
+import { getAlternatePath } from '../utils/i18n';
+
 interface Props {
 	currentLang: 'en' | 'de';
 	currentPath: string;
@@ -6,8 +8,7 @@ interface Props {
 
 const { currentLang, currentPath } = Astro.props;
 
-// Determine alternate language path
-const alternatePath = currentLang === 'en' ? '/de' : '/';
+const alternatePath = getAlternatePath(currentPath, currentLang);
 ---
 
 <nav class="flex items-center gap-2" aria-label="Language selection">

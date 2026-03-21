@@ -8,13 +8,13 @@
       { "label": "Blog", "href": "/de/blog" },
       { "label": "FAQ", "sectionId": "faq" }
     ],
-    "cta": "Demo anfordern"
+    "cta": "Kostenlose Demo buchen"
   },
   "hero": {
-    "badge": "Prüfungsunterlagen + Unternehmensdaten",
-    "headline": "KI-gestützte Ausbildung.\n65 % schneller einsatzbereit.",
+    "badge": "KI-gestützte Ausbildungsplattform",
+    "headline": "Ihre Azubis in 8 Wochen\neinsatzbereit — nicht in 6 Monaten.",
     "subheadline": "LearnSlice verbindet IHK-Prüfungsvorbereitung mit Ihrem Unternehmenswissen zu personalisierten KI-Lernpfaden — Ihre Azubis sind in 8 Wochen statt 6 Monaten einsatzbereit. Sparen Sie €32K pro Azubi und entlasten Sie Ihre Ausbilder um 50 %.",
-    "ctaPrimary": "Demo anfordern",
+    "ctaPrimary": "Jetzt live erleben",
     "ctaSecondary": "So funktioniert's"
   },
   "trustedBy": {
@@ -80,22 +80,22 @@
       {
         "icon": "hugeicons:sparkles",
         "title": "24/7 adaptiver KI Katalysator.",
-        "description": "Erkennt Probleme, passt automatisch an. Plant, gibt Feedback, immer verfügbar."
+        "description": "Erkennt Wissenslücken frühzeitig, passt den Lernplan automatisch an und liefert kontinuierliches Feedback, damit jeder Azubi ohne Ausbilder-Eingriff auf Kurs bleibt."
       },
       {
         "icon": "hugeicons:book-02",
         "title": "Zuverlässige Assessments.",
-        "description": "Quiz, Fallstudien, Deep-Dives. Sofort-Ergebnisse, Lückenanalyse, Badges."
+        "description": "Prüft Kompetenzen durch Quizzes, Fallstudien und Deep-Dive-Aufgaben. Sofortige Auswertung zeigt Lücken auf und vergibt Badges für nachgewiesene Fähigkeiten."
       },
       {
         "icon": "hugeicons:award-04",
         "title": "Management-Analytics.",
-        "description": "Dashboards: Status, Fortschritt, Trends. Verfolgen & optimieren."
+        "description": "Echtzeit-Dashboards zeigen Azubi-Status, Fortschrittstrends und teamweite Leistung, damit Verantwortliche datenbasierte Ausbildungsentscheidungen treffen können."
       },
       {
         "icon": "hugeicons:pencil-edit-02",
         "title": "Gamification, die motiviert.",
-        "description": "Punkte, Badges, Ranglisten. Belohnungen, Erfolge, Wettbewerbe."
+        "description": "Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Erlebnis, das Azubis bei der Stange hält und Abschlussquoten steigert."
       }
     ],
     "compliance": "100 % DSGVO-konform. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur"
@@ -300,7 +300,7 @@
   "cta": {
     "headline": "Jetzt starten",
     "subheadline": "4.000 € Ersparnis pro Azubi,\n20.000 € bei 5 Azubis. Kein Risiko. Jederzeit kündbar.",
-    "button": "Demo anfordern"
+    "button": "Heute mit Sparen beginnen"
   },
   "footer": {
     "logo": "LearnSlice",

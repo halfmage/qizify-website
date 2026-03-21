@@ -48,3 +48,11 @@
 /en/privacy/                    /privacy/       301
 /en/terms-of-use/               /terms/         301
 /en/terms-for-ai/               /terms/         301
+
+# Convenience /for-* shortlinks
+/for-companies                  /companies      301
+/for-schools                    /schools        301
+/for-agencies                   /agencies       301
+/de/for-companies               /de/companies   301
+/de/for-schools                 /de/schools     301
+/de/for-agencies                /de/agencies    301

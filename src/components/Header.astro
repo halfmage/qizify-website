@@ -39,9 +39,17 @@ const { logo, menu, cta, currentLang, currentPath } = Astro.props;
 		
 		<div class="flex items-center gap-4 lg:gap-6">
 			<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
-			<Button 
-				variant="primary" 
-				data-modal-trigger="demo-request" 
+			<Button
+				variant="primary"
+				data-modal-trigger="demo-request"
+				aria-label={cta}
+				class="lg:hidden text-xs px-3 py-2 whitespace-nowrap"
+			>
+				{cta}
+			</Button>
+			<Button
+				variant="primary"
+				data-modal-trigger="demo-request"
 				aria-label={cta}
 				class="hidden lg:block whitespace-nowrap"
 			>

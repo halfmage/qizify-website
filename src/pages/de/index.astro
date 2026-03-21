@@ -22,7 +22,7 @@ const currentPath = '/de';
 ---
 
 <BaseLayout 
-	title="LearnSlice - KI-gestützte Lernplattform für Ausbildung & Onboarding" 
+	title="KI-Ausbildungsplattform | IHK-Prüfungsvorbereitung & Onboarding | LearnSlice" 
 	description="Automatisieren Sie Mentoring und sparen Sie Kosten mit LearnSlice. Prüfungs- und jobbezogene Lernpfade, 24/7 KI-Coaching und Entlastung erfahrener Mitarbeitender."
 	lang={lang}
 	currentPath={currentPath}
@@ -89,12 +89,12 @@ const currentPath = '/de';
 		items={deContent.vocationalProfessions.items}
 	/>
 	
-	<LeadCapture currentLang={lang} />
-
 	<FAQ
 		headline={deContent.faq.headline}
 		items={deContent.faq.items}
 	/>
+
+	<LeadCapture currentLang={lang} />
 	
 	<CTAFooter 
 		headline={deContent.cta.headline}

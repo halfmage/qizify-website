@@ -8,13 +8,13 @@
       { "label": "Blog", "href": "/blog" },
       { "label": "FAQ", "sectionId": "faq" }
     ],
-    "cta": "Request Demo"
+    "cta": "Book Free Demo"
   },
   "hero": {
-    "badge": "Exam Material + Company Knowledge",
-    "headline": "AI-Powered Apprenticeship Training.\n65% Faster to Productivity.",
+    "badge": "AI-Powered Apprenticeship Training",
+    "headline": "Your Apprentices Job-Ready\nin 8 Weeks, Not 6 Months.",
     "subheadline": "LearnSlice combines IHK exam preparation with your company knowledge into personalized AI learning paths — so your apprentices are job-ready in 8 weeks, not 6 months. Save €32K per apprentice and free up 50% of trainer time.",
-    "ctaPrimary": "Request Demo",
+    "ctaPrimary": "See It In Action",
     "ctaSecondary": "How it works"
   },
   "trustedBy": {
@@ -80,22 +80,22 @@
       {
         "icon": "hugeicons:sparkles",
         "title": "AI Performance Catalyst That Adapts 24/7",
-        "description": "Predicts issues, auto-adjusts. Plans, feedback, always on."
+        "description": "Detects knowledge gaps early, auto-adjusts the learning plan, and delivers continuous feedback so every apprentice stays on track without trainer intervention."
       },
       {
         "icon": "hugeicons:book-02",
         "title": "Bulletproof Assessments",
-        "description": "Quizzes, cases, deep dives. Instant scores, gaps, badges."
+        "description": "Validates competency through quizzes, case studies, and deep-dive exercises. Instant scoring highlights gaps and awards badges for proven skills."
       },
       {
         "icon": "hugeicons:award-04",
         "title": "Executive Analytics",
-        "description": "Dashboards: status, progress, trends. Track & optimize."
+        "description": "Real-time dashboards show apprentice status, progress trends, and team-wide performance so managers can make data-driven training decisions."
       },
       {
         "icon": "hugeicons:pencil-edit-02",
         "title": "Proven Gamification",
-        "description": "Points, badges, leaderboards. Rewards, streaks, comps."
+        "description": "Points, badges, and leaderboards turn daily practice into a motivating experience that keeps apprentices engaged and completing their learning paths."
       }
     ],
     "compliance": "100% GDPR-compliant. Hosted in Germany or your infrastructure."
@@ -300,7 +300,7 @@
   "cta": {
     "headline": "Start Today",
     "subheadline": "€4K saved per apprentice. €20K per 5 apprentices. No risk. Cancel anytime.",
-    "button": "Request Demo"
+    "button": "Start Saving Today"
   },
   "footer": {
     "logo": "LearnSlice",

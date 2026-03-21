@@ -10,6 +10,7 @@ import CTAFooter from '../../components/CTAFooter.astro';
 import Footer from '../../components/Footer.astro';
 import DemoRequestModal from '../../components/DemoRequestModal.astro';
 import LeadCapture from '../../components/LeadCapture.astro';
+import WhyChooseUs from '../../components/WhyChooseUs.astro';
 import deContent from '../../content/de.json';
 
 const lang = 'de';
@@ -108,12 +109,17 @@ const currentPath = '/de/companies';
 		currentLang={lang}
 	/>
 
-	<LeadCapture currentLang={lang} />
+	<WhyChooseUs
+		headline={deContent.whyChooseUs.headline}
+		items={deContent.whyChooseUs.items}
+	/>
 
 	<FAQ
 		headline={deContent.faq.headline}
 		items={deContent.faq.items}
 	/>
+
+	<LeadCapture currentLang={lang} />
 
 	<CTAFooter
 		headline={deContent.cta.headline}
