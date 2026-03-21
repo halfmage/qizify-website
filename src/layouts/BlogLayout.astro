@@ -1,0 +1,161 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import CTAFooter from '../components/CTAFooter.astro';
+import Footer from '../components/Footer.astro';
+import DemoRequestModal from '../components/DemoRequestModal.astro';
+import enContent from '../content/en.json';
+import deContent from '../content/de.json';
+
+interface Props {
+	title: string;
+	description: string;
+	lang: 'en' | 'de';
+	publishDate: Date;
+	updatedDate?: Date;
+	author: string;
+	tags: string[];
+	slug: string;
+}
+
+const { title, description, lang, publishDate, updatedDate, author, tags, slug } = Astro.props;
+
+const content = lang === 'en' ? enContent : deContent;
+const basePath = lang === 'de' ? '/de' : '';
+const currentPath = `${basePath}/blog/${slug}`;
+const blogIndexPath = `${basePath}/blog`;
+const backLabel = lang === 'en' ? 'Back to Blog' : 'Zurück zum Blog';
+
+const formattedDate = publishDate.toLocaleDateString(lang === 'en' ? 'en-US' : 'de-DE', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+});
+
+const formattedUpdatedDate = updatedDate?.toLocaleDateString(lang === 'en' ? 'en-US' : 'de-DE', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+});
+
+// BlogPosting schema
+const blogPostingSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BlogPosting',
+	headline: title,
+	description: description,
+	datePublished: publishDate.toISOString(),
+	...(updatedDate && { dateModified: updatedDate.toISOString() }),
+	author: {
+		'@type': 'Organization',
+		name: author,
+		url: 'https://learnslice.com',
+	},
+	publisher: {
+		'@type': 'Organization',
+		name: 'LearnSlice',
+		url: 'https://learnslice.com',
+		logo: {
+			'@type': 'ImageObject',
+			url: 'https://learnslice.com/favicon.ico',
+		},
+	},
+	mainEntityOfPage: {
+		'@type': 'WebPage',
+		'@id': `https://learnslice.com${currentPath}`,
+	},
+};
+---
+
+<BaseLayout
+	title={`${title} | LearnSlice Blog`}
+	description={description}
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header
+		logo={content.nav.logo}
+		menu={content.nav.menu}
+		cta={content.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<article class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+		<div class="max-w-3xl mx-auto">
+			<!-- Back link -->
+			<a
+				href={blogIndexPath}
+				class="inline-flex items-center gap-2 text-primary hover:text-white transition-colors text-sm mb-8"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="19" y1="12" x2="5" y2="12"></line>
+					<polyline points="12 19 5 12 12 5"></polyline>
+				</svg>
+				{backLabel}
+			</a>
+
+			<!-- Article header -->
+			<header class="mb-10 md:mb-14">
+				{tags.length > 0 && (
+					<div class="flex flex-wrap gap-2 mb-4">
+						{tags.map(tag => (
+							<span class="px-3 py-1 bg-primary/20 border border-primary/40 rounded-full text-primary text-xs font-medium uppercase tracking-wider">
+								{tag}
+							</span>
+						))}
+					</div>
+				)}
+
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+					{title}
+				</h1>
+
+				<div class="flex items-center gap-4 text-white/60 text-sm">
+					<span>{author}</span>
+					<span>·</span>
+					<time datetime={publishDate.toISOString()}>{formattedDate}</time>
+					{formattedUpdatedDate && (
+						<>
+							<span>·</span>
+							<span>{lang === 'en' ? 'Updated' : 'Aktualisiert'} {formattedUpdatedDate}</span>
+						</>
+					)}
+				</div>
+			</header>
+
+			<!-- Article content -->
+			<div class="prose prose-invert prose-lg max-w-none
+				prose-headings:text-white prose-headings:font-bold
+				prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
+				prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4
+				prose-p:text-white/80 prose-p:leading-relaxed
+				prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+				prose-strong:text-white
+				prose-ul:text-white/80 prose-ol:text-white/80
+				prose-li:marker:text-primary
+				prose-blockquote:border-primary prose-blockquote:text-white/70
+				prose-code:text-primary prose-code:bg-primary/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+			">
+				<slot />
+			</div>
+		</div>
+	</article>
+
+	<CTAFooter
+		headline={content.cta.headline}
+		subheadline={content.cta.subheadline}
+		button={content.cta.button}
+		currentLang={lang}
+	/>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={content.footer.privacyLabel}
+		termsLabel={content.footer.termsLabel}
+	/>
+
+	<DemoRequestModal currentLang={lang} />
+
+	<script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+</BaseLayout>

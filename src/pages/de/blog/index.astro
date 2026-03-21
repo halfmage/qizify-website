@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import BlogCard from '../../../components/BlogCard.astro';
+import Footer from '../../../components/Footer.astro';
+import DemoRequestModal from '../../../components/DemoRequestModal.astro';
+import deContent from '../../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de/blog';
+
+const posts = (await getCollection('blog', ({ data }) => data.lang === 'de' && !data.draft))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+---
+
+<BaseLayout
+	title="Blog | LearnSlice — KI-gestützte Ausbildung"
+	description="Einblicke in KI-gestütztes Lernen, IHK-Prüfungsvorbereitung und digitale Berufsausbildung."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header
+		logo={deContent.nav.logo}
+		menu={deContent.nav.menu}
+		cta={deContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+		<div class="max-w-4xl mx-auto">
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Blog</h1>
+			<p class="text-white/70 text-lg mb-10 md:mb-14 max-w-2xl">
+				Einblicke in KI-gestütztes Lernen, Berufsausbildung und wie Ausbildung effektiver wird.
+			</p>
+
+			{posts.length === 0 ? (
+				<p class="text-white/50 text-lg">Noch keine Beiträge. Schauen Sie bald wieder vorbei!</p>
+			) : (
+				<div class="flex flex-col gap-6">
+					{posts.map(post => (
+						<BlogCard
+							title={post.data.title}
+							description={post.data.description}
+							publishDate={post.data.publishDate}
+							tags={post.data.tags}
+							slug={post.slug}
+							lang={lang}
+						/>
+					))}
+				</div>
+			)}
+		</div>
+	</section>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={deContent.footer.privacyLabel}
+		termsLabel={deContent.footer.termsLabel}
+	/>
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>
