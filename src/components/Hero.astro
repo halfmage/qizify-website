@@ -1,5 +1,6 @@
 ---
 import Button from './Button.astro';
+import AppMockup from './AppMockup.astro';
 
 interface Props {
 	badge: string;
@@ -12,59 +13,60 @@ interface Props {
 
 const { badge, headline, subheadline, ctaPrimary, ctaSecondary, currentLang } = Astro.props;
 
-// Split headline by newlines for proper formatting
 const headlineLines = headline.split('\n');
 ---
 
-<section class="relative  min-h-[60vh] lg:min-h-[80vh] flex items-center justify-start overflow-hidden py-20 pt-32" id="hero">
-	<div class="absolute inset-0 z-0">
-		<img 
-			src="/images/hero/hero-background.webp" 
-			alt={currentLang === 'en' ? 'LearnSlice AI-powered learning platform background' : 'LearnSlice KI-gestützte Lernplattform Hintergrund'} 
-			class="w-full h-full object-cover object-center"
-			loading="eager"
-			decoding="async"
-			width="1920"
-			height="1080"
-		/>
-		<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/80 z-[1]"></div>
-	</div>
-	
-	<div class="relative z-[2] max-w-container mx-auto w-full px-4 md:px-8 text-center md:text-left flex flex-col md:items-start items-center gap-6">
-		<div class="learnslice-gradient-low py-2 px-4 rounded-lg text-white text-xs md:text-sm font-semibold mb-2 mx-auto md:mx-0">
-			{badge}
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-16" id="hero">
+	<!-- Subtle radial glow -->
+	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] opacity-30 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.15) 0%, transparent 70%);"></div>
+
+	<div class="relative z-10 max-w-container mx-auto w-full px-6 md:px-8">
+		<div class="max-w-6xl mx-auto text-center flex flex-col items-center gap-6">
+			<!-- Section label -->
+			<span class="section-label">{badge}</span>
+
+			<!-- Headline -->
+			<h1 class="text-display-sm md:text-display text-white m-0">
+				{headlineLines.map((line, index) => (
+					<>
+						{line}
+						{index < headlineLines.length - 1 && <br />}
+					</>
+				))}
+			</h1>
+
+			<!-- Subheadline -->
+			<p class="text-lg leading-relaxed text-muted max-w-2xl m-0">
+				{subheadline}
+			</p>
+
+			<!-- CTAs -->
+			<div class="flex flex-col sm:flex-row gap-3 mt-4">
+				<Button
+					variant="primary"
+					href="#demo-request"
+					aria-label={ctaPrimary}
+				>
+					{ctaPrimary}
+					<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+				</Button>
+				<Button
+					variant="secondary"
+					href="#how-it-works"
+					aria-label={ctaSecondary}
+				>
+					{ctaSecondary}
+				</Button>
+			</div>
 		</div>
-		
-		<h1 class="text-4xl lg:text-6xl capitalize font-bold tracking-tight text-white m-0 max-w-[900px]">
-			{headlineLines.map((line, index) => (
-				<>
-					{line}
-					{index < headlineLines.length - 1 && <br />}
-				</>
-			))}
-		</h1>
-		
-		<p class="text-lg md:text-xl leading-relaxed text-white/90 max-w-[700px] m-0">
-			{subheadline}
-		</p>
-		
-		<div class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto justify-center">
-			<Button 
-				variant="primary" 
-				href={`#demo-request`}
-				aria-label={ctaPrimary}
-				class="min-w-[160px] w-full sm:w-auto"
-			>
-				{ctaPrimary}
-			</Button>
-			<Button 
-				variant="secondary" 
-				href={`#how-it-works`}
-				aria-label={ctaSecondary}
-				class="min-w-[160px] w-full sm:w-auto"
-			>
-				{ctaSecondary}
-			</Button>
+
+		<!-- App mockup with gradient fade -->
+		<div class="mt-16 md:mt-24 relative">
+			<!-- Full-width gradient behind mockup -->
+			<div class="absolute -inset-x-[50vw] left-1/2 -translate-x-1/2 -bottom-32 h-[120%] pointer-events-none" aria-hidden="true" style="background: linear-gradient(to bottom, transparent 0%, rgba(124, 92, 252, 0.08) 40%, rgba(124, 92, 252, 0.15) 70%, rgba(124, 92, 252, 0.06) 100%);"></div>
+			<div class="relative">
+				<AppMockup currentLang={currentLang} />
+			</div>
 		</div>
 	</div>
 </section>

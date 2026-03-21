@@ -1,4 +1,6 @@
 ---
+import Button from './Button.astro';
+
 interface Props {
 	currentLang: 'en' | 'de';
 }
@@ -7,129 +9,40 @@ const { currentLang } = Astro.props;
 
 const content = {
 	en: {
-		headline: 'Free Apprenticeship ROI Calculator',
-		subheadline: 'Calculate how much you could save with AI-powered training. Get the free guide.',
-		emailPlaceholder: 'Your work email',
-		button: 'Get Free Calculator',
-		consent: 'I agree to receive the calculator and occasional insights from LearnSlice. Unsubscribe anytime.',
-		privacyLink: '/privacy',
-		privacyLabel: 'Privacy Policy',
-		success: 'Check your inbox!',
-		error: 'Something went wrong. Please try again.',
+		label: 'Calculator',
+		headline: 'How much could you save?',
+		description: 'Use our free calculator to see what apprenticeship dropouts and slow onboarding cost your company.',
+		button: 'Open Savings Calculator',
+		href: '/apprenticeship-savings-calculator',
 	},
 	de: {
-		headline: 'Kostenloser Ausbildungs-ROI-Rechner',
-		subheadline: 'Berechnen Sie, wie viel Sie mit KI-gestützter Ausbildung sparen können. Jetzt kostenlos herunterladen.',
-		emailPlaceholder: 'Ihre geschäftliche E-Mail',
-		button: 'Kostenlos herunterladen',
-		consent: 'Ich stimme zu, den Rechner und gelegentliche Einblicke von LearnSlice zu erhalten. Jederzeit abbestellbar.',
-		privacyLink: '/de/privacy',
-		privacyLabel: 'Datenschutzerklärung',
-		success: 'Schauen Sie in Ihr Postfach!',
-		error: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
+		label: 'Rechner',
+		headline: 'Wie viel k\u00F6nnten Sie sparen?',
+		description: 'Berechnen Sie kostenlos, was Ausbildungsabbr\u00FCche und langsames Onboarding Ihr Unternehmen kosten.',
+		button: 'Einsparungsrechner \u00F6ffnen',
+		href: '/de/ausbildungskosten-rechner',
 	},
 };
 
 const t = content[currentLang];
 ---
 
-<!-- Hidden form for Netlify detection -->
-<form name="lead-capture" netlify netlify-honeypot="bot-field" hidden>
-	<input type="email" name="email" />
-	<input type="checkbox" name="consent" />
-	<input type="text" name="bot-field" />
-</form>
-
-<section class="py-12 md:py-16 px-4 md:px-8 bg-dark" id="lead-capture">
-	<div class="max-w-2xl mx-auto">
-		<div class="bg-primary/10 border border-primary/30 rounded-2xl p-6 md:p-8">
-			<h3 class="text-xl md:text-2xl font-bold text-white mb-2">
+<section class="py-16 md:py-24 px-6 md:px-8" id="lead-capture">
+	<div class="max-w-xl mx-auto">
+		<div class="bg-surface border border-border rounded-xl p-8 flex flex-col gap-4">
+			<span class="section-label">{t.label}</span>
+			<h3 class="text-heading-sm text-white m-0">
 				{t.headline}
 			</h3>
-			<p class="text-white/70 text-sm md:text-base mb-6">
-				{t.subheadline}
+			<p class="text-sm text-muted m-0 leading-relaxed">
+				{t.description}
 			</p>
-
-			<form
-				id="lead-capture-form"
-				class="flex flex-col gap-4"
-			>
-				<input type="hidden" name="form-name" value="lead-capture" />
-				<div class="hidden">
-					<input type="text" name="bot-field" />
-				</div>
-
-				<div class="flex flex-col sm:flex-row gap-3">
-					<input
-						type="email"
-						name="email"
-						required
-						placeholder={t.emailPlaceholder}
-						class="flex-1 px-4 py-3 rounded-xl bg-dark border border-gray/50 text-white placeholder:text-white/40 focus:border-primary focus:outline-none transition-colors"
-					/>
-					<button
-						type="submit"
-						class="px-6 py-3 bg-white text-black font-semibold rounded-xl hover:bg-white/90 transition-colors whitespace-nowrap cursor-pointer"
-					>
-						{t.button}
-					</button>
-				</div>
-
-				<label class="flex items-start gap-2 cursor-pointer">
-					<input
-						type="checkbox"
-						name="consent"
-						required
-						class="mt-1 accent-primary"
-					/>
-					<span class="text-white/50 text-xs leading-relaxed">
-						{t.consent}{' '}
-						<a href={t.privacyLink} class="text-primary hover:underline">
-							{t.privacyLabel}
-						</a>
-					</span>
-				</label>
-
-				<p id="lead-capture-success" class="text-green-400 text-sm hidden">{t.success}</p>
-				<p id="lead-capture-error" class="text-red-400 text-sm hidden">{t.error}</p>
-			</form>
+			<div class="mt-2">
+				<Button variant="primary" href={t.href}>
+					{t.button}
+					<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+				</Button>
+			</div>
 		</div>
 	</div>
 </section>
-
-<script>
-	function initLeadCapture() {
-		const form = document.getElementById('lead-capture-form') as HTMLFormElement;
-		if (!form) return;
-
-		form.addEventListener('submit', async (e) => {
-			e.preventDefault();
-
-			const formData = new FormData(form);
-			const successEl = document.getElementById('lead-capture-success');
-			const errorEl = document.getElementById('lead-capture-error');
-
-			try {
-				const response = await fetch('/', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-					body: new URLSearchParams(formData as any).toString(),
-				});
-
-				if (response.ok) {
-					successEl?.classList.remove('hidden');
-					errorEl?.classList.add('hidden');
-					form.reset();
-				} else {
-					throw new Error('Form submission failed');
-				}
-			} catch {
-				errorEl?.classList.remove('hidden');
-				successEl?.classList.add('hidden');
-			}
-		});
-	}
-
-	document.addEventListener('DOMContentLoaded', initLeadCapture);
-	document.addEventListener('astro:page-load', initLeadCapture);
-</script>

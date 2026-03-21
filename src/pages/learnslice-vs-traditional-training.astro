@@ -19,161 +19,72 @@ const currentPath = '/learnslice-vs-traditional-training';
 	lang={lang}
 	currentPath={currentPath}
 >
-	<Header
-		logo={enContent.nav.logo}
-		menu={enContent.nav.menu}
-		cta={enContent.nav.cta}
-		currentLang={lang}
-		currentPath={currentPath}
-	/>
+	<Header logo={enContent.nav.logo} menu={enContent.nav.menu} cta={enContent.nav.cta} currentLang={lang} currentPath={currentPath} />
 
-	<!-- Hero -->
-	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark">
-		<div class="max-w-4xl mx-auto text-center">
-			<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
-				Comparison
-			</div>
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-				LearnSlice vs. Traditional<br />Training Methods
-			</h1>
-			<p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-				See how AI-powered apprenticeship training compares to traditional classroom instruction, manual mentoring, and external IHK prep courses.
-			</p>
+	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center">
+			<span class="section-label mb-5 block">Comparison</span>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Traditional Training Methods</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">See how AI-powered apprenticeship training compares to traditional classroom instruction, manual mentoring, and external IHK prep courses.</p>
 		</div>
 	</section>
 
-	<!-- Comparison table -->
-	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
-		<div class="max-w-5xl mx-auto">
-			<div class="overflow-x-auto">
+	<section class="py-12 md:py-20 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto">
+			<div class="overflow-x-auto rounded-xl border border-border">
 				<table class="w-full border-collapse">
 					<thead>
 						<tr>
-							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Feature</th>
-							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Traditional Training</th>
-							<th class="text-left text-sm font-medium p-4 border-b border-primary/50 w-1/3 bg-primary/10 rounded-t-xl">
-								<span class="text-primary">LearnSlice</span>
-							</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Feature</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Traditional</th>
+							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
 						</tr>
 					</thead>
-					<tbody class="text-sm md:text-base">
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Time to productivity</td>
-							<td class="text-white/50 p-4 border-b border-white/10">4-6 months</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">8 weeks (65% faster)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Trainer time per week</td>
-							<td class="text-white/50 p-4 border-b border-white/10">8-12 hours per apprentice</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">4-6 hours (50% less)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Dropout rate</td>
-							<td class="text-white/50 p-4 border-b border-white/10">30% average</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">15% (halved)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Availability</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Business hours only</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">24/7 AI coaching</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Personalization</td>
-							<td class="text-white/50 p-4 border-b border-white/10">One curriculum for all</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Adaptive per learner</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">IHK exam prep</td>
-							<td class="text-white/50 p-4 border-b border-white/10">External courses (€500-€2K)</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Built-in, AI-generated</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Company knowledge</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Manual handover</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Upload docs, AI integrates</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Progress tracking</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Manual notes</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Real-time analytics dashboard</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Assessment types</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Paper tests</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Quizzes, case studies, deep dives</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Cost per apprentice/year</td>
-							<td class="text-white/50 p-4 border-b border-white/10">€37,000+</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">€15,500 (save €21K+)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">GDPR compliance</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Varies</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">100% — hosted in Germany</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 font-medium">Scalability</td>
-							<td class="text-white/50 p-4">Linear cost increase</td>
-							<td class="text-white p-4 bg-primary/5 font-semibold rounded-b-xl">One setup, unlimited apprentices</td>
-						</tr>
+					<tbody class="text-sm">
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Time to productivity</td><td class="text-muted p-4 border-b border-border">4-6 months</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">8 weeks (65% faster)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Trainer time/week</td><td class="text-muted p-4 border-b border-border">8-12 hrs per apprentice</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">4-6 hrs (50% less)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Dropout rate</td><td class="text-muted p-4 border-b border-border">30% average</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">15% (halved)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Availability</td><td class="text-muted p-4 border-b border-border">Business hours</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">24/7 AI coaching</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Personalization</td><td class="text-muted p-4 border-b border-border">One curriculum for all</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Adaptive per learner</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK exam prep</td><td class="text-muted p-4 border-b border-border">External (&euro;500-&euro;2K)</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Built-in, AI-generated</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Company knowledge</td><td class="text-muted p-4 border-b border-border">Manual handover</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Upload docs, AI integrates</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Progress tracking</td><td class="text-muted p-4 border-b border-border">Manual notes</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Real-time analytics</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Cost/apprentice/year</td><td class="text-muted p-4 border-b border-border">&euro;37,000+</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">&euro;15,500 (save &euro;21K+)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">GDPR</td><td class="text-muted p-4 border-b border-border">Varies</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">100% &mdash; hosted in Germany</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Scalability</td><td class="text-muted p-4">Linear cost increase</td><td class="text-white p-4 bg-primary/[0.03] font-medium">One setup, unlimited</td></tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</section>
 
-	<!-- Why switch -->
-	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+	<section class="py-20 md:py-32 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
-			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-10 md:mb-14 text-center">
-				Why Companies Are Switching
-			</h2>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<div class="text-3xl font-bold text-primary mb-3">€32K+</div>
-					<h3 class="text-lg font-bold text-white mb-2">Saved per apprentice</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Reduced trainer time, eliminated external courses, faster productivity, and fewer costly dropouts — the savings compound quickly.</p>
+			<div class="text-center mb-16"><span class="section-label mb-4 block">Results</span><h2 class="text-heading md:text-display-sm text-white m-0">Why Companies Are Switching</h2></div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<div class="text-2xl font-bold text-primary mb-2 tracking-tight">&euro;32K+</div>
+					<h3 class="text-base font-semibold text-white mb-2">Saved per apprentice</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">Reduced trainer time, eliminated external courses, faster productivity, fewer costly dropouts.</p>
 				</div>
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<div class="text-3xl font-bold text-primary mb-3">24/7</div>
-					<h3 class="text-lg font-bold text-white mb-2">AI coaching availability</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Apprentices aren't limited to trainer schedules. The AI coach answers questions, explains concepts, and provides practice exercises anytime.</p>
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<div class="text-2xl font-bold text-primary mb-2 tracking-tight">24/7</div>
+					<h3 class="text-base font-semibold text-white mb-2">AI coaching availability</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">The AI coach answers questions, explains concepts, and provides practice exercises anytime.</p>
 				</div>
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<div class="text-3xl font-bold text-primary mb-3">8 wks</div>
-					<h3 class="text-lg font-bold text-white mb-2">To full productivity</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Structured IHK learning paths combined with company knowledge get apprentices contributing 65% faster than traditional methods.</p>
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<div class="text-2xl font-bold text-primary mb-2 tracking-tight">8 wks</div>
+					<h3 class="text-base font-semibold text-white mb-2">To full productivity</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">IHK learning paths combined with company knowledge get apprentices contributing 65% faster.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<LogosSlider
-		headline={enContent.trustedBy.headline}
-		logos={enContent.trustedBy.logos}
-	/>
-
-	<Testimonials
-		headline={enContent.testimonials.headline}
-		items={enContent.testimonials.items}
-		currentLang={lang}
-	/>
-
+	<LogosSlider headline={enContent.trustedBy.headline} logos={enContent.trustedBy.logos} />
+	<Testimonials headline={enContent.testimonials.headline} items={enContent.testimonials.items} currentLang={lang} />
 	<LeadCapture currentLang={lang} />
-
-	<CTAFooter
-		headline={enContent.cta.headline}
-		subheadline={enContent.cta.subheadline}
-		button={enContent.cta.button}
-		currentLang={lang}
-	/>
-
-	<Footer
-		currentLang={lang}
-		privacyLabel={enContent.footer.privacyLabel}
-		termsLabel={enContent.footer.termsLabel}
-	/>
-
+	<CTAFooter headline={enContent.cta.headline} subheadline={enContent.cta.subheadline} button={enContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={enContent.footer.privacyLabel} termsLabel={enContent.footer.termsLabel} />
 	<DemoRequestModal currentLang={lang} />
 </BaseLayout>

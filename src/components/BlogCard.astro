@@ -20,26 +20,24 @@ const formattedDate = publishDate.toLocaleDateString(lang === 'en' ? 'en-US' : '
 });
 ---
 
-<a href={href} class="group block bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8 hover:border-primary/50 transition-all duration-300">
+<a href={href} class="group block bg-surface border border-border rounded-lg p-6 md:p-8 hover:border-border-light transition-colors duration-200">
 	{tags.length > 0 && (
-		<div class="flex flex-wrap gap-2 mb-3">
+		<div class="flex flex-wrap gap-3 mb-4">
 			{tags.map(tag => (
-				<span class="px-2 py-0.5 bg-primary/20 border border-primary/40 rounded-full text-primary text-xs font-medium uppercase tracking-wider">
-					{tag}
-				</span>
+				<span class="section-label">{tag}</span>
 			))}
 		</div>
 	)}
 
-	<h3 class="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">
+	<h3 class="text-base md:text-lg font-semibold text-white mb-3 group-hover:text-primary transition-colors duration-200 leading-snug">
 		{title}
 	</h3>
 
-	<p class="text-white/70 text-sm md:text-base leading-relaxed mb-4 line-clamp-3">
+	<p class="text-muted text-sm leading-relaxed mb-4 line-clamp-3">
 		{description}
 	</p>
 
-	<time datetime={publishDate.toISOString()} class="text-white/50 text-sm">
+	<time datetime={publishDate.toISOString()} class="text-muted text-xs font-mono">
 		{formattedDate}
 	</time>
 </a>

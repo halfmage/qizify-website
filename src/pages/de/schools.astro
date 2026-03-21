@@ -16,123 +16,64 @@ const currentPath = '/de/schools';
 ---
 
 <BaseLayout
-	title="KI-Lernplattform für Berufsschulen | LearnSlice"
-	description="Steigern Sie die Übergangsquote in Ausbildung um 15-25 %, reduzieren Sie Abbrüche um 30 % und sparen Sie Lehrkräften 25 % ihrer Zeit mit KI-gestützter Prüfungsvorbereitung."
+	title="KI-Lernplattform f\u00FCr Berufsschulen | LearnSlice"
+	description="Steigern Sie die \u00DCbergangsquote in Ausbildung um 15-25 %, reduzieren Sie Abbr\u00FCche um 30 % und sparen Sie Lehrkr\u00E4ften 25 % ihrer Zeit."
 	lang={lang}
 	currentPath={currentPath}
 >
-	<Header
-		logo={deContent.nav.logo}
-		menu={deContent.nav.menu}
-		cta={deContent.nav.cta}
-		currentLang={lang}
-		currentPath={currentPath}
-	/>
+	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
 
-	<!-- Hero -->
-	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
-		<div class="absolute inset-0 z-0">
-			<img src="/images/hero/hero-background.webp" alt="" class="w-full h-full object-cover opacity-30" aria-hidden="true" />
-			<div class="absolute inset-0 bg-gradient-to-b from-dark/40 via-dark/80 to-dark"></div>
-		</div>
-		<div class="max-w-container mx-auto relative z-10">
-			<div class="max-w-3xl">
-				<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
-					Für Berufsschulen
-				</div>
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-					Bessere Prüfungsergebnisse.<br />Weniger Arbeitsaufwand.
-				</h1>
-				<p class="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
-					LearnSlice bietet Ihren Schülern personalisiertes KI-Coaching, abgestimmt auf IHK-Prüfungsanforderungen. Automatisierte Übungen, Echtzeit-Feedback und adaptive Lernpfade — damit Lehrkräfte sich auf das Wesentliche konzentrieren können.
-				</p>
-				<div class="flex flex-col sm:flex-row gap-4">
-					<a href="#demo-request" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-white/90 transition-colors">
-						Demo anfordern
-					</a>
-				</div>
+	<section class="relative min-h-[75vh] flex items-center pt-32 pb-16 overflow-hidden">
+		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] opacity-20 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.2) 0%, transparent 70%);"></div>
+		<div class="max-w-container mx-auto px-6 md:px-8 relative z-10 py-12 md:py-16">
+			<div class="max-w-[700px]">
+				<span class="section-label mb-5 block">F&uuml;r Berufsschulen</span>
+				<h1 class="text-display-sm md:text-display text-white mb-6">Bessere Pr&uuml;fungsergebnisse.<br />Weniger Arbeitsaufwand.</h1>
+				<p class="text-lg text-muted mb-8 max-w-[560px] leading-relaxed">Personalisiertes KI-Coaching, abgestimmt auf IHK-Pr&uuml;fungsanforderungen. Automatisierte &Uuml;bungen, Echtzeit-Feedback und adaptive Lernpfade.</p>
+				<a href="#demo-request" class="inline-flex items-center justify-center px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Demo anfordern <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
 			</div>
 		</div>
 	</section>
 
-	<!-- Key metrics -->
-	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark border-t border-white/10">
+	<section class="py-16 px-6 md:px-8 border-t border-border">
 		<div class="max-w-container mx-auto">
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">15-25 %</div>
-					<div class="text-white/70 text-sm">Höhere Übergangsquote in Ausbildung</div>
-				</div>
-				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">30 %</div>
-					<div class="text-white/70 text-sm">Weniger Abbrüche im ersten Jahr</div>
-				</div>
-				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">25 %</div>
-					<div class="text-white/70 text-sm">Zeitersparnis für Lehrkräfte</div>
-				</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="text-center"><div class="text-2xl md:text-3xl font-bold text-primary mb-1.5 tracking-tight">15-25 %</div><div class="text-muted text-xs">H&ouml;here &Uuml;bergangsquote</div></div>
+				<div class="text-center"><div class="text-2xl md:text-3xl font-bold text-primary mb-1.5 tracking-tight">30 %</div><div class="text-muted text-xs">Weniger Abbr&uuml;che im ersten Jahr</div></div>
+				<div class="text-center"><div class="text-2xl md:text-3xl font-bold text-primary mb-1.5 tracking-tight">25 %</div><div class="text-muted text-xs">Zeitersparnis f&uuml;r Lehrkr&auml;fte</div></div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Benefits -->
-	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+	<section class="py-20 md:py-32 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
-			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-10 md:mb-14 text-center">
-				So unterstützt LearnSlice Berufsschulen
-			</h2>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<h3 class="text-lg md:text-xl font-bold text-white mb-3">IHK-ausgerichtete Inhalte</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Vorgefertigte Lernpfade, die auf IHK-Prüfungsanforderungen für jeden Ausbildungsberuf abgestimmt sind. Schüler üben mit prüfungsnahen Fragen, die automatisch von der KI generiert werden.</p>
+			<div class="text-center mb-16">
+				<span class="section-label mb-4 block">Vorteile</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">So unterst&uuml;tzt LearnSlice Berufsschulen</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<h3 class="text-base font-semibold text-white mb-3">IHK-ausgerichtete Inhalte</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">Vorgefertigte Lernpfade, abgestimmt auf IHK-Pr&uuml;fungsanforderungen. Sch&uuml;ler &uuml;ben mit pr&uuml;fungsnahen Fragen.</p>
 				</div>
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<h3 class="text-lg md:text-xl font-bold text-white mb-3">24/7 KI-Nachhilfe</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Schüler erhalten personalisiertes Coaching außerhalb der Unterrichtszeiten. Die KI identifiziert Wissenslücken und erstellt gezielte Wiederholungsübungen — ohne zusätzlichen Aufwand für Lehrkräfte.</p>
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<h3 class="text-base font-semibold text-white mb-3">24/7 KI-Nachhilfe</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">Personalisiertes Coaching au&szlig;erhalb der Unterrichtszeiten. Die KI identifiziert Wissensl&uuml;cken und erstellt gezielte &Uuml;bungen.</p>
 				</div>
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<h3 class="text-lg md:text-xl font-bold text-white mb-3">Analytics-Dashboard</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Verfolgen Sie den Fortschritt der Schüler auf einen Blick. Identifizieren Sie gefährdete Schüler frühzeitig, sehen Sie klassenweite Leistungstrends und erstellen Sie Berichte — alles automatisiert.</p>
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<h3 class="text-base font-semibold text-white mb-3">Analytics-Dashboard</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">Sch&uuml;lerfortschritt auf einen Blick. Gef&auml;hrdete Sch&uuml;ler fr&uuml;hzeitig erkennen, Leistungstrends verfolgen.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<LogosSlider
-		headline={deContent.trustedBy.headline}
-		logos={deContent.trustedBy.logos}
-	/>
-
-	<Testimonials
-		headline={deContent.testimonials.headline}
-		items={deContent.testimonials.items}
-		currentLang={lang}
-	/>
-
-	<WhyChooseUs
-		headline={deContent.whyChooseUs.headline}
-		items={deContent.whyChooseUs.items}
-	/>
-
-	<FAQ
-		headline={deContent.faq.headline}
-		items={deContent.faq.items}
-	/>
-
+	<LogosSlider headline={deContent.trustedBy.headline} logos={deContent.trustedBy.logos} />
+	<Testimonials headline={deContent.testimonials.headline} items={deContent.testimonials.items} currentLang={lang} />
+	<WhyChooseUs headline={deContent.whyChooseUs.headline} items={deContent.whyChooseUs.items} />
+	<FAQ headline={deContent.faq.headline} items={deContent.faq.items} />
 	<LeadCapture currentLang={lang} />
-
-	<CTAFooter
-		headline={deContent.cta.headline}
-		subheadline={deContent.cta.subheadline}
-		button={deContent.cta.button}
-		currentLang={lang}
-	/>
-
-	<Footer
-		currentLang={lang}
-		privacyLabel={deContent.footer.privacyLabel}
-		termsLabel={deContent.footer.termsLabel}
-	/>
-
+	<CTAFooter headline={deContent.cta.headline} subheadline={deContent.cta.subheadline} button={deContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
 	<DemoRequestModal currentLang={lang} />
 </BaseLayout>

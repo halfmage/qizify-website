@@ -11,19 +11,19 @@ const { currentLang, currentPath } = Astro.props;
 const alternatePath = getAlternatePath(currentPath, currentLang);
 ---
 
-<nav class="flex items-center gap-2" aria-label="Language selection">
+<nav class="flex items-center gap-1 font-mono text-xs" aria-label="Language selection">
 	<a
 		href={currentLang === 'en' ? '#' : alternatePath}
-		class={`text-white no-underline font-medium text-sm py-1 px-2 transition-opacity duration-200 ${currentLang === 'en' ? 'text-primary pointer-events-none' : 'hover:opacity-70'}`}
+		class={`no-underline py-1 px-1.5 rounded transition-colors duration-200 ${currentLang === 'en' ? 'text-white pointer-events-none' : 'text-muted hover:text-white'}`}
 		aria-current={currentLang === 'en' ? 'page' : undefined}
 		aria-label="Switch to English"
 	>
 		EN
 	</a>
-	<span class="text-gray select-none" aria-hidden="true">|</span>
+	<span class="text-border-light select-none" aria-hidden="true">/</span>
 	<a
 		href={currentLang === 'de' ? '#' : alternatePath}
-		class={`text-white no-underline font-medium text-sm py-1 px-2 transition-opacity duration-200 ${currentLang === 'de' ? 'text-primary pointer-events-none' : 'hover:opacity-70'}`}
+		class={`no-underline py-1 px-1.5 rounded transition-colors duration-200 ${currentLang === 'de' ? 'text-white pointer-events-none' : 'text-muted hover:text-white'}`}
 		aria-current={currentLang === 'de' ? 'page' : undefined}
 		aria-label="Switch to German"
 	>

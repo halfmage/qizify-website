@@ -1,0 +1,302 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Button from '../components/Button.astro';
+import CTAFooter from '../components/CTAFooter.astro';
+import Footer from '../components/Footer.astro';
+import DemoRequestModal from '../components/DemoRequestModal.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+const currentPath = '/apprenticeship-savings-calculator';
+---
+
+<BaseLayout
+	title="Apprenticeship Cost Savings Calculator | LearnSlice"
+	description="Calculate how much your company could save on apprenticeship training with AI-powered coaching. See dropout cost avoidance, productivity gains, and trainer time savings instantly."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header logo={enContent.nav.logo} menu={enContent.nav.menu} cta={enContent.nav.cta} currentLang={lang} currentPath={currentPath} />
+
+	<!-- Hero -->
+	<section class="pt-32 pb-12 md:pb-16 px-6 md:px-8">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[700px]">
+				<span class="section-label mb-4 block">Savings Calculator</span>
+				<h1 class="text-display-sm md:text-display text-white mb-4">How much could you save?</h1>
+				<p class="text-lg text-muted leading-relaxed max-w-[560px]">See what apprenticeship dropouts and slow onboarding actually cost your company — and how much LearnSlice saves.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Calculator -->
+	<section class="py-8 md:py-12 px-6 md:px-8" id="calculator">
+		<div class="max-w-container mx-auto">
+			<div class="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-8 lg:gap-12 items-start">
+
+				<!-- Left: Controls -->
+				<div class="bg-surface border border-border rounded-xl p-6 md:p-8 flex flex-col gap-8 lg:sticky lg:top-24">
+					<div>
+						<label class="font-mono text-label uppercase tracking-widest text-muted block mb-3" for="apprentice-count">
+							Number of apprentices
+						</label>
+						<div class="flex items-center gap-4">
+							<input
+								type="range"
+								id="apprentice-count"
+								min="1"
+								max="100"
+								value="5"
+								class="calc-slider flex-1 h-1.5 bg-border rounded-full appearance-none cursor-pointer accent-primary"
+							/>
+							<span class="text-2xl font-bold text-white tabular-nums min-w-[3ch] text-right" id="apprentice-count-display">5</span>
+						</div>
+					</div>
+
+					<!-- Expandable assumptions -->
+					<details class="group">
+						<summary class="flex items-center gap-2 cursor-pointer select-none text-sm text-muted hover:text-white transition-colors">
+							<svg class="w-3.5 h-3.5 transition-transform duration-200 group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+							Adjust assumptions
+						</summary>
+						<div class="mt-6 flex flex-col gap-5 animate-fadeIn">
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="recruiting-cost">Recruiting cost per apprentice (&euro;)</label>
+								<input type="number" id="recruiting-cost" value="8000" min="0" step="500" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="onboarding-cost">Year 1 training cost per apprentice (&euro;)</label>
+								<input type="number" id="onboarding-cost" value="15000" min="0" step="500" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="dropout-rate">Current dropout rate (%)</label>
+								<input type="number" id="dropout-rate" value="30" min="0" max="100" step="1" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="trainer-hourly">Trainer hourly cost (&euro;)</label>
+								<input type="number" id="trainer-hourly" value="45" min="0" step="5" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="trainer-hours">Trainer hours saved per apprentice/year</label>
+								<input type="number" id="trainer-hours" value="200" min="0" step="10" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+						</div>
+					</details>
+
+					<p class="text-xs text-muted leading-relaxed m-0">Based on German market averages (BIBB). Dropout rate with LearnSlice assumed at 15%. Productivity acceleration: 6 months &rarr; 2 months.</p>
+				</div>
+
+				<!-- Right: Results -->
+				<div class="flex flex-col gap-6">
+					<!-- Total savings highlight -->
+					<div class="bg-surface border border-border rounded-xl p-8 md:p-10 relative overflow-hidden">
+						<div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+						<div class="relative">
+							<span class="font-mono text-label uppercase tracking-widest text-primary block mb-2">Estimated annual savings</span>
+							<div class="text-5xl md:text-6xl font-bold text-white tracking-tight mb-3" id="total-savings">&euro;0</div>
+							<p class="text-sm text-muted m-0">per year with <span id="result-count">5</span> apprentices</p>
+						</div>
+					</div>
+
+					<!-- Breakdown cards -->
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+						<div class="bg-surface p-6 flex flex-col gap-2">
+							<span class="font-mono text-label uppercase tracking-widest text-muted">Dropout cost avoidance</span>
+							<div class="text-2xl font-bold text-white tracking-tight" id="dropout-savings">&euro;0</div>
+							<p class="text-xs text-muted m-0 leading-relaxed">Fewer apprentices lost means less wasted recruiting &amp; training investment.</p>
+						</div>
+						<div class="bg-surface p-6 flex flex-col gap-2">
+							<span class="font-mono text-label uppercase tracking-widest text-muted">Productivity gains</span>
+							<div class="text-2xl font-bold text-white tracking-tight" id="productivity-savings">&euro;0</div>
+							<p class="text-xs text-muted m-0 leading-relaxed">Apprentices productive in 2 months instead of 6 &mdash; 4 months of extra output.</p>
+						</div>
+						<div class="bg-surface p-6 flex flex-col gap-2">
+							<span class="font-mono text-label uppercase tracking-widest text-muted">Trainer time saved</span>
+							<div class="text-2xl font-bold text-white tracking-tight" id="trainer-savings">&euro;0</div>
+							<p class="text-xs text-muted m-0 leading-relaxed">~200 hours per apprentice freed up for value-creating work.</p>
+						</div>
+					</div>
+
+					<!-- Before / After comparison -->
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+						<div class="bg-surface p-6">
+							<span class="font-mono text-label uppercase tracking-widest text-muted block mb-3">Without LearnSlice</span>
+							<div class="flex flex-col gap-3">
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Dropouts per year</span>
+									<span class="text-white font-medium tabular-nums" id="dropouts-without">2</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Cost of dropouts</span>
+									<span class="text-white font-medium tabular-nums" id="dropout-cost-without">&euro;0</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Months to productivity</span>
+									<span class="text-white font-medium">6 months</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Trainer hours/year</span>
+									<span class="text-white font-medium tabular-nums" id="trainer-hours-without">0</span>
+								</div>
+							</div>
+						</div>
+						<div class="bg-surface p-6 relative">
+							<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+							<span class="font-mono text-label uppercase tracking-widest text-primary block mb-3 relative">With LearnSlice</span>
+							<div class="flex flex-col gap-3 relative">
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Dropouts per year</span>
+									<span class="text-white font-medium tabular-nums" id="dropouts-with">1</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Cost of dropouts</span>
+									<span class="text-white font-medium tabular-nums" id="dropout-cost-with">&euro;0</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Months to productivity</span>
+									<span class="text-primary font-medium">2 months</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Trainer hours/year</span>
+									<span class="text-white font-medium tabular-nums" id="trainer-hours-with">0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CTA -->
+					<div class="bg-surface border border-border rounded-xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+						<div>
+							<p class="text-sm font-medium text-white m-0 mb-1">Ready to start saving?</p>
+							<p class="text-xs text-muted m-0">See LearnSlice in action with a personalized demo.</p>
+						</div>
+						<Button variant="primary" href="#demo-request" class="whitespace-nowrap">
+							Book Free Demo
+							<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+						</Button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<CTAFooter headline={enContent.cta.headline} subheadline={enContent.cta.subheadline} button={enContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={enContent.footer.privacyLabel} termsLabel={enContent.footer.termsLabel} />
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>
+
+<script>
+	function initCalculator() {
+		const slider = document.getElementById('apprentice-count') as HTMLInputElement;
+		const countDisplay = document.getElementById('apprentice-count-display');
+		const resultCount = document.getElementById('result-count');
+		const inputs = document.querySelectorAll('.calc-input');
+
+		if (!slider) return;
+
+		function getVal(id: string, fallback: number): number {
+			const el = document.getElementById(id) as HTMLInputElement;
+			return el ? (parseFloat(el.value) || fallback) : fallback;
+		}
+
+		function fmt(n: number): string {
+			return '€' + Math.round(n).toLocaleString('de-DE');
+		}
+
+		function calculate() {
+			const count = parseInt(slider.value);
+			const recruitCost = getVal('recruiting-cost', 8000);
+			const onboardCost = getVal('onboarding-cost', 15000);
+			const dropoutRate = getVal('dropout-rate', 30) / 100;
+			const trainerHourly = getVal('trainer-hourly', 45);
+			const trainerHoursSaved = getVal('trainer-hours', 200);
+
+			const dropoutRateWith = dropoutRate * 0.5; // LearnSlice halves dropout
+			const costPerDropout = recruitCost + onboardCost;
+
+			// Dropout savings
+			const dropoutsWithout = Math.round(count * dropoutRate * 10) / 10;
+			const dropoutsWith = Math.round(count * dropoutRateWith * 10) / 10;
+			const dropoutCostWithout = dropoutsWithout * costPerDropout;
+			const dropoutCostWith = dropoutsWith * costPerDropout;
+			const dropoutSavings = dropoutCostWithout - dropoutCostWith;
+
+			// Productivity: 4 months earlier × value per month
+			// Conservative: use onboarding cost / 12 as monthly productivity proxy
+			const monthlyValue = onboardCost / 12;
+			const monthsGained = 4; // 6 → 2 months
+			const productivitySavings = count * monthsGained * monthlyValue;
+
+			// Trainer time savings
+			const trainerSavings = count * trainerHoursSaved * trainerHourly;
+
+			const totalSavings = dropoutSavings + productivitySavings + trainerSavings;
+
+			// Trainer hours
+			const baseTrainerHours = 400; // ~8hrs/week × 50 weeks
+			const trainerHoursWithout = count * baseTrainerHours;
+			const trainerHoursWith = count * (baseTrainerHours - trainerHoursSaved);
+
+			// Update DOM
+			if (countDisplay) countDisplay.textContent = count.toString();
+			if (resultCount) resultCount.textContent = count.toString();
+
+			const el = (id: string) => document.getElementById(id);
+			const set = (id: string, val: string) => { const e = el(id); if (e) e.textContent = val; };
+
+			set('total-savings', fmt(totalSavings));
+			set('dropout-savings', fmt(dropoutSavings));
+			set('productivity-savings', fmt(productivitySavings));
+			set('trainer-savings', fmt(trainerSavings));
+			set('dropouts-without', dropoutsWithout.toFixed(1));
+			set('dropouts-with', dropoutsWith.toFixed(1));
+			set('dropout-cost-without', fmt(dropoutCostWithout));
+			set('dropout-cost-with', fmt(dropoutCostWith));
+			set('trainer-hours-without', trainerHoursWithout.toLocaleString('de-DE'));
+			set('trainer-hours-with', trainerHoursWith.toLocaleString('de-DE'));
+		}
+
+		slider.addEventListener('input', calculate);
+		inputs.forEach(input => input.addEventListener('input', calculate));
+
+		// Initial calculation
+		calculate();
+	}
+
+	document.addEventListener('DOMContentLoaded', initCalculator);
+	document.addEventListener('astro:page-load', initCalculator);
+</script>
+
+<style>
+	.calc-slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #7c5cfc;
+		cursor: pointer;
+		border: 2px solid #0a0a0b;
+		box-shadow: 0 0 0 3px rgba(124, 92, 252, 0.2);
+	}
+
+	.calc-slider::-moz-range-thumb {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #7c5cfc;
+		cursor: pointer;
+		border: 2px solid #0a0a0b;
+		box-shadow: 0 0 0 3px rgba(124, 92, 252, 0.2);
+	}
+
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(-4px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	.animate-fadeIn {
+		animation: fadeIn 0.2s ease-out;
+	}
+</style>

@@ -4,7 +4,7 @@
 
 @layer base {
 	html {
-		font-family: 'Poppins', sans-serif;
+		font-family: 'Inter Variable', 'Inter', system-ui, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		scroll-behavior: smooth;
@@ -38,12 +38,22 @@
 		clip: rect(0, 0, 0, 0);
 	}
 
-	.learnslice-gradient {
-		@apply bg-gradient-to-r from-[#6665F1] via-[#D548EF] to-[#FB7286];
+	/* Section label - monospaced uppercase micro-label */
+	.section-label {
+		@apply font-mono text-label uppercase tracking-widest text-primary;
 	}
 
-	.learnslice-gradient-low {
-		@apply bg-gradient-to-r from-[#6665F150] via-[#D548EF50] to-[#FB728650];
+	/* Subtle violet glow */
+	.glow-violet {
+		box-shadow: 0 0 80px 20px rgba(124, 92, 252, 0.08);
+	}
+
+	/* Gradient text utility */
+	.gradient-text {
+		background: linear-gradient(135deg, #ededef 0%, #8b8b8e 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
 	}
 }
 
@@ -57,7 +67,7 @@
 			animation-iteration-count: 1 !important;
 			transition-duration: 0.01ms !important;
 		}
-		
+
 		html {
 			scroll-behavior: auto;
 		}

@@ -4,7 +4,7 @@
 
 ## About
 
-LearnSlice is a B2B SaaS platform that automates mentoring for apprentices (Azubis) in German companies. It combines IHK exam-aligned learning paths with company-specific knowledge into personalized AI coaching — making apprentices job-ready in 8 weeks instead of 6 months.
+LearnSlice is a B2B SaaS platform that automates mentoring for apprentices (Azubis) in German companies. It combines IHK exam-aligned learning paths with company-specific knowledge into personalized AI coaching - making apprentices job-ready in 8 weeks instead of 6 months.
 
 ## Key Features
 

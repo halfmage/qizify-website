@@ -13,187 +13,83 @@ const lang = 'de';
 const currentPath = '/de/learnslice-vs-simpleclub';
 ---
 
-<BaseLayout
-	title="LearnSlice vs. Simpleclub: Was ist besser für die Ausbildung?"
-	description="Detaillierter Vergleich von LearnSlice und Simpleclub für die Berufsausbildung. KI-Coaching, IHK-Ausrichtung, Unternehmenswissen-Integration, DSGVO-Konformität und Preise im Vergleich."
-	lang={lang}
-	currentPath={currentPath}
->
-	<Header
-		logo={deContent.nav.logo}
-		menu={deContent.nav.menu}
-		cta={deContent.nav.cta}
-		currentLang={lang}
-		currentPath={currentPath}
-	/>
+<BaseLayout title="LearnSlice vs. Simpleclub: Was ist besser f\u00FCr die Ausbildung?" description="Detaillierter Vergleich von LearnSlice und Simpleclub f\u00FCr die Berufsausbildung." lang={lang} currentPath={currentPath}>
+	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
 
-	<!-- Hero -->
-	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark">
-		<div class="max-w-4xl mx-auto text-center">
-			<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
-				Vergleich
-			</div>
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-				LearnSlice vs. Simpleclub
-			</h1>
-			<p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-				Beide Plattformen bedienen den deutschen Ausbildungsmarkt — aber mit grundlegend unterschiedlichen Ansätzen. So schneiden sie für Unternehmen im Vergleich ab.
-			</p>
+	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center">
+			<span class="section-label mb-5 block">Vergleich</span>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Simpleclub</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Beide Plattformen bedienen den deutschen Ausbildungsmarkt &mdash; mit grundlegend unterschiedlichen Ans&auml;tzen.</p>
 		</div>
 	</section>
 
-	<!-- Overview -->
-	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark">
-		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-			<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-				<h3 class="text-xl font-bold text-white mb-3">Simpleclub</h3>
-				<p class="text-white/70 text-sm leading-relaxed mb-4">Eine beliebte B2C/B2B-Lernplattform mit videobasierten Inhalten zu Schulfächern und Ausbildungsthemen. Starke Markenbekanntheit bei jüngeren Zielgruppen.</p>
-				<ul class="text-white/60 text-sm space-y-2">
-					<li>Videobasierte Lerninhalte</li>
-					<li>B2C-Ursprung, auf B2B erweitert</li>
-					<li>Breite Themenabdeckung</li>
-					<li>Große Nutzerbasis</li>
-				</ul>
+	<section class="py-12 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+			<div class="bg-surface p-8">
+				<h3 class="text-base font-semibold text-white mb-3">Simpleclub</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4">Beliebte B2C/B2B-Lernplattform mit videobasierten Inhalten zu Schulf&auml;chern und Ausbildungsthemen.</p>
+				<ul class="text-sm text-muted space-y-2"><li>Videobasierte Lerninhalte</li><li>B2C-Ursprung, auf B2B erweitert</li><li>Breite Themenabdeckung</li><li>Gro&szlig;e Nutzerbasis</li></ul>
 			</div>
-			<div class="bg-primary/10 border border-primary/30 rounded-2xl p-6 md:p-8">
-				<h3 class="text-xl font-bold text-primary mb-3">LearnSlice</h3>
-				<p class="text-white/70 text-sm leading-relaxed mb-4">Eine B2B-KI-Plattform, speziell für die Berufsausbildung entwickelt. Kombiniert IHK-Prüfungsvorbereitung mit unternehmensspezifischem Wissen durch personalisiertes KI-Coaching und adaptive Lernpfade.</p>
-				<ul class="text-white/80 text-sm space-y-2">
-					<li>KI-Coaching mit personalisierten Lernpfaden</li>
-					<li>Von Anfang an für B2B gebaut</li>
-					<li>Integration von Unternehmenswissen via RAG</li>
-					<li>IHK-prüfungsausgerichtete Assessments</li>
-				</ul>
+			<div class="bg-surface p-8 relative">
+				<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+				<h3 class="text-base font-semibold text-primary mb-3 relative">LearnSlice</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4 relative">B2B-KI-Plattform f&uuml;r die Berufsausbildung. Kombiniert IHK-Pr&uuml;fungsvorbereitung mit Unternehmenswissen.</p>
+				<ul class="text-sm text-white/70 space-y-2 relative"><li>KI-Coaching mit personalisierten Lernpfaden</li><li>Von Anfang an f&uuml;r B2B</li><li>Unternehmenswissen-Integration via RAG</li><li>IHK-pr&uuml;fungsausgerichtete Assessments</li></ul>
 			</div>
 		</div>
 	</section>
 
-	<!-- Feature comparison -->
-	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
-		<div class="max-w-5xl mx-auto">
-			<h2 class="text-2xl md:text-3xl font-bold text-white mb-10 text-center">Feature-Vergleich im Detail</h2>
-			<div class="overflow-x-auto">
+	<section class="py-12 md:py-20 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto">
+			<div class="text-center mb-14"><span class="section-label mb-4 block">Features</span><h2 class="text-heading md:text-display-sm text-white m-0">Feature-Vergleich im Detail</h2></div>
+			<div class="overflow-x-auto rounded-xl border border-border">
 				<table class="w-full border-collapse">
 					<thead>
 						<tr>
-							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Merkmal</th>
-							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Simpleclub</th>
-							<th class="text-left text-sm font-medium p-4 border-b border-primary/50 w-1/3 bg-primary/10 rounded-t-xl">
-								<span class="text-primary">LearnSlice</span>
-							</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Merkmal</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Simpleclub</th>
+							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
 						</tr>
 					</thead>
-					<tbody class="text-sm md:text-base">
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Lernansatz</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Video-Lektionen + Übungen</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">KI-Chat-Coaching + adaptive Pfade</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Personalisierung</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Themenempfehlungen</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Volle KI-Anpassung pro Lernenden</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Unternehmenswissen</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Nicht verfügbar</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Dokumente hochladen, KI lernt daraus</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">IHK-Prüfungsausrichtung</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Allgemeine Abdeckung</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Abgestimmt auf IHK nach Beruf & Region</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Prüfungsformate</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Multiple-Choice-Quizzes</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Quizzes + Fallstudien + Deep Dives</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">KI-Coaching</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Begrenzte KI-Funktionen</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Voller KI-Tutor rund um die Uhr</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Ausbilder-Analytics</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Basis-Reports</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Executive Dashboards mit Kompetenz-Tracking</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Daten-Hosting</td>
-							<td class="text-white/50 p-4 border-b border-white/10">EU</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Ausschließlich Deutschland</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Zielgruppe</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Schüler & Azubis (B2C)</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Unternehmen & deren Azubis (B2B)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 font-medium">Onboarding-Support</td>
-							<td class="text-white/50 p-4">Self-Service</td>
-							<td class="text-white p-4 bg-primary/5 font-semibold rounded-b-xl">Persönliches Setup + Support-Team</td>
-						</tr>
+					<tbody class="text-sm">
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Lernansatz</td><td class="text-muted p-4 border-b border-border">Video-Lektionen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">KI-Chat-Coaching + adaptive Pfade</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Personalisierung</td><td class="text-muted p-4 border-b border-border">Themenempfehlungen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Volle KI-Anpassung pro Lernenden</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Nicht verf&uuml;gbar</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI lernt</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK-Ausrichtung</td><td class="text-muted p-4 border-b border-border">Allgemein</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Nach Beruf & Region</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Pr&uuml;fungsformate</td><td class="text-muted p-4 border-b border-border">Multiple-Choice</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Quizzes + Fallstudien + Deep Dives</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">KI-Coaching</td><td class="text-muted p-4 border-b border-border">Begrenzte KI</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller KI-Tutor 24/7</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Analytics</td><td class="text-muted p-4 border-b border-border">Basis-Reports</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive Dashboards</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Daten-Hosting</td><td class="text-muted p-4 border-b border-border">EU</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Deutschland</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Zielgruppe</td><td class="text-muted p-4 border-b border-border">B2C</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">B2B</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Onboarding</td><td class="text-muted p-4">Self-Service</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Pers&ouml;nliches Setup + Support</td></tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</section>
 
-	<!-- When to choose -->
-	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+	<section class="py-20 md:py-32 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
-			<h2 class="text-2xl md:text-3xl font-bold text-white mb-10 text-center">Wann welche Plattform wählen</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<h3 class="text-lg font-bold text-white mb-4">Wählen Sie Simpleclub, wenn Sie...</h3>
-					<ul class="text-white/70 text-sm space-y-3">
-						<li>Ein Selbstlerntool für einzelne Azubis brauchen</li>
-						<li>Breite Bildungsinhalte jenseits der Ausbildung wünschen</li>
-						<li>Videobasiertes Lernen bevorzugen</li>
-						<li>Kein unternehmensspezifisches Wissen integrieren müssen</li>
-					</ul>
+			<div class="text-center mb-16"><span class="section-label mb-4 block">Entscheidung</span><h2 class="text-heading md:text-display-sm text-white m-0">Wann welche Plattform w&auml;hlen</h2></div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+				<div class="bg-surface p-8">
+					<h3 class="text-base font-semibold text-white mb-4">W&auml;hlen Sie Simpleclub, wenn Sie...</h3>
+					<ul class="text-sm text-muted space-y-3"><li>Ein Selbstlerntool f&uuml;r einzelne Azubis brauchen</li><li>Breite Bildungsinhalte w&uuml;nschen</li><li>Videobasiertes Lernen bevorzugen</li><li>Kein Unternehmenswissen integrieren m&uuml;ssen</li></ul>
 				</div>
-				<div class="bg-primary/10 border border-primary/30 rounded-2xl p-6 md:p-8">
-					<h3 class="text-lg font-bold text-primary mb-4">Wählen Sie LearnSlice, wenn Sie...</h3>
-					<ul class="text-white/80 text-sm space-y-3">
-						<li>Ausbildungskosten und Ausbilderzeit messbar senken wollen</li>
-						<li>Unternehmensspezifische Onboarding-Inhalte einbinden müssen</li>
-						<li>IHK-prüfungsausgerichtete Lernpfade pro Beruf brauchen</li>
-						<li>KI-Coaching wollen, das sich jedem Azubi anpasst</li>
-						<li>Daten ausschließlich in Deutschland gehostet brauchen</li>
-						<li>Executive-Analytics zum Ausbildungs-ROI wünschen</li>
-					</ul>
+				<div class="bg-surface p-8 relative">
+					<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+					<h3 class="text-base font-semibold text-primary mb-4 relative">W&auml;hlen Sie LearnSlice, wenn Sie...</h3>
+					<ul class="text-sm text-white/70 space-y-3 relative"><li>Kosten und Ausbilderzeit messbar senken wollen</li><li>Unternehmensspezifische Inhalte einbinden m&uuml;ssen</li><li>IHK-ausgerichtete Lernpfade pro Beruf brauchen</li><li>KI-Coaching wollen, das sich anpasst</li><li>Daten in Deutschland gehostet brauchen</li><li>Executive-Analytics zum ROI w&uuml;nschen</li></ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<LogosSlider
-		headline={deContent.trustedBy.headline}
-		logos={deContent.trustedBy.logos}
-	/>
-
-	<Testimonials
-		headline={deContent.testimonials.headline}
-		items={deContent.testimonials.items}
-		currentLang={lang}
-	/>
-
+	<LogosSlider headline={deContent.trustedBy.headline} logos={deContent.trustedBy.logos} />
+	<Testimonials headline={deContent.testimonials.headline} items={deContent.testimonials.items} currentLang={lang} />
 	<LeadCapture currentLang={lang} />
-
-	<CTAFooter
-		headline={deContent.cta.headline}
-		subheadline={deContent.cta.subheadline}
-		button={deContent.cta.button}
-		currentLang={lang}
-	/>
-
-	<Footer
-		currentLang={lang}
-		privacyLabel={deContent.footer.privacyLabel}
-		termsLabel={deContent.footer.termsLabel}
-	/>
-
+	<CTAFooter headline={deContent.cta.headline} subheadline={deContent.cta.subheadline} button={deContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
 	<DemoRequestModal currentLang={lang} />
 </BaseLayout>

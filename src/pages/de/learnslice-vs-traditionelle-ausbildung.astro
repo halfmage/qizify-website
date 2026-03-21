@@ -13,167 +13,73 @@ const lang = 'de';
 const currentPath = '/de/learnslice-vs-traditionelle-ausbildung';
 ---
 
-<BaseLayout
-	title="LearnSlice vs. Traditionelle Ausbildung | Vergleich"
-	description="Vergleichen Sie KI-gestützte Ausbildung mit LearnSlice gegen traditionelle Methoden. Sehen Sie, wie KI-Coaching, personalisierte Lernpfade und automatisierte Prüfungen das manuelle Training übertreffen."
-	lang={lang}
-	currentPath={currentPath}
->
-	<Header
-		logo={deContent.nav.logo}
-		menu={deContent.nav.menu}
-		cta={deContent.nav.cta}
-		currentLang={lang}
-		currentPath={currentPath}
-	/>
+<BaseLayout title="LearnSlice vs. Traditionelle Ausbildung | Vergleich" description="Vergleichen Sie KI-gest\u00FCtzte Ausbildung mit LearnSlice gegen traditionelle Methoden." lang={lang} currentPath={currentPath}>
+	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
 
-	<!-- Hero -->
-	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark">
-		<div class="max-w-4xl mx-auto text-center">
-			<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
-				Vergleich
-			</div>
-			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-				LearnSlice vs. Traditionelle<br />Ausbildungsmethoden
-			</h1>
-			<p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-				Sehen Sie, wie KI-gestützte Ausbildung im Vergleich zu klassischem Präsenzunterricht, manueller Betreuung und externen IHK-Vorbereitungskursen abschneidet.
-			</p>
+	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center">
+			<span class="section-label mb-5 block">Vergleich</span>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Traditionelle Ausbildungsmethoden</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Sehen Sie, wie KI-gest&uuml;tzte Ausbildung im Vergleich zu klassischen Methoden abschneidet.</p>
 		</div>
 	</section>
 
-	<!-- Comparison table -->
-	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
-		<div class="max-w-5xl mx-auto">
-			<div class="overflow-x-auto">
+	<section class="py-12 md:py-20 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto">
+			<div class="overflow-x-auto rounded-xl border border-border">
 				<table class="w-full border-collapse">
 					<thead>
 						<tr>
-							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Merkmal</th>
-							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Traditionelle Ausbildung</th>
-							<th class="text-left text-sm font-medium p-4 border-b border-primary/50 w-1/3 bg-primary/10 rounded-t-xl">
-								<span class="text-primary">LearnSlice</span>
-							</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Merkmal</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Traditionell</th>
+							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
 						</tr>
 					</thead>
-					<tbody class="text-sm md:text-base">
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Zeit bis zur Produktivität</td>
-							<td class="text-white/50 p-4 border-b border-white/10">4-6 Monate</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">8 Wochen (65 % schneller)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Ausbilderzeit pro Woche</td>
-							<td class="text-white/50 p-4 border-b border-white/10">8-12 Stunden pro Azubi</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">4-6 Stunden (50 % weniger)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Abbruchquote</td>
-							<td class="text-white/50 p-4 border-b border-white/10">30 % Durchschnitt</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">15 % (halbiert)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Verfügbarkeit</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Nur während der Arbeitszeit</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">24/7 KI-Coaching</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Personalisierung</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Ein Lehrplan für alle</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Adaptiv pro Lernenden</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">IHK-Prüfungsvorbereitung</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Externe Kurse (€500-€2.000)</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Integriert, KI-generiert</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Unternehmenswissen</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Manuelle Übergabe</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Dokumente hochladen, KI integriert</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Fortschrittskontrolle</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Manuelle Notizen</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Echtzeit-Analytics-Dashboard</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Prüfungsformate</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Papier-Tests</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Quizzes, Fallstudien, Deep Dives</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Kosten pro Azubi/Jahr</td>
-							<td class="text-white/50 p-4 border-b border-white/10">€37.000+</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">€15.500 (€21K+ sparen)</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 border-b border-white/10 font-medium">DSGVO-Konformität</td>
-							<td class="text-white/50 p-4 border-b border-white/10">Unterschiedlich</td>
-							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">100 % — gehostet in Deutschland</td>
-						</tr>
-						<tr>
-							<td class="text-white/70 p-4 font-medium">Skalierbarkeit</td>
-							<td class="text-white/50 p-4">Lineare Kostensteigerung</td>
-							<td class="text-white p-4 bg-primary/5 font-semibold rounded-b-xl">Einmal einrichten, unbegrenzt nutzen</td>
-						</tr>
+					<tbody class="text-sm">
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Zeit bis Produktivit&auml;t</td><td class="text-muted p-4 border-b border-border">4-6 Monate</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">8 Wochen (65 % schneller)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbilderzeit/Woche</td><td class="text-muted p-4 border-b border-border">8-12 Std. pro Azubi</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">4-6 Std. (50 % weniger)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Abbruchquote</td><td class="text-muted p-4 border-b border-border">30 % Durchschnitt</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">15 % (halbiert)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Verf&uuml;gbarkeit</td><td class="text-muted p-4 border-b border-border">Nur Arbeitszeit</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">24/7 KI-Coaching</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Personalisierung</td><td class="text-muted p-4 border-b border-border">Ein Lehrplan f&uuml;r alle</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Adaptiv pro Lernenden</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK-Pr&uuml;fungsvorbereitung</td><td class="text-muted p-4 border-b border-border">Externe Kurse (&euro;500-&euro;2.000)</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Integriert, KI-generiert</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Manuelle &Uuml;bergabe</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI integriert</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Fortschrittskontrolle</td><td class="text-muted p-4 border-b border-border">Manuelle Notizen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Echtzeit-Analytics</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Kosten/Azubi/Jahr</td><td class="text-muted p-4 border-b border-border">&euro;37.000+</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">&euro;15.500 (&euro;21K+ sparen)</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">DSGVO</td><td class="text-muted p-4 border-b border-border">Unterschiedlich</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">100 % &mdash; Deutschland</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Skalierbarkeit</td><td class="text-muted p-4">Lineare Kostensteigerung</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Einmal einrichten, unbegrenzt</td></tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</section>
 
-	<!-- Why switch -->
-	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+	<section class="py-20 md:py-32 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
-			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-10 md:mb-14 text-center">
-				Warum Unternehmen wechseln
-			</h2>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<div class="text-3xl font-bold text-primary mb-3">€32K+</div>
-					<h3 class="text-lg font-bold text-white mb-2">Ersparnis pro Azubi</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Weniger Ausbilderzeit, keine externen Kurse, schnellere Produktivität und weniger kostspielige Abbrüche — die Einsparungen summieren sich schnell.</p>
+			<div class="text-center mb-16"><span class="section-label mb-4 block">Ergebnisse</span><h2 class="text-heading md:text-display-sm text-white m-0">Warum Unternehmen wechseln</h2></div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<div class="text-2xl font-bold text-primary mb-2 tracking-tight">&euro;32K+</div>
+					<h3 class="text-base font-semibold text-white mb-2">Ersparnis pro Azubi</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">Weniger Ausbilderzeit, keine externen Kurse, schnellere Produktivit&auml;t.</p>
 				</div>
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<div class="text-3xl font-bold text-primary mb-3">24/7</div>
-					<h3 class="text-lg font-bold text-white mb-2">KI-Coaching-Verfügbarkeit</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Azubis sind nicht auf den Terminplan des Ausbilders angewiesen. Der KI-Coach beantwortet Fragen, erklärt Konzepte und stellt Übungen bereit — jederzeit.</p>
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<div class="text-2xl font-bold text-primary mb-2 tracking-tight">24/7</div>
+					<h3 class="text-base font-semibold text-white mb-2">KI-Coaching</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">Der KI-Coach beantwortet Fragen und stellt &Uuml;bungen bereit &mdash; jederzeit.</p>
 				</div>
-				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
-					<div class="text-3xl font-bold text-primary mb-3">8 Wo.</div>
-					<h3 class="text-lg font-bold text-white mb-2">Bis zur vollen Produktivität</h3>
-					<p class="text-white/70 text-sm leading-relaxed">Strukturierte IHK-Lernpfade kombiniert mit Unternehmenswissen machen Azubis 65 % schneller einsatzbereit als traditionelle Methoden.</p>
+				<div class="bg-surface p-8 hover:bg-[#151517] transition-colors duration-200">
+					<div class="text-2xl font-bold text-primary mb-2 tracking-tight">8 Wo.</div>
+					<h3 class="text-base font-semibold text-white mb-2">Bis zur Produktivit&auml;t</h3>
+					<p class="text-sm text-muted leading-relaxed m-0">IHK-Lernpfade + Unternehmenswissen = 65 % schneller einsatzbereit.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<LogosSlider
-		headline={deContent.trustedBy.headline}
-		logos={deContent.trustedBy.logos}
-	/>
-
-	<Testimonials
-		headline={deContent.testimonials.headline}
-		items={deContent.testimonials.items}
-		currentLang={lang}
-	/>
-
+	<LogosSlider headline={deContent.trustedBy.headline} logos={deContent.trustedBy.logos} />
+	<Testimonials headline={deContent.testimonials.headline} items={deContent.testimonials.items} currentLang={lang} />
 	<LeadCapture currentLang={lang} />
-
-	<CTAFooter
-		headline={deContent.cta.headline}
-		subheadline={deContent.cta.subheadline}
-		button={deContent.cta.button}
-		currentLang={lang}
-	/>
-
-	<Footer
-		currentLang={lang}
-		privacyLabel={deContent.footer.privacyLabel}
-		termsLabel={deContent.footer.termsLabel}
-	/>
-
+	<CTAFooter headline={deContent.cta.headline} subheadline={deContent.cta.subheadline} button={deContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
 	<DemoRequestModal currentLang={lang} />
 </BaseLayout>

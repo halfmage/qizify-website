@@ -1,0 +1,293 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Button from '../../components/Button.astro';
+import CTAFooter from '../../components/CTAFooter.astro';
+import Footer from '../../components/Footer.astro';
+import DemoRequestModal from '../../components/DemoRequestModal.astro';
+import deContent from '../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de/ausbildungskosten-rechner';
+---
+
+<BaseLayout
+	title="Ausbildungskosten-Rechner: Einsparungen berechnen | LearnSlice"
+	description="Berechnen Sie, wie viel Ihr Unternehmen bei der Ausbildung mit KI-gest&uuml;tztem Coaching sparen k&ouml;nnte. Abbruchkosten, Produktivit&auml;tsgewinne und Zeitersparnis sofort sehen."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
+
+	<!-- Hero -->
+	<section class="pt-32 pb-12 md:pb-16 px-6 md:px-8">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[700px]">
+				<span class="section-label mb-4 block">Einsparungsrechner</span>
+				<h1 class="text-display-sm md:text-display text-white mb-4">Wie viel k&ouml;nnten Sie sparen?</h1>
+				<p class="text-lg text-muted leading-relaxed max-w-[560px]">Sehen Sie, was Ausbildungsabbr&uuml;che und langsames Onboarding Ihr Unternehmen tats&auml;chlich kosten &mdash; und wie viel LearnSlice einspart.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Calculator -->
+	<section class="py-8 md:py-12 px-6 md:px-8" id="calculator">
+		<div class="max-w-container mx-auto">
+			<div class="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-8 lg:gap-12 items-start">
+
+				<!-- Left: Controls -->
+				<div class="bg-surface border border-border rounded-xl p-6 md:p-8 flex flex-col gap-8 lg:sticky lg:top-24">
+					<div>
+						<label class="font-mono text-label uppercase tracking-widest text-muted block mb-3" for="apprentice-count">
+							Anzahl Auszubildende
+						</label>
+						<div class="flex items-center gap-4">
+							<input
+								type="range"
+								id="apprentice-count"
+								min="1"
+								max="100"
+								value="5"
+								class="calc-slider flex-1 h-1.5 bg-border rounded-full appearance-none cursor-pointer accent-primary"
+							/>
+							<span class="text-2xl font-bold text-white tabular-nums min-w-[3ch] text-right" id="apprentice-count-display">5</span>
+						</div>
+					</div>
+
+					<!-- Expandable assumptions -->
+					<details class="group">
+						<summary class="flex items-center gap-2 cursor-pointer select-none text-sm text-muted hover:text-white transition-colors">
+							<svg class="w-3.5 h-3.5 transition-transform duration-200 group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+							Annahmen anpassen
+						</summary>
+						<div class="mt-6 flex flex-col gap-5 animate-fadeIn">
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="recruiting-cost">Recruiting-Kosten pro Azubi (&euro;)</label>
+								<input type="number" id="recruiting-cost" value="8000" min="0" step="500" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="onboarding-cost">Ausbildungskosten 1. Jahr pro Azubi (&euro;)</label>
+								<input type="number" id="onboarding-cost" value="15000" min="0" step="500" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="dropout-rate">Aktuelle Abbruchquote (%)</label>
+								<input type="number" id="dropout-rate" value="30" min="0" max="100" step="1" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="trainer-hourly">Stundensatz Ausbilder (&euro;)</label>
+								<input type="number" id="trainer-hourly" value="45" min="0" step="5" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+							<div>
+								<label class="text-xs text-muted block mb-1.5" for="trainer-hours">Eingesparte Ausbilderstunden pro Azubi/Jahr</label>
+								<input type="number" id="trainer-hours" value="200" min="0" step="10" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+							</div>
+						</div>
+					</details>
+
+					<p class="text-xs text-muted leading-relaxed m-0">Basierend auf deutschen Marktdurchschnitten (BIBB). Abbruchquote mit LearnSlice: 15 %. Produktivit&auml;tsbeschleunigung: 6 Monate &rarr; 2 Monate.</p>
+				</div>
+
+				<!-- Right: Results -->
+				<div class="flex flex-col gap-6">
+					<!-- Total savings highlight -->
+					<div class="bg-surface border border-border rounded-xl p-8 md:p-10 relative overflow-hidden">
+						<div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+						<div class="relative">
+							<span class="font-mono text-label uppercase tracking-widest text-primary block mb-2">Gesch&auml;tzte j&auml;hrliche Einsparung</span>
+							<div class="text-5xl md:text-6xl font-bold text-white tracking-tight mb-3" id="total-savings">&euro;0</div>
+							<p class="text-sm text-muted m-0">pro Jahr mit <span id="result-count">5</span> Auszubildenden</p>
+						</div>
+					</div>
+
+					<!-- Breakdown cards -->
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+						<div class="bg-surface p-6 flex flex-col gap-2">
+							<span class="font-mono text-label uppercase tracking-widest text-muted">Vermiedene Abbruchkosten</span>
+							<div class="text-2xl font-bold text-white tracking-tight" id="dropout-savings">&euro;0</div>
+							<p class="text-xs text-muted m-0 leading-relaxed">Weniger Abbr&uuml;che = weniger verlorene Recruiting- &amp; Ausbildungsinvestitionen.</p>
+						</div>
+						<div class="bg-surface p-6 flex flex-col gap-2">
+							<span class="font-mono text-label uppercase tracking-widest text-muted">Produktivit&auml;tsgewinn</span>
+							<div class="text-2xl font-bold text-white tracking-tight" id="productivity-savings">&euro;0</div>
+							<p class="text-xs text-muted m-0 leading-relaxed">Azubis in 2 statt 6 Monaten produktiv &mdash; 4 Monate zus&auml;tzliche Wertsch&ouml;pfung.</p>
+						</div>
+						<div class="bg-surface p-6 flex flex-col gap-2">
+							<span class="font-mono text-label uppercase tracking-widest text-muted">Eingesparte Ausbilderzeit</span>
+							<div class="text-2xl font-bold text-white tracking-tight" id="trainer-savings">&euro;0</div>
+							<p class="text-xs text-muted m-0 leading-relaxed">~200 Stunden pro Azubi f&uuml;r wertsch&ouml;pfende Arbeit frei.</p>
+						</div>
+					</div>
+
+					<!-- Before / After comparison -->
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+						<div class="bg-surface p-6">
+							<span class="font-mono text-label uppercase tracking-widest text-muted block mb-3">Ohne LearnSlice</span>
+							<div class="flex flex-col gap-3">
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Abbr&uuml;che pro Jahr</span>
+									<span class="text-white font-medium tabular-nums" id="dropouts-without">2</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Kosten der Abbr&uuml;che</span>
+									<span class="text-white font-medium tabular-nums" id="dropout-cost-without">&euro;0</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Monate bis produktiv</span>
+									<span class="text-white font-medium">6 Monate</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Ausbilderstunden/Jahr</span>
+									<span class="text-white font-medium tabular-nums" id="trainer-hours-without">0</span>
+								</div>
+							</div>
+						</div>
+						<div class="bg-surface p-6 relative">
+							<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+							<span class="font-mono text-label uppercase tracking-widest text-primary block mb-3 relative">Mit LearnSlice</span>
+							<div class="flex flex-col gap-3 relative">
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Abbr&uuml;che pro Jahr</span>
+									<span class="text-white font-medium tabular-nums" id="dropouts-with">1</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Kosten der Abbr&uuml;che</span>
+									<span class="text-white font-medium tabular-nums" id="dropout-cost-with">&euro;0</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Monate bis produktiv</span>
+									<span class="text-primary font-medium">2 Monate</span>
+								</div>
+								<div class="flex justify-between text-sm">
+									<span class="text-muted">Ausbilderstunden/Jahr</span>
+									<span class="text-white font-medium tabular-nums" id="trainer-hours-with">0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CTA -->
+					<div class="bg-surface border border-border rounded-xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+						<div>
+							<p class="text-sm font-medium text-white m-0 mb-1">Bereit zum Sparen?</p>
+							<p class="text-xs text-muted m-0">Sehen Sie LearnSlice in Aktion mit einer personalisierten Demo.</p>
+						</div>
+						<Button variant="primary" href="#demo-request" class="whitespace-nowrap">
+							Kostenlose Demo
+							<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+						</Button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<CTAFooter headline={deContent.cta.headline} subheadline={deContent.cta.subheadline} button={deContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>
+
+<script>
+	function initCalculator() {
+		const slider = document.getElementById('apprentice-count') as HTMLInputElement;
+		const countDisplay = document.getElementById('apprentice-count-display');
+		const resultCount = document.getElementById('result-count');
+		const inputs = document.querySelectorAll('.calc-input');
+
+		if (!slider) return;
+
+		function getVal(id: string, fallback: number): number {
+			const el = document.getElementById(id) as HTMLInputElement;
+			return el ? (parseFloat(el.value) || fallback) : fallback;
+		}
+
+		function fmt(n: number): string {
+			return '€' + Math.round(n).toLocaleString('de-DE');
+		}
+
+		function calculate() {
+			const count = parseInt(slider.value);
+			const recruitCost = getVal('recruiting-cost', 8000);
+			const onboardCost = getVal('onboarding-cost', 15000);
+			const dropoutRate = getVal('dropout-rate', 30) / 100;
+			const trainerHourly = getVal('trainer-hourly', 45);
+			const trainerHoursSaved = getVal('trainer-hours', 200);
+
+			const dropoutRateWith = dropoutRate * 0.5;
+			const costPerDropout = recruitCost + onboardCost;
+
+			const dropoutsWithout = Math.round(count * dropoutRate * 10) / 10;
+			const dropoutsWith = Math.round(count * dropoutRateWith * 10) / 10;
+			const dropoutCostWithout = dropoutsWithout * costPerDropout;
+			const dropoutCostWith = dropoutsWith * costPerDropout;
+			const dropoutSavings = dropoutCostWithout - dropoutCostWith;
+
+			const monthlyValue = onboardCost / 12;
+			const monthsGained = 4;
+			const productivitySavings = count * monthsGained * monthlyValue;
+
+			const trainerSavings = count * trainerHoursSaved * trainerHourly;
+
+			const totalSavings = dropoutSavings + productivitySavings + trainerSavings;
+
+			const baseTrainerHours = 400;
+			const trainerHoursWithout = count * baseTrainerHours;
+			const trainerHoursWith = count * (baseTrainerHours - trainerHoursSaved);
+
+			if (countDisplay) countDisplay.textContent = count.toString();
+			if (resultCount) resultCount.textContent = count.toString();
+
+			const set = (id: string, val: string) => { const e = document.getElementById(id); if (e) e.textContent = val; };
+
+			set('total-savings', fmt(totalSavings));
+			set('dropout-savings', fmt(dropoutSavings));
+			set('productivity-savings', fmt(productivitySavings));
+			set('trainer-savings', fmt(trainerSavings));
+			set('dropouts-without', dropoutsWithout.toFixed(1));
+			set('dropouts-with', dropoutsWith.toFixed(1));
+			set('dropout-cost-without', fmt(dropoutCostWithout));
+			set('dropout-cost-with', fmt(dropoutCostWith));
+			set('trainer-hours-without', trainerHoursWithout.toLocaleString('de-DE'));
+			set('trainer-hours-with', trainerHoursWith.toLocaleString('de-DE'));
+		}
+
+		slider.addEventListener('input', calculate);
+		inputs.forEach(input => input.addEventListener('input', calculate));
+		calculate();
+	}
+
+	document.addEventListener('DOMContentLoaded', initCalculator);
+	document.addEventListener('astro:page-load', initCalculator);
+</script>
+
+<style>
+	.calc-slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #7c5cfc;
+		cursor: pointer;
+		border: 2px solid #0a0a0b;
+		box-shadow: 0 0 0 3px rgba(124, 92, 252, 0.2);
+	}
+
+	.calc-slider::-moz-range-thumb {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #7c5cfc;
+		cursor: pointer;
+		border: 2px solid #0a0a0b;
+		box-shadow: 0 0 0 3px rgba(124, 92, 252, 0.2);
+	}
+
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(-4px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	.animate-fadeIn {
+		animation: fadeIn 0.2s ease-out;
+	}
+</style>

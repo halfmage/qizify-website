@@ -1,11 +1,23 @@
 ---
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import Button from './Button.astro';
+import { Icon } from 'astro-icon/components';
+import { getCollection } from 'astro:content';
+
+interface ChildItem {
+	label: string;
+	description?: string;
+	href: string;
+	icon?: string;
+}
 
 interface MenuItem {
 	label: string;
 	sectionId?: string;
 	href?: string;
+	mega?: boolean;
+	blogDropdown?: boolean;
+	children?: ChildItem[];
 }
 
 interface Props {
@@ -17,33 +29,109 @@ interface Props {
 }
 
 const { logo, menu, cta, currentLang, currentPath } = Astro.props;
+
+// Fetch latest 3 blog posts for blog mega menu
+const allPosts = await getCollection('blog');
+const langPosts = allPosts
+	.filter(p => p.data.lang === currentLang)
+	.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+	.slice(0, 3);
+
+const blogBasePath = currentLang === 'de' ? '/de/blog' : '/blog';
+const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View all posts';
 ---
 
-<header class="fixed top-0 left-0 right-0 z-[1000] bg-black/95 backdrop-blur-md border-b border-gray transition-all duration-300" id="header">
-	<div class="max-w-container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between gap-8">
-		<a href={currentLang === 'en' ? '/' : '/de'} class="flex items-center no-underline" aria-label="LearnSlice Home">
-			<img src="/images/learnslice-logo.svg" alt={logo} class="h-8 md:h-10 w-auto" />
+<header class="fixed top-0 left-0 right-0 z-[1000] transition-all duration-300" id="header">
+	<div class="max-w-container mx-auto px-6 lg:px-8 h-16 flex items-center justify-between gap-8">
+		<!-- Logo -->
+		<a href={currentLang === 'en' ? '/' : '/de'} class="flex items-center no-underline shrink-0" aria-label="LearnSlice Home">
+			<img src="/images/learnslice-logo.svg" alt={logo} class="h-8 w-auto" />
 		</a>
-		
-		<nav class="hidden lg:block" aria-label="Main navigation">
-			<ul class="flex items-center gap-8 list-none m-0 p-0">
-				{menu.map((item) => (
-					<li>
-						<a href={item.href || `#${item.sectionId}`} class="text-white no-underline font-medium text-[0.9375rem] hover:text-primary transition-colors duration-200 relative">
+
+		<!-- Desktop Nav -->
+		<nav class="hidden lg:flex items-center gap-1 flex-1 justify-center" aria-label="Main navigation">
+			{menu.map((item) =>
+				item.mega && item.children ? (
+					<!-- Mega dropdown: Product / Customers -->
+					<div class="nav-dropdown relative">
+						<button class="nav-dropdown-trigger flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm text-muted hover:text-white transition-colors duration-150 bg-transparent border-none cursor-pointer font-sans">
 							{item.label}
-						</a>
-					</li>
-				))}
-			</ul>
+							<svg class="w-3 h-3 opacity-40 transition-transform duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<div class="nav-mega-menu absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible pointer-events-none transition-all duration-150">
+							<div class="bg-surface border border-border rounded-xl p-3 shadow-2xl shadow-black/40">
+								<div class="grid grid-cols-2 gap-1 w-[480px]">
+									{item.children.map((child) => (
+										<a href={child.href} class="flex items-start gap-3 px-3 py-3 rounded-lg text-muted hover:bg-white/[0.04] transition-colors duration-100 no-underline group">
+											{child.icon && (
+												<div class="w-10 h-10 rounded-lg bg-primary/10 group-hover:bg-primary/15 flex items-center justify-center shrink-0 transition-colors duration-150">
+													<Icon name={child.icon} class="w-5 h-5 text-primary" />
+												</div>
+											)}
+											<div class="flex flex-col gap-0.5 min-w-0">
+												<span class="text-sm text-white font-medium">{child.label}</span>
+												{child.description && (
+													<span class="text-xs text-muted leading-snug">{child.description}</span>
+												)}
+											</div>
+										</a>
+									))}
+								</div>
+							</div>
+						</div>
+					</div>
+				) : item.mega && item.blogDropdown ? (
+					<!-- Mega dropdown: Blog with latest posts -->
+					<div class="nav-dropdown relative">
+						<button class="nav-dropdown-trigger flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm text-muted hover:text-white transition-colors duration-150 bg-transparent border-none cursor-pointer font-sans">
+							{item.label}
+							<svg class="w-3 h-3 opacity-40 transition-transform duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<div class="nav-mega-menu absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible pointer-events-none transition-all duration-150">
+							<div class="bg-surface border border-border rounded-xl p-3 shadow-2xl shadow-black/40 w-[360px]">
+								<div class="flex flex-col gap-0.5">
+									{langPosts.slice(0, 2).map((post) => (
+										<a href={`${blogBasePath}/${post.slug}`} class="flex items-start gap-3 px-3 py-3 rounded-lg hover:bg-white/[0.04] transition-colors duration-100 no-underline group">
+											<div class="w-10 h-10 rounded-lg bg-primary/10 group-hover:bg-primary/15 flex items-center justify-center shrink-0 transition-colors duration-150">
+												<Icon name="hugeicons:note-edit" class="w-5 h-5 text-primary" />
+											</div>
+											<div class="flex flex-col gap-0.5 min-w-0">
+												<span class="text-sm text-white font-medium truncate">{post.data.title}</span>
+												<span class="text-xs text-muted line-clamp-2 leading-snug">{post.data.description}</span>
+											</div>
+										</a>
+									))}
+								</div>
+								<div class="border-t border-border mt-2 pt-2">
+									<a href={item.href} class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-primary hover:bg-white/[0.04] transition-colors duration-100 no-underline font-medium">
+										{allPostsLabel}
+										<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				) : (
+					<!-- Direct link -->
+					<a
+						href={item.href || `#${item.sectionId}`}
+						class="px-3 py-1.5 rounded-md text-sm no-underline text-muted hover:text-white transition-colors duration-150"
+					>
+						{item.label}
+					</a>
+				)
+			)}
 		</nav>
-		
-		<div class="flex items-center gap-4 lg:gap-6">
+
+		<!-- Right side -->
+		<div class="flex items-center gap-3 shrink-0">
 			<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
+			<div class="hidden lg:block w-px h-4 bg-border"></div>
 			<Button
 				variant="primary"
 				data-modal-trigger="demo-request"
 				aria-label={cta}
-				class="lg:hidden text-xs px-3 py-2 whitespace-nowrap"
+				class="hidden lg:inline-flex"
 			>
 				{cta}
 			</Button>
@@ -51,100 +139,147 @@ const { logo, menu, cta, currentLang, currentPath } = Astro.props;
 				variant="primary"
 				data-modal-trigger="demo-request"
 				aria-label={cta}
-				class="hidden lg:block whitespace-nowrap"
+				class="lg:hidden text-xs px-3 py-1.5"
 			>
 				{cta}
 			</Button>
 		</div>
-		
-		<button class="flex lg:hidden flex-col gap-1 bg-transparent border-none cursor-pointer p-2 z-[1001]" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
-			<span class="w-6 h-0.5 bg-white rounded transition-all duration-300 origin-center" id="hamburger-line-1"></span>
-			<span class="w-6 h-0.5 bg-white rounded transition-all duration-300" id="hamburger-line-2"></span>
-			<span class="w-6 h-0.5 bg-white rounded transition-all duration-300 origin-center" id="hamburger-line-3"></span>
+
+		<!-- Mobile toggle -->
+		<button class="flex lg:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-2 z-[1001]" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
+			<span class="w-[18px] h-[1.5px] bg-white rounded-full transition-all duration-300 origin-center" id="hamburger-line-1"></span>
+			<span class="w-[18px] h-[1.5px] bg-white rounded-full transition-all duration-300" id="hamburger-line-2"></span>
+			<span class="w-[18px] h-[1.5px] bg-white rounded-full transition-all duration-300 origin-center" id="hamburger-line-3"></span>
 		</button>
 	</div>
-	
+
 	<!-- Mobile Menu -->
-	<nav class="lg:hidden absolute top-full left-0 right-0 bg-black/[0.98] border-t border-gray p-8 -translate-y-full opacity-0 pointer-events-none transition-all duration-300" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
-		<ul class="list-none m-0 p-0 flex flex-col gap-6">
-			{menu.map((item) => (
-				<li>
-					<a href={item.href || `#${item.sectionId}`} class="text-white no-underline font-medium text-lg hover:text-primary transition-colors duration-200 block py-2">
+	<nav class="lg:hidden absolute top-full left-0 right-0 bg-dark/[0.98] backdrop-blur-xl border-t border-border max-h-[80vh] overflow-y-auto -translate-y-full opacity-0 pointer-events-none transition-all duration-300" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+		<div class="px-6 py-6 flex flex-col gap-1">
+			{menu.map((item) =>
+				item.children ? (
+					<details class="group">
+						<summary class="flex items-center justify-between py-2.5 text-muted text-sm cursor-pointer select-none list-none hover:text-white transition-colors">
+							{item.label}
+							<svg class="w-3.5 h-3.5 opacity-50 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+						</summary>
+						<div class="pl-2 pb-1 flex flex-col gap-0.5">
+							{item.children.map((child) => (
+								<a href={child.href} class="flex items-center gap-3 py-2 text-sm text-muted hover:text-white no-underline transition-colors">
+									{child.icon && <Icon name={child.icon} class="w-4 h-4 text-primary shrink-0" />}
+									<span>{child.label}</span>
+								</a>
+							))}
+						</div>
+					</details>
+				) : item.blogDropdown ? (
+					<details class="group">
+						<summary class="flex items-center justify-between py-2.5 text-muted text-sm cursor-pointer select-none list-none hover:text-white transition-colors">
+							{item.label}
+							<svg class="w-3.5 h-3.5 opacity-50 transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+						</summary>
+						<div class="pl-2 pb-1 flex flex-col gap-0.5">
+							{langPosts.map((post) => (
+								<a href={`${blogBasePath}/${post.slug}`} class="flex items-center gap-3 py-2 text-sm text-muted hover:text-white no-underline transition-colors">
+									<Icon name="hugeicons:note-edit" class="w-4 h-4 text-primary shrink-0" />
+									<span class="truncate">{post.data.title}</span>
+								</a>
+							))}
+							<a href={item.href} class="flex items-center gap-3 py-2 text-sm text-primary hover:text-white no-underline transition-colors font-medium">
+								{allPostsLabel}
+							</a>
+						</div>
+					</details>
+				) : (
+					<a
+						href={item.href || `#${item.sectionId}`}
+						class="block py-2.5 text-sm no-underline text-muted hover:text-white transition-colors"
+					>
 						{item.label}
 					</a>
-				</li>
-			))}
-			<li>
+				)
+			)}
+			<div class="border-t border-border mt-3 pt-4 flex flex-col gap-3">
 				<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
-			</li>
-			<li>
-				<Button 
-					variant="primary" 
-					data-modal-trigger="demo-request"
-					class="w-full mt-2"
-				>
+				<Button variant="primary" data-modal-trigger="demo-request" class="w-full justify-center">
 					{cta}
 				</Button>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</nav>
 </header>
 
+<style>
+	/* Mega dropdown hover */
+	.nav-dropdown:hover .nav-mega-menu,
+	.nav-dropdown:focus-within .nav-mega-menu {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.nav-dropdown:hover .nav-dropdown-trigger,
+	.nav-dropdown:focus-within .nav-dropdown-trigger {
+		color: #ededef;
+	}
+
+	.nav-dropdown:hover .nav-dropdown-trigger svg {
+		transform: rotate(180deg);
+	}
+
+	/* Remove default summary marker */
+	details summary::-webkit-details-marker { display: none; }
+	details summary::marker { display: none; content: ''; }
+</style>
+
 <script>
-	// Mobile menu toggle functionality
 	const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 	const mobileMenu = document.getElementById('mobile-menu');
 	const line1 = document.getElementById('hamburger-line-1');
 	const line2 = document.getElementById('hamburger-line-2');
 	const line3 = document.getElementById('hamburger-line-3');
-	
+
 	if (mobileMenuToggle && mobileMenu) {
 		mobileMenuToggle.addEventListener('click', () => {
 			const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
 			mobileMenuToggle.setAttribute('aria-expanded', (!isExpanded).toString());
 			mobileMenu.setAttribute('aria-hidden', isExpanded.toString());
-			
+
 			if (!isExpanded) {
 				mobileMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
 				mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
-				// Animate hamburger to X
-				line1?.classList.add('rotate-45', 'translate-y-1.5');
+				line1?.classList.add('rotate-45', 'translate-y-[3.5px]');
 				line2?.classList.add('opacity-0');
-				line3?.classList.add('-rotate-45', '-translate-y-1.5');
+				line3?.classList.add('-rotate-45', '-translate-y-[3.5px]');
 			} else {
 				mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
 				mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
-				// Animate X back to hamburger
-				line1?.classList.remove('rotate-45', 'translate-y-1.5');
+				line1?.classList.remove('rotate-45', 'translate-y-[3.5px]');
 				line2?.classList.remove('opacity-0');
-				line3?.classList.remove('-rotate-45', '-translate-y-1.5');
+				line3?.classList.remove('-rotate-45', '-translate-y-[3.5px]');
 			}
 		});
-		
-		// Close mobile menu when clicking on a link
-		const mobileLinks = mobileMenu.querySelectorAll('a');
-		mobileLinks.forEach(link => {
+
+		mobileMenu.querySelectorAll('a').forEach(link => {
 			link.addEventListener('click', () => {
 				mobileMenuToggle.setAttribute('aria-expanded', 'false');
 				mobileMenu.setAttribute('aria-hidden', 'true');
 				mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
 				mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
-				line1?.classList.remove('rotate-45', 'translate-y-1.5');
+				line1?.classList.remove('rotate-45', 'translate-y-[3.5px]');
 				line2?.classList.remove('opacity-0');
-				line3?.classList.remove('-rotate-45', '-translate-y-1.5');
+				line3?.classList.remove('-rotate-45', '-translate-y-[3.5px]');
 			});
 		});
 	}
-	
-	// Sticky header on scroll
+
 	const header = document.getElementById('header');
 	if (header) {
 		window.addEventListener('scroll', () => {
-			const currentScroll = window.pageYOffset;
-			if (currentScroll > 100) {
-				header.classList.add('bg-black/[0.98]', 'shadow-lg');
+			if (window.pageYOffset > 10) {
+				header.classList.add('bg-dark/80', 'backdrop-blur-xl', 'border-b', 'border-border');
 			} else {
-				header.classList.remove('bg-black/[0.98]', 'shadow-lg');
+				header.classList.remove('bg-dark/80', 'backdrop-blur-xl', 'border-b', 'border-border');
 			}
 		});
 	}

@@ -32,27 +32,23 @@ const currentPath = '/companies';
 	/>
 
 	<!-- Hero -->
-	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
-		<div class="absolute inset-0 z-0">
-			<img src="/images/hero/hero-background.webp" alt="" class="w-full h-full object-cover opacity-30" aria-hidden="true" />
-			<div class="absolute inset-0 bg-gradient-to-b from-dark/40 via-dark/80 to-dark"></div>
-		</div>
-		<div class="max-w-container mx-auto relative z-10">
-			<div class="max-w-3xl">
-				<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
-					For Companies
-				</div>
-				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-					Turn Every Apprentice Into a<br />Top Performer in 8 Weeks
+	<section class="relative min-h-[75vh] flex items-center pt-32 pb-16 overflow-hidden">
+		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] opacity-20 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.2) 0%, transparent 70%);"></div>
+		<div class="max-w-container mx-auto px-6 md:px-8 relative z-10 py-12 md:py-16">
+			<div class="max-w-[700px]">
+				<span class="section-label mb-5 block">For Companies</span>
+				<h1 class="text-display-sm md:text-display text-white mb-6">
+					Turn Every Apprentice Into a Top Performer in 8 Weeks
 				</h1>
-				<p class="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+				<p class="text-lg text-muted mb-8 max-w-[560px] leading-relaxed">
 					LearnSlice combines IHK exam preparation with your company knowledge into personalized AI learning paths. Your apprentices are job-ready 65% faster while freeing up 50% of trainer time.
 				</p>
-				<div class="flex flex-col sm:flex-row gap-4">
-					<a href="#demo-request" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-white/90 transition-colors">
+				<div class="flex flex-col sm:flex-row gap-3">
+					<a href="#demo-request" class="inline-flex items-center justify-center px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
 						Request Demo
+						<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 					</a>
-					<a href="#savings" class="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors">
+					<a href="#savings" class="inline-flex items-center justify-center px-4 py-2 border border-border-light text-muted text-sm font-medium rounded-lg hover:text-white hover:border-white/30 transition-colors">
 						See the ROI
 					</a>
 				</div>
@@ -61,24 +57,24 @@ const currentPath = '/companies';
 	</section>
 
 	<!-- Key metrics -->
-	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark border-t border-white/10">
+	<section class="py-16 px-6 md:px-8 border-t border-border">
 		<div class="max-w-container mx-auto">
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">65%</div>
-					<div class="text-white/70 text-sm">Faster to productivity</div>
+					<div class="text-2xl md:text-3xl font-bold text-primary mb-1.5 tracking-tight">65%</div>
+					<div class="text-muted text-xs">Faster to productivity</div>
 				</div>
 				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">€32K</div>
-					<div class="text-white/70 text-sm">Saved per apprentice</div>
+					<div class="text-2xl md:text-3xl font-bold text-primary mb-1.5 tracking-tight">&euro;32K</div>
+					<div class="text-muted text-xs">Saved per apprentice</div>
 				</div>
 				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">50%</div>
-					<div class="text-white/70 text-sm">Less trainer time</div>
+					<div class="text-2xl md:text-3xl font-bold text-primary mb-1.5 tracking-tight">50%</div>
+					<div class="text-muted text-xs">Less trainer time</div>
 				</div>
 				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">15%</div>
-					<div class="text-white/70 text-sm">Dropout rate (from 30%)</div>
+					<div class="text-2xl md:text-3xl font-bold text-primary mb-1.5 tracking-tight">15%</div>
+					<div class="text-muted text-xs">Dropout rate (from 30%)</div>
 				</div>
 			</div>
 		</div>

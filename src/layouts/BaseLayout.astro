@@ -27,7 +27,7 @@ const organizationSchema = {
 	name: 'LearnSlice',
 	url: siteUrl,
 	logo: `${siteUrl}/favicon.ico`,
-	description: lang === 'en' 
+	description: lang === 'en'
 		? 'AI-powered learning platform for apprenticeships. Automate mentoring and save money with LearnSlice.'
 		: 'KI-gestützte Lernplattform für Ausbildungen. Automatisieren Sie Mentoring und sparen Sie Geld mit LearnSlice.',
 	sameAs: [],
@@ -89,33 +89,34 @@ const softwareSchema = {
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#6665f1" />
+		<meta name="theme-color" content="#0a0a0b" />
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-		
+
 		<!-- Preconnect to external resources -->
+		<link rel="preconnect" href="https://rsms.me" crossorigin />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-		
-		<!-- Preload critical resources -->
-		<link rel="preload" href="/images/hero/hero-background.webp" as="image" type="image/webp" />
-		
+
+		<!-- Fonts: Inter Variable (clean geometric sans) + JetBrains Mono (monospace) -->
+		<link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
-		
+
 		<!-- Primary Meta Tags -->
 		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
-		<meta name="keywords" content={lang === 'en' 
+		<meta name="keywords" content={lang === 'en'
 			? 'AI learning platform, apprenticeship training, mentoring, mentoring automation, digital mentoring, vocational training, German SMEs'
 			: 'KI-Lernplattform, Ausbildungsplattform, Aus- und Weiterbildung, Ausbildungs-Automatisierung, Berufsausbildung, Ausbildung, deutsche KMU, digitales Mentoring, digitales Lernen'} />
 		<meta name="author" content="LearnSlice" />
-		
+
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={currentUrl} />
@@ -129,7 +130,7 @@ const softwareSchema = {
 		<meta property="og:site_name" content="LearnSlice" />
 		<meta property="og:locale" content={lang === 'en' ? 'en_US' : 'de_DE'} />
 		<meta property="og:locale:alternate" content={lang === 'en' ? 'de_DE' : 'en_US'} />
-		
+
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:url" content={currentUrl} />
@@ -139,18 +140,18 @@ const softwareSchema = {
 		<meta name="twitter:image:alt" content={title} />
 		<meta name="twitter:creator" content="@learnslice" />
 		<meta name="twitter:site" content="@learnslice" />
-		
+
 		<!-- Canonical URL -->
 		<link rel="canonical" href={currentUrl} />
-		
+
 		<!-- Hreflang Tags -->
 		<link rel="alternate" hreflang="en" href={`${siteUrl}${enPath}`} />
 		<link rel="alternate" hreflang="de" href={`${siteUrl}${dePath}`} />
 		<link rel="alternate" hreflang="x-default" href={`${siteUrl}${enPath}`} />
-		
+
 		<!-- Sitemap -->
 		<link rel="sitemap" href="/sitemap-index.xml" />
-		
+
 		<!-- Structured Data -->
 		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
 		<script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />
@@ -168,4 +169,3 @@ const softwareSchema = {
 		</main>
 	</body>
 </html>
-

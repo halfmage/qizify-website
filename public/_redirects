@@ -1,5 +1,5 @@
 # ============================================
-# LearnSlice — 301 Redirects for Old URLs
+# LearnSlice - 301 Redirects for Old URLs
 # ============================================
 # The site was migrated from multi-page (Eleventy) to
 # single-page (Astro) in Dec 2025. These redirects catch
@@ -16,7 +16,7 @@
 /de/azubis/                     /de/            301
 /de/coaches/                    /de/            301
 /de/universities/               /de/            301
-# Old blog posts (specific slugs only — new blog now lives at /de/blog/)
+# Old blog posts (specific slugs only - new blog now lives at /de/blog/)
 /de/blog/wie-gestaltet-man-ein-lms-benutzerfreundlich/  /de/blog/  301
 /de/blog/after-qizify-you-will-never-want-to-use-other-learning-management-systems/  /de/blog/  301
 
@@ -36,7 +36,7 @@
 /en/faq/                        /               301
 /en/apprenticeship/             /               301
 /en/universities/               /               301
-# Old EN blog posts (specific slugs only — new blog now lives at /blog/)
+# Old EN blog posts (specific slugs only - new blog now lives at /blog/)
 /en/blog/digital-learning-in-germany-advantages-and-dissadvantages/  /blog/  301
 /en/blog/what-are-the-advantages-of-online-learning/  /blog/  301
 /en/blog/what-is-the-focus-in-education-industry-in-2022/  /blog/  301

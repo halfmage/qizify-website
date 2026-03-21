@@ -7,7 +7,7 @@ Absolutely. Ready-made role simulations are included out-of-the-box, and you can
 
 4. How does the AI personalise learning? The AI profiles each learner (skills, goals, company needs), creates a bespoke learning plan, and adapts tasks in real time to close knowledge gaps.
 
-5. How is competency proven? Competency is validated continuously with job-relevant checks (quizzes, deep dives and case studies) and realistic simulations — measurable job-readiness, not just completion certificates.
+5. How is competency proven? Competency is validated continuously with job-relevant checks (quizzes, deep dives and case studies) and realistic simulations - measurable job-readiness, not just completion certificates.
 
 6. What engagement mechanics are included? Built-in gamification: points, badges and levels to boost motivation, focus and completion rates.
 

@@ -4,7 +4,7 @@ Allow: /
 # Sitemap
 Sitemap: https://learnslice.com/sitemap-index.xml
 
-# AI Crawlers — allow for visibility in AI search engines
+# AI Crawlers - allow for visibility in AI search engines
 User-agent: GPTBot
 Allow: /
 

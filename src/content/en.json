@@ -2,18 +2,40 @@
   "nav": {
     "logo": "LearnSlice",
     "menu": [
-      { "label": "For Companies", "href": "/companies" },
-      { "label": "For Schools", "href": "/schools" },
-      { "label": "For Agencies", "href": "/agencies" },
-      { "label": "Blog", "href": "/blog" },
-      { "label": "FAQ", "sectionId": "faq" }
+      {
+        "label": "Product",
+        "mega": true,
+        "children": [
+          { "label": "How It Works", "description": "3-step AI learning path", "href": "/#how-it-works", "icon": "hugeicons:workflow-circle-06" },
+          { "label": "Features", "description": "AI coaching, assessments, analytics", "href": "/#learning-results", "icon": "hugeicons:sparkles" },
+          { "label": "Vocational Professions", "description": "Commercial, IT, technical trades", "href": "/#vocational-professions", "icon": "hugeicons:briefcase-02" },
+          { "label": "Savings Calculator", "description": "See your ROI instantly", "href": "/apprenticeship-savings-calculator", "icon": "hugeicons:calculator" }
+        ]
+      },
+      {
+        "label": "Customers",
+        "mega": true,
+        "children": [
+          { "label": "For Companies", "description": "CEOs, HR, trainers", "href": "/companies", "icon": "hugeicons:building-06" },
+          { "label": "For Schools", "description": "Vocational colleges", "href": "/schools", "icon": "hugeicons:mortarboard-02" },
+          { "label": "For Agencies", "description": "IHK, HWK, public agencies", "href": "/agencies", "icon": "hugeicons:building-03" },
+          { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
+        ]
+      },
+      {
+        "label": "Blog",
+        "mega": true,
+        "blogDropdown": true,
+        "href": "/blog"
+      },
+      { "label": "FAQ", "href": "/#faq" }
     ],
     "cta": "Book Free Demo"
   },
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",
     "headline": "Your Apprentices Job-Ready\nin 8 Weeks, Not 6 Months.",
-    "subheadline": "LearnSlice combines IHK exam preparation with your company knowledge into personalized AI learning paths — so your apprentices are job-ready in 8 weeks, not 6 months. Save €32K per apprentice and free up 50% of trainer time.",
+    "subheadline": "LearnSlice combines IHK exam preparation with your company knowledge into personalized AI learning paths - so your apprentices are job-ready in 8 weeks, not 6 months. Save €32K per apprentice and free up 50% of trainer time.",
     "ctaPrimary": "See It In Action",
     "ctaSecondary": "How it works"
   },
@@ -64,7 +86,7 @@
       {
         "number": "2",
         "title": "Job simulations + your company input",
-        "description": "Ready-made role-specific tasks and simulations are included. Companies can optionally upload documents to tailor training to their processes and products — for custom onboarding, upskilling, lateral entry, and more."
+        "description": "Ready-made role-specific tasks and simulations are included. Companies can optionally upload documents to tailor training to their processes and products - for custom onboarding, upskilling, lateral entry, and more."
       },
       {
         "number": "3",
@@ -109,7 +131,7 @@
         "image": "/images/company-slider/ceos-hr-trainers.webp",
         "points": [
           {
-            "text": "Up to 65 % faster time-to-productivity. New hires work on real, job-critical tasks using your company knowledge from day one — not generic training content.",
+            "text": "Up to 65 % faster time-to-productivity. New hires work on real, job-critical tasks using your company knowledge from day one - not generic training content.",
             "highlight": "Up to 65 % faster time-to-productivity."
           },
           {
@@ -265,7 +287,7 @@
       },
       {
         "question": "How is competency proven?",
-        "answer": "Competency is validated continuously with job-relevant checks (quizzes, deep dives and case studies) and realistic simulations — measurable job-readiness, not just completion certificates."
+        "answer": "Competency is validated continuously with job-relevant checks (quizzes, deep dives and case studies) and realistic simulations - measurable job-readiness, not just completion certificates."
       },
       {
         "question": "What engagement mechanics are included?",

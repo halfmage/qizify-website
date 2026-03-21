@@ -2,18 +2,40 @@
   "nav": {
     "logo": "LearnSlice",
     "menu": [
-      { "label": "Für Unternehmen", "href": "/de/companies" },
-      { "label": "Für Schulen", "href": "/de/schools" },
-      { "label": "Für Agenturen", "href": "/de/agencies" },
-      { "label": "Blog", "href": "/de/blog" },
-      { "label": "FAQ", "sectionId": "faq" }
+      {
+        "label": "Produkt",
+        "mega": true,
+        "children": [
+          { "label": "So funktioniert's", "description": "3-Schritte KI-Lernpfad", "href": "/de#how-it-works", "icon": "hugeicons:workflow-circle-06" },
+          { "label": "Features", "description": "KI-Coaching, Assessments, Analytics", "href": "/de#learning-results", "icon": "hugeicons:sparkles" },
+          { "label": "Ausbildungsberufe", "description": "Kaufmännisch, IT, gewerblich", "href": "/de#vocational-professions", "icon": "hugeicons:briefcase-02" },
+          { "label": "Einsparungsrechner", "description": "Ihren ROI sofort sehen", "href": "/de/ausbildungskosten-rechner", "icon": "hugeicons:calculator" }
+        ]
+      },
+      {
+        "label": "Kunden",
+        "mega": true,
+        "children": [
+          { "label": "Für Unternehmen", "description": "CEOs, HR, Ausbilder", "href": "/de/companies", "icon": "hugeicons:building-06" },
+          { "label": "Für Schulen", "description": "Berufsschulen & Kollegs", "href": "/de/schools", "icon": "hugeicons:mortarboard-02" },
+          { "label": "Für Agenturen", "description": "IHK, HWK, Wirtschaftsförderung", "href": "/de/agencies", "icon": "hugeicons:building-03" },
+          { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
+        ]
+      },
+      {
+        "label": "Blog",
+        "mega": true,
+        "blogDropdown": true,
+        "href": "/de/blog"
+      },
+      { "label": "FAQ", "href": "/de#faq" }
     ],
     "cta": "Kostenlose Demo buchen"
   },
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
-    "headline": "Ihre Azubis in 8 Wochen\neinsatzbereit — nicht in 6 Monaten.",
-    "subheadline": "LearnSlice verbindet IHK-Prüfungsvorbereitung mit Ihrem Unternehmenswissen zu personalisierten KI-Lernpfaden — Ihre Azubis sind in 8 Wochen statt 6 Monaten einsatzbereit. Sparen Sie €32K pro Azubi und entlasten Sie Ihre Ausbilder um 50 %.",
+    "headline": "Ihre Azubis in 8 Wochen\neinsatzbereit - nicht in 6 Monaten.",
+    "subheadline": "LearnSlice verbindet IHK-Prüfungsvorbereitung mit Ihrem Unternehmenswissen zu personalisierten KI-Lernpfaden - Ihre Azubis sind in 8 Wochen statt 6 Monaten einsatzbereit. Sparen Sie €32K pro Azubi und entlasten Sie Ihre Ausbilder um 50 %.",
     "ctaPrimary": "Jetzt live erleben",
     "ctaSecondary": "So funktioniert's"
   },
@@ -109,7 +131,7 @@
         "image": "/images/company-slider/ceos-hr-trainers.webp",
         "points": [
           {
-            "text": "Bis zu 65 % schnellere Einsatzbereitschaft. Neue Mitarbeitende bearbeiten ab Tag 1 echte, jobkritische Aufgaben mit Ihrem Unternehmenswissen — keine generischen Trainingsinhalte.",
+            "text": "Bis zu 65 % schnellere Einsatzbereitschaft. Neue Mitarbeitende bearbeiten ab Tag 1 echte, jobkritische Aufgaben mit Ihrem Unternehmenswissen - keine generischen Trainingsinhalte.",
             "highlight": "Bis zu 65 % schnellere Einsatzbereitschaft."
           },
           {

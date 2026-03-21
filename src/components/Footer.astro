@@ -18,6 +18,7 @@ const footerColumns = currentLang === 'en'
 			title: 'Product',
 			links: [
 				{ label: 'Home', href: '/' },
+				{ label: 'Savings Calculator', href: '/apprenticeship-savings-calculator' },
 				{ label: 'Blog', href: '/blog' },
 				{ label: 'Request Demo', href: '#demo-request' },
 			],
@@ -51,6 +52,7 @@ const footerColumns = currentLang === 'en'
 			title: 'Produkt',
 			links: [
 				{ label: 'Startseite', href: '/de' },
+				{ label: 'Einsparungsrechner', href: '/de/ausbildungskosten-rechner' },
 				{ label: 'Blog', href: '/de/blog' },
 				{ label: 'Demo anfordern', href: '#demo-request' },
 			],
@@ -83,40 +85,37 @@ const footerColumns = currentLang === 'en'
 const columns = Object.values(footerColumns);
 ---
 
-<footer class="py-12 px-4 md:px-8 bg-dark border-t border-white/10">
+<footer class="py-16 px-6 md:px-8 border-t border-border">
 	<div class="max-w-container mx-auto">
-		<div class="flex flex-col gap-10">
-			<!-- Top: Logo + Link columns -->
+		<div class="flex flex-col gap-12">
+			<!-- Top -->
 			<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-				<!-- Logo -->
 				<div class="col-span-2 md:col-span-1">
-					<a href={currentLang === 'en' ? '/' : '/de'} class="flex items-center gap-2 no-underline mb-4">
+					<a href={currentLang === 'en' ? '/' : '/de'} class="flex items-center no-underline mb-4">
 						<img
 							src="/images/learnslice-logo.svg"
 							alt="LearnSlice"
-							class="h-8 w-auto"
+							class="h-7 w-auto"
 						/>
-						<span class="text-white font-semibold">LearnSlice</span>
 					</a>
-					<p class="text-white/50 text-xs leading-relaxed m-0">
+					<p class="text-muted text-xs leading-relaxed m-0">
 						{currentLang === 'en'
 							? 'AI-powered apprenticeship training. Made in Germany.'
 							: 'KI-gestützte Ausbildung. Made in Germany.'}
 					</p>
 				</div>
 
-				<!-- Link columns -->
 				{columns.map(column => (
 					<div>
-						<h4 class="text-white/40 text-xs font-semibold uppercase tracking-wider mb-3">
+						<h4 class="font-mono text-label uppercase tracking-widest text-muted mb-4">
 							{column.title}
 						</h4>
-						<ul class="list-none m-0 p-0 flex flex-col gap-2">
+						<ul class="list-none m-0 p-0 flex flex-col gap-2.5">
 							{column.links.map(link => (
 								<li>
 									<a
 										href={link.href}
-										class="text-white/70 hover:text-white transition-colors text-sm"
+										class="text-muted hover:text-white transition-colors text-sm"
 									>
 										{link.label}
 									</a>
@@ -128,15 +127,15 @@ const columns = Object.values(footerColumns);
 			</div>
 
 			<!-- Divider -->
-			<div class="border-t border-white/10"></div>
+			<div class="border-t border-border"></div>
 
-			<!-- Bottom: Copyright -->
+			<!-- Bottom -->
 			<div class="flex flex-col md:flex-row items-center justify-between gap-2">
-				<p class="text-white/40 text-xs m-0">
-					© {currentYear} LearnSlice UG (haftungsbeschränkt)
+				<p class="text-muted text-xs m-0">
+					&copy; {currentYear} LearnSlice UG (haftungsbeschr&auml;nkt)
 				</p>
-				<p class="text-white/40 text-xs m-0">
-					{currentLang === 'en' ? 'Düsseldorf, Germany' : 'Düsseldorf, Deutschland'}
+				<p class="text-muted text-xs m-0">
+					{currentLang === 'en' ? 'D\u00FCsseldorf, Germany' : 'D\u00FCsseldorf, Deutschland'}
 				</p>
 			</div>
 		</div>

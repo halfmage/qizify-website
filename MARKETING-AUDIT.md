@@ -2,7 +2,7 @@
 
 **URL:** https://marketing-audit-implementation--learnslice-website.netlify.app/
 **Date:** 2026-03-21
-**Business Type:** SaaS — AI-Powered Apprenticeship Training Platform
+**Business Type:** SaaS - AI-Powered Apprenticeship Training Platform
 **Target Markets:** German companies, vocational schools, regional agencies
 
 ---
@@ -26,12 +26,12 @@
 ## Executive Summary
 
 ### What's Working Well
-- **Quantified value props** — "65% faster," "€32K saved," "50% less trainer time" are specific and memorable
-- **Segment-specific landing pages** — Companies, Schools, Agencies each get dedicated pages
-- **Comparison pages** — vs. Traditional Training and vs. Simpleclub exist with structured matrices
-- **Technical foundation** — Astro static output, proper schema markup, bilingual EN/DE, AI crawler access
-- **Trust signals** — BMWE AI Prize 2025, FH Dortmund partnership, 30+ companies, 4.8/5 rating
-- **Lead magnet** — ROI Calculator is relevant to the target audience
+- **Quantified value props** - "65% faster," "€32K saved," "50% less trainer time" are specific and memorable
+- **Segment-specific landing pages** - Companies, Schools, Agencies each get dedicated pages
+- **Comparison pages** - vs. Traditional Training and vs. Simpleclub exist with structured matrices
+- **Technical foundation** - Astro static output, proper schema markup, bilingual EN/DE, AI crawler access
+- **Trust signals** - BMWE AI Prize 2025, FH Dortmund partnership, 30+ companies, 4.8/5 rating
+- **Lead magnet** - ROI Calculator is relevant to the target audience
 
 ### Top 10 Critical Issues
 
@@ -42,11 +42,11 @@
 | 3 | **Feature descriptions are telegraphic fragments** | Content | High |
 | 4 | **FAQ identical across all audience pages** | Content/CRO | High |
 | 5 | **Hreflang URLs wrong on all sub-pages** | Technical SEO | Critical |
-| 6 | **Only 3 blog posts — content is severely thin** | Growth | High |
+| 6 | **Only 3 blog posts - content is severely thin** | Growth | High |
 | 7 | **Same testimonials on every page** | CRO | High |
 | 8 | **Zero urgency triggers anywhere** | Conversion | High |
 | 9 | **No product screenshots or demo video** | Competitive | High |
-| 10 | **Purely sales-led — no PLG or self-serve path** | Growth | High |
+| 10 | **Purely sales-led - no PLG or self-serve path** | Growth | High |
 
 ---
 
@@ -77,18 +77,18 @@ Sub: Combine IHK exam prep with your company knowledge into AI learning paths. S
 ```
 
 #### 1.2 Agencies H1 is generic (HIGH)
-"Modern Training for Every SME. Affordable and Scalable." — could describe any B2B SaaS.
+"Modern Training for Every SME. Affordable and Scalable." - could describe any B2B SaaS.
 
-**AFTER:** "Cut Apprenticeship Dropouts by 15% Across Your Region — Without Hiring More Trainers."
+**AFTER:** "Cut Apprenticeship Dropouts by 15% Across Your Region - Without Hiring More Trainers."
 
 #### 1.3 Feature descriptions are keyword fragments, not copy (HIGH)
-"Predicts issues, auto-adjusts. Plans, feedback, always on." — These communicate no benefit.
+"Predicts issues, auto-adjusts. Plans, feedback, always on." - These communicate no benefit.
 
 **AFTER (example for AI Coaching):**
-"The AI spots knowledge gaps before they become problems — automatically adjusting each apprentice's learning plan in real time. Your team gets 24/7 mentoring coverage without the headcount."
+"The AI spots knowledge gaps before they become problems - automatically adjusting each apprentice's learning plan in real time. Your team gets 24/7 mentoring coverage without the headcount."
 
 #### 1.4 FAQ is identical across all audience pages (HIGH)
-Schools FAQ includes "Can we customise training for our company?" — schools are not companies. Create audience-specific FAQ variants.
+Schools FAQ includes "Can we customise training for our company?" - schools are not companies. Create audience-specific FAQ variants.
 
 #### 1.5 No case studies anywhere (HIGH)
 Three short testimonial quotes but zero narrative success stories. For B2B sales, case studies are the #1 conversion content type. Create at least one per segment.
@@ -114,7 +114,7 @@ All pages share the same fallback meta description instead of page-specific ones
 ## 2. Conversion Optimization Audit (62/100)
 
 ### Strengths
-- "Request Demo" appears in header, hero, and footer — good frequency
+- "Request Demo" appears in header, hero, and footer - good frequency
 - Sticky header keeps CTA accessible
 - Companies page has dual-CTA hierarchy (Demo + ROI)
 - Lead capture form is minimal (email + consent)
@@ -125,7 +125,7 @@ All pages share the same fallback meta description instead of page-specific ones
 The single largest friction point. FAQ says "Billed annually" but never states a price. Visitors must request a demo just to learn cost. Create a `/pricing` page with tiers.
 
 #### 2.2 Generic CTA copy "Request Demo" everywhere (HIGH)
-Implies a sales call — high commitment for early visitors.
+Implies a sales call - high commitment for early visitors.
 
 **FIX:** Vary by position: Hero = "See It In Action"; Header = "Book a Free Demo"; Footer = "Start Saving Today"
 
@@ -141,13 +141,13 @@ Zero limited-time offers, pilot deadlines, or capacity limits.
 BMWE Prize, FH Dortmund, Made in Germany, GDPR badges are in the 8th section of 12. Move to a compact trust bar near the hero and CTA sections.
 
 #### 2.6 4.8/5 star rating is invisible (HIGH)
-Only exists in schema markup — never visually displayed. Show it prominently near testimonials and CTAs.
+Only exists in schema markup - never visually displayed. Show it prominently near testimonials and CTAs.
 
 #### 2.7 No social proof in demo modal (HIGH)
-When visitors open the demo form, they see only fields — no reinforcement. Add "Join 30+ German companies" with logos.
+When visitors open the demo form, they see only fields - no reinforcement. Add "Join 30+ German companies" with logos.
 
 #### 2.8 Header CTA hidden on mobile (HIGH)
-"Request Demo" has `hidden lg:block` — mobile visitors must open the hamburger menu. Add a visible mobile CTA.
+"Request Demo" has `hidden lg:block` - mobile visitors must open the hamburger menu. Add a visible mobile CTA.
 
 #### 2.9 Schools and Agencies have only one hero CTA (HIGH)
 No secondary CTA for visitors not ready to commit. Add "See How It Works" or "Download Case Study."
@@ -170,7 +170,7 @@ No content variety for different buyer stages. Add a comparison guide, implement
 - Comprehensive OG and Twitter card implementation
 - Proper schema markup (Organization, SoftwareApplication, FAQPage, BlogPosting)
 - Clean URL structure with proper 301 redirects
-- Static HTML via Astro — excellent TTFB
+- Static HTML via Astro - excellent TTFB
 - AI crawler access enabled (GPTBot, ClaudeBot, PerplexityBot)
 - llms.txt present
 
@@ -247,7 +247,7 @@ The product is invisible. Add screenshots, a demo video, or interactive product 
 Define and use consistently: e.g., "AI-Powered Apprenticeship Acceleration Platform."
 
 #### 4.8 No "Only LearnSlice" statement (MEDIUM)
-The site never says "we're the only platform that..." — differentiation is implied, not stated.
+The site never says "we're the only platform that..." - differentiation is implied, not stated.
 
 ---
 
@@ -293,7 +293,7 @@ Add lock icon + "German servers. 100% GDPR compliant" near the demo form submit 
 
 ### Critical Issues
 
-#### 6.1 Purely sales-led — no PLG or self-serve (HIGH)
+#### 6.1 Purely sales-led - no PLG or self-serve (HIGH)
 No free trial, freemium, interactive demo, or self-serve signup. Create an interactive product demo and/or free pilot for small cohorts.
 
 #### 6.2 Only 3 blog posts (HIGH)
@@ -303,13 +303,13 @@ Insufficient for any meaningful SEO impact. Target 2 posts/week covering: compar
 Zero referral mechanisms despite 4.8/5 rating. Launch "refer and get 1 month free" + formal agency partner program with tiered commissions.
 
 #### 6.4 No pricing page (CRITICAL)
-Repeated from CRO — this is both a conversion AND growth issue. Create `/pricing` with 3 tiers.
+Repeated from CRO - this is both a conversion AND growth issue. Create `/pricing` with 3 tiers.
 
 #### 6.5 No Fachkraftemangel messaging (MEDIUM)
 The #1 budget-unlocking narrative for German HR is completely absent. Add prominently.
 
 #### 6.6 No government funding references (MEDIUM)
-BMBF grants, Digitalpakt, ESF programs — all absent. These are primary budget sources for vocational training.
+BMBF grants, Digitalpakt, ESF programs - all absent. These are primary budget sources for vocational training.
 
 #### 6.7 No expansion revenue paths visible (MEDIUM)
 No tiers, add-ons, or volume pricing. Define 3 product tiers and visible upsell paths.
@@ -327,7 +327,7 @@ Austria and Switzerland have similar vocational systems. The English site exists
 
 ## Priority Action Plan
 
-### Week 1 — Quick Wins (Easy, High Impact)
+### Week 1 - Quick Wins (Easy, High Impact)
 
 | # | Action | Category |
 |---|--------|----------|
@@ -344,7 +344,7 @@ Austria and Switzerland have similar vocational systems. The English site exists
 | 11 | Move Google Fonts from @import to `<link>` | Technical |
 | 12 | Add source footnotes to all quantified claims | Trust |
 
-### Weeks 2-4 — Medium-Term (Medium Effort, High Impact)
+### Weeks 2-4 - Medium-Term (Medium Effort, High Impact)
 
 | # | Action | Category |
 |---|--------|----------|
@@ -361,7 +361,7 @@ Austria and Switzerland have similar vocational systems. The English site exists
 | 23 | Add 2-3 more comparison pages | Competitive |
 | 24 | Create `/alternatives` page | Competitive |
 
-### Month 2+ — Strategic (Higher Effort, Compounding Impact)
+### Month 2+ - Strategic (Higher Effort, Compounding Impact)
 
 | # | Action | Category |
 |---|--------|----------|
@@ -411,4 +411,4 @@ Austria and Switzerland have similar vocational systems. The English site exists
 
 ---
 
-*Generated by AI Marketing Suite — Claude Code*
+*Generated by AI Marketing Suite - Claude Code*
