@@ -2,17 +2,18 @@
   "nav": {
     "logo": "LearnSlice",
     "menu": [
-      { "label": "KI Katalysator", "sectionId": "learning-results" },
-      { "label": "So funktioniert's", "sectionId": "how-it-works" },
-      { "label": "Use Cases", "sectionId": "made-for-company" },
+      { "label": "Für Unternehmen", "href": "/de/companies" },
+      { "label": "Für Schulen", "href": "/de/schools" },
+      { "label": "Für Agenturen", "href": "/de/agencies" },
+      { "label": "Blog", "href": "/de/blog" },
       { "label": "FAQ", "sectionId": "faq" }
     ],
     "cta": "Demo anfordern"
   },
   "hero": {
     "badge": "Prüfungsunterlagen + Unternehmensdaten",
-    "headline": "Jetzt oder nie.\n Ausbildung automatisieren.",
-    "subheadline": "Beste Prüfungs- und Unternehmenswissen Lernpfade für Ihre Nachwuchskräfte, 24/7 KI-Training und Entlastung erfahrener Mitarbeitender. Boost Onboarding Experience und reduziere Abbruchquote. Keine Theoriefloskel.",
+    "headline": "KI-gestützte Ausbildung.\n65 % schneller einsatzbereit.",
+    "subheadline": "LearnSlice verbindet IHK-Prüfungsvorbereitung mit Ihrem Unternehmenswissen zu personalisierten KI-Lernpfaden — Ihre Azubis sind in 8 Wochen statt 6 Monaten einsatzbereit. Sparen Sie €32K pro Azubi und entlasten Sie Ihre Ausbilder um 50 %.",
     "ctaPrimary": "Demo anfordern",
     "ctaSecondary": "So funktioniert's"
   },

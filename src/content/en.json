@@ -2,17 +2,18 @@
   "nav": {
     "logo": "LearnSlice",
     "menu": [
-      { "label": "AI Catalyst", "sectionId": "learning-results" },
-      { "label": "How It Works", "sectionId": "how-it-works" },
-      { "label": "Use Cases", "sectionId": "made-for-company" },
+      { "label": "For Companies", "href": "/companies" },
+      { "label": "For Schools", "href": "/schools" },
+      { "label": "For Agencies", "href": "/agencies" },
+      { "label": "Blog", "href": "/blog" },
       { "label": "FAQ", "sectionId": "faq" }
     ],
     "cta": "Request Demo"
   },
   "hero": {
     "badge": "Exam Material + Company Knowledge",
-    "headline": "Performance fast-track. \n Now or never.",
-    "subheadline": "Best of exam and company knowledge learning paths for your young talents, 24/7 AI coaching, and trainer relief. Boost onboarding experience and reduce dropout. No theory fluff.",
+    "headline": "AI-Powered Apprenticeship Training.\n65% Faster to Productivity.",
+    "subheadline": "LearnSlice combines IHK exam preparation with your company knowledge into personalized AI learning paths — so your apprentices are job-ready in 8 weeks, not 6 months. Save €32K per apprentice and free up 50% of trainer time.",
     "ctaPrimary": "Request Demo",
     "ctaSecondary": "How it works"
   },

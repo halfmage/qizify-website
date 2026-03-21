@@ -1,0 +1,50 @@
+# ============================================
+# LearnSlice — 301 Redirects for Old URLs
+# ============================================
+# The site was migrated from multi-page (Eleventy) to
+# single-page (Astro) in Dec 2025. These redirects catch
+# visitors and search engines still hitting old URLs.
+
+# German old pages → DE homepage
+/de/team/                       /de/            301
+/de/pricing/                    /de/            301
+/de/companies/                  /de/            301
+/de/education/                  /de/            301
+/de/contact/                    /de/            301
+/de/faq/                        /de/            301
+/de/apprenticeship/             /de/            301
+/de/azubis/                     /de/            301
+/de/coaches/                    /de/            301
+/de/universities/               /de/            301
+# Old blog posts (specific slugs only — new blog now lives at /de/blog/)
+/de/blog/wie-gestaltet-man-ein-lms-benutzerfreundlich/  /de/blog/  301
+/de/blog/after-qizify-you-will-never-want-to-use-other-learning-management-systems/  /de/blog/  301
+
+# German old legal paths → new legal paths
+/de/impressum/                  /de/imprint/    301
+/de/datenschutzerklaerung/      /de/privacy/    301
+/de/agb/                        /de/terms/      301
+/de/terms-for-ai/               /de/terms/      301
+
+# English old pages → EN homepage
+/en/                            /               301
+/en/team/                       /               301
+/en/pricing/                    /               301
+/en/companies/                  /               301
+/en/education/                  /               301
+/en/contact/                    /               301
+/en/faq/                        /               301
+/en/apprenticeship/             /               301
+/en/universities/               /               301
+# Old EN blog posts (specific slugs only — new blog now lives at /blog/)
+/en/blog/digital-learning-in-germany-advantages-and-dissadvantages/  /blog/  301
+/en/blog/what-are-the-advantages-of-online-learning/  /blog/  301
+/en/blog/what-is-the-focus-in-education-industry-in-2022/  /blog/  301
+/en/blog/4-trends-in-education-industry-in-2022/  /blog/  301
+/en/blog/after-qizify-you-will-never-want-to-use-other-learning-management-systems/  /blog/  301
+
+# English old legal paths → new legal paths
+/en/imprint/                    /imprint/       301
+/en/privacy/                    /privacy/       301
+/en/terms-of-use/               /terms/         301
+/en/terms-for-ai/               /terms/         301

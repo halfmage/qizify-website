@@ -11,48 +11,134 @@ const { currentLang, privacyLabel, termsLabel, imprintLabel } = Astro.props;
 const currentYear = new Date().getFullYear();
 const basePath = currentLang === 'de' ? '/de' : '';
 const defaultImprintLabel = currentLang === 'de' ? 'Impressum' : 'Imprint';
+
+const footerColumns = currentLang === 'en'
+	? {
+		product: {
+			title: 'Product',
+			links: [
+				{ label: 'Home', href: '/' },
+				{ label: 'Blog', href: '/blog' },
+				{ label: 'Request Demo', href: '#demo-request' },
+			],
+		},
+		useCases: {
+			title: 'Use Cases',
+			links: [
+				{ label: 'For Companies', href: '/companies' },
+				{ label: 'For Schools', href: '/schools' },
+				{ label: 'For Agencies', href: '/agencies' },
+			],
+		},
+		compare: {
+			title: 'Compare',
+			links: [
+				{ label: 'vs. Traditional Training', href: '/learnslice-vs-traditional-training' },
+				{ label: 'vs. Simpleclub', href: '/learnslice-vs-simpleclub' },
+			],
+		},
+		legal: {
+			title: 'Legal',
+			links: [
+				{ label: privacyLabel, href: '/privacy' },
+				{ label: termsLabel, href: '/terms' },
+				{ label: imprintLabel || defaultImprintLabel, href: '/imprint' },
+			],
+		},
+	}
+	: {
+		product: {
+			title: 'Produkt',
+			links: [
+				{ label: 'Startseite', href: '/de' },
+				{ label: 'Blog', href: '/de/blog' },
+				{ label: 'Demo anfordern', href: '#demo-request' },
+			],
+		},
+		useCases: {
+			title: 'Use Cases',
+			links: [
+				{ label: 'Für Unternehmen', href: '/de/companies' },
+				{ label: 'Für Schulen', href: '/de/schools' },
+				{ label: 'Für Agenturen', href: '/de/agencies' },
+			],
+		},
+		compare: {
+			title: 'Vergleich',
+			links: [
+				{ label: 'vs. Traditionelle Ausbildung', href: '/de/learnslice-vs-traditionelle-ausbildung' },
+				{ label: 'vs. Simpleclub', href: '/de/learnslice-vs-simpleclub' },
+			],
+		},
+		legal: {
+			title: 'Rechtliches',
+			links: [
+				{ label: privacyLabel, href: '/de/privacy' },
+				{ label: termsLabel, href: '/de/terms' },
+				{ label: imprintLabel || defaultImprintLabel, href: '/de/imprint' },
+			],
+		},
+	};
+
+const columns = Object.values(footerColumns);
 ---
 
-<footer class="py-8 px-4 md:px-8 bg-dark border-t border-white/10">
+<footer class="py-12 px-4 md:px-8 bg-dark border-t border-white/10">
 	<div class="max-w-container mx-auto">
-		<div class="flex flex-col md:flex-row items-center justify-between gap-4">
-			<!-- Logo / Brand -->
-			<div class="flex items-center gap-2">
-				<img 
-					src="/images/learnslice-logo.svg" 
-					alt="LearnSlice" 
-					class="h-8 w-auto"
-				/>
-				<span class="text-white font-semibold">LearnSlice</span>
+		<div class="flex flex-col gap-10">
+			<!-- Top: Logo + Link columns -->
+			<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+				<!-- Logo -->
+				<div class="col-span-2 md:col-span-1">
+					<a href={currentLang === 'en' ? '/' : '/de'} class="flex items-center gap-2 no-underline mb-4">
+						<img
+							src="/images/learnslice-logo.svg"
+							alt="LearnSlice"
+							class="h-8 w-auto"
+						/>
+						<span class="text-white font-semibold">LearnSlice</span>
+					</a>
+					<p class="text-white/50 text-xs leading-relaxed m-0">
+						{currentLang === 'en'
+							? 'AI-powered apprenticeship training. Made in Germany.'
+							: 'KI-gestützte Ausbildung. Made in Germany.'}
+					</p>
+				</div>
+
+				<!-- Link columns -->
+				{columns.map(column => (
+					<div>
+						<h4 class="text-white/40 text-xs font-semibold uppercase tracking-wider mb-3">
+							{column.title}
+						</h4>
+						<ul class="list-none m-0 p-0 flex flex-col gap-2">
+							{column.links.map(link => (
+								<li>
+									<a
+										href={link.href}
+										class="text-white/70 hover:text-white transition-colors text-sm"
+									>
+										{link.label}
+									</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				))}
 			</div>
-			
-			<!-- Links -->
-			<nav class="flex items-center gap-6">
-				<a 
-					href={`${basePath}/privacy`}
-					class="text-white/70 hover:text-white transition-colors text-sm"
-				>
-					{privacyLabel}
-				</a>
-				<a 
-					href={`${basePath}/terms`}
-					class="text-white/70 hover:text-white transition-colors text-sm"
-				>
-					{termsLabel}
-				</a>
-				<a 
-					href={`${basePath}/imprint`}
-					class="text-white/70 hover:text-white transition-colors text-sm"
-				>
-					{imprintLabel || defaultImprintLabel}
-				</a>
-			</nav>
-			
-			<!-- Copyright -->
-			<p class="text-white/50 text-sm m-0">
-				© {currentYear} LearnSlice
-			</p>
+
+			<!-- Divider -->
+			<div class="border-t border-white/10"></div>
+
+			<!-- Bottom: Copyright -->
+			<div class="flex flex-col md:flex-row items-center justify-between gap-2">
+				<p class="text-white/40 text-xs m-0">
+					© {currentYear} LearnSlice UG (haftungsbeschränkt)
+				</p>
+				<p class="text-white/40 text-xs m-0">
+					{currentLang === 'en' ? 'Düsseldorf, Germany' : 'Düsseldorf, Deutschland'}
+				</p>
+			</div>
 		</div>
 	</div>
 </footer>
-

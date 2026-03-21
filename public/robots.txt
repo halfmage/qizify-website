@@ -2,10 +2,29 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://learnslice.com/sitemap.xml
+Sitemap: https://learnslice.com/sitemap-index.xml
 
-# Disallow admin or private areas if any
-# Disallow: /admin/
-# Disallow: /private/
+# AI Crawlers — allow for visibility in AI search engines
+User-agent: GPTBot
+Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /

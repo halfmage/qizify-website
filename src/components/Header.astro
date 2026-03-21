@@ -4,7 +4,8 @@ import Button from './Button.astro';
 
 interface MenuItem {
 	label: string;
-	sectionId: string;
+	sectionId?: string;
+	href?: string;
 }
 
 interface Props {
@@ -28,7 +29,7 @@ const { logo, menu, cta, currentLang, currentPath } = Astro.props;
 			<ul class="flex items-center gap-8 list-none m-0 p-0">
 				{menu.map((item) => (
 					<li>
-						<a href={`#${item.sectionId}`} class="text-white no-underline font-medium text-[0.9375rem] hover:text-primary transition-colors duration-200 relative">
+						<a href={item.href || `#${item.sectionId}`} class="text-white no-underline font-medium text-[0.9375rem] hover:text-primary transition-colors duration-200 relative">
 							{item.label}
 						</a>
 					</li>
@@ -60,7 +61,7 @@ const { logo, menu, cta, currentLang, currentPath } = Astro.props;
 		<ul class="list-none m-0 p-0 flex flex-col gap-6">
 			{menu.map((item) => (
 				<li>
-					<a href={`#${item.sectionId}`} class="text-white no-underline font-medium text-lg hover:text-primary transition-colors duration-200 block py-2">
+					<a href={item.href || `#${item.sectionId}`} class="text-white no-underline font-medium text-lg hover:text-primary transition-colors duration-200 block py-2">
 						{item.label}
 					</a>
 				</li>

@@ -1,0 +1,54 @@
+# LearnSlice
+
+> AI-powered vocational training platform for German apprenticeships (Ausbildung)
+
+## About
+
+LearnSlice is a B2B SaaS platform that automates mentoring for apprentices (Azubis) in German companies. It combines IHK exam-aligned learning paths with company-specific knowledge into personalized AI coaching — making apprentices job-ready in 8 weeks instead of 6 months.
+
+## Key Features
+
+- IHK exam preparation aligned to regional requirements
+- AI-powered 24/7 personal coaching and adaptive learning paths
+- Company-specific onboarding content via document upload
+- Automated assessments: quizzes, case studies, deep dives
+- Executive analytics dashboards for training managers
+- Gamification with points, badges, and leaderboards
+- GDPR-compliant, hosted in Germany
+
+## Results
+
+- 65% faster time to productivity (4-6 months reduced to 8 weeks)
+- €32K–€41K saved per apprentice
+- 50% reduction in trainer time (€10K savings per apprentice)
+- Dropout reduction from 30% to 15%
+
+## Target Audience
+
+- German SMEs with apprentices (Ausbildungsbetriebe)
+- Vocational schools (Berufsschulen)
+- IHK/HWK chambers and regional agencies
+- Corporate training departments
+
+## Vocational Professions Covered
+
+- Kauffrau/Kaufmann für Büromanagement (Office Management)
+- Kauffrau/Kaufmann für Spedition und Logistikdienstleistung
+- Fachkraft für Lagerlogistik (Warehouse Logistics)
+- Fachinformatiker Systemintegration
+- Fachinformatiker Anwendungsentwicklung
+- Fachinformatiker Digitale Vernetzung
+- Fachinformatiker Daten- und Prozessanalyse
+- KFZ-Mechatroniker (Automotive Mechatronics)
+
+## Company
+
+- Name: LearnSlice UG (haftungsbeschränkt)
+- Location: Düsseldorf, Germany
+- Contact: info@learnslice.com
+
+## Links
+
+- Website: https://learnslice.com
+- German: https://learnslice.com/de/
+- Demo: https://learnslice.com/#demo-request
