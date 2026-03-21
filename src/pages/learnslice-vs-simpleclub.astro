@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import LogosSlider from '../components/LogosSlider.astro';
+import Testimonials from '../components/Testimonials.astro';
+import CTAFooter from '../components/CTAFooter.astro';
+import Footer from '../components/Footer.astro';
+import DemoRequestModal from '../components/DemoRequestModal.astro';
+import LeadCapture from '../components/LeadCapture.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+const currentPath = '/learnslice-vs-simpleclub';
+---
+
+<BaseLayout
+	title="LearnSlice vs. Simpleclub: Which Is Better for Apprenticeship Training?"
+	description="Detailed comparison of LearnSlice and Simpleclub for vocational training. Compare AI coaching, IHK alignment, company knowledge integration, GDPR compliance, and pricing."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header
+		logo={enContent.nav.logo}
+		menu={enContent.nav.menu}
+		cta={enContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<!-- Hero -->
+	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark">
+		<div class="max-w-4xl mx-auto text-center">
+			<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
+				Comparison
+			</div>
+			<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+				LearnSlice vs. Simpleclub
+			</h1>
+			<p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+				Both platforms serve the German vocational training market — but they take fundamentally different approaches. Here's how they compare for companies training apprentices.
+			</p>
+		</div>
+	</section>
+
+	<!-- Overview -->
+	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark">
+		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+			<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+				<h3 class="text-xl font-bold text-white mb-3">Simpleclub</h3>
+				<p class="text-white/70 text-sm leading-relaxed mb-4">A popular B2C/B2B learning platform with video-based content covering school subjects and vocational training topics. Strong brand awareness among younger audiences.</p>
+				<ul class="text-white/60 text-sm space-y-2">
+					<li>Video-based learning content</li>
+					<li>B2C origin, expanded to B2B</li>
+					<li>Broad subject coverage</li>
+					<li>Large user base</li>
+				</ul>
+			</div>
+			<div class="bg-primary/10 border border-primary/30 rounded-2xl p-6 md:p-8">
+				<h3 class="text-xl font-bold text-primary mb-3">LearnSlice</h3>
+				<p class="text-white/70 text-sm leading-relaxed mb-4">A B2B AI-powered platform built specifically for apprenticeship training. Combines IHK exam prep with company-specific knowledge through personalized AI coaching and adaptive learning paths.</p>
+				<ul class="text-white/80 text-sm space-y-2">
+					<li>AI coaching with personalized learning paths</li>
+					<li>Built for B2B from day one</li>
+					<li>Company knowledge integration via RAG</li>
+					<li>IHK-exam-aligned assessments</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Feature comparison -->
+	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-2xl md:text-3xl font-bold text-white mb-10 text-center">Feature-by-Feature Comparison</h2>
+			<div class="overflow-x-auto">
+				<table class="w-full border-collapse">
+					<thead>
+						<tr>
+							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Feature</th>
+							<th class="text-left text-white/60 text-sm font-medium p-4 border-b border-white/10 w-1/3">Simpleclub</th>
+							<th class="text-left text-sm font-medium p-4 border-b border-primary/50 w-1/3 bg-primary/10 rounded-t-xl">
+								<span class="text-primary">LearnSlice</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody class="text-sm md:text-base">
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Learning approach</td>
+							<td class="text-white/50 p-4 border-b border-white/10">Video lessons + exercises</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">AI chat coaching + adaptive paths</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Personalization</td>
+							<td class="text-white/50 p-4 border-b border-white/10">Topic recommendations</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Full AI adaptation per learner</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Company knowledge</td>
+							<td class="text-white/50 p-4 border-b border-white/10">Not available</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Upload docs, AI learns them</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">IHK exam alignment</td>
+							<td class="text-white/50 p-4 border-b border-white/10">General coverage</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Mapped to IHK by profession & region</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Assessment types</td>
+							<td class="text-white/50 p-4 border-b border-white/10">Multiple choice quizzes</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Quizzes + case studies + deep dives</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">AI coaching</td>
+							<td class="text-white/50 p-4 border-b border-white/10">Limited AI features</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Full conversational AI tutor 24/7</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Trainer analytics</td>
+							<td class="text-white/50 p-4 border-b border-white/10">Basic reports</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Executive dashboards with competency tracking</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Data hosting</td>
+							<td class="text-white/50 p-4 border-b border-white/10">EU</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Germany only</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 border-b border-white/10 font-medium">Target user</td>
+							<td class="text-white/50 p-4 border-b border-white/10">Students & apprentices (B2C)</td>
+							<td class="text-white p-4 border-b border-white/10 bg-primary/5 font-semibold">Companies & their apprentices (B2B)</td>
+						</tr>
+						<tr>
+							<td class="text-white/70 p-4 font-medium">Onboarding support</td>
+							<td class="text-white/50 p-4">Self-service</td>
+							<td class="text-white p-4 bg-primary/5 font-semibold rounded-b-xl">Dedicated setup + support team</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<!-- When to choose -->
+	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+		<div class="max-w-container mx-auto">
+			<h2 class="text-2xl md:text-3xl font-bold text-white mb-10 text-center">When to Choose What</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg font-bold text-white mb-4">Choose Simpleclub if you...</h3>
+					<ul class="text-white/70 text-sm space-y-3">
+						<li>Need a self-study tool for individual apprentices</li>
+						<li>Want broad educational content beyond vocational training</li>
+						<li>Prefer video-based learning over text/chat</li>
+						<li>Don't need to integrate company-specific knowledge</li>
+					</ul>
+				</div>
+				<div class="bg-primary/10 border border-primary/30 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg font-bold text-primary mb-4">Choose LearnSlice if you...</h3>
+					<ul class="text-white/80 text-sm space-y-3">
+						<li>Want to reduce training costs and trainer time measurably</li>
+						<li>Need to integrate company-specific onboarding content</li>
+						<li>Require IHK-exam-aligned learning paths per profession</li>
+						<li>Want AI coaching that adapts to each apprentice</li>
+						<li>Need data hosted exclusively in Germany</li>
+						<li>Want executive analytics on training ROI</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<LogosSlider
+		headline={enContent.trustedBy.headline}
+		logos={enContent.trustedBy.logos}
+	/>
+
+	<Testimonials
+		headline={enContent.testimonials.headline}
+		items={enContent.testimonials.items}
+		currentLang={lang}
+	/>
+
+	<LeadCapture currentLang={lang} />
+
+	<CTAFooter
+		headline={enContent.cta.headline}
+		subheadline={enContent.cta.subheadline}
+		button={enContent.cta.button}
+		currentLang={lang}
+	/>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={enContent.footer.privacyLabel}
+		termsLabel={enContent.footer.termsLabel}
+	/>
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

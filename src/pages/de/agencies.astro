@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import LogosSlider from '../../components/LogosSlider.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTAFooter from '../../components/CTAFooter.astro';
+import Footer from '../../components/Footer.astro';
+import DemoRequestModal from '../../components/DemoRequestModal.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+import deContent from '../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de/agencies';
+---
+
+<BaseLayout
+	title="KI-Training für IHK, HWK & Wirtschaftsförderung | LearnSlice"
+	description="Machen Sie moderne Ausbildung für KMU bezahlbar. Gemeinsame KI-Mentoring-Lizenzen senken die Abbruchquote um 10-15 % und entlasten überlastete Ausbilder um 45-50 %."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header
+		logo={deContent.nav.logo}
+		menu={deContent.nav.menu}
+		cta={deContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<!-- Hero -->
+	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
+		<div class="absolute inset-0 z-0">
+			<img src="/images/hero/hero-background.webp" alt="" class="w-full h-full object-cover opacity-30" aria-hidden="true" />
+			<div class="absolute inset-0 bg-gradient-to-b from-dark/40 via-dark/80 to-dark"></div>
+		</div>
+		<div class="max-w-container mx-auto relative z-10">
+			<div class="max-w-3xl">
+				<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
+					Für IHK, HWK & Wirtschaftsförderung
+				</div>
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+					Moderne Ausbildung für jedes KMU.<br />Bezahlbar und skalierbar.
+				</h1>
+				<p class="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+					Ermöglichen Sie Ihren regionalen KMU den Zugang zu KI-gestützter Ausbildung durch gemeinsame Lizenzmodelle. Senken Sie Abbruchquoten, entlasten Sie überlastete Ausbilder und stärken Sie die Fachkräfteentwicklung Ihrer Region.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4">
+					<a href="#demo-request" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-white/90 transition-colors">
+						Demo anfordern
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Key metrics -->
+	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark border-t border-white/10">
+		<div class="max-w-container mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">10-15 %</div>
+					<div class="text-white/70 text-sm">Weniger Ausbildungsabbrüche</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">45-50 %</div>
+					<div class="text-white/70 text-sm">Weniger Betreuungsaufwand</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">Shared</div>
+					<div class="text-white/70 text-sm">Lizenzmodell für KMU-Zugang</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits -->
+	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+		<div class="max-w-container mx-auto">
+			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-10 md:mb-14 text-center">
+				So profitieren Kammern und Agenturen
+			</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">Bezahlbar für KMU</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Gemeinsame Lizenzmodelle machen KI-gestütztes Training auch für kleine Unternehmen ohne IT-Budget zugänglich. Bieten Sie moderne Ausbildung als Teil Ihrer regionalen Förderprogramme an.</p>
+				</div>
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">Messbare Wirkung</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Verfolgen Sie Abbruchreduzierung, Prüfungsbestehensquoten und Ausbildungseffizienz über alle teilnehmenden Unternehmen. Berichten Sie konkrete Ergebnisse an Stakeholder und Fördergeber.</p>
+				</div>
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">IHK-Prüfungsausrichtung</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Berufsspezifische Aufgaben und Prüfungssimulationen stabilisieren Azubis im Arbeitsalltag. Inhalte sind nach IHK-/HWK-Anforderungen je Region und Beruf abgestimmt.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<LogosSlider
+		headline={deContent.trustedBy.headline}
+		logos={deContent.trustedBy.logos}
+	/>
+
+	<Testimonials
+		headline={deContent.testimonials.headline}
+		items={deContent.testimonials.items}
+		currentLang={lang}
+	/>
+
+	<LeadCapture currentLang={lang} />
+
+	<FAQ
+		headline={deContent.faq.headline}
+		items={deContent.faq.items}
+	/>
+
+	<CTAFooter
+		headline={deContent.cta.headline}
+		subheadline={deContent.cta.subheadline}
+		button={deContent.cta.button}
+		currentLang={lang}
+	/>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={deContent.footer.privacyLabel}
+		termsLabel={deContent.footer.termsLabel}
+	/>
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

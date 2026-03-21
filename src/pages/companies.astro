@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import LogosSlider from '../components/LogosSlider.astro';
+import SavingsComparison from '../components/SavingsComparison.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Testimonials from '../components/Testimonials.astro';
+import FAQ from '../components/FAQ.astro';
+import CTAFooter from '../components/CTAFooter.astro';
+import Footer from '../components/Footer.astro';
+import DemoRequestModal from '../components/DemoRequestModal.astro';
+import LeadCapture from '../components/LeadCapture.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+const currentPath = '/companies';
+---
+
+<BaseLayout
+	title="AI-Powered Apprenticeship Training for Companies | LearnSlice"
+	description="Reduce apprentice onboarding from 6 months to 8 weeks. Save €32K per apprentice with AI coaching, IHK exam prep, and company knowledge integration. Free up 50% of trainer time."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header
+		logo={enContent.nav.logo}
+		menu={enContent.nav.menu}
+		cta={enContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<!-- Hero -->
+	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
+		<div class="absolute inset-0 z-0">
+			<img src="/images/hero/hero-background.webp" alt="" class="w-full h-full object-cover opacity-30" aria-hidden="true" />
+			<div class="absolute inset-0 bg-gradient-to-b from-dark/40 via-dark/80 to-dark"></div>
+		</div>
+		<div class="max-w-container mx-auto relative z-10">
+			<div class="max-w-3xl">
+				<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
+					For Companies
+				</div>
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+					Turn Every Apprentice Into a<br />Top Performer in 8 Weeks
+				</h1>
+				<p class="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+					LearnSlice combines IHK exam preparation with your company knowledge into personalized AI learning paths. Your apprentices are job-ready 65% faster while freeing up 50% of trainer time.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4">
+					<a href="#demo-request" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-white/90 transition-colors">
+						Request Demo
+					</a>
+					<a href="#savings" class="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors">
+						See the ROI
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Key metrics -->
+	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark border-t border-white/10">
+		<div class="max-w-container mx-auto">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">65%</div>
+					<div class="text-white/70 text-sm">Faster to productivity</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">€32K</div>
+					<div class="text-white/70 text-sm">Saved per apprentice</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">50%</div>
+					<div class="text-white/70 text-sm">Less trainer time</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">15%</div>
+					<div class="text-white/70 text-sm">Dropout rate (from 30%)</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="savings">
+		<SavingsComparison
+			headline={enContent.savingsComparison.headline}
+			without={enContent.savingsComparison.without}
+			with={enContent.savingsComparison.with}
+		/>
+	</div>
+
+	<HowItWorks
+		badge={enContent.howItWorks.badge}
+		headline={enContent.howItWorks.headline}
+		steps={enContent.howItWorks.steps}
+	/>
+
+	<LogosSlider
+		headline={enContent.trustedBy.headline}
+		logos={enContent.trustedBy.logos}
+	/>
+
+	<Testimonials
+		headline={enContent.testimonials.headline}
+		items={enContent.testimonials.items}
+		currentLang={lang}
+	/>
+
+	<LeadCapture currentLang={lang} />
+
+	<FAQ
+		headline={enContent.faq.headline}
+		items={enContent.faq.items}
+	/>
+
+	<CTAFooter
+		headline={enContent.cta.headline}
+		subheadline={enContent.cta.subheadline}
+		button={enContent.cta.button}
+		currentLang={lang}
+	/>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={enContent.footer.privacyLabel}
+		termsLabel={enContent.footer.termsLabel}
+	/>
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

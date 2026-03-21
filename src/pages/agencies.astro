@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import LogosSlider from '../components/LogosSlider.astro';
+import Testimonials from '../components/Testimonials.astro';
+import FAQ from '../components/FAQ.astro';
+import CTAFooter from '../components/CTAFooter.astro';
+import Footer from '../components/Footer.astro';
+import DemoRequestModal from '../components/DemoRequestModal.astro';
+import LeadCapture from '../components/LeadCapture.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+const currentPath = '/agencies';
+---
+
+<BaseLayout
+	title="AI Training for IHK, HWK & Economic Development Agencies | LearnSlice"
+	description="Make modern apprenticeship training affordable for SMEs. Shared AI mentoring licenses reduce dropout rates by 10-15% and relieve overloaded trainers by 45-50%."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header
+		logo={enContent.nav.logo}
+		menu={enContent.nav.menu}
+		cta={enContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<!-- Hero -->
+	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
+		<div class="absolute inset-0 z-0">
+			<img src="/images/hero/hero-background.webp" alt="" class="w-full h-full object-cover opacity-30" aria-hidden="true" />
+			<div class="absolute inset-0 bg-gradient-to-b from-dark/40 via-dark/80 to-dark"></div>
+		</div>
+		<div class="max-w-container mx-auto relative z-10">
+			<div class="max-w-3xl">
+				<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
+					For IHK, HWK & Agencies
+				</div>
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+					Modern Training for Every SME.<br />Affordable and Scalable.
+				</h1>
+				<p class="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+					Give your regional SMEs access to AI-powered apprenticeship training through shared license models. Reduce dropout rates, relieve overloaded trainers, and strengthen your region's workforce development.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4">
+					<a href="#demo-request" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-white/90 transition-colors">
+						Request Demo
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Key metrics -->
+	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark border-t border-white/10">
+		<div class="max-w-container mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">10-15%</div>
+					<div class="text-white/70 text-sm">Fewer apprenticeship dropouts</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">45-50%</div>
+					<div class="text-white/70 text-sm">Less trainer supervision effort</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">Shared</div>
+					<div class="text-white/70 text-sm">License model for SME access</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits -->
+	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+		<div class="max-w-container mx-auto">
+			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-10 md:mb-14 text-center">
+				How Agencies and Chambers Benefit
+			</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">Affordable for SMEs</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Shared license models make AI-powered training accessible even for small companies without IT budgets. Offer modern training as part of your regional support programs.</p>
+				</div>
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">Measurable Impact</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Track dropout reduction, exam pass rates, and training efficiency across all participating companies. Report concrete outcomes to stakeholders and funding bodies.</p>
+				</div>
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">IHK Exam Alignment</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Job-relevant tasks and exam-level simulations stabilize apprentices in daily work and training. Content is mapped to IHK/HWK requirements by region and profession.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<LogosSlider
+		headline={enContent.trustedBy.headline}
+		logos={enContent.trustedBy.logos}
+	/>
+
+	<Testimonials
+		headline={enContent.testimonials.headline}
+		items={enContent.testimonials.items}
+		currentLang={lang}
+	/>
+
+	<LeadCapture currentLang={lang} />
+
+	<FAQ
+		headline={enContent.faq.headline}
+		items={enContent.faq.items}
+	/>
+
+	<CTAFooter
+		headline={enContent.cta.headline}
+		subheadline={enContent.cta.subheadline}
+		button={enContent.cta.button}
+		currentLang={lang}
+	/>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={enContent.footer.privacyLabel}
+		termsLabel={enContent.footer.termsLabel}
+	/>
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

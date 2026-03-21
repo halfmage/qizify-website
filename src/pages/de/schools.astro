@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import LogosSlider from '../../components/LogosSlider.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTAFooter from '../../components/CTAFooter.astro';
+import Footer from '../../components/Footer.astro';
+import DemoRequestModal from '../../components/DemoRequestModal.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+import deContent from '../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de/schools';
+---
+
+<BaseLayout
+	title="KI-Lernplattform für Berufsschulen | LearnSlice"
+	description="Steigern Sie die Übergangsquote in Ausbildung um 15-25 %, reduzieren Sie Abbrüche um 30 % und sparen Sie Lehrkräften 25 % ihrer Zeit mit KI-gestützter Prüfungsvorbereitung."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header
+		logo={deContent.nav.logo}
+		menu={deContent.nav.menu}
+		cta={deContent.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<!-- Hero -->
+	<section class="py-16 md:py-24 px-4 md:px-8 bg-dark relative overflow-hidden">
+		<div class="absolute inset-0 z-0">
+			<img src="/images/hero/hero-background.webp" alt="" class="w-full h-full object-cover opacity-30" aria-hidden="true" />
+			<div class="absolute inset-0 bg-gradient-to-b from-dark/40 via-dark/80 to-dark"></div>
+		</div>
+		<div class="max-w-container mx-auto relative z-10">
+			<div class="max-w-3xl">
+				<div class="inline-block px-4 py-2 bg-primary/20 border border-primary rounded-full text-white text-sm font-medium uppercase tracking-wider mb-6">
+					Für Berufsschulen
+				</div>
+				<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+					Bessere Prüfungsergebnisse.<br />Weniger Arbeitsaufwand.
+				</h1>
+				<p class="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+					LearnSlice bietet Ihren Schülern personalisiertes KI-Coaching, abgestimmt auf IHK-Prüfungsanforderungen. Automatisierte Übungen, Echtzeit-Feedback und adaptive Lernpfade — damit Lehrkräfte sich auf das Wesentliche konzentrieren können.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4">
+					<a href="#demo-request" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-white/90 transition-colors">
+						Demo anfordern
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Key metrics -->
+	<section class="py-12 md:py-16 px-4 md:px-8 bg-dark border-t border-white/10">
+		<div class="max-w-container mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">15-25 %</div>
+					<div class="text-white/70 text-sm">Höhere Übergangsquote in Ausbildung</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">30 %</div>
+					<div class="text-white/70 text-sm">Weniger Abbrüche im ersten Jahr</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">25 %</div>
+					<div class="text-white/70 text-sm">Zeitersparnis für Lehrkräfte</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits -->
+	<section class="py-12 md:py-20 px-4 md:px-8 bg-dark">
+		<div class="max-w-container mx-auto">
+			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-10 md:mb-14 text-center">
+				So unterstützt LearnSlice Berufsschulen
+			</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">IHK-ausgerichtete Inhalte</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Vorgefertigte Lernpfade, die auf IHK-Prüfungsanforderungen für jeden Ausbildungsberuf abgestimmt sind. Schüler üben mit prüfungsnahen Fragen, die automatisch von der KI generiert werden.</p>
+				</div>
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">24/7 KI-Nachhilfe</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Schüler erhalten personalisiertes Coaching außerhalb der Unterrichtszeiten. Die KI identifiziert Wissenslücken und erstellt gezielte Wiederholungsübungen — ohne zusätzlichen Aufwand für Lehrkräfte.</p>
+				</div>
+				<div class="bg-gray/20 border border-gray/50 rounded-2xl p-6 md:p-8">
+					<h3 class="text-lg md:text-xl font-bold text-white mb-3">Analytics-Dashboard</h3>
+					<p class="text-white/70 text-sm leading-relaxed">Verfolgen Sie den Fortschritt der Schüler auf einen Blick. Identifizieren Sie gefährdete Schüler frühzeitig, sehen Sie klassenweite Leistungstrends und erstellen Sie Berichte — alles automatisiert.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<LogosSlider
+		headline={deContent.trustedBy.headline}
+		logos={deContent.trustedBy.logos}
+	/>
+
+	<Testimonials
+		headline={deContent.testimonials.headline}
+		items={deContent.testimonials.items}
+		currentLang={lang}
+	/>
+
+	<LeadCapture currentLang={lang} />
+
+	<FAQ
+		headline={deContent.faq.headline}
+		items={deContent.faq.items}
+	/>
+
+	<CTAFooter
+		headline={deContent.cta.headline}
+		subheadline={deContent.cta.subheadline}
+		button={deContent.cta.button}
+		currentLang={lang}
+	/>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={deContent.footer.privacyLabel}
+		termsLabel={deContent.footer.termsLabel}
+	/>
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>
