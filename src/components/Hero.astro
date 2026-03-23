@@ -61,10 +61,8 @@ const headlineLines = headline.split('\n');
 		</div>
 
 		<!-- App mockup with gradient fade -->
-		<div class="mt-16 md:mt-24 relative">
-			<!-- Full-width gradient behind mockup -->
-			<div class="absolute -inset-x-[50vw] left-1/2 -translate-x-1/2 -bottom-32 h-[120%] pointer-events-none" aria-hidden="true" style="background: linear-gradient(to bottom, transparent 0%, rgba(124, 92, 252, 0.08) 40%, rgba(124, 92, 252, 0.15) 70%, rgba(124, 92, 252, 0.06) 100%);"></div>
-			<div class="relative">
+		<div class="mt-16 md:mt-24 relative p-12 rounded-3xl bg-gradient-to-b from-primary/5 to-primary/80">
+			<div class="relative shadow-xl">
 				<AppMockup currentLang={currentLang} />
 			</div>
 		</div>
