@@ -61,10 +61,21 @@ const headlineLines = headline.split('\n');
 		</div>
 
 		<!-- App mockup with gradient fade -->
-		<div class="mt-16 md:mt-24 relative p-12 rounded-3xl bg-gradient-to-b from-primary/5 to-primary/80">
-			<div class="relative shadow-xl">
+		<div class="mt-16 md:mt-24 relative p-4 md:p-12 rounded-3xl bg-gradient-to-b from-primary/5 to-primary/80 overflow-hidden">
+			<div class="relative shadow-xl mockup-scale-wrapper">
 				<AppMockup currentLang={currentLang} />
 			</div>
 		</div>
 	</div>
 </section>
+
+<style>
+	@media (max-width: 767px) {
+		.mockup-scale-wrapper {
+			width: 180%;
+			transform: scale(0.555);
+			transform-origin: top left;
+			margin-bottom: -45%;
+		}
+	}
+</style>
