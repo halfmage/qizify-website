@@ -277,9 +277,9 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 	if (header) {
 		window.addEventListener('scroll', () => {
 			if (window.pageYOffset > 10) {
-				header.classList.add('bg-dark/80', 'backdrop-blur-xl', 'border-b', 'border-border');
+				header.classList.add('bg-dark/80', 'backdrop-blur-xl');
 			} else {
-				header.classList.remove('bg-dark/80', 'backdrop-blur-xl', 'border-b', 'border-border');
+				header.classList.remove('bg-dark/80', 'backdrop-blur-xl');
 			}
 		});
 	}
