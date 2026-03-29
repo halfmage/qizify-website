@@ -7,328 +7,366 @@ const { currentLang } = Astro.props;
 
 const isDE = currentLang === 'de';
 
-// Chat sidebar items
-const chatModes = isDE
+// Chat sidebar categories
+const chatCategories = isDE
 	? [
-		{ title: 'IHK Prüfungssimulation', mode: 'ihk', type: 'IHK Prüfungen', msgs: 12 },
-		{ title: 'Reklamationsprozess erklärt', mode: 'company', type: 'Unternehmenswissen', msgs: 8 },
-		{ title: 'Erste Woche Checkliste', mode: 'onboarding', type: 'Onboarding', msgs: 5 },
-		{ title: 'Excel Pivot-Tabellen lernen', mode: 'upskilling', type: 'Upskilling', msgs: 3 },
+		{ title: 'IHK Prüfungen', active: true, count: 7, chats: [
+			{ title: 'Kundenbedarfe und Zielgruppen v...', collection: 'Meine Sammlung', msgs: 8 },
+			{ title: 'Training zu Kunden Nutzung von P...', collection: 'Meine Sammlung', msgs: 5 },
+		]},
+		{ title: 'Einarbeitung', active: false, count: 3, chats: [] },
+		{ title: 'Weiterbildung', active: false, count: 4, chats: [] },
 	]
 	: [
-		{ title: 'IHK Exam Simulation', mode: 'ihk', type: 'IHK Exams', msgs: 12 },
-		{ title: 'Complaint Process Explained', mode: 'company', type: 'CompanyDB', msgs: 8 },
-		{ title: 'First Week Checklist', mode: 'onboarding', type: 'Onboarding', msgs: 5 },
-		{ title: 'Learn Excel Pivot Tables', mode: 'upskilling', type: 'Upskilling', msgs: 3 },
+		{ title: 'IHK Exams', active: true, count: 7, chats: [
+			{ title: 'Customer Needs & Target Groups...', collection: 'My Collection', msgs: 8 },
+			{ title: 'Customer Usage Training for P...', collection: 'My Collection', msgs: 5 },
+		]},
+		{ title: 'Onboarding', active: false, count: 3, chats: [] },
+		{ title: 'Upskilling', active: false, count: 4, chats: [] },
 	];
 
-// Chat conversations per mode
-const chats = {
-	ihk: {
-		user: isDE ? 'Erkläre mir die doppelte Buchführung mit einem Beispiel aus dem Alltag' : 'Explain double-entry bookkeeping with a real-world example I can relate to',
-		bot: isDE
-			? `Klar! Die <strong class="text-white">doppelte Buchführung</strong> ist das Herzstück des Rechnungswesens. Jede Transaktion wird auf mindestens zwei Konten gebucht — einmal im <strong class="text-white">Soll</strong> (links) und einmal im <strong class="text-white">Haben</strong> (rechts). So bleibt die Bilanz immer ausgeglichen.`
-			: `Sure! <strong class="text-white">Double-entry bookkeeping</strong> is the foundation of accounting. Every transaction is recorded in at least two accounts — once as a <strong class="text-white">debit</strong> (left side) and once as a <strong class="text-white">credit</strong> (right side). This keeps the balance sheet always balanced.`,
-		example: isDE ? 'Beispiel: Dein Unternehmen kauft Büromaterial für 200 €' : 'Example: Your company buys office supplies for €200',
-		items: isDE
-			? [{ l: 'Soll', v: 'Büromaterial (Aufwand) +200 €' }, { l: 'Haben', v: 'Bank (Aktiva) −200 €' }]
-			: [{ l: 'Debit', v: 'Office Supplies (Expense) +€200' }, { l: 'Credit', v: 'Bank (Asset) −€200' }],
-		followup: isDE ? 'Beide Seiten sind gleich → die Bilanz stimmt. Das ist das Grundprinzip! Soll ich dir noch ein zweites Beispiel zeigen, oder direkt ein Quiz starten?' : 'Both sides are equal → the balance checks out. That\'s the core principle! Want another example, or shall I create a quiz to test your understanding?',
-		user2: isDE ? 'Erstelle mir ein Quiz zur doppelten Buchführung' : 'Create me a quiz on double-entry bookkeeping',
-		quizCard: isDE
-			? { name: 'Buchführung Grundlagen', type: 'Quiz', questions: 10, points: 100 }
-			: { name: 'Bookkeeping Basics', type: 'Quiz', questions: 10, points: 100 },
-		quizReply: isDE ? 'Perfekt! Ich habe ein Quiz mit 10 Fragen erstellt, das dein Wissen zur doppelten Buchführung testet. Klicke auf die Karte um zu starten:' : "Perfect! I've created a 10-question quiz to test your understanding of double-entry bookkeeping. Click the card below to start:",
-	},
-	company: {
-		user: isDE ? 'Was steht in unserem Qualitätshandbuch über den Umgang mit Kundenreklamationen?' : 'What does our quality handbook say about handling customer complaints?',
-		bot: isDE
-			? `Ich habe euer <strong class="text-white">Qualitätshandbuch (QM-HB v3.2)</strong> durchsucht. Reklamationen müssen innerhalb von <strong class="text-white">48 Stunden</strong> dokumentiert und an die zuständige Abteilungsleitung eskaliert werden. Hier ist der standardisierte Prozess:`
-			: `I've searched your <strong class="text-white">Quality Handbook (QM-HB v3.2)</strong>. Complaints must be documented within <strong class="text-white">48 hours</strong> and escalated to the responsible department head. Here's the standardized process:`,
-		example: isDE ? 'Reklamationsprozess — 3 verbindliche Schritte' : 'Complaint handling — 3 mandatory steps',
-		items: isDE
-			? [{ l: '1', v: 'Reklamation erfassen und im CRM-System anlegen' }, { l: '2', v: 'Ursachenanalyse durchführen (8D-Report)' }, { l: '3', v: 'Korrekturmaßnahme einleiten & Kunde informieren' }]
-			: [{ l: '1', v: 'Log complaint and create ticket in CRM' }, { l: '2', v: 'Conduct root cause analysis (8D report)' }, { l: '3', v: 'Implement corrective action & notify customer' }],
-		followup: isDE ? 'Wichtig: Laut QM-HB muss der 8D-Report innerhalb von 5 Werktagen abgeschlossen sein. Soll ich dir eine Übungsaufgabe mit einem realistischen Szenario erstellen?' : 'Important: Per the QM handbook, the 8D report must be completed within 5 business days. Want me to create a practice exercise with a realistic scenario?',
-	},
-	onboarding: {
-		user: isDE ? 'Heute ist mein erster Tag als Azubi — was muss ich diese Woche alles erledigen?' : 'Today is my first day as an apprentice — what do I need to do this week?',
-		bot: isDE
-			? `Herzlich willkommen im Team! 🎉 Hier ist dein <strong class="text-white">Onboarding-Plan</strong> für die erste Woche. Ich begleite dich Schritt für Schritt und erinnere dich an alles Wichtige.`
-			: `Welcome to the team! 🎉 Here's your <strong class="text-white">onboarding plan</strong> for week one. I'll guide you step by step and remind you of everything important.`,
-		example: isDE ? 'Woche 1 — Deine Onboarding-Checkliste' : 'Week 1 — Your onboarding checklist',
-		items: isDE
-			? [{ l: 'Mo', v: 'Sicherheitsunterweisung, IT-Zugänge & Arbeitsplatz einrichten' }, { l: 'Di', v: 'Abteilungs-Rundgang, Teamvorstellung & Mentor-Gespräch' }, { l: 'Mi–Fr', v: 'Erste praktische Aufgaben: Wareneingang buchen & Lieferscheine prüfen' }]
-			: [{ l: 'Mon', v: 'Safety briefing, IT access & workspace setup' }, { l: 'Tue', v: 'Department tour, team introductions & mentor meeting' }, { l: 'Wed–Fri', v: 'First hands-on tasks: Book incoming goods & verify delivery notes' }],
-		followup: isDE ? 'Tipp: Mach dir bei jedem Schritt Notizen — ich kann sie später als Lernkarten für dich aufbereiten. Alles erledigt? Dann starten wir mit Modul 1: Betriebliche Abläufe!' : 'Tip: Take notes at each step — I can turn them into flashcards for you later. All done? Let\'s start Module 1: Business Operations!',
-	},
-	upskilling: {
-		user: isDE ? 'Ich möchte Excel-Pivot-Tabellen lernen — mein Ausbilder hat gesagt, ich brauche das für die Monatsberichte' : 'I want to learn Excel pivot tables — my trainer said I need them for monthly reports',
-		bot: isDE
-			? `Gute Wahl! <strong class="text-white">Pivot-Tabellen</strong> sind eines der wichtigsten Werkzeuge für kaufmännische Azubis. Damit kannst du große Datenmengen in Sekunden auswerten und übersichtliche Berichte erstellen. Ich zeige dir die Grundlagen in 3 Schritten.`
-			: `Great choice! <strong class="text-white">Pivot tables</strong> are one of the most important tools for commercial apprentices. They let you analyze large datasets in seconds and create clear reports. I'll teach you the basics in 3 steps.`,
-		example: isDE ? 'Lernpfad: Von Rohdaten zum fertigen Bericht' : 'Learning path: From raw data to finished report',
-		items: isDE
-			? [{ l: '1', v: 'Quelldaten vorbereiten & als Tabelle formatieren' }, { l: '2', v: 'Pivot erstellen: Zeilen, Spalten & Wertfelder zuweisen' }, { l: '3', v: 'Filter, Gruppierungen & berechnete Felder hinzufügen' }]
-			: [{ l: '1', v: 'Prepare source data & format as table' }, { l: '2', v: 'Create pivot: assign row, column & value fields' }, { l: '3', v: 'Add filters, groupings & calculated fields' }],
-		followup: isDE ? 'Nach jedem Schritt gibt es eine praktische Übung mit echten Beispieldaten. Bereit? Dann starten wir mit Schritt 1 — ich zeige dir, wie du deine Rohdaten richtig vorbereitest.' : 'After each step there\'s a hands-on exercise with real sample data. Ready? Let\'s start with Step 1 — I\'ll show you how to properly prepare your raw data.',
-	},
-};
-
+const greeting = isDE ? 'Guten Tag!' : 'Good afternoon!';
+const greetingSub = isDE
+	? 'Bereite dich mit dem KI-Prüfungsagenten auf Fragen, Erklärungen und prüfungsrelevante Aufgaben vor.'
+	: 'Prepare with the AI exam agent for questions, explanations, and exam-relevant tasks.';
 const inputPlaceholder = isDE ? 'Nachricht eingeben...' : 'Type your message...';
 const newChatLabel = isDE ? 'Neuer Chat' : 'New Chat';
+const allChatsLabel = isDE ? 'Alle Chats' : 'All Chats';
 const sendLabel = isDE ? 'Senden' : 'Send';
+const modeLabel = isDE ? 'Wähl einen Modus, aus dem du aufbauen möchtest:' : 'Pick a mode to build from:';
+
+const suggestionChips = isDE
+	? ['Kurze Begrüßung', 'Weiterbildung']
+	: ['Quick Intro', 'Upskilling'];
+
+const suggestionCards = isDE
+	? [
+		'Welche Unternehmensrichtlinien gelten für mich?',
+		'Fasse die neuesten internen Richtlinien zusammen.',
+		'Wie funktioniert unser Einarbeitungsprozess?',
+	]
+	: [
+		'What company policies apply to me?',
+		'Summarize the latest internal guidelines.',
+		'How does our onboarding process work?',
+	];
 
 // Knowledge
-const kbItems = isDE
-	? [
-		{ name: 'IHK Prüfungsordnung', docs: 14, date: '21/03/2026', files: ['PDF', 'DOCX', 'PDF', 'PDF'] },
-		{ name: 'Unternehmenshandbuch', docs: 8, date: '18/03/2026', files: ['DOCX', 'PDF', 'XLSX', 'CSV'] },
-		{ name: 'Produktkatalog 2026', docs: 3, date: '15/03/2026', files: ['PDF', 'CSV'] },
-	]
-	: [
-		{ name: 'IHK Exam Regulations', docs: 14, date: '21/03/2026', files: ['PDF', 'DOCX', 'PDF', 'PDF'] },
-		{ name: 'Company Handbook', docs: 8, date: '18/03/2026', files: ['DOCX', 'PDF', 'XLSX', 'CSV'] },
-		{ name: 'Product Catalog 2026', docs: 3, date: '15/03/2026', files: ['PDF', 'CSV'] },
-	];
-
 const kbTitle = isDE ? 'Wissensbasen' : 'Knowledge Bases';
-const kbSub = isDE ? 'Wissenssammlungen für KI-gestütztes Lernen' : 'Manage knowledge collections for AI-powered learning';
-const kbCount = isDE ? '3 / 10 Wissensbasen' : '3 / 10 Knowledge Bases';
+const kbSub = isDE ? 'Verwalte deine persönlichen Wissenssammlungen für KI-gestütztes Lernen' : 'Manage your knowledge collections for AI-powered learning';
+const kbCount = isDE ? '1 / 5 Wissensbasen' : '1 / 5 Knowledge Bases';
 const kbCreate = isDE ? 'Wissensbasis erstellen' : 'Create Knowledge Base';
+const kbRefresh = isDE ? 'Aktualisieren' : 'Refresh';
 const kbMyLabel = isDE ? 'Meine Wissensbasen' : 'My Knowledge Bases';
-const kbDetails = isDE ? 'Details ansehen' : 'View details';
+const kbSharedLabel = isDE ? 'Geteilte Wissensbasen' : 'Shared Knowledge Bases';
+const kbDetails = isDE ? 'Details anzeigen' : 'View details';
+const kbSharedBadge = isDE ? 'Geteilt' : 'Shared';
+const kbDocsLabel = isDE ? 'Dokumente' : 'Documents';
+const kbCreatedLabel = isDE ? 'Erstellt' : 'Created';
 
-// Assessments (4)
-const assessments = isDE
+const myKb = isDE
+	? { name: 'my stuff', docs: 0, date: '18/03/2026' }
+	: { name: 'my stuff', docs: 0, date: '18/03/2026' };
+
+const sharedKbs = isDE
 	? [
-		{ name: 'Buchführung Grundlagen', type: 'Quiz', tag: 'Rechnungswesen', questions: 15, points: 280, best: '92%', status: 'Active', q: 'Was ist der Unterschied zwischen Soll und Haben in der Buchführung?', opts: ['Soll = Zugang, Haben = Abgang auf Aktivkonten', 'Soll = Einnahmen, Haben = Ausgaben', 'Soll = links, Haben = rechts ohne feste Bedeutung', 'Soll und Haben sind identisch'] },
-		{ name: 'Kundenberatung Simulation', type: 'Case Study', tag: 'Vertrieb', questions: 5, points: 150, best: '78%', status: 'Active', q: 'Ein Kunde reklamiert ein defektes Produkt. Welcher Schritt kommt zuerst?', opts: ['Reklamation im CRM dokumentieren', 'Sofort Ersatz senden', 'Den Vorgesetzten informieren', 'Dem Kunden einen Rabatt anbieten'] },
-		{ name: 'Wirtschaftsrecht Vertiefung', type: 'Deep Dive', tag: 'Recht', questions: 10, points: 200, best: '85%', status: 'Active', q: 'Was versteht man unter der Vertragsfreiheit im BGB?', opts: ['Parteien können Verträge frei gestalten', 'Alle Verträge müssen schriftlich sein', 'Verträge gelten nur mit Notar', 'Vertragsfreiheit gilt nur für Unternehmen'] },
-		{ name: 'Lagerverwaltung Praxis', type: 'Quiz', tag: 'Logistik', questions: 12, points: 220, best: '—', status: 'New', q: 'Was bedeutet FIFO in der Lagerhaltung?', opts: ['First In, First Out', 'Fast Inventory For Orders', 'Final Inspection First Output', 'Fixed Input, Flexible Output'] },
+		{ name: 'Weiterbildung', desc: 'Berufliche Entwicklung', docs: 3, date: '24/03/2026' },
+		{ name: 'IHK Prüfungen', desc: 'IHK Prüfungsvorbereitungsmaterialien', docs: 8, date: '11/03/2026' },
+		{ name: 'Firmenwissen', desc: 'Allgemeines Firmenwissen', docs: 0, date: '11/03/2026' },
+		{ name: 'Einarbeitung', desc: 'Einarbeitungsdokumente', docs: 0, date: '' },
 	]
 	: [
-		{ name: 'Accounting Fundamentals', type: 'Quiz', tag: 'Accounting', questions: 15, points: 280, best: '92%', status: 'Active', q: 'What is the difference between debit and credit in bookkeeping?', opts: ['Debit = increase in assets, Credit = decrease', 'Debit = income, Credit = expense', 'Debit = left side, Credit = right side only', 'Debit and Credit are identical'] },
-		{ name: 'Customer Advisory Sim', type: 'Case Study', tag: 'Sales', questions: 5, points: 150, best: '78%', status: 'Active', q: 'A customer reports a defective product. What is the first step?', opts: ['Document the complaint in CRM', 'Send a replacement immediately', 'Notify your supervisor', 'Offer the customer a discount'] },
-		{ name: 'Business Law Deep Dive', type: 'Deep Dive', tag: 'Law', questions: 10, points: 200, best: '85%', status: 'Active', q: 'What does freedom of contract mean under German civil law?', opts: ['Parties can freely design contracts', 'All contracts must be in writing', 'Contracts only valid with notary', 'Freedom of contract only applies to companies'] },
-		{ name: 'Warehouse Management', type: 'Quiz', tag: 'Logistics', questions: 12, points: 220, best: '—', status: 'New', q: 'What does FIFO mean in inventory management?', opts: ['First In, First Out', 'Fast Inventory For Orders', 'Final Inspection First Output', 'Fixed Input, Flexible Output'] },
+		{ name: 'Upskilling', desc: 'Professional development', docs: 3, date: '24/03/2026' },
+		{ name: 'IHK Exams', desc: 'IHK exam preparation materials', docs: 8, date: '11/03/2026' },
+		{ name: 'Company Knowledge', desc: 'General company knowledge', docs: 0, date: '11/03/2026' },
+		{ name: 'Onboarding', desc: 'Onboarding documents', docs: 0, date: '' },
 	];
 
-const assTitle = isDE ? 'Assessments & Analytics' : 'Assessments & Analytics';
-const assSub = isDE ? 'Fortschritt verfolgen und Wissen testen' : 'Track progress and test your knowledge';
-const assPlay = isDE ? 'Starten' : 'Start';
-const assHeadline = isDE ? 'Deine Assessments' : 'Your Assessments';
-const quizPrev = isDE ? 'Zurück' : 'Previous';
-const quizSubmit = isDE ? 'Antwort senden' : 'Submit Answer';
+// Assessments
+const assTitle = isDE ? 'Prüfungen' : 'Assessments';
+const assSub = isDE ? 'Alle Arten von Quizzes, Deep Dives und Fallstudien' : 'All types of quizzes, deep dives, and case studies';
+const assMyTab = isDE ? 'Meine Prüfungen' : 'My Assessments';
+const assAnalyseTab = isDE ? 'Analyse' : 'Analytics';
+const assRefresh = isDE ? 'Aktualisieren' : 'Refresh';
+const assAllTypes = isDE ? 'Alle Typen' : 'All Types';
+const assAllStatus = isDE ? 'Alle Status' : 'All Status';
+const assRecommended = isDE ? 'Empfohlen zur Wiederholung' : 'Recommended for Review';
+const assQuizzesLabel = isDE ? 'Quizze' : 'Quizzes';
+const assStart = isDE ? 'Starten' : 'Start';
+const assReplay = isDE ? 'Erneut spielen' : 'Play Again';
 
-const fileColors: Record<string, string> = {
-	'PDF': 'text-red-400 bg-red-400/10 border-red-400/20',
-	'DOCX': 'text-blue-400 bg-blue-400/10 border-blue-400/20',
-	'XLSX': 'text-green-400 bg-green-400/10 border-green-400/20',
-	'CSV': 'text-yellow-400 bg-yellow-400/10 border-yellow-400/20',
-};
+const recommendedItems = isDE
+	? [
+		{ name: 'Quiz — Marktbeobachtung: Vergleich v...', sub: 'Noch nicht gespielt' },
+		{ name: 'Project-Management Best-Practices a...', sub: 'Noch nicht gespielt' },
+		{ name: 'Network Setup Case Study Assessment', sub: '' },
+		{ name: 'Business Email Communication Asses...', sub: '' },
+	]
+	: [
+		{ name: 'Quiz — Market Analysis: Comparison...', sub: 'Not yet played' },
+		{ name: 'Project Management Best Practices...', sub: 'Not yet played' },
+		{ name: 'Network Setup Case Study Assessment', sub: '' },
+		{ name: 'Business Email Communication Asses...', sub: '' },
+	];
+
+const quizzes = isDE
+	? [
+		{ name: 'AI for Business: Basics & Predictive...', desc: 'A short 10 question multiple choice quiz that tests understanding of the core concepts and practical ideas for using AI in a busine...', questions: 10, points: 100, best: '100/100', played: true, q: 'An introduction to AI for business people describes AI as a set of computer programs that can ___', opts: ['learn from data, recognize patterns, and make decisions or predictions.', 'automate all human tasks without any input.', 'only identify customer sentiment in text.', 'provide a complete replacement for human sales teams.'] },
+		{ name: 'Business Email Etiquette Quiz', desc: 'A quiz examining best practices, pitfalls, and email analysis based on the Business Email Guide and common etiquette princip...', questions: 15, points: 150, best: '', played: false, q: 'Was ist die wichtigste Regel bei geschäftlichen E-Mails?', opts: ['Klare Betreffzeile verwenden', 'Möglichst viele Emojis einsetzen', 'Immer allen antworten', 'So kurz wie möglich schreiben'] },
+		{ name: 'AI & Data Strategy Quiz for Product...', desc: 'Assess your understanding of AI fundamentals and data strategy concepts critical for business decisio...', questions: 10, points: 100, best: '', played: false, q: 'Was ist der erste Schritt einer Datenstrategie?', opts: ['Datenquellen identifizieren', 'KI-Modell trainieren', 'Dashboard erstellen', 'Daten löschen'] },
+		{ name: 'Database Fundamentals Assessment', desc: 'A quiz testing understanding of basic database concepts, RDBMS...', questions: 10, points: 100, best: '', played: false, q: 'Was ist ein Primärschlüssel?', opts: ['Eindeutiger Bezeichner für einen Datensatz', 'Passwort für die Datenbank', 'Erster Eintrag in einer Tabelle', 'Verbindung zwischen Tabellen'] },
+		{ name: 'IT Topics Conversation Assessment', desc: 'A quiz to test understanding of the conversation about IT topics...', questions: 10, points: 100, best: '', played: false, q: 'Was ist Cloud Computing?', opts: ['Bereitstellung von IT-Ressourcen über das Internet', 'Lokale Datenspeicherung', 'Ein Programmiersprache', 'Ein Betriebssystem'] },
+		{ name: 'Marktbeobachtung — Preis- und Lei...', desc: 'Betrachte dein Verständnis der Preisbeobachtung, der Kommunikation...', questions: 10, points: 100, best: '', played: false, q: 'Was ist Preisbeobachtung?', opts: ['Systematische Überwachung von Marktpreisen', 'Festlegung eigener Preise', 'Rabattaktionen planen', 'Kundenumfragen durchführen'] },
+	]
+	: [
+		{ name: 'AI for Business: Basics & Predictive...', desc: 'A short 10 question multiple choice quiz that tests understanding of the core concepts and practical ideas for using AI in a busine...', questions: 10, points: 100, best: '100/100', played: true, q: 'An introduction to AI for business people describes AI as a set of computer programs that can ___', opts: ['learn from data, recognize patterns, and make decisions or predictions.', 'automate all human tasks without any input.', 'only identify customer sentiment in text.', 'provide a complete replacement for human sales teams.'] },
+		{ name: 'Business Email Etiquette Quiz', desc: 'A quiz examining best practices, pitfalls, and email analysis based on the Business Email Guide and common etiquette princip...', questions: 15, points: 150, best: '', played: false, q: 'What is the most important rule for business emails?', opts: ['Use a clear subject line', 'Use as many emojis as possible', 'Always reply all', 'Write as short as possible'] },
+		{ name: 'AI & Data Strategy Quiz for Product...', desc: 'Assess your understanding of AI fundamentals and data strategy concepts critical for business decisio...', questions: 10, points: 100, best: '', played: false, q: 'What is the first step in a data strategy?', opts: ['Identify data sources', 'Train AI model', 'Create dashboard', 'Delete data'] },
+		{ name: 'Database Fundamentals Assessment', desc: 'A quiz testing understanding of basic database concepts, RDBMS...', questions: 10, points: 100, best: '', played: false, q: 'What is a primary key?', opts: ['Unique identifier for a record', 'Database password', 'First entry in a table', 'Connection between tables'] },
+		{ name: 'IT Topics Conversation Assessment', desc: 'A quiz to test understanding of the conversation about IT topics...', questions: 10, points: 100, best: '', played: false, q: 'What is cloud computing?', opts: ['Delivery of IT resources over the internet', 'Local data storage', 'A programming language', 'An operating system'] },
+		{ name: 'Market Analysis — Pricing & Perf...', desc: 'Examine your understanding of price monitoring, communication...', questions: 10, points: 100, best: '', played: false, q: 'What is price monitoring?', opts: ['Systematic monitoring of market prices', 'Setting your own prices', 'Planning discount campaigns', 'Conducting customer surveys'] },
+	];
+
+const quizPrev = isDE ? 'Zurück' : 'Previous';
+const quizSubmit = isDE ? 'Antwort absenden' : 'Submit Answer';
+const quizPoints = isDE ? 'Punkte' : 'Points';
 ---
 
 <div class="app-mockup w-full aspect-video rounded-xl border border-border-light overflow-hidden bg-dark shadow-2xl shadow-primary/10 select-none flex flex-col relative" aria-hidden="true">
 	<!-- Top Nav -->
-	<div class="flex items-center justify-between px-6 py-4 border-b border-border bg-surface shrink-0">
+	<div class="flex items-center justify-between px-4 md:px-6 py-3 border-b border-border bg-surface shrink-0">
 		<button class="mockup-logo-btn bg-transparent border-none cursor-pointer p-0" data-tab="chats">
 			<img src="/images/learnslice-logo.svg" alt="LearnSlice" class="h-5 w-auto brightness-0 invert" />
 		</button>
-		<div class="flex items-center gap-2">
+		<div class="flex items-center gap-1">
 			<button class="mockup-nav-tab mockup-nav-active" data-tab="chats">
-				<svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+				<svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
 				Chats
 			</button>
 			<button class="mockup-nav-tab" data-tab="knowledge">
-				<svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
-				Knowledge
+				<svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+				{isDE ? 'Wissen' : 'Knowledge'}
 			</button>
 			<button class="mockup-nav-tab" data-tab="assessments">
-				<svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-				Assessments
+				<svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+				{isDE ? 'Prüfungen' : 'Assessments'}
 			</button>
 		</div>
-		<span class="mockup-nav-tab pointer-events-none">
-			<svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-			Settings
-		</span>
+		<div class="flex items-center gap-2">
+			<span class="mockup-nav-tab pointer-events-none hidden md:flex">
+				<svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+				{isDE ? 'Einstellungen' : 'Settings'}
+			</span>
+			<div class="w-7 h-7 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-[10px] text-primary font-medium">A</div>
+		</div>
 	</div>
 
 	<!-- TAB: Chats -->
 	<div class="mockup-panel flex flex-1 overflow-hidden" data-panel="chats">
-		<div class="hidden md:flex flex-col w-48 shrink-0 border-r border-border bg-surface/50 p-3 gap-2">
+		<!-- Sidebar -->
+		<div class="hidden md:flex flex-col w-48 shrink-0 border-r border-border bg-surface/50 p-3 gap-2 overflow-y-auto">
 			<div class="w-full py-2 rounded-lg bg-primary text-white text-xs font-medium flex items-center justify-center gap-1.5">
 				{newChatLabel}
 				<svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
 			</div>
-			<div class="flex flex-col gap-0.5 mt-1">
-				{chatModes.map((item, i) => (
-					<button class={`chat-mode-btn px-3 py-2.5 rounded-lg text-left border-none cursor-pointer font-sans w-full transition-all duration-150 ${i === 0 ? 'chat-mode-active bg-primary/10 border-l-2 border-l-primary' : 'bg-transparent hover:bg-white/[0.03]'}`} data-mode={item.mode}>
-						<div class={`text-xs font-medium truncate ${i === 0 ? 'text-white' : 'text-muted'}`}>{item.title}</div>
-						<div class="text-[10px] mt-0.5 flex items-center gap-1.5">
-							<span class={`${i === 0 ? 'text-primary' : 'text-primary/50'}`}>{item.type}</span>
-							<span class="text-muted">·</span>
-							<span class="text-muted">{item.msgs} msgs</span>
+			<div class="text-[10px] text-muted px-2 py-1.5">{allChatsLabel}</div>
+			<div class="flex flex-col gap-0.5">
+				{chatCategories.map((cat) => (
+					<div class="flex flex-col">
+						<div class={`flex items-center justify-between px-3 py-2 rounded-lg text-xs font-medium ${cat.active ? 'bg-primary/10 text-white' : 'text-muted'}`}>
+							<span class="truncate">{cat.title}</span>
+							<svg class={`w-3 h-3 shrink-0 transition-transform ${cat.active ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
 						</div>
-					</button>
-				))}
-			</div>
-		</div>
-
-		<div class="flex-1 flex flex-col">
-			<div class="flex-1 px-4 md:px-6 py-5 flex flex-col justify-end gap-4 overflow-hidden max-w-lg mx-auto w-full">
-				{Object.entries(chats).map(([mode, chat]) => (
-					<div class={`chat-conversation flex flex-col gap-4 ${mode !== 'ihk' ? 'hidden' : ''}`} data-chat={mode}>
-						<div class="flex justify-end"><div class="chat-msg bg-primary text-white text-xs px-4 py-2.5 rounded-2xl rounded-br-md max-w-[85%] leading-relaxed">{chat.user}</div></div>
-						<div class="flex flex-col gap-3">
-							<p class="chat-msg text-xs text-white/80 leading-relaxed m-0" set:html={chat.bot} />
-							<div class="chat-msg bg-surface border border-border rounded-lg p-3 flex flex-col gap-2">
-								<span class="text-[10px] text-muted">{chat.example}</span>
-								<div class="flex flex-col gap-1.5">
-									{chat.items.map((item) => (
-										<div class="flex items-center gap-2 text-xs">
-											<span class="px-1.5 py-0.5 rounded bg-primary/15 text-primary font-mono text-[10px] font-medium">{item.l}</span>
-											<span class="text-white/80">{item.v}</span>
-										</div>
-									))}
-								</div>
+						{cat.active && cat.chats.length > 0 && (
+							<div class="flex flex-col gap-0.5 ml-1 mt-0.5">
+								{cat.chats.map((chat) => (
+									<div class="px-3 py-2 rounded-lg hover:bg-white/[0.03] cursor-pointer">
+										<div class="text-[10px] text-muted truncate">{chat.title}</div>
+										<div class="text-[9px] text-muted/60 mt-0.5">{chat.collection} · {chat.msgs} {isDE ? 'Nachr.' : 'msgs'}</div>
+									</div>
+								))}
 							</div>
-							<p class="chat-msg text-xs text-white/80 leading-relaxed m-0">{chat.followup}</p>
-						</div>
-						{/* IHK mode: second user message + quiz card */}
-						{mode === 'ihk' && chat.user2 && (
-							<>
-								<div class="flex justify-end"><div class="chat-msg bg-primary text-white text-xs px-4 py-2.5 rounded-2xl rounded-br-md max-w-[85%] leading-relaxed">{chat.user2}</div></div>
-								<div class="flex flex-col gap-2">
-									<p class="chat-msg text-xs text-white/80 leading-relaxed m-0">{chat.quizReply}</p>
-									<button class="quiz-open-btn chat-msg bg-surface border border-primary/30 rounded-lg p-3 flex items-center gap-3 cursor-pointer text-left w-full hover:border-primary/60 transition-colors" data-quiz="0">
-										<div class="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center shrink-0">
-											<svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg>
-										</div>
-										<div class="flex flex-col gap-0.5 min-w-0">
-											<span class="text-xs font-medium text-white">{chat.quizCard.name}</span>
-											<span class="text-[10px] text-muted">{chat.quizCard.type} · {chat.quizCard.questions}q · {chat.quizCard.points} pts</span>
-										</div>
-									</button>
-								</div>
-							</>
 						)}
 					</div>
 				))}
 			</div>
+			<div class="flex flex-col gap-0.5 mt-1 text-[10px] text-muted/50 px-2">
+				<span>{isDE ? 'Fortsetzung des Gesprächs' : 'Continue conversation'}</span>
+				<span>{isDE ? 'Kurze Begrüßung' : 'Quick intro'}</span>
+				<span>{isDE ? 'Los gehts' : "Let's go"}</span>
+			</div>
+		</div>
 
-			<div class="px-4 md:px-6 pb-4 flex flex-col gap-2 max-w-lg mx-auto w-full">
-				<div class="flex items-center gap-2 bg-surface border border-border rounded-xl px-4 py-2.5">
+		<!-- Main chat area - Welcome screen -->
+		<div class="flex-1 flex flex-col">
+			<div class="flex-1 flex flex-col items-center justify-center px-4 md:px-8 gap-4">
+				<h3 class="text-lg md:text-xl font-semibold text-white m-0">{greeting}</h3>
+				<p class="text-xs text-muted text-center max-w-sm m-0 leading-relaxed">{greetingSub}</p>
+
+				<!-- Input bar -->
+				<div class="w-full max-w-md flex items-center gap-2 bg-surface border border-border rounded-xl px-4 py-2.5 mt-2">
 					<span class="text-xs text-muted flex-1">{inputPlaceholder}</span>
 					<svg class="w-4 h-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
 					<div class="bg-primary text-white text-xs font-medium px-3 py-1.5 rounded-lg flex items-center gap-1.5">{sendLabel} <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg></div>
 				</div>
-				<div class="flex items-center gap-2">
-					<span class="mockup-pill mockup-pill-active">Company KB</span>
-					<span class="mockup-pill">Personal KB</span>
-					<span class="mockup-pill">Assessment</span>
+
+				<!-- Mode chips -->
+				<div class="flex flex-col items-center gap-2 w-full max-w-md">
+					<div class="flex items-center gap-2 text-[10px] text-muted">
+						<span>{modeLabel}</span>
+						<svg class="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+					</div>
+					<div class="flex items-center gap-2">
+						{suggestionChips.map((chip, i) => (
+							<span class={`mockup-pill ${i === 0 ? 'mockup-pill-active' : ''}`}>{chip}</span>
+						))}
+					</div>
+				</div>
+
+				<!-- Suggestion cards -->
+				<div class="grid grid-cols-3 gap-2 w-full max-w-md mt-1">
+					{suggestionCards.map((card) => (
+						<div class="bg-surface border border-border rounded-lg p-3 text-[10px] text-muted leading-relaxed cursor-pointer hover:border-border-light transition-colors">
+							{card}
+						</div>
+					))}
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- TAB: Knowledge -->
-	<div class="mockup-panel hidden flex-1 overflow-hidden flex-col" data-panel="knowledge">
-		<div class="px-8 md:px-16 py-5 border-b border-border flex items-start justify-between">
+	<div class="mockup-panel hidden flex-1 overflow-y-auto flex-col" data-panel="knowledge">
+		<div class="px-6 md:px-10 py-5 border-b border-border flex items-start justify-between">
 			<div>
 				<h3 class="text-base font-semibold text-white m-0">{kbTitle}</h3>
-				<p class="text-xs text-muted m-0 mt-1">{kbSub}</p>
+				<p class="text-[10px] text-muted m-0 mt-1">{kbSub}</p>
 			</div>
 			<div class="flex items-center gap-2">
 				<span class="text-[10px] text-muted">{kbCount}</span>
-				<div class="bg-primary text-white text-xs font-medium px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+				<span class="text-[10px] text-muted border border-border rounded-md px-2 py-1 cursor-pointer hover:border-border-light">{kbRefresh}</span>
+				<div class="bg-primary text-white text-[10px] font-medium px-3 py-1.5 rounded-lg flex items-center gap-1.5">
 					<svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
 					{kbCreate}
 				</div>
 			</div>
 		</div>
-		<div class="px-8 md:px-16 py-5 flex-1">
-			<div class="flex items-center gap-2 mb-4">
-				<svg class="w-4 h-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/></svg>
-				<span class="text-sm font-medium text-white">{kbMyLabel}</span>
-			</div>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-				{kbItems.map((kb) => (
+		<div class="px-6 md:px-10 py-5 flex-1 flex flex-col gap-6">
+			<!-- My Knowledge Bases -->
+			<div>
+				<div class="flex items-center gap-2 mb-3">
+					<svg class="w-4 h-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/></svg>
+					<span class="text-sm font-medium text-white">{kbMyLabel}</span>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
 					<div class="bg-surface border border-border rounded-xl p-4 flex flex-col gap-3">
-						<span class="text-sm font-medium text-white">{kb.name}</span>
-						<div class="flex flex-wrap gap-1">
-							{kb.files.map((f) => (
-								<span class={`text-[9px] font-mono font-medium px-1.5 py-0.5 rounded border ${fileColors[f] || 'text-muted bg-surface border-border'}`}>{f}</span>
-							))}
-						</div>
-						<div class="flex flex-col gap-1.5 text-xs">
-							<div class="flex justify-between"><span class="text-muted">Documents:</span><span class="text-white">{kb.docs}</span></div>
-							<div class="flex justify-between"><span class="text-muted">Created:</span><span class="text-white">{kb.date}</span></div>
+						<span class="text-sm font-medium text-white">{myKb.name}</span>
+						<div class="flex flex-col gap-1.5 text-[10px]">
+							<div class="flex justify-between"><span class="text-muted">{kbDocsLabel}:</span><span class="text-white">{myKb.docs}</span></div>
+							<div class="flex justify-between"><span class="text-muted">{kbCreatedLabel}:</span><span class="text-white">{myKb.date}</span></div>
 						</div>
 						<div class="border-t border-border pt-2 mt-auto flex items-center justify-between">
-							<span class="text-xs text-muted">{kbDetails}</span>
-							<svg class="size-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+							<span class="text-[10px] text-muted">{kbDetails}</span>
+							<svg class="size-3.5 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
 						</div>
 					</div>
-				))}
+				</div>
+			</div>
+
+			<!-- Shared Knowledge Bases -->
+			<div>
+				<div class="flex items-center gap-2 mb-3">
+					<svg class="w-4 h-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+					<span class="text-sm font-medium text-white">{kbSharedLabel}</span>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+					{sharedKbs.map((kb) => (
+						<div class="bg-surface border border-border rounded-xl p-4 flex flex-col gap-3">
+							<div class="flex items-center justify-between">
+								<span class="text-sm font-medium text-white">{kb.name}</span>
+								<span class="text-[9px] text-primary bg-primary/10 px-1.5 py-0.5 rounded border border-primary/20 flex items-center gap-1">
+									<svg class="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m9.86-2.828a4.5 4.5 0 00-1.242-7.244l-4.5-4.5a4.5 4.5 0 00-6.364 6.364L4.34 8.06" transform="translate(0,2)"/></svg>
+									{kbSharedBadge}
+								</span>
+							</div>
+							<p class="text-[10px] text-muted m-0">{kb.desc}</p>
+							<div class="flex flex-col gap-1.5 text-[10px]">
+								<div class="flex justify-between"><span class="text-muted">{kbDocsLabel}:</span><span class="text-white">{kb.docs}</span></div>
+								{kb.date && <div class="flex justify-between"><span class="text-muted">{kbCreatedLabel}:</span><span class="text-white">{kb.date}</span></div>}
+							</div>
+							<div class="border-t border-border pt-2 mt-auto flex items-center justify-between">
+								<span class="text-[10px] text-muted">{kbDetails}</span>
+								<svg class="size-3.5 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+							</div>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- TAB: Assessments & Analytics -->
+	<!-- TAB: Assessments -->
 	<div class="mockup-panel hidden flex-1 overflow-y-auto flex-col" data-panel="assessments">
-		<div class="px-8 md:px-16 py-5 border-b border-border">
-			<h3 class="text-base font-semibold text-white m-0">{assTitle}</h3>
-			<p class="text-xs text-muted m-0 mt-1">{assSub}</p>
+		<div class="px-6 md:px-10 py-5 border-b border-border">
+			<div class="flex items-start justify-between mb-3">
+				<div>
+					<h3 class="text-base font-semibold text-white m-0">{assTitle}</h3>
+					<p class="text-[10px] text-muted m-0 mt-1">{assSub}</p>
+				</div>
+				<span class="text-[10px] text-muted border border-border rounded-md px-2 py-1 cursor-pointer hover:border-border-light">{assRefresh}</span>
+			</div>
+			<!-- Sub-tabs -->
+			<div class="flex items-center gap-2">
+				<span class="text-[10px] font-medium bg-primary text-white px-3 py-1.5 rounded-lg">{assMyTab}</span>
+				<span class="text-[10px] text-muted px-3 py-1.5 cursor-pointer">{assAnalyseTab}</span>
+			</div>
 		</div>
-		<div class="px-8 md:px-16 py-5 flex-1 flex flex-col gap-4">
-			<!-- Animated stat counters -->
-			<div class="grid grid-cols-4 gap-3">
-				<div class="bg-surface border border-border rounded-lg p-3 text-center">
-					<div class="text-lg font-bold text-white stat-counter" data-target="87" data-suffix="%">0%</div>
-					<div class="text-[10px] text-muted">{isDE ? 'Durchschnitt' : 'Avg Score'}</div>
+
+		<div class="px-6 md:px-10 py-4 flex-1 flex flex-col gap-5">
+			<!-- Filters -->
+			<div class="flex items-center gap-2">
+				<span class="text-[10px] text-muted border border-border rounded-md px-2 py-1">{assAllTypes}</span>
+				<span class="text-[10px] text-muted border border-border rounded-md px-2 py-1">{assAllStatus}</span>
+			</div>
+
+			<!-- Recommended for review -->
+			<div>
+				<div class="flex items-center gap-2 mb-3">
+					<span class="text-yellow-400 text-sm">🔥</span>
+					<span class="text-xs font-medium text-white">{assRecommended}</span>
 				</div>
-				<div class="bg-surface border border-border rounded-lg p-3 text-center">
-					<div class="text-lg font-bold text-white stat-counter" data-target="72" data-suffix="%">0%</div>
-					<div class="text-[10px] text-muted">{isDE ? 'Fortschritt' : 'Progress'}</div>
-				</div>
-				<div class="bg-surface border border-border rounded-lg p-3 text-center">
-					<div class="text-lg font-bold text-white stat-counter" data-target="24">0</div>
-					<div class="text-[10px] text-muted">{isDE ? 'Abgeschlossen' : 'Completed'}</div>
-				</div>
-				<div class="bg-surface border border-border rounded-lg p-3 text-center">
-					<div class="flex items-baseline justify-center gap-0.5">
-						<span class="text-lg font-bold text-primary stat-counter" data-target="12">0</span>
-						<span class="text-[10px] text-muted">{isDE ? 'Tage' : 'days'}</span>
-					</div>
-					<div class="text-[10px] text-muted">{isDE ? 'Streak' : 'Streak'}</div>
+				<div class="grid grid-cols-4 gap-2">
+					{recommendedItems.map((item) => (
+						<div class="bg-surface border border-border rounded-lg p-3 flex flex-col gap-2">
+							<span class="text-[10px] font-medium text-white leading-snug line-clamp-2">{item.name}</span>
+							{item.sub && <span class="text-[9px] text-muted">{item.sub}</span>}
+							<span class="text-[10px] text-muted border border-border rounded-md px-2 py-1 text-center cursor-pointer hover:border-border-light mt-auto">{item.sub ? assStart : assReplay}</span>
+						</div>
+					))}
 				</div>
 			</div>
 
-			<!-- Assessments headline + 2x2 grid -->
+			<!-- Quizzes section -->
 			<div>
-				<h4 class="text-sm font-medium text-white m-0 mb-3">{assHeadline}</h4>
-				<div class="grid grid-cols-2 gap-3">
-					{assessments.map((a, idx) => (
-						<button class="quiz-open-btn bg-surface border border-border rounded-xl overflow-hidden flex text-left cursor-pointer hover:border-border-light transition-colors w-full" data-quiz={idx}>
-							<!-- Type icon column -->
-							<div class="aspect-square shrink-0 bg-primary/5 flex items-center justify-center border-r border-border">
-								{a.type === 'Quiz' && <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/></svg>}
-								{a.type === 'Case Study' && <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"/></svg>}
-								{a.type === 'Deep Dive' && <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>}
+				<div class="flex items-center gap-2 mb-3">
+					<span class="text-xs font-medium text-white">📝 {assQuizzesLabel}</span>
+					<span class="text-[10px] text-primary bg-primary/10 px-1.5 py-0.5 rounded-full">{quizzes.length}</span>
+				</div>
+				<div class="grid grid-cols-3 gap-2">
+					{quizzes.map((quiz, idx) => (
+						<button class="quiz-open-btn bg-surface border border-border rounded-lg p-3 flex flex-col gap-2 text-left cursor-pointer hover:border-border-light transition-colors w-full" data-quiz={idx}>
+							<span class="text-[10px] font-medium text-white leading-snug line-clamp-2">{quiz.name}</span>
+							<p class="text-[9px] text-muted m-0 leading-relaxed line-clamp-2">{quiz.desc}</p>
+							<div class="flex items-center gap-2 text-[9px] text-muted">
+								<span>{quiz.questions} {isDE ? 'Fragen' : 'Questions'}</span>
+								<span>·</span>
+								<span>{quiz.points} {isDE ? 'Punkte' : 'Points'}</span>
 							</div>
-							<!-- Content -->
-							<div class="flex-1 p-3 flex flex-col gap-1.5">
-								<div class="flex items-center justify-between">
-									<span class="text-[10px] text-primary bg-primary/10 px-1.5 py-0.5 rounded border border-primary/20 font-medium">{a.type}</span>
-									<span class={`text-[10px] font-medium px-1.5 py-0.5 rounded-full ${a.status === 'New' ? 'text-green-400 bg-green-400/15' : 'text-primary bg-primary/15'}`}>{a.status}</span>
-								</div>
-								<span class="text-xs font-medium text-white leading-snug">{a.name}</span>
-								<div class="flex items-center gap-3 text-[10px] text-muted">
-									<span>{a.questions}q</span><span>{a.points}pts</span><span>Best: {a.best}</span>
-								</div>
-							</div>
+							{quiz.played
+								? <span class="text-[10px] text-primary bg-primary/10 border border-primary/20 rounded-md px-2 py-1 text-center mt-auto">{assReplay}</span>
+								: <span class="text-[10px] text-muted border border-border rounded-md px-2 py-1 text-center cursor-pointer hover:border-border-light mt-auto">{assReplay}</span>
+							}
 						</button>
 					))}
 				</div>
@@ -340,7 +378,7 @@ const fileColors: Record<string, string> = {
 	<div class="quiz-overlay absolute inset-0 bg-dark/90 backdrop-blur-sm z-50 hidden items-center justify-center p-4 md:p-8" id="quiz-overlay">
 		<div class="bg-surface border border-border rounded-xl max-w-lg w-full max-h-full overflow-y-auto relative" id="quiz-dialog">
 			<!-- Close button -->
-			<button class="quiz-close absolute top-3 right-3 w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted hover:text-white hover:border-border-light transition-colors bg-transparent cursor-pointer">
+			<button class="quiz-close absolute top-3 right-3 w-7 h-7 rounded-full border border-border flex items-center justify-center text-muted hover:text-white hover:border-border-light transition-colors bg-transparent cursor-pointer">
 				<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
 			</button>
 
@@ -358,7 +396,7 @@ const fileColors: Record<string, string> = {
 				<!-- Question -->
 				<div class="flex items-start justify-between gap-3 mb-5">
 					<p class="text-xs text-white/90 leading-relaxed m-0" id="quiz-question"></p>
-					<span class="text-[10px] text-muted border border-border rounded-full px-2 py-0.5 shrink-0">10 points</span>
+					<span class="text-[10px] text-muted border border-border rounded-full px-2 py-0.5 shrink-0 whitespace-nowrap">10 {quizPoints}</span>
 				</div>
 
 				<!-- Options -->
@@ -370,7 +408,7 @@ const fileColors: Record<string, string> = {
 						<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7"/></svg>
 						{quizPrev}
 					</div>
-					<span class="text-[10px] text-muted">Score: 0 / 190</span>
+					<span class="text-[10px] text-muted">{quizPoints}: 0 / 190</span>
 					<div class="bg-primary text-white text-xs font-medium px-4 py-2 rounded-lg">{quizSubmit}</div>
 				</div>
 			</div>
@@ -386,37 +424,24 @@ const fileColors: Record<string, string> = {
 		@apply bg-primary/15 text-primary;
 	}
 	.mockup-pill {
-		@apply text-[10px] text-muted px-3 py-1.5 rounded-lg border border-border bg-surface;
+		@apply text-[10px] text-muted px-3 py-1.5 rounded-lg border border-border bg-surface cursor-pointer;
 	}
 	.mockup-pill-active {
 		@apply border-primary/30 text-primary bg-primary/10;
 	}
-
-	/* Chat message animations */
-	.chat-msg {
-		opacity: 0;
-		transform: translateY(8px);
-		animation: chatFadeIn 0.4s ease-out forwards;
-	}
-	.chat-msg:nth-child(1) { animation-delay: 0.1s; }
-	.chat-msg:nth-child(2) { animation-delay: 0.4s; }
-	.chat-msg:nth-child(3) { animation-delay: 0.7s; }
-	.chat-msg:nth-child(4) { animation-delay: 1s; }
-	.chat-msg:nth-child(5) { animation-delay: 1.3s; }
-	.chat-msg:nth-child(6) { animation-delay: 1.6s; }
-
-	@keyframes chatFadeIn {
-		to { opacity: 1; transform: translateY(0); }
+	.line-clamp-2 {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 </style>
 
-<script define:vars={{ assessments }}>
+<script define:vars={{ quizzes }}>
 	function initMockupTabs() {
 		const tabs = document.querySelectorAll('.mockup-nav-tab[data-tab]');
 		const logoBtn = document.querySelector('.mockup-logo-btn');
 		const panels = document.querySelectorAll('.mockup-panel');
-		const chatBtns = document.querySelectorAll('.chat-mode-btn');
-		const chatConvos = document.querySelectorAll('.chat-conversation');
 		const quizOverlay = document.getElementById('quiz-overlay');
 		const quizTitle = document.getElementById('quiz-title');
 		const quizQuestion = document.getElementById('quiz-question');
@@ -431,52 +456,14 @@ const fileColors: Record<string, string> = {
 				if (p.getAttribute('data-panel') === target) { p.classList.remove('hidden'); p.classList.add('flex'); }
 				else { p.classList.add('hidden'); p.classList.remove('flex'); }
 			});
-			if (target === 'assessments') animateStats();
-			if (target === 'chats') reanimateChat();
-		}
-
-		function reanimateChat() {
-			const visible = document.querySelector('.chat-conversation:not(.hidden)');
-			if (!visible) return;
-			const msgs = visible.querySelectorAll('.chat-msg');
-			msgs.forEach(m => {
-				m.style.animation = 'none';
-				m.offsetHeight; // trigger reflow
-				m.style.animation = '';
-			});
 		}
 
 		tabs.forEach(tab => { tab.addEventListener('click', () => { const t = tab.getAttribute('data-tab'); if (t) switchTab(t); }); });
 		logoBtn?.addEventListener('click', () => switchTab('chats'));
 
-		chatBtns.forEach(btn => {
-			btn.addEventListener('click', () => {
-				const mode = btn.getAttribute('data-mode');
-				chatBtns.forEach(b => {
-					b.classList.remove('chat-mode-active', 'bg-primary/10', 'border-l-2', 'border-l-primary');
-					b.classList.add('bg-transparent');
-					const l = b.querySelector('div:first-child');
-					if (l) { l.classList.remove('text-white'); l.classList.add('text-muted'); }
-					const typeSpan = b.querySelector('.text-primary, .text-primary\\/50');
-					if (typeSpan) { typeSpan.classList.remove('text-primary'); typeSpan.classList.add('text-primary/50'); }
-				});
-				btn.classList.add('chat-mode-active', 'bg-primary/10', 'border-l-2', 'border-l-primary');
-				btn.classList.remove('bg-transparent');
-				const l = btn.querySelector('div:first-child');
-				if (l) { l.classList.remove('text-muted'); l.classList.add('text-white'); }
-				const typeSpan = btn.querySelectorAll('span')[0];
-				if (typeSpan) { typeSpan.classList.remove('text-primary/50'); typeSpan.classList.add('text-primary'); }
-				chatConvos.forEach(c => {
-					if (c.getAttribute('data-chat') === mode) { c.classList.remove('hidden'); }
-					else { c.classList.add('hidden'); }
-				});
-				reanimateChat();
-			});
-		});
-
 		// Quiz dialog
 		function openQuiz(idx) {
-			const a = assessments[idx];
+			const a = quizzes[idx];
 			if (!a || !quizOverlay || !quizTitle || !quizQuestion || !quizOptions || !quizCounter) return;
 			quizTitle.textContent = a.name;
 			quizQuestion.textContent = a.q;
@@ -506,21 +493,6 @@ const fileColors: Record<string, string> = {
 
 		document.querySelectorAll('.quiz-close').forEach(btn => btn.addEventListener('click', closeQuiz));
 		quizOverlay?.addEventListener('click', (e) => { if (e.target === quizOverlay) closeQuiz(); });
-
-		function animateStats() {
-			document.querySelectorAll('.stat-counter').forEach(counter => {
-				const target = parseInt(counter.getAttribute('data-target') || '0');
-				const suffix = counter.getAttribute('data-suffix') || '';
-				let current = 0;
-				counter.textContent = '0' + suffix;
-				const step = Math.max(1, Math.floor(target / 20));
-				const interval = setInterval(() => {
-					current += step;
-					if (current >= target) { current = target; clearInterval(interval); }
-					counter.textContent = current.toString() + suffix;
-				}, 40);
-			});
-		}
 	}
 
 	document.addEventListener('DOMContentLoaded', initMockupTabs);
