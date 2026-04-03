@@ -58,6 +58,19 @@
 }
 
 @layer components {
+	/* Blog prose list styles (Tailwind preflight resets list-style to none) */
+	.prose ol {
+		@apply list-decimal pl-6;
+	}
+
+	.prose ul {
+		@apply list-disc pl-6;
+	}
+
+	.prose li {
+		@apply mb-2;
+	}
+
 	/* Blog prose table styles */
 	.prose table {
 		@apply w-full border border-border-light rounded-lg overflow-hidden text-sm;
