@@ -57,6 +57,35 @@
 	}
 }
 
+@layer components {
+	/* Blog prose table styles */
+	.prose table {
+		@apply w-full border border-border-light rounded-lg overflow-hidden text-sm;
+		border-collapse: separate;
+		border-spacing: 0;
+	}
+
+	.prose thead {
+		@apply bg-surface;
+	}
+
+	.prose thead th {
+		@apply text-white font-semibold text-left px-4 py-3 border-b border-border-light;
+	}
+
+	.prose tbody td {
+		@apply text-white/70 px-4 py-3 border-b border-border;
+	}
+
+	.prose tbody tr:last-child td {
+		@apply border-b-0;
+	}
+
+	.prose tbody tr:hover {
+		@apply bg-surface/50;
+	}
+}
+
 @layer utilities {
 	/* Reduced motion preference */
 	@media (prefers-reduced-motion: reduce) {
