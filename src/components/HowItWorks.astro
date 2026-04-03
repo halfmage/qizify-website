@@ -9,9 +9,25 @@ interface Props {
 	badge: string;
 	headline: string;
 	steps: Step[];
+	lang: 'en' | 'de';
 }
 
-const { badge, headline, steps } = Astro.props;
+const { badge, headline, steps, lang } = Astro.props;
+
+const howToSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'HowTo',
+	name: lang === 'en' ? 'How to train apprentices with AI' : 'So bilden Sie Azubis mit KI aus',
+	description: lang === 'en'
+		? 'A 3-step process to get apprentices job-ready in 8 weeks using AI-powered learning paths.'
+		: 'Ein 3-Schritte-Prozess, um Azubis in 8 Wochen mit KI-gestützten Lernpfaden berufsfähig zu machen.',
+	step: steps.map((step, index) => ({
+		'@type': 'HowToStep',
+		position: index + 1,
+		name: step.title,
+		text: step.description.replace(/\n/g, ' '),
+	})),
+};
 
 const stepImages = [
 	"/images/screenshots/learnslice-copilot-02.jpg",
@@ -84,6 +100,8 @@ const getStepImage = (index: number) => stepImages[index] || stepImages[0];
 		</div>
 	</div>
 </section>
+
+<script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
 <script>
 	function initHowItWorksTabs() {

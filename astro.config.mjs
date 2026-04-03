@@ -22,6 +22,10 @@ export default defineConfig({
 					de: 'de',
 				},
 			},
+			serialize(item) {
+				item.lastmod = new Date();
+				return item;
+			},
 		}),
 	],
 });

@@ -7,9 +7,10 @@ interface Props {
 	lang: 'en' | 'de';
 	currentPath: string;
 	ogImage?: string;
+	breadcrumbTitle?: string;
 }
 
-const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg' } = Astro.props;
+const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg', breadcrumbTitle } = Astro.props;
 
 import { getAlternatePath } from '../utils/i18n';
 
@@ -20,17 +21,20 @@ const enPath = lang === 'en' ? currentPath : getAlternatePath(currentPath, 'de')
 const dePath = lang === 'de' ? currentPath : getAlternatePath(currentPath, 'en');
 const ogImageUrl = `${siteUrl}${ogImage}`;
 
-// Structured data for Organization
+// Structured data for Organization (merged with aggregate rating)
 const organizationSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Organization',
 	name: 'LearnSlice',
 	url: siteUrl,
-	logo: `${siteUrl}/favicon.ico`,
+	logo: `${siteUrl}/images/learnslice-logo.svg`,
 	description: lang === 'en'
 		? 'AI-powered learning platform for apprenticeships. Automate mentoring and save money with LearnSlice.'
 		: 'KI-gestützte Lernplattform für Ausbildungen. Automatisieren Sie Mentoring und sparen Sie Geld mit LearnSlice.',
-	sameAs: [],
+	sameAs: [
+		'https://www.linkedin.com/company/49113282',
+		'https://www.instagram.com/learnslice',
+	],
 	contactPoint: {
 		'@type': 'ContactPoint',
 		contactType: 'Customer Service',
@@ -40,13 +44,6 @@ const organizationSchema = {
 		'@type': 'PostalAddress',
 		addressCountry: 'DE',
 	},
-};
-
-// Structured data for reviews/testimonials
-const reviewSchema = {
-	'@context': 'https://schema.org',
-	'@type': 'Organization',
-	name: 'LearnSlice',
 	aggregateRating: {
 		'@type': 'AggregateRating',
 		ratingValue: '4.8',
@@ -80,6 +77,64 @@ const softwareSchema = {
 		bestRating: '5',
 		worstRating: '1',
 	},
+};
+
+// Breadcrumb schema
+const segmentLabels: Record<string, Record<string, string>> = {
+	en: {
+		blog: 'Blog',
+		companies: 'For Companies',
+		schools: 'For Schools',
+		agencies: 'For Agencies',
+		'apprenticeship-savings-calculator': 'Savings Calculator',
+		'learnslice-vs-simpleclub': 'LearnSlice vs. Simpleclub',
+		'learnslice-vs-traditional-training': 'LearnSlice vs. Traditional Training',
+		privacy: 'Privacy Policy',
+		terms: 'Terms of Use',
+		imprint: 'Imprint',
+	},
+	de: {
+		blog: 'Blog',
+		companies: 'Für Unternehmen',
+		schools: 'Für Schulen',
+		agencies: 'Für Agenturen',
+		'ausbildungskosten-rechner': 'Ausbildungskosten-Rechner',
+		'learnslice-vs-simpleclub': 'LearnSlice vs. Simpleclub',
+		'learnslice-vs-traditionelle-ausbildung': 'LearnSlice vs. Traditionelle Ausbildung',
+		privacy: 'Datenschutz',
+		terms: 'AGB',
+		imprint: 'Impressum',
+	},
+};
+
+const homeName = lang === 'en' ? 'Home' : 'Startseite';
+const homeUrl = lang === 'en' ? '/' : '/de';
+const pathForBreadcrumbs = lang === 'de' ? currentPath.replace(/^\/de\/?/, '') : currentPath.replace(/^\//, '');
+const segments = pathForBreadcrumbs.split('/').filter(Boolean);
+
+const breadcrumbItems = [
+	{ '@type': 'ListItem', position: 1, name: homeName, item: `${siteUrl}${homeUrl}` },
+];
+
+let cumulativePath = homeUrl === '/' ? '' : '/de';
+for (let i = 0; i < segments.length; i++) {
+	cumulativePath += `/${segments[i]}`;
+	const isLast = i === segments.length - 1;
+	const label = isLast && breadcrumbTitle
+		? breadcrumbTitle
+		: segmentLabels[lang]?.[segments[i]] || segments[i].replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase());
+	breadcrumbItems.push({
+		'@type': 'ListItem',
+		position: i + 2,
+		name: label,
+		item: `${siteUrl}${cumulativePath}`,
+	});
+}
+
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: breadcrumbItems,
 };
 ---
 
@@ -154,8 +209,8 @@ const softwareSchema = {
 
 		<!-- Structured Data -->
 		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-		<script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />
 		<script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
 		<!-- 100% privacy-first analytics -->
 		<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

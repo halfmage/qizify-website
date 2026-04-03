@@ -16,9 +16,10 @@ interface Props {
 	author: string;
 	tags: string[];
 	slug: string;
+	ogImage?: string;
 }
 
-const { title, description, lang, publishDate, updatedDate, author, tags, slug } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, tags, slug, ogImage } = Astro.props;
 
 const content = lang === 'en' ? enContent : deContent;
 const basePath = lang === 'de' ? '/de' : '';
@@ -38,11 +39,14 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString(lang === 'en' ? 'en
 	day: 'numeric',
 });
 
+const blogOgImage = ogImage || '/opengraph-image.jpg';
+
 const blogPostingSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'BlogPosting',
 	headline: title,
 	description: description,
+	image: `https://learnslice.com${blogOgImage}`,
 	datePublished: publishDate.toISOString(),
 	...(updatedDate && { dateModified: updatedDate.toISOString() }),
 	author: {
@@ -56,7 +60,7 @@ const blogPostingSchema = {
 		url: 'https://learnslice.com',
 		logo: {
 			'@type': 'ImageObject',
-			url: 'https://learnslice.com/favicon.ico',
+			url: 'https://learnslice.com/images/learnslice-logo.svg',
 		},
 	},
 	mainEntityOfPage: {
@@ -71,6 +75,8 @@ const blogPostingSchema = {
 	description={description}
 	lang={lang}
 	currentPath={currentPath}
+	breadcrumbTitle={title}
+	ogImage={ogImage}
 >
 	<Header
 		logo={content.nav.logo}
