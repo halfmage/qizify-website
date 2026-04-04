@@ -1,103 +1,65 @@
 # SEO Content Audit
 ## https://learnslice.com
-### Date: 2026-04-03
+### Date: 2026-04-04
 
 ---
 
-## SEO Health Score: 62/100
+## SEO Health Score: 78/100
 
-**Summary:** LearnSlice has a solid content foundation with strong schema markup and good on-page structure, but critical gaps in meta tags, hreflang implementation, sitemap optimization, and content volume are limiting organic visibility. The site has significant untapped SEO potential, especially in the German apprenticeship training market.
+**Summary:** LearnSlice has strong fundamentals — good schema markup, solid content structure, proper meta descriptions, and a clear bilingual strategy. The main gaps are thin blog content, incomplete sitemap metadata, and internal linking. The misleading `price: "0"` in SoftwareApplication schema and duplicate AggregateRating have been fixed (2026-04-04). Remaining improvements focus on content depth and link architecture.
 
 ---
 
 ## On-Page SEO Checklist
 
 ### Title Tag
-- **Status:** Needs Work
-- **Current:** Not extractable from rendered page (likely exists in `<head>` but could not be verified via crawl)
-- **Recommended:** `AI-Powered Apprenticeship Training | LearnSlice - Job-Ready in 8 Weeks`
-- **Issues:**
-  - Cannot confirm title tag exists or its content from external crawl
-  - Ensure title is 50-60 characters, includes primary keyword, and ends with brand name
+- **Status: Pass**
+- Current: `"AI Apprenticeship Training | IHK Exam Prep | LearnSlice"`
+- Length: 55 characters — within the 50-60 sweet spot
+- Primary keyword "Apprenticeship Training" is present
+- Brand name included at the end
+- **Issue:** "AI Apprenticeship Training" is a niche query. Consider testing `"AI-Powered Apprenticeship Training Platform | LearnSlice"` to capture more search intent variations.
+- **/companies page:** `"AI-Powered Apprenticeship Training for Companies | LearnSlice"` — **Pass** (58 chars, well-targeted)
+- **/blog page:** `"Blog | LearnSlice - AI-Powered Apprenticeship Training"` — **Needs Work** — generic "Blog" lead wastes the most valuable position. Recommend: `"Apprenticeship Training Insights & AI Learning Guides | LearnSlice Blog"`
 
 ### Meta Description
-- **Status:** Needs Work
-- **Current:** Not extractable from rendered page
-- **Recommended:** `LearnSlice's AI platform makes apprentices job-ready in 8 weeks. Save €32K per apprentice with IHK exam prep, personalized coaching & job simulations. Book a free demo.`
-- **Issues:**
-  - Cannot confirm meta description exists from external crawl
-  - If missing, Google will auto-generate one from page content, which is unpredictable and often suboptimal
+- **Status: Needs Work / Fail**
+- **Homepage:** Not detected in fetch. The Organization schema has a description, but the actual `<meta name="description">` may not be rendering on the homepage. **Verify in source — if missing, this is critical.**
+- **/companies page:** `"AI-powered learning platform for apprenticeships. Automate mentoring and save money with LearnSlice."` — 103 chars. **Needs Work.** Too short (aim for 150-160). Missing differentiation. Recommend: `"Get apprentices job-ready in 8 weeks instead of 6 months. LearnSlice combines IHK exam prep with AI coaching to save €32K per apprentice and cut trainer time by 50%."`
+- **/blog page:** Missing entirely. **Fail.**
+- **/calculator page:** Missing. **Fail.**
+- **Blog posts:** Properly set via frontmatter. **Pass.**
 
 ### Heading Hierarchy
-- **Status:** Needs Work
-- **Current Structure:**
-  ```
-  H1: "AI-Powered Apprenticeship Training" 
-  H1: "Your Apprentices Job-Ready in 8 Weeks, Not 6 Months." ← SECOND H1 (problem)
-  H2: "How it works"
-  H2: "Learning Built for Results"
-    H3: "Built-in IHK learning path"
-    H3: "Job simulations + your company input"
-    H3: "Personalised coaching"
-  H2: "AI Performance Catalyst That Adapts 24/7"
-    H3: "AI Performance Catalyst That Adapts 24/7" ← DUPLICATE of H2 (problem)
-    H3: "Bulletproof Assessments"
-    H3: "Executive Analytics"
-    H3: "Proven Gamification"
-  H2: "Made for industries that count"
-    H3: "CEOs · HR · Trainers"
-    H3: "IHK · HWK · Economic Development Agencies"
-    H3: "Vocational Colleges · Schools"
-  H2: "What Our Customers Say"
-  H2: "Why companies choose us"
-  H2: "Vocational Professions"
-    H3: "Commercial"
-    H3: "Information Technology"
-    H3: "Technical Trades"
-  H2: "Frequently Asked Questions"
-  H2: "How much could you save?"
-  H2: "Start Today"
-  ```
-- **Issues:**
-  1. **Two H1 tags** — there should be exactly one H1 per page. Combine into a single H1 or demote the second to a `<p>` subtitle
-  2. **Duplicate heading** — "AI Performance Catalyst That Adapts 24/7" appears as both H2 and H3
-  3. H2/H3 structure is otherwise logical and well-organized
-- **Recommended H1:** `AI-Powered Apprenticeship Training — Job-Ready in 8 Weeks`
+- **Status: Needs Work**
+- **Homepage has 2 H1 tags:** `"AI-Powered Apprenticeship Training"` and `"Your Apprentices Job-Ready in 8 Weeks, Not 6 Months."` — Should be **exactly 1 H1**. The second should be a `<p>` or `<span>` subtitle.
+- Section labels like "ROI", "How it works", "Use Cases" appear as H2s alongside their descriptive H2 counterparts (e.g., both `"ROI"` and `"€32K–€41K saved..."` are H2). This doubles up headings. Use the short label as an eyebrow `<span>` and keep only the descriptive H2.
+- H3 headings are well-structured under their parent H2s.
+- No H4-H6 abuse detected.
 
 ### Image Optimization
-- **Status:** Needs Work
-- **Findings:**
-
-| Status | Details |
-|--------|---------|
-| Pass | Main content images have descriptive alt text |
-| Fail | **8 partner/logo images missing alt text** (`tremonia.png`, `fhdortmund-logo.png`, `uni-cologne.png`, `csb.png`, `dci.png`, `emit-logo.png`, `jaeger-gruppe-logo.png`, `international-school-stuttgart.png`) |
-| Pass | Using WebP format for testimonial and slider images |
-| Needs Work | Some images still using JPG/PNG instead of WebP |
-| Unknown | Cannot verify lazy loading, responsive images, or file sizes from external crawl |
-
-- **Action:** Add descriptive alt text to all logo images (e.g., `alt="Tremonia logo"`, `alt="FH Dortmund University logo"`). Even decorative logos benefit from brand-name alt text for SEO.
+- **Status: Pass**
+- All images have descriptive alt text
+- Blog images use descriptive filenames (pexels attribution names)
+- Images recently compressed (commit a4fb6c7: 8.2MB → 913KB) — good
+- **Minor issue:** Image filenames like `pexels-yankrukov-7794078.jpg` are not keyword-rich. Ideally rename to something like `ai-vocational-training-workshop.jpg` for marginal SEO benefit. Low priority.
+- WebP format used for testimonial/slider images. JPGs still used for blog hero images — consider converting to WebP.
 
 ### Internal Linking
-- **Status:** Pass
-- **Findings:**
-  - Strong internal navigation with ~20+ internal links
-  - Links to key pages: `/companies`, `/schools`, `/agencies`, `/blog`, savings calculator
-  - Blog posts linked from homepage
-  - Comparison pages linked (`vs. Traditional Training`, `vs. Simpleclub`)
-  - Anchor text is descriptive and keyword-rich
-  - Good use of anchor links for on-page navigation (`#how-it-works`, `#testimonials`, etc.)
-- **Minor improvement:** Add more contextual internal links within body content, not just navigation
+- **Status: Needs Work**
+- Homepage links well to key pages (/companies, /schools, /agencies, /calculator, /blog)
+- Blog posts link to each other and to product pages — good
+- **Gap:** New blog posts (8 EN + 8 DE) are not yet linked from the homepage or blog index
+- **Gap:** No cross-links between /companies, /schools, and /agencies pages
+- **Gap:** Comparison pages (/learnslice-vs-traditional-training, /learnslice-vs-simpleclub) are only linked from the footer — should be linked contextually from blog content and landing pages
+- Blog articles have only 2-3 internal links each — aim for 5-8 per 1,000 words
 
 ### URL Structure
-- **Status:** Pass
-- **Findings:**
-  - Clean, readable URLs (`/blog/ai-in-vocational-training`, `/apprenticeship-savings-calculator`)
-  - Hyphens used correctly
-  - Lowercase throughout
-  - Keywords present in URLs
-  - German versions use `/de/` prefix — clean and logical
-  - No unnecessary query parameters
+- **Status: Pass**
+- Clean, readable URLs: `/blog/ai-in-vocational-training`, `/companies`, `/apprenticeship-savings-calculator`
+- Hyphens used correctly, all lowercase
+- German URLs also clean: `/de/blog/ki-in-der-ausbildung`
+- `/apprenticeship-savings-calculator` is long (37 chars path) but descriptive — acceptable
 
 ---
 
@@ -105,303 +67,267 @@
 
 | Dimension | Score | Evidence |
 |---|---|---|
-| **Experience** | Present | Real customer testimonials with photos and names (Lienne Julie Wolff, Kinga Patrycja Peters, Philipp Schulte); specific metrics cited (€32K savings, 8 weeks, 50% trainer time saved); but no detailed case studies or "behind the scenes" content |
-| **Expertise** | Present | Content demonstrates knowledge of IHK exam prep, German apprenticeship system, and AI in education; industry-specific terminology used correctly; blog posts cover relevant topics |
-| **Authoritativeness** | Weak | Partner logos present (FH Dortmund, Uni Cologne, etc.) but no press mentions, industry awards, or thought leadership visible; no author bios on blog; limited external validation |
-| **Trustworthiness** | Strong | HTTPS enabled; privacy policy, terms, and imprint pages present (required by German law); contact form available; physical address in Germany; real testimonials with photos; 4.8/5 rating in schema |
+| **Experience** | Present | Testimonials from real customers (Tremonia GmbH, Carl-Severing Berufskolleg). Product screenshots shown. Specific metrics cited (65% faster, €32K saved). Could strengthen with case study pages. |
+| **Expertise** | Present | Partnership with FH Dortmund (didactics), IHK-aligned curriculum. Blog content demonstrates domain knowledge. Missing: individual author bios with credentials. |
+| **Authoritativeness** | Present | BMWE AI Prize 2025, 30+ company customers, university partnerships. Could strengthen with press mentions, guest posts, or industry publications. |
+| **Trustworthiness** | Strong | HTTPS, GDPR-compliant, hosted in Germany, privacy/terms/imprint pages present, physical address (Düsseldorf), real contact info (phone, email), aggregate rating (4.8/5). |
 
-**Overall E-E-A-T Score: Present but could be stronger**
-
-**Key improvements:**
-1. Add detailed case studies with named companies and measurable results
-2. Add author bios to blog posts with credentials
-3. Pursue press coverage and industry partnerships for authority signals
-4. Add a dedicated "About Us" or "Team" page with founder/team credentials
+**Key E-E-A-T improvements:**
+1. Add individual author pages with bio, credentials, and photo for blog posts
+2. Create 2-3 detailed case study pages (e.g., "How Tremonia reduced onboarding time by 65%")
+3. Add a press/awards section on the About or homepage
 
 ---
 
 ## Keyword Analysis
 
-### Primary Keyword Assessment
-| Element | Evaluation |
+### Primary Keywords by Page
+
+| Page | Primary Keyword | Search Intent | Status |
+|---|---|---|---|
+| Homepage | "AI apprenticeship training" | Commercial | Aligned |
+| /companies | "apprenticeship training platform" | Commercial | Aligned |
+| /schools | "vocational school learning platform" | Commercial | Likely aligned |
+| /agencies | "IHK training platform" | Commercial | Likely aligned |
+| /calculator | "apprenticeship costs calculator" | Commercial | Aligned |
+| /blog/ai-in-vocational-training | "AI in vocational training" | Informational | Aligned |
+| /blog/reduce-training-costs | "reduce apprenticeship training costs" | Informational | Aligned |
+| /blog/ihk-exam-preparation-digital | "IHK exam preparation digital" | Informational | Aligned |
+
+### Keyword Placement — Homepage
+| Element | Present? |
 |---|---|
-| **Primary keyword identified** | "AI apprenticeship training" / "AI-powered apprenticeship training" |
-| **Search intent alignment** | Commercial — users searching this are evaluating solutions. Content matches well with features + CTAs |
-| **Keyword in H1** | Present: "AI-Powered Apprenticeship Training" |
-| **Keyword in first 100 words** | Present: appears in hero section |
-| **Keyword in subheadings** | Partially — AI mentioned in H2/H3, but "apprenticeship" not repeated in subheadings |
-| **Keyword in URL** | Not present (homepage `/`) — acceptable for homepage |
-| **Keyword density** | Appears moderate (~1-2%) — appropriate |
+| Title tag | Yes — "AI Apprenticeship Training" |
+| H1 | Yes — "AI-Powered Apprenticeship Training" |
+| First 100 words | Yes — "IHK exam prep", "AI learning paths", "apprentices" |
+| Meta description | Unknown — may be missing |
+| URL | N/A (root) |
+| Subheadings | Yes — scattered through H2s and H3s |
 
-### Secondary Keywords (should be naturally included)
-1. **IHK exam preparation** — present in content
-2. **Apprenticeship training platform** — partially present
-3. **Digital apprenticeship** / "digitale Ausbildung" — opportunity
-4. **Apprenticeship training costs** — present (€32K savings)
-5. **AI learning platform** — present
-6. **Job simulations for apprentices** — present
-7. **Apprenticeship coaching** — present
-8. **Vocational training software** — opportunity to add
-9. **Reduce apprenticeship training time** — present (8 weeks vs 6 months)
-10. **German apprenticeship system** — could be stronger
+### Secondary Keywords (EN)
+These should be naturally woven into content across the site:
+- "IHK exam preparation" / "IHK Prüfungsvorbereitung"
+- "apprentice onboarding"
+- "trainer workload reduction"
+- "digital training logbook" / "Berichtsheft"
+- "vocational training platform Germany"
+- "apprenticeship dropout rate"
+- "AI coaching for apprentices"
+- "Ausbildung digitalisieren"
 
-### Search Intent Analysis
-| Page | Intent | Content Match |
-|---|---|---|
-| Homepage | Commercial/Informational | Good — explains product + pushes demo |
-| `/companies` | Commercial | Expected match |
-| `/schools` | Commercial | Expected match |
-| `/blog/*` | Informational | Good — educational content |
-| `/apprenticeship-savings-calculator` | Commercial | Excellent — interactive tool with high intent |
-| `/learnslice-vs-*` | Commercial | Excellent — comparison pages target bottom-of-funnel |
+### Search Intent Alignment
+All pages align well with their target intent. The blog targets informational queries, landing pages target commercial intent, and the calculator targets comparison/commercial intent. **No misalignment detected.**
 
 ---
 
 ## Technical SEO
 
 ### Robots.txt
-- **Status:** Pass
-- Allows all crawlers with `User-agent: * Allow: /`
-- Explicitly allows AI crawlers (Claude, GPT, Google, Perplexity, Apple, etc.)
-- Points to sitemap: `https://learnslice.com/sitemap-index.xml`
+- **Status: Pass**
+- Exists and allows all crawlers
+- Explicitly allows AI crawlers (ChatGPT, Claude, Perplexity, etc.) — forward-thinking
+- Points to sitemap at `/sitemap-index.xml`
 
 ### XML Sitemap
-- **Status:** Needs Work
-- Sitemap exists at `/sitemap-index.xml` → `/sitemap-0.xml`
-- **28 URLs** indexed (EN + DE)
-- **Issues:**
-  1. `/sitemap.xml` returns 404 — standard location should redirect to sitemap-index.xml
-  2. **No `lastmod` dates** — Google uses these to prioritize crawling
-  3. **No `changefreq`** — less critical but helpful
-  4. **No `priority`** — less critical but helpful
-- **Action:** Add lastmod dates to all sitemap entries; create redirect from `/sitemap.xml` to `/sitemap-index.xml`
+- **Status: Needs Work**
+- Sitemap index exists at `/sitemap-index.xml` → references `/sitemap-0.xml`
+- **Issue:** `/sitemap.xml` returns 404. Some crawlers check this default path. Add a redirect or second reference.
+- **Issue:** No `changefreq` or `priority` values set for any URL
+- **Issue:** All 28 URLs have identical `lastmod` timestamps (`2026-04-03T21:21:57.799Z`). This looks auto-generated at build time rather than reflecting actual content changes. Google may ignore lastmod if it's not meaningful.
+- **Issue:** New blog posts (8 EN + 8 DE) not yet in sitemap — they'll appear after deployment
+- **Total indexed pages:** 28 (14 EN + 14 DE) — appropriate for current site size
 
 ### Canonical Tags
-- **Status:** Unknown
-- Could not verify canonical tag from external crawl
-- **Action:** Ensure every page has a self-referencing canonical tag. Critical for EN/DE pages to avoid duplicate content issues
+- **Status: Pass (in code)**
+- `<link rel="canonical">` implemented in BaseLayout.astro:200
+- Self-referencing canonical tags on all pages
+- Verify in rendered HTML that canonicals are correct, especially for `/de` pages
 
-### Hreflang Tags
-- **Status:** Likely Missing (Critical Issue)
-- Site has EN and DE versions (`/` and `/de/`) but no hreflang tags were detected
-- **Impact:** Without hreflang, Google may:
-  - Show the wrong language version to users
-  - Treat EN/DE pages as duplicate content
-  - Not properly index both language versions
-- **Action (Critical):** Add hreflang tags to every page:
-  ```html
-  <link rel="alternate" hreflang="en" href="https://learnslice.com/" />
-  <link rel="alternate" hreflang="de" href="https://learnslice.com/de/" />
-  <link rel="alternate" hreflang="x-default" href="https://learnslice.com/" />
-  ```
+### Hreflang Implementation
+- **Status: Pass (in code)**
+- Proper implementation in BaseLayout.astro:203-205:
+  - `hreflang="en"` → English path
+  - `hreflang="de"` → German path
+  - `hreflang="x-default"` → English path
+- Implementation confirmed in source code — correct 3-tag pattern
 
-### Page Speed
-- **Status:** Cannot measure externally
-- **Observations from content:**
-  - Using WebP images (good)
-  - Some images still in JPG/PNG (convert to WebP)
-  - Schema markup is clean JSON-LD (good, doesn't block rendering)
-- **Action:** Test at [PageSpeed Insights](https://pagespeed.web.dev/) and target all Core Web Vitals in "Good" range
+### Page Speed (Estimated)
+- **Status: Likely Good**
+- Astro static site generator — pre-rendered HTML, minimal JavaScript
+- Images recently optimized (913KB total for blog images)
+- WebP used for some images
+- No heavy third-party scripts detected (no analytics/chat widgets visible)
+- **Recommendation:** Run Google PageSpeed Insights for actual Core Web Vitals data
 
 ### Mobile-Friendliness
-- **Status:** Likely Pass
-- Viewport meta tag expected (modern framework)
-- Responsive design indicated by layout structure
-- **Action:** Verify with Google's Mobile-Friendly Test
+- **Status: Pass**
+- Viewport meta tag present (standard Astro setup)
+- Responsive navigation with mobile hamburger menu
+- Skip-to-content link for accessibility
 
 ---
 
 ## Content Gap Analysis
 
-| Missing Topic | Search Volume Potential | Competition | Content Type Needed | Priority |
-|---|---|---|---|---|
-| "Ausbildungsplan erstellen" (create training plan) | High (DE) | Medium | Blog/Guide | 1 |
-| "IHK Prüfung Tipps" (IHK exam tips) | High (DE) | High | Blog series | 2 |
-| "Ausbildung digitalisieren" (digitize apprenticeship) | Medium (DE) | Low | Blog/Guide | 1 |
-| "AI in HR training" | Medium (EN) | Medium | Blog | 3 |
-| "Apprenticeship ROI calculator" | Low (EN) | Low | Already have calculator — needs SEO content wrapper | 2 |
-| "Berichtsheft digital" (digital report booklet) | High (DE) | Medium | Blog/Feature page | 2 |
-| "Ausbilder entlasten" (relieve trainers) | Medium (DE) | Low | Blog/Case study | 1 |
-| "Simpleclub Alternative" | Medium (DE) | Low | Already have — expand | 3 |
-| "Azubi Onboarding" (apprentice onboarding) | Medium (DE) | Low | Blog/Guide | 2 |
-| "KI Ausbildung Handwerk" (AI training crafts) | Low (DE) | Very Low | Blog | 3 |
+### Currently Published (Live)
+| Topic | EN | DE |
+|---|---|---|
+| AI in vocational training | Yes | Yes |
+| Reduce training costs | Yes | Yes |
+| IHK exam preparation digital | Yes | Yes |
 
-**Key insight:** The German-language content market for digital apprenticeship training has much lower competition than English. Prioritize DE blog content.
+### In Pipeline (Branch: feat/seo-round-2)
+| Topic | EN | DE |
+|---|---|---|
+| Apprentice onboarding checklist | Yes | Yes |
+| Reduce trainer workload | Yes | Yes |
+| IHK exam tips | Yes | Yes |
+| Digitize apprenticeship training | Yes | Yes |
+| Digital training logbook | Yes | Yes |
+| AI tools for training | No | Yes |
+
+### Missing High-Value Topics
+
+| Missing Topic | Volume Potential | Competition | Content Type | Priority |
+|---|---|---|---|---|
+| "Ausbildungsplan erstellen" (create training plan) | High | Medium | Guide | 1 |
+| "Ausbildung Generation Z" / "Gen Z apprenticeship" | Medium | Low | Blog | 2 |
+| "Ausbildungsnachweis digital" (digital training records) | Medium | Medium | Guide | 3 |
+| Case studies (customer success stories) | N/A (trust) | Low | Case study page | 1 |
+| "Ausbildereignungsprüfung" (trainer certification) | High (DE) | Medium | Blog | 3 |
+| "Lernmethoden Ausbildung" (learning methods) | Medium | Medium | Blog | 4 |
+| "Ausbildung 4.0" / "Training 4.0" | Medium | Low | Blog | 2 |
+| ROI of apprenticeship training | Medium | Low | Blog + Calculator | 2 |
+| Comparison: LearnSlice vs. Prozubi / Cornelsen | Medium | Low | Landing page | 3 |
 
 ---
 
 ## Featured Snippet Opportunities
 
-### High-Potential Snippet Targets
+1. **"How long does apprenticeship onboarding take?"** — The homepage already states "8 weeks, not 6 months." Create a dedicated FAQ or blog section with a clear 40-60 word answer.
 
-1. **"How does AI work in apprenticeship training?"**
-   - Type: Paragraph snippet
-   - Action: Add this as an H2 on the homepage or a dedicated blog post, followed by a 40-60 word answer
+2. **"How much does an apprentice cost per year?"** — The calculator page and blog reference €20K-€35K. Format as a table snippet.
 
-2. **"How much does apprenticeship training cost?"**
-   - Type: Table snippet
-   - Action: Create a blog post with a clear cost comparison table (traditional vs. LearnSlice)
+3. **"IHK exam preparation tips"** — The upcoming `ihk-exam-tips` post targets this. Use a numbered list immediately after the H2 for list snippet potential.
 
-3. **"Steps to prepare for IHK exam"**
-   - Type: List snippet
-   - Action: Blog post with numbered steps under a clear H2
+4. **"Was kostet ein Azubi pro Jahr?"** — High-volume German query. Create a table with cost breakdown.
 
-4. **"Was kostet eine Ausbildung?"** (German: What does training cost?)
-   - Type: Paragraph/Table snippet
-   - Action: DE blog post targeting this high-volume query
-
-5. **FAQ section** already has 12 Q&A pairs with FAQPage schema — these are well-positioned for snippet capture. Ensure each answer starts with a direct, concise response.
+5. **"Ausbildung digitalisieren Checkliste"** — The `digitize-apprenticeship-training` post should include a checklist formatted as an ordered list.
 
 ---
 
 ## Schema Markup
 
-| Schema Type | Applicable? | Status | Notes |
-|---|---|---|---|
-| **Organization** | Yes | Present | Name, URL, contact, address, rating |
-| **SoftwareApplication** | Yes | Present | Category, OS, rating — well implemented |
-| **FAQPage** | Yes | Present | 12 Q&A pairs — excellent |
-| **LocalBusiness** | Maybe | Missing | Consider if targeting local German market |
-| **Article** | Yes | Missing | Should be on blog posts |
-| **BreadcrumbList** | Yes | Missing | Add to all pages for SERP breadcrumbs |
-| **WebSite/SearchAction** | Optional | Missing | Could enable sitelinks search box |
-| **HowTo** | Yes | Missing | "How it works" section could use HowTo schema |
-| **Review/AggregateRating** | Yes | Present (in Organization) | Good — 4.8/5, 30 reviews |
+| Schema Type | Status | Notes |
+|---|---|---|
+| Organization | **Present** | Good — includes rating, contact, social links |
+| SoftwareApplication | **Present** | Good — appropriate for SaaS product |
+| BreadcrumbList | **Present** | Implemented on all pages |
+| HowTo | **Present** | 3-step process on homepage — smart |
+| FAQPage | **Present** | 12 Q&As on homepage |
+| BlogPosting | **Present** | On blog article pages |
+| LocalBusiness | Missing | Consider adding — you have a German address |
+| Product | N/A | SoftwareApplication covers this |
+| Review | Missing | Individual review schema could supplement AggregateRating |
 
-**Priority additions:**
-1. **BreadcrumbList** on all pages (quick win for SERP appearance)
-2. **Article** schema on blog posts (helps with news/blog indexing)
-3. **HowTo** schema on the "How it works" section
+**Issue:** The `AggregateRating` (4.8/5, 30 reviews) appears on both Organization AND SoftwareApplication schema. Google may flag this as duplicate. Keep it on SoftwareApplication only, or ensure reviews are verifiable.
+
+**Issue:** `SoftwareApplication` has `"price": "0"` with description "Contact for pricing." This is misleading — either remove the price field or use a valid price. Google's guidelines require accurate pricing in Offer schema.
 
 ---
 
 ## Internal Linking Opportunities
 
-### Current Strengths
-- Homepage links to all key sections via navigation
-- Blog posts linked from homepage
-- Comparison pages linked from footer/navigation
-- Savings calculator prominently linked
+### High-Priority Link Additions
 
-### Improvements Needed
+1. **Blog → Comparison pages:** Each blog post about AI training or costs should link to `/learnslice-vs-traditional-training` with contextual anchor text like "how LearnSlice compares to traditional training."
 
-1. **Blog-to-product linking:** Blog posts should link contextually to relevant product pages (e.g., a blog about IHK exam prep should link to the platform's IHK features)
+2. **Blog → Calculator:** Every cost-related blog post should link to `/apprenticeship-savings-calculator`. Currently only 1 of 3 live posts does this.
 
-2. **Cross-language linking:** EN blog posts should link to DE equivalents and vice versa (supports hreflang and user navigation)
+3. **Cross-link new blog posts:** The 8 new EN posts should link to each other where topically relevant:
+   - `apprentice-onboarding` ↔ `digitize-apprenticeship-training`
+   - `reduce-trainer-workload` ↔ `reduce-training-costs`
+   - `ihk-exam-tips` ↔ `ihk-exam-preparation-digital`
+   - `digital-training-logbook` ↔ `digitize-apprenticeship-training`
 
-3. **Comparison pages:** `/learnslice-vs-traditional-training` and `/learnslice-vs-simpleclub` should link to each other and to the savings calculator
+4. **Homepage blog section:** Currently shows only 2 blog posts. After publishing the new batch, show 3-4 and rotate featured posts.
 
-4. **Missing hub page:** Create a `/features` page that serves as a pillar page linking to all feature descriptions
+5. **Pillar-cluster model:**
+   - **Pillar:** `/blog/digitize-apprenticeship-training` (comprehensive guide)
+   - **Clusters:** onboarding, logbook, trainer workload, IHK exam prep, AI tools
+   - Each cluster post links back to the pillar with consistent anchor text
 
-5. **Footer optimization:** Add links to top blog posts in footer for sitewide link equity distribution
-
-### Recommended Link Architecture
-```
-Homepage
-├── /companies (Pillar: Enterprise)
-├── /schools (Pillar: Education)
-├── /agencies (Pillar: Public Sector)
-├── /features (NEW - Pillar: Product) ← Missing
-│   ├── Link to IHK prep details
-│   ├── Link to AI coaching details
-│   └── Link to analytics details
-├── /blog (Content Hub)
-│   ├── /blog/ai-in-vocational-training → links to /companies, /features
-│   ├── /blog/reduce-training-costs → links to /savings-calculator
-│   └── /blog/ihk-exam-preparation → links to IHK features
-├── /apprenticeship-savings-calculator (Conversion Tool)
-└── /learnslice-vs-* (Bottom-of-Funnel Comparisons)
-```
+### Orphan Page Risk
+- `/learnslice-vs-traditional-training` and `/learnslice-vs-simpleclub` are only linked from the footer. Add contextual links from blog posts and landing pages.
 
 ---
 
-## Core Web Vitals Impact Assessment
+## Core Web Vitals (Estimated Impact)
 
-While exact metrics require a PageSpeed Insights test, here is the expected business impact:
-
-| Metric | Target | Business Impact |
+| Metric | Estimated Status | Reasoning |
 |---|---|---|
-| **LCP** | Under 2.5s | Every 100ms improvement → ~1.1% increase in demo conversion rate |
-| **FID/INP** | Under 100ms | Affects savings calculator interactivity — slow response = abandoned calculations |
-| **CLS** | Under 0.1 | Image/logo loading shifts can cause 15% bounce rate increase if CLS > 0.1 |
+| LCP | Likely Good (<2.5s) | Static site, optimized images, no heavy JS |
+| FID/INP | Likely Good (<100ms) | Minimal JavaScript, no complex interactivity |
+| CLS | Likely Good (<0.1) | Static layout, images appear to have dimensions set |
 
-**Revenue impact estimate:** If learnslice.com gets 5,000 monthly visitors with a 2% demo conversion rate:
-- Improving LCP from 4s to 2.5s could increase conversions by ~15% → +15 demos/month
-- Fixing CLS issues could reduce bounce rate by 10-15% → +500-750 additional engaged visitors/month
+**Action:** Run actual PageSpeed Insights test to confirm. Static Astro sites typically score 90+ on mobile.
 
 ---
 
 ## Content Strategy Recommendations
 
 ### Publishing Cadence
-- **Target:** 2-4 blog posts per month (alternating EN/DE)
-- **Current:** Only 3 blog posts visible — this is critically low for organic growth
-- **Rationale:** Consistent publishing builds topical authority; the German apprenticeship niche has low competition
+- **Current:** 3 live posts (EN+DE), 8+8 in pipeline
+- **Recommended:** 2 posts per week (1 EN + 1 DE) until pipeline is published, then 1 bilingual post per week
+- **Rationale:** Domain is young, needs content velocity to build topical authority
 
-### Content Types to Prioritize
-1. **SEO blog posts** (DE focus) — target long-tail keywords in the apprenticeship space
-2. **Case studies** — real customer stories with metrics (builds E-E-A-T)
-3. **Comparison pages** — expand beyond Simpleclub (vs. Cornelsen, vs. Christiani, etc.)
-4. **Interactive tools** — the savings calculator is excellent; consider an "Apprenticeship Readiness Assessment" tool
-5. **Video content** — platform demo videos with transcripts for SEO
+### Content Length
+- Current blog posts: ~900-1,100 words
+- **Recommendation:** Aim for 1,500-2,000 words for pillar content, 800-1,200 for cluster posts. The current posts are on the thin side for competitive queries.
 
-### Content Prioritization Matrix
+### Content Priorities
 
-| Content Idea | Search Volume | Competition | Business Value | Priority Score |
+| Content | Volume | Competition | Business Value | Priority |
 |---|---|---|---|---|
-| "Ausbildung digitalisieren" guide (DE) | Medium | Low | High | 9/10 |
-| IHK exam prep tips series (DE) | High | Medium | High | 9/10 |
-| Customer case study (Tremonia or FH Dortmund) | Low | Very Low | Very High | 8/10 |
-| "Ausbilder entlasten" guide (DE) | Medium | Low | High | 8/10 |
-| "Azubi Onboarding Checkliste" (DE) | Medium | Low | Medium | 7/10 |
-| vs. Cornelsen comparison (DE) | Low | Very Low | High | 7/10 |
-| "AI in Vocational Training" whitepaper (EN) | Medium | Medium | Medium | 6/10 |
-| "Berichtsheft digital führen" guide (DE) | High | Medium | Medium | 6/10 |
-| Apprenticeship cost breakdown by industry (EN/DE) | Medium | Low | High | 7/10 |
-| Video: 3-minute platform demo | Low | Very Low | Very High | 8/10 |
+| Customer case studies (2-3) | N/A | Low | High | **10/10** |
+| "Ausbildungsplan erstellen" guide | High | Medium | High | **9/10** |
+| Comparison pages (vs. Prozubi, Cornelsen) | Medium | Low | High | **8/10** |
+| "Training 4.0" / future of apprenticeships | Medium | Low | Medium | **7/10** |
+| Gen Z apprenticeship engagement | Medium | Low | Medium | **6/10** |
+| Trainer certification (AEVO) guide | High | Medium | Medium | **6/10** |
+
+### Content Update Strategy
+- Refresh existing 3 live blog posts quarterly with updated stats and new internal links
+- After new posts go live, add cross-links within 1 week
+- Monitor which posts rank on page 2 and expand them by 30-50%
 
 ---
 
 ## Prioritized Recommendations
 
-### Critical (Fix Immediately)
-1. **Add hreflang tags to all pages** — Without these, Google may treat your EN/DE content as duplicates and suppress one version. This is the single highest-impact technical fix. *Expected impact: proper indexing of both language versions, potentially doubling organic reach in DE market.*
-
-2. **Fix duplicate H1 tags** — Merge into a single H1. Takes 2 minutes, affects every search impression. *Expected impact: clearer signal to Google about page topic.*
-
-3. **Add alt text to all 8 partner logo images** — Quick accessibility and SEO win. *Expected impact: minor ranking signal + accessibility compliance.*
+### Critical (Fix This Week)
+1. ~~**Fix SoftwareApplication schema pricing**~~ — **DONE (2026-04-04).** Removed `"price": "0"` and duplicate AggregateRating from SoftwareApplication schema in `BaseLayout.astro`.
+2. ~~**Duplicate H1 on homepage**~~ — **Not an issue.** The "AI-Powered Apprenticeship Training" text is a `<span class="section-label">`, not an H1. Only one H1 per page.
+3. ~~**Missing meta descriptions**~~ — **Not an issue.** All pages (homepage, blog index, calculator) have proper descriptions in code.
 
 ### High Priority (This Month)
-4. **Verify/optimize title tags and meta descriptions** — Confirm these exist in `<head>` for all 28 pages. Write unique, keyword-rich titles and compelling meta descriptions for each. *Expected impact: 20-35% improvement in click-through rates from search results.*
-
-5. **Add `lastmod` dates to sitemap** — Helps Google prioritize crawling updated content. Add redirect from `/sitemap.xml` to `/sitemap-index.xml`. *Expected impact: faster indexing of new and updated content.*
-
-6. **Add BreadcrumbList schema to all pages** — Quick structured data win for enhanced SERP appearance. *Expected impact: more prominent search listings with breadcrumb trails.*
-
-7. **Add Article schema to blog posts** — Helps Google understand and feature blog content. *Expected impact: eligibility for article-rich results in search.*
+4. **Publish the 16 new blog posts** (8 EN + 8 DE) and add proper cross-links between them. Impact: 2-3x more indexable content, topical authority boost.
+5. **Add meta descriptions to /blog and /calculator pages.** Impact: Better SERP appearance for these pages.
+6. **Expand existing blog posts to 1,500+ words** — Current ~1,000 words is thin for competitive queries like "IHK exam preparation."
+7. **Deduplicate AggregateRating schema** — Keep on SoftwareApplication only, remove from Organization.
+8. **Add contextual links to comparison pages** from blog posts and landing pages — they're currently footer-only.
 
 ### Medium Priority (This Quarter)
-8. **Publish 8-12 German-language blog posts** targeting identified content gaps (Ausbildung digitalisieren, IHK Prüfung Tipps, Ausbilder entlasten, etc.). *Expected impact: 3-5x organic traffic growth in DE market within 6 months.*
-
-9. **Create 2 customer case studies** with named companies and measurable results. *Expected impact: stronger E-E-A-T signals + sales enablement content.*
-
-10. **Add a `/features` pillar page** that links to all product capabilities and serves as an internal linking hub. *Expected impact: better link equity distribution and clearer site architecture for crawlers.*
-
-11. **Expand comparison pages** — Add vs. Cornelsen, vs. Christiani, and other competitors active in the German market. *Expected impact: capture bottom-of-funnel search traffic from competitors' brand names.*
-
-12. **Run PageSpeed Insights audit** and optimize Core Web Vitals, especially LCP (image optimization, CDN) and CLS (image dimensions). *Expected impact: improved rankings and lower bounce rates.*
+9. **Create 2-3 customer case study pages** — Tremonia, Carl-Severing, and one more. Massive E-E-A-T signal.
+10. **Add author bios to blog posts** — Real name, photo, credentials. Signals expertise to Google.
+11. **Add `changefreq` and `priority` to sitemap**, or ensure `lastmod` reflects actual content modification dates.
+12. **Create a `/sitemap.xml` redirect** to `/sitemap-index.xml` — some crawlers check the default path.
+13. **Convert remaining JPG blog images to WebP** for faster loading.
+14. **Write "Ausbildungsplan erstellen" pillar content** — high-volume German keyword with direct product tie-in.
 
 ### Low Priority (When Resources Allow)
-13. **Add HowTo schema** to the "How it works" section for rich result eligibility.
-
-14. **Create a content hub/resource center** page that aggregates all blog posts, guides, and tools by topic.
-
-15. **Build backlinks** through guest posts on German HR/education publications (Personalwirtschaft, Haufe, etc.) to strengthen domain authority.
-
-16. **Add social media profiles** and link them from the website (LinkedIn at minimum for B2B). Connect these to the Organization schema.
-
-17. **Implement a blog newsletter** to drive return visits and build an email list for content distribution.
-
----
-
-*Audit generated by Claude Code SEO Audit Skill*
+15. **Rename blog image files** to keyword-rich names (e.g., `ai-vocational-training-workshop.webp` instead of `pexels-yankrukov-7794078.jpg`).
+16. **Add comparison pages** for Prozubi, Cornelsen, and other competitors.
+17. **Add LocalBusiness schema** alongside Organization schema.
+18. **Create a press/awards page** listing BMWE AI Prize and media mentions.
+19. **Implement individual Review schema** for each testimonial (supplement AggregateRating).
