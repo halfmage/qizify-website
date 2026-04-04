@@ -22,12 +22,6 @@
           { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      {
-        "label": "Blog",
-        "mega": true,
-        "blogDropdown": true,
-        "href": "/de/blog"
-      },
       { "label": "FAQ", "href": "/de#faq" }
     ],
     "cta": "Kostenlose Demo buchen"

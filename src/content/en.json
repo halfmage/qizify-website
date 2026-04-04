@@ -22,12 +22,6 @@
           { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      {
-        "label": "Blog",
-        "mega": true,
-        "blogDropdown": true,
-        "href": "/blog"
-      },
       { "label": "FAQ", "href": "/#faq" }
     ],
     "cta": "Book Free Demo"
