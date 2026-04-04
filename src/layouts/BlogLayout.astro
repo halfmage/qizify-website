@@ -50,9 +50,14 @@ const blogPostingSchema = {
 	datePublished: publishDate.toISOString(),
 	...(updatedDate && { dateModified: updatedDate.toISOString() }),
 	author: {
-		'@type': 'Organization',
+		'@type': 'Person',
 		name: author,
-		url: 'https://learnslice.com',
+		jobTitle: lang === 'en' ? 'Junior Content Manager' : 'Junior Content Manager',
+		worksFor: {
+			'@type': 'Organization',
+			name: 'LearnSlice',
+			url: 'https://learnslice.com',
+		},
 	},
 	publisher: {
 		'@type': 'Organization',
@@ -143,6 +148,23 @@ const blogPostingSchema = {
 				prose-img:rounded-xl prose-img:border prose-img:border-border
 			">
 				<slot />
+			</div>
+		<!-- Author bio -->
+			<div class="mt-16 pt-8 border-t border-border">
+				<p class="text-xs font-mono uppercase tracking-widest text-muted mb-3">
+					{lang === 'en' ? 'Written by' : 'Geschrieben von'}
+				</p>
+				<div class="flex items-center gap-4">
+					<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">
+						{author.charAt(0)}
+					</div>
+					<div>
+						<p class="text-white font-semibold text-sm m-0">{author}</p>
+						<p class="text-muted text-xs m-0">
+							{lang === 'en' ? 'Junior Content Manager, LearnSlice' : 'Junior Content Manager, LearnSlice'}
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</article>
