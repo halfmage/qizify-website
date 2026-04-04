@@ -1,0 +1,23 @@
+---
+interface Props {
+	badge: string;
+	headline: string;
+	body: string;
+}
+
+const { badge, headline, body } = Astro.props;
+---
+
+<section class="py-20 md:py-32 px-6 md:px-8" id="problem">
+	<div class="max-w-container mx-auto">
+		<div class="text-center max-w-3xl mx-auto">
+			<span class="section-label mb-4 block">{badge}</span>
+			<h2 class="text-heading md:text-display-sm text-white m-0">
+				{headline}
+			</h2>
+			<p class="text-lg leading-relaxed text-muted m-0 mt-6">
+				{body}
+			</p>
+		</div>
+	</div>
+</section>

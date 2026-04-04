@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import LogosSlider from '../components/LogosSlider.astro';
+import ProblemStatement from '../components/ProblemStatement.astro';
 import SavingsComparison from '../components/SavingsComparison.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import LearningResults from '../components/LearningResults.astro';
@@ -49,7 +50,13 @@ const currentPath = '/';
 		logos={enContent.trustedBy.logos}
 	/>
 	
-	<SavingsComparison 
+	<ProblemStatement
+		badge={enContent.problem.badge}
+		headline={enContent.problem.headline}
+		body={enContent.problem.body}
+	/>
+
+	<SavingsComparison
 		headline={enContent.savingsComparison.headline}
 		without={enContent.savingsComparison.without}
 		with={enContent.savingsComparison.with}

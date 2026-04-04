@@ -52,6 +52,11 @@
       "International School Stuttgart"
     ]
   },
+  "problem": {
+    "badge": "The Problem",
+    "headline": "Training Is Broken. The Numbers Prove It.",
+    "body": "30% of apprentices drop out before completing their training. Trainers spend 12 hours a week per apprentice on repetitive tasks. And every failed apprenticeship costs companies €20,000 to €35,000. The problem isn't effort — it's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale."
+  },
   "savingsComparison": {
     "headline": "Up to €15K Saved Per Apprentice.\nHere's the Math.",
     "without": {
@@ -95,12 +100,12 @@
     ]
   },
   "learningResults": {
-    "badge": "AI Performance Catalyst",
+    "badge": "AI That Learns Your Apprentices",
     "headline": "Learning Built for Results",
     "features": [
       {
         "icon": "hugeicons:sparkles",
-        "title": "AI Performance Catalyst That Adapts 24/7",
+        "title": "Adaptive AI Coaching — 24/7",
         "description": "Detects knowledge gaps early, auto-adjusts the learning plan, and delivers continuous feedback so every apprentice stays on track without trainer intervention."
       },
       {
@@ -215,7 +220,7 @@
       {
         "icon": "hugeicons:building-06",
         "title": "30+ German companies",
-        "description": "IT Services, Manufacturing, Insurance, Healthcare, Government"
+        "description": "From Mittelstand manufacturers to vocational colleges — across IT, manufacturing, insurance, healthcare, and government"
       },
       {
         "icon": "hugeicons:mortarboard-02",

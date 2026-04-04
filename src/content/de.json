@@ -52,6 +52,11 @@
       "International School Stuttgart"
     ]
   },
+  "problem": {
+    "badge": "Das Problem",
+    "headline": "Ausbildung ist kaputt. Die Zahlen belegen es.",
+    "body": "30 % der Azubis brechen ihre Ausbildung ab. Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder gescheiterte Ausbildungsvertrag kostet Unternehmen €20.000 bis €35.000. Das Problem ist nicht mangelnder Einsatz — sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
+  },
   "savingsComparison": {
     "headline": "Bis zu 15K € Ersparnis pro Azubi.\nSo rechnet sich das.",
     "without": {
@@ -95,12 +100,12 @@
     ]
   },
   "learningResults": {
-    "badge": "KI Katalysator",
+    "badge": "KI, die Ihre Azubis kennt",
     "headline": "Lernen für tatsächliche Ergebnisse",
     "features": [
       {
         "icon": "hugeicons:sparkles",
-        "title": "24/7 adaptiver KI Katalysator.",
+        "title": "Adaptives KI-Coaching — rund um die Uhr",
         "description": "Erkennt Wissenslücken frühzeitig, passt den Lernplan automatisch an und liefert kontinuierliches Feedback, damit jeder Azubi ohne Ausbilder-Eingriff auf Kurs bleibt."
       },
       {
@@ -215,7 +220,7 @@
       {
         "icon": "hugeicons:building-06",
         "title": "30+ deutsche Unternehmen",
-        "description": "IT-Firmen, Produktion, Versicherungen, Gesundheitswesen, öffentliche Verwaltung"
+        "description": "Vom Mittelstand bis zur Berufsschule — in IT, Produktion, Versicherung, Gesundheitswesen und öffentlicher Verwaltung"
       },
       {
         "icon": "hugeicons:mortarboard-02",
