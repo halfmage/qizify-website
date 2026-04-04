@@ -23,7 +23,7 @@ const currentPath = '/de';
 
 <BaseLayout 
 	title="KI-Ausbildungsplattform | IHK-Prüfungsvorbereitung | LearnSlice"
-	description="Sparen Sie 50% Ausbilderzeit und bis zu €15K pro Azubi. LearnSlice verbindet IHK-Prüfungsvorbereitung mit KI-Coaching und Unternehmens-Onboarding. Jetzt Demo buchen."
+	description="Ihre Ausbilder verbringen 12 Stunden pro Woche pro Azubi. Halbieren Sie das — mit KI-Lernpfaden, IHK-Prüfungsvorbereitung und Unternehmens-Coaching in einer Plattform."
 	lang={lang}
 	currentPath={currentPath}
 >
@@ -69,27 +69,27 @@ const currentPath = '/de';
 		compliance={deContent.learningResults.compliance}
 	/>
 	
-	<CompanySlider 
+	<VocationalProfessions
+		headline={deContent.vocationalProfessions.headline}
+		items={deContent.vocationalProfessions.items}
+	/>
+
+	<CompanySlider
 		headline={deContent.madeForCompany.headline}
 		tabs={deContent.madeForCompany.tabs}
 	/>
-	
-	<Testimonials 
+
+	<Testimonials
 		headline={deContent.testimonials.headline}
 		items={deContent.testimonials.items}
 		currentLang={lang}
 	/>
-	
-	<WhyChooseUs 
+
+	<WhyChooseUs
 		headline={deContent.whyChooseUs.headline}
 		items={deContent.whyChooseUs.items}
 	/>
-	
-	<VocationalProfessions 
-		headline={deContent.vocationalProfessions.headline}
-		items={deContent.vocationalProfessions.items}
-	/>
-	
+
 	<FAQ
 		headline={deContent.faq.headline}
 		items={deContent.faq.items}

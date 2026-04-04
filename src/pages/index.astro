@@ -23,7 +23,7 @@ const currentPath = '/';
 
 <BaseLayout 
 	title="AI Apprenticeship Training | IHK Exam Prep | LearnSlice"
-	description="Save 50% of trainer time and up to €15K per apprentice. LearnSlice combines IHK exam prep with AI coaching and company onboarding. Book a free demo today."
+	description="Your trainers spend 12 hours a week per apprentice. Cut that in half with AI learning paths — IHK exam prep, company knowledge, and 24/7 coaching in one platform."
 	lang={lang}
 	currentPath={currentPath}
 >
@@ -69,27 +69,27 @@ const currentPath = '/';
 		compliance={enContent.learningResults.compliance}
 	/>
 	
-	<CompanySlider 
+	<VocationalProfessions
+		headline={enContent.vocationalProfessions.headline}
+		items={enContent.vocationalProfessions.items}
+	/>
+
+	<CompanySlider
 		headline={enContent.madeForCompany.headline}
 		tabs={enContent.madeForCompany.tabs}
 	/>
-	
-	<Testimonials 
+
+	<Testimonials
 		headline={enContent.testimonials.headline}
 		items={enContent.testimonials.items}
 		currentLang={lang}
 	/>
-	
-	<WhyChooseUs 
+
+	<WhyChooseUs
 		headline={enContent.whyChooseUs.headline}
 		items={enContent.whyChooseUs.items}
 	/>
-	
-	<VocationalProfessions 
-		headline={enContent.vocationalProfessions.headline}
-		items={enContent.vocationalProfessions.items}
-	/>
-	
+
 	<FAQ
 		headline={enContent.faq.headline}
 		items={enContent.faq.items}
