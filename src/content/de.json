@@ -34,8 +34,8 @@
   },
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
-    "headline": "Ihre Ausbilder verbringen 12 Stunden\npro Woche pro Azubi. Halbieren Sie das.",
-    "subheadline": "KI-Lernpfade, die IHK-Prüfungsvorbereitung mit Ihrem Unternehmenswissen verbinden. Sparen Sie bis zu €15K pro Azubi und entlasten Sie Ihre Ausbilder um 50 %.",
+    "headline": "Azubis ohne Plan. Ausbilder am Limit.\nSo geht Ausbildung nicht weiter.",
+    "subheadline": "Von der IHK-Prüfung über Onboarding bis zum Upskilling — LearnSlice begleitet Ihre Azubis durch den gesamten Ausbildungszyklus. Mit KI-Lernpfaden und Ihrem Unternehmenswissen. Bis zu €15K Ersparnis pro Azubi bei 50 % weniger Ausbilderzeit.",
     "ctaPrimary": "Kostenlose Demo buchen",
     "ctaSecondary": "Einsparpotenzial berechnen"
   },
@@ -319,8 +319,8 @@
     ]
   },
   "cta": {
-    "headline": "Jetzt starten",
-    "subheadline": "Bis zu 15K € Ersparnis pro Azubi.\n75K € bei 5 Azubis. Kein Risiko. Jederzeit kündbar.",
+    "headline": "Durchbrechen Sie den Kreislauf",
+    "subheadline": "IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen statt Monaten Leistung bringen. Bis zu €15K Ersparnis pro Azubi.",
     "button": "Kostenlose Demo buchen"
   },
   "footer": {
