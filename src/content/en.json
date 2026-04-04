@@ -34,10 +34,10 @@
   },
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",
-    "headline": "Your Apprentices Job-Ready\nin 8 Weeks, Not 6 Months.",
-    "subheadline": "LearnSlice combines IHK exam preparation with your company knowledge into personalized AI learning paths, so your apprentices are job-ready in 8 weeks, not 6 months. Save €32K per apprentice and free up 50% of trainer time.",
-    "ctaPrimary": "See It In Action",
-    "ctaSecondary": "How it works"
+    "headline": "Your Trainers Spend 12 Hours\na Week Per Apprentice. Cut That in Half.",
+    "subheadline": "AI learning paths that combine IHK exam prep with your company knowledge. Save up to €15K per apprentice and give your trainers 50% of their week back.",
+    "ctaPrimary": "Book My Free Demo",
+    "ctaSecondary": "Calculate My Savings"
   },
   "trustedBy": {
     "headline": "You are in good company",
@@ -53,7 +53,7 @@
     ]
   },
   "savingsComparison": {
-    "headline": "€32K–€41K saved per young talent.\nBig savings, quick ROI.",
+    "headline": "Up to €15K Saved Per Apprentice.\nHere's the Math.",
     "without": {
       "title": "Companies\nWithout LearnSlice",
       "points": [
@@ -67,9 +67,9 @@
       "title": "Companies\nWith LearnSlice",
       "points": [
         "65 % faster to productivity (4-6 months → 8 weeks)",
-        "50% less trainer time = €10K saved per apprentice",
+        "50% less trainer time = €9K saved per apprentice",
         "Dropout reduced: 30 % → 15%",
-        "Turn −€29K into €32K–€41K with our solution"
+        "Up to €75K saved per year with 5 apprentices"
       ]
     }
   },
@@ -122,7 +122,7 @@
     "compliance": "100% GDPR-compliant. Hosted in Germany or your infrastructure."
   },
   "madeForCompany": {
-    "headline": "Made for industries that count",
+    "headline": "Built for Companies, Schools, and Agencies",
     "tabs": [
       {
         "tabLabel": "Companies",
@@ -320,8 +320,8 @@
   },
   "cta": {
     "headline": "Start Today",
-    "subheadline": "€4K saved per apprentice. €20K per 5 apprentices. No risk. Cancel anytime.",
-    "button": "Start Saving Today"
+    "subheadline": "Up to €15K saved per apprentice. €75K with 5 apprentices. No risk. Cancel anytime.",
+    "button": "Book My Free Demo"
   },
   "footer": {
     "logo": "LearnSlice",

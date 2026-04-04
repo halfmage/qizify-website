@@ -34,10 +34,10 @@
   },
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
-    "headline": "Ihre Azubis in 8 Wochen\neinsatzbereit, nicht in 6 Monaten.",
-    "subheadline": "LearnSlice verbindet IHK-Prüfungsvorbereitung mit Ihrem Unternehmenswissen zu personalisierten KI-Lernpfaden, Ihre Azubis sind in 8 Wochen statt 6 Monaten einsatzbereit. Sparen Sie €32K pro Azubi und entlasten Sie Ihre Ausbilder um 50 %.",
-    "ctaPrimary": "Jetzt live erleben",
-    "ctaSecondary": "So funktioniert's"
+    "headline": "Ihre Ausbilder verbringen 12 Stunden\npro Woche pro Azubi. Halbieren Sie das.",
+    "subheadline": "KI-Lernpfade, die IHK-Prüfungsvorbereitung mit Ihrem Unternehmenswissen verbinden. Sparen Sie bis zu €15K pro Azubi und entlasten Sie Ihre Ausbilder um 50 %.",
+    "ctaPrimary": "Kostenlose Demo buchen",
+    "ctaSecondary": "Einsparpotenzial berechnen"
   },
   "trustedBy": {
     "headline": "Sie sind in guter Gesellschaft",
@@ -53,7 +53,7 @@
     ]
   },
   "savingsComparison": {
-    "headline": "32K–41K € pro Nachwuchskraft gespart. Hohe Einsparungen, schneller ROI.",
+    "headline": "Bis zu 15K € Ersparnis pro Azubi.\nSo rechnet sich das.",
     "without": {
       "title": "Unternehmen\nohne LearnSlice",
       "points": [
@@ -67,9 +67,9 @@
       "title": "Unternehmen\nmit LearnSlice",
       "points": [
         "65 % schneller einsatzbereit (4–6 Monate → 8 Wochen).",
-        "50 % weniger Ausbilderzeit = 10K € Ersparnis pro Azubi.",
+        "50 % weniger Ausbilderzeit = 9K € Ersparnis pro Azubi.",
         "Abbruchquote: halbiert von 30 % auf 15 %.",
-        "ROI: Aus −29K € werden 41K € mit unserer Lösung."
+        "Bis zu 75K € Ersparnis pro Jahr bei 5 Azubis."
       ]
     }
   },
@@ -122,7 +122,7 @@
     "compliance": "100 % DSGVO-konform. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur"
   },
   "madeForCompany": {
-    "headline": "Für Ihr Unternehmen entwickelt",
+    "headline": "Für Unternehmen, Schulen und Agenturen",
     "tabs": [
       {
         "tabLabel": "Unternehmen",
@@ -320,8 +320,8 @@
   },
   "cta": {
     "headline": "Jetzt starten",
-    "subheadline": "4.000 € Ersparnis pro Azubi,\n20.000 € bei 5 Azubis. Kein Risiko. Jederzeit kündbar.",
-    "button": "Heute mit Sparen beginnen"
+    "subheadline": "Bis zu 15K € Ersparnis pro Azubi.\n75K € bei 5 Azubis. Kein Risiko. Jederzeit kündbar.",
+    "button": "Kostenlose Demo buchen"
   },
   "footer": {
     "logo": "LearnSlice",

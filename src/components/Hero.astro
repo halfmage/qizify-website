@@ -52,7 +52,7 @@ const headlineLines = headline.split('\n');
 				</Button>
 				<Button
 					variant="secondary"
-					href="#how-it-works"
+					href={currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator'}
 					aria-label={ctaSecondary}
 				>
 					{ctaSecondary}
