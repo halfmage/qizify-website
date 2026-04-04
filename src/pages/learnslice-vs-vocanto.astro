@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import LogosSlider from '../components/LogosSlider.astro';
+import Testimonials from '../components/Testimonials.astro';
+import CTAFooter from '../components/CTAFooter.astro';
+import Footer from '../components/Footer.astro';
+import DemoRequestModal from '../components/DemoRequestModal.astro';
+import LeadCapture from '../components/LeadCapture.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+const currentPath = '/learnslice-vs-vocanto';
+---
+
+<BaseLayout
+	title="LearnSlice vs. Vocanto | AI Coaching vs. Video Animations"
+	description="Compare LearnSlice and Vocanto for apprenticeship training. AI-powered adaptive coaching vs. animated video content, full training cycle vs. IHK curriculum focus."
+	lang={lang}
+	currentPath={currentPath}
+>
+	<Header logo={enContent.nav.logo} menu={enContent.nav.menu} cta={enContent.nav.cta} currentLang={lang} currentPath={currentPath} />
+
+	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center">
+			<span class="section-label mb-5 block">Comparison</span>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Vocanto</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Vocanto offers animated learning content aligned to IHK curricula. LearnSlice offers AI-powered coaching that adapts to each apprentice across the full training cycle.</p>
+		</div>
+	</section>
+
+	<!-- Overview cards -->
+	<section class="py-12 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+			<div class="bg-surface p-8">
+				<h3 class="text-base font-semibold text-white mb-3">Vocanto</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4">Part of the EMBRACE group, Vocanto provides animated learning content for commercial and technical apprentices. Content is developed according to IHK framework curricula.</p>
+				<ul class="text-sm text-muted space-y-2">
+					<li>Interactive animations and simulations</li>
+					<li>IHK framework curriculum alignment</li>
+					<li>Commercial and technical professions</li>
+					<li>Part of EMBRACE group (with Studyflix)</li>
+				</ul>
+			</div>
+			<div class="bg-surface p-8 relative">
+				<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+				<h3 class="text-base font-semibold text-primary mb-3 relative">LearnSlice</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4 relative">A B2B AI-powered platform for the full apprenticeship cycle. Combines IHK exam prep with onboarding, upskilling, and company knowledge — all through personalized AI coaching.</p>
+				<ul class="text-sm text-white/70 space-y-2 relative">
+					<li>AI coaching with personalized learning paths</li>
+					<li>Full cycle: IHK + onboarding + upskilling</li>
+					<li>Company knowledge integration via document upload</li>
+					<li>Real-time trainer analytics</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Feature comparison -->
+	<section class="py-12 md:py-20 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto">
+			<div class="text-center mb-14"><span class="section-label mb-4 block">Features</span><h2 class="text-heading md:text-display-sm text-white m-0">Feature-by-Feature Comparison</h2></div>
+			<div class="overflow-x-auto rounded-xl border border-border">
+				<table class="w-full border-collapse">
+					<thead>
+						<tr>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Feature</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Vocanto</th>
+							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
+						</tr>
+					</thead>
+					<tbody class="text-sm">
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Learning approach</td><td class="text-muted p-4 border-b border-border">Animated videos + exercises</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">AI chat coaching + adaptive paths</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Personalization</td><td class="text-muted p-4 border-b border-border">Standard learning paths</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Full AI adaptation per learner</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Training cycle</td><td class="text-muted p-4 border-b border-border">IHK curriculum content</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Full cycle: IHK + onboarding + upskilling + company knowledge</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Company knowledge</td><td class="text-muted p-4 border-b border-border">Not available</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Upload docs, AI learns them</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK alignment</td><td class="text-muted p-4 border-b border-border">Developed per IHK framework</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Mapped per profession & region</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">AI coaching</td><td class="text-muted p-4 border-b border-border">Not available</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Full conversational AI tutor 24/7</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Trainer analytics</td><td class="text-muted p-4 border-b border-border">Basic progress reports</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive dashboards with ROI data</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Content format</td><td class="text-muted p-4 border-b border-border">Animated videos + expert tutoring</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Interactive AI conversations + assessments</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Data hosting</td><td class="text-muted p-4 border-b border-border">DSGVO-compliant, ISO 27001</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Germany only, GDPR-compliant</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Gamification</td><td class="text-muted p-4">Basic elements</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Points, badges, leaderboards</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<!-- When to choose -->
+	<section class="py-20 md:py-32 px-6 md:px-8">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-16"><span class="section-label mb-4 block">Decision</span><h2 class="text-heading md:text-display-sm text-white m-0">When to Choose What</h2></div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+				<div class="bg-surface p-8">
+					<h3 class="text-base font-semibold text-white mb-4">Choose Vocanto if you...</h3>
+					<ul class="text-sm text-muted space-y-3">
+						<li>Prefer animated video content for visual learners</li>
+						<li>Want content developed strictly per IHK framework curriculum</li>
+						<li>Need a platform within the EMBRACE ecosystem</li>
+						<li>Don't need AI coaching or company knowledge integration</li>
+					</ul>
+				</div>
+				<div class="bg-surface p-8 relative">
+					<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+					<h3 class="text-base font-semibold text-primary mb-4 relative">Choose LearnSlice if you...</h3>
+					<ul class="text-sm text-white/70 space-y-3 relative">
+						<li>Want AI coaching that adapts to each apprentice 24/7</li>
+						<li>Need the full training cycle, not just IHK content</li>
+						<li>Want to integrate your company's own knowledge and processes</li>
+						<li>Need executive analytics and ROI measurement</li>
+						<li>Require data hosted exclusively in Germany</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<LogosSlider headline={enContent.trustedBy.headline} logos={enContent.trustedBy.logos} />
+	<Testimonials headline={enContent.testimonials.headline} items={enContent.testimonials.items} currentLang={lang} />
+	<LeadCapture currentLang={lang} />
+	<CTAFooter headline={enContent.cta.headline} subheadline={enContent.cta.subheadline} button={enContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={enContent.footer.privacyLabel} termsLabel={enContent.footer.termsLabel} />
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

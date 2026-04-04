@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import LogosSlider from '../../components/LogosSlider.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import CTAFooter from '../../components/CTAFooter.astro';
+import Footer from '../../components/Footer.astro';
+import DemoRequestModal from '../../components/DemoRequestModal.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+import deContent from '../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de/learnslice-vs-cornelsen-ecademy';
+---
+
+<BaseLayout title="LearnSlice vs. Cornelsen eCademy: KI-Startup vs. Verlags-LMS" description="Vergleich von LearnSlice und Cornelsen eCademy. KI-native Plattform vs. Verlags-LMS, Mittelstand vs. Enterprise, voller Ausbildungszyklus vs. Content-Bibliothek." lang={lang} currentPath={currentPath}>
+	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
+
+	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center">
+			<span class="section-label mb-5 block">Vergleich</span>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Cornelsen eCademy</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Cornelsen eCademy bringt die St&auml;rke von Deutschlands gr&ouml;&szlig;tem Bildungsverlag. LearnSlice bringt KI-native Technologie f&uuml;r den gesamten Ausbildungszyklus.</p>
+		</div>
+	</section>
+
+	<section class="py-12 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+			<div class="bg-surface p-8">
+				<h3 class="text-base font-semibold text-white mb-3">Cornelsen eCademy</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4">Teil des Cornelsen Verlags. Digitale Lernplattform f&uuml;r Aus- und Weiterbildung seit 2010. Genutzt von Gro&szlig;unternehmen wie BMW, Bayer und Deutsche Bahn.</p>
+				<ul class="text-sm text-muted space-y-2"><li>Gest&uuml;tzt durch Cornelsen-Verlagsexpertise</li><li>20+ Ausbildungsberufe</li><li>Enterprise-Kundenbasis (BMW, Bayer, Bosch)</li><li>K&uuml;rzlich KI-Coach-Features hinzugef&uuml;gt</li></ul>
+			</div>
+			<div class="bg-surface p-8 relative">
+				<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+				<h3 class="text-base font-semibold text-primary mb-3 relative">LearnSlice</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4 relative">B2B-KI-Plattform f&uuml;r den gesamten Ausbildungszyklus. Verbindet IHK-Vorbereitung mit Onboarding, Upskilling und Unternehmenswissen.</p>
+				<ul class="text-sm text-white/70 space-y-2 relative"><li>KI-Coaching mit personalisierten Lernpfaden</li><li>Voller Zyklus: IHK + Onboarding + Upskilling</li><li>Unternehmenswissen-Integration per Dokumenten-Upload</li><li>Echtzeit-Analytics f&uuml;r Ausbilder</li></ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-12 md:py-20 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto">
+			<div class="text-center mb-14"><span class="section-label mb-4 block">Features</span><h2 class="text-heading md:text-display-sm text-white m-0">Feature-Vergleich im Detail</h2></div>
+			<div class="overflow-x-auto rounded-xl border border-border">
+				<table class="w-full border-collapse">
+					<thead>
+						<tr>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Merkmal</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Cornelsen eCademy</th>
+							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
+						</tr>
+					</thead>
+					<tbody class="text-sm">
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Lernansatz</td><td class="text-muted p-4 border-b border-border">Strukturierte Kurse + KI-Coach</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">KI-Chat-Coaching + adaptive Pfade</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Zielmarkt</td><td class="text-muted p-4 border-b border-border">Gro&szlig;unternehmen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Mittelstand und KMU</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbildungszyklus</td><td class="text-muted p-4 border-b border-border">Digitale Lerninhalte f&uuml;r die Ausbildung</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller Zyklus: IHK + Onboarding + Upskilling + Unternehmenswissen</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Standard-Content-Pakete</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI lernt</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK-Ausrichtung</td><td class="text-muted p-4 border-b border-border">20+ Berufe, IHK-konform</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Nach Beruf &amp; Region</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">KI-Features</td><td class="text-muted p-4 border-b border-border">K&uuml;rzlich KI-Coach hinzugef&uuml;gt</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">KI-native Plattform, von Tag eins</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Analytics</td><td class="text-muted p-4 border-b border-border">Lernmanagement-Dashboards</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive Dashboards mit ROI-Daten</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Preismodell</td><td class="text-muted p-4 border-b border-border">Enterprise-Lizenzierung (individuelle Angebote)</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Transparente j&auml;hrliche Abrechnung</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Setup-Zeit</td><td class="text-muted p-4 border-b border-border">Enterprise-Implementierungsprojekt</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">In wenigen Tagen einsatzbereit</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Daten-Hosting</td><td class="text-muted p-4">EU</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Deutschland</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-20 md:py-32 px-6 md:px-8">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-16"><span class="section-label mb-4 block">Entscheidung</span><h2 class="text-heading md:text-display-sm text-white m-0">Wann welche Plattform w&auml;hlen</h2></div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+				<div class="bg-surface p-8">
+					<h3 class="text-base font-semibold text-white mb-4">W&auml;hlen Sie Cornelsen eCademy, wenn Sie...</h3>
+					<ul class="text-sm text-muted space-y-3"><li>Ein Gro&szlig;unternehmen (500+ Mitarbeiter) mit bestehender LMS-Infrastruktur sind</li><li>Content von Deutschlands gr&ouml;&szlig;tem Bildungsverlag wollen</li><li>Integration in bestehende Enterprise-HR-Systeme brauchen</li><li>Einen traditionellen LMS-Ansatz mit KI-Erg&auml;nzung bevorzugen</li></ul>
+				</div>
+				<div class="bg-surface p-8 relative">
+					<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+					<h3 class="text-base font-semibold text-primary mb-4 relative">W&auml;hlen Sie LearnSlice, wenn Sie...</h3>
+					<ul class="text-sm text-white/70 space-y-3 relative"><li>Ein Mittelst&auml;ndler oder KMU sind, das schnelle Ergebnisse braucht</li><li>KI als Kern wollen, nicht als Add-on</li><li>Den gesamten Ausbildungszyklus in einer Plattform brauchen</li><li>Transparente Preise ohne Enterprise-Vertriebszyklen wollen</li><li>Daten ausschlie&szlig;lich in Deutschland gehostet brauchen</li></ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<LogosSlider headline={deContent.trustedBy.headline} logos={deContent.trustedBy.logos} />
+	<Testimonials headline={deContent.testimonials.headline} items={deContent.testimonials.items} currentLang={lang} />
+	<LeadCapture currentLang={lang} />
+	<CTAFooter headline={deContent.cta.headline} subheadline={deContent.cta.subheadline} button={deContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

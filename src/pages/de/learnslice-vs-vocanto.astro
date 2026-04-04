@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import LogosSlider from '../../components/LogosSlider.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import CTAFooter from '../../components/CTAFooter.astro';
+import Footer from '../../components/Footer.astro';
+import DemoRequestModal from '../../components/DemoRequestModal.astro';
+import LeadCapture from '../../components/LeadCapture.astro';
+import deContent from '../../content/de.json';
+
+const lang = 'de';
+const currentPath = '/de/learnslice-vs-vocanto';
+---
+
+<BaseLayout title="LearnSlice vs. Vocanto: KI-Coaching vs. Animations-Lernen" description="Vergleich von LearnSlice und Vocanto f&uuml;r die Berufsausbildung. KI-gest&uuml;tztes adaptives Coaching vs. animierte Video-Inhalte." lang={lang} currentPath={currentPath}>
+	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
+
+	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center">
+			<span class="section-label mb-5 block">Vergleich</span>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Vocanto</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Vocanto bietet animierte Lerninhalte nach IHK-Rahmenplan. LearnSlice bietet KI-Coaching, das sich an jeden Azubi anpasst &mdash; &uuml;ber den gesamten Ausbildungszyklus.</p>
+		</div>
+	</section>
+
+	<section class="py-12 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+			<div class="bg-surface p-8">
+				<h3 class="text-base font-semibold text-white mb-3">Vocanto</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4">Teil der EMBRACE-Gruppe. Animierte Lerninhalte f&uuml;r kaufm&auml;nnische und gewerblich-technische Azubis. Inhalte nach IHK-Rahmenlehrplan entwickelt.</p>
+				<ul class="text-sm text-muted space-y-2"><li>Interaktive Animationen und Simulationen</li><li>IHK-Rahmenlehrplan-Ausrichtung</li><li>Kaufm&auml;nnische und technische Berufe</li><li>Teil der EMBRACE-Gruppe (mit Studyflix)</li></ul>
+			</div>
+			<div class="bg-surface p-8 relative">
+				<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+				<h3 class="text-base font-semibold text-primary mb-3 relative">LearnSlice</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4 relative">B2B-KI-Plattform f&uuml;r den gesamten Ausbildungszyklus. Verbindet IHK-Vorbereitung mit Onboarding, Upskilling und Unternehmenswissen.</p>
+				<ul class="text-sm text-white/70 space-y-2 relative"><li>KI-Coaching mit personalisierten Lernpfaden</li><li>Voller Zyklus: IHK + Onboarding + Upskilling</li><li>Unternehmenswissen-Integration per Dokumenten-Upload</li><li>Echtzeit-Analytics f&uuml;r Ausbilder</li></ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-12 md:py-20 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto">
+			<div class="text-center mb-14"><span class="section-label mb-4 block">Features</span><h2 class="text-heading md:text-display-sm text-white m-0">Feature-Vergleich im Detail</h2></div>
+			<div class="overflow-x-auto rounded-xl border border-border">
+				<table class="w-full border-collapse">
+					<thead>
+						<tr>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Merkmal</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Vocanto</th>
+							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
+						</tr>
+					</thead>
+					<tbody class="text-sm">
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Lernansatz</td><td class="text-muted p-4 border-b border-border">Animierte Videos + &Uuml;bungen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">KI-Chat-Coaching + adaptive Pfade</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Personalisierung</td><td class="text-muted p-4 border-b border-border">Standard-Lernpfade</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Volle KI-Anpassung pro Lernenden</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbildungszyklus</td><td class="text-muted p-4 border-b border-border">IHK-Rahmenplan-Inhalte</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller Zyklus: IHK + Onboarding + Upskilling + Unternehmenswissen</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Nicht verf&uuml;gbar</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI lernt</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK-Ausrichtung</td><td class="text-muted p-4 border-b border-border">Nach IHK-Rahmenplan entwickelt</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Nach Beruf &amp; Region</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">KI-Coaching</td><td class="text-muted p-4 border-b border-border">Nicht verf&uuml;gbar</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller KI-Tutor 24/7</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Analytics</td><td class="text-muted p-4 border-b border-border">Basis-Fortschrittsberichte</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive Dashboards mit ROI-Daten</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Content-Format</td><td class="text-muted p-4 border-b border-border">Animierte Videos + Experten-Tutoring</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Interaktive KI-Gespr&auml;che + Assessments</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Daten-Hosting</td><td class="text-muted p-4 border-b border-border">DSGVO-konform, ISO 27001</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Deutschland, DSGVO-konform</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Gamification</td><td class="text-muted p-4">Basis-Elemente</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Punkte, Badges, Bestenlisten</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-20 md:py-32 px-6 md:px-8">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-16"><span class="section-label mb-4 block">Entscheidung</span><h2 class="text-heading md:text-display-sm text-white m-0">Wann welche Plattform w&auml;hlen</h2></div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
+				<div class="bg-surface p-8">
+					<h3 class="text-base font-semibold text-white mb-4">W&auml;hlen Sie Vocanto, wenn Sie...</h3>
+					<ul class="text-sm text-muted space-y-3"><li>Animierte Video-Inhalte f&uuml;r visuelle Lerner bevorzugen</li><li>Inhalte streng nach IHK-Rahmenlehrplan entwickelt haben wollen</li><li>Eine Plattform innerhalb des EMBRACE-&Ouml;kosystems brauchen</li><li>Kein KI-Coaching oder Unternehmenswissen-Integration ben&ouml;tigen</li></ul>
+				</div>
+				<div class="bg-surface p-8 relative">
+					<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
+					<h3 class="text-base font-semibold text-primary mb-4 relative">W&auml;hlen Sie LearnSlice, wenn Sie...</h3>
+					<ul class="text-sm text-white/70 space-y-3 relative"><li>KI-Coaching brauchen, das sich an jeden Azubi anpasst</li><li>Den gesamten Ausbildungszyklus abdecken wollen</li><li>Eigenes Unternehmenswissen und Prozesse integrieren wollen</li><li>Executive-Analytics und ROI-Messung ben&ouml;tigen</li><li>Daten ausschlie&szlig;lich in Deutschland gehostet brauchen</li></ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<LogosSlider headline={deContent.trustedBy.headline} logos={deContent.trustedBy.logos} />
+	<Testimonials headline={deContent.testimonials.headline} items={deContent.testimonials.items} currentLang={lang} />
+	<LeadCapture currentLang={lang} />
+	<CTAFooter headline={deContent.cta.headline} subheadline={deContent.cta.subheadline} button={deContent.cta.button} currentLang={lang} />
+	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>
