@@ -4,29 +4,37 @@
 
 ---
 
-## SEO Health Score: 88/100 (up from 78 → 86 → 88)
+## SEO Health Score: 91/100 (up from 78 → 86 → 88 → 91)
 
-**Summary:** LearnSlice's SEO has been comprehensively overhauled in one session. The site now has 48 indexed pages (up from 28), with 18 blog posts (9 EN + 9 DE) forming a strong topic cluster around vocational training. All original posts expanded to 1,500+ words. Schema is clean, meta descriptions are keyword-rich, internal linking is strong with cross-links to comparison pages, and all statistics are properly qualified. The remaining gaps are: case study pages (requires customer outreach), author bio pages, and testimonials with quantified outcomes.
+**Summary:** LearnSlice's SEO has been comprehensively overhauled in one session. The site now has **54 indexed pages** (up from 28), with 18 blog posts (9 EN + 9 DE) forming a strong topic cluster, 10 comparison pages (5 EN + 5 DE) targeting competitor search queries, and all landing pages optimized. Schema is clean, meta descriptions are keyword-rich, internal linking is strong, all statistics are fact-checked, and the sitemap no longer has misleading lastmod timestamps. The remaining gaps are: case study pages (requires customer outreach), author bio pages, and testimonials with quantified outcomes.
 
 ### All changes implemented (2026-04-04):
-- **Schema fixed:** Removed misleading `price: "0"`, removed duplicate AggregateRating
-- **12 new blog posts published** (6 EN + 6 DE), fact-checked, DACH-localized
-- **Original 6 posts expanded** from ~1,000 to ~1,500+ words with new sections
-- **Image optimization:** 15 WebP images, all with descriptive alt text
-- **Internal linking:** Cross-links between all blog posts, calculator, and comparison pages
-- **Comparison pages linked contextually** from blog posts (were footer-only)
-- **Headlines rewritten:** Dual-problem angle ("Azubis ohne Plan. Ausbilder am Limit.")
-- **Full-cycle differentiator** (IHK + onboarding + upskilling + company knowledge) in all copy
-- **Numbers aligned to calculator:** €15K/apprentice consistently (was contradictory €4K/€32K)
-- **CTAs unified:** "Book My Free Demo" / "Kostenlose Demo buchen" everywhere
-- **FAQ answers enhanced** with benefit endings and soft CTAs
-- **Problem section added** to homepage (pain amplification before ROI)
-- **"AI Performance Catalyst" jargon removed** → "KI, die Ihre Azubis kennt"
-- **Trust section updated** with Mittelstand framing
-- **Vocational Professions moved higher** on page (from #9 to #6)
-- **Redundant LeadCapture section removed** from homepage
-- **Blog removed from header nav** (kept in footer — traffic comes from search, not nav)
-- **Sitemap grew from 28 → 48 URLs**
+
+**Content:**
+- 12 new blog posts published (6 EN + 6 DE), fact-checked, DACH-localized
+- Original 6 posts expanded from ~1,000 to ~1,500+ words
+- 6 new competitor comparison pages (vs. Prozubi, Cornelsen eCademy, Vocanto) — fact-checked
+- 15 WebP images optimized and redistributed
+
+**Technical SEO:**
+- Schema fixed: removed misleading `price: "0"` and duplicate AggregateRating
+- Sitemap lastmod fixed: removed serialize callback (was setting identical timestamps)
+- Sitemap grew from 28 → 54 URLs
+- Blog removed from header nav (kept in footer — traffic from search)
+
+**On-page SEO:**
+- Headlines rewritten: dual-problem angle ("Azubis ohne Plan. Ausbilder am Limit.")
+- Full-cycle differentiator (IHK + onboarding + upskilling + company knowledge) in all copy
+- Numbers aligned to calculator: €15K/apprentice (was contradictory €4K/€32K)
+- CTAs unified: "Book My Free Demo" / "Kostenlose Demo buchen"
+- FAQ answers enhanced with benefit endings and soft CTAs
+- Problem section added to homepage
+- "AI Performance Catalyst" jargon removed → plain language
+- Trust section updated with Mittelstand framing
+- Vocational Professions moved from #9 to #6
+- Redundant LeadCapture section removed
+- Internal links to comparison pages added from blog posts
+- Footer updated with all 5 comparison links
 
 ---
 
@@ -325,7 +333,7 @@ All pages align well with their target intent. The blog targets informational qu
 
 ## Prioritized Recommendations
 
-### Completed (2026-04-04) — 17 items
+### Completed (2026-04-04) — 21 items
 1. ~~Schema pricing fixed~~ — Removed `"price": "0"` and duplicate AggregateRating
 2. ~~12 new blog posts published~~ — 6 EN + 6 DE, fact-checked, DACH-localized
 3. ~~Original 6 posts expanded~~ to 1,500+ words with new sections and cross-links
@@ -342,17 +350,19 @@ All pages align well with their target intent. The blog targets informational qu
 14. ~~Comparison pages linked contextually~~ from blog posts (were footer-only)
 15. ~~Blog removed from header nav~~ — Kept in footer, traffic from search
 16. ~~AggregateRating deduplicated~~ — Organization only
-17. ~~Sitemap grew from 28 → 48 URLs~~
+17. ~~3 competitor comparison pages created~~ — vs. Prozubi, Cornelsen eCademy, Vocanto (EN + DE, fact-checked)
+18. ~~Footer updated~~ with all 5 comparison links
+19. ~~Sitemap lastmod fixed~~ — Removed serialize callback with identical timestamps
+20. ~~Comparison pages fact-checked~~ — Client lists verified, publisher claims softened, setup time qualified
+21. ~~Sitemap grew from 28 → 54 URLs~~
 
 ### Remaining: Medium Priority (This Quarter)
-1. **Create 2-3 customer case study pages** — Tremonia, Carl-Severing, and one more. Strongest possible E-E-A-T signal. Requires customer outreach.
+1. **Create 2-3 customer case study pages** — Tremonia, Carl-Severing, and one more. Strongest E-E-A-T signal. Requires customer outreach.
 2. **Add author bios to blog posts** — Real name, photo, credentials. Signals expertise to Google.
 3. **Write "Ausbildungsplan erstellen" pillar content** — high-volume German keyword with direct product tie-in.
-4. **Add comparison pages** for Prozubi, Cornelsen, and other competitors.
-5. **Ensure `lastmod` in sitemap reflects actual content modification dates** (currently all same build timestamp).
 
 ### Remaining: Low Priority (When Resources Allow)
-6. **Rename blog image files** to keyword-rich names.
-7. **Add LocalBusiness schema** alongside Organization schema.
-8. **Create a press/awards page** listing BMWE AI Prize and media mentions.
-9. **Implement individual Review schema** for each testimonial.
+4. **Rename blog image files** to keyword-rich names.
+5. **Add LocalBusiness schema** alongside Organization schema.
+6. **Create a press/awards page** listing BMWE AI Prize and media mentions.
+7. **Implement individual Review schema** for each testimonial.
