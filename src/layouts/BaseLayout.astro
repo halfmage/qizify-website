@@ -66,6 +66,21 @@ const softwareSchema = {
 	url: siteUrl,
 };
 
+// Structured data for WebSite (enables sitelinks search box in Google)
+const websiteSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	name: 'LearnSlice',
+	alternateName: lang === 'de' ? 'LearnSlice - KI-Ausbildungsplattform' : 'LearnSlice - AI Apprenticeship Training',
+	url: siteUrl,
+	inLanguage: lang === 'de' ? 'de-DE' : 'en-US',
+	publisher: {
+		'@type': 'Organization',
+		name: 'LearnSlice',
+		url: siteUrl,
+	},
+};
+
 // Breadcrumb schema
 const segmentLabels: Record<string, Record<string, string>> = {
 	en: {
@@ -197,6 +212,7 @@ const breadcrumbSchema = {
 		<!-- Structured Data -->
 		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
 		<script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
 		<!-- 100% privacy-first analytics -->
