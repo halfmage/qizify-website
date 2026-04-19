@@ -86,28 +86,75 @@ const {
 			if (!btn || !label || !content) return;
 			var originalText = label.textContent;
 			var copiedText = btn.getAttribute('data-copied-label') || 'Kopiert!';
-			btn.addEventListener('click', function() {
-				var text = content.innerText || content.textContent || '';
-				var copy = function(t) {
-					if (navigator.clipboard && navigator.clipboard.writeText) {
-						return navigator.clipboard.writeText(t);
+
+			// Build a clean HTML payload: clone the content, strip Astro-internal
+			// attributes and the button, and wrap tables with minimal attributes
+			// so Word renders them as real tables with visible grid lines.
+			function buildRichPayload() {
+				var clone = content.cloneNode(true);
+				clone.querySelectorAll('*').forEach(function(el) {
+					for (var i = el.attributes.length - 1; i >= 0; i--) {
+						var name = el.attributes[i].name;
+						if (name.indexOf('data-astro-') === 0 || name === 'data-copy-content') {
+							el.removeAttribute(name);
+						}
 					}
-					return new Promise(function(resolve, reject) {
-						try {
-							var ta = document.createElement('textarea');
-							ta.value = t;
-							ta.setAttribute('readonly', '');
-							ta.style.position = 'absolute';
-							ta.style.left = '-9999px';
-							document.body.appendChild(ta);
-							ta.select();
-							document.execCommand('copy');
-							document.body.removeChild(ta);
-							resolve();
-						} catch (e) { reject(e); }
-					});
-				};
-				copy(text).then(function() {
+				});
+				clone.querySelectorAll('table').forEach(function(t) {
+					t.setAttribute('border', '1');
+					t.setAttribute('cellspacing', '0');
+					t.setAttribute('cellpadding', '6');
+					t.style.borderCollapse = 'collapse';
+				});
+				clone.querySelectorAll('th, td').forEach(function(c) {
+					c.style.border = '1px solid #999';
+					c.style.padding = '6px 8px';
+					c.style.verticalAlign = 'top';
+				});
+				var html = '<meta charset="utf-8">' + clone.innerHTML;
+				var text = content.innerText || content.textContent || '';
+				return { html: html, text: text };
+			}
+
+			function copyRich(payload) {
+				// 1) Modern: ClipboardItem with both HTML + plain text
+				if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+					try {
+						var item = new ClipboardItem({
+							'text/html': new Blob([payload.html], { type: 'text/html' }),
+							'text/plain': new Blob([payload.text], { type: 'text/plain' })
+						});
+						return navigator.clipboard.write([item]);
+					} catch (e) { /* fall through */ }
+				}
+				// 2) Fallback: render HTML into a hidden contenteditable, select it,
+				// and use execCommand('copy'). Preserves formatting in older browsers.
+				return new Promise(function(resolve, reject) {
+					try {
+						var container = document.createElement('div');
+						container.setAttribute('contenteditable', 'true');
+						container.style.position = 'fixed';
+						container.style.left = '-9999px';
+						container.style.top = '0';
+						container.style.opacity = '0';
+						container.innerHTML = payload.html;
+						document.body.appendChild(container);
+						var range = document.createRange();
+						range.selectNodeContents(container);
+						var sel = window.getSelection();
+						sel.removeAllRanges();
+						sel.addRange(range);
+						var ok = document.execCommand('copy');
+						sel.removeAllRanges();
+						document.body.removeChild(container);
+						if (ok) { resolve(); } else { reject(new Error('execCommand copy failed')); }
+					} catch (e) { reject(e); }
+				});
+			}
+
+			btn.addEventListener('click', function() {
+				var payload = buildRichPayload();
+				copyRich(payload).then(function() {
 					label.textContent = copiedText;
 					btn.setAttribute('data-copied', 'true');
 					setTimeout(function() {
@@ -115,7 +162,17 @@ const {
 						btn.removeAttribute('data-copied');
 					}, 2000);
 				}).catch(function(err) {
-					console.error('Copy failed:', err);
+					console.error('Rich copy failed, falling back to plain text:', err);
+					if (navigator.clipboard && navigator.clipboard.writeText) {
+						navigator.clipboard.writeText(payload.text).then(function() {
+							label.textContent = copiedText;
+							btn.setAttribute('data-copied', 'true');
+							setTimeout(function() {
+								label.textContent = originalText;
+								btn.removeAttribute('data-copied');
+							}, 2000);
+						});
+					}
 				});
 			});
 		});
