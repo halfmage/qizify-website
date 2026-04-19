@@ -1,0 +1,123 @@
+---
+interface Props {
+	buttonLabel?: string;
+	copiedLabel?: string;
+}
+
+const {
+	buttonLabel = 'Vorlage kopieren',
+	copiedLabel = 'Kopiert!'
+} = Astro.props;
+---
+
+<div class="copy-block" data-copy-block>
+	<button type="button" class="copy-block-btn" data-copy-btn data-copied-label={copiedLabel} aria-label={buttonLabel}>
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+			<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+			<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+		</svg>
+		<span data-copy-label>{buttonLabel}</span>
+	</button>
+	<div class="copy-block-content" data-copy-content>
+		<slot />
+	</div>
+</div>
+
+<style>
+	.copy-block {
+		position: relative;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 0.75rem;
+		padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+		margin: 1.5rem 0;
+		background: rgba(255, 255, 255, 0.02);
+	}
+	.copy-block-btn {
+		position: absolute;
+		top: 0.75rem;
+		right: 0.75rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.375rem;
+		padding: 0.375rem 0.75rem;
+		font-size: 0.8125rem;
+		font-weight: 500;
+		line-height: 1;
+		color: rgba(255, 255, 255, 0.85);
+		background: rgba(123, 92, 236, 0.85);
+		border: 1px solid rgba(123, 92, 236, 0.6);
+		border-radius: 0.5rem;
+		cursor: pointer;
+		transition: background 150ms ease, color 150ms ease;
+		z-index: 2;
+	}
+	.copy-block-btn:hover {
+		background: rgba(123, 92, 236, 1);
+		color: #fff;
+	}
+	.copy-block-btn:focus-visible {
+		outline: 2px solid #fff;
+		outline-offset: 2px;
+	}
+	.copy-block-btn[data-copied="true"] {
+		background: rgba(52, 211, 153, 0.9);
+		border-color: rgba(52, 211, 153, 0.7);
+		color: #0a0a0b;
+	}
+	.copy-block-content {
+		padding-top: 1.5rem;
+	}
+	.copy-block-content > :first-child {
+		margin-top: 0;
+	}
+	.copy-block-content > :last-child {
+		margin-bottom: 0;
+	}
+</style>
+
+<script is:inline data-astro-rerun>
+	(function() {
+		document.querySelectorAll('[data-copy-block]').forEach(function(block) {
+			if (block.dataset.copyBound === 'true') return;
+			block.dataset.copyBound = 'true';
+			var btn = block.querySelector('[data-copy-btn]');
+			var label = block.querySelector('[data-copy-label]');
+			var content = block.querySelector('[data-copy-content]');
+			if (!btn || !label || !content) return;
+			var originalText = label.textContent;
+			var copiedText = btn.getAttribute('data-copied-label') || 'Kopiert!';
+			btn.addEventListener('click', function() {
+				var text = content.innerText || content.textContent || '';
+				var copy = function(t) {
+					if (navigator.clipboard && navigator.clipboard.writeText) {
+						return navigator.clipboard.writeText(t);
+					}
+					return new Promise(function(resolve, reject) {
+						try {
+							var ta = document.createElement('textarea');
+							ta.value = t;
+							ta.setAttribute('readonly', '');
+							ta.style.position = 'absolute';
+							ta.style.left = '-9999px';
+							document.body.appendChild(ta);
+							ta.select();
+							document.execCommand('copy');
+							document.body.removeChild(ta);
+							resolve();
+						} catch (e) { reject(e); }
+					});
+				};
+				copy(text).then(function() {
+					label.textContent = copiedText;
+					btn.setAttribute('data-copied', 'true');
+					setTimeout(function() {
+						label.textContent = originalText;
+						btn.removeAttribute('data-copied');
+					}, 2000);
+				}).catch(function(err) {
+					console.error('Copy failed:', err);
+				});
+			});
+		});
+	})();
+</script>
