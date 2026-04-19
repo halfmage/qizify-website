@@ -28,8 +28,8 @@ const {
 		position: relative;
 		border: 1px solid rgba(255, 255, 255, 0.1);
 		border-radius: 0.75rem;
-		padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-		margin: 1.5rem 0;
+		padding: 3rem 1.5rem 1.5rem 1.5rem;
+		margin: 2rem 0;
 		background: rgba(255, 255, 255, 0.02);
 	}
 	.copy-block-btn {
@@ -43,8 +43,8 @@ const {
 		font-size: 0.8125rem;
 		font-weight: 500;
 		line-height: 1;
-		color: rgba(255, 255, 255, 0.85);
-		background: rgba(123, 92, 236, 0.85);
+		color: rgba(255, 255, 255, 0.9);
+		background: rgba(123, 92, 236, 0.9);
 		border: 1px solid rgba(123, 92, 236, 0.6);
 		border-radius: 0.5rem;
 		cursor: pointer;
@@ -60,18 +60,64 @@ const {
 		outline-offset: 2px;
 	}
 	.copy-block-btn[data-copied="true"] {
-		background: rgba(52, 211, 153, 0.9);
+		background: rgba(52, 211, 153, 0.95);
 		border-color: rgba(52, 211, 153, 0.7);
 		color: #0a0a0b;
 	}
-	.copy-block-content {
-		padding-top: 1.5rem;
+	.copy-block-content :global(:first-child) {
+		margin-top: 0 !important;
 	}
-	.copy-block-content > :first-child {
-		margin-top: 0;
+	.copy-block-content :global(:last-child) {
+		margin-bottom: 0 !important;
 	}
-	.copy-block-content > :last-child {
-		margin-bottom: 0;
+	/* Override Tailwind Typography (prose) styles inside the template so it
+	   reads as a unified document rather than separate bordered sections. */
+	.copy-block-content :global(h3) {
+		margin-top: 0 !important;
+		margin-bottom: 1.25rem !important;
+		padding-bottom: 0.75rem;
+		font-size: 1.25rem;
+		line-height: 1.3;
+		text-align: center;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	}
+	.copy-block-content :global(h4) {
+		margin-top: 1.5rem !important;
+		margin-bottom: 0.5rem !important;
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.35;
+		color: #fff;
+	}
+	.copy-block-content :global(h4:first-of-type) {
+		margin-top: 0.5rem !important;
+	}
+	.copy-block-content :global(p) {
+		margin-top: 0 !important;
+		margin-bottom: 0.75rem !important;
+		line-height: 1.55 !important;
+		font-size: 0.95rem;
+	}
+	.copy-block-content :global(table) {
+		margin-top: 0.5rem !important;
+		margin-bottom: 0 !important;
+		font-size: 0.875rem;
+		width: 100%;
+		border-collapse: collapse;
+	}
+	.copy-block-content :global(th),
+	.copy-block-content :global(td) {
+		padding: 0.4rem 0.6rem !important;
+		vertical-align: top;
+		line-height: 1.4;
+	}
+	.copy-block-content :global(ul) {
+		margin-top: 0.25rem !important;
+		margin-bottom: 0.5rem !important;
+		padding-left: 1.25rem !important;
+	}
+	.copy-block-content :global(ul li) {
+		margin: 0.2rem 0 !important;
 	}
 </style>
 
