@@ -5,6 +5,8 @@ export const slugTranslationMap: Record<string, string> = {
 	'/de/learnslice-vs-simpleclub': '/learnslice-vs-simpleclub',
 	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
 	'/de/ausbildungskosten-rechner': '/apprenticeship-savings-calculator',
+	'/blog/ausbildungsrahmenplan-erklaert': '/de/blog/ausbildungsrahmenplan-erklaert',
+	'/de/blog/ausbildungsrahmenplan-erklaert': '/de/blog/ausbildungsrahmenplan-erklaert',
 };
 
 export function getAlternatePath(path: string, fromLang: 'en' | 'de'): string {
