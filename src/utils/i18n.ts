@@ -1,16 +1,4 @@
-export const slugTranslationMap: Record<string, string> = {
-	'/learnslice-vs-traditional-training': '/de/learnslice-vs-traditionelle-ausbildung',
-	'/learnslice-vs-simpleclub': '/de/learnslice-vs-simpleclub',
-	'/de/learnslice-vs-traditionelle-ausbildung': '/learnslice-vs-traditional-training',
-	'/de/learnslice-vs-simpleclub': '/learnslice-vs-simpleclub',
-	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
-	'/de/ausbildungskosten-rechner': '/apprenticeship-savings-calculator',
-	'/blog/ausbildungsrahmenplan-erklaert': '/de/blog/ausbildungsrahmenplan-erklaert',
-	'/de/blog/ausbildungsrahmenplan-erklaert': '/de/blog/ausbildungsrahmenplan-erklaert',
-};
-
-export function getAlternatePath(path: string, fromLang: 'en' | 'de'): string {
-	if (slugTranslationMap[path]) return slugTranslationMap[path];
-	if (fromLang === 'en') return path === '/' ? '/de' : `/de${path}`;
-	return path === '/de' ? '/' : path.replace(/^\/de/, '');
-}
+// Re-exports the canonical EN ↔ DE page-pair helpers.
+// Source of truth lives in page-pairs.mjs so astro.config.mjs and TS callers
+// share a single map.
+export { getAlternatePath, EN_ONLY, DE_ONLY } from './page-pairs.mjs';

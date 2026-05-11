@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "prebuild": "node scripts/check-pairs.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check:pairs": "node scripts/check-pairs.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.14",

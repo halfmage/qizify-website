@@ -13,9 +13,10 @@ interface Props {
 const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg', breadcrumbTitle } = Astro.props;
 
 import { getAlternatePath } from '../utils/i18n';
+import { SITE } from '../utils/page-pairs.mjs';
 
 // Construct full URLs
-const siteUrl = 'https://learnslice.com';
+const siteUrl = SITE;
 const currentUrl = `${siteUrl}${currentPath}`;
 const enPath = lang === 'en' ? currentPath : getAlternatePath(currentPath, 'de');
 const dePath = lang === 'de' ? currentPath : getAlternatePath(currentPath, 'en');
@@ -186,7 +187,9 @@ const breadcrumbSchema = {
 		<meta property="og:image:alt" content={title} />
 		<meta property="og:site_name" content="LearnSlice" />
 		<meta property="og:locale" content={lang === 'en' ? 'en_US' : 'de_DE'} />
-		<meta property="og:locale:alternate" content={lang === 'en' ? 'de_DE' : 'en_US'} />
+		{enPath && dePath && (
+			<meta property="og:locale:alternate" content={lang === 'en' ? 'de_DE' : 'en_US'} />
+		)}
 
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
@@ -201,10 +204,14 @@ const breadcrumbSchema = {
 		<!-- Canonical URL -->
 		<link rel="canonical" href={currentUrl} />
 
-		<!-- Hreflang Tags -->
-		<link rel="alternate" hreflang="en" href={`${siteUrl}${enPath}`} />
-		<link rel="alternate" hreflang="de" href={`${siteUrl}${dePath}`} />
-		<link rel="alternate" hreflang="x-default" href={`${siteUrl}${enPath}`} />
+		<!-- Hreflang Tags (omitted on solo-language pages) -->
+		{enPath && dePath && (
+			<>
+				<link rel="alternate" hreflang="en" href={`${siteUrl}${enPath}`} />
+				<link rel="alternate" hreflang="de" href={`${siteUrl}${dePath}`} />
+				<link rel="alternate" hreflang="x-default" href={`${siteUrl}${enPath}`} />
+			</>
+		)}
 
 		<!-- Sitemap -->
 		<link rel="sitemap" href="/sitemap-index.xml" />

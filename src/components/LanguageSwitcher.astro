@@ -8,7 +8,8 @@ interface Props {
 
 const { currentLang, currentPath } = Astro.props;
 
-const alternatePath = getAlternatePath(currentPath, currentLang);
+const alternatePath = getAlternatePath(currentPath, currentLang)
+	?? (currentLang === 'en' ? '/de' : '/');
 ---
 
 <nav class="flex items-center gap-1 font-mono text-xs" aria-label="Language selection">
