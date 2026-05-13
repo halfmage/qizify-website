@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "dev:fresh": "rm -rf .astro node_modules/.astro && astro dev",
     "build": "astro build",
     "prebuild": "node scripts/check-pairs.mjs && node scripts/generate-llms-full.mjs",
     "preview": "astro preview",
