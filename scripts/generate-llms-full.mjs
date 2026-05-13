@@ -13,17 +13,77 @@ const BLOG_DIR = join(ROOT, 'src/content/blog');
 const OUTPUT = join(ROOT, 'public/llms-full.txt');
 const SITE = 'https://learnslice.com';
 
+// Hand-rolled YAML subset parser. Handles single-line scalars and two
+// multi-line array shapes used by our blog schema:
+//   key:
+//     - "bullet string"
+// and:
+//   key:
+//     - q: "question"
+//       a: "answer"
+// If the schema ever needs anchors, refs, or nested objects, switch to js-yaml.
+
+function unquote(s) {
+	s = s.trim();
+	if (s.startsWith('"') && s.endsWith('"')) return s.slice(1, -1);
+	if (s.startsWith("'") && s.endsWith("'")) return s.slice(1, -1);
+	return s;
+}
+
+function parseBulletArray(lines) {
+	const items = [];
+	let i = 0;
+	while (i < lines.length) {
+		const bullet = lines[i].match(/^(\s+)-\s*(.*)$/);
+		if (!bullet) { i++; continue; }
+		const indent = bullet[1].length;
+		const inline = bullet[2].trim();
+		i++;
+		const objKey = inline.match(/^(\w+):\s*(.*)$/);
+		if (objKey) {
+			const obj = { [objKey[1]]: unquote(objKey[2]) };
+			while (i < lines.length) {
+				const next = lines[i];
+				const nextIndentMatch = next.match(/^(\s*)/);
+				const nextIndent = nextIndentMatch ? nextIndentMatch[1].length : 0;
+				if (nextIndent <= indent) break;
+				const km = next.trim().match(/^(\w+):\s*(.*)$/);
+				if (km) obj[km[1]] = unquote(km[2]);
+				i++;
+			}
+			items.push(obj);
+		} else if (inline) {
+			items.push(unquote(inline));
+		}
+	}
+	return items;
+}
+
 function parseFrontmatter(text) {
 	const match = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
 	if (!match) return { fm: {}, body: text };
 	const fm = {};
-	for (const line of match[1].split('\n')) {
-		const m = line.match(/^(\w+):\s*(.*)$/);
-		if (!m) continue;
-		let value = m[2].trim();
-		if (value.startsWith('"') && value.endsWith('"')) value = value.slice(1, -1);
-		else if (value.startsWith("'") && value.endsWith("'")) value = value.slice(1, -1);
-		fm[m[1]] = value;
+	const lines = match[1].split('\n');
+	let i = 0;
+	while (i < lines.length) {
+		const km = lines[i].match(/^(\w+):\s*(.*)$/);
+		if (!km) { i++; continue; }
+		const key = km[1];
+		const inlineValue = km[2].trim();
+		i++;
+		if (inlineValue) {
+			fm[key] = unquote(inlineValue);
+			continue;
+		}
+		// No inline value — collect subsequent indented lines as a block
+		const block = [];
+		while (i < lines.length && /^\s+/.test(lines[i])) {
+			block.push(lines[i]);
+			i++;
+		}
+		if (block.some(l => /^\s+-/.test(l))) {
+			fm[key] = parseBulletArray(block);
+		}
 	}
 	return { fm, body: match[2] };
 }
@@ -51,6 +111,8 @@ for (const file of files) {
 		publishDate: fm.publishDate || '',
 		updatedDate: fm.updatedDate || '',
 		url,
+		keyTakeaways: Array.isArray(fm.keyTakeaways) ? fm.keyTakeaways : [],
+		faq: Array.isArray(fm.faq) ? fm.faq : [],
 		body: cleanBody(body),
 	});
 }
@@ -75,19 +137,32 @@ const sections = posts.map((p) => {
 		p.publishDate && `Published: ${p.publishDate}`,
 		p.updatedDate && `Updated: ${p.updatedDate}`,
 	].filter(Boolean).join('\n');
+
+	const takeawaysHeading = p.lang === 'en' ? 'Key Takeaways' : 'Auf einen Blick';
+	const faqHeading = p.lang === 'en' ? 'Frequently Asked Questions' : 'Häufig gestellte Fragen';
+
+	const takeawaysBlock = p.keyTakeaways.length > 0
+		? `## ${takeawaysHeading}\n\n${p.keyTakeaways.map(t => `- ${t}`).join('\n')}\n\n`
+		: '';
+
+	const faqBlock = p.faq.length > 0
+		? `## ${faqHeading}\n\n${p.faq.map(({ q, a }) => `### ${q}\n\n${a}`).join('\n\n')}\n\n`
+		: '';
+
 	return `# ${p.title}
 
 ${meta}
 
 ${p.description}
 
-${p.body}
+${takeawaysBlock}${p.body}
 
----
+${faqBlock}---
 `;
 }).join('\n');
 
 await writeFile(OUTPUT, header + sections, 'utf8');
 
 const sizeKB = ((header.length + sections.length) / 1024).toFixed(1);
-console.log(`llms-full.txt written: ${posts.length} posts, ${sizeKB} KB → ${OUTPUT}`);
+const enriched = posts.filter(p => p.keyTakeaways.length > 0 || p.faq.length > 0).length;
+console.log(`llms-full.txt written: ${posts.length} posts (${enriched} with takeaways/FAQ), ${sizeKB} KB → ${OUTPUT}`);
