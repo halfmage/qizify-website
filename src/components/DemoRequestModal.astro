@@ -28,7 +28,7 @@ const consent = consentText[currentLang];
 
 <!-- Modal -->
 <div class="fixed inset-0 bg-dark/90 backdrop-blur-sm flex items-center justify-center z-[9999] opacity-0 invisible transition-all duration-200 p-4" id="demo-request-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-lang={currentLang}>
-	<div class="bg-surface border border-border rounded-xl max-w-[520px] w-full max-h-[90vh] overflow-y-auto relative scale-95 transition-transform duration-200" id="modal-container">
+	<div class="bg-surface border border-border-light rounded-xl max-w-[520px] w-full max-h-[90vh] overflow-y-auto relative scale-95 transition-transform duration-200" id="modal-container">
 		<button class="absolute top-4 right-4 bg-transparent border-none text-muted cursor-pointer p-2 flex items-center justify-center rounded-lg hover:text-white hover:bg-surface transition-colors duration-200 z-10" id="modal-close" aria-label="Close modal">
 			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -60,7 +60,7 @@ const consent = consentText[currentLang];
 						type="text"
 						id="name"
 						name="name"
-						class="bg-dark border border-border rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted/50"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
 						required
 						aria-required="true"
 					/>
@@ -74,7 +74,7 @@ const consent = consentText[currentLang];
 						type="text"
 						id="company"
 						name="company"
-						class="bg-dark border border-border rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted/50"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
 						required
 						aria-required="true"
 					/>
@@ -88,7 +88,7 @@ const consent = consentText[currentLang];
 						type="email"
 						id="email"
 						name="email"
-						class="bg-dark border border-border rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted/50"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
 						required
 						aria-required="true"
 					/>
@@ -101,7 +101,7 @@ const consent = consentText[currentLang];
 					<textarea
 						id="message"
 						name="message"
-						class="bg-dark border border-border rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full min-h-[80px] resize-y focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted/50"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full min-h-[80px] resize-y focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
 						rows="3"
 						placeholder={currentLang === 'en' ? 'Optional' : 'Optional'}
 					></textarea>

@@ -7,13 +7,14 @@ export default {
 		extend: {
 			colors: {
 				primary: '#7c5cfc',
-				dark: '#0a0a0b',
-				surface: '#111113',
-				border: '#1c1c1f',
-				'border-light': '#2a2a2e',
+				dark: '#2a2a32',
+				surface: '#363640',
+				border: '#3a3a42',
+				'border-light': '#4d4d57',
 				gray: '#8b8b8e',
 				white: '#ededef',
-				muted: '#6b6b6e',
+				muted: '#b8b8bd',
+				'input-bg': '#45454f',
 			},
 			fontFamily: {
 				sans: ['Inter Variable', 'Inter', 'system-ui', 'sans-serif'],
