@@ -1,6 +1,8 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
+import BlogCard from '../components/BlogCard.astro';
 import CTAFooter from '../components/CTAFooter.astro';
 import Footer from '../components/Footer.astro';
 import DemoRequestModal from '../components/DemoRequestModal.astro';
@@ -40,6 +42,22 @@ const formattedUpdatedDate = updatedDate?.toLocaleDateString(lang === 'en' ? 'en
 });
 
 const blogOgImage = ogImage || '/opengraph-image.jpg';
+
+const allPosts = await getCollection('blog');
+const ownTags = new Set(tags);
+
+const scoredPosts = allPosts
+	.filter(p => p.data.lang === lang && p.slug !== slug)
+	.map(p => ({
+		post: p,
+		score: p.data.tags.filter(t => ownTags.has(t)).length,
+		date: new Date(p.data.publishDate).getTime(),
+	}))
+	.sort((a, b) => b.score - a.score || b.date - a.date);
+
+const relatedPosts = scoredPosts.slice(0, 3).map(s => s.post);
+
+const relatedHeading = lang === 'en' ? 'More on this topic' : 'Mehr zum Thema';
 
 const blogPostingSchema = {
 	'@context': 'https://schema.org',
@@ -82,7 +100,7 @@ const blogPostingSchema = {
 ---
 
 <BaseLayout
-	title={`${title} | LearnSlice Blog`}
+	title={title}
 	description={description}
 	lang={lang}
 	currentPath={currentPath}
@@ -176,6 +194,26 @@ const blogPostingSchema = {
 			</div>
 		</div>
 	</article>
+
+	{relatedPosts.length > 0 && (
+		<section class="py-12 md:py-16 px-6 md:px-8 border-t border-border" aria-labelledby="related-posts-heading">
+			<div class="max-w-4xl mx-auto">
+				<h2 id="related-posts-heading" class="text-heading text-white mb-8 md:mb-10">{relatedHeading}</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					{relatedPosts.map(post => (
+						<BlogCard
+							title={post.data.title}
+							description={post.data.description}
+							publishDate={post.data.publishDate}
+							tags={post.data.tags}
+							slug={post.slug}
+							lang={lang}
+						/>
+					))}
+				</div>
+			</div>
+		</section>
+	)}
 
 	<CTAFooter
 		headline={content.cta.headline}
