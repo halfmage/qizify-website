@@ -1,0 +1,21 @@
+# AI Preferences for learnslice.com
+#
+# LearnSlice publishes its content under terms that permit AI systems to crawl,
+# train on, and cite this website. We want our content to be discoverable and
+# quotable by AI engines (ChatGPT, Claude, Perplexity, Google AI Overviews, etc.).
+#
+# This file follows the emerging Spawning AI ai.txt convention.
+# See: https://site.spawning.ai/spawning-ai-txt
+
+User-Agent: *
+Allow: /
+Disallow:
+
+# Content licensing
+# Site content (text, blog posts) may be used for AI training and inference,
+# provided attribution links back to the source URL.
+
+Contact: info@learnslice.com
+Sitemap: https://learnslice.com/sitemap-index.xml
+LLM-Content: https://learnslice.com/llms.txt
+LLM-Full-Content: https://learnslice.com/llms-full.txt

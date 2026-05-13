@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "prebuild": "node scripts/check-pairs.mjs",
+    "prebuild": "node scripts/check-pairs.mjs && node scripts/generate-llms-full.mjs",
     "preview": "astro preview",
     "astro": "astro",
-    "check:pairs": "node scripts/check-pairs.mjs"
+    "check:pairs": "node scripts/check-pairs.mjs",
+    "generate:llms-full": "node scripts/generate-llms-full.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.14",

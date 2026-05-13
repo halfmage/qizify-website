@@ -28,3 +28,12 @@ Allow: /
 
 User-agent: Bytespider
 Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
