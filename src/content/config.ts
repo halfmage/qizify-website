@@ -19,6 +19,10 @@ const blog = defineCollection({
 		// faq: rendered above Related Posts AND emitted as FAQPage JSON-LD for
 		// AI snippet extraction. IMPORTANT: q and a are plain text — markdown
 		// will not render (no links, no bold). Keep answers self-contained.
+		// YAML quoting tip: wrap answers in single quotes if they contain
+		// embedded double quotes (German "Anführungszeichen"); embedded single
+		// quotes must be doubled ('') per YAML spec, or use double-quoted YAML
+		// with \" for embedded doubles.
 		faq: z.array(z.object({
 			q: z.string(),
 			a: z.string(),
