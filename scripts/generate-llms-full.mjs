@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Generates public/llms-full.txt — the full content corpus of all blog posts
-// concatenated as markdown, per the emerging llms-full.txt convention.
-// AI crawlers respecting the spec consume this as a single ingestion-friendly
-// feed alongside the structured llms.txt index.
+// Generates public/llms-full.txt — the homepage marketing copy plus the full
+// content of every blog post, concatenated as markdown per the emerging
+// llms-full.txt convention. AI crawlers respecting the spec consume this as a
+// single ingestion-friendly feed alongside the structured llms.txt index.
 
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -10,6 +10,7 @@ import { dirname, join } from 'node:path';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BLOG_DIR = join(ROOT, 'src/content/blog');
+const CONTENT_DIR = join(ROOT, 'src/content');
 const OUTPUT = join(ROOT, 'public/llms-full.txt');
 const SITE = 'https://learnslice.com';
 
@@ -94,6 +95,139 @@ function cleanBody(body) {
 		.replace(/^\s*\n+/, '');
 }
 
+// ---- Homepage corpus ---------------------------------------------------------
+// Homepage marketing copy lives in src/content/{en,de}.json. Pulling it into
+// llms-full.txt means AI crawlers see the same value-prop, proof points, and
+// FAQ answers visitors see — not just the blog. Sections covered: hero, problem,
+// savings comparison, how-it-works, features, vocational professions, audience
+// tabs, testimonials, trust pillars, FAQ, final CTA. Nav/footer are skipped.
+
+const HOMEPAGE_LABELS = {
+	en: { type: 'Marketing homepage', proof: 'Proof points' },
+	de: { type: 'Marketing-Homepage', proof: 'Beweispunkte' },
+};
+
+const flatten = (s) => (s || '').replace(/\n/g, ' ');
+
+function buildHomepageSection(c, lang) {
+	const url = `${SITE}${lang === 'de' ? '/de' : ''}`;
+	const labels = HOMEPAGE_LABELS[lang];
+	const parts = [];
+
+	parts.push(`# ${flatten(c.hero.headline)}`);
+	parts.push('');
+	parts.push(`Source: ${url}\nLanguage: ${lang}\nType: ${labels.type}`);
+	parts.push('');
+	parts.push(`${c.hero.badge}\n\n${c.hero.subheadline}`);
+	if (Array.isArray(c.hero.stats) && c.hero.stats.length) {
+		const proof = c.hero.stats.map((s) => `${s.value} — ${s.label}`).join(' · ');
+		parts.push('');
+		parts.push(`**${labels.proof}:** ${proof}`);
+	}
+
+	if (c.problem) {
+		parts.push('');
+		parts.push(`## ${c.problem.headline}\n\n${c.problem.body}`);
+	}
+
+	if (c.savingsComparison) {
+		const sc = c.savingsComparison;
+		parts.push('');
+		parts.push(`## ${flatten(sc.headline)}`);
+		parts.push('');
+		parts.push(`### ${flatten(sc.without.title)}\n\n${sc.without.points.map((p) => `- ${p}`).join('\n')}`);
+		parts.push('');
+		parts.push(`### ${flatten(sc.with.title)}\n\n${sc.with.points.map((p) => `- ${p}`).join('\n')}`);
+	}
+
+	if (c.howItWorks) {
+		parts.push('');
+		parts.push(`## ${c.howItWorks.headline}`);
+		for (const step of c.howItWorks.steps) {
+			parts.push('');
+			parts.push(`### ${step.number}. ${step.title}\n\n${step.description}`);
+		}
+	}
+
+	if (c.learningResults) {
+		parts.push('');
+		parts.push(`## ${c.learningResults.headline}`);
+		for (const f of c.learningResults.features) {
+			parts.push('');
+			parts.push(`### ${f.title}\n\n${f.description}`);
+		}
+		if (c.learningResults.compliance) {
+			parts.push('');
+			parts.push(c.learningResults.compliance);
+		}
+	}
+
+	if (c.vocationalProfessions) {
+		parts.push('');
+		parts.push(`## ${c.vocationalProfessions.headline}`);
+		for (const item of c.vocationalProfessions.items) {
+			parts.push('');
+			const profs = (item.professions || []).map((p) => `- ${p}`).join('\n');
+			parts.push(`### ${item.title}\n\n${profs}`);
+		}
+	}
+
+	if (c.madeForCompany) {
+		parts.push('');
+		parts.push(`## ${c.madeForCompany.headline}`);
+		for (const tab of c.madeForCompany.tabs) {
+			parts.push('');
+			const heading = tab.audience ? `${tab.tabLabel} (${tab.audience})` : tab.tabLabel;
+			const pts = (tab.points || []).map((p) => `- ${p.text || p}`).join('\n');
+			let body = `### ${heading}\n\n${pts}`;
+			if (tab.note) body += `\n\n${tab.note}`;
+			parts.push(body);
+		}
+	}
+
+	if (c.testimonials) {
+		parts.push('');
+		parts.push(`## ${c.testimonials.headline}`);
+		for (const t of c.testimonials.items) {
+			parts.push('');
+			parts.push(`> ${t.quote}\n>\n> — ${t.name}, ${t.title}, ${t.company}`);
+		}
+	}
+
+	if (c.whyChooseUs) {
+		parts.push('');
+		parts.push(`## ${c.whyChooseUs.headline}`);
+		for (const item of c.whyChooseUs.items) {
+			parts.push('');
+			parts.push(`### ${flatten(item.title)}\n\n${item.description}`);
+		}
+	}
+
+	if (c.faq) {
+		parts.push('');
+		parts.push(`## ${c.faq.headline}`);
+		for (const item of c.faq.items) {
+			parts.push('');
+			parts.push(`### ${item.question}\n\n${item.answer}`);
+		}
+	}
+
+	if (c.cta) {
+		parts.push('');
+		parts.push(`## ${c.cta.headline}\n\n${c.cta.subheadline}`);
+	}
+
+	parts.push('');
+	parts.push('---');
+	return parts.join('\n') + '\n';
+}
+
+const enContent = JSON.parse(await readFile(join(CONTENT_DIR, 'en.json'), 'utf8'));
+const deContent = JSON.parse(await readFile(join(CONTENT_DIR, 'de.json'), 'utf8'));
+const homepageSections = buildHomepageSection(enContent, 'en') + '\n' + buildHomepageSection(deContent, 'de');
+
+// ---- Blog corpus -------------------------------------------------------------
+
 const files = (await readdir(BLOG_DIR)).filter((f) => f.endsWith('.mdx')).sort();
 
 const posts = [];
@@ -124,9 +258,10 @@ posts.sort((a, b) => {
 
 const header = `# LearnSlice — Full Content Corpus
 
-> Full text of all LearnSlice blog posts, intended for ingestion by AI systems and LLMs.
+> Full marketing homepage copy plus every LearnSlice blog post, intended for
+> ingestion by AI systems and LLMs.
 > See https://learnslice.com/llms.txt for the structured site index.
-> Posts are delimited by level-1 headings and include canonical URLs.
+> Documents are delimited by level-1 headings and include canonical URLs.
 
 `;
 
@@ -161,8 +296,9 @@ ${faqBlock}---
 `;
 }).join('\n');
 
-await writeFile(OUTPUT, header + sections, 'utf8');
+const corpus = header + homepageSections + '\n' + sections;
+await writeFile(OUTPUT, corpus, 'utf8');
 
-const sizeKB = ((header.length + sections.length) / 1024).toFixed(1);
+const sizeKB = (corpus.length / 1024).toFixed(1);
 const enriched = posts.filter(p => p.keyTakeaways.length > 0 || p.faq.length > 0).length;
-console.log(`llms-full.txt written: ${posts.length} posts (${enriched} with takeaways/FAQ), ${sizeKB} KB → ${OUTPUT}`);
+console.log(`llms-full.txt written: 2 homepages + ${posts.length} posts (${enriched} with takeaways/FAQ), ${sizeKB} KB → ${OUTPUT}`);
