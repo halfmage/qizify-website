@@ -36,6 +36,7 @@ export const EN_TO_DE = {
 	'/blog/ihk-exam-tips': '/de/blog/ihk-pruefung-tipps',
 	'/blog/reduce-trainer-workload': '/de/blog/ausbilder-entlasten',
 	'/blog/reduce-training-costs': '/de/blog/ausbildungskosten-senken',
+	'/blog/save-time-mentoring-apprentices': '/de/blog/azubi-betreuung-zeit-sparen',
 };
 
 // Pages that exist only in one language and therefore should not emit
