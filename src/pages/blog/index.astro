@@ -15,7 +15,7 @@ const posts = (await getCollection('blog', ({ data }) => data.lang === 'en' && !
 ---
 
 <BaseLayout
-	title="Blog | LearnSlice - AI-Powered Apprenticeship Training"
+	title="Apprenticeship Training Insights | LearnSlice Blog"
 	description="Insights on AI in vocational training, IHK exam preparation, and digital learning for German apprenticeships."
 	lang={lang}
 	currentPath={currentPath}
@@ -38,18 +38,21 @@ const posts = (await getCollection('blog', ({ data }) => data.lang === 'en' && !
 			{posts.length === 0 ? (
 				<p class="text-white/50 text-lg">No posts yet. Check back soon!</p>
 			) : (
-				<div class="flex flex-col gap-6">
-					{posts.map(post => (
-						<BlogCard
-							title={post.data.title}
-							description={post.data.description}
-							publishDate={post.data.publishDate}
-							tags={post.data.tags}
-							slug={post.slug}
-							lang={lang}
-						/>
-					))}
-				</div>
+				<>
+					<h2 class="sr-only">Latest Posts</h2>
+					<div class="flex flex-col gap-6">
+						{posts.map(post => (
+							<BlogCard
+								title={post.data.title}
+								description={post.data.description}
+								publishDate={post.data.publishDate}
+								tags={post.data.tags}
+								slug={post.slug}
+								lang={lang}
+							/>
+						))}
+					</div>
+				</>
 			)}
 		</div>
 	</section>

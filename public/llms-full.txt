@@ -4,14 +4,14 @@
 > See https://learnslice.com/llms.txt for the structured site index.
 > Posts are delimited by level-1 headings and include canonical URLs.
 
-# Apprenticeship Plan Template (Free): Copy-Paste Sample for German BBiG Compliance
+# Free Apprenticeship Plan Template (§14 BBiG, Copy-Paste)
 
 Source: https://learnslice.com/blog/apprenticeship-plan-template-free
 Language: en
 Published: 2026-04-19
 Updated: 2026-05-13
 
-Free apprenticeship plan template aligned with § 14 BBiG - includes a copy-paste sample, trainer checklist, and guidance on when to graduate to a dynamic, AI-powered plan.
+Free apprenticeship plan template aligned with § 14 BBiG: copy-paste sample, trainer checklist, and when to graduate to a dynamic, AI-powered plan.
 
 ![Trainer and apprentice working on an apprenticeship plan template at a laptop](/images/blog/pexels-yankrukov-7794078.webp)
 

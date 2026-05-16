@@ -16,7 +16,7 @@ const posts = (await getCollection('blog', ({ data }) => data.lang === 'de' && !
 
 <BaseLayout
 	title="KI-Ausbildungsplattform & Berufsausbildung – Insights | LearnSlice Blog"
-	description="Fachartikel zu KI-basierten Lernplattformen, DSGVO-konformen KI-Tools für Ausbilder, IHK-Prüfungsvorbereitung, Ausbildungsplänen und der Digitalisierung der Berufsausbildung im Mittelstand."
+	description="Fachartikel zu KI-Tools für Ausbilder, IHK-Prüfungsvorbereitung, Ausbildungsplänen und der Digitalisierung der Berufsausbildung im Mittelstand."
 	lang={lang}
 	currentPath={currentPath}
 >
@@ -38,18 +38,21 @@ const posts = (await getCollection('blog', ({ data }) => data.lang === 'de' && !
 			{posts.length === 0 ? (
 				<p class="text-white/50 text-lg">Noch keine Beiträge. Schauen Sie bald wieder vorbei!</p>
 			) : (
-				<div class="flex flex-col gap-6">
-					{posts.map(post => (
-						<BlogCard
-							title={post.data.title}
-							description={post.data.description}
-							publishDate={post.data.publishDate}
-							tags={post.data.tags}
-							slug={post.slug}
-							lang={lang}
-						/>
-					))}
-				</div>
+				<>
+					<h2 class="sr-only">Neueste Artikel</h2>
+					<div class="flex flex-col gap-6">
+						{posts.map(post => (
+							<BlogCard
+								title={post.data.title}
+								description={post.data.description}
+								publishDate={post.data.publishDate}
+								tags={post.data.tags}
+								slug={post.slug}
+								lang={lang}
+							/>
+						))}
+					</div>
+				</>
 			)}
 		</div>
 	</section>
