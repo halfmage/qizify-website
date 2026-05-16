@@ -16,28 +16,47 @@ const logoMap: Record<string, string> = {
 	'Jäger Gruppe': 'jaeger-gruppe-logo.png',
 	'International School Stuttgart': 'international-school-stuttgart.png',
 };
+
+// PNGs that contain NO color information (R=G=B everywhere). The hover "show native
+// colors" trick can't work on them — there are no native colors. Render these as a
+// CSS mask so we can tint with the brand accent on hover instead. Drop the filename
+// from this set the moment a colored replacement asset lands in /public/images/logos.
+const grayscaleLogos = new Set(['dci.png', 'jaeger-gruppe-logo.png', 'uni-cologne.png']);
+
+// Triple the array so Swiper's loop has enough buffer for seamless wrap at slidesPerView: 8
+const slideLogos = [...logos, ...logos, ...logos];
 ---
 
-<section class="py-16 md:py-24 px-6 md:px-8" id="trusted-by">
+<section class="py-12 md:py-16 px-6 md:px-8" id="trusted-by">
 	<div class="max-w-container mx-auto">
-		<p class="text-center text-sm text-muted mb-10 tracking-tight">
+		<p class="text-center text-base text-muted mb-8 tracking-tight">
 			{headline}
 		</p>
 
 		<div class="relative w-full">
-			<div class="swiper w-full" id="logos-swiper">
+			<div class="swiper w-full logo-strip" id="logos-swiper">
 				<div class="swiper-wrapper items-center">
-					{logos.map((logoName) => {
+					{slideLogos.map((logoName) => {
 						const logoFile = logoMap[logoName] || `${logoName.toLowerCase().replace(/\s+/g, '-')}.png`;
+						const isGray = grayscaleLogos.has(logoFile);
 						return (
 							<div class="swiper-slide !flex items-center justify-center h-auto">
-								<div class="flex items-center justify-center w-full h-16 px-4 opacity-40 hover:opacity-70 transition-opacity duration-300">
-									<img
-										src={`/images/logos/${logoFile}`}
-										alt={`${logoName} logo`}
-										class="max-w-full max-h-full w-auto h-auto object-contain brightness-0 invert"
-										loading="lazy"
-									/>
+								<div class="logo-tile flex items-center justify-center w-full h-16 px-4 opacity-60 transition-opacity duration-300">
+									{isGray ? (
+										<span
+											class="logo-mask block w-full h-full"
+											style={`-webkit-mask: url(/images/logos/${logoFile}) center/contain no-repeat; mask: url(/images/logos/${logoFile}) center/contain no-repeat;`}
+											role="img"
+											aria-label={`${logoName} logo`}
+										></span>
+									) : (
+										<img
+											src={`/images/logos/${logoFile}`}
+											alt={`${logoName} logo`}
+											class="logo-img max-w-full max-h-full w-auto h-auto object-contain"
+											loading="lazy"
+										/>
+									)}
 								</div>
 							</div>
 						);
@@ -49,14 +68,24 @@ const logoMap: Record<string, string> = {
 			<div class="hidden grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-9 gap-8 items-center" id="logos-fallback">
 				{logos.map((logoName) => {
 					const logoFile = logoMap[logoName] || `${logoName.toLowerCase().replace(/\s+/g, '-')}.png`;
+					const isGray = grayscaleLogos.has(logoFile);
 					return (
-						<div class="flex items-center justify-center w-full h-12 px-2 opacity-40 hover:opacity-70 transition-opacity duration-300">
-							<img
-								src={`/images/logos/${logoFile}`}
-								alt={`${logoName} logo`}
-								class="max-w-full max-h-full w-auto h-auto object-contain brightness-0 invert"
-								loading="lazy"
-							/>
+						<div class="logo-tile flex items-center justify-center w-full h-12 px-2 opacity-60 transition-opacity duration-300">
+							{isGray ? (
+								<span
+									class="logo-mask block w-full h-full"
+									style={`-webkit-mask: url(/images/logos/${logoFile}) center/contain no-repeat; mask: url(/images/logos/${logoFile}) center/contain no-repeat;`}
+									role="img"
+									aria-label={`${logoName} logo`}
+								></span>
+							) : (
+								<img
+									src={`/images/logos/${logoFile}`}
+									alt={`${logoName} logo`}
+									class="logo-img max-w-full max-h-full w-auto h-auto object-contain"
+									loading="lazy"
+								/>
+							)}
 						</div>
 					);
 				})}
@@ -87,6 +116,7 @@ const logoMap: Record<string, string> = {
 				autoplay: {
 					delay: 0,
 					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
 				},
 				breakpoints: {
 					640: { slidesPerView: 4, spaceBetween: 40 },
@@ -118,5 +148,35 @@ const logoMap: Record<string, string> = {
 <style>
 	#logos-swiper .swiper-wrapper {
 		transition-timing-function: linear !important;
+	}
+
+	/* Edge fade — logos drift in/out instead of clipping at hard edges */
+	.logo-strip {
+		-webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+		mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+	}
+
+	/* Monochrome default → native brand colors on hover */
+	.logo-img {
+		filter: brightness(0) invert(1);
+		transition: filter 300ms ease, transform 300ms ease;
+	}
+
+	.logo-tile:hover .logo-img {
+		filter: none;
+		transform: scale(1.05);
+	}
+
+	/* For grayscale-only PNGs (no native color to reveal): use the asset as a CSS
+	   mask. Stay white in both states — hover feedback comes from the wrapper's
+	   opacity lift (60% → 100%) and a slight scale-up. */
+	.logo-mask {
+		background-color: #faf8f4;
+		transition: background-color 300ms ease, transform 300ms ease;
+	}
+
+	.logo-tile:hover .logo-mask {
+		background-color: #ffffff;
+		transform: scale(1.05);
 	}
 </style>

@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { highlightNumbers } from '../utils/highlight-numbers.mjs';
 
 interface Props {
 	headline: string;
@@ -8,6 +9,7 @@ interface Props {
 		points: string[];
 	};
 	with: {
+		badge?: string;
 		title: string;
 		points: string[];
 	};
@@ -24,53 +26,65 @@ const withTitleLines = withLearnSlice.title.split('\n');
 	<div class="max-w-container mx-auto">
 		<div class="text-center mb-16 md:mb-20">
 			<span class="section-label mb-4 block">ROI</span>
-			<h2 class="text-heading md:text-display-sm text-white m-0 max-w-[800px] mx-auto">
-				{headlineLines.map((line, index) => (
-					<>
-						{line}
-						{index < headlineLines.length - 1 && <br />}
-					</>
-				))}
-			</h2>
+			<h2 class="text-heading md:text-display-sm text-white m-0 max-w-[800px] mx-auto" set:html={headlineLines.map((l) => highlightNumbers(l)).join('<br>')}></h2>
 		</div>
 
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden max-w-4xl mx-auto">
-			<!-- Without -->
-			<div class="bg-surface p-8 md:p-10 flex flex-col gap-6">
-				<h3 class="text-heading-sm text-muted m-0">
-					{withoutTitleLines.map((line, index) => (
-						<>
-							{line}
-							{index < withoutTitleLines.length - 1 && <br />}
-						</>
-					))}
-				</h3>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-border rounded-xl max-w-4xl mx-auto">
+			<!-- Without — quiet/dim state. Contrast comes from being muted, not from alarm. -->
+			<div class="bg-surface p-8 md:p-10 flex flex-col gap-6 relative rounded-t-xl lg:rounded-t-none lg:rounded-l-xl">
+				<div class="flex items-start gap-3">
+					<div class="w-10 h-10 flex items-center justify-center rounded-lg bg-muted/10 flex-shrink-0">
+						<Icon name="hugeicons:clock-01" class="w-5 h-5 text-muted" />
+					</div>
+					<h3 class="text-heading-sm text-muted m-0 pt-1">
+						{withoutTitleLines.map((line, index) => (
+							<>
+								{line}
+								{index < withoutTitleLines.length - 1 && <br />}
+							</>
+						))}
+					</h3>
+				</div>
+
 				<ul class="list-none m-0 p-0 flex flex-col gap-4">
 					{without.points.map((point) => (
-						<li class="flex items-start gap-3 text-sm leading-relaxed text-muted">
-							<span class="w-1.5 h-1.5 rounded-full bg-muted mt-2 flex-shrink-0"></span>
+						<li class="flex items-start gap-3 text-base leading-relaxed text-muted/80">
+							<Icon name="hugeicons:cancel-circle" class="w-5 h-5 text-muted/60 mt-0.5 flex-shrink-0" />
 							<span>{point}</span>
 						</li>
 					))}
 				</ul>
 			</div>
 
-			<!-- With -->
-			<div class="bg-surface p-8 md:p-10 flex flex-col gap-6 relative">
-				<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
-				<h3 class="text-heading-sm text-white m-0 relative">
-					{withTitleLines.map((line, index) => (
-						<>
-							{line}
-							{index < withTitleLines.length - 1 && <br />}
-						</>
-					))}
-				</h3>
+			<!-- With — solution signals: sparkle header, amber check bullets, amber numbers, stronger amber wash, soft outer glow, "Empfohlen" badge -->
+			<div class="bg-surface p-8 md:p-10 flex flex-col gap-6 relative rounded-b-xl lg:rounded-b-none lg:rounded-r-xl shadow-[0_0_60px_-15px_rgba(244,162,97,0.4)]">
+				{withLearnSlice.badge && (
+					<span class="absolute -top-3 right-6 z-10 inline-flex items-center gap-1.5 bg-accent text-dark px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-md">
+						<Icon name="hugeicons:sparkles" class="w-3.5 h-3.5" />
+						{withLearnSlice.badge}
+					</span>
+				)}
+				<div class="absolute inset-0 opacity-[0.18] pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at top right, rgba(244, 162, 97, 1) 0%, transparent 65%);"></div>
+
+				<div class="flex items-start gap-3 relative">
+					<div class="w-10 h-10 flex items-center justify-center rounded-lg bg-accent/15 flex-shrink-0">
+						<Icon name="hugeicons:sparkles" class="w-5 h-5 text-accent" />
+					</div>
+					<h3 class="text-heading-sm text-white m-0 pt-1">
+						{withTitleLines.map((line, index) => (
+							<>
+								{line}
+								{index < withTitleLines.length - 1 && <br />}
+							</>
+						))}
+					</h3>
+				</div>
+
 				<ul class="list-none m-0 p-0 flex flex-col gap-4 relative">
 					{withLearnSlice.points.map((point) => (
-						<li class="flex items-start gap-3 text-sm leading-relaxed text-white/80">
-							<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-							<span>{point}</span>
+						<li class="flex items-start gap-3 text-base leading-relaxed text-white">
+							<Icon name="hugeicons:checkmark-circle-02" class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+							<span set:html={highlightNumbers(point)}></span>
 						</li>
 					))}
 				</ul>

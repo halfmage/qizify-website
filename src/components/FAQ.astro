@@ -38,7 +38,7 @@ const faqSchema = {
 			{items.map((item) => (
 				<details class="faq-accordion group border-b border-border">
 					<summary class="flex items-center justify-between gap-4 py-5 cursor-pointer list-none select-none">
-						<span class="text-sm font-medium text-white pr-2">
+						<span class="text-base font-medium text-white pr-2">
 							{item.question}
 						</span>
 						<span class="faq-icon flex-shrink-0 w-6 h-6 flex items-center justify-center transition-transform duration-200 group-open:rotate-45">
@@ -50,7 +50,7 @@ const faqSchema = {
 								stroke-width="1.5"
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								class="w-3.5 h-3.5 text-muted"
+								class="w-3.5 h-3.5 text-muted group-open:text-accent transition-colors"
 							>
 								<line x1="12" y1="5" x2="12" y2="19"></line>
 								<line x1="5" y1="12" x2="19" y2="12"></line>
@@ -58,7 +58,7 @@ const faqSchema = {
 						</span>
 					</summary>
 					<div class="faq-content pb-5">
-						<p class="text-sm leading-relaxed text-muted m-0">
+						<p class="text-base leading-relaxed text-muted m-0">
 							{item.answer}
 						</p>
 					</div>

@@ -30,9 +30,14 @@
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
     "headline": "Azubis ohne Plan. Ausbilder am Limit.\nSo geht Ausbildung nicht weiter.",
-    "subheadline": "Von der IHK-Prüfung über Onboarding bis zum Upskilling — LearnSlice begleitet Ihre Azubis durch den gesamten Ausbildungszyklus. Mit KI-Lernpfaden und Ihrem Unternehmenswissen. Bis zu €15K Ersparnis pro Azubi bei 50 % weniger Ausbilderzeit.",
+    "subheadline": "LearnSlice begleitet Ihre Azubis von Einarbeitung bis IHK-Prüfung, mit KI-Lernpfaden und Ihrem Unternehmenswissen.",
     "ctaPrimary": "Kostenlose Demo buchen",
-    "ctaSecondary": "Einsparpotenzial berechnen"
+    "ctaSecondary": "Einsparpotenzial berechnen",
+    "stats": [
+      { "value": "€15K", "label": "Ersparnis pro Azubi" },
+      { "value": "50 %", "label": "weniger Ausbilderzeit" },
+      { "value": "IHK & DSGVO", "label": "konform" }
+    ]
   },
   "trustedBy": {
     "headline": "Sie sind in guter Gesellschaft",
@@ -50,7 +55,7 @@
   "problem": {
     "badge": "Das Problem",
     "headline": "Ausbildung ist kaputt. Die Zahlen belegen es.",
-    "body": "30 % der Azubis brechen ihre Ausbildung ab. Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder gescheiterte Ausbildungsvertrag kostet Unternehmen €20.000 bis €35.000. Das Problem ist nicht mangelnder Einsatz — sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
+    "body": "30 % der Azubis brechen ihre Ausbildung ab. Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder gescheiterte Ausbildungsvertrag kostet Unternehmen €20.000 bis €35.000. Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
   },
   "savingsComparison": {
     "headline": "Bis zu 15K € Ersparnis pro Azubi.\nSo rechnet sich das.",
@@ -64,6 +69,7 @@
       ]
     },
     "with": {
+      "badge": "Empfohlen",
       "title": "Unternehmen\nmit LearnSlice",
       "points": [
         "65 % schneller einsatzbereit (4–6 Monate → 8 Wochen).",
@@ -100,7 +106,7 @@
     "features": [
       {
         "icon": "hugeicons:sparkles",
-        "title": "Adaptives KI-Coaching — rund um die Uhr",
+        "title": "Adaptives KI-Coaching, rund um die Uhr",
         "description": "Erkennt Wissenslücken frühzeitig, passt den Lernplan automatisch an und liefert kontinuierliches Feedback, damit jeder Azubi ohne Ausbilder-Eingriff auf Kurs bleibt."
       },
       {
@@ -215,7 +221,7 @@
       {
         "icon": "hugeicons:building-06",
         "title": "30+ deutsche Unternehmen",
-        "description": "Vom Mittelstand bis zur Berufsschule — in IT, Produktion, Versicherung, Gesundheitswesen und öffentlicher Verwaltung"
+        "description": "Vom Mittelstand bis zur Berufsschule, in IT, Produktion, Versicherung, Gesundheitswesen und öffentlicher Verwaltung"
       },
       {
         "icon": "hugeicons:mortarboard-02",

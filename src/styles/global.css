@@ -22,17 +22,17 @@
 	input:-webkit-autofill:focus,
 	input:-webkit-autofill:active,
 	textarea:-webkit-autofill {
-		-webkit-text-fill-color: #ededef;
-		-webkit-box-shadow: 0 0 0 1000px #45454f inset;
-		caret-color: #ededef;
+		-webkit-text-fill-color: #faf8f4;
+		-webkit-box-shadow: 0 0 0 1000px #4a4339 inset;
+		caret-color: #faf8f4;
 		transition: background-color 5000s ease-in-out 0s;
 	}
 
 	/* Ensure typed text and caret are always visible on dark inputs */
 	input,
 	textarea {
-		color: #ededef;
-		caret-color: #ededef;
+		color: #faf8f4;
+		caret-color: #faf8f4;
 	}
 
 	/* Defeat browser default placeholder opacity (Firefox: 0.54) so placeholder color renders as authored */
@@ -69,17 +69,63 @@
 		@apply font-mono text-label uppercase tracking-widest text-primary;
 	}
 
-	/* Subtle violet glow */
+	/* Violet glow — strengthened from prior 0.08 alpha for actual visibility */
 	.glow-violet {
-		box-shadow: 0 0 80px 20px rgba(124, 92, 252, 0.08);
+		box-shadow: 0 0 80px 20px rgba(124, 92, 252, 0.18);
 	}
 
-	/* Gradient text utility */
+	/* Hero dual-blob aurora — violet top-left, amber bottom-right.
+	   Apply to an absolutely-positioned div sized to the hero. */
+	.glow-aurora {
+		background-image:
+			radial-gradient(ellipse 60% 55% at 20% 25%, rgba(124, 92, 252, 0.32), transparent 65%),
+			radial-gradient(ellipse 55% 50% at 80% 75%, rgba(244, 162, 97, 0.28), transparent 65%);
+		filter: blur(50px);
+	}
+
+	/* Gradient text utility — warm off-white to warm gray */
 	.gradient-text {
-		background: linear-gradient(135deg, #ededef 0%, #8b8b8e 100%);
+		background: linear-gradient(135deg, #faf8f4 0%, #a89e92 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
+	}
+
+	/* Violet → warm-white gradient for headline accents */
+	.gradient-text-primary {
+		background: linear-gradient(135deg, #7c5cfc 0%, #faf8f4 70%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	/* Card hover glow — soft colored halo fading in from above the card.
+	   Pair the base utility with the color variant: `card-hover-glow card-hover-glow-primary`.
+	   `overflow: hidden` keeps the glow inside the grid cell so dividers stay crisp. */
+	.card-hover-glow {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.card-hover-glow::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		opacity: 0;
+		transition: opacity 350ms ease;
+		pointer-events: none;
+	}
+
+	.card-hover-glow:hover::after {
+		opacity: 1;
+	}
+
+	.card-hover-glow-primary::after {
+		background: radial-gradient(ellipse 90% 70% at 50% -10%, rgba(124, 92, 252, 0.28), transparent 65%);
+	}
+
+	.card-hover-glow-accent::after {
+		background: radial-gradient(ellipse 90% 70% at 50% -10%, rgba(244, 162, 97, 0.28), transparent 65%);
 	}
 }
 

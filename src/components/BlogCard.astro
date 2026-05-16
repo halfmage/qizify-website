@@ -22,9 +22,9 @@ const formattedDate = publishDate.toLocaleDateString(lang === 'en' ? 'en-US' : '
 
 <a href={href} class="group block bg-surface border border-border rounded-lg p-6 md:p-8 hover:border-border-light transition-colors duration-200">
 	{tags.length > 0 && (
-		<div class="flex flex-wrap gap-3 mb-4">
+		<div class="flex flex-wrap gap-2 mb-4">
 			{tags.map(tag => (
-				<span class="section-label">{tag}</span>
+				<span class="font-mono text-label uppercase tracking-widest text-accent bg-accent/10 px-2 py-1 rounded">{tag}</span>
 			))}
 		</div>
 	)}

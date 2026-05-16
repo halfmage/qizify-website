@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
+import { highlightNumbers } from '../utils/highlight-numbers.mjs';
 
 interface Feature {
 	icon: string;
@@ -26,10 +27,10 @@ const { badge, headline, features, compliance } = Astro.props;
 			</h2>
 		</div>
 
-		<!-- Screenshot -->
+		<!-- Screenshot — dual-tone glow for warmth -->
 		<div class="relative mb-16 md:mb-20">
-			<div class="absolute -inset-8 opacity-30 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.15) 0%, transparent 70%);"></div>
-			<div class="relative rounded-xl overflow-hidden border border-border-light shadow-2xl shadow-primary/5 max-w-4xl mx-auto">
+			<div class="absolute -inset-8 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse 60% 60% at 30% 50%, rgba(124, 92, 252, 0.28) 0%, transparent 70%), radial-gradient(ellipse 50% 55% at 75% 60%, rgba(244, 162, 97, 0.22) 0%, transparent 70%);"></div>
+			<div class="relative rounded-xl overflow-hidden border border-border-light shadow-2xl shadow-primary/10 max-w-4xl mx-auto">
 				<img
 					src="/images/screenshots/learnslice-copilot-02.jpg"
 					alt="LearnSlice platform interface"
@@ -44,22 +45,20 @@ const { badge, headline, features, compliance } = Astro.props;
 		<!-- Feature grid -->
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden mb-12">
 			{features.map((feature) => (
-				<div class="bg-surface p-6 md:p-8 flex flex-col gap-4 group hover:bg-[#151517] transition-colors duration-200">
-					<div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors duration-200">
+				<div class="card-hover-glow card-hover-glow-primary bg-surface p-6 md:p-8 flex flex-col gap-4 group hover:bg-[#403930] transition-colors duration-200">
+					<div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/15 group-hover:scale-110 transition-all duration-200">
 						<Icon name={feature.icon} class="w-5 h-5 text-primary" />
 					</div>
-					<h3 class="text-base font-semibold text-white m-0 leading-snug">
+					<h3 class="text-lg font-semibold text-white m-0 leading-snug">
 						{feature.title}
 					</h3>
-					<p class="text-sm leading-relaxed text-muted m-0">
+					<p class="text-base leading-relaxed text-muted m-0">
 						{feature.description}
 					</p>
 				</div>
 			))}
 		</div>
 
-		<p class="text-center text-sm text-muted m-0 font-mono">
-			{compliance}
-		</p>
+		<p class="text-center text-base text-muted m-0 font-mono" set:html={highlightNumbers(compliance)}></p>
 	</div>
 </section>

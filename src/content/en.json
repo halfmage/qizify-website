@@ -30,9 +30,14 @@
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",
     "headline": "Apprentices Without Direction.\nTrainers at Their Limit. This Has to Change.",
-    "subheadline": "From IHK exam prep to onboarding to upskilling — LearnSlice covers the full training cycle with AI learning paths and your company knowledge. Save up to €15K per apprentice with 50% less trainer time.",
+    "subheadline": "LearnSlice supports your apprentices from onboarding to IHK exam, with AI learning paths and your company knowledge.",
     "ctaPrimary": "Book My Free Demo",
-    "ctaSecondary": "Calculate My Savings"
+    "ctaSecondary": "Calculate My Savings",
+    "stats": [
+      { "value": "€15K", "label": "saved per apprentice" },
+      { "value": "50%", "label": "less trainer time" },
+      { "value": "IHK & GDPR", "label": "compliant" }
+    ]
   },
   "trustedBy": {
     "headline": "You are in good company",
@@ -50,7 +55,7 @@
   "problem": {
     "badge": "The Problem",
     "headline": "Training Is Broken. The Numbers Prove It.",
-    "body": "30% of apprentices drop out before completing their training. Trainers spend 12 hours a week per apprentice on repetitive tasks. And every failed apprenticeship costs companies €20,000 to €35,000. The problem isn't effort — it's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale."
+    "body": "30% of apprentices drop out before completing their training. Trainers spend 12 hours a week per apprentice on repetitive tasks. And every failed apprenticeship costs companies €20,000 to €35,000. The problem isn't effort. It's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale."
   },
   "savingsComparison": {
     "headline": "Up to €15K Saved Per Apprentice.\nHere's the Math.",
@@ -64,6 +69,7 @@
       ]
     },
     "with": {
+      "badge": "Recommended",
       "title": "Companies\nWith LearnSlice",
       "points": [
         "65 % faster to productivity (4-6 months → 8 weeks)",
@@ -100,7 +106,7 @@
     "features": [
       {
         "icon": "hugeicons:sparkles",
-        "title": "Adaptive AI Coaching — 24/7",
+        "title": "Adaptive AI Coaching, 24/7",
         "description": "Detects knowledge gaps early, auto-adjusts the learning plan, and delivers continuous feedback so every apprentice stays on track without trainer intervention."
       },
       {
@@ -215,7 +221,7 @@
       {
         "icon": "hugeicons:building-06",
         "title": "30+ German companies",
-        "description": "From Mittelstand manufacturers to vocational colleges — across IT, manufacturing, insurance, healthcare, and government"
+        "description": "From Mittelstand manufacturers to vocational colleges, across IT, manufacturing, insurance, healthcare, and government"
       },
       {
         "icon": "hugeicons:mortarboard-02",
@@ -274,7 +280,7 @@
       },
       {
         "question": "Is the content exam-aligned?",
-        "answer": "Yes. The platform recreates realistic IHK and university exam scenarios and maps learning paths to regional IHK requirements. No curriculum work on your end — it's built in."
+        "answer": "Yes. The platform recreates realistic IHK and university exam scenarios and maps learning paths to regional IHK requirements. No curriculum work on your end. It's built in."
       },
       {
         "question": "Can we customise training for our company?",
@@ -282,7 +288,7 @@
       },
       {
         "question": "How does the AI personalise learning?",
-        "answer": "The AI profiles each learner (skills, goals, company needs), creates a bespoke learning plan, and adapts tasks in real time to close knowledge gaps. Trainers see the results in real-time dashboards — no manual tracking needed."
+        "answer": "The AI profiles each learner (skills, goals, company needs), creates a bespoke learning plan, and adapts tasks in real time to close knowledge gaps. Trainers see the results in real-time dashboards. No manual tracking needed."
       },
       {
         "question": "How is competency proven?",

@@ -26,8 +26,8 @@ const { headline, items } = Astro.props;
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
 			{items.map((item) => (
-				<div class="bg-surface p-8 flex flex-col gap-5 group hover:bg-[#151517] transition-colors duration-200">
-					<div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors duration-200">
+				<div class="card-hover-glow card-hover-glow-primary bg-surface p-8 flex flex-col gap-5 group hover:bg-[#403930] transition-colors duration-200">
+					<div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/15 group-hover:scale-110 transition-all duration-200">
 						<Icon name={item.icon} class="w-5 h-5 text-primary" />
 					</div>
 					<h3 class="text-base font-semibold text-white m-0">

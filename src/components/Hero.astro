@@ -2,41 +2,49 @@
 import Button from './Button.astro';
 import AppMockup from './AppMockup.astro';
 
+interface HeroStat {
+	value: string;
+	label: string;
+}
+
 interface Props {
 	badge: string;
 	headline: string;
 	subheadline: string;
 	ctaPrimary: string;
 	ctaSecondary: string;
+	stats?: HeroStat[];
 	currentLang: 'en' | 'de';
 }
 
-const { badge, headline, subheadline, ctaPrimary, ctaSecondary, currentLang } = Astro.props;
+const { badge, headline, subheadline, ctaPrimary, ctaSecondary, stats = [], currentLang } = Astro.props;
 
 const headlineLines = headline.split('\n');
 ---
 
 <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-16" id="hero">
-	<!-- Subtle radial glow -->
-	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] opacity-30 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.15) 0%, transparent 70%);"></div>
+	<!-- Aurora glow — dual radial blobs (violet + amber) for warmth and brand presence -->
+	<div class="absolute inset-0 pointer-events-none glow-aurora" aria-hidden="true"></div>
 
 	<div class="relative z-10 max-w-container mx-auto w-full px-6 md:px-8">
 		<div class="max-w-6xl mx-auto text-center flex flex-col items-center gap-6">
 			<!-- Section label -->
 			<span class="section-label">{badge}</span>
 
-			<!-- Headline -->
+			<!-- Headline — gradient on the last line (the "conclusion" sentence) -->
 			<h1 class="text-display-sm md:text-display text-white m-0">
 				{headlineLines.map((line, index) => (
 					<>
-						{line}
+						{index === headlineLines.length - 1 && headlineLines.length > 1
+							? <span class="gradient-text-primary">{line}</span>
+							: line}
 						{index < headlineLines.length - 1 && <br />}
 					</>
 				))}
 			</h1>
 
-			<!-- Subheadline -->
-			<p class="text-lg leading-relaxed text-muted max-w-2xl m-0">
+			<!-- Subheadline — full white at text-xl for Ausbilder readability -->
+			<p class="text-xl leading-relaxed text-white max-w-2xl m-0">
 				{subheadline}
 			</p>
 
@@ -58,10 +66,25 @@ const headlineLines = headline.split('\n');
 					{ctaSecondary}
 				</Button>
 			</div>
+
+			<!-- Stat strip — proof points above-fold with amber numbers (focused home for accent color) -->
+			{stats.length > 0 && (
+				<ul class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-4 text-base text-muted m-0 p-0 list-none">
+					{stats.map((stat, index) => (
+						<>
+							<li class="flex items-baseline gap-1.5">
+								<span class="text-accent font-semibold">{stat.value}</span>
+								<span>{stat.label}</span>
+							</li>
+							{index < stats.length - 1 && <li class="text-border-light" aria-hidden="true">·</li>}
+						</>
+					))}
+				</ul>
+			)}
 		</div>
 
-		<!-- App mockup with gradient fade -->
-		<div class="mt-16 md:mt-24 relative p-4 md:p-12 rounded-3xl bg-gradient-to-b from-primary/5 to-primary/80 overflow-hidden">
+		<!-- App mockup — softer gradient frame (was primary/5 → primary/80 which made bottom a violet wall) -->
+		<div class="mt-16 md:mt-24 relative p-4 md:p-12 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/45 ring-1 ring-primary/25 overflow-hidden">
 			<div class="relative shadow-xl mockup-scale-wrapper">
 				<AppMockup currentLang={currentLang} />
 			</div>

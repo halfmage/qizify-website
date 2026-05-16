@@ -25,24 +25,30 @@ const { headline, items } = Astro.props;
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
-			{items.map((item) => (
-				<div class="bg-surface p-8 flex flex-col gap-4 group hover:bg-[#151517] transition-colors duration-200">
-					<div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors duration-200">
-						<Icon name={item.icon} class="w-5 h-5 text-primary" />
+			{items.map((item, idx) => {
+				const useAccent = idx % 2 === 1;
+				const tileBg = useAccent ? 'bg-accent/10 group-hover:bg-accent/15' : 'bg-primary/10 group-hover:bg-primary/15';
+				const iconColor = useAccent ? 'text-accent' : 'text-primary';
+				const glowClass = useAccent ? 'card-hover-glow-accent' : 'card-hover-glow-primary';
+				return (
+					<div class={`card-hover-glow ${glowClass} bg-surface p-8 flex flex-col gap-4 group hover:bg-[#403930] transition-colors duration-200`}>
+						<div class={`w-10 h-10 flex items-center justify-center rounded-lg ${tileBg} group-hover:scale-110 transition-all duration-200`}>
+							<Icon name={item.icon} class={`w-5 h-5 ${iconColor}`} />
+						</div>
+						<h3 class="text-lg font-semibold text-white m-0 leading-snug">
+							{item.title.split('\n').map((line, index) => (
+								<>
+									{line}
+									{index < item.title.split('\n').length - 1 && <br />}
+								</>
+							))}
+						</h3>
+						<p class="text-base leading-relaxed text-muted m-0">
+							{item.description}
+						</p>
 					</div>
-					<h3 class="text-base font-semibold text-white m-0 leading-snug">
-						{item.title.split('\n').map((line, index) => (
-							<>
-								{line}
-								{index < item.title.split('\n').length - 1 && <br />}
-							</>
-						))}
-					</h3>
-					<p class="text-sm leading-relaxed text-muted m-0">
-						{item.description}
-					</p>
-				</div>
-			))}
+				);
+			})}
 		</div>
 	</div>
 </section>

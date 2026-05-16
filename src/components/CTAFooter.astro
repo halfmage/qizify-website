@@ -14,15 +14,15 @@ const subheadlineLines = subheadline.split('\n');
 ---
 
 <section class="py-20 md:py-32 px-6 md:px-8 relative overflow-hidden" id="cta-footer">
-	<!-- Subtle glow -->
-	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] opacity-20 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.3) 0%, transparent 70%);"></div>
+	<!-- Dual-tone glow mirrors the hero (violet primary + amber accent) for visual bookending -->
+	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse 55% 60% at 35% 50%, rgba(124, 92, 252, 0.42) 0%, transparent 70%), radial-gradient(ellipse 50% 55% at 70% 55%, rgba(244, 162, 97, 0.32) 0%, transparent 70%); filter: blur(40px);"></div>
 
 	<div class="max-w-xl mx-auto relative z-10 text-center flex flex-col items-center gap-6">
 		<span class="section-label">Get Started</span>
 		<h2 class="text-heading md:text-display-sm text-white m-0">
 			{headline}
 		</h2>
-		<p class="text-base leading-relaxed text-muted m-0">
+		<p class="text-lg leading-relaxed text-muted m-0">
 			{subheadlineLines.map((line, index) => (
 				<>
 					{line}
