@@ -109,11 +109,20 @@ const currentPath = '/';
 		currentLang={lang}
 	/>
 	
-	<Footer 
+	<Footer
 		currentLang={lang}
 		privacyLabel={enContent.footer.privacyLabel}
 		termsLabel={enContent.footer.termsLabel}
 	/>
-	
+
+	<div class="md:hidden h-20" aria-hidden="true"></div>
+
+	<a
+		href="#demo-request"
+		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
+	>
+		Book My Free Demo
+	</a>
+
 	<DemoRequestModal currentLang={lang} />
 </BaseLayout>

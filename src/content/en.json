@@ -30,13 +30,13 @@
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",
     "headline": "Apprentices Without Direction.\nTrainers at Their Limit. This Has to Change.",
-    "subheadline": "LearnSlice supports your apprentices from onboarding to IHK exam, with AI learning paths and your company knowledge.",
+    "subheadline": "From onboarding to IHK exam: AI learning paths plus your company knowledge in one platform.",
     "ctaPrimary": "Book My Free Demo",
     "ctaSecondary": "Calculate My Savings",
     "stats": [
       { "value": "€15K", "label": "saved per apprentice" },
       { "value": "50%", "label": "less trainer time" },
-      { "value": "IHK & GDPR", "label": "compliant" }
+      { "value": "65%", "label": "faster to productivity" }
     ]
   },
   "trustedBy": {
@@ -231,7 +231,7 @@
       },
       {
         "icon": "hugeicons:champion",
-        "title": "BMWE AI Prize 2025 Winner",
+        "title": "BMWE KI-Preis 2025 Winner",
         "description": "Federal Ministry award"
       },
       {

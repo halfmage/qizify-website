@@ -30,13 +30,13 @@
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
     "headline": "Azubis ohne Plan. Ausbilder am Limit.\nSo geht Ausbildung nicht weiter.",
-    "subheadline": "LearnSlice begleitet Ihre Azubis von Einarbeitung bis IHK-Prüfung, mit KI-Lernpfaden und Ihrem Unternehmenswissen.",
+    "subheadline": "Von Einarbeitung bis IHK-Prüfung: KI-Lernpfade plus Ihr Unternehmenswissen in einer Plattform.",
     "ctaPrimary": "Kostenlose Demo buchen",
     "ctaSecondary": "Einsparpotenzial berechnen",
     "stats": [
       { "value": "€15K", "label": "Ersparnis pro Azubi" },
       { "value": "50 %", "label": "weniger Ausbilderzeit" },
-      { "value": "IHK & DSGVO", "label": "konform" }
+      { "value": "65 %", "label": "schneller einsatzbereit" }
     ]
   },
   "trustedBy": {
