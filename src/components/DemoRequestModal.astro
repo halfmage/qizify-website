@@ -53,7 +53,7 @@ const consent = consentText[currentLang];
 				<input type="text" name="bot-field" class="hidden" />
 
 				<div class="flex flex-col gap-1.5">
-					<label for="name" class="text-xs font-medium text-muted uppercase tracking-wider font-mono">
+					<label for="name" class="text-sm font-medium text-white">
 						{currentLang === 'en' ? 'Name' : 'Name'}
 					</label>
 					<input
@@ -67,7 +67,7 @@ const consent = consentText[currentLang];
 				</div>
 
 				<div class="flex flex-col gap-1.5">
-					<label for="company" class="text-xs font-medium text-muted uppercase tracking-wider font-mono">
+					<label for="company" class="text-sm font-medium text-white">
 						{currentLang === 'en' ? 'Company' : 'Unternehmen'}
 					</label>
 					<input
@@ -81,7 +81,7 @@ const consent = consentText[currentLang];
 				</div>
 
 				<div class="flex flex-col gap-1.5">
-					<label for="email" class="text-xs font-medium text-muted uppercase tracking-wider font-mono">
+					<label for="email" class="text-sm font-medium text-white">
 						{currentLang === 'en' ? 'Email' : 'E-Mail'}
 					</label>
 					<input
@@ -95,7 +95,7 @@ const consent = consentText[currentLang];
 				</div>
 
 				<div class="flex flex-col gap-1.5">
-					<label for="message" class="text-xs font-medium text-muted uppercase tracking-wider font-mono">
+					<label for="message" class="text-sm font-medium text-white">
 						{currentLang === 'en' ? 'Message' : 'Nachricht'}
 					</label>
 					<textarea
@@ -132,13 +132,19 @@ const consent = consentText[currentLang];
 				<div class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300" id="form-error" role="alert"></div>
 				<div class="hidden p-3 rounded-lg text-xs bg-green-500/10 border border-green-500/20 text-green-300" id="form-success" role="alert">
 					{currentLang === 'en'
-						? 'Thank you! We will contact you soon.'
-						: 'Vielen Dank! Wir werden uns bald bei Ihnen melden.'}
+						? 'Thanks. We will email calendar options within 1 business day.'
+						: 'Vielen Dank. Wir senden Ihnen innerhalb von 1 Werktag Terminvorschläge per E-Mail.'}
 				</div>
 
 				<button type="submit" class="bg-primary text-white border-none rounded-lg px-6 py-2.5 text-sm font-medium cursor-pointer hover:bg-[#6a4ae0] active:bg-[#5c3dd4] transition-all duration-200 font-sans mt-1 disabled:opacity-50 disabled:cursor-not-allowed">
 					{currentLang === 'en' ? 'Get My Free Demo' : 'Kostenlose Demo sichern'}
 				</button>
+
+				<p class="text-xs text-muted text-center -mt-1">
+					{currentLang === 'en'
+						? '30-min call · no pitch · reply within 1 business day'
+						: '30-Min-Gespräch · kein Pitch · Antwort innerhalb von 1 Werktag'}
+				</p>
 			</form>
 
 			<div class="flex items-center gap-3 my-6 text-xs text-muted">
