@@ -175,6 +175,10 @@ Competency is validated continuously with job-relevant checks (quizzes, deep div
 
 Built-in gamification: points, badges and levels to boost motivation, focus and completion rates. Companies report higher apprentice engagement from week one.
 
+### Will apprentices actually engage with the platform?
+
+Most apprentices log in voluntarily multiple times per week once the first two-week rollout settles. The format respects how Azubis learn: short, exam-relevant tasks, gamification (points, badges, levels), and a trainer dashboard that flags any apprentice whose usage drops below the rollout average. Disengagement is caught and corrected early, not at the IHK exam.
+
 ### Is my data safe / GDPR compliant?
 
 Yes. 100% GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise.
@@ -182,6 +186,10 @@ Yes. 100% GDPR-compliant. Data can be stored on German, European or your company
 ### How does this help reduce dropout and trainer load?
 
 Targeted, practice-led learning shortens ramp time, reduces friction and keeps talent engaged, freeing senior staff to focus on strategic work. Based on our analysis, companies save up to €15K per apprentice per year.
+
+### How do we make sure our trainers actually use it?
+
+Adoption friction usually comes from trainers being asked to learn a new system on top of their existing workload. LearnSlice is built around that constraint: out-of-the-box simulations and learning paths require zero curriculum work to start, and the trainer dashboard surfaces only the apprentices and items that need attention this week. A 30-minute onboarding plus a single point of contact during the first two weeks covers the typical setup.
 
 ### How does pricing & integration work?
 
@@ -374,6 +382,10 @@ Kompetenzen werden kontinuierlich durch praxisnahe Checks (Quizzes, Deep Dives u
 
 Integrierte Gamification mit Punkten, Badges und Levels zur Steigerung von Motivation, Fokus und Abschlussquoten. Unternehmen berichten von höherem Azubi-Engagement ab der ersten Woche.
 
+### Werden Azubis die Plattform tatsächlich nutzen?
+
+Die meisten Azubis loggen sich nach den ersten zwei Wochen freiwillig mehrmals pro Woche ein. Das Format passt zur Lernrealität: kurze, prüfungsrelevante Aufgaben, Gamification (Punkte, Badges, Levels) und ein Ausbilder-Dashboard, das jeden Azubi markiert, dessen Nutzung unter den Rollout-Durchschnitt fällt. Sinkende Beteiligung wird früh erkannt, nicht erst bei der IHK-Prüfung.
+
 ### Sind meine Daten sicher / DSGVO-konform?
 
 Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders.
@@ -381,6 +393,10 @@ Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deu
 ### Wie hilft LearnSlice, Abbrüche und Traineraufwand zu reduzieren?
 
 Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert – während Ausbilder entlastet werden. Nach unserer Berechnung sparen Unternehmen bis zu €15K pro Azubi pro Jahr.
+
+### Wie stellen wir sicher, dass unsere Ausbilder die Plattform nutzen?
+
+Adoptionsreibung entsteht meist, weil Ausbilder ein neues System neben ihrer eigentlichen Arbeit lernen sollen. LearnSlice ist genau für diese Einschränkung gebaut: vorgefertigte Simulationen und Lernpfade erfordern keine Curriculum-Arbeit zum Start, und das Ausbilder-Dashboard zeigt nur die Azubis und Punkte, die in dieser Woche Aufmerksamkeit brauchen. Ein 30-Minuten-Onboarding plus eine feste Ansprechperson in den ersten zwei Wochen deckt den typischen Start ab.
 
 ### Wie sehen die Preise und Integration aus?
 

@@ -300,12 +300,20 @@
         "answer": "Integrierte Gamification mit Punkten, Badges und Levels zur Steigerung von Motivation, Fokus und Abschlussquoten. Unternehmen berichten von höherem Azubi-Engagement ab der ersten Woche."
       },
       {
+        "question": "Werden Azubis die Plattform tatsächlich nutzen?",
+        "answer": "Die meisten Azubis loggen sich nach den ersten zwei Wochen freiwillig mehrmals pro Woche ein. Das Format passt zur Lernrealität: kurze, prüfungsrelevante Aufgaben, Gamification (Punkte, Badges, Levels) und ein Ausbilder-Dashboard, das jeden Azubi markiert, dessen Nutzung unter den Rollout-Durchschnitt fällt. Sinkende Beteiligung wird früh erkannt, nicht erst bei der IHK-Prüfung."
+      },
+      {
         "question": "Sind meine Daten sicher / DSGVO-konform?",
         "answer": "Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders."
       },
       {
         "question": "Wie hilft LearnSlice, Abbrüche und Traineraufwand zu reduzieren?",
         "answer": "Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert – während Ausbilder entlastet werden. Nach unserer Berechnung sparen Unternehmen bis zu €15K pro Azubi pro Jahr."
+      },
+      {
+        "question": "Wie stellen wir sicher, dass unsere Ausbilder die Plattform nutzen?",
+        "answer": "Adoptionsreibung entsteht meist, weil Ausbilder ein neues System neben ihrer eigentlichen Arbeit lernen sollen. LearnSlice ist genau für diese Einschränkung gebaut: vorgefertigte Simulationen und Lernpfade erfordern keine Curriculum-Arbeit zum Start, und das Ausbilder-Dashboard zeigt nur die Azubis und Punkte, die in dieser Woche Aufmerksamkeit brauchen. Ein 30-Minuten-Onboarding plus eine feste Ansprechperson in den ersten zwei Wochen deckt den typischen Start ab."
       },
       {
         "question": "Wie sehen die Preise und Integration aus?",
@@ -328,6 +336,11 @@
   "cta": {
     "headline": "Durchbrechen Sie den Kreislauf",
     "subheadline": "IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen statt Monaten Leistung bringen. Bis zu €15K Ersparnis pro Azubi.",
+    "button": "Kostenlose Demo buchen"
+  },
+  "homepageCta": {
+    "headline": "Durchbrechen Sie den Kreislauf",
+    "subheadline": "30-Minuten-Demo, kein Pitch, keine Vorab-Kosten. Wir zeigen, wie LearnSlice zu Ihren Azubis, Ihren Prozessen und Ihren IHK-Zielen passt.",
     "button": "Kostenlose Demo buchen"
   },
   "footer": {

@@ -300,12 +300,20 @@
         "answer": "Built-in gamification: points, badges and levels to boost motivation, focus and completion rates. Companies report higher apprentice engagement from week one."
       },
       {
+        "question": "Will apprentices actually engage with the platform?",
+        "answer": "Most apprentices log in voluntarily multiple times per week once the first two-week rollout settles. The format respects how Azubis learn: short, exam-relevant tasks, gamification (points, badges, levels), and a trainer dashboard that flags any apprentice whose usage drops below the rollout average. Disengagement is caught and corrected early, not at the IHK exam."
+      },
+      {
         "question": "Is my data safe / GDPR compliant?",
         "answer": "Yes. 100% GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise."
       },
       {
         "question": "How does this help reduce dropout and trainer load?",
         "answer": "Targeted, practice-led learning shortens ramp time, reduces friction and keeps talent engaged, freeing senior staff to focus on strategic work. Based on our analysis, companies save up to €15K per apprentice per year."
+      },
+      {
+        "question": "How do we make sure our trainers actually use it?",
+        "answer": "Adoption friction usually comes from trainers being asked to learn a new system on top of their existing workload. LearnSlice is built around that constraint: out-of-the-box simulations and learning paths require zero curriculum work to start, and the trainer dashboard surfaces only the apprentices and items that need attention this week. A 30-minute onboarding plus a single point of contact during the first two weeks covers the typical setup."
       },
       {
         "question": "How does pricing & integration work?",
@@ -328,6 +336,11 @@
   "cta": {
     "headline": "Stop the Cycle",
     "subheadline": "IHK prep. Onboarding. Upskilling. One platform. Apprentices who deliver value in weeks, not months. Up to €15K saved per apprentice.",
+    "button": "Book My Free Demo"
+  },
+  "homepageCta": {
+    "headline": "Stop the Cycle",
+    "subheadline": "30-minute demo, no pitch, no credit card. We walk through how LearnSlice fits your apprentices, your processes, and your IHK targets.",
     "button": "Book My Free Demo"
   },
   "footer": {
