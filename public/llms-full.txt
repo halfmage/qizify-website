@@ -404,7 +404,7 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
-# Ausbildungsrahmenplan Explained: A Practical Trainer's Guide
+# Ausbildungsrahmenplan: A Practical Trainer Guide
 
 Source: https://learnslice.com/blog/apprenticeship-framework-plan-explained
 Language: en
@@ -587,7 +587,7 @@ Via the occupational database of the Federal Institute for Vocational Education 
 
 ---
 
-# Save Time Mentoring Apprentices: A Guide for Trainers and Team Leads
+# Save Time Mentoring Apprentices: A Trainer Guide
 
 Source: https://learnslice.com/blog/save-time-mentoring-apprentices
 Language: en
@@ -972,7 +972,7 @@ Further reading: [AI in vocational training](/blog/ai-in-vocational-training) ·
 
 ---
 
-# Private AI for Employee Onboarding: A Secure ChatGPT Alternative
+# Private AI for Employee Onboarding: A Secure Alternative
 
 Source: https://learnslice.com/blog/private-ai-employee-onboarding
 Language: en
@@ -1376,7 +1376,7 @@ For companies, supporting exam preparation is not just about the pass rate - it 
 
 ---
 
-# How to Reduce Trainer Workload in Apprenticeships: 7 Strategies
+# Reduce Trainer Workload: 7 Practical Strategies
 
 Source: https://learnslice.com/blog/reduce-trainer-workload
 Language: en
@@ -1616,7 +1616,7 @@ Choose tools that simplify GDPR compliance through EU-based data hosting, offer 
 
 ---
 
-# AI in Vocational Training: How Artificial Intelligence Is Transforming Apprenticeships
+# AI in Vocational Training: A Practical Guide for Germany
 
 Source: https://learnslice.com/blog/ai-in-vocational-training
 Language: en
@@ -1744,7 +1744,7 @@ AI in vocational training is no longer a future scenario - it's reality. Compani
 
 ---
 
-# Digital Training Logbook: Benefits, Requirements, and Implementation
+# Digital Training Logbook: A Trainer Guide for Germany
 
 Source: https://learnslice.com/blog/digital-training-logbook
 Language: en
@@ -1883,7 +1883,7 @@ Curious about your specific savings potential? Try our [Apprenticeship Savings C
 
 ---
 
-# How to Reduce Apprenticeship Training Costs - Up to €17K Per Person
+# Reduce Apprenticeship Training Costs: €17K Per Person
 
 Source: https://learnslice.com/blog/reduce-training-costs
 Language: en
@@ -2433,7 +2433,7 @@ Die kurze Antwort: Lassen Sie sich Auftragsverarbeitungsvertrag, die Liste der U
 
 ---
 
-# Zeit sparen bei der Azubi-Betreuung: Leitfaden für Ausbilder und Teamleads
+# Zeit sparen bei der Azubi-Betreuung: Ausbilder-Leitfaden
 
 Source: https://learnslice.com/de/blog/azubi-betreuung-zeit-sparen
 Language: de
@@ -2592,7 +2592,7 @@ Als Kapazitätsrückgewinnung. Ein Ausbilder, der einen erheblichen Teil seiner 
 
 ---
 
-# Ausbildungsrahmenplan erklärt: Aufbau, Inhalte und Umsetzung im Betrieb
+# Ausbildungsrahmenplan: Aufbau, Inhalte & Umsetzung
 
 Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
@@ -2778,7 +2778,7 @@ Nein. § 14 Absatz 1 Nummer 1 BBiG verpflichtet den Ausbildenden, einen betriebl
 
 ---
 
-# Ausbildungsplan Vorlage kostenlos: Gratis-Muster plus Checkliste für 2026
+# Ausbildungsplan-Vorlage kostenlos: Muster + Checkliste
 
 Source: https://learnslice.com/de/blog/ausbildungsplan-vorlage-kostenlos
 Language: de
@@ -3161,7 +3161,7 @@ Weiterlesen: [Ausbildung digitalisieren](/de/blog/ausbildung-digitalisieren) · 
 
 ---
 
-# Ausbildung digitalisieren: Der komplette Leitfaden für Unternehmen
+# Ausbildung digitalisieren: Leitfaden für Unternehmen
 
 Source: https://learnslice.com/de/blog/ausbildung-digitalisieren
 Language: de
@@ -3430,7 +3430,7 @@ Eine bestandene IHK-Prüfung ist kein Zufall, sondern das Ergebnis strukturierte
 
 ---
 
-# Ausbilder entlasten: 7 Wege, den Betreuungsaufwand zu reduzieren
+# Ausbilder entlasten: 7 Wege zu weniger Aufwand
 
 Source: https://learnslice.com/de/blog/ausbilder-entlasten
 Language: de
@@ -3540,7 +3540,7 @@ Ausbilder zu entlasten ist kein Luxus, sondern wirtschaftliche Notwendigkeit. Di
 
 ---
 
-# Azubi-Onboarding: Die komplette Checkliste für die ersten 8 Wochen
+# Azubi-Onboarding: Checkliste für die ersten 8 Wochen
 
 Source: https://learnslice.com/de/blog/azubi-onboarding
 Language: de
@@ -3725,7 +3725,7 @@ Ein strukturiertes 8-Wochen-Onboarding ist die beste Investition in den Ausbildu
 
 ---
 
-# KI in der Ausbildung: Wie künstliche Intelligenz das Lernen revolutioniert
+# KI in der Ausbildung: Was sich für Azubis ändert
 
 Source: https://learnslice.com/de/blog/ki-in-der-ausbildung
 Language: de
@@ -3853,7 +3853,7 @@ KI in der Ausbildung ist kein Zukunftsszenario mehr - es ist Realität. Unterneh
 
 ---
 
-# Digitales Berichtsheft: Vorteile, Anforderungen und Umsetzung
+# Digitales Berichtsheft: Anforderungen & Umsetzung
 
 Source: https://learnslice.com/de/blog/berichtsheft-digital
 Language: de
@@ -3979,7 +3979,7 @@ Das digitale Berichtsheft ist mehr als ein Ersatz für Papier. Richtig eingesetz
 
 ---
 
-# Ausbildungskosten senken: 5 Strategien - bis zu €17K pro Azubi sparen
+# Ausbildungskosten senken: 5 Strategien für €17K Ersparnis
 
 Source: https://learnslice.com/de/blog/ausbildungskosten-senken
 Language: de
