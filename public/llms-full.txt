@@ -404,6 +404,189 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
+# Ausbildungsrahmenplan Explained: A Practical Trainer's Guide
+
+Source: https://learnslice.com/blog/apprenticeship-framework-plan-explained
+Language: en
+Published: 2026-05-26
+
+What the Ausbildungsrahmenplan regulates, how it is structured, and how to turn it into a company-specific training plan in five concrete steps.
+
+## Key Takeaways
+
+- The Ausbildungsrahmenplan (apprenticeship framework plan) is the legally binding national minimum standard for company-based vocational training in Germany. It is part of the training ordinance for a recognised occupation, issued by federal regulation under § 4 and § 5 BBiG.
+- The framework plan has two halves: a content structure (sachliche Gliederung) that describes what must be taught, and a chronological structure (zeitliche Gliederung) that allocates content across the apprenticeship years.
+- Since 1 August 2021, four standard occupational profile positions are mandatory in every modernised framework plan, including the newly introduced 'Digital Working World' and the expanded 'Environmental Protection and Sustainability'.
+- The Ausbildungsrahmenplan and the company-specific training plan are not the same document. The framework is the national minimum, and § 14 paragraph 1 number 1 BBiG obliges the training company to translate it into a company-specific plan.
+- The current version of any training ordinance can be looked up via the Federal Institute for Vocational Education and Training (BIBB). A brief annual check whether the occupation has been re-issued belongs in every training company's routine.
+
+![Trainer and apprentice reviewing the Ausbildungsrahmenplan on a laptop screen](/images/blog/pexels-mikhail-nilov-6592550.webp)
+
+## Ausbildungsrahmenplan Explained: Why This Document Sets the Standard for Every Apprenticeship
+
+The **Ausbildungsrahmenplan** (literally "training framework plan") is the legally binding backbone of every dual apprenticeship in Germany. It defines the skills, knowledge, and competences a company must impart over the full apprenticeship period, organised into a content structure and a chronological structure. Anyone starting, changing, or digitising an apprenticeship in Germany cannot avoid this document.
+
+In daily practice the framework plan is often confused with the **company-specific training plan**, or treated as an appendix that gets filed once and never opened again. Both approaches waste the document's steering value. This guide explains exactly what the Ausbildungsrahmenplan is, how it is built, and how to turn it into a plan that actually carries the apprenticeship.
+
+## What Is the Ausbildungsrahmenplan? Definition and Legal Basis
+
+The Ausbildungsrahmenplan is the legally binding national minimum standard for company-based vocational training in a recognised German apprenticeship occupation. It is part of the training ordinance (Ausbildungsordnung), which sets out the skills, knowledge, and competences the training company must convey across the full apprenticeship duration, organised by learning area and by training year.
+
+Training ordinances are federal regulations. Under § 4 [BBiG](https://www.gesetze-im-internet.de/bbig_2005/__4.html) they are issued by the competent federal ministry in agreement with the ministry responsible for vocational education and published in the Federal Law Gazette. The substantive content of a training ordinance is governed by § 5 of the Vocational Training Act (Berufsbildungsgesetz, BBiG).
+
+§ 5 paragraph 1 BBiG requires the training ordinance to define at minimum:
+
+1. the title of the apprenticeship occupation,
+2. the duration of training, which shall be between two and three years,
+3. the vocational skills, knowledge, and competences that are at minimum the subject of the training (the **occupational profile**),
+4. guidance on the content and chronological structure of how those subjects are to be taught (the **Ausbildungsrahmenplan**),
+5. the examination requirements.
+
+Point 4 is the Ausbildungsrahmenplan in the narrow sense. It is a federally mandated minimum, not a suggestion. The training company may go beyond it, but it may not fall below it.
+
+The plan is developed by the **[Federal Institute for Vocational Education and Training](https://www.bibb.de) (BIBB)** in coordination with the social partners, subject-matter experts from practice, and the competent chambers. When an apprenticeship occupation is re-issued or modernised, both the school curriculum (Rahmenlehrplan) and the company framework plan are produced in a coordinated procedure.
+
+## How Is the Ausbildungsrahmenplan Structured? Content and Chronology
+
+The Ausbildungsrahmenplan consists of two components that build on each other.
+
+**The content structure (sachliche Gliederung)** describes *what* is to be learned. It lists the occupational profile positions with their associated skills, knowledge, and competences, in modernised ordinances usually formulated as testable learning outcomes.
+
+**The chronological structure (zeitliche Gliederung)** describes *when* the content is to be taught. It maps each item from the content structure to a specific training section, typically as time guideline values per training year. The distribution is intended to ensure that content builds didactically on previous content, and that the [IHK](https://www.ihk.de) intermediate examination, or Part 1 of the stretched final examination, falls at a sensible learning point.
+
+In most training ordinances both structures appear as tables: the first column carries the position number, the second the name of the learning area, the third the content to be taught, and the fourth the time guideline values for the training years. The tabular form is not decorative. It is what makes it possible to transfer the framework plan into a company-specific training plan, and later into the [digital training logbook](/blog/digital-training-logbook).
+
+## Standard Occupational Profile Positions: What Has Been Mandatory Since 2021
+
+With the modernisation of the Vocational Training Act, BIBB revised the **standard occupational profile positions (Standardberufsbildpositionen)**. They are mandatory for all apprenticeship occupations that take effect from 1 August 2021, whether newly developed or re-issued. There are four cross-cutting positions that appear in every framework plan and run across the full training duration:
+
+1. **Organisation of the training company, vocational training, and labour and collective bargaining law.** Functions, structures, co-determination, rights and obligations from the apprenticeship contract, the collective bargaining system. The previously separate positions on company structure and on vocational training law have been merged here.
+2. **Occupational health and safety.** Workplace safety, ergonomic working, hazard assessment.
+3. **Environmental protection and sustainability.** Previously labelled simply "environmental protection", expanded since 2021 to include sustainable business practice and ecological responsibility.
+4. **Digital working world.** New since 2021. Working with digital media and data, data protection and data security, communicative and social competences, organisational change driven by digitalisation.
+
+In older, not yet modernised training ordinances, the "Digital working world" position and the expanded sustainability perspective are absent. Anyone working from an older framework plan should therefore check whether the occupation has been re-issued in the meantime.
+
+## Ausbildungsrahmenplan vs. Company-Specific Training Plan: The Decisive Difference
+
+The most common conceptual mistake in practice is to equate the Ausbildungsrahmenplan with the company-specific training plan. They are two distinct documents with different scope.
+
+| Feature | Ausbildungsrahmenplan | Company-specific training plan |
+|---|---|---|
+| Scope | National, all companies for a given occupation | One specific training company |
+| Legal basis | § 5 BBiG (training ordinance) | § 14 paragraph 1 number 1 BBiG |
+| Issuer | BIBB and the responsible federal ministry | The training company itself |
+| Level of detail | Framework, formulated as learning outcomes | Concrete implementation in the company |
+| Personalisation | None | Possible and sensible per apprentice |
+| Update cadence | When the occupation is re-issued | When processes or rotations change |
+
+Put differently: the Ausbildungsrahmenplan describes *what* is to be learned, but not *how it actually works in your company*. The real standard operating procedures, quality requirements, customer specifications, and internal work instructions live in handbooks, in the wiki, and in the heads of experienced colleagues. The company-specific plan bridges those two worlds, or at least has to.
+
+§ 14 paragraph 1 number 1 BBiG explicitly obliges the employer to deliver the training "in a form appropriate to its purpose, in a planned manner, structured in terms of time and content, in such a way that the training goal can be reached within the foreseen period". That obligation is precisely what the company-specific training plan exists to fulfil.
+
+## From Framework Plan to Company Plan: Five Concrete Steps
+
+The step from the national framework to a workable company plan is less a translation problem than a problem of concretisation. The following sequence works in practice.
+
+**1. Pull the currently applicable framework plan.** Source the current Ausbildungsrahmenplan for the occupation from the training ordinance. Group its content by training year and by competence area. That structure is the spine of the company plan.
+
+**2. Map content to departments and assignment locations.** Which position is learned in which department? Which rotations are needed so that all positions are covered? Multi-site companies should run this step together with the department leads.
+
+**3. Assign responsible trainers.** For each section a technically responsible trainer (Ausbilder) is named, supported by department-level training officers. This is not paperwork; it determines later learning quality.
+
+**4. Plan learning and performance reviews.** Performance conversations, the IHK intermediate examination or Part 1 of the stretched final examination, intermediate and final assessments all go into the chronological plan as milestones. The probation period ends after the one to four months stipulated in § 20 BBiG. The exact date from the contract should appear as a milestone as well.
+
+**5. Personalise the plan.** Prior knowledge, the vocational-school rotation, individual focus areas, and learning pace of the actual apprentice all feed in. A standardised Word template hits its ceiling here. It can formally render the plan but it cannot move with it.
+
+A template start point that is BBiG-compliant lives in the [free apprenticeship plan template](/blog/apprenticeship-plan-template-free). A fuller methodology for turning the framework into a living, per-apprentice plan with AI support is in the overview of [AI tools for vocational training](/blog/ai-tools-vocational-training).
+
+## Where to Find the Ausbildungsrahmenplan and How to Check It Is Current
+
+Training ordinances are published in their current version by the **Federal Institute for Vocational Education and Training (BIBB)**. The BIBB portal lists the applicable training ordinance, including its framework plan, for every recognised apprenticeship occupation. In parallel, the competent chambers (Industry and Commerce Chambers, IHK, for most occupations; Handwerkskammern for the skilled crafts) publish practical interpretation guides and implementation aids.
+
+Currency can be verified on three checkpoints:
+
+- **Promulgation date in the Federal Law Gazette.** Listed in the preamble of the training ordinance. Modernised occupations often take effect on 1 August, because that aligns with the start of the training year.
+- **Presence of the four modernised standard occupational profile positions.** If "Digital working world" and the expanded "Environmental protection and sustainability" position are missing, you likely have a pre-August-2021 version.
+- **Transitional clauses.** Re-issues usually carry a transition window during which ongoing apprenticeships may complete under the old version. The transitional rules sit in the closing provisions of the training ordinance.
+
+A brief annual check of these three points belongs in every training company. The fewest changes are communicated proactively.
+
+## Ausbildungsrahmenplan and the Training Logbook: How Documentation Fits Together
+
+The Ausbildungsrahmenplan and the **written training record** (Ausbildungsnachweis, colloquially Berichtsheft) are two sides of one coin. The framework plan is the target description; the training record is the actual documentation.
+
+§ 13 sentence 2 number 7 BBiG obliges apprentices to keep a training record. It makes traceable which content has in fact been taught. Combined with the framework plan, a full picture emerges: which framework position was covered in which calendar week, in which department, with which learning outcome.
+
+On paper training logs that link has to be drawn manually, with the corresponding overhead. A [digital training logbook](/blog/digital-training-logbook) can map the reference to the framework plan automatically. Each entry is assigned to the relevant position, and at the end of the training year an overview shows which framework content already "sits" and which is still open. That overview becomes the input for interim conversations and for IHK exam preparation.
+
+## Why the Ausbildungsrahmenplan Alone Does Not Steer the Apprenticeship
+
+The framework plan is the legally necessary foundation. It is not, however, an operational steering instrument. Three weaknesses surface regularly in training practice.
+
+**First: the framework plan does not know your company.** It describes learning outcomes, not the SOPs, machines, software, and processes by which those outcomes will concretely be acquired. An apprentice working at a high-bay warehouse with a five-year-old warehouse management system learns "warehouse processes" differently from one in a pilot site with autonomous material flow.
+
+**Second: the framework plan does not know your apprentice.** It draws no distinction between a school leaver with no prior exposure and a university-entrance-qualified candidate with two years of school placements in the field. Both run through the same plan.
+
+**Third: the framework plan is static.** Updates only arrive with the next re-issue, and re-issues come at irregular intervals. Practical changes (new software, new quality requirements, new customer standards) therefore have to be carried in the company-specific plan.
+
+The result is a familiar imbalance. The framework plan sits in the HR file while everyday training is steered by improvised conversations, sticky notes, and the experience of a few senior colleagues. Exactly the [pressure that pushes trainers past their limit](/blog/reduce-trainer-workload).
+
+## From Framework Plan to Living Learning Path
+
+A modern company-specific training plan connects three knowledge layers that the framework plan alone cannot represent.
+
+1. **Framework plan content** as the legally binding minimum and the reference for the exam.
+2. **Company knowledge and learning materials.** SOPs, work instructions, internal training materials, existing IHK materials, and occupation-specific content are loaded into the platform and configured per occupation.
+3. **Individual learning progress.** Continuous feedback from training-record entries, learning checks, and review conversations.
+
+On an AI-assisted learning platform these layers converge. The framework plan defines the goal, the company knowledge supplies the operational content, and the individual learning path steers sequence, depth, and repetition. The static framework becomes a plan that moves with learning progress.
+
+That this works under GDPR, with EU hosting and a clean separation between company knowledge and publicly trained models, is a precondition, not a bonus. What to verify when evaluating such a platform is laid out in the overview of [AI tools for vocational training](/blog/ai-tools-vocational-training). An honest side-by-side with the conventional approach is in [LearnSlice vs. traditional training](/learnslice-vs-traditional-training).
+
+## Conclusion: The Framework Plan Is the Foundation, Not the Destination
+
+The Ausbildungsrahmenplan is the legal spine of every German apprenticeship. Those who understand it produce a workable company-specific plan. Those who ignore it fail not only the formal requirement under § 14 BBiG, they also forfeit a clear steering logic.
+
+The plan is, however, a framework, not an operating manual for everyday training. The real work begins where the national standard meets the concrete processes, tools, and people of your company. Done carefully, that step delivers legal certainty and a measurable lift in training quality at the same time.
+
+**See in 30 minutes how the Ausbildungsrahmenplan for your occupation becomes a living, personalised learning path.** In a short demo we walk through a concrete example of how LearnSlice ties the IHK framework plan to your work instructions and produces an individual plan per apprentice, GDPR-compliant and hosted in the EU. [Book a demo](/companies). A first cost estimate is one click away in the [apprenticeship savings calculator](/apprenticeship-savings-calculator).
+
+Read on: [Free apprenticeship plan template](/blog/apprenticeship-plan-template-free) · [Digital training logbook](/blog/digital-training-logbook) · [Digitise apprenticeship training: complete guide](/blog/digitize-apprenticeship-training) · [Reduce trainer workload](/blog/reduce-trainer-workload)
+
+
+## Frequently Asked Questions
+
+### Is the Ausbildungsrahmenplan legally binding?
+
+Yes. It is part of the training ordinance, which is published as a federal regulation in the Federal Law Gazette. The framework plan defines the national minimum standard, and no training company may fall below it. Going beyond it is allowed and common, but the minimum content listed in the framework plan must always be delivered.
+
+### Who creates the Ausbildungsrahmenplan?
+
+The Federal Institute for Vocational Education and Training (BIBB) develops it on behalf of the federal government, together with subject-matter experts from industry and the social partners. The training ordinance is then issued under § 4 BBiG by the responsible federal ministry in agreement with the ministry responsible for vocational education. Individual companies or chambers do not write it themselves.
+
+### What is the difference between the Ausbildungsrahmenplan and the Rahmenlehrplan?
+
+The Ausbildungsrahmenplan regulates company-based training; the Rahmenlehrplan regulates the curriculum at the vocational school. Both are developed in a coordinated procedure when an occupation is re-issued, but they are legally separate: the framework plan rests on the BBiG (federal level), while the school curriculum rests on resolutions of the standing conference of state ministers of education (Kultusministerkonferenz).
+
+### Does the apprentice need to receive a copy of the Ausbildungsrahmenplan?
+
+§ 11 paragraph 1 number 2 BBiG requires that the nature, content structure, chronological structure, and objective of the training be part of the written contract record drawn up by the employer before the apprenticeship starts. In practice, the Ausbildungsrahmenplan or the company-specific plan derived from it is attached to the apprenticeship contract as an appendix.
+
+### How often is the Ausbildungsrahmenplan updated?
+
+An update happens when an occupation is formally re-issued (Neuordnung). There is no fixed statutory cycle; re-issues are triggered when the occupational profile, the technology base, or the regulatory environment changes substantially. The introduction of the modernised standard positions on 1 August 2021 set off a wave of re-issues, particularly to add the new "Digital Working World" position.
+
+### Does the Ausbildungsrahmenplan replace a company-specific training plan?
+
+No. § 14 paragraph 1 number 1 BBiG obliges the employer to maintain a company-specific training plan that breaks the national framework down to the actual company. The federal plan is the input; the company plan is the output. The Industry and Commerce Chamber (IHK) checks documentation completeness when the apprenticeship contract is registered.
+
+### Where do I find the Ausbildungsrahmenplan for my occupation?
+
+Via the occupational database of the Federal Institute for Vocational Education and Training (BIBB), via the Federal Law Gazette entry for the training ordinance, or via the service pages of the responsible chamber (IHK or Handwerkskammer). Check the currently applicable version: when an occupation has been re-issued, the older version only applies to contracts signed before the cut-off date.
+
+---
+
 # Save Time Mentoring Apprentices: A Guide for Trainers and Team Leads
 
 Source: https://learnslice.com/blog/save-time-mentoring-apprentices
@@ -2103,6 +2286,153 @@ Digital IHK exam preparation with AI support is more efficient, more affordable,
 
 ---
 
+# DSGVO-konforme KI-Tools für Ausbilder: Kriterien und Auswahl
+
+Source: https://learnslice.com/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder
+Language: de
+Published: 2026-05-26
+
+Welche KI-Tools dürfen Ausbilder DSGVO-konform einsetzen? Sieben Prüfkriterien, drei typische Fallstricke und ein realistischer Praxisvergleich.
+
+## Auf einen Blick
+
+- DSGVO-Konformität bei KI ist kein Tool-Label, sondern eine Kette aus Rechtsgrundlage (Art. 6 DSGVO), Auftragsverarbeitungsvertrag (Art. 28 DSGVO), technisch-organisatorischen Maßnahmen (Art. 32 DSGVO) und im Zweifel einer Datenschutz-Folgenabschätzung (Art. 35 DSGVO).
+- Sieben Prüfkriterien entscheiden über die zulässige Nutzung eines KI-Tools im Ausbildungskontext: Hosting-Region, Auftragsverarbeitungsvertrag, Trainingsdaten-Opt-out, Löschkonzept, Liste der Unterauftragsverarbeiter, Protokollierung und der Umgang mit Betroffenenrechten.
+- Die drei häufigsten Fallstricke in der Praxis sind ein privater ChatGPT-Account auf Azubi-Daten (keine Rechtsgrundlage), KI-Erweiterungen in bestehenden Tools, die ohne Anpassung des Auftragsverarbeitungsvertrags aktiviert werden, sowie der Subunternehmer-Kette-Effekt bei EU-Frontends mit US-Backend.
+- Art. 22 DSGVO begrenzt automatisierte Bewertungsentscheidungen. Eine KI-gestützte Leistungsbewertung von Auszubildenden ohne menschliche Letztverantwortung ist regelmäßig unzulässig.
+- Praxiskonform bedeutet nicht funktional eingeschränkt. EU-gehostete vertikale Plattformen mit Auftragsverarbeitungsvertrag, Trainingsdaten-Opt-out und sauberem Rollenkonzept decken die wesentlichen Use Cases der Ausbildung ab, ohne das Datenschutz-Risiko privater Tools.
+
+![EU-Sterne, Vorhängeschloss mit Compliance-Plakette und digitale Europakarte mit Deutschland als Sinnbild für DSGVO-konforme KI-Tools](/images/blog/dsgvo-eu-compliance.webp)
+
+## DSGVO-konforme KI-Tools für Ausbilder: Warum die Frage 2026 keine theoretische mehr ist
+
+Die Datenschutz-Grundverordnung (DSGVO) ist seit acht Jahren in Kraft, ChatGPT seit dreieinhalb. Die Schnittmenge **DSGVO-konforme KI-Tools für Ausbilder** ist im Jahr 2026 keine akademische Diskussion mehr. Die Landesdatenschutzbehörden haben begonnen, Beschäftigtendatenverarbeitung mit generativer KI systematisch zu prüfen, die Industrie- und Handelskammern fragen bei Ausbildungsbetrieben gezielt nach Datenschutzkonzepten für eingesetzte Lernsoftware, und der EU AI Act ergänzt die DSGVO um eigene Pflichten, die für Hochrisiko-Anwendungen im Beschäftigungs- und Bildungskontext besonders relevant sind.
+
+Stand: Mai 2026. Geltende Rechtslage in Deutschland und EU.
+
+Für Ausbilderinnen und Ausbilder, die einen ChatGPT-Tab offen haben und gleichzeitig Berichtsheft-Feedback formulieren wollen, ist die Lage damit unangenehm konkret geworden. Dieser Beitrag legt sieben Prüfkriterien offen, die über die Zulässigkeit eines KI-Tools entscheiden, benennt drei Fallstricke aus der betrieblichen Praxis und ordnet die wichtigsten Kategorien von KI-Werkzeugen so ein, dass eine fundierte Auswahl möglich wird, auch ohne eigene Rechtsabteilung.
+
+## Was bedeutet "DSGVO-konform" bei einem KI-Tool im Ausbildungskontext?
+
+DSGVO-Konformität bei einem KI-Tool ist kein Siegel, das man aufkleben kann. Sie ist eine Kette aus vier Elementen, die alle vorliegen müssen: eine **Rechtsgrundlage** nach Art. 6 Abs. 1 DSGVO, ein **Auftragsverarbeitungsvertrag** nach Art. 28 DSGVO mit dem Anbieter, dokumentierte **technisch-organisatorische Maßnahmen** nach Art. 32 DSGVO und, im Regelfall, eine **Datenschutz-Folgenabschätzung** nach Art. 35 DSGVO. Fehlt ein Glied, ist die Verarbeitung rechtswidrig.
+
+Im Ausbildungskontext kommt eine Besonderheit hinzu. Auszubildende sind nach § 26 Bundesdatenschutzgesetz (BDSG) Beschäftigte. Datenverarbeitungen im Ausbildungsverhältnis stützen sich daher in aller Regel nicht auf eine Einwilligung, sondern auf § 26 Abs. 1 BDSG: zulässig, soweit für die Durchführung des Ausbildungsverhältnisses erforderlich. Diese Einschränkung ist der eigentliche Hebel. Sie zwingt zur Konkretisierung des Verarbeitungszwecks. Ein Allzweck-Chatbot ohne Use-Case-Eingrenzung leistet das schwerer als ein vertikales Werkzeug für die Ausbildung.
+
+## Die sieben Prüfkriterien im Detail
+
+Sieben Kriterien lassen sich aus DSGVO, BDSG und der gängigen Aufsichtspraxis ableiten. Sie ergeben zusammen den Mindeststandard, den ein Tool erfüllen muss, bevor es im Betrieb auf Azubi-Daten losgelassen wird.
+
+1. **Hosting-Region.** Wo läuft der Dienst physisch? EU-Hosting reduziert das Drittlandsrisiko, beseitigt es aber nur dann, wenn auch die Modellverarbeitung in der EU stattfindet.
+2. **Auftragsverarbeitungsvertrag.** Liegt ein AVV nach Art. 28 DSGVO vor, der Verarbeitungsgegenstand, -dauer, Art und Zweck, Datenkategorien sowie Betroffene benennt? Ohne diesen Vertrag ist die Verarbeitung formal unzulässig.
+3. **Trainingsdaten-Opt-out.** Werden Eingaben für das Modelltraining verwendet? Wenn ja, lässt sich das vertraglich und technisch deaktivieren? OpenAI bietet das für ChatGPT-Team und Enterprise standardmäßig, in der kostenlosen Version nur per Datenkontrollen-Einstellung.
+4. **Löschkonzept.** Werden Daten nach Vertragsende oder nach Ablauf einer definierten Aufbewahrungsfrist tatsächlich gelöscht, und wird das nachweislich dokumentiert?
+5. **Unterauftragsverarbeiter.** Welche Sub-Prozessoren sind eingebunden? Art. 28 Abs. 2 DSGVO verlangt eine vorherige schriftliche Genehmigung des Verantwortlichen, bevor ein weiterer Auftragsverarbeiter eingesetzt wird.
+6. **Protokollierung.** Existiert ein Audit-Log, das nachweist, wer wann welche personenbezogenen Daten verarbeitet hat? Ohne dieses Log lassen sich Auskunfts- und Löschpflichten praktisch nicht erfüllen.
+7. **Betroffenenrechte.** Wie werden Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO) und Widerspruch (Art. 21 DSGVO) operativ umgesetzt? Ein Anbieter, der hier nur auf das Formular auf seiner Webseite verweist, hat keinen funktionierenden Prozess.
+
+Diese sieben Punkte sind keine Wunschliste. Sie sind die Mindestanforderungen, die jeder seriöse B2B-Anbieter schriftlich beantworten kann. Wer auf eine dieser Fragen ausweichend reagiert, fällt durch.
+
+## Drei Fallstricke, die in der Praxis am häufigsten passieren
+
+In den Datenschutzberatungen rund um KI in der Ausbildung tauchen drei Fehlerbilder immer wieder auf. Sie sind nicht exotisch, sondern Folge naheliegender, gut gemeinter Entscheidungen.
+
+**Erstens: der private ChatGPT-Account auf Azubi-Daten.** Ein Ausbilder loggt sich mit seinem privaten Account ein und füttert ChatGPT mit dem Berichtsheft-Eintrag eines Auszubildenden, um Formulierungshilfe zu bekommen. Es gibt keine Rechtsgrundlage. Der Arbeitgeber hat OpenAI nicht beauftragt, keinen AVV geschlossen und auch keine Information nach Art. 13 DSGVO erteilt. Selbst wenn niemand merkt, was passiert ist: Die Verarbeitung ist unzulässig. Wer das anders sieht, sollte sich vergegenwärtigen, dass im kostenlosen Plan die Eingaben standardmäßig zum Modelltraining verwendet werden, sofern man dies nicht selbst deaktiviert.
+
+**Zweitens: aktivierte KI-Funktionen in bestehenden Tools.** Microsoft Copilot wird in einem bestehenden Microsoft-365-Tenant aktiviert, weil das Unternehmen ohnehin Microsoft-Lizenzen hat. Der bestehende AVV mit Microsoft deckt jedoch nicht automatisch die Copilot-Verarbeitung ab. Eine Erweiterung ist erforderlich, und je nach Datenfluss auch eine eigene Folgenabschätzung. Dasselbe Muster zeigt sich bei "KI-Erweiterungen" in HR- und LMS-Systemen.
+
+**Drittens: EU-Frontend, US-Backend.** Ein Anbieter wirbt mit "EU-Hosting" und meint damit den Web-Auftritt und die Benutzerdatenbank. Das eigentliche Sprachmodell läuft jedoch über eine API in den USA. Damit findet eine Datenübermittlung in ein Drittland statt, mit allen Konsequenzen, die Schrems II für solche Konstellationen aufgestellt hat. Standardvertragsklauseln allein heilen das nicht, wenn der Anbieter dem US Cloud Act unterliegt.
+
+## Welche KI-Funktionen Ausbilder im Alltag wirklich brauchen
+
+Bevor Sie ein Tool auswählen, fixieren Sie den Use Case. Die meisten Ausbilder benötigen nicht "KI", sondern eine konkrete Funktion. In der Beratungspraxis bei Mittelständlern kristallisieren sich fünf wiederkehrende Anwendungsfelder heraus.
+
+- Erstellung individueller Lernpfade entlang des [Ausbildungsrahmenplans](/de/blog/ausbildungsrahmenplan-erklaert) für einen konkreten Azubi
+- Formulierungshilfe für Feedback auf Berichtsheft-Einträge, ohne das [digitale Berichtsheft](/de/blog/berichtsheft-digital) selbst zu verlassen
+- Generierung von Prüfungsfragen entlang der Standardberufsbildpositionen für die IHK-Zwischenprüfung
+- FAQ-Assistent für wiederkehrende Azubi-Rückfragen, der das interne Wissen aus Wiki, SOP und Handbuch zusammenführt
+- Strukturhilfe für Ausbilder bei der Übersetzung des bundesweiten Rahmenplans in den [betrieblichen Ausbildungsplan, der per KI gestützt entsteht](/de/blog/ausbildungsplan-erstellen-ki)
+
+Diese Use Cases sind eng. Sie zwingen den Anbieter dazu, Verarbeitungszweck und Datenfluss zu beschreiben. Genau das macht sie DSGVO-dokumentierbar. Ein Allzweck-Chatbot ohne Zweckeingrenzung erfüllt diese Anforderung nicht von selbst. Er muss organisatorisch erst dazu gezwungen werden.
+
+## Kategorien von KI-Tools im Vergleich
+
+Drei Kategorien dominieren den Markt im Jahr 2026. Sie unterscheiden sich nicht primär in der Modellqualität, sondern in der Schärfe des Verarbeitungszwecks und der Dokumentationstiefe.
+
+| Kategorie | Typischer Use Case | AVV-Verfügbarkeit | DSGVO-Risiko | Funktionsbreite |
+|---|---|---|---|---|
+| Allzweck-Chatbots (ChatGPT Team, Copilot, Claude) | Recherche, Formulierung, generische Texte | Vorhanden für Team-/Enterprise-Tarife | Mittel bis hoch, abhängig von Hosting und Sub-Prozessoren | Sehr breit, dafür Verarbeitungszweck offen |
+| EU-gehostete LLM-Plattformen (Aleph Alpha, Mistral via Scaleway) | Eigenentwicklung interner KI-Funktionen | Vorhanden, mit EU-Sub-Prozessor-Kette | Niedrig bis mittel | Hoch, erfordert eigene Implementierung |
+| Vertikale Ausbildungs-Plattformen (z. B. LearnSlice) | Lernpfade, Berichtsheft-Feedback, Prüfungsfragen | Vertraglich Bestandteil, AVV mit Verarbeitungsverzeichnis | Niedrig, weil Zweck definiert | Auf den Ausbildungs-Use-Case zugeschnitten |
+
+Die Einordnung ist bewusst grobkörnig. Sie ersetzt nicht die individuelle Prüfung, hilft aber bei der Vorauswahl. Wer einen detaillierten Vergleich mit konkreten Anbietern braucht, findet eine bewertete Übersicht unter [LearnSlice im Vergleich zu simpleclub](/de/learnslice-vs-simpleclub) und ergänzend in der [Marktübersicht zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
+
+## Auftragsverarbeitung und die Subunternehmer-Kette: der unterschätzte Hebel
+
+Art. 28 Abs. 3 DSGVO verlangt einen Vertrag, "der bzw. das den Auftragsverarbeiter in Bezug auf den Verantwortlichen bindet" und Gegenstand, Dauer, Art und Zweck der Verarbeitung sowie die Pflichten und Rechte des Verantwortlichen festlegt. Das klingt formal. Operativ steckt darin der Punkt, an dem die meisten KI-Einführungen kippen.
+
+Ein moderner KI-Stack besteht selten aus einem einzigen Anbieter. Typisch ist eine Kette: Sie nutzen ein vertikales Tool, das Tool ruft eine API eines LLM-Anbieters auf, der LLM-Anbieter wiederum hostet bei einem Hyperscaler. Jedes Glied dieser Kette ist ein potenzieller Unterauftragsverarbeiter, der gemäß Art. 28 Abs. 2 DSGVO vom Verantwortlichen genehmigt sein muss. Ein seriöser Anbieter legt diese Kette offen, benennt jeden Sub-Prozessor mit Sitzland und Verarbeitungszweck und informiert Sie, bevor sich daran etwas ändert. Ein nicht so seriöser Anbieter verweist auf seine Datenschutzerklärung und überlässt die Recherche Ihnen.
+
+Die Prüfung der Subunternehmer-Kette ist die Stelle, an der "DSGVO-konform" im Werbetext und "DSGVO-konform" im Vertrag spürbar auseinanderlaufen. Wer hier hartnäckig nachfragt, sortiert die Spreu vom Weizen schneller als jede Demo es kann.
+
+## Sonderfall Art. 22 DSGVO: Wo automatisierte KI-Entscheidungen unzulässig sind
+
+Art. 22 Abs. 1 DSGVO räumt der betroffenen Person das Recht ein, keiner Entscheidung unterworfen zu werden, die ausschließlich auf automatisierter Verarbeitung (einschließlich Profiling) beruht und ihr gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt. Für die Ausbildung ist das hochrelevant.
+
+Eine KI-gestützte Leistungsbewertung, die ohne menschliche Letztverantwortung über Übernahme, Probezeitverlängerung oder Versetzung in einen anderen Ausbildungsbereich entscheidet, fällt unter dieses Verbot. Selbst die Bewertung von Berichtsheft-Einträgen mit automatisierter Notenempfehlung berührt die Grenze, sobald die Empfehlung faktisch eins zu eins übernommen wird und der Mensch nur noch nickt. Die DSGVO verlangt eine substanzielle menschliche Prüfung, nicht eine formale.
+
+Art. 22 Abs. 2 DSGVO kennt Ausnahmen (Vertragsbezug, gesetzliche Erlaubnis, ausdrückliche Einwilligung), Art. 22 Abs. 3 verlangt für zwei dieser Ausnahmen mindestens "das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung". Praktisch heißt das: Eine KI darf Vorschläge machen, der Mensch entscheidet, und der Auszubildende kann widersprechen. Wer das Verhältnis umdreht, baut ein juristisches Problem ein, das niemand sieht, bis es jemand sieht.
+
+## Fünf-Schritte-Auswahlpfad für Ausbilder ohne IT-Abteilung
+
+Die meisten Mittelstands-Ausbildungsbetriebe haben weder einen eigenen Datenschutzbeauftragten in Vollzeit noch eine KI-Strategie auf Vorstandsebene. Für diese Realität funktioniert ein pragmatischer Auswahlpfad in fünf Schritten besser als ein Lastenheft.
+
+1. **Use Case fixieren.** Schreiben Sie in einem Satz auf, was Sie mit dem Tool erreichen wollen. Wenn das nicht in einen Satz passt, ist der Verarbeitungszweck zu unscharf.
+2. **AVV anfragen, bevor Sie testen.** Verlangen Sie das AVV-Muster vor dem ersten Test, nicht danach. Wer keinen AVV liefert, ist raus.
+3. **Hosting und Sub-Prozessoren prüfen.** Lassen Sie sich die Liste der Unterauftragsverarbeiter mit Sitzland geben. Achten Sie auf EU-Frontend / US-Backend-Konstellationen.
+4. **Trainingsdaten-Opt-out vertraglich absichern.** "Wir verwenden Ihre Daten nicht für Training" gehört in den AVV oder in eine Vertragsanlage, nicht in eine Marketingbroschüre.
+5. **DSFA-Bedarf klären.** Wenn die Verarbeitung Beschäftigtendaten in nennenswertem Umfang berührt oder Bewertungselemente enthält, ist eine DSFA nach Art. 35 DSGVO regelmäßig erforderlich. Dafür gibt es Vorlagen bei den Landesdatenschutzbehörden.
+
+Dieser Pfad ersetzt keine Rechtsberatung. Er filtert aber rund neunzig Prozent der Tools heraus, die sich bei genauerem Hinsehen als nicht ausbildungstauglich erweisen. Für den Rest beginnt die eigentliche fachliche Bewertung. Wer hier zusätzlich [seine Ausbilder operativ entlasten](/de/blog/ausbilder-entlasten) möchte, wird die Kombination aus klarer Compliance-Linie und scharfem Use Case nicht nur als Pflicht erleben, sondern als Beschleuniger.
+
+## Fazit: Compliance ist kein Funktionsverzicht
+
+Die Vorstellung, dass DSGVO-Konformität KI-Tools langweilig oder leistungsschwach mache, hält der Praxis nicht stand. Vertikale, EU-gehostete Plattformen mit AVV, Trainingsdaten-Opt-out und sauberem Rollenkonzept liefern den Funktionsumfang, den Ausbilder brauchen. Sie liefern ihn ohne das juristische Restrisiko, das ein privater ChatGPT-Tab auf einem Konferenzlaptop mit sich bringt. Die Compliance-Anforderungen sind eine Filterfunktion, nicht ein Verbot. Wer den Filter ernst nimmt, hat am Ende einen engeren, aber besseren Werkzeugkasten.
+
+Wer prüfen möchte, wie eine vertikale Ausbildungsplattform diese sieben Kriterien konkret abdeckt (mit AVV, EU-Hosting und Use-Case-spezifischem Datenfluss), findet eine ausführliche Übersicht und einen Demo-Zugang unter [LearnSlice für Unternehmen](/de/companies). Eine breitere Einordnung in die Landschaft generativer KI in der dualen Ausbildung steht im Beitrag zur [KI in der Ausbildung](/de/blog/ki-in-der-ausbildung).
+
+
+## Häufig gestellte Fragen
+
+### Darf ich als Ausbilder ChatGPT mit Azubi-Daten benutzen?
+
+Mit dem privaten ChatGPT-Account regelmäßig nicht. Es fehlt der Auftragsverarbeitungsvertrag nach Art. 28 DSGVO zwischen Ihrem Arbeitgeber und OpenAI, und in der kostenlosen Version werden Eingaben standardmäßig zur Modellverbesserung herangezogen, sofern dies nicht aktiv in den Datenkontrollen deaktiviert wird. Für den dienstlichen Einsatz braucht es einen ChatGPT-Team- oder Enterprise-Vertrag des Arbeitgebers, idealerweise mit EU-Daten-Residenz, oder ein vertikales Tool mit eigenem AVV.
+
+### Was ist ein Auftragsverarbeitungsvertrag (AVV) und brauche ich ihn wirklich?
+
+Der AVV nach Art. 28 DSGVO ist verpflichtend, sobald ein externer Anbieter personenbezogene Daten in Ihrem Auftrag verarbeitet. Ohne AVV ist die Verarbeitung formal rechtswidrig, unabhängig davon, wie sicher der Anbieter tatsächlich arbeitet. Seriöse B2B-KI-Anbieter stellen einen Mustervertrag bereit, der Verarbeitungszweck, Daten-Kategorien, Pflichten und Unterauftragsverarbeiter klar benennt.
+
+### Reicht es, wenn das KI-Tool auf EU-Servern liegt?
+
+Hosting in der EU ist eine notwendige, aber keine hinreichende Bedingung. Entscheidend ist zusätzlich, ob die Unterauftragsverarbeiter (insbesondere das eigentliche Sprachmodell) ebenfalls in der EU sitzen oder ob Daten an US-Anbieter weitergegeben werden. Ein EU-Frontend mit US-Backend löst das Drittlandsproblem nicht und führt regelmäßig zu derselben Diskussion, die Schrems II angestoßen hat.
+
+### Brauche ich eine Datenschutz-Folgenabschätzung (DSFA), wenn ich KI mit Azubi-Daten einsetze?
+
+In den meisten Fällen ja. Art. 35 Abs. 1 DSGVO verlangt eine DSFA bei voraussichtlich hohem Risiko, insbesondere beim Einsatz neuer Technologien. Art. 35 Abs. 3 Buchstabe a) nennt darüber hinaus explizit die systematische und umfassende Bewertung persönlicher Aspekte auf Basis automatisierter Verarbeitung. KI-gestützte Lern- und Bewertungssysteme im Ausbildungsverhältnis erfüllen beide Voraussetzungen typischerweise.
+
+### Auf welcher Rechtsgrundlage dürfen Auszubildende ein KI-Tool nutzen, das ich bereitstelle?
+
+In der Regel auf § 26 Abs. 1 BDSG, also der Verarbeitung im Beschäftigungsverhältnis, sofern der Einsatz für die Durchführung des Ausbildungsverhältnisses erforderlich ist. Eine Einwilligung nach Art. 6 Abs. 1 Buchstabe a) DSGVO ist im Beschäftigungskontext meist nicht das Mittel der Wahl, weil die Freiwilligkeit angesichts des Abhängigkeitsverhältnisses regelmäßig fraglich ist.
+
+### Was unterscheidet ein vertikales Ausbildungs-Tool von einem allgemeinen KI-Assistenten?
+
+Vertikale Tools für die Ausbildung bringen Rollenmodelle (Ausbilder, Auszubildende, Berufsschullehrer), einen Bezug zu Ausbildungsrahmenplan und Berichtsheft sowie eng definierte Verarbeitungszwecke mit. Sie sind dadurch nicht nur funktional näher am Use Case, sondern auch leichter DSGVO-dokumentierbar als ein generischer Allzweck-Chatbot, dessen Verarbeitungszweck per Definition offen bleibt.
+
+### Wie überprüfe ich, ob ein Anbieter wirklich DSGVO-konform ist?
+
+Die kurze Antwort: Lassen Sie sich Auftragsverarbeitungsvertrag, die Liste der Unterauftragsverarbeiter, die Dokumentation der technisch-organisatorischen Maßnahmen nach Art. 32 DSGVO sowie die Hosting-Region schriftlich bestätigen. Werbeaussagen ohne vertragliche Anlage zählen nicht. Die längere Antwort liefert der Sieben-Punkte-Check weiter oben in diesem Beitrag.
+
+---
+
 # Zeit sparen bei der Azubi-Betreuung: Leitfaden für Ausbilder und Teamleads
 
 Source: https://learnslice.com/de/blog/azubi-betreuung-zeit-sparen
@@ -2267,9 +2597,9 @@ Als Kapazitätsrückgewinnung. Ein Ausbilder, der einen erheblichen Teil seiner 
 Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
 Published: 2026-05-04
-Updated: 2026-05-13
+Updated: 2026-05-26
 
-Ausbildungsrahmenplan: Definition, Aufbau, Umsetzung im Betrieb. Wie aus dem Rechtstext ein tragfähiger betrieblicher Ausbildungsplan entsteht.
+Was steht im Ausbildungsrahmenplan? Aufbau, sachliche und zeitliche Gliederung und der konkrete Weg zum betrieblichen Ausbildungsplan in fünf Schritten.
 
 ## Auf einen Blick
 
@@ -2289,7 +2619,9 @@ Trotzdem wird der Ausbildungsrahmenplan in der Praxis häufig mit dem **betriebl
 
 ## Was ist der Ausbildungsrahmenplan? Definition und rechtliche Grundlage
 
-Der Ausbildungsrahmenplan ist Teil der **Ausbildungsordnung** des jeweiligen Berufs. Ausbildungsordnungen sind Rechtsverordnungen des Bundes; sie werden nach § 4 [BBiG](https://www.gesetze-im-internet.de/bbig_2005/__4.html) vom zuständigen Fachministerium im Einvernehmen mit dem für Bildung und Berufsbildung zuständigen Bundesministerium erlassen und im Bundesgesetzblatt veröffentlicht. Die rechtliche Grundlage für den Inhalt der Ausbildungsordnung ist § 5 des Berufsbildungsgesetzes (BBiG).
+Der Ausbildungsrahmenplan ist der rechtlich verbindliche Mindeststandard für die betriebliche Ausbildung eines anerkannten Ausbildungsberufs. Er ist Teil der **Ausbildungsordnung** und legt fest, welche Fertigkeiten, Kenntnisse und Fähigkeiten ein Ausbildungsbetrieb über die gesamte Ausbildungsdauer hinweg vermitteln muss, gegliedert nach Lerngebieten und Ausbildungsjahren.
+
+Ausbildungsordnungen sind Rechtsverordnungen des Bundes; sie werden nach § 4 [BBiG](https://www.gesetze-im-internet.de/bbig_2005/__4.html) vom zuständigen Fachministerium im Einvernehmen mit dem für Bildung und Berufsbildung zuständigen Bundesministerium erlassen und im Bundesgesetzblatt veröffentlicht. Die rechtliche Grundlage für den Inhalt der Ausbildungsordnung ist § 5 des Berufsbildungsgesetzes (BBiG).
 
 § 5 Absatz 1 BBiG schreibt vor, dass eine Ausbildungsordnung mindestens Folgendes festlegen muss:
 
@@ -2469,7 +2801,7 @@ Diese Seite liefert beides: eine strukturierte, kostenlose Vorlage zum direkten 
 
 Bevor das Muster sinnvoll benutzt werden kann, gehören die Pflichtbestandteile klar. Ohne sie ist das Dokument kein Ausbildungsplan im Sinne des BBiG - egal wie hübsch die Vorlage formatiert ist.
 
-**1. Sachliche Gliederung.** Welche Fertigkeiten, Kenntnisse und Fähigkeiten werden vermittelt? Grundlage ist der Ausbildungsrahmenplan der jeweiligen Ausbildungsordnung. Er ist der rechtlich verbindliche Mindeststandard.
+**1. Sachliche Gliederung.** Welche Fertigkeiten, Kenntnisse und Fähigkeiten werden vermittelt? Grundlage ist der [Ausbildungsrahmenplan der jeweiligen Ausbildungsordnung](/de/blog/ausbildungsrahmenplan-erklaert). Er ist der rechtlich verbindliche Mindeststandard.
 
 **2. Zeitliche Gliederung.** Wann werden diese Inhalte vermittelt? Typischerweise pro Ausbildungsjahr oder -halbjahr, mit konkreten Zeiträumen.
 
@@ -2689,7 +3021,7 @@ In fast jedem Ausbildungsbetrieb gibt es dieses eine Word-Dokument: den Ausbildu
 
 Dabei ist die gesetzliche Grundlage eindeutig: § 14 Absatz 1 Nummer 1 des Berufsbildungsgesetzes ([BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)) verpflichtet Ausbildende, die Berufsausbildung "in einer durch ihren Zweck gebotenen Form planmäßig, zeitlich und sachlich gegliedert" so durchzuführen, dass das Ausbildungsziel in der vorgesehenen Zeit erreicht werden kann. Diese zeitlich und sachlich gegliederte Planung ist der betriebliche Ausbildungsplan.
 
-Das Problem fängt da an, wo die Pflicht aufhört. Die Vorlage, die Sie aus dem Internet heruntergeladen haben, kennt weder Ihre Prozesse noch Ihre Azubis. Sie kennt den Ausbildungsrahmenplan des Berufs - und sonst nichts. Das entscheidende Wissen für die Ausbildung steckt in den Köpfen Ihrer erfahrenen Mitarbeitenden, in Ihren SOPs, in den Arbeitsanweisungen am Band. Nicht in der Vorlage.
+Das Problem fängt da an, wo die Pflicht aufhört. Die Vorlage, die Sie aus dem Internet heruntergeladen haben, kennt weder Ihre Prozesse noch Ihre Azubis. Sie kennt den [Ausbildungsrahmenplan des Berufs](/de/blog/ausbildungsrahmenplan-erklaert), und sonst nichts. Das entscheidende Wissen für die Ausbildung steckt in den Köpfen Ihrer erfahrenen Mitarbeitenden, in Ihren SOPs, in den Arbeitsanweisungen am Band. Nicht in der Vorlage.
 
 Dieser Leitfaden zeigt, wie ein moderner Ausbildungsplan aussieht, der die rechtlichen Pflichten erfüllt, den [IHK](https://www.ihk.de)-Rahmenplan sauber abdeckt und zusätzlich das eigene **Unternehmenswissen** einbezieht. Und wie KI diesen Plan pro Azubi personalisieren kann, ohne dass sensible Betriebsinterna in einem öffentlichen Chatbot landen.
 
@@ -3997,7 +4329,7 @@ Bevor das Lernen beginnt, analysiert die KI den aktuellen Wissensstand des Azubi
 
 ### Schritt 2: Strukturierte Lernpfade
 
-Die Lerninhalte sind nach dem IHK-Rahmenplan strukturiert und an die regionalen Anforderungen angepasst. Jedes Thema wird in verdauliche Einheiten unterteilt:
+Die Lerninhalte sind nach dem [IHK-Rahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) strukturiert und an die regionalen Anforderungen angepasst. Jedes Thema wird in verdauliche Einheiten unterteilt:
 
 - **Theoriewissen** - Kompakte Erklärungen und Zusammenfassungen
 - **Praxisbeispiele** - Realistische Fallstudien aus dem Berufsalltag

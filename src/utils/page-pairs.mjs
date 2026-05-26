@@ -37,6 +37,7 @@ export const EN_TO_DE = {
 	'/blog/reduce-trainer-workload': '/de/blog/ausbilder-entlasten',
 	'/blog/reduce-training-costs': '/de/blog/ausbildungskosten-senken',
 	'/blog/save-time-mentoring-apprentices': '/de/blog/azubi-betreuung-zeit-sparen',
+	'/blog/apprenticeship-framework-plan-explained': '/de/blog/ausbildungsrahmenplan-erklaert',
 };
 
 // Pages that exist only in one language and therefore should not emit
@@ -47,7 +48,7 @@ export const EN_ONLY = new Set([
 
 export const DE_ONLY = new Set([
 	'/de/blog/ausbildungsplan-erstellen-ki',
-	'/de/blog/ausbildungsrahmenplan-erklaert',
+	'/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder',
 ]);
 
 const DE_TO_EN = Object.fromEntries(

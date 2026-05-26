@@ -1,0 +1,128 @@
+---
+title: "DSGVO-konforme KI-Tools für Ausbilder: Kriterien und Auswahl"
+description: "Welche KI-Tools dürfen Ausbilder DSGVO-konform einsetzen? Sieben Prüfkriterien, drei typische Fallstricke und ein realistischer Praxisvergleich."
+publishDate: 2026-05-26
+author: "LearnSlice Team"
+tags: ["DSGVO", "KI", "Ausbilder", "Datenschutz", "Compliance", "Ausbildung"]
+lang: "de"
+ogImage: "/images/blog/dsgvo-eu-compliance.png"
+keyTakeaways:
+  - "DSGVO-Konformität bei KI ist kein Tool-Label, sondern eine Kette aus Rechtsgrundlage (Art. 6 DSGVO), Auftragsverarbeitungsvertrag (Art. 28 DSGVO), technisch-organisatorischen Maßnahmen (Art. 32 DSGVO) und im Zweifel einer Datenschutz-Folgenabschätzung (Art. 35 DSGVO)."
+  - "Sieben Prüfkriterien entscheiden über die zulässige Nutzung eines KI-Tools im Ausbildungskontext: Hosting-Region, Auftragsverarbeitungsvertrag, Trainingsdaten-Opt-out, Löschkonzept, Liste der Unterauftragsverarbeiter, Protokollierung und der Umgang mit Betroffenenrechten."
+  - "Die drei häufigsten Fallstricke in der Praxis sind ein privater ChatGPT-Account auf Azubi-Daten (keine Rechtsgrundlage), KI-Erweiterungen in bestehenden Tools, die ohne Anpassung des Auftragsverarbeitungsvertrags aktiviert werden, sowie der Subunternehmer-Kette-Effekt bei EU-Frontends mit US-Backend."
+  - "Art. 22 DSGVO begrenzt automatisierte Bewertungsentscheidungen. Eine KI-gestützte Leistungsbewertung von Auszubildenden ohne menschliche Letztverantwortung ist regelmäßig unzulässig."
+  - "Praxiskonform bedeutet nicht funktional eingeschränkt. EU-gehostete vertikale Plattformen mit Auftragsverarbeitungsvertrag, Trainingsdaten-Opt-out und sauberem Rollenkonzept decken die wesentlichen Use Cases der Ausbildung ab, ohne das Datenschutz-Risiko privater Tools."
+faq:
+  - q: 'Darf ich als Ausbilder ChatGPT mit Azubi-Daten benutzen?'
+    a: 'Mit dem privaten ChatGPT-Account regelmäßig nicht. Es fehlt der Auftragsverarbeitungsvertrag nach Art. 28 DSGVO zwischen Ihrem Arbeitgeber und OpenAI, und in der kostenlosen Version werden Eingaben standardmäßig zur Modellverbesserung herangezogen, sofern dies nicht aktiv in den Datenkontrollen deaktiviert wird. Für den dienstlichen Einsatz braucht es einen ChatGPT-Team- oder Enterprise-Vertrag des Arbeitgebers, idealerweise mit EU-Daten-Residenz, oder ein vertikales Tool mit eigenem AVV.'
+  - q: 'Was ist ein Auftragsverarbeitungsvertrag (AVV) und brauche ich ihn wirklich?'
+    a: 'Der AVV nach Art. 28 DSGVO ist verpflichtend, sobald ein externer Anbieter personenbezogene Daten in Ihrem Auftrag verarbeitet. Ohne AVV ist die Verarbeitung formal rechtswidrig, unabhängig davon, wie sicher der Anbieter tatsächlich arbeitet. Seriöse B2B-KI-Anbieter stellen einen Mustervertrag bereit, der Verarbeitungszweck, Daten-Kategorien, Pflichten und Unterauftragsverarbeiter klar benennt.'
+  - q: 'Reicht es, wenn das KI-Tool auf EU-Servern liegt?'
+    a: 'Hosting in der EU ist eine notwendige, aber keine hinreichende Bedingung. Entscheidend ist zusätzlich, ob die Unterauftragsverarbeiter (insbesondere das eigentliche Sprachmodell) ebenfalls in der EU sitzen oder ob Daten an US-Anbieter weitergegeben werden. Ein EU-Frontend mit US-Backend löst das Drittlandsproblem nicht und führt regelmäßig zu derselben Diskussion, die Schrems II angestoßen hat.'
+  - q: 'Brauche ich eine Datenschutz-Folgenabschätzung (DSFA), wenn ich KI mit Azubi-Daten einsetze?'
+    a: 'In den meisten Fällen ja. Art. 35 Abs. 1 DSGVO verlangt eine DSFA bei voraussichtlich hohem Risiko, insbesondere beim Einsatz neuer Technologien. Art. 35 Abs. 3 Buchstabe a) nennt darüber hinaus explizit die systematische und umfassende Bewertung persönlicher Aspekte auf Basis automatisierter Verarbeitung. KI-gestützte Lern- und Bewertungssysteme im Ausbildungsverhältnis erfüllen beide Voraussetzungen typischerweise.'
+  - q: 'Auf welcher Rechtsgrundlage dürfen Auszubildende ein KI-Tool nutzen, das ich bereitstelle?'
+    a: 'In der Regel auf § 26 Abs. 1 BDSG, also der Verarbeitung im Beschäftigungsverhältnis, sofern der Einsatz für die Durchführung des Ausbildungsverhältnisses erforderlich ist. Eine Einwilligung nach Art. 6 Abs. 1 Buchstabe a) DSGVO ist im Beschäftigungskontext meist nicht das Mittel der Wahl, weil die Freiwilligkeit angesichts des Abhängigkeitsverhältnisses regelmäßig fraglich ist.'
+  - q: 'Was unterscheidet ein vertikales Ausbildungs-Tool von einem allgemeinen KI-Assistenten?'
+    a: 'Vertikale Tools für die Ausbildung bringen Rollenmodelle (Ausbilder, Auszubildende, Berufsschullehrer), einen Bezug zu Ausbildungsrahmenplan und Berichtsheft sowie eng definierte Verarbeitungszwecke mit. Sie sind dadurch nicht nur funktional näher am Use Case, sondern auch leichter DSGVO-dokumentierbar als ein generischer Allzweck-Chatbot, dessen Verarbeitungszweck per Definition offen bleibt.'
+  - q: 'Wie überprüfe ich, ob ein Anbieter wirklich DSGVO-konform ist?'
+    a: 'Die kurze Antwort: Lassen Sie sich Auftragsverarbeitungsvertrag, die Liste der Unterauftragsverarbeiter, die Dokumentation der technisch-organisatorischen Maßnahmen nach Art. 32 DSGVO sowie die Hosting-Region schriftlich bestätigen. Werbeaussagen ohne vertragliche Anlage zählen nicht. Die längere Antwort liefert der Sieben-Punkte-Check weiter oben in diesem Beitrag.'
+---
+
+![EU-Sterne, Vorhängeschloss mit Compliance-Plakette und digitale Europakarte mit Deutschland als Sinnbild für DSGVO-konforme KI-Tools](/images/blog/dsgvo-eu-compliance.webp)
+
+## DSGVO-konforme KI-Tools für Ausbilder: Warum die Frage 2026 keine theoretische mehr ist
+
+Die Datenschutz-Grundverordnung (DSGVO) ist seit acht Jahren in Kraft, ChatGPT seit dreieinhalb. Die Schnittmenge **DSGVO-konforme KI-Tools für Ausbilder** ist im Jahr 2026 keine akademische Diskussion mehr. Die Landesdatenschutzbehörden haben begonnen, Beschäftigtendatenverarbeitung mit generativer KI systematisch zu prüfen, die Industrie- und Handelskammern fragen bei Ausbildungsbetrieben gezielt nach Datenschutzkonzepten für eingesetzte Lernsoftware, und der EU AI Act ergänzt die DSGVO um eigene Pflichten, die für Hochrisiko-Anwendungen im Beschäftigungs- und Bildungskontext besonders relevant sind.
+
+Stand: Mai 2026. Geltende Rechtslage in Deutschland und EU.
+
+Für Ausbilderinnen und Ausbilder, die einen ChatGPT-Tab offen haben und gleichzeitig Berichtsheft-Feedback formulieren wollen, ist die Lage damit unangenehm konkret geworden. Dieser Beitrag legt sieben Prüfkriterien offen, die über die Zulässigkeit eines KI-Tools entscheiden, benennt drei Fallstricke aus der betrieblichen Praxis und ordnet die wichtigsten Kategorien von KI-Werkzeugen so ein, dass eine fundierte Auswahl möglich wird, auch ohne eigene Rechtsabteilung.
+
+## Was bedeutet "DSGVO-konform" bei einem KI-Tool im Ausbildungskontext?
+
+DSGVO-Konformität bei einem KI-Tool ist kein Siegel, das man aufkleben kann. Sie ist eine Kette aus vier Elementen, die alle vorliegen müssen: eine **Rechtsgrundlage** nach Art. 6 Abs. 1 DSGVO, ein **Auftragsverarbeitungsvertrag** nach Art. 28 DSGVO mit dem Anbieter, dokumentierte **technisch-organisatorische Maßnahmen** nach Art. 32 DSGVO und, im Regelfall, eine **Datenschutz-Folgenabschätzung** nach Art. 35 DSGVO. Fehlt ein Glied, ist die Verarbeitung rechtswidrig.
+
+Im Ausbildungskontext kommt eine Besonderheit hinzu. Auszubildende sind nach § 26 Bundesdatenschutzgesetz (BDSG) Beschäftigte. Datenverarbeitungen im Ausbildungsverhältnis stützen sich daher in aller Regel nicht auf eine Einwilligung, sondern auf § 26 Abs. 1 BDSG: zulässig, soweit für die Durchführung des Ausbildungsverhältnisses erforderlich. Diese Einschränkung ist der eigentliche Hebel. Sie zwingt zur Konkretisierung des Verarbeitungszwecks. Ein Allzweck-Chatbot ohne Use-Case-Eingrenzung leistet das schwerer als ein vertikales Werkzeug für die Ausbildung.
+
+## Die sieben Prüfkriterien im Detail
+
+Sieben Kriterien lassen sich aus DSGVO, BDSG und der gängigen Aufsichtspraxis ableiten. Sie ergeben zusammen den Mindeststandard, den ein Tool erfüllen muss, bevor es im Betrieb auf Azubi-Daten losgelassen wird.
+
+1. **Hosting-Region.** Wo läuft der Dienst physisch? EU-Hosting reduziert das Drittlandsrisiko, beseitigt es aber nur dann, wenn auch die Modellverarbeitung in der EU stattfindet.
+2. **Auftragsverarbeitungsvertrag.** Liegt ein AVV nach Art. 28 DSGVO vor, der Verarbeitungsgegenstand, -dauer, Art und Zweck, Datenkategorien sowie Betroffene benennt? Ohne diesen Vertrag ist die Verarbeitung formal unzulässig.
+3. **Trainingsdaten-Opt-out.** Werden Eingaben für das Modelltraining verwendet? Wenn ja, lässt sich das vertraglich und technisch deaktivieren? OpenAI bietet das für ChatGPT-Team und Enterprise standardmäßig, in der kostenlosen Version nur per Datenkontrollen-Einstellung.
+4. **Löschkonzept.** Werden Daten nach Vertragsende oder nach Ablauf einer definierten Aufbewahrungsfrist tatsächlich gelöscht, und wird das nachweislich dokumentiert?
+5. **Unterauftragsverarbeiter.** Welche Sub-Prozessoren sind eingebunden? Art. 28 Abs. 2 DSGVO verlangt eine vorherige schriftliche Genehmigung des Verantwortlichen, bevor ein weiterer Auftragsverarbeiter eingesetzt wird.
+6. **Protokollierung.** Existiert ein Audit-Log, das nachweist, wer wann welche personenbezogenen Daten verarbeitet hat? Ohne dieses Log lassen sich Auskunfts- und Löschpflichten praktisch nicht erfüllen.
+7. **Betroffenenrechte.** Wie werden Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO) und Widerspruch (Art. 21 DSGVO) operativ umgesetzt? Ein Anbieter, der hier nur auf das Formular auf seiner Webseite verweist, hat keinen funktionierenden Prozess.
+
+Diese sieben Punkte sind keine Wunschliste. Sie sind die Mindestanforderungen, die jeder seriöse B2B-Anbieter schriftlich beantworten kann. Wer auf eine dieser Fragen ausweichend reagiert, fällt durch.
+
+## Drei Fallstricke, die in der Praxis am häufigsten passieren
+
+In den Datenschutzberatungen rund um KI in der Ausbildung tauchen drei Fehlerbilder immer wieder auf. Sie sind nicht exotisch, sondern Folge naheliegender, gut gemeinter Entscheidungen.
+
+**Erstens: der private ChatGPT-Account auf Azubi-Daten.** Ein Ausbilder loggt sich mit seinem privaten Account ein und füttert ChatGPT mit dem Berichtsheft-Eintrag eines Auszubildenden, um Formulierungshilfe zu bekommen. Es gibt keine Rechtsgrundlage. Der Arbeitgeber hat OpenAI nicht beauftragt, keinen AVV geschlossen und auch keine Information nach Art. 13 DSGVO erteilt. Selbst wenn niemand merkt, was passiert ist: Die Verarbeitung ist unzulässig. Wer das anders sieht, sollte sich vergegenwärtigen, dass im kostenlosen Plan die Eingaben standardmäßig zum Modelltraining verwendet werden, sofern man dies nicht selbst deaktiviert.
+
+**Zweitens: aktivierte KI-Funktionen in bestehenden Tools.** Microsoft Copilot wird in einem bestehenden Microsoft-365-Tenant aktiviert, weil das Unternehmen ohnehin Microsoft-Lizenzen hat. Der bestehende AVV mit Microsoft deckt jedoch nicht automatisch die Copilot-Verarbeitung ab. Eine Erweiterung ist erforderlich, und je nach Datenfluss auch eine eigene Folgenabschätzung. Dasselbe Muster zeigt sich bei "KI-Erweiterungen" in HR- und LMS-Systemen.
+
+**Drittens: EU-Frontend, US-Backend.** Ein Anbieter wirbt mit "EU-Hosting" und meint damit den Web-Auftritt und die Benutzerdatenbank. Das eigentliche Sprachmodell läuft jedoch über eine API in den USA. Damit findet eine Datenübermittlung in ein Drittland statt, mit allen Konsequenzen, die Schrems II für solche Konstellationen aufgestellt hat. Standardvertragsklauseln allein heilen das nicht, wenn der Anbieter dem US Cloud Act unterliegt.
+
+## Welche KI-Funktionen Ausbilder im Alltag wirklich brauchen
+
+Bevor Sie ein Tool auswählen, fixieren Sie den Use Case. Die meisten Ausbilder benötigen nicht "KI", sondern eine konkrete Funktion. In der Beratungspraxis bei Mittelständlern kristallisieren sich fünf wiederkehrende Anwendungsfelder heraus.
+
+- Erstellung individueller Lernpfade entlang des [Ausbildungsrahmenplans](/de/blog/ausbildungsrahmenplan-erklaert) für einen konkreten Azubi
+- Formulierungshilfe für Feedback auf Berichtsheft-Einträge, ohne das [digitale Berichtsheft](/de/blog/berichtsheft-digital) selbst zu verlassen
+- Generierung von Prüfungsfragen entlang der Standardberufsbildpositionen für die IHK-Zwischenprüfung
+- FAQ-Assistent für wiederkehrende Azubi-Rückfragen, der das interne Wissen aus Wiki, SOP und Handbuch zusammenführt
+- Strukturhilfe für Ausbilder bei der Übersetzung des bundesweiten Rahmenplans in den [betrieblichen Ausbildungsplan, der per KI gestützt entsteht](/de/blog/ausbildungsplan-erstellen-ki)
+
+Diese Use Cases sind eng. Sie zwingen den Anbieter dazu, Verarbeitungszweck und Datenfluss zu beschreiben. Genau das macht sie DSGVO-dokumentierbar. Ein Allzweck-Chatbot ohne Zweckeingrenzung erfüllt diese Anforderung nicht von selbst. Er muss organisatorisch erst dazu gezwungen werden.
+
+## Kategorien von KI-Tools im Vergleich
+
+Drei Kategorien dominieren den Markt im Jahr 2026. Sie unterscheiden sich nicht primär in der Modellqualität, sondern in der Schärfe des Verarbeitungszwecks und der Dokumentationstiefe.
+
+| Kategorie | Typischer Use Case | AVV-Verfügbarkeit | DSGVO-Risiko | Funktionsbreite |
+|---|---|---|---|---|
+| Allzweck-Chatbots (ChatGPT Team, Copilot, Claude) | Recherche, Formulierung, generische Texte | Vorhanden für Team-/Enterprise-Tarife | Mittel bis hoch, abhängig von Hosting und Sub-Prozessoren | Sehr breit, dafür Verarbeitungszweck offen |
+| EU-gehostete LLM-Plattformen (Aleph Alpha, Mistral via Scaleway) | Eigenentwicklung interner KI-Funktionen | Vorhanden, mit EU-Sub-Prozessor-Kette | Niedrig bis mittel | Hoch, erfordert eigene Implementierung |
+| Vertikale Ausbildungs-Plattformen (z. B. LearnSlice) | Lernpfade, Berichtsheft-Feedback, Prüfungsfragen | Vertraglich Bestandteil, AVV mit Verarbeitungsverzeichnis | Niedrig, weil Zweck definiert | Auf den Ausbildungs-Use-Case zugeschnitten |
+
+Die Einordnung ist bewusst grobkörnig. Sie ersetzt nicht die individuelle Prüfung, hilft aber bei der Vorauswahl. Wer einen detaillierten Vergleich mit konkreten Anbietern braucht, findet eine bewertete Übersicht unter [LearnSlice im Vergleich zu simpleclub](/de/learnslice-vs-simpleclub) und ergänzend in der [Marktübersicht zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
+
+## Auftragsverarbeitung und die Subunternehmer-Kette: der unterschätzte Hebel
+
+Art. 28 Abs. 3 DSGVO verlangt einen Vertrag, "der bzw. das den Auftragsverarbeiter in Bezug auf den Verantwortlichen bindet" und Gegenstand, Dauer, Art und Zweck der Verarbeitung sowie die Pflichten und Rechte des Verantwortlichen festlegt. Das klingt formal. Operativ steckt darin der Punkt, an dem die meisten KI-Einführungen kippen.
+
+Ein moderner KI-Stack besteht selten aus einem einzigen Anbieter. Typisch ist eine Kette: Sie nutzen ein vertikales Tool, das Tool ruft eine API eines LLM-Anbieters auf, der LLM-Anbieter wiederum hostet bei einem Hyperscaler. Jedes Glied dieser Kette ist ein potenzieller Unterauftragsverarbeiter, der gemäß Art. 28 Abs. 2 DSGVO vom Verantwortlichen genehmigt sein muss. Ein seriöser Anbieter legt diese Kette offen, benennt jeden Sub-Prozessor mit Sitzland und Verarbeitungszweck und informiert Sie, bevor sich daran etwas ändert. Ein nicht so seriöser Anbieter verweist auf seine Datenschutzerklärung und überlässt die Recherche Ihnen.
+
+Die Prüfung der Subunternehmer-Kette ist die Stelle, an der "DSGVO-konform" im Werbetext und "DSGVO-konform" im Vertrag spürbar auseinanderlaufen. Wer hier hartnäckig nachfragt, sortiert die Spreu vom Weizen schneller als jede Demo es kann.
+
+## Sonderfall Art. 22 DSGVO: Wo automatisierte KI-Entscheidungen unzulässig sind
+
+Art. 22 Abs. 1 DSGVO räumt der betroffenen Person das Recht ein, keiner Entscheidung unterworfen zu werden, die ausschließlich auf automatisierter Verarbeitung (einschließlich Profiling) beruht und ihr gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt. Für die Ausbildung ist das hochrelevant.
+
+Eine KI-gestützte Leistungsbewertung, die ohne menschliche Letztverantwortung über Übernahme, Probezeitverlängerung oder Versetzung in einen anderen Ausbildungsbereich entscheidet, fällt unter dieses Verbot. Selbst die Bewertung von Berichtsheft-Einträgen mit automatisierter Notenempfehlung berührt die Grenze, sobald die Empfehlung faktisch eins zu eins übernommen wird und der Mensch nur noch nickt. Die DSGVO verlangt eine substanzielle menschliche Prüfung, nicht eine formale.
+
+Art. 22 Abs. 2 DSGVO kennt Ausnahmen (Vertragsbezug, gesetzliche Erlaubnis, ausdrückliche Einwilligung), Art. 22 Abs. 3 verlangt für zwei dieser Ausnahmen mindestens "das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung". Praktisch heißt das: Eine KI darf Vorschläge machen, der Mensch entscheidet, und der Auszubildende kann widersprechen. Wer das Verhältnis umdreht, baut ein juristisches Problem ein, das niemand sieht, bis es jemand sieht.
+
+## Fünf-Schritte-Auswahlpfad für Ausbilder ohne IT-Abteilung
+
+Die meisten Mittelstands-Ausbildungsbetriebe haben weder einen eigenen Datenschutzbeauftragten in Vollzeit noch eine KI-Strategie auf Vorstandsebene. Für diese Realität funktioniert ein pragmatischer Auswahlpfad in fünf Schritten besser als ein Lastenheft.
+
+1. **Use Case fixieren.** Schreiben Sie in einem Satz auf, was Sie mit dem Tool erreichen wollen. Wenn das nicht in einen Satz passt, ist der Verarbeitungszweck zu unscharf.
+2. **AVV anfragen, bevor Sie testen.** Verlangen Sie das AVV-Muster vor dem ersten Test, nicht danach. Wer keinen AVV liefert, ist raus.
+3. **Hosting und Sub-Prozessoren prüfen.** Lassen Sie sich die Liste der Unterauftragsverarbeiter mit Sitzland geben. Achten Sie auf EU-Frontend / US-Backend-Konstellationen.
+4. **Trainingsdaten-Opt-out vertraglich absichern.** "Wir verwenden Ihre Daten nicht für Training" gehört in den AVV oder in eine Vertragsanlage, nicht in eine Marketingbroschüre.
+5. **DSFA-Bedarf klären.** Wenn die Verarbeitung Beschäftigtendaten in nennenswertem Umfang berührt oder Bewertungselemente enthält, ist eine DSFA nach Art. 35 DSGVO regelmäßig erforderlich. Dafür gibt es Vorlagen bei den Landesdatenschutzbehörden.
+
+Dieser Pfad ersetzt keine Rechtsberatung. Er filtert aber rund neunzig Prozent der Tools heraus, die sich bei genauerem Hinsehen als nicht ausbildungstauglich erweisen. Für den Rest beginnt die eigentliche fachliche Bewertung. Wer hier zusätzlich [seine Ausbilder operativ entlasten](/de/blog/ausbilder-entlasten) möchte, wird die Kombination aus klarer Compliance-Linie und scharfem Use Case nicht nur als Pflicht erleben, sondern als Beschleuniger.
+
+## Fazit: Compliance ist kein Funktionsverzicht
+
+Die Vorstellung, dass DSGVO-Konformität KI-Tools langweilig oder leistungsschwach mache, hält der Praxis nicht stand. Vertikale, EU-gehostete Plattformen mit AVV, Trainingsdaten-Opt-out und sauberem Rollenkonzept liefern den Funktionsumfang, den Ausbilder brauchen. Sie liefern ihn ohne das juristische Restrisiko, das ein privater ChatGPT-Tab auf einem Konferenzlaptop mit sich bringt. Die Compliance-Anforderungen sind eine Filterfunktion, nicht ein Verbot. Wer den Filter ernst nimmt, hat am Ende einen engeren, aber besseren Werkzeugkasten.
+
+Wer prüfen möchte, wie eine vertikale Ausbildungsplattform diese sieben Kriterien konkret abdeckt (mit AVV, EU-Hosting und Use-Case-spezifischem Datenfluss), findet eine ausführliche Übersicht und einen Demo-Zugang unter [LearnSlice für Unternehmen](/de/companies). Eine breitere Einordnung in die Landschaft generativer KI in der dualen Ausbildung steht im Beitrag zur [KI in der Ausbildung](/de/blog/ki-in-der-ausbildung).
