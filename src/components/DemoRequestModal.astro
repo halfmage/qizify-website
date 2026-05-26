@@ -140,6 +140,16 @@ const consent = consentText[currentLang];
 					{currentLang === 'en' ? 'Get My Free Demo' : 'Kostenlose Demo sichern'}
 				</button>
 			</form>
+
+			<div class="flex items-center gap-3 my-6 text-xs text-muted">
+				<div class="flex-1 border-t border-border-light"></div>
+				<span>{currentLang === 'en' ? 'or' : 'oder'}</span>
+				<div class="flex-1 border-t border-border-light"></div>
+			</div>
+
+			<a href="https://calendly.com/learnslice-team/30min" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-2.5 border border-border-light rounded-lg text-sm font-medium text-muted hover:text-white hover:border-white/30 transition-colors">
+				{currentLang === 'en' ? 'Pick a 30-min slot directly →' : 'Direkt einen 30-Min-Termin wählen →'}
+			</a>
 		</div>
 	</div>
 </div>
