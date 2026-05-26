@@ -7,6 +7,12 @@ interface HeroStat {
 	label: string;
 }
 
+interface HeroTestimonial {
+	pullQuote?: string;
+	name: string;
+	company: string;
+}
+
 interface Props {
 	badge: string;
 	headline: string;
@@ -14,10 +20,11 @@ interface Props {
 	ctaPrimary: string;
 	ctaSecondary: string;
 	stats?: HeroStat[];
+	testimonial?: HeroTestimonial;
 	currentLang: 'en' | 'de';
 }
 
-const { badge, headline, subheadline, ctaPrimary, ctaSecondary, stats = [], currentLang } = Astro.props;
+const { badge, headline, subheadline, ctaPrimary, ctaSecondary, stats = [], testimonial, currentLang } = Astro.props;
 
 const headlineLines = headline.split('\n');
 ---
@@ -120,6 +127,19 @@ const headlineLines = headline.split('\n');
 						</>
 					))}
 				</ul>
+			)}
+
+			{testimonial && testimonial.pullQuote && (
+				<figure class="max-w-xl mx-auto mt-2 text-center">
+					<blockquote class="text-sm text-white/90 italic m-0 leading-relaxed">
+						{currentLang === 'de'
+							? `„${testimonial.pullQuote}“`
+							: `"${testimonial.pullQuote}"`}
+					</blockquote>
+					<figcaption class="text-xs text-muted mt-2 not-italic">
+						{testimonial.name} · {testimonial.company}
+					</figcaption>
+				</figure>
 			)}
 		</div>
 
