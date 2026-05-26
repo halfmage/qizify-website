@@ -65,7 +65,7 @@ const currentPath = '/companies';
 				<div class="relative max-w-lg lg:max-w-none mx-auto w-full">
 					<img
 						src="/images/screenshots/learnslice-copilot-02.jpg"
-						alt="LearnSlice AI Co-Pilot generating a personalized React learning path with structured modules and quiz cards"
+						alt="LearnSlice AI Co-Pilot generating a personalized learning path with structured modules and quiz cards"
 						class="w-full h-auto rounded-xl border border-border-light shadow-2xl shadow-primary/10"
 						loading="eager"
 						width="1440"
@@ -73,10 +73,10 @@ const currentPath = '/companies';
 					/>
 					<figure class="mt-6 pl-4 border-l-2 border-primary/50">
 						<blockquote class="text-sm text-white/90 italic m-0 leading-relaxed">
-							"The team quickly transformed our materials into precise, effective quizzes. We're very satisfied with LearnSlice."
+							"{enContent.testimonials.items[0].pullQuote}"
 						</blockquote>
 						<figcaption class="text-xs text-muted mt-2 not-italic">
-							Lienne Julie Wolff · Tremonia Mobility GmbH
+							{enContent.testimonials.items[0].name} · {enContent.testimonials.items[0].company}
 						</figcaption>
 					</figure>
 				</div>
@@ -159,7 +159,7 @@ const currentPath = '/companies';
 
 	<a
 		href="#demo-request"
-		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-3 text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
+		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
 	>
 		Book My Free Demo
 	</a>

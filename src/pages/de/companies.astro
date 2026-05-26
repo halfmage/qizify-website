@@ -55,10 +55,10 @@ const currentPath = '/de/companies';
 					/>
 					<figure class="mt-6 pl-4 border-l-2 border-primary/50">
 						<blockquote class="text-sm text-white/90 italic m-0 leading-relaxed">
-							„Das Team hat unsere Materialien schnell in präzise, effektive Quizfragen umgesetzt. Wir sind sehr zufrieden mit LearnSlice."
+							„{deContent.testimonials.items[0].pullQuote}“
 						</blockquote>
 						<figcaption class="text-xs text-muted mt-2 not-italic">
-							Lienne Julie Wolff · Tremonia Mobility GmbH
+							{deContent.testimonials.items[0].name} · {deContent.testimonials.items[0].company}
 						</figcaption>
 					</figure>
 				</div>
@@ -87,7 +87,7 @@ const currentPath = '/de/companies';
 
 	<a
 		href="#demo-request"
-		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-3 text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
+		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
 	>
 		Kostenlose Demo buchen
 	</a>

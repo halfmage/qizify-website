@@ -103,7 +103,7 @@ The AI mentor handles standard knowledge and daily practice: experts focus on va
 
 ### Agencies (IHK · HWK · Economic Development Agencies)
 
-- Makes modern training affordable for SMEs and resource-constrained companies. Shared license models enable AI mentoring without internal budgets or IT capacity.
+- Makes apprenticeship training affordable for SMEs and resource-constrained companies. Shared license models enable AI mentoring without internal budgets or IT capacity.
 - Reduces apprenticeship dropouts measurably (−10–15 %). Job-relevant tasks and exam-level simulations stabilise apprentices in daily work and training.
 - Relieves overloaded trainers in SMEs (−45–50 % supervision effort).
 
@@ -302,7 +302,7 @@ Der KI-Mentor übernimmt Standardwissen und Routinepraxis. Erfahrene Mitarbeiten
 
 ### IHK & Förderung (IHK · HWK · Wirtschaftsförderung)
 
-- Modernes Training für KMU bezahlbar machen. Geförderte Lizenzmodelle ermöglichen KI-Mentoring ohne internes Budget oder IT-Kapazitäten.
+- Ausbildung für KMU bezahlbar machen. Geförderte Lizenzmodelle ermöglichen KI-Mentoring ohne internes Budget oder IT-Kapazitäten.
 - Abbrüche in der Ausbildung messbar senken (−10–15 %). Jobrelevante Aufgaben und prüfungsnahe Simulationen stabilisieren Azubis im Arbeitsalltag.
 - Entlastung überlasteter Ausbilder in KMU (−45–50 % Betreuungsaufwand).
 
