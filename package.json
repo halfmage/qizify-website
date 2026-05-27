@@ -7,10 +7,12 @@
     "dev:fresh": "rm -rf .astro node_modules/.astro && astro dev",
     "build": "astro build",
     "prebuild": "node scripts/check-pairs.mjs && node scripts/generate-llms-full.mjs",
+    "postbuild": "node scripts/ping-indexnow.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check:pairs": "node scripts/check-pairs.mjs",
-    "generate:llms-full": "node scripts/generate-llms-full.mjs"
+    "generate:llms-full": "node scripts/generate-llms-full.mjs",
+    "ping:indexnow": "node scripts/ping-indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.14",
