@@ -5,7 +5,7 @@
 > See https://learnslice.com/llms.txt for the structured site index.
 > Documents are delimited by level-1 headings and include canonical URLs.
 
-# Apprentices Without Direction. Trainers at Their Limit. This Has to Change.
+# Apprentices who deliver. Trainers who can breathe.
 
 Source: https://learnslice.com
 Language: en
@@ -13,9 +13,9 @@ Type: Marketing homepage
 
 AI-Powered Apprenticeship Training
 
-From onboarding to IHK exam: AI learning paths plus your company knowledge in one platform.
+AI learning paths plus your company knowledge, from onboarding to IHK exam.
 
-**Proof points:** €15K — saved per apprentice · 50% — less trainer time · 65% — faster to productivity
+**Proof points:** Up to €15K — saved per apprentice · 50% — less trainer time · 65% — faster to productivity
 
 ## Training Is Broken. The Numbers Prove It.
 
@@ -26,7 +26,7 @@ From onboarding to IHK exam: AI learning paths plus your company knowledge in on
 ### Companies Without LearnSlice
 
 - Apprentices need around 6 months to productivity
-- 8–12 hrs of trainer time per apprentice weekly
+- 8-12 hrs of trainer time per apprentice weekly
 - 30 % dropout
 - Delayed revenue from slow productivity
 
@@ -82,10 +82,10 @@ Points, badges, and leaderboards turn daily practice into a motivating experienc
 
 ### Information Technology
 
-- IT Specialist – System Integration
-- IT Specialist – Application Development
-- IT Specialist – Digital Networking
-- IT Specialist – Data and Process Analysis
+- IT Specialist, System Integration
+- IT Specialist, Application Development
+- IT Specialist, Digital Networking
+- IT Specialist, Data and Process Analysis
 
 ### Technical Trades
 
@@ -104,14 +104,14 @@ The AI mentor handles standard knowledge and daily practice: experts focus on va
 ### Agencies (IHK · HWK · Economic Development Agencies)
 
 - Makes apprenticeship training affordable for SMEs and resource-constrained companies. Shared license models enable AI mentoring without internal budgets or IT capacity.
-- Reduces apprenticeship dropouts measurably (−10–15 %). Job-relevant tasks and exam-level simulations stabilise apprentices in daily work and training.
-- Relieves overloaded trainers in SMEs (−45–50 % supervision effort).
+- Reduces apprenticeship dropouts measurably (10-15 %). Job-relevant tasks and exam-level simulations stabilise apprentices in daily work and training.
+- Relieves overloaded trainers in SMEs (45-50 % less supervision effort).
 
 The AI mentor provides daily guidance and standard instruction, enabling companies to support apprentices consistently.
 
 ### Schools (Vocational Colleges · Schools)
 
-- 15–25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high level job preparation.
+- 15-25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high level job preparation.
 - 30 % fewer dropouts in the first year of apprenticeship.
 - Up to 25 % time saved for teachers. Automated exercises, simulations and feedback reduce preparation and grading workload.
 
@@ -213,7 +213,7 @@ IHK prep. Onboarding. Upskilling. One platform. Apprentices who deliver value in
 
 ---
 
-# Azubis ohne Plan. Ausbilder am Limit. So geht Ausbildung nicht weiter.
+# Azubis, die liefern. Ausbilder, die aufatmen.
 
 Source: https://learnslice.com/de
 Language: de
@@ -221,9 +221,9 @@ Type: Marketing-Homepage
 
 KI-gestützte Ausbildungsplattform
 
-Von Einarbeitung bis IHK-Prüfung: KI-Lernpfade plus Ihr Unternehmenswissen in einer Plattform.
+KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.
 
-**Beweispunkte:** €15K — Ersparnis pro Azubi · 50 % — weniger Ausbilderzeit · 65 % — schneller einsatzbereit
+**Beweispunkte:** Bis zu €15K — Ersparnis pro Azubi · 50 % — weniger Ausbilderzeit · 65 % — schneller einsatzbereit
 
 ## Ausbildung ist kaputt. Die Zahlen belegen es.
 
@@ -234,7 +234,7 @@ Von Einarbeitung bis IHK-Prüfung: KI-Lernpfade plus Ihr Unternehmenswissen in e
 ### Unternehmen ohne LearnSlice
 
 - Produktivität: Auszubildende erst nach rund 6 Monaten einsatzfähig.
-- Betreuungsaufwand: 8–12 Std. Ausbilderzeit pro Azubi/Woche.
+- Betreuungsaufwand: 8-12 Std. Ausbilderzeit pro Azubi/Woche.
 - Abbruchquote: rund 30 % in der Ausbildung.
 - Umsatzverlust: verzögerte Produktivität bremst Erlöse.
 
@@ -311,14 +311,14 @@ Der KI-Mentor übernimmt Standardwissen und Routinepraxis. Erfahrene Mitarbeiten
 ### IHK & Förderung (IHK · HWK · Wirtschaftsförderung)
 
 - Ausbildung für KMU bezahlbar machen. Geförderte Lizenzmodelle ermöglichen KI-Mentoring ohne internes Budget oder IT-Kapazitäten.
-- Abbrüche in der Ausbildung messbar senken (−10–15 %). Jobrelevante Aufgaben und prüfungsnahe Simulationen stabilisieren Azubis im Arbeitsalltag.
-- Entlastung überlasteter Ausbilder in KMU (−45–50 % Betreuungsaufwand).
+- Abbrüche in der Ausbildung messbar senken (10-15 %). Jobrelevante Aufgaben und prüfungsnahe Simulationen stabilisieren Azubis im Arbeitsalltag.
+- Entlastung überlasteter Ausbilder in KMU (45-50 % weniger Betreuungsaufwand).
 
 Der KI-Mentor liefert tägliche Anleitung und Standardwissen, sodass Unternehmen ihre Azubis kontinuierlich unterstützen können.
 
 ### Schulen (Berufsschulen · Schulen)
 
-- 15–25 % höhere Übergangsquote in Ausbildung und Job. Praxisnahe Lernpfade machen Schüler sofort einsetzbar. Berufsschulen glänzen mit zusätzlicher Jobvorbereitung.
+- 15-25 % höhere Übergangsquote in Ausbildung und Job. Praxisnahe Lernpfade machen Schüler sofort einsetzbar. Berufsschulen glänzen mit zusätzlicher Jobvorbereitung.
 - 30 % weniger Abbrüche im ersten Ausbildungsjahr.
 - Bis zu 25 % Zeitersparnis für Lehrkräfte. Automatisierte Übungen, Simulationen und Feedback reduzieren Vorbereitungs- und Korrekturaufwand.
 
@@ -360,11 +360,11 @@ DSGVO-konform, Server in Deutschland, Lokales LLM
 
 ### Was ist der LearnSlice KI-Mentor?
 
-Ein persönlicher, chatbasierter KI-Mentor für junge Talente, der personalisiertes Onboarding, kontinuierliches Upskilling und praxisnahes Lernen im Arbeitsalltag ermöglicht – ab dem ersten Tag. Das bedeutet weniger Routinearbeit für Ihre Ausbilder und schnellere Einarbeitung für jeden neuen Azubi.
+Ein persönlicher, chatbasierter KI-Mentor für junge Talente, der personalisiertes Onboarding, kontinuierliches Upskilling und praxisnahes Lernen im Arbeitsalltag ermöglicht, ab dem ersten Tag. Das bedeutet weniger Routinearbeit für Ihre Ausbilder und schnellere Einarbeitung für jeden neuen Azubi.
 
 ### Ist der Inhalt prüfungsrelevant?
 
-Ja. Die Plattform stellt realistische IHK- und Hochschulprüfungen nach und richtet die Lernpfade an den regionalen IHK-Anforderungen aus. Kein Curriculum-Aufwand auf Ihrer Seite – alles ist bereits integriert.
+Ja. Die Plattform stellt realistische IHK- und Hochschulprüfungen nach und richtet die Lernpfade an den regionalen IHK-Anforderungen aus. Kein Curriculum-Aufwand auf Ihrer Seite, alles ist bereits integriert.
 
 ### Können wir die Inhalte für unser Unternehmen anpassen?
 
@@ -372,7 +372,7 @@ Absolut. Vorgefertigte berufsspezifische Simulationen sind sofort einsatzbereit.
 
 ### Wie personalisiert die KI das Lernen?
 
-Die KI analysiert die Fähigkeiten, Ziele und Unternehmensanforderungen jedes Lernenden, erstellt einen individuellen Lernplan und passt Aufgaben in Echtzeit an, um Wissenslücken gezielt zu schließen. Ausbilder sehen die Ergebnisse in Echtzeit-Dashboards – ohne manuelles Tracking.
+Die KI analysiert die Fähigkeiten, Ziele und Unternehmensanforderungen jedes Lernenden, erstellt einen individuellen Lernplan und passt Aufgaben in Echtzeit an, um Wissenslücken gezielt zu schließen. Ausbilder sehen die Ergebnisse in Echtzeit-Dashboards, ohne manuelles Tracking.
 
 ### Wie wird Kompetenz nachgewiesen?
 
@@ -392,7 +392,7 @@ Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deu
 
 ### Wie hilft LearnSlice, Abbrüche und Traineraufwand zu reduzieren?
 
-Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert – während Ausbilder entlastet werden. Nach unserer Berechnung sparen Unternehmen bis zu €15K pro Azubi pro Jahr.
+Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert, während Ausbilder entlastet werden. Nach unserer Berechnung sparen Unternehmen bis zu €15K pro Azubi pro Jahr.
 
 ### Wie stellen wir sicher, dass unsere Ausbilder die Plattform nutzen?
 
@@ -410,7 +410,7 @@ Der Einstieg ist schnell möglich: Die Standard-Simulationen sind sofort nutzbar
 
 Für den Erwerb einer Lizenz kontaktieren Sie uns bitte per E-Mail unter info@learnslice.com, telefonisch unter +49 1578 3914112 oder über das Kontaktformular auf unserer Website.
 
-### Ich habe eine Frage, Anmerkung oder Feedback – an wen kann ich mich wenden?
+### Ich habe eine Frage, Anmerkung oder Feedback. An wen kann ich mich wenden?
 
 Sie erreichen uns per WhatsApp/Telegram unter +49 1578 3914112, über das Kontaktformular auf unserer Website oder per E-Mail an info@learnslice.com.
 

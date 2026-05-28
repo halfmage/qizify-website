@@ -262,3 +262,45 @@ If you can share these later, the analysis tightens significantly:
 - **Simple Analytics:** top pages by visits last 30 days, bounce rate on `/companies` and `/de/companies`, referrer breakdown
 - **Netlify Forms:** total `demo-request` submissions last 30 days, time-series
 - **Together:** the actual conversion rate (submissions ÷ /companies pageviews), which tells us whether the issue is upstream traffic, the landing page itself, or the form
+
+---
+
+# Homepage Hero CRO Addendum
+### Analysis Date: 2026-05-28 — `/` and `/de`
+
+**Hero verdict: ~7.5/10.** Strong fundamentals (clear ICP, BMWE award badge, compliance
+trust line DSGVO/Server-DE/IHK, quantified outcome strip, premium dark/purple design, product
+"peek" inviting scroll). Gaps below.
+
+## Findings
+1. **Headline is 100% problem, 0% payoff.** "Azubis ohne Plan. Ausbilder am Limit. So geht
+   Ausbildung nicht weiter." — the largest element conveys only pain, and the **negative** line
+   is highlighted in brand purple (usually you highlight the transformation). The value prop lives
+   only in the subhead. Works for pain-aware traffic; risky for colder visitors. → A/B test below.
+2. **Unqualified savings stat** — hero stat said "€15K Ersparnis pro Azubi" while the rest of the
+   site (and the calculator basis) now says "Bis zu €15K". §5 consistency gap. **FIXED** →
+   `en.json`/`de.json` hero stat now "Up to €15K" / "Bis zu €15K".
+3. **No risk-reversal microcopy** under the primary demo CTA. **FIXED** → added "Unverbindlich ·
+   30 Minuten · keine Vorbereitung nötig" / "No-obligation · 30 minutes · no prep needed" under
+   the CTA group in `Hero.astro`.
+4. **Thin social proof in-slot** — "30+ Unternehmen" is modest; surface a recognizable logo or the
+   named-customer (Tremonia) testimonial in the hero. (Open.)
+5. **Loose vertical rhythm** — empty band above the H1 pushes CTAs ~60% down the viewport; tighten
+   top spacing so the CTA sits higher (esp. laptop/mobile fold). (Open.)
+
+## A/B test — headline (highest upside)
+"If we make the highlighted line the *outcome* instead of the *problem*, demo-CTA click-through
+rises, because the largest element finally answers 'what do I get'."
+
+- **A (control):** "Azubis ohne Plan. Ausbilder am Limit. So geht Ausbildung nicht weiter."
+- **B (hybrid, pain hook → outcome):** "Azubis ohne Plan? Ausbilder am Limit? **Vom ersten Tag bis
+  zur IHK-Prüfung — alles in einer Plattform.**" (purple = the outcome line)
+- **C (outcome-led):** "**Azubis, die in Wochen Leistung bringen — nicht in Monaten.**"
+- **D (value + mechanism):** "**KI-Lernpfade + Ihr Unternehmenswissen — Azubis schneller
+  einsatzbereit.**"
+
+## Prioritized
+- **Quick wins (done):** "Bis zu €15K" stat; CTA risk-reversal microcopy.
+- **High upside (next):** headline A/B test (B/C/D vs control).
+- **Medium:** surface a client logo / Tremonia testimonial in the hero; tighten hero top spacing.
+- **Needs live page:** mobile CTA fold position, page speed, below-fold flow.

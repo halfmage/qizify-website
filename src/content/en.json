@@ -29,12 +29,12 @@
   },
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",
-    "headline": "Apprentices Without Direction.\nTrainers at Their Limit. This Has to Change.",
-    "subheadline": "From onboarding to IHK exam: AI learning paths plus your company knowledge in one platform.",
+    "headline": "Apprentices who deliver.\nTrainers who can breathe.",
+    "subheadline": "AI learning paths plus your company knowledge, from onboarding to IHK exam.",
     "ctaPrimary": "Book My Free Demo",
     "ctaSecondary": "Calculate My Savings",
     "stats": [
-      { "value": "€15K", "label": "saved per apprentice" },
+      { "value": "Up to €15K", "label": "saved per apprentice" },
       { "value": "50%", "label": "less trainer time" },
       { "value": "65%", "label": "faster to productivity" }
     ]
@@ -63,7 +63,7 @@
       "title": "Companies\nWithout LearnSlice",
       "points": [
         "Apprentices need around 6 months to productivity",
-        "8–12 hrs of trainer time per apprentice weekly",
+        "8-12 hrs of trainer time per apprentice weekly",
         "30 % dropout",
         "Delayed revenue from slow productivity"
       ]
@@ -160,12 +160,12 @@
             "highlight": "Makes apprenticeship training affordable for SMEs and resource-constrained companies."
           },
           {
-            "text": "Reduces apprenticeship dropouts measurably (−10–15 %). Job-relevant tasks and exam-level simulations stabilise apprentices in daily work and training.",
-            "highlight": "Reduces apprenticeship dropouts measurably (−10–15 %)."
+            "text": "Reduces apprenticeship dropouts measurably (10-15 %). Job-relevant tasks and exam-level simulations stabilise apprentices in daily work and training.",
+            "highlight": "Reduces apprenticeship dropouts measurably (10-15 %)."
           },
           {
-            "text": "Relieves overloaded trainers in SMEs (−45–50 % supervision effort).",
-            "highlight": "Relieves overloaded trainers in SMEs (−45–50 % supervision effort)."
+            "text": "Relieves overloaded trainers in SMEs (45-50 % less supervision effort).",
+            "highlight": "Relieves overloaded trainers in SMEs (45-50 % less supervision effort)."
           }
         ],
         "note": "The AI mentor provides daily guidance and standard instruction, enabling companies to support apprentices consistently."
@@ -176,8 +176,8 @@
         "image": "/images/company-slider/schools-vocational.webp",
         "points": [
           {
-            "text": "15–25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high level job preparation.",
-            "highlight": "15–25% higher transition rate into apprenticeship and employment."
+            "text": "15-25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high level job preparation.",
+            "highlight": "15-25% higher transition rate into apprenticeship and employment."
           },
           {
             "text": "30 % fewer dropouts in the first year of apprenticeship.",
@@ -257,10 +257,10 @@
         "icon": "hugeicons:source-code",
         "title": "Information Technology",
         "professions": [
-          "IT Specialist – System Integration",
-          "IT Specialist – Application Development",
-          "IT Specialist – Digital Networking",
-          "IT Specialist – Data and Process Analysis"
+          "IT Specialist, System Integration",
+          "IT Specialist, Application Development",
+          "IT Specialist, Digital Networking",
+          "IT Specialist, Data and Process Analysis"
         ]
       },
       {

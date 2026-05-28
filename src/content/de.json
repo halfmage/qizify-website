@@ -29,12 +29,12 @@
   },
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
-    "headline": "Azubis ohne Plan. Ausbilder am Limit.\nSo geht Ausbildung nicht weiter.",
-    "subheadline": "Von Einarbeitung bis IHK-Prüfung: KI-Lernpfade plus Ihr Unternehmenswissen in einer Plattform.",
+    "headline": "Azubis, die liefern.\nAusbilder, die aufatmen.",
+    "subheadline": "KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.",
     "ctaPrimary": "Kostenlose Demo buchen",
     "ctaSecondary": "Einsparpotenzial berechnen",
     "stats": [
-      { "value": "€15K", "label": "Ersparnis pro Azubi" },
+      { "value": "Bis zu €15K", "label": "Ersparnis pro Azubi" },
       { "value": "50 %", "label": "weniger Ausbilderzeit" },
       { "value": "65 %", "label": "schneller einsatzbereit" }
     ]
@@ -63,7 +63,7 @@
       "title": "Unternehmen\nohne LearnSlice",
       "points": [
         "Produktivität: Auszubildende erst nach rund 6 Monaten einsatzfähig.",
-        "Betreuungsaufwand: 8–12 Std. Ausbilderzeit pro Azubi/Woche.",
+        "Betreuungsaufwand: 8-12 Std. Ausbilderzeit pro Azubi/Woche.",
         "Abbruchquote: rund 30 % in der Ausbildung.",
         "Umsatzverlust: verzögerte Produktivität bremst Erlöse."
       ]
@@ -160,12 +160,12 @@
             "highlight": "Ausbildung für KMU bezahlbar machen."
           },
           {
-            "text": "Abbrüche in der Ausbildung messbar senken (−10–15 %). Jobrelevante Aufgaben und prüfungsnahe Simulationen stabilisieren Azubis im Arbeitsalltag.",
-            "highlight": "Abbrüche in der Ausbildung messbar senken (−10–15 %)."
+            "text": "Abbrüche in der Ausbildung messbar senken (10-15 %). Jobrelevante Aufgaben und prüfungsnahe Simulationen stabilisieren Azubis im Arbeitsalltag.",
+            "highlight": "Abbrüche in der Ausbildung messbar senken (10-15 %)."
           },
           {
-            "text": "Entlastung überlasteter Ausbilder in KMU (−45–50 % Betreuungsaufwand).",
-            "highlight": "Entlastung überlasteter Ausbilder in KMU (−45–50 % Betreuungsaufwand)."
+            "text": "Entlastung überlasteter Ausbilder in KMU (45-50 % weniger Betreuungsaufwand).",
+            "highlight": "Entlastung überlasteter Ausbilder in KMU (45-50 % weniger Betreuungsaufwand)."
           }
         ],
         "note": "Der KI-Mentor liefert tägliche Anleitung und Standardwissen, sodass Unternehmen ihre Azubis kontinuierlich unterstützen können."
@@ -176,8 +176,8 @@
         "image": "/images/company-slider/schools-vocational.webp",
         "points": [
           {
-            "text": "15–25 % höhere Übergangsquote in Ausbildung und Job. Praxisnahe Lernpfade machen Schüler sofort einsetzbar. Berufsschulen glänzen mit zusätzlicher Jobvorbereitung.",
-            "highlight": "15–25 % höhere Übergangsquote in Ausbildung und Job."
+            "text": "15-25 % höhere Übergangsquote in Ausbildung und Job. Praxisnahe Lernpfade machen Schüler sofort einsetzbar. Berufsschulen glänzen mit zusätzlicher Jobvorbereitung.",
+            "highlight": "15-25 % höhere Übergangsquote in Ausbildung und Job."
           },
           {
             "text": "30 % weniger Abbrüche im ersten Ausbildungsjahr.",
@@ -277,11 +277,11 @@
     "items": [
       {
         "question": "Was ist der LearnSlice KI-Mentor?",
-        "answer": "Ein persönlicher, chatbasierter KI-Mentor für junge Talente, der personalisiertes Onboarding, kontinuierliches Upskilling und praxisnahes Lernen im Arbeitsalltag ermöglicht – ab dem ersten Tag. Das bedeutet weniger Routinearbeit für Ihre Ausbilder und schnellere Einarbeitung für jeden neuen Azubi."
+        "answer": "Ein persönlicher, chatbasierter KI-Mentor für junge Talente, der personalisiertes Onboarding, kontinuierliches Upskilling und praxisnahes Lernen im Arbeitsalltag ermöglicht, ab dem ersten Tag. Das bedeutet weniger Routinearbeit für Ihre Ausbilder und schnellere Einarbeitung für jeden neuen Azubi."
       },
       {
         "question": "Ist der Inhalt prüfungsrelevant?",
-        "answer": "Ja. Die Plattform stellt realistische IHK- und Hochschulprüfungen nach und richtet die Lernpfade an den regionalen IHK-Anforderungen aus. Kein Curriculum-Aufwand auf Ihrer Seite – alles ist bereits integriert."
+        "answer": "Ja. Die Plattform stellt realistische IHK- und Hochschulprüfungen nach und richtet die Lernpfade an den regionalen IHK-Anforderungen aus. Kein Curriculum-Aufwand auf Ihrer Seite, alles ist bereits integriert."
       },
       {
         "question": "Können wir die Inhalte für unser Unternehmen anpassen?",
@@ -289,7 +289,7 @@
       },
       {
         "question": "Wie personalisiert die KI das Lernen?",
-        "answer": "Die KI analysiert die Fähigkeiten, Ziele und Unternehmensanforderungen jedes Lernenden, erstellt einen individuellen Lernplan und passt Aufgaben in Echtzeit an, um Wissenslücken gezielt zu schließen. Ausbilder sehen die Ergebnisse in Echtzeit-Dashboards – ohne manuelles Tracking."
+        "answer": "Die KI analysiert die Fähigkeiten, Ziele und Unternehmensanforderungen jedes Lernenden, erstellt einen individuellen Lernplan und passt Aufgaben in Echtzeit an, um Wissenslücken gezielt zu schließen. Ausbilder sehen die Ergebnisse in Echtzeit-Dashboards, ohne manuelles Tracking."
       },
       {
         "question": "Wie wird Kompetenz nachgewiesen?",
@@ -309,7 +309,7 @@
       },
       {
         "question": "Wie hilft LearnSlice, Abbrüche und Traineraufwand zu reduzieren?",
-        "answer": "Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert – während Ausbilder entlastet werden. Nach unserer Berechnung sparen Unternehmen bis zu €15K pro Azubi pro Jahr."
+        "answer": "Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert, während Ausbilder entlastet werden. Nach unserer Berechnung sparen Unternehmen bis zu €15K pro Azubi pro Jahr."
       },
       {
         "question": "Wie stellen wir sicher, dass unsere Ausbilder die Plattform nutzen?",
@@ -328,7 +328,7 @@
         "answer": "Für den Erwerb einer Lizenz kontaktieren Sie uns bitte per E-Mail unter info@learnslice.com, telefonisch unter +49 1578 3914112 oder über das Kontaktformular auf unserer Website."
       },
       {
-        "question": "Ich habe eine Frage, Anmerkung oder Feedback – an wen kann ich mich wenden?",
+        "question": "Ich habe eine Frage, Anmerkung oder Feedback. An wen kann ich mich wenden?",
         "answer": "Sie erreichen uns per WhatsApp/Telegram unter +49 1578 3914112, über das Kontaktformular auf unserer Website oder per E-Mail an info@learnslice.com."
       }
     ]

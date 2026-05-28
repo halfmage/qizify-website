@@ -53,8 +53,8 @@ const headlineLines = headline.split('\n');
 			<!-- Trust + compliance — single row, replaces the previous two-line cluster -->
 			<p class="text-sm text-muted m-0 max-w-2xl">
 				{currentLang === 'en'
-					? 'Trusted by 30+ German companies · GDPR-compliant · German-hosted · IHK-aligned'
-					: '30+ deutsche Unternehmen vertrauen LearnSlice · DSGVO-konform · Server in Deutschland · IHK-konform'}
+					? '30+ German companies · GDPR-compliant · German-hosted · IHK-aligned'
+					: '30+ Unternehmen · DSGVO-konform · Server in Deutschland · IHK-konform'}
 			</p>
 
 			<!-- CTA group: primary, secondary, Calendly fallback -->
@@ -77,7 +77,9 @@ const headlineLines = headline.split('\n');
 					</Button>
 				</div>
 
-				<a href="https://calendly.com/learnslice-team/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm text-muted hover:text-white transition-colors">
+				<p class="text-xs text-muted/80 m-0">{currentLang === 'en' ? 'No-obligation · 30 minutes · no prep needed' : 'Unverbindlich · 30 Minuten · keine Vorbereitung nötig'}</p>
+
+					<a href="https://calendly.com/learnslice-team/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm text-muted hover:text-white transition-colors">
 					{currentLang === 'en' ? 'Or pick a 30-min slot directly' : 'Oder direkt einen 30-Min-Termin wählen'}
 					<svg class="w-3.5 h-3.5 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
 				</a>
