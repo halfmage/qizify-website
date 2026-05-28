@@ -10,12 +10,12 @@ import LeadCapture from '../components/LeadCapture.astro';
 import enContent from '../content/en.json';
 
 const lang = 'en';
-const currentPath = '/learnslice-vs-cornelsen-ecademy';
+const currentPath = '/learnslice-vs-publisher-lms';
 ---
 
 <BaseLayout
-	title="LearnSlice vs. Cornelsen eCademy | AI vs. Enterprise LMS"
-	description="LearnSlice vs. Cornelsen eCademy: AI-native platform vs. publisher LMS, Mittelstand vs. Enterprise, full cycle vs. content library — features, pricing compared."
+	title="LearnSlice vs. Publisher / Enterprise LMS | Apprenticeship Platform Comparison"
+	description="How an AI-native apprenticeship platform built for the Mittelstand compares to publisher-backed enterprise LMS solutions — AI, setup time, pricing, and company-knowledge integration."
 	lang={lang}
 	currentPath={currentPath}
 >
@@ -24,8 +24,8 @@ const currentPath = '/learnslice-vs-cornelsen-ecademy';
 	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
 		<div class="max-w-3xl mx-auto text-center">
 			<span class="section-label mb-5 block">Comparison</span>
-			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Cornelsen eCademy</h1>
-			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Cornelsen eCademy brings the weight of one of Germany's leading educational publishers. LearnSlice brings AI-native technology built for the full training cycle.</p>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. publisher / enterprise LMS</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Publisher-backed enterprise LMS platforms bring large content libraries and enterprise infrastructure. LearnSlice brings AI-native technology built for the Mittelstand and the full training cycle.</p>
 		</div>
 	</section>
 
@@ -33,13 +33,13 @@ const currentPath = '/learnslice-vs-cornelsen-ecademy';
 	<section class="py-12 px-6 md:px-8">
 		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
 			<div class="bg-surface p-8">
-				<h3 class="text-base font-semibold text-white mb-3">Cornelsen eCademy</h3>
-				<p class="text-sm text-muted leading-relaxed mb-4">Part of Cornelsen Verlag, offering a digital learning platform for apprenticeship and continuing education since 2010. Used by enterprises like Deutsche Bahn, BMW, Bayer, and Bosch.</p>
+				<h3 class="text-base font-semibold text-white mb-3">Publisher / enterprise LMS</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4">A category of established enterprise learning-management systems — often backed by educational publishers — offering structured digital course content for Ausbildung and continuing education, typically aimed at large organizations.</p>
 				<ul class="text-sm text-muted space-y-2">
-					<li>Backed by Cornelsen publishing expertise</li>
-					<li>20+ apprenticeship professions</li>
-					<li>Enterprise client base (Deutsche Bahn, BMW, Bayer, Bosch)</li>
-					<li>Recently added KI-Coach features</li>
+					<li>Backed by established publishers / LMS vendors</li>
+					<li>Structured digital course content</li>
+					<li>Geared toward large enterprises</li>
+					<li>Enterprise licensing and implementation</li>
 				</ul>
 			</div>
 			<div class="bg-surface p-8 relative">
@@ -65,21 +65,21 @@ const currentPath = '/learnslice-vs-cornelsen-ecademy';
 					<thead>
 						<tr>
 							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Feature</th>
-							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Cornelsen eCademy</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Publisher / enterprise LMS</th>
 							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
 						</tr>
 					</thead>
 					<tbody class="text-sm">
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Learning approach</td><td class="text-muted p-4 border-b border-border">Structured courses + KI-Coach</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">AI chat coaching + adaptive paths</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Learning approach</td><td class="text-muted p-4 border-b border-border">Structured digital courses</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">AI chat coaching + adaptive paths</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Target market</td><td class="text-muted p-4 border-b border-border">Large enterprises</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Mittelstand and SMEs</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Training cycle</td><td class="text-muted p-4 border-b border-border">Digital learning content for Ausbildung</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Full cycle: IHK + onboarding + upskilling + company knowledge</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Company knowledge</td><td class="text-muted p-4 border-b border-border">Standard content packages</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Upload docs, AI learns them</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK alignment</td><td class="text-muted p-4 border-b border-border">20+ professions, IHK-konform</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Mapped per profession & region</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">AI features</td><td class="text-muted p-4 border-b border-border">Recently added KI-Coach</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">AI-native platform, built from day one</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Training cycle</td><td class="text-muted p-4 border-b border-border">Digital course content for Ausbildung</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Full cycle: IHK + onboarding + upskilling + company knowledge</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Company knowledge</td><td class="text-muted p-4 border-b border-border">Typically standard course packages</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Upload docs, AI learns them</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK alignment</td><td class="text-muted p-4 border-b border-border">IHK-aligned course coverage</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Mapped per profession & region</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">AI features</td><td class="text-muted p-4 border-b border-border">Varies by provider</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">AI-native platform, built from day one</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Trainer analytics</td><td class="text-muted p-4 border-b border-border">Learning management dashboards</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive dashboards with ROI data</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Pricing model</td><td class="text-muted p-4 border-b border-border">Enterprise licensing (custom quotes)</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Transparent annual billing</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Setup time</td><td class="text-muted p-4 border-b border-border">Enterprise implementation project</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Typically up and running within days</td></tr>
-						<tr><td class="text-white/70 p-4 font-medium">Data hosting</td><td class="text-muted p-4">EU</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Germany only</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Data hosting</td><td class="text-muted p-4">Typically EU</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Germany only</td></tr>
 					</tbody>
 				</table>
 			</div>
@@ -92,12 +92,12 @@ const currentPath = '/learnslice-vs-cornelsen-ecademy';
 			<div class="text-center mb-16"><span class="section-label mb-4 block">Decision</span><h2 class="text-heading md:text-display-sm text-white m-0">When to Choose What</h2></div>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
 				<div class="bg-surface p-8">
-					<h3 class="text-base font-semibold text-white mb-4">Choose Cornelsen eCademy if you...</h3>
+					<h3 class="text-base font-semibold text-white mb-4">Choose a publisher / enterprise LMS if you...</h3>
 					<ul class="text-sm text-muted space-y-3">
-						<li>Are a large enterprise (500+ employees) with established LMS infrastructure</li>
-						<li>Want content backed by one of Germany's leading educational publishers</li>
+						<li>Are a large enterprise with established LMS infrastructure</li>
+						<li>Want content backed by an established educational publisher</li>
 						<li>Need integration with existing enterprise HR systems</li>
-						<li>Prefer a traditional LMS approach with added AI features</li>
+						<li>Prefer a traditional LMS approach</li>
 					</ul>
 				</div>
 				<div class="bg-surface p-8 relative">

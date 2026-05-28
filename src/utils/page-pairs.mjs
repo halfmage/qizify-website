@@ -20,10 +20,10 @@ export const EN_TO_DE = {
 	'/terms': '/de/terms',
 
 	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
-	'/learnslice-vs-cornelsen-ecademy': '/de/learnslice-vs-cornelsen-ecademy',
-	'/learnslice-vs-prozubi': '/de/learnslice-vs-prozubi',
+	'/learnslice-vs-publisher-lms': '/de/learnslice-vs-verlags-lms',
+	'/learnslice-vs-video-ihk-tools': '/de/learnslice-vs-video-ihk-tools',
 	'/learnslice-vs-traditional-training': '/de/learnslice-vs-traditionelle-ausbildung',
-	'/learnslice-vs-vocanto': '/de/learnslice-vs-vocanto',
+	'/learnslice-vs-animated-video-platforms': '/de/learnslice-vs-animations-lernplattformen',
 
 	'/blog/ai-in-vocational-training': '/de/blog/ki-in-der-ausbildung',
 	'/blog/ai-tools-vocational-training': '/de/blog/ki-tools-ausbildung',

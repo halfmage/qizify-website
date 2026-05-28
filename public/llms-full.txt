@@ -25,14 +25,14 @@ From onboarding to IHK exam: AI learning paths plus your company knowledge in on
 
 ### Companies Without LearnSlice
 
-- Apprentices need 4-6 months to productivity
+- Apprentices need around 6 months to productivity
 - 8–12 hrs of trainer time per apprentice weekly
 - 30 % dropout
 - Delayed revenue from slow productivity
 
 ### Companies With LearnSlice
 
-- 65 % faster to productivity (4-6 months → 8 weeks)
+- 65 % faster to productivity (~6 months → 8 weeks)
 - 50% less trainer time = €9K saved per apprentice
 - Dropout reduced: 30 % → 15%
 - Up to €75K saved per year with 5 apprentices
@@ -233,14 +233,14 @@ Von Einarbeitung bis IHK-Prüfung: KI-Lernpfade plus Ihr Unternehmenswissen in e
 
 ### Unternehmen ohne LearnSlice
 
-- Produktivität: Auszubildende erst nach 4–6 Monaten einsatzfähig.
+- Produktivität: Auszubildende erst nach rund 6 Monaten einsatzfähig.
 - Betreuungsaufwand: 8–12 Std. Ausbilderzeit pro Azubi/Woche.
 - Abbruchquote: rund 30 % in der Ausbildung.
 - Umsatzverlust: verzögerte Produktivität bremst Erlöse.
 
 ### Unternehmen mit LearnSlice
 
-- 65 % schneller einsatzbereit (4–6 Monate → 8 Wochen).
+- 65 % schneller einsatzbereit (~6 Monate → 8 Wochen).
 - 50 % weniger Ausbilderzeit = 9K € Ersparnis pro Azubi.
 - Abbruchquote: halbiert von 30 % auf 15 %.
 - Bis zu 75K € Ersparnis pro Jahr bei 5 Azubis.
@@ -3308,7 +3308,7 @@ Eine Lernplattform für die Ausbildung ist kein generisches LMS. Wer das erste M
 
 Wenn mehr als zwei Punkte offen bleiben, ist die Plattform für die betriebliche Ausbildung schlecht geeignet - egal wie gut die Marketing-Oberfläche aussieht.
 
-Einen strukturellen Vergleich zu konkreten Alternativen liefern unsere [LearnSlice vs. Prozubi](/de/learnslice-vs-prozubi)- und [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung)-Analysen.
+Einen strukturellen Vergleich zu konkreten Ansätzen liefern unsere [LearnSlice vs. video-basierte IHK-Lerntools](/de/learnslice-vs-video-ihk-tools)- und [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung)-Analysen.
 
 ## Fazit
 

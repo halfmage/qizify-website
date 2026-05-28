@@ -6,11 +6,12 @@
     "dev": "astro dev",
     "dev:fresh": "rm -rf .astro node_modules/.astro && astro dev",
     "build": "astro build",
-    "prebuild": "node scripts/check-pairs.mjs && node scripts/generate-llms-full.mjs",
+    "prebuild": "node scripts/check-pairs.mjs && node scripts/generate-llms-full.mjs && node scripts/check-claims.mjs",
     "postbuild": "node scripts/ping-indexnow.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check:pairs": "node scripts/check-pairs.mjs",
+    "check:claims": "node scripts/check-claims.mjs",
     "generate:llms-full": "node scripts/generate-llms-full.mjs",
     "ping:indexnow": "node scripts/ping-indexnow.mjs"
   },

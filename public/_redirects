@@ -60,3 +60,11 @@
 # Removed competitor comparison pages → language homepage
 /learnslice-vs-simpleclub       /               301
 /de/learnslice-vs-simpleclub    /de/            301
+
+# Renamed (de-named) competitor comparison pages → new generic URLs
+/learnslice-vs-prozubi               /learnslice-vs-video-ihk-tools                  301
+/de/learnslice-vs-prozubi            /de/learnslice-vs-video-ihk-tools               301
+/learnslice-vs-cornelsen-ecademy     /learnslice-vs-publisher-lms                    301
+/de/learnslice-vs-cornelsen-ecademy  /de/learnslice-vs-verlags-lms                   301
+/learnslice-vs-vocanto               /learnslice-vs-animated-video-platforms         301
+/de/learnslice-vs-vocanto            /de/learnslice-vs-animations-lernplattformen    301

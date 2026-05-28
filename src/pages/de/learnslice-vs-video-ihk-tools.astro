@@ -10,26 +10,26 @@ import LeadCapture from '../../components/LeadCapture.astro';
 import deContent from '../../content/de.json';
 
 const lang = 'de';
-const currentPath = '/de/learnslice-vs-prozubi';
+const currentPath = '/de/learnslice-vs-video-ihk-tools';
 ---
 
-<BaseLayout title="LearnSlice vs. Prozubi: KI-Coaching vs. Video-Lernen" description="LearnSlice vs. Prozubi für die Berufsausbildung: KI-Coaching vs. Video-Inhalte, voller Ausbildungszyklus vs. IHK-Prüfung — Preise und Funktionen verglichen." lang={lang} currentPath={currentPath}>
+<BaseLayout title="LearnSlice vs. video-basierte IHK-Lerntools: Vergleich" description="KI-Coaching über den gesamten Ausbildungszyklus im Vergleich zu video-basierten IHK-Lerntools — Lernansatz, Personalisierung, Unternehmenswissen und Analytics." lang={lang} currentPath={currentPath}>
 	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
 
 	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
 		<div class="max-w-3xl mx-auto text-center">
 			<span class="section-label mb-5 block">Vergleich</span>
-			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Prozubi</h1>
-			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Prozubi unterst&uuml;tzt Azubis seit &uuml;ber 10 Jahren bei der IHK-Pr&uuml;fungsvorbereitung. LearnSlice geht einen anderen Weg &mdash; und deckt den gesamten Ausbildungszyklus mit KI ab.</p>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. video-basierte IHK-Lerntools</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Viele Ausbildungsplattformen setzen auf vorproduzierte Video-Lektionen zur IHK-Pr&uuml;fungsvorbereitung. LearnSlice geht einen anderen Weg &mdash; KI-Coaching, das sich an jeden Azubi anpasst, &uuml;ber den gesamten Ausbildungszyklus.</p>
 		</div>
 	</section>
 
 	<section class="py-12 px-6 md:px-8">
 		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
 			<div class="bg-surface p-8">
-				<h3 class="text-base font-semibold text-white mb-3">Prozubi</h3>
-				<p class="text-sm text-muted leading-relaxed mb-4">Etablierte videobasierte Lernplattform f&uuml;r die IHK-Pr&uuml;fungsvorbereitung mit 200+ Berufen. Seit &uuml;ber 10 Jahren am Markt.</p>
-				<ul class="text-sm text-muted space-y-2"><li>Video-Lektionen + &Uuml;bungsaufgaben</li><li>200+ Ausbildungsberufe</li><li>Fokus auf IHK-Pr&uuml;fungsvorbereitung</li><li>10+ Jahre Content-Expertise</li></ul>
+				<h3 class="text-base font-semibold text-white mb-3">Video-basierte IHK-Lerntools</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4">Eine verbreitete Kategorie von Ausbildungstools: vorproduzierte Video-Lektionen und &Uuml;bungsaufgaben mit Fokus auf die IHK-Pr&uuml;fungsvorbereitung, meist auf Basis einer festen, fertigen Content-Bibliothek.</p>
+				<ul class="text-sm text-muted space-y-2"><li>Video-Lektionen + &Uuml;bungsaufgaben</li><li>Fokus auf IHK-Pr&uuml;fungsvorbereitung</li><li>Feste, fertige Lernpfade</li><li>Breite Berufsabdeckung</li></ul>
 			</div>
 			<div class="bg-surface p-8 relative">
 				<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
@@ -48,21 +48,21 @@ const currentPath = '/de/learnslice-vs-prozubi';
 					<thead>
 						<tr>
 							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Merkmal</th>
-							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Prozubi</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Video-basierte IHK-Tools</th>
 							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
 						</tr>
 					</thead>
 					<tbody class="text-sm">
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Lernansatz</td><td class="text-muted p-4 border-b border-border">Video-Lektionen + &Uuml;bungen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">KI-Chat-Coaching + adaptive Pfade</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Lernansatz</td><td class="text-muted p-4 border-b border-border">Vorproduzierte Videos + &Uuml;bungen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">KI-Chat-Coaching + adaptive Pfade</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Personalisierung</td><td class="text-muted p-4 border-b border-border">Feste Lernpfade</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Volle KI-Anpassung pro Lernenden</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbildungszyklus</td><td class="text-muted p-4 border-b border-border">Nur IHK-Pr&uuml;fungsvorbereitung</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">IHK + Onboarding + Upskilling + Unternehmenswissen</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Nicht verf&uuml;gbar</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI lernt</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK-Ausrichtung</td><td class="text-muted p-4 border-b border-border">200+ Berufe abgedeckt</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Nach Beruf &amp; Region</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">KI-Coaching</td><td class="text-muted p-4 border-b border-border">Nicht verf&uuml;gbar</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller KI-Tutor 24/7</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbilder-Analytics</td><td class="text-muted p-4 border-b border-border">Basis-Fortschrittstracking</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive Dashboards mit ROI-Daten</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbildungszyklus</td><td class="text-muted p-4 border-b border-border">Fokus auf IHK-Pr&uuml;fungsvorbereitung</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">IHK + Onboarding + Upskilling + Unternehmenswissen</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Meist Standard-Curriculum</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI lernt</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK-Ausrichtung</td><td class="text-muted p-4 border-b border-border">Berufsbezogene Abdeckung</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Nach Beruf &amp; Region</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">KI-Coaching</td><td class="text-muted p-4 border-b border-border">Je nach Anbieter</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller KI-Tutor 24/7</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbilder-Analytics</td><td class="text-muted p-4 border-b border-border">Fortschrittstracking</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive Dashboards mit ROI-Daten</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Content-Format</td><td class="text-muted p-4 border-b border-border">Vorproduzierte Videos</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Interaktive KI-Gespr&auml;che + Assessments</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Daten-Hosting</td><td class="text-muted p-4 border-b border-border">EU</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Deutschland</td></tr>
-						<tr><td class="text-white/70 p-4 font-medium">Onboarding-Support</td><td class="text-muted p-4">Self-Service</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Pers&ouml;nliches Setup + Support</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Daten-Hosting</td><td class="text-muted p-4 border-b border-border">Meist EU</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Deutschland</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Onboarding-Support</td><td class="text-muted p-4">Je nach Anbieter</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Pers&ouml;nliches Setup + Support</td></tr>
 					</tbody>
 				</table>
 			</div>
@@ -74,8 +74,8 @@ const currentPath = '/de/learnslice-vs-prozubi';
 			<div class="text-center mb-16"><span class="section-label mb-4 block">Entscheidung</span><h2 class="text-heading md:text-display-sm text-white m-0">Wann welche Plattform w&auml;hlen</h2></div>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
 				<div class="bg-surface p-8">
-					<h3 class="text-base font-semibold text-white mb-4">W&auml;hlen Sie Prozubi, wenn Sie...</h3>
-					<ul class="text-sm text-muted space-y-3"><li>IHK-Pr&uuml;fungsinhalte f&uuml;r viele Berufe brauchen</li><li>Videobasiertes Lernen bevorzugen</li><li>Eine bew&auml;hrte Content-Bibliothek mit 10+ Jahren Material w&uuml;nschen</li><li>Kein Unternehmenswissen integrieren m&uuml;ssen</li></ul>
+					<h3 class="text-base font-semibold text-white mb-4">W&auml;hlen Sie ein video-basiertes IHK-Tool, wenn Sie...</h3>
+					<ul class="text-sm text-muted space-y-3"><li>Vor allem IHK-Pr&uuml;fungsinhalte f&uuml;r viele Berufe brauchen</li><li>Videobasiertes Lernen bevorzugen</li><li>Eine gro&szlig;e, fertige Content-Bibliothek w&uuml;nschen</li><li>Kein Unternehmenswissen und keine adaptive KI brauchen</li></ul>
 				</div>
 				<div class="bg-surface p-8 relative">
 					<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>

@@ -10,26 +10,26 @@ import LeadCapture from '../../components/LeadCapture.astro';
 import deContent from '../../content/de.json';
 
 const lang = 'de';
-const currentPath = '/de/learnslice-vs-vocanto';
+const currentPath = '/de/learnslice-vs-animations-lernplattformen';
 ---
 
-<BaseLayout title="LearnSlice vs. Vocanto: KI-Coaching vs. Animations-Lernen" description="LearnSlice vs. Vocanto für die Berufsausbildung: KI-gestütztes adaptives Coaching vs. animierte Video-Inhalte, voller Ausbildungszyklus vs. IHK-Curriculum." lang={lang} currentPath={currentPath}>
+<BaseLayout title="LearnSlice vs. Animations-Lernplattformen: Vergleich" description="KI-gestütztes adaptives Coaching über den gesamten Ausbildungszyklus im Vergleich zu Animations-Lernplattformen — Personalisierung, Unternehmenswissen, KI-Coaching und Analytics." lang={lang} currentPath={currentPath}>
 	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={deContent.nav.cta} currentLang={lang} currentPath={currentPath} />
 
 	<section class="pt-32 pb-16 md:pb-24 px-6 md:px-8">
 		<div class="max-w-3xl mx-auto text-center">
 			<span class="section-label mb-5 block">Vergleich</span>
-			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Vocanto</h1>
-			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Vocanto bietet animierte Lerninhalte nach IHK-Rahmenplan. LearnSlice bietet KI-Coaching, das sich an jeden Azubi anpasst &mdash; &uuml;ber den gesamten Ausbildungszyklus.</p>
+			<h1 class="text-display-sm md:text-display text-white mb-6">LearnSlice vs. Animations-Lernplattformen</h1>
+			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">Animations-Lernplattformen liefern ansprechende, IHK-orientierte Lerninhalte. LearnSlice bietet KI-Coaching, das sich an jeden Azubi anpasst &mdash; &uuml;ber den gesamten Ausbildungszyklus.</p>
 		</div>
 	</section>
 
 	<section class="py-12 px-6 md:px-8">
 		<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
 			<div class="bg-surface p-8">
-				<h3 class="text-base font-semibold text-white mb-3">Vocanto</h3>
-				<p class="text-sm text-muted leading-relaxed mb-4">Teil der EMBRACE-Gruppe. Animierte Lerninhalte f&uuml;r kaufm&auml;nnische und gewerblich-technische Azubis. Inhalte nach IHK-Rahmenlehrplan entwickelt.</p>
-				<ul class="text-sm text-muted space-y-2"><li>Interaktive Animationen und Simulationen</li><li>IHK-Rahmenlehrplan-Ausrichtung</li><li>Kaufm&auml;nnische und technische Berufe</li><li>Teil der EMBRACE-Gruppe (mit Studyflix)</li></ul>
+				<h3 class="text-base font-semibold text-white mb-3">Animations-Lernplattformen</h3>
+				<p class="text-sm text-muted leading-relaxed mb-4">Eine Kategorie von Ausbildungsplattformen rund um animierte Lernvideos und Simulationen, meist entlang der IHK-Rahmenlehrpl&auml;ne f&uuml;r kaufm&auml;nnische und gewerblich-technische Berufe entwickelt.</p>
+				<ul class="text-sm text-muted space-y-2"><li>Interaktive Animationen und Simulationen</li><li>IHK-Rahmenlehrplan-Ausrichtung</li><li>Kaufm&auml;nnische und technische Berufe</li><li>Ansprechende visuelle Inhalte</li></ul>
 			</div>
 			<div class="bg-surface p-8 relative">
 				<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
@@ -48,7 +48,7 @@ const currentPath = '/de/learnslice-vs-vocanto';
 					<thead>
 						<tr>
 							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Merkmal</th>
-							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Vocanto</th>
+							<th class="text-left text-muted text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3">Animations-Lernplattformen</th>
 							<th class="text-left text-xs font-mono uppercase tracking-wider p-4 border-b border-border w-1/3 bg-primary/5"><span class="text-primary">LearnSlice</span></th>
 						</tr>
 					</thead>
@@ -56,13 +56,13 @@ const currentPath = '/de/learnslice-vs-vocanto';
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Lernansatz</td><td class="text-muted p-4 border-b border-border">Animierte Videos + &Uuml;bungen</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">KI-Chat-Coaching + adaptive Pfade</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Personalisierung</td><td class="text-muted p-4 border-b border-border">Standard-Lernpfade</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Volle KI-Anpassung pro Lernenden</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Ausbildungszyklus</td><td class="text-muted p-4 border-b border-border">IHK-Rahmenplan-Inhalte</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller Zyklus: IHK + Onboarding + Upskilling + Unternehmenswissen</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Nicht verf&uuml;gbar</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI lernt</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Unternehmenswissen</td><td class="text-muted p-4 border-b border-border">Je nach Anbieter</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Dokumente hochladen, KI lernt</td></tr>
 						<tr><td class="text-white/70 p-4 border-b border-border font-medium">IHK-Ausrichtung</td><td class="text-muted p-4 border-b border-border">Nach IHK-Rahmenplan entwickelt</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Nach Beruf &amp; Region</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">KI-Coaching</td><td class="text-muted p-4 border-b border-border">Nicht verf&uuml;gbar</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller KI-Tutor 24/7</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Analytics</td><td class="text-muted p-4 border-b border-border">Basis-Fortschrittsberichte</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive Dashboards mit ROI-Daten</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Content-Format</td><td class="text-muted p-4 border-b border-border">Animierte Videos + Experten-Tutoring</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Interaktive KI-Gespr&auml;che + Assessments</td></tr>
-						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Daten-Hosting</td><td class="text-muted p-4 border-b border-border">DSGVO-konform, ISO 27001</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Deutschland, DSGVO-konform</td></tr>
-						<tr><td class="text-white/70 p-4 font-medium">Gamification</td><td class="text-muted p-4">Basis-Elemente</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Punkte, Badges, Bestenlisten</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">KI-Coaching</td><td class="text-muted p-4 border-b border-border">Je nach Anbieter</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Voller KI-Tutor 24/7</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Analytics</td><td class="text-muted p-4 border-b border-border">Fortschrittsberichte</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Executive Dashboards mit ROI-Daten</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Content-Format</td><td class="text-muted p-4 border-b border-border">Animierte Videos + Tutoring</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Interaktive KI-Gespr&auml;che + Assessments</td></tr>
+						<tr><td class="text-white/70 p-4 border-b border-border font-medium">Daten-Hosting</td><td class="text-muted p-4 border-b border-border">Meist DSGVO-konform</td><td class="text-white p-4 border-b border-border bg-primary/[0.03] font-medium">Deutschland, DSGVO-konform</td></tr>
+						<tr><td class="text-white/70 p-4 font-medium">Gamification</td><td class="text-muted p-4">Standard-Elemente</td><td class="text-white p-4 bg-primary/[0.03] font-medium">Punkte, Badges, Bestenlisten</td></tr>
 					</tbody>
 				</table>
 			</div>
@@ -74,8 +74,8 @@ const currentPath = '/de/learnslice-vs-vocanto';
 			<div class="text-center mb-16"><span class="section-label mb-4 block">Entscheidung</span><h2 class="text-heading md:text-display-sm text-white m-0">Wann welche Plattform w&auml;hlen</h2></div>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden">
 				<div class="bg-surface p-8">
-					<h3 class="text-base font-semibold text-white mb-4">W&auml;hlen Sie Vocanto, wenn Sie...</h3>
-					<ul class="text-sm text-muted space-y-3"><li>Animierte Video-Inhalte f&uuml;r visuelle Lerner bevorzugen</li><li>Inhalte streng nach IHK-Rahmenlehrplan entwickelt haben wollen</li><li>Eine Plattform innerhalb des EMBRACE-&Ouml;kosystems brauchen</li><li>Kein KI-Coaching oder Unternehmenswissen-Integration ben&ouml;tigen</li></ul>
+					<h3 class="text-base font-semibold text-white mb-4">W&auml;hlen Sie eine Animations-Lernplattform, wenn Sie...</h3>
+					<ul class="text-sm text-muted space-y-3"><li>Animierte Video-Inhalte f&uuml;r visuelle Lerner bevorzugen</li><li>Inhalte entlang des IHK-Rahmenlehrplans entwickelt haben wollen</li><li>Vor allem IHK-Curriculum-Abdeckung brauchen</li><li>Keine adaptive KI und keine Unternehmenswissen-Integration brauchen</li></ul>
 				</div>
 				<div class="bg-surface p-8 relative">
 					<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 1) 0%, transparent 60%);"></div>
