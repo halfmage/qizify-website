@@ -56,3 +56,7 @@
 /de/for-companies               /de/companies   301
 /de/for-schools                 /de/schools     301
 /de/for-agencies                /de/agencies    301
+
+# Removed competitor comparison pages → language homepage
+/learnslice-vs-simpleclub       /               301
+/de/learnslice-vs-simpleclub    /de/            301

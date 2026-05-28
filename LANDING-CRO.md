@@ -224,7 +224,7 @@ Format: *If [change], then [metric] will [direction] because [reason].*
 ### Strategic (this quarter)
 1. **Publish 2-3 customer case studies** with named companies and outcomes. Carries over from the SEO audit's open E-E-A-T item.
 2. **Add named author/expert bios** for the blog (also from SEO audit), increasing trust on the upstream traffic source.
-3. **Build a comparison-on-page section** (vs. ProzubiTalent, vs. simpleclub) embedded on `/companies` rather than only on dedicated `/learnslice-vs-*` pages.
+3. **Build a comparison-on-page section** (e.g. vs. Prozubi) embedded on `/companies` rather than only on dedicated `/learnslice-vs-*` pages.
 4. **Test long-form vs short-form `/companies`** variant.
 
 ---

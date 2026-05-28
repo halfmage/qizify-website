@@ -28,7 +28,7 @@
 ### What's Working Well
 - **Quantified value props** - "65% faster," "€32K saved," "50% less trainer time" are specific and memorable
 - **Segment-specific landing pages** - Companies, Schools, Agencies each get dedicated pages
-- **Comparison pages** - vs. Traditional Training and vs. Simpleclub exist with structured matrices
+- **Comparison pages** - vs. Traditional Training, vs. Prozubi, vs. Cornelsen eCademy, and vs. Vocanto exist with structured matrices
 - **Technical foundation** - Astro static output, proper schema markup, bilingual EN/DE, AI crawler access
 - **Trust signals** - BMWE AI Prize 2025, FH Dortmund partnership, 30+ companies, 4.8/5 rating
 - **Lead magnet** - ROI Calculator is relevant to the target audience

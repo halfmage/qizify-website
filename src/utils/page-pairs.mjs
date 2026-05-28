@@ -22,7 +22,6 @@ export const EN_TO_DE = {
 	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
 	'/learnslice-vs-cornelsen-ecademy': '/de/learnslice-vs-cornelsen-ecademy',
 	'/learnslice-vs-prozubi': '/de/learnslice-vs-prozubi',
-	'/learnslice-vs-simpleclub': '/de/learnslice-vs-simpleclub',
 	'/learnslice-vs-traditional-training': '/de/learnslice-vs-traditionelle-ausbildung',
 	'/learnslice-vs-vocanto': '/de/learnslice-vs-vocanto',
 

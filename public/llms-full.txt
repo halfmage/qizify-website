@@ -907,7 +907,7 @@ A template is a good starting point, not an endpoint. The next step combines the
 
 An AI-powered learning platform fuses these layers into a living plan. The framework defines which competencies must be in place by when. Company knowledge supplies the operational content - real work instructions instead of textbook material. The individual learning path adapts order, depth, and repetition to the specific apprentice.
 
-A detailed treatment of the approach - including why ChatGPT isn't a viable substitute - is in our guide [AI in vocational training](/blog/ai-in-vocational-training). Concrete comparisons are in our [LearnSlice vs. traditional training](/learnslice-vs-traditional-training) and [LearnSlice vs. Simpleclub](/learnslice-vs-simpleclub) analyses.
+A detailed treatment of the approach - including why ChatGPT isn't a viable substitute - is in our guide [AI in vocational training](/blog/ai-in-vocational-training). A concrete comparison is in our [LearnSlice vs. traditional training](/learnslice-vs-traditional-training) analysis.
 
 ## Static Template, Dynamic Plan, Chatbot - Direct Comparison
 
@@ -1258,7 +1258,7 @@ For a team of 5 apprentices, that adds up to over €87,000 in annual savings. [
 
 ## Getting Started
 
-Digitizing apprenticeship training is not about replacing what works. It is about amplifying it. The companies that [invest in AI-powered training tools](/blog/ai-in-vocational-training) today are building a competitive advantage in hiring and retaining the next generation of skilled workers - while [cutting costs](/blog/reduce-training-costs) at the same time. See how this approach compares to [traditional training methods](/learnslice-vs-traditional-training) and [other platforms like Simpleclub](/learnslice-vs-simpleclub).
+Digitizing apprenticeship training is not about replacing what works. It is about amplifying it. The companies that [invest in AI-powered training tools](/blog/ai-in-vocational-training) today are building a competitive advantage in hiring and retaining the next generation of skilled workers - while [cutting costs](/blog/reduce-training-costs) at the same time. See how this approach compares to [traditional training methods](/learnslice-vs-traditional-training).
 
 **See how LearnSlice can digitize your apprenticeship training.** [Book a free demo](/companies) or try our [Savings Calculator](/apprenticeship-savings-calculator) to see your personalized ROI estimate.
 
@@ -1741,7 +1741,7 @@ Not all platforms are equal. When evaluating AI tools for vocational training, l
 
 A [digital training logbook](/blog/digital-training-logbook) integration is also valuable — it connects learning activities directly to the required Berichtsheft documentation.
 
-Compare different approaches in our [LearnSlice vs. traditional training](/learnslice-vs-traditional-training) and [LearnSlice vs. Simpleclub](/learnslice-vs-simpleclub) comparisons.
+Compare different approaches in our [LearnSlice vs. traditional training](/learnslice-vs-traditional-training) comparison.
 
 ## Data Privacy and GDPR
 
@@ -2380,7 +2380,7 @@ Drei Kategorien dominieren den Markt im Jahr 2026. Sie unterscheiden sich nicht 
 | EU-gehostete LLM-Plattformen (Aleph Alpha, Mistral via Scaleway) | Eigenentwicklung interner KI-Funktionen | Vorhanden, mit EU-Sub-Prozessor-Kette | Niedrig bis mittel | Hoch, erfordert eigene Implementierung |
 | Vertikale Ausbildungs-Plattformen (z. B. LearnSlice) | Lernpfade, Berichtsheft-Feedback, Prüfungsfragen | Vertraglich Bestandteil, AVV mit Verarbeitungsverzeichnis | Niedrig, weil Zweck definiert | Auf den Ausbildungs-Use-Case zugeschnitten |
 
-Die Einordnung ist bewusst grobkörnig. Sie ersetzt nicht die individuelle Prüfung, hilft aber bei der Vorauswahl. Wer einen detaillierten Vergleich mit konkreten Anbietern braucht, findet eine bewertete Übersicht unter [LearnSlice im Vergleich zu simpleclub](/de/learnslice-vs-simpleclub) und ergänzend in der [Marktübersicht zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
+Die Einordnung ist bewusst grobkörnig. Sie ersetzt nicht die individuelle Prüfung, hilft aber bei der Vorauswahl. Wer einen detaillierten Vergleich mit konkreten Anbietern braucht, findet eine bewertete Übersicht in der [Marktübersicht zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
 
 ## Auftragsverarbeitung und die Subunternehmer-Kette: der unterschätzte Hebel
 
@@ -2939,7 +2939,7 @@ Eine Ausbildungsplan-Vorlage ist ein guter Startpunkt, aber kein Endpunkt. Die n
 
 Eine KI-gestützte Lernplattform führt diese Schichten in einem lebendigen Plan zusammen. Der Rahmenplan definiert, welche Kompetenzen bis wann sitzen müssen. Das Unternehmenswissen liefert den betrieblichen Inhalt - mit echten Arbeitsanweisungen statt Lehrbuchwissen. Der individuelle Lernpfad passt Reihenfolge, Tiefe und Wiederholungen an den jeweiligen Azubi an.
 
-Eine ausführliche Darstellung des Ansatzes - inklusive der Frage, warum ChatGPT kein tauglicher Ersatz ist - finden Sie im Leitfaden [Ausbildungsplan erstellen mit KI](/de/blog/ausbildungsplan-erstellen-ki). Einen konkreten Vergleich verschiedener Lösungen liefern die Analysen [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung) und [LearnSlice vs. Simpleclub](/de/learnslice-vs-simpleclub).
+Eine ausführliche Darstellung des Ansatzes - inklusive der Frage, warum ChatGPT kein tauglicher Ersatz ist - finden Sie im Leitfaden [Ausbildungsplan erstellen mit KI](/de/blog/ausbildungsplan-erstellen-ki). Einen konkreten Vergleich verschiedener Lösungen liefert die Analyse [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung).
 
 ## Statische Vorlage, dynamischer Plan, Chatbot - im direkten Vergleich
 
@@ -3308,13 +3308,13 @@ Eine Lernplattform für die Ausbildung ist kein generisches LMS. Wer das erste M
 
 Wenn mehr als zwei Punkte offen bleiben, ist die Plattform für die betriebliche Ausbildung schlecht geeignet - egal wie gut die Marketing-Oberfläche aussieht.
 
-Einen strukturellen Vergleich zu konkreten Alternativen liefern unsere [LearnSlice vs. Simpleclub](/de/learnslice-vs-simpleclub)-, [LearnSlice vs. Prozubi](/de/learnslice-vs-prozubi)- und [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung)-Analysen.
+Einen strukturellen Vergleich zu konkreten Alternativen liefern unsere [LearnSlice vs. Prozubi](/de/learnslice-vs-prozubi)- und [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung)-Analysen.
 
 ## Fazit
 
 Die Digitalisierung der Berufsausbildung ist keine Frage des Ob, sondern des Wann. Unternehmen, die jetzt handeln, senken ihre Kosten, entlasten ihre Ausbilder und bieten ihren Azubis eine zeitgemäße Lernerfahrung. Der Einstieg muss nicht kompliziert sein - wichtig ist, den ersten Schritt zu machen.
 
-Vergleichen Sie auch, wie dieser Ansatz gegenüber [traditionellen Ausbildungsmethoden](/de/learnslice-vs-traditionelle-ausbildung) und [anderen Plattformen wie Simpleclub](/de/learnslice-vs-simpleclub) abschneidet.
+Vergleichen Sie auch, wie dieser Ansatz gegenüber [traditionellen Ausbildungsmethoden](/de/learnslice-vs-traditionelle-ausbildung) abschneidet.
 
 **Für Ausbildungsverantwortliche:** Sehen Sie in einer kostenlosen Demo, wie LearnSlice die Digitalisierung Ihrer Ausbildung in wenigen Wochen umsetzt. [Demo vereinbaren](/de/companies)
 
@@ -3858,7 +3858,7 @@ Nicht alle Plattformen sind gleich. Achten Sie bei der Auswahl von KI-Tools für
 
 Auch eine Integration des [digitalen Berichtshefts](/de/blog/berichtsheft-digital) ist wertvoll — sie verbindet Lernaktivitäten direkt mit der vorgeschriebenen Ausbildungsdokumentation.
 
-Vergleichen Sie verschiedene Ansätze in unseren Vergleichen: [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung) und [LearnSlice vs. Simpleclub](/de/learnslice-vs-simpleclub).
+Vergleichen Sie verschiedene Ansätze in unserem Vergleich [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung).
 
 ## Fazit: KI als Chance für die Ausbildung
 
