@@ -26,6 +26,7 @@ export const EN_TO_DE = {
 	'/learnslice-vs-animated-video-platforms': '/de/learnslice-vs-animations-lernplattformen',
 
 	'/blog/ai-in-vocational-training': '/de/blog/ki-in-der-ausbildung',
+	'/blog/ai-learning-platform-apprentices': '/de/blog/ki-lernplattform-azubis',
 	'/blog/ai-tools-vocational-training': '/de/blog/ki-tools-ausbildung',
 	'/blog/apprentice-onboarding': '/de/blog/azubi-onboarding',
 	'/blog/apprenticeship-plan-template-free': '/de/blog/ausbildungsplan-vorlage-kostenlos',

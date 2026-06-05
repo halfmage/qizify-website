@@ -62,6 +62,10 @@ const relatedPosts = scoredPosts.slice(0, 3).map(s => s.post);
 const relatedHeading = lang === 'en' ? 'More on this topic' : 'Mehr zum Thema';
 const takeawaysHeading = lang === 'en' ? 'Key Takeaways' : 'Auf einen Blick';
 const faqHeading = lang === 'en' ? 'Frequently Asked Questions' : 'Häufig gestellte Fragen';
+const tocLabel = lang === 'en' ? 'On this page' : 'Auf dieser Seite';
+const sidebarCtaTitle = lang === 'en' ? 'See it on your occupation' : 'An Ihrem Beruf sehen';
+const sidebarCtaSub = lang === 'en' ? '30-min demo, no pitch.' : '30-Min-Demo, kein Pitch.';
+const sidebarCtaButton = lang === 'en' ? 'Get demo access' : 'Demo-Zugang erhalten';
 
 const faqPageSchema = faq && faq.length > 0 ? {
 	'@context': 'https://schema.org',
@@ -136,8 +140,9 @@ const blogPostingSchema = {
 		currentPath={currentPath}
 	/>
 
-	<article class="py-20 md:py-32 px-6 md:px-8 pt-32">
-		<div class="max-w-2xl mx-auto">
+	<article class="py-20 md:py-28 px-6 md:px-8 pt-32">
+		<div class="max-w-2xl lg:max-w-6xl mx-auto lg:grid lg:grid-cols-[minmax(0,46rem)_15rem] lg:justify-center lg:gap-16">
+		<div class="min-w-0">
 			<!-- Back link -->
 			<a
 				href={blogIndexPath}
@@ -225,6 +230,30 @@ const blogPostingSchema = {
 				</div>
 			</div>
 		</div>
+
+			<!-- On-this-page sidebar (large screens only). The CTA is always rendered so
+			     the column is never empty, even on short posts or when the TOC is absent. -->
+			<aside class="hidden lg:block">
+				<div class="sticky top-28">
+					<div id="toc-wrap" class="mb-8" hidden>
+						<p class="text-xs font-mono uppercase tracking-widest text-muted mb-4">{tocLabel}</p>
+						<nav id="toc" aria-label={tocLabel} class="flex flex-col border-l border-border text-sm"></nav>
+					</div>
+					<a
+						href="#demo-request"
+						data-modal-trigger="demo-request"
+						class="group block rounded-lg border border-border bg-surface p-5 hover:border-primary/40 transition-colors"
+					>
+						<p class="text-white font-semibold text-sm mb-1">{sidebarCtaTitle}</p>
+						<p class="text-muted text-xs mb-3 leading-relaxed">{sidebarCtaSub}</p>
+						<span class="inline-flex items-center gap-1 text-primary text-sm font-medium">
+							{sidebarCtaButton}
+							<span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
+						</span>
+					</a>
+				</div>
+			</aside>
+		</div>
 	</article>
 
 	{faq && faq.length > 0 && (
@@ -284,4 +313,83 @@ const blogPostingSchema = {
 	{faqPageSchema && (
 		<script type="application/ld+json" set:html={JSON.stringify(faqPageSchema).replace(/<\/script/gi, '<\\/script')} />
 	)}
+
+	<style is:global>
+		html { scroll-behavior: smooth; }
+		@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+	</style>
+
+	<script>
+		let tocObserver = null;
+
+		function initBlogToc() {
+			// Re-initialised on view-transition navigations: drop the old observer first.
+			if (tocObserver) { tocObserver.disconnect(); tocObserver = null; }
+
+			const article = document.querySelector('article .prose');
+			const nav = document.getElementById('toc');
+			const wrap = document.getElementById('toc-wrap');
+			if (!article || !nav || !wrap) return;
+
+			const headings = Array.from(article.querySelectorAll('h2'));
+			// A table of contents only earns its space with a few sections.
+			if (headings.length < 3) { nav.innerHTML = ''; wrap.hidden = true; return; }
+
+			// Unicode-aware: keep letters/digits from any script (German umlauts, ß),
+			// so the fallback never mangles an id if a heading ships without one.
+			const slugify = (text) => {
+				const s = text.toLowerCase().trim()
+					.replace(/[^\p{L}\p{N}\s-]/gu, '')
+					.replace(/\s+/g, '-')
+					.replace(/-+/g, '-')
+					.replace(/^-+|-+$/g, '');
+				return s || 'section';
+			};
+
+			nav.innerHTML = '';
+			const linkById = {};
+			const used = new Set();
+
+			headings.forEach((h) => {
+				if (!h.id) {
+					let base = slugify(h.textContent || '');
+					let id = base, i = 2;
+					while (used.has(id) || document.getElementById(id)) { id = `${base}-${i++}`; }
+					h.id = id;
+				}
+				used.add(h.id);
+				h.style.scrollMarginTop = '7rem';
+
+				const a = document.createElement('a');
+				a.href = '#' + h.id;
+				a.textContent = h.textContent;
+				a.className = 'block -ml-px border-l-2 border-transparent pl-4 py-1 text-muted hover:text-white leading-snug transition-colors';
+				nav.appendChild(a);
+				linkById[h.id] = a;
+			});
+
+			wrap.hidden = false;
+
+			let active = null;
+			const setActive = (id) => {
+				const link = linkById[id];
+				if (!link || link === active) return;
+				if (active) active.classList.remove('text-white', 'border-primary');
+				active = link;
+				active.classList.add('text-white', 'border-primary');
+			};
+
+			tocObserver = new IntersectionObserver((entries) => {
+				const visible = entries.filter((e) => e.isIntersecting)
+					.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+				if (visible.length) setActive(visible[0].target.id);
+			}, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+
+			headings.forEach((h) => tocObserver.observe(h));
+		}
+
+		if (document.readyState !== 'loading') initBlogToc();
+		else document.addEventListener('DOMContentLoaded', initBlogToc);
+		document.addEventListener('astro:page-load', initBlogToc);
+	</script>
 </BaseLayout>
