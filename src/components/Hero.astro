@@ -21,12 +21,28 @@ const { headline, subheadline, ctaPrimary, ctaSecondary, stats = [], currentLang
 const headlineLines = headline.split('\n');
 ---
 
-<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-16" id="hero">
-	<!-- Aurora glow — dual radial blobs (violet + amber) for warmth and brand presence -->
-	<div class="absolute inset-0 pointer-events-none glow-aurora" aria-hidden="true"></div>
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-6" id="hero">
+	<!-- Full-bleed hero photo — LCP element, preloaded in BaseLayout head -->
+	<img
+		src="/images/hero/hero-background.webp"
+		alt=""
+		role="presentation"
+		class="absolute inset-0 w-full h-full object-cover object-[70%_center] z-0"
+		loading="eager"
+		fetchpriority="high"
+		decoding="async"
+		width="1920"
+		height="1080"
+	/>
 
-	<div class="relative z-10 max-w-container mx-auto w-full px-6 md:px-8">
-		<div class="max-w-6xl mx-auto text-center flex flex-col items-center gap-6">
+	<!-- Localized scrim — dark on the left for text legibility, vivid on the right (the people), plus a bottom fade to page background for a seamless transition into the mockup -->
+	<div class="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(to_right,rgba(42,38,34,0.80),rgba(42,38,34,0.46)_45%,rgba(42,38,34,0.12)_78%),linear-gradient(to_bottom,transparent_72%,#2a2622_98%)]" aria-hidden="true"></div>
+
+	<!-- Aurora glow — dual radial blobs (violet + amber) for brand warmth over the photo -->
+	<div class="absolute inset-0 z-[2] pointer-events-none glow-aurora" aria-hidden="true"></div>
+
+	<div class="relative z-10 max-w-container mx-auto w-full px-6 lg:px-8">
+		<div class="max-w-2xl lg:max-w-3xl text-left flex flex-col items-start gap-6">
 			<!-- Award badge — strongest single trust signal for German B2B audience -->
 			<a href={currentLang === 'de' ? '/de#why-choose-us' : '/#why-choose-us'} class="inline-flex items-center gap-1.5 text-xs font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-3 py-1 hover:bg-accent/15 transition-colors no-underline">
 				<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 6.4L21 9l-5 4.6L17.6 21 12 17.3 6.4 21 8 13.6 3 9l6.6-.6L12 2z"/></svg>
@@ -58,7 +74,7 @@ const headlineLines = headline.split('\n');
 			</p>
 
 			<!-- CTA group: primary, secondary, Calendly fallback -->
-			<div class="flex flex-col items-center gap-2 mt-2">
+			<div class="flex flex-col items-start gap-2 mt-2">
 				<div class="flex flex-col sm:flex-row gap-3">
 					<Button
 						variant="primary"
@@ -72,6 +88,7 @@ const headlineLines = headline.split('\n');
 						variant="secondary"
 						href={currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator'}
 						aria-label={ctaSecondary}
+						class="!border-white/40 !text-white hover:!border-white/60 backdrop-blur-sm"
 					>
 						{ctaSecondary}
 					</Button>
@@ -87,7 +104,7 @@ const headlineLines = headline.split('\n');
 
 			<!-- Stat strip — proof points above-fold with amber numbers -->
 			{stats.length > 0 && (
-				<ul class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mt-2 text-base text-muted m-0 p-0 list-none">
+				<ul class="flex flex-wrap items-center justify-start gap-x-4 gap-y-2 mt-2 text-base text-muted m-0 p-0 list-none">
 					{stats.map((stat, index) => (
 						<>
 							<li class="flex items-baseline gap-1.5">
@@ -100,9 +117,13 @@ const headlineLines = headline.split('\n');
 				</ul>
 			)}
 		</div>
+	</div>
+</section>
 
-		<!-- App mockup — softer gradient frame (was primary/5 → primary/80 which made bottom a violet wall) -->
-		<div class="mt-16 md:mt-24 relative p-4 md:p-12 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/45 ring-1 ring-primary/25 overflow-hidden">
+<!-- App mockup — its own section below the photo hero, so it sits below the fold -->
+<section class="relative bg-dark pt-2 md:pt-4 pb-16 md:pb-24" id="product-preview">
+	<div class="max-w-container mx-auto w-full px-6 lg:px-8">
+		<div class="relative p-4 md:p-12 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/45 ring-1 ring-primary/25 overflow-hidden">
 			<div class="relative shadow-xl mockup-scale-wrapper">
 				<AppMockup currentLang={currentLang} />
 			</div>

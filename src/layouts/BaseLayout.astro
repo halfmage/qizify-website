@@ -8,9 +8,10 @@ interface Props {
 	currentPath: string;
 	ogImage?: string;
 	breadcrumbTitle?: string;
+	heroImage?: string;
 }
 
-const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg', breadcrumbTitle } = Astro.props;
+const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg', breadcrumbTitle, heroImage } = Astro.props;
 
 import { getAlternatePath } from '../utils/i18n';
 import { SITE } from '../utils/page-pairs.mjs';
@@ -197,6 +198,9 @@ const breadcrumbSchema = {
 		<meta name="twitter:image:alt" content={title} />
 		<meta name="twitter:creator" content="@learnslice" />
 		<meta name="twitter:site" content="@learnslice" />
+
+		<!-- Preload hero LCP image (homepages only) -->
+		{heroImage && <link rel="preload" as="image" href={heroImage} fetchpriority="high" />}
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href={currentUrl} />
