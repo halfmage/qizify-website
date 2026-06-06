@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import TrustBar from '../components/TrustBar.astro';
 import LogosSlider from '../components/LogosSlider.astro';
 import SavingsComparison from '../components/SavingsComparison.astro';
 import HowItWorks from '../components/HowItWorks.astro';
@@ -118,6 +119,8 @@ const currentPath = '/companies';
 		steps={enContent.howItWorks.steps}
 		lang={lang}
 	/>
+
+	<TrustBar currentLang={lang} />
 
 	<LogosSlider
 		headline={enContent.trustedBy.headline}

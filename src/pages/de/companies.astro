@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
+import TrustBar from '../../components/TrustBar.astro';
 import LogosSlider from '../../components/LogosSlider.astro';
 import SavingsComparison from '../../components/SavingsComparison.astro';
 import HowItWorks from '../../components/HowItWorks.astro';
@@ -75,6 +76,8 @@ const currentPath = '/de/companies';
 
 	<div id="savings"><SavingsComparison headline={deContent.savingsComparison.headline} without={deContent.savingsComparison.without} with={deContent.savingsComparison.with} /></div>
 	<HowItWorks badge={deContent.howItWorks.badge} headline={deContent.howItWorks.headline} steps={deContent.howItWorks.steps} lang={lang} />
+	<TrustBar currentLang={lang} />
+
 	<LogosSlider headline={deContent.trustedBy.headline} logos={deContent.trustedBy.logos} />
 	<Testimonials headline={deContent.testimonials.headline} items={deContent.testimonials.items} currentLang={lang} />
 	<WhyChooseUs headline={deContent.whyChooseUs.headline} items={deContent.whyChooseUs.items} />

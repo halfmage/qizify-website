@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import TrustBar from '../components/TrustBar.astro';
 import Hero from '../components/Hero.astro';
 import LogosSlider from '../components/LogosSlider.astro';
 import ProblemStatement from '../components/ProblemStatement.astro';
@@ -43,9 +44,11 @@ const currentPath = '/';
 		ctaSecondary={enContent.hero.ctaSecondary}
 		stats={enContent.hero.stats}
 		currentLang={lang}
-	/>
-	
-	<LogosSlider 
+	>
+		<TrustBar slot="belowHero" currentLang={lang} />
+	</Hero>
+
+	<LogosSlider
 		headline={enContent.trustedBy.headline}
 		logos={enContent.trustedBy.logos}
 	/>

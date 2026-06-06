@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
+import TrustBar from '../components/TrustBar.astro';
 import LogosSlider from '../components/LogosSlider.astro';
 import Testimonials from '../components/Testimonials.astro';
 import FAQ from '../components/FAQ.astro';
@@ -92,6 +93,8 @@ const currentPath = '/agencies';
 			</div>
 		</div>
 	</section>
+
+	<TrustBar currentLang={lang} />
 
 	<LogosSlider headline={enContent.trustedBy.headline} logos={enContent.trustedBy.logos} />
 	<Testimonials headline={enContent.testimonials.headline} items={enContent.testimonials.items} currentLang={lang} />

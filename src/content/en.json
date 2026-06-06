@@ -355,6 +355,121 @@
     "cta": "Request Demo",
     "privacyLabel": "Privacy Policy",
     "termsLabel": "Terms & Conditions"
+  },
+  "trustBar": {
+    "items": [
+      "Co-developed with FH Dortmund",
+      "Federally funded research (BMWE)",
+      "Hosted in Germany"
+    ],
+    "link": "Read the research"
+  },
+  "research": {
+    "label": "Research",
+    "headline": "Built with a German university.\nSources you can check.",
+    "subheadline": "LearnSlice is co-developed in a publicly funded research project with FH Dortmund. Here is what the first university pilot looked at, and what it found.",
+    "context": {
+      "headline": "What the study looked at",
+      "body": "LearnSlice was co-developed with the IDiAL institute at FH Dortmund (Dortmund University of Applied Sciences and Arts) in a research project funded by the German Federal Ministry for Economic Affairs and Energy (BMWE, grant 16GM200302). In May 2026, 50 master's students used the platform to prepare for an exam topic in a Usability Engineering course. The evaluation followed a Design Science Research approach with mixed methods: two student surveys plus a focus group with five lecturers who have 8 to 19 years of teaching experience. This is the first of three planned research iterations."
+    },
+    "challenges": {
+      "label": "The starting point",
+      "headline": "Where students said exam prep is hardest",
+      "intro": "Before the pilot, students named their biggest exam-preparation challenges. The didactic design responds directly to the top ones.",
+      "items": [
+        { "value": "22%", "label": "Understanding theoretical concepts" },
+        { "value": "18%", "label": "Applying knowledge to practical tasks" },
+        { "value": "16%", "label": "Staying motivated" },
+        { "value": "12%", "label": "Time management" },
+        { "value": "10%", "label": "Structuring their learning" }
+      ]
+    },
+    "didactics": {
+      "label": "How it teaches",
+      "headline": "Established didactic methods, not just answers",
+      "intro": "LearnSlice combines curated curriculum content with proven teaching methods, configured by the research team.",
+      "items": [
+        { "title": "Socratic dialogue", "body": "Guided questioning that helps learners reason toward an answer instead of only receiving it." },
+        { "title": "Active recall with quizzes", "body": "Short quizzes and flashcards that turn passive reading into practice and self-checking." },
+        { "title": "Curriculum-anchored answers", "body": "Retrieval grounded in your materials, with inline citations back to every source passage." },
+        { "title": "Gamification, used in context", "body": "Game elements add motivation where they fit. The experts noted these work best in specific situations, not as the sole motivator." }
+      ],
+      "roadmap": "The next iterations add project-based learning and the integration of company-specific knowledge."
+    },
+    "findings": {
+      "label": "Findings",
+      "headline": "What the first pilot showed",
+      "items": [
+        {
+          "stat": "100%",
+          "title": "Every answer traceable to a source",
+          "body": "In the system evaluation, every answer carried a valid citation back to its source passage, with no invented references."
+        },
+        {
+          "stat": "80%",
+          "title": "Reached near-complete mastery",
+          "body": "After preparing with LearnSlice, 80% of students reached complete or near-complete understanding of the exam topic."
+        },
+        {
+          "stat": "70%",
+          "title": "Found the learning pace appropriate",
+          "body": "70% of students felt the personalized learning pace matched their individual needs."
+        },
+        {
+          "stat": "60%",
+          "title": "Already used AI to study",
+          "body": "Even before the study, 60% of students already used AI tools for exam preparation, which makes verifiable sources essential."
+        }
+      ]
+    },
+    "comparison": {
+      "label": "Versus general AI tools",
+      "headline": "Where students said LearnSlice helped more",
+      "intro": "Asked where LearnSlice gave them more than general AI tools, students most often pointed to exam focus and structure.",
+      "items": [
+        { "value": "36%", "label": "Exam-oriented support" },
+        { "value": "18%", "label": "Structured learning guidance" },
+        { "value": "16%", "label": "Relevant answers" },
+        { "value": "14%", "label": "Practical examples" }
+      ]
+    },
+    "architecture": {
+      "label": "How it differs",
+      "headline": "A curriculum-anchored, sovereign approach",
+      "colA": "LearnSlice",
+      "colB": "General AI tools",
+      "rows": [
+        { "property": "Data-processing location", "a": "Hosted in Germany", "b": "Vendor cloud, region varies, often outside the EU" },
+        { "property": "Learner data used for training", "a": "No", "b": "Governed by vendor terms, varies by plan" },
+        { "property": "Primary knowledge source", "a": "Your curriculum and documents", "b": "General model knowledge" },
+        { "property": "Source attribution", "a": "Inline citations to retrieved passages", "b": "Not provided by default" },
+        { "property": "Cost model", "a": "Fixed self-hosted infrastructure", "b": "Usage-based per-token pricing" }
+      ]
+    },
+    "audiences": {
+      "label": "Who it is for",
+      "headline": "What this means for your role",
+      "items": [
+        {
+          "role": "For leaders",
+          "body": "A credible, compliant choice: co-developed with a German university in a federally funded project, with learner data hosted in Germany and never used to train the model."
+        },
+        {
+          "role": "For teachers",
+          "body": "It answers from your curriculum, and every statement links back to the source passage. You keep control of the content, with no invented references."
+        },
+        {
+          "role": "For HR and L&D",
+          "body": "Built for the skills gap in vocational training. You can feed it your own and regulated material, with a roadmap toward company-specific knowledge."
+        }
+      ]
+    },
+    "limitations": {
+      "label": "Honest limits",
+      "headline": "What we are still working on",
+      "body": "This was a first-iteration pilot on a foundational topic, and the gains in learning speed and engagement were partial. The lecturers noted that the value of a tailored assistant is highest for specialized, regulated, and curated-source material. The next iterations focus on project-based learning and integrating company-specific knowledge. We will update this page as the research continues."
+    },
+    "disclosure": "First-iteration research pilot, 50 students, one course, May 2026. LearnSlice is a partner in the funded research project. Findings describe an early study and are not a peer-reviewed publication."
   }
 }
 

@@ -354,6 +354,121 @@
     "cta": "Demo anfordern",
     "privacyLabel": "Datenschutz",
     "termsLabel": "AGB"
+  },
+  "trustBar": {
+    "items": [
+      "Mit der FH Dortmund entwickelt",
+      "Öffentlich geförderte Forschung (BMWE)",
+      "Gehostet in Deutschland"
+    ],
+    "link": "Zur Forschung"
+  },
+  "research": {
+    "label": "Forschung",
+    "headline": "Mit einer deutschen Hochschule entwickelt.\nQuellen, die Sie prüfen können.",
+    "subheadline": "LearnSlice wird in einem öffentlich geförderten Forschungsprojekt mit der FH Dortmund entwickelt. Hier sehen Sie, was die erste Hochschulstudie untersucht und gefunden hat.",
+    "context": {
+      "headline": "Was die Studie untersucht hat",
+      "body": "LearnSlice wurde gemeinsam mit dem Institut IDiAL der FH Dortmund (Fachhochschule Dortmund) in einem Forschungsprojekt entwickelt, das vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200302) gefördert wird. Im Mai 2026 nutzten 50 Masterstudierende die Plattform zur Vorbereitung auf ein Prüfungsthema im Fach Usability Engineering. Die Auswertung folgte einem Design-Science-Research-Ansatz mit gemischten Methoden: zwei Studierendenbefragungen sowie eine Fokusgruppe mit fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung. Dies ist die erste von drei geplanten Forschungsiterationen."
+    },
+    "challenges": {
+      "label": "Der Ausgangspunkt",
+      "headline": "Wo Studierende die Prüfungsvorbereitung am schwersten finden",
+      "intro": "Vor der Studie nannten die Studierenden ihre größten Herausforderungen bei der Prüfungsvorbereitung. Das didaktische Konzept setzt direkt bei den wichtigsten an.",
+      "items": [
+        { "value": "22%", "label": "Theoretische Konzepte verstehen" },
+        { "value": "18%", "label": "Wissen auf die Praxis anwenden" },
+        { "value": "16%", "label": "Motiviert bleiben" },
+        { "value": "12%", "label": "Zeitmanagement" },
+        { "value": "10%", "label": "Das Lernen strukturieren" }
+      ]
+    },
+    "didactics": {
+      "label": "Wie es lehrt",
+      "headline": "Bewährte didaktische Methoden, nicht nur Antworten",
+      "intro": "LearnSlice verbindet kuratierte Lehrplaninhalte mit bewährten Lehrmethoden, konfiguriert vom Forschungsteam.",
+      "items": [
+        { "title": "Sokratischer Dialog", "body": "Gezielte Fragen, die Lernende zum eigenen Schlussfolgern führen, statt nur Antworten zu liefern." },
+        { "title": "Aktives Abrufen mit Quizzen", "body": "Kurze Quizze und Karteikarten, die passives Lesen in Üben und Selbstüberprüfung verwandeln." },
+        { "title": "Lehrplanbasierte Antworten", "body": "Abruf aus Ihren Materialien, mit Inline-Quellen zurück zu jeder Textstelle." },
+        { "title": "Gamification, situativ eingesetzt", "body": "Spielelemente motivieren dort, wo es passt. Die Experten betonten, dass sie in bestimmten Situationen am besten wirken, nicht als alleiniger Motivator." }
+      ],
+      "roadmap": "Die nächsten Iterationen ergänzen projektbasiertes Lernen und die Integration unternehmensspezifischen Wissens."
+    },
+    "findings": {
+      "label": "Ergebnisse",
+      "headline": "Was die erste Studie gezeigt hat",
+      "items": [
+        {
+          "stat": "100%",
+          "title": "Jede Antwort auf eine Quelle zurückführbar",
+          "body": "In der Systemauswertung trug jede Antwort eine gültige Quellenangabe zur Textstelle, ohne erfundene Quellen."
+        },
+        {
+          "stat": "80%",
+          "title": "Nahezu vollständiges Verständnis erreicht",
+          "body": "Nach der Vorbereitung mit LearnSlice erreichten 80% der Studierenden ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas."
+        },
+        {
+          "stat": "70%",
+          "title": "Empfanden das Lerntempo als passend",
+          "body": "70% der Studierenden empfanden das personalisierte Lerntempo als passend für ihre individuellen Bedürfnisse."
+        },
+        {
+          "stat": "60%",
+          "title": "Nutzten bereits KI zum Lernen",
+          "body": "Schon vor der Studie nutzten 60% der Studierenden KI-Tools zur Prüfungsvorbereitung, was überprüfbare Quellen unverzichtbar macht."
+        }
+      ]
+    },
+    "comparison": {
+      "label": "Gegenüber allgemeinen KI-Tools",
+      "headline": "Wo LearnSlice den Studierenden mehr geholfen hat",
+      "intro": "Gefragt, wo LearnSlice ihnen mehr bot als allgemeine KI-Tools, nannten die Studierenden am häufigsten Prüfungsfokus und Struktur.",
+      "items": [
+        { "value": "36%", "label": "Prüfungsnahe Unterstützung" },
+        { "value": "18%", "label": "Strukturierte Lernbegleitung" },
+        { "value": "16%", "label": "Relevante Antworten" },
+        { "value": "14%", "label": "Praktische Beispiele" }
+      ]
+    },
+    "architecture": {
+      "label": "Der Unterschied",
+      "headline": "Ein lehrplanbasierter, souveräner Ansatz",
+      "colA": "LearnSlice",
+      "colB": "Allgemeine KI-Tools",
+      "rows": [
+        { "property": "Ort der Datenverarbeitung", "a": "Gehostet in Deutschland", "b": "Anbieter-Cloud, Region variiert, oft außerhalb der EU" },
+        { "property": "Lernerdaten für Training genutzt", "a": "Nein", "b": "Abhängig von den Anbieterbedingungen, je nach Tarif" },
+        { "property": "Primäre Wissensquelle", "a": "Ihr Lehrplan und Ihre Dokumente", "b": "Allgemeines Modellwissen" },
+        { "property": "Quellenangaben", "a": "Inline-Quellen zu den Textstellen", "b": "Standardmäßig nicht vorhanden" },
+        { "property": "Kostenmodell", "a": "Feste, selbst gehostete Infrastruktur", "b": "Nutzungsbasierte Abrechnung pro Token" }
+      ]
+    },
+    "audiences": {
+      "label": "Für wen",
+      "headline": "Was das für Ihre Rolle bedeutet",
+      "items": [
+        {
+          "role": "Für Führungskräfte",
+          "body": "Eine glaubwürdige, konforme Wahl: mit einer deutschen Hochschule in einem geförderten Projekt entwickelt, mit Lernerdaten, die in Deutschland gehostet und nie zum Training des Modells genutzt werden."
+        },
+        {
+          "role": "Für Lehrende",
+          "body": "Es antwortet aus Ihrem Lehrplan, und jede Aussage verweist zurück auf die Textstelle. Sie behalten die Kontrolle über die Inhalte, ohne erfundene Quellen."
+        },
+        {
+          "role": "Für HR und Personalentwicklung",
+          "body": "Für den Fachkräftemangel in der Ausbildung gebaut. Sie können eigenes und reguliertes Material einspeisen, mit einer Roadmap hin zu unternehmensspezifischem Wissen."
+        }
+      ]
+    },
+    "limitations": {
+      "label": "Ehrliche Grenzen",
+      "headline": "Woran wir noch arbeiten",
+      "body": "Dies war eine erste Studie zu einem grundlegenden Thema, und die Gewinne bei Lerntempo und Engagement waren teilweise. Die Lehrenden merkten an, dass der Nutzen eines maßgeschneiderten Assistenten bei spezialisiertem, reguliertem und kuratiertem Material am größten ist. Die nächsten Iterationen widmen sich dem projektbasierten Lernen und der Integration unternehmensspezifischen Wissens. Wir aktualisieren diese Seite im Verlauf der Forschung."
+    },
+    "disclosure": "Erste Forschungsstudie, 50 Studierende, ein Kurs, Mai 2026. LearnSlice ist Partner im geförderten Forschungsprojekt. Die Ergebnisse beschreiben eine frühe Studie und sind keine begutachtete Veröffentlichung."
   }
 }
 

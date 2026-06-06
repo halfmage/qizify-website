@@ -1,0 +1,41 @@
+---
+import enContent from '../content/en.json';
+import deContent from '../content/de.json';
+
+interface Props {
+	currentLang: 'en' | 'de';
+}
+
+const { currentLang } = Astro.props;
+const content = currentLang === 'de' ? deContent.trustBar : enContent.trustBar;
+const researchHref = currentLang === 'de' ? '/de/forschung' : '/research';
+---
+
+<section class="border-y border-border bg-surface/30">
+	<div class="max-w-container mx-auto px-6 md:px-8 py-5">
+		<div class="flex flex-col md:flex-row items-start md:items-center justify-start gap-x-6 gap-y-3 text-left">
+			<img
+				src="/images/logos/fhdortmund-logo.png"
+				alt="FH Dortmund"
+				class="h-8 w-auto opacity-70 grayscale shrink-0"
+				width="120"
+				height="32"
+				loading="lazy"
+			/>
+			<ul class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 list-none m-0 p-0">
+				{content.items.map((item, i) => (
+					<li class="flex items-center gap-x-4 text-sm text-muted">
+						{i > 0 && <span class="text-border-light" aria-hidden="true">&middot;</span>}
+						<span>{item}</span>
+					</li>
+				))}
+			</ul>
+			<a
+				href={researchHref}
+				class="text-sm text-primary hover:text-white transition-colors whitespace-nowrap shrink-0"
+			>
+				{content.link} &rsaquo;
+			</a>
+		</div>
+	</div>
+</section>
