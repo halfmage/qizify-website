@@ -369,12 +369,12 @@
     "subheadline": "LearnSlice wird in einem öffentlich geförderten Forschungsprojekt mit der FH Dortmund entwickelt. Hier sehen Sie, was die erste Hochschulstudie untersucht und gefunden hat.",
     "context": {
       "headline": "Was die Studie untersucht hat",
-      "body": "LearnSlice wurde gemeinsam mit dem Institut IDiAL der FH Dortmund (Fachhochschule Dortmund) in einem Forschungsprojekt entwickelt, das vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200302) gefördert wird. Im Mai 2026 nutzten 50 Masterstudierende die Plattform zur Vorbereitung auf ein Prüfungsthema im Fach Usability Engineering. Die Auswertung folgte einem Design-Science-Research-Ansatz mit gemischten Methoden: zwei Studierendenbefragungen sowie eine Fokusgruppe mit fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung. Dies ist die erste von drei geplanten Forschungsiterationen."
+      "body": "LearnSlice wurde gemeinsam mit dem Institut IDiAL der FH Dortmund in einem Forschungsprojekt entwickelt, das vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200302) gefördert wird. Im Mai 2026 nutzten 50 Masterstudierende es zur Vorbereitung auf eine Prüfung im Fach Usability Engineering. Die Auswertung folgte einem Design-Science-Research-Ansatz mit zwei Studierendenbefragungen und einer Fokusgruppe aus fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung. Dies ist die erste von drei geplanten Iterationen."
     },
     "challenges": {
       "label": "Der Ausgangspunkt",
       "headline": "Wo Studierende die Prüfungsvorbereitung am schwersten finden",
-      "intro": "Vor der Studie nannten die Studierenden ihre größten Herausforderungen bei der Prüfungsvorbereitung. Das didaktische Konzept setzt direkt bei den wichtigsten an.",
+      "intro": "Vor der Studie nannten die Studierenden ihre größten Herausforderungen bei der Prüfungsvorbereitung. Das didaktische Konzept setzt direkt bei den wichtigsten an. 60% dieser Studierenden lernten schon vor der Studie mit KI, genau deshalb sind überprüfbare Quellen entscheidend.",
       "items": [
         { "value": "22%", "label": "Theoretische Konzepte verstehen" },
         { "value": "18%", "label": "Wissen auf die Praxis anwenden" },
@@ -413,11 +413,6 @@
           "stat": "70%",
           "title": "Empfanden das Lerntempo als passend",
           "body": "70% der Studierenden empfanden das personalisierte Lerntempo als passend für ihre individuellen Bedürfnisse."
-        },
-        {
-          "stat": "60%",
-          "title": "Nutzten bereits KI zum Lernen",
-          "body": "Schon vor der Studie nutzten 60% der Studierenden KI-Tools zur Prüfungsvorbereitung, was überprüfbare Quellen unverzichtbar macht."
         }
       ]
     },
@@ -463,12 +458,22 @@
         }
       ]
     },
+    "quote": {
+      "text": "Ein maßgeschneiderter Assistent bringt den größten Nutzen genau dort, wo die Ausbildung ihn am meisten braucht: bei spezialisierten, regulierten und kuratierten Inhalten.",
+      "author": "Prof. Dr. Carsten Wolff",
+      "role": "FH Dortmund, Institut IDiAL"
+    },
     "limitations": {
       "label": "Ehrliche Grenzen",
       "headline": "Woran wir noch arbeiten",
       "body": "Dies war eine erste Studie zu einem grundlegenden Thema, und die Gewinne bei Lerntempo und Engagement waren teilweise. Die Lehrenden merkten an, dass der Nutzen eines maßgeschneiderten Assistenten bei spezialisiertem, reguliertem und kuratiertem Material am größten ist. Die nächsten Iterationen widmen sich dem projektbasierten Lernen und der Integration unternehmensspezifischen Wissens. Wir aktualisieren diese Seite im Verlauf der Forschung."
     },
-    "disclosure": "Erste Forschungsstudie, 50 Studierende, ein Kurs, Mai 2026. LearnSlice ist Partner im geförderten Forschungsprojekt. Die Ergebnisse beschreiben eine frühe Studie und sind keine begutachtete Veröffentlichung."
+    "disclosure": "Erste Forschungsstudie, 50 Studierende, ein Kurs, Mai 2026. LearnSlice ist Partner im geförderten Forschungsprojekt. Die Ergebnisse beschreiben eine frühe Studie und sind keine begutachtete Veröffentlichung.",
+    "cta": {
+      "headline": "Sehen Sie die Belege in Ihrem eigenen Kontext",
+      "subheadline": "Mit einer deutschen Hochschule entwickelt, in Deutschland gehostet, auf Ihrem Lehrplan aufgebaut. Wir führen Sie durch die Studienergebnisse und zeigen, wie ein Setup für Ihre Teams aussieht.",
+      "button": "Demo buchen"
+    }
   }
 }
 

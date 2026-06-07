@@ -4,16 +4,19 @@ import deContent from '../content/de.json';
 
 interface Props {
 	currentLang: 'en' | 'de';
+	showLink?: boolean;
+	center?: boolean;
 }
 
-const { currentLang } = Astro.props;
+const { currentLang, showLink = true, center = false } = Astro.props;
 const content = currentLang === 'de' ? deContent.trustBar : enContent.trustBar;
 const researchHref = currentLang === 'de' ? '/de/forschung' : '/research';
+const rowAlign = center ? 'items-center justify-center text-center' : 'items-start md:items-center justify-start text-left';
 ---
 
 <section class="border-y border-border bg-surface/30">
 	<div class="max-w-container mx-auto px-6 md:px-8 py-5">
-		<div class="flex flex-col md:flex-row items-start md:items-center justify-start gap-x-6 gap-y-3 text-left">
+		<div class={`flex flex-col md:flex-row ${rowAlign} gap-x-6 gap-y-3`}>
 			<img
 				src="/images/logos/fhdortmund-logo.png"
 				alt="FH Dortmund"
@@ -30,12 +33,14 @@ const researchHref = currentLang === 'de' ? '/de/forschung' : '/research';
 					</li>
 				))}
 			</ul>
-			<a
-				href={researchHref}
-				class="text-sm text-primary hover:text-white transition-colors whitespace-nowrap shrink-0"
-			>
-				{content.link} &rsaquo;
-			</a>
+			{showLink && (
+				<a
+					href={researchHref}
+					class="text-sm text-primary hover:text-white transition-colors whitespace-nowrap shrink-0"
+				>
+					{content.link} &rsaquo;
+				</a>
+			)}
 		</div>
 	</div>
 </section>

@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import DataBars from '../../components/DataBars.astro';
+import TrustBar from '../../components/TrustBar.astro';
 import CTAFooter from '../../components/CTAFooter.astro';
 import Footer from '../../components/Footer.astro';
 import DemoRequestModal from '../../components/DemoRequestModal.astro';
@@ -29,6 +30,21 @@ const r = deContent.research;
 			<p class="text-lg text-muted max-w-xl mx-auto leading-relaxed">{r.subheadline}</p>
 		</div>
 	</section>
+
+	<!-- Kennzahlen-Streifen -->
+	<section class="pb-10 md:pb-14 px-6 md:px-8">
+		<div class="max-w-2xl mx-auto grid grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+			{r.findings.items.slice(0, 3).map((item) => (
+				<div class="bg-surface px-4 py-6 md:px-6 md:py-8 text-center">
+					<div class="text-heading md:text-display-sm text-primary font-semibold mb-1">{item.stat}</div>
+					<div class="text-xs md:text-sm text-muted leading-snug">{item.title}</div>
+				</div>
+			))}
+		</div>
+	</section>
+
+	<!-- Hochschul-Vertrauensleiste -->
+	<TrustBar currentLang={lang} showLink={false} center={true} />
 
 	<!-- Was die Studie untersucht hat -->
 	<section class="pb-14 md:pb-20 px-6 md:px-8 border-t border-border/50 pt-14 md:pt-20">
@@ -122,6 +138,14 @@ const r = deContent.research;
 		</div>
 	</section>
 
+	<!-- Zitat einer Lehrperson -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<figure class="max-w-3xl mx-auto bg-surface border border-border rounded-xl p-8 md:p-10 m-0">
+			<blockquote class="text-lg md:text-xl text-white leading-relaxed m-0">&bdquo;{r.quote.text}&ldquo;</blockquote>
+			<figcaption class="text-sm text-muted mt-5"><span class="text-white font-medium">{r.quote.author}</span>, {r.quote.role}</figcaption>
+		</figure>
+	</section>
+
 	<!-- Woran wir noch arbeiten -->
 	<section class="py-12 md:py-20 px-6 md:px-8">
 		<div class="max-w-3xl mx-auto bg-surface border border-border rounded-xl p-8 md:p-10">
@@ -138,7 +162,7 @@ const r = deContent.research;
 		</div>
 	</section>
 
-	<CTAFooter headline={deContent.cta.headline} subheadline={deContent.cta.subheadline} button={deContent.cta.button} currentLang={lang} />
+	<CTAFooter headline={r.cta.headline} subheadline={r.cta.subheadline} button={r.cta.button} currentLang={lang} />
 	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
 	<DemoRequestModal currentLang={lang} />
 </BaseLayout>
