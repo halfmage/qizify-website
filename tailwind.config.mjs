@@ -33,9 +33,11 @@ export default {
 				'128': '32rem',
 			},
 			fontSize: {
-				'display': ['3.25rem', { lineHeight: '1.1', letterSpacing: '-0.025em', fontWeight: '500' }],
-				'display-sm': ['2.5rem', { lineHeight: '1.15', letterSpacing: '-0.02em', fontWeight: '500' }],
-				'heading': ['1.75rem', { lineHeight: '1.2', letterSpacing: '-0.015em', fontWeight: '500' }],
+				// Fluid display sizes: scale down on small phones to avoid clipping
+				// (body has overflow-x-hidden), grow to the original max on desktop.
+				'display': ['clamp(2.5rem, 1.5rem + 3vw, 3.25rem)', { lineHeight: '1.1', letterSpacing: '-0.025em', fontWeight: '500' }],
+				'display-sm': ['clamp(1.65rem, 1rem + 3.2vw, 2.5rem)', { lineHeight: '1.15', letterSpacing: '-0.02em', fontWeight: '500' }],
+				'heading': ['clamp(1.5rem, 1.1rem + 2.2vw, 1.75rem)', { lineHeight: '1.2', letterSpacing: '-0.015em', fontWeight: '500' }],
 				'heading-sm': ['1.25rem', { lineHeight: '1.3', letterSpacing: '-0.01em', fontWeight: '500' }],
 				'label': ['0.8125rem', { lineHeight: '1', letterSpacing: '0.08em', fontWeight: '500' }],
 			},

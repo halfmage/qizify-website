@@ -32,11 +32,11 @@ const { headline, tabs } = Astro.props;
 		</div>
 
 		<!-- Tab Navigation -->
-		<div class="flex justify-center mb-10 md:mb-14">
-			<div class="inline-flex gap-1 p-1 bg-surface rounded-lg border border-border">
+		<div class="flex justify-center mb-10 md:mb-14 max-w-full">
+			<div class="inline-flex gap-1 p-1 bg-surface rounded-lg border border-border max-w-full overflow-x-auto">
 				{tabs.map((tab, index) => (
 					<button
-						class={`company-tab px-5 py-2 rounded-md text-sm font-medium transition-all duration-200 ${index === 0 ? 'bg-primary/15 text-primary' : 'text-muted hover:text-white'}`}
+						class={`company-tab shrink-0 px-3.5 sm:px-5 py-2 rounded-md text-sm font-medium transition-all duration-200 ${index === 0 ? 'bg-primary/15 text-primary' : 'text-muted hover:text-white'}`}
 						data-tab-index={index}
 					>
 						{tab.tabLabel}

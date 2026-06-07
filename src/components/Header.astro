@@ -125,7 +125,10 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 
 		<!-- Right side -->
 		<div class="flex items-center gap-3 shrink-0">
-			<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
+			<!-- Language switcher lives in the mobile menu below; hidden here to keep the bar uncrowded on phones -->
+			<div class="hidden lg:block">
+				<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
+			</div>
 			<div class="hidden lg:block w-px h-4 bg-border"></div>
 			<Button
 				variant="primary"
@@ -135,18 +138,10 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 			>
 				{cta}
 			</Button>
-			<Button
-				variant="primary"
-				data-modal-trigger="demo-request"
-				aria-label={cta}
-				class="lg:hidden text-xs px-3 py-1.5"
-			>
-				{cta}
-			</Button>
 		</div>
 
 		<!-- Mobile toggle -->
-		<button class="flex lg:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-2 z-[1001]" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
+		<button class="flex lg:hidden flex-col items-center justify-center gap-[5px] bg-transparent border-none cursor-pointer w-11 h-11 -mr-2 z-[1001]" aria-label="Toggle mobile menu" aria-expanded="false" id="mobile-menu-toggle">
 			<span class="w-[18px] h-[1.5px] bg-white rounded-full transition-all duration-300 origin-center" id="hamburger-line-1"></span>
 			<span class="w-[18px] h-[1.5px] bg-white rounded-full transition-all duration-300" id="hamburger-line-2"></span>
 			<span class="w-[18px] h-[1.5px] bg-white rounded-full transition-all duration-300 origin-center" id="hamburger-line-3"></span>
@@ -154,7 +149,7 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 	</div>
 
 	<!-- Mobile Menu -->
-	<nav class="lg:hidden absolute top-full left-0 right-0 bg-dark/[0.98] backdrop-blur-xl border-t border-border max-h-[80vh] overflow-y-auto -translate-y-full opacity-0 pointer-events-none transition-all duration-300" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+	<nav class="lg:hidden absolute top-full left-0 right-0 bg-dark/[0.98] backdrop-blur-xl border-t border-border max-h-[80vh] overflow-x-hidden overflow-y-auto -translate-y-full opacity-0 pointer-events-none transition-all duration-300" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
 		<div class="px-6 py-6 flex flex-col gap-1">
 			{menu.map((item) =>
 				item.children ? (
@@ -180,9 +175,9 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 						</summary>
 						<div class="pl-2 pb-1 flex flex-col gap-0.5">
 							{langPosts.map((post) => (
-								<a href={`${blogBasePath}/${post.slug}`} class="flex items-center gap-3 py-2 text-sm text-muted hover:text-white no-underline transition-colors">
+								<a href={`${blogBasePath}/${post.slug}`} class="flex items-center gap-3 py-2 text-sm text-muted hover:text-white no-underline transition-colors min-w-0">
 									<Icon name="hugeicons:note-edit" class="w-4 h-4 text-primary shrink-0" />
-									<span class="truncate">{post.data.title}</span>
+									<span class="truncate min-w-0">{post.data.title}</span>
 								</a>
 							))}
 							<a href={item.href} class="flex items-center gap-3 py-2 text-sm text-primary hover:text-white no-underline transition-colors font-medium">
