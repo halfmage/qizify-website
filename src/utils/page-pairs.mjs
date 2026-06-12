@@ -39,6 +39,7 @@ export const EN_TO_DE = {
 	'/blog/reduce-training-costs': '/de/blog/ausbildungskosten-senken',
 	'/blog/save-time-mentoring-apprentices': '/de/blog/azubi-betreuung-zeit-sparen',
 	'/blog/apprenticeship-framework-plan-explained': '/de/blog/ausbildungsrahmenplan-erklaert',
+	'/blog/does-ai-learning-help-apprentices': '/de/blog/lohnt-sich-ki-in-der-ausbildung',
 };
 
 // Pages that exist only in one language and therefore should not emit

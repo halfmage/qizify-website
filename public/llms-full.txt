@@ -420,6 +420,154 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
+# Does AI Learning Actually Help Apprentices? Pilot Data
+
+Source: https://learnslice.com/blog/does-ai-learning-help-apprentices
+Language: en
+Published: 2026-06-12
+
+Does an AI learning platform really help apprentices? What a university pilot found, and why it matters for dual students sitting the IHK exam.
+
+## Key Takeaways
+
+- In the work-integrated dual study model, students juggle academic study and company work and still have to pass the IHK exam, which is often pulled forward. Structured, exam-focused preparation helps most exactly at this double load.
+- In the FH Dortmund university pilot (50 students), 100% of answers were traceable to a source, 80% (40 of 50) reached near-complete mastery of the exam topic, and 70% (35 of 50) found the learning pace appropriate.
+- The difference from general AI tools was exam focus and structure: answers came from the curriculum, with a citation back to each source passage.
+- That same mechanism transfers to dual students: exam-focused, checkable, and tuned to the material that actually counts in the IHK exam.
+- The value is highest where content is specialized, regulated, and curated, which is exactly vocational training and IHK exam preparation.
+
+![A trainer and a dual student preparing together at a laptop for the IHK exam](/images/blog/ki-lernplattform-ihk-pruefung.webp)
+
+Dual students carry a double load: academic study and company work at the same time. In the work-integrated model, vocational school is added, and at the end the IHK final exam, which is often pulled forward so everything does not land at the same time. That double load makes one question urgent: does AI learning actually help apprentices, or does it just cost extra time? There is now data to answer it, from a university pilot at FH Dortmund. This article shows what the study proves and why it matters most for dual students sitting the IHK exam.
+
+## The short answer
+
+Yes, AI learning helps apprentices, provided the platform answers from your curriculum and backs every statement with a source. In the FH Dortmund university pilot, 100% of answers were traceable to a source, 80% (40 of 50) reached near-complete mastery of the exam topic, and 70% (35 of 50) found the learning pace appropriate.
+
+Those three numbers are the core. Just as important is how well that mechanism transfers to the double load of dual study. The following sections cover both.
+
+## Where learning in training often breaks down
+
+Before asking whether AI helps, it is worth looking at the actual problem. Before the pilot, students named their biggest exam-preparation hurdles. Notably, 60% of them already studied with AI beforehand, which is exactly why verifiable sources matter: a confident but wrong answer costs more time than it saves, time dual students do not have to spare.
+
+The hurdles, in order of how often they came up:
+
+- **22%** Understanding theoretical concepts
+- **18%** Applying knowledge to practical tasks
+- **16%** Staying motivated
+- **12%** Time management
+- **10%** Structuring their learning
+
+These are the same things trainers absorb day to day, often in improvised one-on-one conversations. Anyone looking for relief here should measure a tool against these hurdles, not against feature lists. For more on how that workload shifts, see [AI in vocational training](/blog/ai-in-vocational-training).
+
+## What the university pilot actually showed
+
+In May 2026, 50 master's students used LearnSlice to prepare for an exam in a Usability Engineering course. The evaluation used a Design Science Research approach with two student surveys and a focus group of five lecturers with 8 to 19 years of teaching experience. The platform was co-developed with the IDiAL institute at FH Dortmund and funded by the BMWE. A real, funded university study as the basis, not a marketing promise.
+
+The three central findings at a glance:
+
+| Finding | Value | What it means |
+|---|---|---|
+| Source fidelity | 100% | Every answer carried a valid citation to its source passage, with no invented references. |
+| Mastery | 40 of 50 | After preparing with LearnSlice, 80% reached complete or near-complete understanding of the exam topic. |
+| Pace | 35 of 50 | 70% felt the personalized learning pace matched their individual needs. |
+
+Source fidelity is the point that separates a learning platform from a general chatbot. An answer you can trace back to a passage can be checked. An answer with no source has to be believed. In training and in the IHK exam, where exam material and regulated knowledge are what count, that difference is decisive.
+
+## Why this matters most for dual students facing the IHK exam
+
+The pilot studied master's students before a university exam. Dual students face an even more demanding version of the same task: they prepare for the IHK final exam while carrying both study and company work. The work-integrated dual study program is the only model with a double qualification, and that double qualification is what creates the double load. The IHK exam is often brought forward so it does not collide with university finals, but the time pressure stays high.
+
+What helped in the pilot maps directly onto that situation:
+
+- **Exam focus.** Preparation targets the material that is actually tested, not general knowledge. When time is short, that is the biggest lever.
+- **Structure.** A clear learning path replaces the search for the next sensible step, exactly when study and company work compete for the same scarce time.
+- **Checkability.** Every answer traces back to its source. Anyone preparing for the IHK exam can rely on what they learned, because every statement is backed by a real, checkable source.
+
+In short, the mechanism that took master's students to 40 of 50 with near-complete mastery targets, for dual students, the very point where their double load presses hardest. For the exam phase specifically, see [digital IHK exam preparation](/blog/ihk-exam-preparation-digital).
+
+## Why source-checkable, curriculum-anchored answers make the difference
+
+Asked where LearnSlice gave them more than general AI tools, students most often pointed to exam focus and structure:
+
+- **36%** Exam-oriented support
+- **18%** Structured learning guidance
+- **16%** Relevant answers
+- **14%** Practical examples
+
+The reason is in the architecture. A curriculum-anchored platform retrieves content from curated materials and links every statement to its source. It pairs that with established teaching methods: Socratic questioning that helps learners reason toward an answer, active recall through short quizzes instead of passive reading, and gamification where it fits the moment. This is not generic textbook knowledge, it is the material that is actually tested.
+
+Prof. Dr. Carsten Wolff of the IDiAL institute at FH Dortmund puts it this way:
+
+> A tailored assistant adds the most value exactly where training needs it most: specialized, regulated, and curated-source domains.
+
+That is the lever. The more specialized and regulated your material, the more you gain from a platform that answers from exactly that material rather than from the general knowledge of a publicly hosted model. For how a curriculum and your own content combine, see [the AI learning platform guide for apprentices](/blog/ai-learning-platform-apprentices).
+
+## How a platform teaches, not just answers
+
+Source fidelity alone does not produce learning. The methods used in the pilot were configured by the research team and follow established didactics. They are the reason students pointed to exam focus and structure as the advantage.
+
+- **Socratic dialogue.** Guided questioning leads learners to reason toward an answer instead of only receiving a finished one. That builds understanding rather than mere recall.
+- **Active recall with quizzes.** Short quizzes and flashcards turn passive reading into practice and self-checking, the most effective lever against forgetting before an exam.
+- **Curriculum-anchored answers.** Retrieval is grounded in the stored materials, with inline citations back to every source passage, so it stays clear what a statement rests on.
+- **Gamification, used in context.** Game elements motivate where they fit. The lecturers stressed they work best in specific situations.
+
+The material is not just delivered, it is put into a learning logic. That combination of source and method is what separates a learning platform from a plain question-and-answer tool.
+
+## Hosted in Germany, grounded in your curriculum
+
+For these results to hold in a German organization and for dual students, the architecture is what counts: learner data stays in Germany and is not used to train the model, and answers come from your curriculum rather than general model knowledge. That is the clear advantage over general chatbots:
+
+| Criterion | Curriculum-anchored platform | General AI tools |
+|---|---|---|
+| Data-processing location | Hosted in Germany | Vendor cloud, region varies, often outside the EU |
+| Learner data used for training | No | Governed by vendor terms, varies by plan |
+| Primary knowledge source | Your curriculum and documents | General model knowledge |
+| Source attribution | Inline citations to retrieved passages | Not provided by default |
+
+## Is it worth it for your team?
+
+The logic carries wherever material is specialized, regulated, and curated, and that describes vocational training and dual study closely. This short checklist helps you judge:
+
+- Your apprentices or dual students prepare for the IHK exam with clearly defined material
+- There is internal or regulated material that answers should come from
+- Checkable sources matter to you, so learners can rely on what they study
+- Your trainers spend a lot of time on recurring routine questions
+- Data protection and hosting in Germany are non-negotiable for you
+
+If you answer yes to several of these, the expected value is high, and the pilot numbers are a good starting point for your own assessment. For the broader organizational picture, see [digitizing apprenticeship training](/blog/digitize-apprenticeship-training).
+
+**See the evidence in detail.** All the numbers and the method are laid out on our [research page](/research). In a short demo we will show you, in 20 minutes and on your own exam material, what preparation looks like for your apprentices and dual students. [Book a demo](/companies).
+
+
+## Frequently Asked Questions
+
+### Does AI learning actually help apprentices?
+
+In the FH Dortmund university pilot with 50 students in May 2026, 40 of 50 students reached complete or near-complete understanding of the exam topic after preparing with LearnSlice, and every answer was traceable to a source. For structured, exam-focused preparation, that is strong evidence, especially in vocational training.
+
+### Does it also help dual students sitting the IHK exam?
+
+Yes, especially there. Dual students face a double load of study and company work, and they have to pass the IHK final exam, which is often brought forward. A platform that is exam-focused, structured, and grounded in checkable sources targets exactly that double load.
+
+### Where do these numbers come from?
+
+From a research study at FH Dortmund (IDiAL institute), funded by the German Federal Ministry for Economic Affairs and Energy (BMWE, grant 16GM200302). 50 master's students used LearnSlice in May 2026 to prepare for an exam. The method was Design Science Research with two surveys and a focus group of five lecturers with 8 to 19 years of teaching experience.
+
+### What sets an AI learning platform apart from a general chatbot?
+
+A curriculum-anchored platform answers from your own materials and backs every statement with a citation to the source passage. General AI tools answer from general model knowledge, usually without sources. In the pilot, students named exam focus and structure as the points where LearnSlice helped them more than general AI tools.
+
+### Does AI replace trainers and instructors?
+
+No. The lecturers involved stressed that a tailored assistant supports teaching. The platform handles routine questions and practice, while trainers focus on hands-on work, feedback, and assessment.
+
+### Which organizations benefit most?
+
+The value is greatest where content is specialized, regulated, and curated, such as job-specific knowledge, IHK exam material, and internal standards. Those fields describe day-to-day vocational training and dual study closely.
+
+---
+
 # AI Learning Platform for Apprentices: Free Up Your Trainers
 
 Source: https://learnslice.com/blog/ai-learning-platform-apprentices
@@ -2407,6 +2555,154 @@ Digital IHK exam preparation with AI support is more efficient, more affordable,
 
 **Want to see how AI-powered IHK exam prep works?** [Book a free demo](/companies) and see LearnSlice in action. You can also explore how to [reduce your overall training costs](/blog/reduce-training-costs) with a complete digital learning strategy.
 
+
+---
+
+# Lohnt sich KI in der Ausbildung? Was der Uni-Pilot zeigt
+
+Source: https://learnslice.com/de/blog/lohnt-sich-ki-in-der-ausbildung
+Language: de
+Published: 2026-06-12
+
+Bringt KI in der Ausbildung wirklich etwas? Was ein Uni-Pilot zeigt, und warum es duale Studierende mit IHK-Prüfung besonders entlastet.
+
+## Auf einen Blick
+
+- Im ausbildungsintegrierenden dualen Studium verbinden Studierende Studium und Betrieb und müssen zusätzlich die IHK-Prüfung bestehen, die oft zeitlich vorgezogen wird. Genau bei dieser Doppelbelastung hilft strukturierte, prüfungsnahe Vorbereitung am meisten.
+- Im Hochschulpilot der FH Dortmund (50 Studierende) waren 100% der Antworten auf eine Quelle zurückführbar, 80% (40 von 50) erreichten ein nahezu vollständiges Verständnis des Prüfungsthemas, und 70% (35 von 50) empfanden das Lerntempo als passend.
+- Den Unterschied zu allgemeinen KI-Tools machten Prüfungsnähe und Struktur: Die Antworten kamen aus dem Lehrplan, mit einer Quellenangabe zu jeder Textstelle.
+- Genau dieser Mechanismus überträgt sich auf duale Studierende: prüfungsfokussiert, überprüfbar und auf den Stoff zugeschnitten, der in der IHK-Prüfung wirklich zählt.
+- Am meisten lohnt es sich dort, wo Inhalte spezialisiert, reguliert und kuratiert sind, also genau in der Ausbildung und in der IHK-Prüfungsvorbereitung.
+
+![Ausbilder und duale Studentin bereiten sich gemeinsam am Laptop auf die IHK-Prüfung vor](/images/blog/ki-lernplattform-ihk-pruefung.webp)
+
+Duale Studierende tragen eine Doppelbelastung: akademisches Studium und Arbeit im Betrieb zugleich. Im ausbildungsintegrierenden Modell kommen die Berufsschule und am Ende die IHK-Abschlussprüfung hinzu, die oft zeitlich vorgezogen wird, damit nicht alles auf einmal kommt. Diese Doppelbelastung macht eine Frage besonders dringlich: Lohnt sich KI in der Ausbildung wirklich, oder kostet sie nur zusätzliche Zeit? Die Antwort gibt es inzwischen aus Daten: aus einem Hochschulpilot der FH Dortmund. Dieser Beitrag zeigt, was die Studie belegt und warum das gerade für duale Studierende mit IHK-Prüfung zählt.
+
+## Die kurze Antwort
+
+Ja, KI in der Ausbildung lohnt sich, wenn die Plattform aus Ihrem Lehrplan antwortet und jede Aussage mit einer Quelle belegt. Im Uni-Pilot der FH Dortmund waren 100% der Antworten auf eine Quelle zurückführbar, 80% (40 von 50) erreichten ein nahezu vollständiges Verständnis des Prüfungsthemas, und 70% (35 von 50) empfanden das Lerntempo als passend.
+
+Diese drei Zahlen sind der Kern. Genauso wichtig ist, wie gut sich dieser Mechanismus auf die Doppelbelastung im dualen Studium überträgt. Beides klären die nächsten Abschnitte.
+
+## Woran Lernen in der Ausbildung oft scheitert
+
+Bevor man fragt, ob KI hilft, lohnt der Blick auf das eigentliche Problem. Vor dem Pilot nannten die Studierenden ihre größten Hürden bei der Prüfungsvorbereitung. Bemerkenswert: 60% von ihnen lernten schon vorher mit KI. Genau deshalb sind überprüfbare Quellen entscheidend, denn eine falsche, aber selbstbewusst formulierte Antwort kostet mehr Zeit, als sie spart, Zeit, die dualen Studierenden ohnehin knapp ist.
+
+Die genannten Hürden in der Reihenfolge ihrer Häufigkeit:
+
+- **22%** Theoretische Konzepte verstehen
+- **18%** Wissen auf die Praxis anwenden
+- **16%** Motiviert bleiben
+- **12%** Zeitmanagement
+- **10%** Das Lernen strukturieren
+
+Das sind dieselben Themen, die Ausbilderinnen und Ausbilder im Alltag auffangen, oft in improvisierten Einzelgesprächen. Wer hier eine Entlastung sucht, sollte ein Werkzeug an genau diesen Hürden messen, nicht an Funktionslisten. Mehr dazu, wie sich diese Last verschiebt, steht im Beitrag [KI in der Ausbildung](/de/blog/ki-in-der-ausbildung).
+
+## Was der Uni-Pilot konkret gezeigt hat
+
+Im Mai 2026 nutzten 50 Masterstudierende LearnSlice zur Vorbereitung auf eine Prüfung im Fach Usability Engineering. Die Auswertung folgte einem Design-Science-Research-Ansatz mit zwei Studierendenbefragungen und einer Fokusgruppe aus fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung. Entwickelt wurde die Plattform mit dem Institut IDiAL der FH Dortmund, gefördert vom BMWE. Eine echte, geförderte Hochschulstudie als Grundlage, kein Marketingversprechen.
+
+Die drei zentralen Ergebnisse im Überblick:
+
+| Ergebnis | Wert | Was es bedeutet |
+|---|---|---|
+| Quellentreue | 100% | Jede Antwort trug eine gültige Quellenangabe zur Textstelle, ohne erfundene Quellen. |
+| Verständnis | 40 von 50 | Nach der Vorbereitung mit LearnSlice erreichten 80% ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas. |
+| Lerntempo | 35 von 50 | 70% empfanden das personalisierte Lerntempo als passend für ihre individuellen Bedürfnisse. |
+
+Die Quellentreue ist dabei der Punkt, der eine Lernplattform von einem allgemeinen Chatbot trennt. Eine Antwort, die man bis zur Textstelle zurückverfolgen kann, lässt sich prüfen. Eine Antwort ohne Beleg muss man glauben. In der Ausbildung und in der IHK-Prüfung, wo es auf Prüfungsstoff und reguliertes Wissen ankommt, ist dieser Unterschied entscheidend.
+
+## Warum das für duale Studierende mit IHK-Prüfung besonders zählt
+
+Der Pilot untersuchte Masterstudierende vor einer Hochschulprüfung. Duale Studierende stehen vor einer noch anspruchsvolleren Variante derselben Aufgabe: Sie bereiten sich auf die IHK-Abschlussprüfung vor und tragen parallel Studium und Betrieb. Das ausbildungsintegrierende duale Studium ist das einzige Modell mit Doppelabschluss, und genau dieser Doppelabschluss erzeugt die Doppelbelastung. Die IHK-Prüfung wird häufig vorgezogen, damit sie nicht mit den Hochschulklausuren kollidiert, der Zeitdruck bleibt trotzdem hoch.
+
+Was im Pilot half, passt genau auf diese Situation:
+
+- **Prüfungsfokus.** Die Vorbereitung richtet sich auf den Stoff, der tatsächlich geprüft wird, statt auf allgemeines Wissen. Bei knapper Zeit ist das der größte Hebel.
+- **Struktur.** Ein klarer Lernpfad ersetzt das Suchen nach dem nächsten sinnvollen Schritt, gerade wenn Studium und Betrieb gleichzeitig um die knappe Zeit konkurrieren.
+- **Überprüfbarkeit.** Jede Antwort führt zur Quelle zurück. Wer für die IHK-Prüfung lernt, kann sich auf das Gelernte verlassen, weil jede Aussage mit einer echten, prüfbaren Quelle belegt ist.
+
+Kurz: Der Mechanismus, der bei Masterstudierenden zu 40 von 50 mit nahezu vollständigem Verständnis führte, setzt bei dualen Studierenden an genau der Stelle an, an der ihre Doppelbelastung am stärksten drückt. Für die konkrete Prüfungsphase vertieft das der Beitrag [IHK-Prüfungsvorbereitung digital](/de/blog/ihk-pruefungsvorbereitung-digital).
+
+## Warum nachvollziehbare, lehrplan-nahe Antworten den Unterschied machen
+
+Gefragt, wo LearnSlice ihnen mehr bot als allgemeine KI-Tools, nannten die Studierenden am häufigsten Prüfungsnähe und Struktur:
+
+- **36%** Prüfungsnahe Unterstützung
+- **18%** Strukturierte Lernbegleitung
+- **16%** Relevante Antworten
+- **14%** Praktische Beispiele
+
+Der Grund liegt in der Architektur. Eine lehrplanbasierte Plattform ruft Inhalte aus kuratierten Materialien ab und verknüpft jede Aussage mit der Quelle. Sie kombiniert das mit bewährten Lehrmethoden: sokratischen Rückfragen, die zum eigenen Schlussfolgern führen, aktivem Abrufen mit kurzen Quizzen statt passivem Lesen, und Gamification dort, wo sie situativ passt. Das ist kein generisches Lehrbuchwissen, sondern der Stoff, der tatsächlich geprüft wird.
+
+Prof. Dr. Carsten Wolff vom Institut IDiAL der FH Dortmund fasst es so zusammen:
+
+> Ein maßgeschneiderter Assistent bringt den größten Nutzen genau dort, wo die Ausbildung ihn am meisten braucht: bei spezialisierten, regulierten und kuratierten Inhalten.
+
+Genau das ist der Hebel. Je spezialisierter und regulierter Ihr Stoff ist, desto mehr bringt eine Plattform, die aus genau diesem Stoff antwortet, statt aus dem allgemeinen Wissen eines öffentlich gehosteten Modells. Wie sich Lehrplan und eigenes Material verbinden lassen, zeigt der Beitrag [KI-Lernplattform für Azubis](/de/blog/ki-lernplattform-azubis).
+
+## Wie eine Lernplattform lehrt, nicht nur antwortet
+
+Damit aus Quellentreue auch Lernerfolg wird, reicht es nicht, Fragen zu beantworten. Die im Pilot eingesetzten Methoden wurden vom Forschungsteam konfiguriert und folgen anerkannter Didaktik. Sie sind der Grund, warum die Studierenden gerade Prüfungsnähe und Struktur als Vorteil nannten.
+
+- **Sokratischer Dialog.** Gezielte Rückfragen führen Lernende zum eigenen Schlussfolgern, statt nur eine fertige Antwort zu liefern. Das festigt Verständnis statt reiner Erinnerung.
+- **Aktives Abrufen mit Quizzen.** Kurze Quizze und Karteikarten verwandeln passives Lesen in Üben und Selbstüberprüfung, der wirksamste Hebel gegen das Vergessen vor der Prüfung.
+- **Lehrplanbasierte Antworten.** Der Abruf erfolgt aus den hinterlegten Materialien, mit Inline-Quellen zurück zu jeder Textstelle. So bleibt nachvollziehbar, worauf eine Aussage beruht.
+- **Gamification, situativ eingesetzt.** Spielelemente motivieren dort, wo sie passen. Die Lehrenden betonten ausdrücklich, dass sie in bestimmten Situationen am besten wirken.
+
+Der Stoff wird also nicht nur bereitgestellt, sondern in eine Lernlogik gebracht. Genau diese Kombination aus Quelle und Methode trennt eine Lernplattform von einem reinen Frage-Antwort-Werkzeug.
+
+## In Deutschland gehostet, aus Ihrem Lehrplan
+
+Damit diese Ergebnisse in einem deutschen Betrieb und für duale Studierende tragen, kommt es auf die Architektur an: Lernerdaten bleiben in Deutschland und werden nicht zum Training des Modells genutzt, und die Antworten stammen aus Ihrem Lehrplan statt aus allgemeinem Modellwissen. Das ist der klare Vorteil gegenüber allgemeinen Chatbots:
+
+| Kriterium | Lehrplanbasierte Lernplattform | Allgemeine KI-Tools |
+|---|---|---|
+| Ort der Datenverarbeitung | Gehostet in Deutschland | Anbieter-Cloud, Region variiert, oft außerhalb der EU |
+| Lernerdaten für Training genutzt | Nein | Abhängig von den Anbieterbedingungen |
+| Primäre Wissensquelle | Ihr Lehrplan und Ihre Dokumente | Allgemeines Modellwissen |
+| Quellenangaben | Inline-Quellen zu den Textstellen | Standardmäßig nicht vorhanden |
+
+## Lohnt es sich für Ihren Betrieb?
+
+Die Logik überträgt sich überall dort, wo Stoff spezialisiert, reguliert und kuratiert ist, und das beschreibt die Ausbildung und das duale Studium ziemlich genau. Diese kurze Checkliste hilft bei der Einordnung:
+
+- Ihre Azubis oder dualen Studierenden bereiten sich auf die IHK-Prüfung mit klar definiertem Stoff vor
+- Es gibt internes oder reguliertes Material, aus dem Antworten kommen sollen
+- Überprüfbare Quellen sind Ihnen wichtig, damit auf das Gelernte Verlass ist
+- Ihre Ausbilder verbringen viel Zeit mit wiederkehrenden Standardfragen
+- Datenschutz und Hosting in Deutschland sind für Sie nicht verhandelbar
+
+Wenn Sie mehrere Punkte bejahen, ist der erwartbare Nutzen hoch, und die Pilotzahlen sind ein guter Ausgangspunkt für eine eigene Bewertung. Wer die organisatorische Seite vertiefen will, findet im Beitrag [Ausbildung digitalisieren](/de/blog/ausbildung-digitalisieren) den größeren Rahmen.
+
+**Sehen Sie die Belege im Detail.** Alle Zahlen und die Methodik stehen offen auf unserer [Forschungsseite](/de/forschung). In einer kurzen Demo zeigen wir Ihnen in 20 Minuten an Ihrem eigenen Prüfungsstoff, wie die Vorbereitung für Ihre Azubis und dualen Studierenden aussieht. [Demo buchen](/de/companies).
+
+
+## Häufig gestellte Fragen
+
+### Lohnt sich KI in der Ausbildung wirklich?
+
+Im Hochschulpilot der FH Dortmund mit 50 Studierenden im Mai 2026 erreichten 40 von 50 Studierenden nach der Vorbereitung mit LearnSlice ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas, und jede Antwort war auf eine Quelle zurückführbar. Für die strukturierte, prüfungsnahe Vorbereitung ist das ein starker Beleg, gerade in der Ausbildung.
+
+### Hilft das auch dualen Studierenden mit IHK-Prüfung?
+
+Ja, besonders dort. Duale Studierende stehen unter Doppelbelastung aus Studium und Betrieb und müssen die IHK-Abschlussprüfung bestehen, die häufig vorgezogen wird. Eine Plattform, die prüfungsfokussiert, strukturiert und mit überprüfbaren Quellen arbeitet, setzt genau an dieser Doppelbelastung an.
+
+### Woher stammen diese Zahlen?
+
+Aus einer Forschungsstudie der FH Dortmund (Institut IDiAL), gefördert vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200302). 50 Masterstudierende nutzten LearnSlice im Mai 2026 zur Prüfungsvorbereitung. Die Auswertung folgte einem Design-Science-Research-Ansatz mit zwei Befragungen und einer Fokusgruppe aus fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung.
+
+### Was unterscheidet eine KI-Lernplattform von einem allgemeinen Chatbot?
+
+Eine lehrplanbasierte Lernplattform antwortet aus Ihren eigenen Materialien und belegt jede Aussage mit einer Quelle zur Textstelle. Allgemeine KI-Tools antworten aus allgemeinem Modellwissen, meist ohne Quellenangabe. Im Pilot nannten die Studierenden Prüfungsnähe und Struktur als die Punkte, bei denen LearnSlice ihnen mehr half als allgemeine KI-Tools.
+
+### Ersetzt KI die Ausbilderinnen und Ausbilder?
+
+Nein. Die beteiligten Lehrenden betonten, dass ein maßgeschneiderter Assistent die Ausbildung unterstützt. Die Plattform übernimmt die Standardfragen und das Üben, die Ausbilder konzentrieren sich auf Praxis, Feedback und Beurteilung.
+
+### Für welche Betriebe lohnt sich das am ehesten?
+
+Der Nutzen ist dort am größten, wo Inhalte spezialisiert, reguliert und kuratiert sind, etwa bei berufsspezifischem Fachwissen, IHK-Prüfungsstoff und internen Vorgaben. Genau diese Felder beschreiben den Alltag in der Ausbildung und im dualen Studium.
 
 ---
 
