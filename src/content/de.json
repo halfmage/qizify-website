@@ -482,10 +482,12 @@
       "headline": "Ihre Lernsoftware,\nvon Anfang bis Ende entwickelt",
       "subheadline": "Wir konzipieren, entwickeln und betreiben Lernanwendungen jeder Art: Chatbots, Plattformen, mobile Apps, Simulationen und mehr. Souverän, konform und bewährt.",
       "ctaPrimary": "Strategiegespräch buchen",
-      "ctaSecondary": "Zur Forschung",
-      "trust": "Mit der FH Dortmund entwickelt · DSGVO- und EU-KI-Verordnungs-bereit · Ihre Daten gehören Ihnen",
-      "microcopy": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap."
+      "ctaSecondary": "Unsere Projekte",
+      "trust": "DSGVO- und EU-KI-Verordnungs-bereit · In Deutschland gehostet · Ihre Daten gehören Ihnen",
+      "microcopy": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap.",
+      "riskReversal": "Unverbindlich. NDA auf Anfrage. Antwort innerhalb von 1 Werktag."
     },
+    "trustedByLine": "Vertraut von Hochschulen, Schulen und Lern-Communities",
     "build": {
       "label": "Was wir bauen",
       "headline": "Wenn es beim Lernen hilft, entwickeln wir es",
@@ -496,13 +498,13 @@
         { "icon": "hugeicons:smart-phone-01", "title": "Mobile Lern-Apps", "body": "Native und plattformübergreifende Apps für das Lernen unterwegs, mit Offline-Modus und Push-Erinnerungen." },
         { "icon": "hugeicons:checkmark-circle-02", "title": "Quiz- und Assessment-Plattformen", "body": "Lehrplanbasierte Quiz-Bibliotheken, Prüfungen und Kompetenzchecks mit automatischer Auswertung." },
         { "icon": "hugeicons:pen-tool-03", "title": "Authoring- und Content-Tools", "body": "Werkzeuge, mit denen Ihr Team Lerninhalte und Fragenpools erstellt, prüft und verwaltet." },
-        { "icon": "hugeicons:game-controller-01", "title": "Simulationen und Serious Games", "body": "Szenariobasiertes Lernen, verzweigte Simulationen und Gamification für Engagement und Behaltensleistung." },
-        { "icon": "hugeicons:virtual-reality-vr-01", "title": "VR- und AR-Training", "body": "Immersives 3D-Training für technische, medizinische und sicherheitskritische Fähigkeiten." },
+        { "icon": "hugeicons:checkmark-badge-01", "title": "Compliance-Schulungen", "body": "Pflichtschulungen für regulierte Bereiche, mit Nachweisen, Zertifikaten und Erinnerungen zur Auffrischung, damit Teams und Aufzeichnungen aktuell bleiben." },
         { "icon": "hugeicons:mortarboard-02", "title": "Prüfungs- und Zertifikatsvorbereitung", "body": "Adaptive Vorbereitung auf IHK- und Berufszertifikate, abgestimmt auf den Kompetenzrahmen." },
         { "icon": "hugeicons:presentation-bar-chart-01", "title": "Lern-Analytics", "body": "Dashboards und Auswertungen, die Lernaktivität in Entscheidungen für Verantwortliche und Lehrende verwandeln." },
-        { "icon": "hugeicons:puzzle", "title": "Integration und Anpassung", "body": "Anbindung an Ihre HR, SSO und bestehenden Tools, oder Erweiterung von Moodle und anderen Plattformen für Ihre Prozesse." },
+        { "icon": "hugeicons:puzzle", "title": "Moodle-Einrichtung und Anpassung", "body": "Gebrandete Moodle-Plattformen, eingerichtet, gestaltet und erweitert mit eigenen Plugins, SSO und den Integrationen, die Ihre Prozesse brauchen." },
         { "icon": "hugeicons:briefcase-02", "title": "Onboarding und Upskilling", "body": "KI-gestützte Onboarding- und Upskilling-Programme, die sich an jede Rolle anpassen." },
-        { "icon": "hugeicons:building-06", "title": "White-Label- und Branchenlösungen", "body": "Markeneigene Lernprodukte für Banken, Versicherer, Verlage und andere regulierte Felder." }
+        { "icon": "hugeicons:building-06", "title": "White-Label- und Branchenlösungen", "body": "Markeneigene Lernprodukte für Banken, Versicherer, Verlage und andere regulierte Felder." },
+        { "icon": "hugeicons:connect", "title": "Integrationen und Interoperabilität", "body": "Lernen mit Ihrem Stack verbinden: SSO, HR-Systeme sowie die Standards SCORM, xAPI und LTI, damit Inhalte und Daten zwischen Tools fließen." }
       ],
       "note": "Ihre Idee nicht dabei? Das ist meist unsere liebste Art von Projekt."
     },
@@ -544,7 +546,19 @@
           "bullets": [
             "Ihre Marke, Ihre Domäne, Ihre Inhalte",
             "Geführte Programme und ein Health-Check-Ablauf",
-            "Für Banken, Versicherer und Verlage gebaut"
+            "Ein angepasster Chatbot für Ihre Lehr- und Schulungszwecke"
+          ]
+        },
+        {
+          "image": "/images/solutions/skillzup-moodle.webp",
+          "imageAlt": "skillzUP-Lernenden-Dashboard auf einem angepassten Moodle, mit gebrandetem Theme, Kalender und aktuellen Kursen",
+          "eyebrow": "Moodle-Einrichtung und Anpassung",
+          "title": "Eine gebrandete Moodle-Plattform, bereit für Lernende",
+          "body": "skillzUP, eine kostenlose Akademie für digitale Kompetenzen für junge Menschen, läuft auf einem Moodle-Kern, den wir eingerichtet, gestaltet und durchgängig erweitert haben.",
+          "bullets": [
+            "Eigenes Theme und Markenauftritt auf Moodle-Basis",
+            "Kurskatalog, Einschreibung und Community an einem Ort",
+            "Gehostet, gewartet und bereit zum Skalieren"
           ]
         }
       ]
@@ -606,25 +620,9 @@
         { "icon": "hugeicons:award-04", "title": "Ihre Marke, Ihr Eigentum", "body": "White-Label unter Ihrer eigenen Marke. Ihnen gehören der Einsatz, die Inhalte und die Beziehung zu Ihren Lernenden." }
       ]
     },
-    "proof": {
-      "label": "Bewährt",
-      "headline": "Im Hochschuleinsatz validiert",
-      "intro": "Unser Ansatz wird mit der FH Dortmund in einem öffentlich geförderten Forschungsprojekt entwickelt. Die erste Hochschulstudie hat ihn mit Masterstudierenden evaluiert.",
-      "items": [
-        { "stat": "100%", "title": "Antworten auf eine Quelle zurückführbar", "body": "Jede Antwort trug eine gültige Quellenangabe zur Textstelle, ohne erfundene Quellen." },
-        { "stat": "80%", "title": "Nahezu vollständiges Verständnis erreicht", "body": "Nach der Vorbereitung mit dem System erreichten 80% der Studierenden ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas." }
-      ],
-      "link": "Zur vollständigen Forschung",
-      "disclosure": "Erste Forschungsstudie, 50 Studierende, ein Kurs, Mai 2026. Die Ergebnisse beschreiben eine frühe Studie und sind keine begutachtete Veröffentlichung.",
-      "quote": {
-        "text": "Ein maßgeschneiderter Assistent bringt den größten Nutzen genau dort, wo die Ausbildung ihn am meisten braucht: bei spezialisierten, regulierten und kuratierten Inhalten.",
-        "author": "Prof. Dr. Carsten Wolff",
-        "role": "FH Dortmund, Institut IDiAL"
-      }
-    },
     "social": {
       "label": "Kundenstimmen",
-      "headline": "Vertraut von den Menschen, die Menschen ausbilden"
+      "headline": "Was Kunden und Partner über die Zusammenarbeit sagen"
     },
     "process": {
       "label": "So arbeiten wir",
@@ -662,6 +660,13 @@
         { "question": "Mit welchen Technologien bauen Sie?", "answer": "Moderne Web- und Mobile-Stacks, Retrieval-Augmented Generation mit souveränen LLMs sowie Standard-Integrationen wie SSO, SCORM, xAPI, LTI und REST-APIs. Wir hosten in Deutschland, der EU oder auf Ihrer eigenen Infrastruktur." },
         { "question": "Wie arbeiten wir mit Ihnen zusammen?", "answer": "Auf vier Wegen: ein Festpreis-Projekt oder MVP, ein dediziertes Team, Staff Augmentation, bei der unsere Entwickler Ihre verstärken, oder eine gemanagte Lösung, die wir hosten und betreuen. Den passenden Weg empfehlen wir im Strategiegespräch." }
       ]
+    },
+    "midCta": {
+      "headline": "Ein Lernprodukt im Kopf?",
+      "sub": "Sagen Sie uns, welches Problem Sie lösen. Wir machen daraus einen konkreten Build und einen realistischen Plan.",
+      "button": "Strategiegespräch buchen",
+      "note": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap.",
+      "riskReversal": "Unverbindlich. NDA auf Anfrage. Antwort innerhalb von 1 Werktag."
     },
     "cta": {
       "headline": "Lassen Sie uns Ihr Projekt umreißen",

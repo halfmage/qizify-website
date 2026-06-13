@@ -26,9 +26,10 @@ interface Props {
 	cta: string;
 	currentLang: 'en' | 'de';
 	currentPath: string;
+	ctaModalTrigger?: string;
 }
 
-const { logo, menu, cta, currentLang, currentPath } = Astro.props;
+const { logo, menu, cta, currentLang, currentPath, ctaModalTrigger = 'demo-request' } = Astro.props;
 
 // Fetch latest 3 blog posts for blog mega menu
 const allPosts = await getCollection('blog');
@@ -132,7 +133,7 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 			<div class="hidden lg:block w-px h-4 bg-border"></div>
 			<Button
 				variant="primary"
-				data-modal-trigger="demo-request"
+				data-modal-trigger={ctaModalTrigger}
 				aria-label={cta}
 				class="hidden lg:inline-flex"
 			>
@@ -196,7 +197,7 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 			)}
 			<div class="border-t border-border mt-3 pt-4 flex flex-col gap-3">
 				<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
-				<Button variant="primary" data-modal-trigger="demo-request" class="w-full justify-center">
+				<Button variant="primary" data-modal-trigger={ctaModalTrigger} class="w-full justify-center">
 					{cta}
 				</Button>
 			</div>

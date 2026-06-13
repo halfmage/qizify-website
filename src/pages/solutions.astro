@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
-import TrustBar from '../components/TrustBar.astro';
 import LogosSlider from '../components/LogosSlider.astro';
 import Testimonials from '../components/Testimonials.astro';
 import FAQ from '../components/FAQ.astro';
@@ -21,30 +20,31 @@ const ucDims = [
 	{ w: 2890, h: 1516 },
 	{ w: 2620, h: 1432 },
 	{ w: 2912, h: 1570 },
+	{ w: 1950, h: 1190 },
 ];
 ---
 
 <BaseLayout
 	title="Learning Software Engineering: Apps, LMS, Chatbots | LearnSlice"
-	description="We are a software engineering company that builds learning software of every kind: AI tutors, LMS, mobile apps, simulations, quiz and assessment platforms. Sovereign, GDPR and EU AI Act compliant, co-developed with FH Dortmund."
+	description="We are a software engineering company that builds learning software of every kind: AI tutors, LMS, mobile apps, simulations, quiz and assessment platforms. Sovereign, GDPR and EU AI Act compliant, trusted by universities, schools, and learning communities."
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="Solutions"
 >
-	<Header logo={enContent.nav.logo} menu={enContent.nav.menu} cta={enContent.nav.cta} currentLang={lang} currentPath={currentPath} />
+	<Header logo={enContent.nav.logo} menu={enContent.nav.menu} cta={s.hero.ctaPrimary} ctaModalTrigger="project-inquiry" currentLang={lang} currentPath={currentPath} />
 
 	<!-- Hero: full-bleed photo + scrim + aurora glow -->
 	<section class="relative overflow-hidden pt-28 md:pt-32 pb-16 md:pb-24 px-6 md:px-8 flex items-center min-h-[540px]">
 		<img
-			src="/images/hero/hero-background.webp"
+			src="/images/hero/solutions-hero.webp"
 			alt=""
 			role="presentation"
-			class="absolute inset-0 w-full h-full object-cover object-[72%_center] z-0"
+			class="absolute inset-0 w-full h-full object-cover object-[68%_center] z-0"
 			loading="eager"
 			fetchpriority="high"
 			decoding="async"
 			width="1920"
-			height="1280"
+			height="1281"
 		/>
 		<div class="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(to_right,rgba(42,38,34,0.94),rgba(42,38,34,0.74)_42%,rgba(42,38,34,0.32)_72%),linear-gradient(to_bottom,rgba(42,38,34,0.55),transparent_28%,transparent_68%,#2a2622_99%)]" aria-hidden="true"></div>
 		<div class="absolute inset-0 z-[2] pointer-events-none glow-aurora" aria-hidden="true"></div>
@@ -59,9 +59,10 @@ const ucDims = [
 				<p class="text-lg text-muted mb-6 max-w-xl leading-relaxed">{s.hero.subheadline}</p>
 				<div class="flex flex-wrap items-center gap-3 mb-3">
 					<Button variant="primary" href="#project-inquiry" data-modal-trigger="project-inquiry" aria-label={s.hero.ctaPrimary}>{s.hero.ctaPrimary}</Button>
-					<Button variant="secondary" href="/research" class="!border-white/40 backdrop-blur-sm" aria-label={s.hero.ctaSecondary}>{s.hero.ctaSecondary}</Button>
+					<Button variant="secondary" href="#selected-work" class="!border-white/40 backdrop-blur-sm" aria-label={s.hero.ctaSecondary}>{s.hero.ctaSecondary}</Button>
 				</div>
-				<p class="text-sm text-muted mb-6">{s.hero.microcopy}</p>
+				<p class="text-sm text-muted mb-1.5">{s.hero.microcopy}</p>
+				<p class="text-sm text-white/70 mb-6">{s.hero.riskReversal}</p>
 				<div class="flex items-center gap-2.5 text-xs md:text-sm text-muted border-t border-white/10 pt-5 max-w-xl">
 					<Icon name="hugeicons:security-check" class="w-4 h-4 text-primary shrink-0" />
 					<span>{s.hero.trust}</span>
@@ -69,6 +70,9 @@ const ucDims = [
 			</div>
 		</div>
 	</section>
+
+	<!-- Above-the-fold proof: trusted-by logos -->
+	<LogosSlider headline={s.trustedByLine} logos={enContent.trustedBy.logos} />
 
 	<!-- What we build: breadth catalog -->
 	<section class="py-12 md:py-20 px-6 md:px-8">
@@ -94,7 +98,7 @@ const ucDims = [
 	</section>
 
 	<!-- Selected work: alternating image rows -->
-	<section class="py-14 md:py-24 px-6 md:px-8 border-t border-border/50">
+	<section id="selected-work" class="py-14 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-24">
 		<div class="max-w-container mx-auto">
 			<div class="text-center mb-14 md:mb-20 max-w-2xl mx-auto">
 				<span class="section-label mb-4 block">{s.useCases.label}</span>
@@ -125,6 +129,20 @@ const ucDims = [
 						</div>
 					</div>
 				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Mid-page CTA: convert high-intent readers without scrolling to the footer -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto relative">
+			<div class="absolute -inset-4 glow-aurora opacity-50 pointer-events-none" aria-hidden="true"></div>
+			<div class="relative bg-surface border border-border rounded-2xl p-8 md:p-12 text-center overflow-hidden">
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-3">{s.midCta.headline}</h2>
+				<p class="text-base text-muted leading-relaxed max-w-xl mx-auto mb-6 m-0">{s.midCta.sub}</p>
+				<Button variant="primary" href="#project-inquiry" data-modal-trigger="project-inquiry" aria-label={s.midCta.button}>{s.midCta.button}</Button>
+				<p class="text-sm text-muted mt-4 mb-0">{s.midCta.note}</p>
+				<p class="text-xs text-white/55 mt-1.5 mb-0">{s.midCta.riskReversal}</p>
 			</div>
 		</div>
 	</section>
@@ -262,39 +280,6 @@ const ucDims = [
 				))}
 			</div>
 			<p class="text-xs text-gray leading-relaxed mt-6 text-center max-w-3xl mx-auto m-0">{s.market.sources}</p>
-		</div>
-	</section>
-
-	<!-- Trust strip + client logos -->
-	<TrustBar currentLang={lang} showLink={true} center={true} />
-	<LogosSlider headline={enContent.trustedBy.headline} logos={enContent.trustedBy.logos} />
-
-	<!-- Proof -->
-	<section class="py-12 md:py-20 px-6 md:px-8">
-		<div class="max-w-container mx-auto">
-			<div class="text-center mb-14 max-w-2xl mx-auto">
-				<span class="section-label mb-4 block">{s.proof.label}</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{s.proof.headline}</h2>
-				<p class="text-base text-muted leading-relaxed m-0">{s.proof.intro}</p>
-			</div>
-			<div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden max-w-3xl mx-auto">
-				{s.proof.items.map((item) => (
-					<div class="bg-surface p-8 text-center sm:text-left">
-						<div class="text-display-sm gradient-text-primary font-bold mb-3 leading-none">{item.stat}</div>
-						<h3 class="text-base font-semibold text-white mb-2">{item.title}</h3>
-						<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
-					</div>
-				))}
-			</div>
-			<div class="text-center mt-8">
-				<a href="/research" class="text-sm text-primary hover:text-white transition-colors">{s.proof.link} &rsaquo;</a>
-			</div>
-			<figure class="max-w-3xl mx-auto bg-surface border border-border rounded-xl p-8 md:p-10 m-0 mt-12 relative overflow-hidden">
-				<Icon name="hugeicons:quote-up" class="w-9 h-9 text-primary/30 mb-3" />
-				<blockquote class="text-lg md:text-xl text-white leading-relaxed m-0">{s.proof.quote.text}</blockquote>
-				<figcaption class="text-sm text-muted mt-5"><span class="text-white font-medium">{s.proof.quote.author}</span>, {s.proof.quote.role}</figcaption>
-			</figure>
-			<p class="text-xs text-gray leading-relaxed mt-8 text-center max-w-2xl mx-auto m-0">{s.proof.disclosure}</p>
 		</div>
 	</section>
 

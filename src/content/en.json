@@ -483,10 +483,12 @@
       "headline": "Your learning software,\nengineered end to end",
       "subheadline": "We design, build, and run learning applications of every kind: chatbots, platforms, mobile apps, simulations, and more. Sovereign, compliant, and proven.",
       "ctaPrimary": "Book a strategy call",
-      "ctaSecondary": "See the research",
-      "trust": "Co-developed with FH Dortmund · GDPR and EU AI Act ready · You own the data",
-      "microcopy": "Free 30-minute call. No pitch, a concrete roadmap."
+      "ctaSecondary": "See our work",
+      "trust": "GDPR and EU AI Act ready · Hosted in Germany · You own the data",
+      "microcopy": "Free 30-minute call. No pitch, a concrete roadmap.",
+      "riskReversal": "No obligation. NDA on request. Reply within 1 business day."
     },
+    "trustedByLine": "Trusted by universities, schools, and learning communities",
     "build": {
       "label": "What we build",
       "headline": "If it helps people learn, we engineer it",
@@ -497,13 +499,13 @@
         { "icon": "hugeicons:smart-phone-01", "title": "Mobile learning apps", "body": "Native and cross-platform apps for learning on the go, with offline support and push reminders." },
         { "icon": "hugeicons:checkmark-circle-02", "title": "Quiz and assessment platforms", "body": "Curriculum-aligned quiz libraries, exams, and competency checks with automated scoring." },
         { "icon": "hugeicons:pen-tool-03", "title": "Authoring and content tools", "body": "Tools for your team to create, verify, and manage learning content and question banks." },
-        { "icon": "hugeicons:game-controller-01", "title": "Simulations and serious games", "body": "Scenario-based learning, branching simulations, and gamification that drive engagement and retention." },
-        { "icon": "hugeicons:virtual-reality-vr-01", "title": "VR and AR training", "body": "Immersive 3D training for technical, medical, and safety-critical skills." },
+        { "icon": "hugeicons:checkmark-badge-01", "title": "Compliance training", "body": "Mandatory training for regulated fields, with audit trails, certificates, and renewal reminders that keep teams and records up to date." },
         { "icon": "hugeicons:mortarboard-02", "title": "Exam and certification prep", "body": "Adaptive preparation for IHK and professional certifications, mapped to the competency framework." },
         { "icon": "hugeicons:presentation-bar-chart-01", "title": "Learning analytics", "body": "Dashboards and reporting that turn learning activity into decisions for managers and educators." },
-        { "icon": "hugeicons:puzzle", "title": "Integrations and customization", "body": "Connect to your HR, SSO, and existing tools, or extend Moodle and other platforms to fit your processes." },
+        { "icon": "hugeicons:puzzle", "title": "Moodle setup and customisation", "body": "Branded Moodle platforms set up, themed, and extended with custom plugins, SSO, and the integrations your processes need." },
         { "icon": "hugeicons:briefcase-02", "title": "Onboarding and upskilling", "body": "AI-guided onboarding and continuous upskilling programs that adapt to each role." },
-        { "icon": "hugeicons:building-06", "title": "White-label and sector solutions", "body": "Branded learning products for banks, insurers, publishers, and other regulated fields." }
+        { "icon": "hugeicons:building-06", "title": "White-label and sector solutions", "body": "Branded learning products for banks, insurers, publishers, and other regulated fields." },
+        { "icon": "hugeicons:connect", "title": "Integrations and interoperability", "body": "Connect learning to your stack: SSO, HR systems, and the SCORM, xAPI, and LTI standards, so content and data flow across tools." }
       ],
       "note": "Do not see your idea here? That is usually our favourite kind of project."
     },
@@ -545,7 +547,19 @@
           "bullets": [
             "Your brand, your domain, your content",
             "Guided programmes and a health-check flow",
-            "Built for banks, insurers, and publishers"
+            "A customised chatbot for your teaching purposes"
+          ]
+        },
+        {
+          "image": "/images/solutions/skillzup-moodle.webp",
+          "imageAlt": "skillzUP learner dashboard on a customised Moodle, with branded theme, calendar, and current courses",
+          "eyebrow": "Moodle setup and customisation",
+          "title": "A branded Moodle platform, ready for learners",
+          "body": "skillzUP, a free digital-skills academy for young people, runs on a Moodle core we set up, themed, and extended end to end.",
+          "bullets": [
+            "Custom theme and brand identity on a Moodle core",
+            "Course catalog, enrolment, and community in one place",
+            "Hosted, maintained, and ready to scale"
           ]
         }
       ]
@@ -607,25 +621,9 @@
         { "icon": "hugeicons:award-04", "title": "Yours to brand and own", "body": "White-label under your own brand. You own the deployment, the content, and the relationship with your learners." }
       ]
     },
-    "proof": {
-      "label": "Proven",
-      "headline": "Validated in a university deployment",
-      "intro": "Our approach is co-developed with FH Dortmund in a federally funded research project. The first university pilot evaluated it with master's students.",
-      "items": [
-        { "stat": "100%", "title": "Answers traceable to a source", "body": "Every answer carried a valid citation back to its source passage, with no invented references." },
-        { "stat": "80%", "title": "Reached near-complete mastery", "body": "After preparing with the system, 80% of students reached complete or near-complete understanding of the exam topic." }
-      ],
-      "link": "Read the full research",
-      "disclosure": "First-iteration research pilot, 50 students, one course, May 2026. Findings describe an early study and are not a peer-reviewed publication.",
-      "quote": {
-        "text": "A tailored assistant adds the most value exactly where training needs it most: specialized, regulated, and curated-source domains.",
-        "author": "Prof. Dr. Carsten Wolff",
-        "role": "FH Dortmund, IDiAL institute"
-      }
-    },
     "social": {
       "label": "Customer voice",
-      "headline": "Trusted by the people who train people"
+      "headline": "What clients and partners say about working with us"
     },
     "process": {
       "label": "How we work",
@@ -663,6 +661,13 @@
         { "question": "What technologies do you build with?", "answer": "Modern web and mobile stacks, retrieval-augmented generation with sovereign LLMs, and standard integrations such as SSO, SCORM, xAPI, LTI, and REST APIs. We host in Germany, the EU, or on your own infrastructure." },
         { "question": "How do we engage you?", "answer": "Four ways: a fixed-scope project or MVP, a dedicated team, staff augmentation where our engineers join yours, or a managed solution we host and support. We recommend the right fit in the strategy call." }
       ]
+    },
+    "midCta": {
+      "headline": "Have a learning product in mind?",
+      "sub": "Tell us the problem you are solving. We turn it into a concrete build and a realistic plan.",
+      "button": "Book a strategy call",
+      "note": "Free 30-minute call. No pitch, a concrete roadmap.",
+      "riskReversal": "No obligation. NDA on request. Reply within 1 business day."
     },
     "cta": {
       "headline": "Let us scope your project",

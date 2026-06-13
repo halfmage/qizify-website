@@ -88,14 +88,12 @@ const timelines = currentLang === 'en'
 				</div>
 
 				<div class="flex flex-col gap-1.5">
-					<label for="project-organisation" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Organisation' : 'Organisation'}</label>
+					<label for="project-organisation" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Organisation (optional)' : 'Organisation (optional)'}</label>
 					<input
 						type="text"
 						id="project-organisation"
 						name="organisation"
 						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
-						required
-						aria-required="true"
 					/>
 				</div>
 
@@ -112,7 +110,7 @@ const timelines = currentLang === 'en'
 				</div>
 
 				<div class="flex flex-col gap-1.5">
-					<label for="project-type" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'What do you want to build?' : 'Was möchten Sie bauen?'}</label>
+					<label for="project-type" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'What do you want to build? (optional)' : 'Was möchten Sie bauen? (optional)'}</label>
 					<select
 						id="project-type"
 						name="project-type"
@@ -123,7 +121,7 @@ const timelines = currentLang === 'en'
 				</div>
 
 				<div class="flex flex-col gap-1.5">
-					<label for="project-timeline" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Timeline' : 'Zeithorizont'}</label>
+					<label for="project-timeline" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Timeline (optional)' : 'Zeithorizont (optional)'}</label>
 					<select
 						id="project-timeline"
 						name="timeline"

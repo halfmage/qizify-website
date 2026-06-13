@@ -6,10 +6,12 @@ interface Props {
 	currentLang: 'en' | 'de';
 	showLink?: boolean;
 	center?: boolean;
+	items?: string[];
 }
 
-const { currentLang, showLink = true, center = false } = Astro.props;
+const { currentLang, showLink = true, center = false, items } = Astro.props;
 const content = currentLang === 'de' ? deContent.trustBar : enContent.trustBar;
+const bannerItems = items ?? content.items;
 const researchHref = currentLang === 'de' ? '/de/forschung' : '/research';
 const rowAlign = center ? 'items-center justify-center text-center' : 'items-start md:items-center justify-start text-left';
 ---
@@ -26,7 +28,7 @@ const rowAlign = center ? 'items-center justify-center text-center' : 'items-sta
 				loading="lazy"
 			/>
 			<ul class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 list-none m-0 p-0">
-				{content.items.map((item, i) => (
+				{bannerItems.map((item, i) => (
 					<li class="flex items-center gap-x-4 text-sm text-muted">
 						{i > 0 && <span class="text-border-light" aria-hidden="true">&middot;</span>}
 						<span>{item}</span>
