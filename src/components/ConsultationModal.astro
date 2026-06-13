@@ -1,0 +1,312 @@
+---
+interface Props {
+	currentLang: 'en' | 'de';
+}
+
+const { currentLang } = Astro.props;
+
+const consentText = {
+	en: { privacyLink: '/privacy', termsLink: '/terms' },
+	de: { privacyLink: '/de/privacy', termsLink: '/de/terms' },
+};
+
+const consent = consentText[currentLang];
+
+const projectTypes = currentLang === 'en'
+	? ['AI tutoring chatbot', 'LMS (Moodle or custom)', 'Quiz / assessment platform', 'Not sure yet']
+	: ['KI-Lern-Chatbot', 'LMS (Moodle oder individuell)', 'Quiz- / Assessment-Plattform', 'Noch unklar'];
+
+const timelines = currentLang === 'en'
+	? ['As soon as possible', 'This quarter', 'In 3 to 6 months', 'Just exploring']
+	: ['So schnell wie möglich', 'Dieses Quartal', 'In 3 bis 6 Monaten', 'Erst am Erkunden'];
+---
+
+<!-- Hidden HTML form for Netlify Forms detection -->
+<form name="project-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="hidden">
+	<input type="hidden" name="form-name" value="project-inquiry" />
+	<input type="text" name="name" />
+	<input type="text" name="organisation" />
+	<input type="email" name="email" />
+	<input type="text" name="project-type" />
+	<input type="text" name="timeline" />
+	<textarea name="message"></textarea>
+	<input type="checkbox" name="consent" />
+	<input type="text" name="bot-field" />
+</form>
+
+<!-- Modal -->
+<div class="fixed inset-0 bg-dark/90 backdrop-blur-sm flex items-center justify-center z-[9999] opacity-0 invisible transition-all duration-200 p-4" id="project-inquiry-modal" role="dialog" aria-labelledby="project-modal-title" aria-hidden="true" data-lang={currentLang}>
+	<div class="bg-surface border border-border-light rounded-xl max-w-[520px] w-full max-h-[90vh] overflow-y-auto relative scale-95 transition-transform duration-200" id="project-modal-container">
+		<button class="absolute top-4 right-4 bg-transparent border-none text-muted cursor-pointer p-2 flex items-center justify-center rounded-lg hover:text-white hover:bg-surface transition-colors duration-200 z-10" id="project-modal-close" aria-label="Close modal">
+			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+
+		<div class="p-8 md:p-10">
+			<div class="mb-6">
+				<span class="section-label block mb-3">{currentLang === 'en' ? 'Strategy call' : 'Strategiegespräch'}</span>
+				<h2 class="text-heading-sm text-white m-0 mb-2" id="project-modal-title">
+					{currentLang === 'en' ? 'Book a strategy call' : 'Strategiegespräch buchen'}
+				</h2>
+				<p class="text-sm text-muted m-0">
+					{currentLang === 'en'
+						? 'No sales pitch, just a concrete roadmap for your organisation.'
+						: 'Kein Pitch, nur eine konkrete Roadmap für Ihre Organisation.'}
+				</p>
+			</div>
+
+			<div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted mb-6 pb-6 border-b border-border-light">
+				<span class="inline-flex items-center gap-1.5">
+					<svg class="w-3.5 h-3.5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+					{currentLang === 'en' ? 'GDPR-compliant' : 'DSGVO-konform'}
+				</span>
+				<span class="inline-flex items-center gap-1.5">
+					<svg class="w-3.5 h-3.5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+					{currentLang === 'en' ? 'German-hosted' : 'Server in Deutschland'}
+				</span>
+				<span class="inline-flex items-center gap-1.5">
+					<svg class="w-3.5 h-3.5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+					{currentLang === 'en' ? 'You own the data' : 'Ihre Daten gehören Ihnen'}
+				</span>
+			</div>
+
+			<form class="flex flex-col gap-5" id="project-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<input type="hidden" name="form-name" value="project-inquiry" />
+				<input type="text" name="bot-field" class="hidden" />
+
+				<div class="flex flex-col gap-1.5">
+					<label for="project-name" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Name' : 'Name'}</label>
+					<input
+						type="text"
+						id="project-name"
+						name="name"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
+						required
+						aria-required="true"
+					/>
+				</div>
+
+				<div class="flex flex-col gap-1.5">
+					<label for="project-organisation" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Organisation' : 'Organisation'}</label>
+					<input
+						type="text"
+						id="project-organisation"
+						name="organisation"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
+						required
+						aria-required="true"
+					/>
+				</div>
+
+				<div class="flex flex-col gap-1.5">
+					<label for="project-email" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Email' : 'E-Mail'}</label>
+					<input
+						type="email"
+						id="project-email"
+						name="email"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
+						required
+						aria-required="true"
+					/>
+				</div>
+
+				<div class="flex flex-col gap-1.5">
+					<label for="project-type" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'What do you want to build?' : 'Was möchten Sie bauen?'}</label>
+					<select
+						id="project-type"
+						name="project-type"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200"
+					>
+						{projectTypes.map((type) => (<option value={type}>{type}</option>))}
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-1.5">
+					<label for="project-timeline" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Timeline' : 'Zeithorizont'}</label>
+					<select
+						id="project-timeline"
+						name="timeline"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200"
+					>
+						{timelines.map((t) => (<option value={t}>{t}</option>))}
+					</select>
+				</div>
+
+				<div class="flex flex-col gap-1.5">
+					<label for="project-message" class="text-sm font-medium text-white/80">{currentLang === 'en' ? 'Tell us about your use case' : 'Beschreiben Sie Ihren Anwendungsfall'}</label>
+					<textarea
+						id="project-message"
+						name="message"
+						class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full min-h-[80px] resize-y focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted"
+						rows="3"
+						placeholder={currentLang === 'en' ? 'Optional' : 'Optional'}
+					></textarea>
+				</div>
+
+				<label class="flex items-start gap-2.5 cursor-pointer text-xs text-muted leading-relaxed">
+					<input
+						type="checkbox"
+						id="project-consent"
+						name="consent"
+						class="mt-0.5 w-4 h-4 flex-shrink-0 cursor-pointer accent-primary"
+						required
+						aria-required="true"
+					/>
+					<span class="flex-1">
+						{currentLang === 'en' ? (
+							<>
+								I agree to the <a href={consent.privacyLink} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Privacy Policy</a> and <a href={consent.termsLink} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Terms of Use</a>.
+							</>
+						) : (
+							<>
+								Ich stimme der <a href={consent.privacyLink} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Datenschutzerkl&auml;rung</a> und den <a href={consent.termsLink} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Nutzungsbedingungen</a> zu.
+							</>
+						)}
+					</span>
+				</label>
+
+				<div class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300" id="project-form-error" role="alert"></div>
+				<div class="hidden p-3 rounded-lg text-xs bg-green-500/10 border border-green-500/20 text-green-300" id="project-form-success" role="alert">
+					{currentLang === 'en'
+						? 'Thanks. We will reply within 1 business day to scope your project.'
+						: 'Vielen Dank. Wir antworten innerhalb von 1 Werktag, um Ihr Projekt zu umreißen.'}
+				</div>
+
+				<button type="submit" class="bg-primary text-white border-none rounded-lg px-6 py-2.5 text-sm font-medium cursor-pointer hover:bg-[#6a4ae0] active:bg-[#5c3dd4] transition-all duration-200 font-sans mt-1 disabled:opacity-50 disabled:cursor-not-allowed">
+					{currentLang === 'en' ? 'Request my strategy call' : 'Strategiegespräch anfragen'}
+				</button>
+
+				<p class="text-xs text-muted text-center -mt-1">
+					{currentLang === 'en'
+						? '30-min call · no pitch · reply within 1 business day'
+						: '30-Min-Gespräch · kein Pitch · Antwort innerhalb von 1 Werktag'}
+				</p>
+			</form>
+
+			<div class="flex items-center gap-3 my-6 text-xs text-muted">
+				<div class="flex-1 border-t border-border-light"></div>
+				<span>{currentLang === 'en' ? 'or' : 'oder'}</span>
+				<div class="flex-1 border-t border-border-light"></div>
+			</div>
+
+			<a href="https://calendly.com/learnslice-team/30min" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-2.5 border border-border-light rounded-lg text-sm font-medium text-muted hover:text-white hover:border-white/30 transition-colors">
+				{currentLang === 'en' ? 'Pick a 30-min slot directly →' : 'Direkt einen 30-Min-Termin wählen →'}
+			</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	function initProjectModal() {
+		const modal = document.getElementById('project-inquiry-modal');
+		const modalContainer = document.getElementById('project-modal-container');
+		const closeButton = document.getElementById('project-modal-close');
+		const form = document.getElementById('project-form') as HTMLFormElement | null;
+		const errorMessage = document.getElementById('project-form-error');
+		const successMessage = document.getElementById('project-form-success');
+
+		if (!modal || !closeButton || !form) return;
+
+		function openModal() {
+			modal?.setAttribute('aria-hidden', 'false');
+			modal?.classList.remove('opacity-0', 'invisible');
+			modal?.classList.add('opacity-100', 'visible');
+			modalContainer?.classList.remove('scale-95');
+			modalContainer?.classList.add('scale-100');
+			document.body.style.overflow = 'hidden';
+			const firstInput = form?.querySelector('input, textarea') as HTMLElement | null;
+			if (firstInput) setTimeout(() => firstInput.focus(), 100);
+		}
+
+		function closeModal() {
+			modal?.setAttribute('aria-hidden', 'true');
+			modal?.classList.add('opacity-0', 'invisible');
+			modal?.classList.remove('opacity-100', 'visible');
+			modalContainer?.classList.add('scale-95');
+			modalContainer?.classList.remove('scale-100');
+			document.body.style.overflow = '';
+			form?.reset();
+			if (errorMessage) errorMessage.classList.add('hidden');
+			if (successMessage) successMessage.classList.add('hidden');
+		}
+
+		function handleHashChange() {
+			if (window.location.hash === '#project-inquiry') {
+				openModal();
+			} else {
+				closeModal();
+			}
+		}
+
+		handleHashChange();
+		window.addEventListener('hashchange', handleHashChange);
+
+		document.querySelectorAll('[data-modal-trigger="project-inquiry"]').forEach((trigger) => {
+			trigger.addEventListener('click', (e) => {
+				e.preventDefault();
+				window.location.hash = 'project-inquiry';
+			});
+		});
+
+		closeButton.addEventListener('click', () => {
+			window.location.hash = '';
+			closeModal();
+		});
+
+		modal.addEventListener('click', (e) => {
+			if (e.target === modal) {
+				window.location.hash = '';
+				closeModal();
+			}
+		});
+
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && !modal.classList.contains('invisible')) {
+				window.location.hash = '';
+				closeModal();
+			}
+		});
+
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			if (errorMessage) errorMessage.classList.add('hidden');
+			if (successMessage) successMessage.classList.add('hidden');
+
+			const formData = new FormData(form);
+
+			try {
+				const response = await fetch('/', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+					body: new URLSearchParams(formData as any).toString(),
+				});
+
+				if (response.ok) {
+					if (successMessage) successMessage.classList.remove('hidden');
+					form.reset();
+					setTimeout(() => {
+						window.location.hash = '';
+						closeModal();
+					}, 2500);
+				} else {
+					throw new Error('Form submission failed');
+				}
+			} catch (error) {
+				const lang = modal.getAttribute('data-lang') || 'en';
+				if (errorMessage) {
+					errorMessage.textContent = lang === 'en'
+						? 'An error occurred. Please try again or contact us directly.'
+						: 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.';
+					errorMessage.classList.remove('hidden');
+				}
+			}
+		});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initProjectModal);
+	} else {
+		initProjectModal();
+	}
+</script>

@@ -20,6 +20,7 @@ export const EN_TO_DE = {
 	'/terms': '/de/terms',
 
 	'/research': '/de/forschung',
+	'/solutions': '/de/loesungen',
 	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
 	'/learnslice-vs-publisher-lms': '/de/learnslice-vs-verlags-lms',
 	'/learnslice-vs-video-ihk-tools': '/de/learnslice-vs-video-ihk-tools',

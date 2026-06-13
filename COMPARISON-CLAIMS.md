@@ -54,6 +54,11 @@ checked.
 | "4.8/5 rating", "30+ companies" | homepage | NEEDS SOURCE (internal data) | — |
 | "BMWE AI Prize 2025", "FH Dortmund partnership" | homepage | Verifiable (award/partner) — attach proof | — |
 | LearnSlice "Germany only" data hosting | comparison pages, homepage | Confirm current infra | — |
+| EU AI-in-education market "$2.11B → $19.97B (2026–2034)" | solutions (EN+DE) | Market Data Forecast, Europe AI in Education Market (USD) | Juni 2026 |
+| Market "32.47% CAGR through 2034" | solutions (EN+DE) | Market Data Forecast, Europe AI in Education Market | Juni 2026 |
+| "44.8% growth, corporate training segment (fastest)" | solutions (EN+DE) | Market Data Forecast, Europe AI in Education Market (end-use segment) | Juni 2026 |
+| EU AI Act penalty "up to €35M or 7% of global turnover" | solutions (EN+DE) | Regulation (EU) 2024/1689, Art. 99 (highest tier, Art. 5 breaches) | Juni 2026 |
+| Pilot "100% answers source-traceable" / "80% near-complete mastery" | solutions (EN+DE), research | FH Dortmund pilot (50 students, 1 course, May 2026); see /research | Juni 2026 |
 
 > The traditional-training pages cite the cost calculator (BIBB averages) as the basis and link to
 > it; figures use "up to" framing. The calculator is the single source of truth — keep page numbers

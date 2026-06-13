@@ -6,9 +6,11 @@ interface Props {
 	subheadline: string;
 	button: string;
 	currentLang: 'en' | 'de';
+	buttonHref?: string;
+	note?: string;
 }
 
-const { headline, subheadline, button, currentLang } = Astro.props;
+const { headline, subheadline, button, currentLang, buttonHref = '#demo-request', note } = Astro.props;
 
 const subheadlineLines = subheadline.split('\n');
 ---
@@ -33,12 +35,15 @@ const subheadlineLines = subheadline.split('\n');
 		<div class="mt-2">
 			<Button
 				variant="primary"
-				href="#demo-request"
+				href={buttonHref}
 				aria-label={button}
 			>
 				{button}
 				<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 			</Button>
 		</div>
+		{note && (
+			<p class="text-xs text-muted m-0 mt-1">{note}</p>
+		)}
 	</div>
 </section>

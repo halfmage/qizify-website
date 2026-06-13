@@ -22,6 +22,7 @@
           { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
+      { "label": "Solutions", "href": "/solutions" },
       { "label": "Blog", "href": "/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/#faq" }
     ],
@@ -474,6 +475,200 @@
       "headline": "See the evidence in your own context",
       "subheadline": "Co-developed with a German university, hosted in Germany, grounded in your curriculum. Let us walk you through the pilot results and what a setup looks like for your teams.",
       "button": "Book a Demo"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "label": "Custom development",
+      "headline": "Your learning software,\nengineered end to end",
+      "subheadline": "We design, build, and run learning applications of every kind: chatbots, platforms, mobile apps, simulations, and more. Sovereign, compliant, and proven.",
+      "ctaPrimary": "Book a strategy call",
+      "ctaSecondary": "See the research",
+      "trust": "Co-developed with FH Dortmund · GDPR and EU AI Act ready · You own the data",
+      "microcopy": "Free 30-minute call. No pitch, a concrete roadmap."
+    },
+    "build": {
+      "label": "What we build",
+      "headline": "If it helps people learn, we engineer it",
+      "intro": "We are a software engineering company for learning. From a single AI tutor to a full platform, this is the range we build. It is a sample, not a limit.",
+      "items": [
+        { "icon": "hugeicons:ai-chat-02", "title": "AI tutors and chatbots", "body": "White-label tutoring assistants with adaptive paths and source-cited answers, grounded in your curriculum." },
+        { "icon": "hugeicons:dashboard-square-01", "title": "Learning platforms and LMS", "body": "Full learning management and experience platforms, built from scratch or on Moodle, Open edX, and other systems." },
+        { "icon": "hugeicons:smart-phone-01", "title": "Mobile learning apps", "body": "Native and cross-platform apps for learning on the go, with offline support and push reminders." },
+        { "icon": "hugeicons:checkmark-circle-02", "title": "Quiz and assessment platforms", "body": "Curriculum-aligned quiz libraries, exams, and competency checks with automated scoring." },
+        { "icon": "hugeicons:pen-tool-03", "title": "Authoring and content tools", "body": "Tools for your team to create, verify, and manage learning content and question banks." },
+        { "icon": "hugeicons:game-controller-01", "title": "Simulations and serious games", "body": "Scenario-based learning, branching simulations, and gamification that drive engagement and retention." },
+        { "icon": "hugeicons:virtual-reality-vr-01", "title": "VR and AR training", "body": "Immersive 3D training for technical, medical, and safety-critical skills." },
+        { "icon": "hugeicons:mortarboard-02", "title": "Exam and certification prep", "body": "Adaptive preparation for IHK and professional certifications, mapped to the competency framework." },
+        { "icon": "hugeicons:presentation-bar-chart-01", "title": "Learning analytics", "body": "Dashboards and reporting that turn learning activity into decisions for managers and educators." },
+        { "icon": "hugeicons:puzzle", "title": "Integrations and customization", "body": "Connect to your HR, SSO, and existing tools, or extend Moodle and other platforms to fit your processes." },
+        { "icon": "hugeicons:briefcase-02", "title": "Onboarding and upskilling", "body": "AI-guided onboarding and continuous upskilling programs that adapt to each role." },
+        { "icon": "hugeicons:building-06", "title": "White-label and sector solutions", "body": "Branded learning products for banks, insurers, publishers, and other regulated fields." }
+      ],
+      "note": "Do not see your idea here? That is usually our favourite kind of project."
+    },
+    "useCases": {
+      "label": "Selected work",
+      "headline": "A few of the products we have shipped",
+      "intro": "A small sample, from a sovereign AI tutor to a branded financial-literacy companion. We build well beyond these.",
+      "items": [
+        {
+          "image": "/images/solutions/learnslice.webp",
+          "imageAlt": "AI tutoring chat interface with IHK exam, onboarding, company knowledge, and upskilling modes",
+          "eyebrow": "AI tutoring and exam prep",
+          "title": "A personal AI mentor for every learner",
+          "body": "One assistant for IHK exam prep, onboarding, company knowledge, and upskilling, grounded in your material.",
+          "bullets": [
+            "Learning modes for exams, onboarding, and upskilling",
+            "Answers cited back to your curriculum",
+            "Points, progress, and accuracy tracked per learner"
+          ]
+        },
+        {
+          "image": "/images/solutions/fh-dortmund.webp",
+          "imageAlt": "Quiz library with SCRUM, orientation, and logistics courses, deployed with FH Dortmund",
+          "eyebrow": "Quiz and assessment platforms",
+          "title": "A managed quiz library your educators control",
+          "body": "Curriculum-aligned quizzes that teaching staff create, verify, and manage, deployed with FH Dortmund.",
+          "bullets": [
+            "Filter by department, topic, language, and type",
+            "Verified, curriculum-aligned questions",
+            "Multiple-choice and timed formats out of the box"
+          ]
+        },
+        {
+          "image": "/images/solutions/financial-companion.webp",
+          "imageAlt": "Financial Companion AI interface with a financial health check and a learning programme",
+          "eyebrow": "Sector solutions",
+          "title": "A branded companion for your domain",
+          "body": "The same engine, white-labelled for a specific field, here a financial-literacy companion for a partner.",
+          "bullets": [
+            "Your brand, your domain, your content",
+            "Guided programmes and a health-check flow",
+            "Built for banks, insurers, and publishers"
+          ]
+        }
+      ]
+    },
+    "services": {
+      "label": "Full lifecycle",
+      "headline": "Engineering across the whole lifecycle",
+      "items": [
+        { "icon": "hugeicons:search-01", "label": "Discovery and consulting" },
+        { "icon": "hugeicons:paint-board", "label": "UX and UI design" },
+        { "icon": "hugeicons:source-code", "label": "Custom development" },
+        { "icon": "hugeicons:layers-01", "label": "Platform-based development" },
+        { "icon": "hugeicons:plug-socket", "label": "System integration" },
+        { "icon": "hugeicons:security-check", "label": "QA and security" },
+        { "icon": "hugeicons:headset", "label": "Hosting and support" },
+        { "icon": "hugeicons:tools", "label": "Modernization" }
+      ]
+    },
+    "engagement": {
+      "label": "How you work with us",
+      "headline": "An engagement model that fits your team",
+      "intro": "Whether you need a finished product or extra engineering capacity, there is a way to work together.",
+      "items": [
+        { "icon": "hugeicons:target-02", "title": "Fixed-scope project", "body": "We scope it, quote it, and ship it for a defined budget and timeline. Best for a clear product or MVP." },
+        { "icon": "hugeicons:user-group", "title": "Dedicated team", "body": "An embedded team of engineers, designer, and product lead builds and evolves your product over time." },
+        { "icon": "hugeicons:user-multiple", "title": "Staff augmentation", "body": "Our engineers join your existing team and codebase to add capacity, or AI and learning expertise." },
+        { "icon": "hugeicons:server-stack-01", "title": "Managed product and support", "body": "We host, run, and keep improving the live solution, with maintenance and a clear support agreement." }
+      ]
+    },
+    "tech": {
+      "label": "Technology and standards",
+      "headline": "A modern, sovereign, standards-based stack",
+      "groups": [
+        { "label": "We build with", "items": ["Web and mobile apps", "RAG and sovereign LLMs", "APIs and integrations", "SSO and LDAP", "Learning analytics"] },
+        { "label": "Standards and hosting", "items": ["SCORM", "xAPI", "LTI", "GDPR", "EU AI Act", "German, EU, or on-premise"] }
+      ]
+    },
+    "market": {
+      "label": "Why now",
+      "headline": "Demand and regulation are both accelerating",
+      "intro": "The market for educational AI is growing fast, and so are the rules that govern it. Building on sovereign, curriculum-aligned infrastructure is now a strategic decision, not an optional one.",
+      "stats": [
+        { "icon": "hugeicons:chart-increase", "value": "$2.11B to $19.97B", "label": "European AI in education market, 2026 to 2034" },
+        { "icon": "hugeicons:analytics-up", "value": "32.47%", "label": "Annual growth rate (CAGR) through 2034" },
+        { "icon": "hugeicons:briefcase-02", "value": "44.8%", "label": "Growth of the corporate training segment, the fastest in the market" },
+        { "icon": "hugeicons:legal-document-01", "value": "Up to €35M or 7%", "label": "EU AI Act penalty ceiling, of global annual turnover", "accent": true }
+      ],
+      "sources": "Market figures: Market Data Forecast, Europe AI in Education Market, values in USD, 2026 to 2034 forecast. Penalty ceiling: EU AI Act, Regulation (EU) 2024/1689, Article 99 (highest tier). Stand: Juni 2026."
+    },
+    "sovereignty": {
+      "label": "Protected by design",
+      "headline": "Sovereign, compliant, and yours to own",
+      "items": [
+        { "icon": "hugeicons:database-locked", "title": "Your data stays yours", "body": "Learner data is processed on your infrastructure. No student data is sent to third-party AI providers, and none is used to train external models." },
+        { "icon": "hugeicons:legal-document-02", "title": "GDPR with a signed DPA", "body": "Full GDPR compliance with a data processing agreement (AVV) included. Hosting in Germany, the EU, or on premise, per your policy." },
+        { "icon": "hugeicons:security-check", "title": "EU AI Act ready", "body": "Educational AI counts as high-risk under the EU AI Act. We build in human oversight, transparency, and documentation so your deployment meets the requirements." },
+        { "icon": "hugeicons:ai-brain-01", "title": "Curriculum-grounded answers", "body": "Retrieval grounded on your verified material, so answers are accurate, pedagogically sound, and cite their sources." },
+        { "icon": "hugeicons:cloud-server", "title": "Deployed where you need it", "body": "German hosting, a dedicated cloud, or fully on premise. You choose the environment that fits your compliance and IT requirements." },
+        { "icon": "hugeicons:award-04", "title": "Yours to brand and own", "body": "White-label under your own brand. You own the deployment, the content, and the relationship with your learners." }
+      ]
+    },
+    "proof": {
+      "label": "Proven",
+      "headline": "Validated in a university deployment",
+      "intro": "Our approach is co-developed with FH Dortmund in a federally funded research project. The first university pilot evaluated it with master's students.",
+      "items": [
+        { "stat": "100%", "title": "Answers traceable to a source", "body": "Every answer carried a valid citation back to its source passage, with no invented references." },
+        { "stat": "80%", "title": "Reached near-complete mastery", "body": "After preparing with the system, 80% of students reached complete or near-complete understanding of the exam topic." }
+      ],
+      "link": "Read the full research",
+      "disclosure": "First-iteration research pilot, 50 students, one course, May 2026. Findings describe an early study and are not a peer-reviewed publication.",
+      "quote": {
+        "text": "A tailored assistant adds the most value exactly where training needs it most: specialized, regulated, and curated-source domains.",
+        "author": "Prof. Dr. Carsten Wolff",
+        "role": "FH Dortmund, IDiAL institute"
+      }
+    },
+    "social": {
+      "label": "Customer voice",
+      "headline": "Trusted by the people who train people"
+    },
+    "process": {
+      "label": "How we work",
+      "headline": "From first call to live deployment",
+      "steps": [
+        { "icon": "hugeicons:search-01", "number": "1", "title": "Discovery and scoping", "body": "We map your use case, learners, content, and compliance requirements, and agree on a concrete roadmap and success criteria." },
+        { "icon": "hugeicons:idea-01", "number": "2", "title": "Design and curriculum alignment", "body": "We design the learning experience and ground the system on your verified curriculum, with the didactic methods that fit your goals." },
+        { "icon": "hugeicons:source-code", "number": "3", "title": "Build and integrate", "body": "We build the chatbot, platform, or LMS and connect it to your systems, hosted in the environment you choose." },
+        { "icon": "hugeicons:rocket-01", "number": "4", "title": "Launch and ongoing support", "body": "We launch with your teams, train your staff, and keep improving the system as your needs evolve." }
+      ]
+    },
+    "audiences": {
+      "label": "Industries",
+      "headline": "Sectors we build for",
+      "items": [
+        { "icon": "hugeicons:building-06", "role": "Companies and corporate L&D", "body": "Onboarding, upskilling, and compliance training that adapts to each role, under your brand and on your infrastructure." },
+        { "icon": "hugeicons:mortarboard-02", "role": "Vocational training and schools", "body": "Exam-aligned learning and tutoring for apprenticeships, vocational colleges, and schools." },
+        { "icon": "hugeicons:teacher", "role": "Higher education", "body": "Curriculum-anchored tutoring and platforms for universities, with sources teachers can check." },
+        { "icon": "hugeicons:building-03", "role": "Chambers and public sector", "body": "IHK, HWK, and public agencies offering modern, affordable learning to the organisations they serve." },
+        { "icon": "hugeicons:bank", "role": "Banking, insurance, and publishers", "body": "Branded learning and financial-literacy products for regulated, content-driven businesses." },
+        { "icon": "hugeicons:hospital-01", "role": "Healthcare and regulated fields", "body": "Compliant training for healthcare and other settings where data protection and accuracy are critical." }
+      ]
+    },
+    "faq": {
+      "headline": "Questions about custom builds",
+      "items": [
+        { "question": "Who owns the solution and the data?", "answer": "You do. You own the deployment, the content, and the learner data. Data is processed on your infrastructure and is never used to train third-party models." },
+        { "question": "Is it GDPR and EU AI Act compliant?", "answer": "Yes. We include a data processing agreement (AVV), and we build in the human oversight, transparency, and documentation that the EU AI Act requires for educational AI. Hosting is in Germany, the EU, or on premise." },
+        { "question": "Can you integrate with Moodle or our existing systems?", "answer": "Yes. We build new platforms or extend existing ones, including Moodle and custom LMS, and connect to the tools and processes your teams already use." },
+        { "question": "How long does a project take?", "answer": "It depends on scope. A focused chatbot can go live quickly, while a full platform takes longer. We agree on a clear roadmap and milestones in the discovery phase." },
+        { "question": "What does it cost?", "answer": "Every build is scoped to your use case, so pricing depends on requirements. The strategy call gives you a concrete roadmap and an honest estimate, with no obligation." },
+        { "question": "Where is everything hosted?", "answer": "In Germany, in a dedicated EU cloud, or fully on premise. You choose the environment that fits your compliance and IT requirements." },
+        { "question": "What happens after launch?", "answer": "We train your staff, provide support, and keep improving the system as your content and needs evolve." },
+        { "question": "Can you build a type of learning app that is not listed here?", "answer": "Almost certainly. The list is a sample of what we build, not a limit. If it helps people learn, bring it to the strategy call and we will scope it with you." },
+        { "question": "What technologies do you build with?", "answer": "Modern web and mobile stacks, retrieval-augmented generation with sovereign LLMs, and standard integrations such as SSO, SCORM, xAPI, LTI, and REST APIs. We host in Germany, the EU, or on your own infrastructure." },
+        { "question": "How do we engage you?", "answer": "Four ways: a fixed-scope project or MVP, a dedicated team, staff augmentation where our engineers join yours, or a managed solution we host and support. We recommend the right fit in the strategy call." }
+      ]
+    },
+    "cta": {
+      "headline": "Let us scope your project",
+      "subheadline": "Book a free 30-minute strategy call. No sales pitch, just a concrete roadmap for your organisation.",
+      "button": "Book a strategy call",
+      "note": "GDPR and EU AI Act ready · You own everything · Reply within 1 business day"
     }
   }
 }

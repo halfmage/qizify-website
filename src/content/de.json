@@ -22,6 +22,7 @@
           { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
+      { "label": "Lösungen", "href": "/de/loesungen" },
       { "label": "Blog", "href": "/de/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/de#faq" }
     ],
@@ -473,6 +474,200 @@
       "headline": "Sehen Sie die Belege in Ihrem eigenen Kontext",
       "subheadline": "Mit einer deutschen Hochschule entwickelt, in Deutschland gehostet, auf Ihrem Lehrplan aufgebaut. Wir führen Sie durch die Studienergebnisse und zeigen, wie ein Setup für Ihre Teams aussieht.",
       "button": "Demo buchen"
+    }
+  },
+  "solutions": {
+    "hero": {
+      "label": "Individuelle Entwicklung",
+      "headline": "Ihre Lernsoftware,\nvon Anfang bis Ende entwickelt",
+      "subheadline": "Wir konzipieren, entwickeln und betreiben Lernanwendungen jeder Art: Chatbots, Plattformen, mobile Apps, Simulationen und mehr. Souverän, konform und bewährt.",
+      "ctaPrimary": "Strategiegespräch buchen",
+      "ctaSecondary": "Zur Forschung",
+      "trust": "Mit der FH Dortmund entwickelt · DSGVO- und EU-KI-Verordnungs-bereit · Ihre Daten gehören Ihnen",
+      "microcopy": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap."
+    },
+    "build": {
+      "label": "Was wir bauen",
+      "headline": "Wenn es beim Lernen hilft, entwickeln wir es",
+      "intro": "Wir sind ein Software-Engineering-Unternehmen für das Lernen. Vom einzelnen KI-Tutor bis zur vollständigen Plattform, das ist unser Spektrum. Eine Auswahl, keine Grenze.",
+      "items": [
+        { "icon": "hugeicons:ai-chat-02", "title": "KI-Tutoren und Chatbots", "body": "White-Label-Lernassistenten mit adaptiven Pfaden und quellenbelegten Antworten, verankert in Ihrem Lehrplan." },
+        { "icon": "hugeicons:dashboard-square-01", "title": "Lernplattformen und LMS", "body": "Vollständige Lern- und Experience-Plattformen, neu gebaut oder auf Moodle, Open edX und anderen Systemen." },
+        { "icon": "hugeicons:smart-phone-01", "title": "Mobile Lern-Apps", "body": "Native und plattformübergreifende Apps für das Lernen unterwegs, mit Offline-Modus und Push-Erinnerungen." },
+        { "icon": "hugeicons:checkmark-circle-02", "title": "Quiz- und Assessment-Plattformen", "body": "Lehrplanbasierte Quiz-Bibliotheken, Prüfungen und Kompetenzchecks mit automatischer Auswertung." },
+        { "icon": "hugeicons:pen-tool-03", "title": "Authoring- und Content-Tools", "body": "Werkzeuge, mit denen Ihr Team Lerninhalte und Fragenpools erstellt, prüft und verwaltet." },
+        { "icon": "hugeicons:game-controller-01", "title": "Simulationen und Serious Games", "body": "Szenariobasiertes Lernen, verzweigte Simulationen und Gamification für Engagement und Behaltensleistung." },
+        { "icon": "hugeicons:virtual-reality-vr-01", "title": "VR- und AR-Training", "body": "Immersives 3D-Training für technische, medizinische und sicherheitskritische Fähigkeiten." },
+        { "icon": "hugeicons:mortarboard-02", "title": "Prüfungs- und Zertifikatsvorbereitung", "body": "Adaptive Vorbereitung auf IHK- und Berufszertifikate, abgestimmt auf den Kompetenzrahmen." },
+        { "icon": "hugeicons:presentation-bar-chart-01", "title": "Lern-Analytics", "body": "Dashboards und Auswertungen, die Lernaktivität in Entscheidungen für Verantwortliche und Lehrende verwandeln." },
+        { "icon": "hugeicons:puzzle", "title": "Integration und Anpassung", "body": "Anbindung an Ihre HR, SSO und bestehenden Tools, oder Erweiterung von Moodle und anderen Plattformen für Ihre Prozesse." },
+        { "icon": "hugeicons:briefcase-02", "title": "Onboarding und Upskilling", "body": "KI-gestützte Onboarding- und Upskilling-Programme, die sich an jede Rolle anpassen." },
+        { "icon": "hugeicons:building-06", "title": "White-Label- und Branchenlösungen", "body": "Markeneigene Lernprodukte für Banken, Versicherer, Verlage und andere regulierte Felder." }
+      ],
+      "note": "Ihre Idee nicht dabei? Das ist meist unsere liebste Art von Projekt."
+    },
+    "useCases": {
+      "label": "Ausgewählte Projekte",
+      "headline": "Einige Produkte, die wir ausgeliefert haben",
+      "intro": "Eine kleine Auswahl, vom souveränen KI-Tutor bis zum markeneigenen Finanzbildungs-Begleiter. Wir bauen weit darüber hinaus.",
+      "items": [
+        {
+          "image": "/images/solutions/learnslice.webp",
+          "imageAlt": "KI-Lern-Chat mit Modi für IHK-Prüfung, Onboarding, Unternehmenswissen und Upskilling",
+          "eyebrow": "KI-Tutor und Prüfungsvorbereitung",
+          "title": "Ein persönlicher KI-Mentor für jede Lernende",
+          "body": "Ein Assistent für IHK-Vorbereitung, Onboarding, Unternehmenswissen und Upskilling, verankert in Ihrem Material.",
+          "bullets": [
+            "Lernmodi für Prüfungen, Onboarding und Upskilling",
+            "Antworten mit Quellen aus Ihrem Lehrplan",
+            "Punkte, Fortschritt und Genauigkeit pro Lernende"
+          ]
+        },
+        {
+          "image": "/images/solutions/fh-dortmund.webp",
+          "imageAlt": "Quiz-Bibliothek mit SCRUM-, Orientierungs- und Logistik-Kursen, mit der FH Dortmund eingesetzt",
+          "eyebrow": "Quiz- und Assessment-Plattformen",
+          "title": "Eine verwaltete Quiz-Bibliothek, die Ihre Lehrenden steuern",
+          "body": "Lehrplanbasierte Quizze, die das Lehrpersonal erstellt, prüft und verwaltet, mit der FH Dortmund eingesetzt.",
+          "bullets": [
+            "Filter nach Abteilung, Thema, Sprache und Typ",
+            "Verifizierte, lehrplanbasierte Fragen",
+            "Multiple-Choice und Zeitformate von Haus aus"
+          ]
+        },
+        {
+          "image": "/images/solutions/financial-companion.webp",
+          "imageAlt": "Financial-Companion-KI mit Finanz-Gesundheitscheck und Lernprogramm",
+          "eyebrow": "Branchenlösungen",
+          "title": "Ein markeneigener Begleiter für Ihre Domäne",
+          "body": "Dieselbe Engine, als White-Label für ein konkretes Feld, hier ein Finanzbildungs-Begleiter für einen Partner.",
+          "bullets": [
+            "Ihre Marke, Ihre Domäne, Ihre Inhalte",
+            "Geführte Programme und ein Health-Check-Ablauf",
+            "Für Banken, Versicherer und Verlage gebaut"
+          ]
+        }
+      ]
+    },
+    "services": {
+      "label": "Gesamter Lebenszyklus",
+      "headline": "Engineering über den gesamten Lebenszyklus",
+      "items": [
+        { "icon": "hugeicons:search-01", "label": "Analyse und Beratung" },
+        { "icon": "hugeicons:paint-board", "label": "UX- und UI-Design" },
+        { "icon": "hugeicons:source-code", "label": "Individualentwicklung" },
+        { "icon": "hugeicons:layers-01", "label": "Plattformbasierte Entwicklung" },
+        { "icon": "hugeicons:plug-socket", "label": "Systemintegration" },
+        { "icon": "hugeicons:security-check", "label": "QA und Sicherheit" },
+        { "icon": "hugeicons:headset", "label": "Hosting und Support" },
+        { "icon": "hugeicons:tools", "label": "Modernisierung" }
+      ]
+    },
+    "engagement": {
+      "label": "So arbeiten Sie mit uns",
+      "headline": "Ein Modell, das zu Ihrem Team passt",
+      "intro": "Ob Sie ein fertiges Produkt oder zusätzliche Engineering-Kapazität brauchen, es gibt einen passenden Weg der Zusammenarbeit.",
+      "items": [
+        { "icon": "hugeicons:target-02", "title": "Festpreis-Projekt", "body": "Wir umreißen es, kalkulieren es und liefern es zu festem Budget und Zeitplan. Ideal für ein klares Produkt oder MVP." },
+        { "icon": "hugeicons:user-group", "title": "Dediziertes Team", "body": "Ein eingebettetes Team aus Entwicklern, Designer und Product Lead baut und entwickelt Ihr Produkt über die Zeit weiter." },
+        { "icon": "hugeicons:user-multiple", "title": "Staff Augmentation", "body": "Unsere Entwickler verstärken Ihr bestehendes Team und Ihren Code, mit Kapazität oder KI- und Lern-Expertise." },
+        { "icon": "hugeicons:server-stack-01", "title": "Managed Product und Support", "body": "Wir hosten, betreiben und verbessern die Lösung laufend, mit Wartung und einer klaren Support-Vereinbarung." }
+      ]
+    },
+    "tech": {
+      "label": "Technologie und Standards",
+      "headline": "Ein moderner, souveräner, standardbasierter Stack",
+      "groups": [
+        { "label": "Wir bauen mit", "items": ["Web- und Mobile-Apps", "RAG und souveräne LLMs", "APIs und Integrationen", "SSO und LDAP", "Lern-Analytics"] },
+        { "label": "Standards und Hosting", "items": ["SCORM", "xAPI", "LTI", "DSGVO", "EU-KI-Verordnung", "Deutschland, EU oder On-Premise"] }
+      ]
+    },
+    "market": {
+      "label": "Warum jetzt",
+      "headline": "Nachfrage und Regulierung nehmen gleichzeitig zu",
+      "intro": "Der Markt für Bildungs-KI wächst rasant, und die Regeln dafür ebenso. Der Aufbau auf souveräner, lehrplanbasierter Infrastruktur ist heute eine strategische Entscheidung, keine optionale.",
+      "stats": [
+        { "icon": "hugeicons:chart-increase", "value": "2,11 bis 19,97 Mrd. USD", "label": "Europäischer Markt für KI in der Bildung, 2026 bis 2034" },
+        { "icon": "hugeicons:analytics-up", "value": "32,47 %", "label": "Jährliche Wachstumsrate (CAGR) bis 2034" },
+        { "icon": "hugeicons:briefcase-02", "value": "44,8 %", "label": "Wachstum des Segments betriebliche Weiterbildung, das schnellste im Markt" },
+        { "icon": "hugeicons:legal-document-01", "value": "Bis zu 35 Mio. € oder 7 %", "label": "Bußgeldobergrenze der EU-KI-Verordnung, des weltweiten Jahresumsatzes", "accent": true }
+      ],
+      "sources": "Marktzahlen: Market Data Forecast, Europe AI in Education Market, Werte in USD, Prognose 2026 bis 2034. Bußgeldobergrenze: EU-KI-Verordnung, Verordnung (EU) 2024/1689, Artikel 99 (höchste Stufe). Stand: Juni 2026."
+    },
+    "sovereignty": {
+      "label": "Protected by Design",
+      "headline": "Souverän, konform und in Ihrem Besitz",
+      "items": [
+        { "icon": "hugeicons:database-locked", "title": "Ihre Daten bleiben Ihre", "body": "Lernerdaten werden auf Ihrer Infrastruktur verarbeitet. Keine Schülerdaten gehen an Dritt-KI-Anbieter, und keine werden zum Training externer Modelle genutzt." },
+        { "icon": "hugeicons:legal-document-02", "title": "DSGVO mit unterzeichnetem AVV", "body": "Vollständige DSGVO-Konformität mit inkludiertem Auftragsverarbeitungsvertrag (AVV). Hosting in Deutschland, der EU oder On-Premise, je nach Ihrer Richtlinie." },
+        { "icon": "hugeicons:security-check", "title": "Bereit für die EU-KI-Verordnung", "body": "Bildungs-KI gilt nach der EU-KI-Verordnung als hochriskant. Wir integrieren menschliche Aufsicht, Transparenz und Dokumentation, damit Ihr Einsatz die Anforderungen erfüllt." },
+        { "icon": "hugeicons:ai-brain-01", "title": "Lehrplanbasierte Antworten", "body": "Abruf, verankert in Ihrem geprüften Material, sodass Antworten korrekt, didaktisch fundiert und mit Quellen belegt sind." },
+        { "icon": "hugeicons:cloud-server", "title": "Eingesetzt, wo Sie es brauchen", "body": "Hosting in Deutschland, eine dedizierte Cloud oder vollständig On-Premise. Sie wählen die Umgebung, die zu Ihren Compliance- und IT-Anforderungen passt." },
+        { "icon": "hugeicons:award-04", "title": "Ihre Marke, Ihr Eigentum", "body": "White-Label unter Ihrer eigenen Marke. Ihnen gehören der Einsatz, die Inhalte und die Beziehung zu Ihren Lernenden." }
+      ]
+    },
+    "proof": {
+      "label": "Bewährt",
+      "headline": "Im Hochschuleinsatz validiert",
+      "intro": "Unser Ansatz wird mit der FH Dortmund in einem öffentlich geförderten Forschungsprojekt entwickelt. Die erste Hochschulstudie hat ihn mit Masterstudierenden evaluiert.",
+      "items": [
+        { "stat": "100%", "title": "Antworten auf eine Quelle zurückführbar", "body": "Jede Antwort trug eine gültige Quellenangabe zur Textstelle, ohne erfundene Quellen." },
+        { "stat": "80%", "title": "Nahezu vollständiges Verständnis erreicht", "body": "Nach der Vorbereitung mit dem System erreichten 80% der Studierenden ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas." }
+      ],
+      "link": "Zur vollständigen Forschung",
+      "disclosure": "Erste Forschungsstudie, 50 Studierende, ein Kurs, Mai 2026. Die Ergebnisse beschreiben eine frühe Studie und sind keine begutachtete Veröffentlichung.",
+      "quote": {
+        "text": "Ein maßgeschneiderter Assistent bringt den größten Nutzen genau dort, wo die Ausbildung ihn am meisten braucht: bei spezialisierten, regulierten und kuratierten Inhalten.",
+        "author": "Prof. Dr. Carsten Wolff",
+        "role": "FH Dortmund, Institut IDiAL"
+      }
+    },
+    "social": {
+      "label": "Kundenstimmen",
+      "headline": "Vertraut von den Menschen, die Menschen ausbilden"
+    },
+    "process": {
+      "label": "So arbeiten wir",
+      "headline": "Vom ersten Gespräch bis zum Live-Betrieb",
+      "steps": [
+        { "icon": "hugeicons:search-01", "number": "1", "title": "Analyse und Scoping", "body": "Wir erfassen Ihren Anwendungsfall, Ihre Lernenden, Inhalte und Compliance-Anforderungen und vereinbaren eine konkrete Roadmap mit Erfolgskriterien." },
+        { "icon": "hugeicons:idea-01", "number": "2", "title": "Konzept und Lehrplanabgleich", "body": "Wir gestalten das Lernerlebnis und verankern das System in Ihrem geprüften Lehrplan, mit den didaktischen Methoden, die zu Ihren Zielen passen." },
+        { "icon": "hugeicons:source-code", "number": "3", "title": "Entwicklung und Integration", "body": "Wir entwickeln den Chatbot, die Plattform oder das LMS und verbinden es mit Ihren Systemen, gehostet in der von Ihnen gewählten Umgebung." },
+        { "icon": "hugeicons:rocket-01", "number": "4", "title": "Launch und laufender Support", "body": "Wir starten mit Ihren Teams, schulen Ihre Mitarbeitenden und verbessern das System weiter, während sich Ihre Anforderungen entwickeln." }
+      ]
+    },
+    "audiences": {
+      "label": "Branchen",
+      "headline": "Branchen, für die wir bauen",
+      "items": [
+        { "icon": "hugeicons:building-06", "role": "Unternehmen und Personalentwicklung", "body": "Onboarding, Upskilling und Compliance-Schulungen, die sich an jede Rolle anpassen, unter Ihrer Marke und auf Ihrer Infrastruktur." },
+        { "icon": "hugeicons:mortarboard-02", "role": "Ausbildung und Schulen", "body": "Prüfungsnahes Lernen und Lernbegleitung für Ausbildung, Berufsschulen und Schulen." },
+        { "icon": "hugeicons:teacher", "role": "Hochschulen", "body": "Lehrplanbasierte Lernbegleitung und Plattformen für Hochschulen, mit Quellen, die Lehrende prüfen können." },
+        { "icon": "hugeicons:building-03", "role": "Kammern und öffentlicher Sektor", "body": "IHK, HWK und öffentliche Einrichtungen, die den Organisationen in ihrer Region modernes, bezahlbares Lernen anbieten." },
+        { "icon": "hugeicons:bank", "role": "Banken, Versicherer und Verlage", "body": "Markeneigene Lern- und Finanzbildungsprodukte für regulierte, inhaltsgetriebene Unternehmen." },
+        { "icon": "hugeicons:hospital-01", "role": "Gesundheitswesen und regulierte Felder", "body": "Konforme Schulungen für das Gesundheitswesen und andere Bereiche, in denen Datenschutz und Genauigkeit entscheidend sind." }
+      ]
+    },
+    "faq": {
+      "headline": "Fragen zu individuellen Projekten",
+      "items": [
+        { "question": "Wem gehören die Lösung und die Daten?", "answer": "Ihnen. Ihnen gehören der Einsatz, die Inhalte und die Lernerdaten. Die Daten werden auf Ihrer Infrastruktur verarbeitet und nie zum Training von Dritt-Modellen genutzt." },
+        { "question": "Ist die Lösung DSGVO- und EU-KI-Verordnungs-konform?", "answer": "Ja. Wir liefern einen Auftragsverarbeitungsvertrag (AVV) und integrieren die menschliche Aufsicht, Transparenz und Dokumentation, die die EU-KI-Verordnung für Bildungs-KI verlangt. Das Hosting erfolgt in Deutschland, der EU oder On-Premise." },
+        { "question": "Können Sie Moodle oder unsere bestehenden Systeme integrieren?", "answer": "Ja. Wir bauen neue Plattformen oder erweitern bestehende, inklusive Moodle und individuellen LMS, und binden die Tools und Prozesse an, die Ihre Teams bereits nutzen." },
+        { "question": "Wie lange dauert ein Projekt?", "answer": "Das hängt vom Umfang ab. Ein fokussierter Chatbot kann schnell live gehen, eine vollständige Plattform dauert länger. In der Analysephase vereinbaren wir eine klare Roadmap mit Meilensteinen." },
+        { "question": "Was kostet das?", "answer": "Jedes Projekt wird auf Ihren Anwendungsfall zugeschnitten, daher hängt der Preis von den Anforderungen ab. Das Strategiegespräch liefert Ihnen eine konkrete Roadmap und eine ehrliche Einschätzung, unverbindlich." },
+        { "question": "Wo wird alles gehostet?", "answer": "In Deutschland, in einer dedizierten EU-Cloud oder vollständig On-Premise. Sie wählen die Umgebung, die zu Ihren Compliance- und IT-Anforderungen passt." },
+        { "question": "Was passiert nach dem Launch?", "answer": "Wir schulen Ihre Mitarbeitenden, bieten Support und verbessern das System weiter, während sich Ihre Inhalte und Anforderungen entwickeln." },
+        { "question": "Können Sie eine Art von Lern-App bauen, die hier nicht aufgeführt ist?", "answer": "Mit hoher Wahrscheinlichkeit ja. Die Liste ist eine Auswahl dessen, was wir bauen, keine Grenze. Wenn es beim Lernen hilft, bringen Sie es ins Strategiegespräch, und wir umreißen es gemeinsam." },
+        { "question": "Mit welchen Technologien bauen Sie?", "answer": "Moderne Web- und Mobile-Stacks, Retrieval-Augmented Generation mit souveränen LLMs sowie Standard-Integrationen wie SSO, SCORM, xAPI, LTI und REST-APIs. Wir hosten in Deutschland, der EU oder auf Ihrer eigenen Infrastruktur." },
+        { "question": "Wie arbeiten wir mit Ihnen zusammen?", "answer": "Auf vier Wegen: ein Festpreis-Projekt oder MVP, ein dediziertes Team, Staff Augmentation, bei der unsere Entwickler Ihre verstärken, oder eine gemanagte Lösung, die wir hosten und betreuen. Den passenden Weg empfehlen wir im Strategiegespräch." }
+      ]
+    },
+    "cta": {
+      "headline": "Lassen Sie uns Ihr Projekt umreißen",
+      "subheadline": "Buchen Sie ein kostenloses 30-Minuten-Strategiegespräch. Kein Pitch, nur eine konkrete Roadmap für Ihre Organisation.",
+      "button": "Strategiegespräch buchen",
+      "note": "DSGVO- und EU-KI-Verordnungs-bereit · Alles gehört Ihnen · Antwort innerhalb von 1 Werktag"
     }
   }
 }
