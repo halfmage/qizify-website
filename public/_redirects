@@ -4,50 +4,54 @@
 # The site was migrated from multi-page (Eleventy) to
 # single-page (Astro) in Dec 2025. These redirects catch
 # visitors and search engines still hitting old URLs.
+# Targets use NO trailing slash to match trailingSlash:'never'
+# (the canonical form) and avoid redirect chains.
 
 # German old pages → DE homepage
-/de/team/                       /de/            301
-/de/pricing/                    /de/            301
-/de/companies/                  /de/            301
-/de/education/                  /de/            301
-/de/contact/                    /de/            301
-/de/faq/                        /de/            301
-/de/apprenticeship/             /de/            301
-/de/azubis/                     /de/            301
-/de/coaches/                    /de/            301
-/de/universities/               /de/            301
-# Old blog posts (specific slugs only - new blog now lives at /de/blog/)
-/de/blog/wie-gestaltet-man-ein-lms-benutzerfreundlich/  /de/blog/  301
-/de/blog/after-qizify-you-will-never-want-to-use-other-learning-management-systems/  /de/blog/  301
+/de/team/                       /de             301
+/de/pricing/                    /de             301
+/de/education/                  /de             301
+/de/contact/                    /de             301
+/de/faq/                        /de             301
+/de/apprenticeship/             /de             301
+/de/azubis/                     /de             301
+/de/coaches/                    /de             301
+/de/universities/               /de             301
+# Company page exists again → send the old trailing-slash URL to the live page
+/de/companies/                  /de/companies   301
+# Old blog posts (specific slugs only - new blog now lives at /de/blog)
+/de/blog/wie-gestaltet-man-ein-lms-benutzerfreundlich/  /de/blog  301
+/de/blog/after-qizify-you-will-never-want-to-use-other-learning-management-systems/  /de/blog  301
 
 # German old legal paths → new legal paths
-/de/impressum/                  /de/imprint/    301
-/de/datenschutzerklaerung/      /de/privacy/    301
-/de/agb/                        /de/terms/      301
-/de/terms-for-ai/               /de/terms/      301
+/de/impressum/                  /de/imprint     301
+/de/datenschutzerklaerung/      /de/privacy     301
+/de/agb/                        /de/terms       301
+/de/terms-for-ai/               /de/terms       301
 
 # English old pages → EN homepage
 /en/                            /               301
 /en/team/                       /               301
 /en/pricing/                    /               301
-/en/companies/                  /               301
 /en/education/                  /               301
 /en/contact/                    /               301
 /en/faq/                        /               301
 /en/apprenticeship/             /               301
 /en/universities/               /               301
-# Old EN blog posts (specific slugs only - new blog now lives at /blog/)
-/en/blog/digital-learning-in-germany-advantages-and-dissadvantages/  /blog/  301
-/en/blog/what-are-the-advantages-of-online-learning/  /blog/  301
-/en/blog/what-is-the-focus-in-education-industry-in-2022/  /blog/  301
-/en/blog/4-trends-in-education-industry-in-2022/  /blog/  301
-/en/blog/after-qizify-you-will-never-want-to-use-other-learning-management-systems/  /blog/  301
+# Company page exists again → send the old trailing-slash URL to the live page
+/en/companies/                  /companies      301
+# Old EN blog posts (specific slugs only - new blog now lives at /blog)
+/en/blog/digital-learning-in-germany-advantages-and-dissadvantages/  /blog  301
+/en/blog/what-are-the-advantages-of-online-learning/  /blog  301
+/en/blog/what-is-the-focus-in-education-industry-in-2022/  /blog  301
+/en/blog/4-trends-in-education-industry-in-2022/  /blog  301
+/en/blog/after-qizify-you-will-never-want-to-use-other-learning-management-systems/  /blog  301
 
 # English old legal paths → new legal paths
-/en/imprint/                    /imprint/       301
-/en/privacy/                    /privacy/       301
-/en/terms-of-use/               /terms/         301
-/en/terms-for-ai/               /terms/         301
+/en/imprint/                    /imprint        301
+/en/privacy/                    /privacy        301
+/en/terms-of-use/               /terms          301
+/en/terms-for-ai/               /terms          301
 
 # Convenience /for-* shortlinks
 /for-companies                  /companies      301
@@ -59,7 +63,7 @@
 
 # Removed competitor comparison pages → language homepage
 /learnslice-vs-simpleclub       /               301
-/de/learnslice-vs-simpleclub    /de/            301
+/de/learnslice-vs-simpleclub    /de             301
 
 # Renamed (de-named) competitor comparison pages → new generic URLs
 /learnslice-vs-prozubi               /learnslice-vs-video-ihk-tools                  301
@@ -68,3 +72,26 @@
 /de/learnslice-vs-cornelsen-ecademy  /de/learnslice-vs-verlags-lms                   301
 /learnslice-vs-vocanto               /learnslice-vs-animated-video-platforms         301
 /de/learnslice-vs-vocanto            /de/learnslice-vs-animations-lernplattformen    301
+
+# ============================================
+# 404 cleanup (from GSC export, 2026-06-17)
+# ============================================
+# Legacy cross-language blog URLs from an old hreflang/switcher bug that kept
+# the slug when swapping the locale prefix (now fixed). Map each to the page
+# that actually holds that content, in the URL's own language section.
+/blog/ausbilder-entlasten                  /blog/reduce-trainer-workload               301
+/blog/ki-tools-ausbildung                  /blog/ai-tools-vocational-training           301
+/blog/ausbildungskosten-senken             /blog/reduce-training-costs                 301
+/blog/azubi-onboarding                     /blog/apprentice-onboarding                 301
+/blog/ausbildung-digitalisieren            /blog/digitize-apprenticeship-training      301
+/blog/ihk-pruefung-tipps                   /blog/ihk-exam-tips                         301
+/blog/ausbildungsplan-vorlage-kostenlos    /blog/apprenticeship-plan-template-free     301
+# DE-only post, no EN counterpart → send to the German article
+/blog/ausbildungsplan-erstellen-ki         /de/blog/ausbildungsplan-erstellen-ki       301
+/de/blog/ihk-exam-preparation-digital      /de/blog/ihk-pruefungsvorbereitung-digital  301
+/de/blog/digitize-apprenticeship-training  /de/blog/ausbildung-digitalisieren          301
+
+# Old contact/coaches paths the migration rules missed (no trailing slash too)
+/contact            /   301
+/en/contact         /   301
+/en/coaches/        /   301
