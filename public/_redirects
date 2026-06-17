@@ -74,24 +74,53 @@
 /de/learnslice-vs-vocanto            /de/learnslice-vs-animations-lernplattformen    301
 
 # ============================================
-# 404 cleanup (from GSC export, 2026-06-17)
+# 404 / 5xx cleanup (from GSC exports, 2026-06-17)
 # ============================================
 # Legacy cross-language blog URLs from an old hreflang/switcher bug that kept
-# the slug when swapping the locale prefix (now fixed). Map each to the page
-# that actually holds that content, in the URL's own language section.
-/blog/ausbilder-entlasten                  /blog/reduce-trainer-workload               301
-/blog/ki-tools-ausbildung                  /blog/ai-tools-vocational-training           301
-/blog/ausbildungskosten-senken             /blog/reduce-training-costs                 301
-/blog/azubi-onboarding                     /blog/apprentice-onboarding                 301
-/blog/ausbildung-digitalisieren            /blog/digitize-apprenticeship-training      301
-/blog/ihk-pruefung-tipps                   /blog/ihk-exam-tips                         301
-/blog/ausbildungsplan-vorlage-kostenlos    /blog/apprenticeship-plan-template-free     301
-# DE-only post, no EN counterpart → send to the German article
-/blog/ausbildungsplan-erstellen-ki         /de/blog/ausbildungsplan-erstellen-ki       301
-/de/blog/ihk-exam-preparation-digital      /de/blog/ihk-pruefungsvorbereitung-digital  301
-/de/blog/digitize-apprenticeship-training  /de/blog/ausbildung-digitalisieren          301
+# the slug when swapping the locale prefix (now fixed). The full bilingual set
+# is mapped both directions so re-crawls of any pair resolve cleanly.
+# German slug on the English path -> English article
+/blog/ki-in-der-ausbildung               /blog/ai-in-vocational-training              301
+/blog/ki-lernplattform-azubis            /blog/ai-learning-platform-apprentices       301
+/blog/ki-tools-ausbildung                /blog/ai-tools-vocational-training            301
+/blog/azubi-onboarding                   /blog/apprentice-onboarding                  301
+/blog/ausbildungsplan-vorlage-kostenlos  /blog/apprenticeship-plan-template-free      301
+/blog/berichtsheft-digital               /blog/digital-training-logbook               301
+/blog/ausbildung-digitalisieren          /blog/digitize-apprenticeship-training       301
+/blog/ihk-pruefungsvorbereitung-digital  /blog/ihk-exam-preparation-digital           301
+/blog/ihk-pruefung-tipps                 /blog/ihk-exam-tips                          301
+/blog/ausbilder-entlasten                /blog/reduce-trainer-workload                301
+/blog/ausbildungskosten-senken           /blog/reduce-training-costs                  301
+/blog/azubi-betreuung-zeit-sparen        /blog/save-time-mentoring-apprentices        301
+/blog/ausbildungsrahmenplan-erklaert     /blog/apprenticeship-framework-plan-explained 301
+/blog/lohnt-sich-ki-in-der-ausbildung    /blog/does-ai-learning-help-apprentices      301
+# English slug on the German path -> German article
+/de/blog/ai-in-vocational-training              /de/blog/ki-in-der-ausbildung           301
+/de/blog/ai-learning-platform-apprentices       /de/blog/ki-lernplattform-azubis        301
+/de/blog/ai-tools-vocational-training           /de/blog/ki-tools-ausbildung            301
+/de/blog/apprentice-onboarding                  /de/blog/azubi-onboarding               301
+/de/blog/apprenticeship-plan-template-free      /de/blog/ausbildungsplan-vorlage-kostenlos 301
+/de/blog/digital-training-logbook               /de/blog/berichtsheft-digital           301
+/de/blog/digitize-apprenticeship-training       /de/blog/ausbildung-digitalisieren      301
+/de/blog/ihk-exam-preparation-digital           /de/blog/ihk-pruefungsvorbereitung-digital 301
+/de/blog/ihk-exam-tips                          /de/blog/ihk-pruefung-tipps             301
+/de/blog/reduce-trainer-workload                /de/blog/ausbilder-entlasten            301
+/de/blog/reduce-training-costs                  /de/blog/ausbildungskosten-senken       301
+/de/blog/save-time-mentoring-apprentices        /de/blog/azubi-betreuung-zeit-sparen    301
+/de/blog/apprenticeship-framework-plan-explained /de/blog/ausbildungsrahmenplan-erklaert 301
+/de/blog/does-ai-learning-help-apprentices      /de/blog/lohnt-sich-ki-in-der-ausbildung 301
+# Solo-language posts: send the wrong-locale URL to the only version that exists
+/blog/ausbildungsplan-erstellen-ki              /de/blog/ausbildungsplan-erstellen-ki   301
+/blog/dsgvo-konforme-ki-tools-fuer-ausbilder    /de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder 301
+/de/blog/private-ai-employee-onboarding         /blog/private-ai-employee-onboarding    301
 
-# Old contact/coaches paths the migration rules missed (no trailing slash too)
+# Old blog posts that no longer exist -> current blog index
+/de/blog/lernplattformen-der-zukunft               /de/blog  301
+/de/blog/welche-lernplattformen-sind-da-beispiel-ilias  /de/blog  301
+/en/blog                                           /blog     301
+
+# Old contact/coaches/app paths the migration rules missed
+# (/en/contact, /de/contact already covered by the home-redirect rules above)
 /contact            /   301
-/en/contact         /   301
-/en/coaches/        /   301
+/en/coaches         /   301
+/settings           /   301
