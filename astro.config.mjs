@@ -19,6 +19,10 @@ export default defineConfig({
 	site: SITE,
 	output: 'static',
 	trailingSlash: 'never',
+	// Emit flat files (de/agencies.html) instead of directory indexes
+	// (de/agencies/index.html). Netlify serves flat files at the no-slash
+	// URL with 200, so canonical /de/agencies no longer 301s to /de/agencies/.
+	build: { format: 'file' },
 	integrations: [
 		tailwind(),
 		icon(),
