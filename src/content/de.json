@@ -18,6 +18,7 @@
         "children": [
           { "label": "Für Unternehmen", "description": "CEOs, HR, Ausbilder", "href": "/de/companies", "icon": "hugeicons:building-06" },
           { "label": "Für Schulen", "description": "Berufsschulen & Kollegs", "href": "/de/schools", "icon": "hugeicons:mortarboard-02" },
+          { "label": "Für Weiterbildungsanbieter", "description": "Bildungsträger, Umschulung, Reha", "href": "/de/weiterbildungsanbieter", "icon": "hugeicons:teacher" },
           { "label": "Für Agenturen", "description": "IHK, HWK, Wirtschaftsförderung", "href": "/de/agencies", "icon": "hugeicons:building-03" },
           { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
         ]
@@ -673,6 +674,70 @@
       "subheadline": "Buchen Sie ein kostenloses 30-Minuten-Strategiegespräch. Kein Pitch, nur eine konkrete Roadmap für Ihre Organisation.",
       "button": "Strategiegespräch buchen",
       "note": "DSGVO- und EU-KI-Verordnungs-bereit · Alles gehört Ihnen · Antwort innerhalb von 1 Werktag"
+    }
+  },
+  "trainingProviders": {
+    "hero": {
+      "label": "Für Weiterbildungsanbieter",
+      "headline": "Lernsoftware für Bildungsträger,\ngebaut für Ihre Anforderungen",
+      "subheadline": "Wir entwickeln und betreiben KI-Lerncoaches, LMS und Lernplattformen für Bildungsträger, Umschulung und Reha. Souverän, barrierearm und auf Ihre Dokumentationspflichten ausgelegt.",
+      "ctaPrimary": "Strategiegespräch buchen",
+      "ctaSecondary": "Kostenlosen Digitalcheck holen",
+      "trust": "DSGVO-konform · In Deutschland gehostet · Ihre Daten gehören Ihnen",
+      "microcopy": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap.",
+      "riskReversal": "Unverbindlich. NDA auf Anfrage. Antwort innerhalb von 1 Werktag."
+    },
+    "problem": {
+      "badge": "Warum jetzt",
+      "headline": "Drei Entwicklungen setzen Bildungsträger unter Zugzwang",
+      "body": "Das Barrierefreiheitsstärkungsgesetz verlangt seit Juni 2025 barrierearme digitale Angebote, mit Übergangsfrist bis 2030. Seit Juli 2025 müssen digitale Maßnahmen synchronen Unterricht getrennt von der Selbstlernzeit nachweisen. Und Lernende in Umschulung und Reha brauchen individuelle, begleitete Pfade. Standardsysteme wie Moodle oder ILIAS decken das nur mit hohem Aufwand ab."
+    },
+    "build": {
+      "headline": "Was wir für Bildungsträger bauen",
+      "items": [
+        { "icon": "hugeicons:ai-chat-02", "title": "KI-Lerncoach auf Ihren Inhalten", "description": "Ein White-Label-Lernassistent mit quellenbelegten Antworten aus Ihrem geprüften Material, abgestimmt auf Ihre Maßnahmen und Lehrpläne." },
+        { "icon": "hugeicons:checkmark-badge-01", "title": "Dokumentation, die Ihre Nachweise stützt", "description": "Anwesenheit, Lernfortschritt sowie synchrone und selbstgesteuerte Lernzeit erfasst und exportierbar, als Grundlage für Ihre AZAV-Dokumentation und Erfolgskontrolle." },
+        { "icon": "hugeicons:user-multiple", "title": "Barrierearme Lernpfade", "description": "An BFSG und WCAG 2.1 AA orientierte Oberflächen und adaptive Pfade, gerade für heterogene Gruppen in Umschulung und Reha." },
+        { "icon": "hugeicons:puzzle", "title": "Integration statt Systemwechsel", "description": "Wir binden Ihr bestehendes Moodle oder ILIAS an, statt es zu ersetzen, und erweitern es um KI und die Funktionen, die Ihnen fehlen." }
+      ]
+    },
+    "outcomes": {
+      "label": "Wirkung",
+      "headline": "Was Bildungsträger damit erreichen",
+      "stats": [
+        { "value": "Mehr Abschlüsse", "label": "Begleitete, adaptive Lernpfade halten mehr Teilnehmende bis zum Abschluss." },
+        { "value": "Audit-sicher", "label": "Anwesenheit, Fortschritt und Lernzeit jederzeit exportierbar für Ihre Kostenträger." },
+        { "value": "BFSG-bereit", "label": "An Barrierefreiheit nach WCAG 2.1 AA orientierte Lernumgebung." },
+        { "value": "Ohne Mehrpersonal", "label": "Neue Kohorten schneller onboarden, ohne zusätzliche Ausbilder." }
+      ]
+    },
+    "proof": {
+      "label": "Ausgewählte Projekte",
+      "headline": "Was wir bereits ausgeliefert haben",
+      "intro": "Eine kleine Auswahl, vom souveränen KI-Tutor bis zur gebrandeten Plattform, einsetzbar für berufliche Bildung wie für Reha."
+    },
+    "funding": {
+      "label": "Finanzierung",
+      "headline": "Als Abo planbar, statt als Großinvestition",
+      "body": "Wir liefern als gemanagtes Abonnement pro Platz, sodass die Kosten als laufende Sachkosten planbar bleiben. Wo möglich, unterstützen wir Sie dabei, ein Digitalisierungsprojekt über Programme wie ESF Plus mitzufinanzieren. Den passenden Weg klären wir im Strategiegespräch.",
+      "note": "Hinweis: Ob und wie Software über Ihre Maßnahmenfinanzierung anrechenbar ist, hängt von Ihrer Zulassung ab. Wir prüfen das gemeinsam mit Ihnen."
+    },
+    "faq": {
+      "headline": "Häufige Fragen von Bildungsträgern",
+      "items": [
+        { "question": "Unterstützt die Lösung unsere AZAV-Dokumentation?", "answer": "Ja. Wir erfassen Anwesenheit, Lernfortschritt sowie synchrone und selbstgesteuerte Lernzeit und stellen sie exportierbar bereit, als Grundlage für Ihre Nachweise und Erfolgskontrolle. Die Zulassung Ihrer Maßnahme bleibt bei Ihnen und Ihrer fachkundigen Stelle." },
+        { "question": "Ist die Lernumgebung barrierefrei?", "answer": "Wir orientieren uns an BFSG und WCAG 2.1 AA und setzen die Anforderungen im Rahmen Ihres Projekts um. Den konkreten Stand und offene Punkte besprechen wir transparent vor dem Start." },
+        { "question": "Wem gehören die Lösung und die Daten?", "answer": "Ihnen. Ihnen gehören der Einsatz, die Inhalte und die Lernerdaten. Die Daten werden auf Ihrer Infrastruktur in Deutschland oder der EU verarbeitet und nie zum Training von Dritt-Modellen genutzt." },
+        { "question": "Müssen wir Moodle oder ILIAS ablösen?", "answer": "Nein. Wir binden Ihr bestehendes System an und erweitern es um KI und fehlende Funktionen. So bleiben Ihre Datensouveränität erhalten und der Aufwand für einen Wechsel gering." },
+        { "question": "Wie wird das finanziert?", "answer": "Wir liefern als gemanagtes Abo pro Platz, sodass die Kosten laufend planbar sind. Wo möglich, unterstützen wir Sie, ein Digitalisierungsprojekt über Programme wie ESF Plus mitzufinanzieren. Ob Software über Ihre Maßnahmenfinanzierung anrechenbar ist, prüfen wir gemeinsam." },
+        { "question": "Helfen Sie auch bei Ausschreibungen?", "answer": "Ja. Für öffentlich vergebene Maßnahmen liefern wir die technischen Unterlagen, Datenschutznachweise und Beschreibungen, die Sie für Ausschreibungen brauchen." }
+      ]
+    },
+    "cta": {
+      "headline": "Lassen Sie uns Ihr Vorhaben umreißen",
+      "subheadline": "Buchen Sie ein kostenloses 30-Minuten-Strategiegespräch. Kein Pitch, nur eine konkrete Roadmap für Ihren Bildungsbetrieb.",
+      "button": "Strategiegespräch buchen",
+      "note": "DSGVO-konform · Alles gehört Ihnen · Antwort innerhalb von 1 Werktag"
     }
   }
 }

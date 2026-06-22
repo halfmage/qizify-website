@@ -18,6 +18,7 @@
         "children": [
           { "label": "For Companies", "description": "CEOs, HR, trainers", "href": "/companies", "icon": "hugeicons:building-06" },
           { "label": "For Schools", "description": "Vocational colleges", "href": "/schools", "icon": "hugeicons:mortarboard-02" },
+          { "label": "For Training Providers", "description": "Bildungsträger, retraining, rehab", "href": "/training-providers", "icon": "hugeicons:teacher" },
           { "label": "For Agencies", "description": "IHK, HWK, public agencies", "href": "/agencies", "icon": "hugeicons:building-03" },
           { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
         ]
@@ -674,6 +675,70 @@
       "subheadline": "Book a free 30-minute strategy call. No sales pitch, just a concrete roadmap for your organisation.",
       "button": "Book a strategy call",
       "note": "GDPR and EU AI Act ready · You own everything · Reply within 1 business day"
+    }
+  },
+  "trainingProviders": {
+    "hero": {
+      "label": "For Training Providers",
+      "headline": "Learning software for training providers,\nbuilt for your requirements",
+      "subheadline": "We build and run AI learning coaches, LMS, and learning platforms for training providers, retraining, and rehabilitation. Sovereign, accessible, and designed around your documentation duties.",
+      "ctaPrimary": "Book a strategy call",
+      "ctaSecondary": "Get the free digital check",
+      "trust": "GDPR compliant · Hosted in Germany · Your data stays yours",
+      "microcopy": "Free 30-minute call. No pitch, a concrete roadmap.",
+      "riskReversal": "No obligation. NDA on request. Reply within 1 business day."
+    },
+    "problem": {
+      "badge": "Why now",
+      "headline": "Three shifts are putting training providers under pressure",
+      "body": "Since June 2025 the German Accessibility Act (BFSG) requires accessible digital offerings, with a transition period to 2030. Since July 2025 digital measures must document synchronous instruction separately from self-study time. And learners in retraining and rehabilitation need individual, guided paths. Standard systems like Moodle or ILIAS only cover this with significant effort."
+    },
+    "build": {
+      "headline": "What we build for training providers",
+      "items": [
+        { "icon": "hugeicons:ai-chat-02", "title": "AI learning coach on your content", "description": "A white-label learning assistant with source-cited answers from your verified material, aligned to your programmes and curricula." },
+        { "icon": "hugeicons:checkmark-badge-01", "title": "Documentation that backs your records", "description": "Attendance, learning progress, and synchronous versus self-directed time, captured and exportable, as a basis for your AZAV documentation and outcome tracking." },
+        { "icon": "hugeicons:user-multiple", "title": "Accessible learning paths", "description": "Interfaces and adaptive paths oriented to BFSG and WCAG 2.1 AA, especially for heterogeneous groups in retraining and rehabilitation." },
+        { "icon": "hugeicons:puzzle", "title": "Integration instead of replacement", "description": "We connect to your existing Moodle or ILIAS rather than replacing it, and extend it with AI and the functions you are missing." }
+      ]
+    },
+    "outcomes": {
+      "label": "Impact",
+      "headline": "What training providers achieve with it",
+      "stats": [
+        { "value": "More completions", "label": "Guided, adaptive paths keep more learners through to completion." },
+        { "value": "Audit-ready", "label": "Attendance, progress, and learning time exportable for your funding bodies." },
+        { "value": "BFSG-ready", "label": "Learning environment oriented to accessibility (WCAG 2.1 AA)." },
+        { "value": "No extra staff", "label": "Onboard new cohorts faster, without additional trainers." }
+      ]
+    },
+    "proof": {
+      "label": "Selected work",
+      "headline": "What we have already delivered",
+      "intro": "A small selection, from a sovereign AI tutor to a branded platform, usable for vocational training and rehabilitation alike."
+    },
+    "funding": {
+      "label": "Funding",
+      "headline": "Planned as a subscription, not a large investment",
+      "body": "We deliver as a managed per-seat subscription, so costs stay predictable as ongoing operating expense. Where possible, we help you co-finance a digitalisation project through programmes such as ESF Plus. We clarify the right path in the strategy call.",
+      "note": "Note: whether and how software is creditable against your measure funding depends on your accreditation. We review that together with you."
+    },
+    "faq": {
+      "headline": "Common questions from training providers",
+      "items": [
+        { "question": "Does the solution support our AZAV documentation?", "answer": "Yes. We capture attendance, learning progress, and synchronous versus self-directed time and make it exportable, as a basis for your records and outcome tracking. The accreditation of your measure stays with you and your certifying body." },
+        { "question": "Is the learning environment accessible?", "answer": "We orient to BFSG and WCAG 2.1 AA and implement the requirements within your project. We discuss the concrete status and open points transparently before the start." },
+        { "question": "Who owns the solution and the data?", "answer": "You do. You own the deployment, the content, and the learner data. Data is processed on your infrastructure in Germany or the EU and never used to train third-party models." },
+        { "question": "Do we have to replace Moodle or ILIAS?", "answer": "No. We connect to your existing system and extend it with AI and missing functions. That keeps your data sovereignty intact and the switching effort low." },
+        { "question": "How is this funded?", "answer": "We deliver as a managed per-seat subscription, so costs stay predictable. Where possible, we help you co-finance a digitalisation project through programmes such as ESF Plus. Whether software is creditable against your measure funding, we review together." },
+        { "question": "Do you also help with tenders?", "answer": "Yes. For publicly tendered measures we provide the technical documents, data protection evidence, and descriptions you need for tenders." }
+      ]
+    },
+    "cta": {
+      "headline": "Let us scope your initiative",
+      "subheadline": "Book a free 30-minute strategy call. No sales pitch, just a concrete roadmap for your training organisation.",
+      "button": "Book a strategy call",
+      "note": "GDPR compliant · You own everything · Reply within 1 business day"
     }
   }
 }
