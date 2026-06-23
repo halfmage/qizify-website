@@ -18,12 +18,19 @@
         "children": [
           { "label": "Für Unternehmen", "description": "CEOs, HR, Ausbilder", "href": "/de/companies", "icon": "hugeicons:building-06" },
           { "label": "Für Schulen", "description": "Berufsschulen & Kollegs", "href": "/de/schools", "icon": "hugeicons:mortarboard-02" },
-          { "label": "Für Weiterbildungsanbieter", "description": "Bildungsträger, Umschulung, Reha", "href": "/de/weiterbildungsanbieter", "icon": "hugeicons:teacher" },
           { "label": "Für Agenturen", "description": "IHK, HWK, Wirtschaftsförderung", "href": "/de/agencies", "icon": "hugeicons:building-03" },
           { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      { "label": "Lösungen", "href": "/de/loesungen" },
+      {
+        "label": "Individualsoftware",
+        "mega": true,
+        "children": [
+          { "label": "Individualentwicklung", "description": "Apps, LMS, Chatbots, Serious Games", "href": "/de/loesungen", "icon": "hugeicons:source-code" },
+          { "label": "Compliance- & Sicherheitsschulungen", "description": "Serious Games + KI für regulierte Teams", "href": "/de/compliance-schulungen", "icon": "hugeicons:game-controller-01" },
+          { "label": "Für Weiterbildungsanbieter", "description": "Bildungsträger, Umschulung, Reha", "href": "/de/weiterbildungsanbieter", "icon": "hugeicons:teacher" }
+        ]
+      },
       { "label": "Blog", "href": "/de/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/de#faq" }
     ],
@@ -605,9 +612,9 @@
         { "icon": "hugeicons:chart-increase", "value": "2,11 bis 19,97 Mrd. USD", "label": "Europäischer Markt für KI in der Bildung, 2026 bis 2034" },
         { "icon": "hugeicons:analytics-up", "value": "32,47 %", "label": "Jährliche Wachstumsrate (CAGR) bis 2034" },
         { "icon": "hugeicons:briefcase-02", "value": "44,8 %", "label": "Wachstum des Segments betriebliche Weiterbildung, das schnellste im Markt" },
-        { "icon": "hugeicons:legal-document-01", "value": "Bis zu 35 Mio. € oder 7 %", "label": "Bußgeldobergrenze der EU-KI-Verordnung, des weltweiten Jahresumsatzes", "accent": true }
+        { "icon": "hugeicons:legal-document-01", "value": "Bis zu 15 Mio. € oder 3 %", "label": "Bußgeldobergrenze der EU-KI-Verordnung für Hochrisiko-KI, des weltweiten Jahresumsatzes", "accent": true }
       ],
-      "sources": "Marktzahlen: Market Data Forecast, Europe AI in Education Market, Werte in USD, Prognose 2026 bis 2034. Bußgeldobergrenze: EU-KI-Verordnung, Verordnung (EU) 2024/1689, Artikel 99 (höchste Stufe). Stand: Juni 2026."
+      "sources": "Marktzahlen: Market Data Forecast, Europe AI in Education Market, Werte in USD, Prognose 2026 bis 2034. Bußgeldobergrenze: EU-KI-Verordnung, Verordnung (EU) 2024/1689, Artikel 99 Abs. 4 (Hochrisiko-Pflichten). Stand: Juni 2026."
     },
     "sovereignty": {
       "label": "Protected by Design",
@@ -639,12 +646,12 @@
       "label": "Branchen",
       "headline": "Branchen, für die wir bauen",
       "items": [
-        { "icon": "hugeicons:building-06", "role": "Unternehmen und Personalentwicklung", "body": "Onboarding, Upskilling und Compliance-Schulungen, die sich an jede Rolle anpassen, unter Ihrer Marke und auf Ihrer Infrastruktur." },
-        { "icon": "hugeicons:mortarboard-02", "role": "Ausbildung und Schulen", "body": "Prüfungsnahes Lernen und Lernbegleitung für Ausbildung, Berufsschulen und Schulen." },
-        { "icon": "hugeicons:teacher", "role": "Hochschulen", "body": "Lehrplanbasierte Lernbegleitung und Plattformen für Hochschulen, mit Quellen, die Lehrende prüfen können." },
+        { "icon": "hugeicons:building-06", "role": "Unternehmen und Personalentwicklung", "body": "Onboarding, Upskilling und Compliance-Schulungen, die sich an jede Rolle anpassen, unter Ihrer Marke und auf Ihrer Infrastruktur.", "href": "/de/compliance-schulungen" },
+        { "icon": "hugeicons:teacher", "role": "Weiterbildungsanbieter und Reha", "body": "KI-Coaches, LMS und barrierearme Lernpfade für Bildungsträger, Umschulung und Reha.", "href": "/de/weiterbildungsanbieter" },
+        { "icon": "hugeicons:game-controller-01", "role": "Compliance- und Sicherheitsschulungen", "body": "Serious Games und Szenario-Simulationen für Pflichtschulungen in Sicherheit, Compliance und Onboarding, prüfungssicher.", "href": "/de/compliance-schulungen" },
         { "icon": "hugeicons:building-03", "role": "Kammern und öffentlicher Sektor", "body": "IHK, HWK und öffentliche Einrichtungen, die den Organisationen in ihrer Region modernes, bezahlbares Lernen anbieten." },
-        { "icon": "hugeicons:bank", "role": "Banken, Versicherer und Verlage", "body": "Markeneigene Lern- und Finanzbildungsprodukte für regulierte, inhaltsgetriebene Unternehmen." },
-        { "icon": "hugeicons:hospital-01", "role": "Gesundheitswesen und regulierte Felder", "body": "Konforme Schulungen für das Gesundheitswesen und andere Bereiche, in denen Datenschutz und Genauigkeit entscheidend sind." }
+        { "icon": "hugeicons:bank", "role": "Banken, Versicherer und Verlage", "body": "Markeneigene Lern- und Finanzbildungsprodukte für regulierte, inhaltsgetriebene Unternehmen.", "href": "/de/compliance-schulungen" },
+        { "icon": "hugeicons:hospital-01", "role": "Gesundheitswesen und regulierte Felder", "body": "Konforme Schulungen für das Gesundheitswesen und andere Bereiche, in denen Datenschutz und Genauigkeit entscheidend sind.", "href": "/de/compliance-schulungen" }
       ]
     },
     "faq": {
@@ -718,8 +725,8 @@
     },
     "funding": {
       "label": "Finanzierung",
-      "headline": "Als Abo planbar, statt als Großinvestition",
-      "body": "Wir liefern als gemanagtes Abonnement pro Platz, sodass die Kosten als laufende Sachkosten planbar bleiben. Wo möglich, unterstützen wir Sie dabei, ein Digitalisierungsprojekt über Programme wie ESF Plus mitzufinanzieren. Den passenden Weg klären wir im Strategiegespräch.",
+      "headline": "Ein individuelles Projekt, das zu Ihrer Finanzierung passt",
+      "body": "Wir liefern einen individuellen Festpreis-Build, optional mit einem gemanagten Betriebsvertrag für laufenden Betrieb und Support. Wo Ihre Zulassung es erlaubt, lässt sich der Aufwand als Sachkosten Ihrer Maßnahme abbilden, und wir unterstützen Sie, Digitalisierung über Programme wie ESF Plus mitzufinanzieren. Den passenden Weg klären wir im Strategiegespräch.",
       "note": "Hinweis: Ob und wie Software über Ihre Maßnahmenfinanzierung anrechenbar ist, hängt von Ihrer Zulassung ab. Wir prüfen das gemeinsam mit Ihnen."
     },
     "faq": {
@@ -729,7 +736,7 @@
         { "question": "Ist die Lernumgebung barrierefrei?", "answer": "Wir orientieren uns an BFSG und WCAG 2.1 AA und setzen die Anforderungen im Rahmen Ihres Projekts um. Den konkreten Stand und offene Punkte besprechen wir transparent vor dem Start." },
         { "question": "Wem gehören die Lösung und die Daten?", "answer": "Ihnen. Ihnen gehören der Einsatz, die Inhalte und die Lernerdaten. Die Daten werden auf Ihrer Infrastruktur in Deutschland oder der EU verarbeitet und nie zum Training von Dritt-Modellen genutzt." },
         { "question": "Müssen wir Moodle oder ILIAS ablösen?", "answer": "Nein. Wir binden Ihr bestehendes System an und erweitern es um KI und fehlende Funktionen. So bleiben Ihre Datensouveränität erhalten und der Aufwand für einen Wechsel gering." },
-        { "question": "Wie wird das finanziert?", "answer": "Wir liefern als gemanagtes Abo pro Platz, sodass die Kosten laufend planbar sind. Wo möglich, unterstützen wir Sie, ein Digitalisierungsprojekt über Programme wie ESF Plus mitzufinanzieren. Ob Software über Ihre Maßnahmenfinanzierung anrechenbar ist, prüfen wir gemeinsam." },
+        { "question": "Wie wird das finanziert?", "answer": "Wir liefern einen individuellen Festpreis-Build, optional mit einem gemanagten Betriebsvertrag, sodass die laufenden Kosten planbar bleiben. Wo Ihre Zulassung es erlaubt, bilden wir den Aufwand als Sachkosten Ihrer Maßnahme ab, und wir unterstützen Sie, Digitalisierung über Programme wie ESF Plus mitzufinanzieren. Ob Software über Ihre Maßnahmenfinanzierung anrechenbar ist, prüfen wir gemeinsam." },
         { "question": "Helfen Sie auch bei Ausschreibungen?", "answer": "Ja. Für öffentlich vergebene Maßnahmen liefern wir die technischen Unterlagen, Datenschutznachweise und Beschreibungen, die Sie für Ausschreibungen brauchen." }
       ]
     },
@@ -738,6 +745,64 @@
       "subheadline": "Buchen Sie ein kostenloses 30-Minuten-Strategiegespräch. Kein Pitch, nur eine konkrete Roadmap für Ihren Bildungsbetrieb.",
       "button": "Strategiegespräch buchen",
       "note": "DSGVO-konform · Alles gehört Ihnen · Antwort innerhalb von 1 Werktag"
+    }
+  },
+  "complianceTraining": {
+    "hero": {
+      "label": "Für Unternehmen & L&D",
+      "headline": "Compliance- und Sicherheitsschulungen,\ndie Ihre Teams wirklich abschließen",
+      "subheadline": "Wir entwickeln Serious Games und KI-gestützte Schulungen für regulierte Unternehmen: Sicherheit, Compliance und Onboarding, die den Abschluss nachweisen und Mitarbeiterdaten in Deutschland halten.",
+      "ctaPrimary": "Strategiegespräch buchen",
+      "ctaSecondary": "Unsere Arbeiten ansehen",
+      "trust": "DSGVO-konform · Hosting in Deutschland · Ihre Mitarbeiterdaten bleiben Ihre",
+      "microcopy": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap.",
+      "riskReversal": "Unverbindlich. NDA auf Wunsch. Antwort innerhalb von 1 Werktag."
+    },
+    "problem": {
+      "badge": "Warum jetzt",
+      "headline": "Pflichtschulungen, an die sich niemand erinnert, sind ein Risiko",
+      "body": "Sicherheitsunterweisungen, Compliance-Module und Onboarding sind gesetzlich vorgeschrieben und werden geprüft, doch Klick-durch-Folien bleiben kaum hängen. Regulierte Branchen müssen zudem klar beantworten, wo Mitarbeiterdaten und KI-Verarbeitung stattfinden. Standardwerkzeuge lösen selten beides zugleich."
+    },
+    "build": {
+      "headline": "Was wir für Ihre Schulungsteams bauen",
+      "items": [
+        { "icon": "hugeicons:game-controller-01", "title": "Serious Games, die Verhalten verändern", "description": "Szenariobasierte Simulationen für Sicherheit und Compliance, damit Menschen die richtigen Entscheidungen üben, statt sich durch Folien zu klicken." },
+        { "icon": "hugeicons:ai-chat-02", "title": "KI-Coach zu Ihren Richtlinien", "description": "Ein White-Label-Assistent, der aus Ihren geprüften Richtlinien und SOPs mit Quellenangaben antwortet, direkt im Arbeitsfluss." },
+        { "icon": "hugeicons:checkmark-badge-01", "title": "Abschlussnachweis, prüfungssicher", "description": "Teilnahme, Ergebnisse und Abschluss erfasst und exportierbar für Audits, Zertifizierungen und Ihren Betriebsrat." },
+        { "icon": "hugeicons:puzzle", "title": "Passt zu Ihrem System", "description": "Wir binden Ihr bestehendes LMS, HR-System und SSO an, statt sie zu ersetzen, und ergänzen die fehlenden Module." }
+      ]
+    },
+    "outcomes": {
+      "label": "Wirkung",
+      "headline": "Was Teams damit erreichen",
+      "stats": [
+        { "value": "Mehr Abschlüsse", "label": "Spielbasierte Pfade bringen mehr Mitarbeitende durch Pflichtschulungen." },
+        { "value": "Prüfungssicher", "label": "Abschluss, Ergebnisse und Zeit exportierbar für Audits und Zertifizierungen." },
+        { "value": "Daten in Deutschland", "label": "Mitarbeiterdaten in Deutschland oder der EU verarbeitet, nie für das Training von Dritt-Modellen genutzt." },
+        { "value": "Weniger Vorfälle", "label": "Geübte Entscheidungen übertragen sich auf den Job und senken vermeidbare Fehler." }
+      ]
+    },
+    "proof": {
+      "label": "Ausgewählte Arbeiten",
+      "headline": "Was wir bereits umgesetzt haben",
+      "intro": "Eine kleine Auswahl, vom souveränen KI-Tutor bis zur gebrandeten Plattform, einsetzbar für Schulung und Simulation gleichermaßen."
+    },
+    "faq": {
+      "headline": "Häufige Fragen von L&D- und Compliance-Teams",
+      "items": [
+        { "question": "Wo werden Mitarbeiterdaten verarbeitet?", "answer": "In Deutschland oder der EU, auf einer von Ihnen freigegebenen Infrastruktur oder vollständig on premise. Keine Daten gehen an Dritt-KI-Anbieter oder werden zum Training externer Modelle genutzt." },
+        { "question": "Müssen wir unser LMS ablösen?", "answer": "Nein. Wir binden Ihr bestehendes LMS, HR-System und SSO an und erweitern sie um Serious Games, KI und fehlende Module." },
+        { "question": "Können Sie den Abschluss für Audits nachweisen?", "answer": "Ja. Wir erfassen Teilnahme, Ergebnisse und Abschluss und stellen sie exportierbar für Audits, Zertifizierungen und Ihren Betriebsrat bereit." },
+        { "question": "Ist das DSGVO- und EU-KI-Verordnung-konform?", "answer": "Ja. Wir stellen einen Auftragsverarbeitungsvertrag (AVV) bereit und bauen die menschliche Aufsicht, Transparenz und Dokumentation ein, die die EU-KI-Verordnung für Bildungs-KI verlangt. Hosting in Deutschland, der EU oder on premise." },
+        { "question": "Wie schnell können wir starten?", "answer": "Ein fokussiertes Spiel oder Modul kann in Wochen live gehen. Den Fahrplan und die Meilensteine legen wir in der Discovery-Phase fest." },
+        { "question": "Was kostet das?", "answer": "Jeder Build wird auf Ihren Anwendungsfall zugeschnitten und zum Festpreis angeboten, sodass Sie die Kosten vor dem Start kennen." }
+      ]
+    },
+    "cta": {
+      "headline": "Lassen Sie uns Ihre Schulung planen",
+      "subheadline": "Buchen Sie ein kostenloses 30-Minuten-Strategiegespräch. Kein Verkaufsgespräch, nur eine konkrete Roadmap für Ihre Organisation.",
+      "button": "Strategiegespräch buchen",
+      "note": "DSGVO- und EU-KI-Verordnung-bereit · Ihnen gehört alles · Antwort innerhalb von 1 Werktag"
     }
   }
 }

@@ -18,12 +18,19 @@
         "children": [
           { "label": "For Companies", "description": "CEOs, HR, trainers", "href": "/companies", "icon": "hugeicons:building-06" },
           { "label": "For Schools", "description": "Vocational colleges", "href": "/schools", "icon": "hugeicons:mortarboard-02" },
-          { "label": "For Training Providers", "description": "Bildungsträger, retraining, rehab", "href": "/training-providers", "icon": "hugeicons:teacher" },
           { "label": "For Agencies", "description": "IHK, HWK, public agencies", "href": "/agencies", "icon": "hugeicons:building-03" },
           { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      { "label": "Solutions", "href": "/solutions" },
+      {
+        "label": "Custom Software",
+        "mega": true,
+        "children": [
+          { "label": "Custom development", "description": "Apps, LMS, chatbots, serious games", "href": "/solutions", "icon": "hugeicons:source-code" },
+          { "label": "Compliance & Safety Training", "description": "Serious games + AI for regulated teams", "href": "/compliance-training", "icon": "hugeicons:game-controller-01" },
+          { "label": "For Training Providers", "description": "Bildungsträger, retraining, rehab", "href": "/training-providers", "icon": "hugeicons:teacher" }
+        ]
+      },
       { "label": "Blog", "href": "/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/#faq" }
     ],
@@ -606,9 +613,9 @@
         { "icon": "hugeicons:chart-increase", "value": "$2.11B to $19.97B", "label": "European AI in education market, 2026 to 2034" },
         { "icon": "hugeicons:analytics-up", "value": "32.47%", "label": "Annual growth rate (CAGR) through 2034" },
         { "icon": "hugeicons:briefcase-02", "value": "44.8%", "label": "Growth of the corporate training segment, the fastest in the market" },
-        { "icon": "hugeicons:legal-document-01", "value": "Up to €35M or 7%", "label": "EU AI Act penalty ceiling, of global annual turnover", "accent": true }
+        { "icon": "hugeicons:legal-document-01", "value": "Up to €15M or 3%", "label": "EU AI Act penalty ceiling for high-risk AI, of global annual turnover", "accent": true }
       ],
-      "sources": "Market figures: Market Data Forecast, Europe AI in Education Market, values in USD, 2026 to 2034 forecast. Penalty ceiling: EU AI Act, Regulation (EU) 2024/1689, Article 99 (highest tier). Stand: Juni 2026."
+      "sources": "Market figures: Market Data Forecast, Europe AI in Education Market, values in USD, 2026 to 2034 forecast. Penalty ceiling: EU AI Act, Regulation (EU) 2024/1689, Article 99(4) (high-risk obligations). Stand: Juni 2026."
     },
     "sovereignty": {
       "label": "Protected by design",
@@ -640,12 +647,12 @@
       "label": "Industries",
       "headline": "Sectors we build for",
       "items": [
-        { "icon": "hugeicons:building-06", "role": "Companies and corporate L&D", "body": "Onboarding, upskilling, and compliance training that adapts to each role, under your brand and on your infrastructure." },
-        { "icon": "hugeicons:mortarboard-02", "role": "Vocational training and schools", "body": "Exam-aligned learning and tutoring for apprenticeships, vocational colleges, and schools." },
-        { "icon": "hugeicons:teacher", "role": "Higher education", "body": "Curriculum-anchored tutoring and platforms for universities, with sources teachers can check." },
+        { "icon": "hugeicons:building-06", "role": "Companies and corporate L&D", "body": "Onboarding, upskilling, and compliance training that adapts to each role, under your brand and on your infrastructure.", "href": "/compliance-training" },
+        { "icon": "hugeicons:teacher", "role": "Training providers and reha", "body": "AI coaches, LMS, and accessible learning paths for Bildungsträger, retraining, and rehabilitation.", "href": "/training-providers" },
+        { "icon": "hugeicons:game-controller-01", "role": "Compliance and safety training", "body": "Serious games and scenario simulations for mandatory safety, compliance, and onboarding, audit-ready.", "href": "/compliance-training" },
         { "icon": "hugeicons:building-03", "role": "Chambers and public sector", "body": "IHK, HWK, and public agencies offering modern, affordable learning to the organisations they serve." },
-        { "icon": "hugeicons:bank", "role": "Banking, insurance, and publishers", "body": "Branded learning and financial-literacy products for regulated, content-driven businesses." },
-        { "icon": "hugeicons:hospital-01", "role": "Healthcare and regulated fields", "body": "Compliant training for healthcare and other settings where data protection and accuracy are critical." }
+        { "icon": "hugeicons:bank", "role": "Banking, insurance, and publishers", "body": "Branded learning and financial-literacy products for regulated, content-driven businesses.", "href": "/compliance-training" },
+        { "icon": "hugeicons:hospital-01", "role": "Healthcare and regulated fields", "body": "Compliant training for healthcare and other settings where data protection and accuracy are critical.", "href": "/compliance-training" }
       ]
     },
     "faq": {
@@ -719,8 +726,8 @@
     },
     "funding": {
       "label": "Funding",
-      "headline": "Planned as a subscription, not a large investment",
-      "body": "We deliver as a managed per-seat subscription, so costs stay predictable as ongoing operating expense. Where possible, we help you co-finance a digitalisation project through programmes such as ESF Plus. We clarify the right path in the strategy call.",
+      "headline": "A custom build that fits how you are funded",
+      "body": "We deliver a fixed-price custom build, with an optional managed-run contract for ongoing operation and support. Where your accreditation allows, the cost can be framed within your measure costs (Maßnahmekosten), and we help you co-finance digitalisation through programmes such as ESF Plus. We clarify the right path in the strategy call.",
       "note": "Note: whether and how software is creditable against your measure funding depends on your accreditation. We review that together with you."
     },
     "faq": {
@@ -730,7 +737,7 @@
         { "question": "Is the learning environment accessible?", "answer": "We orient to BFSG and WCAG 2.1 AA and implement the requirements within your project. We discuss the concrete status and open points transparently before the start." },
         { "question": "Who owns the solution and the data?", "answer": "You do. You own the deployment, the content, and the learner data. Data is processed on your infrastructure in Germany or the EU and never used to train third-party models." },
         { "question": "Do we have to replace Moodle or ILIAS?", "answer": "No. We connect to your existing system and extend it with AI and missing functions. That keeps your data sovereignty intact and the switching effort low." },
-        { "question": "How is this funded?", "answer": "We deliver as a managed per-seat subscription, so costs stay predictable. Where possible, we help you co-finance a digitalisation project through programmes such as ESF Plus. Whether software is creditable against your measure funding, we review together." },
+        { "question": "How is this funded?", "answer": "We deliver a fixed-price custom build, with an optional managed-run contract so ongoing costs stay predictable. Where your accreditation allows, we help frame the cost within your measure costs, and we help co-finance digitalisation through programmes such as ESF Plus. Whether software is creditable against your measure funding, we review together." },
         { "question": "Do you also help with tenders?", "answer": "Yes. For publicly tendered measures we provide the technical documents, data protection evidence, and descriptions you need for tenders." }
       ]
     },
@@ -739,6 +746,64 @@
       "subheadline": "Book a free 30-minute strategy call. No sales pitch, just a concrete roadmap for your training organisation.",
       "button": "Book a strategy call",
       "note": "GDPR compliant · You own everything · Reply within 1 business day"
+    }
+  },
+  "complianceTraining": {
+    "hero": {
+      "label": "For Companies & L&D",
+      "headline": "Compliance and safety training\nyour teams actually finish",
+      "subheadline": "We build serious games and AI-driven training for regulated companies: safety, compliance, and onboarding that proves completion and keeps employee data in Germany.",
+      "ctaPrimary": "Book a strategy call",
+      "ctaSecondary": "See our work",
+      "trust": "GDPR compliant · Hosted in Germany · Your employee data stays yours",
+      "microcopy": "Free 30-minute call. No pitch, a concrete roadmap.",
+      "riskReversal": "No obligation. NDA on request. Reply within 1 business day."
+    },
+    "problem": {
+      "badge": "Why now",
+      "headline": "Mandatory training nobody remembers is a liability",
+      "body": "Safety briefings, compliance modules, and onboarding are legally required and audited, yet click-through slides leave little behind. Regulated sectors also have to answer a hard question: where do employee data and AI processing actually happen? Standard tools rarely solve both at once."
+    },
+    "build": {
+      "headline": "What we build for your training teams",
+      "items": [
+        { "icon": "hugeicons:game-controller-01", "title": "Serious games that change behaviour", "description": "Scenario-based simulations for safety and compliance, so people practise the right decisions instead of clicking through slides." },
+        { "icon": "hugeicons:ai-chat-02", "title": "AI coach on your policies", "description": "A white-label assistant that answers from your verified guidelines and SOPs, with cited sources, right in the flow of work." },
+        { "icon": "hugeicons:checkmark-badge-01", "title": "Proof of completion, audit-ready", "description": "Attendance, scores, and completion captured and exportable for audits, certifications, and your works council." },
+        { "icon": "hugeicons:puzzle", "title": "Fits your stack", "description": "We integrate with your existing LMS, HR system, and SSO rather than replacing them, and add the modules you are missing." }
+      ]
+    },
+    "outcomes": {
+      "label": "Impact",
+      "headline": "What teams achieve with it",
+      "stats": [
+        { "value": "Higher completion", "label": "Game-based paths get more employees through mandatory training." },
+        { "value": "Audit-ready", "label": "Completion, scores, and time exportable for audits and certifications." },
+        { "value": "Data in Germany", "label": "Employee data processed in Germany or the EU, never used to train third-party models." },
+        { "value": "Fewer incidents", "label": "Practised decisions transfer to the job and cut avoidable mistakes." }
+      ]
+    },
+    "proof": {
+      "label": "Selected work",
+      "headline": "What we have already delivered",
+      "intro": "A small selection, from a sovereign AI tutor to a branded platform, usable for training and simulation alike."
+    },
+    "faq": {
+      "headline": "Common questions from L&D and compliance teams",
+      "items": [
+        { "question": "Where is employee data processed?", "answer": "In Germany or the EU, on infrastructure you approve, or fully on premise. No data is sent to third-party AI providers or used to train external models." },
+        { "question": "Do we have to replace our LMS?", "answer": "No. We connect to your existing LMS, HR system, and SSO and extend them with serious games, AI, and the modules you are missing." },
+        { "question": "Can you prove completion for audits?", "answer": "Yes. We capture attendance, scores, and completion and make them exportable for audits, certifications, and your works council." },
+        { "question": "Is it GDPR and EU AI Act compliant?", "answer": "Yes. We include a data processing agreement (AVV) and build in the human oversight, transparency, and documentation the EU AI Act requires for educational AI. Hosting is in Germany, the EU, or on premise." },
+        { "question": "How fast can we launch?", "answer": "A focused game or module can go live in weeks. We agree a clear roadmap and milestones in the discovery phase." },
+        { "question": "What does it cost?", "answer": "Every build is scoped to your use case and quoted at a fixed price, so you know the cost before we start." }
+      ]
+    },
+    "cta": {
+      "headline": "Let us scope your training",
+      "subheadline": "Book a free 30-minute strategy call. No sales pitch, just a concrete roadmap for your organisation.",
+      "button": "Book a strategy call",
+      "note": "GDPR and EU AI Act ready · You own everything · Reply within 1 business day"
     }
   }
 }

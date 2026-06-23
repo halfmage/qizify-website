@@ -294,17 +294,29 @@ const ucDims = [
 				<h2 class="text-heading md:text-display-sm text-white m-0">{s.audiences.headline}</h2>
 			</div>
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
-				{s.audiences.items.map((item, i) => (
-					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-8 group hover:bg-[#403930] transition-colors duration-200`}>
-						<div class="flex items-center gap-3 mb-3">
-							<div class={`w-11 h-11 rounded-lg flex items-center justify-center ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
-								<Icon name={item.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+				{s.audiences.items.map((item, i) => {
+					const Tag = item.href ? "a" : "div";
+					return (
+						<Tag
+							{...(item.href ? { href: item.href } : {})}
+							class={`card-hover-glow ${i % 2 === 0 ? "card-hover-glow-primary" : "card-hover-glow-accent"} bg-surface p-8 group hover:bg-[#403930] transition-colors duration-200 no-underline block`}
+						>
+							<div class="flex items-center gap-3 mb-3">
+								<div class={`w-11 h-11 rounded-lg flex items-center justify-center ${i % 2 === 0 ? "bg-primary/10" : "bg-accent/10"} group-hover:scale-110 transition-transform duration-200`}>
+									<Icon name={item.icon} class={`w-5 h-5 ${i % 2 === 0 ? "text-primary" : "text-accent"}`} />
+								</div>
+								<h3 class="text-base font-semibold text-white m-0">{item.role}</h3>
 							</div>
-							<h3 class="text-base font-semibold text-white m-0">{item.role}</h3>
-						</div>
-						<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
-					</div>
-				))}
+							<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
+							{item.href && (
+								<span class="inline-flex items-center gap-1 text-sm text-primary mt-4 font-medium">
+									Mehr erfahren
+									<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+								</span>
+							)}
+						</Tag>
+					);
+				})}
 			</div>
 		</div>
 	</section>

@@ -22,6 +22,7 @@ export const EN_TO_DE = {
 	'/research': '/de/forschung',
 	'/solutions': '/de/loesungen',
 	'/training-providers': '/de/weiterbildungsanbieter',
+	'/compliance-training': '/de/compliance-schulungen',
 	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
 	'/learnslice-vs-publisher-lms': '/de/learnslice-vs-verlags-lms',
 	'/learnslice-vs-video-ihk-tools': '/de/learnslice-vs-video-ihk-tools',
