@@ -49,7 +49,8 @@ export default defineConfig({
 					item.links = [
 						{ lang: 'en', url: pair.enUrl },
 						{ lang: 'de', url: pair.deUrl },
-						{ lang: 'x-default', url: pair.enUrl },
+						// x-default points to the German version: DACH is the primary market.
+						{ lang: 'x-default', url: pair.deUrl },
 					];
 				}
 				return item;

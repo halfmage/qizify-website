@@ -207,12 +207,13 @@ const breadcrumbSchema = {
 		<!-- Canonical URL -->
 		<link rel="canonical" href={currentUrl} />
 
-		<!-- Hreflang Tags (omitted on solo-language pages) -->
+		<!-- Hreflang Tags (omitted on solo-language pages). x-default points to the
+		     German version: DACH is the primary market. -->
 		{enPath && dePath && (
 			<>
 				<link rel="alternate" hreflang="en" href={`${siteUrl}${enPath}`} />
 				<link rel="alternate" hreflang="de" href={`${siteUrl}${dePath}`} />
-				<link rel="alternate" hreflang="x-default" href={`${siteUrl}${enPath}`} />
+				<link rel="alternate" hreflang="x-default" href={`${siteUrl}${dePath}`} />
 			</>
 		)}
 
