@@ -78,9 +78,6 @@ const heroImageAlt = 'Der LearnSlice-Startbildschirm: Level-Fortschritt, vorgesc
 	<!-- Above-the-fold proof: named-customer line + logos -->
 	<LogosSlider headline={s.trustedByLine} logos={deContent.trustedBy.logos} />
 
-	<!-- Problem: warum Standardtools scheitern (Schmerzpunkt vor Beweis) -->
-	<ProblemStatement badge={s.problem.badge} headline={s.problem.headline} body={s.problem.body} />
-
 	<!-- Was wir bauen: fokussierter Katalog (Top 6) -->
 	<section class="py-12 md:py-20 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
@@ -128,7 +125,10 @@ const heroImageAlt = 'Der LearnSlice-Startbildschirm: Level-Fortschritt, vorgesc
 		</div>
 	</section>
 
-	<!-- Warum wir: Souveränität und Vertrauen (Differenzierer, früh platziert) -->
+	<!-- Problem: warum Standardtools scheitern, direkt vor der Souveränitäts-Antwort -->
+	<ProblemStatement badge={s.problem.badge} headline={s.problem.headline} body={s.problem.body} />
+
+	<!-- Warum wir: Souveränität und Vertrauen (beantwortet das Problem oben) -->
 	<section class="py-12 md:py-20 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
 			<div class="text-center mb-14 max-w-2xl mx-auto">
