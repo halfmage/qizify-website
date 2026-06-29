@@ -481,7 +481,7 @@
     "hero": {
       "label": "Custom development",
       "headline": "Custom e-learning software,\nengineered end to end",
-      "subheadline": "We design, build, and run learning applications of every kind: chatbots, platforms, mobile apps, simulations, and more. Sovereign, compliant, and proven.",
+      "subheadline": "Your engineering partner for serious learning software, from AI tutors to full platforms. Built around your curriculum and compliance, owned by you, and hosted where your data has to stay.",
       "ctaPrimary": "Book a strategy call",
       "ctaSecondary": "See our work",
       "trust": "GDPR and EU AI Act ready · Hosted in Germany · You own the data",
@@ -491,8 +491,8 @@
     "trustedByLine": "Trusted by FH Dortmund, the University of Cologne, Carl-Severing-Berufskolleg, and more",
     "build": {
       "label": "What we build",
-      "headline": "If it helps people learn, we engineer it",
-      "intro": "We are a software engineering company for learning. From a single AI tutor to a full platform, this is the range we build. It is a sample, not a limit.",
+      "headline": "If it helps your people learn, we engineer it",
+      "intro": "From a single AI tutor to a full platform, this is the range we engineer for you. A sample, not a limit.",
       "items": [
         { "icon": "hugeicons:ai-chat-02", "title": "AI tutors and chatbots", "body": "White-label tutoring assistants with adaptive paths and source-cited answers, grounded in your curriculum." },
         { "icon": "hugeicons:dashboard-square-01", "title": "Learning platforms and LMS", "body": "Full learning management and experience platforms, built from scratch or on Moodle, Open edX, and other systems." },

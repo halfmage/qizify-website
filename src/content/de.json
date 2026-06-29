@@ -480,7 +480,7 @@
     "hero": {
       "label": "Individuelle Entwicklung",
       "headline": "Individuelle E-Learning-Software,\nvon Anfang bis Ende entwickelt",
-      "subheadline": "Wir konzipieren, entwickeln und betreiben Lernanwendungen jeder Art: Chatbots, Plattformen, mobile Apps, Simulationen und mehr. Souverän, konform und bewährt.",
+      "subheadline": "Ihr Engineering-Partner für anspruchsvolle Lernsoftware, vom KI-Tutor bis zur vollständigen Plattform. Entwickelt rund um Ihren Lehrplan und Ihre Compliance, in Ihrem Besitz und gehostet dort, wo Ihre Daten bleiben müssen.",
       "ctaPrimary": "Strategiegespräch buchen",
       "ctaSecondary": "Unsere Projekte",
       "trust": "DSGVO- und EU-KI-Verordnungs-bereit · In Deutschland gehostet · Ihre Daten gehören Ihnen",
@@ -490,8 +490,8 @@
     "trustedByLine": "Vertraut von der FH Dortmund, der Universität zu Köln, dem Carl-Severing-Berufskolleg und weiteren",
     "build": {
       "label": "Was wir bauen",
-      "headline": "Wenn es beim Lernen hilft, entwickeln wir es",
-      "intro": "Wir sind ein Software-Engineering-Unternehmen für das Lernen. Vom einzelnen KI-Tutor bis zur vollständigen Plattform, das ist unser Spektrum. Eine Auswahl, keine Grenze.",
+      "headline": "Wenn es Ihre Lernenden voranbringt, entwickeln wir es",
+      "intro": "Vom einzelnen KI-Tutor bis zur vollständigen Plattform: das entwickeln wir für Sie. Eine Auswahl, keine Grenze.",
       "items": [
         { "icon": "hugeicons:ai-chat-02", "title": "KI-Tutoren und Chatbots", "body": "White-Label-Lernassistenten mit adaptiven Pfaden und quellenbelegten Antworten, verankert in Ihrem Lehrplan." },
         { "icon": "hugeicons:dashboard-square-01", "title": "Lernplattformen und LMS", "body": "Vollständige Lern- und Experience-Plattformen, neu gebaut oder auf Moodle, Open edX und anderen Systemen." },
