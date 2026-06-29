@@ -22,7 +22,7 @@
           { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      { "label": "Custom development", "href": "/solutions" },
+      { "label": "Business Software", "href": "/solutions" },
       { "label": "Blog", "href": "/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/#faq" }
     ],
@@ -479,8 +479,7 @@
   },
   "solutions": {
     "hero": {
-      "label": "Custom development",
-      "headline": "Custom e-learning software,\nengineered end to end",
+      "headline": "E-learning software,\nbuilt for your purpose",
       "subheadline": "Your engineering partner for serious learning software, from AI tutors to full platforms. Built around your curriculum and compliance, owned by you, and hosted where your data has to stay.",
       "ctaPrimary": "Book a strategy call",
       "ctaSecondary": "See our work",
