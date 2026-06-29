@@ -24,7 +24,14 @@ const ucDims = [
 	{ w: 2912, h: 1570 },
 	{ w: 1950, h: 1190 },
 ];
-const heroShot = s.useCases.items[0];
+// Display order for the work slider (tab 1 is the default-visible panel):
+// sector solution first, then named university (FH Dortmund), AI flagship, Moodle closer.
+const ucOrder = [2, 1, 0, 3];
+const ucItems = ucOrder.map((i) => s.useCases.items[i]);
+const ucItemDims = ucOrder.map((i) => ucDims[i]);
+
+const heroImage = '/images/solutions/learnslice-home.webp';
+const heroImageAlt = 'The LearnSlice learner home screen: level progress, suggested next exercises, and sections for IHK exams, onboarding, and continuing education';
 ---
 
 <BaseLayout
@@ -62,7 +69,7 @@ const heroShot = s.useCases.items[0];
 			<div class="relative">
 				<div class="absolute -inset-6 glow-aurora opacity-70 pointer-events-none" aria-hidden="true"></div>
 				<div class="relative rounded-xl border border-border-light overflow-hidden shadow-2xl shadow-black/50">
-					<img src={heroShot.image} alt={heroShot.imageAlt} width={ucDims[0].w} height={ucDims[0].h} loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto block" />
+					<img src={heroImage} alt={heroImageAlt} width="1600" height="910" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto block" />
 				</div>
 			</div>
 		</div>
@@ -102,8 +109,8 @@ const heroShot = s.useCases.items[0];
 		label={s.useCases.label}
 		headline={s.useCases.headline}
 		intro={s.useCases.intro}
-		items={s.useCases.items}
-		dims={ucDims}
+		items={ucItems}
+		dims={ucItemDims}
 		sectionId="selected-work"
 	/>
 
