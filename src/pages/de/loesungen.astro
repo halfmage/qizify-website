@@ -2,12 +2,14 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import LogosSlider from '../../components/LogosSlider.astro';
+import ProblemStatement from '../../components/ProblemStatement.astro';
 import Testimonials from '../../components/Testimonials.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTAFooter from '../../components/CTAFooter.astro';
 import Footer from '../../components/Footer.astro';
 import ConsultationModal from '../../components/ConsultationModal.astro';
 import Button from '../../components/Button.astro';
+import UseCaseSlider from '../../components/UseCaseSlider.astro';
 import { Icon } from 'astro-icon/components';
 import deContent from '../../content/de.json';
 
@@ -15,13 +17,14 @@ const lang = 'de';
 const currentPath = '/de/loesungen';
 const s = deContent.solutions;
 
-// Intrinsische Maße der Use-Case-Screenshots (verhindern Layout-Shift), in Item-Reihenfolge.
+// Intrinsic dimensions of the use-case screenshots (prevent layout shift), in item order.
 const ucDims = [
 	{ w: 2890, h: 1516 },
 	{ w: 2620, h: 1432 },
 	{ w: 2912, h: 1570 },
 	{ w: 1950, h: 1190 },
 ];
+const heroShot = s.useCases.items[0];
 ---
 
 <BaseLayout
@@ -33,48 +36,45 @@ const ucDims = [
 >
 	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={s.hero.ctaPrimary} ctaModalTrigger="project-inquiry" currentLang={lang} currentPath={currentPath} />
 
-	<!-- Hero: Vollbild-Foto + Scrim + Aurora-Glow -->
-	<section class="relative overflow-hidden pt-28 md:pt-32 pb-16 md:pb-24 px-6 md:px-8 flex items-center min-h-[540px]">
-		<img
-			src="/images/hero/solutions-hero.webp"
-			alt=""
-			role="presentation"
-			class="absolute inset-0 w-full h-full object-cover object-[68%_center] z-0"
-			loading="eager"
-			fetchpriority="high"
-			decoding="async"
-			width="1920"
-			height="1281"
-		/>
-		<div class="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(to_right,rgba(42,38,34,0.94),rgba(42,38,34,0.74)_42%,rgba(42,38,34,0.32)_72%),linear-gradient(to_bottom,rgba(42,38,34,0.55),transparent_28%,transparent_68%,#2a2622_99%)]" aria-hidden="true"></div>
-		<div class="absolute inset-0 z-[2] pointer-events-none glow-aurora" aria-hidden="true"></div>
-		<div class="relative z-10 max-w-container mx-auto w-full">
-			<div class="max-w-2xl">
+	<!-- Hero: Copy + Produkt-Screenshot (Produkt-Hero konvertiert, Stockfoto nicht) -->
+	<section class="relative overflow-hidden pt-28 md:pt-32 pb-12 md:pb-20 px-6 md:px-8">
+		<div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[520px] pointer-events-none glow-aurora opacity-40" aria-hidden="true"></div>
+		<div class="max-w-container mx-auto relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+			<div class="max-w-xl">
 				<span class="section-label mb-5 block">{s.hero.label}</span>
 				<h1 class="text-display-sm md:text-display text-white mb-6">
 					{s.hero.headline.split('\n').map((line, i, arr) => (
 						<>{i > 0 && <br />}<span class={i === arr.length - 1 ? 'gradient-text-primary' : ''}>{line}</span></>
 					))}
 				</h1>
-				<p class="text-lg text-muted mb-6 max-w-xl leading-relaxed">{s.hero.subheadline}</p>
+				<p class="text-lg text-muted mb-6 leading-relaxed">{s.hero.subheadline}</p>
 				<div class="flex flex-wrap items-center gap-3 mb-3">
 					<Button variant="primary" href="#project-inquiry" data-modal-trigger="project-inquiry" aria-label={s.hero.ctaPrimary}>{s.hero.ctaPrimary}</Button>
-					<Button variant="secondary" href="#selected-work" class="!border-white/40 backdrop-blur-sm" aria-label={s.hero.ctaSecondary}>{s.hero.ctaSecondary}</Button>
+					<Button variant="secondary" href="#selected-work" aria-label={s.hero.ctaSecondary}>{s.hero.ctaSecondary}</Button>
 				</div>
 				<p class="text-sm text-muted mb-1.5">{s.hero.microcopy}</p>
 				<p class="text-sm text-white/70 mb-6">{s.hero.riskReversal}</p>
-				<div class="flex items-center gap-2.5 text-xs md:text-sm text-muted border-t border-white/10 pt-5 max-w-xl">
+				<div class="flex items-center gap-2.5 text-xs md:text-sm text-muted border-t border-white/10 pt-5">
 					<Icon name="hugeicons:security-check" class="w-4 h-4 text-primary shrink-0" />
 					<span>{s.hero.trust}</span>
+				</div>
+			</div>
+			<div class="relative">
+				<div class="absolute -inset-6 glow-aurora opacity-70 pointer-events-none" aria-hidden="true"></div>
+				<div class="relative rounded-xl border border-border-light overflow-hidden shadow-2xl shadow-black/50">
+					<img src={heroShot.image} alt={heroShot.imageAlt} width={ucDims[0].w} height={ucDims[0].h} loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto block" />
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Above-the-fold proof: trusted-by logos -->
+	<!-- Above-the-fold proof: named-customer line + logos -->
 	<LogosSlider headline={s.trustedByLine} logos={deContent.trustedBy.logos} />
 
-	<!-- Was wir bauen: Spektrum -->
+	<!-- Problem: warum Standardtools scheitern (Schmerzpunkt vor Beweis) -->
+	<ProblemStatement badge={s.problem.badge} headline={s.problem.headline} body={s.problem.body} />
+
+	<!-- Was wir bauen: fokussierter Katalog (Top 6) -->
 	<section class="py-12 md:py-20 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
 			<div class="text-center mb-14 max-w-2xl mx-auto">
@@ -82,8 +82,8 @@ const ucDims = [
 				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{s.build.headline}</h2>
 				<p class="text-base text-muted leading-relaxed m-0">{s.build.intro}</p>
 			</div>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
-				{s.build.items.map((item, i) => (
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				{s.build.items.slice(0, 6).map((item, i) => (
 					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-7 group hover:bg-[#403930] transition-colors duration-200`}>
 						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
 							<Icon name={item.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
@@ -97,43 +97,17 @@ const ucDims = [
 		</div>
 	</section>
 
-	<!-- Ausgewählte Projekte: alternierende Bildreihen -->
-	<section id="selected-work" class="py-14 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-24">
-		<div class="max-w-container mx-auto">
-			<div class="text-center mb-14 md:mb-20 max-w-2xl mx-auto">
-				<span class="section-label mb-4 block">{s.useCases.label}</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{s.useCases.headline}</h2>
-				<p class="text-base text-muted leading-relaxed m-0">{s.useCases.intro}</p>
-			</div>
-			<div class="flex flex-col gap-16 md:gap-24">
-				{s.useCases.items.map((uc, i) => (
-					<div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-						<div class={`relative ${i % 2 === 1 ? 'md:order-2' : ''}`}>
-							<div class="absolute -inset-6 glow-aurora opacity-70 pointer-events-none" aria-hidden="true"></div>
-							<div class="relative rounded-xl border border-border-light overflow-hidden shadow-2xl shadow-black/50">
-								<img src={uc.image} alt={uc.imageAlt} loading="lazy" decoding="async" width={ucDims[i].w} height={ucDims[i].h} class="w-full h-auto block" />
-							</div>
-						</div>
-						<div class={i % 2 === 1 ? 'md:order-1' : ''}>
-							<span class="section-label mb-3 block">{uc.eyebrow}</span>
-							<h3 class="text-heading md:text-display-sm text-white mb-4 mt-0">{uc.title}</h3>
-							<p class="text-base text-muted leading-relaxed mb-6">{uc.body}</p>
-							<ul class="flex flex-col gap-3 list-none p-0 m-0">
-								{uc.bullets.map((b) => (
-									<li class="flex items-start gap-3 text-sm md:text-base text-white/90">
-										<Icon name="hugeicons:checkmark-circle-02" class="w-5 h-5 text-primary shrink-0 mt-0.5" />
-										<span>{b}</span>
-									</li>
-								))}
-							</ul>
-						</div>
-					</div>
-				))}
-			</div>
-		</div>
-	</section>
+	<!-- Ausgewählte Projekte: klickbarer Use-Case-Slider -->
+	<UseCaseSlider
+		label={s.useCases.label}
+		headline={s.useCases.headline}
+		intro={s.useCases.intro}
+		items={s.useCases.items}
+		dims={ucDims}
+		sectionId="selected-work"
+	/>
 
-	<!-- Mid-Page-CTA: konvertiert kaufbereite Leser ohne Scrollen bis zum Footer -->
+	<!-- Mittlerer CTA -->
 	<section class="py-12 md:py-16 px-6 md:px-8">
 		<div class="max-w-3xl mx-auto relative">
 			<div class="absolute -inset-4 glow-aurora opacity-50 pointer-events-none" aria-hidden="true"></div>
@@ -147,98 +121,7 @@ const ucDims = [
 		</div>
 	</section>
 
-	<!-- Gesamter Lebenszyklus -->
-	<section class="py-12 md:py-16 px-6 md:px-8">
-		<div class="max-w-container mx-auto">
-			<div class="text-center mb-10 max-w-2xl mx-auto">
-				<span class="section-label mb-4 block">{s.services.label}</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0">{s.services.headline}</h2>
-			</div>
-			<div class="grid grid-cols-2 sm:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
-				{s.services.items.map((it) => (
-					<div class="bg-surface px-4 py-6 flex flex-col items-center text-center gap-3">
-						<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-							<Icon name={it.icon} class="w-5 h-5 text-primary" />
-						</div>
-						<span class="text-sm text-white font-medium leading-snug">{it.label}</span>
-					</div>
-				))}
-			</div>
-		</div>
-	</section>
-
-	<!-- So arbeiten Sie mit uns: Engagement-Modelle -->
-	<section class="py-12 md:py-20 px-6 md:px-8">
-		<div class="max-w-container mx-auto">
-			<div class="text-center mb-14 max-w-2xl mx-auto">
-				<span class="section-label mb-4 block">{s.engagement.label}</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{s.engagement.headline}</h2>
-				<p class="text-base text-muted leading-relaxed m-0">{s.engagement.intro}</p>
-			</div>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
-				{s.engagement.items.map((item, i) => (
-					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-7 group hover:bg-[#403930] transition-colors duration-200`}>
-						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
-							<Icon name={item.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
-						</div>
-						<h3 class="text-base font-semibold text-white mb-2">{item.title}</h3>
-						<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
-					</div>
-				))}
-			</div>
-		</div>
-	</section>
-
-	<!-- Technologie und Standards -->
-	<section class="py-12 md:py-20 px-6 md:px-8 relative overflow-hidden">
-		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[340px] pointer-events-none glow-aurora opacity-40" aria-hidden="true"></div>
-		<div class="max-w-4xl mx-auto relative z-10">
-			<div class="text-center mb-12 max-w-2xl mx-auto">
-				<span class="section-label mb-4 block">{s.tech.label}</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0">{s.tech.headline}</h2>
-			</div>
-			<div class="flex flex-col gap-5">
-				{s.tech.groups.map((g) => (
-					<div class="bg-surface border border-border rounded-xl p-6 md:p-8">
-						<div class="text-xs font-mono uppercase tracking-wider text-primary mb-4">{g.label}</div>
-						<div class="flex flex-wrap gap-2.5">
-							{g.items.map((t) => (
-								<span class="inline-flex items-center gap-2 bg-input-bg border border-border-light rounded-full px-4 py-2 text-sm text-white/90">
-									<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>{t}
-								</span>
-							))}
-						</div>
-					</div>
-				))}
-			</div>
-		</div>
-	</section>
-
-	<!-- So arbeiten wir: Prozess -->
-	<section class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50">
-		<div class="max-w-container mx-auto">
-			<div class="text-center mb-14 max-w-2xl mx-auto">
-				<span class="section-label mb-4 block">{s.process.label}</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0">{s.process.headline}</h2>
-			</div>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
-				{s.process.steps.map((step) => (
-					<div class="card-hover-glow card-hover-glow-primary bg-surface p-7 group hover:bg-[#403930] transition-colors duration-200">
-						<div class="flex items-center justify-between mb-4">
-							<div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-								<Icon name={step.icon} class="w-5 h-5 text-primary" />
-							</div>
-							<span class="font-mono text-label text-primary/70">0{step.number}</span>
-						</div>
-						<h3 class="text-base font-semibold text-white mb-2">{step.title}</h3>
-						<p class="text-sm text-muted leading-relaxed m-0">{step.body}</p>
-					</div>
-				))}
-			</div>
-		</div>
-	</section>
-
-	<!-- Protected by Design: Icon-Karten -->
+	<!-- Warum wir: Souveränität und Vertrauen (Differenzierer, früh platziert) -->
 	<section class="py-12 md:py-20 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
 			<div class="text-center mb-14 max-w-2xl mx-auto">
@@ -259,34 +142,66 @@ const ucDims = [
 		</div>
 	</section>
 
-	<!-- Warum jetzt: visuelles Stat-Band -->
-	<section class="py-12 md:py-20 px-6 md:px-8 relative overflow-hidden">
-		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[360px] pointer-events-none glow-aurora opacity-50" aria-hidden="true"></div>
-		<div class="max-w-container mx-auto relative z-10">
-			<div class="text-center mb-12 max-w-2xl mx-auto">
-				<span class="section-label mb-4 block">{s.market.label}</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{s.market.headline}</h2>
-				<p class="text-base text-muted leading-relaxed m-0">{s.market.intro}</p>
+	<!-- So arbeiten wir: Prozess + Engagement-Modelle, zusammengeführt -->
+	<section class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-14 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{s.process.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">{s.process.headline}</h2>
 			</div>
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
-				{s.market.stats.map((stat) => (
-					<div class="bg-surface px-4 py-7 md:px-6 md:py-8 text-center">
-						<div class={`w-9 h-9 rounded-lg mx-auto mb-3 flex items-center justify-center ${stat.accent ? 'bg-accent/10' : 'bg-primary/10'}`}>
-							<Icon name={stat.icon} class={`w-4 h-4 ${stat.accent ? 'text-accent' : 'text-primary'}`} />
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
+				{s.process.steps.map((step) => (
+					<div class="card-hover-glow card-hover-glow-primary bg-surface p-7 group hover:bg-[#403930] transition-colors duration-200">
+						<div class="flex items-center justify-between mb-4">
+							<div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+								<Icon name={step.icon} class="w-5 h-5 text-primary" />
+							</div>
+							<span class="font-mono text-label text-primary/70">0{step.number}</span>
 						</div>
-						<div class={`text-base md:text-heading-sm font-semibold mb-2 leading-tight ${stat.accent ? 'text-accent' : 'text-primary'}`}>{stat.value}</div>
-						<div class="text-xs md:text-sm text-muted leading-snug">{stat.label}</div>
+						<h3 class="text-base font-semibold text-white mb-2">{step.title}</h3>
+						<p class="text-sm text-muted leading-relaxed m-0">{step.body}</p>
 					</div>
 				))}
 			</div>
-			<p class="text-xs text-gray leading-relaxed mt-6 text-center max-w-3xl mx-auto m-0">{s.market.sources}</p>
+
+			<!-- Engagement-Modelle -->
+			<div class="mt-14 md:mt-16">
+				<div class="text-center mb-8 max-w-2xl mx-auto">
+					<h3 class="text-heading-sm md:text-heading text-white m-0">{s.engagement.headline}</h3>
+					<p class="text-base text-muted leading-relaxed mt-3 m-0">{s.engagement.intro}</p>
+				</div>
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
+					{s.engagement.items.map((item, i) => (
+						<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-7 group hover:bg-[#403930] transition-colors duration-200`}>
+							<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+								<Icon name={item.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+							</div>
+							<h3 class="text-base font-semibold text-white mb-2">{item.title}</h3>
+							<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
+						</div>
+					))}
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- Social Proof: Erfolgsgeschichten mit Gesichtern -->
+	<!-- Social Proof: Testimonials mit Gesichtern -->
 	<Testimonials headline={s.social.headline} items={deContent.testimonials.items} currentLang={lang} />
 
-	<!-- Branchen, für die wir bauen -->
+	<!-- Zweiter CTA: nach dem Beweis konvertieren -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto relative">
+			<div class="absolute -inset-4 glow-aurora opacity-50 pointer-events-none" aria-hidden="true"></div>
+			<div class="relative bg-surface border border-border rounded-2xl p-8 md:p-12 text-center overflow-hidden">
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-3">{s.midCta2.headline}</h2>
+				<p class="text-base text-muted leading-relaxed max-w-xl mx-auto mb-6 m-0">{s.midCta2.sub}</p>
+				<Button variant="primary" href="#project-inquiry" data-modal-trigger="project-inquiry" aria-label={s.midCta.button}>{s.midCta.button}</Button>
+				<p class="text-sm text-muted mt-4 mb-0">{s.midCta.note}</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Branchen, für die wir bauen (informative Karten) -->
 	<section class="py-12 md:py-20 px-6 md:px-8">
 		<div class="max-w-container mx-auto">
 			<div class="text-center mb-14 max-w-2xl mx-auto">
@@ -294,36 +209,35 @@ const ucDims = [
 				<h2 class="text-heading md:text-display-sm text-white m-0">{s.audiences.headline}</h2>
 			</div>
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
-				{s.audiences.items.map((item, i) => {
-					const Tag = item.href ? "a" : "div";
-					return (
-						<Tag
-							{...(item.href ? { href: item.href } : {})}
-							class={`card-hover-glow ${i % 2 === 0 ? "card-hover-glow-primary" : "card-hover-glow-accent"} bg-surface p-8 group hover:bg-[#403930] transition-colors duration-200 no-underline block`}
-						>
-							<div class="flex items-center gap-3 mb-3">
-								<div class={`w-11 h-11 rounded-lg flex items-center justify-center ${i % 2 === 0 ? "bg-primary/10" : "bg-accent/10"} group-hover:scale-110 transition-transform duration-200`}>
-									<Icon name={item.icon} class={`w-5 h-5 ${i % 2 === 0 ? "text-primary" : "text-accent"}`} />
-								</div>
-								<h3 class="text-base font-semibold text-white m-0">{item.role}</h3>
+				{s.audiences.items.map((item, i) => (
+					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-8 group hover:bg-[#403930] transition-colors duration-200`}>
+						<div class="flex items-center gap-3 mb-3">
+							<div class={`w-11 h-11 rounded-lg flex items-center justify-center ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+								<Icon name={item.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
 							</div>
-							<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
-							{item.href && (
-								<span class="inline-flex items-center gap-1 text-sm text-primary mt-4 font-medium">
-									Mehr erfahren
-									<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-								</span>
-							)}
-						</Tag>
-					);
-				})}
+							<h3 class="text-base font-semibold text-white m-0">{item.role}</h3>
+						</div>
+						<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
+					</div>
+				))}
 			</div>
 		</div>
 	</section>
 
-	<FAQ headline={s.faq.headline} items={s.faq.items} />
+	<FAQ headline={s.faq.headline} items={s.faq.items.slice(0, 6)} />
 
 	<CTAFooter headline={s.cta.headline} subheadline={s.cta.subheadline} button={s.cta.button} buttonHref="#project-inquiry" note={s.cta.note} currentLang={lang} />
 	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
+
+	<!-- Sticky Mobile CTA: durchgehender Conversion-Pfad auf langer Seite -->
+	<div class="md:hidden h-20" aria-hidden="true"></div>
+	<a
+		href="#project-inquiry"
+		data-modal-trigger="project-inquiry"
+		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
+	>
+		{s.hero.ctaPrimary}
+	</a>
+
 	<ConsultationModal currentLang={lang} />
 </BaseLayout>

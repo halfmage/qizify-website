@@ -22,15 +22,7 @@
           { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      {
-        "label": "Custom Software",
-        "mega": true,
-        "children": [
-          { "label": "Custom development", "description": "Apps, LMS, chatbots, serious games", "href": "/solutions", "icon": "hugeicons:source-code" },
-          { "label": "Compliance & Safety Training", "description": "Serious games + AI for regulated teams", "href": "/compliance-training", "icon": "hugeicons:game-controller-01" },
-          { "label": "For Training Providers", "description": "Bildungsträger, retraining, rehab", "href": "/training-providers", "icon": "hugeicons:teacher" }
-        ]
-      },
+      { "label": "Custom development", "href": "/solutions" },
       { "label": "Blog", "href": "/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/#faq" }
     ],
@@ -496,7 +488,7 @@
       "microcopy": "Free 30-minute call. No pitch, a concrete roadmap.",
       "riskReversal": "No obligation. NDA on request. Reply within 1 business day."
     },
-    "trustedByLine": "Trusted by universities, schools, and learning communities",
+    "trustedByLine": "Trusted by FH Dortmund, the University of Cologne, Carl-Severing-Berufskolleg, and more",
     "build": {
       "label": "What we build",
       "headline": "If it helps people learn, we engineer it",
@@ -647,12 +639,12 @@
       "label": "Industries",
       "headline": "Sectors we build for",
       "items": [
-        { "icon": "hugeicons:building-06", "role": "Companies and corporate L&D", "body": "Onboarding, upskilling, and compliance training that adapts to each role, under your brand and on your infrastructure.", "href": "/compliance-training" },
-        { "icon": "hugeicons:teacher", "role": "Training providers and reha", "body": "AI coaches, LMS, and accessible learning paths for Bildungsträger, retraining, and rehabilitation.", "href": "/training-providers" },
-        { "icon": "hugeicons:game-controller-01", "role": "Compliance and safety training", "body": "Serious games and scenario simulations for mandatory safety, compliance, and onboarding, audit-ready.", "href": "/compliance-training" },
+        { "icon": "hugeicons:building-06", "role": "Companies and corporate L&D", "body": "Onboarding, upskilling, and compliance training that adapts to each role, under your brand and on your infrastructure." },
+        { "icon": "hugeicons:teacher", "role": "Training providers and reha", "body": "AI coaches, LMS, and accessible learning paths for Bildungsträger, retraining, and rehabilitation." },
+        { "icon": "hugeicons:game-controller-01", "role": "Compliance and safety training", "body": "Serious games and scenario simulations for mandatory safety, compliance, and onboarding, audit-ready." },
         { "icon": "hugeicons:building-03", "role": "Chambers and public sector", "body": "IHK, HWK, and public agencies offering modern, affordable learning to the organisations they serve." },
-        { "icon": "hugeicons:bank", "role": "Banking, insurance, and publishers", "body": "Branded learning and financial-literacy products for regulated, content-driven businesses.", "href": "/compliance-training" },
-        { "icon": "hugeicons:hospital-01", "role": "Healthcare and regulated fields", "body": "Compliant training for healthcare and other settings where data protection and accuracy are critical.", "href": "/compliance-training" }
+        { "icon": "hugeicons:bank", "role": "Banking, insurance, and publishers", "body": "Branded learning and financial-literacy products for regulated, content-driven businesses." },
+        { "icon": "hugeicons:hospital-01", "role": "Healthcare and regulated fields", "body": "Compliant training for healthcare and other settings where data protection and accuracy are critical." }
       ]
     },
     "faq": {
@@ -676,6 +668,15 @@
       "button": "Book a strategy call",
       "note": "Free 30-minute call. No pitch, a concrete roadmap.",
       "riskReversal": "No obligation. NDA on request. Reply within 1 business day."
+    },
+    "problem": {
+      "badge": "Why custom",
+      "headline": "Off-the-shelf learning tools rarely fit how you teach",
+      "body": "Generic platforms force your content into someone else's template, send learner data abroad, and stall the moment you need a real integration. We engineer learning software around your curriculum, your brand, and your compliance duties, then run it where your data has to stay."
+    },
+    "midCta2": {
+      "headline": "Ready to scope your build?",
+      "sub": "Bring us the problem you are solving. We turn it into a concrete plan and a realistic timeline."
     },
     "cta": {
       "headline": "Let us scope your project",

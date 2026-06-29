@@ -22,15 +22,7 @@
           { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      {
-        "label": "Individualsoftware",
-        "mega": true,
-        "children": [
-          { "label": "Individualentwicklung", "description": "Apps, LMS, Chatbots, Serious Games", "href": "/de/loesungen", "icon": "hugeicons:source-code" },
-          { "label": "Compliance- & Sicherheitsschulungen", "description": "Serious Games + KI für regulierte Teams", "href": "/de/compliance-schulungen", "icon": "hugeicons:game-controller-01" },
-          { "label": "Für Weiterbildungsanbieter", "description": "Bildungsträger, Umschulung, Reha", "href": "/de/weiterbildungsanbieter", "icon": "hugeicons:teacher" }
-        ]
-      },
+      { "label": "Individualentwicklung", "href": "/de/loesungen" },
       { "label": "Blog", "href": "/de/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/de#faq" }
     ],
@@ -495,7 +487,7 @@
       "microcopy": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap.",
       "riskReversal": "Unverbindlich. NDA auf Anfrage. Antwort innerhalb von 1 Werktag."
     },
-    "trustedByLine": "Vertraut von Hochschulen, Schulen und Lern-Communities",
+    "trustedByLine": "Vertraut von der FH Dortmund, der Universität zu Köln, dem Carl-Severing-Berufskolleg und weiteren",
     "build": {
       "label": "Was wir bauen",
       "headline": "Wenn es beim Lernen hilft, entwickeln wir es",
@@ -646,12 +638,12 @@
       "label": "Branchen",
       "headline": "Branchen, für die wir bauen",
       "items": [
-        { "icon": "hugeicons:building-06", "role": "Unternehmen und Personalentwicklung", "body": "Onboarding, Upskilling und Compliance-Schulungen, die sich an jede Rolle anpassen, unter Ihrer Marke und auf Ihrer Infrastruktur.", "href": "/de/compliance-schulungen" },
-        { "icon": "hugeicons:teacher", "role": "Weiterbildungsanbieter und Reha", "body": "KI-Coaches, LMS und barrierearme Lernpfade für Bildungsträger, Umschulung und Reha.", "href": "/de/weiterbildungsanbieter" },
-        { "icon": "hugeicons:game-controller-01", "role": "Compliance- und Sicherheitsschulungen", "body": "Serious Games und Szenario-Simulationen für Pflichtschulungen in Sicherheit, Compliance und Onboarding, prüfungssicher.", "href": "/de/compliance-schulungen" },
+        { "icon": "hugeicons:building-06", "role": "Unternehmen und Personalentwicklung", "body": "Onboarding, Upskilling und Compliance-Schulungen, die sich an jede Rolle anpassen, unter Ihrer Marke und auf Ihrer Infrastruktur." },
+        { "icon": "hugeicons:teacher", "role": "Weiterbildungsanbieter und Reha", "body": "KI-Coaches, LMS und barrierearme Lernpfade für Bildungsträger, Umschulung und Reha." },
+        { "icon": "hugeicons:game-controller-01", "role": "Compliance- und Sicherheitsschulungen", "body": "Serious Games und Szenario-Simulationen für Pflichtschulungen in Sicherheit, Compliance und Onboarding, prüfungssicher." },
         { "icon": "hugeicons:building-03", "role": "Kammern und öffentlicher Sektor", "body": "IHK, HWK und öffentliche Einrichtungen, die den Organisationen in ihrer Region modernes, bezahlbares Lernen anbieten." },
-        { "icon": "hugeicons:bank", "role": "Banken, Versicherer und Verlage", "body": "Markeneigene Lern- und Finanzbildungsprodukte für regulierte, inhaltsgetriebene Unternehmen.", "href": "/de/compliance-schulungen" },
-        { "icon": "hugeicons:hospital-01", "role": "Gesundheitswesen und regulierte Felder", "body": "Konforme Schulungen für das Gesundheitswesen und andere Bereiche, in denen Datenschutz und Genauigkeit entscheidend sind.", "href": "/de/compliance-schulungen" }
+        { "icon": "hugeicons:bank", "role": "Banken, Versicherer und Verlage", "body": "Markeneigene Lern- und Finanzbildungsprodukte für regulierte, inhaltsgetriebene Unternehmen." },
+        { "icon": "hugeicons:hospital-01", "role": "Gesundheitswesen und regulierte Felder", "body": "Konforme Schulungen für das Gesundheitswesen und andere Bereiche, in denen Datenschutz und Genauigkeit entscheidend sind." }
       ]
     },
     "faq": {
@@ -675,6 +667,15 @@
       "button": "Strategiegespräch buchen",
       "note": "Kostenloses 30-Minuten-Gespräch. Kein Pitch, eine konkrete Roadmap.",
       "riskReversal": "Unverbindlich. NDA auf Anfrage. Antwort innerhalb von 1 Werktag."
+    },
+    "problem": {
+      "badge": "Warum individuell",
+      "headline": "Standard-Lerntools passen selten zu Ihrer Lehre",
+      "body": "Generische Plattformen pressen Ihre Inhalte in fremde Vorlagen, senden Lerndaten ins Ausland und stoppen, sobald eine echte Integration nötig wird. Wir entwickeln Lernsoftware rund um Ihren Lehrplan, Ihre Marke und Ihre Compliance-Pflichten und betreiben sie dort, wo Ihre Daten bleiben müssen."
+    },
+    "midCta2": {
+      "headline": "Bereit, Ihr Projekt zu planen?",
+      "sub": "Bringen Sie uns das Problem, das Sie lösen wollen. Wir machen daraus einen konkreten Plan und einen realistischen Zeitrahmen."
     },
     "cta": {
       "headline": "Lassen Sie uns Ihr Projekt umreißen",

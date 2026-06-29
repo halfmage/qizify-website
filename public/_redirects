@@ -7,6 +7,12 @@
 # Targets use NO trailing slash to match trailingSlash:'never'
 # (the canonical form) and avoid redirect chains.
 
+# Merged segment landings → unified Custom development page (June 2026)
+/training-providers             /solutions      301
+/compliance-training            /solutions      301
+/de/weiterbildungsanbieter      /de/loesungen   301
+/de/compliance-schulungen       /de/loesungen   301
+
 # German old pages → DE homepage
 /de/team/                       /de             301
 /de/pricing/                    /de             301

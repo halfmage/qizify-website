@@ -1,0 +1,157 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface UseCaseItem {
+	image: string;
+	imageAlt: string;
+	eyebrow: string;
+	title: string;
+	body: string;
+	bullets: string[];
+}
+interface Dim {
+	w: number;
+	h: number;
+}
+interface Props {
+	label: string;
+	headline: string;
+	intro: string;
+	items: UseCaseItem[];
+	dims: Dim[];
+	sectionId?: string;
+}
+
+const { label, headline, intro, items, dims, sectionId = 'selected-work' } = Astro.props;
+---
+
+<!-- Use-case slider: clickable tabs, one screenshot panel at a time (keeps the page from overwhelming) -->
+<section id={sectionId} class="py-14 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-24">
+	<div class="max-w-container mx-auto">
+		<div class="text-center mb-10 md:mb-12 max-w-2xl mx-auto">
+			<span class="section-label mb-4 block">{label}</span>
+			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{headline}</h2>
+			<p class="text-base text-muted leading-relaxed m-0">{intro}</p>
+		</div>
+
+		<div class="usecase-slider" data-usecase-slider>
+			<!-- Tab bar (horizontally scrollable on small screens) -->
+			<div class="usecase-tabs flex gap-2 overflow-x-auto pb-2 mb-8 md:mb-10 md:flex-wrap md:justify-center" role="tablist" aria-label={label}>
+				{items.map((uc, i) => (
+					<button
+						type="button"
+						role="tab"
+						id={`${sectionId}-tab-${i}`}
+						aria-controls={`${sectionId}-panel-${i}`}
+						aria-selected={i === 0 ? 'true' : 'false'}
+						tabindex={i === 0 ? '0' : '-1'}
+						data-uc-tab={i}
+						class={`usecase-tab shrink-0 px-4 py-2.5 rounded-lg text-sm font-medium border transition-colors duration-150 whitespace-nowrap cursor-pointer ${i === 0 ? 'bg-primary/10 border-primary/40 text-white' : 'bg-surface border-border text-muted hover:text-white hover:border-border-light'}`}
+					>
+						{uc.eyebrow}
+					</button>
+				))}
+			</div>
+
+			<!-- Panels -->
+			{items.map((uc, i) => (
+				<div
+					role="tabpanel"
+					id={`${sectionId}-panel-${i}`}
+					aria-labelledby={`${sectionId}-tab-${i}`}
+					data-uc-panel={i}
+					class={`usecase-panel md:grid-cols-2 gap-8 md:gap-12 items-center${i === 0 ? ' is-active' : ''}`}
+				>
+					<div class={`relative ${i % 2 === 1 ? 'md:order-2' : ''}`}>
+						<div class="absolute -inset-6 glow-aurora opacity-70 pointer-events-none" aria-hidden="true"></div>
+						<div class="relative rounded-xl border border-border-light overflow-hidden shadow-2xl shadow-black/50">
+							<img src={uc.image} alt={uc.imageAlt} loading="lazy" decoding="async" width={dims[i].w} height={dims[i].h} class="w-full h-auto block" />
+						</div>
+					</div>
+					<div class={i % 2 === 1 ? 'md:order-1' : ''}>
+						<span class="section-label mb-3 block">{uc.eyebrow}</span>
+						<h3 class="text-heading md:text-display-sm text-white mb-4 mt-0">{uc.title}</h3>
+						<p class="text-base text-muted leading-relaxed mb-6">{uc.body}</p>
+						<ul class="flex flex-col gap-3 list-none p-0 m-0">
+							{uc.bullets.map((b) => (
+								<li class="flex items-start gap-3 text-sm md:text-base text-white/90">
+									<Icon name="hugeicons:checkmark-circle-02" class="w-5 h-5 text-primary shrink-0 mt-0.5" />
+									<span>{b}</span>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	/* Hide the tab-bar scrollbar while keeping it scrollable on touch */
+	.usecase-tabs {
+		scrollbar-width: none;
+	}
+	.usecase-tabs::-webkit-scrollbar {
+		display: none;
+	}
+	/* Show only the active panel. Using a class (not the [hidden] attribute)
+	   because Tailwind's grid/display utilities would otherwise override it. */
+	.usecase-panel {
+		display: none;
+	}
+	.usecase-panel.is-active {
+		display: grid;
+	}
+</style>
+
+<script>
+	const ACTIVE = ['bg-primary/10', 'border-primary/40', 'text-white'];
+	const INACTIVE = ['bg-surface', 'border-border', 'text-muted', 'hover:text-white', 'hover:border-border-light'];
+
+	function initUseCaseSliders() {
+		document.querySelectorAll<HTMLElement>('[data-usecase-slider]').forEach((root) => {
+			if (root.dataset.ucInit) return;
+			root.dataset.ucInit = '1';
+
+			const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-uc-tab]'));
+			const panels = Array.from(root.querySelectorAll<HTMLElement>('[data-uc-panel]'));
+			if (!tabs.length) return;
+
+			function select(index: number, focus: boolean) {
+				tabs.forEach((tab, i) => {
+					const selected = i === index;
+					tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+					tab.setAttribute('tabindex', selected ? '0' : '-1');
+					tab.classList.remove(...(selected ? INACTIVE : ACTIVE));
+					tab.classList.add(...(selected ? ACTIVE : INACTIVE));
+					if (selected && focus) {
+						tab.focus();
+						tab.scrollIntoView({ block: 'nearest', inline: 'center' });
+					}
+				});
+				panels.forEach((panel, i) => {
+					panel.classList.toggle('is-active', i === index);
+				});
+			}
+
+			tabs.forEach((tab, i) => {
+				tab.addEventListener('click', () => select(i, false));
+				tab.addEventListener('keydown', (e) => {
+					let next: number | null = null;
+					if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % tabs.length;
+					else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + tabs.length) % tabs.length;
+					else if (e.key === 'Home') next = 0;
+					else if (e.key === 'End') next = tabs.length - 1;
+					if (next !== null) {
+						e.preventDefault();
+						select(next, true);
+					}
+				});
+			});
+		});
+	}
+
+	document.addEventListener('DOMContentLoaded', initUseCaseSliders);
+	document.addEventListener('astro:page-load', initUseCaseSliders);
+</script>
