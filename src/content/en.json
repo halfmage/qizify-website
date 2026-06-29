@@ -480,7 +480,7 @@
   "solutions": {
     "hero": {
       "label": "Custom development",
-      "headline": "Your learning software,\nengineered end to end",
+      "headline": "Custom e-learning software,\nengineered end to end",
       "subheadline": "We design, build, and run learning applications of every kind: chatbots, platforms, mobile apps, simulations, and more. Sovereign, compliant, and proven.",
       "ctaPrimary": "Book a strategy call",
       "ctaSecondary": "See our work",
@@ -511,7 +511,7 @@
     },
     "useCases": {
       "label": "Selected work",
-      "headline": "A few of the products we have shipped",
+      "headline": "Products we have shipped",
       "intro": "A small sample, from a sovereign AI tutor to a branded financial-literacy companion. We build well beyond these.",
       "items": [
         {
@@ -675,8 +675,8 @@
       "body": "Generic platforms force your content into someone else's template, send learner data abroad, and stall the moment you need a real integration. We engineer learning software around your curriculum, your brand, and your compliance duties, then run it where your data has to stay."
     },
     "midCta2": {
-      "headline": "Ready to scope your build?",
-      "sub": "Bring us the problem you are solving. We turn it into a concrete plan and a realistic timeline."
+      "headline": "See if we are a fit",
+      "sub": "A 30-minute call: bring your use case, leave with a concrete plan and a realistic timeline."
     },
     "cta": {
       "headline": "Let us scope your project",

@@ -479,7 +479,7 @@
   "solutions": {
     "hero": {
       "label": "Individuelle Entwicklung",
-      "headline": "Ihre Lernsoftware,\nvon Anfang bis Ende entwickelt",
+      "headline": "Individuelle E-Learning-Software,\nvon Anfang bis Ende entwickelt",
       "subheadline": "Wir konzipieren, entwickeln und betreiben Lernanwendungen jeder Art: Chatbots, Plattformen, mobile Apps, Simulationen und mehr. Souverän, konform und bewährt.",
       "ctaPrimary": "Strategiegespräch buchen",
       "ctaSecondary": "Unsere Projekte",
@@ -510,7 +510,7 @@
     },
     "useCases": {
       "label": "Ausgewählte Projekte",
-      "headline": "Einige Produkte, die wir ausgeliefert haben",
+      "headline": "Produkte, die wir ausgeliefert haben",
       "intro": "Eine kleine Auswahl, vom souveränen KI-Tutor bis zum markeneigenen Finanzbildungs-Begleiter. Wir bauen weit darüber hinaus.",
       "items": [
         {
@@ -609,7 +609,7 @@
       "sources": "Marktzahlen: Market Data Forecast, Europe AI in Education Market, Werte in USD, Prognose 2026 bis 2034. Bußgeldobergrenze: EU-KI-Verordnung, Verordnung (EU) 2024/1689, Artikel 99 Abs. 4 (Hochrisiko-Pflichten). Stand: Juni 2026."
     },
     "sovereignty": {
-      "label": "Protected by Design",
+      "label": "Von Grund auf geschützt",
       "headline": "Souverän, konform und in Ihrem Besitz",
       "items": [
         { "icon": "hugeicons:database-locked", "title": "Ihre Daten bleiben Ihre", "body": "Lernerdaten werden auf Ihrer Infrastruktur verarbeitet. Keine Schülerdaten gehen an Dritt-KI-Anbieter, und keine werden zum Training externer Modelle genutzt." },
@@ -674,8 +674,8 @@
       "body": "Generische Plattformen pressen Ihre Inhalte in fremde Vorlagen, senden Lerndaten ins Ausland und stoppen, sobald eine echte Integration nötig wird. Wir entwickeln Lernsoftware rund um Ihren Lehrplan, Ihre Marke und Ihre Compliance-Pflichten und betreiben sie dort, wo Ihre Daten bleiben müssen."
     },
     "midCta2": {
-      "headline": "Bereit, Ihr Projekt zu planen?",
-      "sub": "Bringen Sie uns das Problem, das Sie lösen wollen. Wir machen daraus einen konkreten Plan und einen realistischen Zeitrahmen."
+      "headline": "Passen wir zusammen?",
+      "sub": "30 Minuten: Bringen Sie Ihren Anwendungsfall, gehen Sie mit einem konkreten Plan und Zeitrahmen."
     },
     "cta": {
       "headline": "Lassen Sie uns Ihr Projekt umreißen",
