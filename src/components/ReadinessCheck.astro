@@ -1,0 +1,430 @@
+---
+// Interactive AZAV- & BFSG-Digital-Readiness-Check.
+// DE-only (German-law-specific). Users answer ~10 questions, get a personalised
+// score and action plan, and unlock the full plan by opting in. Submissions land
+// in the Netlify Forms dashboard (form name "readiness-check"), including the score
+// and per-dimension answers, so the list doubles as a qualified lead list.
+import Button from './Button.astro';
+import { Icon } from 'astro-icon/components';
+
+const questions = [
+	{ dim: 'sync', text: 'Erfassen Sie synchrone Lernzeit getrennt von den Selbstlernphasen?', options: [
+		{ t: 'Ja, automatisch im System', s: 2 },
+		{ t: 'Teilweise, manuell', s: 1 },
+		{ t: 'Nein', s: 0 },
+	] },
+	{ dim: 'nachweise', text: 'Lassen sich Anwesenheit und Lernfortschritt prüfsicher exportieren?', options: [
+		{ t: 'Ja, auf Knopfdruck', s: 2 },
+		{ t: 'Ja, aber mit Aufwand', s: 1 },
+		{ t: 'Nein', s: 0 },
+	] },
+	{ dim: 'bfsg', text: 'Sind Ihre Plattform und Inhalte barrierefrei nach BFSG (WCAG 2.1 AA)?', options: [
+		{ t: 'Ja, geprüft', s: 2 },
+		{ t: 'In Arbeit', s: 1 },
+		{ t: 'Unklar oder nein', s: 0 },
+	] },
+	{ dim: 'adaptiv', text: 'Bieten Sie barrierefreie, individuell anpassbare Lernpfade an?', options: [
+		{ t: 'Ja, durchgängig', s: 2 },
+		{ t: 'Ansatzweise', s: 1 },
+		{ t: 'Nein', s: 0 },
+	] },
+	{ dim: 'ki', text: 'Nutzen Sie eine KI-Lernbegleitung auf Ihren eigenen Inhalten?', options: [
+		{ t: 'Ja, im Einsatz', s: 2 },
+		{ t: 'Pilot oder geplant', s: 1 },
+		{ t: 'Nein', s: 0 },
+	] },
+	{ dim: 'euki', text: 'Haben Sie Ihre KI auf die EU-KI-Verordnung geprüft (Aufsicht, Transparenz, Dokumentation)?', options: [
+		{ t: 'Ja, berücksichtigt', s: 2 },
+		{ t: 'Teilweise', s: 1 },
+		{ t: 'Nein oder kein Bezug', s: 0 },
+	] },
+	{ dim: 'daten', text: 'Werden Ihre Daten in Deutschland oder der EU verarbeitet, mit AVV?', options: [
+		{ t: 'Ja, mit AVV', s: 2 },
+		{ t: 'Unklar', s: 1 },
+		{ t: 'Nein oder außerhalb der EU', s: 0 },
+	] },
+	{ dim: 'plattform', text: 'Können Sie Ihre Lernplattform flexibel um neue Funktionen erweitern?', options: [
+		{ t: 'Ja, erweiterbar', s: 2 },
+		{ t: 'Standardtool mit Grenzen', s: 1 },
+		{ t: 'Nein', s: 0 },
+	] },
+	{ dim: 'kikompetenz', text: 'Fördern Sie die KI-Kompetenz Ihres Personals (EU-KI-Verordnung, seit Februar 2025)?', options: [
+		{ t: 'Ja', s: 2 },
+		{ t: 'In Planung', s: 1 },
+		{ t: 'Nein', s: 0 },
+	] },
+	{ dim: 'foerderung', text: 'Kennen Sie die passenden Förderwege (ESF Plus, BA) für Ihre Digitalisierung?', options: [
+		{ t: 'Ja, eingeplant', s: 2 },
+		{ t: 'Grob bekannt', s: 1 },
+		{ t: 'Nein', s: 0 },
+	] },
+];
+
+const config = {
+	categories: [
+		{ max: 45, label: 'Hoher Handlungsbedarf', cls: 'text-red-300', bar: 'bg-red-400' },
+		{ max: 75, label: 'Auf einem guten Weg', cls: 'text-amber-300', bar: 'bg-amber-400' },
+		{ max: 100, label: 'Gut aufgestellt', cls: 'text-green-300', bar: 'bg-green-400' },
+	],
+	dimsOrder: questions.map((q) => q.dim),
+	handlungsfelderTitle: 'Ihre wichtigsten Handlungsfelder',
+	noGaps: 'Starke Ausgangslage. In allen Feldern sind Sie gut aufgestellt. Im Strategiegespräch schauen wir, wo sich der Vorsprung weiter ausbauen lässt.',
+	recos: {
+		sync: { title: 'Synchrone Lernzeit sauber dokumentieren', body: 'Seit Juli 2025 verlangen die AZAV-Beirat-Empfehlungen, synchrone Lernzeit gesondert nachzuweisen. Eine automatische Erfassung ersetzt fehleranfällige Handlisten.' },
+		nachweise: { title: 'Nachweise exportierbar machen', body: 'Exportierbare Nachweise zu Anwesenheit und Fortschritt sparen Aufwand bei jeder Prüfung und Erfolgskontrolle.' },
+		bfsg: { title: 'Barrierefreiheit nach BFSG angehen', body: 'Das BFSG gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist WCAG 2.1 AA. Ob Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab.' },
+		adaptiv: { title: 'Adaptive, barrierefreie Lernpfade', body: 'In der Reha (SGB IX) brauchen unterschiedliche Lernbedarfe barrierefreie, anpassbare Lernwege.' },
+		ki: { title: 'KI-Lernbegleitung auf Ihren Inhalten', body: 'Ein KI-Lerncoach auf Ihrem geprüften Material, mit belegten Quellen, entlastet Ihr Personal spürbar.' },
+		euki: { title: 'EU-KI-Verordnung berücksichtigen', body: 'Manche Bildungs-KI (etwa zur Zugangs- oder Leistungsbewertung) gilt als hochriskant, mit Pflichten ab Dezember 2027. Aufsicht, Transparenz und belegte Quellen sind schon heute gute Praxis.' },
+		daten: { title: 'Datenverarbeitung in Deutschland sichern', body: 'Verarbeitung in Deutschland oder der EU, ein AVV und keine Weitergabe an Dritt-Modelle sind die Grundlage für datenschutzkonforme, souveräne KI.' },
+		plattform: { title: 'Erweiterbare Plattform statt starrem Tool', body: 'Bestehende Systeme lassen sich um KI und fehlende Funktionen ergänzen, ohne kompletten Umstieg.' },
+		kikompetenz: { title: 'KI-Kompetenz aufbauen', body: 'Seit Februar 2025 verlangt die EU-KI-Verordnung, dass Sie die KI-Kompetenz Ihres Personals fördern.' },
+		foerderung: { title: 'Förderwege einplanen', body: 'Programme wie ESF Plus fördern Digitalisierung und Weiterbildung. Ob sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, prüfen wir gemeinsam.' },
+	},
+};
+---
+
+<!-- Hidden HTML form for Netlify Forms detection -->
+<form name="readiness-check" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="hidden">
+	<input type="hidden" name="form-name" value="readiness-check" />
+	<input type="text" name="name" />
+	<input type="email" name="email" />
+	<input type="text" name="organisation" />
+	<input type="text" name="role" />
+	<input type="text" name="score" />
+	<input type="text" name="category" />
+	<input type="text" name="answers" />
+	<input type="checkbox" name="consent" />
+	<input type="text" name="bot-field" />
+</form>
+
+<section id="readiness-check" class="pt-4 pb-16 md:pt-6 md:pb-24 px-6 md:px-8 scroll-mt-24">
+	<div class="max-w-3xl mx-auto relative">
+		<div class="absolute -inset-4 glow-aurora opacity-40 pointer-events-none" aria-hidden="true"></div>
+
+		<!-- Panel 1: the quiz -->
+		<div id="rc-quiz" class="relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden shadow-2xl shadow-black/20" data-config={JSON.stringify(config)}>
+			<div class="flex items-center justify-between mb-2">
+				<span class="section-label block">Digital-Readiness-Check</span>
+				<span class="text-xs text-muted font-mono" id="rc-progress-text">1 / {questions.length}</span>
+			</div>
+			<div class="h-1.5 w-full bg-border rounded-full overflow-hidden mb-8">
+				<div class="h-full bg-primary transition-all duration-300" id="rc-progress-bar" style="width: 0%"></div>
+			</div>
+
+			{questions.map((q, i) => (
+				<div class="rc-question" data-dim={q.dim} data-index={i} style={i === 0 ? '' : 'display:none'}>
+					<h2 id={`rc-q-${i}`} class="text-heading-sm md:text-heading text-white m-0 mb-6">{q.text}</h2>
+					<div class="flex flex-col gap-3" role="radiogroup" aria-labelledby={`rc-q-${i}`}>
+						{q.options.map((o) => (
+							<label class="rc-option">
+								<input type="radio" name={`q${i}`} data-score={o.s} class="rc-radio" />
+								<span class="rc-option-text">{o.t}</span>
+							</label>
+						))}
+					</div>
+				</div>
+			))}
+
+			<div class="flex items-center justify-between mt-12">
+				<button type="button" id="rc-back" class="text-sm text-muted hover:text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed" disabled>Zurück</button>
+				<button type="button" id="rc-next" class="bg-primary text-white border-none rounded-lg px-6 py-2.5 text-sm font-medium cursor-pointer hover:bg-[#6a4ae0] transition-all duration-200 font-sans disabled:opacity-50 disabled:cursor-not-allowed" disabled>Weiter</button>
+			</div>
+		</div>
+
+		<!-- Panel 2: the opt-in gate -->
+		<div id="rc-gate" class="hidden relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden">
+			<span class="section-label block mb-4">Ihr Ergebnis</span>
+			<div class="flex items-baseline gap-3 mb-1">
+				<span class="text-display-sm text-white font-semibold" id="rc-teaser-score">0%</span>
+				<span class="text-base font-medium" id="rc-teaser-cat">-</span>
+			</div>
+			<p class="text-sm text-muted leading-relaxed m-0 mb-6">Tragen Sie sich ein, um Ihren persönlichen Maßnahmenplan mit konkreten Schritten und Förderwegen zu sehen.</p>
+
+			<form class="flex flex-col gap-4" id="rc-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<input type="hidden" name="form-name" value="readiness-check" />
+				<input type="text" name="bot-field" class="hidden" />
+				<input type="hidden" name="score" id="rc-hidden-score" />
+				<input type="hidden" name="category" id="rc-hidden-category" />
+				<input type="hidden" name="answers" id="rc-hidden-answers" />
+
+				<div class="grid sm:grid-cols-2 gap-4">
+					<div class="flex flex-col gap-1.5">
+						<label for="rc-name" class="text-sm font-medium text-white/80">Name</label>
+						<input type="text" id="rc-name" name="name" required aria-required="true" class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200" />
+					</div>
+					<div class="flex flex-col gap-1.5">
+						<label for="rc-email" class="text-sm font-medium text-white/80">E-Mail</label>
+						<input type="email" id="rc-email" name="email" required aria-required="true" class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200" />
+					</div>
+					<div class="flex flex-col gap-1.5">
+						<label for="rc-org" class="text-sm font-medium text-white/80">Organisation (optional)</label>
+						<input type="text" id="rc-org" name="organisation" class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200" />
+					</div>
+					<div class="flex flex-col gap-1.5">
+						<label for="rc-role" class="text-sm font-medium text-white/80">Ihre Rolle (optional)</label>
+						<select id="rc-role" name="role" class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200">
+							<option value="Geschäftsführung">Geschäftsführung</option>
+							<option value="Pädagogische Leitung">Pädagogische Leitung</option>
+							<option value="Qualitätsmanagement / AZAV">Qualitätsmanagement / AZAV</option>
+							<option value="IT / Digitalisierung">IT / Digitalisierung</option>
+							<option value="Sonstige">Sonstige</option>
+						</select>
+					</div>
+				</div>
+
+				<label class="flex items-start gap-2.5 cursor-pointer text-xs text-muted leading-relaxed">
+					<input type="checkbox" id="rc-consent" name="consent" required aria-required="true" class="mt-0.5 w-4 h-4 flex-shrink-0 cursor-pointer accent-primary" />
+					<span class="flex-1">Ich stimme der <a href="/de/privacy" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Datenschutzerkl&auml;rung</a> zu und bin damit einverstanden, dass LearnSlice mich zu meinem Ergebnis kontaktiert.</span>
+				</label>
+
+				<div class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300" id="rc-error" role="alert"></div>
+
+				<button type="submit" class="bg-primary text-white border-none rounded-lg px-6 py-2.5 text-sm font-medium cursor-pointer hover:bg-[#6a4ae0] active:bg-[#5c3dd4] transition-all duration-200 font-sans mt-1 disabled:opacity-50 disabled:cursor-not-allowed">Maßnahmenplan anzeigen</button>
+				<p class="text-xs text-muted text-center -mt-1">Kostenlos · kein Spam · jederzeit abbestellbar</p>
+			</form>
+		</div>
+
+		<!-- Panel 3: the personalised result -->
+		<div id="rc-result" class="hidden relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden">
+			<span class="section-label block mb-4">Ihr Maßnahmenplan</span>
+			<div class="flex items-baseline gap-3 mb-2">
+				<span class="text-display-sm text-white font-semibold" id="rc-score-num">0%</span>
+				<span class="text-base font-medium" id="rc-score-cat">-</span>
+			</div>
+			<div class="h-2 w-full bg-border rounded-full overflow-hidden mb-8">
+				<div class="h-full transition-all duration-500" id="rc-score-bar" style="width: 0%"></div>
+			</div>
+
+			<h3 class="text-heading-sm text-white m-0 mb-4" id="rc-fields-title">Ihre wichtigsten Handlungsfelder</h3>
+			<ul class="flex flex-col gap-4 list-none p-0 m-0 mb-8" id="rc-fields"></ul>
+
+			<div class="bg-input-bg border border-border-light rounded-xl p-5 mb-8">
+				<p class="text-sm text-white/90 leading-relaxed m-0"><span class="font-medium text-white">Förderung:</span> Viele dieser Schritte lassen sich fördern. Programme wie ESF Plus unterstützen Digitalisierung und Weiterbildung. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab und prüfen wir gemeinsam und ehrlich.</p>
+			</div>
+
+			<div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-6 border-t border-border-light">
+				<p class="text-base text-white/90 m-0 flex-1">Aus Ihren Handlungsfeldern machen wir eine konkrete Roadmap. Kostenloses 30-Minuten-Strategiegespräch, kein Pitch.</p>
+				<Button variant="primary" href="#project-inquiry" data-modal-trigger="project-inquiry" aria-label="Strategiegespräch buchen">Strategiegespräch buchen</Button>
+			</div>
+
+			<p class="text-xs text-muted leading-relaxed mt-6 m-0">Diese Selbsteinschätzung dient der Orientierung und ersetzt keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: Juli 2026.</p>
+		</div>
+	</div>
+</section>
+
+<script>
+	function initReadinessCheck() {
+		const quiz = document.getElementById('rc-quiz');
+		const gate = document.getElementById('rc-gate');
+		const result = document.getElementById('rc-result');
+		const form = document.getElementById('rc-form');
+		if (!quiz || !gate || !result || !form) return;
+
+		const config = JSON.parse(quiz.getAttribute('data-config') || '{}');
+		const questions = Array.from(quiz.querySelectorAll('.rc-question'));
+		const total = questions.length;
+		const backBtn = document.getElementById('rc-back');
+		const nextBtn = document.getElementById('rc-next');
+		const progressBar = document.getElementById('rc-progress-bar');
+		const progressText = document.getElementById('rc-progress-text');
+		const errorMessage = document.getElementById('rc-error');
+
+		let current = 0;
+		const answers = {}; // dim -> score
+
+		function selectedFor(i) {
+			const el = questions[i];
+			return el ? el.querySelector('input[type="radio"]:checked') : null;
+		}
+
+		function render() {
+			questions.forEach((q, i) => { q.style.display = i === current ? '' : 'none'; });
+			if (progressText) progressText.textContent = (current + 1) + ' / ' + total;
+			if (progressBar) progressBar.style.width = ((current + 1) / total * 100) + '%';
+			if (backBtn) backBtn.disabled = current === 0;
+			const answered = !!selectedFor(current);
+			if (nextBtn) {
+				nextBtn.disabled = !answered;
+				nextBtn.textContent = current === total - 1 ? 'Ergebnis anzeigen' : 'Weiter';
+			}
+		}
+
+		questions.forEach((q, i) => {
+			q.querySelectorAll('input[type="radio"]').forEach((input) => {
+				input.addEventListener('change', () => {
+					const dim = q.getAttribute('data-dim');
+					answers[dim] = parseInt(input.getAttribute('data-score') || '0', 10);
+					q.querySelectorAll('.rc-option').forEach((l) => l.classList.remove('is-selected'));
+					const label = input.closest('.rc-option');
+					if (label) label.classList.add('is-selected');
+					if (nextBtn) nextBtn.disabled = false;
+				});
+			});
+		});
+
+		if (backBtn) backBtn.addEventListener('click', () => { if (current > 0) { current--; render(); } });
+		if (nextBtn) nextBtn.addEventListener('click', () => {
+			if (!selectedFor(current)) return;
+			if (current < total - 1) { current++; render(); }
+			else { finish(); }
+		});
+
+		function categoryFor(pct) {
+			return config.categories.find((c) => pct <= c.max) || config.categories[config.categories.length - 1];
+		}
+
+		let lastPct = 0;
+		let lastCat = null;
+
+		function finish() {
+			const dims = config.dimsOrder;
+			let sum = 0;
+			dims.forEach((d) => { sum += (answers[d] || 0); });
+			const pct = Math.round((sum / (dims.length * 2)) * 100);
+			const cat = categoryFor(pct);
+			lastPct = pct; lastCat = cat;
+
+			const teaserScore = document.getElementById('rc-teaser-score');
+			const teaserCat = document.getElementById('rc-teaser-cat');
+			if (teaserScore) teaserScore.textContent = pct + '%';
+			if (teaserCat) { teaserCat.textContent = cat.label; teaserCat.className = 'text-base font-medium ' + cat.cls; }
+
+			const hs = document.getElementById('rc-hidden-score');
+			const hc = document.getElementById('rc-hidden-category');
+			const ha = document.getElementById('rc-hidden-answers');
+			if (hs) hs.value = pct + '%';
+			if (hc) hc.value = cat.label;
+			if (ha) ha.value = dims.map((d) => d + ':' + (answers[d] || 0)).join(';');
+
+			quiz.classList.add('hidden');
+			gate.classList.remove('hidden');
+			gate.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+
+		function buildResult() {
+			const scoreNum = document.getElementById('rc-score-num');
+			const scoreCat = document.getElementById('rc-score-cat');
+			const scoreBar = document.getElementById('rc-score-bar');
+			const fields = document.getElementById('rc-fields');
+			const fieldsTitle = document.getElementById('rc-fields-title');
+			if (scoreNum) scoreNum.textContent = lastPct + '%';
+			if (scoreCat && lastCat) { scoreCat.textContent = lastCat.label; scoreCat.className = 'text-base font-medium ' + lastCat.cls; }
+			if (scoreBar && lastCat) { scoreBar.style.width = lastPct + '%'; scoreBar.className = 'h-full transition-all duration-500 ' + lastCat.bar; }
+
+			if (fields) {
+				fields.innerHTML = '';
+				const gaps = config.dimsOrder.filter((d) => (answers[d] || 0) < 2);
+				if (gaps.length === 0) {
+					if (fieldsTitle) fieldsTitle.textContent = 'Ergebnis';
+					const li = document.createElement('li');
+					li.className = 'text-sm text-white/90 leading-relaxed';
+					li.textContent = config.noGaps;
+					fields.appendChild(li);
+				} else {
+					if (fieldsTitle) fieldsTitle.textContent = config.handlungsfelderTitle;
+					gaps.forEach((d) => {
+						const r = config.recos[d];
+						if (!r) return;
+						const li = document.createElement('li');
+						li.className = 'flex items-start gap-3';
+						li.innerHTML = '<span class="text-primary mt-0.5 flex-shrink-0">&#9679;</span><span><span class="block text-sm font-medium text-white">' + r.title + '</span><span class="block text-sm text-muted leading-relaxed">' + r.body + '</span></span>';
+						fields.appendChild(li);
+					});
+				}
+			}
+		}
+
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			if (errorMessage) errorMessage.classList.add('hidden');
+			const formData = new FormData(form);
+			// Netlify Forms only capture on the deployed site. On localhost we skip the
+			// network call so the full flow (including the result screen) is previewable.
+			const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
+			try {
+				if (!isLocal) {
+					const response = await fetch('/', {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+						body: new URLSearchParams(formData).toString(),
+					});
+					if (!response.ok) throw new Error('Form submission failed');
+				}
+				buildResult();
+				gate.classList.add('hidden');
+				result.classList.remove('hidden');
+				result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			} catch (error) {
+				if (errorMessage) {
+					errorMessage.textContent = 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.';
+					errorMessage.classList.remove('hidden');
+				}
+			}
+		});
+
+		render();
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initReadinessCheck);
+	} else {
+		initReadinessCheck();
+	}
+</script>
+
+<style>
+	/* Option rows: neutral glass over the warm surface, crisp states. */
+	.rc-option {
+		display: flex;
+		align-items: center;
+		gap: 0.85rem;
+		cursor: pointer;
+		padding: 1rem 1.15rem;
+		border-radius: 0.85rem;
+		border: 1px solid #5a5249;
+		background: rgba(255, 255, 255, 0.035);
+		transition: border-color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+	}
+	.rc-option:hover {
+		border-color: rgba(124, 92, 252, 0.55);
+		background: rgba(124, 92, 252, 0.07);
+	}
+	.rc-option.is-selected {
+		border-color: #7c5cfc;
+		background: rgba(124, 92, 252, 0.13);
+		box-shadow: inset 0 0 0 1px #7c5cfc;
+	}
+	.rc-option-text {
+		flex: 1;
+		font-size: 0.95rem;
+		line-height: 1.4;
+		color: rgba(255, 255, 255, 0.92);
+	}
+
+	/* Custom radio: replaces the clunky native control. */
+	.rc-radio {
+		appearance: none;
+		-webkit-appearance: none;
+		width: 1.2rem;
+		height: 1.2rem;
+		flex-shrink: 0;
+		border-radius: 9999px;
+		border: 2px solid #7a7264;
+		background: transparent;
+		cursor: pointer;
+		transition: border-color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+	}
+	.rc-option:hover .rc-radio {
+		border-color: rgba(124, 92, 252, 0.7);
+	}
+	.rc-radio:checked {
+		border-color: #7c5cfc;
+		background-color: #7c5cfc;
+		box-shadow: inset 0 0 0 3px #37322c;
+	}
+	.rc-radio:focus-visible {
+		outline: 2px solid #7c5cfc;
+		outline-offset: 2px;
+	}
+</style>

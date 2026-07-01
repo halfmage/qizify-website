@@ -53,6 +53,8 @@ export const EN_ONLY = new Set([
 
 export const DE_ONLY = new Set([
 	'/de/blog/ausbildungsplan-erstellen-ki',
+	// German-law-specific lead magnet (AZAV/BFSG), no English counterpart.
+	'/de/digital-readiness-check',
 ]);
 
 const DE_TO_EN = Object.fromEntries(
