@@ -6,15 +6,11 @@ interface Testimonial {
 	quote: string;
 }
 
-interface FeaturedTestimonial extends Testimonial {
-	logo?: string;
-}
-
 interface Props {
 	headline: string;
 	items: Testimonial[];
 	currentLang: 'en' | 'de';
-	featured?: FeaturedTestimonial;
+	featured?: Testimonial;
 }
 
 const { headline, items, currentLang, featured } = Astro.props;
@@ -23,6 +19,7 @@ const testimonialImages: Record<string, string> = {
 	'Lienne Julie Wolff': 'lienne-julie-wolff.webp',
 	'Kinga Patrycja Peters': 'kinga-patrycja-peters.webp',
 	'Philipp Schulte': 'philipp-schulte.webp',
+	'Prof. Dr. Carsten Wolff': 'carsten-wolff.webp',
 };
 ---
 
@@ -42,11 +39,16 @@ const testimonialImages: Record<string, string> = {
 					"{featured.quote}"
 				</blockquote>
 				<div class="flex items-center gap-4 pt-6 mt-6 border-t border-border">
-					{featured.logo && (
-						<div class="h-10 flex items-center bg-white rounded-md px-3 flex-shrink-0">
-							<img src={featured.logo} alt={featured.company} class="h-6 w-auto object-contain" loading="lazy" />
-						</div>
-					)}
+					<div class="w-14 h-14 rounded-full overflow-hidden bg-border flex-shrink-0 ring-2 ring-accent/30 ring-offset-2 ring-offset-surface">
+						<img
+							src={`/images/testimonials/${testimonialImages[featured.name] || 'placeholder.webp'}`}
+							alt={featured.name}
+							class="w-full h-full object-cover"
+							loading="lazy"
+							width="112"
+							height="112"
+						/>
+					</div>
 					<div class="flex flex-col">
 						<span class="text-base font-semibold text-white">{featured.name}</span>
 						<span class="text-sm text-muted">{featured.title}, {featured.company}</span>
