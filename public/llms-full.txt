@@ -431,7 +431,7 @@ Custom e-learning development in 2026: what it costs, how a project runs, and ho
 ## Key Takeaways
 
 - Custom e-learning development means commissioning a solution built for you rather than buying off-the-shelf software. It spans single learning modules, custom learning platforms, simulations, serious games, and AI-driven learning apps.
-- Cost depends heavily on type and interactivity. Expect roughly 5,000 to 50,000 dollars per finished hour of custom content, and from the mid five figures into six figures for a full custom platform. Interactivity is the single biggest cost driver.
+- Cost depends heavily on type and interactivity. Industry pricing surveys put custom content at roughly 5,000 to 50,000 dollars per finished hour, with full projects ranging from about 5,000 to over 100,000 dollars. Interactivity is the single biggest cost driver, according to development-time research by the Chapman Alliance and Brandon Hall Group.
 - A first usable module is often ready in 6 to 8 weeks; a complete solution with several building blocks takes 3 to 6 months. Budget for ongoing operation and iteration, not just the build.
 - Off-the-shelf software is cheap and instant but rarely fits your processes exactly. Custom development costs more, but you own the result, can extend it freely, and can build in AI and your own knowledge.
 - When choosing a vendor, look for both instructional design and software engineering, GDPR-compliant EU hosting, a clear agreement on who owns the code, and a partner who plans for operation and scale.
@@ -466,9 +466,9 @@ Cost depends mainly on the type and the level of interactivity. Here are the mar
 | Serious game / simulation | from ~15,000 dollars per module | 6 weeks to 6 months |
 | Operation and iteration | ongoing, often a share of build cost per year | continuous |
 
-These are industry reference points, not quotes. Your actual price moves with four levers:
+These are industry reference points, not quotes. They draw on published pricing surveys, the [development-time research by the Chapman Alliance and Brandon Hall Group](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860), and figures reported by specialist development vendors. Your actual price moves with four levers:
 
-1. **Interactivity.** By far the biggest cost driver. An industry rule of thumb: every finished hour of e-learning represents roughly 80 to 300 hours of production, depending on interactivity. A click-through course is cheap; a branching simulation is expensive.
+1. **Interactivity.** By far the biggest cost driver. Development-time research by the Chapman Alliance and Brandon Hall Group puts it at roughly 80 to 300 hours of production per finished hour of e-learning, depending on interactivity. A click-through course is cheap; a branching simulation is expensive.
 2. **Integrations.** Connections to existing systems such as HR software, an existing LMS, or single sign-on add effort.
 3. **AI and personalisation.** Adaptive learning paths and pulling in your own company knowledge cost more, but they are often the whole reason for going custom.
 4. **Scope and rights.** More content, more languages, more roles, and handing over full ownership all show up in the price.
@@ -536,7 +536,7 @@ Commissioning custom e-learning is not a leap in the dark if you go about it in 
 
 ### How much does custom e-learning development cost?
 
-It depends on the type. Custom content runs roughly 5,000 to 50,000 dollars per finished hour, with template-based modules near the low end and fully experiential, simulation-heavy modules near the top. A full custom platform typically runs from the mid five figures into six figures depending on integrations and scale. The single biggest cost driver is the level of interactivity.
+It depends on the type. Industry pricing surveys put custom content at roughly 5,000 to 50,000 dollars per finished hour, with template-based modules near the low end and fully experiential, simulation-heavy modules near the top, and full projects ranging from about 5,000 to over 100,000 dollars. The single biggest cost driver is the level of interactivity, per development-time research by the Chapman Alliance and Brandon Hall Group.
 
 ### How long does development take?
 
@@ -2892,7 +2892,7 @@ E-Learning entwickeln lassen: Was es kostet, wie ein Projekt abläuft und worauf
 ## Auf einen Blick
 
 - E-Learning entwickeln lassen heißt: Sie beauftragen eine maßgeschneiderte Lösung statt einer Standardsoftware. Das reicht von einzelnen Lernmodulen über individuelle Lernplattformen bis zu Serious Games und KI-gestützten Lernanwendungen.
-- Die Kosten hängen stark vom Typ ab. Marktüblich sind rund 1.000 Euro pro Minute für hochwertige Lernmodule, etwa 13.000 bis 90.000 Euro für eine individuelle Lernplattform und ab 15.000 Euro für ein Serious Game. Der größte Kostentreiber ist der Grad der Interaktivität.
+- Die Kosten hängen stark vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute. Eine individuelle Lernplattform liegt nach Angaben von Entwicklungsdienstleistern bei etwa 13.000 bis 90.000 Euro, ein Serious Game beginnt bei rund 15.000 Euro. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
 - Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung mit mehreren Bausteinen in 3 bis 6 Monaten. Planen Sie laufende Kosten für Betrieb und Weiterentwicklung ein.
 - Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen.
 - Achten Sie bei der Auswahl auf beides: didaktische und technische Kompetenz, DSGVO-konformes EU-Hosting, eine klare Regelung zum Eigentum am Code und einen Anbieter, der Betrieb und Skalierung mitdenkt.
@@ -2922,14 +2922,14 @@ Die Kosten hängen vor allem vom Typ und vom Grad der Interaktivität ab. Zur Or
 
 | Art der Entwicklung | Typische Kosten | Zeitrahmen |
 |---|---|---|
-| Lernmodul / WBT (Content) | ca. 1.000 Euro pro Minute, rund 5.000 bis 20.000 Euro pro Lernstunde | 8 bis 12 Wochen pro Lernstunde |
+| Lernmodul / WBT (Content) | ca. 1.000 Euro pro Minute (Empfehlung BDVT/VBT) | 8 bis 12 Wochen pro Lernstunde |
 | Individuelle Lernplattform / Lernsoftware | ca. 13.000 bis 90.000 Euro je nach Umfang | 3 bis 6 Monate |
 | Serious Game / Simulation | ab ca. 15.000 Euro pro Modul, 30.000 bis 80.000 Euro komplett | 6 Wochen bis 6 Monate |
 | Betrieb und Weiterentwicklung | laufend, häufig ein Anteil der Entwicklungskosten pro Jahr | dauerhaft |
 
-Diese Werte sind Branchenrichtwerte, keine Angebote. Ihr konkreter Preis bewegt sich mit vier Hebeln:
+Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [Honorarempfehlung der Verbände BDVT und VBT](https://www.bdvt.de/bdvt/teilen/honorar-empfehlungen.php), die [Entwicklungszeit-Studie der Chapman Alliance und Brandon Hall Group](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860) sowie auf Angaben spezialisierter Entwicklungsdienstleister. Ihr konkreter Preis bewegt sich mit vier Hebeln:
 
-1. **Interaktivität.** Der mit Abstand größte Kostentreiber. Eine Faustregel aus der Branche: pro fertiger Lernstunde stecken je nach Interaktivität rund 80 bis 300 Stunden Entwicklung dahinter. Ein Klick-durch-Kurs ist günstig, eine verzweigte Simulation teuer.
+1. **Interaktivität.** Der mit Abstand größte Kostentreiber. Die Entwicklungszeit-Studie der Chapman Alliance und der Brandon Hall Group beziffert es so: pro fertiger Lernstunde stecken je nach Interaktivität rund 80 bis 300 Stunden Entwicklung dahinter. Ein Klick-durch-Kurs ist günstig, eine verzweigte Simulation teuer.
 2. **Integrationen.** Anbindungen an bestehende Systeme wie HR-Software, ein vorhandenes LMS oder ein Single-Sign-on treiben den Aufwand.
 3. **KI und Personalisierung.** Adaptive Lernpfade und die Einbindung eigenen Unternehmenswissens kosten mehr, sind aber oft der eigentliche Grund für die Individualentwicklung.
 4. **Umfang und Nutzungsrechte.** Mehr Inhalte, mehr Sprachen, mehr Rollen und die Übergabe des vollen Eigentums schlagen sich im Preis nieder.
@@ -2997,7 +2997,7 @@ E-Learning entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie struktur
 
 ### Was kostet es, E-Learning entwickeln zu lassen?
 
-Das hängt vom Typ ab. Für hochwertige Lernmodule liegt der Marktrichtwert bei rund 1.000 Euro pro Minute Lernzeit, also etwa 15.000 bis 25.000 Euro für ein 20-minütiges Modul. Eine individuelle Lernplattform kostet je nach Umfang etwa 13.000 bis 90.000 Euro. Ein Serious Game beginnt bei rund 15.000 Euro pro Modul und erreicht bei kompletten Trainingslösungen 30.000 bis 80.000 Euro. Der größte Kostentreiber ist der Grad der Interaktivität.
+Das hängt vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute Lernzeit, also etwa 15.000 bis 25.000 Euro für ein 20-minütiges Modul. Eine individuelle Lernplattform kostet nach Angaben spezialisierter Entwicklungsdienstleister je nach Umfang etwa 13.000 bis 90.000 Euro. Ein Serious Game beginnt bei rund 15.000 Euro pro Modul und erreicht bei kompletten Trainingslösungen 30.000 bis 80.000 Euro. Der größte Kostentreiber ist der Grad der Interaktivität.
 
 ### Wie lange dauert die Entwicklung?
 
