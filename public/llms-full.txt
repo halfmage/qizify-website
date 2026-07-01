@@ -430,7 +430,7 @@ Custom e-learning development in 2026: what it costs, how a project runs, and ho
 
 ## Key Takeaways
 
-- Custom e-learning development means commissioning a solution built for you rather than buying off-the-shelf software. It spans single learning modules, custom learning platforms, simulations, serious games, and AI-driven learning apps.
+- Custom e-learning development means commissioning a solution built for you rather than buying off-the-shelf software. It spans single learning modules, custom learning platforms and learning chatbots (AI tutors), simulations, serious games, and AI-driven learning apps.
 - Cost depends heavily on type and interactivity. Industry pricing surveys put custom content at roughly 5,000 to 50,000 dollars per finished hour, with full projects ranging from about 5,000 to over 100,000 dollars. Interactivity is the single biggest cost driver, according to development-time research by the Chapman Alliance and Brandon Hall Group.
 - A first usable module is often ready in 6 to 8 weeks; a complete solution with several building blocks takes 3 to 6 months. Budget for ongoing operation and iteration, not just the build.
 - Off-the-shelf software is cheap and instant but rarely fits your processes exactly. Custom development costs more, but you own the result, can extend it freely, and can build in AI and your own knowledge.
@@ -451,7 +451,7 @@ That is what this guide is for: the numbers, the realistic process, and the crit
 Before you talk about cost, get clear on what you are actually commissioning. "Custom e-learning" covers two very different things, and they are priced differently.
 
 - **E-learning content:** individual learning materials such as web-based training (WBT), explainer videos, microlearning, or course modules. These are priced per finished hour or per minute and usually run inside an existing system.
-- **E-learning software:** the platform itself. A custom learning platform, a learning app, a simulation, a serious game, or an AI-driven learning application. Here software is being built, not just content produced.
+- **E-learning software:** the platform itself. A custom learning platform, a learning app, a custom AI chatbot for learning (a learning chatbot or AI tutor that answers from your own company knowledge), a simulation, a serious game, or an AI-driven learning application. Here software is being built, not just content produced.
 
 The distinction matters because the word "e-learning" gets stretched to cover both. If you only need content, you pay for production. If you need a solution that fits your processes, works with AI, and belongs to your company, you need software engineering. This guide focuses on the second case while still covering content costs.
 
@@ -511,7 +511,7 @@ Building fully in-house is the fourth option, and it only pays off if you have y
 A good vendor combines two skills that rarely come together: instructional design and software engineering. Check these points before you commit:
 
 - **Instructional design and engineering under one roof.** Beautiful software with no learning impact is wasted budget; a strong concept on weak technology is too.
-- **AI capability.** Can the vendor build adaptive learning paths and pull in your own knowledge, rather than just bolt on a chatbot?
+- **AI capability.** Can the vendor build adaptive learning paths and a real learning chatbot that answers from your own knowledge, rather than just bolt on a generic assistant?
 - **GDPR and sovereignty.** Hosting in Germany or the EU, a data processing agreement, and a clean role and deletion model.
 - **Ownership of the code.** Who owns the result and the source after the project? Get it guaranteed in writing.
 - **Operation and scale.** Will the solution be maintained and extended after go-live, or are you on your own?
@@ -559,6 +559,10 @@ It can and should be, but only if it is built that way from the start. Look for 
 ### Who owns the code and the intellectual property?
 
 That is negotiable and should be settled in writing before the project starts. With genuine custom development, the rights to the code and content you commission should sit with you, so you are not permanently locked to one vendor. Get ownership, usage rights, and handover of the source code contractually guaranteed.
+
+### Can you have a custom AI chatbot for learning built?
+
+Yes, a custom learning chatbot is one of the most common use cases. Unlike a generic assistant, it answers from your own company knowledge, guides learners through the content, and gives feedback. For workplace use it needs a clear processing purpose, EU hosting, and a training-data opt-out to stay GDPR compliant.
 
 ### Is AI worth it in custom learning software?
 
@@ -2893,7 +2897,7 @@ E-Learning entwickeln lassen: Was es kostet, wie ein Projekt abläuft und worauf
 
 ## Auf einen Blick
 
-- E-Learning entwickeln lassen heißt: Sie beauftragen eine maßgeschneiderte Lösung statt einer Standardsoftware. Das reicht von einzelnen Lernmodulen über individuelle Lernplattformen bis zu Serious Games und KI-gestützten Lernanwendungen.
+- E-Learning entwickeln lassen heißt: Sie beauftragen eine maßgeschneiderte Lösung statt einer Standardsoftware. Das reicht von einzelnen Lernmodulen über individuelle Lernplattformen und Lern-Chatbots (KI-Lernassistenten) bis zu Serious Games und KI-gestützten Lernanwendungen.
 - Die Kosten hängen stark vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute. Eine individuelle Lernplattform liegt nach Angaben von Entwicklungsdienstleistern bei etwa 13.000 bis 90.000 Euro, ein Serious Game beginnt bei rund 15.000 Euro. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
 - Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung mit mehreren Bausteinen in 3 bis 6 Monaten. Planen Sie laufende Kosten für Betrieb und Weiterentwicklung ein.
 - Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen.
@@ -2914,7 +2918,7 @@ Genau darum geht es in diesem Leitfaden: um Zahlen, den realistischen Ablauf und
 Bevor Sie über Kosten sprechen, klären Sie, was Sie eigentlich beauftragen. Hinter "E-Learning entwickeln lassen" stecken zwei sehr unterschiedliche Dinge, und sie werden unterschiedlich bepreist.
 
 - **E-Learning-Content:** einzelne Lerninhalte wie Web Based Trainings (WBT), Erklärvideos, Microlearning oder Kursmodule. Sie werden pro Lernstunde oder pro Minute abgerechnet und laufen meist in einem bestehenden System.
-- **E-Learning-Software:** die Plattform selbst. Eine individuelle Lernplattform, eine Lern-App, eine Simulation, ein Serious Game oder eine KI-gestützte Lernanwendung. Hier wird Software gebaut, nicht nur Inhalt produziert.
+- **E-Learning-Software:** die Plattform selbst. Eine individuelle Lernplattform, eine Lern-App, ein individueller KI-Chatbot fürs Lernen (ein Lern-Chatbot oder KI-Lernassistent, der auf Ihrem eigenen Unternehmenswissen antwortet), eine Simulation, ein Serious Game oder eine KI-gestützte Lernanwendung. Hier wird Software gebaut, nicht nur Inhalt produziert.
 
 Der Unterschied ist entscheidend, weil das Wort "E-Learning" für beides herhalten muss. Wer nur Content braucht, zahlt für Produktion. Wer eine Lösung braucht, die zu den eigenen Prozessen passt, mit KI arbeitet und dem Unternehmen gehört, braucht Softwareentwicklung. Dieser Leitfaden legt den Schwerpunkt auf den zweiten Fall, deckt die Content-Kosten aber mit ab.
 
@@ -2974,7 +2978,7 @@ Selbst entwickeln ist die vierte Option und lohnt sich nur, wenn Sie ein eigenes
 Ein guter Anbieter vereint zwei Kompetenzen, die selten zusammenkommen: Didaktik und Software-Engineering. Prüfen Sie vor der Beauftragung diese Punkte:
 
 - **Didaktik und Technik aus einer Hand.** Schöne Software ohne Lernwirkung ist verschwendetes Budget, gutes Konzept ohne solide Technik auch.
-- **KI-Kompetenz.** Kann der Anbieter adaptive Lernpfade bauen und Ihr eigenes Wissen einbinden, statt nur einen Chatbot anzukleben?
+- **KI-Kompetenz.** Kann der Anbieter adaptive Lernpfade und einen echten Lern-Chatbot bauen, der auf Ihrem eigenen Wissen antwortet, statt nur einen generischen Assistenten anzukleben?
 - **DSGVO und Souveränität.** Hosting in Deutschland oder der EU, Auftragsverarbeitungsvertrag, sauberes Rollen- und Löschkonzept.
 - **Eigentum am Code.** Wem gehören Ergebnis und Quellen nach dem Projekt? Lassen Sie sich das schriftlich zusichern.
 - **Betrieb und Skalierung.** Wird die Lösung nach dem Go-Live gepflegt und ausgebaut, oder sind Sie danach allein?
@@ -3022,6 +3026,10 @@ Es kann und sollte es sein, aber nur, wenn es von Anfang an so gebaut wird. Acht
 ### Wem gehört der Code bzw. das geistige Eigentum?
 
 Das ist Verhandlungssache und gehört vor Projektstart schriftlich geklärt. Bei echter Individualentwicklung sollten die Rechte am erstellten Code und an den Inhalten bei Ihnen liegen, damit Sie nicht dauerhaft an einen Anbieter gebunden sind. Lassen Sie sich Eigentum, Nutzungsrechte und Herausgabe der Quellen vertraglich zusichern.
+
+### Kann man einen individuellen KI-Chatbot für das Lernen entwickeln lassen?
+
+Ja, ein individueller Lern-Chatbot ist einer der häufigsten Anwendungsfälle. Anders als ein generischer Assistent antwortet er auf Basis Ihres eigenen Unternehmenswissens, führt durch Lerninhalte und gibt Feedback. Für den betrieblichen Einsatz braucht es einen klaren Verarbeitungszweck, EU-Hosting und ein Trainingsdaten-Opt-out, damit der KI-Chatbot DSGVO-konform bleibt.
 
 ### Lohnt sich KI in individueller Lernsoftware?
 
