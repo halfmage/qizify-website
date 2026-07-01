@@ -622,7 +622,14 @@
     },
     "social": {
       "label": "Customer voice",
-      "headline": "What clients and partners say about working with us"
+      "headline": "What clients and partners say about working with us",
+      "featured": {
+        "name": "Prof. Dr. Carsten Wolff",
+        "title": "Board of Directors IDiAL",
+        "company": "FH Dortmund",
+        "quote": "We integrated a quiz-based AI platform across multiple teaching methods, from inverted classrooms to quiz-based homework. The software boosted student motivation and helped them pass exams more successfully. It adapts seamlessly to individual learning needs, which is exactly what modern higher education demands.",
+        "logo": "/images/fhdortmund-logo.png"
+      }
     },
     "process": {
       "label": "How we work",

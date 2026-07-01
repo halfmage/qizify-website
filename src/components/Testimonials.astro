@@ -6,13 +6,18 @@ interface Testimonial {
 	quote: string;
 }
 
+interface FeaturedTestimonial extends Testimonial {
+	logo?: string;
+}
+
 interface Props {
 	headline: string;
 	items: Testimonial[];
 	currentLang: 'en' | 'de';
+	featured?: FeaturedTestimonial;
 }
 
-const { headline, items, currentLang } = Astro.props;
+const { headline, items, currentLang, featured } = Astro.props;
 
 const testimonialImages: Record<string, string> = {
 	'Lienne Julie Wolff': 'lienne-julie-wolff.webp',
@@ -29,6 +34,26 @@ const testimonialImages: Record<string, string> = {
 				{headline}
 			</h2>
 		</div>
+
+		{featured && (
+			<div class="mb-8 bg-surface border border-accent/30 rounded-xl p-8 md:p-12 relative overflow-hidden">
+				<span class="absolute top-6 right-8 text-accent/30 font-serif text-7xl leading-none select-none pointer-events-none" aria-hidden="true">&ldquo;</span>
+				<blockquote class="text-lg md:text-xl leading-relaxed text-white m-0 max-w-4xl relative">
+					"{featured.quote}"
+				</blockquote>
+				<div class="flex items-center gap-4 pt-6 mt-6 border-t border-border">
+					{featured.logo && (
+						<div class="h-10 flex items-center bg-white rounded-md px-3 flex-shrink-0">
+							<img src={featured.logo} alt={featured.company} class="h-6 w-auto object-contain" loading="lazy" />
+						</div>
+					)}
+					<div class="flex flex-col">
+						<span class="text-base font-semibold text-white">{featured.name}</span>
+						<span class="text-sm text-muted">{featured.title}, {featured.company}</span>
+					</div>
+				</div>
+			</div>
+		)}
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
 			{items.map((testimonial) => {
