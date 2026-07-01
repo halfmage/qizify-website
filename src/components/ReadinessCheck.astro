@@ -8,52 +8,52 @@ import Button from './Button.astro';
 import { Icon } from 'astro-icon/components';
 
 const questions = [
-	{ dim: 'sync', text: 'Erfassen Sie synchrone Lernzeit getrennt von den Selbstlernphasen?', options: [
+	{ dim: 'sync', text: 'Wissen Sie jederzeit, wie viel Ihrer digitalen Lernzeit live betreut (synchron) stattfindet?', options: [
 		{ t: 'Ja, automatisch im System', s: 2 },
 		{ t: 'Teilweise, manuell', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'nachweise', text: 'Lassen sich Anwesenheit und Lernfortschritt prüfsicher exportieren?', options: [
+	{ dim: 'nachweise', text: 'Könnten Sie Anwesenheit und Lernfortschritt jederzeit prüfsicher exportieren, wenn morgen eine Prüfung anstünde?', options: [
 		{ t: 'Ja, auf Knopfdruck', s: 2 },
 		{ t: 'Ja, aber mit Aufwand', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'bfsg', text: 'Sind Ihre Plattform und Inhalte barrierefrei nach BFSG (WCAG 2.1 AA)?', options: [
+	{ dim: 'bfsg', text: 'Sind Ihre Lernplattform und Inhalte barrierefrei, wie es das BFSG verlangt?', options: [
 		{ t: 'Ja, geprüft', s: 2 },
 		{ t: 'In Arbeit', s: 1 },
 		{ t: 'Unklar oder nein', s: 0 },
 	] },
-	{ dim: 'adaptiv', text: 'Bieten Sie barrierefreie, individuell anpassbare Lernpfade an?', options: [
+	{ dim: 'adaptiv', text: 'Bekommen Lernende mit unterschiedlichem Tempo und Bedarf einen passenden, barrierefreien Lernweg?', options: [
 		{ t: 'Ja, durchgängig', s: 2 },
 		{ t: 'Ansatzweise', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'ki', text: 'Nutzen Sie eine KI-Lernbegleitung auf Ihren eigenen Inhalten?', options: [
+	{ dim: 'ki', text: 'Haben Ihre Lernenden einen KI-Lernbegleiter, der aus Ihren eigenen Inhalten antwortet?', options: [
 		{ t: 'Ja, im Einsatz', s: 2 },
 		{ t: 'Pilot oder geplant', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'euki', text: 'Haben Sie Ihre KI auf die EU-KI-Verordnung geprüft (Aufsicht, Transparenz, Dokumentation)?', options: [
+	{ dim: 'euki', text: 'Falls Sie KI einsetzen: Erfüllt sie die EU-KI-Verordnung, also menschliche Aufsicht, Transparenz und Dokumentation?', options: [
 		{ t: 'Ja, berücksichtigt', s: 2 },
 		{ t: 'Teilweise', s: 1 },
 		{ t: 'Nein oder kein Bezug', s: 0 },
 	] },
-	{ dim: 'daten', text: 'Werden Ihre Daten in Deutschland oder der EU verarbeitet, mit AVV?', options: [
+	{ dim: 'daten', text: 'Bleiben Ihre Lern- und Teilnehmerdaten in Deutschland oder der EU, abgesichert per Auftragsverarbeitungsvertrag (AVV)?', options: [
 		{ t: 'Ja, mit AVV', s: 2 },
 		{ t: 'Unklar', s: 1 },
 		{ t: 'Nein oder außerhalb der EU', s: 0 },
 	] },
-	{ dim: 'plattform', text: 'Können Sie Ihre Lernplattform flexibel um neue Funktionen erweitern?', options: [
+	{ dim: 'plattform', text: 'Wächst Ihre Lernplattform mit, wenn Sie neue Funktionen brauchen?', options: [
 		{ t: 'Ja, erweiterbar', s: 2 },
 		{ t: 'Standardtool mit Grenzen', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'kikompetenz', text: 'Fördern Sie die KI-Kompetenz Ihres Personals (EU-KI-Verordnung, seit Februar 2025)?', options: [
+	{ dim: 'kikompetenz', text: 'Ist Ihr Team im Umgang mit KI geschult, wie es die EU-KI-Verordnung seit Februar 2025 verlangt?', options: [
 		{ t: 'Ja', s: 2 },
 		{ t: 'In Planung', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'foerderung', text: 'Kennen Sie die passenden Förderwege (ESF Plus, BA) für Ihre Digitalisierung?', options: [
+	{ dim: 'foerderung', text: 'Wissen Sie, welche Förderwege Ihre Digitalisierung mitfinanzieren, etwa ESF Plus oder Mittel der Bundesagentur für Arbeit?', options: [
 		{ t: 'Ja, eingeplant', s: 2 },
 		{ t: 'Grob bekannt', s: 1 },
 		{ t: 'Nein', s: 0 },
