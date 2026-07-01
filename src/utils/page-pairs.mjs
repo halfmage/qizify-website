@@ -42,6 +42,7 @@ export const EN_TO_DE = {
 	'/blog/apprenticeship-framework-plan-explained': '/de/blog/ausbildungsrahmenplan-erklaert',
 	'/blog/does-ai-learning-help-apprentices': '/de/blog/lohnt-sich-ki-in-der-ausbildung',
 	'/blog/gdpr-compliant-ai-tools-for-trainers': '/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder',
+	'/blog/custom-e-learning-development-costs': '/de/blog/e-learning-entwickeln-lassen',
 };
 
 // Pages that exist only in one language and therefore should not emit
