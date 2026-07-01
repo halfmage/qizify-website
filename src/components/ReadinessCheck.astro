@@ -162,15 +162,15 @@ const config = {
 		<div id="rc-quiz" class="relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden shadow-2xl shadow-black/20" data-config={JSON.stringify(config)}>
 			<div class="flex items-center justify-between mb-2">
 				<span class="section-label block">Digital-Readiness-Check</span>
-				<span class="text-xs text-muted font-mono" id="rc-progress-text">1 / {defaultTotal}</span>
+				<span class="text-xs text-muted font-mono" id="rc-progress-text" aria-live="polite">1 / {defaultTotal}</span>
 			</div>
 			<div class="h-1.5 w-full bg-border rounded-full overflow-hidden mb-8">
-				<div class="h-full bg-primary transition-all duration-300" id="rc-progress-bar" style="width: 0%"></div>
+				<div class="h-full bg-primary transition-all duration-300" id="rc-progress-bar" style="width: 0%" role="progressbar" aria-valuemin="1" aria-valuenow="1" aria-valuemax={defaultTotal} aria-label="Fortschritt"></div>
 			</div>
 
 			{steps.map((q, i) => (
 				<div class="rc-question" data-dim={q.dim} data-branch={q.branch} data-index={i} style={i === 0 ? '' : 'display:none'}>
-					<h2 id={`rc-q-${i}`} class="text-heading-sm md:text-heading text-white m-0 mb-6">{q.text}</h2>
+					<h2 id={`rc-q-${i}`} tabindex="-1" class="text-heading-sm md:text-heading text-white m-0 mb-6 focus:outline-none">{q.text}</h2>
 					<div class="flex flex-col gap-3" role="radiogroup" aria-labelledby={`rc-q-${i}`}>
 						{q.options.map((o) => (
 							<label class="rc-option">
@@ -189,7 +189,7 @@ const config = {
 		</div>
 
 		<!-- Panel 2: the opt-in gate -->
-		<div id="rc-gate" class="hidden relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden">
+		<div id="rc-gate" tabindex="-1" class="hidden relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden focus:outline-none">
 			<span class="section-label block mb-4">Ihr Ergebnis</span>
 			<div class="flex items-baseline gap-3 mb-1">
 				<span class="text-display-sm text-white font-semibold" id="rc-teaser-score">0%</span>
@@ -221,6 +221,7 @@ const config = {
 					<div class="flex flex-col gap-1.5">
 						<label for="rc-role" class="text-sm font-medium text-white/80">Ihre Rolle (optional)</label>
 						<select id="rc-role" name="role" class="bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200">
+							<option value="">Bitte wählen</option>
 							<option value="Geschäftsführung">Geschäftsführung</option>
 							<option value="Pädagogische Leitung">Pädagogische Leitung</option>
 							<option value="Qualitätsmanagement / AZAV">Qualitätsmanagement / AZAV</option>
@@ -243,7 +244,7 @@ const config = {
 		</div>
 
 		<!-- Panel 3: the personalised result -->
-		<div id="rc-result" class="hidden relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden">
+		<div id="rc-result" tabindex="-1" class="hidden relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden focus:outline-none">
 			<span class="section-label block mb-4">Ihr Maßnahmenplan</span>
 			<div class="flex items-baseline gap-3 mb-2">
 				<span class="text-display-sm text-white font-semibold" id="rc-score-num">0%</span>
@@ -288,7 +289,12 @@ const config = {
 		const errorMessage = document.getElementById('rc-error');
 
 		let current = 0;
-		const answers = {}; // dim -> score (number) or choice (string)
+		// dim -> score (number: context + full branch) or choice (string: early branch).
+		// INVARIANT: dim keys must stay disjoint across branches. A shared key would let
+		// an early-branch string value leak into the full-path numeric sum (NaN score).
+		const answers = {};
+		const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		const scrollBehavior = reduceMotion ? 'auto' : 'smooth';
 
 		// Nav traverses context plus exactly one branch. Default to the full
 		// assessment; the context answer routes greenfield onto the short path.
@@ -298,12 +304,25 @@ const config = {
 				return b === 'context' || b === branch;
 			});
 		}
-		let activeSteps = stepsForBranch('full');
+		let activeBranch = 'full';
+		let activeSteps = stepsForBranch(activeBranch);
+
+		// A missing or invalid context level counts as greenfield (early path): safer to
+		// show the encouraging needs-discovery result than a misleading compliance score.
+		function isEarlyPath() {
+			const level = answers['ausgangslage'];
+			return typeof level !== 'number' || level <= 1;
+		}
 
 		function rebuildActiveSteps() {
-			const level = answers['ausgangslage'];
-			const branch = (typeof level === 'number' && level <= 1) ? 'early' : 'full';
-			activeSteps = stepsForBranch(branch);
+			activeBranch = isEarlyPath() ? 'early' : 'full';
+			activeSteps = stepsForBranch(activeBranch);
+		}
+
+		function focusCurrentStep() {
+			const el = activeSteps[current];
+			const heading = el ? el.querySelector('h2') : null;
+			if (heading) heading.focus({ preventScroll: true });
 		}
 
 		function selectedFor(i) {
@@ -316,12 +335,17 @@ const config = {
 			allSteps.forEach((q) => { q.style.display = 'none'; });
 			if (activeSteps[current]) activeSteps[current].style.display = '';
 			if (progressText) progressText.textContent = (current + 1) + ' / ' + total;
-			if (progressBar) progressBar.style.width = ((current + 1) / total * 100) + '%';
+			if (progressBar) {
+				progressBar.style.width = ((current + 1) / total * 100) + '%';
+				progressBar.setAttribute('aria-valuenow', String(current + 1));
+				progressBar.setAttribute('aria-valuemax', String(total));
+			}
 			if (backBtn) backBtn.disabled = current === 0;
 			const answered = !!selectedFor(current);
 			if (nextBtn) {
 				nextBtn.disabled = !answered;
-				nextBtn.textContent = current === total - 1 ? 'Ergebnis anzeigen' : 'Weiter';
+				const finalLabel = activeBranch === 'early' ? 'Auswertung anzeigen' : 'Ergebnis anzeigen';
+				nextBtn.textContent = current === total - 1 ? finalLabel : 'Weiter';
 			}
 		}
 
@@ -340,10 +364,10 @@ const config = {
 			});
 		});
 
-		if (backBtn) backBtn.addEventListener('click', () => { if (current > 0) { current--; render(); } });
+		if (backBtn) backBtn.addEventListener('click', () => { if (current > 0) { current--; render(); focusCurrentStep(); } });
 		if (nextBtn) nextBtn.addEventListener('click', () => {
 			if (!selectedFor(current)) return;
-			if (current < activeSteps.length - 1) { current++; render(); }
+			if (current < activeSteps.length - 1) { current++; render(); focusCurrentStep(); }
 			else { finish(); }
 		});
 
@@ -357,7 +381,7 @@ const config = {
 
 		function finish() {
 			const level = answers['ausgangslage'];
-			const isEarly = (typeof level === 'number' && level <= 1);
+			const isEarly = isEarlyPath();
 			lastEarly = isEarly;
 
 			const teaserScore = document.getElementById('rc-teaser-score');
@@ -393,7 +417,8 @@ const config = {
 
 			quiz.classList.add('hidden');
 			gate.classList.remove('hidden');
-			gate.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			gate.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
+			gate.focus({ preventScroll: true });
 		}
 
 		function buildResult() {
@@ -459,11 +484,15 @@ const config = {
 
 		form.addEventListener('submit', async (e) => {
 			e.preventDefault();
+			// Guard against a double submit while the request is in flight.
+			if (submitBtn && submitBtn.disabled) return;
+			if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Wird gesendet…'; }
 			if (errorMessage) errorMessage.classList.add('hidden');
 			const formData = new FormData(form);
-			// Netlify Forms only capture on the deployed site. On localhost we skip the
-			// network call so the full flow (including the result screen) is previewable.
-			const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
+			// Netlify Forms only capture on the deployed site. On the dev server (any
+			// host, incl. LAN previews) we skip the network call so the full flow is
+			// previewable; the loopback check keeps a local prod preview short-circuited too.
+			const isLocal = import.meta.env.DEV || ['localhost', '127.0.0.1'].includes(location.hostname);
 			try {
 				if (!isLocal) {
 					const response = await fetch('/', {
@@ -476,8 +505,10 @@ const config = {
 				buildResult();
 				gate.classList.add('hidden');
 				result.classList.remove('hidden');
-				result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				result.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
+				result.focus({ preventScroll: true });
 			} catch (error) {
+				if (submitBtn) { submitBtn.disabled = !(consent && consent.checked); submitBtn.textContent = 'Maßnahmenplan anzeigen'; }
 				if (errorMessage) {
 					errorMessage.textContent = 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.';
 					errorMessage.classList.remove('hidden');
@@ -549,4 +580,8 @@ const config = {
 		outline: 2px solid #7c5cfc;
 		outline-offset: 2px;
 	}
+	/* Reduced motion: transitions here are already neutralised globally by the
+	   !important reset in src/styles/global.css. The scrollIntoView calls in the
+	   script honour the preference separately (an explicit behavior:'smooth'
+	   overrides CSS scroll-behavior). */
 </style>
