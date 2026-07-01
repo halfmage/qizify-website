@@ -433,7 +433,7 @@ Custom e-learning development in 2026: what it costs, how a project runs, and ho
 - Custom e-learning development means commissioning a solution built for you rather than buying off-the-shelf software. It spans single learning modules, custom learning platforms and learning chatbots (AI tutors), simulations, serious games, and AI-driven learning apps.
 - Cost depends heavily on type and interactivity. Industry pricing surveys put custom content at roughly 5,000 to 50,000 dollars per finished hour, with full projects ranging from about 5,000 to over 100,000 dollars. Interactivity is the single biggest cost driver, according to development-time research by the Chapman Alliance and Brandon Hall Group.
 - A first usable module is often ready in 6 to 8 weeks; a complete solution with several building blocks takes 3 to 6 months. Budget for ongoing operation and iteration, not just the build.
-- Off-the-shelf software is cheap and instant but rarely fits your processes exactly. Custom development costs more, but you own the result, can extend it freely, and can build in AI and your own knowledge.
+- Off-the-shelf software is cheap and instant but rarely fits your processes exactly. Custom development costs more up front, but you own the result, can extend it freely, and can build in AI and your own knowledge. As a one-time investment rather than a recurring per-user licence, it pays off over the years, especially for anyone training large groups: training providers, universities, and course providers.
 - When choosing a vendor, look for both instructional design and software engineering, GDPR-compliant EU hosting, a clear agreement on who owns the code, and a partner who plans for operation and scale.
 
 ![Two professionals discussing a custom e-learning project at a laptop](/images/blog/custom-elearning-consultation.webp)
@@ -496,11 +496,14 @@ There are three routes, and the right one depends on how specific your requireme
 | Criterion | Standard LMS (buy or rent) | Custom development |
 |---|---|---|
 | Entry cost | low, often from a few hundred dollars per month | higher, one-off from the mid five figures |
+| Cost over the years | recurring per-user licence fees, ongoing | one-time investment, then only operation |
 | Fit to your processes | limited, you adapt to it | exact, it adapts to you |
 | Time to value | instant | weeks to months |
 | AI and personalisation | limited to what the tool offers | freely designed |
 | Ownership and data control | with the vendor | with you |
 | Scaling and extension | within the vendor's limits | no fixed ceiling |
+
+The difference many see only later is the cost over time. A standard LMS is billed per user per month, usually indefinitely: the more learners you have and the longer you use it, the more it costs, and in the end you own nothing. Custom development is a one-time investment. You pay once to build it, then only for operation and further development, and you use the same solution for years. That is why building your own pays off above all for organisations that train large groups: training providers, universities, continuing-education and course providers, and companies with many learners. Past a certain number of users, a tailored solution comes in below the accumulating licence fees, and it fits you exactly rather than the other way around.
 
 Building fully in-house is the fourth option, and it only pays off if you have your own team combining instructional design and software engineering. For most companies the honest answer is: off-the-shelf while your requirements are standard, and custom development the moment the solution has to truly fit, belong to you, and grow with AI.
 
@@ -2900,7 +2903,7 @@ E-Learning entwickeln lassen: Was es kostet, wie ein Projekt abläuft und worauf
 - E-Learning entwickeln lassen heißt: Sie beauftragen eine maßgeschneiderte Lösung statt einer Standardsoftware. Das reicht von einzelnen Lernmodulen über individuelle Lernplattformen und Lern-Chatbots (KI-Lernassistenten) bis zu Serious Games und KI-gestützten Lernanwendungen.
 - Die Kosten hängen stark vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute. Eine individuelle Lernplattform liegt nach Angaben von Entwicklungsdienstleistern bei etwa 13.000 bis 90.000 Euro, ein Serious Game beginnt bei rund 15.000 Euro. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
 - Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung mit mehreren Bausteinen in 3 bis 6 Monaten. Planen Sie laufende Kosten für Betrieb und Weiterentwicklung ein.
-- Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen.
+- Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet einmalig mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen. Als einmalige Investition statt laufender Lizenzgebühren pro Nutzer rechnet es sich über die Jahre besonders für alle, die große Gruppen ausbilden, etwa Bildungsträger, Hochschulen und Kursanbieter.
 - Achten Sie bei der Auswahl auf beides: didaktische und technische Kompetenz, DSGVO-konformes EU-Hosting, eine klare Regelung zum Eigentum am Code und einen Anbieter, der Betrieb und Skalierung mitdenkt.
 
 ![Zwei Fachleute besprechen an einem Laptop ein individuelles E-Learning-Projekt](/images/blog/custom-elearning-consultation.webp)
@@ -2963,11 +2966,14 @@ Es gibt drei Wege, und der richtige hängt davon ab, wie speziell Ihre Anforderu
 | Kriterium | Standard-LMS (Kauf oder Miete) | E-Learning entwickeln lassen |
 |---|---|---|
 | Einstiegskosten | niedrig, oft ab 99 bis 249 Euro pro Monat | höher, einmalig ab ca. 13.000 Euro |
+| Kosten über die Jahre | laufende Lizenzgebühren pro Nutzer, dauerhaft | einmalige Investition, danach nur Betrieb |
 | Passung zu Ihren Prozessen | begrenzt, Sie passen sich an | exakt, die Software passt sich an |
 | Time-to-Value | sofort startklar | Wochen bis Monate |
 | KI und Personalisierung | begrenzt auf das, was das Tool bietet | frei gestaltbar |
 | Eigentum und Datenhoheit | beim Anbieter | bei Ihnen |
 | Skalierung und Erweiterung | im Rahmen des Anbieters | ohne feste Grenze |
+
+Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Standard-LMS wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb und Weiterentwicklung, und Sie nutzen dieselbe Lösung über Jahre. Genau deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen ausbilden: Bildungsträger, Hochschulen und Universitäten, Weiterbildungs- und Kursanbieter sowie Unternehmen mit vielen Lernenden. Ab einer gewissen Nutzerzahl liegt die maßgeschneiderte Lösung unter den auflaufenden Lizenzgebühren, und sie passt exakt zu Ihnen statt umgekehrt.
 
 Selbst entwickeln ist die vierte Option und lohnt sich nur, wenn Sie ein eigenes Team aus Didaktik und Softwareentwicklung haben. Für die meisten Unternehmen ist die ehrliche Antwort: Standardsoftware, solange die Anforderungen Standard sind, und Individualentwicklung, sobald die Lösung wirklich passen, Ihnen gehören und mit KI wachsen soll.
 
