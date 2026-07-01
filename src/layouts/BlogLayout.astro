@@ -347,7 +347,11 @@ const blogPostingSchema = {
 		termsLabel={content.footer.termsLabel}
 	/>
 
-	{isConsultation ? <ConsultationModal currentLang={lang} /> : <DemoRequestModal currentLang={lang} />}
+	<!-- DemoRequestModal stays on every post so the shared Footer's #demo-request link
+	     always resolves; consultation posts additionally mount ConsultationModal for
+	     their #project-inquiry strategy-call/quote CTAs. -->
+	<DemoRequestModal currentLang={lang} />
+	{isConsultation && <ConsultationModal currentLang={lang} />}
 
 	<script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema).replace(/<\/script/gi, '<\\/script')} />
 	{faqPageSchema && (
