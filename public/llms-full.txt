@@ -507,7 +507,7 @@ The difference many see only later is the cost over time. A standard LMS is bill
 
 Building fully in-house is the fourth option, and it only pays off if you have your own team combining instructional design and software engineering. For most companies the honest answer is: off-the-shelf while your requirements are standard, and custom development the moment the solution has to truly fit, belong to you, and grow with AI.
 
-**Not sure which route fits you?** A [free strategy call](/solutions#project-inquiry) outlines your case in 30 minutes, no pitch, with a straight answer on whether custom development is worth it for you.
+**Not sure which route fits you?** Request a [no-obligation quote](/solutions#project-inquiry), or outline your case in a free 30-minute strategy call, no pitch, with a straight answer on whether custom development is worth it for you.
 
 ## What to Look For When Choosing a Vendor
 
@@ -534,7 +534,7 @@ That is exactly what our offering is built around. To see how LearnSlice deliver
 
 Commissioning custom e-learning is not a leap in the dark if you go about it in a structured way. First, decide whether you need content or software. Second, budget against realistic market figures rather than the cheapest quote. Third, check the vendor on instructional design, engineering, data protection, and ownership. And fourth, start small with a first module you test on real users before commissioning the full project.
 
-**Let's outline your project.** Book a [free strategy call](/solutions#project-inquiry): 30 minutes, no pitch, and a concrete roadmap for your own e-learning solution at the end. For examples and the process first, see our page on [custom e-learning solutions](/solutions). To put it to work in apprenticeship training, see [LearnSlice for companies](/companies).
+**Let's outline your project.** Request a [no-obligation quote](/solutions#project-inquiry) or book a free strategy call: no pitch, and a concrete roadmap plus a ballpark price for your own e-learning solution at the end. For examples and the process first, see our page on [custom e-learning solutions](/solutions). To put it to work in apprenticeship training, see [LearnSlice for companies](/companies).
 
 
 ## Frequently Asked Questions
@@ -2977,7 +2977,7 @@ Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein
 
 Selbst entwickeln ist die vierte Option und lohnt sich nur, wenn Sie ein eigenes Team aus Didaktik und Softwareentwicklung haben. Für die meisten Unternehmen ist die ehrliche Antwort: Standardsoftware, solange die Anforderungen Standard sind, und Individualentwicklung, sobald die Lösung wirklich passen, Ihnen gehören und mit KI wachsen soll.
 
-**Unsicher, welcher Weg zu Ihnen passt?** In einem [kostenlosen Strategiegespräch](/de/loesungen#project-inquiry) umreißen wir Ihren Fall in 30 Minuten, ohne Pitch, mit einer ehrlichen Einschätzung, ob sich Individualentwicklung für Sie lohnt.
+**Unsicher, welcher Weg zu Ihnen passt?** Fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an oder umreißen Sie Ihren Fall in einem kostenlosen 30-minütigen Strategiegespräch, ohne Pitch, mit einer ehrlichen Einschätzung, ob sich Individualentwicklung für Sie lohnt.
 
 ## Worauf Sie bei der Auswahl eines Anbieters achten
 
@@ -3004,7 +3004,7 @@ Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle E-Learn
 
 E-Learning entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie strukturiert vorgehen. Klären Sie erstens, ob Sie Content oder Software brauchen. Rechnen Sie zweitens mit realistischen Marktpreisen statt mit dem günstigsten Angebot. Prüfen Sie drittens den Anbieter auf Didaktik, Technik, Datenschutz und Eigentum. Und starten Sie viertens klein, mit einem ersten Modul, das Sie mit echten Nutzern testen, bevor Sie das volle Projekt beauftragen.
 
-**Lassen Sie uns Ihr Projekt umreißen.** Buchen Sie ein [kostenloses Strategiegespräch](/de/loesungen#project-inquiry): 30 Minuten, kein Pitch, am Ende eine konkrete Roadmap für Ihre eigene E-Learning-Lösung. Beispiele und den Ablauf sehen Sie vorab auf der Seite zu unseren [individuellen E-Learning-Lösungen](/de/loesungen). Für den betrieblichen Einsatz in der Ausbildung finden Sie den Überblick unter [LearnSlice für Unternehmen](/de/companies).
+**Lassen Sie uns Ihr Projekt umreißen.** Fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an oder buchen Sie ein kostenloses Strategiegespräch: kein Pitch, am Ende eine konkrete Roadmap und ein Preisrahmen für Ihre eigene E-Learning-Lösung. Beispiele und den Ablauf sehen Sie vorab auf der Seite zu unseren [individuellen E-Learning-Lösungen](/de/loesungen). Für den betrieblichen Einsatz in der Ausbildung finden Sie den Überblick unter [LearnSlice für Unternehmen](/de/companies).
 
 
 ## Häufig gestellte Fragen

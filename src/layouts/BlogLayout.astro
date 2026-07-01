@@ -72,9 +72,9 @@ const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
 
 const sidebarCta = isConsultation
 	? {
-		title: lang === 'en' ? 'Outline your project' : 'Ihr Projekt umreißen',
-		sub: lang === 'en' ? '30-min strategy call, no pitch.' : '30-Min-Strategiegespräch, kein Pitch.',
-		button: lang === 'en' ? 'Book a strategy call' : 'Strategiegespräch buchen',
+		title: lang === 'en' ? 'Quote or strategy call' : 'Angebot oder Gespräch',
+		sub: lang === 'en' ? 'A quote or a 30-min call, no pitch.' : 'Kostenschätzung oder 30-Min-Gespräch, kein Pitch.',
+		button: lang === 'en' ? 'Get a project quote' : 'Angebot anfragen',
 	}
 	: {
 		title: lang === 'en' ? 'See it on your occupation' : 'An Ihrem Beruf sehen',
@@ -87,8 +87,10 @@ const sidebarCta = isConsultation
 const footerCta = isConsultation
 	? {
 		headline: content.solutions.cta.headline,
-		subheadline: content.solutions.cta.subheadline,
-		button: content.solutions.cta.button,
+		subheadline: lang === 'en'
+			? 'Request a no-obligation quote or book a free 30-minute strategy call. No pitch, just a concrete roadmap and a ballpark price.'
+			: 'Fordern Sie eine unverbindliche Kostenschätzung an oder buchen Sie ein kostenloses 30-Minuten-Strategiegespräch. Kein Pitch, nur eine konkrete Roadmap und ein Preisrahmen.',
+		button: lang === 'en' ? 'Get a project quote' : 'Angebot anfragen',
 		note: content.solutions.cta.note,
 		href: '#project-inquiry',
 	}

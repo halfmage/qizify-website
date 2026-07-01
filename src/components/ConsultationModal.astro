@@ -45,14 +45,14 @@ const timelines = currentLang === 'en'
 
 		<div class="p-8 md:p-10">
 			<div class="mb-6">
-				<span class="section-label block mb-3">{currentLang === 'en' ? 'Strategy call' : 'Strategiegespräch'}</span>
+				<span class="section-label block mb-3">{currentLang === 'en' ? 'Your project' : 'Ihr Projekt'}</span>
 				<h2 class="text-heading-sm text-white m-0 mb-2" id="project-modal-title">
-					{currentLang === 'en' ? 'Book a strategy call' : 'Strategiegespräch buchen'}
+					{currentLang === 'en' ? 'Get a quote or book a call' : 'Angebot anfordern oder Gespräch buchen'}
 				</h2>
 				<p class="text-sm text-muted m-0">
 					{currentLang === 'en'
-						? 'No sales pitch, just a concrete roadmap for your organisation.'
-						: 'Kein Pitch, nur eine konkrete Roadmap für Ihre Organisation.'}
+						? 'No sales pitch. You get a concrete roadmap and a no-obligation cost estimate.'
+						: 'Kein Pitch. Sie erhalten eine konkrete Roadmap und eine unverbindliche Kostenschätzung.'}
 				</p>
 			</div>
 
@@ -172,13 +172,13 @@ const timelines = currentLang === 'en'
 				</div>
 
 				<button type="submit" class="bg-primary text-white border-none rounded-lg px-6 py-2.5 text-sm font-medium cursor-pointer hover:bg-[#6a4ae0] active:bg-[#5c3dd4] transition-all duration-200 font-sans mt-1 disabled:opacity-50 disabled:cursor-not-allowed">
-					{currentLang === 'en' ? 'Request my strategy call' : 'Strategiegespräch anfragen'}
+					{currentLang === 'en' ? 'Request my quote' : 'Angebot anfragen'}
 				</button>
 
 				<p class="text-xs text-muted text-center -mt-1">
 					{currentLang === 'en'
-						? '30-min call · no pitch · reply within 1 business day'
-						: '30-Min-Gespräch · kein Pitch · Antwort innerhalb von 1 Werktag'}
+						? 'no pitch · roadmap and cost estimate · reply within 1 business day'
+						: 'kein Pitch · Roadmap und Kostenschätzung · Antwort innerhalb von 1 Werktag'}
 				</p>
 			</form>
 
