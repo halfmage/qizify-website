@@ -345,13 +345,13 @@ const blogPostingSchema = {
 		currentLang={lang}
 		privacyLabel={content.footer.privacyLabel}
 		termsLabel={content.footer.termsLabel}
+		demoHref={isConsultation ? '#project-inquiry' : '#demo-request'}
 	/>
 
-	<!-- DemoRequestModal stays on every post so the shared Footer's #demo-request link
-	     always resolves; consultation posts additionally mount ConsultationModal for
-	     their #project-inquiry strategy-call/quote CTAs. -->
-	<DemoRequestModal currentLang={lang} />
-	{isConsultation && <ConsultationModal currentLang={lang} />}
+	<!-- Each post renders exactly the modal its CTAs (and the footer link) point to:
+	     ConsultationModal (#project-inquiry) for consultation posts, DemoRequestModal
+	     (#demo-request) otherwise. -->
+	{isConsultation ? <ConsultationModal currentLang={lang} /> : <DemoRequestModal currentLang={lang} />}
 
 	<script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema).replace(/<\/script/gi, '<\\/script')} />
 	{faqPageSchema && (

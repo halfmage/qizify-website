@@ -4,9 +4,13 @@ interface Props {
 	privacyLabel: string;
 	termsLabel: string;
 	imprintLabel?: string;
+	// Where the footer "Request Demo" link points. Defaults to the demo modal;
+	// pages that render ConsultationModal instead (solutions cluster, consultation
+	// blog posts) pass '#project-inquiry' so the link resolves to a modal on the page.
+	demoHref?: string;
 }
 
-const { currentLang, privacyLabel, termsLabel, imprintLabel } = Astro.props;
+const { currentLang, privacyLabel, termsLabel, imprintLabel, demoHref = '#demo-request' } = Astro.props;
 
 const currentYear = new Date().getFullYear();
 const basePath = currentLang === 'de' ? '/de' : '';
@@ -21,7 +25,7 @@ const footerColumns = currentLang === 'en'
 				{ label: 'Savings Calculator', href: '/apprenticeship-savings-calculator' },
 					{ label: 'Research', href: '/research' },
 				{ label: 'Blog', href: '/blog' },
-				{ label: 'Request Demo', href: '#demo-request' },
+				{ label: 'Request Demo', href: demoHref },
 			],
 		},
 		useCases: {
@@ -58,7 +62,7 @@ const footerColumns = currentLang === 'en'
 				{ label: 'Einsparungsrechner', href: '/de/ausbildungskosten-rechner' },
 					{ label: 'Forschung', href: '/de/forschung' },
 				{ label: 'Blog', href: '/de/blog' },
-				{ label: 'Demo anfordern', href: '#demo-request' },
+				{ label: 'Demo anfordern', href: demoHref },
 			],
 		},
 		useCases: {
