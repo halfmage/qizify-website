@@ -13,6 +13,10 @@ const blog = defineCollection({
 		translationSlug: z.string().optional(),
 		ogImage: z.string().optional(),
 		draft: z.boolean().default(false),
+		// ctaVariant: which conversion path the shared BlogLayout renders.
+		// 'demo' (default) = product-demo CTA + DemoRequestModal (Azubi platform posts).
+		// 'consultation' = strategy-call CTA + ConsultationModal (solutions / custom-dev posts).
+		ctaVariant: z.enum(['demo', 'consultation']).default('demo'),
 		// keyTakeaways: 3–5 bullets, rendered as a card above the article body
 		// and used by AI engines as a verbatim-citation target. Plain text only.
 		keyTakeaways: z.array(z.string()).optional(),

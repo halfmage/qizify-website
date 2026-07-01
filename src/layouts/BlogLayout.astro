@@ -6,6 +6,7 @@ import BlogCard from '../components/BlogCard.astro';
 import CTAFooter from '../components/CTAFooter.astro';
 import Footer from '../components/Footer.astro';
 import DemoRequestModal from '../components/DemoRequestModal.astro';
+import ConsultationModal from '../components/ConsultationModal.astro';
 import enContent from '../content/en.json';
 import deContent from '../content/de.json';
 
@@ -21,9 +22,10 @@ interface Props {
 	ogImage?: string;
 	keyTakeaways?: string[];
 	faq?: { q: string; a: string }[];
+	ctaVariant?: 'demo' | 'consultation';
 }
 
-const { title, description, lang, publishDate, updatedDate, author, tags, slug, ogImage, keyTakeaways, faq } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo' } = Astro.props;
 
 const content = lang === 'en' ? enContent : deContent;
 const basePath = lang === 'de' ? '/de' : '';
@@ -63,9 +65,40 @@ const relatedHeading = lang === 'en' ? 'More on this topic' : 'Mehr zum Thema';
 const takeawaysHeading = lang === 'en' ? 'Key Takeaways' : 'Auf einen Blick';
 const faqHeading = lang === 'en' ? 'Frequently Asked Questions' : 'Häufig gestellte Fragen';
 const tocLabel = lang === 'en' ? 'On this page' : 'Auf dieser Seite';
-const sidebarCtaTitle = lang === 'en' ? 'See it on your occupation' : 'An Ihrem Beruf sehen';
-const sidebarCtaSub = lang === 'en' ? '30-min demo, no pitch.' : '30-Min-Demo, kein Pitch.';
-const sidebarCtaButton = lang === 'en' ? 'Get demo access' : 'Demo-Zugang erhalten';
+// Conversion path is chosen per post via `ctaVariant`. Solutions/custom-dev posts
+// use the strategy-call consultation flow; everything else keeps the product demo.
+const isConsultation = ctaVariant === 'consultation';
+const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
+
+const sidebarCta = isConsultation
+	? {
+		title: lang === 'en' ? 'Outline your project' : 'Ihr Projekt umreißen',
+		sub: lang === 'en' ? '30-min strategy call, no pitch.' : '30-Min-Strategiegespräch, kein Pitch.',
+		button: lang === 'en' ? 'Book a strategy call' : 'Strategiegespräch buchen',
+	}
+	: {
+		title: lang === 'en' ? 'See it on your occupation' : 'An Ihrem Beruf sehen',
+		sub: lang === 'en' ? '30-min demo, no pitch.' : '30-Min-Demo, kein Pitch.',
+		button: lang === 'en' ? 'Get demo access' : 'Demo-Zugang erhalten',
+	};
+
+// Footer CTA: consultation posts reuse the solutions strategy-call copy (headline,
+// sub, button, micro-proof note); demo posts keep the site-wide blog CTA.
+const footerCta = isConsultation
+	? {
+		headline: content.solutions.cta.headline,
+		subheadline: content.solutions.cta.subheadline,
+		button: content.solutions.cta.button,
+		note: content.solutions.cta.note,
+		href: '#project-inquiry',
+	}
+	: {
+		headline: content.cta.headline,
+		subheadline: content.cta.subheadline,
+		button: content.cta.button,
+		note: undefined,
+		href: '#demo-request',
+	};
 
 const faqPageSchema = faq && faq.length > 0 ? {
 	'@context': 'https://schema.org',
@@ -135,7 +168,8 @@ const blogPostingSchema = {
 	<Header
 		logo={content.nav.logo}
 		menu={content.nav.menu}
-		cta={content.nav.cta}
+		cta={isConsultation ? content.solutions.hero.ctaPrimary : content.nav.cta}
+		ctaModalTrigger={ctaTrigger}
 		currentLang={lang}
 		currentPath={currentPath}
 	/>
@@ -240,14 +274,14 @@ const blogPostingSchema = {
 						<nav id="toc" aria-label={tocLabel} class="flex flex-col border-l border-border text-sm"></nav>
 					</div>
 					<a
-						href="#demo-request"
-						data-modal-trigger="demo-request"
+						href={`#${ctaTrigger}`}
+						data-modal-trigger={ctaTrigger}
 						class="group block rounded-lg border border-border bg-surface p-5 hover:border-primary/40 transition-colors"
 					>
-						<p class="text-white font-semibold text-sm mb-1">{sidebarCtaTitle}</p>
-						<p class="text-muted text-xs mb-3 leading-relaxed">{sidebarCtaSub}</p>
+						<p class="text-white font-semibold text-sm mb-1">{sidebarCta.title}</p>
+						<p class="text-muted text-xs mb-3 leading-relaxed">{sidebarCta.sub}</p>
 						<span class="inline-flex items-center gap-1 text-primary text-sm font-medium">
-							{sidebarCtaButton}
+							{sidebarCta.button}
 							<span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
 						</span>
 					</a>
@@ -295,9 +329,11 @@ const blogPostingSchema = {
 	)}
 
 	<CTAFooter
-		headline={content.cta.headline}
-		subheadline={content.cta.subheadline}
-		button={content.cta.button}
+		headline={footerCta.headline}
+		subheadline={footerCta.subheadline}
+		button={footerCta.button}
+		buttonHref={footerCta.href}
+		note={footerCta.note}
 		currentLang={lang}
 	/>
 
@@ -307,7 +343,7 @@ const blogPostingSchema = {
 		termsLabel={content.footer.termsLabel}
 	/>
 
-	<DemoRequestModal currentLang={lang} />
+	{isConsultation ? <ConsultationModal currentLang={lang} /> : <DemoRequestModal currentLang={lang} />}
 
 	<script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema).replace(/<\/script/gi, '<\\/script')} />
 	{faqPageSchema && (
