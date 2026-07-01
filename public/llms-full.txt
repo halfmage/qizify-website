@@ -436,7 +436,7 @@ Custom e-learning development in 2026: what it costs, how a project runs, and ho
 - Off-the-shelf software is cheap and instant but rarely fits your processes exactly. Custom development costs more, but you own the result, can extend it freely, and can build in AI and your own knowledge.
 - When choosing a vendor, look for both instructional design and software engineering, GDPR-compliant EU hosting, a clear agreement on who owns the code, and a partner who plans for operation and scale.
 
-![Software engineer working on custom e-learning software at a screen](/images/blog/pexels-thisisengineering-19895876.webp)
+![Two professionals discussing a custom e-learning project at a laptop](/images/blog/custom-elearning-consultation.webp)
 
 ## Custom E-Learning Development: When It Is Worth It
 
@@ -2899,7 +2899,7 @@ E-Learning entwickeln lassen: Was es kostet, wie ein Projekt abläuft und worauf
 - Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen.
 - Achten Sie bei der Auswahl auf beides: didaktische und technische Kompetenz, DSGVO-konformes EU-Hosting, eine klare Regelung zum Eigentum am Code und einen Anbieter, der Betrieb und Skalierung mitdenkt.
 
-![Softwareentwicklerin arbeitet am Bildschirm an individueller E-Learning-Software](/images/blog/pexels-thisisengineering-19895876.webp)
+![Zwei Fachleute besprechen an einem Laptop ein individuelles E-Learning-Projekt](/images/blog/custom-elearning-consultation.webp)
 
 ## E-Learning entwickeln lassen: Wann sich Individualentwicklung lohnt
 
