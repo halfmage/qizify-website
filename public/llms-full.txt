@@ -2903,16 +2903,16 @@ E-Learning entwickeln lassen: Was es kostet, wie ein Projekt abläuft und worauf
 - E-Learning entwickeln lassen heißt: Sie beauftragen eine maßgeschneiderte Lösung statt einer Standardsoftware. Das reicht von einzelnen Lernmodulen über individuelle Lernplattformen und Lern-Chatbots (KI-Lernassistenten) bis zu Serious Games und KI-gestützten Lernanwendungen.
 - Die Kosten hängen stark vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute. Eine individuelle Lernplattform liegt nach Angaben von Entwicklungsdienstleistern bei etwa 13.000 bis 90.000 Euro, ein Serious Game beginnt bei rund 15.000 Euro. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
 - Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung mit mehreren Bausteinen in 3 bis 6 Monaten. Planen Sie laufende Kosten für Betrieb und Weiterentwicklung ein.
-- Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet einmalig mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen. Als einmalige Investition statt laufender Lizenzgebühren pro Nutzer rechnet es sich über die Jahre besonders für alle, die große Gruppen ausbilden, etwa Bildungsträger, Hochschulen und Kursanbieter.
+- Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet einmalig mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen. Als einmalige Investition statt laufender Lizenzgebühren pro Nutzer rechnet es sich über die Jahre besonders für alle, die große Gruppen schulen oder ausbilden, etwa Bildungsträger, Hochschulen und Kursanbieter.
 - Achten Sie bei der Auswahl auf beides: didaktische und technische Kompetenz, DSGVO-konformes EU-Hosting, eine klare Regelung zum Eigentum am Code und einen Anbieter, der Betrieb und Skalierung mitdenkt.
 
 ![Zwei Fachleute besprechen an einem Laptop ein individuelles E-Learning-Projekt](/images/blog/custom-elearning-consultation.webp)
 
 ## E-Learning entwickeln lassen: Wann sich Individualentwicklung lohnt
 
-E-Learning entwickeln zu lassen lohnt sich, sobald Standardsoftware Ihre Anforderungen nicht mehr abdeckt: wenn die Inhalte zu speziell sind, die Prozesse zu eigen, die Datenschutzanforderungen zu hoch oder wenn Sie KI und eigenes Unternehmenswissen einbinden wollen.
+E-Learning entwickeln zu lassen lohnt sich, sobald Standardsoftware Ihre Anforderungen nicht mehr abdeckt: wenn die Inhalte zu speziell sind, die Abläufe zu individuell, die Datenschutzanforderungen zu hoch oder wenn Sie KI und eigenes Unternehmenswissen einbinden wollen.
 
-Die meisten Unternehmen kommen nicht aus Neugier zu dieser Frage. Sie kommen, weil ein fertiges Tool an einer Stelle klemmt, die zentral ist, und weil ein Fehlkauf doppelt kostet: die Lizenz und das Jahr, das mit einem Tool vergeht, das am Ende niemand nutzt. Das LMS bildet den eigenen Ausbildungsablauf nicht ab. Die Compliance-Schulung wirkt beliebig, weil sie nicht nach dem eigenen Betrieb aussieht. Oder der Datenschutz erlaubt das Wunsch-Tool schlicht nicht. Dass eine maßgeschneiderte Lösung helfen würde, müssen wir Ihnen nicht erklären. Sie wollen wissen, was das kostet, wie es abläuft und woran Sie einen guten Anbieter erkennen.
+Die meisten Unternehmen kommen nicht aus Neugier zu dieser Frage. Sie kommen, weil ein fertiges Tool an einer Stelle klemmt, die zentral ist, und weil ein Fehlkauf doppelt kostet: die Lizenz und das Jahr, das mit einem Tool vergeht, das am Ende niemand nutzt. Das LMS bildet die eigenen Abläufe nicht ab. Die Compliance-Schulung wirkt beliebig, weil sie nicht nach dem eigenen Betrieb aussieht. Oder der Datenschutz erlaubt das Wunsch-Tool schlicht nicht. Dass eine maßgeschneiderte Lösung helfen würde, müssen wir Ihnen nicht erklären. Sie wollen wissen, was das kostet, wie es abläuft und woran Sie einen guten Anbieter erkennen.
 
 Genau darum geht es in diesem Leitfaden: um Zahlen, den realistischen Ablauf und die Kriterien, die zählen, wenn Sie **E-Learning entwickeln lassen** wollen.
 
@@ -2936,14 +2936,14 @@ Die Kosten hängen vor allem vom Typ und vom Grad der Interaktivität ab. Kurz g
 | Serious Game / Simulation | ab ca. 15.000 Euro pro Modul, 30.000 bis 80.000 Euro komplett | 6 Wochen bis 6 Monate |
 | Betrieb und Weiterentwicklung | laufend, häufig ein Anteil der Entwicklungskosten pro Jahr | dauerhaft |
 
-Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [Honorarempfehlung der Verbände BDVT und VBT](https://www.bdvt.de/bdvt/teilen/honorar-empfehlungen.php), die [Entwicklungszeit-Studie der Chapman Alliance und Brandon Hall Group](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860) sowie auf Angaben spezialisierter Entwicklungsdienstleister. Für die meisten mittelständischen Projekte bedeutet das eine fünfstellige Investition, die sich über eingesparte Ausbilderzeit und vermiedene Lizenzen rechnet, kein sechsstelliges Wagnis. Ein 30-minütiges Gespräch macht aus diesen Spannen eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
+Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [Honorarempfehlung der Verbände BDVT und VBT](https://www.bdvt.de/bdvt/teilen/honorar-empfehlungen.php), die [Entwicklungszeit-Studie der Chapman Alliance und Brandon Hall Group](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860) sowie auf Angaben spezialisierter Entwicklungsdienstleister. Für die meisten Projekte im Mittelstand bedeutet das eine fünfstellige Investition, die sich über eingesparte Zeit und vermiedene Lizenzkosten rechnet, kein sechsstelliges Wagnis. Ein 30-minütiges Gespräch macht aus diesen Spannen eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
 
-1. **Interaktivität.** Der mit Abstand größte Kostentreiber. Die Entwicklungszeit-Studie der Chapman Alliance und der Brandon Hall Group beziffert es so: pro fertiger Lernstunde stecken je nach Interaktivität rund 80 bis 300 Stunden Entwicklung dahinter. Ein Klick-durch-Kurs ist günstig, eine verzweigte Simulation teuer.
-2. **Integrationen.** Anbindungen an bestehende Systeme wie HR-Software, ein vorhandenes LMS oder ein Single-Sign-on treiben den Aufwand.
+1. **Interaktivität.** Der mit Abstand größte Kostentreiber. Die Entwicklungszeit-Studie der Chapman Alliance und der Brandon Hall Group beziffert den Aufwand so: pro fertiger Lernstunde stecken je nach Interaktivität rund 80 bis 300 Stunden Entwicklung dahinter. Ein einfacher Durchklick-Kurs ist günstig, eine verzweigte Simulation teuer.
+2. **Integrationen.** Anbindungen an bestehende Systeme wie HR-Software, ein vorhandenes LMS oder ein Single Sign-on (SSO) treiben den Aufwand.
 3. **KI und Personalisierung.** Adaptive Lernpfade und die Einbindung eigenen Unternehmenswissens kosten mehr, sind aber oft der eigentliche Grund für die Individualentwicklung.
 4. **Umfang und Nutzungsrechte.** Mehr Inhalte, mehr Sprachen, mehr Rollen und die Übergabe des vollen Eigentums schlagen sich im Preis nieder.
 
-Beim Preismodell begegnen Ihnen drei Varianten: **Festpreis** (Planbarkeit bei klarem Umfang), **Time and Material** (Flexibilität bei offenem Umfang) und **Abrechnung pro Lernstunde** (typisch bei reinem Content). Für Softwareprojekte mit sich schärfendem Umfang ist eine Mischung üblich: ein fixer Rahmen plus iterative Weiterentwicklung.
+Beim Preismodell begegnen Ihnen drei Varianten: **Festpreis** (Planbarkeit bei klarem Umfang), **Abrechnung nach Aufwand** (Time and Material, flexibel bei offenem Umfang) und **Abrechnung pro Lernstunde** (typisch bei reinem Content). Für Softwareprojekte, deren Umfang sich erst im Verlauf klärt, ist eine Mischung üblich: ein fixer Rahmen plus iterative Weiterentwicklung.
 
 Wenn Sie die Wirtschaftlichkeit gegenüber der bisherigen Lösung durchrechnen wollen, hilft ein nüchterner Vergleich aus eingesparter Zeit, vermiedenen Lizenzkosten und schnellerem Kompetenzaufbau. Wie so eine Rechnung im Ausbildungskontext aussieht, zeigt unser [Überblick zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
 
@@ -2951,13 +2951,13 @@ Wenn Sie die Wirtschaftlichkeit gegenüber der bisherigen Lösung durchrechnen w
 
 Ein gutes Projekt läuft in klaren Phasen, und Sie sehen früh etwas Nutzbares statt erst am Ende. So sieht der typische Weg aus:
 
-1. **Zieldefinition und Discovery.** Use Case, Zielgruppe, Erfolgskriterien und technische Rahmenbedingungen werden festgezurrt. Wenn das nicht in wenige klare Sätze passt, ist der Umfang noch zu unscharf.
+1. **Zieldefinition und Analyse.** Anwendungsfall, Zielgruppe, Erfolgskriterien und technische Rahmenbedingungen werden festgezurrt. Wenn das nicht in wenige klare Sätze passt, ist der Umfang noch zu unscharf.
 2. **Konzept und Prototyp.** Didaktisches Konzept, Struktur und ein erster Prototyp, an dem echte Nutzer testen können.
 3. **Entwicklung in Iterationen.** Die Lösung entsteht in kurzen Schleifen. Ein erstes nutzbares Modul steht oft nach 6 bis 8 Wochen.
 4. **Test und Rollout.** Qualitätssicherung, Datenschutzprüfung, Schulung der Beteiligten und der Start im Betrieb.
 5. **Betrieb und Weiterentwicklung.** Wartung, Support und der Ausbau um weitere Bausteine. Diese Phase gehört von Anfang an in die Planung, nicht erst nach dem Go-Live.
 
-Rechnen Sie für eine komplette Lösung mit 3 bis 6 Monaten bis zum vollen Rollout. Ein seriöser Anbieter nennt Ihnen für Ihren konkreten Fall eine realistische Zeitachse, bevor Sie unterschreiben.
+Rechnen Sie für eine komplette Lösung mit 3 bis 6 Monaten bis zum vollen Rollout. Ein seriöser Anbieter nennt Ihnen für Ihren konkreten Fall einen realistischen Zeitplan, bevor Sie unterschreiben.
 
 ## Selbst entwickeln, Standard-LMS kaufen oder entwickeln lassen?
 
@@ -2968,12 +2968,12 @@ Es gibt drei Wege, und der richtige hängt davon ab, wie speziell Ihre Anforderu
 | Einstiegskosten | niedrig, oft ab 99 bis 249 Euro pro Monat | höher, einmalig ab ca. 13.000 Euro |
 | Kosten über die Jahre | laufende Lizenzgebühren pro Nutzer, dauerhaft | einmalige Investition, danach nur Betrieb |
 | Passung zu Ihren Prozessen | begrenzt, Sie passen sich an | exakt, die Software passt sich an |
-| Time-to-Value | sofort startklar | Wochen bis Monate |
+| Zeit bis zum Start | sofort startklar | Wochen bis Monate |
 | KI und Personalisierung | begrenzt auf das, was das Tool bietet | frei gestaltbar |
 | Eigentum und Datenhoheit | beim Anbieter | bei Ihnen |
 | Skalierung und Erweiterung | im Rahmen des Anbieters | ohne feste Grenze |
 
-Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Standard-LMS wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb und Weiterentwicklung, und Sie nutzen dieselbe Lösung über Jahre. Genau deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen ausbilden: Bildungsträger, Hochschulen und Universitäten, Weiterbildungs- und Kursanbieter sowie Unternehmen mit vielen Lernenden. Ab einer gewissen Nutzerzahl liegt die maßgeschneiderte Lösung unter den auflaufenden Lizenzgebühren, und sie passt exakt zu Ihnen statt umgekehrt.
+Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Standard-LMS wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb und Weiterentwicklung, und Sie nutzen dieselbe Lösung über Jahre. Genau deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen schulen oder ausbilden: Bildungsträger, Hochschulen und Universitäten, Weiterbildungs- und Kursanbieter sowie Unternehmen mit vielen Lernenden. Ab einer gewissen Nutzerzahl liegt die maßgeschneiderte Lösung unter den auflaufenden Lizenzgebühren, und sie passt exakt zu Ihnen statt umgekehrt.
 
 Selbst entwickeln ist die vierte Option und lohnt sich nur, wenn Sie ein eigenes Team aus Didaktik und Softwareentwicklung haben. Für die meisten Unternehmen ist die ehrliche Antwort: Standardsoftware, solange die Anforderungen Standard sind, und Individualentwicklung, sobald die Lösung wirklich passen, Ihnen gehören und mit KI wachsen soll.
 
@@ -2986,7 +2986,7 @@ Ein guter Anbieter vereint zwei Kompetenzen, die selten zusammenkommen: Didaktik
 - **Didaktik und Technik aus einer Hand.** Schöne Software ohne Lernwirkung ist verschwendetes Budget, gutes Konzept ohne solide Technik auch.
 - **KI-Kompetenz.** Kann der Anbieter adaptive Lernpfade und einen echten Lern-Chatbot bauen, der auf Ihrem eigenen Wissen antwortet, statt nur einen generischen Assistenten anzukleben?
 - **DSGVO und Souveränität.** Hosting in Deutschland oder der EU, Auftragsverarbeitungsvertrag, sauberes Rollen- und Löschkonzept.
-- **Eigentum am Code.** Wem gehören Ergebnis und Quellen nach dem Projekt? Lassen Sie sich das schriftlich zusichern.
+- **Eigentum am Code.** Wem gehören Ergebnis und Quellcode nach dem Projekt? Lassen Sie sich das schriftlich zusichern.
 - **Betrieb und Skalierung.** Wird die Lösung nach dem Go-Live gepflegt und ausgebaut, oder sind Sie danach allein?
 - **Referenzen und Nachweise.** Belege statt Versprechen. Ein Anbieter, der Ergebnisse zeigt, ist dem vorzuziehen, der nur Folien zeigt. Wie belastbare Belege aussehen, sehen Sie in unserer [Forschung und Evidenz](/de/forschung) aus einem Hochschul-Pilotprojekt.
 
@@ -3002,7 +3002,7 @@ Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle E-Learn
 
 ## Fazit: In vier Schritten zur passenden Lösung
 
-E-Learning entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie strukturiert vorgehen. Klären Sie erstens, ob Sie Content oder Software brauchen. Rechnen Sie zweitens mit realistischen Marktwerten statt mit dem günstigsten Angebot. Prüfen Sie drittens den Anbieter auf Didaktik, Technik, Datenschutz und Eigentum. Und starten Sie viertens klein, mit einem ersten Modul, das Sie an echten Nutzern testen, bevor Sie das volle Projekt beauftragen.
+E-Learning entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie strukturiert vorgehen. Klären Sie erstens, ob Sie Content oder Software brauchen. Rechnen Sie zweitens mit realistischen Marktpreisen statt mit dem günstigsten Angebot. Prüfen Sie drittens den Anbieter auf Didaktik, Technik, Datenschutz und Eigentum. Und starten Sie viertens klein, mit einem ersten Modul, das Sie mit echten Nutzern testen, bevor Sie das volle Projekt beauftragen.
 
 **Lassen Sie uns Ihr Projekt umreißen.** Buchen Sie ein [kostenloses Strategiegespräch](/de/loesungen#project-inquiry): 30 Minuten, kein Pitch, am Ende eine konkrete Roadmap für Ihre eigene E-Learning-Lösung. Beispiele und den Ablauf sehen Sie vorab auf der Seite zu unseren [individuellen E-Learning-Lösungen](/de/loesungen). Für den betrieblichen Einsatz in der Ausbildung finden Sie den Überblick unter [LearnSlice für Unternehmen](/de/companies).
 
@@ -3031,7 +3031,7 @@ Es kann und sollte es sein, aber nur, wenn es von Anfang an so gebaut wird. Acht
 
 ### Wem gehört der Code bzw. das geistige Eigentum?
 
-Das ist Verhandlungssache und gehört vor Projektstart schriftlich geklärt. Bei echter Individualentwicklung sollten die Rechte am erstellten Code und an den Inhalten bei Ihnen liegen, damit Sie nicht dauerhaft an einen Anbieter gebunden sind. Lassen Sie sich Eigentum, Nutzungsrechte und Herausgabe der Quellen vertraglich zusichern.
+Das ist Verhandlungssache und gehört vor Projektstart schriftlich geklärt. Bei echter Individualentwicklung sollten die Rechte am erstellten Code und an den Inhalten bei Ihnen liegen, damit Sie nicht dauerhaft an einen Anbieter gebunden sind. Lassen Sie sich Eigentum, Nutzungsrechte und Herausgabe des Quellcodes vertraglich zusichern.
 
 ### Kann man einen individuellen KI-Chatbot für das Lernen entwickeln lassen?
 
