@@ -12,6 +12,10 @@ const blog = defineCollection({
 		lang: z.enum(['en', 'de']),
 		translationSlug: z.string().optional(),
 		ogImage: z.string().optional(),
+		// heroImage: the in-body hero image path (the .webp actually rendered at the
+		// top of the post). Passed to BaseLayout to emit a high-priority preload for
+		// the LCP element. Distinct from ogImage (the .jpg social-share card).
+		heroImage: z.string().optional(),
 		draft: z.boolean().default(false),
 		// ctaVariant: which conversion path the shared BlogLayout renders.
 		// 'demo' (default) = product-demo CTA + DemoRequestModal (Azubi platform posts).

@@ -23,9 +23,10 @@ interface Props {
 	keyTakeaways?: string[];
 	faq?: { q: string; a: string }[];
 	ctaVariant?: 'demo' | 'consultation';
+	heroImage?: string;
 }
 
-const { title, description, lang, publishDate, updatedDate, author, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo' } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo', heroImage } = Astro.props;
 
 const content = lang === 'en' ? enContent : deContent;
 const basePath = lang === 'de' ? '/de' : '';
@@ -166,6 +167,7 @@ const blogPostingSchema = {
 	currentPath={currentPath}
 	breadcrumbTitle={title}
 	ogImage={ogImage}
+	heroImage={heroImage}
 >
 	<Header
 		logo={content.nav.logo}
