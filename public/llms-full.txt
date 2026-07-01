@@ -2896,6 +2896,93 @@ Commercial occupations such as office management clerk, IT occupations such as I
 
 ---
 
+# AZAV und Digitalisierung: Was Bildungsträger 2026 beachten müssen
+
+Source: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
+Language: de
+Published: 2026-07-01
+
+Synchrone Lernzeit nachweisen, prüfsichere Nachweise, Barrierefreiheit nach BFSG und förderfähige KI: der praktische Leitfaden für AZAV-zugelassene Bildungsträger.
+
+## Auf einen Blick
+
+- Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone (live betreute) Lernzeit gesondert und nachvollziehbar zu dokumentieren.
+- Anwesenheit und Lernfortschritt sollten jederzeit prüfsicher exportierbar sein, statt in Handlisten verstreut zu liegen.
+- Das BFSG gilt seit Juni 2025 mit Übergangsfristen bis 2030; Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA.
+- Programme wie ESF Plus und Mittel der Bundesagentur für Arbeit können Digitalisierungsprojekte mitfinanzieren; die Anrechenbarkeit in Maßnahmekosten hängt von der Zulassung ab.
+- Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich auf ein Gesamtprojekt festlegen.
+
+![EU-Sterne, Vorhängeschloss und digitale Europakarte als Sinnbild für AZAV-konforme Digitalisierung bei Bildungsträgern](/images/blog/dsgvo-eu-compliance.webp)
+
+## Warum AZAV und Digitalisierung 2026 zusammengehören
+
+Für AZAV-zugelassene Bildungsträger ist Digitalisierung längst keine Kür mehr. Teilnehmende erwarten digitale Lernwege, Prüfungen werden anspruchsvoller, und mehrere regulatorische Entwicklungen treffen gleichzeitig aufeinander: die AZAV-Empfehlungen zur synchronen Lernzeit, das Barrierefreiheitsstärkungsgesetz (BFSG), die EU-KI-Verordnung und der wachsende Anspruch an souveräne Datenverarbeitung.
+
+Die gute Nachricht: Wer diese Themen zusammen denkt, muss nicht alles auf einmal umbauen. Dieser Leitfaden ordnet die wichtigsten Punkte für die Praxis und zeigt, wo sich der Einstieg lohnt. Eine schnelle Selbsteinschätzung liefert der [Digital-Readiness-Check für AZAV, BFSG und KI](/de/digital-readiness-check).
+
+## Synchrone Lernzeit sauber dokumentieren
+
+Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, live betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Für Bildungsträger heißt das konkret: Sie sollten jederzeit belegen können, welcher Anteil Ihres digitalen Lernens live begleitet stattfindet und welcher im Selbststudium.
+
+In der Praxis scheitert das oft an verstreuten Handlisten und Tabellen, die niemand gerne pflegt und die bei einer Prüfung Aufwand bedeuten. Eine automatische Erfassung im Lernsystem nimmt dem Team diese Arbeit ab und macht den Nachweis auf Knopfdruck möglich. Der Unterschied zeigt sich spätestens dann, wenn eine Erfolgskontrolle ansteht.
+
+## Prüfsichere Nachweise statt Zettelwirtschaft
+
+Eng verbunden ist die Frage nach Nachweisen zu Anwesenheit und Lernfortschritt. Könnten Sie beides exportieren, wenn morgen eine Prüfung anstünde? Bei vielen Trägern lautet die ehrliche Antwort: ja, aber mit erheblichem Aufwand.
+
+Ein System, das Anwesenheit, Lernaktivität und Fortschritt strukturiert erfasst, verwandelt diesen Aufwand in einen Export. Das entlastet nicht nur die Qualitätsbeauftragten, sondern schafft auch intern Klarheit darüber, wo Teilnehmende auf Kurs sind und wo eine Intervention sinnvoll ist.
+
+## Barrierefreiheit nach BFSG mitdenken
+
+Das BFSG gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab. In der Reha (SGB IX) kommt der Anspruch hinzu, dass Lernende mit unterschiedlichem Bedarf einen passenden, barrierefreien Lernweg erhalten.
+
+Wer Barrierefreiheit von Anfang an einplant, statt sie später teuer nachzurüsten, ist im Vorteil. Gerade Träger ohne großes Altsystem können hier vieles gleich richtig aufsetzen.
+
+## KI verantwortungsvoll und förderfähig einsetzen
+
+KI-Unterstützung ist für Bildungsträger attraktiv, will aber sauber gemacht sein. Seit Februar 2025 verlangt die EU-KI-Verordnung, die KI-Kompetenz des Personals zu fördern. Bestimmte Bildungs-KI, etwa zur Zugangs- oder Leistungsbewertung, kann als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027.
+
+Ein KI-Lernbegleiter, der ausschließlich aus Ihren geprüften Inhalten antwortet, Quellen belegt und menschliche Aufsicht vorsieht, bleibt nachvollziehbar und entlastet zugleich Ihr Personal. Worauf es bei der Auswahl datenschutzkonformer Werkzeuge ankommt, lesen Sie im Beitrag zu [DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+## Förderung: Digitalisierung finanzierbar machen
+
+Viele dieser Schritte lassen sich fördern. Programme wie ESF Plus unterstützen Digitalisierung und Weiterbildung, hinzu kommen Mittel der Bundesagentur für Arbeit. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab. Diese Anrechenbarkeit sollten Sie vor einer Zusage mit einer fachkundigen Stelle klären.
+
+Der Finanzierungshebel ist für Bildungsträger oft entscheidend, weil die Mittel projektbezogen und nicht als große Investition gedacht sind. Genau dafür eignet sich ein klein geschnittener Einstieg.
+
+## So gelingt der Einstieg
+
+Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen an einem klar abgegrenzten Anwendungsfall, etwa der Nachweisführung oder einem KI-gestützten Übungsbereich, bevor Sie sich auf ein Gesamtprojekt festlegen. So bleibt das Risiko gering und der Nutzen wird früh sichtbar.
+
+Wo Sie heute stehen, sehen Sie in wenigen Minuten mit dem [Digital-Readiness-Check](/de/digital-readiness-check). Für einen konkreten Fahrplan aus Ihren Handlungsfeldern vereinbaren Sie ein kostenloses Strategiegespräch, ohne Pitch. Wie wir individuelle Lösungen bauen, zeigt die Seite zu unseren [Lösungen](/de/loesungen).
+
+_Diese Angaben dienen der Orientierung und ersetzen keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: Juli 2026._
+
+
+## Häufig gestellte Fragen
+
+### Muss synchrone Lernzeit bei AZAV gesondert nachgewiesen werden?
+
+Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, live betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Bildungsträger sollten jederzeit belegen können, welcher Anteil des digitalen Lernens live begleitet stattfindet. Die konkrete Umsetzung hängt von der fachkundigen Stelle und Ihrer Zulassung ab.
+
+### Gilt das BFSG auch für Lernplattformen von Bildungsträgern?
+
+Das Barrierefreiheitsstärkungsgesetz gilt seit Juni 2025 mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab.
+
+### Kann KI in einem AZAV-Umfeld eingesetzt werden?
+
+Ja, mit Sorgfalt. Seit Februar 2025 verlangt die EU-KI-Verordnung, die KI-Kompetenz des Personals zu fördern. Bestimmte Bildungs-KI kann als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027. Antworten aus geprüftem Material, belegte Quellen und menschliche Aufsicht sind gute Praxis.
+
+### Welche Förderung gibt es für die Digitalisierung von Weiterbildung?
+
+Programme wie ESF Plus fördern Digitalisierung und Weiterbildung, hinzu kommen Mittel der Bundesagentur für Arbeit. Ob sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab und sollte vorab mit einer fachkundigen Stelle geklärt werden.
+
+### Wie fangen Bildungsträger mit der Digitalisierung am besten an?
+
+Klein und konkret. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen an einem klar abgegrenzten Anwendungsfall, bevor Sie sich auf ein Gesamtprojekt festlegen. Ohne Altsystem lassen sich Nachweise und Barrierefreiheit gleich richtig aufsetzen.
+
+---
+
 # E-Learning entwickeln lassen: Kosten, Ablauf und Auswahl 2026
 
 Source: https://learnslice.com/de/blog/e-learning-entwickeln-lassen
@@ -3426,6 +3513,8 @@ Dieser Pfad ersetzt keine Rechtsberatung. Er filtert aber rund neunzig Prozent d
 Die Vorstellung, dass DSGVO-Konformität KI-Tools langweilig oder leistungsschwach mache, hält der Praxis nicht stand. Vertikale, EU-gehostete Plattformen mit AVV, Trainingsdaten-Opt-out und sauberem Rollenkonzept liefern den Funktionsumfang, den Ausbilder brauchen. Sie liefern ihn ohne das juristische Restrisiko, das ein privater ChatGPT-Tab auf einem Konferenzlaptop mit sich bringt. Die Compliance-Anforderungen sind eine Filterfunktion, nicht ein Verbot. Wer den Filter ernst nimmt, hat am Ende einen engeren, aber besseren Werkzeugkasten.
 
 Wer prüfen möchte, wie eine vertikale Ausbildungsplattform diese sieben Kriterien konkret abdeckt (mit AVV, EU-Hosting und Use-Case-spezifischem Datenfluss), findet eine ausführliche Übersicht und einen Demo-Zugang unter [LearnSlice für Unternehmen](/de/companies). Eine breitere Einordnung in die Landschaft generativer KI in der dualen Ausbildung steht im Beitrag zur [KI in der Ausbildung](/de/blog/ki-in-der-ausbildung).
+
+Bildungsträger und Weiterbildungsanbieter, die ihren Stand bei Datensouveränität, KI und Barrierefreiheit einordnen möchten, machen in wenigen Minuten den [Digital-Readiness-Check für AZAV, BFSG und KI](/de/digital-readiness-check).
 
 
 ## Häufig gestellte Fragen
@@ -4330,6 +4419,8 @@ Vergleichen Sie auch, wie dieser Ansatz gegenüber [traditionellen Ausbildungsme
 **Für Ausbildungsverantwortliche:** Sehen Sie in einer kostenlosen Demo, wie LearnSlice die Digitalisierung Ihrer Ausbildung in wenigen Wochen umsetzt. [Demo vereinbaren](/de/companies)
 
 **Für Geschäftsführung und HR-Leitung:** Die Digitalisierung der Ausbildung amortisiert sich bei den meisten Unternehmen innerhalb weniger Monate. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+
+**Für Bildungsträger und Weiterbildungsanbieter:** Prüfen Sie mit dem [Digital-Readiness-Check](/de/digital-readiness-check), wo Sie bei AZAV, BFSG und KI stehen, inklusive persönlichem Maßnahmenplan.
 
 
 ---

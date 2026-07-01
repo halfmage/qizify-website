@@ -9,7 +9,8 @@
           { "label": "So funktioniert's", "description": "3-Schritte KI-Lernpfad", "href": "/de#how-it-works", "icon": "hugeicons:workflow-circle-06" },
           { "label": "Features", "description": "KI-Coaching, Assessments, Analytics", "href": "/de#learning-results", "icon": "hugeicons:sparkles" },
           { "label": "Ausbildungsberufe", "description": "Kaufmännisch, IT, gewerblich", "href": "/de#vocational-professions", "icon": "hugeicons:briefcase-02" },
-          { "label": "Einsparungsrechner", "description": "Ihren ROI sofort sehen", "href": "/de/ausbildungskosten-rechner", "icon": "hugeicons:calculator" }
+          { "label": "Einsparungsrechner", "description": "Ihren ROI sofort sehen", "href": "/de/ausbildungskosten-rechner", "icon": "hugeicons:calculator" },
+          { "label": "Digital-Readiness-Check", "description": "AZAV, BFSG & KI in 3 Minuten", "href": "/de/digital-readiness-check", "icon": "hugeicons:security-check" }
         ]
       },
       {

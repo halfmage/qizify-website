@@ -52,3 +52,5 @@ LearnSlice is a B2B SaaS platform that automates mentoring for apprentices (Azub
 - Website: https://learnslice.com
 - German: https://learnslice.com/de/
 - Demo: https://learnslice.com/#demo-request
+- Custom e-learning solutions: https://learnslice.com/de/loesungen
+- Digital-Readiness-Check (AZAV/BFSG/KI self-assessment for German training providers): https://learnslice.com/de/digital-readiness-check

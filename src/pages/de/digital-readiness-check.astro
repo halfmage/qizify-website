@@ -9,6 +9,45 @@ import deContent from '../../content/de.json';
 const lang = 'de';
 const currentPath = '/de/digital-readiness-check';
 const ctaLabel = 'Strategiegespräch buchen';
+
+// FAQ: ungated, indexable, and emitted as FAQPage JSON-LD for semantic/AI-answer
+// clarity. Answers stay factual and hedge where the obligation depends on the case.
+const faq = [
+	{
+		q: 'Was ist der AZAV- und BFSG-Digital-Readiness-Check?',
+		a: 'Eine kostenlose Selbsteinschätzung in wenigen Minuten: Sie beantworten Fragen zu synchroner Lernzeit, prüfsicheren Nachweisen, Barrierefreiheit, KI-Einsatz, Datensouveränität und Förderung. Sie erhalten sofort einen Score und, nach kurzer Eintragung, einen personalisierten Maßnahmenplan mit priorisierten Handlungsfeldern und passenden Förderwegen. Die Einschätzung dient der Orientierung und ersetzt keine Rechtsberatung oder AZAV-Prüfung.',
+	},
+	{
+		q: 'Was verlangt die AZAV bei synchroner (betreuter) Lernzeit?',
+		a: 'Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Für Bildungsträger heißt das: Sie sollten jederzeit belegen können, welcher Anteil des digitalen Lernens live begleitet stattfindet. Eine automatische Erfassung im System ersetzt fehleranfällige Handlisten und erleichtert jede Prüfung.',
+	},
+	{
+		q: 'Ab wann und für wen gilt das BFSG für digitale Lernangebote?',
+		a: 'Das Barrierefreiheitsstärkungsgesetz (BFSG) gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab. In der Reha (SGB IX) kommt der Anspruch auf barrierefreie, anpassbare Lernwege hinzu.',
+	},
+	{
+		q: 'Was bedeutet die KI-Kompetenz-Pflicht der EU-KI-Verordnung?',
+		a: 'Seit Februar 2025 verlangt die EU-KI-Verordnung, dass Organisationen die KI-Kompetenz ihres Personals fördern. Unabhängig davon können bestimmte Bildungs-KI (etwa zur Zugangs- oder Leistungsbewertung) als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027. Menschliche Aufsicht, Transparenz und belegte Quellen sind schon heute gute Praxis.',
+	},
+	{
+		q: 'Welche Förderwege gibt es für die Digitalisierung von Weiterbildung?',
+		a: 'Programme wie ESF Plus fördern Digitalisierung und Weiterbildung; hinzu kommen Mittel der Bundesagentur für Arbeit. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab. Genau das lässt sich im Vorfeld gemeinsam und ehrlich prüfen.',
+	},
+	{
+		q: 'Bleiben meine Daten in Deutschland?',
+		a: 'Für datenschutzkonforme, souveräne Lösungen ist die Verarbeitung in Deutschland oder der EU, ein Auftragsverarbeitungsvertrag (AVV) und keine Weitergabe von Lernerdaten an Dritt-Modelle die Grundlage. Der Check selbst erhebt nur die Angaben, die Sie freiwillig eintragen, gemäß unserer Datenschutzerklärung.',
+	},
+];
+
+const faqPageSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: faq.map(({ q, a }) => ({
+		'@type': 'Question',
+		name: q,
+		acceptedAnswer: { '@type': 'Answer', text: a },
+	})),
+};
 ---
 
 <BaseLayout
@@ -52,6 +91,46 @@ const ctaLabel = 'Strategiegespräch buchen';
 	</section>
 
 	<ReadinessCheck />
+
+	<!-- Ungated, static SEO body: always crawlable, independent of the tool's JS state -->
+	<section class="px-6 md:px-8 pb-16 md:pb-24">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="text-heading-sm md:text-heading text-white mt-0 mb-4">Digital-Readiness für Bildungsträger: AZAV, BFSG und KI im Überblick</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Die Digitalisierung von Aus- und Weiterbildung steht 2026 unter neuen Vorzeichen. Für Bildungsträger, Weiterbildungsanbieter und Reha-Einrichtungen kommen mehrere Anforderungen zusammen: die AZAV-Empfehlungen zur synchronen Lernzeit, das Barrierefreiheitsstärkungsgesetz (BFSG), die EU-KI-Verordnung und der Anspruch an souveräne Datenverarbeitung. Der Digital-Readiness-Check zeigt Ihnen in wenigen Minuten, wo Ihr digitales Angebot heute steht und welche Schritte sich lohnen. Die folgenden Abschnitte fassen zusammen, worauf es ankommt.</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">AZAV: synchrone Lernzeit und prüfsichere Nachweise</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Praktisch bedeutet das: Sie sollten jederzeit belegen können, welcher Anteil Ihres digitalen Lernens live begleitet stattfindet, und Anwesenheit sowie Lernfortschritt prüfsicher exportieren, falls morgen eine Erfolgskontrolle ansteht. Eine automatische Erfassung im System ersetzt fehleranfällige Handlisten und spart Aufwand bei jeder Prüfung. Die Details lesen Sie im Leitfaden <a href="/de/blog/azav-digitalisierung-bildungstraeger" class="text-primary hover:underline">AZAV und Digitalisierung</a>.</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">BFSG: Barrierefreiheit wird zum Standard</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Das BFSG gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab. In der Reha (SGB IX) kommt der Anspruch hinzu, dass Lernende mit unterschiedlichem Bedarf einen passenden, barrierefreien Lernweg erhalten. Wer Barrierefreiheit früh mitdenkt, vermeidet teures Nachrüsten.</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">EU-KI-Verordnung: KI-Kompetenz und verantwortungsvoller Einsatz</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Seit Februar 2025 verlangt die EU-KI-Verordnung, dass Organisationen die KI-Kompetenz ihres Personals fördern. Unabhängig davon können bestimmte Bildungs-KI, etwa zur Zugangs- oder Leistungsbewertung, als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027. Ein KI-Lernbegleiter, der ausschließlich aus Ihren geprüften Inhalten antwortet, Quellen belegt und menschliche Aufsicht vorsieht, entlastet Ihr Personal und bleibt nachvollziehbar. Mehr dazu in unserem Beitrag zu <a href="/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder" class="text-primary hover:underline">DSGVO-konformen KI-Tools</a>.</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">Datensouveränität: Verarbeitung in Deutschland und der EU</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Für datenschutzkonforme, souveräne Lösungen sind die Verarbeitung in Deutschland oder der EU, ein Auftragsverarbeitungsvertrag (AVV) und der Verzicht auf die Weitergabe von Lernerdaten an Dritt-Modelle die Grundlage. Gerade im öffentlichen und geförderten Umfeld wird das zunehmend zum Kriterium, nicht zum Komfortmerkmal. Wie wir das technisch umsetzen, zeigen unsere <a href="/de/loesungen" class="text-primary hover:underline">Lösungen</a> und die <a href="/de/forschung" class="text-primary hover:underline">Forschung</a> dahinter.</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">Förderung: Digitalisierung finanzierbar machen</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Viele dieser Schritte lassen sich fördern. Programme wie ESF Plus unterstützen Digitalisierung und Weiterbildung, hinzu kommen Mittel der Bundesagentur für Arbeit. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich festlegen. Weitere Praxis finden Sie im Beitrag <a href="/de/blog/ausbildung-digitalisieren" class="text-primary hover:underline">Ausbildung digitalisieren</a>.</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-12 mb-6">Häufige Fragen</h2>
+			<div class="flex flex-col gap-3">
+				{faq.map(({ q, a }) => (
+					<details class="group bg-surface border border-border rounded-xl px-5 py-4">
+						<summary class="flex items-center justify-between gap-4 cursor-pointer text-base font-medium text-white list-none marker:hidden [&::-webkit-details-marker]:hidden">
+							<span>{q}</span>
+							<svg class="w-4 h-4 flex-shrink-0 text-muted transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+						</summary>
+						<p class="text-sm text-muted leading-relaxed mt-3 mb-0">{a}</p>
+					</details>
+				))}
+			</div>
+
+			<p class="text-xs text-muted leading-relaxed mt-8 m-0">Diese Angaben dienen der Orientierung und ersetzen keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: Juli 2026.</p>
+		</div>
+	</section>
+
+	<script type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />
 
 	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} demoHref="#project-inquiry" />
 

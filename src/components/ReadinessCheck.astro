@@ -113,6 +113,21 @@ const config = {
 	ausgangslageLabels: ['Kaum digital (Präsenz)', 'Einzelne Tools', 'Lernplattform', 'Mehrere Systeme'],
 	earlyLabel: 'Startpunkt, viel Potenzial',
 	earlyStepsTitle: 'Ihre ersten Schritte',
+	gateIntro: '{n} Handlungsfelder haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie zu jedem den konkreten nächsten Schritt und passende Förderwege.',
+	gateIntroOne: 'Ein Handlungsfeld haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie den konkreten nächsten Schritt und passende Förderwege.',
+	gateIntroNoGaps: 'Starke Ausgangslage. Sehen Sie Ihre vollständige Einordnung und die nächsten Schritte, um den Vorsprung auszubauen.',
+	gateIntroEarly: 'Ihr Startpunkt mit viel Potenzial. Der Plan zeigt Ihre ersten konkreten Schritte und passende Förderwege.',
+	gateBulletsTitle: 'Im vollständigen Maßnahmenplan:',
+	gateBullets: [
+		'Priorisierte Handlungsfelder mit konkreten nächsten Schritten',
+		'Passende Förderwege für Ihre Situation (ESF Plus, BA)',
+		'Als PDF zum Teilen mit Geschäftsführung und Team',
+	],
+	gateBulletsNoGaps: [
+		'Ihre vollständige Einordnung im Detail',
+		'Konkrete Ansätze, um den Vorsprung auszubauen',
+		'Als PDF zum Teilen mit Geschäftsführung und Team',
+	],
 	earlyCta: 'Der Einstieg ist kleiner als gedacht. Aus diesen ersten Schritten machen wir eine machbare Roadmap. Kostenloses 30-Minuten-Strategiegespräch, kein Pitch.',
 	starter: [
 		{ title: 'Klein und konkret starten', body: 'Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich festlegen.' },
@@ -150,6 +165,7 @@ const config = {
 	<input type="text" name="score" />
 	<input type="text" name="category" />
 	<input type="text" name="answers" />
+	<input type="text" name="source" />
 	<input type="checkbox" name="consent" />
 	<input type="text" name="bot-field" />
 </form>
@@ -195,7 +211,8 @@ const config = {
 				<span class="text-display-sm text-white font-semibold" id="rc-teaser-score">0%</span>
 				<span class="text-base font-medium" id="rc-teaser-cat">-</span>
 			</div>
-			<p class="text-sm text-muted leading-relaxed m-0 mb-6">Tragen Sie sich ein, um Ihren persönlichen Maßnahmenplan mit konkreten Schritten und Förderwegen zu sehen.</p>
+			<!-- Ungated score above; locked preview + value prop populated by JS below -->
+			<div id="rc-gate-preview" class="mt-4 mb-6"></div>
 
 			<form class="flex flex-col gap-4" id="rc-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 				<input type="hidden" name="form-name" value="readiness-check" />
@@ -204,6 +221,7 @@ const config = {
 				<input type="hidden" name="category" id="rc-hidden-category" />
 				<input type="hidden" name="answers" id="rc-hidden-answers" />
 				<input type="hidden" name="ausgangslage" id="rc-hidden-ausgangslage" />
+				<input type="hidden" name="source" id="rc-hidden-source" />
 
 				<div class="grid sm:grid-cols-2 gap-4">
 					<div class="flex flex-col gap-1.5">
@@ -261,12 +279,25 @@ const config = {
 				<p class="text-sm text-white/90 leading-relaxed m-0"><span class="font-medium text-white">Förderung:</span> Viele dieser Schritte lassen sich fördern. Programme wie ESF Plus unterstützen Digitalisierung und Weiterbildung. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab und prüfen wir gemeinsam und ehrlich.</p>
 			</div>
 
-			<div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-6 border-t border-border-light">
+			<div class="mb-8 -mt-2" data-print-hide>
+				<button type="button" id="rc-print" class="inline-flex items-center gap-2 text-sm text-primary hover:underline font-medium bg-transparent border-none cursor-pointer p-0 font-sans">
+					<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+					Plan als PDF speichern
+				</button>
+			</div>
+
+			<div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-6 border-t border-border-light" data-print-hide>
 				<p class="text-base text-white/90 m-0 flex-1" id="rc-cta-text">Aus Ihren Handlungsfeldern machen wir eine konkrete Roadmap. Kostenloses 30-Minuten-Strategiegespräch, kein Pitch.</p>
 				<Button variant="primary" href="#project-inquiry" data-modal-trigger="project-inquiry" aria-label="Strategiegespräch buchen">Strategiegespräch buchen</Button>
 			</div>
 
 			<p class="text-xs text-muted leading-relaxed mt-6 m-0">Diese Selbsteinschätzung dient der Orientierung und ersetzt keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: Juli 2026.</p>
+
+			<!-- Visible only in the printed PDF: source + booking path for the recipient -->
+			<div data-print-only class="hidden mt-6 pt-4 border-t border-border-light text-xs text-muted leading-relaxed">
+				LearnSlice, Digital-Readiness-Check: learnslice.com/de/digital-readiness-check<br />
+				Kostenloses Strategiegespräch vereinbaren: learnslice.com/de/loesungen
+			</div>
 		</div>
 	</div>
 </section>
@@ -295,6 +326,17 @@ const config = {
 		const answers = {};
 		const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 		const scrollBehavior = reduceMotion ? 'auto' : 'smooth';
+
+		// Simple Analytics custom events (cookieless; script loaded in BaseLayout).
+		function sa(name) { try { if (typeof window.sa_event === 'function') window.sa_event(name); } catch (e) {} }
+
+		// Attribution: carry the traffic source from the URL into the lead record.
+		const hSource = document.getElementById('rc-hidden-source');
+		if (hSource) {
+			const qp = new URLSearchParams(location.search);
+			hSource.value = qp.get('utm_source') || qp.get('src') || qp.get('utm_campaign') || '';
+		}
+		let quizStarted = false;
 
 		// Nav traverses context plus exactly one branch. Default to the full
 		// assessment; the context answer routes greenfield onto the short path.
@@ -352,6 +394,7 @@ const config = {
 		allSteps.forEach((q) => {
 			q.querySelectorAll('input[type="radio"]').forEach((input) => {
 				input.addEventListener('change', () => {
+					if (!quizStarted) { quizStarted = true; sa('quiz_start'); }
 					const dim = q.getAttribute('data-dim');
 					const scoreAttr = input.getAttribute('data-score');
 					answers[dim] = scoreAttr !== null ? parseInt(scoreAttr, 10) : (input.getAttribute('data-value') || '');
@@ -415,10 +458,43 @@ const config = {
 				if (ha) ha.value = dims.map((d) => d + ':' + (answers[d] || 0)).join(';');
 			}
 
+			try { buildGatePreview(); } catch (e) { /* preview is enhancement only; never block the gate */ }
+			sa('score_view');
+
 			quiz.classList.add('hidden');
 			gate.classList.remove('hidden');
 			gate.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
 			gate.focus({ preventScroll: true });
+		}
+
+		// Locked preview on the gate: proves specific findings exist (curiosity gap)
+		// and lists what the email unlocks, without giving the detail away.
+		function buildGatePreview() {
+			const wrap = document.getElementById('rc-gate-preview');
+			if (!wrap) return;
+			let titles = [];
+			let intro = '';
+			if (lastEarly) {
+				titles = (config.starter || []).map((s) => s.title);
+				intro = config.gateIntroEarly;
+			} else {
+				const gaps = config.dimsOrder.filter((d) => (answers[d] || 0) < 2);
+				titles = gaps.map((d) => (config.recos[d] || {}).title).filter(Boolean);
+				if (!titles.length) intro = config.gateIntroNoGaps;
+				else if (titles.length === 1) intro = config.gateIntroOne;
+				else intro = (config.gateIntro || '').replace('{n}', String(titles.length));
+			}
+			// Perfect full-path score has no Handlungsfelder to unlock: use bullets that
+			// match what the plan actually delivers, not the gap-oriented promise.
+			const bulletItems = (!lastEarly && titles.length === 0)
+				? (config.gateBulletsNoGaps || config.gateBullets || [])
+				: (config.gateBullets || []);
+			const lock = '<svg class="w-3.5 h-3.5 text-muted flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11v3m-6-3V8a6 6 0 1112 0v3M5 11h14a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1v-7a1 1 0 011-1z"/></svg>';
+			const list = titles.length
+				? '<ul class="flex flex-col gap-2 list-none p-0 m-0 mt-3 mb-4">' + titles.map((t) => '<li class="flex items-center gap-2 text-sm text-white/80">' + lock + '<span>' + t + '</span></li>').join('') + '</ul>'
+				: '';
+			const bullets = '<p class="text-sm text-white/90 font-medium m-0 mt-4 mb-2">' + config.gateBulletsTitle + '</p><ul class="flex flex-col gap-1.5 list-none p-0 m-0">' + bulletItems.map((b) => '<li class="flex items-start gap-2 text-sm text-muted"><span class="text-primary mt-0.5 flex-shrink-0">&#9679;</span><span>' + b + '</span></li>').join('') + '</ul>';
+			wrap.innerHTML = '<p class="text-sm text-white/90 leading-relaxed m-0">' + intro + '</p>' + list + bullets;
 		}
 
 		function buildResult() {
@@ -482,6 +558,18 @@ const config = {
 			syncSubmit();
 		}
 
+		const printBtn = document.getElementById('rc-print');
+		if (printBtn) printBtn.addEventListener('click', () => {
+			sa('pdf_save');
+			// Scope the print layout to this intentional action so a stray Ctrl+P
+			// elsewhere prints the normal page instead of a blank one.
+			document.body.classList.add('rc-printing');
+			window.print();
+		});
+		window.addEventListener('afterprint', () => document.body.classList.remove('rc-printing'));
+		const callBtn = result.querySelector('[data-modal-trigger="project-inquiry"]');
+		if (callBtn) callBtn.addEventListener('click', () => sa('call_click'));
+
 		form.addEventListener('submit', async (e) => {
 			e.preventDefault();
 			// Guard against a double submit while the request is in flight.
@@ -503,6 +591,7 @@ const config = {
 					if (!response.ok) throw new Error('Form submission failed');
 				}
 				buildResult();
+				sa('plan_unlock');
 				gate.classList.add('hidden');
 				result.classList.remove('hidden');
 				result.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
@@ -584,4 +673,31 @@ const config = {
 	   !important reset in src/styles/global.css. The scrollIntoView calls in the
 	   script honour the preference separately (an explicit behavior:'smooth'
 	   overrides CSS scroll-behavior). */
+</style>
+
+<!-- Print: render only the unlocked Maßnahmenplan as a clean, shareable PDF.
+     Scoped to body.rc-printing (set by the button) so a stray Ctrl+P prints normally. -->
+<style is:global>
+	@media print {
+		body.rc-printing header,
+		body.rc-printing footer,
+		body.rc-printing section:not(#readiness-check),
+		body.rc-printing #rc-quiz,
+		body.rc-printing #rc-gate,
+		body.rc-printing .glow-aurora,
+		body.rc-printing [data-print-hide] { display: none !important; }
+		body.rc-printing #readiness-check { padding: 0 !important; }
+		body.rc-printing #rc-result {
+			background: #fff !important;
+			border: none !important;
+			box-shadow: none !important;
+		}
+		/* Dark text for legibility; clear dark inner boxes, but keep the score bar's
+		   severity color (red/amber/green) so the printed plan still signals urgency. */
+		body.rc-printing #rc-result * { color: #111 !important; }
+		body.rc-printing #rc-result *:not(#rc-score-bar) { background: transparent !important; }
+		body.rc-printing #rc-result .section-label { color: #555 !important; }
+		body.rc-printing #rc-score-bar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+		body.rc-printing [data-print-only] { display: block !important; }
+	}
 </style>
