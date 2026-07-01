@@ -180,7 +180,7 @@ const config = {
 
 				<div class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300" id="rc-error" role="alert"></div>
 
-				<button type="submit" class="bg-primary text-white border-none rounded-lg px-6 py-2.5 text-sm font-medium cursor-pointer hover:bg-[#6a4ae0] active:bg-[#5c3dd4] transition-all duration-200 font-sans mt-1 disabled:opacity-50 disabled:cursor-not-allowed">Maßnahmenplan anzeigen</button>
+				<button type="submit" id="rc-submit" disabled class="bg-primary text-white border-none rounded-lg px-6 py-2.5 text-sm font-medium cursor-pointer hover:bg-[#6a4ae0] active:bg-[#5c3dd4] transition-all duration-200 font-sans mt-1 disabled:bg-input-bg disabled:text-muted disabled:cursor-not-allowed disabled:hover:bg-input-bg">Maßnahmenplan anzeigen</button>
 				<p class="text-xs text-muted text-center -mt-1">Kostenlos · kein Spam · jederzeit abbestellbar</p>
 			</form>
 		</div>
@@ -333,6 +333,15 @@ const config = {
 					});
 				}
 			}
+		}
+
+		// Keep the submit button muted and disabled until consent is given.
+		const consent = document.getElementById('rc-consent');
+		const submitBtn = document.getElementById('rc-submit');
+		if (consent && submitBtn) {
+			const syncSubmit = () => { submitBtn.disabled = !consent.checked; };
+			consent.addEventListener('change', syncSubmit);
+			syncSubmit();
 		}
 
 		form.addEventListener('submit', async (e) => {
