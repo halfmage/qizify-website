@@ -33,25 +33,25 @@ const testimonialImages: Record<string, string> = {
 		</div>
 
 		{featured && (
-			<div class="mb-8 bg-surface border border-accent/30 rounded-xl p-8 md:p-12 relative overflow-hidden">
-				<span class="absolute top-6 right-8 text-accent/30 font-serif text-7xl leading-none select-none pointer-events-none" aria-hidden="true">&ldquo;</span>
-				<blockquote class="text-lg md:text-xl leading-relaxed text-white m-0 max-w-4xl relative">
+			<div class="mb-6 bg-surface border border-accent/30 rounded-xl p-8 md:p-10 relative overflow-hidden">
+				<span class="absolute top-4 right-5 text-accent/40 font-serif text-5xl leading-none select-none pointer-events-none" aria-hidden="true">&ldquo;</span>
+				<blockquote class="text-base md:text-lg leading-relaxed text-white/85 m-0 max-w-3xl relative">
 					"{featured.quote}"
 				</blockquote>
-				<div class="flex items-center gap-4 pt-6 mt-6 border-t border-border">
-					<div class="w-14 h-14 rounded-full overflow-hidden bg-border flex-shrink-0 ring-2 ring-accent/30 ring-offset-2 ring-offset-surface">
+				<div class="flex items-center gap-4 pt-4 mt-6 border-t border-border">
+					<div class="w-12 h-12 rounded-full overflow-hidden bg-border flex-shrink-0 ring-2 ring-accent/30 ring-offset-2 ring-offset-surface">
 						<img
 							src={`/images/testimonials/${testimonialImages[featured.name] || 'placeholder.webp'}`}
 							alt={featured.name}
 							class="w-full h-full object-cover"
 							loading="lazy"
-							width="112"
-							height="112"
+							width="96"
+							height="96"
 						/>
 					</div>
 					<div class="flex flex-col">
-						<span class="text-base font-semibold text-white">{featured.name}</span>
-						<span class="text-sm text-muted">{featured.title}, {featured.company}</span>
+						<span class="text-base font-medium text-white">{featured.name}</span>
+						<span class="text-xs text-muted">{featured.title}, {featured.company}</span>
 					</div>
 				</div>
 			</div>
