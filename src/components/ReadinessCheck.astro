@@ -60,6 +60,16 @@ const questions = [
 	] },
 ];
 
+// Leading context question (not scored): captures the digital starting point so the
+// result can address greenfield prospects (no LMS, mostly in-person) differently.
+const context = { dim: 'ausgangslage', text: 'Wie findet Aus- und Weiterbildung bei Ihnen heute überwiegend statt?', options: [
+	{ t: 'Fast alles in Präsenz, kaum Digitales', s: 0 },
+	{ t: 'Präsenz plus einzelne Tools (Teams, PDFs, E-Mail)', s: 1 },
+	{ t: 'Wir nutzen eine Lernplattform (z. B. Moodle, ILIAS)', s: 2 },
+	{ t: 'Mehrere Systeme, gut vernetzt', s: 3 },
+] };
+const steps = [context, ...questions];
+
 const config = {
 	categories: [
 		{ max: 45, label: 'Hoher Handlungsbedarf', cls: 'text-red-300', bar: 'bg-red-400' },
@@ -69,6 +79,15 @@ const config = {
 	dimsOrder: questions.map((q) => q.dim),
 	handlungsfelderTitle: 'Ihre wichtigsten Handlungsfelder',
 	noGaps: 'Starke Ausgangslage. In allen Feldern sind Sie gut aufgestellt. Im Strategiegespräch schauen wir, wo sich der Vorsprung weiter ausbauen lässt.',
+	ausgangslageLabels: ['Kaum digital (Präsenz)', 'Einzelne Tools', 'Lernplattform', 'Mehrere Systeme'],
+	earlyLabel: 'Startpunkt, viel Potenzial',
+	earlyStepsTitle: 'Ihre ersten Schritte',
+	earlyCta: 'Der Einstieg ist kleiner als gedacht. Aus diesen ersten Schritten machen wir eine machbare Roadmap. Kostenloses 30-Minuten-Strategiegespräch, kein Pitch.',
+	starter: [
+		{ title: 'Klein und konkret starten', body: 'Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich festlegen.' },
+		{ title: 'Von Anfang an richtig aufsetzen', body: 'AZAV-Nachweise und Barrierefreiheit gleich mitdenken, statt später teuer nachzurüsten. Ohne Altsystem ist genau das jetzt einfach.' },
+		{ title: 'Souverän und förderfähig', body: 'Daten in Deutschland und passende Förderwege wie ESF Plus von Beginn an einplanen. So bleibt der Einstieg planbar und finanzierbar.' },
+	],
 	recos: {
 		sync: { title: 'Synchrone Lernzeit sauber dokumentieren', body: 'Seit Juli 2025 verlangen die AZAV-Beirat-Empfehlungen, synchrone Lernzeit gesondert nachzuweisen. Eine automatische Erfassung ersetzt fehleranfällige Handlisten.' },
 		nachweise: { title: 'Nachweise exportierbar machen', body: 'Exportierbare Nachweise zu Anwesenheit und Fortschritt sparen Aufwand bei jeder Prüfung und Erfolgskontrolle.' },
@@ -91,6 +110,7 @@ const config = {
 	<input type="email" name="email" />
 	<input type="text" name="organisation" />
 	<input type="text" name="role" />
+	<input type="text" name="ausgangslage" />
 	<input type="text" name="score" />
 	<input type="text" name="category" />
 	<input type="text" name="answers" />
@@ -106,13 +126,13 @@ const config = {
 		<div id="rc-quiz" class="relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden shadow-2xl shadow-black/20" data-config={JSON.stringify(config)}>
 			<div class="flex items-center justify-between mb-2">
 				<span class="section-label block">Digital-Readiness-Check</span>
-				<span class="text-xs text-muted font-mono" id="rc-progress-text">1 / {questions.length}</span>
+				<span class="text-xs text-muted font-mono" id="rc-progress-text">1 / {steps.length}</span>
 			</div>
 			<div class="h-1.5 w-full bg-border rounded-full overflow-hidden mb-8">
 				<div class="h-full bg-primary transition-all duration-300" id="rc-progress-bar" style="width: 0%"></div>
 			</div>
 
-			{questions.map((q, i) => (
+			{steps.map((q, i) => (
 				<div class="rc-question" data-dim={q.dim} data-index={i} style={i === 0 ? '' : 'display:none'}>
 					<h2 id={`rc-q-${i}`} class="text-heading-sm md:text-heading text-white m-0 mb-6">{q.text}</h2>
 					<div class="flex flex-col gap-3" role="radiogroup" aria-labelledby={`rc-q-${i}`}>
@@ -147,6 +167,7 @@ const config = {
 				<input type="hidden" name="score" id="rc-hidden-score" />
 				<input type="hidden" name="category" id="rc-hidden-category" />
 				<input type="hidden" name="answers" id="rc-hidden-answers" />
+				<input type="hidden" name="ausgangslage" id="rc-hidden-ausgangslage" />
 
 				<div class="grid sm:grid-cols-2 gap-4">
 					<div class="flex flex-col gap-1.5">
@@ -204,7 +225,7 @@ const config = {
 			</div>
 
 			<div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-6 border-t border-border-light">
-				<p class="text-base text-white/90 m-0 flex-1">Aus Ihren Handlungsfeldern machen wir eine konkrete Roadmap. Kostenloses 30-Minuten-Strategiegespräch, kein Pitch.</p>
+				<p class="text-base text-white/90 m-0 flex-1" id="rc-cta-text">Aus Ihren Handlungsfeldern machen wir eine konkrete Roadmap. Kostenloses 30-Minuten-Strategiegespräch, kein Pitch.</p>
 				<Button variant="primary" href="#project-inquiry" data-modal-trigger="project-inquiry" aria-label="Strategiegespräch buchen">Strategiegespräch buchen</Button>
 			</div>
 
@@ -276,14 +297,21 @@ const config = {
 
 		let lastPct = 0;
 		let lastCat = null;
+		let lastEarly = false;
 
 		function finish() {
 			const dims = config.dimsOrder;
 			let sum = 0;
 			dims.forEach((d) => { sum += (answers[d] || 0); });
 			const pct = Math.round((sum / (dims.length * 2)) * 100);
-			const cat = categoryFor(pct);
-			lastPct = pct; lastCat = cat;
+			// Greenfield / very-early prospects (mostly in-person, no platform) get a
+			// reframed, encouraging result instead of a wall of red gaps.
+			const level = answers['ausgangslage'];
+			const isEarly = (typeof level === 'number' && level <= 1);
+			const cat = isEarly
+				? { label: config.earlyLabel, cls: 'text-amber-300', bar: 'bg-amber-400' }
+				: categoryFor(pct);
+			lastPct = pct; lastCat = cat; lastEarly = isEarly;
 
 			const teaserScore = document.getElementById('rc-teaser-score');
 			const teaserCat = document.getElementById('rc-teaser-cat');
@@ -293,9 +321,11 @@ const config = {
 			const hs = document.getElementById('rc-hidden-score');
 			const hc = document.getElementById('rc-hidden-category');
 			const ha = document.getElementById('rc-hidden-answers');
+			const hAus = document.getElementById('rc-hidden-ausgangslage');
 			if (hs) hs.value = pct + '%';
 			if (hc) hc.value = cat.label;
 			if (ha) ha.value = dims.map((d) => d + ':' + (answers[d] || 0)).join(';');
+			if (hAus && typeof level === 'number') hAus.value = config.ausgangslageLabels[level] || '';
 
 			quiz.classList.add('hidden');
 			gate.classList.remove('hidden');
@@ -308,29 +338,39 @@ const config = {
 			const scoreBar = document.getElementById('rc-score-bar');
 			const fields = document.getElementById('rc-fields');
 			const fieldsTitle = document.getElementById('rc-fields-title');
+			const ctaText = document.getElementById('rc-cta-text');
 			if (scoreNum) scoreNum.textContent = lastPct + '%';
 			if (scoreCat && lastCat) { scoreCat.textContent = lastCat.label; scoreCat.className = 'text-base font-medium ' + lastCat.cls; }
 			if (scoreBar && lastCat) { scoreBar.style.width = lastPct + '%'; scoreBar.className = 'h-full transition-all duration-500 ' + lastCat.bar; }
 
+			function renderItems(items) {
+				items.forEach((r) => {
+					const li = document.createElement('li');
+					li.className = 'flex items-start gap-3';
+					li.innerHTML = '<span class="text-primary mt-0.5 flex-shrink-0">&#9679;</span><span><span class="block text-sm font-medium text-white">' + r.title + '</span><span class="block text-sm text-muted leading-relaxed">' + r.body + '</span></span>';
+					fields.appendChild(li);
+				});
+			}
+
 			if (fields) {
 				fields.innerHTML = '';
-				const gaps = config.dimsOrder.filter((d) => (answers[d] || 0) < 2);
-				if (gaps.length === 0) {
-					if (fieldsTitle) fieldsTitle.textContent = 'Ergebnis';
-					const li = document.createElement('li');
-					li.className = 'text-sm text-white/90 leading-relaxed';
-					li.textContent = config.noGaps;
-					fields.appendChild(li);
+				if (lastEarly) {
+					// Greenfield: encouraging starter path instead of the gap list.
+					if (fieldsTitle) fieldsTitle.textContent = config.earlyStepsTitle;
+					if (ctaText) ctaText.textContent = config.earlyCta;
+					renderItems(config.starter);
 				} else {
-					if (fieldsTitle) fieldsTitle.textContent = config.handlungsfelderTitle;
-					gaps.forEach((d) => {
-						const r = config.recos[d];
-						if (!r) return;
+					const gaps = config.dimsOrder.filter((d) => (answers[d] || 0) < 2);
+					if (gaps.length === 0) {
+						if (fieldsTitle) fieldsTitle.textContent = 'Ergebnis';
 						const li = document.createElement('li');
-						li.className = 'flex items-start gap-3';
-						li.innerHTML = '<span class="text-primary mt-0.5 flex-shrink-0">&#9679;</span><span><span class="block text-sm font-medium text-white">' + r.title + '</span><span class="block text-sm text-muted leading-relaxed">' + r.body + '</span></span>';
+						li.className = 'text-sm text-white/90 leading-relaxed';
+						li.textContent = config.noGaps;
 						fields.appendChild(li);
-					});
+					} else {
+						if (fieldsTitle) fieldsTitle.textContent = config.handlungsfelderTitle;
+						renderItems(gaps.map((d) => config.recos[d]).filter(Boolean));
+					}
 				}
 			}
 		}
