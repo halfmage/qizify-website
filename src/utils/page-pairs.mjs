@@ -41,6 +41,7 @@ export const EN_TO_DE = {
 	'/blog/save-time-mentoring-apprentices': '/de/blog/azubi-betreuung-zeit-sparen',
 	'/blog/apprenticeship-framework-plan-explained': '/de/blog/ausbildungsrahmenplan-erklaert',
 	'/blog/does-ai-learning-help-apprentices': '/de/blog/lohnt-sich-ki-in-der-ausbildung',
+	'/blog/gdpr-compliant-ai-tools-for-trainers': '/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder',
 };
 
 // Pages that exist only in one language and therefore should not emit
@@ -51,7 +52,6 @@ export const EN_ONLY = new Set([
 
 export const DE_ONLY = new Set([
 	'/de/blog/ausbildungsplan-erstellen-ki',
-	'/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder',
 ]);
 
 const DE_TO_EN = Object.fromEntries(

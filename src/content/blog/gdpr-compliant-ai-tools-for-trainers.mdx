@@ -1,0 +1,130 @@
+---
+title: "GDPR-Compliant AI Tools for Trainers: The 7-Point Check for 2026"
+description: "Which AI tools are trainers allowed to use? The 7-point check for 2026: DPA, EU hosting, training-data opt-out. Plus 3 costly pitfalls from real practice."
+publishDate: 2026-05-26
+updatedDate: 2026-07-01
+author: "LearnSlice Team"
+tags: ["GDPR", "AI", "Trainers", "Data Protection", "Compliance", "Apprenticeship"]
+lang: "en"
+translationSlug: "dsgvo-konforme-ki-tools-fuer-ausbilder"
+ogImage: "/images/blog/dsgvo-eu-compliance.png"
+keyTakeaways:
+  - "GDPR compliance for AI is not a product label but a chain: a legal basis (Art. 6 GDPR), a data processing agreement (Art. 28 GDPR), technical and organisational measures (Art. 32 GDPR), and, in most cases, a data protection impact assessment (Art. 35 GDPR). If one link is missing, the processing is unlawful."
+  - "Seven checks decide whether an AI tool may be used in an apprenticeship context: hosting region, data processing agreement, training-data opt-out, deletion policy, list of sub-processors, logging, and how data-subject rights are handled."
+  - "The three most common pitfalls in practice are a private ChatGPT account used on apprentice data (no legal basis), AI features switched on inside existing tools without updating the data processing agreement, and the sub-processor chain effect of an EU frontend with a US backend."
+  - "Art. 22 GDPR limits automated assessment decisions. AI-driven performance evaluation of apprentices without a human in final control is generally unlawful."
+  - "Compliant does not mean crippled. EU-hosted vertical platforms with a data processing agreement, a training-data opt-out, and a clean role model cover the core apprenticeship use cases without the data-protection risk of private, general-purpose tools."
+faq:
+  - q: "Can I, as a trainer, use ChatGPT with apprentice data?"
+    a: "As a rule, not with a private ChatGPT account. There is no data processing agreement under Art. 28 GDPR between your employer and OpenAI, and in the free version inputs are used to improve the model by default unless you actively disable this in the data controls. For work use you need a ChatGPT Team or Enterprise contract held by the employer, ideally with EU data residency, or a vertical tool with its own data processing agreement."
+  - q: "What is a data processing agreement (DPA) and do I really need one?"
+    a: "The data processing agreement under Art. 28 GDPR (in German, the AVV) is mandatory as soon as an external provider processes personal data on your behalf. Without it, the processing is formally unlawful regardless of how securely the provider actually operates. Serious B2B AI providers supply a template that clearly names the purpose, data categories, obligations, and sub-processors."
+  - q: "Is it enough if the AI tool is hosted on EU servers?"
+    a: "EU hosting is a necessary but not a sufficient condition. What matters in addition is whether the sub-processors, above all the actual language model, also sit in the EU, or whether data is passed to US providers. An EU frontend with a US backend does not solve the third-country problem and typically leads to the same discussion Schrems II set off."
+  - q: "Do I need a data protection impact assessment (DPIA) if I use AI with apprentice data?"
+    a: "In most cases yes. Art. 35(1) GDPR requires a DPIA where processing is likely to result in a high risk, in particular when using new technologies. Art. 35(3)(a) also explicitly names the systematic and extensive evaluation of personal aspects based on automated processing. AI-driven learning and assessment systems in an apprenticeship relationship typically meet both conditions."
+  - q: "On what legal basis may apprentices use an AI tool that I provide?"
+    a: "Usually on Section 26(1) of the German Federal Data Protection Act (BDSG), that is, processing within the employment relationship, provided the use is necessary to carry out the apprenticeship. Consent under Art. 6(1)(a) GDPR is usually not the right instrument in an employment context, because the voluntary nature is typically questionable given the dependent relationship."
+  - q: "What sets a vertical apprenticeship tool apart from a general-purpose AI assistant?"
+    a: "Vertical tools for apprenticeship bring role models (trainer, apprentice, vocational-school teacher), a link to the training framework plan and the training logbook, and tightly defined processing purposes. That makes them not only functionally closer to the use case but also easier to document for GDPR than a generic all-purpose chatbot whose processing purpose is, by definition, open-ended."
+  - q: "How do I verify that a provider is really GDPR compliant?"
+    a: "The short answer: ask for the data processing agreement, the list of sub-processors, the documentation of technical and organisational measures under Art. 32 GDPR, and the hosting region, all in writing. Marketing claims without a contractual annex do not count. The longer answer is the seven-point check above in this article."
+---
+
+![EU stars, a padlock with a compliance badge, and a digital map of Europe with Germany highlighted as a symbol of GDPR-compliant AI tools](/images/blog/dsgvo-eu-compliance.webp)
+
+## GDPR-Compliant AI Tools for Trainers: Why the Question Is No Longer Theoretical in 2026
+
+The General Data Protection Regulation (GDPR) has been in force for eight years, ChatGPT for three and a half. In 2026 the overlap, **GDPR-compliant AI tools for trainers**, is no longer an academic debate. The state data protection authorities have started to systematically review employee-data processing with generative AI, the chambers of commerce are asking apprenticeship companies specifically about data-protection concepts for the learning software they use, and the EU AI Act adds its own obligations on top of the GDPR that are especially relevant for high-risk applications in the employment and education context.
+
+As of May 2026. Applicable law in Germany and the EU.
+
+For trainers who keep a ChatGPT tab open while drafting training-logbook feedback, the situation has become uncomfortably concrete. This article lays out seven checks that decide whether an AI tool may be used, names three pitfalls from day-to-day company practice, and sorts the main categories of AI tools so that an informed choice is possible, even without your own legal department.
+
+## What Does "GDPR Compliant" Mean for an AI Tool in an Apprenticeship Context?
+
+GDPR compliance for an AI tool is not a seal you can stick on. It is a chain of four elements that must all be present: a **legal basis** under Art. 6(1) GDPR, a **data processing agreement** under Art. 28 GDPR with the provider, documented **technical and organisational measures** under Art. 32 GDPR, and, as a rule, a **data protection impact assessment** under Art. 35 GDPR. If one link is missing, the processing is unlawful.
+
+In an apprenticeship context, there is one added twist. Apprentices are employees under Section 26 of the German Federal Data Protection Act (BDSG). Data processing within the apprenticeship relationship therefore rests, as a rule, not on consent but on Section 26(1) BDSG: permitted insofar as it is necessary to carry out the apprenticeship. That limitation is the actual lever. It forces you to pin down the processing purpose. A general-purpose chatbot with no use-case boundary does that less easily than a vertical tool built for apprenticeship.
+
+## The Seven Checks in Detail
+
+Seven criteria can be derived from the GDPR, the BDSG, and common supervisory practice. Together they form the minimum standard a tool must meet before it is let loose on apprentice data in your company.
+
+1. **Hosting region.** Where does the service physically run? EU hosting reduces the third-country risk, but only removes it when the model processing also takes place in the EU.
+2. **Data processing agreement.** Is there a data processing agreement under Art. 28 GDPR that names the subject matter, duration, nature and purpose of processing, the data categories, and the data subjects? Without this contract, the processing is formally unlawful.
+3. **Training-data opt-out.** Are inputs used to train the model? If so, can that be switched off both contractually and technically? OpenAI offers this by default for ChatGPT Team and Enterprise, and in the free version only via the data-controls setting.
+4. **Deletion policy.** Are data actually deleted after the contract ends or once a defined retention period expires, and is that documented in a verifiable way?
+5. **Sub-processors.** Which sub-processors are involved? Art. 28(2) GDPR requires the controller's prior written authorisation before an additional processor is engaged.
+6. **Logging.** Is there an audit log that proves who processed which personal data and when? Without this log, information and deletion obligations are practically impossible to meet.
+7. **Data-subject rights.** How are access (Art. 15 GDPR), rectification (Art. 16 GDPR), erasure (Art. 17 GDPR), and objection (Art. 21 GDPR) put into practice? A provider who only points to the form on its website has no working process.
+
+These seven points are not a wish list. They are the minimum requirements every serious B2B provider can answer in writing. Anyone who dodges one of these questions fails the check.
+
+## Three Pitfalls That Happen Most Often in Practice
+
+In the data-protection advice around AI in apprenticeship, three error patterns keep coming up. They are not exotic; they are the result of obvious, well-meaning decisions.
+
+**First: the private ChatGPT account on apprentice data.** A trainer logs in with their private account and feeds ChatGPT an apprentice's training-logbook entry to get help with wording. There is no legal basis. The employer has not engaged OpenAI, has not signed a data processing agreement, and has not provided the information required under Art. 13 GDPR. Even if nobody notices what happened, the processing is unlawful. Anyone who sees it differently should keep in mind that in the free plan, inputs are used for model training by default unless you disable it yourself.
+
+**Second: AI features switched on inside existing tools.** Microsoft Copilot gets activated in an existing Microsoft 365 tenant because the company has Microsoft licences anyway. But the existing data processing agreement with Microsoft does not automatically cover the Copilot processing. An extension is required, and depending on the data flow, a separate impact assessment too. The same pattern shows up with "AI extensions" in HR and LMS systems.
+
+**Third: EU frontend, US backend.** A provider advertises "EU hosting" and means the web presence and the user database. The actual language model, however, runs via an API in the US. That means a data transfer to a third country, with all the consequences Schrems II set out for such arrangements. Standard contractual clauses alone do not heal that if the provider is subject to the US Cloud Act.
+
+## Which AI Features Trainers Actually Need Day to Day
+
+Before you pick a tool, pin down the use case. Most trainers do not need "AI"; they need a specific function. In advisory work with mid-sized companies, five recurring fields of application crystallise out.
+
+- Building individual learning paths along the [training framework plan](/blog/apprenticeship-framework-plan-explained) for a specific apprentice
+- Help with wording feedback on training-logbook entries, without leaving the [digital training logbook](/blog/digital-training-logbook) itself
+- Generating exam questions along the standard occupational profile positions for the IHK interim exam
+- An FAQ assistant for recurring apprentice questions that pulls together the internal knowledge from wiki, SOP, and handbook
+- Structural help for trainers when translating the nationwide framework plan into the [company training plan](/blog/apprenticeship-plan-template-free)
+
+These use cases are narrow. They force the provider to describe the processing purpose and the data flow. That is exactly what makes them documentable for GDPR. A general-purpose chatbot with no purpose boundary does not meet that requirement on its own. It has to be forced into it organisationally first.
+
+## Categories of AI Tools Compared
+
+Three categories dominate the market in 2026. They differ not primarily in model quality but in the sharpness of the processing purpose and the depth of documentation.
+
+| Category | Typical use case | DPA availability | GDPR risk | Feature breadth |
+|---|---|---|---|---|
+| General-purpose chatbots (ChatGPT Team, Copilot, Claude) | Research, drafting, generic text | Available on Team/Enterprise plans | Medium to high, depending on hosting and sub-processors | Very broad, but processing purpose open |
+| EU-hosted LLM platforms (Aleph Alpha, Mistral via Scaleway) | In-house development of internal AI features | Available, with an EU sub-processor chain | Low to medium | High, requires your own implementation |
+| Vertical apprenticeship platforms (e.g. LearnSlice) | Learning paths, logbook feedback, exam questions | Contractually included, DPA with a record of processing | Low, because the purpose is defined | Tailored to the apprenticeship use case |
+
+The classification is deliberately coarse. It does not replace an individual review, but it helps with the shortlist. If you need a detailed comparison with specific providers, there is a rated overview in the [market overview of AI tools for vocational training](/blog/ai-tools-vocational-training).
+
+## Data Processing and the Sub-Processor Chain: The Underrated Lever
+
+Art. 28(3) GDPR requires a contract "that is binding on the processor with regard to the controller" and that sets out the subject matter, duration, nature and purpose of the processing as well as the obligations and rights of the controller. That sounds formal. Operationally, it holds the point at which most AI rollouts tip over.
+
+A modern AI stack rarely consists of a single provider. The typical shape is a chain: you use a vertical tool, the tool calls the API of an LLM provider, and the LLM provider in turn hosts with a hyperscaler. Every link in this chain is a potential sub-processor that must be authorised by the controller under Art. 28(2) GDPR. A serious provider discloses this chain, names each sub-processor with its country of establishment and processing purpose, and informs you before anything about it changes. A less serious provider points to its privacy policy and leaves the research to you.
+
+Reviewing the sub-processor chain is where "GDPR compliant" in the marketing copy and "GDPR compliant" in the contract visibly diverge. Anyone who keeps asking here separates the wheat from the chaff faster than any demo can.
+
+## Special Case Art. 22 GDPR: Where Automated AI Decisions Are Not Allowed
+
+Art. 22(1) GDPR gives the data subject the right not to be subject to a decision based solely on automated processing (including profiling) that produces legal effects concerning them or similarly significantly affects them. For apprenticeship, that is highly relevant.
+
+An AI-driven performance evaluation that decides, without a human in final control, on retention, extension of the probation period, or transfer to a different training area falls under this prohibition. Even grading training-logbook entries with an automated mark recommendation touches the line as soon as the recommendation is in practice adopted one to one and the human merely nods it through. The GDPR requires a substantive human review, not a formal one.
+
+Art. 22(2) GDPR knows exceptions (contractual necessity, statutory permission, explicit consent), and for two of these Art. 22(3) requires at least "the right to obtain human intervention on the part of the controller, to express his or her point of view and to contest the decision". In practice this means: an AI may make suggestions, the human decides, and the apprentice can object. Anyone who flips that relationship builds in a legal problem that no one sees, until someone does.
+
+## A Five-Step Selection Path for Trainers Without an IT Department
+
+Most mid-sized apprenticeship companies have neither a full-time data protection officer nor an AI strategy at board level. For that reality, a pragmatic five-step selection path works better than a requirements spec.
+
+1. **Pin down the use case.** Write in one sentence what you want to achieve with the tool. If it does not fit into one sentence, the processing purpose is too fuzzy.
+2. **Ask for the DPA before you test.** Request the data processing agreement template before the first test, not after. Anyone who does not supply one is out.
+3. **Check hosting and sub-processors.** Get the list of sub-processors with their country of establishment. Watch for EU frontend / US backend arrangements.
+4. **Secure the training-data opt-out contractually.** "We do not use your data for training" belongs in the data processing agreement or a contractual annex, not in a marketing brochure.
+5. **Clarify the DPIA need.** If the processing touches employee data to a meaningful extent or contains assessment elements, a DPIA under Art. 35 GDPR is generally required. There are templates for it from the state data protection authorities.
+
+This path does not replace legal advice. But it filters out around ninety percent of the tools that turn out, on closer inspection, to be unfit for apprenticeship. For the rest, the real substantive evaluation begins. Anyone who also wants to [take operational load off their trainers](/blog/reduce-trainer-workload) will experience the combination of a clear compliance line and a sharp use case not just as an obligation but as an accelerator.
+
+## Conclusion: Compliance Is Not a Feature Sacrifice
+
+The idea that GDPR compliance makes AI tools boring or underpowered does not hold up in practice. Vertical, EU-hosted platforms with a data processing agreement, a training-data opt-out, and a clean role model deliver the feature set trainers need. They deliver it without the residual legal risk that a private ChatGPT tab on a conference laptop carries. The compliance requirements are a filter function, not a ban. Anyone who takes the filter seriously ends up with a narrower but better toolbox.
+
+If you want to check how a vertical apprenticeship platform covers these seven checks in concrete terms (with a data processing agreement, EU hosting, and a use-case-specific data flow), you will find a detailed overview and demo access at [LearnSlice for companies](/companies). For a broader picture of generative AI in dual vocational training, see the article on [AI in vocational training](/blog/ai-in-vocational-training).
