@@ -62,13 +62,44 @@ const questions = [
 
 // Leading context question (not scored): captures the digital starting point so the
 // result can address greenfield prospects (no LMS, mostly in-person) differently.
-const context = { dim: 'ausgangslage', text: 'Wie findet Aus- und Weiterbildung bei Ihnen heute überwiegend statt?', options: [
+const context = { dim: 'ausgangslage', text: 'Wie finden Bildung, Aus- und Weiterbildung bei Ihnen heute überwiegend statt?', options: [
 	{ t: 'Fast alles in Präsenz, kaum Digitales', s: 0 },
 	{ t: 'Präsenz plus einzelne Tools (Teams, PDFs, E-Mail)', s: 1 },
 	{ t: 'Wir nutzen eine Lernplattform (z. B. Moodle, ILIAS)', s: 2 },
 	{ t: 'Mehrere Systeme, gut vernetzt', s: 3 },
 ] };
-const steps = [context, ...questions];
+// Short, tailored path for greenfield prospects (context level 0-1): needs-discovery,
+// not a compliance score. Answers feed the lead data and the encouraging result.
+const earlyQuestions = [
+	{ dim: 'ziel', text: 'Was möchten Sie als Erstes digitalisieren?', options: [
+		{ t: 'Lerninhalte und Kurse online bereitstellen' },
+		{ t: 'Prüfungen, Tests und Übungen' },
+		{ t: 'Verwaltung: Anwesenheit, Nachweise, Organisation' },
+		{ t: 'KI-Unterstützung für Lernende' },
+		{ t: 'Noch unklar, wir sondieren' },
+	] },
+	{ dim: 'huerde', text: 'Was hält Sie bisher am meisten zurück?', options: [
+		{ t: 'Zeit und Kapazität im Team' },
+		{ t: 'Budget und Finanzierung' },
+		{ t: 'Technisches Know-how' },
+		{ t: 'Datenschutz und Rechtssicherheit' },
+		{ t: 'Wir wussten nicht, wo anfangen' },
+	] },
+	{ dim: 'zeithorizont', text: 'Wie bald möchten Sie starten?', options: [
+		{ t: 'So bald wie möglich' },
+		{ t: 'In den nächsten Monaten' },
+		{ t: 'Dieses Jahr' },
+		{ t: 'Wir orientieren uns erst' },
+	] },
+];
+
+// All rendered steps, tagged by branch. Nav shows context plus exactly one branch.
+const steps = [
+	{ ...context, branch: 'context' },
+	...questions.map((q) => ({ ...q, branch: 'full' })),
+	...earlyQuestions.map((q) => ({ ...q, branch: 'early' })),
+];
+const defaultTotal = 1 + questions.length;
 
 const config = {
 	categories: [
@@ -87,6 +118,11 @@ const config = {
 		{ title: 'Klein und konkret starten', body: 'Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich festlegen.' },
 		{ title: 'Von Anfang an richtig aufsetzen', body: 'AZAV-Nachweise und Barrierefreiheit gleich mitdenken, statt später teuer nachzurüsten. Ohne Altsystem ist genau das jetzt einfach.' },
 		{ title: 'Souverän und förderfähig', body: 'Daten in Deutschland und passende Förderwege wie ESF Plus von Beginn an einplanen. So bleibt der Einstieg planbar und finanzierbar.' },
+	],
+	earlyFields: [
+		{ dim: 'ziel', label: 'Ziel' },
+		{ dim: 'huerde', label: 'Hürde' },
+		{ dim: 'zeithorizont', label: 'Start' },
 	],
 	recos: {
 		sync: { title: 'Synchrone Lernzeit sauber dokumentieren', body: 'Seit Juli 2025 verlangen die AZAV-Beirat-Empfehlungen, synchrone Lernzeit gesondert nachzuweisen. Eine automatische Erfassung ersetzt fehleranfällige Handlisten.' },
@@ -126,19 +162,19 @@ const config = {
 		<div id="rc-quiz" class="relative bg-surface border border-border rounded-2xl p-6 md:p-10 overflow-hidden shadow-2xl shadow-black/20" data-config={JSON.stringify(config)}>
 			<div class="flex items-center justify-between mb-2">
 				<span class="section-label block">Digital-Readiness-Check</span>
-				<span class="text-xs text-muted font-mono" id="rc-progress-text">1 / {steps.length}</span>
+				<span class="text-xs text-muted font-mono" id="rc-progress-text">1 / {defaultTotal}</span>
 			</div>
 			<div class="h-1.5 w-full bg-border rounded-full overflow-hidden mb-8">
 				<div class="h-full bg-primary transition-all duration-300" id="rc-progress-bar" style="width: 0%"></div>
 			</div>
 
 			{steps.map((q, i) => (
-				<div class="rc-question" data-dim={q.dim} data-index={i} style={i === 0 ? '' : 'display:none'}>
+				<div class="rc-question" data-dim={q.dim} data-branch={q.branch} data-index={i} style={i === 0 ? '' : 'display:none'}>
 					<h2 id={`rc-q-${i}`} class="text-heading-sm md:text-heading text-white m-0 mb-6">{q.text}</h2>
 					<div class="flex flex-col gap-3" role="radiogroup" aria-labelledby={`rc-q-${i}`}>
 						{q.options.map((o) => (
 							<label class="rc-option">
-								<input type="radio" name={`q${i}`} data-score={o.s} class="rc-radio" />
+								<input type="radio" name={`q${i}`} data-score={o.s} data-value={o.t} class="rc-radio" />
 								<span class="rc-option-text">{o.t}</span>
 							</label>
 						))}
@@ -243,8 +279,8 @@ const config = {
 		if (!quiz || !gate || !result || !form) return;
 
 		const config = JSON.parse(quiz.getAttribute('data-config') || '{}');
-		const questions = Array.from(quiz.querySelectorAll('.rc-question'));
-		const total = questions.length;
+		const allSteps = Array.from(quiz.querySelectorAll('.rc-question'));
+		const contextEl = allSteps.find((q) => q.getAttribute('data-branch') === 'context');
 		const backBtn = document.getElementById('rc-back');
 		const nextBtn = document.getElementById('rc-next');
 		const progressBar = document.getElementById('rc-progress-bar');
@@ -252,15 +288,33 @@ const config = {
 		const errorMessage = document.getElementById('rc-error');
 
 		let current = 0;
-		const answers = {}; // dim -> score
+		const answers = {}; // dim -> score (number) or choice (string)
+
+		// Nav traverses context plus exactly one branch. Default to the full
+		// assessment; the context answer routes greenfield onto the short path.
+		function stepsForBranch(branch) {
+			return allSteps.filter((q) => {
+				const b = q.getAttribute('data-branch');
+				return b === 'context' || b === branch;
+			});
+		}
+		let activeSteps = stepsForBranch('full');
+
+		function rebuildActiveSteps() {
+			const level = answers['ausgangslage'];
+			const branch = (typeof level === 'number' && level <= 1) ? 'early' : 'full';
+			activeSteps = stepsForBranch(branch);
+		}
 
 		function selectedFor(i) {
-			const el = questions[i];
+			const el = activeSteps[i];
 			return el ? el.querySelector('input[type="radio"]:checked') : null;
 		}
 
 		function render() {
-			questions.forEach((q, i) => { q.style.display = i === current ? '' : 'none'; });
+			const total = activeSteps.length;
+			allSteps.forEach((q) => { q.style.display = 'none'; });
+			if (activeSteps[current]) activeSteps[current].style.display = '';
 			if (progressText) progressText.textContent = (current + 1) + ' / ' + total;
 			if (progressBar) progressBar.style.width = ((current + 1) / total * 100) + '%';
 			if (backBtn) backBtn.disabled = current === 0;
@@ -271,14 +325,16 @@ const config = {
 			}
 		}
 
-		questions.forEach((q, i) => {
+		allSteps.forEach((q) => {
 			q.querySelectorAll('input[type="radio"]').forEach((input) => {
 				input.addEventListener('change', () => {
 					const dim = q.getAttribute('data-dim');
-					answers[dim] = parseInt(input.getAttribute('data-score') || '0', 10);
+					const scoreAttr = input.getAttribute('data-score');
+					answers[dim] = scoreAttr !== null ? parseInt(scoreAttr, 10) : (input.getAttribute('data-value') || '');
 					q.querySelectorAll('.rc-option').forEach((l) => l.classList.remove('is-selected'));
 					const label = input.closest('.rc-option');
 					if (label) label.classList.add('is-selected');
+					if (q === contextEl) { rebuildActiveSteps(); render(); }
 					if (nextBtn) nextBtn.disabled = false;
 				});
 			});
@@ -287,7 +343,7 @@ const config = {
 		if (backBtn) backBtn.addEventListener('click', () => { if (current > 0) { current--; render(); } });
 		if (nextBtn) nextBtn.addEventListener('click', () => {
 			if (!selectedFor(current)) return;
-			if (current < total - 1) { current++; render(); }
+			if (current < activeSteps.length - 1) { current++; render(); }
 			else { finish(); }
 		});
 
@@ -300,32 +356,40 @@ const config = {
 		let lastEarly = false;
 
 		function finish() {
-			const dims = config.dimsOrder;
-			let sum = 0;
-			dims.forEach((d) => { sum += (answers[d] || 0); });
-			const pct = Math.round((sum / (dims.length * 2)) * 100);
-			// Greenfield / very-early prospects (mostly in-person, no platform) get a
-			// reframed, encouraging result instead of a wall of red gaps.
 			const level = answers['ausgangslage'];
 			const isEarly = (typeof level === 'number' && level <= 1);
-			const cat = isEarly
-				? { label: config.earlyLabel, cls: 'text-amber-300', bar: 'bg-amber-400' }
-				: categoryFor(pct);
-			lastPct = pct; lastCat = cat; lastEarly = isEarly;
+			lastEarly = isEarly;
 
 			const teaserScore = document.getElementById('rc-teaser-score');
 			const teaserCat = document.getElementById('rc-teaser-cat');
-			if (teaserScore) teaserScore.textContent = pct + '%';
-			if (teaserCat) { teaserCat.textContent = cat.label; teaserCat.className = 'text-base font-medium ' + cat.cls; }
-
 			const hs = document.getElementById('rc-hidden-score');
 			const hc = document.getElementById('rc-hidden-category');
 			const ha = document.getElementById('rc-hidden-answers');
 			const hAus = document.getElementById('rc-hidden-ausgangslage');
-			if (hs) hs.value = pct + '%';
-			if (hc) hc.value = cat.label;
-			if (ha) ha.value = dims.map((d) => d + ':' + (answers[d] || 0)).join(';');
 			if (hAus && typeof level === 'number') hAus.value = config.ausgangslageLabels[level] || '';
+
+			if (isEarly) {
+				// Greenfield: no compliance score. Reframe and capture needs.
+				lastPct = 0;
+				lastCat = { label: config.earlyLabel, cls: 'text-amber-300', bar: 'bg-amber-400' };
+				if (teaserScore) teaserScore.classList.add('hidden');
+				if (teaserCat) { teaserCat.textContent = config.earlyLabel; teaserCat.className = 'text-display-sm font-semibold text-amber-300'; }
+				if (hs) hs.value = '';
+				if (hc) hc.value = config.earlyLabel;
+				if (ha) ha.value = (config.earlyFields || []).map((f) => f.label + ': ' + (answers[f.dim] || '')).join('; ');
+			} else {
+				const dims = config.dimsOrder;
+				let sum = 0;
+				dims.forEach((d) => { sum += (answers[d] || 0); });
+				const pct = Math.round((sum / (dims.length * 2)) * 100);
+				const cat = categoryFor(pct);
+				lastPct = pct; lastCat = cat;
+				if (teaserScore) { teaserScore.classList.remove('hidden'); teaserScore.textContent = pct + '%'; }
+				if (teaserCat) { teaserCat.textContent = cat.label; teaserCat.className = 'text-base font-medium ' + cat.cls; }
+				if (hs) hs.value = pct + '%';
+				if (hc) hc.value = cat.label;
+				if (ha) ha.value = dims.map((d) => d + ':' + (answers[d] || 0)).join(';');
+			}
 
 			quiz.classList.add('hidden');
 			gate.classList.remove('hidden');
@@ -339,9 +403,18 @@ const config = {
 			const fields = document.getElementById('rc-fields');
 			const fieldsTitle = document.getElementById('rc-fields-title');
 			const ctaText = document.getElementById('rc-cta-text');
-			if (scoreNum) scoreNum.textContent = lastPct + '%';
-			if (scoreCat && lastCat) { scoreCat.textContent = lastCat.label; scoreCat.className = 'text-base font-medium ' + lastCat.cls; }
-			if (scoreBar && lastCat) { scoreBar.style.width = lastPct + '%'; scoreBar.className = 'h-full transition-all duration-500 ' + lastCat.bar; }
+			const scoreBarTrack = scoreBar ? scoreBar.parentElement : null;
+			if (lastEarly) {
+				// No numeric score for greenfield; show the label as the headline.
+				if (scoreNum) scoreNum.classList.add('hidden');
+				if (scoreBarTrack) scoreBarTrack.classList.add('hidden');
+				if (scoreCat) { scoreCat.textContent = config.earlyLabel; scoreCat.className = 'text-display-sm font-semibold text-amber-300'; }
+			} else {
+				if (scoreNum) { scoreNum.classList.remove('hidden'); scoreNum.textContent = lastPct + '%'; }
+				if (scoreBarTrack) scoreBarTrack.classList.remove('hidden');
+				if (scoreCat && lastCat) { scoreCat.textContent = lastCat.label; scoreCat.className = 'text-base font-medium ' + lastCat.cls; }
+				if (scoreBar && lastCat) { scoreBar.style.width = lastPct + '%'; scoreBar.className = 'h-full transition-all duration-500 ' + lastCat.bar; }
+			}
 
 			function renderItems(items) {
 				items.forEach((r) => {
