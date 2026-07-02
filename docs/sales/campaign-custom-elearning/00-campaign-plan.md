@@ -70,7 +70,9 @@ structured so it can be added without rework.
    content, then a personalized value-first note.
 3. Where no usable LinkedIn presence (common in public sector): one targeted, personalized email
    to the single most relevant contact, anchored to their specific mandate, opt-out included.
-4. Deliver the value asset (lead magnet or evidence brief) before asking for the call.
+4. Point to the value asset before asking for the call: the live, self-serve Digital-Readiness-Check
+   (`learnslice.com/de/digital-readiness-check`, tagged `?src=linkedin` or `?src=email`), or the
+   evidence brief as fallback. The check doubles as lead capture and light qualification.
 5. Soft CTA: a free 30-minute Strategiegespräch, kein Pitch, eine konkrete Roadmap.
 6. One follow-up after 5 to 7 business days, then stop or move to content nurture.
 7. Multi-thread the buying committee as engagement builds: champion, then compliance, then
@@ -121,9 +123,11 @@ range, fix that step before adding volume.
 
 ## 6. v1 prerequisites (confirm before first send)
 
-- **Value asset live?** The sequences offer the BFSG/AZAV Digitalcheck, which today exists only
-  as a spec (`docs/sales/bildungstraeger/lead-magnet-bfsg-azav-checklist.md`). If it is not a
-  live, gated asset, fall back to the approved `docs/evidence-brief.md` as the value offer.
+- **Value asset live?** Yes. The BFSG/AZAV Digitalcheck spec
+  (`docs/sales/bildungstraeger/lead-magnet-bfsg-azav-checklist.md`) has shipped as the live,
+  gated, self-serve **Digital-Readiness-Check** at `learnslice.com/de/digital-readiness-check`.
+  The sequences point to that link. Keep `docs/evidence-brief.md` as the fallback offer. Confirm
+  the page is deployed to production before the first send (it captures leads only on the live site).
 - **Sending domain ready?** For cold email, set up a separate sending domain with SPF, DKIM,
   DMARC, and a short warm-up. See `30-email-sequences.md`.
 - **Sachkosten claim verified?** Before stating that the build is recoverable inside
@@ -134,5 +138,5 @@ range, fix that step before adding volume.
 ## 7. Fast follow (not required for v1)
 
 Draft a public-sector lead magnet, a "Souveränitäts- und Vergabe-Checkliste," as the companion
-to the BFSG/AZAV Digitalcheck. Recommended once the first public-sector conversations validate
+to the Digital-Readiness-Check. Recommended once the first public-sector conversations validate
 the angle.

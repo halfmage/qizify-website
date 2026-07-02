@@ -159,18 +159,73 @@ const heroImageAlt = 'Der LearnSlice-Startbildschirm: Level-Fortschritt, vorgesc
 		</div>
 	</section>
 
-	<!-- Contextual bridge to the Digital-Readiness-Check lead magnet -->
-	<section class="px-6 md:px-8 pb-4 md:pb-8">
-		<div class="max-w-container mx-auto">
-			<div class="bg-surface border border-border rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row sm:items-center gap-5">
-				<div class="flex-1">
-					<h2 class="text-heading-sm text-white m-0 mb-2">Wo steht Ihr digitales Angebot?</h2>
-					<p class="text-sm md:text-base text-muted leading-relaxed m-0">Machen Sie den Digital-Readiness-Check: in 3 Minuten sehen Sie, wo Sie bei AZAV, BFSG und KI stehen, mit einem persönlichen Maßnahmenplan.</p>
+	<!-- Gamified bridge to the Digital-Readiness-Check lead magnet. The check is itself an
+	     interactive quiz that ends in a score, so this block is framed as a game: a curiosity-gap
+	     score dial ("?") plus the red/amber/green result tiers and an energetic CTA. Sits right
+	     after the sovereignty argument (visitor is primed on AZAV/BFSG/KI stakes). It is the soft,
+	     low-commitment conversion path alongside the page's "book a call" CTAs.
+	     ?src=loesungen tags the lead source in the readiness-check form. -->
+	<section class="px-6 md:px-8 py-8 md:py-14">
+		<div class="max-w-4xl mx-auto">
+			<div class="relative overflow-hidden rounded-3xl p-8 md:p-11 ring-1 ring-primary/30 bg-gradient-to-br from-primary/20 via-surface to-accent/15 shadow-2xl shadow-black/30">
+				<div class="absolute -inset-10 glow-aurora opacity-50 pointer-events-none" aria-hidden="true"></div>
+				<div class="relative grid md:grid-cols-[auto_1fr] gap-8 md:gap-10 items-center">
+					<!-- Score dial: curiosity gap. The "?" is your unknown score; the ring teases the result screen. -->
+					<div class="justify-self-center">
+						<div class="relative w-44 md:w-52 mx-auto">
+							<svg class="rc-gauge w-full" viewBox="0 10 200 114" fill="none" aria-hidden="true">
+								<defs>
+									<linearGradient id="rc-gauge-grad" x1="0" y1="0" x2="1" y2="0">
+										<stop offset="0%" stop-color="#7c5cfc" />
+										<stop offset="55%" stop-color="#b07be0" />
+										<stop offset="100%" stop-color="#f4a261" />
+									</linearGradient>
+								</defs>
+								<path d="M 16 108 A 84 84 0 0 1 184 108" stroke="rgba(255,255,255,0.08)" stroke-width="13" stroke-linecap="round" />
+								<path d="M 16 108 A 84 84 0 0 1 184 108" stroke="url(#rc-gauge-grad)" stroke-width="13" stroke-linecap="round" stroke-dasharray="263.9" stroke-dashoffset="92" />
+							</svg>
+							<div class="absolute inset-x-0 bottom-0 flex flex-col items-center">
+								<span class="text-5xl font-bold text-white leading-none">?</span>
+								<span class="text-[0.7rem] text-muted mt-2 uppercase tracking-[0.14em]">Ihr Score</span>
+							</div>
+						</div>
+						<!-- Result tiers, like game levels -->
+						<div class="flex items-center justify-center gap-4 mt-5 text-xs text-muted">
+							<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-red-400"></span>Handlungsbedarf</span>
+							<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-amber-400"></span>Auf Kurs</span>
+							<span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-green-400"></span>Top</span>
+						</div>
+					</div>
+					<!-- Copy + CTA -->
+					<div class="text-center md:text-left">
+						<span class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-accent mb-3">
+							<Icon name="hugeicons:sparkles" class="w-4 h-4" /> Interaktiver Mini-Check
+						</span>
+						<h2 class="text-heading md:text-display-sm text-white m-0 mb-3">Wie fit ist Ihr digitales Angebot?</h2>
+						<p class="text-base md:text-lg text-muted leading-relaxed m-0 mb-6">In 3 Minuten zu Ihrem Readiness-Score bei AZAV, BFSG und KI, samt persönlichem Maßnahmenplan mit passenden Förderwegen. Kein Verkaufsgespräch nötig.</p>
+						<div class="flex flex-col sm:flex-row items-center md:justify-start justify-center gap-4">
+							<Button variant="primary" href="/de/digital-readiness-check?src=loesungen" class="!px-7 !py-3.5 !text-base" aria-label="Digital-Readiness-Check starten">
+								Jetzt testen
+								<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+							</Button>
+							<span class="text-sm text-muted">3 Minuten · kostenlos · sofort Ihr Ergebnis</span>
+						</div>
+					</div>
 				</div>
-				<Button variant="secondary" href="/de/digital-readiness-check" aria-label="Zum Digital-Readiness-Check">Zum Check</Button>
 			</div>
 		</div>
 	</section>
+
+	<style>
+		/* Gentle "breathing" ring to signal the block is interactive. Static for reduced motion. */
+		@media (prefers-reduced-motion: no-preference) {
+			.rc-gauge { animation: rc-gauge-pulse 3.2s ease-in-out infinite; }
+			@keyframes rc-gauge-pulse {
+				0%, 100% { opacity: 0.85; }
+				50% { opacity: 1; }
+			}
+		}
+	</style>
 
 	<!-- So arbeiten wir: Prozess + Engagement-Modelle, zusammengeführt -->
 	<section class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50">
@@ -256,7 +311,7 @@ const heroImageAlt = 'Der LearnSlice-Startbildschirm: Level-Fortschritt, vorgesc
 
 	<FAQ headline={s.faq.headline} items={s.faq.items.slice(0, 6)} />
 
-	<CTAFooter headline={s.cta.headline} subheadline={s.cta.subheadline} button={s.cta.button} buttonHref="#project-inquiry" note={s.cta.note} currentLang={lang} />
+	<CTAFooter headline={s.cta.headline} subheadline={s.cta.subheadline} button={s.cta.button} buttonHref="#project-inquiry" note={s.cta.note} currentLang={lang} secondaryLabel="Noch nicht bereit? Machen Sie den 3-Minuten-Check" secondaryHref="/de/digital-readiness-check?src=loesungen-cta" />
 	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} demoHref="#project-inquiry" />
 
 	<!-- Sticky Mobile CTA: durchgehender Conversion-Pfad auf langer Seite -->

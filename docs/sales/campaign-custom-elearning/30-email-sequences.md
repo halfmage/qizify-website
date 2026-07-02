@@ -34,9 +34,11 @@ decided to proceed with targeted email anyway. Non-negotiable guardrails:
 
 ## Value-asset dependency
 
-These emails offer the BFSG/AZAV Digitalcheck. If that gated asset is not live, fall back to the
-approved evidence brief (learnslice.com/research or the one-page leave-behind). Confirm which
-asset is live before sending.
+These emails point to the live, self-serve **Digital-Readiness-Check**
+(`learnslice.com/de/digital-readiness-check`): a 3-minute interactive self-assessment that gives
+the prospect an instant, personalized Maßnahmenplan and captures their answers as a qualified
+lead. Link to it rather than promising an attachment. Append `?src=email` for channel attribution.
+The evidence brief (learnslice.com/research or the one-page leave-behind) is the fallback.
 
 ## Footer (paste into every email)
 
@@ -68,16 +70,17 @@ asset is live before sending.
 > Deutschland, ein AVV ist inklusive, und Lernerdaten werden nicht zum Training von Dritt-Modellen
 > genutzt.
 >
-> Als Einstieg schicke ich Ihnen gern unseren BFSG- und AZAV-Digitalcheck. Falls es passt, zeige
-> ich Ihnen in einem 30-minütigen Strategiegespräch eine konkrete Roadmap. Kein Pitch, Antwort
-> innerhalb von 1 Werktag.
+> Als Einstieg empfehle ich Ihnen unseren kostenlosen Digital-Readiness-Check: In 3 Minuten sehen
+> Sie, wo Sie bei AZAV, BFSG und KI stehen, mit personalisiertem Maßnahmenplan und passenden
+> Förderwegen. learnslice.com/de/digital-readiness-check Falls es passt, zeige ich Ihnen in einem
+> 30-minütigen Strategiegespräch eine konkrete Roadmap. Kein Pitch, Antwort innerhalb von 1 Werktag.
 >
 > Freundliche Grüße, [Absender]
 
 ### Compliance (QMB / AZAV-Beauftragte)
 
 **Subject (A):** AZAV-Nachweise: synchrone Lernzeit exportierbar
-**Subject (B):** BFSG- und AZAV-Digitalcheck für [Träger]
+**Subject (B):** Digital-Readiness-Check für [Träger]: AZAV, BFSG, KI
 
 **Opener (Variante A):**
 > Guten Tag [Name], viele Träger justieren ihre Dokumentation gerade an die digitalen
@@ -93,8 +96,10 @@ asset is live before sending.
 > AZAV-unterstützend, nicht zertifizierend: die Zulassung der Maßnahme bleibt bei Ihnen und Ihrer
 > fachkundigen Stelle.
 >
-> Gern sende ich Ihnen unseren BFSG- und AZAV-Digitalcheck. Wenn hilfreich, skizzieren wir in
-> einem kurzen Gespräch die Umsetzung. Antwort innerhalb von 1 Werktag.
+> Einen schnellen Überblick gibt unser kostenloser Digital-Readiness-Check: in wenigen Minuten
+> sehen Sie Ihre Nachweis- und Barrierefreiheitslücken samt Maßnahmenplan.
+> learnslice.com/de/digital-readiness-check Wenn hilfreich, skizzieren wir in einem kurzen
+> Gespräch die Umsetzung. Antwort innerhalb von 1 Werktag.
 >
 > Freundliche Grüße, [Absender]
 
@@ -138,8 +143,9 @@ asset is live before sending.
 > WCAG 2.1 AA und legen den konkreten Stand vor dem Start transparent offen. Datenverarbeitung in
 > Deutschland, AVV inklusive.
 >
-> Gern sende ich Ihnen unseren BFSG- und AZAV-Digitalcheck als Einstieg. Antwort innerhalb von 1
-> Werktag.
+> Als Einstieg unser kostenloser Digital-Readiness-Check: in wenigen Minuten sehen Sie, wo Sie bei
+> Barrierefreiheit und AZAV stehen. learnslice.com/de/digital-readiness-check Antwort innerhalb von
+> 1 Werktag.
 >
 > Freundliche Grüße, [Absender]
 
@@ -178,8 +184,8 @@ LinkedIn and tender-monitoring.
 
 > Guten Tag [Name], ich hatte Ihnen vor einigen Tagen zu [konkreter Bezug] geschrieben. Falls das
 > Timing gerade nicht passt, ist das völlig in Ordnung, dann komme ich zu gegebener Zeit noch
-> einmal auf Sie zu. Den [BFSG- und AZAV-Digitalcheck / die Souveränitäts-Übersicht] lege ich
-> Ihnen unabhängig davon gern bei.
+> einmal auf Sie zu. Den [Digital-Readiness-Check learnslice.com/de/digital-readiness-check / die
+> Souveränitäts-Übersicht] lege ich Ihnen unabhängig davon gern bei.
 >
 > Freundliche Grüße, [Absender]
 

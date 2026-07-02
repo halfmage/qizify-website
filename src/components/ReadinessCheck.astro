@@ -70,13 +70,16 @@ const context = { dim: 'ausgangslage', text: 'Wie finden Bildung, Aus- und Weite
 ] };
 // Short, tailored path for greenfield prospects (context level 0-1): needs-discovery,
 // not a compliance score. Answers feed the lead data and the encouraging result.
+// The `s` values on ziel/zeithorizont are momentum signals (goal clarity, timeline)
+// used only to compute a positively framed "Startpotenzial" (see computeEarlyPotential).
+// huerde stays unscored: an obstacle is not a potential signal, only lead context.
 const earlyQuestions = [
 	{ dim: 'ziel', text: 'Was möchten Sie als Erstes digitalisieren?', options: [
-		{ t: 'Lerninhalte und Kurse online bereitstellen' },
-		{ t: 'Prüfungen, Tests und Übungen' },
-		{ t: 'Verwaltung: Anwesenheit, Nachweise, Organisation' },
-		{ t: 'KI-Unterstützung für Lernende' },
-		{ t: 'Noch unklar, wir sondieren' },
+		{ t: 'Lerninhalte und Kurse online bereitstellen', s: 2 },
+		{ t: 'Prüfungen, Tests und Übungen', s: 2 },
+		{ t: 'Verwaltung: Anwesenheit, Nachweise, Organisation', s: 2 },
+		{ t: 'KI-Unterstützung für Lernende', s: 2 },
+		{ t: 'Noch unklar, wir sondieren', s: 1 },
 	] },
 	{ dim: 'huerde', text: 'Was hält Sie bisher am meisten zurück?', options: [
 		{ t: 'Zeit und Kapazität im Team' },
@@ -86,10 +89,10 @@ const earlyQuestions = [
 		{ t: 'Wir wussten nicht, wo anfangen' },
 	] },
 	{ dim: 'zeithorizont', text: 'Wie bald möchten Sie starten?', options: [
-		{ t: 'So bald wie möglich' },
-		{ t: 'In den nächsten Monaten' },
-		{ t: 'Dieses Jahr' },
-		{ t: 'Wir orientieren uns erst' },
+		{ t: 'So bald wie möglich', s: 2 },
+		{ t: 'In den nächsten Monaten', s: 2 },
+		{ t: 'Dieses Jahr', s: 1 },
+		{ t: 'Wir orientieren uns erst', s: 1 },
 	] },
 ];
 
@@ -112,6 +115,15 @@ const config = {
 	noGaps: 'Starke Ausgangslage. In allen Feldern sind Sie gut aufgestellt. Im Strategiegespräch schauen wir, wo sich der Vorsprung weiter ausbauen lässt.',
 	ausgangslageLabels: ['Kaum digital (Präsenz)', 'Einzelne Tools', 'Lernplattform', 'Mehrere Systeme'],
 	earlyLabel: 'Startpunkt, viel Potenzial',
+	// Positively framed greenfield score ("Startpotenzial"): base plus momentum. Built from
+	// the scored early questions only (huerde is excluded, having no `s`), so it never depends
+	// on brittle text matching for unscored dims.
+	earlyScoreBase: 70,
+	earlyScores: Object.fromEntries(
+		earlyQuestions
+			.filter((q) => q.options.every((o) => typeof o.s === 'number'))
+			.map((q) => [q.dim, Object.fromEntries(q.options.map((o) => [o.t, o.s]))]),
+	),
 	earlyStepsTitle: 'Ihre ersten Schritte',
 	gateIntro: '{n} Handlungsfelder haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie zu jedem den konkreten nächsten Schritt und passende Förderwege.',
 	gateIntroOne: 'Ein Handlungsfeld haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie den konkreten nächsten Schritt und passende Förderwege.',
@@ -190,7 +202,7 @@ const config = {
 					<div class="flex flex-col gap-3" role="radiogroup" aria-labelledby={`rc-q-${i}`}>
 						{q.options.map((o) => (
 							<label class="rc-option">
-								<input type="radio" name={`q${i}`} data-score={o.s} data-value={o.t} class="rc-radio" />
+								<input type="radio" name={`q${i}`} data-score={q.branch === 'early' ? undefined : o.s} data-value={o.t} class="rc-radio" />
 								<span class="rc-option-text">{o.t}</span>
 							</label>
 						))}
@@ -418,6 +430,23 @@ const config = {
 			return config.categories.find((c) => pct <= c.max) || config.categories[config.categories.length - 1];
 		}
 
+		// Greenfield "Startpotenzial": base plus momentum from the scored early questions
+		// (goal clarity, timeline). Always lands in a positive band so a fresh start never
+		// reads as a low, discouraging number. Falls back to the base if no scores exist.
+		function computeEarlyPotential() {
+			const base = typeof config.earlyScoreBase === 'number' ? config.earlyScoreBase : 70;
+			const scores = config.earlyScores || {};
+			let sum = 0, max = 0;
+			Object.keys(scores).forEach((d) => {
+				const vals = Object.values(scores[d] || {}).filter((v) => typeof v === 'number');
+				if (!vals.length) return;
+				max += Math.max.apply(null, vals);
+				const v = scores[d][answers[d]];
+				if (typeof v === 'number') sum += v;
+			});
+			return max > 0 ? Math.round(base + (sum / max) * (100 - base)) : base;
+		}
+
 		let lastPct = 0;
 		let lastCat = null;
 		let lastEarly = false;
@@ -436,12 +465,15 @@ const config = {
 			if (hAus && typeof level === 'number') hAus.value = config.ausgangslageLabels[level] || '';
 
 			if (isEarly) {
-				// Greenfield: no compliance score. Reframe and capture needs.
-				lastPct = 0;
+				// Greenfield: a compliance % would be misleading (they have not started), so we show
+				// a positively framed "Startpotenzial" instead: a momentum reading in a 70-100 band.
+				// Needs (incl. huerde) are still captured as text for the lead.
+				const potenzial = computeEarlyPotential();
+				lastPct = potenzial;
 				lastCat = { label: config.earlyLabel, cls: 'text-amber-300', bar: 'bg-amber-400' };
-				if (teaserScore) teaserScore.classList.add('hidden');
-				if (teaserCat) { teaserCat.textContent = config.earlyLabel; teaserCat.className = 'text-display-sm font-semibold text-amber-300'; }
-				if (hs) hs.value = '';
+				if (teaserScore) { teaserScore.classList.remove('hidden'); teaserScore.textContent = potenzial + '%'; }
+				if (teaserCat) { teaserCat.textContent = config.earlyLabel; teaserCat.className = 'text-base font-medium text-amber-300'; }
+				if (hs) hs.value = potenzial + '% (Startpotenzial)';
 				if (hc) hc.value = config.earlyLabel;
 				if (ha) ha.value = (config.earlyFields || []).map((f) => f.label + ': ' + (answers[f.dim] || '')).join('; ');
 			} else {
@@ -506,10 +538,11 @@ const config = {
 			const ctaText = document.getElementById('rc-cta-text');
 			const scoreBarTrack = scoreBar ? scoreBar.parentElement : null;
 			if (lastEarly) {
-				// No numeric score for greenfield; show the label as the headline.
-				if (scoreNum) scoreNum.classList.add('hidden');
-				if (scoreBarTrack) scoreBarTrack.classList.add('hidden');
-				if (scoreCat) { scoreCat.textContent = config.earlyLabel; scoreCat.className = 'text-display-sm font-semibold text-amber-300'; }
+				// Greenfield: show the positively framed Startpotenzial number, bar, and label.
+				if (scoreNum) { scoreNum.classList.remove('hidden'); scoreNum.textContent = lastPct + '%'; }
+				if (scoreBarTrack) scoreBarTrack.classList.remove('hidden');
+				if (scoreCat) { scoreCat.textContent = config.earlyLabel; scoreCat.className = 'text-base font-medium text-amber-300'; }
+				if (scoreBar) { scoreBar.style.width = lastPct + '%'; scoreBar.className = 'h-full transition-all duration-500 bg-amber-400'; }
 			} else {
 				if (scoreNum) { scoreNum.classList.remove('hidden'); scoreNum.textContent = lastPct + '%'; }
 				if (scoreBarTrack) scoreBarTrack.classList.remove('hidden');

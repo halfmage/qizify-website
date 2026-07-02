@@ -19,7 +19,8 @@ or CSV. No CRM required to start.
 | Channel | LinkedIn / Email |
 | Touch 1 date | First outreach date |
 | Touch 1 type | Connect note / First message / Cold email |
-| Value asset sent | Digitalcheck / Evidence brief / none |
+| Value asset sent | Readiness-Check link / Evidence brief / none |
+| Check completed | Yes / No (score + answers appear in the Netlify "readiness-check" form) |
 | Follow-up date | Touch 1 + 5 to 7 business days |
 | Reply | Yes / No / Opt-out |
 | Status | Sourced / Contacted / Engaged / Call booked / Discovery / Won / Nurture / Dead |

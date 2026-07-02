@@ -1,8 +1,15 @@
 # LinkedIn 1:1 sequences
 
 Formal Sie. No em or en dashes. Never name a competitor. Positioning is **custom project +
-optional managed run**, not a subscription. Every message offers a value asset (BFSG/AZAV
-Digitalcheck or the evidence brief) before asking for the call.
+optional managed run**, not a subscription. Every message points to a value asset before asking
+for the call: the primary asset is the live, self-serve **Digital-Readiness-Check**
+(`learnslice.com/de/digital-readiness-check`), the evidence brief is the fallback.
+
+**Why a link, not an attachment.** The check is a 3-minute interactive self-assessment that gives
+the prospect an instant, personalized Maßnahmenplan and captures their score and answers as a
+qualified lead. Pointing to the link is lower friction than promising to send a PDF, self-serve
+(they opt in on the form themselves), and self-qualifying. Append `?src=linkedin` to the URL so
+the lead record carries the channel.
 
 ## How to use
 1. Connect the champion first. Keep the connection note short (LinkedIn caps it near 300
@@ -39,7 +46,9 @@ do not send.
 > Umschulungen auf digitale Formate] bei Ihnen gerade Thema ist: Wir bauen einen KI-Lerncoach auf
 > Ihren eigenen Inhalten und liefern Anwesenheit, Lernfortschritt sowie synchrone und
 > selbstgesteuerte Lernzeit exportierbar für Ihre Nachweise. Datenverarbeitung in Deutschland,
-> AVV inklusive. Ich schicke Ihnen gern unseren BFSG- und AZAV-Digitalcheck. Passt das?
+> AVV inklusive. Als Einstieg unser kostenloser Digital-Readiness-Check: in 3 Minuten sehen Sie,
+> wo Sie bei AZAV, BFSG und KI stehen, mit Maßnahmenplan. learnslice.com/de/digital-readiness-check
+> Passt das?
 
 ### Compliance (QMB / AZAV-Beauftragte)
 
@@ -56,8 +65,9 @@ do not send.
 > Guten Tag [Name], für Ihre Erfolgskontrolle und Nachweise liefern wir Anwesenheit,
 > Lernfortschritt sowie synchrone und selbstgesteuerte Lernzeit erfasst und exportierbar. Wir
 > sagen bewusst AZAV-unterstützend, nicht zertifizierend: die Zulassung bleibt bei Ihnen und
-> Ihrer fachkundigen Stelle. Ich sende Ihnen gern unseren BFSG- und AZAV-Digitalcheck als
-> Einstieg.
+> Ihrer fachkundigen Stelle. Als Einstieg unser kostenloser Digital-Readiness-Check, der Ihre
+> Nachweis- und Barrierefreiheitslücken in wenigen Minuten sichtbar macht:
+> learnslice.com/de/digital-readiness-check
 
 ### Economic buyer (Geschäftsführung / Kaufmännische Leitung)
 
@@ -85,8 +95,9 @@ do not send.
 **First message:**
 > Guten Tag [Name], mit Blick auf SGB IX und BFSG entwickeln wir barrierefreie, adaptive
 > Lernpfade auf Ihren Inhalten, mit einem KI-Lerncoach, der Antworten an Ihr geprüftes Material
-> bindet und Quellen belegt. Datenverarbeitung in Deutschland. Ich teile gern unseren BFSG- und
-> AZAV-Digitalcheck. Wäre das für Sie interessant?
+> bindet und Quellen belegt. Datenverarbeitung in Deutschland. In unserem kostenlosen
+> Digital-Readiness-Check sehen Sie in wenigen Minuten, wo Sie bei Barrierefreiheit und AZAV
+> stehen: learnslice.com/de/digital-readiness-check Wäre das für Sie interessant?
 
 ---
 
@@ -118,4 +129,5 @@ sovereignty gate.
 **Follow-up (all roles, after 5 to 7 business days):**
 > Guten Tag [Name], nur ein kurzer Nachfass zu meiner letzten Nachricht. Falls das Timing gerade
 > nicht passt, sagen Sie gern kurz Bescheid, dann melde ich mich zu gegebener Zeit wieder. Den
-> [Digitalcheck / die Souveränitäts-Übersicht] lege ich Ihnen unabhängig davon gern bei.
+> [Digital-Readiness-Check learnslice.com/de/digital-readiness-check / die Souveränitäts-Übersicht]
+> lege ich Ihnen unabhängig davon gern bei.

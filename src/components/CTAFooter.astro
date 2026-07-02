@@ -8,9 +8,13 @@ interface Props {
 	currentLang: 'en' | 'de';
 	buttonHref?: string;
 	note?: string;
+	// Optional low-commitment second path (e.g. a lead-magnet link). When set, renders a
+	// text link below the primary CTA so visitors not ready to book still have an off-ramp.
+	secondaryLabel?: string;
+	secondaryHref?: string;
 }
 
-const { headline, subheadline, button, currentLang, buttonHref = '#demo-request', note } = Astro.props;
+const { headline, subheadline, button, currentLang, buttonHref = '#demo-request', note, secondaryLabel, secondaryHref } = Astro.props;
 
 const subheadlineLines = subheadline.split('\n');
 ---
@@ -44,6 +48,11 @@ const subheadlineLines = subheadline.split('\n');
 		</div>
 		{note && (
 			<p class="text-xs text-muted m-0 mt-1">{note}</p>
+		)}
+		{secondaryLabel && secondaryHref && (
+			<a href={secondaryHref} class="text-sm text-white/80 hover:text-white underline underline-offset-4 decoration-white/30 hover:decoration-white transition-colors mt-1">
+				{secondaryLabel}
+			</a>
 		)}
 	</div>
 </section>
