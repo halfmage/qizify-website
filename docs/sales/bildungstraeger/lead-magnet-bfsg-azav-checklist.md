@@ -40,7 +40,6 @@ Möchten Sie die offenen Punkte in eine konkrete Roadmap übersetzen? Buchen Sie
 - EN mirror for `/training-providers`: "The 12-point digital check for training providers: BFSG, AZAV, and AI".
 
 ## Implementation status (built)
-- Live as an interactive section `#digitalcheck` on both `/de/weiterbildungsanbieter` and `/training-providers`, component `src/components/LeadMagnetForm.astro`.
-- Capture form (name, email, organisation, role, consent) wired to Netlify Forms under the form name `digitalcheck`. On submit it reveals the 12-point checklist inline (instant value, no backend or PDF needed) and shows a "book a strategy call" upsell.
-- The hero secondary CTA now points here ("Kostenlosen Digitalcheck holen" / "Get the free digital check"), giving the two-rung ladder: low-friction download then high-intent call.
-- Optional follow-ups: produce the one-page PDF and add a Netlify autoresponder to also email it; tag submissions as lead lane B and route to `qualification.md`.
+- Shipped as the interactive AZAV/BFSG Digital-Readiness-Check on `/de/digital-readiness-check`, component `src/components/ReadinessCheck.astro`. (The earlier `#digitalcheck` prototype, `LeadMagnetForm.astro`, was never wired into a page and has been removed.)
+- Capture form (name, email, organisation, role, score, category, per-dimension answers, ausgangslage, source, consent) wired to Netlify Forms under the form name `readiness-check`. On submit it reveals the personalised Maßnahmenplan inline (with PDF export) and shows a "book a strategy call" upsell.
+- Optional follow-ups: add a Netlify autoresponder to email the plan; tag submissions as lead lane B and route to `qualification.md`.
