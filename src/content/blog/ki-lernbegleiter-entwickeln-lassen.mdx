@@ -1,0 +1,137 @@
+---
+title: "KI-Lernbegleiter entwickeln lassen: Kosten, Ablauf, Auswahl"
+description: "KI-Lernbegleiter entwickeln lassen: Was ein eigener KI-Tutor kostet, kaufen oder entwickeln lassen und worauf Sie bei der Anbieterauswahl achten."
+publishDate: 2026-07-21
+author: "LearnSlice Team"
+tags: ["KI-Lernbegleiter", "KI-Tutor entwickeln lassen", "Adaptives Lernen", "Lernsoftware", "Kosten", "DSGVO"]
+lang: "de"
+translationSlug: "custom-ai-tutor-development"
+ogImage: "/images/blog/ai-tutor-consultation.jpg"
+heroImage: "/images/blog/ai-tutor-consultation.webp"
+ctaVariant: "consultation"
+keyTakeaways:
+  - "Ein KI-Lernbegleiter ist ein Lernassistent, der auf Ihren eigenen Inhalten und Daten aufsetzt, kein generischer Chatbot. Er antwortet aus Ihrem Wissen, führt jeden Lernenden über einen adaptiven Lernpfad, gibt Feedback und läuft unter Ihrer Marke und Ihren Datenschutzregeln."
+  - "Sie haben drei Wege: eine fertige Plattform kaufen, ein White-Label-Produkt lizenzieren oder individuell entwickeln lassen. Entwickeln lassen ist richtig, wenn der KI-Tutor exakt zu Ihren Inhalten passen, Ihre Marke tragen, die Datenhoheit bei Ihnen lassen und Ihnen gehören soll."
+  - "Ein individueller KI-Lernbegleiter kostet nach Angaben spezialisierter Entwicklungsdienstleister meist etwa 30.000 bis 150.000 Euro, ein erster Prototyp (Proof of Concept) rund 5.000 bis 15.000 Euro, eine umfangreiche Enterprise-Lösung reicht in den sechsstelligen Bereich. Planen Sie laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat ein, nicht nur die Entwicklung."
+  - "Die größten Kostentreiber sind die Verankerung im eigenen Wissen (RAG), der Grad der Adaptivität und die Anbindung an Ihre Systeme (LMS, SSO, xAPI oder SCORM). Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung in 3 bis 6 Monaten."
+  - "Achten Sie bei der Auswahl auf beides: Didaktik und Software-Engineering aus einer Hand, echte KI-Verankerung im eigenen Wissen statt eines angeklebten Assistenten, DSGVO-konformes EU- oder Deutschland-Hosting, eine klare Regelung zum Eigentum am Code und einen Anbieter, der Betrieb und Skalierung mitdenkt."
+faq:
+  - q: "Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?"
+    a: "Als Marktrichtwert kostet ein individueller KI-Lernbegleiter meist etwa 30.000 bis 150.000 Euro. Ein erster Prototyp (Proof of Concept) mit geführtem Dialog und Ihren Inhalten liegt oft bei rund 5.000 bis 15.000 Euro, eine umfangreiche Enterprise-Lösung mit tiefen Integrationen und adaptivem Lernen erreicht den sechsstelligen Bereich und darüber. Hinzu kommen laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat. Das sind Branchenrichtwerte, keine Angebote; der konkrete Preis hängt von Verankerung, Adaptivität und Integrationen ab."
+  - q: "Sollten wir einen KI-Tutor kaufen oder entwickeln lassen?"
+    a: "Kaufen Sie eine fertige Plattform, wenn Ihre Anforderungen Standard sind und Tempo zählt. Lizenzieren Sie ein White-Label-Produkt, wenn Sie Ihre Marke auf eine fremde Engine setzen wollen. Entwickeln lassen ist der richtige Weg, wenn der KI-Tutor auf Ihren eigenen Inhalten antworten, zu Ihren Prozessen passen, die Datenhoheit bei Ihnen lassen und Ihnen gehören soll. Für alle, die große Gruppen schulen, ist eine einmalige Entwicklung über die Jahre oft günstiger als eine dauerhafte Lizenz pro Nutzer."
+  - q: "Wie lange dauert die Entwicklung eines KI-Lernbegleiters?"
+    a: "Eine erste nutzbare Version mit Ihren Inhalten und einem funktionierenden Lernablauf steht oft in 6 bis 8 Wochen bereit. Eine komplette Lösung mit adaptiven Pfaden, Integrationen und Reporting dauert typischerweise 3 bis 6 Monate. Ein Anbieter, der in kurzen Iterationen liefert, zeigt Ihnen früh etwas Nutzbares, statt monatelang im Konzept zu verschwinden."
+  - q: "Was ist der Unterschied zwischen einem KI-Lernbegleiter und einem generischen Chatbot?"
+    a: "Ein generischer Chatbot antwortet aus dem offenen Internet und einem allgemeinen Modell. Ein KI-Lernbegleiter ist in Ihrem eigenen Wissen verankert: Er antwortet aus Ihren Materialien, folgt Ihrer didaktischen Struktur, führt jeden Lernenden über einen adaptiven Pfad und gibt Feedback. Er läuft unter Ihrer Marke, mit Ihren Rollen und Ihren Datenschutzregeln."
+  - q: "Kann ein KI-Lernbegleiter als White-Label unter unserer Marke laufen?"
+    a: "Ja. Eine Individualentwicklung kann Ihren Namen, Ihr Design und Ihre Domain tragen, Ihr Kunde sieht also nur Ihre Marke und Sie behalten die Kundenbeziehung, und mit dem richtigen Vertrag gehört sie Ihnen vollständig. Wenn Sie schnell branden wollen und das Ergebnis nicht besitzen müssen, ist ein lizenziertes White-Label-Produkt die leichtere Alternative, das gehört Ihnen dann allerdings nicht. Bildungsträger und Edtech-Anbieter fragen beides am häufigsten nach."
+  - q: "Ist ein individueller KI-Lernbegleiter DSGVO-konform?"
+    a: "Er kann und sollte es sein, aber nur, wenn er von Anfang an so gebaut wird. Achten Sie auf Hosting in Deutschland oder der EU, einen Auftragsverarbeitungsvertrag, ein sauberes Rollen- und Löschkonzept und eine klare Trennung zwischen Ihren Daten und öffentlich trainierten Modellen, inklusive Trainingsdaten-Opt-out. Individualentwicklung hat den Vorteil, dass Datenschutz und Souveränität von Grund auf eingeplant werden."
+  - q: "Wie wird ein KI-Lernbegleiter in unseren eigenen Inhalten verankert?"
+    a: "Über Retrieval-Augmented Generation (RAG): Ihre Dokumente, Kurse und Ihr Wissen werden indexiert, und der KI-Tutor ruft die passenden Stellen ab, bevor er antwortet, mit Quellenangabe. So bleiben die Antworten korrekt und am Lehrplan statt erfunden. Die Qualität dieser Verankerung ist einer der größten Faktoren für Nutzen und Kosten der Entwicklung."
+  - q: "Wem gehören der Code und der KI-Tutor nach dem Projekt?"
+    a: "Das ist Verhandlungssache und gehört vor Projektstart schriftlich geklärt. Bei echter Individualentwicklung sollten die Rechte am erstellten Code und an den Inhalten bei Ihnen liegen, damit Sie nicht dauerhaft an einen Anbieter gebunden sind. Lassen Sie sich Eigentum, Nutzungsrechte und Herausgabe des Quellcodes vertraglich zusichern."
+---
+
+![Zwei Kollegen planen an einem Whiteboard ein KI-Lernbegleiter-Projekt](/images/blog/ai-tutor-consultation.webp)
+
+## KI-Lernbegleiter entwickeln lassen: die Entscheidung hinter der Suche
+
+Wenn Sie recherchieren, wie Sie einen eigenen KI-Lernbegleiter bekommen, haben Sie sich vermutlich schon entschieden, dass ein generischer Chatbot nicht genügt. Die eigentliche Frage ist nicht, ob ein personalisierter KI-Mentor Ihren Lernenden helfen würde. Sie lautet: Wie bekommen Sie einen, der wirklich passt, indem Sie eine fertige Plattform kaufen, ein White-Label-Produkt lizenzieren oder eine individuelle Lösung rund um Ihre eigenen Inhalte entwickeln lassen?
+
+Um diese Entscheidung geht es in diesem Leitfaden. Die meisten Organisationen kommen hierher, weil ein fertiges Tool an einer zentralen Stelle klemmt: Es kennt den eigenen Lehrplan nicht, es kann die eigene Marke nicht tragen, oder sein Umgang mit Daten schließt es aus. Eine falsche Wahl kostet doppelt: das Budget und die Monate, die mit einem Tool vergehen, das am Ende niemand nutzt. Dass ein maßgeschneiderter KI-Tutor helfen würde, müssen wir Ihnen nicht erklären. Sie wollen wissen, was er kostet, wie eine Entwicklung abläuft und woran Sie einen seriösen Entwicklungspartner erkennen.
+
+## Was ein KI-Lernbegleiter ist, und wann sich ein eigener lohnt
+
+Ein **KI-Lernbegleiter** ist ein Lernassistent, der auf Ihren eigenen Inhalten und Daten aufsetzt, kein generischer Chatbot. Er antwortet aus Ihrem Wissen, führt jeden Lernenden über einen adaptiven Lernpfad, gibt Feedback und läuft unter Ihrer Marke und Ihren Datenschutzregeln. Sie beauftragen ihn einmal und besitzen mit dem richtigen Vertrag das Ergebnis.
+
+Der Unterschied zu einem Standard-Assistenten ist die Verankerung. Ein generischer Chatbot antwortet aus dem offenen Internet, ein KI-Lernbegleiter antwortet aus Ihrem Material, folgt Ihrer didaktischen Struktur und nennt seine Quellen. Ein eigener lohnt sich, sobald genau diese Verankerung zählt: wenn die Inhalte zu speziell für ein Standard-Tool sind, wenn der KI-Tutor wie Ihrer aussehen und klingen soll, wenn der Datenschutz nicht verhandelbar ist oder wenn er über die Jahre mit Ihrem eigenen Wissen wachsen soll.
+
+![Der KI-Lernbegleiter von LearnSlice: eine Chat-Oberfläche mit Modi für IHK-Prüfung, Onboarding, Unternehmenswissen und Weiterbildung, verankert in Ihren eigenen Inhalten](/images/solutions/learnslice.webp)
+
+## Für wen sich ein eigener KI-Lernbegleiter lohnt
+
+Drei Gruppen lassen KI-Lernbegleiter entwickeln, aus unterschiedlichen Gründen:
+
+- **Bildungsträger und Lernanbieter (Edtech, Kurs- und Weiterbildungsanbieter, Akademien).** Sie besitzen die Inhalte und die Kundenbeziehung, haben aber oft keine eigene Softwareentwicklung. Ein KI-Tutor unter ihrer eigenen Marke lässt sie ein modernes Produkt anbieten, ohne ein eigenes Entwicklerteam aufzubauen, und den Kunden für sich behalten.
+- **Unternehmen und Personalentwicklung.** Sie wollen einen Tutor, der in ihren eigenen Prozessen und ihrem Wissen verankert ist: eine Einarbeitung, die sich an jede Rolle anpasst, Compliance-Schulungen, die nach dem eigenen Betrieb aussehen, Weiterbildung aus der internen Dokumentation. Wo sich das in der Praxis auszahlt, zeigt unser [Überblick zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
+- **Hochschulen und Universitäten.** Am Lehrplan verankerte Tutoren, die aus der Literaturliste antworten, die wissenschaftliche Integrität wahren und sich ins LMS integrieren. Der Einkaufsprozess ist länger und beschaffungsgetrieben, doch für eine datensouveräne, lehrplanverankerte Entwicklung ist die Passung stark.
+
+Allen dreien ist dasselbe gemeinsam: Sie schulen große Gruppen und brauchen einen Tutor, der exakt zu ihren Inhalten passt, und genau da schlägt Entwickeln das Kaufen.
+
+![Ein KI-Lernbegleiter unter der eigenen Marke des Kunden: ein Financial Companion auf derselben Engine, mit Finanz-Gesundheitscheck und geführtem Lernprogramm](/images/solutions/financial-companion.webp)
+
+## Plattform kaufen, White-Label lizenzieren oder entwickeln lassen?
+
+Es gibt drei Wege, und der richtige hängt davon ab, wie speziell Ihre Inhalte sind und wie viel Kontrolle Sie brauchen. Der direkte Vergleich:
+
+| Kriterium | Plattform kaufen (SaaS) | White-Label lizenzieren | Entwickeln lassen |
+|---|---|---|---|
+| Einstiegskosten | niedrig, monatlich pro Nutzer | mittel, Lizenz plus Einrichtung | höher, einmalige Entwicklung |
+| Kosten über die Jahre | laufende Gebühren pro Nutzer, dauerhaft | laufende Lizenz, dauerhaft | einmalige Investition, danach nur Betrieb |
+| Passung zu Ihren Inhalten | begrenzt, Sie passen sich an | gut, im Rahmen des Produkts | exakt, die Lösung passt sich an |
+| Zeit bis zum Start | sofort | Wochen | Wochen bis Monate |
+| Ihre Marke | überwiegend die des Anbieters | Ihre | Ihre |
+| Datenhoheit und Souveränität | beim Anbieter | geteilt | bei Ihnen |
+| Eigentum am Ergebnis | keins | keins | bei Ihnen |
+
+Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Abo wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb, und Sie nutzen dieselbe Lösung über Jahre.
+
+Ab einer gewissen Nutzerzahl kann die Entwicklung unter den auflaufenden Lizenzgebühren liegen, und sie passt exakt zu Ihnen statt umgekehrt. Deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen schulen: Bildungsträger, Hochschulen und Unternehmen mit vielen Lernenden.
+
+**Unsicher, ob kaufen, White-Label oder entwickeln lassen?** Umreißen Sie Ihren Fall in einem kostenlosen 30-minütigen Strategiegespräch, ohne Pitch, und Sie erhalten eine ehrliche Einschätzung, welcher Weg passt, plus einen Preisrahmen. Oder fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an.
+
+## Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?
+
+Die Kosten hängen vor allem davon ab, wie tief der Tutor in Ihrem Wissen verankert ist, wie adaptiv er ist und was er anbindet. Kurz gesagt: Ein erster Prototyp liegt im mittleren vierstelligen Bereich, eine vollständige Lösung im fünf- bis sechsstelligen Bereich, dazu kommen laufende Betriebskosten. Zur Orientierung die marktüblichen Richtwerte im Überblick:
+
+| Umfang | Typische Entwicklungskosten | Zeitrahmen |
+|---|---|---|
+| Prototyp / Proof of Concept (geführter Dialog, Ihre Inhalte) | ca. 5.000 bis 15.000 Euro | 6 bis 8 Wochen |
+| Individueller KI-Lernbegleiter (adaptive Pfade, Integrationen, Reporting) | ca. 30.000 bis 150.000 Euro | 3 bis 6 Monate |
+| Umfangreiche Enterprise-Lösung (tiefe LMS-Integration, viele Rollen und Sprachen) | 150.000 Euro und mehr | 4 bis 8 Monate |
+| Betrieb (Modell-API, Hosting, Weiterentwicklung) | ca. 500 bis 5.000 Euro pro Monat | dauerhaft |
+
+Diese Werte sind Branchenrichtwerte spezialisierter Entwicklungsdienstleister, keine Angebote. Ein Abo-Tool kostet zum Vergleich je nach Anbieter grob 6 bis 20 Euro pro Monat im Consumer-Bereich, Team-Plattformen beginnen bei rund 99 Euro pro Monat, B2B-Wissensbots liegen ab etwa 490 Euro pro Monat. An dieser Summe muss sich eine Eigenentwicklung über die Zeit messen lassen.
+
+Für die meisten Projekte im Mittelstand bedeutet ein eigener KI-Tutor eine fünfstellige Investition, die sich über vermiedene Lizenzkosten und eingesparte Zeit rechnet, kein sechsstelliges Wagnis. Ein 30-minütiges Gespräch macht aus diesen Spannen eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
+
+1. **Verankerung in Ihrem Wissen.** Ihre Inhalte zu indexieren und den Abruf präzise und mit Quellenangabe hinzubekommen (RAG) ist der Kern eines echten Tutors und einer der größten Treiber für Nutzen und Kosten.
+2. **Adaptivität.** Personalisierte Lernpfade und ein Kompetenzmodell, das auf jeden Lernenden reagiert, kosten mehr als ein starrer Frage-Antwort-Ablauf, sind aber oft der eigentliche Grund für die Entwicklung.
+3. **Integrationen.** Anbindungen an Ihr LMS, ein Single Sign-on (SSO) oder Standards wie xAPI und SCORM treiben den Aufwand.
+4. **Umfang und Nutzungsrechte.** Mehr Rollen, mehr Sprachen, White-Label-Branding und die Übergabe des vollen Eigentums schlagen sich im Preis nieder.
+
+## Worauf Sie bei der Auswahl eines Anbieters achten
+
+Ein guter Anbieter vereint zwei Kompetenzen, die selten zusammenkommen: Didaktik und Software-Engineering. Prüfen Sie vor der Beauftragung diese Punkte:
+
+- **Didaktik und Technik aus einer Hand.** Ein schöner Assistent ohne Lernwirkung ist verschwendetes Budget, ein gutes Konzept auf schwacher Technik auch.
+- **Echte Verankerung, kein angeklebter Chatbot.** Kann der Anbieter einen Tutor bauen, der auf Ihrem eigenen Wissen mit Quellenangabe und adaptiven Pfaden antwortet, statt einen generischen Assistenten einzupacken?
+- **DSGVO und Souveränität.** Hosting in Deutschland oder der EU, Auftragsverarbeitungsvertrag, sauberes Rollen- und Löschkonzept und ein Trainingsdaten-Opt-out.
+- **Compliance und Barrierefreiheit.** Für regulierte Branchen und den öffentlichen Sektor: Fragen Sie nach EU-AI-Act-Bereitschaft und Barrierefreiheit (WCAG und das BFSG in Deutschland). Von Anfang an eingeplant ist das deutlich günstiger als nachträglich.
+- **Eigentum am Code.** Wem gehören Ergebnis und Quellcode nach dem Projekt? Lassen Sie sich das schriftlich zusichern.
+- **Betrieb und Skalierung.** Wird der Tutor nach dem Start gepflegt und ausgebaut, oder sind Sie danach allein?
+- **Referenzen und Nachweise.** Belege statt Versprechen. Wie belastbare Belege aussehen, sehen Sie in unserer [Forschung und Evidenz](/de/forschung) aus einem Hochschul-Pilotprojekt.
+
+Ein konkreter Beleg kommt von der FH Dortmund, wo LearnSlice in einem geförderten Forschungsprojekt eingesetzt wird:
+
+> "Wir haben die quizbasierte KI-Plattform über verschiedene Lehrmethoden hinweg eingesetzt, vom Inverted Classroom bis zu quizbasierten Hausaufgaben. Die Software hat die Motivation der Studierenden gesteigert und ihnen geholfen, Prüfungen erfolgreicher zu bestehen. Sie passt sich nahtlos an individuelle Lernbedürfnisse an, genau das, was moderne Hochschullehre braucht."
+>
+> **Prof. Dr. Carsten Wolff**, Vorstand des IDiAL, FH Dortmund
+
+Wie eng Datenschutz und KI zusammenhängen und welche Fragen Sie einem Anbieter stellen sollten, lesen Sie im [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+## Datensouveränität, DSGVO und Eigentum am Ergebnis
+
+Der eigentliche Vorteil eines individuellen KI-Lernbegleiters liegt in der Kontrolle: über Ihre Daten, über die Technik und über das Ergebnis. Bei einem fertigen Assistenten akzeptieren Sie die Regeln des Anbieters. Bei einem Tutor, der für Sie gebaut wird, legen Sie sie selbst fest.
+
+Das betrifft drei Dinge, die in Deutschland und der DACH-Region besonders wichtig sind, und für alle mit Lernenden in der EU. Erstens den **Datenschutz**: Ein Tutor, der von Grund auf für EU-Hosting, Auftragsverarbeitung und klare Datentrennung gebaut ist, erspart Ihnen die Diskussionen, die generische Tools regelmäßig auslösen. Zweitens die **Souveränität**: Sie sind nicht dauerhaft an einen Anbieter, ein Preismodell oder ein Rechenzentrum außerhalb der EU gebunden. Drittens das **Eigentum**: Wenn die Rechte am Code bei Ihnen liegen, ist der Tutor ein Vermögenswert Ihres Unternehmens, kein gemietetes Werkzeug.
+
+Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle KI-Lernbegleiter und Lernplattformen mit EU-Hosting und Eigentum am Ergebnis umsetzt, sehen Sie auf der Seite zu unseren [individuellen E-Learning-Lösungen](/de/loesungen). Wenn Sie die breitere Entscheidung gegenüber Standardsoftware abwägen, deckt unser Leitfaden zu [E-Learning entwickeln lassen](/de/blog/e-learning-entwickeln-lassen) das Gesamtbild ab.
+
+## Fazit: In vier Schritten zum eigenen KI-Lernbegleiter
+
+Einen KI-Lernbegleiter entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie strukturiert vorgehen. Entscheiden Sie sich erstens zwischen Kaufen, White-Label und Entwickeln lassen, je nachdem, wie speziell Ihre Inhalte sind und wie viel Kontrolle Sie brauchen. Rechnen Sie zweitens mit realistischen Marktpreisen statt mit dem günstigsten Angebot. Prüfen Sie drittens den Anbieter auf Didaktik, Technik, Verankerung, Datenschutz und Eigentum. Und starten Sie viertens klein, mit einer ersten Version, die Sie mit echten Lernenden testen, bevor Sie das volle Projekt beauftragen.
+
+**Lassen Sie uns Ihren KI-Lernbegleiter umreißen.** Fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an oder buchen Sie ein kostenloses 30-minütiges Strategiegespräch: kein Pitch, am Ende eine konkrete Roadmap und ein Preisrahmen für Ihren eigenen KI-Tutor. Für den betrieblichen Einsatz in der Ausbildung finden Sie den Überblick unter [LearnSlice für Unternehmen](/de/companies), für Berufsschulen unter [LearnSlice für Schulen](/de/schools).
