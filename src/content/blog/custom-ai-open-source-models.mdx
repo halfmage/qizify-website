@@ -52,6 +52,8 @@ An **open-weight model** is an AI model whose trained weights are published, so 
 
 On independent benchmarks such as the [Artificial Analysis Intelligence Index](https://artificialanalysis.ai/models/open-source), the strongest open-weight models in mid-2026 come mostly from Chinese labs (Moonshot's Kimi, DeepSeek, Z.AI's GLM, and MiniMax), with Mistral the leading European entry and a few US releases such as Google's Gemma in the mix ([one mid-2026 roundup](https://officechai.com/ai/top-open-source-ai-models/) compiles the index). For an EU buyer, that pattern is a reason to self-host rather than to avoid these models: running the open weights on your own EU infrastructure keeps your data in the EU regardless of where the model was trained. And if model provenance itself matters to you, Mistral is an EU-headquartered option under a clean licence.
 
+![Bar chart of the top open-weight models by the Artificial Analysis Intelligence Index in July 2026: nine of the top ten are Chinese-made (Kimi, GLM, MiniMax, DeepSeek, MiMo, Hy3, Nex-N2-Pro), with Inkling from the US the only Western entry.](/images/blog/top-open-models-intelligence.svg)
+
 A **custom AI** is not the raw model. A base model on its own knows nothing about your operation. The custom part is the layer you build around it: your data connected through retrieval, the model shaped to your process and voice, and the whole thing wired into the systems your team already uses. That layer is the difference between a clever demo and an assistant that actually knows how your business runs. It is also, not coincidentally, the same build-versus-buy logic behind a [custom AI tutor](/blog/custom-ai-tutor-development): the value is in the fit, not the model.
 
 ## Why an Open Model, Not Just a Closed API
@@ -121,6 +123,8 @@ The good news on hosting is that open models have become dramatically more effic
 *Prices and hardware specifications above are indicative and current as of 2026; both move quickly.*
 
 On the economics: [one 2025 cost analysis](https://arxiv.org/abs/2509.18101) puts payback on a small self-hosted setup at well under a year, once steady usage is past roughly **10 to 50 million tokens a month**. The honest caveat is that self-hosting only wins when the hardware is actually used. An idle GPU is expensive per request, so below that volume, or for spiky usage, a closed or hosted API is often the cheaper and simpler choice. The point of a scoping call is to run this math against your real numbers before anyone commits to a build. For a broader view of what custom development itself costs, see our [guide to custom development costs](/blog/custom-e-learning-development-costs).
+
+![Illustrative cost chart: a closed API is billed per token so its monthly cost rises with usage, while a self-hosted open model has a flat monthly cost; the two lines cross at a break-even point around 10 to 50 million tokens a month.](/images/blog/self-hosting-break-even.svg)
 
 ## Choosing the Model, the License, and the Partner
 

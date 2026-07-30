@@ -52,6 +52,8 @@ Ein **Open-Weight-Modell** ist ein KI-Modell, dessen trainierte Gewichte veröff
 
 Auf unabhängigen Benchmarks wie dem [Artificial Analysis Intelligence Index](https://artificialanalysis.ai/models/open-source) kommen die stärksten Open-Weight-Modelle 2026 überwiegend von chinesischen Laboren (Moonshots Kimi, DeepSeek, Z.AIs GLM und MiniMax), mit Mistral als führendem europäischen Vertreter und einigen US-Modellen wie Googles Gemma im Feld ([eine Übersicht von Mitte 2026](https://officechai.com/ai/top-open-source-ai-models/) fasst den Index zusammen). Für einen EU-Käufer ist genau dieses Muster ein Grund zum Self-Hosting, nicht zum Verzicht auf diese Modelle: Wenn Sie die offenen Gewichte auf Ihrer eigenen EU-Infrastruktur betreiben, bleiben Ihre Daten in der EU, unabhängig davon, wo das Modell trainiert wurde. Und wenn die Herkunft des Modells selbst zählt, ist Mistral eine in der EU ansässige Option unter einer sauberen Lizenz.
 
+![Balkendiagramm der führenden Open-Weight-Modelle nach dem Artificial Analysis Intelligence Index im Juli 2026: neun der Top Ten stammen aus China (Kimi, GLM, MiniMax, DeepSeek, MiMo, Hy3, Nex-N2-Pro), Inkling aus den USA ist der einzige westliche Vertreter.](/images/blog/top-open-models-intelligence-de.svg)
+
 Eine **individuelle KI** ist nicht das rohe Modell. Ein Basismodell allein weiß nichts über Ihren Betrieb. Das Individuelle ist die Schicht, die Sie darum herum bauen: Ihre Daten über Retrieval angebunden, das Modell auf Ihren Prozess und Ihre Sprache zugeschnitten und das Ganze in die Systeme eingebunden, die Ihr Team ohnehin nutzt. Diese Schicht ist der Unterschied zwischen einer cleveren Demo und einem Assistenten, der tatsächlich weiß, wie Ihr Unternehmen arbeitet. Es ist, nicht zufällig, dieselbe Bauen-oder-Kaufen-Logik wie hinter einem [KI-Lernbegleiter](/de/blog/ki-lernbegleiter-entwickeln-lassen): Der Wert liegt in der Passung, nicht im Modell.
 
 ## Warum ein offenes Modell und nicht einfach eine geschlossene API
@@ -121,6 +123,8 @@ Die gute Nachricht beim Hosting: Offene Modelle sind deutlich effizienter geword
 *Die Preis- und Hardware-Angaben oben sind Richtwerte, Stand 2026; beides ändert sich schnell.*
 
 Zur Wirtschaftlichkeit: [Eine Kostenanalyse von 2025](https://arxiv.org/abs/2509.18101) setzt die Amortisation einer kleinen Self-Hosting-Umgebung auf deutlich unter ein Jahr an, sobald die stetige Nutzung über etwa **10 bis 50 Millionen Token pro Monat** liegt. Der ehrliche Vorbehalt: Self-Hosting gewinnt nur, wenn die Hardware auch ausgelastet ist. Eine ungenutzte GPU ist pro Anfrage teuer, unter diesem Volumen oder bei schwankender Nutzung ist eine geschlossene oder gehostete API also oft die günstigere und einfachere Wahl. Der Sinn eines Gesprächs ist, diese Rechnung an Ihren echten Zahlen zu prüfen, bevor sich jemand auf einen Bau festlegt. Einen breiteren Blick darauf, was Individualentwicklung selbst kostet, gibt unser [Leitfaden zu den Kosten der Individualentwicklung](/de/blog/e-learning-entwickeln-lassen).
+
+![Illustratives Kostendiagramm: die monatlichen Kosten einer geschlossenen API steigen mit der Nutzung, ein selbst gehostetes Modell bleibt konstant; die Linien schneiden sich am Break-even-Punkt bei etwa 10 bis 50 Millionen Token pro Monat.](/images/blog/self-hosting-break-even-de.svg)
 
 ## Modell, Lizenz und Partner wählen
 
