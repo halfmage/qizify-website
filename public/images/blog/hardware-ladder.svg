@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 392" role="img" aria-label="What open models run on. A 20 to 30 billion parameter quantized model runs on one mid-range GPU with 24 GB for low hundreds of euros a month. A 120 billion parameter model such as gpt-oss runs on a single 80 to 96 GB GPU from about 900 euros a month. The largest open models of 200 billion parameters and up need a multi-GPU node costing four figures a month. Providers include Hetzner, OVHcloud, Scaleway and IONOS.">
+  <rect x="0" y="0" width="840" height="392" rx="16" fill="#2a2622"/>
+  <text x="40" y="42" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" font-weight="600" fill="#faf8f4">What it runs on</text>
+  <text x="40" y="66" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92">Open models got efficient: bigger models, still modest hardware</text>
+
+  <!-- card 1 -->
+  <rect x="40" y="86" width="760" height="76" rx="12" fill="#37322c" stroke="#46402f"/>
+  <rect x="40" y="86" width="7" height="76" rx="3.5" fill="#a996ff"/>
+  <text x="72" y="122" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">20&#8211;30B</text>
+  <text x="72" y="142" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">quantized model</text>
+  <text x="330" y="118" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">One mid-range GPU</text>
+  <text x="330" y="138" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">a single 24 GB card</text>
+  <text x="620" y="118" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#faf8f4">low hundreds</text>
+  <text x="620" y="138" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">&#8364; / month</text>
+
+  <!-- card 2 -->
+  <rect x="40" y="174" width="760" height="76" rx="12" fill="#37322c" stroke="#46402f"/>
+  <rect x="40" y="174" width="7" height="76" rx="3.5" fill="#8a6cff"/>
+  <text x="72" y="210" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">120B</text>
+  <text x="72" y="230" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">e.g. gpt-oss</text>
+  <text x="330" y="206" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">One 80&#8211;96 GB GPU</text>
+  <text x="330" y="226" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">a single server</text>
+  <text x="620" y="206" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#faf8f4">from ~900</text>
+  <text x="620" y="226" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">&#8364; / month</text>
+
+  <!-- card 3 -->
+  <rect x="40" y="262" width="760" height="76" rx="12" fill="#37322c" stroke="#46402f"/>
+  <rect x="40" y="262" width="7" height="76" rx="3.5" fill="#6a4ae0"/>
+  <text x="72" y="298" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">200B+</text>
+  <text x="72" y="318" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">largest open models</text>
+  <text x="330" y="294" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Multi-GPU node</text>
+  <text x="330" y="314" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">8 or more GPUs</text>
+  <text x="620" y="294" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#faf8f4">four figures</text>
+  <text x="620" y="314" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">&#8364; / month</text>
+
+  <text x="40" y="372" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#8a8178">EU providers: Hetzner, OVHcloud, Scaleway, IONOS. Prices indicative, as of 2026.</text>
+</svg>

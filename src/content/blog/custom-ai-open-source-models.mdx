@@ -84,6 +84,8 @@ The EU AI Act adds a second reason to prefer this setup. Running an unmodified o
 
 For regulated and public-sector buyers, sovereignty is not a preference, it is a requirement, and a self-hosted open model is one of the few architectures that meets it cleanly. It is the same principle behind a [private AI for employee onboarding](/blog/private-ai-employee-onboarding): give people a capable AI that keeps sensitive information inside the building.
 
+![Scorecard of which open models are EU commercial self-hostable: Kimi, DeepSeek, Qwen, Mistral, gpt-oss and Gemma are EU-hostable under permissive or workable licences, while Llama's community licence is restricted for EU-domiciled firms.](/images/blog/eu-selfhost-scorecard.svg)
+
 ![Two colleagues scoping a project together at a laptop](/images/blog/pexels-a-darmel-7706924.webp)
 
 ## How a Generic Model Becomes *Your* AI
@@ -95,6 +97,8 @@ This is the part most people underestimate, and it is where personalization actu
 **Fine-tuning changes how the model behaves.** Light fine-tuning, usually with a technique called LoRA, teaches the model your tone, your output formats, your domain language, and your specific tasks. It does not reliably add fresh facts (that is retrieval's job), but it makes the model sound and act like yours.
 
 The clean architecture that ties this together, and the one worth asking any partner about, is one shared base model plus a small **per-client adapter** for behavior and a separate **per-client index** for data. Each customer's AI is personalized to them, their data stays isolated from everyone else's, and adding a new customer is cheap because you are not retraining a model from scratch. This is the pattern that lets a single engineering investment serve many tailored deployments.
+
+![Diagram: your content feeds a retrieval layer (RAG) that changes what the model knows, and your tone and tasks feed a fine-tuning layer (LoRA) that changes how it behaves; both attach to one shared open base model to produce your custom AI.](/images/blog/rag-lora-personalization.svg)
 
 ## Where This Boosts Your Operation
 
@@ -114,13 +118,7 @@ There are two numbers, and they are different. The **build** is a one-time inves
 
 The good news on hosting is that open models have become dramatically more efficient. A single high-memory GPU server in an EU data center starts around **[900 euros a month](https://www.hetzner.com/dedicated-rootserver/gex131/)** and already runs a 120-billion-parameter open model such as gpt-oss. Smaller models in the 20-to-30-billion range run on a single mid-range card. EU providers such as Hetzner, OVHcloud, Scaleway, and IONOS all offer this, so the entire stack can sit in Germany or the EU.
 
-| Setup | Roughly what it runs | Indicative EU cost |
-|---|---|---|
-| Single mid-range GPU | a 20 to 30B model, quantized | low hundreds of euros a month |
-| Single high-memory GPU server | a 120B open model (e.g. gpt-oss) | from ~900 euros a month |
-| Multi-GPU node | the largest open models (200B and up) | four figures a month and up |
-
-*Prices and hardware specifications above are indicative and current as of 2026; both move quickly.*
+![What open models run on: a 20 to 30B model on one mid-range 24GB GPU for low hundreds of euros a month, a 120B model like gpt-oss on a single 80 to 96GB GPU from about 900 euros a month, and 200B-plus models on a multi-GPU node for four figures a month.](/images/blog/hardware-ladder.svg)
 
 On the economics: [one 2025 cost analysis](https://arxiv.org/abs/2509.18101) puts payback on a small self-hosted setup at well under a year, once steady usage is past roughly **10 to 50 million tokens a month**. The honest caveat is that self-hosting only wins when the hardware is actually used. An idle GPU is expensive per request, so below that volume, or for spiky usage, a closed or hosted API is often the cheaper and simpler choice. The point of a scoping call is to run this math against your real numbers before anyone commits to a build. For a broader view of what custom development itself costs, see our [guide to custom development costs](/blog/custom-e-learning-development-costs).
 

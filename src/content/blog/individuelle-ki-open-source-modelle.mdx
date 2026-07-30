@@ -84,6 +84,8 @@ Die EU-KI-Verordnung liefert einen zweiten Grund für dieses Setup. Ein unverän
 
 Für regulierte Käufer und den öffentlichen Sektor ist Souveränität keine Vorliebe, sondern eine Anforderung, und ein selbst gehostetes offenes Modell ist eine der wenigen Architekturen, die sie sauber erfüllt. Es ist dasselbe Prinzip wie bei den [KI-Werkzeugen für die Ausbildung](/de/blog/ki-tools-ausbildung): Geben Sie den Menschen eine leistungsfähige KI, die sensible Informationen im Haus behält.
 
+![Scorecard, welche offenen Modelle in der EU kommerziell selbst hostbar sind: Kimi, DeepSeek, Qwen, Mistral, gpt-oss und Gemma sind EU-hostbar unter permissiven oder praktikablen Lizenzen, während Llamas Community-Lizenz für EU-Firmen eingeschränkt ist.](/images/blog/eu-selfhost-scorecard-de.svg)
+
 ![Zwei Kolleginnen und Kollegen skizzieren gemeinsam ein Projekt am Laptop](/images/blog/pexels-a-darmel-7706924.webp)
 
 ## Wie aus einem generischen Modell *Ihre* KI wird
@@ -95,6 +97,8 @@ Diesen Teil unterschätzen die meisten, und genau hier entsteht die Personalisie
 **Fine-Tuning verändert, wie sich das Modell verhält.** Leichtes Fine-Tuning, meist mit einer Technik namens LoRA, bringt dem Modell Ihren Ton, Ihre Ausgabeformate, Ihre Fachsprache und Ihre konkreten Aufgaben bei. Es fügt keine frischen Fakten zuverlässig hinzu (das ist Aufgabe des Retrieval), aber es lässt das Modell so klingen und handeln wie Ihres.
 
 Die saubere Architektur, die das zusammenhält und nach der Sie jeden Partner fragen sollten, ist ein gemeinsames Basismodell plus ein kleiner **kundenspezifischer Adapter** für das Verhalten und ein separater **kundenspezifischer Index** für die Daten. Die KI jedes Kunden ist auf ihn personalisiert, seine Daten bleiben von allen anderen getrennt, und ein neuer Kunde ist günstig, weil Sie kein Modell von Grund auf neu trainieren. Dieses Muster lässt eine einzige Entwicklungsinvestition viele maßgeschneiderte Installationen bedienen.
+
+![Diagramm: Ihre Inhalte speisen eine Retrieval-Schicht (RAG), die ändert, was das Modell weiß, und Ihr Ton und Ihre Aufgaben speisen eine Fine-Tuning-Schicht (LoRA), die ändert, wie es sich verhält; beide setzen auf einem gemeinsamen offenen Basismodell auf und ergeben Ihre eigene KI.](/images/blog/rag-lora-personalization-de.svg)
 
 ## Wo das Ihren Betrieb stärkt
 
@@ -114,13 +118,7 @@ Es gibt zwei Zahlen, und sie sind verschieden. Der **Bau** ist eine einmalige In
 
 Die gute Nachricht beim Hosting: Offene Modelle sind deutlich effizienter geworden. Ein einzelner GPU-Server mit viel Speicher in einem EU-Rechenzentrum startet bei rund **[900 Euro pro Monat](https://www.hetzner.com/dedicated-rootserver/gex131/)** und betreibt bereits ein offenes Modell mit 120 Milliarden Parametern wie gpt-oss. Kleinere Modelle im Bereich 20 bis 30 Milliarden laufen auf einer einzelnen Mittelklassekarte. EU-Anbieter wie Hetzner, OVHcloud, Scaleway und IONOS bieten das an, der gesamte Stack kann also in Deutschland oder der EU stehen.
 
-| Setup | Betreibt grob | Richtwert EU-Kosten |
-|---|---|---|
-| Einzelne Mittelklasse-GPU | ein 20- bis 30B-Modell, quantisiert | niedrige Hunderte Euro pro Monat |
-| Einzelner GPU-Server mit viel Speicher | ein 120B-Modell (z. B. gpt-oss) | ab ca. 900 Euro pro Monat |
-| Multi-GPU-Knoten | die größten offenen Modelle (ab 200B) | vierstellig pro Monat und mehr |
-
-*Die Preis- und Hardware-Angaben oben sind Richtwerte, Stand 2026; beides ändert sich schnell.*
+![Worauf offene Modelle laufen: ein 20- bis 30B-Modell auf einer Mittelklasse-GPU mit 24 GB für niedrige Hunderte Euro pro Monat, ein 120B-Modell wie gpt-oss auf einer einzelnen 80- bis 96-GB-GPU ab etwa 900 Euro pro Monat und Modelle ab 200B auf einem Multi-GPU-Knoten für vierstellige Beträge pro Monat.](/images/blog/hardware-ladder-de.svg)
 
 Zur Wirtschaftlichkeit: [Eine Kostenanalyse von 2025](https://arxiv.org/abs/2509.18101) setzt die Amortisation einer kleinen Self-Hosting-Umgebung auf deutlich unter ein Jahr an, sobald die stetige Nutzung über etwa **10 bis 50 Millionen Token pro Monat** liegt. Der ehrliche Vorbehalt: Self-Hosting gewinnt nur, wenn die Hardware auch ausgelastet ist. Eine ungenutzte GPU ist pro Anfrage teuer, unter diesem Volumen oder bei schwankender Nutzung ist eine geschlossene oder gehostete API also oft die günstigere und einfachere Wahl. Der Sinn eines Gesprächs ist, diese Rechnung an Ihren echten Zahlen zu prüfen, bevor sich jemand auf einen Bau festlegt. Einen breiteren Blick darauf, was Individualentwicklung selbst kostet, gibt unser [Leitfaden zu den Kosten der Individualentwicklung](/de/blog/e-learning-entwickeln-lassen).
 
