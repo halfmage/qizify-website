@@ -1,0 +1,141 @@
+---
+title: "Custom AI on Open-Source Models: Personalized and Sovereign"
+description: "How to build custom AI on open-source models like Kimi K2 and gpt-oss: personalized to your operation, self-hosted in the EU, and owned by you. Book a scoping call."
+publishDate: 2026-07-30
+author: "LearnSlice Team"
+tags: ["Custom AI", "Open-Source Models", "Self-Hosted AI", "AI Integration", "Data Sovereignty", "GDPR"]
+lang: "en"
+translationSlug: "individuelle-ki-open-source-modelle"
+ogImage: "/images/blog/pexels-mikhail-nilov-6592550.jpg"
+heroImage: "/images/blog/pexels-mikhail-nilov-6592550.webp"
+ctaVariant: "consultation"
+keyTakeaways:
+  - "Open-weight models (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek and others) are AI models whose weights you can download and run on your own infrastructure. That is the one class of frontier-adjacent AI you can fully self-host, so your data never leaves your servers and you are not billed per token."
+  - "A custom AI is not a raw model. It is a model wrapped around your operation: grounded in your own data through retrieval (RAG), shaped to your process and voice through light fine-tuning (LoRA), and connected to your systems. That layer is what turns a generic model into personalized AI for your business."
+  - "The strongest reason to self-host an open model is sovereignty, not price. Every call to a US-hosted AI API is a cross-border data transfer under GDPR; a model running on EU infrastructure removes that transfer entirely and keeps you in the lighter deployer role under the EU AI Act."
+  - "The cost case is real but narrow: self-hosting tends to pay off past roughly 10 to 50 million tokens a month at steady use. A single high-memory GPU server in the EU starts around 900 euros a month and already runs a 120-billion-parameter open model. Below that volume, an API is often cheaper."
+  - "Not every open model is safe to use commercially in the EU. Licenses differ sharply, from clean Apache 2.0 (Qwen, Mistral, gpt-oss) to custom terms with regional restrictions. Choosing the right model, license, and hosting for your use case is exactly the kind of decision to settle in a short scoping call before you build."
+faq:
+  - q: "What is an open-source (open-weight) AI model?"
+    a: "An open-weight model is an AI model whose trained weights are published so you can download them and run the model on your own hardware, instead of calling a provider's API. Kimi K2, gpt-oss, Qwen, Mistral and DeepSeek are examples. The term open-weight is more precise than open source, because some of these models ship the weights under restrictive custom licenses rather than a true open-source license. The practical point is the same: you can host the model yourself, so your prompts and data never leave your infrastructure."
+  - q: "Why build custom AI on an open model instead of just using ChatGPT or Claude?"
+    a: "Closed APIs from OpenAI, Anthropic or Google are excellent and often the right starting point. You move to a self-hosted open model when three things matter: data sovereignty (your data cannot leave the EU or your own servers), cost at scale (per-token fees add up once volume is high), and permanence and control (a self-hosted model runs as long as you keep it, and cannot be retired or repriced under you). A common path is to prototype on a closed API and graduate to an owned, self-hosted model when volume and compliance justify it."
+  - q: "How is a custom AI personalized to our specific business?"
+    a: "Through two layers on top of the base model. Retrieval-augmented generation (RAG) grounds the model in your own documents and data, so it answers from your knowledge and can cite sources. Light fine-tuning (LoRA) shapes how the model behaves: your tone, your output formats, your domain language and tasks. A clean pattern is one shared base model plus a small per-client adapter for behavior and a separate per-client index for data, so each customer's AI is personalized and their data stays isolated."
+  - q: "Is a self-hosted open-source model GDPR compliant?"
+    a: "It can be, and it removes the hardest GDPR problem by design. Every call to a US-hosted AI API is an international data transfer under Chapter V of the GDPR, and EU-region hosting by a US provider does not fully cure that because of US access laws. A model running on EU or on-premises infrastructure means the data never leaves your jurisdiction, so there is no transfer to justify. You still need the usual measures: a processing agreement, a role and deletion model, and clean separation of client data."
+  - q: "How much does it cost to run an open-source AI model?"
+    a: "Two costs matter: build and run. The build is the custom layer (retrieval, fine-tuning, integrations) and is a one-time investment. Running the model on EU infrastructure can start around 900 euros a month for a single high-memory GPU server that already handles a 120-billion-parameter model, and scales up with size and traffic. One 2025 cost analysis puts payback on a small self-hosted setup at well under a year once steady volume is past roughly 10 to 50 million tokens a month. Below that, a closed or hosted API is often cheaper, so the decision is genuinely use-case dependent."
+  - q: "Which open-source model should we use?"
+    a: "It depends on the task, the languages you need, your hardware, and the license. As of 2026, Qwen and Mistral offer strong models under a clean Apache 2.0 license (Mistral is also EU-headquartered), gpt-oss is Apache 2.0 and runs a 120-billion-parameter model on a single 80GB GPU, and DeepSeek ships under MIT. Some models, including parts of the Llama family, carry license terms that restrict commercial or EU use, so the license matters as much as the benchmark. Matching model to use case is part of what a scoping call is for."
+  - q: "Do we own the AI, or are we locked into a vendor?"
+    a: "That is the point of building on an open model. With a genuine custom build on open weights, the model runs on your infrastructure, the retrieval setup and fine-tuned adapters are yours, and the integration code is yours by contract. There is no per-seat licence you can be cut off from and no closed model that can be retired under you. Settle ownership, usage rights, and source-code handover in writing before the project starts."
+---
+
+![A business professional at her desk reviewing performance charts, considering a custom AI integration](/images/blog/pexels-mikhail-nilov-6592550.webp)
+
+## Custom AI on Open-Source Models: The Decision Behind the Search
+
+If you are looking into custom AI built on open-source models, you have probably already moved past the question of whether AI can help your operation. The real question is more specific: how do you get an AI that is genuinely yours, grounded in your own data, running where your data is allowed to run, without paying a per-user fee forever or handing your operation over to a foreign API.
+
+That is what open-weight models make possible, and it is what this guide is about. We will be precise about what these models are, why you would self-host one instead of calling a closed API, how a generic model becomes personalized AI for your specific business, where it actually boosts operations, and what it costs to build and run. The goal is not to convince you that AI is useful. It is to help you decide whether an open model, built around your operation and hosted under your control, is the right foundation, and what the first step looks like.
+
+It is also what we build at LearnSlice: sovereign, EU-hosted custom AI and learning software for universities, training providers, and regulated teams, owned by the organizations we build it for.
+
+Prefer to talk it through first? [Book a free 30-minute scoping call](#project-inquiry), no pitch.
+
+## What "Custom AI on an Open Model" Actually Means
+
+Two terms get used loosely, so it helps to be exact.
+
+An **open-weight model** is an AI model whose trained weights are published, so you can download the model and run it on your own hardware instead of sending every request to a provider's servers. Most people say "open source," but "open-weight" is the more accurate term, because some of these models publish their weights under restrictive custom licenses rather than a true open-source licence. The families you will hear about in 2026 include **Kimi K2** from Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** from OpenAI (its first open-weight release), **Qwen** from Alibaba, **Mistral** from France, and **DeepSeek**. They are frontier-adjacent: a generation behind the very best closed models on the hardest tasks, but more than capable for the large majority of real business work.
+
+A **custom AI** is not the raw model. A base model on its own knows nothing about your operation. The custom part is the layer you build around it: your data connected through retrieval, the model shaped to your process and voice, and the whole thing wired into the systems your team already uses. That layer is the difference between a clever demo and an assistant that actually knows how your business runs. It is also, not coincidentally, the same build-versus-buy logic behind a [custom AI tutor](/blog/custom-ai-tutor-development): the value is in the fit, not the model.
+
+## Why an Open Model, Not Just a Closed API
+
+Closed APIs from the large AI labs are excellent, and for a first prototype they are often the right choice. You move to a self-hosted open model when one of three things becomes non-negotiable.
+
+| Consideration | Closed API (OpenAI, Anthropic, Google) | Self-hosted open-weight model |
+|---|---|---|
+| Where your data goes | to the provider, often outside the EU | stays on your own or EU infrastructure |
+| Pricing model | per token, indefinitely | fixed infrastructure cost you control |
+| Cost at high volume | rises with usage | flat once the hardware is running |
+| Model permanence | can be retired or repriced under you | runs as long as you keep it |
+| Customization | limited to prompting and light tuning | full fine-tuning and control |
+| Vendor lock-in | high | low, the weights are yours to move |
+| Best for | fast start, low or spiky volume | sovereignty, scale, long-term control |
+
+The clearest example of permanence: over the past year, closed providers have retired older models and pushed customers onto newer, differently priced ones. A self-hosted open model does not do that to you. Once it runs well for your use case, it keeps running on exactly the terms you set, for as long as you keep the server. That is a real operational advantage for anything you intend to depend on for years.
+
+None of this makes closed APIs wrong. It makes them a different tool. A sound strategy is often to prototype fast on an API, then graduate the workloads that justify it onto an owned, self-hosted model. Not sure where that line sits for your case? A short [scoping call](#project-inquiry) will place it. No pitch, just a straight read.
+
+## The Real Reason to Self-Host: Sovereignty and Compliance
+
+For most European organizations, the deciding factor is not cost. It is where the data goes.
+
+Every request to a US-hosted AI API is, under [Chapter V of the GDPR](https://gdpr-info.eu/chapter-5/), an international transfer of personal data. EU-region hosting by a US-headquartered provider does not fully solve this, because US access laws can reach data held by those companies wherever it sits. That is the core of the problem so many compliance teams keep running into. A model running on EU or on-premises infrastructure removes the transfer entirely: there is nothing to send abroad, so there is nothing to justify. For our fuller take on the data-protection questions to ask any AI tool, see our [checklist on GDPR-compliant AI](/blog/gdpr-compliant-ai-tools-for-trainers).
+
+The EU AI Act adds a second reason to prefer this setup. Running an unmodified open model in your own environment generally keeps you in the lighter **[deployer](https://artificialintelligenceact.eu/article/26/)** role, with far fewer obligations than a model provider carries. [Substantial fine-tuning](https://artificialintelligenceact.eu/article/25/) can shift some of those obligations onto you, so it is a design decision to make deliberately rather than by accident. This is exactly the kind of trade-off a good build partner surfaces up front, not after the fact.
+
+For regulated and public-sector buyers, sovereignty is not a preference, it is a requirement, and a self-hosted open model is one of the few architectures that meets it cleanly. It is the same principle behind a [private AI for employee onboarding](/blog/private-ai-employee-onboarding): give people a capable AI that keeps sensitive information inside the building.
+
+![Two colleagues scoping a project together at a laptop](/images/blog/pexels-a-darmel-7706924.webp)
+
+## How a Generic Model Becomes *Your* AI
+
+This is the part most people underestimate, and it is where personalization actually happens. There are two distinct ways to make an AI yours, and serious builds use both.
+
+**Retrieval changes what the model knows.** Retrieval-augmented generation (RAG) indexes your own documents, records, and knowledge, and has the model pull the relevant passages before it answers, with source citations. This is how the AI answers from *your* material instead of guessing, and how it stays current: you update the index, not the model. RAG is the right tool for private, changing facts.
+
+**Fine-tuning changes how the model behaves.** Light fine-tuning, usually with a technique called LoRA, teaches the model your tone, your output formats, your domain language, and your specific tasks. It does not reliably add fresh facts (that is retrieval's job), but it makes the model sound and act like yours.
+
+The clean architecture that ties this together, and the one worth asking any partner about, is one shared base model plus a small **per-client adapter** for behavior and a separate **per-client index** for data. Each customer's AI is personalized to them, their data stays isolated from everyone else's, and adding a new customer is cheap because you are not retraining a model from scratch. This is the pattern that lets a single engineering investment serve many tailored deployments.
+
+## Where This Boosts Your Operation
+
+The models are general, but the value is specific. A custom AI built on an open model tends to pay for itself in a handful of well-worn places:
+
+- **Customer and internal support.** An assistant grounded in your product docs and policies deflects routine questions around the clock, in multiple languages, and hands the hard ones to a human with context attached.
+- **A knowledge assistant for your team.** New and experienced staff get grounded answers from your own SOPs, runbooks, and playbooks instead of interrupting a senior colleague or reaching for a public chatbot. This is the highest-leverage use for onboarding and upskilling; see [LearnSlice for companies](/companies) for how that looks in practice.
+- **Document and data processing.** Extracting fields from invoices, contracts, and forms, summarizing long records, and routing them, with a human reviewing the exceptions rather than every case.
+- **Agentic workflows.** Multi-step tasks where the AI plans, calls your tools, and acts. Analysts expect task-specific AI agents to move from a rare feature to a common one across business software during 2026, which makes an owned, controllable foundation more valuable, not less.
+- **Engineering and content production.** Grounded assistants that speed up the work your teams already do, on your own code and content, without shipping any of it to a third party.
+
+The common thread: each of these runs on *your* data, which is precisely why keeping that data on infrastructure you control is worth the effort.
+
+## What It Costs, and What It Runs On
+
+There are two numbers, and they are different. The **build** is a one-time investment in the custom layer: retrieval, any fine-tuning, integrations, and the interface. The **run** is the infrastructure that hosts the model.
+
+The good news on hosting is that open models have become dramatically more efficient. A single high-memory GPU server in an EU data center starts around **[900 euros a month](https://www.hetzner.com/dedicated-rootserver/gex131/)** and already runs a 120-billion-parameter open model such as gpt-oss. Smaller models in the 20-to-30-billion range run on a single mid-range card. EU providers such as Hetzner, OVHcloud, Scaleway, and IONOS all offer this, so the entire stack can sit in Germany or the EU.
+
+| Setup | Roughly what it runs | Indicative EU cost |
+|---|---|---|
+| Single mid-range GPU | a 20 to 30B model, quantized | low hundreds of euros a month |
+| Single high-memory GPU server | a 120B open model (e.g. gpt-oss) | from ~900 euros a month |
+| Multi-GPU node | the largest open models (200B and up) | four figures a month and up |
+
+On the economics: [one 2025 cost analysis](https://arxiv.org/abs/2509.18101) puts payback on a small self-hosted setup at well under a year, once steady usage is past roughly **10 to 50 million tokens a month**. The honest caveat is that self-hosting only wins when the hardware is actually used. An idle GPU is expensive per request, so below that volume, or for spiky usage, a closed or hosted API is often the cheaper and simpler choice. The point of a scoping call is to run this math against your real numbers before anyone commits to a build. For a broader view of what custom development itself costs, see our [guide to custom development costs](/blog/custom-e-learning-development-costs).
+
+## Choosing the Model, the License, and the Partner
+
+Two mistakes are easy to make here, and both are avoidable.
+
+The first is choosing on benchmarks alone. The right model depends on your task, the languages you need, and your hardware, not on a leaderboard. The second, and more dangerous, is ignoring the **license**. Open-weight does not mean unrestricted. As of 2026, Qwen and Mistral publish strong models under a clean Apache 2.0 license (Mistral is also EU-headquartered, which is a neat fit for a sovereign stack), gpt-oss is Apache 2.0, and DeepSeek ships under MIT. But some widely used models carry custom terms: parts of the Llama family, for instance, [restrict use in ways that are genuinely awkward for EU-based companies](https://www.llama.com/llama4/license/). Building on the wrong license is a problem you discover at the worst possible time.
+
+That is why the model is only half the decision. When you evaluate a build partner, look for:
+
+- **The right model and license for your case,** chosen deliberately, with no lock-in to a single model vendor.
+- **Grounding tested on your own content,** with correct source citations, not a demo on generic data.
+- **EU or on-premises hosting,** with clean data separation and a clear compliance story.
+- **Ownership of the result:** the retrieval setup, the adapters, and the integration code are yours by contract.
+- **Delivery in short iterations,** so you see something usable early instead of a six-month concept phase.
+
+## Start Small, Then Scale
+
+The lowest-risk way into custom AI is not a long contract. It is a small first version, built on one real use case and one slice of your actual data, hosted where it will eventually live. If it answers accurately from your material and your team uses it, you scale it. If it does not, you have spent weeks, not a budget. This is the same principle whether you are building an operations assistant or a full [custom learning solution](/solutions): prove it on your own data first.
+
+**Let's scope your AI integration.** Book a free 30-minute scoping call: no obligation, no sales pitch, and you speak with the engineers who would build it, not an account manager. Bring one use case, and you leave with a straight feasibility read, a rough architecture, and a ballpark on cost and timeline. Prefer it in writing first? Request a [no-obligation quote](/solutions#project-inquiry) and we will come back with a concrete next step.
+
+Trusted by universities, training providers, and regulated teams across Germany.

@@ -1,0 +1,141 @@
+---
+title: "Souveräne individuelle KI mit Open-Source-Modellen"
+description: "Individuelle KI auf Open-Source-Modellen wie Kimi K2 und gpt-oss: personalisiert auf Ihren Betrieb, in der EU selbst gehostet und Ihr Eigentum. Gespräch buchen."
+publishDate: 2026-07-30
+author: "LearnSlice Team"
+tags: ["Individuelle KI", "Open-Source-Modelle", "Self-Hosted KI", "KI-Integration", "Datensouveränität", "DSGVO"]
+lang: "de"
+translationSlug: "custom-ai-open-source-models"
+ogImage: "/images/blog/pexels-mikhail-nilov-6592550.jpg"
+heroImage: "/images/blog/pexels-mikhail-nilov-6592550.webp"
+ctaVariant: "consultation"
+keyTakeaways:
+  - "Open-Weight-Modelle (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek und andere) sind KI-Modelle, deren Gewichte Sie herunterladen und auf Ihrer eigenen Infrastruktur betreiben können. Das ist die einzige Klasse leistungsstarker KI, die Sie vollständig selbst hosten können, sodass Ihre Daten Ihre Server nie verlassen und Sie nicht pro Token zahlen."
+  - "Eine individuelle KI ist nicht das rohe Modell. Sie ist ein Modell, das um Ihren Betrieb herum gebaut ist: in Ihren eigenen Daten verankert über Retrieval (RAG), auf Ihren Prozess und Ihre Sprache zugeschnitten über leichtes Fine-Tuning (LoRA) und an Ihre Systeme angebunden. Diese Schicht macht aus einem generischen Modell eine personalisierte KI für Ihr Unternehmen."
+  - "Das stärkste Argument für Self-Hosting eines offenen Modells ist Souveränität, nicht der Preis. Jeder Aufruf einer in den USA gehosteten KI-API ist nach DSGVO eine Datenübermittlung ins Ausland. Ein Modell, das auf EU-Infrastruktur läuft, beseitigt diese Übermittlung vollständig und hält Sie in der leichteren Betreiberrolle nach der EU-KI-Verordnung."
+  - "Der Kostenvorteil ist real, aber eng: Self-Hosting lohnt sich meist ab etwa 10 bis 50 Millionen Token pro Monat bei stetiger Nutzung. Ein einzelner GPU-Server mit viel Speicher in der EU startet bei rund 900 Euro pro Monat und betreibt bereits ein Modell mit 120 Milliarden Parametern. Darunter ist eine API oft günstiger."
+  - "Nicht jedes offene Modell ist in der EU kommerziell unbedenklich nutzbar. Die Lizenzen unterscheiden sich stark, von sauberem Apache 2.0 (Qwen, Mistral, gpt-oss) bis zu individuellen Bedingungen mit regionalen Einschränkungen. Das richtige Modell, die richtige Lizenz und das richtige Hosting für Ihren Anwendungsfall zu wählen, ist genau die Entscheidung, die vor dem Bau in ein kurzes Gespräch gehört."
+faq:
+  - q: "Was ist ein Open-Source- bzw. Open-Weight-KI-Modell?"
+    a: "Ein Open-Weight-Modell ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt eine fremde API aufzurufen. Kimi K2, gpt-oss, Qwen, Mistral und DeepSeek sind Beispiele. Der Begriff Open-Weight ist präziser als Open Source, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Der praktische Punkt ist derselbe: Sie hosten das Modell selbst, also verlassen Ihre Eingaben und Daten Ihre Infrastruktur nie."
+  - q: "Warum individuelle KI auf einem offenen Modell statt einfach ChatGPT oder Claude?"
+    a: "Geschlossene APIs von OpenAI, Anthropic oder Google sind ausgezeichnet und oft der richtige Einstieg. Sie wechseln zu einem selbst gehosteten offenen Modell, wenn drei Dinge wichtig werden: Datensouveränität (Ihre Daten dürfen die EU oder Ihre eigenen Server nicht verlassen), Kosten bei Skalierung (Token-Gebühren summieren sich bei hohem Volumen) sowie Beständigkeit und Kontrolle (ein selbst gehostetes Modell läuft, solange Sie es behalten, und kann nicht unter Ihnen abgeschaltet oder neu bepreist werden). Ein üblicher Weg ist, auf einer geschlossenen API zu prototypisieren und auf ein eigenes, selbst gehostetes Modell umzusteigen, wenn Volumen und Compliance es rechtfertigen."
+  - q: "Wie wird eine individuelle KI auf unser konkretes Unternehmen personalisiert?"
+    a: "Über zwei Schichten auf dem Basismodell. Retrieval-Augmented Generation (RAG) verankert das Modell in Ihren eigenen Dokumenten und Daten, sodass es aus Ihrem Wissen antwortet und Quellen angeben kann. Leichtes Fine-Tuning (LoRA) prägt das Verhalten des Modells: Ihren Ton, Ihre Ausgabeformate, Ihre Fachsprache und Ihre Aufgaben. Ein sauberes Muster ist ein gemeinsames Basismodell plus ein kleiner kundenspezifischer Adapter für das Verhalten und ein separater kundenspezifischer Index für die Daten, sodass die KI jedes Kunden personalisiert ist und die Daten getrennt bleiben."
+  - q: "Ist ein selbst gehostetes Open-Source-Modell DSGVO-konform?"
+    a: "Es kann es sein, und es beseitigt das schwierigste DSGVO-Problem von vornherein. Jeder Aufruf einer in den USA gehosteten KI-API ist nach Kapitel V der DSGVO eine Übermittlung ins Ausland, und Hosting in einer EU-Region durch einen US-Anbieter heilt das wegen US-Zugriffsgesetzen nicht vollständig. Ein Modell auf EU- oder On-Premises-Infrastruktur bedeutet, dass die Daten Ihre Rechtsordnung nie verlassen, es gibt also keine Übermittlung zu rechtfertigen. Die üblichen Maßnahmen brauchen Sie weiterhin: einen Auftragsverarbeitungsvertrag, ein Rollen- und Löschkonzept und eine saubere Trennung der Kundendaten."
+  - q: "Was kostet der Betrieb eines Open-Source-KI-Modells?"
+    a: "Zwei Kosten zählen: Bau und Betrieb. Der Bau ist die individuelle Schicht (Retrieval, Fine-Tuning, Integrationen) und eine einmalige Investition. Der Betrieb des Modells auf EU-Infrastruktur kann bei rund 900 Euro pro Monat für einen einzelnen GPU-Server mit viel Speicher starten, der bereits ein Modell mit 120 Milliarden Parametern trägt, und steigt mit Größe und Traffic. Eine Kostenanalyse von 2025 setzt die Amortisation einer kleinen Self-Hosting-Umgebung auf deutlich unter ein Jahr an, sobald die stetige Nutzung über etwa 10 bis 50 Millionen Token pro Monat liegt. Darunter ist eine geschlossene oder gehostete API oft günstiger, die Entscheidung hängt also wirklich vom Anwendungsfall ab."
+  - q: "Welches Open-Source-Modell sollten wir nehmen?"
+    a: "Das hängt von der Aufgabe, den benötigten Sprachen, Ihrer Hardware und der Lizenz ab. Stand 2026 bieten Qwen und Mistral starke Modelle unter einer sauberen Apache-2.0-Lizenz (Mistral hat zudem seinen Sitz in der EU), gpt-oss ist Apache 2.0 und betreibt ein Modell mit 120 Milliarden Parametern auf einer einzigen 80-GB-GPU, und DeepSeek erscheint unter MIT. Einige Modelle, darunter Teile der Llama-Familie, tragen Lizenzbedingungen, die die kommerzielle oder EU-Nutzung einschränken, die Lizenz zählt also so viel wie der Benchmark. Modell und Anwendungsfall zusammenzubringen ist genau der Zweck eines Beratungsgesprächs."
+  - q: "Gehört uns die KI, oder sind wir an einen Anbieter gebunden?"
+    a: "Genau darum baut man auf einem offenen Modell. Bei einer echten Individualentwicklung auf offenen Gewichten läuft das Modell auf Ihrer Infrastruktur, das Retrieval-Setup und die feinjustierten Adapter gehören Ihnen, und der Integrationscode gehört Ihnen vertraglich. Es gibt keine Lizenz pro Platz, von der Sie abgeschnitten werden können, und kein geschlossenes Modell, das unter Ihnen abgeschaltet wird. Klären Sie Eigentum, Nutzungsrechte und Herausgabe des Quellcodes vor Projektstart schriftlich."
+---
+
+![Eine Geschäftsfrau an ihrem Schreibtisch prüft Kennzahlen und erwägt eine individuelle KI-Integration](/images/blog/pexels-mikhail-nilov-6592550.webp)
+
+## Individuelle KI mit Open-Source-Modellen: die Entscheidung hinter der Suche
+
+Wenn Sie sich mit individueller KI auf Open-Source-Modellen beschäftigen, haben Sie die Frage, ob KI Ihrem Betrieb hilft, wahrscheinlich längst hinter sich. Die eigentliche Frage ist konkreter: Wie bekommen Sie eine KI, die wirklich Ihnen gehört, in Ihren eigenen Daten verankert ist, dort läuft, wo Ihre Daten laufen dürfen, ohne für immer pro Nutzer zu zahlen oder Ihren Betrieb an eine fremde API abzugeben.
+
+Genau das ermöglichen Open-Weight-Modelle, und darum geht es in diesem Leitfaden. Wir werden präzise sein: was diese Modelle sind, warum Sie eines selbst hosten statt eine geschlossene API aufzurufen, wie aus einem generischen Modell eine personalisierte KI für Ihr konkretes Unternehmen wird, wo sie den Betrieb tatsächlich stärkt und was Bau und Betrieb kosten. Das Ziel ist nicht, Sie vom Nutzen der KI zu überzeugen. Es geht darum, Ihnen die Entscheidung zu erleichtern, ob ein offenes Modell, um Ihren Betrieb herum gebaut und unter Ihrer Kontrolle gehostet, die richtige Grundlage ist, und wie der erste Schritt aussieht.
+
+Genau das bauen wir bei LearnSlice: souveräne, EU-gehostete individuelle KI und Lernsoftware für Hochschulen, Bildungsträger und regulierte Teams, im Eigentum der Organisationen, für die wir sie bauen.
+
+Lieber erst sprechen? [Buchen Sie ein kostenloses 30-minütiges Gespräch](#project-inquiry), kein Pitch.
+
+## Was "individuelle KI auf einem offenen Modell" wirklich bedeutet
+
+Zwei Begriffe werden unscharf verwendet, deshalb hilft Genauigkeit.
+
+Ein **Open-Weight-Modell** ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt jede Anfrage an die Server eines Anbieters zu senden. Die meisten sagen "Open Source", doch "Open-Weight" ist der genauere Begriff, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Zu den Familien, von denen 2026 die Rede ist, gehören **Kimi K2** von Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** von OpenAI (dessen erste Open-Weight-Veröffentlichung), **Qwen** von Alibaba, **Mistral** aus Frankreich und **DeepSeek**. Sie sind nah an der Spitze: eine Generation hinter den besten geschlossenen Modellen bei den härtesten Aufgaben, aber mehr als leistungsfähig für den Großteil echter Geschäftsarbeit.
+
+Eine **individuelle KI** ist nicht das rohe Modell. Ein Basismodell allein weiß nichts über Ihren Betrieb. Das Individuelle ist die Schicht, die Sie darum herum bauen: Ihre Daten über Retrieval angebunden, das Modell auf Ihren Prozess und Ihre Sprache zugeschnitten und das Ganze in die Systeme eingebunden, die Ihr Team ohnehin nutzt. Diese Schicht ist der Unterschied zwischen einer cleveren Demo und einem Assistenten, der tatsächlich weiß, wie Ihr Unternehmen arbeitet. Es ist, nicht zufällig, dieselbe Bauen-oder-Kaufen-Logik wie hinter einem [KI-Lernbegleiter](/de/blog/ki-lernbegleiter-entwickeln-lassen): Der Wert liegt in der Passung, nicht im Modell.
+
+## Warum ein offenes Modell und nicht einfach eine geschlossene API
+
+Geschlossene APIs der großen KI-Labore sind ausgezeichnet, und für einen ersten Prototyp oft die richtige Wahl. Sie wechseln zu einem selbst gehosteten offenen Modell, wenn eines von drei Dingen nicht verhandelbar wird.
+
+| Kriterium | Geschlossene API (OpenAI, Anthropic, Google) | Selbst gehostetes Open-Weight-Modell |
+|---|---|---|
+| Wohin Ihre Daten gehen | zum Anbieter, oft außerhalb der EU | bleiben auf Ihrer oder EU-Infrastruktur |
+| Preismodell | pro Token, unbefristet | feste Infrastrukturkosten, die Sie steuern |
+| Kosten bei hohem Volumen | steigen mit der Nutzung | flach, sobald die Hardware läuft |
+| Beständigkeit | kann abgeschaltet oder neu bepreist werden | läuft, solange Sie es behalten |
+| Anpassbarkeit | begrenzt auf Prompting und leichtes Tuning | volles Fine-Tuning und volle Kontrolle |
+| Anbieterbindung | hoch | gering, die Gewichte sind Ihre |
+| Am besten für | schnellen Start, geringes oder schwankendes Volumen | Souveränität, Skalierung, langfristige Kontrolle |
+
+Das klarste Beispiel für Beständigkeit: Im vergangenen Jahr haben geschlossene Anbieter ältere Modelle abgeschaltet und Kunden auf neuere, anders bepreiste Modelle gedrängt. Ein selbst gehostetes offenes Modell tut Ihnen das nicht an. Läuft es einmal gut für Ihren Anwendungsfall, läuft es genau zu den Bedingungen weiter, die Sie festlegen, solange Sie den Server behalten. Das ist ein echter betrieblicher Vorteil für alles, worauf Sie sich über Jahre verlassen wollen.
+
+Nichts davon macht geschlossene APIs falsch. Es macht sie zu einem anderen Werkzeug. Eine solide Strategie ist oft, schnell auf einer API zu prototypisieren und dann die Arbeitslasten, die es rechtfertigen, auf ein eigenes, selbst gehostetes Modell zu heben. Unsicher, wo diese Grenze für Ihren Fall liegt? Ein kurzes [Beratungsgespräch](/de/loesungen#project-inquiry) verortet sie. Kein Pitch, nur eine klare Einschätzung.
+
+## Der eigentliche Grund für Self-Hosting: Souveränität und Compliance
+
+Für die meisten europäischen Organisationen ist nicht der Preis der entscheidende Faktor. Es ist, wohin die Daten gehen.
+
+Jede Anfrage an eine in den USA gehostete KI-API ist nach [Kapitel V der DSGVO](https://dsgvo-gesetz.de/kapitel-5/) eine Übermittlung personenbezogener Daten ins Ausland. Hosting in einer EU-Region durch einen Anbieter mit Sitz in den USA löst das nicht vollständig, weil US-Zugriffsgesetze auf Daten dieser Unternehmen zugreifen können, wo auch immer sie liegen. Das ist der Kern des Problems, gegen das Compliance-Teams immer wieder laufen. Ein Modell auf EU- oder On-Premises-Infrastruktur beseitigt die Übermittlung vollständig: Es gibt nichts ins Ausland zu senden, also nichts zu rechtfertigen. Unsere ausführlichere Sicht auf die Datenschutzfragen, die Sie jedem KI-Werkzeug stellen sollten, finden Sie in unserer [Checkliste zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+Die EU-KI-Verordnung liefert einen zweiten Grund für dieses Setup. Ein unverändertes offenes Modell in Ihrer eigenen Umgebung zu betreiben, hält Sie in der Regel in der leichteren **[Betreiberrolle](https://artificialintelligenceact.eu/article/26/)**, mit deutlich weniger Pflichten als ein Modellanbieter trägt. [Substanzielles Fine-Tuning](https://artificialintelligenceact.eu/article/25/) kann einige dieser Pflichten auf Sie verlagern, das ist also eine Entwurfsentscheidung, die man bewusst trifft und nicht versehentlich. Genau diese Abwägung bringt ein guter Entwicklungspartner vorab auf den Tisch, nicht im Nachhinein.
+
+Für regulierte Käufer und den öffentlichen Sektor ist Souveränität keine Vorliebe, sondern eine Anforderung, und ein selbst gehostetes offenes Modell ist eine der wenigen Architekturen, die sie sauber erfüllt. Es ist dasselbe Prinzip wie bei den [KI-Werkzeugen für die Ausbildung](/de/blog/ki-tools-ausbildung): Geben Sie den Menschen eine leistungsfähige KI, die sensible Informationen im Haus behält.
+
+![Zwei Kolleginnen und Kollegen skizzieren gemeinsam ein Projekt am Laptop](/images/blog/pexels-a-darmel-7706924.webp)
+
+## Wie aus einem generischen Modell *Ihre* KI wird
+
+Diesen Teil unterschätzen die meisten, und genau hier entsteht die Personalisierung. Es gibt zwei verschiedene Wege, eine KI zu Ihrer zu machen, und ernsthafte Projekte nutzen beide.
+
+**Retrieval verändert, was das Modell weiß.** Retrieval-Augmented Generation (RAG) indexiert Ihre eigenen Dokumente, Datensätze und Ihr Wissen und lässt das Modell die passenden Stellen abrufen, bevor es antwortet, mit Quellenangabe. So antwortet die KI aus *Ihrem* Material statt zu raten, und so bleibt sie aktuell: Sie aktualisieren den Index, nicht das Modell. RAG ist das richtige Werkzeug für private, sich ändernde Fakten.
+
+**Fine-Tuning verändert, wie sich das Modell verhält.** Leichtes Fine-Tuning, meist mit einer Technik namens LoRA, bringt dem Modell Ihren Ton, Ihre Ausgabeformate, Ihre Fachsprache und Ihre konkreten Aufgaben bei. Es fügt keine frischen Fakten zuverlässig hinzu (das ist Aufgabe des Retrieval), aber es lässt das Modell so klingen und handeln wie Ihres.
+
+Die saubere Architektur, die das zusammenhält und nach der Sie jeden Partner fragen sollten, ist ein gemeinsames Basismodell plus ein kleiner **kundenspezifischer Adapter** für das Verhalten und ein separater **kundenspezifischer Index** für die Daten. Die KI jedes Kunden ist auf ihn personalisiert, seine Daten bleiben von allen anderen getrennt, und ein neuer Kunde ist günstig, weil Sie kein Modell von Grund auf neu trainieren. Dieses Muster lässt eine einzige Entwicklungsinvestition viele maßgeschneiderte Installationen bedienen.
+
+## Wo das Ihren Betrieb stärkt
+
+Die Modelle sind allgemein, der Wert ist konkret. Eine individuelle KI auf einem offenen Modell zahlt sich meist an einer Handvoll bewährter Stellen aus:
+
+- **Kunden- und internes Support.** Ein Assistent, verankert in Ihren Produktunterlagen und Richtlinien, fängt Routinefragen rund um die Uhr ab, in mehreren Sprachen, und gibt die schwierigen mit Kontext an einen Menschen weiter.
+- **Ein Wissensassistent für Ihr Team.** Neue und erfahrene Mitarbeitende erhalten fundierte Antworten aus Ihren eigenen Prozessbeschreibungen, Runbooks und Playbooks, statt eine erfahrene Kollegin zu unterbrechen oder zu einem öffentlichen Chatbot zu greifen. Das ist der wirkungsvollste Einsatz für Onboarding und Weiterbildung, wie das aussieht, zeigt [LearnSlice für Unternehmen](/de/companies).
+- **Dokumenten- und Datenverarbeitung.** Felder aus Rechnungen, Verträgen und Formularen extrahieren, lange Unterlagen zusammenfassen und weiterleiten, wobei ein Mensch die Ausnahmen prüft statt jeden Fall.
+- **Agentische Abläufe.** Mehrstufige Aufgaben, bei denen die KI plant, Ihre Werkzeuge aufruft und handelt. Analysten erwarten, dass aufgabenspezifische KI-Agenten 2026 von einer seltenen Funktion zu einer verbreiteten in Unternehmenssoftware werden, was eine eigene, kontrollierbare Grundlage wertvoller macht, nicht weniger wert.
+- **Entwicklung und Content-Produktion.** Fundierte Assistenten, die die Arbeit beschleunigen, die Ihre Teams ohnehin leisten, an Ihrem eigenen Code und Content, ohne etwas davon an Dritte zu senden.
+
+Der rote Faden: All das läuft auf *Ihren* Daten, und genau deshalb lohnt sich die Mühe, diese Daten auf einer Infrastruktur zu halten, die Sie kontrollieren.
+
+## Was es kostet und worauf es läuft
+
+Es gibt zwei Zahlen, und sie sind verschieden. Der **Bau** ist eine einmalige Investition in die individuelle Schicht: Retrieval, etwaiges Fine-Tuning, Integrationen und die Oberfläche. Der **Betrieb** ist die Infrastruktur, die das Modell hostet.
+
+Die gute Nachricht beim Hosting: Offene Modelle sind deutlich effizienter geworden. Ein einzelner GPU-Server mit viel Speicher in einem EU-Rechenzentrum startet bei rund **[900 Euro pro Monat](https://www.hetzner.com/dedicated-rootserver/gex131/)** und betreibt bereits ein offenes Modell mit 120 Milliarden Parametern wie gpt-oss. Kleinere Modelle im Bereich 20 bis 30 Milliarden laufen auf einer einzelnen Mittelklassekarte. EU-Anbieter wie Hetzner, OVHcloud, Scaleway und IONOS bieten das an, der gesamte Stack kann also in Deutschland oder der EU stehen.
+
+| Setup | Betreibt grob | Richtwert EU-Kosten |
+|---|---|---|
+| Einzelne Mittelklasse-GPU | ein 20- bis 30B-Modell, quantisiert | niedrige Hunderte Euro pro Monat |
+| Einzelner GPU-Server mit viel Speicher | ein 120B-Modell (z. B. gpt-oss) | ab ca. 900 Euro pro Monat |
+| Multi-GPU-Knoten | die größten offenen Modelle (ab 200B) | vierstellig pro Monat und mehr |
+
+Zur Wirtschaftlichkeit: [Eine Kostenanalyse von 2025](https://arxiv.org/abs/2509.18101) setzt die Amortisation einer kleinen Self-Hosting-Umgebung auf deutlich unter ein Jahr an, sobald die stetige Nutzung über etwa **10 bis 50 Millionen Token pro Monat** liegt. Der ehrliche Vorbehalt: Self-Hosting gewinnt nur, wenn die Hardware auch ausgelastet ist. Eine ungenutzte GPU ist pro Anfrage teuer, unter diesem Volumen oder bei schwankender Nutzung ist eine geschlossene oder gehostete API also oft die günstigere und einfachere Wahl. Der Sinn eines Gesprächs ist, diese Rechnung an Ihren echten Zahlen zu prüfen, bevor sich jemand auf einen Bau festlegt. Einen breiteren Blick darauf, was Individualentwicklung selbst kostet, gibt unser [Leitfaden zu den Kosten der Individualentwicklung](/de/blog/e-learning-entwickeln-lassen).
+
+## Modell, Lizenz und Partner wählen
+
+Hier sind zwei Fehler leicht gemacht, und beide sind vermeidbar.
+
+Der erste ist, allein nach Benchmarks zu wählen. Das richtige Modell hängt von Ihrer Aufgabe, den benötigten Sprachen und Ihrer Hardware ab, nicht von einer Rangliste. Der zweite, gefährlichere, ist die **Lizenz** zu ignorieren. Open-Weight heißt nicht uneingeschränkt. Stand 2026 veröffentlichen Qwen und Mistral starke Modelle unter einer sauberen Apache-2.0-Lizenz (Mistral hat zudem seinen Sitz in der EU, was gut zu einem souveränen Stack passt), gpt-oss ist Apache 2.0, und DeepSeek erscheint unter MIT. Doch einige verbreitete Modelle tragen individuelle Bedingungen: Teile der Llama-Familie etwa [schränken die Nutzung auf Weisen ein, die für Unternehmen mit Sitz in der EU wirklich heikel sind](https://www.llama.com/llama4/license/). Auf der falschen Lizenz zu bauen ist ein Problem, das Sie zum denkbar schlechtesten Zeitpunkt entdecken.
+
+Deshalb ist das Modell nur die halbe Entscheidung. Wenn Sie einen Entwicklungspartner bewerten, achten Sie auf:
+
+- **Das richtige Modell und die richtige Lizenz für Ihren Fall,** bewusst gewählt, ohne Bindung an einen einzigen Modellanbieter.
+- **Verankerung an Ihren eigenen Inhalten getestet,** mit korrekten Quellenangaben, keine Demo auf generischen Daten.
+- **EU- oder On-Premises-Hosting,** mit sauberer Datentrennung und einer klaren Compliance-Geschichte.
+- **Eigentum am Ergebnis:** Das Retrieval-Setup, die Adapter und der Integrationscode gehören Ihnen vertraglich.
+- **Lieferung in kurzen Iterationen,** damit Sie früh etwas Nutzbares sehen statt einer sechsmonatigen Konzeptphase.
+
+## Klein anfangen, dann skalieren
+
+Der risikoärmste Einstieg in individuelle KI ist kein langer Vertrag. Es ist eine kleine erste Version, gebaut an einem echten Anwendungsfall und einem Ausschnitt Ihrer tatsächlichen Daten, gehostet dort, wo sie später leben wird. Antwortet sie korrekt aus Ihrem Material und nutzt Ihr Team sie, skalieren Sie sie. Tut sie es nicht, haben Sie Wochen investiert, kein Budget. Dasselbe Prinzip gilt, ob Sie einen Betriebsassistenten bauen oder eine vollständige [individuelle Lernlösung](/de/loesungen): Beweisen Sie es zuerst an Ihren eigenen Daten.
+
+**Lassen Sie uns Ihre KI-Integration abstecken.** Buchen Sie ein kostenloses 30-minütiges Gespräch: unverbindlich, kein Verkaufspitch, und Sie sprechen mit den Ingenieuren, die es bauen würden, nicht mit einem Vertriebler. Bringen Sie einen Anwendungsfall mit, und Sie gehen mit einer klaren Machbarkeitseinschätzung, einer groben Architektur und einem Richtwert zu Kosten und Zeitrahmen. Lieber erst schriftlich? Fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an, und wir kommen mit einem konkreten nächsten Schritt zurück.
+
+Vertrauen von Hochschulen, Bildungsträgern und regulierten Teams in Deutschland.

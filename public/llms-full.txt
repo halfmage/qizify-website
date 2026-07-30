@@ -420,6 +420,314 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
+# Custom AI on Open-Source Models: Personalized and Sovereign
+
+Source: https://learnslice.com/blog/custom-ai-open-source-models
+Language: en
+Published: 2026-07-30
+
+How to build custom AI on open-source models like Kimi K2 and gpt-oss: personalized to your operation, self-hosted in the EU, and owned by you. Book a scoping call.
+
+## Key Takeaways
+
+- Open-weight models (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek and others) are AI models whose weights you can download and run on your own infrastructure. That is the one class of frontier-adjacent AI you can fully self-host, so your data never leaves your servers and you are not billed per token.
+- A custom AI is not a raw model. It is a model wrapped around your operation: grounded in your own data through retrieval (RAG), shaped to your process and voice through light fine-tuning (LoRA), and connected to your systems. That layer is what turns a generic model into personalized AI for your business.
+- The strongest reason to self-host an open model is sovereignty, not price. Every call to a US-hosted AI API is a cross-border data transfer under GDPR; a model running on EU infrastructure removes that transfer entirely and keeps you in the lighter deployer role under the EU AI Act.
+- The cost case is real but narrow: self-hosting tends to pay off past roughly 10 to 50 million tokens a month at steady use. A single high-memory GPU server in the EU starts around 900 euros a month and already runs a 120-billion-parameter open model. Below that volume, an API is often cheaper.
+- Not every open model is safe to use commercially in the EU. Licenses differ sharply, from clean Apache 2.0 (Qwen, Mistral, gpt-oss) to custom terms with regional restrictions. Choosing the right model, license, and hosting for your use case is exactly the kind of decision to settle in a short scoping call before you build.
+
+![A business professional at her desk reviewing performance charts, considering a custom AI integration](/images/blog/pexels-mikhail-nilov-6592550.webp)
+
+## Custom AI on Open-Source Models: The Decision Behind the Search
+
+If you are looking into custom AI built on open-source models, you have probably already moved past the question of whether AI can help your operation. The real question is more specific: how do you get an AI that is genuinely yours, grounded in your own data, running where your data is allowed to run, without paying a per-user fee forever or handing your operation over to a foreign API.
+
+That is what open-weight models make possible, and it is what this guide is about. We will be precise about what these models are, why you would self-host one instead of calling a closed API, how a generic model becomes personalized AI for your specific business, where it actually boosts operations, and what it costs to build and run. The goal is not to convince you that AI is useful. It is to help you decide whether an open model, built around your operation and hosted under your control, is the right foundation, and what the first step looks like.
+
+It is also what we build at LearnSlice: sovereign, EU-hosted custom AI and learning software for universities, training providers, and regulated teams, owned by the organizations we build it for.
+
+Prefer to talk it through first? [Book a free 30-minute scoping call](#project-inquiry), no pitch.
+
+## What "Custom AI on an Open Model" Actually Means
+
+Two terms get used loosely, so it helps to be exact.
+
+An **open-weight model** is an AI model whose trained weights are published, so you can download the model and run it on your own hardware instead of sending every request to a provider's servers. Most people say "open source," but "open-weight" is the more accurate term, because some of these models publish their weights under restrictive custom licenses rather than a true open-source licence. The families you will hear about in 2026 include **Kimi K2** from Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** from OpenAI (its first open-weight release), **Qwen** from Alibaba, **Mistral** from France, and **DeepSeek**. They are frontier-adjacent: a generation behind the very best closed models on the hardest tasks, but more than capable for the large majority of real business work.
+
+A **custom AI** is not the raw model. A base model on its own knows nothing about your operation. The custom part is the layer you build around it: your data connected through retrieval, the model shaped to your process and voice, and the whole thing wired into the systems your team already uses. That layer is the difference between a clever demo and an assistant that actually knows how your business runs. It is also, not coincidentally, the same build-versus-buy logic behind a [custom AI tutor](/blog/custom-ai-tutor-development): the value is in the fit, not the model.
+
+## Why an Open Model, Not Just a Closed API
+
+Closed APIs from the large AI labs are excellent, and for a first prototype they are often the right choice. You move to a self-hosted open model when one of three things becomes non-negotiable.
+
+| Consideration | Closed API (OpenAI, Anthropic, Google) | Self-hosted open-weight model |
+|---|---|---|
+| Where your data goes | to the provider, often outside the EU | stays on your own or EU infrastructure |
+| Pricing model | per token, indefinitely | fixed infrastructure cost you control |
+| Cost at high volume | rises with usage | flat once the hardware is running |
+| Model permanence | can be retired or repriced under you | runs as long as you keep it |
+| Customization | limited to prompting and light tuning | full fine-tuning and control |
+| Vendor lock-in | high | low, the weights are yours to move |
+| Best for | fast start, low or spiky volume | sovereignty, scale, long-term control |
+
+The clearest example of permanence: over the past year, closed providers have retired older models and pushed customers onto newer, differently priced ones. A self-hosted open model does not do that to you. Once it runs well for your use case, it keeps running on exactly the terms you set, for as long as you keep the server. That is a real operational advantage for anything you intend to depend on for years.
+
+None of this makes closed APIs wrong. It makes them a different tool. A sound strategy is often to prototype fast on an API, then graduate the workloads that justify it onto an owned, self-hosted model. Not sure where that line sits for your case? A short [scoping call](#project-inquiry) will place it. No pitch, just a straight read.
+
+## The Real Reason to Self-Host: Sovereignty and Compliance
+
+For most European organizations, the deciding factor is not cost. It is where the data goes.
+
+Every request to a US-hosted AI API is, under [Chapter V of the GDPR](https://gdpr-info.eu/chapter-5/), an international transfer of personal data. EU-region hosting by a US-headquartered provider does not fully solve this, because US access laws can reach data held by those companies wherever it sits. That is the core of the problem so many compliance teams keep running into. A model running on EU or on-premises infrastructure removes the transfer entirely: there is nothing to send abroad, so there is nothing to justify. For our fuller take on the data-protection questions to ask any AI tool, see our [checklist on GDPR-compliant AI](/blog/gdpr-compliant-ai-tools-for-trainers).
+
+The EU AI Act adds a second reason to prefer this setup. Running an unmodified open model in your own environment generally keeps you in the lighter **[deployer](https://artificialintelligenceact.eu/article/26/)** role, with far fewer obligations than a model provider carries. [Substantial fine-tuning](https://artificialintelligenceact.eu/article/25/) can shift some of those obligations onto you, so it is a design decision to make deliberately rather than by accident. This is exactly the kind of trade-off a good build partner surfaces up front, not after the fact.
+
+For regulated and public-sector buyers, sovereignty is not a preference, it is a requirement, and a self-hosted open model is one of the few architectures that meets it cleanly. It is the same principle behind a [private AI for employee onboarding](/blog/private-ai-employee-onboarding): give people a capable AI that keeps sensitive information inside the building.
+
+![Two colleagues scoping a project together at a laptop](/images/blog/pexels-a-darmel-7706924.webp)
+
+## How a Generic Model Becomes *Your* AI
+
+This is the part most people underestimate, and it is where personalization actually happens. There are two distinct ways to make an AI yours, and serious builds use both.
+
+**Retrieval changes what the model knows.** Retrieval-augmented generation (RAG) indexes your own documents, records, and knowledge, and has the model pull the relevant passages before it answers, with source citations. This is how the AI answers from *your* material instead of guessing, and how it stays current: you update the index, not the model. RAG is the right tool for private, changing facts.
+
+**Fine-tuning changes how the model behaves.** Light fine-tuning, usually with a technique called LoRA, teaches the model your tone, your output formats, your domain language, and your specific tasks. It does not reliably add fresh facts (that is retrieval's job), but it makes the model sound and act like yours.
+
+The clean architecture that ties this together, and the one worth asking any partner about, is one shared base model plus a small **per-client adapter** for behavior and a separate **per-client index** for data. Each customer's AI is personalized to them, their data stays isolated from everyone else's, and adding a new customer is cheap because you are not retraining a model from scratch. This is the pattern that lets a single engineering investment serve many tailored deployments.
+
+## Where This Boosts Your Operation
+
+The models are general, but the value is specific. A custom AI built on an open model tends to pay for itself in a handful of well-worn places:
+
+- **Customer and internal support.** An assistant grounded in your product docs and policies deflects routine questions around the clock, in multiple languages, and hands the hard ones to a human with context attached.
+- **A knowledge assistant for your team.** New and experienced staff get grounded answers from your own SOPs, runbooks, and playbooks instead of interrupting a senior colleague or reaching for a public chatbot. This is the highest-leverage use for onboarding and upskilling; see [LearnSlice for companies](/companies) for how that looks in practice.
+- **Document and data processing.** Extracting fields from invoices, contracts, and forms, summarizing long records, and routing them, with a human reviewing the exceptions rather than every case.
+- **Agentic workflows.** Multi-step tasks where the AI plans, calls your tools, and acts. Analysts expect task-specific AI agents to move from a rare feature to a common one across business software during 2026, which makes an owned, controllable foundation more valuable, not less.
+- **Engineering and content production.** Grounded assistants that speed up the work your teams already do, on your own code and content, without shipping any of it to a third party.
+
+The common thread: each of these runs on *your* data, which is precisely why keeping that data on infrastructure you control is worth the effort.
+
+## What It Costs, and What It Runs On
+
+There are two numbers, and they are different. The **build** is a one-time investment in the custom layer: retrieval, any fine-tuning, integrations, and the interface. The **run** is the infrastructure that hosts the model.
+
+The good news on hosting is that open models have become dramatically more efficient. A single high-memory GPU server in an EU data center starts around **[900 euros a month](https://www.hetzner.com/dedicated-rootserver/gex131/)** and already runs a 120-billion-parameter open model such as gpt-oss. Smaller models in the 20-to-30-billion range run on a single mid-range card. EU providers such as Hetzner, OVHcloud, Scaleway, and IONOS all offer this, so the entire stack can sit in Germany or the EU.
+
+| Setup | Roughly what it runs | Indicative EU cost |
+|---|---|---|
+| Single mid-range GPU | a 20 to 30B model, quantized | low hundreds of euros a month |
+| Single high-memory GPU server | a 120B open model (e.g. gpt-oss) | from ~900 euros a month |
+| Multi-GPU node | the largest open models (200B and up) | four figures a month and up |
+
+On the economics: [one 2025 cost analysis](https://arxiv.org/abs/2509.18101) puts payback on a small self-hosted setup at well under a year, once steady usage is past roughly **10 to 50 million tokens a month**. The honest caveat is that self-hosting only wins when the hardware is actually used. An idle GPU is expensive per request, so below that volume, or for spiky usage, a closed or hosted API is often the cheaper and simpler choice. The point of a scoping call is to run this math against your real numbers before anyone commits to a build. For a broader view of what custom development itself costs, see our [guide to custom development costs](/blog/custom-e-learning-development-costs).
+
+## Choosing the Model, the License, and the Partner
+
+Two mistakes are easy to make here, and both are avoidable.
+
+The first is choosing on benchmarks alone. The right model depends on your task, the languages you need, and your hardware, not on a leaderboard. The second, and more dangerous, is ignoring the **license**. Open-weight does not mean unrestricted. As of 2026, Qwen and Mistral publish strong models under a clean Apache 2.0 license (Mistral is also EU-headquartered, which is a neat fit for a sovereign stack), gpt-oss is Apache 2.0, and DeepSeek ships under MIT. But some widely used models carry custom terms: parts of the Llama family, for instance, [restrict use in ways that are genuinely awkward for EU-based companies](https://www.llama.com/llama4/license/). Building on the wrong license is a problem you discover at the worst possible time.
+
+That is why the model is only half the decision. When you evaluate a build partner, look for:
+
+- **The right model and license for your case,** chosen deliberately, with no lock-in to a single model vendor.
+- **Grounding tested on your own content,** with correct source citations, not a demo on generic data.
+- **EU or on-premises hosting,** with clean data separation and a clear compliance story.
+- **Ownership of the result:** the retrieval setup, the adapters, and the integration code are yours by contract.
+- **Delivery in short iterations,** so you see something usable early instead of a six-month concept phase.
+
+## Start Small, Then Scale
+
+The lowest-risk way into custom AI is not a long contract. It is a small first version, built on one real use case and one slice of your actual data, hosted where it will eventually live. If it answers accurately from your material and your team uses it, you scale it. If it does not, you have spent weeks, not a budget. This is the same principle whether you are building an operations assistant or a full [custom learning solution](/solutions): prove it on your own data first.
+
+**Let's scope your AI integration.** Book a free 30-minute scoping call: no obligation, no sales pitch, and you speak with the engineers who would build it, not an account manager. Bring one use case, and you leave with a straight feasibility read, a rough architecture, and a ballpark on cost and timeline. Prefer it in writing first? Request a [no-obligation quote](/solutions#project-inquiry) and we will come back with a concrete next step.
+
+Trusted by universities, training providers, and regulated teams across Germany.
+
+
+## Frequently Asked Questions
+
+### What is an open-source (open-weight) AI model?
+
+An open-weight model is an AI model whose trained weights are published so you can download them and run the model on your own hardware, instead of calling a provider's API. Kimi K2, gpt-oss, Qwen, Mistral and DeepSeek are examples. The term open-weight is more precise than open source, because some of these models ship the weights under restrictive custom licenses rather than a true open-source license. The practical point is the same: you can host the model yourself, so your prompts and data never leave your infrastructure.
+
+### Why build custom AI on an open model instead of just using ChatGPT or Claude?
+
+Closed APIs from OpenAI, Anthropic or Google are excellent and often the right starting point. You move to a self-hosted open model when three things matter: data sovereignty (your data cannot leave the EU or your own servers), cost at scale (per-token fees add up once volume is high), and permanence and control (a self-hosted model runs as long as you keep it, and cannot be retired or repriced under you). A common path is to prototype on a closed API and graduate to an owned, self-hosted model when volume and compliance justify it.
+
+### How is a custom AI personalized to our specific business?
+
+Through two layers on top of the base model. Retrieval-augmented generation (RAG) grounds the model in your own documents and data, so it answers from your knowledge and can cite sources. Light fine-tuning (LoRA) shapes how the model behaves: your tone, your output formats, your domain language and tasks. A clean pattern is one shared base model plus a small per-client adapter for behavior and a separate per-client index for data, so each customer's AI is personalized and their data stays isolated.
+
+### Is a self-hosted open-source model GDPR compliant?
+
+It can be, and it removes the hardest GDPR problem by design. Every call to a US-hosted AI API is an international data transfer under Chapter V of the GDPR, and EU-region hosting by a US provider does not fully cure that because of US access laws. A model running on EU or on-premises infrastructure means the data never leaves your jurisdiction, so there is no transfer to justify. You still need the usual measures: a processing agreement, a role and deletion model, and clean separation of client data.
+
+### How much does it cost to run an open-source AI model?
+
+Two costs matter: build and run. The build is the custom layer (retrieval, fine-tuning, integrations) and is a one-time investment. Running the model on EU infrastructure can start around 900 euros a month for a single high-memory GPU server that already handles a 120-billion-parameter model, and scales up with size and traffic. One 2025 cost analysis puts payback on a small self-hosted setup at well under a year once steady volume is past roughly 10 to 50 million tokens a month. Below that, a closed or hosted API is often cheaper, so the decision is genuinely use-case dependent.
+
+### Which open-source model should we use?
+
+It depends on the task, the languages you need, your hardware, and the license. As of 2026, Qwen and Mistral offer strong models under a clean Apache 2.0 license (Mistral is also EU-headquartered), gpt-oss is Apache 2.0 and runs a 120-billion-parameter model on a single 80GB GPU, and DeepSeek ships under MIT. Some models, including parts of the Llama family, carry license terms that restrict commercial or EU use, so the license matters as much as the benchmark. Matching model to use case is part of what a scoping call is for.
+
+### Do we own the AI, or are we locked into a vendor?
+
+That is the point of building on an open model. With a genuine custom build on open weights, the model runs on your infrastructure, the retrieval setup and fine-tuned adapters are yours, and the integration code is yours by contract. There is no per-seat licence you can be cut off from and no closed model that can be retired under you. Settle ownership, usage rights, and source-code handover in writing before the project starts.
+
+---
+
+# Custom AI Tutor Development: Build, Buy, or White-Label
+
+Source: https://learnslice.com/blog/custom-ai-tutor-development
+Language: en
+Published: 2026-07-21
+
+Custom AI tutor development: build, buy, or license white-label, what grounding and adaptivity really cost, and how to vet an AI tutor provider.
+
+## Key Takeaways
+
+- A custom AI tutor is a learning assistant built around your own curriculum and data, not a generic chatbot. It answers from your content, guides each learner along an adaptive path, gives feedback, and runs under your brand and your data-protection rules.
+- You have three routes: buy a ready-made platform, license a white-label product, or commission a custom build. Build is the right route when the tutor has to fit your content exactly, carry your brand, keep data in your control, and belong to you.
+- Building a custom AI tutor typically runs from about 30,000 to 150,000 dollars, with a lightweight prototype from around 5,000 to 15,000 dollars and a full enterprise build reaching into six figures. Budget for ongoing model and hosting costs of roughly 500 to 5,000 dollars per month, not just the build.
+- The biggest cost drivers are how deeply the tutor is grounded in your own knowledge (RAG), how adaptive it is, and which systems it connects to (LMS, SSO, xAPI or SCORM). A first usable version is often ready in 6 to 8 weeks; a full solution takes 3 to 6 months.
+- Vet an AI tutor provider on more than generic dev skills: grounding tested on your own content, guardrails against wrong answers, real adaptivity, no lock-in to one model, EU or on-premises hosting with a training-data opt-out, and ownership of the result.
+
+![Two colleagues at a whiteboard scoping a custom AI tutor project](/images/blog/ai-tutor-consultation.webp)
+
+## Custom AI Tutor Development: The Decision Behind the Search
+
+If you are researching how to get a custom AI tutor, you have probably already decided that a generic chatbot is not enough. The real question is not whether a personalised AI mentor would help your learners. It is how you get one that actually fits: buy a ready-made platform, license a white-label product, or commission a custom build around your own content.
+
+That decision is what this guide is about. Most organisations arrive here because a finished tool falls short at a point that matters: it does not know their curriculum, it cannot carry their brand, or its data handling rules it out. A wrong choice costs twice: the budget, and the months lost to a tutor nobody ends up using. You do not need convincing that a tailored AI tutor would help. You need to know what it costs, how a build runs, and how to tell a serious development partner from an expensive mistake.
+
+## What a Custom AI Tutor Is, and When to Build Your Own
+
+A **custom AI tutor** is a learning assistant built around your own curriculum and data, not a generic chatbot. It answers from your content, guides each learner along an adaptive path, gives feedback, and runs under your brand and your data-protection rules. You commission it once and, with the right contract, own the result.
+
+The difference from an off-the-shelf assistant is grounding. A generic chatbot answers from the open internet; a custom AI tutor answers from your material, follows your didactic structure, and cites its sources. Building your own is worth it the moment that grounding matters: when the content is too specific for a standard tool, when the tutor has to look and feel like yours, when data protection is non-negotiable, or when you want it to grow with your own knowledge over the years.
+
+![The LearnSlice AI tutor: a chat interface with IHK exam, onboarding, company knowledge, and upskilling modes, grounded in your own content](/images/solutions/learnslice.webp)
+
+## Who Builds a Custom AI Tutor
+
+Three groups commission custom AI tutors, for different reasons:
+
+- **Learning and training providers (edtech, course providers, academies).** They own the content and the client relationship but often lack in-house software engineering. A custom AI tutor on their own brand lets them offer a modern product without building an engineering team of their own, and keep the customer to themselves.
+- **Companies and corporate L&D.** They want a tutor grounded in their own processes and knowledge: onboarding that adapts to each role, compliance training that looks like their business, upskilling that pulls from internal documentation. For a sense of where this pays off in practice, see our overview of [AI tools for vocational training](/blog/ai-tools-vocational-training).
+- **Universities and higher education.** Course-grounded tutors that answer from the reading list, respect academic integrity, and integrate with the LMS. The buying cycle is longer and procurement-led, but the fit for a data-sovereign, curriculum-grounded build is strong.
+
+Across all three, the common thread is the same: they train large groups and need the tutor to fit their content exactly, which is precisely where building beats buying.
+
+![A custom AI tutor delivered under a client's own brand: a Financial Companion built on the same engine, with a financial health check and a guided learning programme](/images/solutions/financial-companion.webp)
+
+## Buy a Platform, License White-Label, or Commission a Build?
+
+There are three routes, and the right one depends on how specific your content is and how much control you need. The direct comparison:
+
+| Criterion | Buy a platform (SaaS) | License white-label | Commission a custom build |
+|---|---|---|---|
+| Entry cost | low, monthly per user | medium, licence plus setup | higher, one-off build |
+| Cost over the years | recurring per-user fees, ongoing | recurring licence, ongoing | one-time investment, then operation |
+| Fit to your content | limited, you adapt to it | good, within the product's limits | exact, it adapts to you |
+| Time to launch | instant | weeks | weeks to months |
+| Your brand | vendor's, mostly | yours | yours |
+| Data control and sovereignty | with the vendor | shared | with you |
+| Ownership of the result | none | none | with you |
+
+The difference many see only later is the cost over time. A subscription is billed per user per month, usually indefinitely: the more learners you have and the longer you use it, the more it costs, and in the end you own nothing. A custom build is a one-time investment. You pay once to build it, then only for operation, and you use the same solution for years.
+
+Past a certain number of learners, a build can come in below the accumulating licence fees, and it fits you exactly rather than the other way around. That is why building pays off above all for organisations that train large groups: training providers, universities, and companies with many learners.
+
+**Not sure whether to buy, white-label, or build?** Outline your case in a free 30-minute strategy call, no pitch, and get a straight answer on which route fits, plus a ballpark price. Or request a [no-obligation quote](/solutions#project-inquiry).
+
+## How Much Does It Cost to Build an AI Tutor?
+
+Cost depends mainly on how deeply the tutor is grounded in your knowledge, how adaptive it is, and what it connects to. In short: expect a prototype from the mid four figures, a full custom build in the five to six figures, plus ongoing running costs. Here are the market reference points at a glance:
+
+| Scope | Typical build cost | Timeline |
+|---|---|---|
+| Prototype / proof of concept (guided dialogue, your content) | ~5,000 to 15,000 dollars | 6 to 8 weeks |
+| Custom AI tutor (adaptive paths, integrations, reporting) | ~30,000 to 150,000 dollars | 3 to 6 months |
+| Full enterprise build (deep LMS integration, multiple roles and languages) | 150,000 dollars and up | 4 to 8 months |
+| Operation (model API, hosting, iteration) | ~500 to 5,000 dollars per month | ongoing |
+
+These are industry reference points reported by specialist development vendors, not quotes. A subscription tool, by contrast, runs from roughly 39 to 449 dollars per month for small teams, and enterprise per-seat pricing runs from a few dollars to over 100 dollars per user per month. That is the number a one-time build has to beat over time.
+
+A focused AI tutor for a mid-sized team usually lands in the five figures, not the six-figure territory people fear, and it earns that back in per-seat licences replaced and trainer time saved. A short scoping call turns these ranges into a real number. Your actual price moves with four levers:
+
+1. **Grounding in your knowledge.** Indexing your content and getting retrieval accurate and source-cited (RAG) is the core of a real tutor and one of the biggest drivers of both value and cost.
+2. **Adaptivity.** Personalised learning paths and a mastery model that reacts to each learner cost more than a fixed question-and-answer flow, but they are often the whole reason for building.
+3. **Integrations.** Connections to your LMS, single sign-on (SSO), or standards such as xAPI and SCORM add effort.
+4. **Scope and rights.** More roles, more languages, white-label branding, and full handover of ownership all show up in the price.
+
+## How to Vet an AI Tutor Provider
+
+An AI tutor lives or dies on a few things a generic dev shop rarely gets right. Vet a provider on these before you commit:
+
+- **Grounding, tested on your own content.** Ask to see the tutor answer from your material with correct source citations, not a demo on generic data. Weak retrieval is the most common reason an AI tutor gives wrong or vague answers.
+- **Accuracy and guardrails.** How does the provider stop the tutor inventing answers, and how do they measure it? Look for an evaluation set, sensible behaviour when the answer is not in your content, and a way to review and correct responses.
+- **Adaptivity that is real.** A mastery model that adjusts to each learner, not a chat box with a progress bar bolted on.
+- **Model choice and where it runs.** No lock-in to a single model vendor, an EU or on-premises hosting option, and a training-data opt-out so your content never trains a public model. Building on a self-hostable open model is one way to guarantee all three; see [custom AI on open-source models](/blog/custom-ai-open-source-models).
+- **Integrations and operation.** LMS, SSO, and xAPI, SCORM, or LTI, plus a clear plan for maintenance and iteration after launch.
+
+The general vendor checklist, instructional design plus engineering, ownership of the code, and references, matters here too; our [custom e-learning development guide](/blog/custom-e-learning-development-costs) covers it in full, and our [7-point check on GDPR-compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers) covers the data-protection questions.
+
+## Your Data, Your Model, Your Tutor
+
+An AI tutor raises data questions a static course never does, because it runs your content and your learners' questions through a model. Three of them decide whether it stays sovereign:
+
+- **Where the model runs.** A tutor built for EU or on-premises hosting keeps prompts and learner data inside your jurisdiction, instead of sending them to a US API by default.
+- **What happens to your data.** A training-data opt-out, plus clean separation between your retrieval index and the base model, keeps your content and your learners' questions out of anyone's public training set.
+- **Who owns the result.** When the code, the prompts, and the retrieval setup are yours, the tutor is an asset you control, not a rented endpoint you can be cut off from or repriced on.
+
+For regulated and public-sector buyers, the same build should be EU AI Act ready from the start; retrofitting compliance later costs far more.
+
+That is what our offering is built around. To see how LearnSlice builds custom AI tutors with EU hosting and ownership of the result, visit [custom e-learning solutions](/solutions).
+
+## Start Small, Then Scale
+
+The lowest-risk way into a custom AI tutor is not a six-month contract; it is a small first version grounded in a slice of your real content and tested on real learners. If it answers accurately from your material and people actually use it, you scale it. If it does not, you have spent weeks, not a budget.
+
+**Let's outline your AI tutor.** Request a [no-obligation quote](/solutions#project-inquiry) or book a free 30-minute strategy call: no pitch, and a concrete roadmap plus a ballpark price for your own AI tutor at the end. To put it to work in apprenticeship and workplace training, see [LearnSlice for companies](/companies), and for vocational schools, [LearnSlice for schools](/schools).
+
+
+## Frequently Asked Questions
+
+### How much does it cost to build a custom AI tutor?
+
+As a market reference, a custom AI tutor typically runs from about 30,000 to 150,000 dollars. A lightweight prototype with guided dialogue and your content is often around 5,000 to 15,000 dollars, while a full enterprise build with deep integrations and adaptive learning reaches into six figures and beyond. On top of the build, budget for ongoing model and hosting costs of roughly 500 to 5,000 dollars per month. These are industry ranges, not quotes; the real number depends on grounding, adaptivity, and integrations.
+
+### Should we build an AI tutor or buy one?
+
+Buy a ready-made platform when your needs are standard and speed matters most. License a white-label product when you want your brand on someone else's engine. Commission a custom build when the tutor has to answer from your own content, fit your processes, keep data in your control, and belong to you. For organisations that train large groups, a one-time build often costs less over the years than an open-ended per-user licence.
+
+### How long does it take to build an AI tutor?
+
+A first usable version with your content and a working learning flow is often ready in 6 to 8 weeks. A complete solution with adaptive paths, integrations, and reporting usually takes 3 to 6 months. A provider who delivers in short iterations shows you something usable early instead of disappearing into a concept phase for months.
+
+### What is the difference between a custom AI tutor and a generic chatbot?
+
+A generic chatbot answers from the open internet and a general model. A custom AI tutor is grounded in your own curriculum and knowledge, so it answers from your material, follows your didactic structure, guides each learner along an adaptive path, and gives feedback. It runs under your brand, with your roles and your data-protection rules built in.
+
+### Can a custom AI tutor be white-labelled for our brand?
+
+Yes. A custom build can carry your name, your design, and your domain, so your client sees only your brand and you keep the customer relationship, and with the right contract it belongs to you outright. If you want branding fast and do not need to own the result, a licensed white-label product is the lighter alternative, though you do not own that one. Training providers and edtech companies are the most frequent buyers of both.
+
+### Is a custom AI tutor GDPR compliant?
+
+It can and should be, but only if it is built that way from the start. Look for hosting in Germany or the EU, a data processing agreement, a clean role and deletion model, and a clear separation between your data and any publicly trained models, including a training-data opt-out. A custom build has the advantage that data protection and sovereignty are designed in from the ground up.
+
+### How is a custom AI tutor grounded in our own content?
+
+Through retrieval-augmented generation (RAG): your documents, courses, and knowledge are indexed, and the tutor retrieves the relevant passages before it answers, with source citations. This keeps answers accurate and on-curriculum rather than invented. The quality of that grounding is one of the biggest factors in both the value and the cost of the build.
+
+### Who owns the code and the AI tutor after the project?
+
+That is negotiable and should be settled in writing before the project starts. With genuine custom development, the rights to the code and content you commission should sit with you, so you are not permanently locked to one vendor. Get ownership, usage rights, and handover of the source code contractually guaranteed.
+
+---
+
 # Custom E-Learning Development: Cost, Process & How to Choose
 
 Source: https://learnslice.com/blog/custom-e-learning-development-costs
@@ -454,6 +762,8 @@ Before you talk about cost, get clear on what you are actually commissioning. "C
 - **E-learning software:** the platform itself. A custom learning platform, a learning app, a custom AI chatbot for learning (a learning chatbot or AI tutor that answers from your own company knowledge), a simulation, a serious game, or an AI-driven learning application. Here software is being built, not just content produced.
 
 The distinction matters because the word "e-learning" gets stretched to cover both. If you only need content, you pay for production. If you need a solution that fits your processes, works with AI, and belongs to your company, you need software engineering. This guide focuses on the second case while still covering content costs.
+
+If the AI tutor is the piece you care about most, our guide to [custom AI tutor development](/blog/custom-ai-tutor-development) goes deeper on that specific case.
 
 ## How Much Does Custom E-Learning Development Cost?
 
@@ -1132,7 +1442,7 @@ This path does not replace legal advice. But it filters out around ninety percen
 
 The idea that GDPR compliance makes AI tools boring or underpowered does not hold up in practice. Vertical, EU-hosted platforms with a data processing agreement, a training-data opt-out, and a clean role model deliver the feature set trainers need. They deliver it without the residual legal risk that a private ChatGPT tab on a conference laptop carries. The compliance requirements are a filter function, not a ban. Anyone who takes the filter seriously ends up with a narrower but better toolbox.
 
-If you want to check how a vertical apprenticeship platform covers these seven checks in concrete terms (with a data processing agreement, EU hosting, and a use-case-specific data flow), you will find a detailed overview and demo access at [LearnSlice for companies](/companies). For a broader picture of generative AI in dual vocational training, see the article on [AI in vocational training](/blog/ai-in-vocational-training).
+If you want to check how a vertical apprenticeship platform covers these seven checks in concrete terms (with a data processing agreement, EU hosting, and a use-case-specific data flow), you will find a detailed overview and demo access at [LearnSlice for companies](/companies). For a broader picture of generative AI in dual vocational training, see the article on [AI in vocational training](/blog/ai-in-vocational-training). And to remove the third-country transfer entirely by running the model on your own infrastructure, see [custom AI on open-source models](/blog/custom-ai-open-source-models).
 
 
 ## Frequently Asked Questions
@@ -1694,7 +2004,7 @@ That is the case for investing in this now, rather than waiting for the next inc
 
 **See what this looks like on your own content - in 30 minutes.** LearnSlice delivers private, company-grounded AI coaching for employee onboarding and upskilling, with retrieval on your own documents, role-based access, structured learning paths, and German-hosted data processing. [Book a 30-minute walkthrough](/companies) and we will load one of your onboarding docs into a live coach so you can see how the answers - and the citations - actually look.
 
-Further reading: [AI in training: the state of the art](/blog/ai-in-vocational-training) · [A guide to AI tools for training teams](/blog/ai-tools-vocational-training) · [Structured onboarding: an 8-week template](/blog/apprentice-onboarding)
+Further reading: [AI in training: the state of the art](/blog/ai-in-vocational-training) · [A guide to AI tools for training teams](/blog/ai-tools-vocational-training) · [Structured onboarding: an 8-week template](/blog/apprentice-onboarding) · [Custom AI on open-source models](/blog/custom-ai-open-source-models)
 
 
 ---
@@ -2606,6 +2916,8 @@ Modern learning coaches go further: they recognize where an apprentice is strugg
 - Explaining new concepts step by step
 - Reinforcing and deepening learning content
 
+To have a chatbot or learning coach like this built around your own curriculum, see our guide to [custom AI tutor development](/blog/custom-ai-tutor-development).
+
 ### 2. AI-Powered Learning Platforms
 
 While a chatbot responds to individual questions, learning platforms provide structured learning paths. AI-powered platforms dynamically adjust these paths based on the apprentice's progress - so each person learns at their own pace and focuses on their weaknesses.
@@ -2896,6 +3208,314 @@ Commercial occupations such as office management clerk, IT occupations such as I
 
 ---
 
+# Souveräne individuelle KI mit Open-Source-Modellen
+
+Source: https://learnslice.com/de/blog/individuelle-ki-open-source-modelle
+Language: de
+Published: 2026-07-30
+
+Individuelle KI auf Open-Source-Modellen wie Kimi K2 und gpt-oss: personalisiert auf Ihren Betrieb, in der EU selbst gehostet und Ihr Eigentum. Gespräch buchen.
+
+## Auf einen Blick
+
+- Open-Weight-Modelle (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek und andere) sind KI-Modelle, deren Gewichte Sie herunterladen und auf Ihrer eigenen Infrastruktur betreiben können. Das ist die einzige Klasse leistungsstarker KI, die Sie vollständig selbst hosten können, sodass Ihre Daten Ihre Server nie verlassen und Sie nicht pro Token zahlen.
+- Eine individuelle KI ist nicht das rohe Modell. Sie ist ein Modell, das um Ihren Betrieb herum gebaut ist: in Ihren eigenen Daten verankert über Retrieval (RAG), auf Ihren Prozess und Ihre Sprache zugeschnitten über leichtes Fine-Tuning (LoRA) und an Ihre Systeme angebunden. Diese Schicht macht aus einem generischen Modell eine personalisierte KI für Ihr Unternehmen.
+- Das stärkste Argument für Self-Hosting eines offenen Modells ist Souveränität, nicht der Preis. Jeder Aufruf einer in den USA gehosteten KI-API ist nach DSGVO eine Datenübermittlung ins Ausland. Ein Modell, das auf EU-Infrastruktur läuft, beseitigt diese Übermittlung vollständig und hält Sie in der leichteren Betreiberrolle nach der EU-KI-Verordnung.
+- Der Kostenvorteil ist real, aber eng: Self-Hosting lohnt sich meist ab etwa 10 bis 50 Millionen Token pro Monat bei stetiger Nutzung. Ein einzelner GPU-Server mit viel Speicher in der EU startet bei rund 900 Euro pro Monat und betreibt bereits ein Modell mit 120 Milliarden Parametern. Darunter ist eine API oft günstiger.
+- Nicht jedes offene Modell ist in der EU kommerziell unbedenklich nutzbar. Die Lizenzen unterscheiden sich stark, von sauberem Apache 2.0 (Qwen, Mistral, gpt-oss) bis zu individuellen Bedingungen mit regionalen Einschränkungen. Das richtige Modell, die richtige Lizenz und das richtige Hosting für Ihren Anwendungsfall zu wählen, ist genau die Entscheidung, die vor dem Bau in ein kurzes Gespräch gehört.
+
+![Eine Geschäftsfrau an ihrem Schreibtisch prüft Kennzahlen und erwägt eine individuelle KI-Integration](/images/blog/pexels-mikhail-nilov-6592550.webp)
+
+## Individuelle KI mit Open-Source-Modellen: die Entscheidung hinter der Suche
+
+Wenn Sie sich mit individueller KI auf Open-Source-Modellen beschäftigen, haben Sie die Frage, ob KI Ihrem Betrieb hilft, wahrscheinlich längst hinter sich. Die eigentliche Frage ist konkreter: Wie bekommen Sie eine KI, die wirklich Ihnen gehört, in Ihren eigenen Daten verankert ist, dort läuft, wo Ihre Daten laufen dürfen, ohne für immer pro Nutzer zu zahlen oder Ihren Betrieb an eine fremde API abzugeben.
+
+Genau das ermöglichen Open-Weight-Modelle, und darum geht es in diesem Leitfaden. Wir werden präzise sein: was diese Modelle sind, warum Sie eines selbst hosten statt eine geschlossene API aufzurufen, wie aus einem generischen Modell eine personalisierte KI für Ihr konkretes Unternehmen wird, wo sie den Betrieb tatsächlich stärkt und was Bau und Betrieb kosten. Das Ziel ist nicht, Sie vom Nutzen der KI zu überzeugen. Es geht darum, Ihnen die Entscheidung zu erleichtern, ob ein offenes Modell, um Ihren Betrieb herum gebaut und unter Ihrer Kontrolle gehostet, die richtige Grundlage ist, und wie der erste Schritt aussieht.
+
+Genau das bauen wir bei LearnSlice: souveräne, EU-gehostete individuelle KI und Lernsoftware für Hochschulen, Bildungsträger und regulierte Teams, im Eigentum der Organisationen, für die wir sie bauen.
+
+Lieber erst sprechen? [Buchen Sie ein kostenloses 30-minütiges Gespräch](#project-inquiry), kein Pitch.
+
+## Was "individuelle KI auf einem offenen Modell" wirklich bedeutet
+
+Zwei Begriffe werden unscharf verwendet, deshalb hilft Genauigkeit.
+
+Ein **Open-Weight-Modell** ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt jede Anfrage an die Server eines Anbieters zu senden. Die meisten sagen "Open Source", doch "Open-Weight" ist der genauere Begriff, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Zu den Familien, von denen 2026 die Rede ist, gehören **Kimi K2** von Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** von OpenAI (dessen erste Open-Weight-Veröffentlichung), **Qwen** von Alibaba, **Mistral** aus Frankreich und **DeepSeek**. Sie sind nah an der Spitze: eine Generation hinter den besten geschlossenen Modellen bei den härtesten Aufgaben, aber mehr als leistungsfähig für den Großteil echter Geschäftsarbeit.
+
+Eine **individuelle KI** ist nicht das rohe Modell. Ein Basismodell allein weiß nichts über Ihren Betrieb. Das Individuelle ist die Schicht, die Sie darum herum bauen: Ihre Daten über Retrieval angebunden, das Modell auf Ihren Prozess und Ihre Sprache zugeschnitten und das Ganze in die Systeme eingebunden, die Ihr Team ohnehin nutzt. Diese Schicht ist der Unterschied zwischen einer cleveren Demo und einem Assistenten, der tatsächlich weiß, wie Ihr Unternehmen arbeitet. Es ist, nicht zufällig, dieselbe Bauen-oder-Kaufen-Logik wie hinter einem [KI-Lernbegleiter](/de/blog/ki-lernbegleiter-entwickeln-lassen): Der Wert liegt in der Passung, nicht im Modell.
+
+## Warum ein offenes Modell und nicht einfach eine geschlossene API
+
+Geschlossene APIs der großen KI-Labore sind ausgezeichnet, und für einen ersten Prototyp oft die richtige Wahl. Sie wechseln zu einem selbst gehosteten offenen Modell, wenn eines von drei Dingen nicht verhandelbar wird.
+
+| Kriterium | Geschlossene API (OpenAI, Anthropic, Google) | Selbst gehostetes Open-Weight-Modell |
+|---|---|---|
+| Wohin Ihre Daten gehen | zum Anbieter, oft außerhalb der EU | bleiben auf Ihrer oder EU-Infrastruktur |
+| Preismodell | pro Token, unbefristet | feste Infrastrukturkosten, die Sie steuern |
+| Kosten bei hohem Volumen | steigen mit der Nutzung | flach, sobald die Hardware läuft |
+| Beständigkeit | kann abgeschaltet oder neu bepreist werden | läuft, solange Sie es behalten |
+| Anpassbarkeit | begrenzt auf Prompting und leichtes Tuning | volles Fine-Tuning und volle Kontrolle |
+| Anbieterbindung | hoch | gering, die Gewichte sind Ihre |
+| Am besten für | schnellen Start, geringes oder schwankendes Volumen | Souveränität, Skalierung, langfristige Kontrolle |
+
+Das klarste Beispiel für Beständigkeit: Im vergangenen Jahr haben geschlossene Anbieter ältere Modelle abgeschaltet und Kunden auf neuere, anders bepreiste Modelle gedrängt. Ein selbst gehostetes offenes Modell tut Ihnen das nicht an. Läuft es einmal gut für Ihren Anwendungsfall, läuft es genau zu den Bedingungen weiter, die Sie festlegen, solange Sie den Server behalten. Das ist ein echter betrieblicher Vorteil für alles, worauf Sie sich über Jahre verlassen wollen.
+
+Nichts davon macht geschlossene APIs falsch. Es macht sie zu einem anderen Werkzeug. Eine solide Strategie ist oft, schnell auf einer API zu prototypisieren und dann die Arbeitslasten, die es rechtfertigen, auf ein eigenes, selbst gehostetes Modell zu heben. Unsicher, wo diese Grenze für Ihren Fall liegt? Ein kurzes [Beratungsgespräch](/de/loesungen#project-inquiry) verortet sie. Kein Pitch, nur eine klare Einschätzung.
+
+## Der eigentliche Grund für Self-Hosting: Souveränität und Compliance
+
+Für die meisten europäischen Organisationen ist nicht der Preis der entscheidende Faktor. Es ist, wohin die Daten gehen.
+
+Jede Anfrage an eine in den USA gehostete KI-API ist nach [Kapitel V der DSGVO](https://dsgvo-gesetz.de/kapitel-5/) eine Übermittlung personenbezogener Daten ins Ausland. Hosting in einer EU-Region durch einen Anbieter mit Sitz in den USA löst das nicht vollständig, weil US-Zugriffsgesetze auf Daten dieser Unternehmen zugreifen können, wo auch immer sie liegen. Das ist der Kern des Problems, gegen das Compliance-Teams immer wieder laufen. Ein Modell auf EU- oder On-Premises-Infrastruktur beseitigt die Übermittlung vollständig: Es gibt nichts ins Ausland zu senden, also nichts zu rechtfertigen. Unsere ausführlichere Sicht auf die Datenschutzfragen, die Sie jedem KI-Werkzeug stellen sollten, finden Sie in unserer [Checkliste zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+Die EU-KI-Verordnung liefert einen zweiten Grund für dieses Setup. Ein unverändertes offenes Modell in Ihrer eigenen Umgebung zu betreiben, hält Sie in der Regel in der leichteren **[Betreiberrolle](https://artificialintelligenceact.eu/article/26/)**, mit deutlich weniger Pflichten als ein Modellanbieter trägt. [Substanzielles Fine-Tuning](https://artificialintelligenceact.eu/article/25/) kann einige dieser Pflichten auf Sie verlagern, das ist also eine Entwurfsentscheidung, die man bewusst trifft und nicht versehentlich. Genau diese Abwägung bringt ein guter Entwicklungspartner vorab auf den Tisch, nicht im Nachhinein.
+
+Für regulierte Käufer und den öffentlichen Sektor ist Souveränität keine Vorliebe, sondern eine Anforderung, und ein selbst gehostetes offenes Modell ist eine der wenigen Architekturen, die sie sauber erfüllt. Es ist dasselbe Prinzip wie bei den [KI-Werkzeugen für die Ausbildung](/de/blog/ki-tools-ausbildung): Geben Sie den Menschen eine leistungsfähige KI, die sensible Informationen im Haus behält.
+
+![Zwei Kolleginnen und Kollegen skizzieren gemeinsam ein Projekt am Laptop](/images/blog/pexels-a-darmel-7706924.webp)
+
+## Wie aus einem generischen Modell *Ihre* KI wird
+
+Diesen Teil unterschätzen die meisten, und genau hier entsteht die Personalisierung. Es gibt zwei verschiedene Wege, eine KI zu Ihrer zu machen, und ernsthafte Projekte nutzen beide.
+
+**Retrieval verändert, was das Modell weiß.** Retrieval-Augmented Generation (RAG) indexiert Ihre eigenen Dokumente, Datensätze und Ihr Wissen und lässt das Modell die passenden Stellen abrufen, bevor es antwortet, mit Quellenangabe. So antwortet die KI aus *Ihrem* Material statt zu raten, und so bleibt sie aktuell: Sie aktualisieren den Index, nicht das Modell. RAG ist das richtige Werkzeug für private, sich ändernde Fakten.
+
+**Fine-Tuning verändert, wie sich das Modell verhält.** Leichtes Fine-Tuning, meist mit einer Technik namens LoRA, bringt dem Modell Ihren Ton, Ihre Ausgabeformate, Ihre Fachsprache und Ihre konkreten Aufgaben bei. Es fügt keine frischen Fakten zuverlässig hinzu (das ist Aufgabe des Retrieval), aber es lässt das Modell so klingen und handeln wie Ihres.
+
+Die saubere Architektur, die das zusammenhält und nach der Sie jeden Partner fragen sollten, ist ein gemeinsames Basismodell plus ein kleiner **kundenspezifischer Adapter** für das Verhalten und ein separater **kundenspezifischer Index** für die Daten. Die KI jedes Kunden ist auf ihn personalisiert, seine Daten bleiben von allen anderen getrennt, und ein neuer Kunde ist günstig, weil Sie kein Modell von Grund auf neu trainieren. Dieses Muster lässt eine einzige Entwicklungsinvestition viele maßgeschneiderte Installationen bedienen.
+
+## Wo das Ihren Betrieb stärkt
+
+Die Modelle sind allgemein, der Wert ist konkret. Eine individuelle KI auf einem offenen Modell zahlt sich meist an einer Handvoll bewährter Stellen aus:
+
+- **Kunden- und internes Support.** Ein Assistent, verankert in Ihren Produktunterlagen und Richtlinien, fängt Routinefragen rund um die Uhr ab, in mehreren Sprachen, und gibt die schwierigen mit Kontext an einen Menschen weiter.
+- **Ein Wissensassistent für Ihr Team.** Neue und erfahrene Mitarbeitende erhalten fundierte Antworten aus Ihren eigenen Prozessbeschreibungen, Runbooks und Playbooks, statt eine erfahrene Kollegin zu unterbrechen oder zu einem öffentlichen Chatbot zu greifen. Das ist der wirkungsvollste Einsatz für Onboarding und Weiterbildung, wie das aussieht, zeigt [LearnSlice für Unternehmen](/de/companies).
+- **Dokumenten- und Datenverarbeitung.** Felder aus Rechnungen, Verträgen und Formularen extrahieren, lange Unterlagen zusammenfassen und weiterleiten, wobei ein Mensch die Ausnahmen prüft statt jeden Fall.
+- **Agentische Abläufe.** Mehrstufige Aufgaben, bei denen die KI plant, Ihre Werkzeuge aufruft und handelt. Analysten erwarten, dass aufgabenspezifische KI-Agenten 2026 von einer seltenen Funktion zu einer verbreiteten in Unternehmenssoftware werden, was eine eigene, kontrollierbare Grundlage wertvoller macht, nicht weniger wert.
+- **Entwicklung und Content-Produktion.** Fundierte Assistenten, die die Arbeit beschleunigen, die Ihre Teams ohnehin leisten, an Ihrem eigenen Code und Content, ohne etwas davon an Dritte zu senden.
+
+Der rote Faden: All das läuft auf *Ihren* Daten, und genau deshalb lohnt sich die Mühe, diese Daten auf einer Infrastruktur zu halten, die Sie kontrollieren.
+
+## Was es kostet und worauf es läuft
+
+Es gibt zwei Zahlen, und sie sind verschieden. Der **Bau** ist eine einmalige Investition in die individuelle Schicht: Retrieval, etwaiges Fine-Tuning, Integrationen und die Oberfläche. Der **Betrieb** ist die Infrastruktur, die das Modell hostet.
+
+Die gute Nachricht beim Hosting: Offene Modelle sind deutlich effizienter geworden. Ein einzelner GPU-Server mit viel Speicher in einem EU-Rechenzentrum startet bei rund **[900 Euro pro Monat](https://www.hetzner.com/dedicated-rootserver/gex131/)** und betreibt bereits ein offenes Modell mit 120 Milliarden Parametern wie gpt-oss. Kleinere Modelle im Bereich 20 bis 30 Milliarden laufen auf einer einzelnen Mittelklassekarte. EU-Anbieter wie Hetzner, OVHcloud, Scaleway und IONOS bieten das an, der gesamte Stack kann also in Deutschland oder der EU stehen.
+
+| Setup | Betreibt grob | Richtwert EU-Kosten |
+|---|---|---|
+| Einzelne Mittelklasse-GPU | ein 20- bis 30B-Modell, quantisiert | niedrige Hunderte Euro pro Monat |
+| Einzelner GPU-Server mit viel Speicher | ein 120B-Modell (z. B. gpt-oss) | ab ca. 900 Euro pro Monat |
+| Multi-GPU-Knoten | die größten offenen Modelle (ab 200B) | vierstellig pro Monat und mehr |
+
+Zur Wirtschaftlichkeit: [Eine Kostenanalyse von 2025](https://arxiv.org/abs/2509.18101) setzt die Amortisation einer kleinen Self-Hosting-Umgebung auf deutlich unter ein Jahr an, sobald die stetige Nutzung über etwa **10 bis 50 Millionen Token pro Monat** liegt. Der ehrliche Vorbehalt: Self-Hosting gewinnt nur, wenn die Hardware auch ausgelastet ist. Eine ungenutzte GPU ist pro Anfrage teuer, unter diesem Volumen oder bei schwankender Nutzung ist eine geschlossene oder gehostete API also oft die günstigere und einfachere Wahl. Der Sinn eines Gesprächs ist, diese Rechnung an Ihren echten Zahlen zu prüfen, bevor sich jemand auf einen Bau festlegt. Einen breiteren Blick darauf, was Individualentwicklung selbst kostet, gibt unser [Leitfaden zu den Kosten der Individualentwicklung](/de/blog/e-learning-entwickeln-lassen).
+
+## Modell, Lizenz und Partner wählen
+
+Hier sind zwei Fehler leicht gemacht, und beide sind vermeidbar.
+
+Der erste ist, allein nach Benchmarks zu wählen. Das richtige Modell hängt von Ihrer Aufgabe, den benötigten Sprachen und Ihrer Hardware ab, nicht von einer Rangliste. Der zweite, gefährlichere, ist die **Lizenz** zu ignorieren. Open-Weight heißt nicht uneingeschränkt. Stand 2026 veröffentlichen Qwen und Mistral starke Modelle unter einer sauberen Apache-2.0-Lizenz (Mistral hat zudem seinen Sitz in der EU, was gut zu einem souveränen Stack passt), gpt-oss ist Apache 2.0, und DeepSeek erscheint unter MIT. Doch einige verbreitete Modelle tragen individuelle Bedingungen: Teile der Llama-Familie etwa [schränken die Nutzung auf Weisen ein, die für Unternehmen mit Sitz in der EU wirklich heikel sind](https://www.llama.com/llama4/license/). Auf der falschen Lizenz zu bauen ist ein Problem, das Sie zum denkbar schlechtesten Zeitpunkt entdecken.
+
+Deshalb ist das Modell nur die halbe Entscheidung. Wenn Sie einen Entwicklungspartner bewerten, achten Sie auf:
+
+- **Das richtige Modell und die richtige Lizenz für Ihren Fall,** bewusst gewählt, ohne Bindung an einen einzigen Modellanbieter.
+- **Verankerung an Ihren eigenen Inhalten getestet,** mit korrekten Quellenangaben, keine Demo auf generischen Daten.
+- **EU- oder On-Premises-Hosting,** mit sauberer Datentrennung und einer klaren Compliance-Geschichte.
+- **Eigentum am Ergebnis:** Das Retrieval-Setup, die Adapter und der Integrationscode gehören Ihnen vertraglich.
+- **Lieferung in kurzen Iterationen,** damit Sie früh etwas Nutzbares sehen statt einer sechsmonatigen Konzeptphase.
+
+## Klein anfangen, dann skalieren
+
+Der risikoärmste Einstieg in individuelle KI ist kein langer Vertrag. Es ist eine kleine erste Version, gebaut an einem echten Anwendungsfall und einem Ausschnitt Ihrer tatsächlichen Daten, gehostet dort, wo sie später leben wird. Antwortet sie korrekt aus Ihrem Material und nutzt Ihr Team sie, skalieren Sie sie. Tut sie es nicht, haben Sie Wochen investiert, kein Budget. Dasselbe Prinzip gilt, ob Sie einen Betriebsassistenten bauen oder eine vollständige [individuelle Lernlösung](/de/loesungen): Beweisen Sie es zuerst an Ihren eigenen Daten.
+
+**Lassen Sie uns Ihre KI-Integration abstecken.** Buchen Sie ein kostenloses 30-minütiges Gespräch: unverbindlich, kein Verkaufspitch, und Sie sprechen mit den Ingenieuren, die es bauen würden, nicht mit einem Vertriebler. Bringen Sie einen Anwendungsfall mit, und Sie gehen mit einer klaren Machbarkeitseinschätzung, einer groben Architektur und einem Richtwert zu Kosten und Zeitrahmen. Lieber erst schriftlich? Fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an, und wir kommen mit einem konkreten nächsten Schritt zurück.
+
+Vertrauen von Hochschulen, Bildungsträgern und regulierten Teams in Deutschland.
+
+
+## Häufig gestellte Fragen
+
+### Was ist ein Open-Source- bzw. Open-Weight-KI-Modell?
+
+Ein Open-Weight-Modell ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt eine fremde API aufzurufen. Kimi K2, gpt-oss, Qwen, Mistral und DeepSeek sind Beispiele. Der Begriff Open-Weight ist präziser als Open Source, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Der praktische Punkt ist derselbe: Sie hosten das Modell selbst, also verlassen Ihre Eingaben und Daten Ihre Infrastruktur nie.
+
+### Warum individuelle KI auf einem offenen Modell statt einfach ChatGPT oder Claude?
+
+Geschlossene APIs von OpenAI, Anthropic oder Google sind ausgezeichnet und oft der richtige Einstieg. Sie wechseln zu einem selbst gehosteten offenen Modell, wenn drei Dinge wichtig werden: Datensouveränität (Ihre Daten dürfen die EU oder Ihre eigenen Server nicht verlassen), Kosten bei Skalierung (Token-Gebühren summieren sich bei hohem Volumen) sowie Beständigkeit und Kontrolle (ein selbst gehostetes Modell läuft, solange Sie es behalten, und kann nicht unter Ihnen abgeschaltet oder neu bepreist werden). Ein üblicher Weg ist, auf einer geschlossenen API zu prototypisieren und auf ein eigenes, selbst gehostetes Modell umzusteigen, wenn Volumen und Compliance es rechtfertigen.
+
+### Wie wird eine individuelle KI auf unser konkretes Unternehmen personalisiert?
+
+Über zwei Schichten auf dem Basismodell. Retrieval-Augmented Generation (RAG) verankert das Modell in Ihren eigenen Dokumenten und Daten, sodass es aus Ihrem Wissen antwortet und Quellen angeben kann. Leichtes Fine-Tuning (LoRA) prägt das Verhalten des Modells: Ihren Ton, Ihre Ausgabeformate, Ihre Fachsprache und Ihre Aufgaben. Ein sauberes Muster ist ein gemeinsames Basismodell plus ein kleiner kundenspezifischer Adapter für das Verhalten und ein separater kundenspezifischer Index für die Daten, sodass die KI jedes Kunden personalisiert ist und die Daten getrennt bleiben.
+
+### Ist ein selbst gehostetes Open-Source-Modell DSGVO-konform?
+
+Es kann es sein, und es beseitigt das schwierigste DSGVO-Problem von vornherein. Jeder Aufruf einer in den USA gehosteten KI-API ist nach Kapitel V der DSGVO eine Übermittlung ins Ausland, und Hosting in einer EU-Region durch einen US-Anbieter heilt das wegen US-Zugriffsgesetzen nicht vollständig. Ein Modell auf EU- oder On-Premises-Infrastruktur bedeutet, dass die Daten Ihre Rechtsordnung nie verlassen, es gibt also keine Übermittlung zu rechtfertigen. Die üblichen Maßnahmen brauchen Sie weiterhin: einen Auftragsverarbeitungsvertrag, ein Rollen- und Löschkonzept und eine saubere Trennung der Kundendaten.
+
+### Was kostet der Betrieb eines Open-Source-KI-Modells?
+
+Zwei Kosten zählen: Bau und Betrieb. Der Bau ist die individuelle Schicht (Retrieval, Fine-Tuning, Integrationen) und eine einmalige Investition. Der Betrieb des Modells auf EU-Infrastruktur kann bei rund 900 Euro pro Monat für einen einzelnen GPU-Server mit viel Speicher starten, der bereits ein Modell mit 120 Milliarden Parametern trägt, und steigt mit Größe und Traffic. Eine Kostenanalyse von 2025 setzt die Amortisation einer kleinen Self-Hosting-Umgebung auf deutlich unter ein Jahr an, sobald die stetige Nutzung über etwa 10 bis 50 Millionen Token pro Monat liegt. Darunter ist eine geschlossene oder gehostete API oft günstiger, die Entscheidung hängt also wirklich vom Anwendungsfall ab.
+
+### Welches Open-Source-Modell sollten wir nehmen?
+
+Das hängt von der Aufgabe, den benötigten Sprachen, Ihrer Hardware und der Lizenz ab. Stand 2026 bieten Qwen und Mistral starke Modelle unter einer sauberen Apache-2.0-Lizenz (Mistral hat zudem seinen Sitz in der EU), gpt-oss ist Apache 2.0 und betreibt ein Modell mit 120 Milliarden Parametern auf einer einzigen 80-GB-GPU, und DeepSeek erscheint unter MIT. Einige Modelle, darunter Teile der Llama-Familie, tragen Lizenzbedingungen, die die kommerzielle oder EU-Nutzung einschränken, die Lizenz zählt also so viel wie der Benchmark. Modell und Anwendungsfall zusammenzubringen ist genau der Zweck eines Beratungsgesprächs.
+
+### Gehört uns die KI, oder sind wir an einen Anbieter gebunden?
+
+Genau darum baut man auf einem offenen Modell. Bei einer echten Individualentwicklung auf offenen Gewichten läuft das Modell auf Ihrer Infrastruktur, das Retrieval-Setup und die feinjustierten Adapter gehören Ihnen, und der Integrationscode gehört Ihnen vertraglich. Es gibt keine Lizenz pro Platz, von der Sie abgeschnitten werden können, und kein geschlossenes Modell, das unter Ihnen abgeschaltet wird. Klären Sie Eigentum, Nutzungsrechte und Herausgabe des Quellcodes vor Projektstart schriftlich.
+
+---
+
+# KI-Lernbegleiter entwickeln lassen oder kaufen?
+
+Source: https://learnslice.com/de/blog/ki-lernbegleiter-entwickeln-lassen
+Language: de
+Published: 2026-07-21
+
+KI-Lernbegleiter: kaufen, White-Label lizenzieren oder entwickeln lassen. Was Verankerung und Adaptivität kosten und wie Sie einen KI-Tutor-Anbieter prüfen.
+
+## Auf einen Blick
+
+- Ein KI-Lernbegleiter ist ein Lernassistent, der auf Ihren eigenen Inhalten und Daten aufsetzt, kein generischer Chatbot. Er antwortet aus Ihrem Wissen, führt jeden Lernenden über einen adaptiven Lernpfad, gibt Feedback und läuft unter Ihrer Marke und Ihren Datenschutzregeln.
+- Sie haben drei Wege: eine fertige Plattform kaufen, ein White-Label-Produkt lizenzieren oder individuell entwickeln lassen. Entwickeln lassen ist richtig, wenn der KI-Tutor exakt zu Ihren Inhalten passen, Ihre Marke tragen, die Datenhoheit bei Ihnen lassen und Ihnen gehören soll.
+- Ein individueller KI-Lernbegleiter kostet nach Angaben spezialisierter Entwicklungsdienstleister meist etwa 30.000 bis 150.000 Euro, ein erster Prototyp (Proof of Concept) rund 5.000 bis 15.000 Euro, eine umfangreiche Enterprise-Lösung reicht in den sechsstelligen Bereich. Planen Sie laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat ein, nicht nur die Entwicklung.
+- Die größten Kostentreiber sind die Verankerung im eigenen Wissen (RAG), der Grad der Adaptivität und die Anbindung an Ihre Systeme (LMS, SSO, xAPI oder SCORM). Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung in 3 bis 6 Monaten.
+- Prüfen Sie einen KI-Tutor-Anbieter an mehr als generischem Dev-Können: Verankerung an Ihren eigenen Inhalten getestet, Leitplanken gegen falsche Antworten, echte Adaptivität, keine Bindung an ein Modell, EU- oder On-Premises-Hosting mit Trainingsdaten-Opt-out und Eigentum am Ergebnis.
+
+![Zwei Kollegen planen an einem Whiteboard ein KI-Lernbegleiter-Projekt](/images/blog/ai-tutor-consultation.webp)
+
+## KI-Lernbegleiter entwickeln lassen: die Entscheidung hinter der Suche
+
+Wenn Sie recherchieren, wie Sie einen eigenen KI-Lernbegleiter bekommen, haben Sie sich vermutlich schon entschieden, dass ein generischer Chatbot nicht genügt. Die eigentliche Frage ist nicht, ob ein personalisierter KI-Mentor Ihren Lernenden helfen würde. Sie lautet: Wie bekommen Sie einen, der wirklich passt, indem Sie eine fertige Plattform kaufen, ein White-Label-Produkt lizenzieren oder eine individuelle Lösung rund um Ihre eigenen Inhalte entwickeln lassen?
+
+Um diese Entscheidung geht es in diesem Leitfaden. Die meisten Organisationen kommen hierher, weil ein fertiges Tool an einer zentralen Stelle klemmt: Es kennt den eigenen Lehrplan nicht, es kann die eigene Marke nicht tragen, oder sein Umgang mit Daten schließt es aus. Eine falsche Wahl kostet doppelt: das Budget und die Monate, die mit einem Tool vergehen, das am Ende niemand nutzt. Dass ein maßgeschneiderter KI-Tutor helfen würde, müssen wir Ihnen nicht erklären. Sie wollen wissen, was er kostet, wie eine Entwicklung abläuft und woran Sie einen seriösen Entwicklungspartner erkennen.
+
+## Was ein KI-Lernbegleiter ist, und wann sich ein eigener lohnt
+
+Ein **KI-Lernbegleiter** ist ein Lernassistent, der auf Ihren eigenen Inhalten und Daten aufsetzt, kein generischer Chatbot. Er antwortet aus Ihrem Wissen, führt jeden Lernenden über einen adaptiven Lernpfad, gibt Feedback und läuft unter Ihrer Marke und Ihren Datenschutzregeln. Sie beauftragen ihn einmal und besitzen mit dem richtigen Vertrag das Ergebnis.
+
+Der Unterschied zu einem Standard-Assistenten ist die Verankerung. Ein generischer Chatbot antwortet aus dem offenen Internet, ein KI-Lernbegleiter antwortet aus Ihrem Material, folgt Ihrer didaktischen Struktur und nennt seine Quellen. Ein eigener lohnt sich, sobald genau diese Verankerung zählt: wenn die Inhalte zu speziell für ein Standard-Tool sind, wenn der KI-Tutor wie Ihrer aussehen und klingen soll, wenn der Datenschutz nicht verhandelbar ist oder wenn er über die Jahre mit Ihrem eigenen Wissen wachsen soll.
+
+![Der KI-Lernbegleiter von LearnSlice: eine Chat-Oberfläche mit Modi für IHK-Prüfung, Onboarding, Unternehmenswissen und Weiterbildung, verankert in Ihren eigenen Inhalten](/images/solutions/learnslice.webp)
+
+## Für wen sich ein eigener KI-Lernbegleiter lohnt
+
+Drei Gruppen lassen KI-Lernbegleiter entwickeln, aus unterschiedlichen Gründen:
+
+- **Bildungsträger und Lernanbieter (Edtech, Kurs- und Weiterbildungsanbieter, Akademien).** Sie besitzen die Inhalte und die Kundenbeziehung, haben aber oft keine eigene Softwareentwicklung. Ein KI-Tutor unter ihrer eigenen Marke lässt sie ein modernes Produkt anbieten, ohne ein eigenes Entwicklerteam aufzubauen, und den Kunden für sich behalten.
+- **Unternehmen und Personalentwicklung.** Sie wollen einen Tutor, der in ihren eigenen Prozessen und ihrem Wissen verankert ist: eine Einarbeitung, die sich an jede Rolle anpasst, Compliance-Schulungen, die nach dem eigenen Betrieb aussehen, Weiterbildung aus der internen Dokumentation. Wo sich das in der Praxis auszahlt, zeigt unser [Überblick zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
+- **Hochschulen und Universitäten.** Am Lehrplan verankerte Tutoren, die aus der Literaturliste antworten, die wissenschaftliche Integrität wahren und sich ins LMS integrieren. Der Einkaufsprozess ist länger und beschaffungsgetrieben, doch für eine datensouveräne, lehrplanverankerte Entwicklung ist die Passung stark.
+
+Allen dreien ist dasselbe gemeinsam: Sie schulen große Gruppen und brauchen einen Tutor, der exakt zu ihren Inhalten passt, und genau da schlägt Entwickeln das Kaufen.
+
+![Ein KI-Lernbegleiter unter der eigenen Marke des Kunden: ein Financial Companion auf derselben Engine, mit Finanz-Gesundheitscheck und geführtem Lernprogramm](/images/solutions/financial-companion.webp)
+
+## Plattform kaufen, White-Label lizenzieren oder entwickeln lassen?
+
+Es gibt drei Wege, und der richtige hängt davon ab, wie speziell Ihre Inhalte sind und wie viel Kontrolle Sie brauchen. Der direkte Vergleich:
+
+| Kriterium | Plattform kaufen (SaaS) | White-Label lizenzieren | Entwickeln lassen |
+|---|---|---|---|
+| Einstiegskosten | niedrig, monatlich pro Nutzer | mittel, Lizenz plus Einrichtung | höher, einmalige Entwicklung |
+| Kosten über die Jahre | laufende Gebühren pro Nutzer, dauerhaft | laufende Lizenz, dauerhaft | einmalige Investition, danach nur Betrieb |
+| Passung zu Ihren Inhalten | begrenzt, Sie passen sich an | gut, im Rahmen des Produkts | exakt, die Lösung passt sich an |
+| Zeit bis zum Start | sofort | Wochen | Wochen bis Monate |
+| Ihre Marke | überwiegend die des Anbieters | Ihre | Ihre |
+| Datenhoheit und Souveränität | beim Anbieter | geteilt | bei Ihnen |
+| Eigentum am Ergebnis | keins | keins | bei Ihnen |
+
+Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Abo wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb, und Sie nutzen dieselbe Lösung über Jahre.
+
+Ab einer gewissen Nutzerzahl kann die Entwicklung unter den auflaufenden Lizenzgebühren liegen, und sie passt exakt zu Ihnen statt umgekehrt. Deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen schulen: Bildungsträger, Hochschulen und Unternehmen mit vielen Lernenden.
+
+**Unsicher, ob kaufen, White-Label oder entwickeln lassen?** Umreißen Sie Ihren Fall in einem kostenlosen 30-minütigen Strategiegespräch, ohne Pitch, und Sie erhalten eine ehrliche Einschätzung, welcher Weg passt, plus einen Preisrahmen. Oder fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an.
+
+## Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?
+
+Die Kosten hängen vor allem davon ab, wie tief der Tutor in Ihrem Wissen verankert ist, wie adaptiv er ist und was er anbindet. Kurz gesagt: Ein erster Prototyp liegt im mittleren vierstelligen Bereich, eine vollständige Lösung im fünf- bis sechsstelligen Bereich, dazu kommen laufende Betriebskosten. Zur Orientierung die marktüblichen Richtwerte im Überblick:
+
+| Umfang | Typische Entwicklungskosten | Zeitrahmen |
+|---|---|---|
+| Prototyp / Proof of Concept (geführter Dialog, Ihre Inhalte) | ca. 5.000 bis 15.000 Euro | 6 bis 8 Wochen |
+| Individueller KI-Lernbegleiter (adaptive Pfade, Integrationen, Reporting) | ca. 30.000 bis 150.000 Euro | 3 bis 6 Monate |
+| Umfangreiche Enterprise-Lösung (tiefe LMS-Integration, viele Rollen und Sprachen) | 150.000 Euro und mehr | 4 bis 8 Monate |
+| Betrieb (Modell-API, Hosting, Weiterentwicklung) | ca. 500 bis 5.000 Euro pro Monat | dauerhaft |
+
+Diese Werte sind Branchenrichtwerte spezialisierter Entwicklungsdienstleister, keine Angebote. Ein Abo-Tool kostet zum Vergleich je nach Anbieter grob 6 bis 20 Euro pro Monat im Consumer-Bereich, Team-Plattformen beginnen bei rund 99 Euro pro Monat, B2B-Wissensbots liegen ab etwa 490 Euro pro Monat. An dieser Summe muss sich eine Eigenentwicklung über die Zeit messen lassen.
+
+Ein fokussierter KI-Tutor für ein mittelständisches Team landet meist im fünfstelligen Bereich, nicht im gefürchteten sechsstelligen, und verdient das über ersetzte Lizenzen pro Platz und gesparte Ausbilderzeit zurück. Ein kurzes Scoping-Gespräch macht daraus eine belastbare Zahl. Ihr konkreter Preis bewegt sich mit vier Hebeln:
+
+1. **Verankerung in Ihrem Wissen.** Ihre Inhalte zu indexieren und den Abruf präzise und mit Quellenangabe hinzubekommen (RAG) ist der Kern eines echten Tutors und einer der größten Treiber für Nutzen und Kosten.
+2. **Adaptivität.** Personalisierte Lernpfade und ein Kompetenzmodell, das auf jeden Lernenden reagiert, kosten mehr als ein starrer Frage-Antwort-Ablauf, sind aber oft der eigentliche Grund für die Entwicklung.
+3. **Integrationen.** Anbindungen an Ihr LMS, ein Single Sign-on (SSO) oder Standards wie xAPI und SCORM treiben den Aufwand.
+4. **Umfang und Nutzungsrechte.** Mehr Rollen, mehr Sprachen, White-Label-Branding und die Übergabe des vollen Eigentums schlagen sich im Preis nieder.
+
+## Woran Sie einen guten KI-Tutor-Anbieter erkennen
+
+Ein KI-Tutor steht und fällt mit ein paar Dingen, die ein generischer Softwaredienstleister selten richtig hinbekommt. Prüfen Sie einen Anbieter vor der Beauftragung an diesen Punkten:
+
+- **Verankerung, an Ihren eigenen Inhalten getestet.** Lassen Sie sich zeigen, wie der Tutor aus Ihrem Material mit korrekten Quellenangaben antwortet, nicht als Demo auf generischen Daten. Schwacher Abruf ist der häufigste Grund für falsche oder vage Antworten.
+- **Genauigkeit und Leitplanken.** Wie verhindert der Anbieter, dass der Tutor Antworten erfindet, und wie wird das gemessen? Achten Sie auf ein Testset, sinnvolles Verhalten, wenn die Antwort nicht in Ihren Inhalten steht, und eine Möglichkeit, Antworten zu prüfen und zu korrigieren.
+- **Echte Adaptivität.** Ein Kompetenzmodell, das sich an jeden Lernenden anpasst, kein Chatfenster mit angeklebtem Fortschrittsbalken.
+- **Modellwahl und Betriebsort.** Keine Bindung an einen einzigen Modellanbieter, eine Hosting-Option in der EU oder on-premises und ein Trainingsdaten-Opt-out, damit Ihre Inhalte nie ein öffentliches Modell trainieren. Ein Weg, alle drei zu garantieren, ist der Aufbau auf einem selbst hostbaren offenen Modell; siehe [individuelle KI mit Open-Source-Modellen](/de/blog/individuelle-ki-open-source-modelle).
+- **Integrationen und Betrieb.** LMS, SSO und xAPI, SCORM oder LTI, dazu ein klarer Plan für Wartung und Weiterentwicklung nach dem Start.
+
+Die allgemeine Anbieter-Checkliste, Didaktik plus Engineering, Eigentum am Code und Referenzen, gilt auch hier; unser Leitfaden [E-Learning entwickeln lassen](/de/blog/e-learning-entwickeln-lassen) deckt sie vollständig ab, und die Datenschutzfragen behandelt unser [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+## Ihre Daten, Ihr Modell, Ihr Tutor
+
+Ein KI-Tutor wirft Datenfragen auf, die ein statischer Kurs nie stellt, denn er verarbeitet Ihre Inhalte und die Fragen Ihrer Lernenden durch ein Modell. Drei davon entscheiden, ob er souverän bleibt:
+
+- **Wo das Modell läuft.** Ein Tutor, der für EU- oder On-Premises-Hosting gebaut ist, hält Prompts und Lernendendaten in Ihrer Jurisdiktion, statt sie standardmäßig an eine US-API zu schicken.
+- **Was mit Ihren Daten passiert.** Ein Trainingsdaten-Opt-out und eine saubere Trennung zwischen Ihrem Retrieval-Index und dem Basismodell halten Ihre Inhalte und die Fragen Ihrer Lernenden aus jedem öffentlichen Trainingsdatensatz heraus.
+- **Wem das Ergebnis gehört.** Wenn Code, Prompts und Retrieval-Aufbau Ihnen gehören, ist der Tutor ein Vermögenswert, den Sie kontrollieren, kein gemieteter Endpunkt, von dem Sie abgeschnitten oder neu bepreist werden können.
+
+Für regulierte Branchen und den öffentlichen Sektor sollte derselbe Build von Anfang an EU-AI-Act-konform sein; Compliance nachzurüsten kostet deutlich mehr.
+
+Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle KI-Tutoren mit EU-Hosting und Eigentum am Ergebnis umsetzt, sehen Sie unter [individuelle E-Learning-Lösungen](/de/loesungen).
+
+## Klein anfangen, dann skalieren
+
+Der risikoärmste Einstieg in einen eigenen KI-Tutor ist kein Sechs-Monats-Vertrag, sondern eine kleine erste Version, verankert in einem Ausschnitt Ihrer echten Inhalte und mit echten Lernenden getestet. Antwortet sie korrekt aus Ihrem Material und wird sie genutzt, skalieren Sie. Wenn nicht, haben Sie Wochen investiert, kein Budget.
+
+**Lassen Sie uns Ihren KI-Lernbegleiter umreißen.** Fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an oder buchen Sie ein kostenloses 30-minütiges Strategiegespräch: kein Pitch, am Ende eine konkrete Roadmap und ein Preisrahmen für Ihren eigenen KI-Tutor. Für den betrieblichen Einsatz in der Ausbildung finden Sie den Überblick unter [LearnSlice für Unternehmen](/de/companies), für Berufsschulen unter [LearnSlice für Schulen](/de/schools).
+
+
+## Häufig gestellte Fragen
+
+### Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?
+
+Als Marktrichtwert kostet ein individueller KI-Lernbegleiter meist etwa 30.000 bis 150.000 Euro. Ein erster Prototyp (Proof of Concept) mit geführtem Dialog und Ihren Inhalten liegt oft bei rund 5.000 bis 15.000 Euro, eine umfangreiche Enterprise-Lösung mit tiefen Integrationen und adaptivem Lernen erreicht den sechsstelligen Bereich und darüber. Hinzu kommen laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat. Das sind Branchenrichtwerte, keine Angebote; der konkrete Preis hängt von Verankerung, Adaptivität und Integrationen ab.
+
+### Sollten wir einen KI-Tutor kaufen oder entwickeln lassen?
+
+Kaufen Sie eine fertige Plattform, wenn Ihre Anforderungen Standard sind und Tempo zählt. Lizenzieren Sie ein White-Label-Produkt, wenn Sie Ihre Marke auf eine fremde Engine setzen wollen. Entwickeln lassen ist der richtige Weg, wenn der KI-Tutor auf Ihren eigenen Inhalten antworten, zu Ihren Prozessen passen, die Datenhoheit bei Ihnen lassen und Ihnen gehören soll. Für alle, die große Gruppen schulen, ist eine einmalige Entwicklung über die Jahre oft günstiger als eine dauerhafte Lizenz pro Nutzer.
+
+### Wie lange dauert die Entwicklung eines KI-Lernbegleiters?
+
+Eine erste nutzbare Version mit Ihren Inhalten und einem funktionierenden Lernablauf steht oft in 6 bis 8 Wochen bereit. Eine komplette Lösung mit adaptiven Pfaden, Integrationen und Reporting dauert typischerweise 3 bis 6 Monate. Ein Anbieter, der in kurzen Iterationen liefert, zeigt Ihnen früh etwas Nutzbares, statt monatelang im Konzept zu verschwinden.
+
+### Was ist der Unterschied zwischen einem KI-Lernbegleiter und einem generischen Chatbot?
+
+Ein generischer Chatbot antwortet aus dem offenen Internet und einem allgemeinen Modell. Ein KI-Lernbegleiter ist in Ihrem eigenen Wissen verankert: Er antwortet aus Ihren Materialien, folgt Ihrer didaktischen Struktur, führt jeden Lernenden über einen adaptiven Pfad und gibt Feedback. Er läuft unter Ihrer Marke, mit Ihren Rollen und Ihren Datenschutzregeln.
+
+### Kann ein KI-Lernbegleiter als White-Label unter unserer Marke laufen?
+
+Ja. Eine Individualentwicklung kann Ihren Namen, Ihr Design und Ihre Domain tragen, Ihr Kunde sieht also nur Ihre Marke und Sie behalten die Kundenbeziehung, und mit dem richtigen Vertrag gehört sie Ihnen vollständig. Wenn Sie schnell branden wollen und das Ergebnis nicht besitzen müssen, ist ein lizenziertes White-Label-Produkt die leichtere Alternative, das gehört Ihnen dann allerdings nicht. Bildungsträger und Edtech-Anbieter fragen beides am häufigsten nach.
+
+### Ist ein individueller KI-Lernbegleiter DSGVO-konform?
+
+Er kann und sollte es sein, aber nur, wenn er von Anfang an so gebaut wird. Achten Sie auf Hosting in Deutschland oder der EU, einen Auftragsverarbeitungsvertrag, ein sauberes Rollen- und Löschkonzept und eine klare Trennung zwischen Ihren Daten und öffentlich trainierten Modellen, inklusive Trainingsdaten-Opt-out. Individualentwicklung hat den Vorteil, dass Datenschutz und Souveränität von Grund auf eingeplant werden.
+
+### Wie wird ein KI-Lernbegleiter in unseren eigenen Inhalten verankert?
+
+Über Retrieval-Augmented Generation (RAG): Ihre Dokumente, Kurse und Ihr Wissen werden indexiert, und der KI-Tutor ruft die passenden Stellen ab, bevor er antwortet, mit Quellenangabe. So bleiben die Antworten korrekt und am Lehrplan statt erfunden. Die Qualität dieser Verankerung ist einer der größten Faktoren für Nutzen und Kosten der Entwicklung.
+
+### Wem gehören der Code und der KI-Tutor nach dem Projekt?
+
+Das ist Verhandlungssache und gehört vor Projektstart schriftlich geklärt. Bei echter Individualentwicklung sollten die Rechte am erstellten Code und an den Inhalten bei Ihnen liegen, damit Sie nicht dauerhaft an einen Anbieter gebunden sind. Lassen Sie sich Eigentum, Nutzungsrechte und Herausgabe des Quellcodes vertraglich zusichern.
+
+---
+
 # AZAV und Digitalisierung: Was Bildungsträger 2026 beachten müssen
 
 Source: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
@@ -3017,6 +3637,8 @@ Bevor Sie über Kosten sprechen, klären Sie, was Sie eigentlich beauftragen. Hi
 - **E-Learning-Software:** die Plattform selbst. Eine individuelle Lernplattform, eine Lern-App, ein individueller KI-Chatbot fürs Lernen (ein Lern-Chatbot oder KI-Lernassistent, der auf Ihrem eigenen Unternehmenswissen antwortet), eine Simulation, ein Serious Game oder eine KI-gestützte Lernanwendung. Hier wird Software gebaut, nicht nur Inhalt produziert.
 
 Der Unterschied ist entscheidend, weil das Wort "E-Learning" für beides herhalten muss. Wer nur Content braucht, zahlt für Produktion. Wer eine Lösung braucht, die zu den eigenen Prozessen passt, mit KI arbeitet und dem Unternehmen gehört, braucht Softwareentwicklung. Dieser Leitfaden legt den Schwerpunkt auf den zweiten Fall, deckt die Content-Kosten aber mit ab.
+
+Wenn vor allem der KI-Tutor für Sie zählt, geht unser Leitfaden [KI-Lernbegleiter entwickeln lassen](/de/blog/ki-lernbegleiter-entwickeln-lassen) genau auf diesen Fall tiefer ein.
 
 ## Was kostet es, E-Learning entwickeln zu lassen?
 
@@ -3510,7 +4132,7 @@ Dieser Pfad ersetzt keine Rechtsberatung. Er filtert aber rund neunzig Prozent d
 
 ## Fazit: Compliance ist kein Funktionsverzicht
 
-Die Vorstellung, dass DSGVO-Konformität KI-Tools langweilig oder leistungsschwach mache, hält der Praxis nicht stand. Vertikale, EU-gehostete Plattformen mit AVV, Trainingsdaten-Opt-out und sauberem Rollenkonzept liefern den Funktionsumfang, den Ausbilder brauchen. Sie liefern ihn ohne das juristische Restrisiko, das ein privater ChatGPT-Tab auf einem Konferenzlaptop mit sich bringt. Die Compliance-Anforderungen sind eine Filterfunktion, nicht ein Verbot. Wer den Filter ernst nimmt, hat am Ende einen engeren, aber besseren Werkzeugkasten.
+Die Vorstellung, dass DSGVO-Konformität KI-Tools langweilig oder leistungsschwach mache, hält der Praxis nicht stand. Vertikale, EU-gehostete Plattformen mit AVV, Trainingsdaten-Opt-out und sauberem Rollenkonzept liefern den Funktionsumfang, den Ausbilder brauchen. Sie liefern ihn ohne das juristische Restrisiko, das ein privater ChatGPT-Tab auf einem Konferenzlaptop mit sich bringt. Die Compliance-Anforderungen sind eine Filterfunktion, nicht ein Verbot. Wer den Filter ernst nimmt, hat am Ende einen engeren, aber besseren Werkzeugkasten. Wollen Sie die Drittlandsübermittlung ganz vermeiden, indem Sie das Modell selbst betreiben, lesen Sie [individuelle KI mit Open-Source-Modellen](/de/blog/individuelle-ki-open-source-modelle).
 
 Wer prüfen möchte, wie eine vertikale Ausbildungsplattform diese sieben Kriterien konkret abdeckt (mit AVV, EU-Hosting und Use-Case-spezifischem Datenfluss), findet eine ausführliche Übersicht und einen Demo-Zugang unter [LearnSlice für Unternehmen](/de/companies). Eine breitere Einordnung in die Landschaft generativer KI in der dualen Ausbildung steht im Beitrag zur [KI in der Ausbildung](/de/blog/ki-in-der-ausbildung).
 
@@ -5030,6 +5652,10 @@ Eine gute Lösung bietet vorgefertigte Vorlagen, die den IHK-Anforderungen entsp
 
 Automatische Erinnerungen per E-Mail oder Push-Benachrichtigung helfen dabei, dass Einträge tatsächlich wöchentlich erstellt werden - nicht erst kurz vor der Prüfung.
 
+![Dialog zum Anlegen eines neuen Berichtsheft-Eintrags in LearnSlice mit vom Ausbilder festgelegtem Rhythmus und Zeitraum](/images/blog/learnslice-berichtsheft-neuer-eintrag.png)
+
+In LearnSlice legt der Ausbilder den Rhythmus fest (z. B. monatlich), und der Azubi erstellt seinen Eintrag mit einem Klick für den vorgegebenen Zeitraum. So bleibt die Dokumentation lückenlos, ohne dass jemand Fristen im Kopf behalten muss.
+
 ### Digitale Freigabe
 
 Ausbilder sollten Einträge digital prüfen und freigeben können, ohne Papier anfassen zu müssen. Das spart beiden Seiten Zeit und schafft einen lückenlosen Nachweis.
@@ -5047,6 +5673,10 @@ Achten Sie auf Datenhosting in der EU. Das vereinfacht die DSGVO-Konformität un
 Der größte Mehrwert eines digitalen Berichtshefts entsteht, wenn es in eine umfassende Lernplattform eingebettet ist. Denn dann wird die Dokumentation nicht zur isolierten Pflichtaufgabe, sondern Teil eines zusammenhängenden Lernprozesses.
 
 Beispiel: Ein Azubi absolviert ein Lernmodul zur Kundenberatung auf einer KI-gestützten Plattform. Der Abschluss wird automatisch im Berichtsheft dokumentiert - inklusive Thema, Datum und Lernergebnis. Der Ausbilder sieht den Eintrag sofort in seinem Dashboard und kann ihn freigeben.
+
+![Berichtsheft-Eintrag in LearnSlice mit strukturierten Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Abteilung und automatischem Lehrplanbezug](/images/blog/learnslice-berichtsheft-eintrag.png)
+
+So sieht ein Eintrag in LearnSlice aus: Betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sind strukturiert vorgegeben. Über den **Lehrplanbezug** verknüpft die Plattform automatisch die im Lernplan bearbeiteten Themen mit dem jeweiligen Zeitraum, und per Klick wird der fertige Eintrag als IHK-konformes PDF exportiert.
 
 Diese Verknüpfung bietet mehrere Vorteile:
 
@@ -5268,6 +5898,8 @@ Moderne Lerncoaches gehen weiter: Sie erkennen, wo ein Azubi Schwierigkeiten hat
 - Neue Konzepte Schritt für Schritt erklären
 - Wiederholung und Vertiefung von Lerninhalten
 
+Wenn Sie einen solchen Chatbot oder Lerncoach rund um Ihre eigenen Inhalte bauen lassen wollen, lesen Sie unseren Leitfaden [KI-Lernbegleiter entwickeln lassen](/de/blog/ki-lernbegleiter-entwickeln-lassen).
+
 ### 2. KI-gestützte Lernplattformen
 
 Während ein Chatbot auf einzelne Fragen reagiert, bieten Lernplattformen strukturierte Lernpfade. KI-gestützte Plattformen passen diese Pfade dynamisch an den Fortschritt des Azubis an - so lernt jeder in seinem Tempo und an seinen Schwachstellen.
@@ -5388,7 +6020,7 @@ Entscheidend ist, dass [KI in der Ausbildung](/de/blog/ki-in-der-ausbildung) nic
 
 ### Sind ChatGPT oder andere öffentliche Chatbots DSGVO-konform in der Ausbildung einsetzbar?
 
-Für die Verarbeitung unternehmensspezifischer Inhalte oder personenbezogener Azubi-Daten sind öffentliche Chatbots nicht empfehlenswert. Es fehlt ein sauberer Auftragsverarbeitungsvertrag für den Einzelanwendungsfall, die Jurisdiktion liegt außerhalb der EU und Trainingsdaten werden oft für die Weiterentwicklung öffentlicher Modelle genutzt. Für die Ausbildung sind geschlossene Plattformen mit EU-Hosting die belastbarere Wahl.
+Für die Verarbeitung unternehmensspezifischer Inhalte oder personenbezogener Azubi-Daten sind öffentliche Chatbots nicht empfehlenswert. Es fehlt ein sauberer Auftragsverarbeitungsvertrag für den Einzelanwendungsfall, die Jurisdiktion liegt außerhalb der EU und Trainingsdaten werden oft für die Weiterentwicklung öffentlicher Modelle genutzt. Für die Ausbildung sind geschlossene Plattformen mit EU-Hosting die belastbarere Wahl. Wer die Datenhoheit ganz behalten will, kann das Modell auch selbst betreiben; siehe [individuelle KI mit Open-Source-Modellen](/de/blog/individuelle-ki-open-source-modelle).
 
 ### Welche Daten darf ein KI-Tool in der Ausbildung überhaupt verarbeiten?
 
@@ -5406,7 +6038,7 @@ Ja - die Einführung von KI-Tools, die das Verhalten oder die Leistung von Azubi
 
 **Für Ausbildungsverantwortliche:** Erleben Sie in einer kostenlosen Demo, wie LearnSlice KI-Coaching, Prüfungsvorbereitung und Analytics in einer Plattform vereint. [Demo vereinbaren](/de/companies)
 
-**Für Geschäftsführung und HR-Leitung:** KI-gestützte Ausbildung spart nach unserer Berechnung bis zu €17.000 pro Azubi — bei voller DSGVO-Konformität. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+**Für Geschäftsführung und HR-Leitung:** KI-gestützte Ausbildung spart nach unserer Berechnung bis zu €17.000 pro Azubi, bei voller DSGVO-Konformität. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
 
 ---
