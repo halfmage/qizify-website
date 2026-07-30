@@ -430,7 +430,7 @@ How to build custom AI on open-source models like Kimi K2 and gpt-oss: personali
 
 ## Key Takeaways
 
-- Open-weight models (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek and others) are AI models whose weights you can download and run on your own infrastructure. That is the one class of frontier-adjacent AI you can fully self-host, so your data never leaves your servers and you are not billed per token.
+- Open-weight models (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek and others) are AI models whose weights you can download and run on your own infrastructure. That is the one class of frontier-adjacent AI you can fully self-host, so your data stays on your own servers and you are not billed per token.
 - A custom AI is not a raw model. It is a model wrapped around your operation: grounded in your own data through retrieval (RAG), shaped to your process and voice through light fine-tuning (LoRA), and connected to your systems. That layer is what turns a generic model into personalized AI for your business.
 - The strongest reason to self-host an open model is sovereignty, not price. Every call to a US-hosted AI API is a cross-border data transfer under GDPR; a model running on EU infrastructure removes that transfer entirely and keeps you in the lighter deployer role under the EU AI Act.
 - The cost case is real but narrow: self-hosting tends to pay off past roughly 10 to 50 million tokens a month at steady use. A single high-memory GPU server in the EU starts around 900 euros a month and already runs a 120-billion-parameter open model. Below that volume, an API is often cheaper.
@@ -452,7 +452,7 @@ Prefer to talk it through first? [Book a free 30-minute scoping call](#project-i
 
 Two terms get used loosely, so it helps to be exact.
 
-An **open-weight model** is an AI model whose trained weights are published, so you can download the model and run it on your own hardware instead of sending every request to a provider's servers. Most people say "open source," but "open-weight" is the more accurate term, because some of these models publish their weights under restrictive custom licenses rather than a true open-source licence. The families you will hear about in 2026 include **Kimi K2** from Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** from OpenAI (its first open-weight release), **Qwen** from Alibaba, **Mistral** from France, and **DeepSeek**. They are frontier-adjacent: a generation behind the very best closed models on the hardest tasks, but more than capable for the large majority of real business work.
+An **open-weight model** is an AI model whose trained weights are published, so you can download the model and run it on your own hardware instead of sending every request to a provider's servers. Most people say "open source," but "open-weight" is the more accurate term, because some of these models publish their weights under restrictive custom licenses rather than a true open-source licence. The families you will hear about in 2026 include **Kimi K2** from Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** from OpenAI (its first open-weight release since GPT-2), **Qwen** from Alibaba, **Mistral** from France, and **DeepSeek**. They are frontier-adjacent: a generation behind the very best closed models on the hardest tasks, but more than capable for the large majority of real business work.
 
 A **custom AI** is not the raw model. A base model on its own knows nothing about your operation. The custom part is the layer you build around it: your data connected through retrieval, the model shaped to your process and voice, and the whole thing wired into the systems your team already uses. That layer is the difference between a clever demo and an assistant that actually knows how your business runs. It is also, not coincidentally, the same build-versus-buy logic behind a [custom AI tutor](/blog/custom-ai-tutor-development): the value is in the fit, not the model.
 
@@ -462,7 +462,7 @@ Closed APIs from the large AI labs are excellent, and for a first prototype they
 
 | Consideration | Closed API (OpenAI, Anthropic, Google) | Self-hosted open-weight model |
 |---|---|---|
-| Where your data goes | to the provider, often outside the EU | stays on your own or EU infrastructure |
+| Where your data goes | to the provider; subject to US access laws even in an EU region | stays on your own or EU infrastructure |
 | Pricing model | per token, indefinitely | fixed infrastructure cost you control |
 | Cost at high volume | rises with usage | flat once the hardware is running |
 | Model permanence | can be retired or repriced under you | runs as long as you keep it |
@@ -478,7 +478,7 @@ None of this makes closed APIs wrong. It makes them a different tool. A sound st
 
 For most European organizations, the deciding factor is not cost. It is where the data goes.
 
-Every request to a US-hosted AI API is, under [Chapter V of the GDPR](https://gdpr-info.eu/chapter-5/), an international transfer of personal data. EU-region hosting by a US-headquartered provider does not fully solve this, because US access laws can reach data held by those companies wherever it sits. That is the core of the problem so many compliance teams keep running into. A model running on EU or on-premises infrastructure removes the transfer entirely: there is nothing to send abroad, so there is nothing to justify. For our fuller take on the data-protection questions to ask any AI tool, see our [checklist on GDPR-compliant AI](/blog/gdpr-compliant-ai-tools-for-trainers).
+Every request to a US-hosted AI API is, under [Chapter V of the GDPR](https://gdpr-info.eu/chapter-5/), an international transfer of personal data. EU-region hosting by a US-headquartered provider does not fully settle the question, because those companies remain subject to US access laws wherever the data sits. Since Schrems II that has been a persistent concern for compliance teams, and while the current EU-US Data Privacy Framework offers a transfer basis, it is itself under legal challenge. A model running on EU or on-premises infrastructure removes the transfer entirely: there is nothing to send abroad, so there is nothing to justify. For our fuller take on the data-protection questions to ask any AI tool, see our [checklist on GDPR-compliant AI](/blog/gdpr-compliant-ai-tools-for-trainers).
 
 The EU AI Act adds a second reason to prefer this setup. Running an unmodified open model in your own environment generally keeps you in the lighter **[deployer](https://artificialintelligenceact.eu/article/26/)** role, with far fewer obligations than a model provider carries. [Substantial fine-tuning](https://artificialintelligenceact.eu/article/25/) can shift some of those obligations onto you, so it is a design decision to make deliberately rather than by accident. This is exactly the kind of trade-off a good build partner surfaces up front, not after the fact.
 
@@ -520,6 +520,8 @@ The good news on hosting is that open models have become dramatically more effic
 | Single high-memory GPU server | a 120B open model (e.g. gpt-oss) | from ~900 euros a month |
 | Multi-GPU node | the largest open models (200B and up) | four figures a month and up |
 
+*Prices and hardware specifications above are indicative and current as of 2026; both move quickly.*
+
 On the economics: [one 2025 cost analysis](https://arxiv.org/abs/2509.18101) puts payback on a small self-hosted setup at well under a year, once steady usage is past roughly **10 to 50 million tokens a month**. The honest caveat is that self-hosting only wins when the hardware is actually used. An idle GPU is expensive per request, so below that volume, or for spiky usage, a closed or hosted API is often the cheaper and simpler choice. The point of a scoping call is to run this math against your real numbers before anyone commits to a build. For a broader view of what custom development itself costs, see our [guide to custom development costs](/blog/custom-e-learning-development-costs).
 
 ## Choosing the Model, the License, and the Partner
@@ -549,7 +551,7 @@ Trusted by universities, training providers, and regulated teams across Germany.
 
 ### What is an open-source (open-weight) AI model?
 
-An open-weight model is an AI model whose trained weights are published so you can download them and run the model on your own hardware, instead of calling a provider's API. Kimi K2, gpt-oss, Qwen, Mistral and DeepSeek are examples. The term open-weight is more precise than open source, because some of these models ship the weights under restrictive custom licenses rather than a true open-source license. The practical point is the same: you can host the model yourself, so your prompts and data never leave your infrastructure.
+An open-weight model is an AI model whose trained weights are published so you can download them and run the model on your own hardware, instead of calling a provider's API. Kimi K2, gpt-oss, Qwen, Mistral and DeepSeek are examples. The term open-weight is more precise than open source, because some of these models ship the weights under restrictive custom licenses rather than a true open-source license. The practical point is the same: you can host the model yourself, so your prompts and data stay on your own infrastructure.
 
 ### Why build custom AI on an open model instead of just using ChatGPT or Claude?
 
@@ -561,7 +563,7 @@ Through two layers on top of the base model. Retrieval-augmented generation (RAG
 
 ### Is a self-hosted open-source model GDPR compliant?
 
-It can be, and it removes the hardest GDPR problem by design. Every call to a US-hosted AI API is an international data transfer under Chapter V of the GDPR, and EU-region hosting by a US provider does not fully cure that because of US access laws. A model running on EU or on-premises infrastructure means the data never leaves your jurisdiction, so there is no transfer to justify. You still need the usual measures: a processing agreement, a role and deletion model, and clean separation of client data.
+It can be, and it removes the hardest GDPR problem by design. Every call to a US-hosted AI API is an international data transfer under Chapter V of the GDPR, and EU-region hosting by a US provider does not fully cure that because of US access laws. A model running on EU or on-premises infrastructure means the data stays in your jurisdiction, so there is no transfer to justify. You still need the usual measures: a processing agreement, a role and deletion model, and clean separation of client data.
 
 ### How much does it cost to run an open-source AI model?
 
@@ -3218,7 +3220,7 @@ Individuelle KI auf Open-Source-Modellen wie Kimi K2 und gpt-oss: personalisiert
 
 ## Auf einen Blick
 
-- Open-Weight-Modelle (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek und andere) sind KI-Modelle, deren Gewichte Sie herunterladen und auf Ihrer eigenen Infrastruktur betreiben können. Das ist die einzige Klasse leistungsstarker KI, die Sie vollständig selbst hosten können, sodass Ihre Daten Ihre Server nie verlassen und Sie nicht pro Token zahlen.
+- Open-Weight-Modelle (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek und andere) sind KI-Modelle, deren Gewichte Sie herunterladen und auf Ihrer eigenen Infrastruktur betreiben können. Das ist die einzige Klasse leistungsstarker KI, die Sie vollständig selbst hosten können, sodass Ihre Daten auf Ihren eigenen Servern bleiben und Sie nicht pro Token zahlen.
 - Eine individuelle KI ist nicht das rohe Modell. Sie ist ein Modell, das um Ihren Betrieb herum gebaut ist: in Ihren eigenen Daten verankert über Retrieval (RAG), auf Ihren Prozess und Ihre Sprache zugeschnitten über leichtes Fine-Tuning (LoRA) und an Ihre Systeme angebunden. Diese Schicht macht aus einem generischen Modell eine personalisierte KI für Ihr Unternehmen.
 - Das stärkste Argument für Self-Hosting eines offenen Modells ist Souveränität, nicht der Preis. Jeder Aufruf einer in den USA gehosteten KI-API ist nach DSGVO eine Datenübermittlung ins Ausland. Ein Modell, das auf EU-Infrastruktur läuft, beseitigt diese Übermittlung vollständig und hält Sie in der leichteren Betreiberrolle nach der EU-KI-Verordnung.
 - Der Kostenvorteil ist real, aber eng: Self-Hosting lohnt sich meist ab etwa 10 bis 50 Millionen Token pro Monat bei stetiger Nutzung. Ein einzelner GPU-Server mit viel Speicher in der EU startet bei rund 900 Euro pro Monat und betreibt bereits ein Modell mit 120 Milliarden Parametern. Darunter ist eine API oft günstiger.
@@ -3240,7 +3242,7 @@ Lieber erst sprechen? [Buchen Sie ein kostenloses 30-minütiges Gespräch](#proj
 
 Zwei Begriffe werden unscharf verwendet, deshalb hilft Genauigkeit.
 
-Ein **Open-Weight-Modell** ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt jede Anfrage an die Server eines Anbieters zu senden. Die meisten sagen "Open Source", doch "Open-Weight" ist der genauere Begriff, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Zu den Familien, von denen 2026 die Rede ist, gehören **Kimi K2** von Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** von OpenAI (dessen erste Open-Weight-Veröffentlichung), **Qwen** von Alibaba, **Mistral** aus Frankreich und **DeepSeek**. Sie sind nah an der Spitze: eine Generation hinter den besten geschlossenen Modellen bei den härtesten Aufgaben, aber mehr als leistungsfähig für den Großteil echter Geschäftsarbeit.
+Ein **Open-Weight-Modell** ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt jede Anfrage an die Server eines Anbieters zu senden. Die meisten sagen "Open Source", doch "Open-Weight" ist der genauere Begriff, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Zu den Familien, von denen 2026 die Rede ist, gehören **Kimi K2** von Moonshot AI, **[gpt-oss](https://huggingface.co/openai/gpt-oss-120b)** von OpenAI (dessen erste Open-Weight-Veröffentlichung seit GPT-2), **Qwen** von Alibaba, **Mistral** aus Frankreich und **DeepSeek**. Sie sind nah an der Spitze: eine Generation hinter den besten geschlossenen Modellen bei den härtesten Aufgaben, aber mehr als leistungsfähig für den Großteil echter Geschäftsarbeit.
 
 Eine **individuelle KI** ist nicht das rohe Modell. Ein Basismodell allein weiß nichts über Ihren Betrieb. Das Individuelle ist die Schicht, die Sie darum herum bauen: Ihre Daten über Retrieval angebunden, das Modell auf Ihren Prozess und Ihre Sprache zugeschnitten und das Ganze in die Systeme eingebunden, die Ihr Team ohnehin nutzt. Diese Schicht ist der Unterschied zwischen einer cleveren Demo und einem Assistenten, der tatsächlich weiß, wie Ihr Unternehmen arbeitet. Es ist, nicht zufällig, dieselbe Bauen-oder-Kaufen-Logik wie hinter einem [KI-Lernbegleiter](/de/blog/ki-lernbegleiter-entwickeln-lassen): Der Wert liegt in der Passung, nicht im Modell.
 
@@ -3250,7 +3252,7 @@ Geschlossene APIs der großen KI-Labore sind ausgezeichnet, und für einen erste
 
 | Kriterium | Geschlossene API (OpenAI, Anthropic, Google) | Selbst gehostetes Open-Weight-Modell |
 |---|---|---|
-| Wohin Ihre Daten gehen | zum Anbieter, oft außerhalb der EU | bleiben auf Ihrer oder EU-Infrastruktur |
+| Wohin Ihre Daten gehen | zum Anbieter; unterliegen auch in einer EU-Region US-Zugriffsgesetzen | bleiben auf Ihrer oder EU-Infrastruktur |
 | Preismodell | pro Token, unbefristet | feste Infrastrukturkosten, die Sie steuern |
 | Kosten bei hohem Volumen | steigen mit der Nutzung | flach, sobald die Hardware läuft |
 | Beständigkeit | kann abgeschaltet oder neu bepreist werden | läuft, solange Sie es behalten |
@@ -3266,7 +3268,7 @@ Nichts davon macht geschlossene APIs falsch. Es macht sie zu einem anderen Werkz
 
 Für die meisten europäischen Organisationen ist nicht der Preis der entscheidende Faktor. Es ist, wohin die Daten gehen.
 
-Jede Anfrage an eine in den USA gehostete KI-API ist nach [Kapitel V der DSGVO](https://dsgvo-gesetz.de/kapitel-5/) eine Übermittlung personenbezogener Daten ins Ausland. Hosting in einer EU-Region durch einen Anbieter mit Sitz in den USA löst das nicht vollständig, weil US-Zugriffsgesetze auf Daten dieser Unternehmen zugreifen können, wo auch immer sie liegen. Das ist der Kern des Problems, gegen das Compliance-Teams immer wieder laufen. Ein Modell auf EU- oder On-Premises-Infrastruktur beseitigt die Übermittlung vollständig: Es gibt nichts ins Ausland zu senden, also nichts zu rechtfertigen. Unsere ausführlichere Sicht auf die Datenschutzfragen, die Sie jedem KI-Werkzeug stellen sollten, finden Sie in unserer [Checkliste zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+Jede Anfrage an eine in den USA gehostete KI-API ist nach [Kapitel V der DSGVO](https://dsgvo-gesetz.de/kapitel-5/) eine Übermittlung personenbezogener Daten ins Ausland. Hosting in einer EU-Region durch einen Anbieter mit Sitz in den USA klärt die Frage nicht vollständig, weil diese Unternehmen weiterhin US-Zugriffsgesetzen unterliegen, wo auch immer die Daten liegen. Seit Schrems II ist das ein anhaltendes Anliegen für Compliance-Teams, und der aktuelle EU-US-Datenschutzrahmen bietet zwar eine Übermittlungsgrundlage, wird aber selbst rechtlich angefochten. Ein Modell auf EU- oder On-Premises-Infrastruktur beseitigt die Übermittlung vollständig: Es gibt nichts ins Ausland zu senden, also nichts zu rechtfertigen. Unsere ausführlichere Sicht auf die Datenschutzfragen, die Sie jedem KI-Werkzeug stellen sollten, finden Sie in unserer [Checkliste zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
 
 Die EU-KI-Verordnung liefert einen zweiten Grund für dieses Setup. Ein unverändertes offenes Modell in Ihrer eigenen Umgebung zu betreiben, hält Sie in der Regel in der leichteren **[Betreiberrolle](https://artificialintelligenceact.eu/article/26/)**, mit deutlich weniger Pflichten als ein Modellanbieter trägt. [Substanzielles Fine-Tuning](https://artificialintelligenceact.eu/article/25/) kann einige dieser Pflichten auf Sie verlagern, das ist also eine Entwurfsentscheidung, die man bewusst trifft und nicht versehentlich. Genau diese Abwägung bringt ein guter Entwicklungspartner vorab auf den Tisch, nicht im Nachhinein.
 
@@ -3308,6 +3310,8 @@ Die gute Nachricht beim Hosting: Offene Modelle sind deutlich effizienter geword
 | Einzelner GPU-Server mit viel Speicher | ein 120B-Modell (z. B. gpt-oss) | ab ca. 900 Euro pro Monat |
 | Multi-GPU-Knoten | die größten offenen Modelle (ab 200B) | vierstellig pro Monat und mehr |
 
+*Die Preis- und Hardware-Angaben oben sind Richtwerte, Stand 2026; beides ändert sich schnell.*
+
 Zur Wirtschaftlichkeit: [Eine Kostenanalyse von 2025](https://arxiv.org/abs/2509.18101) setzt die Amortisation einer kleinen Self-Hosting-Umgebung auf deutlich unter ein Jahr an, sobald die stetige Nutzung über etwa **10 bis 50 Millionen Token pro Monat** liegt. Der ehrliche Vorbehalt: Self-Hosting gewinnt nur, wenn die Hardware auch ausgelastet ist. Eine ungenutzte GPU ist pro Anfrage teuer, unter diesem Volumen oder bei schwankender Nutzung ist eine geschlossene oder gehostete API also oft die günstigere und einfachere Wahl. Der Sinn eines Gesprächs ist, diese Rechnung an Ihren echten Zahlen zu prüfen, bevor sich jemand auf einen Bau festlegt. Einen breiteren Blick darauf, was Individualentwicklung selbst kostet, gibt unser [Leitfaden zu den Kosten der Individualentwicklung](/de/blog/e-learning-entwickeln-lassen).
 
 ## Modell, Lizenz und Partner wählen
@@ -3337,7 +3341,7 @@ Vertrauen von Hochschulen, Bildungsträgern und regulierten Teams in Deutschland
 
 ### Was ist ein Open-Source- bzw. Open-Weight-KI-Modell?
 
-Ein Open-Weight-Modell ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt eine fremde API aufzurufen. Kimi K2, gpt-oss, Qwen, Mistral und DeepSeek sind Beispiele. Der Begriff Open-Weight ist präziser als Open Source, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Der praktische Punkt ist derselbe: Sie hosten das Modell selbst, also verlassen Ihre Eingaben und Daten Ihre Infrastruktur nie.
+Ein Open-Weight-Modell ist ein KI-Modell, dessen trainierte Gewichte veröffentlicht sind, sodass Sie das Modell herunterladen und auf eigener Hardware betreiben können, statt eine fremde API aufzurufen. Kimi K2, gpt-oss, Qwen, Mistral und DeepSeek sind Beispiele. Der Begriff Open-Weight ist präziser als Open Source, weil einige dieser Modelle ihre Gewichte unter einschränkenden individuellen Lizenzen veröffentlichen, nicht unter einer echten Open-Source-Lizenz. Der praktische Punkt ist derselbe: Sie hosten das Modell selbst, also bleiben Ihre Eingaben und Daten auf Ihrer eigenen Infrastruktur.
 
 ### Warum individuelle KI auf einem offenen Modell statt einfach ChatGPT oder Claude?
 
@@ -3349,7 +3353,7 @@ Geschlossene APIs von OpenAI, Anthropic oder Google sind ausgezeichnet und oft d
 
 ### Ist ein selbst gehostetes Open-Source-Modell DSGVO-konform?
 
-Es kann es sein, und es beseitigt das schwierigste DSGVO-Problem von vornherein. Jeder Aufruf einer in den USA gehosteten KI-API ist nach Kapitel V der DSGVO eine Übermittlung ins Ausland, und Hosting in einer EU-Region durch einen US-Anbieter heilt das wegen US-Zugriffsgesetzen nicht vollständig. Ein Modell auf EU- oder On-Premises-Infrastruktur bedeutet, dass die Daten Ihre Rechtsordnung nie verlassen, es gibt also keine Übermittlung zu rechtfertigen. Die üblichen Maßnahmen brauchen Sie weiterhin: einen Auftragsverarbeitungsvertrag, ein Rollen- und Löschkonzept und eine saubere Trennung der Kundendaten.
+Es kann es sein, und es beseitigt das schwierigste DSGVO-Problem von vornherein. Jeder Aufruf einer in den USA gehosteten KI-API ist nach Kapitel V der DSGVO eine Übermittlung ins Ausland, und Hosting in einer EU-Region durch einen US-Anbieter heilt das wegen US-Zugriffsgesetzen nicht vollständig. Ein Modell auf EU- oder On-Premises-Infrastruktur bedeutet, dass die Daten in Ihrer Rechtsordnung bleiben, es gibt also keine Übermittlung zu rechtfertigen. Die üblichen Maßnahmen brauchen Sie weiterhin: einen Auftragsverarbeitungsvertrag, ein Rollen- und Löschkonzept und eine saubere Trennung der Kundendaten.
 
 ### Was kostet der Betrieb eines Open-Source-KI-Modells?
 
