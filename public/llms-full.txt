@@ -3262,7 +3262,7 @@ Geschlossene APIs der großen KI-Labore sind ausgezeichnet, und für einen erste
 
 Das klarste Beispiel für Beständigkeit: Im vergangenen Jahr haben geschlossene Anbieter ältere Modelle abgeschaltet und Kunden auf neuere, anders bepreiste Modelle gedrängt. Ein selbst gehostetes offenes Modell tut Ihnen das nicht an. Läuft es einmal gut für Ihren Anwendungsfall, läuft es genau zu den Bedingungen weiter, die Sie festlegen, solange Sie den Server behalten. Das ist ein echter betrieblicher Vorteil für alles, worauf Sie sich über Jahre verlassen wollen.
 
-Nichts davon macht geschlossene APIs falsch. Es macht sie zu einem anderen Werkzeug. Eine solide Strategie ist oft, schnell auf einer API zu prototypisieren und dann die Arbeitslasten, die es rechtfertigen, auf ein eigenes, selbst gehostetes Modell zu heben. Unsicher, wo diese Grenze für Ihren Fall liegt? Ein kurzes [Beratungsgespräch](/de/loesungen#project-inquiry) verortet sie. Kein Pitch, nur eine klare Einschätzung.
+Nichts davon macht geschlossene APIs falsch. Es macht sie zu einem anderen Werkzeug. Eine solide Strategie ist oft, schnell auf einer API zu prototypisieren und dann die Arbeitslasten, die es rechtfertigen, auf ein eigenes, selbst gehostetes Modell zu heben. Unsicher, wo diese Grenze für Ihren Fall liegt? Ein kurzes [Beratungsgespräch](#project-inquiry) verortet sie. Kein Pitch, nur eine klare Einschätzung.
 
 ## Der eigentliche Grund für Self-Hosting: Souveränität und Compliance
 
