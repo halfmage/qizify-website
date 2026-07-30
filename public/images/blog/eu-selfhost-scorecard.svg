@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 486" role="img" aria-label="Scorecard: which open models can you self-host in the EU. Kimi (Moonshot, China), Modified MIT, EU-hostable. DeepSeek (China), MIT, EU-hostable. Qwen (Alibaba, China), Apache 2.0, EU-hostable. Mistral (France, EU), Apache 2.0, EU-hostable. gpt-oss (OpenAI, US), Apache 2.0, EU-hostable. Gemma (Google, US), Gemma licence, EU-hostable. Llama (Meta, US), community licence, restricted for EU-domiciled firms.">
+  <rect x="0" y="0" width="840" height="486" rx="16" fill="#2a2622"/>
+  <text x="40" y="42" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#faf8f4">Which open models can you self-host in the EU?</text>
+  <text x="40" y="66" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92">Licence and EU commercial use for the models in this guide</text>
+
+  <!-- column headers -->
+  <text x="50" y="100" font-family="'Inter', system-ui, sans-serif" font-size="11" letter-spacing="0.06em" fill="#8a8178">MODEL</text>
+  <text x="330" y="100" font-family="'Inter', system-ui, sans-serif" font-size="11" letter-spacing="0.06em" fill="#8a8178">LICENCE</text>
+  <text x="600" y="100" font-family="'Inter', system-ui, sans-serif" font-size="11" letter-spacing="0.06em" fill="#8a8178">EU COMMERCIAL SELF-HOST</text>
+
+  <!-- rows: y centers 132,182,232,282,332,382,432 -->
+  <!-- Kimi -->
+  <line x1="40" y1="112" x2="800" y2="112" stroke="#46402f" stroke-width="1"/>
+  <text x="50" y="136" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">Kimi</text>
+  <text x="50" y="152" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Moonshot AI &#183; China</text>
+  <rect x="330" y="124" width="150" height="26" rx="13" fill="#7c5cfc" fill-opacity="0.16" stroke="#7c5cfc" stroke-opacity="0.55"/>
+  <text x="405" y="141" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">Modified MIT</text>
+  <text x="600" y="141" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#9a80ff">&#10003; EU-hostable</text>
+
+  <!-- DeepSeek -->
+  <line x1="40" y1="162" x2="800" y2="162" stroke="#46402f" stroke-width="1"/>
+  <text x="50" y="186" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">DeepSeek</text>
+  <text x="50" y="202" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">DeepSeek &#183; China</text>
+  <rect x="330" y="174" width="150" height="26" rx="13" fill="#7c5cfc" fill-opacity="0.16" stroke="#7c5cfc" stroke-opacity="0.55"/>
+  <text x="405" y="191" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">MIT</text>
+  <text x="600" y="191" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#9a80ff">&#10003; EU-hostable</text>
+
+  <!-- Qwen -->
+  <line x1="40" y1="212" x2="800" y2="212" stroke="#46402f" stroke-width="1"/>
+  <text x="50" y="236" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">Qwen</text>
+  <text x="50" y="252" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Alibaba &#183; China</text>
+  <rect x="330" y="224" width="150" height="26" rx="13" fill="#7c5cfc" fill-opacity="0.16" stroke="#7c5cfc" stroke-opacity="0.55"/>
+  <text x="405" y="241" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">Apache 2.0</text>
+  <text x="600" y="241" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#9a80ff">&#10003; EU-hostable</text>
+
+  <!-- Mistral -->
+  <line x1="40" y1="262" x2="800" y2="262" stroke="#46402f" stroke-width="1"/>
+  <text x="50" y="286" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">Mistral</text>
+  <text x="50" y="302" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Mistral AI &#183; France (EU)</text>
+  <rect x="330" y="274" width="150" height="26" rx="13" fill="#7c5cfc" fill-opacity="0.16" stroke="#7c5cfc" stroke-opacity="0.55"/>
+  <text x="405" y="291" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">Apache 2.0</text>
+  <text x="600" y="291" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#9a80ff">&#10003; EU-hostable</text>
+
+  <!-- gpt-oss -->
+  <line x1="40" y1="312" x2="800" y2="312" stroke="#46402f" stroke-width="1"/>
+  <text x="50" y="336" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">gpt-oss</text>
+  <text x="50" y="352" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">OpenAI &#183; US</text>
+  <rect x="330" y="324" width="150" height="26" rx="13" fill="#7c5cfc" fill-opacity="0.16" stroke="#7c5cfc" stroke-opacity="0.55"/>
+  <text x="405" y="341" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">Apache 2.0</text>
+  <text x="600" y="341" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#9a80ff">&#10003; EU-hostable</text>
+
+  <!-- Gemma -->
+  <line x1="40" y1="362" x2="800" y2="362" stroke="#46402f" stroke-width="1"/>
+  <text x="50" y="386" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">Gemma</text>
+  <text x="50" y="402" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Google &#183; US</text>
+  <rect x="330" y="374" width="150" height="26" rx="13" fill="#cc7a3e" fill-opacity="0.16" stroke="#cc7a3e" stroke-opacity="0.55"/>
+  <text x="405" y="391" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">Gemma licence</text>
+  <text x="600" y="391" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#9a80ff">&#10003; EU-hostable</text>
+
+  <!-- Llama -->
+  <line x1="40" y1="412" x2="800" y2="412" stroke="#46402f" stroke-width="1"/>
+  <text x="50" y="436" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">Llama</text>
+  <text x="50" y="452" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Meta &#183; US</text>
+  <rect x="330" y="424" width="150" height="26" rx="13" fill="#cc7a3e" fill-opacity="0.16" stroke="#cc7a3e" stroke-opacity="0.55"/>
+  <text x="405" y="441" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">Community licence</text>
+  <text x="600" y="441" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="600" fill="#d98a4a">&#9888; Restricted for EU firms</text>
+
+  <line x1="40" y1="462" x2="800" y2="462" stroke="#46402f" stroke-width="1"/>
+  <text x="40" y="480" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#8a8178">Permissive licences (Apache 2.0, MIT) allow free commercial self-hosting. Verify terms per model version.</text>
+</svg>

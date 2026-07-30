@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 470" role="img" aria-label="Diagram: how a generic open model becomes your custom AI. Your documents and data feed a retrieval layer (RAG) that changes what the model knows. Your tone, formats and tasks feed a fine-tuning layer (LoRA) that changes how the model behaves. Both attach to one shared open base model, producing your custom AI. One shared base plus a per-client adapter and a per-client index keeps each client's AI personalized and their data separate.">
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker>
+  </defs>
+  <rect x="0" y="0" width="840" height="470" rx="16" fill="#2a2622"/>
+
+  <text x="40" y="42" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" font-weight="600" fill="#faf8f4">How a generic model becomes your AI</text>
+  <text x="40" y="66" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92">Two layers turn an open base model into AI that is yours</text>
+
+  <!-- inputs -->
+  <rect x="40" y="120" width="180" height="58" rx="10" fill="#37322c" stroke="#46402f"/>
+  <text x="130" y="146" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#cfc7be">Your content</text>
+  <text x="130" y="164" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#cfc7be">&amp; documents</text>
+
+  <rect x="40" y="292" width="180" height="58" rx="10" fill="#37322c" stroke="#46402f"/>
+  <text x="130" y="318" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#cfc7be">Your tone, formats</text>
+  <text x="130" y="336" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#cfc7be">&amp; tasks</text>
+
+  <!-- RAG layer -->
+  <rect x="270" y="116" width="192" height="64" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="366" y="143" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Retrieval (RAG)</text>
+  <text x="366" y="162" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#a89e92">answers from your own content</text>
+  <text x="366" y="200" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" font-style="italic" fill="#cfc7be">changes what it knows</text>
+
+  <!-- LoRA layer -->
+  <rect x="270" y="288" width="192" height="64" rx="10" fill="#37322c" stroke="#7c5cfc" stroke-width="2"/>
+  <text x="366" y="315" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Fine-tuning (LoRA)</text>
+  <text x="366" y="334" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#a89e92">your style, formats and tasks</text>
+  <text x="366" y="372" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" font-style="italic" fill="#cfc7be">changes how it behaves</text>
+
+  <!-- base model -->
+  <rect x="512" y="198" width="140" height="72" rx="10" fill="#37322c" stroke="#cfc7be" stroke-width="1.5"/>
+  <text x="582" y="228" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">Open base</text>
+  <text x="582" y="247" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="600" fill="#faf8f4">model</text>
+
+  <!-- output -->
+  <rect x="692" y="198" width="118" height="72" rx="10" fill="#7c5cfc"/>
+  <text x="751" y="228" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Your</text>
+  <text x="751" y="247" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">custom AI</text>
+
+  <!-- arrows -->
+  <line x1="222" y1="149" x2="266" y2="149" stroke="#a89e92" stroke-width="1.75" marker-end="url(#arw)"/>
+  <line x1="222" y1="321" x2="266" y2="321" stroke="#a89e92" stroke-width="1.75" marker-end="url(#arw)"/>
+  <path d="M464,150 C492,158 492,206 508,220" fill="none" stroke="#a89e92" stroke-width="1.75" marker-end="url(#arw)"/>
+  <path d="M464,320 C492,312 492,262 508,248" fill="none" stroke="#a89e92" stroke-width="1.75" marker-end="url(#arw)"/>
+  <line x1="654" y1="234" x2="688" y2="234" stroke="#a89e92" stroke-width="1.75" marker-end="url(#arw)"/>
+
+  <!-- footer -->
+  <text x="40" y="448" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#8a8178">One shared base, a per-client LoRA adapter and a per-client RAG index: personalized AI, with each client's data kept separate.</text>
+</svg>

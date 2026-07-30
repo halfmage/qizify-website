@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" role="img" aria-label="Illustrative Kostenvergleich. Eine geschlossene API rechnet pro Token ab, ihre monatlichen Kosten steigen also mit der Nutzung. Ein selbst gehostetes offenes Modell hat konstante monatliche Kosten. Die Linien schneiden sich am Break-even-Punkt; unterhalb von etwa 10 bis 50 Millionen Token pro Monat ist eine API günstiger, darüber das Self-Hosting.">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#8a8178"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="480" rx="16" fill="#2a2622"/>
+
+  <text x="56" y="46" font-family="'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="600" fill="#faf8f4">Wann sich Self-Hosting lohnt</text>
+
+  <rect x="248" y="88" width="150" height="312" rx="5" fill="#7c5cfc" opacity="0.11"/>
+  <text x="323" y="107" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#cfc7be">~10 bis 50 Mio. Token / Monat</text>
+
+  <line x1="90" y1="84" x2="90" y2="400" stroke="#5a5249" stroke-width="1.5" marker-start="url(#ah)"/>
+  <line x1="90" y1="400" x2="672" y2="400" stroke="#5a5249" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="380" y="440" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92" letter-spacing="0.02em">Monatliche Nutzung (Token)</text>
+  <text transform="rotate(-90 34 244)" x="34" y="244" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92" letter-spacing="0.02em">Monatliche Kosten</text>
+
+  <text x="168" y="388" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#a89e92">API günstiger</text>
+  <text x="536" y="388" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#a89e92">Self-Hosting günstiger</text>
+
+  <polyline points="90,372 660,132" fill="none" stroke="#cc7a3e" stroke-width="2.75" stroke-linecap="round"/>
+  <polyline points="90,290 660,285" fill="none" stroke="#7c5cfc" stroke-width="2.75" stroke-linecap="round"/>
+
+  <circle cx="285" cy="288" r="5.5" fill="#2a2622" stroke="#faf8f4" stroke-width="2"/>
+  <text x="285" y="270" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#faf8f4">Break-even</text>
+
+  <text x="672" y="128" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#cc7a3e">Geschlossene API</text>
+  <text x="672" y="146" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#a89e92">pro Token</text>
+  <text x="672" y="281" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#9a80ff">Selbst gehostet</text>
+  <text x="672" y="299" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#a89e92">konstant im Betrieb</text>
+
+  <text x="56" y="466" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#8a8178">Illustrativ. Der Schnittpunkt hängt von Modell, Hardware und GPU-Auslastung ab.</text>
+</svg>

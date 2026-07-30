@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 660" role="img" aria-label="Bar chart: top open-weight AI models ranked by the Artificial Analysis Intelligence Index as of July 2026. Kimi K3 (Moonshot) 57, GLM-5.2 max (Z AI) 51, MiniMax-M3 44, DeepSeek V4 Pro max 44, DeepSeek V4 Pro high 43, MiMo-V2.5-Pro (Xiaomi) 42, Kimi K2.7 Code 42, Hy3 (Tencent) 41, Nex-N2-Pro 41, Inkling (Thinking Machines, US) 41. Nine of the ten are Chinese-made; Inkling is the only Western entry.">
+  <rect x="0" y="0" width="840" height="660" rx="16" fill="#2a2622"/>
+
+  <!-- title + attribution -->
+  <text x="40" y="44" font-family="'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="600" fill="#faf8f4">Top open-weight models by intelligence</text>
+  <text x="40" y="70" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92">Artificial Analysis Intelligence Index &#183; open weights &#183; as of July 2026</text>
+
+  <!-- legend -->
+  <circle cx="590" cy="40" r="5.5" fill="#7c5cfc"/>
+  <text x="601" y="44" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#cfc7be">Chinese-made</text>
+  <circle cx="705" cy="40" r="5.5" fill="#cc7a3e"/>
+  <text x="716" y="44" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#cfc7be">Western</text>
+
+  <!-- baseline -->
+  <line x1="270" y1="100" x2="270" y2="556" stroke="#46402f" stroke-width="1.5"/>
+
+  <!-- rows -->
+  <!-- i0 Kimi K3 57 -->
+  <text x="40" y="114" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">Kimi K3</text>
+  <text x="40" y="129" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Moonshot AI</text>
+  <path d="M270,107 H720 Q726,107 726,113 V123 Q726,129 720,129 H270 Z" fill="#7c5cfc"/>
+  <text x="734" y="122" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">57</text>
+
+  <!-- i1 GLM-5.2 (max) 51 -->
+  <text x="40" y="161" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">GLM-5.2 (max)</text>
+  <text x="40" y="176" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Z AI</text>
+  <path d="M270,154 H672 Q678,154 678,160 V170 Q678,176 672,176 H270 Z" fill="#7c5cfc"/>
+  <text x="686" y="169" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">51</text>
+
+  <!-- i2 MiniMax-M3 44 -->
+  <text x="40" y="208" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">MiniMax-M3</text>
+  <text x="40" y="223" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">MiniMax</text>
+  <path d="M270,201 H616 Q622,201 622,207 V217 Q622,223 616,223 H270 Z" fill="#7c5cfc"/>
+  <text x="630" y="216" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">44</text>
+
+  <!-- i3 DeepSeek V4 Pro (max) 44 -->
+  <text x="40" y="255" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">DeepSeek V4 Pro (max)</text>
+  <text x="40" y="270" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">DeepSeek</text>
+  <path d="M270,248 H616 Q622,248 622,254 V264 Q622,270 616,270 H270 Z" fill="#7c5cfc"/>
+  <text x="630" y="263" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">44</text>
+
+  <!-- i4 DeepSeek V4 Pro (high) 43 -->
+  <text x="40" y="302" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">DeepSeek V4 Pro (high)</text>
+  <text x="40" y="317" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">DeepSeek</text>
+  <path d="M270,295 H608 Q614,295 614,301 V311 Q614,317 608,317 H270 Z" fill="#7c5cfc"/>
+  <text x="622" y="310" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">43</text>
+
+  <!-- i5 MiMo-V2.5-Pro 42 -->
+  <text x="40" y="349" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">MiMo-V2.5-Pro</text>
+  <text x="40" y="364" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Xiaomi</text>
+  <path d="M270,342 H600 Q606,342 606,348 V358 Q606,364 600,364 H270 Z" fill="#7c5cfc"/>
+  <text x="614" y="357" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">42</text>
+
+  <!-- i6 Kimi K2.7 Code 42 -->
+  <text x="40" y="396" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">Kimi K2.7 Code</text>
+  <text x="40" y="411" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Moonshot AI</text>
+  <path d="M270,389 H600 Q606,389 606,395 V405 Q606,411 600,411 H270 Z" fill="#7c5cfc"/>
+  <text x="614" y="404" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">42</text>
+
+  <!-- i7 Hy3 41 -->
+  <text x="40" y="443" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">Hy3</text>
+  <text x="40" y="458" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Tencent</text>
+  <path d="M270,436 H592 Q598,436 598,442 V452 Q598,458 592,458 H270 Z" fill="#7c5cfc"/>
+  <text x="606" y="451" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">41</text>
+
+  <!-- i8 Nex-N2-Pro 41 -->
+  <text x="40" y="490" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">Nex-N2-Pro</text>
+  <text x="40" y="505" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Nex AGI</text>
+  <path d="M270,483 H592 Q598,483 598,489 V499 Q598,505 592,505 H270 Z" fill="#7c5cfc"/>
+  <text x="606" y="498" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">41</text>
+
+  <!-- i9 Inkling 41 (Western) -->
+  <text x="40" y="537" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#faf8f4">Inkling</text>
+  <text x="40" y="552" font-family="'Inter', system-ui, sans-serif" font-size="10.5" fill="#a89e92">Thinking Machines (US)</text>
+  <path d="M270,530 H592 Q598,530 598,536 V546 Q598,552 592,552 H270 Z" fill="#cc7a3e"/>
+  <text x="606" y="545" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#faf8f4">41</text>
+
+  <!-- takeaway -->
+  <text x="40" y="592" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#cfc7be">Nine of the top ten open models are Chinese-made. Inkling (US) is the only Western entry in the top ten.</text>
+
+  <!-- source -->
+  <text x="40" y="614" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#8a8178">Source: Artificial Analysis Intelligence Index, open weights, as of July 2026 (artificialanalysis.ai).</text>
+  <text x="40" y="632" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#8a8178">Rankings shift over time; see the live leaderboard for the current standing.</text>
+</svg>
