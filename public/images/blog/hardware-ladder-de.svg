@@ -5,7 +5,7 @@
 
   <rect x="40" y="86" width="760" height="76" rx="12" fill="#37322c" stroke="#46402f"/>
   <rect x="40" y="86" width="7" height="76" rx="3.5" fill="#a996ff"/>
-  <text x="72" y="122" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">20&#8211;30B</text>
+  <text x="72" y="122" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">20-30B</text>
   <text x="72" y="142" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">quantisiert</text>
   <text x="330" y="118" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Eine Mittelklasse-GPU</text>
   <text x="330" y="138" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">eine 24-GB-Karte</text>
@@ -16,7 +16,7 @@
   <rect x="40" y="174" width="7" height="76" rx="3.5" fill="#8a6cff"/>
   <text x="72" y="210" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">120B</text>
   <text x="72" y="230" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">z. B. gpt-oss</text>
-  <text x="330" y="206" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Eine 80&#8211;96-GB-GPU</text>
+  <text x="330" y="206" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Eine 80-96-GB-GPU</text>
   <text x="330" y="226" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">ein einzelner Server</text>
   <text x="620" y="206" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#faf8f4">ab ~900</text>
   <text x="620" y="226" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">&#8364; / Monat</text>
