@@ -45,6 +45,7 @@ export const EN_TO_DE = {
 	'/blog/custom-e-learning-development-costs': '/de/blog/e-learning-entwickeln-lassen',
 	'/blog/custom-ai-tutor-development': '/de/blog/ki-lernbegleiter-entwickeln-lassen',
 	'/blog/custom-ai-open-source-models': '/de/blog/individuelle-ki-open-source-modelle',
+	'/blog/learning-platform-training-providers': '/de/blog/lernplattform-bildungstraeger',
 };
 
 // Pages that exist only in one language and therefore should not emit

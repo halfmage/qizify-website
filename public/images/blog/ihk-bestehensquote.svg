@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 365" role="img" aria-label="Bar chart of 2024 chamber exam pass rates: 70.9 percent of 54,405 candidates passed an advanced vocational examination, against 63.5 percent for the protection and security staff qualification. Source: DIHK national further-training statistics, 2024 reporting year.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="520" height="365" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Close to one chamber exam in three is</text>
+  <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">failed</text>
+  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Passed and failed, 2024 reporting year</text>
+  <text x="24" y="121" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">All advanced vocational exams</text>
+  <text x="496" y="121" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">54,405</text>
+  <rect x="24" y="131" width="333.2" height="34" rx="4" fill="#786d60"/>
+  <text x="190.61499999999998" y="154" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600" text-anchor="middle">70.9% passed</text>
+  <rect x="359.22999999999996" y="131" width="136.8" height="34" rx="4" fill="#cc7a3e"/>
+  <text x="427.61499999999995" y="154" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#241f1b" font-weight="600" text-anchor="middle">29.1%</text>
+  <text x="24" y="193" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Protection and security staff qualification</text>
+  <text x="496" y="193" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">938</text>
+  <rect x="24" y="203" width="298.4" height="34" rx="4" fill="#786d60"/>
+  <text x="173.225" y="226" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600" text-anchor="middle">63.5% passed</text>
+  <rect x="324.45" y="203" width="171.5" height="34" rx="4" fill="#cc7a3e"/>
+  <text x="410.22499999999997" y="226" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#241f1b" font-weight="600" text-anchor="middle">36.5%</text>
+  <rect x="24" y="253" width="12" height="12" rx="2" fill="#786d60"/>
+  <text x="44" y="264" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">passed</text>
+  <rect x="94.4" y="253" width="12" height="12" rx="2" fill="#cc7a3e"/>
+  <text x="114.4" y="264" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">failed</text>
+  <text x="24" y="305" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Source: DIHK national further-training statistics, 2024</text>
+  <text x="24" y="323" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">reporting year. 38,570 passes from 54,405 candidates; 596 from</text>
+  <text x="24" y="341" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">938 for the security qualification.</text>
+</svg>

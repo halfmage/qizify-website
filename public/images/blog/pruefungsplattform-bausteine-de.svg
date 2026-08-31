@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 775" role="img" aria-label="Diagramm: die fünf Bausteine einer eigenen Prüfungsplattform, vom Rahmenstoffplan über Curriculum-Mapping, Fragenpool mit Taxonomiestufen, adaptive Wiederholung und Prüfungssimulation bis zum KI-Lernbegleiter auf Ihren eigenen Inhalten.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="520" height="775" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Vom Rahmenstoffplan zur bestandenen</text>
+  <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Prüfung</text>
+  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Die fünf Bausteine einer eigenen Prüfungsplattform</text>
+  <rect x="24" y="109" width="472" height="60" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="40" y="135" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Eingang: Rahmenstoffplan der IHK (7 Sachgebiete) und Ihre</text>
+  <text x="40" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">eigenen Kursunterlagen</text>
+  <path d="M260,181 L260,197" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="24" y="207" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="237" r="16" fill="#46402f"/>
+  <text x="52" y="243" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">1</text>
+  <text x="80" y="234" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Curriculum-Mapping</text>
+  <text x="80" y="256" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Sachgebiete und Lernziele des Rahmenstoffplans</text>
+  <text x="80" y="275" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">werden zur Struktur der Plattform</text>
+  <rect x="24" y="307" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="337" r="16" fill="#46402f"/>
+  <text x="52" y="343" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">2</text>
+  <text x="80" y="334" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Fragenpool mit Taxonomiestufen</text>
+  <text x="80" y="356" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Jede Frage hängt an einem Lernziel und an der</text>
+  <text x="80" y="375" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">geforderten Anforderungstiefe</text>
+  <rect x="24" y="407" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="437" r="16" fill="#46402f"/>
+  <text x="52" y="443" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">3</text>
+  <text x="80" y="434" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Adaptive Wiederholung</text>
+  <text x="80" y="456" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Der Lernpfad priorisiert die Sachgebiete, in denen</text>
+  <text x="80" y="475" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">die Person noch schwach ist</text>
+  <rect x="24" y="507" width="472" height="90" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <circle cx="52" cy="537" r="16" fill="#46402f"/>
+  <text x="52" y="543" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">4</text>
+  <text x="80" y="534" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Prüfungssimulation im Originalformat</text>
+  <text x="80" y="556" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Gleiche Aufgabenzahl, gleiche Punktlogik, gleiche</text>
+  <text x="80" y="575" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Zeit wie in der echten Prüfung</text>
+  <rect x="24" y="607" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="637" r="16" fill="#46402f"/>
+  <text x="52" y="643" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">5</text>
+  <text x="80" y="634" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">KI-Lernbegleiter auf Ihren Inhalten</text>
+  <text x="80" y="656" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Erklärt Fehler mit Ihrem Kursmaterial, nicht mit</text>
+  <text x="80" y="675" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Wissen aus dem offenen Internet</text>
+  <text x="24" y="733" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Ergebnis: belastbare Bestehensprognose je Teilnehmer und</text>
+  <text x="24" y="751" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">prüfsichere Nachweise für AZAV und Bildungsgutschein</text>
+</svg>
