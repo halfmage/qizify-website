@@ -13,7 +13,8 @@
     "check:pairs": "node scripts/check-pairs.mjs",
     "check:claims": "node scripts/check-claims.mjs",
     "generate:llms-full": "node scripts/generate-llms-full.mjs",
-    "ping:indexnow": "node scripts/ping-indexnow.mjs"
+    "ping:indexnow": "node scripts/ping-indexnow.mjs",
+    "graphics": "python3 scripts/build-exam-graphics.py && python3 scripts/build-model-graphics.py"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.14",

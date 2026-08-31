@@ -420,6 +420,225 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
+# Learning Platform for Training Providers: Digitise Your Own Courses
+
+Source: https://learnslice.com/blog/learning-platform-training-providers
+Language: en
+Published: 2026-08-31
+
+How training providers digitise their own course offering instead of renting ready-made content: the five building blocks, what it costs and how a project runs.
+
+## Key Takeaways
+
+- If you prepare people for a state-regulated exam, you are not selling knowledge, you are selling a pass rate. The German chambers of commerce recorded 54,405 candidates sitting an advanced vocational exam in 2024 and 38,570 passing, roughly 71 percent, so close to one in three attempts fails. A generic LMS cannot move that number because it does not know the syllabus it is being measured against.
+- Europe regulates the same occupations 26 different ways. For private security alone, the study puts the overall span of mandatory basic training at 20 hours to a full year; among the countries it lists individually the legal minimums run from 24 hours in Estonia and 40 in Germany and Slovakia to 175 in France, 180 in Spain and 360 in Romania, and refresher training is a legal requirement in 57 percent of those countries, according to the CoESS and UNI Europa mapping of March 2026. No international off-the-shelf product covers that fragmentation, and the renewal cycle makes the work recurring rather than one-off.
+- Providers in this niche rarely have a content problem. They have the scripts, the question sets and years of knowing where candidates come unstuck; what they cannot find is software that does anything with it. The market splits between platforms that bring their own pre-recorded courses, which leaves your material unused, and LMS tools that merely store yours as a PDF behind a login. Neither reacts to the learner, and pre-produced content ages every time the exam changes.
+- Your own material is the input, not somebody else's course library. A custom exam platform has five building blocks: curriculum mapping, a question bank tagged to learning objectives and taxonomy levels, adaptive repetition, a mock exam in the real format, and an AI tutor grounded in your own material. In our university pilot at FH Dortmund, 80 percent of 50 participants reached complete or near-complete understanding of the exam topic after preparing this way.
+- The same structure works for any exam with a published syllabus, from security licensing to insurance and financial advice, trainer certification, dangerous goods and healthcare qualifications. Build it once, roll it out to further exams as mostly content work.
+
+![Candidates sitting a written certification exam under supervision in a classroom](/images/blog/exam-preparation-classroom.webp)
+
+## When a Training Provider Needs Its Own Learning Platform
+
+A custom learning platform starts to pay for itself the moment your pass rate becomes the product. If you prepare people for a state-regulated exam, what you sell is not knowledge but the probability that someone passes on the day. An off-the-shelf LMS is of limited help there, because it knows neither the syllabus nor the exam format it will ultimately be judged against.
+
+Universities, corporate L&D departments and apprenticeship employers are all well served by existing platforms. The small and mid-sized training providers who move people through one specific licensing exam are not. So they improvise: a generic LMS, a quiz tool alongside it, a spreadsheet, and a great deal of undocumented experience in their trainers' heads.
+
+This guide uses Germany's security licensing exam as its running example, because every requirement in it is public and precise. It covers where standard software breaks down, how to digitise your course offering around your own material, what it costs and how a project runs. The pattern transfers to any regulated exam with a published syllabus.
+
+## One Job, Twenty-Six National Rulebooks
+
+Private security is licensed nationally, and the requirements diverge far more than most software vendors assume.
+
+The mapping study *Private Security Training in Europe*, published in March 2026 by CoESS and UNI Europa under the EU-funded INTEL project, surveyed 26 countries and puts the overall span of mandatory basic training at 20 hours to a full year. Among the countries it lists individually, Romania requires 360 hours, Sweden 300 (140 in school, 160 in-company), Bulgaria 260, Poland 245, Denmark 222 as the legal minimum and up to two years through the vocational route, Hungary 200 to 250, Spain 180 for the basic legal exam and up to 400 for full professional qualifications, France 175, Norway 168. At the lower end sit Estonia with 24 hours and Germany and Slovakia with 40. The Netherlands runs a one-year dual system, one day in school and four in the company.
+
+![Bar chart of the legal minimum for basic private security training by country: Romania 360 hours, Sweden 300, Bulgaria 260, Poland 245, Denmark 222, Hungary 200, Spain 180, France 175, Norway 168, Germany and Slovakia 40, Estonia 24](/images/blog/eu-security-training-hours.svg)
+
+Three findings from that study matter commercially:
+
+- **Basic training is set by national law in almost every country surveyed**, Austria being the exception. You do not get to design the syllabus, so your software has to follow someone else's.
+- **Refresher training is a legal requirement in 57 percent of those countries.** That turns exam preparation from a one-off sale into a repeat obligation, and somebody has to keep track of who is due when.
+- **Training still leans towards soft skills rather than new technology.** The study treats this as a growing gap, given that the EU AI Act will require substantial training for the human oversight of high-risk AI systems used in security work.
+
+A market that is fragmented by law, renewed on a cycle and expanding into new subject matter is a good market to sell courses into. It is a poor one to serve with a generic product.
+
+## The Worked Example: Germany's Section 34a Exam
+
+Germany's *Sachkundeprüfung nach § 34a GewO* is worth walking through in detail, because the regulator has already published everything a platform would need.
+
+Anyone working in the security industry needs at least a 40-hour instruction course. For part of the work that is not enough. The full examination is mandatory for patrols in publicly accessible spaces, retail loss prevention, door supervision at nightclubs, and supervisory roles guarding refugee accommodation and large access-controlled events. Anyone running a security firm needs it in any case.
+
+The exam covers seven subject areas fixed in the security services regulation: public safety and order law including trade law, data protection law, civil law, criminal and criminal procedure law including the handling of weapons, accident prevention rules for guarding services, dealing with people including de-escalation and intercultural competence, and the fundamentals of security technology. The chambers of commerce then publish a framework syllabus that breaks those areas into individual learning objectives and assigns each a taxonomy level, meaning the depth at which it has to be mastered.
+
+Anyone building software for this market should look closely at that last point. The learning-objective structure that every other project has to invent first already exists here, in public, in a form you can implement.
+
+The format is equally fixed. The written part runs 120 minutes and, since the changeover on 1 July 2025, contains 82 multiple-choice tasks worth 120 points in total. The pass mark is 60 points, and partially correct answers now earn partial credit rather than nothing. Candidates who pass the written part go on to the oral: around 15 minutes, in groups of up to five, built on situational scenarios and questions about where a security officer's powers end and the police's begin.
+
+![Structure of the § 34a security exam: a written part of 82 tasks worth 120 points with a pass mark of 60, followed by an oral part of around 15 minutes in groups of up to five](/images/blog/pruefung-34a-aufbau.svg)
+
+How many candidates fail this particular exam is not published. For chamber exams as a whole, the figures are. In its national further-training statistics for the 2024 reporting year, the DIHK records **54,405 people sitting an advanced vocational examination and 38,570 passing**, a pass rate of roughly 71 percent. Close to one attempt in three fails. Individual qualifications sit lower: the chamber qualification for protection and security staff, *Geprüfte Schutz- und Sicherheitskraft (IHK)*, records 596 passes from 938 candidates in the same year, about 64 percent.
+
+![Bar chart of 2024 pass rates: 70.9 percent of 54,405 candidates passed an advanced vocational examination, against 63.5 percent for the protection and security staff qualification](/images/blog/ihk-bestehensquote.svg)
+
+That rate is your business model. Every failed attempt costs an exam fee, a wait for the next sitting and a good deal of motivation, and in publicly funded programmes it comes back to you as a reported outcome.
+
+The market behind it is not a small one. Germany's central security register lists roughly 207,000 security staff across roughly 5,900 companies. Preparation courses are advertised at somewhere between 800 and 1,800 euros and can be fully funded at accredited providers through the employment agency's training voucher. Public money means a documentation duty attached to every course.
+
+## You Already Have the Content. What Is Missing Is the Software
+
+Training providers preparing people for regulated exams rarely have a content problem. The scripts, the slides, the practice questions and the hard-won knowledge of exactly where candidates come unstuck all exist, often built up over years. What they are looking for is software that turns that material into a digital course offering. This is usually where the search stops, because the market splits in two directions and leaves out the middle.
+
+**Platforms that bring their own content.** Ready-made video courses and question sets on subscription. Your own material sits unused, and you end up selling the same course as the provider two streets away, which leaves price as the only thing to compete on. Pre-produced content also ages with every change to the exam. On 1 July 2025 the written part of the German security exam moved from 72 tasks and 100 points to 82 tasks and 120 points, with partial credit alongside it. Every video explaining the old structure was obsolete that day.
+
+**LMS and authoring tools that only store content.** Here you can upload your own material, but it comes out in the same shape it went in: a PDF, a slide deck, a video, now behind a login. That is digitisation without interaction. The learner still reads, rather than being questioned, corrected and brought back to the same point at sensible intervals. This is the static quality providers mean when they say they could not find anything that fit.
+
+![Comparison: the same course material in a standard LMS becomes a PDF, a video and a one-off quiz, while in a platform you own it becomes tagged questions, a learning path, adaptive repetition and a mock exam](/images/blog/inhalte-statisch-aktiv.svg)
+
+What is needed sits in the middle: software that treats your content as the raw material and makes something active out of it. Your questions become a measuring instrument, your scripts become the knowledge base an AI tutor answers from, and the official syllabus becomes the structure both hang off. The material stays yours, it finally gets used, and when the exam changes you change it yourself instead of waiting on a vendor whose priorities lie elsewhere.
+
+## Why Off-the-Shelf Platforms Fall Short
+
+An LMS is a distribution system: create a course, upload material, record attendance. Exam preparation asks for something else. In practice it snags in five places.
+
+**The structure follows your folders, not the syllabus.** In the LMS the unit is called "Module 3: Law". In the exam it is "subject area 1, objective 1.4, taxonomy level 2". Until those two are connected, no software can tell you which objectives a learner has not yet mastered.
+
+**The exam format cannot be rebuilt.** Several correct answers per task, partial credit, 120 points spread across 82 tasks, and the clock running. A learner who practises with single-choice questions and a percentage score is training for a different exam than the one they will sit.
+
+**There is no pass prediction.** Standard analytics report course progress and completion. They do not answer the question that matters in the last weeks before a sitting: who in this cohort would pass today, and what is holding the others back? Without it, your trainers are steering by feel.
+
+**Compliance records do not appear by themselves.** Publicly funded programmes require documented learning time, often with live supervised time shown separately, plus accessibility. Reconstructing that afterwards from a generic system means days in spreadsheets before every audit.
+
+**The licence model works against you.** Training providers earn per cohort, so a per-learner licence puts a price on exactly the growth you are chasing. And the question bank curated over years, usually the most valuable thing in the building, ends up sitting inside someone else's product.
+
+## From Syllabus to Learning Path: Five Building Blocks
+
+The architecture is the same for every regulated exam:
+
+![The five building blocks of a custom exam preparation platform: curriculum mapping, a tagged question bank, adaptive repetition, a mock exam in the real format, and an AI tutor grounded in your own material](/images/blog/pruefungsplattform-bausteine.svg)
+
+**1. Curriculum mapping.** The official syllabus becomes the data structure of the platform: subject areas, learning objectives, taxonomy levels. Everything else hangs off it. The step looks unglamorous and still decides what the finished product is worth.
+
+**2. A tagged question bank.** Every question gets a learning objective and a difficulty level, which is what turns a pile of practice questions into a measuring instrument. Existing questions in Word, Excel or PDF import easily enough; the work is in the tagging, and AI now takes on a good share of it.
+
+**3. Adaptive repetition.** The platform comes back to what has not stuck and spaces out what has. For fact-heavy exams built on legal rules and powers, spaced repetition is one of the most effective levers available.
+
+**4. A mock exam in the real format.** Same task count, same scoring logic including partial credit, same clock. It takes some of the nerves out of the exam day, and it gives you the pass prediction the standard LMS never produced.
+
+**5. An AI tutor grounded in your material.** An assistant that explains a mistake using your course content rather than whatever it found online. On legal subject matter, that is the difference between helpful and dangerous. In the evaluation of our university pilot, every answer carried a valid citation back to its source passage, with no invented references. For a law-based exam we would treat that as the minimum bar. Our guide to [custom AI tutor development](/blog/custom-ai-tutor-development) covers how it is built and what to watch for.
+
+These blocks already exist in LearnSlice as a product for chamber exam preparation in German dual vocational training, with learning paths, adaptive repetition and mock exams, described in our post on [digital exam preparation](/blog/ihk-exam-preparation-digital). Our own figures so far come from higher education: in May 2026, 50 master's students at FH Dortmund used it to prepare for an exam. Afterwards 80 percent reached complete or near-complete understanding of the topic, and 70 percent found the personalised pace right for them. That was a university exam rather than a licensing exam, so it shows the teaching design holds up, not that the results transfer one to one. A new exam still does not start from zero: the existing core is fitted to your syllabus and your question bank, and what that mainly shortens is the time to a first usable version.
+
+## Beyond Security: The Same Structure, a Different Exam
+
+Once the platform exists, adding a second exam is largely content work. That is where the leverage sits, because your course portfolio can grow without buying new software each time.
+
+| Exam domain | Typically administered by | What the platform has to model |
+| --- | --- | --- |
+| Private security licensing (national) | State authority, police or chamber | National syllabus, fixed written format, scenario-based oral assessment |
+| Insurance distribution (IDD) | Chamber or national regulator | Large legal syllabus, plus at least 15 hours of continuing training per year under Article 10 IDD |
+| Investment and mortgage credit advice | Chamber or national regulator | Same shape, a separate syllabus per licence type |
+| Trainer and assessor qualification | Chamber or awarding body | Several fields of action, written plus a practical presentation |
+| Dangerous goods (ADR), transport management | National authority | Case-based tasks, mandatory refresher cycles |
+| Advanced professional qualifications | Chamber or awarding body | Several exam parts across months, progress tracked over long periods |
+| Healthcare and care assistant qualifications | Regional authority or provider | Practical components, documentation duties, recurring refreshers |
+| AI literacy under Article 4 of the EU AI Act (in force since February 2025) | No external exam; the duty sits with the provider or deployer | New subject matter, frequent changes, evidence of who was trained and when |
+
+If you already prepare people for one of these, the hard part is behind you. You know the material, you know where candidates go wrong, and the question bank exists. What is missing is software that does something systematic with all three.
+
+## Cost and Timeline
+
+A platform of this kind is neither a weekend project nor a seven-figure programme. The cost benchmarks below are derived in more detail in our guide to [custom e-learning development costs](/blog/custom-e-learning-development-costs); the timings are what we plan for in our own projects.
+
+| Scope | Typical cost | Timeline |
+| --- | --- | --- |
+| First usable version: one subject area, question bank, mock exam | low five figures | 6 to 8 weeks |
+| Full platform: all subject areas, adaptivity, analytics, roles | roughly 13,000 to 90,000 euros depending on scope | 3 to 6 months |
+| A further exam on the existing base | substantially less, mostly content and mapping | weeks rather than months |
+| Operation, maintenance, content updates | ongoing, often a share of build cost per year | permanent |
+
+The entry point does not have to be large. A sensible first scope is one subject area, your existing question bank and a working mock exam. That sits in the low five figures and is in front of a real cohort in 6 to 8 weeks, so you watch your own pass rate before deciding whether to extend it. If the number does not move, you have spent a contained amount and learned something.
+
+Whether that beats renting is arithmetic you can do yourself: licence cost per learner times cohort size times years on one side, one-off build plus running cost on the other. The larger and steadier your intake, the sooner it tips. There is also a line that rarely makes it into the calculation, which is that the question bank and the teaching logic inside it stay yours.
+
+To be even-handed about it: with small cohorts and standard requirements, rent a tool. Custom development pays off on volume, specificity and duration. If one of those is missing, leave it.
+
+## Data Protection, Sovereignty and Ownership
+
+In publicly funded programmes you handle data about people who are often in difficult circumstances, sometimes on behalf of a state employment agency. Four points therefore belong in the requirements before any code is written:
+
+- **EU hosting**, with a data processing agreement and a clean role and deletion model.
+- **AI with a training-data opt-out**, so learner answers and mistakes never end up training someone else's model. Where full control is needed, open models can run on your own infrastructure; we weigh that up in our post on [custom AI with open-source models](/blog/custom-ai-open-source-models).
+- **Accessibility**, which matters practically for this audience and, under European accessibility rules, is not negotiable.
+- **Ownership of code and content**, agreed in writing before the project starts, so you are not tied to one vendor indefinitely.
+
+For the questions worth putting to a vendor on AI and data protection, see our [7-point check on GDPR-compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers).
+
+What this looks like in practice is illustrated by LearnSlice's use in a publicly funded research project at FH Dortmund:
+
+> "We integrated a quiz-based AI platform across multiple teaching methods, from inverted classrooms to quiz-based homework. The software boosted student motivation and helped them pass exams more successfully. It adapts seamlessly to individual learning needs, which is exactly what modern higher education demands."
+>
+> **Prof. Dr. Carsten Wolff**, Board of Directors IDiAL, FH Dortmund
+
+More evidence from that pilot is on our [research and evidence](/research) page.
+
+## Four Steps to Your Own Exam Platform
+
+1. **Review the syllabus and the question bank.** Is the official syllabus available, and can your questions be mapped to individual learning objectives? That is the foundation; the rest is engineering.
+2. **Pick one exam as the pilot.** Not the whole portfolio, but one exam, one cohort and one measurable target: that group's pass rate.
+3. **Ship a first version in 6 to 8 weeks.** One subject area complete, a mock exam in the real format, real learners. We deliberately scope that first version down to a single subject area, because only real usage shows which feature earns the next slot. Their results decide what gets built next, not a concept paper.
+4. **Roll out to further exams.** Once the structure stands, the second exam is mostly content work. This is where the distance opens up between you and providers still working from PDFs and classroom time.
+
+If you prepare people for a regulated exam and your current system does not know the syllabus behind it, the first building block is worth a conversation. Our [solutions](/solutions) page sets out how we work as a development partner.
+
+
+## Frequently Asked Questions
+
+### Why is a standard LMS not enough for exam preparation?
+
+A standard LMS is built to distribute content: create a course, upload material, record completion. Exam preparation is a different job. It needs a structure that mirrors the official syllabus, a question format that matches the real exam, a repetition engine that targets each learner's specific gaps, and reporting that tells you before exam day who would fail. Those four things are rarely present in off-the-shelf products.
+
+### How much does a custom exam preparation platform cost?
+
+As a benchmark, specialist development firms put a custom learning platform at roughly 13,000 to 90,000 euros depending on scope, and broader industry pricing surveys put full custom projects anywhere from about 5,000 to over 100,000 dollars. A first usable version covering one subject area with a working mock exam is often ready in 6 to 8 weeks, a complete platform in 3 to 6 months, plus ongoing cost for operation and content updates.
+
+### Does it pay off against a per-learner licence?
+
+It depends on your cohort sizes. A per-learner licence grows with every cohort you add, while a custom platform is a one-time investment plus running cost. Providers who push large groups through the same exam year after year usually reach break-even within a few cohorts. The second effect matters just as much: your question bank and the teaching logic inside it stay your property instead of living in a vendor's system.
+
+### How different are exam requirements across Europe?
+
+Very. In private security, the CoESS and UNI Europa mapping published in March 2026 puts the overall span of mandatory basic training at 20 hours to a full year across 26 surveyed countries. The legal minimums it lists by country run from 24 hours in Estonia and 40 in Germany and Slovakia to 168 in Norway, 175 in France, 180 to 400 in Spain, 200 to 250 in Hungary, 222 in Denmark, 245 in Poland, 260 in Bulgaria, 300 in Sweden and 360 in Romania, with the Netherlands running a one-year dual system. Basic training is regulated by national law in almost every country surveyed.
+
+### Which other exams does this structure work for?
+
+Any exam with a published syllabus and a fixed format. That includes insurance distribution certification under the Insurance Distribution Directive, investment and mortgage credit advice, trainer and assessor qualifications, dangerous goods certification under ADR, professional driving and transport management, healthcare and care assistant qualifications, and increasingly AI literacy training required under the EU AI Act. The architecture stays the same, only the syllabus and question bank change.
+
+### How many candidates actually fail these exams?
+
+For Germany's security licensing exam specifically, no nationwide rate is published. For chamber exams as a whole it is: the German chambers of commerce report that in the 2024 reporting year 54,405 people sat an advanced vocational examination and 38,570 passed, a pass rate of roughly 71 percent, so close to one in three attempts fails. The chamber qualification for protection and security staff sat lower in the same statistics, at 596 passes from 938 candidates, about 64 percent.
+
+### What happens when the exam or the syllabus changes?
+
+With pre-produced course content you wait for the vendor to update it, or you buy again. On 1 July 2025 the written part of Germany's security licensing exam moved from 72 tasks and 100 points to 82 tasks and 120 points with partial credit, which made every pre-produced module built on the old structure obsolete. In a platform you own, you change the scoring logic, the syllabus structure and the affected questions yourself, usually inside a working day.
+
+### Do we need our own IT staff to run it?
+
+Not for day-to-day operation. Hosting, maintenance and technical updates normally sit with the development partner under a service agreement. What you need in house is a subject lead: someone who knows the syllabus and decides which question belongs to which learning objective and at what depth. That is a teaching role rather than a technical one, and it usually already exists in your course management.
+
+### We already have our own course material. What happens to it?
+
+It becomes the raw material, and using it is the fastest route to a working first version. Scripts, slide decks, handouts and question sets in Word, Excel or PDF can all be read in. The effort is less in the import than in the tagging: every question needs a learning objective from the syllabus and a difficulty level, otherwise the adaptive logic has nothing to steer by, and your scripts need a clean structure so an AI tutor can answer from them with citations. AI now does a large share of that tagging, and your subject lead confirms the rest.
+
+### How do we keep a custom platform GDPR compliant?
+
+Design it in from the start rather than bolting it on. Look for hosting in the EU, a data processing agreement, a clean role and deletion model, and an AI setup with a training-data opt-out so learner answers never feed someone else's model. Where publicly funded training is involved, add audit-proof learning-time records and accessibility to the requirement list on day one.
+
+### How long before we see something usable?
+
+A realistic first milestone is 6 to 8 weeks: one subject area mapped completely, the question bank imported and tagged, and a mock exam that reproduces the real scoring rules. Run it with an actual cohort and let their results decide what gets built next, rather than a concept document.
+
+---
+
 # Custom AI on Open-Source Models: Personalized and Sovereign
 
 Source: https://learnslice.com/blog/custom-ai-open-source-models
@@ -637,7 +856,7 @@ Three groups commission custom AI tutors, for different reasons:
 - **Companies and corporate L&D.** They want a tutor grounded in their own processes and knowledge: onboarding that adapts to each role, compliance training that looks like their business, upskilling that pulls from internal documentation. For a sense of where this pays off in practice, see our overview of [AI tools for vocational training](/blog/ai-tools-vocational-training).
 - **Universities and higher education.** Course-grounded tutors that answer from the reading list, respect academic integrity, and integrate with the LMS. The buying cycle is longer and procurement-led, but the fit for a data-sovereign, curriculum-grounded build is strong.
 
-Across all three, the common thread is the same: they train large groups and need the tutor to fit their content exactly, which is precisely where building beats buying.
+Across all three, the common thread is the same: they train large groups and need the tutor to fit their content exactly, which is precisely where building beats buying. Course providers preparing candidates for a regulated exam are the clearest case, worked through in our guide to a [learning platform for training providers](/blog/learning-platform-training-providers).
 
 ![A custom AI tutor delivered under a client's own brand: a Financial Companion built on the same engine, with a financial health check and a guided learning programme](/images/solutions/financial-companion.webp)
 
@@ -833,7 +1052,7 @@ There are three routes, and the right one depends on how specific your requireme
 | Ownership and data control | with the vendor | with you |
 | Scaling and extension | within the vendor's limits | no fixed ceiling |
 
-The difference many see only later is the cost over time. A standard LMS is billed per user per month, usually indefinitely: the more learners you have and the longer you use it, the more it costs, and in the end you own nothing. Custom development is a one-time investment. You pay once to build it, then only for operation and further development, and you use the same solution for years. That is why building your own pays off above all for organisations that train large groups: training providers, universities, continuing-education and course providers, and companies with many learners. Past a certain number of users, a tailored solution comes in below the accumulating licence fees, and it fits you exactly rather than the other way around.
+The difference many see only later is the cost over time. A standard LMS is billed per user per month, usually indefinitely: the more learners you have and the longer you use it, the more it costs, and in the end you own nothing. Custom development is a one-time investment. You pay once to build it, then only for operation and further development, and you use the same solution for years. That is why building your own pays off above all for organisations that train large groups: training providers, universities, continuing-education and course providers, and companies with many learners. Past a certain number of users, a tailored solution comes in below the accumulating licence fees, and it fits you exactly rather than the other way around. For what this looks like for course providers preparing people for a regulated exam, see our guide to a [learning platform for training providers](/blog/learning-platform-training-providers).
 
 Building fully in-house is the fourth option, and it only pays off if you have your own team combining instructional design and software engineering. For most companies the honest answer is: off-the-shelf while your requirements are standard, and custom development the moment the solution has to truly fit, belong to you, and grow with AI.
 
@@ -3201,7 +3420,7 @@ For a broader view of how to free up trainer time across all training activities
 
 Digital IHK exam preparation with AI support is more efficient, more affordable, and more effective than traditional methods. Apprentices benefit from personalized learning paths and unlimited practice opportunities. Companies save on external course fees and trainer time.
 
-**Want to see how AI-powered IHK exam prep works?** [Book a free demo](/companies) and see LearnSlice in action. You can also explore how to [reduce your overall training costs](/blog/reduce-training-costs) with a complete digital learning strategy.
+**Want to see how AI-powered IHK exam prep works?** [Book a free demo](/companies) and see LearnSlice in action. You can also explore how to [reduce your overall training costs](/blog/reduce-training-costs) with a complete digital learning strategy. Training providers digitising their own courses for a regulated exam will find the route in our guide to a [learning platform for training providers](/blog/learning-platform-training-providers).
 
 
 ## Frequently Asked Questions
@@ -3225,6 +3444,217 @@ Good platforms generate questions along the IHK topic areas, the standard occupa
 ### Which apprenticeship occupations benefit most from digital exam preparation?
 
 Commercial occupations such as office management clerk, IT occupations such as IT specialists across all four specialisms, and technical occupations such as automotive mechatronics technician and warehouse logistics specialist. Wherever extensive theory has to be linked to practice, personalised adaptive learning shows its strength.
+
+---
+
+# Lernplattform für Bildungsträger: eigene Kurse digitalisieren
+
+Source: https://learnslice.com/de/blog/lernplattform-bildungstraeger
+Language: de
+Published: 2026-08-31
+
+Eigene Lernplattform für Bildungsträger: wie Sie Ihr Kursangebot digitalisieren, statt fertige Kurse zu mieten. Mit Kosten, Ablauf und Prüfungssimulation.
+
+## Auf einen Blick
+
+- Wer auf staatlich geregelte Prüfungen vorbereitet, verkauft kein Wissen, sondern eine Bestehensquote. Wie viel dabei auf dem Spiel steht, zeigt die bundesweite IHK-Fortbildungsstatistik der DIHK für 2024: Von 54.405 Prüfungsteilnehmenden bestanden 38.570, also rund 71 Prozent. Fast jede dritte Prüfung geht schief, und genau diese Quote kann ein Standard-LMS nicht steuern, weil es die Prüfungsordnung nicht kennt.
+- Beispiel Sachkundeprüfung nach § 34a GewO: sieben Sachgebiete nach § 7 BewachV, seit dem 1. Juli 2025 82 Aufgaben mit 120 Punkten in 120 Minuten, bestanden ab 60 Punkten, danach eine mündliche Prüfung von rund 15 Minuten. Der Rahmenstoffplan der IHK-Organisation liefert dazu eine fertige Lernzielstruktur inklusive Taxonomiestufen. Als der schriftliche Teil zum 1. Juli 2025 umgestellt wurde, war jedes vorproduzierte Lernmodul mit der alten Struktur überholt.
+- Der Markt ist größer, als er wirkt: Im Bewacherregister sind rund 207.000 Sicherheitsmitarbeitende und rund 5.900 Betriebe geführt, und Vorbereitungskurse sind über den Bildungsgutschein nach § 81 SGB III bei AZAV-zertifizierten Trägern förderfähig.
+- Ihre eigenen Inhalte sind der Ausgangspunkt, nicht ein Kurs von der Stange. Eine eigene Prüfungsplattform besteht aus fünf Bausteinen: Curriculum-Mapping, Fragenpool mit Taxonomiestufen, adaptive Wiederholung, Prüfungssimulation im Originalformat und ein KI-Lernbegleiter, der auf Ihren eigenen Inhalten antwortet. Im Hochschulpilot an der FH Dortmund erreichten damit 80 Prozent von 50 Teilnehmenden ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas.
+- Dieselbe Struktur trägt für jede geregelte Prüfung mit veröffentlichtem Stoffplan, von § 34d und § 34f über die AEVO bis zu Gefahrgut und Fortbildungsprüfungen. Wer die Plattform einmal bauen lässt, kann sie auf weitere Prüfungen ausrollen.
+
+![Prüfungsteilnehmende schreiben unter Aufsicht eine schriftliche Prüfung im Kursraum](/images/blog/exam-preparation-classroom.webp)
+
+## Lernplattform für Bildungsträger: Wann sich eine eigene lohnt
+
+Für Bildungsträger und Kursanbieter lohnt sich eine eigene Lernplattform in dem Moment, in dem die Bestehensquote zum eigentlichen Produkt wird. Wer auf eine staatlich geregelte Prüfung vorbereitet, verkauft kein Wissen, sondern die Wahrscheinlichkeit, dass jemand am Prüfungstag besteht. Ein Standard-LMS hilft dabei wenig, weil es weder den Prüfungsstoff noch das Prüfungsformat kennt, an denen es am Ende gemessen wird.
+
+Für Hochschulen, betriebliche Weiterbildung und Ausbildungsbetriebe gibt es ausgereifte Lernplattformen. Für die vielen kleinen und mittleren Bildungsträger dagegen, die Menschen durch eine einzelne, bundesweit einheitlich geprüfte Sachkundeprüfung bringen, findet sich kaum etwas Passendes. Also behilft man sich: ein generisches LMS, daneben ein Quiz-Tool, dazu eine Excel-Liste und die Erfahrung der Dozenten, die nirgends dokumentiert ist.
+
+Dieser Leitfaden nimmt die Sachkundeprüfung nach § 34a GewO als durchgehendes Beispiel, weil dort alle Vorgaben öffentlich und präzise sind. Er zeigt, woran Standardsoftware scheitert, wie Sie Ihr Kursangebot mit eigenen Inhalten digitalisieren, was das kostet und wie ein Projekt abläuft. Übertragen lässt sich das auf jede geregelte Prüfung mit veröffentlichtem Stoffplan.
+
+## Das Beispiel § 34a GewO: eine Prüfung mit hoher Fallhöhe
+
+Im Bewachungsgewerbe kommt zusammen, was diesen Markt ausmacht: eine gesetzlich vorgeschriebene Qualifikation, ein bundesweit einheitlicher Stoffplan, viele Quereinsteiger und öffentliche Förderung.
+
+Wer in der Bewachung arbeitet, braucht mindestens eine 40-stündige Unterrichtung. Für einen Teil der Tätigkeiten genügt sie nicht. § 34a Absatz 1a GewO verlangt die Sachkundeprüfung unter anderem für Kontrollgänge im öffentlichen Verkehrsraum, für den Schutz vor Ladendieben, für Bewachungen im Einlassbereich gastgewerblicher Diskotheken und für leitende Funktionen bei der Bewachung von Flüchtlingsunterkünften und zugangsgeschützten Großveranstaltungen. Wer ein Bewachungsunternehmen führt, braucht sie ohnehin.
+
+Geprüft wird in sieben Sachgebieten, die § 7 der Bewachungsverordnung vorgibt:
+
+- Recht der öffentlichen Sicherheit und Ordnung einschließlich Gewerberecht
+- Datenschutzrecht
+- Bürgerliches Gesetzbuch
+- Straf- und Strafverfahrensrecht einschließlich Umgang mit Waffen
+- Unfallverhütungsvorschriften für Wach- und Sicherungsdienste
+- Umgang mit Menschen, insbesondere Verhalten in Gefahrensituationen, Deeskalation und interkulturelle Kompetenz
+- Grundzüge der Sicherheitstechnik
+
+Der Rahmenstoffplan der IHK-Organisation bricht diese Sachgebiete in einzelne Lernziele herunter und ordnet jedem eine Taxonomiestufe zu, also die Tiefe, in der ein Inhalt beherrscht werden muss. Wer Software für diesen Markt baut, sollte an dieser Stelle genau hinsehen: Die Lernzielstruktur, um die sich sonst jedes Projekt zuerst kümmern muss, liegt hier bereits fertig vor.
+
+Auch das Prüfungsformat ist eng vorgegeben. Der schriftliche Teil dauert 120 Minuten und umfasst seit der Umstellung zum 1. Juli 2025 82 Multiple-Choice-Aufgaben mit zusammen 120 Punkten. Bestanden ist er ab 60 Punkten, und für teilweise richtige Antworten gibt es seither anteilige Punkte statt null. Wer den schriftlichen Teil besteht, wird zum mündlichen zugelassen: etwa 15 Minuten, in Gruppen von bis zu fünf Personen, mit Situationsaufgaben und Fragen zur Abgrenzung gegenüber der Polizei.
+
+![Aufbau der Sachkundeprüfung nach § 34a GewO: schriftlicher Teil mit 82 Aufgaben, 120 Punkten und 60 Punkten zum Bestehen, danach der mündliche Teil mit rund 15 Minuten in Gruppen von bis zu fünf Personen](/images/blog/pruefung-34a-aufbau-de.svg)
+
+Wie viele daran scheitern, veröffentlicht die IHK-Organisation für diese Prüfung nicht. Für IHK-Prüfungen insgesamt liegen die Zahlen vor. Nach der bundesweiten IHK-Fortbildungsstatistik der DIHK traten im Berichtsjahr 2024 **54.405 Menschen zu einer Fortbildungsprüfung an, bestanden haben 38.570**, also rund 71 Prozent. Fast jede dritte Prüfung geht schief. Einzelne Abschlüsse liegen darunter: Bei der Geprüften Schutz- und Sicherheitskraft (IHK) bestanden im selben Jahr 596 von 938 Teilnehmenden, rund 64 Prozent.
+
+![Balkendiagramm der Bestehensquoten 2024: von 54.405 Teilnehmenden an IHK-Fortbildungsprüfungen bestanden 70,9 Prozent, bei der Geprüften Schutz- und Sicherheitskraft 63,5 Prozent](/images/blog/ihk-bestehensquote-de.svg)
+
+Diese Quote ist Ihr Geschäftsmodell. Jeder gescheiterte Versuch kostet Prüfungsgebühr, Wartezeit bis zum nächsten Termin und ein gutes Stück Motivation, und bei geförderten Maßnahmen schlägt er auf Ihre eigenen Kennzahlen durch.
+
+Klein ist der Markt nicht. Das Bewacherregister führt rund 207.000 Sicherheitsmitarbeitende in rund 5.900 Betrieben. Vorbereitungskurse werden je nach Anbieter für etwa 800 bis 1.800 Euro angeboten und lassen sich bei AZAV-zertifizierten Trägern über den Bildungsgutschein nach § 81 SGB III vollständig fördern. Weil öffentliches Geld im Spiel ist, hängt an jedem Kurs eine Nachweispflicht.
+
+## Sie haben die Inhalte. Gesucht wird die Software dahinter
+
+Bildungsträger, die auf geregelte Prüfungen vorbereiten, haben selten ein Inhaltsproblem. Skripte, Folien, Übungsfragen und das Wissen darüber, an welcher Stelle Teilnehmende regelmäßig scheitern: Das liegt alles vor, oft seit Jahren. Gesucht wird Software, die aus diesem Material ein digitales Kursangebot macht. Und dort endet die Suche meistens, weil der Markt in zwei Richtungen auseinanderfällt und die Mitte fehlt.
+
+**Plattformen, die eigene Inhalte mitbringen.** Fertige Videokurse und Fragensammlungen im Abo. Ihr eigenes Material bleibt dabei liegen, und Sie verkaufen am Ende denselben Kurs wie der Anbieter zwei Straßen weiter, womit als Unterscheidungsmerkmal der Preis übrig bleibt. Dazu kommt: Vorproduzierte Inhalte veralten mit jeder Änderung an der Prüfung. Zum 1. Juli 2025 wurde der schriftliche Teil von 72 Aufgaben und 100 Punkten auf 82 Aufgaben und 120 Punkte umgestellt, dazu kam die Teilpunktvergabe. Jedes Video, das die alte Struktur erklärte, war an diesem Tag überholt.
+
+**LMS und Autorentools, die Inhalte nur ablegen.** Hier dürfen Sie Ihr eigenes Material hochladen, aber es kommt in derselben Form wieder heraus, in der es hineingegangen ist: PDF, Präsentation, Video, jetzt hinter einem Login. Das ist Digitalisierung ohne Interaktion. Die lernende Person liest weiter, statt gefragt, korrigiert und in sinnvollen Abständen wiederholt zu werden. Das ist die Statik, die gemeint ist, wenn Anbieter sagen, sie hätten nichts Passendes gefunden.
+
+![Vergleich: dieselben Kursinhalte im Standard-LMS werden zu PDF, Video und einmaligem Quiz, in einer eigenen Plattform zu Fragen mit Lernziel, Lernpfad, adaptiver Wiederholung und Prüfungssimulation](/images/blog/inhalte-statisch-aktiv-de.svg)
+
+Gebraucht wird die Mitte: Software, die Ihre Inhalte als Ausgangsmaterial nimmt und daraus etwas Aktives macht. Ihre Fragen werden zum Messinstrument, Ihre Skripte zur Wissensbasis eines Lernbegleiters, der amtliche Stoffplan zur Struktur, an der beides hängt. Das Material bleibt Ihres, es wird nur endlich benutzt. Und wenn sich an der Prüfung etwas ändert, ändern Sie es selbst, statt auf das Update eines Anbieters zu warten, für den Ihre Nische keine Priorität ist.
+
+## Warum Standard-LMS an dieser Aufgabe scheitern
+
+Ein LMS ist ein Verteilsystem: Kurs anlegen, Inhalte hochladen, Teilnahme dokumentieren. Prüfungsvorbereitung verlangt etwas anderes. In der Praxis klemmt es an fünf Stellen.
+
+**Die Struktur folgt Ihren Ordnern, nicht dem Stoffplan.** Im LMS heißt die Einheit "Modul 3: Recht", in der Prüfung heißt sie "Sachgebiet 1, Lernziel 1.4, Taxonomiestufe 2". Solange beide Welten nicht verbunden sind, kann keine Software sagen, welche Lernziele eine Teilnehmerin noch nicht sicher beherrscht.
+
+**Das Prüfungsformat lässt sich nicht nachbauen.** Mehrere richtige Antworten pro Aufgabe, anteilige Punkte, 120 Punkte auf 82 Aufgaben, dazu die Uhr. Wer im Kurs mit Einfachauswahl und Prozentanzeige übt, trainiert etwas anderes, als er später schreibt.
+
+**Es fehlt die Bestehensprognose.** Standardauswertungen zeigen Kursfortschritt und Bearbeitungsquoten. Sie beantworten aber nicht die Frage, auf die es kurz vor dem Termin ankommt: Wer aus dieser Kohorte würde heute bestehen, und woran liegt es bei den anderen? Ohne diese Antwort steuern Ihre Dozenten nach Gefühl.
+
+**Nachweise entstehen nicht nebenbei.** Bei AZAV-zugelassenen Maßnahmen müssen Lernzeiten dokumentiert und die synchrone, also live betreute Lernzeit gesondert nachvollziehbar sein, dazu kommt Barrierefreiheit nach dem BFSG. Wer das hinterher aus einem Standardsystem rekonstruiert, sitzt vor jedem Audit tagelang in Tabellen. Worauf es dabei ankommt, steht in unserem Leitfaden zu [AZAV und Digitalisierung](/de/blog/azav-digitalisierung-bildungstraeger).
+
+**Das Lizenzmodell arbeitet gegen Sie.** Bildungsträger verdienen an Kohorten, eine Lizenz pro Teilnehmer verteuert also genau das Wachstum, das Sie anstreben. Und der über Jahre kuratierte Fragenpool, meist das wertvollste Gut im Haus, liegt am Ende im System eines Dritten.
+
+## Vom Rahmenstoffplan zum Lernpfad: fünf Bausteine
+
+Der Aufbau ist bei jeder geregelten Prüfung derselbe:
+
+![Die fünf Bausteine einer eigenen Prüfungsplattform: Curriculum-Mapping, Fragenpool mit Taxonomiestufen, adaptive Wiederholung, Prüfungssimulation im Originalformat und KI-Lernbegleiter](/images/blog/pruefungsplattform-bausteine-de.svg)
+
+**1. Curriculum-Mapping.** Der amtliche Stoffplan wird zur Datenstruktur der Plattform: Sachgebiete, Lernziele, Taxonomiestufen. Daran hängt alles Weitere. Der Schritt sieht unspektakulär aus und entscheidet trotzdem darüber, was die fertige Lösung am Ende wert ist.
+
+**2. Fragenpool mit Zuordnung.** Jede Frage bekommt ein Lernziel und eine Anforderungstiefe. Erst dadurch wird aus einer Sammlung von Übungsfragen ein Messinstrument. Bestehende Fragen aus Word, Excel oder PDF lassen sich importieren; die eigentliche Arbeit steckt in der Zuordnung, und davon nimmt KI inzwischen einen großen Teil ab.
+
+**3. Adaptive Wiederholung.** Die Plattform wiederholt, was noch nicht sitzt, und fragt in wachsenden Abständen ab, was sitzt. Bei Prüfungen mit hohem Faktenanteil, etwa zu Rechtsgrundlagen und Befugnissen, ist verteiltes Wiederholen einer der wirksamsten Hebel überhaupt.
+
+**4. Prüfungssimulation im Originalformat.** Gleiche Aufgabenzahl, gleiche Punktlogik inklusive Teilpunkten, gleiche Zeit. Das nimmt dem Prüfungstag einen Teil der Nervosität, und Sie bekommen die Prognose, die im Standard-LMS fehlt.
+
+**5. KI-Lernbegleiter auf Ihren Inhalten.** Ein Assistent, der einen Fehler mit Ihrem Kursmaterial erklärt statt mit dem, was irgendwo im Netz steht. Bei Rechtsthemen liegt darin der Unterschied zwischen hilfreich und gefährlich. In der Auswertung unseres Hochschulpilots trug jede Antwort eine gültige Quellenangabe zur Textstelle, ohne erfundene Quellen. Bei einer Rechtsprüfung ist das die Mindestanforderung. Wie so etwas entsteht und worauf zu achten ist, beschreibt unser Beitrag zum [KI-Lernbegleiter entwickeln lassen](/de/blog/ki-lernbegleiter-entwickeln-lassen).
+
+In LearnSlice gibt es diese Bausteine bereits, als Produkt für die IHK-Prüfungsvorbereitung in der dualen Ausbildung, mit Lernpfaden, adaptiver Wiederholung und Prüfungssimulation. Eigene Zahlen dazu haben wir bisher aus der Hochschule: Im Mai 2026 bereiteten sich damit 50 Masterstudierende an der FH Dortmund auf eine Prüfung vor. 80 Prozent erreichten anschließend ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas, 70 Prozent hielten das personalisierte Lerntempo für passend. Das war eine Hochschulprüfung und keine Sachkundeprüfung; die Zahlen zeigen, dass die Didaktik trägt, nicht dass sie sich eins zu eins übertragen lässt. Bei null fängt eine neue Prüfung trotzdem nicht an: Der vorhandene Kern wird auf Ihren Stoffplan und Ihren Fragenpool gesetzt, und kürzer wird dadurch vor allem die Zeit bis zum ersten nutzbaren Stand.
+
+## Nicht nur § 34a: dieselbe Struktur, andere Prüfung
+
+Der Aufbau trägt für jede Prüfung mit veröffentlichtem Stoffplan und festem Format. Darin liegt der eigentliche Hebel: Einmal gebaut, lässt sich die Plattform auf weitere Prüfungen ausrollen, und Ihr Kursportfolio wächst, ohne dass Sie jedes Mal neue Software einkaufen.
+
+| Prüfung | Prüfende Stelle | Was die Plattform abbilden muss |
+| --- | --- | --- |
+| Sachkunde § 34a GewO (Bewachung) | IHK | Sieben Sachgebiete, Multiple Choice mit Teilpunkten, mündliche Situationsaufgaben |
+| Sachkunde § 34d GewO (Versicherungsvermittlung) | IHK | Umfangreicher Rechtsstoff, schriftlich und praktisch, dazu 15 Stunden Weiterbildung pro Jahr |
+| Sachkunde § 34f und § 34i GewO (Finanzanlagen, Immobiliardarlehen) | IHK | Gleicher Aufbau, eigener Stoffplan je Erlaubnisart |
+| Ausbildereignung (AEVO) | IHK und HWK | Vier Handlungsfelder, schriftlich und praktisch mit Präsentation |
+| Fachkunde Güterkraftverkehr, Gefahrgut (ADR) | IHK | Fallbezogene Aufgaben, regelmäßige Auffrischung |
+| Fortbildungsprüfungen (Fachwirt, Meister, Betriebswirt) | IHK und HWK | Mehrere Prüfungsteile über Monate, Lernstand über lange Zeiträume |
+| Betreuungs- und Pflegequalifikationen | Landesrecht und Träger | Praxisanteile, Nachweispflichten, wiederkehrende Auffrischung |
+| KI-Kompetenz nach Artikel 4 der KI-Verordnung (Pflicht seit Februar 2025) | Keine externe Prüfung, der Nachweis liegt beim Unternehmen | Neuer Stoff, häufige Änderungen, Nachweis, wer wann geschult wurde |
+
+Wer heute schon auf eine dieser Prüfungen vorbereitet, hat den schwierigen Teil hinter sich. Der Stoff ist bekannt, die typischen Fehler auch, der Fragenpool liegt vor. Es fehlt die Software, die daraus systematisch etwas macht.
+
+## Was das kostet und wie lange es dauert
+
+Eine eigene Prüfungsplattform ist kein Wochenendprojekt und kein Millionenvorhaben. Die folgenden Kostenrichtwerte haben wir im Beitrag [E-Learning entwickeln lassen](/de/blog/e-learning-entwickeln-lassen) im Detail hergeleitet; die Zeitangaben entsprechen dem, was wir in eigenen Projekten ansetzen.
+
+| Umfang | Typische Kosten | Zeitrahmen |
+| --- | --- | --- |
+| Erster nutzbarer Stand: ein Sachgebiet, Fragenpool, Prüfungssimulation | im unteren fünfstelligen Bereich | 6 bis 8 Wochen |
+| Vollständige Plattform: alle Sachgebiete, Adaptivität, Auswertung, Rollen | ca. 13.000 bis 90.000 Euro je nach Umfang | 3 bis 6 Monate |
+| Weitere Prüfung auf bestehender Basis | deutlich weniger, im Wesentlichen Inhalt und Mapping | Wochen statt Monate |
+| Betrieb, Pflege, inhaltliche Aktualisierung | laufend, häufig ein Anteil der Entwicklungskosten pro Jahr | dauerhaft |
+
+Der Einstieg muss nicht groß sein. Sinnvoll ist ein Zuschnitt auf ein Sachgebiet, Ihren vorhandenen Fragenpool und eine funktionierende Prüfungssimulation. Das liegt im unteren fünfstelligen Bereich und ist nach 6 bis 8 Wochen bei einer echten Kohorte im Einsatz. Sie sehen also an Ihrer eigenen Bestehensquote, ob sich etwas bewegt, bevor Sie über den Ausbau entscheiden. Bewegt sich nichts, haben Sie einen überschaubaren Betrag ausgegeben und wissen mehr als vorher.
+
+Ob sich das gegenüber einem Mietmodell rechnet, können Sie selbst überschlagen: Lizenzkosten pro Teilnehmer mal Kohortengröße mal Jahre auf der einen Seite, einmalige Entwicklung plus Betrieb auf der anderen. Je größer und stabiler Ihre Jahrgänge, desto früher kippt die Rechnung. Dazu kommt ein Posten, der selten in der Kalkulation auftaucht: Fragenpool und Didaktik bleiben Ihr Eigentum.
+
+Damit das nicht einseitig klingt: Bei kleinen Kohorten und Standardanforderungen ist ein gemietetes Tool die bessere Wahl. Individualentwicklung rechnet sich über Menge, Spezifität und Dauer. Fehlt eines davon, lassen Sie es.
+
+## DSGVO, Datenhoheit und Förderfähigkeit
+
+Bei geförderten Maßnahmen verarbeiten Sie Daten von Menschen in oft prekären Lebenslagen, teilweise im Auftrag der Agentur für Arbeit. Vier Punkte gehören deshalb in die Anforderungsliste, bevor die erste Zeile Code entsteht:
+
+- **Hosting in Deutschland oder der EU**, mit Auftragsverarbeitungsvertrag und sauberem Lösch- und Rollenkonzept.
+- **KI mit Trainingsdaten-Opt-out.** Antworten und Fehler Ihrer Teilnehmenden dürfen nicht im Training fremder Modelle landen. Wer die volle Kontrolle braucht, betreibt offene Modelle selbst; die Abwägung dazu steht in unserem Beitrag zu [individueller KI mit offenen Modellen](/de/blog/individuelle-ki-open-source-modelle).
+- **Barrierefreiheit nach BFSG**, für Ihre Zielgruppe praktisch relevant und für die Zulassung nicht verhandelbar.
+- **Eigentum an Code und Inhalten**, vertraglich vor Projektstart geregelt, damit Sie nicht dauerhaft an einen Anbieter gebunden sind.
+
+Welche Fragen Sie einem Anbieter zu KI und Datenschutz stellen sollten, steht im [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+Wie das in der Praxis aussieht, zeigt der Einsatz von LearnSlice in einem geförderten Forschungsprojekt an der FH Dortmund:
+
+> "Wir haben die quizbasierte KI-Plattform über verschiedene Lehrmethoden hinweg eingesetzt, vom Inverted Classroom bis zu quizbasierten Hausaufgaben. Die Software hat die Motivation der Studierenden gesteigert und ihnen geholfen, Prüfungen erfolgreicher zu bestehen. Sie passt sich nahtlos an individuelle Lernbedürfnisse an, genau das, was moderne Hochschullehre braucht."
+>
+> **Prof. Dr. Carsten Wolff**, Vorstand des IDiAL, FH Dortmund
+
+Weitere Belege aus dem Hochschulpilot finden Sie unter [Forschung und Evidenz](/de/forschung).
+
+## In vier Schritten zur eigenen Prüfungsplattform
+
+1. **Stoffplan und Fragenpool sichten.** Liegt der amtliche Stoffplan vor, und lassen sich Ihre Fragen einzelnen Lernzielen zuordnen? Das ist die Grundlage, alles Weitere ist Technik.
+2. **Eine Prüfung als Pilot auswählen.** Nicht das ganze Portfolio auf einmal, sondern eine Prüfung, eine Kohorte und ein messbares Ziel: die Bestehensquote dieser Gruppe.
+3. **Erste Version in 6 bis 8 Wochen.** Ein Sachgebiet vollständig, Prüfungssimulation im Originalformat, echte Teilnehmende. Diesen ersten Stand schneiden wir bewusst auf ein einziges Sachgebiet zu, weil sich erst am echten Nutzungsverhalten zeigt, welche Funktion als Nächstes zählt. Was danach gebaut wird, entscheiden die Ergebnisse der Gruppe und kein Konzeptpapier.
+4. **Auf weitere Prüfungen ausrollen.** Sobald die Struktur steht, ist die zweite Prüfung überwiegend Inhaltsarbeit. Hier entsteht der Abstand zu Anbietern, die weiter mit PDF und Präsenzunterricht arbeiten.
+
+Wenn Sie auf eine geregelte Prüfung vorbereiten und heute mit einem System arbeiten, das den Prüfungsstoff nicht kennt, lohnt sich ein Gespräch über den ersten Baustein. Wie wir als Entwicklungspartner arbeiten, steht auf der Seite [Lösungen](/de/loesungen).
+
+
+## Häufig gestellte Fragen
+
+### Warum reicht ein Standard-LMS für die Prüfungsvorbereitung oft nicht?
+
+Ein Standard-LMS ist als Verteilsystem für Inhalte gebaut: Kurs anlegen, Material hochladen, Abschluss dokumentieren. Prüfungsvorbereitung ist etwas anderes. Sie braucht eine Struktur, die dem amtlichen Stoffplan folgt, ein Fragenformat, das der echten Prüfung entspricht, eine Wiederholungslogik, die gezielt die Schwächen einer Person angeht, und eine Auswertung, die vor der Prüfung sagt, wer noch nicht so weit ist. Diese vier Dinge sind in Standardprodukten selten vorgesehen.
+
+### Wie läuft die Sachkundeprüfung nach § 34a GewO ab?
+
+Die Prüfung wird von der IHK abgenommen und hat einen schriftlichen und einen mündlichen Teil. Der schriftliche Teil dauert 120 Minuten. Seit dem 1. Juli 2025 umfasst er 82 Multiple-Choice-Aufgaben mit insgesamt 120 Punkten, bestanden ab 60 Punkten, und es gibt Teilpunkte für teilweise richtige Antworten. Wer besteht, wird zum mündlichen Teil von rund 15 Minuten zugelassen, der in Gruppen von bis zu fünf Personen stattfindet und mit Situationsaufgaben arbeitet.
+
+### Welche Themen deckt die Sachkundeprüfung ab?
+
+Nach § 7 der Bewachungsverordnung sind es sieben Sachgebiete: Recht der öffentlichen Sicherheit und Ordnung einschließlich Gewerberecht, Datenschutzrecht, Bürgerliches Gesetzbuch, Straf- und Strafverfahrensrecht einschließlich Umgang mit Waffen, Unfallverhütungsvorschriften für Wach- und Sicherungsdienste, Umgang mit Menschen einschließlich Deeskalation und interkultureller Kompetenz sowie Grundzüge der Sicherheitstechnik. Der Rahmenstoffplan der IHK-Organisation legt zusätzlich Taxonomiestufen fest, also die Tiefe, in der ein Thema beherrscht werden muss.
+
+### Was kostet eine eigene Plattform für die Prüfungsvorbereitung?
+
+Als Orientierung: Eine individuelle Lernplattform liegt nach Angaben spezialisierter Entwicklungsdienstleister bei etwa 13.000 bis 90.000 Euro, je nach Umfang. Ein erster nutzbarer Stand mit einem Sachgebiet und funktionierender Prüfungssimulation ist häufig in 6 bis 8 Wochen erreichbar, eine vollständige Lösung in 3 bis 6 Monaten. Dazu kommen laufende Kosten für Betrieb und Weiterentwicklung.
+
+### Rechnet sich das gegenüber einer Lizenz pro Teilnehmer?
+
+Das hängt an Ihren Kohortengrößen. Eine Lizenz pro Teilnehmer skaliert mit Ihrem Wachstum nach oben, eine eigene Plattform ist eine einmalige Investition plus Betrieb. Wer dauerhaft große Gruppen durch dieselbe Prüfung führt, erreicht den Break-even meist innerhalb weniger Jahrgänge. Dazu kommt, dass Ihr Fragenpool und Ihre Didaktik in Ihrem Eigentum bleiben statt im System eines Anbieters.
+
+### Ist eine eigene Lernplattform mit dem Bildungsgutschein vereinbar?
+
+Ja, sofern Ihre Maßnahme AZAV-zugelassen bleibt. Wichtig ist, dass die Plattform genau die Nachweise erzeugt, die eine Zertifizierungsstelle sehen will: dokumentierte Lernzeiten, insbesondere getrennt ausgewiesene synchrone Lernzeit, nachvollziehbare Teilnahme und Barrierefreiheit nach dem BFSG. Diese Anforderungen gehören von Anfang an in die Anforderungsliste, nicht nachträglich.
+
+### Für welche anderen Prüfungen funktioniert derselbe Aufbau?
+
+Für jede Prüfung mit veröffentlichtem Stoffplan und festem Prüfungsformat. Dazu zählen die weiteren IHK-Sachkundeprüfungen nach § 34d, § 34f und § 34i GewO, die Ausbildereignungsprüfung nach AEVO, Fachkundeprüfungen im Güterkraftverkehr und im Gefahrgutbereich, Fortbildungsprüfungen zum Fachwirt oder Betriebswirt sowie Qualifikationen im Pflege- und Betreuungsbereich. Der Aufbau bleibt gleich, nur Stoffplan und Fragenpool wechseln.
+
+### Wie viele fallen bei IHK-Prüfungen durch?
+
+Für die Sachkundeprüfung nach § 34a GewO veröffentlicht die IHK-Organisation keine bundesweite Quote. Für IHK-Fortbildungsprüfungen insgesamt gibt es sie: Nach der bundesweiten IHK-Fortbildungsstatistik der DIHK für das Berichtsjahr 2024 traten 54.405 Menschen an, bestanden haben 38.570. Das entspricht rund 71 Prozent, es fällt also fast jede dritte Prüfung durch. Bei der Geprüften Schutz- und Sicherheitskraft (IHK) lag die Quote im selben Jahr bei 596 von 938 Teilnehmenden, rund 64 Prozent.
+
+### Was passiert, wenn sich die Prüfung oder der Stoffplan ändert?
+
+Bei fertig produzierten Kursinhalten warten Sie auf ein Update des Anbieters oder kaufen neu ein. Zum 1. Juli 2025 wurde der schriftliche Teil der Sachkundeprüfung nach § 34a GewO von 72 Aufgaben und 100 Punkten auf 82 Aufgaben und 120 Punkte mit Teilpunktvergabe umgestellt. Jedes vorproduzierte Modul, das die alte Struktur erklärte, war damit überholt. In einer eigenen Plattform ändern Sie Punktlogik, Stoffplanstruktur und die betroffenen Fragen selbst, in der Regel an einem Arbeitstag.
+
+### Brauchen wir dafür eigene IT-Leute?
+
+Für den laufenden Betrieb nicht. Hosting, Wartung und technische Updates übernimmt üblicherweise der Entwicklungspartner im Rahmen des Betriebsvertrags. Im Haus brauchen Sie eine fachliche Ansprechperson: jemanden, der den Stoffplan kennt und entscheidet, welche Frage zu welchem Lernziel gehört und in welcher Anforderungstiefe. Das ist eine didaktische Rolle, keine technische, und sie liegt meist ohnehin schon bei Ihrer Lehrgangsleitung.
+
+### Wir haben unsere Inhalte schon. Was passiert damit?
+
+Sie sind das Ausgangsmaterial, und das ist der schnellste Weg zu einem ersten nutzbaren Stand. Skripte, Präsentationen, Handouts und Fragensammlungen aus Word, Excel oder PDF lassen sich einlesen. Der Aufwand steckt weniger im Import als in der Zuordnung: Jede Frage braucht ein Lernziel aus dem Stoffplan und eine Anforderungstiefe, damit die adaptive Logik etwas zu steuern hat, und Ihre Skripte brauchen eine saubere Gliederung, damit ein KI-Lernbegleiter daraus belegbar antworten kann. Einen großen Teil dieser Zuordnung übernimmt heute KI, den Rest bestätigt Ihre Lehrgangsleitung.
 
 ---
 
@@ -3465,7 +3895,7 @@ Es gibt drei Wege, und der richtige hängt davon ab, wie speziell Ihre Inhalte s
 
 Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Abo wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb, und Sie nutzen dieselbe Lösung über Jahre.
 
-Ab einer gewissen Nutzerzahl kann die Entwicklung unter den auflaufenden Lizenzgebühren liegen, und sie passt exakt zu Ihnen statt umgekehrt. Deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen schulen: Bildungsträger, Hochschulen und Unternehmen mit vielen Lernenden.
+Ab einer gewissen Nutzerzahl kann die Entwicklung unter den auflaufenden Lizenzgebühren liegen, und sie passt exakt zu Ihnen statt umgekehrt. Deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen schulen: Bildungsträger, Hochschulen und Unternehmen mit vielen Lernenden. Für Kursanbieter, die auf eine geregelte Prüfung vorbereiten, haben wir das im Leitfaden zur [Lernplattform für Bildungsträger](/de/blog/lernplattform-bildungstraeger) durchgerechnet.
 
 **Unsicher, ob kaufen, White-Label oder entwickeln lassen?** Umreißen Sie Ihren Fall in einem kostenlosen 30-minütigen Strategiegespräch, ohne Pitch, und Sie erhalten eine ehrliche Einschätzung, welcher Weg passt, plus einen Preisrahmen. Oder fordern Sie eine [unverbindliche Kostenschätzung](/de/loesungen#project-inquiry) an.
 
@@ -3612,7 +4042,7 @@ Der Finanzierungshebel ist für Bildungsträger oft entscheidend, weil die Mitte
 
 ## So gelingt der Einstieg
 
-Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen an einem klar abgegrenzten Anwendungsfall, etwa der Nachweisführung oder einem KI-gestützten Übungsbereich, bevor Sie sich auf ein Gesamtprojekt festlegen. So bleibt das Risiko gering und der Nutzen wird früh sichtbar.
+Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen an einem klar abgegrenzten Anwendungsfall, etwa der Nachweisführung oder einem KI-gestützten Übungsbereich, bevor Sie sich auf ein Gesamtprojekt festlegen. So bleibt das Risiko gering und der Nutzen wird früh sichtbar. Wenn es dabei um Ihr Kursangebot selbst geht und nicht nur um die Nachweisführung, lesen Sie weiter unter [Lernplattform für Bildungsträger: eigene Kurse digitalisieren](/de/blog/lernplattform-bildungstraeger).
 
 Wo Sie heute stehen, sehen Sie in wenigen Minuten mit dem [Digital-Readiness-Check](/de/digital-readiness-check). Für einen konkreten Fahrplan aus Ihren Handlungsfeldern vereinbaren Sie ein kostenloses Strategiegespräch, ohne Pitch. Wie wir individuelle Lösungen bauen, zeigt die Seite zu unseren [Lösungen](/de/loesungen).
 
@@ -3728,7 +4158,7 @@ Es gibt drei Wege, und der richtige hängt davon ab, wie speziell Ihre Anforderu
 | Eigentum und Datenhoheit | beim Anbieter | bei Ihnen |
 | Skalierung und Erweiterung | im Rahmen des Anbieters | ohne feste Grenze |
 
-Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Standard-LMS wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb und Weiterentwicklung, und Sie nutzen dieselbe Lösung über Jahre. Genau deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen schulen oder ausbilden: Bildungsträger, Hochschulen und Universitäten, Weiterbildungs- und Kursanbieter sowie Unternehmen mit vielen Lernenden. Ab einer gewissen Nutzerzahl liegt die maßgeschneiderte Lösung unter den auflaufenden Lizenzgebühren, und sie passt exakt zu Ihnen statt umgekehrt.
+Der Unterschied, den viele erst spät sehen, sind die Kosten über die Zeit. Ein Standard-LMS wird pro Nutzer und Monat abgerechnet, in der Regel dauerhaft: Je mehr Lernende Sie haben und je länger Sie es nutzen, desto teurer wird es, und am Ende gehört Ihnen nichts. Individualentwicklung ist eine einmalige Investition. Sie zahlen einmal für den Aufbau, danach nur noch Betrieb und Weiterentwicklung, und Sie nutzen dieselbe Lösung über Jahre. Genau deshalb rechnet sich der eigene Weg vor allem für alle, die große Gruppen schulen oder ausbilden: Bildungsträger, Hochschulen und Universitäten, Weiterbildungs- und Kursanbieter sowie Unternehmen mit vielen Lernenden. Ab einer gewissen Nutzerzahl liegt die maßgeschneiderte Lösung unter den auflaufenden Lizenzgebühren, und sie passt exakt zu Ihnen statt umgekehrt. Wie das für Kursanbieter aussieht, die auf eine geregelte Prüfung vorbereiten, zeigt unser Leitfaden zur [Lernplattform für Bildungsträger](/de/blog/lernplattform-bildungstraeger).
 
 Selbst entwickeln ist die vierte Option und lohnt sich nur, wenn Sie ein eigenes Team aus Didaktik und Softwareentwicklung haben. Für die meisten Unternehmen ist die ehrliche Antwort: Standardsoftware, solange die Anforderungen Standard sind, und Individualentwicklung, sobald die Lösung wirklich passen, Ihnen gehören und mit KI wachsen soll.
 
@@ -6205,7 +6635,7 @@ Einen umfassenderen Überblick, wie Sie Ausbilderzeit über alle Ausbildungsakti
 
 Digitale IHK-Prüfungsvorbereitung mit KI-Unterstützung ist effizienter, günstiger und effektiver als traditionelle Methoden. Azubis profitieren von personalisierten Lernpfaden und unbegrenzten Übungsmöglichkeiten. Unternehmen sparen Kosten für externe Kurse und Ausbilderzeit.
 
-**Möchten Sie sehen, wie KI-gestützte IHK-Prüfungsvorbereitung funktioniert?** [Buchen Sie eine kostenlose Demo](/de/companies) und erleben Sie LearnSlice in Aktion. Erfahren Sie auch, wie Sie [Ihre gesamten Ausbildungskosten senken](/de/blog/ausbildungskosten-senken) können.
+**Möchten Sie sehen, wie KI-gestützte IHK-Prüfungsvorbereitung funktioniert?** [Buchen Sie eine kostenlose Demo](/de/companies) und erleben Sie LearnSlice in Aktion. Erfahren Sie auch, wie Sie [Ihre gesamten Ausbildungskosten senken](/de/blog/ausbildungskosten-senken) können. Bildungsträger und Kursanbieter, die eigene Lehrgänge auf eine Sachkundeprüfung ausrichten, finden den passenden Weg unter [Lernplattform für Bildungsträger](/de/blog/lernplattform-bildungstraeger).
 
 
 ## Häufig gestellte Fragen

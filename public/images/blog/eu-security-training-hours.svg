@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 589" role="img" aria-label="Bar chart of the legal minimum for mandatory basic private security training by country: Romania 360 hours, Sweden 300, Bulgaria 260, Poland 245, Denmark 222, Hungary 200, Spain 180, France 175, Norway 168, Germany and Slovakia 40, Estonia 24. Source: CoESS and UNI Europa, Private Security Training in Europe, March 2026.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="520" height="589" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">The same job, 24 mandatory hours or</text>
+  <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">360</text>
+  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Legal minimum for basic private security training, hours,</text>
+  <text x="24" y="107" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">by country</text>
+  <text x="24" y="142" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Romania</text>
+  <rect x="120" y="129" width="330.0" height="18" rx="4" fill="#786d60"/>
+  <text x="458.0" y="142" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">360</text>
+  <text x="24" y="168" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Sweden</text>
+  <rect x="120" y="155" width="275.0" height="18" rx="4" fill="#786d60"/>
+  <text x="403.0" y="168" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">300</text>
+  <text x="24" y="194" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Bulgaria</text>
+  <rect x="120" y="181" width="238.3" height="18" rx="4" fill="#786d60"/>
+  <text x="366.33333333333337" y="194" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">260</text>
+  <text x="24" y="220" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Poland</text>
+  <rect x="120" y="207" width="224.6" height="18" rx="4" fill="#786d60"/>
+  <text x="352.58333333333337" y="220" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">245</text>
+  <text x="24" y="246" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Denmark</text>
+  <rect x="120" y="233" width="203.5" height="18" rx="4" fill="#786d60"/>
+  <text x="331.5" y="246" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">222</text>
+  <text x="24" y="272" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Hungary</text>
+  <rect x="120" y="259" width="183.3" height="18" rx="4" fill="#786d60"/>
+  <text x="311.33333333333337" y="272" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">200</text>
+  <text x="24" y="298" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Spain</text>
+  <rect x="120" y="285" width="165.0" height="18" rx="4" fill="#786d60"/>
+  <text x="293.0" y="298" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">180</text>
+  <text x="24" y="324" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">France</text>
+  <rect x="120" y="311" width="160.4" height="18" rx="4" fill="#786d60"/>
+  <text x="288.41666666666663" y="324" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">175</text>
+  <text x="24" y="350" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Norway</text>
+  <rect x="120" y="337" width="154.0" height="18" rx="4" fill="#786d60"/>
+  <text x="282.0" y="350" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">168</text>
+  <text x="24" y="376" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">Germany</text>
+  <rect x="120" y="363" width="36.7" height="18" rx="4" fill="#cc7a3e"/>
+  <text x="164.66666666666666" y="376" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600">40</text>
+  <text x="24" y="402" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Slovakia</text>
+  <rect x="120" y="389" width="36.7" height="18" rx="4" fill="#786d60"/>
+  <text x="164.66666666666666" y="402" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">40</text>
+  <text x="24" y="428" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Estonia</text>
+  <rect x="120" y="415" width="22.0" height="18" rx="4" fill="#786d60"/>
+  <text x="150.0" y="428" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">24</text>
+  <text x="24" y="467" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">The Netherlands runs a one-year dual system instead. Longer</text>
+  <text x="24" y="485" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">vocational routes exist above these minimums: Spain to 400</text>
+  <text x="24" y="503" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">hours, Hungary to 250, Denmark to two years.</text>
+  <text x="24" y="529" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Source: CoESS and UNI Europa, Private Security Training in</text>
+  <text x="24" y="547" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Europe, March 2026 (EU-funded INTEL project, 26 countries</text>
+  <text x="24" y="565" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">surveyed).</text>
+</svg>

@@ -1,12 +1,48 @@
 # LearnSlice
 
-> AI-powered vocational training platform for German apprenticeships (Ausbildung)
+> German e-learning software company. Two lines of business: a custom development partner that builds learning platforms, AI tutors and assessment software for organisations that own their content, and LearnSlice, an AI learning platform for German apprenticeship training (Ausbildung).
 
 ## About
 
-LearnSlice is a B2B SaaS platform that automates mentoring for apprentices (Azubis) in German companies. It combines IHK exam-aligned learning paths with company-specific knowledge into personalized AI coaching - making apprentices job-ready in 8 weeks instead of 6 months.
+LearnSlice is based in Düsseldorf and builds learning software that is grounded in the customer's own curriculum, hosted in Germany or the EU, and owned by the customer. It operates in two ways:
 
-## Key Features
+1. **Engineering partner (custom development).** Organisations that already have content, curricula and question banks commission LearnSlice to build the software around them: AI tutors, learning platforms, LMS, quiz and assessment systems, exam preparation, and learning analytics. The customer owns the result.
+2. **LearnSlice platform (product).** A B2B SaaS platform that automates mentoring for apprentices (Azubis) in German companies, combining IHK exam-aligned learning paths with company-specific knowledge into personalised AI coaching.
+
+## Custom E-Learning Development
+
+What LearnSlice engineers for clients:
+
+- AI tutors and chatbots: white-label tutoring assistants with adaptive paths and source-cited answers, grounded in the client's curriculum
+- Learning platforms and LMS: built from scratch or on Moodle, Open edX and other systems
+- Quiz and assessment platforms: curriculum-aligned question banks, exams and competency checks with automated scoring
+- Exam and certification preparation: adaptive preparation for IHK and professional certifications, mapped to the competency framework
+- Compliance training: mandatory training for regulated fields, with audit trails, certificates and renewal reminders
+- Authoring and content tools, mobile learning apps, learning analytics dashboards
+- Moodle setup, theming, custom plugins, SSO and integrations
+- White-label and sector solutions for banks, insurers, publishers and other regulated fields
+
+How projects run: discovery and scoping, design and curriculum alignment, build and integration, launch and ongoing support.
+
+## Sovereignty and Compliance
+
+- Learner data is processed on the client's infrastructure. No learner data is sent to third-party AI providers, and none is used to train external models.
+- Full GDPR compliance with a data processing agreement (AVV). Hosting in Germany, the EU, or on premise.
+- EU AI Act ready: human oversight, transparency and documentation built in, since educational AI can fall under the high-risk category.
+- Retrieval grounded on the client's verified material, so answers cite their sources.
+- White-label: the client owns the deployment, the content, and the relationship with their learners.
+
+## Who LearnSlice Builds For
+
+- Training providers (Bildungsträger), retraining and rehabilitation providers
+- Course providers preparing candidates for regulated exams, for example the Sachkundeprüfung nach § 34a GewO, § 34d, AEVO, dangerous goods (ADR) and advanced professional qualifications
+- Companies and corporate L&D: onboarding, upskilling and compliance training
+- Chambers and public sector: IHK, HWK and public agencies
+- Banking, insurance and publishers
+- Healthcare and other regulated fields
+- German SMEs with apprentices (Ausbildungsbetriebe), vocational schools (Berufsschulen)
+
+## LearnSlice Platform: Features
 
 - IHK exam preparation aligned to regional requirements
 - AI-powered 24/7 personal coaching and adaptive learning paths
@@ -16,19 +52,22 @@ LearnSlice is a B2B SaaS platform that automates mentoring for apprentices (Azub
 - Gamification with points, badges, and leaderboards
 - GDPR-compliant, hosted in Germany
 
-## Results
+## LearnSlice Platform: Results
 
-- 65% faster time to productivity (4-6 months reduced to 8 weeks)
-- €32K–€41K saved per apprentice
+- 65% faster time to productivity (4 to 6 months reduced to 8 weeks)
+- €32K to €41K saved per apprentice
 - 50% reduction in trainer time (€10K savings per apprentice)
 - Dropout reduction from 30% to 15%
 
-## Target Audience
+## Research and Evidence
 
-- German SMEs with apprentices (Ausbildungsbetriebe)
-- Vocational schools (Berufsschulen)
-- IHK/HWK chambers and regional agencies
-- Corporate training departments
+LearnSlice is co-developed with the IDiAL institute at FH Dortmund in a research project funded by the German Federal Ministry for Economic Affairs and Energy (BMWE, grant 16GM200302). In May 2026, 50 master's students used it to prepare for a university exam:
+
+- Every answer in the system evaluation carried a valid citation back to its source passage, with no invented references
+- 80% of students reached complete or near-complete understanding of the exam topic
+- 70% found the personalised learning pace appropriate for their needs
+
+Reference customers include FH Dortmund, the University of Cologne, and Carl-Severing-Berufskolleg.
 
 ## Vocational Professions Covered
 
@@ -47,10 +86,24 @@ LearnSlice is a B2B SaaS platform that automates mentoring for apprentices (Azub
 - Location: Düsseldorf, Germany
 - Contact: info@learnslice.com
 
+## Key Guides
+
+- Learning platform for training providers, digitising your own courses: https://learnslice.com/blog/learning-platform-training-providers
+- Lernplattform für Bildungsträger, eigene Kurse digitalisieren: https://learnslice.com/de/blog/lernplattform-bildungstraeger
+- Custom e-learning development, cost and process: https://learnslice.com/blog/custom-e-learning-development-costs
+- Custom AI tutor development, build, buy or white-label: https://learnslice.com/blog/custom-ai-tutor-development
+- Custom AI on open-source models, personalised and sovereign: https://learnslice.com/blog/custom-ai-open-source-models
+- GDPR-compliant AI tools, the 7-point check: https://learnslice.com/blog/gdpr-compliant-ai-tools-for-trainers
+- AZAV und Digitalisierung für Bildungsträger: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
+
 ## Links
 
 - Website: https://learnslice.com
 - German: https://learnslice.com/de/
+- Custom e-learning development and engineering services: https://learnslice.com/solutions
+- Individuelle E-Learning-Entwicklung: https://learnslice.com/de/loesungen
+- Research and evidence: https://learnslice.com/research
+- Blog: https://learnslice.com/blog
 - Demo: https://learnslice.com/#demo-request
-- Custom e-learning solutions: https://learnslice.com/de/loesungen
 - Digital-Readiness-Check (AZAV/BFSG/KI self-assessment for German training providers): https://learnslice.com/de/digital-readiness-check
+- Full content feed for AI crawlers: https://learnslice.com/llms-full.txt

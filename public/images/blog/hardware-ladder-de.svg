@@ -1,34 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 392" role="img" aria-label="Worauf offene Modelle laufen. Ein quantisiertes Modell mit 20 bis 30 Milliarden Parametern läuft auf einer Mittelklasse-GPU mit 24 GB für niedrige Hunderte Euro pro Monat. Ein Modell mit 120 Milliarden Parametern wie gpt-oss läuft auf einer einzelnen 80- bis 96-GB-GPU ab etwa 900 Euro pro Monat. Die größten offenen Modelle ab 200 Milliarden Parametern brauchen einen Multi-GPU-Knoten für vierstellige Beträge pro Monat.">
-  <rect x="0" y="0" width="840" height="392" rx="16" fill="#2a2622"/>
-  <text x="40" y="42" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" font-weight="600" fill="#faf8f4">Worauf es läuft</text>
-  <text x="40" y="66" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92">Offene Modelle wurden effizient: größere Modelle, weiterhin moderate Hardware</text>
-
-  <rect x="40" y="86" width="760" height="76" rx="12" fill="#37322c" stroke="#46402f"/>
-  <rect x="40" y="86" width="7" height="76" rx="3.5" fill="#a996ff"/>
-  <text x="72" y="122" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">20-30B</text>
-  <text x="72" y="142" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">quantisiert</text>
-  <text x="330" y="118" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Eine Mittelklasse-GPU</text>
-  <text x="330" y="138" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">eine 24-GB-Karte</text>
-  <text x="620" y="118" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#faf8f4">niedrige Hunderte</text>
-  <text x="620" y="138" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">&#8364; / Monat</text>
-
-  <rect x="40" y="174" width="760" height="76" rx="12" fill="#37322c" stroke="#46402f"/>
-  <rect x="40" y="174" width="7" height="76" rx="3.5" fill="#8a6cff"/>
-  <text x="72" y="210" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">120B</text>
-  <text x="72" y="230" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">z. B. gpt-oss</text>
-  <text x="330" y="206" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Eine 80-96-GB-GPU</text>
-  <text x="330" y="226" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">ein einzelner Server</text>
-  <text x="620" y="206" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#faf8f4">ab ~900</text>
-  <text x="620" y="226" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">&#8364; / Monat</text>
-
-  <rect x="40" y="262" width="760" height="76" rx="12" fill="#37322c" stroke="#46402f"/>
-  <rect x="40" y="262" width="7" height="76" rx="3.5" fill="#6a4ae0"/>
-  <text x="72" y="298" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="700" fill="#faf8f4">200B+</text>
-  <text x="72" y="318" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">größte offene Modelle</text>
-  <text x="330" y="294" font-family="'Inter', system-ui, sans-serif" font-size="14.5" font-weight="600" fill="#faf8f4">Multi-GPU-Knoten</text>
-  <text x="330" y="314" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">8 oder mehr GPUs</text>
-  <text x="620" y="294" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#faf8f4">vierstellig</text>
-  <text x="620" y="314" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#a89e92">&#8364; / Monat</text>
-
-  <text x="40" y="372" font-family="'Inter', system-ui, sans-serif" font-size="11.5" fill="#8a8178">EU-Anbieter: Hetzner, OVHcloud, Scaleway, IONOS. Preise Richtwerte, Stand 2026.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 528" role="img" aria-label="Übersicht der Hardware-Stufen für offene Modelle: 20 bis 30 Milliarden Parameter quantisiert laufen auf einer Mittelklasse-GPU mit 24 GB für niedrige dreistellige Eurobeträge pro Monat; 120 Milliarden auf einer 80- bis 96-GB-GPU ab rund 900 Euro; 200 Milliarden und mehr auf einem Multi-GPU-Knoten im vierstelligen Bereich.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="520" height="528" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Worauf es läuft</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Offene Modelle wurden effizient: größere Modelle, weiterhin</text>
+  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">moderate Hardware</text>
+  <rect x="24" y="100" width="472" height="108" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="44" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" letter-spacing="0.05em">20-30B, QUANTISIERT</text>
+  <text x="44" y="172" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Eine Mittelklasse-GPU: eine einzelne 24-GB-Karte</text>
+  <text x="44" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Niedrige Hunderte Euro pro Monat</text>
+  <rect x="24" y="220" width="472" height="108" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="44" y="246" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">120B, ZUM BEISPIEL GPT-OSS</text>
+  <text x="44" y="292" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Eine 80- bis 96-GB-GPU: ein einzelner Server</text>
+  <text x="44" y="318" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ab rund 900 Euro pro Monat</text>
+  <rect x="24" y="340" width="472" height="108" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="44" y="366" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">200B UND MEHR, GRÖSSTE OFFENE MODELLE</text>
+  <text x="44" y="412" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Multi-GPU-Knoten: acht oder mehr GPUs</text>
+  <text x="44" y="438" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Vierstellig pro Monat</text>
+  <text x="24" y="486" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">EU-Anbieter: Hetzner, OVHcloud, Scaleway, IONOS. Preise sind</text>
+  <text x="24" y="504" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Richtwerte, Stand 2026.</text>
 </svg>
