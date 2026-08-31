@@ -169,6 +169,22 @@
 	.prose tbody tr:hover {
 		@apply bg-surface/50;
 	}
+
+	/* Narrow screens: 3-column tables overflowed the prose column and were
+	   clipped by the body's overflow-x:hidden, hiding the last column entirely.
+	   Tighten the cells and let long German compounds break so the table fits. */
+	@media (max-width: 640px) {
+		.prose table {
+			@apply text-xs;
+		}
+
+		.prose thead th,
+		.prose tbody td {
+			@apply px-2 py-2;
+			overflow-wrap: anywhere;
+			hyphens: auto;
+		}
+	}
 }
 
 @layer utilities {

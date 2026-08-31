@@ -1,45 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" role="img" aria-label="Illustrative cost comparison. A closed API bills per token, so its monthly cost rises steadily with usage. A self-hosted open model has a flat monthly cost. The two lines cross at a break-even point; below roughly 10 to 50 million tokens a month an API is cheaper, above it self-hosting is cheaper.">
-  <defs>
-    <marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#8a8178"/>
-    </marker>
-  </defs>
-
-  <!-- panel -->
-  <rect x="0" y="0" width="820" height="480" rx="16" fill="#2a2622"/>
-
-  <!-- title -->
-  <text x="56" y="46" font-family="'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="600" fill="#faf8f4">When self-hosting starts to pay off</text>
-
-  <!-- sweet-spot band -->
-  <rect x="248" y="88" width="150" height="312" rx="5" fill="#7c5cfc" opacity="0.11"/>
-  <text x="323" y="107" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#cfc7be">~10 to 50M tokens / month</text>
-
-  <!-- axes -->
-  <line x1="90" y1="84" x2="90" y2="400" stroke="#5a5249" stroke-width="1.5" marker-start="url(#ah)"/>
-  <line x1="90" y1="400" x2="672" y2="400" stroke="#5a5249" stroke-width="1.5" marker-end="url(#ah)"/>
-  <text x="380" y="440" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92" letter-spacing="0.02em">Monthly usage (tokens)</text>
-  <text transform="rotate(-90 34 244)" x="34" y="244" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#a89e92" letter-spacing="0.02em">Monthly cost</text>
-
-  <!-- zone labels -->
-  <text x="168" y="388" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#a89e92">API cheaper</text>
-  <text x="536" y="388" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-style="italic" fill="#a89e92">self-hosting cheaper</text>
-
-  <!-- closed API line (per token, rising) -->
-  <polyline points="90,372 660,132" fill="none" stroke="#cc7a3e" stroke-width="2.75" stroke-linecap="round"/>
-  <!-- self-hosted line (flat) -->
-  <polyline points="90,290 660,285" fill="none" stroke="#7c5cfc" stroke-width="2.75" stroke-linecap="round"/>
-
-  <!-- break-even marker -->
-  <circle cx="285" cy="288" r="5.5" fill="#2a2622" stroke="#faf8f4" stroke-width="2"/>
-  <text x="285" y="270" text-anchor="middle" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#faf8f4">break-even</text>
-
-  <!-- direct line labels -->
-  <text x="672" y="128" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#cc7a3e">Closed API</text>
-  <text x="672" y="146" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#a89e92">cost scales per token</text>
-  <text x="672" y="281" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#9a80ff">Self-hosted</text>
-  <text x="672" y="299" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#a89e92">flat once running</text>
-
-  <!-- caption -->
-  <text x="56" y="466" font-family="'Inter', system-ui, sans-serif" font-size="12.5" fill="#8a8178">Illustrative. The crossover depends on your model, your hardware, and how fully the GPUs are used.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 444" role="img" aria-label="Line chart: closed-API cost scales per token with usage while self-hosted cost stays flat once running. The illustrative crossover sits at roughly 10 to 50 million tokens per month; below it the API is cheaper, above it self-hosting is.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="520" height="444" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">When self-hosting starts to pay off</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Break-even at roughly 10 to 50M tokens per month</text>
+  <text x="24" y="86" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Monthly cost</text>
+  <path d="M56,96 L56,266 L496,266" stroke="#46402f" stroke-width="1.5" fill="none"/>
+  <path d="M56,246 L496,110" stroke="#cc7a3e" stroke-width="2.5" fill="none"/>
+  <path d="M56,166 L496,154" stroke="#786d60" stroke-width="2.5" fill="none"/>
+  <path d="M351,158 L351,266" stroke="#a89e92" stroke-width="1" stroke-dasharray="3 3"/>
+  <circle cx="351" cy="158" r="5.5" fill="#e8b07a"/>
+  <text x="343" y="144" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" text-anchor="end">break-even</text>
+  <text x="64" y="258" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">API cheaper</text>
+  <text x="492" y="258" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">self-hosting cheaper</text>
+  <text x="496" y="286" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Monthly usage (tokens)</text>
+  <rect x="24" y="306" width="12" height="12" rx="2" fill="#cc7a3e"/>
+  <text x="44" y="317" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Closed API</text>
+  <rect x="124.0" y="306" width="12" height="12" rx="2" fill="#786d60"/>
+  <text x="144.0" y="317" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Self-hosted</text>
+  <text x="24" y="358" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Closed API: cost scales per token. Self-hosted: flat once</text>
+  <text x="24" y="376" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">running.</text>
+  <text x="24" y="402" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Illustrative. The crossover depends on your model, your</text>
+  <text x="24" y="420" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">hardware, and how fully the GPUs are used.</text>
 </svg>

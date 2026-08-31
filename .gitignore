@@ -23,3 +23,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Python bytecode from the SVG generator scripts
+__pycache__/
