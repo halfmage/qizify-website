@@ -27,8 +27,7 @@ def bausteine(lang):
               ("3", "Adaptive repetition", "The learning path prioritises the subject areas where this learner is still weak"),
               ("4", "Mock exam in the real format", "Same task count, same scoring logic, same clock as the official exam"),
               ("5", "AI tutor grounded in your material", "Explains mistakes from your course content, not from the open internet")])
-    for n, ti, de_ in steps:
-        d.step(n, ti, de_, accent=(n == "4"))
+    d.steps(steps, accent_n="4")
     d.note("Ergebnis: belastbare Bestehensprognose je Teilnehmer und prüfsichere Nachweise für AZAV und Bildungsgutschein" if de else
            "Result: a defensible pass prediction per learner and audit-proof records for publicly funded training")
     return d.render(OUT + ("pruefungsplattform-bausteine-de.svg" if de else "pruefungsplattform-bausteine.svg"))
@@ -81,28 +80,33 @@ def aufbau(lang):
 # --------------------------------------------------------- 4. statisch vs aktiv
 def statisch(lang):
     de = lang == "de"
-    d = Doc("Vergleich, was mit den eigenen Kursinhalten passiert: im Standard-LMS werden Skript, Folien und Fragen zu PDF, Video und einmaligem Quiz, die lernende Person liest; in einer eigenen Plattform werden sie zu Fragen mit Lernziel, einem Lernpfad entlang des Stoffplans, adaptiver Wiederholung und einer Prüfungssimulation, die lernende Person wird gefragt und korrigiert."
+    d = Doc("Vergleich, was ein Standard-LMS und eine eigene Plattform aus demselben Kursmaterial machen: aus Skript und Folien wird ein PDF und ein Video, gegenüber einem Lernpfad entlang des Stoffplans; aus Fragen wird ein einmaliges Quiz, gegenüber Fragen mit Lernziel und Anforderungstiefe; aus Fortschritt wird ein Häkchen, gegenüber Wiederholung dessen, was noch nicht sitzt; und für die Prüfung selbst bietet das Standard-LMS nichts, während die eigene Plattform eine Prüfungssimulation im Originalformat fährt. Die lernende Person liest, oder sie wird gefragt und korrigiert."
             if de else
-            "Comparison of what happens to your own course material: in a standard LMS the script, slides and questions become a PDF, a video and a one-off quiz, and the learner reads; in a platform you own they become tagged questions, a syllabus path, adaptive repetition and a mock exam, and the learner is questioned and corrected.")
+            "Comparison of what a standard LMS and a platform you own each turn the same course material into: script and slides become a PDF and a video, against a path that follows the syllabus; questions become a one-off quiz, against questions each carrying an objective and a difficulty level; progress becomes a tick, against repetition of exactly what has not stuck; and for the exam itself a standard LMS offers nothing, where a platform you own runs a mock exam in the real format. The learner reads, or the learner is questioned.")
     d.head("Dieselben Inhalte, zwei sehr verschiedene Ergebnisse" if de else "The same content, two very different outcomes",
-           "Was mit Ihrem Material passiert, je nachdem worin Sie es ablegen" if de else
-           "What happens to your material, depending on what you put it into")
-    d.band("Ausgangspunkt in beiden Fällen: Ihre Skripte, Folien, Handouts und Übungsfragen" if de else
-           "The same starting point either way: your scripts, slides, handouts and practice questions")
-    d.arrow()
-    d.block("Standard-LMS oder Autorentool" if de else "Standard LMS or authoring tool",
-            (["Skript wird PDF zum Herunterladen", "Folien werden Video",
-              "Fragen werden einmaliges Quiz", "Fortschritt wird Häkchen"] if de else
-             ["Script becomes a PDF to download", "Slides become a video",
-              "Questions become a one-off quiz", "Progress becomes a tick"]),
-            pill="Ergebnis: die lernende Person liest." if de else "Result: the learner reads.")
-    d.block("Eigene Plattform" if de else "A platform you own",
-            (["Fragen mit Lernziel und Anforderungstiefe", "Lernpfad entlang des Stoffplans",
-              "Wiederholung dessen, was noch nicht sitzt", "Prüfungssimulation im Originalformat"] if de else
-             ["Questions carry an objective and a difficulty level", "A path that follows the syllabus",
-              "Repetition of what has not stuck", "A mock exam in the real format"]),
-            accent=True,
-            pill="Ergebnis: sie wird gefragt und korrigiert." if de else "Result: the learner is questioned.")
+           "Ihr Material, und was die jeweilige Software daraus macht" if de else
+           "Your material, and what each kind of software turns it into")
+    d.matrix(("Im Standard-LMS" if de else "In a standard LMS",
+              "In einer eigenen Plattform" if de else "In a platform you own"),
+             ([("Skript und Folien", "ein PDF zum Herunterladen, ein Video",
+                "ein Lernpfad entlang des Stoffplans"),
+               ("Fragen", "ein einmaliges Quiz",
+                "Lernziel und Anforderungstiefe bei jeder Frage"),
+               ("Fortschritt", "ein Häkchen",
+                "Wiederholung genau dessen, was noch nicht sitzt"),
+               ("die Prüfung selbst", None,
+                "eine Prüfungssimulation im Originalformat")] if de else
+              [("script and slides", "a PDF to download, a video",
+                "a path that follows the syllabus"),
+               ("questions", "a one-off quiz",
+                "an objective and a difficulty level on each"),
+               ("progress", "a tick",
+                "repetition of exactly what has not stuck"),
+               ("the exam itself", None,
+                "a mock exam in the real format")]),
+             absent="nichts" if de else "nothing",
+             foot=("Die lernende Person liest." if de else "The learner reads.",
+                   "Sie wird gefragt und korrigiert." if de else "The learner is questioned."))
     d.note("In beiden Fällen bleibt das Material Ihres. Der Unterschied ist, ob es abgelegt oder benutzt wird." if de else
            "The material stays yours either way. The difference is whether it is stored or used.")
     return d.render(OUT + ("inhalte-statisch-aktiv-de.svg" if de else "inhalte-statisch-aktiv.svg"))

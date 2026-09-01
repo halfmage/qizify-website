@@ -1,24 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 596" role="img" aria-label="Diagram: two layers turn an open base model into AI that is yours. Retrieval (RAG) answers from your own content and changes what the model knows. Fine-tuning (LoRA) takes on your style, formats and tasks and changes how it behaves. Both sit on one shared open base model.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 474" role="img" aria-label="Diagram: two layers turn an open base model into AI that is yours. Retrieval (RAG) answers from your own content and changes what the model knows. Fine-tuning (LoRA) takes on your style, formats and tasks and changes how it behaves. Both layers rest on one shared open base model.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="596" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="474" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">How a generic model becomes your AI</text>
-  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Two layers turn an open base model into AI that is yours</text>
-  <rect x="24" y="80" width="472" height="68" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="40" y="106" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Input: your content and documents, your tone, your formats</text>
-  <text x="40" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">and tasks</text>
-  <path d="M260,160 L260,176" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="24" y="186" width="472" height="106" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
-  <text x="44" y="212" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" letter-spacing="0.05em">RETRIEVAL (RAG)</text>
-  <text x="44" y="244" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Answers from your own content</text>
-  <text x="44" y="270" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Changes what the model knows</text>
-  <rect x="24" y="304" width="472" height="106" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="44" y="330" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">FINE-TUNING (LORA)</text>
-  <text x="44" y="362" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Your style, your formats and tasks</text>
-  <text x="44" y="388" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Changes how the model behaves</text>
-  <path d="M260,422 L260,438" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="24" y="448" width="472" height="68" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
-  <text x="40" y="474" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Both sit on one shared open base model and add up to your</text>
-  <text x="40" y="494" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">own custom AI</text>
-  <text x="24" y="554" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">One shared base, a per-client LoRA adapter and a per-client RAG</text>
-  <text x="24" y="572" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">index: personalized AI, with each client&#x27;s data kept separate.</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Two layers, resting on one shared base model</text>
+  <rect x="170" y="80" width="326" height="168" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="186" y="108" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Retrieval (RAG)</text>
+  <text x="186" y="128" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Answers from your own content</text>
+  <text x="186" y="148" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Changes what the model knows</text>
+  <text x="24" y="107.5" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">your content and</text>
+  <text x="24" y="124.5" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">documents</text>
+  <path d="M156,122.0 L164,122.0" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M170,164 L496,164" stroke="#46402f" stroke-width="1"/>
+  <text x="186" y="192" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Fine-tuning (LoRA)</text>
+  <text x="186" y="212" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Your style, your formats and tasks</text>
+  <text x="186" y="232" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Changes how the model behaves</text>
+  <text x="24" y="191.5" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">your tone and</text>
+  <text x="24" y="208.5" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">your formats</text>
+  <path d="M156,206.0 L164,206.0" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="160" y="248" width="346" height="52" rx="10" fill="#3a3128" stroke="#cc7a3e" stroke-width="1.5"/>
+  <text x="176" y="270" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600">One shared open base model</text>
+  <text x="176" y="289" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">The same model for every client</text>
+  <path d="M260,300 L260,316" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="24" y="326" width="472" height="68" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="40" y="352" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Adds up to your own custom AI: one LoRA adapter and one</text>
+  <text x="40" y="372" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">RAG index per client</text>
+  <text x="24" y="432" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">One shared base, a per-client LoRA adapter and a per-client RAG</text>
+  <text x="24" y="450" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">index: personalized AI, with each client&#x27;s data kept separate.</text>
 </svg>

@@ -8,6 +8,7 @@
   <text x="40" y="135" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Input: the regulator&#x27;s published syllabus and your own</text>
   <text x="40" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">course material</text>
   <path d="M260,189 L260,205" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M52,245 L52,645" stroke="#786d60" stroke-width="2.5"/>
   <rect x="24" y="215" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
   <circle cx="52" cy="245" r="16" fill="#46402f"/>
   <text x="52" y="251" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">1</text>

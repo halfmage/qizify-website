@@ -16,6 +16,7 @@ SURFACE, PANEL, STROKE = "#2a2622", "#37322c", "#46402f"
 ACCENT, ACCENT_LT      = "#cc7a3e", "#e8b07a"
 INK, MUTED, SEC        = "#faf8f4", "#a89e92", "#cfc7be"
 BAR_CTX, INK_ON_ACC    = "#786d60", "#241f1b"
+TINT, GHOST            = "#3a3128", "#6f6459"   # the living column, and an absence in it
 FONT  = "'Inter', system-ui, -apple-system, sans-serif"
 
 T_TITLE, T_SUB, T_EYE, T_BODY, T_SMALL, T_NOTE, T_BIG = 23, 15, 14, 16, 14.5, 14, 34
@@ -123,6 +124,20 @@ class Doc:
             self.t(PAD + 56, self.y + 49 + i * 19, ln, T_SMALL, MUTED)
         self.y += h + 10
 
+    def steps(self, items, accent_n=None):
+        """A numbered sequence with a rail running through the numbers. Drawn before the
+        cards so it shows only in the gaps between them: the five stages are one pipeline,
+        not five unrelated cards. items: [(n, title, desc)]."""
+        hs = [30 + 19 * len(wrap(d, T_SMALL, CW - 76)) + PAD_B for _, _, d in items]
+        cy, y = [], self.y
+        for h in hs:
+            cy.append(y + 30)
+            y += h + 10
+        self.parts.append(f'  <path d="M{PAD+28},{cy[0]} L{PAD+28},{cy[-1]}" '
+                          f'stroke="{BAR_CTX}" stroke-width="2.5"/>')
+        for n, title, desc in items:
+            self.step(n, title, desc, accent=(n == accent_n))
+
     def block(self, eyebrow, rows, accent=False, pill=None, stats=None):
         """rows: list[str] plain lines. stats: list[(big, label)]. pill: closing line."""
         inner = CW - 40
@@ -157,6 +172,156 @@ class Doc:
             self.rect(PAD + 20, yy, CW - 40, 32, STROKE if accent else SURFACE, None, rx=8)
             self.t(PAD + 34, yy + 21, pill, T_SMALL, ACCENT_LT if accent else MUTED, style="italic")
         self.y += h + 12
+
+    def matrix(self, heads, rows, foot=None, absent="nothing"):
+        """Two columns answering the same question on every row, so the reader compares
+        across a shared line instead of reading two unrelated lists. The right column is
+        tinted its whole height: the contrast is the column, not a border on it.
+        heads: (left, right). rows: [(label, left | None, right)]. foot: (left, right).
+        A left cell of None draws as `absent`, which is the point of that row."""
+        colw = (CW - 20) // 2
+        lx, rx = PAD, PAD + colw + 20
+        laid = [(lab, wrap(l, T_SMALL, colw - 24) if l else None, wrap(r, T_SMALL, colw - 24))
+                for lab, l, r in rows]
+        body_h = sum(32 + 20 * max(len(wl) if wl else 1, len(wr)) for _, wl, wr in laid)
+
+        self.y += 12
+        head = self.y
+        # tint first, so every mark below sits on top of it
+        self.rect(rx - 12, head - 16, colw + 24, body_h + (66 if foot else 30), TINT, None, rx=12)
+        self.t(lx, head, heads[0], T_NOTE - 1, MUTED, 600, spacing="0.06em")
+        self.t(rx, head, heads[1], T_NOTE - 1, ACCENT_LT, 600, spacing="0.06em")
+        self.y = head + 10
+
+        for label, wl, wr in laid:
+            self.parts.append(f'  <path d="M{PAD},{self.y} L{W-PAD},{self.y}" stroke="{STROKE}" stroke-width="1"/>')
+            self.t(PAD, self.y + 20, label.upper(), 11.5, MUTED, 600, spacing="0.08em")
+            base = self.y + 38
+            if wl:
+                for i, ln in enumerate(wl):
+                    self.t(lx, base + i * 20, ln, T_SMALL, SEC)
+            else:
+                self.t(lx, base, absent, T_SMALL, GHOST, style="italic")
+            for i, ln in enumerate(wr):
+                self.t(rx, base + i * 20, ln, T_SMALL, INK)
+            self.y += 32 + 20 * max(len(wl) if wl else 1, len(wr))
+
+        if foot:
+            self.parts.append(f'  <path d="M{PAD},{self.y} L{W-PAD},{self.y}" stroke="{STROKE}" stroke-width="1"/>')
+            self.t(lx, self.y + 26, foot[0], T_SMALL, MUTED, 600)
+            self.t(rx, self.y + 26, foot[1], T_SMALL, ACCENT_LT, 600)
+            self.y += 34
+        self.y += 12
+
+    def table(self, heads, rows, widths, accent_col=None, bars=None):
+        """Columns of aligned text on shared rows. `accent_col` is tinted its whole
+        height, so the column the reader is being pointed at reads as one thing rather
+        than as a colour repeated per cell. `bars` draws a proportional rule under the
+        first cell of each row, for a column whose values escalate."""
+        gap = 12
+        xs, x = [], PAD
+        for wd in widths:
+            xs.append(x)
+            x += wd + gap
+        wrapped = [[wrap(c, T_SMALL, w - (24 if i == accent_col else 0))
+                    for i, (c, w) in enumerate(zip(r, widths))] for r in rows]
+        heights = [22 + 20 * max(len(c) for c in r) + (10 if bars else 0) for r in wrapped]
+
+        # Headers are set in spaced caps, which German blows straight through: wrap them
+        # against their own column so a long one can never run into the next.
+        def caps_w(t):
+            return text_w(t, 11.5) + 0.08 * 11.5 * len(t)
+
+        heads_l = []
+        for hd, wd_ in zip(heads, widths):
+            words, lines, cur = hd.upper().split(), [], ""
+            for word in words:
+                trial = (cur + " " + word).strip()
+                if cur and caps_w(trial) > wd_ + gap:
+                    lines.append(cur)
+                    cur = word
+                else:
+                    cur = trial
+            if cur:
+                lines.append(cur)
+            heads_l.append(lines)
+        head_h = 15 * (max(len(l) for l in heads_l) - 1)
+
+        self.y += 12
+        head = self.y
+        if accent_col is not None:
+            self.rect(xs[accent_col] - 12, head - 16, widths[accent_col] + 24,
+                      sum(heights) + head_h + 30, TINT, None, rx=12)
+        for i, (lines, x) in enumerate(zip(heads_l, xs)):
+            for j, ln in enumerate(lines):
+                self.t(x, head + j * 15, ln, 11.5, ACCENT_LT if i == accent_col else MUTED,
+                       600, spacing="0.08em")
+        self.y = head + head_h + 10
+
+        for r, cells, h in zip(rows, wrapped, heights):
+            self.parts.append(f'  <path d="M{PAD},{self.y} L{W-PAD},{self.y}" stroke="{STROKE}" stroke-width="1"/>')
+            base = self.y + 26
+            for i, (lines, x) in enumerate(zip(cells, xs)):
+                for j, ln in enumerate(lines):
+                    self.t(x, base + j * 20, ln, T_SMALL,
+                           INK if i == accent_col else (INK if i == 0 else SEC),
+                           600 if i == 0 else None)
+            if bars:
+                # under the first cell's own lines, not the tallest cell in the row,
+                # so the bar stays tied to the value it measures
+                frac = bars[rows.index(r)]
+                self.rect(xs[0], base + 20 * len(cells[0]) - 6,
+                          round(widths[0] * frac, 1), 4, ACCENT if frac == max(bars) else BAR_CTX,
+                          None, rx=2)
+            self.y += h
+        self.parts.append(f'  <path d="M{PAD},{self.y} L{W-PAD},{self.y}" stroke="{STROKE}" stroke-width="1"/>')
+        self.y += 14
+
+    def stack(self, layers, base, out=None):
+        """Layers drawn as one contiguous slab resting on a wider base, with each layer's
+        input arriving from the left. Two separate cards would say these are alternatives;
+        sharing an edge and a foundation says they stack, which is the actual mechanism.
+        layers: [(title, [lines], input_label)]. base: (title, sub). out: closing line."""
+        sx = PAD + 146
+        sw = W - PAD - sx
+        laid = []
+        for title, lines, inp in layers:
+            wl = [wrap(l, T_SMALL, sw - 32) for l in lines]
+            laid.append((title, wl, inp, 28 + 20 * sum(len(x) for x in wl) + 16))
+
+        top = self.y
+        total = sum(l[3] for l in laid)
+        self.rect(sx, top, sw, total, PANEL, STROKE, rx=10)
+
+        y = top
+        for i, (title, wl, inp, h) in enumerate(laid):
+            if i:
+                self.parts.append(f'  <path d="M{sx},{y} L{sx+sw},{y}" stroke="{STROKE}" stroke-width="1"/>')
+            self.t(sx + 16, y + 28, title, T_BODY, INK, 600)
+            yy = y + 28
+            for grp in wl:
+                for ln in grp:
+                    yy += 20
+                    self.t(sx + 16, yy, ln, T_SMALL, SEC)
+            # the input this layer consumes, arriving from the left
+            mid = y + h / 2
+            il = wrap(inp, T_NOTE, 126)
+            for j, ln in enumerate(il):
+                self.t(PAD, mid - 6 - (len(il) - 1) * 8.5 + j * 17, ln, T_NOTE, MUTED)
+            self.parts.append(f'  <path d="M{PAD+132},{mid} L{sx-6},{mid}" stroke="{MUTED}" '
+                              f'stroke-width="1.5" marker-end="url(#ar)"/>')
+            y += h
+
+        # the base is wider than what sits on it, so the stack reads as resting on it
+        bt, bh = top + total, 52
+        self.rect(sx - 10, bt, sw + 20, bh, TINT, ACCENT, rx=10, sw=1.5)
+        self.t(sx + 6, bt + 22, base[0], T_BODY, ACCENT_LT, 600)
+        self.t(sx + 6, bt + 41, base[1], T_NOTE, MUTED)
+        self.y = bt + bh
+
+        if out:
+            self.arrow()
+            self.band(out, accent=True)
 
     def bar_row(self, label, right, segs):
         """segs: list of (fraction, colour, in-bar label, ink)."""
