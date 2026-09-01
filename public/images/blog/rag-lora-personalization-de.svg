@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 604" role="img" aria-label="Diagramm: zwei Schichten machen aus einem offenen Basismodell Ihre eigene KI. Retrieval (RAG) antwortet aus Ihren eigenen Inhalten und ändert, was das Modell weiß. Fine-Tuning (LoRA) übernimmt Ihren Stil, Ihre Formate und Aufgaben und ändert, wie sich das Modell verhält. Beide setzen auf einem gemeinsamen offenen Basismodell auf.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 616" role="img" aria-label="Diagramm: zwei Schichten machen aus einem offenen Basismodell Ihre eigene KI. Retrieval (RAG) antwortet aus Ihren eigenen Inhalten und ändert, was das Modell weiß. Fine-Tuning (LoRA) übernimmt Ihren Stil, Ihre Formate und Aufgaben und ändert, wie sich das Modell verhält. Beide setzen auf einem gemeinsamen offenen Basismodell auf.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="604" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="616" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Wie aus einem Modell Ihre KI wird</text>
   <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Zwei Schichten machen aus einem offenen Basismodell Ihre</text>
   <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">eigene KI</text>
-  <rect x="24" y="100" width="472" height="60" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="40" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Eingang: Ihre Inhalte und Dokumente, Ihr Ton, Ihre</text>
-  <text x="40" y="146" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Formate und Aufgaben</text>
-  <path d="M260,172 L260,188" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="24" y="198" width="472" height="108" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
-  <text x="44" y="224" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" letter-spacing="0.05em">RETRIEVAL (RAG)</text>
-  <text x="44" y="270" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Antwortet aus Ihren eigenen Inhalten</text>
-  <text x="44" y="296" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ändert, was das Modell weiß</text>
-  <rect x="24" y="318" width="472" height="108" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="44" y="344" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">FINE-TUNING (LORA)</text>
-  <text x="44" y="390" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ihr Stil, Ihre Formate und Aufgaben</text>
-  <text x="44" y="416" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ändert, wie sich das Modell verhält</text>
-  <path d="M260,438 L260,454" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="24" y="464" width="472" height="60" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
-  <text x="40" y="490" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Beide setzen auf einem gemeinsamen offenen Basismodell</text>
-  <text x="40" y="510" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">auf und ergeben Ihre eigene KI</text>
-  <text x="24" y="562" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Ein gemeinsames Basismodell, je Kunde ein LoRA-Adapter und ein</text>
-  <text x="24" y="580" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">RAG-Index: personalisierte KI, Daten getrennt.</text>
+  <rect x="24" y="100" width="472" height="68" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="40" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Eingang: Ihre Inhalte und Dokumente, Ihr Ton, Ihre Formate</text>
+  <text x="40" y="146" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">und Aufgaben</text>
+  <path d="M260,180 L260,196" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="24" y="206" width="472" height="106" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="44" y="232" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" letter-spacing="0.05em">RETRIEVAL (RAG)</text>
+  <text x="44" y="264" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Antwortet aus Ihren eigenen Inhalten</text>
+  <text x="44" y="290" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ändert, was das Modell weiß</text>
+  <rect x="24" y="324" width="472" height="106" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="44" y="350" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">FINE-TUNING (LORA)</text>
+  <text x="44" y="382" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ihr Stil, Ihre Formate und Aufgaben</text>
+  <text x="44" y="408" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ändert, wie sich das Modell verhält</text>
+  <path d="M260,442 L260,458" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="24" y="468" width="472" height="68" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="40" y="494" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Beide setzen auf einem gemeinsamen offenen Basismodell</text>
+  <text x="40" y="514" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">auf und ergeben Ihre eigene KI</text>
+  <text x="24" y="574" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Ein gemeinsames Basismodell, je Kunde ein LoRA-Adapter und ein</text>
+  <text x="24" y="592" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">RAG-Index: personalisierte KI, Daten getrennt.</text>
 </svg>

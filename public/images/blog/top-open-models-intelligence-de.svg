@@ -1,57 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 745" role="img" aria-label="Balkendiagramm der führenden offenen Modelle nach dem Artificial Analysis Intelligence Index, Stand Juli 2026. Kimi K3 führt mit 57 Punkten. Neun der zehn Modelle stammen aus China; Inkling aus den USA ist der einzige westliche Vertreter.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 708" role="img" aria-label="Balkendiagramm der führenden offenen Modelle nach dem Artificial Analysis Intelligence Index, Stand Juli 2026. Kimi K3 führt mit 57 Punkten. Neun der zehn Modelle stammen aus China; Inkling aus den USA ist der einzige westliche Vertreter.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="745" rx="16" fill="#2a2622"/>
-  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Führende offene Modelle nach</text>
-  <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Intelligenz</text>
-  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Artificial Analysis Intelligence Index, offene Gewichte,</text>
-  <text x="24" y="107" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Stand Juli 2026</text>
-  <text x="24" y="142" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Kimi K3</text>
-  <text x="496" y="142" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Moonshot AI</text>
-  <rect x="24" y="149" width="430.0" height="16" rx="4" fill="#786d60"/>
-  <text x="462.0" y="162" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">57</text>
-  <text x="24" y="188" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">GLM-5.2 (max)</text>
-  <text x="496" y="188" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Z AI</text>
-  <rect x="24" y="195" width="384.7" height="16" rx="4" fill="#786d60"/>
-  <text x="416.7368421052632" y="208" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">51</text>
-  <text x="24" y="234" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">MiniMax-M3</text>
-  <text x="496" y="234" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">MiniMax</text>
-  <rect x="24" y="241" width="331.9" height="16" rx="4" fill="#786d60"/>
-  <text x="363.9298245614035" y="254" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">44</text>
-  <text x="24" y="280" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">DeepSeek V4 Pro (max)</text>
-  <text x="496" y="280" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">DeepSeek</text>
-  <rect x="24" y="287" width="331.9" height="16" rx="4" fill="#786d60"/>
-  <text x="363.9298245614035" y="300" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">44</text>
-  <text x="24" y="326" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">DeepSeek V4 Pro (high)</text>
-  <text x="496" y="326" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">DeepSeek</text>
-  <rect x="24" y="333" width="324.4" height="16" rx="4" fill="#786d60"/>
-  <text x="356.3859649122807" y="346" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">43</text>
-  <text x="24" y="372" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">MiMo-V2.5-Pro</text>
-  <text x="496" y="372" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Xiaomi</text>
-  <rect x="24" y="379" width="316.8" height="16" rx="4" fill="#786d60"/>
-  <text x="348.84210526315786" y="392" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">42</text>
-  <text x="24" y="418" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Kimi K2.7 Code</text>
-  <text x="496" y="418" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Moonshot AI</text>
-  <rect x="24" y="425" width="316.8" height="16" rx="4" fill="#786d60"/>
-  <text x="348.84210526315786" y="438" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">42</text>
-  <text x="24" y="464" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Hy3</text>
-  <text x="496" y="464" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Tencent</text>
-  <rect x="24" y="471" width="309.3" height="16" rx="4" fill="#786d60"/>
-  <text x="341.29824561403507" y="484" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">41</text>
-  <text x="24" y="510" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Nex-N2-Pro</text>
-  <text x="496" y="510" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Nex AGI</text>
-  <rect x="24" y="517" width="309.3" height="16" rx="4" fill="#786d60"/>
-  <text x="341.29824561403507" y="530" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">41</text>
-  <text x="24" y="556" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Inkling</text>
-  <text x="496" y="556" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Thinking Machines (US)</text>
-  <rect x="24" y="563" width="309.3" height="16" rx="4" fill="#cc7a3e"/>
-  <text x="341.29824561403507" y="576" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600">41</text>
-  <rect x="24" y="589" width="12" height="12" rx="2" fill="#786d60"/>
-  <text x="44" y="600" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Aus China</text>
-  <rect x="116.60000000000001" y="589" width="12" height="12" rx="2" fill="#cc7a3e"/>
-  <text x="136.60000000000002" y="600" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Westlich</text>
-  <text x="24" y="641" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Neun der zehn führenden offenen Modelle stammen aus China;</text>
-  <text x="24" y="659" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Inkling (US) ist der einzige westliche Vertreter.</text>
-  <text x="24" y="685" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Quelle: Artificial Analysis Intelligence Index, offene</text>
-  <text x="24" y="703" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Gewichte, Stand Juli 2026 (artificialanalysis.ai). Die</text>
-  <text x="24" y="721" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Rangfolge ändert sich laufend.</text>
+  <rect x="0" y="0" width="520" height="708" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Führende offene Modelle nach Intelligenz</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Artificial Analysis Intelligence Index, offene Gewichte, Stand</text>
+  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Juli 2026</text>
+  <text x="24" y="113" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Kimi K3</text>
+  <text x="496" y="113" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Moonshot AI</text>
+  <rect x="24" y="120" width="430.0" height="16" rx="4" fill="#786d60"/>
+  <text x="462.0" y="133" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">57</text>
+  <text x="24" y="159" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">GLM-5.2 (max)</text>
+  <text x="496" y="159" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Z AI</text>
+  <rect x="24" y="166" width="384.7" height="16" rx="4" fill="#786d60"/>
+  <text x="416.7368421052632" y="179" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">51</text>
+  <text x="24" y="205" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">MiniMax-M3</text>
+  <text x="496" y="205" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">MiniMax</text>
+  <rect x="24" y="212" width="331.9" height="16" rx="4" fill="#786d60"/>
+  <text x="363.9298245614035" y="225" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">44</text>
+  <text x="24" y="251" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">DeepSeek V4 Pro (max)</text>
+  <text x="496" y="251" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">DeepSeek</text>
+  <rect x="24" y="258" width="331.9" height="16" rx="4" fill="#786d60"/>
+  <text x="363.9298245614035" y="271" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">44</text>
+  <text x="24" y="297" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">DeepSeek V4 Pro (high)</text>
+  <text x="496" y="297" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">DeepSeek</text>
+  <rect x="24" y="304" width="324.4" height="16" rx="4" fill="#786d60"/>
+  <text x="356.3859649122807" y="317" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">43</text>
+  <text x="24" y="343" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">MiMo-V2.5-Pro</text>
+  <text x="496" y="343" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Xiaomi</text>
+  <rect x="24" y="350" width="316.8" height="16" rx="4" fill="#786d60"/>
+  <text x="348.84210526315786" y="363" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">42</text>
+  <text x="24" y="389" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Kimi K2.7 Code</text>
+  <text x="496" y="389" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Moonshot AI</text>
+  <rect x="24" y="396" width="316.8" height="16" rx="4" fill="#786d60"/>
+  <text x="348.84210526315786" y="409" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">42</text>
+  <text x="24" y="435" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Hy3</text>
+  <text x="496" y="435" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Tencent</text>
+  <rect x="24" y="442" width="309.3" height="16" rx="4" fill="#786d60"/>
+  <text x="341.29824561403507" y="455" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">41</text>
+  <text x="24" y="481" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Nex-N2-Pro</text>
+  <text x="496" y="481" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Nex AGI</text>
+  <rect x="24" y="488" width="309.3" height="16" rx="4" fill="#786d60"/>
+  <text x="341.29824561403507" y="501" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600">41</text>
+  <text x="24" y="527" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Inkling</text>
+  <text x="496" y="527" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Thinking Machines (US)</text>
+  <rect x="24" y="534" width="309.3" height="16" rx="4" fill="#cc7a3e"/>
+  <text x="341.29824561403507" y="547" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600">41</text>
+  <rect x="24" y="566" width="12" height="12" rx="2" fill="#786d60"/>
+  <text x="44" y="577" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Aus China</text>
+  <rect x="130.7" y="566" width="12" height="12" rx="2" fill="#cc7a3e"/>
+  <text x="150.7" y="577" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Westlich</text>
+  <text x="24" y="622" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Neun der zehn führenden offenen Modelle stammen aus China;</text>
+  <text x="24" y="640" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Inkling (US) ist der einzige westliche Vertreter.</text>
+  <text x="24" y="666" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Quelle: Artificial Analysis Intelligence Index, offene Gewichte, Stand</text>
+  <text x="24" y="684" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Juli 2026 (artificialanalysis.ai). Die Rangfolge ändert sich laufend.</text>
 </svg>

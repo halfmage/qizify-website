@@ -1,43 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 775" role="img" aria-label="Diagram: the five building blocks of a custom exam preparation platform, from the official syllabus through curriculum mapping, a tagged question bank, adaptive repetition and a mock exam to an AI tutor grounded in your own material.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 783" role="img" aria-label="Diagram: the five building blocks of a custom exam preparation platform, from the official syllabus through curriculum mapping, a tagged question bank, adaptive repetition and a mock exam to an AI tutor grounded in your own material.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="775" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="783" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">From the official syllabus to a passed</text>
   <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">exam</text>
   <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">The five building blocks of a custom exam platform</text>
-  <rect x="24" y="109" width="472" height="60" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <rect x="24" y="109" width="472" height="68" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
   <text x="40" y="135" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Input: the regulator&#x27;s published syllabus and your own</text>
   <text x="40" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">course material</text>
-  <path d="M260,181 L260,197" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="24" y="207" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <circle cx="52" cy="237" r="16" fill="#46402f"/>
-  <text x="52" y="243" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">1</text>
-  <text x="80" y="234" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Curriculum mapping</text>
-  <text x="80" y="256" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">The subject areas and learning objectives of the</text>
-  <text x="80" y="275" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">syllabus become the structure of the platform</text>
-  <rect x="24" y="307" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <circle cx="52" cy="337" r="16" fill="#46402f"/>
-  <text x="52" y="343" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">2</text>
-  <text x="80" y="334" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Question bank with taxonomy levels</text>
-  <text x="80" y="356" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Every question is tied to a learning objective and</text>
-  <text x="80" y="375" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">to the depth the exam demands</text>
-  <rect x="24" y="407" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <circle cx="52" cy="437" r="16" fill="#46402f"/>
-  <text x="52" y="443" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">3</text>
-  <text x="80" y="434" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Adaptive repetition</text>
-  <text x="80" y="456" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">The learning path prioritises the subject areas</text>
-  <text x="80" y="475" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">where this learner is still weak</text>
-  <rect x="24" y="507" width="472" height="90" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
-  <circle cx="52" cy="537" r="16" fill="#46402f"/>
-  <text x="52" y="543" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">4</text>
-  <text x="80" y="534" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Mock exam in the real format</text>
-  <text x="80" y="556" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Same task count, same scoring logic, same clock as</text>
-  <text x="80" y="575" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">the official exam</text>
-  <rect x="24" y="607" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <circle cx="52" cy="637" r="16" fill="#46402f"/>
-  <text x="52" y="643" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">5</text>
-  <text x="80" y="634" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">AI tutor grounded in your material</text>
-  <text x="80" y="656" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Explains mistakes from your course content, not</text>
-  <text x="80" y="675" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">from the open internet</text>
-  <text x="24" y="733" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Result: a defensible pass prediction per learner and</text>
-  <text x="24" y="751" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">audit-proof records for publicly funded training</text>
+  <path d="M260,189 L260,205" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="24" y="215" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="245" r="16" fill="#46402f"/>
+  <text x="52" y="251" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">1</text>
+  <text x="80" y="242" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Curriculum mapping</text>
+  <text x="80" y="264" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">The subject areas and learning objectives of the</text>
+  <text x="80" y="283" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">syllabus become the structure of the platform</text>
+  <rect x="24" y="315" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="345" r="16" fill="#46402f"/>
+  <text x="52" y="351" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">2</text>
+  <text x="80" y="342" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Question bank with taxonomy levels</text>
+  <text x="80" y="364" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Every question is tied to a learning objective and to the</text>
+  <text x="80" y="383" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">depth the exam demands</text>
+  <rect x="24" y="415" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="445" r="16" fill="#46402f"/>
+  <text x="52" y="451" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">3</text>
+  <text x="80" y="442" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Adaptive repetition</text>
+  <text x="80" y="464" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">The learning path prioritises the subject areas where</text>
+  <text x="80" y="483" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">this learner is still weak</text>
+  <rect x="24" y="515" width="472" height="90" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <circle cx="52" cy="545" r="16" fill="#46402f"/>
+  <text x="52" y="551" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">4</text>
+  <text x="80" y="542" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Mock exam in the real format</text>
+  <text x="80" y="564" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Same task count, same scoring logic, same clock as</text>
+  <text x="80" y="583" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">the official exam</text>
+  <rect x="24" y="615" width="472" height="90" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <circle cx="52" cy="645" r="16" fill="#46402f"/>
+  <text x="52" y="651" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#e8b07a" font-weight="600" text-anchor="middle">5</text>
+  <text x="80" y="642" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">AI tutor grounded in your material</text>
+  <text x="80" y="664" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Explains mistakes from your course content, not from</text>
+  <text x="80" y="683" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">the open internet</text>
+  <text x="24" y="741" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Result: a defensible pass prediction per learner and audit-proof</text>
+  <text x="24" y="759" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">records for publicly funded training</text>
 </svg>

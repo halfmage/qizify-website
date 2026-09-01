@@ -1,30 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 731" role="img" aria-label="Vergleich, was mit den eigenen Kursinhalten passiert: im Standard-LMS werden Skript, Folien und Fragen zu PDF, Video und einmaligem Quiz, die lernende Person liest; in einer eigenen Plattform werden sie zu Fragen mit Lernziel, einem Lernpfad entlang des Stoffplans, adaptiver Wiederholung und einer Prüfungssimulation, die lernende Person wird gefragt und korrigiert.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 723" role="img" aria-label="Vergleich, was mit den eigenen Kursinhalten passiert: im Standard-LMS werden Skript, Folien und Fragen zu PDF, Video und einmaligem Quiz, die lernende Person liest; in einer eigenen Plattform werden sie zu Fragen mit Lernziel, einem Lernpfad entlang des Stoffplans, adaptiver Wiederholung und einer Prüfungssimulation, die lernende Person wird gefragt und korrigiert.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="731" rx="16" fill="#2a2622"/>
-  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Dieselben Inhalte, zwei sehr</text>
-  <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">verschiedene Ergebnisse</text>
+  <rect x="0" y="0" width="520" height="723" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Dieselben Inhalte, zwei sehr verschiedene</text>
+  <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Ergebnisse</text>
   <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Was mit Ihrem Material passiert, je nachdem worin Sie es</text>
   <text x="24" y="107" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">ablegen</text>
-  <rect x="24" y="129" width="472" height="60" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <rect x="24" y="129" width="472" height="68" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
   <text x="40" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Ausgangspunkt in beiden Fällen: Ihre Skripte, Folien,</text>
   <text x="40" y="175" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Handouts und Übungsfragen</text>
-  <path d="M260,201 L260,217" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="24" y="227" width="472" height="206" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="44" y="253" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">STANDARD-LMS ODER AUTORENTOOL</text>
-  <text x="44" y="299" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Skript wird PDF zum Herunterladen</text>
-  <text x="44" y="325" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Folien werden Video</text>
-  <text x="44" y="351" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Fragen werden einmaliges Quiz</text>
-  <text x="44" y="377" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Fortschritt wird Häkchen</text>
-  <rect x="44" y="391" width="432" height="32" rx="8" fill="#2a2622"/>
-  <text x="58" y="412" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92" font-style="italic">Ergebnis: die lernende Person liest.</text>
-  <rect x="24" y="445" width="472" height="206" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
+  <path d="M260,209 L260,225" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="24" y="235" width="472" height="198" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="44" y="261" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">STANDARD-LMS ODER AUTORENTOOL</text>
+  <text x="44" y="293" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Skript wird PDF zum Herunterladen</text>
+  <text x="44" y="319" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Folien werden Video</text>
+  <text x="44" y="345" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Fragen werden einmaliges Quiz</text>
+  <text x="44" y="371" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Fortschritt wird Häkchen</text>
+  <rect x="44" y="385" width="432" height="32" rx="8" fill="#2a2622"/>
+  <text x="58" y="406" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92" font-style="italic">Ergebnis: die lernende Person liest.</text>
+  <rect x="24" y="445" width="472" height="198" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
   <text x="44" y="471" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" letter-spacing="0.05em">EIGENE PLATTFORM</text>
-  <text x="44" y="517" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Fragen mit Lernziel und Anforderungstiefe</text>
-  <text x="44" y="543" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Lernpfad entlang des Stoffplans</text>
-  <text x="44" y="569" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Wiederholung dessen, was noch nicht sitzt</text>
-  <text x="44" y="595" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Prüfungssimulation im Originalformat</text>
-  <rect x="44" y="609" width="432" height="32" rx="8" fill="#46402f"/>
-  <text x="58" y="630" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-style="italic">Ergebnis: sie wird gefragt und korrigiert.</text>
-  <text x="24" y="689" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">In beiden Fällen bleibt das Material Ihres. Der Unterschied</text>
-  <text x="24" y="707" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">ist, ob es abgelegt oder benutzt wird.</text>
+  <text x="44" y="503" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Fragen mit Lernziel und Anforderungstiefe</text>
+  <text x="44" y="529" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Lernpfad entlang des Stoffplans</text>
+  <text x="44" y="555" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Wiederholung dessen, was noch nicht sitzt</text>
+  <text x="44" y="581" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Prüfungssimulation im Originalformat</text>
+  <rect x="44" y="595" width="432" height="32" rx="8" fill="#46402f"/>
+  <text x="58" y="616" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-style="italic">Ergebnis: sie wird gefragt und korrigiert.</text>
+  <text x="24" y="681" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">In beiden Fällen bleibt das Material Ihres. Der Unterschied ist, ob es</text>
+  <text x="24" y="699" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">abgelegt oder benutzt wird.</text>
 </svg>

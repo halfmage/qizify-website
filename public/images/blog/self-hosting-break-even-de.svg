@@ -1,24 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 444" role="img" aria-label="Liniendiagramm: Kosten einer geschlossenen API steigen mit der Nutzung pro Token, während selbst gehostete Kosten im Betrieb konstant bleiben. Der Break-even liegt illustrativ bei etwa 10 bis 50 Millionen Token pro Monat; darunter ist die API günstiger, darüber das Self-Hosting.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 454" role="img" aria-label="Liniendiagramm: Kosten einer geschlossenen API steigen mit der Nutzung pro Token, während selbst gehostete Kosten im Betrieb konstant bleiben. Der Break-even liegt illustrativ bei etwa 10 bis 50 Millionen Token pro Monat; darunter ist die API günstiger, darüber das Self-Hosting.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="444" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="454" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Wann sich Self-Hosting lohnt</text>
   <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Break-even bei etwa 10 bis 50 Mio. Token pro Monat</text>
   <text x="24" y="86" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Monatliche Kosten</text>
   <path d="M56,96 L56,266 L496,266" stroke="#46402f" stroke-width="1.5" fill="none"/>
   <path d="M56,246 L496,110" stroke="#cc7a3e" stroke-width="2.5" fill="none"/>
   <path d="M56,166 L496,154" stroke="#786d60" stroke-width="2.5" fill="none"/>
-  <path d="M351,158 L351,266" stroke="#a89e92" stroke-width="1" stroke-dasharray="3 3"/>
-  <circle cx="351" cy="158" r="5.5" fill="#e8b07a"/>
-  <text x="343" y="144" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" text-anchor="end">Break-even</text>
+  <path d="M340,158 L340,266" stroke="#a89e92" stroke-width="1" stroke-dasharray="3 3"/>
+  <circle cx="340" cy="158" r="5.5" fill="#e8b07a"/>
+  <text x="332" y="144" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" text-anchor="end">Break-even</text>
   <text x="64" y="258" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">API günstiger</text>
   <text x="492" y="258" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Self-Hosting günstiger</text>
   <text x="496" y="286" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Monatliche Nutzung (Token)</text>
-  <rect x="24" y="306" width="12" height="12" rx="2" fill="#cc7a3e"/>
-  <text x="44" y="317" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Geschlossene API</text>
-  <rect x="168.4" y="306" width="12" height="12" rx="2" fill="#786d60"/>
-  <text x="188.4" y="317" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Selbst gehostet</text>
-  <text x="24" y="358" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Geschlossene API: Kosten skalieren pro Token. Selbst gehostet:</text>
-  <text x="24" y="376" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">im Betrieb konstant.</text>
-  <text x="24" y="402" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Illustrativ. Der Schnittpunkt hängt von Modell, Hardware und</text>
-  <text x="24" y="420" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">GPU-Auslastung ab.</text>
+  <rect x="24" y="312" width="12" height="12" rx="2" fill="#cc7a3e"/>
+  <text x="44" y="323" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Geschlossene API</text>
+  <rect x="184.32" y="312" width="12" height="12" rx="2" fill="#786d60"/>
+  <text x="204.32" y="323" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Selbst gehostet</text>
+  <text x="24" y="368" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Geschlossene API: Kosten skalieren pro Token. Selbst gehostet: im</text>
+  <text x="24" y="386" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Betrieb konstant.</text>
+  <text x="24" y="412" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Illustrativ. Der Schnittpunkt hängt von Modell, Hardware und</text>
+  <text x="24" y="430" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">GPU-Auslastung ab.</text>
 </svg>

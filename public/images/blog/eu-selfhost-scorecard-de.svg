@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 705" role="img" aria-label="Übersicht der Lizenzen offener Modelle und ihrer kommerziellen EU-Nutzung: Kimi, DeepSeek, Qwen, Mistral, gpt-oss und Gemma sind in der EU selbst hostbar; Llama unterliegt für EU-Unternehmen Einschränkungen.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 687" role="img" aria-label="Übersicht der Lizenzen offener Modelle und ihrer kommerziellen EU-Nutzung: Kimi, DeepSeek, Qwen, Mistral, gpt-oss und Gemma sind in der EU selbst hostbar; Llama unterliegt für EU-Unternehmen Einschränkungen.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="705" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="687" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Welche offenen Modelle können Sie in</text>
   <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">der EU selbst hosten?</text>
-  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Lizenz und kommerzielle EU-Nutzung für die Modelle in</text>
-  <text x="24" y="107" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">diesem Leitfaden</text>
+  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Lizenz und kommerzielle EU-Nutzung für die Modelle in diesem</text>
+  <text x="24" y="107" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Leitfaden</text>
   <rect x="24" y="129" width="472" height="62" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
   <text x="40" y="154" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">Kimi</text>
   <text x="480" y="154" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">✓ EU-hostbar</text>
@@ -34,6 +34,5 @@
   <text x="480" y="574" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">⚠ Eingeschränkt (EU)</text>
   <text x="40" y="596" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Meta · USA · Community-Lizenz</text>
   <text x="24" y="645" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Permissive Lizenzen (Apache 2.0, MIT) erlauben freies</text>
-  <text x="24" y="663" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">kommerzielles Self-Hosting. Bedingungen je Modellversion</text>
-  <text x="24" y="681" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">prüfen.</text>
+  <text x="24" y="663" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">kommerzielles Self-Hosting. Bedingungen je Modellversion prüfen.</text>
 </svg>

@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 716" role="img" aria-label="Bar chart of the top open-weight models by Artificial Analysis Intelligence Index, as of July 2026. Kimi K3 leads on 57. Nine of the ten are Chinese-made; Inkling from the US is the only Western entry.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 708" role="img" aria-label="Bar chart of the top open-weight models by Artificial Analysis Intelligence Index, as of July 2026. Kimi K3 leads on 57. Nine of the ten are Chinese-made; Inkling from the US is the only Western entry.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="716" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="708" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Top open-weight models by intelligence</text>
-  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Artificial Analysis Intelligence Index, open weights, as of</text>
-  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">July 2026</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Artificial Analysis Intelligence Index, open weights, as of July</text>
+  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">2026</text>
   <text x="24" y="113" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Kimi K3</text>
   <text x="496" y="113" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Moonshot AI</text>
   <rect x="24" y="120" width="430.0" height="16" rx="4" fill="#786d60"/>
@@ -44,13 +44,12 @@
   <text x="496" y="527" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="end">Thinking Machines (US)</text>
   <rect x="24" y="534" width="309.3" height="16" rx="4" fill="#cc7a3e"/>
   <text x="341.29824561403507" y="547" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600">41</text>
-  <rect x="24" y="560" width="12" height="12" rx="2" fill="#786d60"/>
-  <text x="44" y="571" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Chinese-made</text>
-  <rect x="138.8" y="560" width="12" height="12" rx="2" fill="#cc7a3e"/>
-  <text x="158.8" y="571" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Western</text>
-  <text x="24" y="612" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Nine of the top ten open models are Chinese-made. Inkling (US)</text>
-  <text x="24" y="630" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">is the only Western entry.</text>
-  <text x="24" y="656" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Source: Artificial Analysis Intelligence Index, open weights,</text>
-  <text x="24" y="674" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">as of July 2026 (artificialanalysis.ai). Rankings shift over</text>
-  <text x="24" y="692" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">time.</text>
+  <rect x="24" y="566" width="12" height="12" rx="2" fill="#786d60"/>
+  <text x="44" y="577" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Chinese-made</text>
+  <rect x="158.70000000000002" y="566" width="12" height="12" rx="2" fill="#cc7a3e"/>
+  <text x="178.70000000000002" y="577" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Western</text>
+  <text x="24" y="622" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Nine of the top ten open models are Chinese-made. Inkling (US) is</text>
+  <text x="24" y="640" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">the only Western entry.</text>
+  <text x="24" y="666" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Source: Artificial Analysis Intelligence Index, open weights, as of</text>
+  <text x="24" y="684" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">July 2026 (artificialanalysis.ai). Rankings shift over time.</text>
 </svg>
