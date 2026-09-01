@@ -1,29 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 693" role="img" aria-label="Structure of the German section 34a security exam: a written part of 82 multiple-choice tasks worth 120 points in 120 minutes with a pass mark of 60 and partial credit since 1 July 2025; then, only for those who pass, an oral part of around 15 minutes in groups of up to five. Both rest on seven subject areas fixed in law.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 459" role="img" aria-label="Table of how the German section 34a security exam is structured, part 1 written against part 2 oral: 82 multiple-choice tasks against situational scenarios in groups of up to five; 120 minutes against around 15 minutes; a pass mark of 60 out of 120 points with partial credit since 1 July 2025, while only those who pass the written part are admitted to the oral one. Both rest on seven subject areas fixed in law.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="693" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="459" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">How the § 34a security exam is</text>
   <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">structured</text>
   <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">As it stands since the changeover on 1 July 2025</text>
-  <rect x="24" y="109" width="472" height="214" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
-  <text x="44" y="135" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" letter-spacing="0.05em">PART 1: WRITTEN</text>
-  <text x="44" y="187" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="34" fill="#faf8f4" font-weight="600">82</text>
-  <text x="120.56" y="180" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">multiple-choice tasks</text>
-  <text x="44" y="227" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="34" fill="#faf8f4" font-weight="600">120</text>
-  <text x="120.56" y="220" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">points in 120 minutes</text>
-  <text x="44" y="267" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="34" fill="#e8b07a" font-weight="600">60</text>
-  <text x="120.56" y="260" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">points to pass</text>
-  <text x="44" y="301" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Partial credit for partially correct answers</text>
-  <path d="M260,335 L260,351" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <text x="260" y="371" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="middle">only if passed</text>
-  <rect x="24" y="383" width="472" height="194" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="44" y="409" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">PART 2: ORAL</text>
-  <text x="44" y="461" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="34" fill="#faf8f4" font-weight="600">15</text>
-  <text x="98.46000000000001" y="454" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">minutes, roughly</text>
-  <text x="44" y="501" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="34" fill="#faf8f4" font-weight="600">5</text>
-  <text x="98.46000000000001" y="494" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">candidates per group, at most</text>
-  <text x="44" y="535" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Situational scenarios, and where a guard&#x27;s powers end and</text>
-  <text x="44" y="555" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">the police&#x27;s begin</text>
-  <rect x="24" y="589" width="472" height="68" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="40" y="615" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Behind both parts: seven subject areas fixed in law, each</text>
-  <text x="40" y="635" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">with learning objectives and a taxonomy level</text>
+  <text x="132" y="121" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#a89e92" font-weight="600" letter-spacing="0.08em">PART 1: WRITTEN</text>
+  <text x="320" y="121" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#a89e92" font-weight="600" letter-spacing="0.08em">PART 2: ORAL</text>
+  <path d="M24,131 L496,131" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="157" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Format</text>
+  <text x="132" y="157" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">82 tasks, multiple</text>
+  <text x="132" y="177" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">choice</text>
+  <text x="320" y="157" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Situational scenarios in</text>
+  <text x="320" y="177" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">groups of up to five</text>
+  <path d="M24,193 L496,193" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="219" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Duration</text>
+  <text x="132" y="219" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">120 minutes</text>
+  <text x="320" y="219" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">around 15 minutes</text>
+  <path d="M24,235 L496,235" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="261" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">Passing</text>
+  <text x="132" y="261" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">60 of 120 points, partial</text>
+  <text x="132" y="281" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">credit since 1 July 2025</text>
+  <text x="320" y="261" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Admission only with a</text>
+  <text x="320" y="281" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">passed part 1</text>
+  <path d="M24,297 L496,297" stroke="#46402f" stroke-width="1"/>
+  <rect x="24" y="311" width="472" height="68" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="40" y="337" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Behind both parts: seven subject areas fixed in law, each</text>
+  <text x="40" y="357" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">with learning objectives and a taxonomy level</text>
+  <text x="24" y="417" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">The two parts run in sequence: only candidates who pass the</text>
+  <text x="24" y="435" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">written part are admitted to the oral one.</text>
 </svg>
