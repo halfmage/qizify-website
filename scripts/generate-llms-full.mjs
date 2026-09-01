@@ -92,6 +92,10 @@ function parseFrontmatter(text) {
 function cleanBody(body) {
 	return body
 		.replace(/^import\s+.*?from\s+['"][^'"]+['"];?\s*$/gm, '')
+		// A self-closing component (<InlineCta lang="en" />) carries no prose, so the
+		// tag is pure noise in the corpus. Paired components like <CopyBlock> are left
+		// alone: their children are the content, and dropping the line would keep it.
+		.replace(/^<[A-Z][\w.]*(?:\s[^>]*?)?\/>[ \t]*\n\n?/gm, '')
 		.replace(/^\s*\n+/, '');
 }
 

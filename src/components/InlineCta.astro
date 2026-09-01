@@ -1,0 +1,61 @@
+---
+import Button from './Button.astro';
+
+// Mid-article CTA for the project-inquiry path. Sits inside the blog `prose`
+// container, so the wrapper carries `not-prose`: typography styles would
+// otherwise re-space the heading and colour the button like a body link.
+// It drives the same ConsultationModal (#project-inquiry) that the sidebar and
+// footer CTAs open, so a reader converts on one form wherever they click.
+interface Props {
+	lang: 'en' | 'de';
+	headline?: string;
+	sub?: string;
+	button?: string;
+	note?: string;
+}
+
+const copy = {
+	en: {
+		eyebrow: 'Your project',
+		headline: 'What would this cost for your exam?',
+		sub: 'Tell us which exam you prepare people for and what you already have in scripts and questions. You get back a scope, a ballpark price and a timeline, in writing and with no obligation.',
+		button: 'Get a project quote',
+		note: 'Or book a 30-minute call. No pitch, and you speak with the engineers who would build it.',
+	},
+	de: {
+		eyebrow: 'Ihr Projekt',
+		headline: 'Was würde das für Ihre Prüfung kosten?',
+		sub: 'Sagen Sie uns, auf welche Prüfung Sie vorbereiten und was an Skripten und Fragen schon vorliegt. Sie bekommen einen Zuschnitt, einen Preisrahmen und einen Zeitplan zurück, schriftlich und unverbindlich.',
+		button: 'Angebot anfragen',
+		note: 'Oder buchen Sie ein 30-Minuten-Gespräch. Kein Pitch, und Sie sprechen mit den Ingenieuren, die es bauen würden.',
+	},
+};
+
+const { lang } = Astro.props;
+const c = copy[lang];
+const headline = Astro.props.headline ?? c.headline;
+const sub = Astro.props.sub ?? c.sub;
+const button = Astro.props.button ?? c.button;
+const note = Astro.props.note ?? c.note;
+---
+
+<aside id="quote-cta" class="not-prose my-12 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
+	<!-- Amber wash on the left edge marks this as an offer, not another prose panel -->
+	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
+
+	<span class="section-label block mb-3">{c.eyebrow}</span>
+	<h2 class="text-heading-sm text-white m-0 mb-3">{headline}</h2>
+	<p class="text-base leading-relaxed text-muted m-0 mb-6">{sub}</p>
+
+	<Button
+		variant="primary"
+		href="#project-inquiry"
+		data-modal-trigger="project-inquiry"
+		aria-label={button}
+	>
+		{button}
+		<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+	</Button>
+
+	<p class="text-xs text-muted m-0 mt-4">{note}</p>
+</aside>
