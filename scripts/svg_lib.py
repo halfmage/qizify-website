@@ -9,6 +9,7 @@ import html, os, re
 
 W       = 520          # canvas width
 PAD     = 24           # outer padding
+PAD_B   = 22           # panel floor, measured down from the last baseline inside it
 CW      = W - 2 * PAD  # content width = 472
 
 SURFACE, PANEL, STROKE = "#2a2622", "#37322c", "#46402f"
@@ -26,18 +27,39 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+# Advance width per character as a fraction of the font size, measured as the
+# widest of SF Pro, Arial and Helvetica at weights 400 and 600. These graphics are
+# embedded with <img>, so they cannot load Inter and always render in whatever the
+# reader's OS supplies for system-ui; the other common ones (Segoe UI, Roboto) set
+# narrower than Arial, so wrapping against these keeps a line inside its panel.
+ADV, ADV_DEF = {}, 0.75
+for _cs, _w in ((" '.,Iijl/", 0.30), ("!:;\u00b7tf()[]{}r", 0.39), ("*-", 0.44),
+                ('"z', 0.50), ("1Jaceksvxy\u00e47", 0.56),
+                ("2?FLTbdghnopqu\u00df\u00f6\u00fc35\u00a7=Z#", 0.63), ("04689+<>", 0.65),
+                ("EPSVYX", 0.67), ("ABCDHKNRU\u00c4\u00dc", 0.72), ("GOQw\u00d6", 0.78),
+                ("Mm%\u2713", 0.90), ("W\u26a0", 1.00)):
+    ADV.update(dict.fromkeys(_cs, _w))
+
+
+def text_w(s, size):
+    """Width of a string in px, summing advances. Kerning means a real run always
+    sets slightly narrower than this, so the estimate is high by 1 to 8% and never
+    low: wrapping against it cannot overrun a panel, and a column or legend laid
+    out with it cannot collide."""
+    return size * sum(ADV.get(c, ADV_DEF) for c in str(s))
+
+
 def wrap(text, size, max_w):
-    """Greedy wrap using an Inter-ish average advance width."""
-    limit = max(1, int(max_w / (size * 0.53)))
+    """Greedy wrap on estimated width, so a caps-heavy or umlaut-heavy German line
+    breaks where it actually runs out of room rather than at a character count."""
     words, lines, cur = text.split(), [], ""
     for wd in words:
         trial = (cur + " " + wd).strip()
-        if len(trial) <= limit:
-            cur = trial
-        else:
-            if cur:
-                lines.append(cur)
+        if cur and text_w(trial, size) > max_w:
+            lines.append(cur)
             cur = wd
+        else:
+            cur = trial
     if cur:
         lines.append(cur)
     return lines
@@ -76,7 +98,7 @@ class Doc:
 
     def band(self, text, accent=False):
         lines = wrap(text, T_SMALL, CW - 32)
-        h = 20 + 20 * len(lines)
+        h = 6 + 20 * len(lines) + PAD_B
         self.rect(PAD, self.y, CW, h, PANEL, ACCENT if accent else STROKE, sw=2 if accent else 1)
         for i, ln in enumerate(lines):
             self.t(PAD + 16, self.y + 26 + i * 20, ln, T_SMALL, SEC)
@@ -92,7 +114,7 @@ class Doc:
 
     def step(self, n, title, desc, accent=False):
         dl = wrap(desc, T_SMALL, CW - 76)
-        h = 30 + 22 + 19 * len(dl)
+        h = 30 + 19 * len(dl) + PAD_B
         self.rect(PAD, self.y, CW, h, PANEL, ACCENT if accent else STROKE, sw=2 if accent else 1)
         self.parts.append(f'  <circle cx="{PAD+28}" cy="{self.y+30}" r="16" fill="{STROKE}"/>')
         self.t(PAD + 28, self.y + 36, n, T_BODY, ACCENT_LT, 600, "middle")
@@ -104,20 +126,26 @@ class Doc:
     def block(self, eyebrow, rows, accent=False, pill=None, stats=None):
         """rows: list[str] plain lines. stats: list[(big, label)]. pill: closing line."""
         inner = CW - 40
-        h = 34
-        if stats: h += 40 * len(stats)
         wrapped = [wrap(r, T_SMALL, inner) for r in rows]
-        h += sum(20 * len(x) + 6 for x in wrapped)
-        if pill: h += 46
-        h += 22
+        # A 34px figure needs air under the eyebrow; a line of body text belongs
+        # close to the label that introduces it.
+        lead = 20 if stats else 6
+        h = 26 + lead + 40 * len(stats or []) + sum(20 * len(x) + 6 for x in wrapped)
+        # a pill ends in a rect edge, which needs no allowance for descenders
+        h += (46 + PAD_B - 6) if pill else PAD_B
         self.rect(PAD, self.y, CW, h, PANEL, ACCENT if accent else STROKE, sw=2 if accent else 1)
         yy = self.y + 26
         self.t(PAD + 20, yy, eyebrow.upper(), T_EYE, ACCENT_LT if accent else MUTED, 600, spacing="0.05em")
-        yy += 20
+        yy += lead
+        # Labels share one column, sized to the widest figure in the block, so a
+        # three-digit number cannot shunt its label out of line with the one- and
+        # two-digit rows.
+        num_w = max([text_w(b, T_BIG) for b, _ in (stats or [])] or [0])
         for big, lab in (stats or []):
             yy += 32
-            self.t(PAD + 20, yy, big, T_BIG, ACCENT_LT if accent and lab.startswith("*") else INK, 600)
-            self.t(PAD + 20 + 14 + len(str(big)) * 20, yy, lab.lstrip("*"), T_SMALL, SEC)
+            self.t(PAD + 20, yy, big, T_BIG,
+                   ACCENT_LT if accent and lab.startswith("*") else INK, 600)
+            self.t(PAD + 34 + num_w, yy - 7, lab.lstrip("*"), T_SMALL, SEC)
             yy += 8
         for wl in wrapped:
             yy += 6
@@ -155,12 +183,13 @@ class Doc:
         self.y += 26
 
     def legend(self, items):
+        self.y += 6
         x = PAD
         for col, lab in items:
             self.rect(x, self.y, 12, 12, col, None, rx=2)
             self.t(x + 20, self.y + 11, lab, T_NOTE, MUTED)
-            x += 26 + len(lab) * 7.4
-        self.y += 26
+            x += 20 + text_w(lab, T_NOTE) + 16
+        self.y += 30
 
     def note(self, text):
         self.y += 8

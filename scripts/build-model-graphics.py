@@ -36,7 +36,7 @@ def linechart(d, ylab, xlab, be_title, be_sub, left_lab, right_lab, s1, s1s, s2,
     # closed API: cost scales with usage; self-hosted: flat once running
     d.parts.append(f'  <path d="M{x0},{bot-20} L{x1},{top+14}" stroke="{ACCENT}" stroke-width="2.5" fill="none"/>')
     d.parts.append(f'  <path d="M{x0},{bot-100} L{x1},{bot-112}" stroke="{BAR_CTX}" stroke-width="2.5" fill="none"/>')
-    bx, by = 351, bot - 108
+    bx, by = 340, bot - 108   # where the two lines actually cross, not a guess
     d.parts.append(f'  <path d="M{bx},{by} L{bx},{bot}" stroke="{MUTED}" stroke-width="1" stroke-dasharray="3 3"/>')
     d.parts.append(f'  <circle cx="{bx}" cy="{by}" r="5.5" fill="{ACCENT_LT}"/>')
     d.t(bx - 8, by - 14, be_title, T_NOTE, ACCENT_LT, 600, anchor="end")
