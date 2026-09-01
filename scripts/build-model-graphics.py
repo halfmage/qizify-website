@@ -57,16 +57,17 @@ def ladder(de):
     d.head("Worauf es läuft" if de else "What it runs on",
            "Offene Modelle wurden effizient: größere Modelle, weiterhin moderate Hardware" if de else
            "Open models got efficient: bigger models, still modest hardware")
-    tiers = ([("20-30B, quantisiert", ["Eine Mittelklasse-GPU: eine einzelne 24-GB-Karte", "Niedrige Hunderte Euro pro Monat"]),
-              ("120B, zum Beispiel gpt-oss", ["Eine 80- bis 96-GB-GPU: ein einzelner Server", "Ab rund 900 Euro pro Monat"]),
-              ("200B und mehr, größte offene Modelle", ["Multi-GPU-Knoten: acht oder mehr GPUs", "Vierstellig pro Monat"])] if de else
-             [("20-30B, quantized", ["One mid-range GPU: a single 24 GB card", "Low hundreds of euros per month"]),
-              ("120B, for example gpt-oss", ["One 80 to 96 GB GPU: a single server", "From around 900 euros per month"]),
-              ("200B and above, largest open models", ["Multi-GPU node: eight or more GPUs", "Four figures per month"])])
-    for i, (eye, rows) in enumerate(tiers):
-        d.block(eye, rows, accent=(i == 0))
-    d.note("EU-Anbieter: Hetzner, OVHcloud, Scaleway, IONOS. Preise sind Richtwerte, Stand 2026." if de else
-           "EU providers: Hetzner, OVHcloud, Scaleway, IONOS. Prices indicative, as of 2026.")
+    d.table(("Größe", "Läuft auf", "Pro Monat") if de else
+            ("Model size", "What it runs on", "Per month"),
+            ([("20-30B", "Eine Mittelklasse-GPU, eine einzelne 24-GB-Karte", "Niedrige Hunderte Euro"),
+              ("120B", "Eine 80- bis 96-GB-GPU, ein einzelner Server", "Ab rund 900 Euro"),
+              ("200B und mehr", "Multi-GPU-Knoten, acht oder mehr GPUs", "Vierstellig")] if de else
+             [("20-30B", "One mid-range GPU, a single 24 GB card", "Low hundreds of euros"),
+              ("120B", "One 80 to 96 GB GPU, a single server", "From around 900 euros"),
+              ("200B and above", "Multi-GPU node, eight or more GPUs", "Four figures")]),
+            widths=[96, 168, 172], accent_col=2, bars=[0.12, 0.48, 1.0])
+    d.note("Der Balken zeigt die Modellgröße im Verhältnis. EU-Anbieter: Hetzner, OVHcloud, Scaleway, IONOS. Preise sind Richtwerte, Stand 2026." if de else
+           "The bar shows model size in proportion. EU providers: Hetzner, OVHcloud, Scaleway, IONOS. Prices indicative, as of 2026.")
     return d.render(OUT + ("hardware-ladder-de.svg" if de else "hardware-ladder.svg"))
 
 
@@ -118,24 +119,28 @@ def topmodels(de):
 
 # ----------------------------------------------------------------- RAG vs LoRA
 def raglora(de):
-    d = Doc("Diagramm: zwei Schichten machen aus einem offenen Basismodell Ihre eigene KI. Retrieval (RAG) antwortet aus Ihren eigenen Inhalten und ändert, was das Modell weiß. Fine-Tuning (LoRA) übernimmt Ihren Stil, Ihre Formate und Aufgaben und ändert, wie sich das Modell verhält. Beide setzen auf einem gemeinsamen offenen Basismodell auf."
+    d = Doc("Diagramm: zwei Schichten machen aus einem offenen Basismodell Ihre eigene KI. Retrieval (RAG) antwortet aus Ihren eigenen Inhalten und ändert, was das Modell weiß. Fine-Tuning (LoRA) übernimmt Ihren Stil, Ihre Formate und Aufgaben und ändert, wie sich das Modell verhält. Beide Schichten sitzen auf einem gemeinsamen offenen Basismodell auf."
             if de else
-            "Diagram: two layers turn an open base model into AI that is yours. Retrieval (RAG) answers from your own content and changes what the model knows. Fine-tuning (LoRA) takes on your style, formats and tasks and changes how it behaves. Both sit on one shared open base model.")
+            "Diagram: two layers turn an open base model into AI that is yours. Retrieval (RAG) answers from your own content and changes what the model knows. Fine-tuning (LoRA) takes on your style, formats and tasks and changes how it behaves. Both layers rest on one shared open base model.")
     d.head("Wie aus einem Modell Ihre KI wird" if de else "How a generic model becomes your AI",
-           "Zwei Schichten machen aus einem offenen Basismodell Ihre eigene KI" if de else
-           "Two layers turn an open base model into AI that is yours")
-    d.band("Eingang: Ihre Inhalte und Dokumente, Ihr Ton, Ihre Formate und Aufgaben" if de else
-           "Input: your content and documents, your tone, your formats and tasks")
-    d.arrow()
-    d.block("Retrieval (RAG)",
-            ["Antwortet aus Ihren eigenen Inhalten", "Ändert, was das Modell weiß"] if de else
-            ["Answers from your own content", "Changes what the model knows"], accent=True)
-    d.block("Fine-Tuning (LoRA)" if de else "Fine-tuning (LoRA)",
-            ["Ihr Stil, Ihre Formate und Aufgaben", "Ändert, wie sich das Modell verhält"] if de else
-            ["Your style, your formats and tasks", "Changes how the model behaves"])
-    d.arrow()
-    d.band("Beide setzen auf einem gemeinsamen offenen Basismodell auf und ergeben Ihre eigene KI" if de else
-           "Both sit on one shared open base model and add up to your own custom AI", accent=True)
+           "Zwei Schichten auf einem gemeinsamen Basismodell" if de else
+           "Two layers, resting on one shared base model")
+    d.stack(([("Retrieval (RAG)",
+               ["Antwortet aus Ihren eigenen Inhalten", "Ändert, was das Modell weiß"],
+               "Ihre Inhalte und Dokumente"),
+              ("Fine-Tuning (LoRA)",
+               ["Ihr Stil, Ihre Formate und Aufgaben", "Ändert, wie sich das Modell verhält"],
+               "Ihr Ton und Ihre Formate")] if de else
+             [("Retrieval (RAG)",
+               ["Answers from your own content", "Changes what the model knows"],
+               "your content and documents"),
+              ("Fine-tuning (LoRA)",
+               ["Your style, your formats and tasks", "Changes how the model behaves"],
+               "your tone and your formats")]),
+            base=("Ein gemeinsames offenes Basismodell" if de else "One shared open base model",
+                  "Dasselbe Modell für alle Kunden" if de else "The same model for every client"),
+            out="Ergibt Ihre eigene KI: je Kunde ein LoRA-Adapter und ein RAG-Index" if de else
+                "Adds up to your own custom AI: one LoRA adapter and one RAG index per client")
     d.note("Ein gemeinsames Basismodell, je Kunde ein LoRA-Adapter und ein RAG-Index: personalisierte KI, Daten getrennt." if de else
            "One shared base, a per-client LoRA adapter and a per-client RAG index: personalized AI, with each client's data kept separate.")
     return d.render(OUT + ("rag-lora-personalization-de.svg" if de else "rag-lora-personalization.svg"))

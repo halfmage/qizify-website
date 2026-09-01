@@ -1,30 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 723" role="img" aria-label="Comparison of what happens to your own course material: in a standard LMS the script, slides and questions become a PDF, a video and a one-off quiz, and the learner reads; in a platform you own they become tagged questions, a syllabus path, adaptive repetition and a mock exam, and the learner is questioned and corrected.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 533" role="img" aria-label="Comparison of what a standard LMS and a platform you own each turn the same course material into: script and slides become a PDF and a video, against a path that follows the syllabus; questions become a one-off quiz, against questions each carrying an objective and a difficulty level; progress becomes a tick, against repetition of exactly what has not stuck; and for the exam itself a standard LMS offers nothing, where a platform you own runs a mock exam in the real format. The learner reads, or the learner is questioned.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="520" height="723" rx="16" fill="#2a2622"/>
+  <rect x="0" y="0" width="520" height="533" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">The same content, two very different</text>
   <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">outcomes</text>
-  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">What happens to your material, depending on what you put it</text>
-  <text x="24" y="107" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">into</text>
-  <rect x="24" y="129" width="472" height="68" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="40" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">The same starting point either way: your scripts, slides,</text>
-  <text x="40" y="175" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">handouts and practice questions</text>
-  <path d="M260,209 L260,225" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="24" y="235" width="472" height="198" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="44" y="261" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" font-weight="600" letter-spacing="0.05em">STANDARD LMS OR AUTHORING TOOL</text>
-  <text x="44" y="293" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Script becomes a PDF to download</text>
-  <text x="44" y="319" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Slides become a video</text>
-  <text x="44" y="345" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Questions become a one-off quiz</text>
-  <text x="44" y="371" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Progress becomes a tick</text>
-  <rect x="44" y="385" width="432" height="32" rx="8" fill="#2a2622"/>
-  <text x="58" y="406" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92" font-style="italic">Result: the learner reads.</text>
-  <rect x="24" y="445" width="472" height="198" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="2"/>
-  <text x="44" y="471" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600" letter-spacing="0.05em">A PLATFORM YOU OWN</text>
-  <text x="44" y="503" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Questions carry an objective and a difficulty level</text>
-  <text x="44" y="529" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">A path that follows the syllabus</text>
-  <text x="44" y="555" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Repetition of what has not stuck</text>
-  <text x="44" y="581" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">A mock exam in the real format</text>
-  <rect x="44" y="595" width="432" height="32" rx="8" fill="#46402f"/>
-  <text x="58" y="616" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-style="italic">Result: the learner is questioned.</text>
-  <text x="24" y="681" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">The material stays yours either way. The difference is whether it is</text>
-  <text x="24" y="699" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">stored or used.</text>
+  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Your material, and what each kind of software turns it into</text>
+  <rect x="258" y="105" width="250" height="354" rx="12" fill="#3a3128"/>
+  <text x="24" y="121" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a89e92" font-weight="600" letter-spacing="0.06em">In a standard LMS</text>
+  <text x="270" y="121" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#e8b07a" font-weight="600" letter-spacing="0.06em">In a platform you own</text>
+  <path d="M24,131 L496,131" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="151" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#a89e92" font-weight="600" letter-spacing="0.08em">SCRIPT AND SLIDES</text>
+  <text x="24" y="169" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">a PDF to download, a video</text>
+  <text x="270" y="169" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">a path that follows the</text>
+  <text x="270" y="189" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">syllabus</text>
+  <path d="M24,203 L496,203" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="223" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#a89e92" font-weight="600" letter-spacing="0.08em">QUESTIONS</text>
+  <text x="24" y="241" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">a one-off quiz</text>
+  <text x="270" y="241" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">an objective and a difficulty</text>
+  <text x="270" y="261" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">level on each</text>
+  <path d="M24,275 L496,275" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="295" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#a89e92" font-weight="600" letter-spacing="0.08em">PROGRESS</text>
+  <text x="24" y="313" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">a tick</text>
+  <text x="270" y="313" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">repetition of exactly what</text>
+  <text x="270" y="333" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">has not stuck</text>
+  <path d="M24,347 L496,347" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="367" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#a89e92" font-weight="600" letter-spacing="0.08em">THE EXAM ITSELF</text>
+  <text x="24" y="385" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#6f6459" font-style="italic">nothing</text>
+  <text x="270" y="385" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">a mock exam in the real</text>
+  <text x="270" y="405" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">format</text>
+  <path d="M24,419 L496,419" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="445" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92" font-weight="600">The learner reads.</text>
+  <text x="270" y="445" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">The learner is questioned.</text>
+  <text x="24" y="491" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">The material stays yours either way. The difference is whether it is</text>
+  <text x="24" y="509" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">stored or used.</text>
 </svg>
