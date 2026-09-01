@@ -12,6 +12,9 @@ interface Props {
 	sub?: string;
 	button?: string;
 	note?: string;
+	// Anchor for linking straight to the CTA. No default: a post is free to embed
+	// two of these with different copy, and a baked-in id would ship duplicates.
+	id?: string;
 }
 
 const copy = {
@@ -31,15 +34,19 @@ const copy = {
 	},
 };
 
-const { lang } = Astro.props;
+const { lang, id } = Astro.props;
+// MDX call sites are not type-checked and `astro check` is not part of `npm run
+// build`, so a typo'd lang would otherwise fail the build on `c.headline` being
+// undefined, several frames from the actual mistake.
 const c = copy[lang];
+if (!c) throw new Error(`InlineCta: unsupported lang "${lang}", expected one of ${Object.keys(copy).join(', ')}`);
 const headline = Astro.props.headline ?? c.headline;
 const sub = Astro.props.sub ?? c.sub;
 const button = Astro.props.button ?? c.button;
 const note = Astro.props.note ?? c.note;
 ---
 
-<aside id="quote-cta" class="not-prose my-12 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
+<aside id={id} class="not-prose my-12 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
 	<!-- Amber wash on the left edge marks this as an offer, not another prose panel -->
 	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
 

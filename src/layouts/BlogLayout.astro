@@ -375,7 +375,12 @@ const blogPostingSchema = {
 			const wrap = document.getElementById('toc-wrap');
 			if (!article || !nav || !wrap) return;
 
-			const headings = Array.from(article.querySelectorAll('h2'));
+			// Components embedded in the article (the InlineCta panel) carry their own
+			// heading, and `not-prose` only suppresses typography styles, not this
+			// selector. Without the filter a marketing headline lands in the TOC as if
+			// it were a section of the post, and can become the active entry on scroll.
+			const headings = Array.from(article.querySelectorAll('h2'))
+				.filter((h) => !h.closest('.not-prose'));
 			// A table of contents only earns its space with a few sections.
 			if (headings.length < 3) { nav.innerHTML = ''; wrap.hidden = true; return; }
 
