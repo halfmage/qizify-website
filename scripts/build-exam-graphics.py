@@ -56,25 +56,28 @@ def quote(lang):
 # ------------------------------------------------------------------- 3. aufbau
 def aufbau(lang):
     de = lang == "de"
-    d = Doc("Aufbau der Sachkundeprüfung nach § 34a GewO: schriftlicher Teil mit 82 Multiple-Choice-Aufgaben, 120 Punkten in 120 Minuten und 60 Punkten zum Bestehen, mit Teilpunkten seit dem 1. Juli 2025; danach, nur bei bestandenem schriftlichen Teil, der mündliche Teil mit rund 15 Minuten in Gruppen von bis zu fünf Personen. Grundlage sind sieben Sachgebiete nach § 7 BewachV."
+    d = Doc("Tabelle zum Aufbau der Sachkundeprüfung nach § 34a GewO, Teil 1 schriftlich gegen Teil 2 mündlich: 82 Multiple-Choice-Aufgaben gegenüber Situationsaufgaben in Gruppen von bis zu fünf Personen; 120 Minuten gegenüber etwa 15 Minuten; bestanden ab 60 von 120 Punkten mit Teilpunkten seit dem 1. Juli 2025, während zum mündlichen Teil nur zugelassen wird, wer den schriftlichen bestanden hat. Grundlage sind sieben Sachgebiete nach § 7 BewachV."
             if de else
-            "Structure of the German section 34a security exam: a written part of 82 multiple-choice tasks worth 120 points in 120 minutes with a pass mark of 60 and partial credit since 1 July 2025; then, only for those who pass, an oral part of around 15 minutes in groups of up to five. Both rest on seven subject areas fixed in law.")
+            "Table of how the German section 34a security exam is structured, part 1 written against part 2 oral: 82 multiple-choice tasks against situational scenarios in groups of up to five; 120 minutes against around 15 minutes; a pass mark of 60 out of 120 points with partial credit since 1 July 2025, while only those who pass the written part are admitted to the oral one. Both rest on seven subject areas fixed in law.")
     d.head("Wie die Sachkundeprüfung § 34a GewO aufgebaut ist" if de else "How the § 34a security exam is structured",
            "Stand seit der Umstellung zum 1. Juli 2025" if de else "As it stands since the changeover on 1 July 2025")
-    d.block("Teil 1: schriftlich" if de else "Part 1: written",
-            ["Teilpunkte für teilweise richtige Antworten" if de else "Partial credit for partially correct answers"],
-            accent=True,
-            stats=[("82", "Multiple-Choice-Aufgaben" if de else "multiple-choice tasks"),
-                   ("120", "Punkte in 120 Minuten" if de else "points in 120 minutes"),
-                   ("60", "*Punkte zum Bestehen" if de else "*points to pass")])
-    d.arrow("nur wenn bestanden" if de else "only if passed")
-    d.block("Teil 2: mündlich" if de else "Part 2: oral",
-            ["Situationsaufgaben und Abgrenzung gegenüber der Polizei" if de else
-             "Situational scenarios, and where a guard's powers end and the police's begin"],
-            stats=[("15", "Minuten, ungefähr" if de else "minutes, roughly"),
-                   ("5", "Personen pro Gruppe, maximal" if de else "candidates per group, at most")])
+    d.table(("", "Teil 1: schriftlich", "Teil 2: mündlich") if de else
+            ("", "Part 1: written", "Part 2: oral"),
+            ([("Format", "82 Aufgaben, Multiple Choice",
+               "Situationsaufgaben in Gruppen von bis zu fünf Personen"),
+              ("Dauer", "120 Minuten", "etwa 15 Minuten"),
+              ("Bestehen", "60 von 120 Punkten, Teilpunkte seit 1. Juli 2025",
+               "Zulassung nur mit bestandenem Teil 1")] if de else
+             [("Format", "82 tasks, multiple choice",
+               "Situational scenarios in groups of up to five"),
+              ("Duration", "120 minutes", "around 15 minutes"),
+              ("Passing", "60 of 120 points, partial credit since 1 July 2025",
+               "Admission only with a passed part 1")]),
+            widths=[96, 176, 176])
     d.band("Grundlage für beide Teile: sieben Sachgebiete nach § 7 BewachV, je Lernziel mit Taxonomiestufe im Rahmenstoffplan" if de else
            "Behind both parts: seven subject areas fixed in law, each with learning objectives and a taxonomy level")
+    d.note("Die beiden Teile laufen nacheinander: zum mündlichen Teil wird nur zugelassen, wer den schriftlichen bestanden hat." if de else
+           "The two parts run in sequence: only candidates who pass the written part are admitted to the oral one.")
     return d.render(OUT + ("pruefung-34a-aufbau-de.svg" if de else "pruefung-34a-aufbau.svg"))
 
 # --------------------------------------------------------- 4. statisch vs aktiv
