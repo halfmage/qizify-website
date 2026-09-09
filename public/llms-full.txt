@@ -3163,6 +3163,32 @@ Curious about your specific savings potential? Try our [Apprenticeship Savings C
 **Ready to replace paper logbooks with a smarter solution?** [Book a free demo of LearnSlice](/companies) to see how digital training logbooks integrate with AI-powered learning paths, automated IHK exam prep, and trainer analytics. Start saving time from day one, and [calculate your potential savings](/apprenticeship-savings-calculator) to see the full financial impact.
 
 
+## Frequently Asked Questions
+
+### Is a digital training logbook legally valid in Germany?
+
+Yes. Section 13 of the Vocational Training Act does not prescribe a specific format, and since 2020 the legal framework explicitly permits digital training logbooks. All IHK chambers accept them. The content requirements are identical to paper; only the implementation differs.
+
+### How often does the training logbook have to be filled in?
+
+Entries have to be created promptly, as a rule weekly. This is where paper most often fails: apprentices catch up weeks or months at a time and entries end up missing. Automatic reminders for entries that are due are the single biggest practical advantage of going digital.
+
+### What happens if the training logbook is incomplete?
+
+A properly maintained logbook is a prerequisite for admission to the final examination. If it is missing or has gaps, the apprentice can be denied access to the exam. The complete record therefore has to be available in time for exam registration.
+
+### Does a digital training logbook need a handwritten signature?
+
+No. Digital sign-off by both the apprentice and the trainer is accepted by all IHK chambers, provided the system ensures authenticity and traceability. What matters is that trainers review and approve entries regularly, not the form the signature takes.
+
+### What should a digital solution be able to do?
+
+Templates that match the requirements of the competent chamber, automatic reminders for entries that are due, digital approval with no switch back to paper, a clean PDF export in a chamber-compliant format, and audit-proof archiving through to the final examination. On data protection, look for EU hosting and a role model that separates apprentice, trainer, and administration.
+
+### Who has to agree to keeping the record digitally?
+
+The training company. It is best to record electronic record keeping in the training contract before you switch. For existing contracts, check the agreed form of the training record first.
+
 ---
 
 # Reduce Apprenticeship Training Costs: €17K Per Person
@@ -6499,6 +6525,32 @@ Das digitale Berichtsheft ist mehr als ein Ersatz für Papier. Richtig eingesetz
 
 **Für Geschäftsführung und HR-Leitung:** Digitale Dokumentation reduziert Verwaltungsaufwand und sichert die IHK-Prüfungszulassung Ihrer Azubis. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
+
+## Häufig gestellte Fragen
+
+### Ist ein digitales Berichtsheft rechtlich zulässig?
+
+Ja. Seit der Novellierung des Berufsbildungsgesetzes 2020 ist ausdrücklich klargestellt, dass der Ausbildungsnachweis auch elektronisch geführt werden darf, sofern der Ausbildungsbetrieb zustimmt. Die IHK- und HWK-Kammern akzeptieren digitale Berichtshefte flächendeckend. Die inhaltlichen Anforderungen bleiben dieselben wie auf Papier, nur die Umsetzung unterscheidet sich.
+
+### Wie oft muss das Berichtsheft geführt werden?
+
+Die Einträge müssen zeitnah entstehen, in der Regel wöchentlich. Genau daran scheitert die Papierführung am häufigsten: Azubis holen Wochen oder Monate auf einmal nach, und am Ende fehlen Einträge. Ein digitales Berichtsheft mit automatischen Erinnerungen an fällige Einträge löst vor allem dieses Problem.
+
+### Was passiert, wenn das Berichtsheft unvollständig ist?
+
+Das ordnungsgemäß geführte Berichtsheft ist nach § 13 des Berufsbildungsgesetzes eine Zulassungsvoraussetzung zur Abschlussprüfung. Fehlt es oder ist es lückenhaft, kann die Zulassung verweigert werden. Der vollständige Nachweis muss deshalb spätestens zur Prüfungsanmeldung vorliegen.
+
+### Braucht ein digitales Berichtsheft eine handschriftliche Unterschrift?
+
+Nein. Eine digitale Freigabe durch Azubi und Ausbilder wird von den Kammern akzeptiert, sofern das System Authentizität und Nachvollziehbarkeit sicherstellt. Wichtig ist, dass Ausbilder die Einträge regelmäßig prüfen und abzeichnen, nicht die Form der Unterschrift.
+
+### Was muss eine digitale Lösung mindestens können?
+
+Vorlagen, die den Vorgaben der zuständigen Kammer entsprechen, automatische Erinnerungen an fällige Einträge, digitale Freigabe ohne Medienbruch, sauberen PDF-Export im kammerkonformen Format und eine revisionssichere Archivierung bis zur Abschlussprüfung. Beim Datenschutz zählt Hosting in der EU und ein Rollenkonzept, das Azubi, Ausbilder und Verwaltung trennt.
+
+### Wer muss der digitalen Führung zustimmen?
+
+Der Ausbildungsbetrieb. Halten Sie die elektronische Führung am besten im Ausbildungsvertrag fest, bevor Sie umstellen. Bei bestehenden Verträgen lohnt sich vorab ein Blick in die vereinbarte Form des Ausbildungsnachweises.
 
 ---
 
