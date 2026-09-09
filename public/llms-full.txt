@@ -1078,6 +1078,51 @@ A concrete example comes from FH Dortmund, where LearnSlice is used in a publicl
 
 For how closely data protection and AI are linked, and the questions to ask a vendor, read our [7-point check on GDPR-compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers).
 
+## Vendor Scorecard to Copy
+
+The criteria above only help if you apply them to every vendor the same way. Score each one from 0 (absent) to 3 (proven with evidence), and the shortlist usually decides itself. The second and third sections are what a vendor needs from you before any quote is worth comparing.
+
+<CopyBlock buttonLabel="Copy scorecard" copiedLabel="Copied!">
+
+### E-Learning Vendor Scorecard
+
+*Project:* [short description] · *Scored on:* [date] · *Scored by:* [name]
+
+#### 1. Vendor Comparison
+
+Score 0 to 3 per criterion: 0 absent, 1 claimed, 2 demonstrated, 3 proven with evidence.
+
+| Criterion | Vendor A | Vendor B | Vendor C |
+|---|---|---|---|
+| Instructional design and engineering under one roof | [0-3] | [0-3] | [0-3] |
+| AI capability: adaptive paths, chatbot grounded in your own knowledge | [0-3] | [0-3] | [0-3] |
+| GDPR: EU or German hosting, processing agreement, deletion model | [0-3] | [0-3] | [0-3] |
+| Ownership of the code and content after the project | [0-3] | [0-3] | [0-3] |
+| Operation and further development after go-live | [0-3] | [0-3] | [0-3] |
+| References with evidence, not slides | [0-3] | [0-3] | [0-3] |
+| **Total out of 18** | [sum] | [sum] | [sum] |
+
+#### 2. Settle Before You Request Quotes
+
+- [ ] Do we need content or software? Quotes are not comparable across the two.
+- [ ] Who are the user groups, and how many people in each?
+- [ ] Which systems must it connect to? [LMS, SSO, xAPI, SCORM, HR system]
+- [ ] What content already exists, and in what format?
+- [ ] Where must the data live?
+- [ ] Who operates the solution after go-live, us or the vendor?
+- [ ] Budget range and target go-live date?
+
+#### 3. Put in Writing Before You Sign
+
+- [ ] Ownership of the source code and the content
+- [ ] Usage rights and handover of the source on contract end
+- [ ] Data processing agreement and hosting location
+- [ ] Maintenance, service levels, and further development
+- [ ] How training data is handled for any AI features
+- [ ] What happens to your data if you change vendor
+
+</CopyBlock>
+
 ## GDPR, Sovereignty, and Owning the Code
 
 The real advantage of custom development is control: over your data, your technology, and the result. With finished software you accept the vendor's rules. With a tailored solution, you set them.
@@ -4412,6 +4457,51 @@ Ein konkreter Beleg aus einem solchen Projekt kommt von der FH Dortmund, wo Lear
 > **Prof. Dr. Carsten Wolff**, Vorstand des IDiAL, FH Dortmund
 
 Wie eng Datenschutz und KI zusammenhängen und welche Fragen Sie einem Anbieter stellen sollten, lesen Sie im [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+## Bewertungsbogen zum Kopieren
+
+Die Kriterien oben helfen nur, wenn Sie sie bei jedem Anbieter gleich anlegen. Vergeben Sie 0 (fehlt) bis 3 (mit Belegen nachgewiesen), dann entscheidet sich die engere Auswahl meist von selbst. Abschnitt zwei und drei sind das, was ein Anbieter von Ihnen braucht, damit Angebote überhaupt vergleichbar werden.
+
+<CopyBlock buttonLabel="Bewertungsbogen kopieren" copiedLabel="Kopiert!">
+
+### E-Learning-Anbieter: Bewertungsbogen
+
+*Projekt:* [Kurzbeschreibung] · *Bewertet am:* [Datum] · *Bewertet von:* [Name]
+
+#### 1. Anbietervergleich
+
+Je Kriterium 0 bis 3 Punkte: 0 fehlt, 1 behauptet, 2 gezeigt, 3 mit Belegen nachgewiesen.
+
+| Kriterium | Anbieter A | Anbieter B | Anbieter C |
+|---|---|---|---|
+| Didaktik und Engineering aus einer Hand | [0-3] | [0-3] | [0-3] |
+| KI-Fähigkeit: adaptive Lernpfade, Chatbot auf eigenem Wissen | [0-3] | [0-3] | [0-3] |
+| DSGVO: Hosting in Deutschland oder der EU, AVV, Löschkonzept | [0-3] | [0-3] | [0-3] |
+| Eigentum am Code und an den Inhalten nach Projektende | [0-3] | [0-3] | [0-3] |
+| Betrieb und Weiterentwicklung nach dem Go-live | [0-3] | [0-3] | [0-3] |
+| Referenzen mit Belegen statt Folien | [0-3] | [0-3] | [0-3] |
+| **Summe von 18** | [Summe] | [Summe] | [Summe] |
+
+#### 2. Vor der Angebotsanfrage klären
+
+- [ ] Brauchen wir Content oder Software? Angebote dazu sind nicht vergleichbar.
+- [ ] Wer sind die Nutzergruppen, und wie viele Personen je Gruppe?
+- [ ] Welche Systeme müssen angebunden werden? [LMS, SSO, xAPI, SCORM, HR-System]
+- [ ] Welche Inhalte liegen vor, in welchem Format?
+- [ ] Wo müssen die Daten liegen?
+- [ ] Wer betreibt die Lösung nach dem Go-live, wir oder der Anbieter?
+- [ ] Budgetrahmen und gewünschter Go-live-Termin?
+
+#### 3. Vor der Unterschrift schriftlich festhalten
+
+- [ ] Eigentum am Quellcode und an den Inhalten
+- [ ] Nutzungsrechte und Herausgabe des Quellcodes bei Vertragsende
+- [ ] Auftragsverarbeitungsvertrag und Hostingstandort
+- [ ] Wartung, Service-Level und Weiterentwicklung
+- [ ] Umgang mit Trainingsdaten bei KI-Funktionen
+- [ ] Was mit Ihren Daten bei einem Anbieterwechsel geschieht
+
+</CopyBlock>
 
 ## DSGVO, Souveränität und Eigentum am Code
 
