@@ -23,7 +23,7 @@
           { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      { "label": "Business Software", "href": "/de/loesungen" },
+      { "label": "Individuelle Entwicklung", "href": "/de/loesungen" },
       { "label": "Blog", "href": "/de/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/de#faq" }
     ],
@@ -479,7 +479,7 @@
   },
   "solutions": {
     "hero": {
-      "headline": "E-Learning-Software,\nfür Ihren Zweck gebaut",
+      "headline": "Individuelle E-Learning-Entwicklung,\nfür Ihren Zweck gebaut",
       "subheadline": "Ihr Engineering-Partner für anspruchsvolle Lernsoftware, vom KI-Tutor bis zur vollständigen Plattform. Entwickelt rund um Ihren Lehrplan und Ihre Compliance, in Ihrem Besitz und gehostet dort, wo Ihre Daten bleiben müssen.",
       "ctaPrimary": "Strategiegespräch buchen",
       "ctaSecondary": "Unsere Projekte",
