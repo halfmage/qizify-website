@@ -588,7 +588,7 @@ More evidence from that pilot is on our [research and evidence](/research) page.
 3. **Ship a first version in 6 to 8 weeks.** One subject area complete, a mock exam in the real format, real learners. We deliberately scope that first version down to a single subject area, because only real usage shows which feature earns the next slot. Their results decide what gets built next, not a concept paper.
 4. **Roll out to further exams.** Once the structure stands, the second exam is mostly content work. This is where the distance opens up between you and providers still working from PDFs and classroom time.
 
-If you prepare people for a regulated exam and your current system does not know the syllabus behind it, the first building block is worth a conversation. Our [solutions](/solutions) page sets out how we work as a development partner.
+If you prepare people for a regulated exam and your current system does not know the syllabus behind it, the first building block is worth a conversation. Our [custom e-learning development](/solutions) page sets out how we work as a development partner.
 
 
 ## Frequently Asked Questions
@@ -922,7 +922,7 @@ An AI tutor raises data questions a static course never does, because it runs yo
 
 For regulated and public-sector buyers, the same build should be EU AI Act ready from the start; retrofitting compliance later costs far more.
 
-That is what our offering is built around. To see how LearnSlice builds custom AI tutors with EU hosting and ownership of the result, visit [custom e-learning solutions](/solutions).
+That is what our offering is built around. To see how LearnSlice builds custom AI tutors with EU hosting and ownership of the result, visit [custom e-learning development](/solutions).
 
 ## Start Small, Then Scale
 
@@ -967,13 +967,14 @@ That is negotiable and should be settled in writing before the project starts. W
 
 ---
 
-# Custom E-Learning Development: Cost, Process & How to Choose
+# How Much Does Custom E-Learning Cost? 2026 Benchmarks
 
 Source: https://learnslice.com/blog/custom-e-learning-development-costs
 Language: en
 Published: 2026-07-01
+Updated: 2026-09-09
 
-Custom e-learning development in 2026: what it costs, how a project runs, and how to choose a vendor. With cost benchmarks, a checklist, and vendor criteria.
+What custom e-learning costs in 2026: price benchmarks per module, platform, and AI tutor, plus how a project runs and how to choose a vendor.
 
 ## Key Takeaways
 
@@ -985,13 +986,13 @@ Custom e-learning development in 2026: what it costs, how a project runs, and ho
 
 ![Two professionals discussing a custom e-learning project at a laptop](/images/blog/custom-elearning-consultation.webp)
 
-## Custom E-Learning Development: When It Is Worth It
+## When Custom Development Is Worth It
 
-Custom e-learning development is worth it the moment off-the-shelf software stops covering your needs: when the content is too specific, the processes too particular, the data-protection requirements too high, or when you want to build in AI and your own company knowledge.
+Custom development is worth it the moment off-the-shelf software stops covering your needs: when the content is too specific, the processes too particular, the data-protection requirements too high, or when you want to build in AI and your own company knowledge.
 
 Most companies do not arrive at this question out of curiosity. They arrive because a finished tool is failing at a point that matters, and because a wrong buy costs twice: the licence, and the year lost to a tool nobody ends up using. The LMS does not model their actual training flow. The compliance course feels generic because it does not look like their business. Or data protection simply rules out the tool they wanted. You do not need convincing that a tailored solution would help. You need to know what it costs, how it runs, and how to recognise a good vendor.
 
-That is what this guide is for: the numbers, the realistic process, and the criteria that matter when you commission **custom e-learning development**.
+That is what this guide is for: **what a custom build actually costs**, the realistic process, and the criteria that matter when you commission one.
 
 ## E-Learning Content or E-Learning Software? The Distinction That Matters
 
@@ -1083,7 +1084,7 @@ The real advantage of custom development is control: over your data, your techno
 
 This matters in three ways that are especially important in Germany and the wider DACH region. First, **data protection**: a solution built from the ground up for EU hosting, data processing, and clean data separation spares you the debates that generic tools regularly trigger. Second, **sovereignty**: you are not permanently tied to one vendor, one pricing model, or a data centre outside the EU. Third, **ownership**: when the rights to the code sit with you, the solution is an asset of your company, not a rented tool.
 
-That is exactly what our offering is built around. To see how LearnSlice delivers custom e-learning software with AI, EU hosting, and ownership of the result, visit our page on [custom e-learning solutions](/solutions).
+That is exactly what our offering is built around. To see how LearnSlice delivers custom e-learning software with AI, EU hosting, and ownership of the result, visit our page on [custom e-learning development](/solutions).
 
 ## Conclusion: Four Steps to the Right Solution
 
@@ -3607,7 +3608,7 @@ Weitere Belege aus dem Hochschulpilot finden Sie unter [Forschung und Evidenz](/
 3. **Erste Version in 6 bis 8 Wochen.** Ein Sachgebiet vollständig, Prüfungssimulation im Originalformat, echte Teilnehmende. Diesen ersten Stand schneiden wir bewusst auf ein einziges Sachgebiet zu, weil sich erst am echten Nutzungsverhalten zeigt, welche Funktion als Nächstes zählt. Was danach gebaut wird, entscheiden die Ergebnisse der Gruppe und kein Konzeptpapier.
 4. **Auf weitere Prüfungen ausrollen.** Sobald die Struktur steht, ist die zweite Prüfung überwiegend Inhaltsarbeit. Hier entsteht der Abstand zu Anbietern, die weiter mit PDF und Präsenzunterricht arbeiten.
 
-Wenn Sie auf eine geregelte Prüfung vorbereiten und heute mit einem System arbeiten, das den Prüfungsstoff nicht kennt, lohnt sich ein Gespräch über den ersten Baustein. Wie wir als Entwicklungspartner arbeiten, steht auf der Seite [Lösungen](/de/loesungen).
+Wenn Sie auf eine geregelte Prüfung vorbereiten und heute mit einem System arbeiten, das den Prüfungsstoff nicht kennt, lohnt sich ein Gespräch über den ersten Baustein. Wie wir als Entwicklungspartner arbeiten, steht auf der Seite zur [individuellen E-Learning-Entwicklung](/de/loesungen).
 
 
 ## Häufig gestellte Fragen
@@ -3941,7 +3942,7 @@ Ein KI-Tutor wirft Datenfragen auf, die ein statischer Kurs nie stellt, denn er 
 
 Für regulierte Branchen und den öffentlichen Sektor sollte derselbe Build von Anfang an EU-AI-Act-konform sein; Compliance nachzurüsten kostet deutlich mehr.
 
-Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle KI-Tutoren mit EU-Hosting und Eigentum am Ergebnis umsetzt, sehen Sie unter [individuelle E-Learning-Lösungen](/de/loesungen).
+Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle KI-Tutoren mit EU-Hosting und Eigentum am Ergebnis umsetzt, sehen Sie unter [individuelle E-Learning-Entwicklung](/de/loesungen).
 
 ## Klein anfangen, dann skalieren
 
@@ -4044,7 +4045,7 @@ Der Finanzierungshebel ist für Bildungsträger oft entscheidend, weil die Mitte
 
 Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen an einem klar abgegrenzten Anwendungsfall, etwa der Nachweisführung oder einem KI-gestützten Übungsbereich, bevor Sie sich auf ein Gesamtprojekt festlegen. So bleibt das Risiko gering und der Nutzen wird früh sichtbar. Wenn es dabei um Ihr Kursangebot selbst geht und nicht nur um die Nachweisführung, lesen Sie weiter unter [Lernplattform für Bildungsträger: eigene Kurse digitalisieren](/de/blog/lernplattform-bildungstraeger).
 
-Wo Sie heute stehen, sehen Sie in wenigen Minuten mit dem [Digital-Readiness-Check](/de/digital-readiness-check). Für einen konkreten Fahrplan aus Ihren Handlungsfeldern vereinbaren Sie ein kostenloses Strategiegespräch, ohne Pitch. Wie wir individuelle Lösungen bauen, zeigt die Seite zu unseren [Lösungen](/de/loesungen).
+Wo Sie heute stehen, sehen Sie in wenigen Minuten mit dem [Digital-Readiness-Check](/de/digital-readiness-check). Für einen konkreten Fahrplan aus Ihren Handlungsfeldern vereinbaren Sie ein kostenloses Strategiegespräch, ohne Pitch. Wie wir individuelle Lösungen bauen, zeigt die Seite zur [individuellen E-Learning-Entwicklung](/de/loesungen).
 
 _Diese Angaben dienen der Orientierung und ersetzen keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: Juli 2026._
 
@@ -4073,13 +4074,14 @@ Klein und konkret. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nut
 
 ---
 
-# E-Learning entwickeln lassen: Kosten, Ablauf und Auswahl 2026
+# Was kostet E-Learning entwickeln lassen? Preise 2026
 
 Source: https://learnslice.com/de/blog/e-learning-entwickeln-lassen
 Language: de
 Published: 2026-07-01
+Updated: 2026-09-09
 
-E-Learning entwickeln lassen: Was es kostet, wie ein Projekt abläuft und worauf Sie achten. Mit Kostenrichtwerten, Checkliste und Anbieter-Kriterien.
+Was E-Learning entwickeln lassen 2026 kostet: Preisrichtwerte für Modul, Plattform und KI-Tutor, dazu Projektablauf und Anbieter-Checkliste.
 
 ## Auf einen Blick
 
@@ -4091,13 +4093,13 @@ E-Learning entwickeln lassen: Was es kostet, wie ein Projekt abläuft und worauf
 
 ![Zwei Fachleute besprechen an einem Laptop ein individuelles E-Learning-Projekt](/images/blog/custom-elearning-consultation.webp)
 
-## E-Learning entwickeln lassen: Wann sich Individualentwicklung lohnt
+## Wann sich Individualentwicklung lohnt
 
-E-Learning entwickeln zu lassen lohnt sich, sobald Standardsoftware Ihre Anforderungen nicht mehr abdeckt: wenn die Inhalte zu speziell sind, die Abläufe zu individuell, die Datenschutzanforderungen zu hoch oder wenn Sie KI und eigenes Unternehmenswissen einbinden wollen.
+Individualentwicklung lohnt sich, sobald Standardsoftware Ihre Anforderungen nicht mehr abdeckt: wenn die Inhalte zu speziell sind, die Abläufe zu individuell, die Datenschutzanforderungen zu hoch oder wenn Sie KI und eigenes Unternehmenswissen einbinden wollen.
 
 Die meisten Unternehmen kommen nicht aus Neugier zu dieser Frage. Sie kommen, weil ein fertiges Tool an einer Stelle klemmt, die zentral ist, und weil ein Fehlkauf doppelt kostet: die Lizenz und das Jahr, das mit einem Tool vergeht, das am Ende niemand nutzt. Das LMS bildet die eigenen Abläufe nicht ab. Die Compliance-Schulung wirkt beliebig, weil sie nicht nach dem eigenen Betrieb aussieht. Oder der Datenschutz erlaubt das Wunsch-Tool schlicht nicht. Dass eine maßgeschneiderte Lösung helfen würde, müssen wir Ihnen nicht erklären. Sie wollen wissen, was das kostet, wie es abläuft und woran Sie einen guten Anbieter erkennen.
 
-Genau darum geht es in diesem Leitfaden: um Zahlen, den realistischen Ablauf und die Kriterien, die zählen, wenn Sie **E-Learning entwickeln lassen** wollen.
+Genau darum geht es in diesem Leitfaden: **was eine Individualentwicklung wirklich kostet**, der realistische Ablauf und die Kriterien, die bei der Anbieterwahl zählen.
 
 ## E-Learning-Content oder E-Learning-Software? Der wichtige Unterschied
 
@@ -4189,7 +4191,7 @@ Der eigentliche Vorteil der Individualentwicklung liegt in der Kontrolle: über 
 
 Das betrifft drei Dinge, die in Deutschland und der DACH-Region besonders wichtig sind. Erstens den **Datenschutz**: Eine Lösung, die von Grund auf für EU-Hosting, Auftragsverarbeitung und klare Datentrennung gebaut ist, erspart Ihnen die Diskussionen, die generische Tools regelmäßig auslösen. Zweitens die **Souveränität**: Sie sind nicht dauerhaft an einen Anbieter, ein Preismodell oder ein Rechenzentrum außerhalb der EU gebunden. Drittens das **Eigentum**: Wenn die Rechte am Code bei Ihnen liegen, ist die Lösung ein Vermögenswert Ihres Unternehmens, kein gemietetes Werkzeug.
 
-Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle E-Learning-Software mit KI, EU-Hosting und Eigentum am Ergebnis umsetzt, sehen Sie auf der Seite zu unseren [individuellen E-Learning-Lösungen](/de/loesungen).
+Genau darauf ist unser Angebot ausgerichtet. Wie LearnSlice individuelle E-Learning-Software mit KI, EU-Hosting und Eigentum am Ergebnis umsetzt, sehen Sie auf der Seite zur [individuellen E-Learning-Entwicklung](/de/loesungen).
 
 ## Fazit: In vier Schritten zur passenden Lösung
 
