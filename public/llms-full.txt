@@ -2123,32 +2123,6 @@ For the numbers, our [Apprenticeship Savings Calculator](/apprenticeship-savings
 
 For financial impact, our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator) provides a first orientation. Deeper treatment is in [5 Strategies to Reduce Training Costs](/blog/reduce-training-costs).
 
-## Frequently Asked Questions About the Apprenticeship Plan Template
-
-### Is a free template enough to register the apprenticeship contract with the chamber?
-
-In most chamber districts yes - provided the template cleanly reflects the factual and temporal structure from the training ordinance and is submitted as an annex to the apprenticeship contract. Incompletely filled templates routinely trigger follow-up questions from the chamber.
-
-### Is there an official apprenticeship plan template from the IHK?
-
-Many chambers publish sample apprenticeship plans per profession, often as Word or PDF. They're a good starting point but also only cover the framework, not your operational knowledge.
-
-### Does the apprenticeship plan need to be signed?
-
-The BBiG doesn't explicitly require the written form for the plan itself, only for the apprenticeship contract. In practice, it's standard to have the plan signed by the training employer, trainer, and apprentice as an annex to document acknowledgment.
-
-### How often does the plan need to be updated?
-
-There's no fixed legal rhythm. Technically, the plan should be adjusted promptly when processes, rotations, or responsible people change - and at minimum reviewed every six months.
-
-### Is a digital template legally equivalent to the paper version?
-
-Yes. Neither the BBiG nor the individual training ordinances prescribe a specific form. A digitally maintained, versioned copy is actually more traceable in a dispute than a paper document.
-
-### How does the apprenticeship plan relate to the training logbook?
-
-The plan is the planning layer; the training logbook (Berichtsheft under § 13 sentence 2 number 7 BBiG) is the documentation layer. A [digital training logbook](/blog/digital-training-logbook) can reference the plan directly and make weekly progress traceable.
-
 ## Bottom Line: The Template Is the Start, Not the Finish
 
 A free apprenticeship plan template meets the formal obligation - and that's not a small thing. For actually steering the apprenticeship day to day, it rarely suffices. The gap between a plan that's opened once a year and one that moves with the learner every week is large in terms of training quality.
@@ -2157,8 +2131,34 @@ For smaller businesses with stable processes, the Word template is the right ent
 
 **See in 30 minutes what a dynamic apprenticeship plan looks like for you.** In a short demo we walk through a real example of how LearnSlice connects the IHK framework with your work instructions and builds personalized learning paths per apprentice - GDPR-compliant, on European servers. [Book a demo](/companies).
 
-Further reading: [AI in vocational training](/blog/ai-in-vocational-training) · [Digitize apprenticeship training](/blog/digitize-apprenticeship-training) · [AI tools for vocational training](/blog/ai-tools-vocational-training)
+Further reading: [AI in vocational training](/blog/ai-in-vocational-training) · [Digitize apprenticeship training](/blog/digitize-apprenticeship-training) · [Digital training logbook](/blog/digital-training-logbook) · [AI tools for vocational training](/blog/ai-tools-vocational-training)
 
+
+## Frequently Asked Questions
+
+### Is a free template enough to register the apprenticeship contract with the chamber?
+
+In most chamber districts yes, provided the template cleanly reflects the factual and temporal structure from the training ordinance and is submitted as an annex to the apprenticeship contract. Incompletely filled templates routinely trigger follow-up questions from the chamber.
+
+### Is there an official apprenticeship plan template from the IHK?
+
+Many chambers publish sample apprenticeship plans per profession, often as Word or PDF. They are a good starting point but also only cover the framework, not your operational knowledge.
+
+### Does the apprenticeship plan need to be signed?
+
+The BBiG does not explicitly require the written form for the plan itself, only for the apprenticeship contract. In practice it is standard to have the plan signed by the training employer, trainer, and apprentice as an annex to document acknowledgment.
+
+### How often does the plan need to be updated?
+
+There is no fixed legal rhythm. Technically the plan should be adjusted promptly when processes, rotations, or responsible people change, and reviewed at minimum every six months.
+
+### Is a digital template legally equivalent to the paper version?
+
+Yes. Neither the BBiG nor the individual training ordinances prescribe a specific form. A digitally maintained, versioned copy is actually more traceable in a dispute than a paper document.
+
+### How does the apprenticeship plan relate to the training logbook?
+
+The plan is the planning layer; the training logbook (Berichtsheft under § 13 sentence 2 number 7 BBiG) is the documentation layer. A digital training logbook can reference the plan directly and make weekly progress traceable.
 
 ---
 
@@ -3101,12 +3101,6 @@ The criteria from the previous section as a list to work through before you comm
 - [ ] The role model separates apprentice, trainer, and administration
 - [ ] Your own data can be exported if you change provider
 
-**Rollout**
-
-- [ ] Training contract reviewed and amended where needed
-- [ ] Pilot group defined
-- [ ] Training scheduled for apprentices and trainers
-- [ ] Binding rules on rhythm and deadlines communicated
 
 </CopyBlock>
 
@@ -3477,14 +3471,14 @@ Yes - introducing AI tools that can measure apprentice or employee behavior or p
 
 ---
 
-# Digital IHK Exam Preparation: The Complete Guide
+# IHK Exam Preparation: 6-Month Study Plan + Checklist
 
 Source: https://learnslice.com/blog/ihk-exam-preparation-digital
 Language: en
 Published: 2026-03-14
-Updated: 2026-07-01
+Updated: 2026-09-09
 
-Digital IHK exam preparation in 4 steps: AI-generated exam questions, adaptive review and a 6-month study plan. Saves an estimated 40 to 80 trainer hours per cycle.
+Digital IHK exam preparation in four steps: AI-generated exam questions and adaptive review. With a six-month study plan and exam-day checklist to copy.
 
 ## Key Takeaways
 
@@ -3545,13 +3539,69 @@ The AI recognizes which topics the apprentice has mastered and which still need 
 
 Regular exam simulations under realistic conditions prepare apprentices optimally for the real thing. The AI generates exam questions that match IHK format and difficulty level.
 
+## Six-Month Study Plan to Copy
+
+The four steps become a plan once they are laid across a timeline. Six months before the exam date is the usual starting point. The structure below drops into any word processor or study tool.
+
+<CopyBlock buttonLabel="Copy study plan" copiedLabel="Copied!">
+
+### IHK Exam Preparation: Six-Month Study Plan
+
+*Occupation:* [designation] · *Exam part:* [Part 1 / Part 2 / final examination]
+*Exam date:* [date] · *Preparation starts:* [date, six months before]
+
+#### 1. Starting Position
+
+| Topic area (per framework plan) | Self-assessment 1 to 5 | Priority |
+|---|---|---|
+| [topic area] | [1 to 5] | [high / medium / low] |
+| [topic area] | [1 to 5] | [...] |
+| [topic area] | [1 to 5] | [...] |
+
+#### 2. Month Plan
+
+| Months to exam | Focus | Hours per week | Practice exam |
+|---|---|---|---|
+| 6 | Diagnostic test, then the two weakest areas | [h] | Baseline test |
+| 5 | [topic area] | [h] | [ ] |
+| 4 | [topic area] | [h] | Partial simulation |
+| 3 | [topic area] | [h] | [ ] |
+| 2 | Gaps surfaced by the simulations | [h] | Full simulation |
+| 1 | Review only, no new topics | [h] | Full simulation |
+
+#### 3. Weekly Rhythm
+
+| Day | Activity | Duration |
+|---|---|---|
+| [Mon] | [theory, new topic] | [min] |
+| [Wed] | [practice questions on that topic] | [min] |
+| [Fri] | [review of weak areas] | [min] |
+| [Sat] | [practical case or study group] | [min] |
+
+#### 4. Exam Simulations
+
+| Date | Exam part | Result | Gaps identified |
+|---|---|---|---|
+| [DD.MM.] | [part] | [points or percent] | [topics] |
+| [DD.MM.] | [...] | [...] | [...] |
+
+#### 5. Checklist Before Exam Day
+
+- [ ] Admission to the examination confirmed
+- [ ] Training logbook submitted, complete and signed off
+- [ ] Permitted aids assembled per the chamber's information sheet
+- [ ] Venue, time, and travel confirmed
+- [ ] Most recent full simulation is no more than two weeks old
+
+</CopyBlock>
+
 ## Digital vs. Traditional Preparation
 
 | Criterion | Traditional | Digital with AI |
 |-----------|------------|----------------|
 | Availability | Course hours only | 24/7 |
 | Personalization | Same for everyone | Individually adapted |
-| Cost | €500–€2,000 per course | Included in platform license |
+| Cost | 500 to 2,000 euros per course | Included in platform license |
 | Exam questions | Limited collection | AI-generated, unlimited |
 | Progress tracking | Manual | Automatic analytics |
 | Weakness analysis | Subjective | Data-driven |
@@ -3566,7 +3616,7 @@ Regular exam simulations under realistic conditions prepare apprentices optimall
 
 ## 10 Tips for IHK Exam Success
 
-Beyond choosing the right platform, exam success comes down to personal strategy. We have compiled the [10 most effective strategies for IHK exam preparation](/blog/ihk-exam-tips) — covering everything from study planning and time management to stress techniques on exam day.
+Beyond choosing the right platform, exam success comes down to personal strategy. We have compiled the [10 most effective strategies for IHK exam preparation](/blog/ihk-exam-tips), covering everything from study planning and time management to stress techniques on exam day.
 
 Key takeaways:
 - Start at least 6 months before the exam
@@ -3578,20 +3628,20 @@ Key takeaways:
 
 A common mistake in IHK preparation is treating it as separate from daily work. In reality, the best exam preparation connects theory to practice.
 
-When company-specific processes and knowledge are integrated into the learning platform, apprentices study IHK theory in the context of their actual job. A logistics apprentice learning about supply chain management does not just memorize textbook definitions — they work through scenarios based on their company's actual shipping processes.
+When company-specific processes and knowledge are integrated into the learning platform, apprentices study IHK theory in the context of their actual job. A logistics apprentice learning about supply chain management does not just memorize textbook definitions, they work through scenarios based on their company's actual shipping processes.
 
 This approach has two benefits: exam content sticks better because it is anchored in real experience, and the apprentice becomes more productive at work while preparing for the exam. For more on structuring this integration, see our [onboarding checklist](/blog/apprentice-onboarding).
 
 ## Trainer Time Savings from Digital Exam Prep
 
-Traditional IHK exam preparation is one of the most time-intensive tasks for trainers. It involves sourcing questions, conducting review sessions, grading practice exams, and addressing individual knowledge gaps — all on top of regular supervision.
+Traditional IHK exam preparation is one of the most time-intensive tasks for trainers. It involves sourcing questions, conducting review sessions, grading practice exams, and addressing individual knowledge gaps, all on top of regular supervision.
 
 Based on our analysis, digital exam preparation can save an estimated 40-80 hours of trainer time per exam cycle. At €45/hour, that translates to €1,800-€3,600 per apprentice in freed-up trainer capacity.
 
 The time savings come from three areas:
-- **Question generation** — AI creates unlimited practice questions modeled on IHK format, eliminating manual question sourcing
-- **Automated scoring** — Instant feedback on practice exams removes the grading bottleneck
-- **Gap analysis** — AI identifies which apprentices need help and on which topics, so trainers intervene only where it matters
+- **Question generation**: AI creates unlimited practice questions modeled on IHK format, eliminating manual question sourcing
+- **Automated scoring**: Instant feedback on practice exams removes the grading bottleneck
+- **Gap analysis**: AI identifies which apprentices need help and on which topics, so trainers intervene only where it matters
 
 For a broader view of how to free up trainer time across all training activities, see our [7 strategies to reduce trainer workload](/blog/reduce-trainer-workload). Use our [Savings Calculator](/apprenticeship-savings-calculator) to model the financial impact for your company.
 
@@ -5412,32 +5462,6 @@ Wer die Kosten durchrechnen will, findet eine strukturierte Aufstellung im [Ausb
 
 Wer die finanziellen Auswirkungen durchrechnen will, findet im [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner) eine erste Orientierung. Eine strukturierte Vertiefung bietet [Ausbildungskosten senken: 5 Strategien](/de/blog/ausbildungskosten-senken).
 
-## Häufige Fragen zur Ausbildungsplan-Vorlage
-
-### Reicht eine kostenlose Vorlage, um den Ausbildungsvertrag bei der IHK einzureichen?
-
-In den meisten Kammerbezirken ja - vorausgesetzt, die Vorlage bildet die sachliche und zeitliche Gliederung nach der Ausbildungsordnung sauber ab und wird als Anlage zum Ausbildungsvertrag eingereicht. Unvollständig ausgefüllte Vorlagen führen regelmäßig zu Rückfragen der IHK.
-
-### Gibt es eine offizielle Ausbildungsplan-Vorlage der IHK?
-
-Viele IHKs stellen Muster-Ausbildungspläne je Ausbildungsberuf bereit, oft als Word- oder PDF-Dokument. Diese sind ein guter Ausgangspunkt, bilden aber ebenfalls nur den Rahmenplan ab - nicht das betriebliche Wissen.
-
-### Muss der Ausbildungsplan unterschrieben werden?
-
-Das BBiG verlangt die Schriftform nicht explizit für den Plan selbst, wohl aber für den Ausbildungsvertrag. In der Praxis ist es Standard, den Plan als Anlage von Ausbildendem, Ausbilder und Auszubildendem unterzeichnen zu lassen, um die Kenntnisnahme zu dokumentieren.
-
-### Wie oft muss der Ausbildungsplan aktualisiert werden?
-
-Rechtlich gibt es keinen festen Rhythmus, fachlich sollte der Plan bei Prozessänderungen, Rotationen oder personellen Wechseln zeitnah angepasst werden - mindestens aber halbjährlich überprüft werden.
-
-### Ist eine digitale Vorlage rechtlich gleichwertig zur Papierversion?
-
-Ja. Weder das BBiG noch die jeweilige Ausbildungsordnung schreiben eine bestimmte Form vor. Eine digital geführte, versionierte Fassung ist im Streitfall sogar nachvollziehbarer als ein Papierdokument.
-
-### Wie hängt der Ausbildungsplan mit dem Berichtsheft zusammen?
-
-Der Ausbildungsplan ist die Planungsebene, das Berichtsheft (Ausbildungsnachweis nach § 13 Satz 2 Nummer 7 BBiG) ist die Dokumentationsebene. Ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) kann direkt auf den Plan verweisen und die Umsetzung pro Woche nachvollziehbar machen.
-
 ## Fazit: Die Vorlage ist der Anfang, nicht das Ziel
 
 Eine kostenlose Ausbildungsplan-Vorlage erfüllt die formale Pflicht - und das ist kein kleiner Wert. Für die tatsächliche Steuerung der Ausbildung im Alltag reicht sie aber selten. Der Unterschied zwischen einem Plan, der einmal im Jahr geöffnet wird, und einem, der täglich mit dem Lernfortschritt mitläuft, ist für die Qualität der Ausbildung erheblich.
@@ -5446,8 +5470,34 @@ Für kleinere Betriebe mit stabilen Prozessen ist die Word-Vorlage der richtige 
 
 **Sehen Sie in 30 Minuten, wie ein dynamischer Ausbildungsplan bei Ihnen aussehen würde.** In einer kurzen Demo zeigen wir an einem echten Beispiel, wie LearnSlice den IHK-Rahmenplan mit Ihren Arbeitsanweisungen verbindet und daraus personalisierte Lernpfade pro Azubi baut - DSGVO-konform, auf europäischen Servern. [Demo buchen](/de/companies).
 
-Weiterlesen: [Ausbildungsplan erstellen mit KI](/de/blog/ausbildungsplan-erstellen-ki) · [Ausbildung digitalisieren: Der komplette Leitfaden](/de/blog/ausbildung-digitalisieren) · [KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung)
+Weiterlesen: [Ausbildungsplan erstellen mit KI](/de/blog/ausbildungsplan-erstellen-ki) · [Ausbildung digitalisieren: Der komplette Leitfaden](/de/blog/ausbildung-digitalisieren) · [Berichtsheft digital führen](/de/blog/berichtsheft-digital) · [KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung)
 
+
+## Häufig gestellte Fragen
+
+### Reicht eine kostenlose Vorlage, um den Ausbildungsvertrag bei der IHK einzureichen?
+
+In den meisten Kammerbezirken ja, vorausgesetzt, die Vorlage bildet die sachliche und zeitliche Gliederung nach der Ausbildungsordnung sauber ab und wird als Anlage zum Ausbildungsvertrag eingereicht. Unvollständig ausgefüllte Vorlagen führen regelmäßig zu Rückfragen der IHK.
+
+### Gibt es eine offizielle Ausbildungsplan-Vorlage der IHK?
+
+Viele IHKs stellen Muster-Ausbildungspläne je Ausbildungsberuf bereit, oft als Word- oder PDF-Dokument. Diese sind ein guter Ausgangspunkt, bilden aber ebenfalls nur den Rahmenplan ab, nicht das betriebliche Wissen.
+
+### Muss der Ausbildungsplan unterschrieben werden?
+
+Das BBiG verlangt die Schriftform nicht explizit für den Plan selbst, wohl aber für den Ausbildungsvertrag. In der Praxis ist es Standard, den Plan als Anlage von Ausbildendem, Ausbilder und Auszubildendem unterzeichnen zu lassen, um die Kenntnisnahme zu dokumentieren.
+
+### Wie oft muss der Ausbildungsplan aktualisiert werden?
+
+Rechtlich gibt es keinen festen Rhythmus. Fachlich sollte der Plan bei Prozessänderungen, Rotationen oder personellen Wechseln zeitnah angepasst und mindestens halbjährlich überprüft werden.
+
+### Ist eine digitale Vorlage rechtlich gleichwertig zur Papierversion?
+
+Ja. Weder das BBiG noch die jeweilige Ausbildungsordnung schreiben eine bestimmte Form vor. Eine digital geführte, versionierte Fassung ist im Streitfall sogar nachvollziehbarer als ein Papierdokument.
+
+### Wie hängt der Ausbildungsplan mit dem Berichtsheft zusammen?
+
+Der Ausbildungsplan ist die Planungsebene, das Berichtsheft (Ausbildungsnachweis nach § 13 Satz 2 Nummer 7 BBiG) ist die Dokumentationsebene. Ein digitales Berichtsheft kann direkt auf den Plan verweisen und die Umsetzung pro Woche nachvollziehbar machen.
 
 ---
 
@@ -6460,12 +6510,6 @@ Die Kriterien aus dem vorigen Abschnitt als Liste zum Abhaken, bevor Sie sich f�
 - [ ] Rollenkonzept trennt Azubi, Ausbilder und Verwaltung
 - [ ] Export der eigenen Daten bei einem Anbieterwechsel möglich
 
-**Einführung**
-
-- [ ] Ausbildungsvertrag geprüft und bei Bedarf ergänzt
-- [ ] Pilotgruppe festgelegt
-- [ ] Schulung für Azubis und Ausbilder terminiert
-- [ ] Verbindliche Regeln zu Rhythmus und Fristen kommuniziert
 
 </CopyBlock>
 
@@ -6870,14 +6914,14 @@ Ja - die Einführung von KI-Tools, die das Verhalten oder die Leistung von Azubi
 
 ---
 
-# IHK Prüfungsvorbereitung digital: Der komplette Leitfaden
+# IHK Prüfungsvorbereitung: 6-Monats-Lernplan + Checkliste
 
 Source: https://learnslice.com/de/blog/ihk-pruefungsvorbereitung-digital
 Language: de
 Published: 2026-03-14
-Updated: 2026-07-01
+Updated: 2026-09-09
 
-IHK Prüfungsvorbereitung digital: der 4-Schritte-Leitfaden mit KI-generierten Prüfungsfragen, adaptiver Wiederholung und 6-Monats-Lernplan für Azubis.
+IHK Prüfungsvorbereitung digital: KI-generierte Prüfungsfragen und adaptive Wiederholung in vier Schritten. Mit 6-Monats-Lernplan und Checkliste zum Kopieren.
 
 ## Auf einen Blick
 
@@ -6938,13 +6982,69 @@ Die KI erkennt, welche Themen der Azubi bereits beherrscht und welche noch Übun
 
 Regelmäßige Prüfungssimulationen unter realistischen Bedingungen bereiten Azubis optimal auf den Ernstfall vor. Die KI generiert Prüfungsfragen, die dem IHK-Format und Schwierigkeitsgrad entsprechen.
 
+## 6-Monats-Lernplan zum Kopieren
+
+Aus den vier Schritten wird ein Plan, sobald sie auf einen Zeitraum gelegt werden. Sechs Monate vor dem Prüfungstermin ist der übliche Startpunkt. Die folgende Struktur lässt sich in jedes Textprogramm oder Lerntool übernehmen.
+
+<CopyBlock buttonLabel="Lernplan kopieren" copiedLabel="Kopiert!">
+
+### IHK-Prüfungsvorbereitung: 6-Monats-Lernplan
+
+*Ausbildungsberuf:* [Bezeichnung] · *Prüfungsteil:* [Teil 1 / Teil 2 / Abschlussprüfung]
+*Prüfungstermin:* [Datum] · *Start der Vorbereitung:* [Datum, sechs Monate davor]
+
+#### 1. Bestandsaufnahme
+
+| Themenbereich (nach Rahmenplan) | Selbsteinschätzung 1 bis 5 | Priorität |
+|---|---|---|
+| [Themenbereich] | [1 bis 5] | [hoch / mittel / niedrig] |
+| [Themenbereich] | [1 bis 5] | [...] |
+| [Themenbereich] | [1 bis 5] | [...] |
+
+#### 2. Monatsplan
+
+| Monate bis zur Prüfung | Schwerpunkt | Wochenstunden | Übungsprüfung |
+|---|---|---|---|
+| 6 | Diagnosetest, danach die zwei schwächsten Bereiche | [h] | Ausgangstest |
+| 5 | [Themenbereich] | [h] | [ ] |
+| 4 | [Themenbereich] | [h] | Teilsimulation |
+| 3 | [Themenbereich] | [h] | [ ] |
+| 2 | Lücken aus den Simulationen | [h] | Vollsimulation |
+| 1 | Wiederholung, keine neuen Themen | [h] | Vollsimulation |
+
+#### 3. Wochenrhythmus
+
+| Tag | Aktivität | Dauer |
+|---|---|---|
+| [Mo] | [Theorie, neues Thema] | [min] |
+| [Mi] | [Übungsaufgaben zum Thema] | [min] |
+| [Fr] | [Wiederholung schwacher Bereiche] | [min] |
+| [Sa] | [Praxisfall oder Lerngruppe] | [min] |
+
+#### 4. Prüfungssimulationen
+
+| Datum | Prüfungsteil | Ergebnis | Erkannte Lücken |
+|---|---|---|---|
+| [TT.MM.] | [Teil] | [Punkte oder Prozent] | [Themen] |
+| [TT.MM.] | [...] | [...] | [...] |
+
+#### 5. Checkliste vor dem Prüfungstag
+
+- [ ] Zulassung zur Prüfung liegt vor
+- [ ] Berichtsheft vollständig und abgezeichnet eingereicht
+- [ ] Zugelassene Hilfsmittel laut Merkblatt der Kammer zusammengestellt
+- [ ] Prüfungsort, Uhrzeit und Anfahrt bestätigt
+- [ ] Letzte Vollsimulation liegt maximal zwei Wochen zurück
+
+</CopyBlock>
+
 ## Vorteile gegenüber traditioneller Vorbereitung
 
 | Kriterium | Traditionell | Digital mit KI |
 |-----------|-------------|---------------|
 | Verfügbarkeit | Kurszeiten | 24/7 |
 | Personalisierung | Für alle gleich | Individuell angepasst |
-| Kosten | €500–€2.000 pro Kurs | In Plattformlizenz enthalten |
+| Kosten | 500 bis 2.000 Euro pro Kurs | In Plattformlizenz enthalten |
 | Prüfungsfragen | Begrenzte Sammlung | KI-generiert, unbegrenzt |
 | Fortschrittskontrolle | Manuell | Automatische Analytics |
 | Schwächenanalyse | Subjektiv | Datenbasiert |
@@ -6959,7 +7059,7 @@ Regelmäßige Prüfungssimulationen unter realistischen Bedingungen bereiten Azu
 
 ## 10 Tipps für den IHK-Prüfungserfolg
 
-Neben der Wahl der richtigen Plattform kommt es auf die persönliche Strategie an. Wir haben die [10 effektivsten Strategien für die IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefung-tipps) zusammengestellt — von Lernplanung und Zeitmanagement bis zu Techniken für den Prüfungstag.
+Neben der Wahl der richtigen Plattform kommt es auf die persönliche Strategie an. Wir haben die [10 effektivsten Strategien für die IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefung-tipps) zusammengestellt, von Lernplanung und Zeitmanagement bis zu Techniken für den Prüfungstag.
 
 Die wichtigsten Punkte:
 - Starten Sie mindestens 6 Monate vor der Prüfung
@@ -6971,20 +7071,20 @@ Die wichtigsten Punkte:
 
 Ein häufiger Fehler bei der IHK-Vorbereitung ist, sie als etwas Getrenntes vom Arbeitsalltag zu behandeln. Dabei funktioniert Prüfungsvorbereitung am besten, wenn Theorie und Praxis verbunden werden.
 
-Wenn unternehmensspezifische Prozesse und Wissen in die Lernplattform integriert sind, lernen Azubis IHK-Theorie im Kontext ihrer tatsächlichen Arbeit. Ein Logistik-Azubi, der Supply-Chain-Management lernt, memoriert keine Lehrbuchdefinitionen — sondern arbeitet mit Szenarien, die auf den tatsächlichen Versandprozessen seines Unternehmens basieren.
+Wenn unternehmensspezifische Prozesse und Wissen in die Lernplattform integriert sind, lernen Azubis IHK-Theorie im Kontext ihrer tatsächlichen Arbeit. Ein Logistik-Azubi, der Supply-Chain-Management lernt, memoriert keine Lehrbuchdefinitionen, sondern arbeitet mit Szenarien, die auf den tatsächlichen Versandprozessen seines Unternehmens basieren.
 
-Das hat zwei Vorteile: Prüfungsinhalte bleiben besser haften, weil sie in realer Erfahrung verankert sind — und der Azubi wird gleichzeitig produktiver am Arbeitsplatz. Für mehr zur Strukturierung dieser Integration lesen Sie unsere [Onboarding-Checkliste](/de/blog/azubi-onboarding).
+Das hat zwei Vorteile: Prüfungsinhalte bleiben besser haften, weil sie in realer Erfahrung verankert sind, und der Azubi wird gleichzeitig produktiver am Arbeitsplatz. Für mehr zur Strukturierung dieser Integration lesen Sie unsere [Onboarding-Checkliste](/de/blog/azubi-onboarding).
 
 ## Zeitersparnis für Ausbilder durch digitale Prüfungsvorbereitung
 
-Die traditionelle IHK-Prüfungsvorbereitung ist eine der zeitintensivsten Aufgaben für Ausbilder. Sie umfasst das Beschaffen von Übungsfragen, Durchführen von Übungsrunden, Korrektur von Probeprüfungen und individuelle Schwächenarbeit — alles zusätzlich zur regulären Betreuung.
+Die traditionelle IHK-Prüfungsvorbereitung ist eine der zeitintensivsten Aufgaben für Ausbilder. Sie umfasst das Beschaffen von Übungsfragen, Durchführen von Übungsrunden, Korrektur von Probeprüfungen und individuelle Schwächenarbeit, alles zusätzlich zur regulären Betreuung.
 
 Nach unserer Berechnung kann digitale Prüfungsvorbereitung geschätzt 40-80 Stunden Ausbilderzeit pro Prüfungszyklus einsparen. Bei €45/Stunde entspricht das €1.800-€3.600 pro Azubi an freigewordener Ausbilderkapazität.
 
 Die Zeitersparnis kommt aus drei Bereichen:
-- **Fragenerstellung** — KI generiert unbegrenzt Übungsfragen im IHK-Format und ersetzt manuelle Fragenrecherche
-- **Automatische Auswertung** — Sofortiges Feedback auf Probeprüfungen beseitigt den Korrektur-Engpass
-- **Schwächenanalyse** — KI identifiziert, welche Azubis Hilfe brauchen und bei welchen Themen, sodass Ausbilder nur dort eingreifen, wo es zählt
+- **Fragenerstellung**: KI generiert unbegrenzt Übungsfragen im IHK-Format und ersetzt manuelle Fragenrecherche
+- **Automatische Auswertung**: Sofortiges Feedback auf Probeprüfungen beseitigt den Korrektur-Engpass
+- **Schwächenanalyse**: KI identifiziert, welche Azubis Hilfe brauchen und bei welchen Themen, sodass Ausbilder nur dort eingreifen, wo es zählt
 
 Einen umfassenderen Überblick, wie Sie Ausbilderzeit über alle Ausbildungsaktivitäten hinweg freisetzen, finden Sie in unseren [7 Strategien zur Entlastung von Ausbildern](/de/blog/ausbilder-entlasten). Nutzen Sie unseren [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner), um die finanziellen Auswirkungen für Ihr Unternehmen zu berechnen.
 
