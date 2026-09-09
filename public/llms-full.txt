@@ -1391,6 +1391,7 @@ It depends on how many apprentices you have, which occupations you cover, and ho
 Source: https://learnslice.com/blog/apprenticeship-framework-plan-explained
 Language: en
 Published: 2026-05-26
+Updated: 2026-09-09
 
 What the Ausbildungsrahmenplan regulates, how it is structured, and how to turn it into a company-specific training plan in five concrete steps.
 
@@ -1525,6 +1526,8 @@ A modern company-specific training plan connects three knowledge layers that the
 On an AI-assisted learning platform these layers converge. The framework plan defines the goal, the company knowledge supplies the operational content, and the individual learning path steers sequence, depth, and repetition. The static framework becomes a plan that moves with learning progress.
 
 That this works under GDPR, with EU hosting and a clean separation between company knowledge and publicly trained models, is a precondition, not a bonus. What to verify when evaluating such a platform is laid out in the overview of [AI tools for vocational training](/blog/ai-tools-vocational-training). An honest side-by-side with the conventional approach is in [LearnSlice vs. traditional training](/learnslice-vs-traditional-training).
+
+Companies training their own apprentices are usually well served by a finished platform. Training providers, universities, and course operators preparing large groups for a regulated exam need the same structure inside their own systems and under their own brand. Our page on [custom e-learning development](/solutions) sets out how that gets built.
 
 ## Conclusion: The Framework Plan Is the Foundation, Not the Destination
 
@@ -1881,7 +1884,7 @@ Frame it as capacity recovery. A trainer who spends a meaningful share of their 
 Source: https://learnslice.com/blog/apprenticeship-plan-template-free
 Language: en
 Published: 2026-04-19
-Updated: 2026-05-13
+Updated: 2026-09-09
 
 Free apprenticeship plan template aligned with § 14 BBiG: copy-paste sample, trainer checklist, and when to graduate to a dynamic, AI-powered plan.
 
@@ -2060,6 +2063,8 @@ For the numbers, our [Apprenticeship Savings Calculator](/apprenticeship-savings
 - Company knowledge is substantial but rarely systematically passed on.
 - Contract dissolution rate is above the industry average.
 - IHK pass rate is a target for deliberate improvement.
+
+**A custom-built solution is the right route** when you are not training your own apprentices but preparing large groups for a regulated exam, when the processes are too specific for any standard software, or when the result has to belong to you. Our page on [custom e-learning development](/solutions) sets out how such a project runs.
 
 For financial impact, our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator) provides a first orientation. Deeper treatment is in [5 Strategies to Reduce Training Costs](/blog/reduce-training-costs).
 
@@ -4807,7 +4812,7 @@ Als Kapazitätsrückgewinnung. Ein Ausbilder, der einen erheblichen Teil seiner 
 Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
 Published: 2026-05-04
-Updated: 2026-05-26
+Updated: 2026-09-09
 
 Was steht im Ausbildungsrahmenplan? Aufbau, sachliche und zeitliche Gliederung und der konkrete Weg zum betrieblichen Ausbildungsplan in fünf Schritten.
 
@@ -4945,6 +4950,8 @@ Auf einer KI-gestützten Lernplattform laufen diese Schichten zusammen. Der Rahm
 
 Dass dabei DSGVO-Konformität, EU-Hosting und ein klarer Trennpunkt zwischen Unternehmenswissen und öffentlich trainierten Modellen sichergestellt sind, ist kein "nice-to-have", sondern Voraussetzung. Was bei einer Evaluation zu prüfen ist, beschreibt der [7-Punkte-Check für DSGVO-konforme KI-Tools für Ausbilder](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder). Eine ehrliche Gegenüberstellung verschiedener Ansätze bietet [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung).
 
+Unternehmen, die ihre eigenen Azubis ausbilden, kommen mit einer fertigen Plattform meist ans Ziel. Bildungsträger, Hochschulen und Kursanbieter, die viele Teilnehmende auf eine geregelte Prüfung vorbereiten, brauchen denselben Aufbau dagegen in ihrer eigenen Systemlandschaft und unter ihrer eigenen Marke. Wie so etwas entsteht, steht auf der Seite zur [individuellen E-Learning-Entwicklung](/de/loesungen).
+
 ## Fazit: Der Rahmenplan ist die Grundlage, nicht das Ziel
 
 Der Ausbildungsrahmenplan ist die rechtliche Wirbelsäule jeder Berufsausbildung. Wer ihn versteht, erstellt einen tragfähigen betrieblichen Plan; wer ihn ignoriert, verfehlt nicht nur formal die Anforderungen aus § 14 BBiG, sondern verschenkt eine klare Steuerungslogik.
@@ -4993,7 +5000,7 @@ Nein. § 14 Absatz 1 Nummer 1 BBiG verpflichtet den Ausbildenden, einen betriebl
 Source: https://learnslice.com/de/blog/ausbildungsplan-vorlage-kostenlos
 Language: de
 Published: 2026-04-19
-Updated: 2026-05-13
+Updated: 2026-09-09
 
 Kostenlose Ausbildungsplan-Vorlage nach § 14 BBiG: Muster zum Kopieren, Ausbilder-Checkliste und wann sich der Sprung zur KI-gestützten Lösung lohnt.
 
@@ -5172,6 +5179,8 @@ Wer die Kosten durchrechnen will, findet eine strukturierte Aufstellung im [Ausb
 - Unternehmenswissen ist umfangreich, wird aber selten systematisch weitergegeben.
 - Die Vertragslösungsquote liegt über dem Branchendurchschnitt.
 - Die IHK-Bestehensquote soll gezielt verbessert werden.
+
+**Eine individuell entwickelte Lösung ist der richtige Weg**, wenn Sie nicht die eigenen Azubis ausbilden, sondern viele Teilnehmende auf eine geregelte Prüfung vorbereiten, wenn die Abläufe zu speziell für jede Standardsoftware sind oder wenn das Ergebnis Ihnen gehören soll. Wie ein solches Projekt abläuft, steht auf der Seite zum Thema [E-Learning entwickeln lassen](/de/loesungen).
 
 Wer die finanziellen Auswirkungen durchrechnen will, findet im [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner) eine erste Orientierung. Eine strukturierte Vertiefung bietet [Ausbildungskosten senken: 5 Strategien](/de/blog/ausbildungskosten-senken).
 
