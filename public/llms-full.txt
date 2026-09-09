@@ -2849,7 +2849,7 @@ Beyond IHK exam preparation, companies can integrate their own documents, proces
 
 | Area | Without AI | With AI |
 |------|-----------|---------|
-| Time to productivity | 4–6 months | As little as 2 months |
+| Time to productivity | 4 to 6 months | As little as 2 months |
 | Trainer hours saved/year | - | Up to 200 hours |
 | Contract dissolution rate | ~30% | Target: 15% |
 | Annual savings per apprentice | - | Up to €17K* |
@@ -2880,14 +2880,14 @@ For training companies evaluating options today, the distinction between "someth
 
 ## The Full Training Cycle: Beyond Exam Prep
 
-Most AI solutions in vocational training focus narrowly on IHK exam preparation. But apprentices need more than exam coaching to succeed — they need structured [onboarding](/blog/apprentice-onboarding), continuous upskilling, and access to company-specific knowledge.
+Most AI solutions in vocational training focus narrowly on IHK exam preparation. But apprentices need more than exam coaching to succeed: they need structured [onboarding](/blog/apprentice-onboarding), continuous upskilling, and access to company-specific knowledge.
 
 A full-cycle approach covers all four phases of apprenticeship development:
 
-1. **Onboarding** — Structured introduction to the company, team, and role. Digital learning paths replace ad-hoc training with a repeatable, scalable process. Learn more in our [complete onboarding guide](/blog/apprentice-onboarding).
-2. **IHK Exam Preparation** — AI-generated questions modeled on IHK topic areas and format, adaptive review, and exam simulations.
-3. **Company Knowledge Integration** — Internal processes, products, and workflows embedded directly into the learning platform. Apprentices learn the job while preparing for the exam.
-4. **Upskilling** — Ongoing professional development that keeps apprentices growing beyond the basics. This is where AI coaching becomes a long-term advantage.
+1. **Onboarding**: Structured introduction to the company, team, and role. Digital learning paths replace ad-hoc training with a repeatable, scalable process. Learn more in our [complete onboarding guide](/blog/apprentice-onboarding).
+2. **IHK Exam Preparation**: AI-generated questions modeled on IHK topic areas and format, adaptive review, and exam simulations.
+3. **Company Knowledge Integration**: Internal processes, products, and workflows embedded directly into the learning platform. Apprentices learn the job while preparing for the exam.
+4. **Upskilling**: Ongoing professional development that keeps apprentices growing beyond the basics. This is where AI coaching becomes a long-term advantage.
 
 This full-cycle model is what separates platforms like LearnSlice from tools that only cover exam prep. For a detailed overview of AI tool categories, see our [guide to AI tools for vocational training](/blog/ai-tools-vocational-training).
 
@@ -2895,7 +2895,7 @@ This full-cycle model is what separates platforms like LearnSlice from tools tha
 
 AI-powered training adapts to different professional contexts:
 
-**Commercial professions** (Office Management, Logistics): AI coaches apprentices through document management, customer communication, and business processes — supplementing classroom theory with simulated real-world scenarios.
+**Commercial professions** (Office Management, Logistics): AI coaches apprentices through document management, customer communication, and business processes, supplementing classroom theory with simulated real-world scenarios.
 
 **IT professions** (System Integration, Application Development): Technical concepts like networking, databases, and security are reinforced through interactive exercises. AI adapts difficulty based on demonstrated skill levels.
 
@@ -2907,13 +2907,13 @@ For more on reducing the time trainers spend on repetitive instruction, see our 
 
 Not all platforms are equal. When evaluating AI tools for vocational training, look for:
 
-- **IHK alignment** — Content modeled on IHK topic areas and format, not generic learning materials
-- **EU data hosting** — Simplifies GDPR compliance and keeps apprentice data under EU jurisdiction
-- **Customizability** — Ability to upload company documents and create custom learning paths
-- **AI coaching** — Personalized support that adapts to each apprentice, not static content delivery
-- **Analytics dashboards** — Real-time visibility into apprentice progress for trainers and management
+- **IHK alignment**: Content modeled on IHK topic areas and format, not generic learning materials
+- **EU data hosting**: Simplifies GDPR compliance and keeps apprentice data under EU jurisdiction
+- **Customizability**: Ability to upload company documents and create custom learning paths
+- **AI coaching**: Personalized support that adapts to each apprentice, not static content delivery
+- **Analytics dashboards**: Real-time visibility into apprentice progress for trainers and management
 
-A [digital training logbook](/blog/digital-training-logbook) integration is also valuable — it connects learning activities directly to the required Berichtsheft documentation.
+A [digital training logbook](/blog/digital-training-logbook) integration is also valuable: it connects learning activities directly to the required Berichtsheft documentation.
 
 Compare different approaches in our [LearnSlice vs. traditional training](/learnslice-vs-traditional-training) comparison.
 
@@ -3228,7 +3228,7 @@ Every dropout costs the company the entire training investment to date, plus rec
 
 Instead of booking external exam prep courses or pulling trainers away for exam coaching, digital systems can handle preparation. AI-generated exam questions modeled on IHK topic areas and format enable efficient self-study. See our [complete guide to digital IHK exam preparation](/blog/ihk-exam-preparation-digital) for more details.
 
-**Savings:** External course costs (€500–€2,000 per person) and trainer time
+**Savings:** External course costs (€500 to €2,000 per person) and trainer time
 
 ### 5. Systematize Company Knowledge
 
@@ -3263,11 +3263,11 @@ Not every learning platform is created equal. For vocational training in Germany
 
 The line items in the BIBB cost-benefit survey only tell part of the story. Several significant costs remain invisible in most training budgets:
 
-**Trainer burnout and turnover.** When trainers are responsible for both their regular work and apprentice supervision, quality suffers on both fronts. Overburdened trainers are more likely to leave — and replacing a skilled trainer costs far more than replacing an apprentice. For practical strategies to address this, see our [7 ways to reduce trainer workload](/blog/reduce-trainer-workload).
+**Trainer burnout and turnover.** When trainers are responsible for both their regular work and apprentice supervision, quality suffers on both fronts. Overburdened trainers are more likely to leave, and replacing a skilled trainer costs far more than replacing an apprentice. For practical strategies to address this, see our [7 ways to reduce trainer workload](/blog/reduce-trainer-workload).
 
-**Knowledge loss when people leave.** If company knowledge exists only in individual employees' heads, every departure creates a training gap. The next trainer has to reinvent the wheel — and the next apprentice waits longer to become productive.
+**Knowledge loss when people leave.** If company knowledge exists only in individual employees' heads, every departure creates a training gap. The next trainer has to reinvent the wheel, and the next apprentice waits longer to become productive.
 
-**Inconsistent training quality.** Without standardized processes, training outcomes depend on which trainer is assigned. Some apprentices thrive; others struggle — not because of ability, but because of inconsistent instruction.
+**Inconsistent training quality.** Without standardized processes, training outcomes depend on which trainer is assigned. Some apprentices thrive; others struggle, not because of ability, but because of inconsistent instruction.
 
 Digital platforms address all three by standardizing knowledge transfer, reducing dependency on individual trainers, and creating a scalable training infrastructure.
 
@@ -3277,15 +3277,15 @@ One cost that rarely shows up in ROI calculations is the time spent on training 
 
 Based on our analysis, trainers spend an estimated 2-4 hours per week reviewing and signing paper logbooks across a typical cohort. At €45/hour, that adds up to €4,680-€9,360 per year in trainer time alone.
 
-A [digital training logbook](/blog/digital-training-logbook) cuts this review time significantly while improving documentation quality and ensuring IHK compliance. When connected to a learning platform, entries can be partially automated — reducing both trainer and apprentice effort.
+A [digital training logbook](/blog/digital-training-logbook) cuts this review time significantly while improving documentation quality and ensuring IHK compliance. When connected to a learning platform, entries can be partially automated, reducing both trainer and apprentice effort.
 
 ## Getting Started: Where to Cut First
 
 Not every company can digitize everything at once. If you are working with a limited budget, prioritize in this order:
 
-1. **IHK exam preparation** — Fastest ROI. Replaces typically €500-€2,000 per person in external course costs and saves trainer time immediately. See our [complete guide to digital IHK exam prep](/blog/ihk-exam-preparation-digital).
-2. **Onboarding** — Highest impact on dropout rates. A structured [8-week onboarding program](/blog/apprentice-onboarding) reduces early departures and accelerates time-to-productivity.
-3. **Knowledge base and documentation** — Longest-term value. Once company knowledge is digitized, it serves every future apprentice without additional effort.
+1. **IHK exam preparation**: Fastest ROI. Replaces typically €500-€2,000 per person in external course costs and saves trainer time immediately. See our [complete guide to digital IHK exam prep](/blog/ihk-exam-preparation-digital).
+2. **Onboarding**: Highest impact on dropout rates. A structured [8-week onboarding program](/blog/apprentice-onboarding) reduces early departures and accelerates time-to-productivity.
+3. **Knowledge base and documentation**: Longest-term value. Once company knowledge is digitized, it serves every future apprentice without additional effort.
 
 For a step-by-step implementation guide, see [How to Digitize Apprenticeship Training](/blog/digitize-apprenticeship-training). You can also see how AI-powered training compares to [traditional methods](/learnslice-vs-traditional-training) in our detailed comparison.
 
@@ -5924,7 +5924,7 @@ Eine bestandene IHK-Prüfung ist kein Zufall, sondern das Ergebnis strukturierte
 
 **Für Ausbildungsverantwortliche:** Erleben Sie in einer kostenlosen Demo, wie KI-gestützte Prüfungsvorbereitung Ihren Azubis den entscheidenden Vorteil verschafft. [Demo vereinbaren](/de/companies)
 
-**Für Geschäftsführung und HR-Leitung:** Jede bestandene IHK-Prüfung schützt Ihre Investition von €20.000–€35.000 pro Azubi. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+**Für Geschäftsführung und HR-Leitung:** Jede bestandene IHK-Prüfung schützt Ihre Investition von €20.000 bis €35.000 pro Azubi. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
 
 ---
@@ -6034,7 +6034,7 @@ Ausbilder zu entlasten ist kein Luxus, sondern wirtschaftliche Notwendigkeit. Di
 
 **Für Ausbildungsverantwortliche:** Erfahren Sie in einer kostenlosen Demo, wie LearnSlice den Betreuungsaufwand pro Azubi konkret reduziert. [Demo vereinbaren](/de/companies)
 
-**Für Geschäftsführung und HR-Leitung:** Weniger Ausbilderzeit pro Azubi bedeutet mehr Kapazität für das Kerngeschäft — und messbare Kostensenkung. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+**Für Geschäftsführung und HR-Leitung:** Weniger Ausbilderzeit pro Azubi bedeutet mehr Kapazität für das Kerngeschäft und messbare Kostensenkung. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
 
 ---
@@ -6219,7 +6219,7 @@ Ein strukturiertes 8-Wochen-Onboarding ist die beste Investition in den Ausbildu
 
 **Für Ausbildungsverantwortliche:** Sehen Sie in einer kostenlosen Demo, wie LearnSlice das Onboarding Ihrer Azubis mit digitalen Lernpfaden und KI-Coaching beschleunigt. [Demo vereinbaren](/de/companies)
 
-**Für Geschäftsführung und HR-Leitung:** Strukturiertes Onboarding senkt die Abbruchquote und verkürzt die Einarbeitungszeit — das zahlt sich direkt aus. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+**Für Geschäftsführung und HR-Leitung:** Strukturiertes Onboarding senkt die Abbruchquote und verkürzt die Einarbeitungszeit. Das zahlt sich direkt aus. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
 
 ---
@@ -6267,7 +6267,7 @@ Neben der IHK-Prüfungsvorbereitung können Unternehmen eigene Dokumente, Prozes
 
 | Bereich | Ohne KI | Mit KI |
 |---------|---------|--------|
-| Zeit bis zur Produktivität | 4–6 Monate | Ab 2 Monaten |
+| Zeit bis zur Produktivität | 4 bis 6 Monate | Ab 2 Monaten |
 | Eingesparte Ausbilderstunden/Jahr | - | Bis zu 200 Stunden |
 | Vertragslösungsquote | ~30 % | Ziel: 15 % |
 | Jährliche Einsparung pro Azubi | - | Bis zu €17K* |
@@ -6306,14 +6306,14 @@ Ein entscheidender Faktor für den Einsatz von KI in der Ausbildung ist der Date
 
 ## Der gesamte Ausbildungszyklus: Mehr als nur Prüfungsvorbereitung
 
-Die meisten KI-Lösungen für die Berufsausbildung konzentrieren sich ausschließlich auf die IHK-Prüfungsvorbereitung. Doch Azubis brauchen mehr als Prüfungscoaching — sie brauchen strukturiertes [Onboarding](/de/blog/azubi-onboarding), kontinuierliches Upskilling und Zugang zu unternehmensspezifischem Wissen.
+Die meisten KI-Lösungen für die Berufsausbildung konzentrieren sich ausschließlich auf die IHK-Prüfungsvorbereitung. Doch Azubis brauchen mehr als Prüfungscoaching: sie brauchen strukturiertes [Onboarding](/de/blog/azubi-onboarding), kontinuierliches Upskilling und Zugang zu unternehmensspezifischem Wissen.
 
 Ein ganzheitlicher Ansatz deckt alle vier Phasen der Ausbildungsentwicklung ab:
 
-1. **Onboarding** — Strukturierte Einführung in das Unternehmen, das Team und die Rolle. Digitale Lernpfade ersetzen improvisierte Einarbeitung durch einen wiederholbaren, skalierbaren Prozess. Mehr dazu in unserem [Leitfaden zum Azubi-Onboarding](/de/blog/azubi-onboarding).
-2. **IHK-Prüfungsvorbereitung** — KI-generierte Fragen, adaptive Wiederholung und Prüfungssimulationen, orientiert an IHK-Themenbereichen und -Format.
-3. **Unternehmenswissen** — Interne Prozesse, Produkte und Arbeitsabläufe direkt in die Lernplattform eingebettet. Azubis lernen den Job, während sie sich auf die Prüfung vorbereiten.
-4. **Upskilling** — Kontinuierliche Weiterentwicklung über die Grundlagen hinaus. Hier wird KI-Coaching zum langfristigen Vorteil.
+1. **Onboarding**: Strukturierte Einführung in das Unternehmen, das Team und die Rolle. Digitale Lernpfade ersetzen improvisierte Einarbeitung durch einen wiederholbaren, skalierbaren Prozess. Mehr dazu in unserem [Leitfaden zum Azubi-Onboarding](/de/blog/azubi-onboarding).
+2. **IHK-Prüfungsvorbereitung**: KI-generierte Fragen, adaptive Wiederholung und Prüfungssimulationen, orientiert an IHK-Themenbereichen und -Format.
+3. **Unternehmenswissen**: Interne Prozesse, Produkte und Arbeitsabläufe direkt in die Lernplattform eingebettet. Azubis lernen den Job, während sie sich auf die Prüfung vorbereiten.
+4. **Upskilling**: Kontinuierliche Weiterentwicklung über die Grundlagen hinaus. Hier wird KI-Coaching zum langfristigen Vorteil.
 
 Dieses Gesamtmodell unterscheidet Plattformen wie LearnSlice von Tools, die nur Prüfungsvorbereitung abdecken. Einen detaillierten Überblick über KI-Tool-Kategorien finden Sie in unserem [Leitfaden zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
 
@@ -6321,7 +6321,7 @@ Dieses Gesamtmodell unterscheidet Plattformen wie LearnSlice von Tools, die nur 
 
 KI-gestütztes Training passt sich an verschiedene berufliche Kontexte an:
 
-**Kaufmännische Berufe** (Büromanagement, Logistik): KI coacht Azubis durch Dokumentenmanagement, Kundenkommunikation und Geschäftsprozesse — als Ergänzung zum theoretischen Unterricht mit simulierten Praxisszenarien.
+**Kaufmännische Berufe** (Büromanagement, Logistik): KI coacht Azubis durch Dokumentenmanagement, Kundenkommunikation und Geschäftsprozesse, als Ergänzung zum theoretischen Unterricht mit simulierten Praxisszenarien.
 
 **IT-Berufe** (Systemintegration, Anwendungsentwicklung): Technische Konzepte wie Netzwerktechnik, Datenbanken und IT-Sicherheit werden durch interaktive Übungen gefestigt. Die KI passt den Schwierigkeitsgrad an das gezeigte Kompetenzniveau an.
 
@@ -6333,13 +6333,13 @@ Erfahren Sie mehr darüber, wie Sie den Zeitaufwand Ihrer Ausbilder für repetit
 
 Nicht alle Plattformen sind gleich. Achten Sie bei der Auswahl von KI-Tools für die Ausbildung auf:
 
-- **IHK-Ausrichtung** — Inhalte orientiert an IHK-Themenbereichen und -Format, keine generischen Lernmaterialien
-- **EU-Datenhosting** — Vereinfacht die DSGVO-Konformität und hält Azubi-Daten unter EU-Jurisdiktion
-- **Anpassbarkeit** — Möglichkeit, Unternehmensdokumente hochzuladen und eigene Lernpfade zu erstellen
-- **KI-Coaching** — Personalisierte Betreuung, die sich an jeden Azubi anpasst, statt statischer Inhalte
-- **Analytics-Dashboards** — Echtzeit-Einblick in den Fortschritt der Azubis für Ausbilder und Geschäftsleitung
+- **IHK-Ausrichtung**: Inhalte orientiert an IHK-Themenbereichen und -Format, keine generischen Lernmaterialien
+- **EU-Datenhosting**: Vereinfacht die DSGVO-Konformität und hält Azubi-Daten unter EU-Jurisdiktion
+- **Anpassbarkeit**: Möglichkeit, Unternehmensdokumente hochzuladen und eigene Lernpfade zu erstellen
+- **KI-Coaching**: Personalisierte Betreuung, die sich an jeden Azubi anpasst, statt statischer Inhalte
+- **Analytics-Dashboards**: Echtzeit-Einblick in den Fortschritt der Azubis für Ausbilder und Geschäftsleitung
 
-Auch eine Integration des [digitalen Berichtshefts](/de/blog/berichtsheft-digital) ist wertvoll — sie verbindet Lernaktivitäten direkt mit der vorgeschriebenen Ausbildungsdokumentation.
+Auch eine Integration des [digitalen Berichtshefts](/de/blog/berichtsheft-digital) ist wertvoll: sie verbindet Lernaktivitäten direkt mit der vorgeschriebenen Ausbildungsdokumentation.
 
 Vergleichen Sie verschiedene Ansätze in unserem Vergleich [LearnSlice vs. traditionelle Ausbildung](/de/learnslice-vs-traditionelle-ausbildung).
 
@@ -6641,7 +6641,7 @@ Jeder Abbruch kostet das Unternehmen den gesamten bisherigen Ausbildungsaufwand 
 
 Statt externe Prüfungsvorbereitungskurse zu buchen oder Ausbilder für die Prüfungsvorbereitung freizustellen, können digitale Systeme die Vorbereitung übernehmen. KI-generierte Prüfungsfragen, die an den IHK-Themenbereichen und dem Prüfungsformat orientiert sind, ermöglichen eine effiziente Selbstvorbereitung. Mehr dazu in unserem [Leitfaden zur digitalen IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital).
 
-**Einsparung:** Kosten für externe Kurse (€500–€2.000 pro Person) und Ausbilderzeit
+**Einsparung:** Kosten für externe Kurse (€500 bis €2.000 pro Person) und Ausbilderzeit
 
 ### 5. Unternehmenswissen systematisieren
 
@@ -6676,11 +6676,11 @@ Nicht jede Lernplattform ist gleich. Für die Berufsausbildung in Deutschland si
 
 Die BIBB-Kosten-Nutzen-Erhebung zeigt nur einen Teil des Bildes. Mehrere erhebliche Kosten bleiben in den meisten Ausbildungsbudgets unsichtbar:
 
-**Ausbilder-Burnout und Fluktuation.** Wenn Ausbilder gleichzeitig ihre reguläre Arbeit und die Azubi-Betreuung schultern müssen, leidet die Qualität auf beiden Seiten. Überlastete Ausbilder verlassen das Unternehmen häufiger — und einen erfahrenen Ausbilder zu ersetzen ist deutlich teurer als einen Azubi. Für praktische Gegenmaßnahmen lesen Sie unsere [7 Wege, Ausbilder zu entlasten](/de/blog/ausbilder-entlasten).
+**Ausbilder-Burnout und Fluktuation.** Wenn Ausbilder gleichzeitig ihre reguläre Arbeit und die Azubi-Betreuung schultern müssen, leidet die Qualität auf beiden Seiten. Überlastete Ausbilder verlassen das Unternehmen häufiger, und einen erfahrenen Ausbilder zu ersetzen ist deutlich teurer als einen Azubi. Für praktische Gegenmaßnahmen lesen Sie unsere [7 Wege, Ausbilder zu entlasten](/de/blog/ausbilder-entlasten).
 
-**Wissensverlust bei Personalwechsel.** Wenn Unternehmenswissen nur in den Köpfen einzelner Mitarbeiter existiert, entsteht bei jedem Abgang eine Ausbildungslücke. Der nächste Ausbilder muss bei null anfangen — und der nächste Azubi wartet länger, bis er produktiv wird.
+**Wissensverlust bei Personalwechsel.** Wenn Unternehmenswissen nur in den Köpfen einzelner Mitarbeiter existiert, entsteht bei jedem Abgang eine Ausbildungslücke. Der nächste Ausbilder muss bei null anfangen, und der nächste Azubi wartet länger, bis er produktiv wird.
 
-**Inkonsistente Ausbildungsqualität.** Ohne standardisierte Prozesse hängen die Ausbildungsergebnisse davon ab, welcher Ausbilder zuständig ist. Manche Azubis blühen auf, andere haben Schwierigkeiten — nicht wegen fehlender Fähigkeiten, sondern wegen inkonsistenter Betreuung.
+**Inkonsistente Ausbildungsqualität.** Ohne standardisierte Prozesse hängen die Ausbildungsergebnisse davon ab, welcher Ausbilder zuständig ist. Manche Azubis blühen auf, andere haben Schwierigkeiten, nicht wegen fehlender Fähigkeiten, sondern wegen inkonsistenter Betreuung.
 
 Digitale Plattformen adressieren alle drei Probleme, indem sie die Wissensvermittlung standardisieren, die Abhängigkeit von einzelnen Ausbildern reduzieren und eine skalierbare Ausbildungsinfrastruktur schaffen.
 
@@ -6694,19 +6694,19 @@ Die größte Einsparung im Handel liegt jedoch bei den vermiedenen Abbrüchen. J
 
 ## Das digitale Berichtsheft: Ein unterschätzter Sparhebel
 
-Eine Kostenstelle, die in ROI-Berechnungen selten auftaucht, ist der Zeitaufwand für die Ausbildungsdokumentation. Das Berichtsheft ist für jeden Azubi in Deutschland gesetzlich vorgeschrieben — doch die meisten Unternehmen verwalten es noch auf Papier.
+Eine Kostenstelle, die in ROI-Berechnungen selten auftaucht, ist der Zeitaufwand für die Ausbildungsdokumentation. Das Berichtsheft ist für jeden Azubi in Deutschland gesetzlich vorgeschrieben, doch die meisten Unternehmen verwalten es noch auf Papier.
 
 Nach unserer Berechnung verbringen Ausbilder geschätzt 2-4 Stunden pro Woche mit der Prüfung und Freigabe von Berichtsheften. Bei €45/Stunde summiert sich das auf €4.680-€9.360 pro Jahr allein an Ausbilderzeit.
 
-Ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) reduziert diese Prüfungszeit erheblich und verbessert gleichzeitig die Dokumentationsqualität und IHK-Konformität. In Verbindung mit einer Lernplattform können Einträge teilweise automatisiert werden — das spart sowohl Ausbilder- als auch Azubi-Zeit.
+Ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) reduziert diese Prüfungszeit erheblich und verbessert gleichzeitig die Dokumentationsqualität und IHK-Konformität. In Verbindung mit einer Lernplattform können Einträge teilweise automatisiert werden. Das spart sowohl Ausbilder- als auch Azubi-Zeit.
 
 ## Einstieg: Wo Sie zuerst ansetzen sollten
 
 Nicht jedes Unternehmen kann alles auf einmal digitalisieren. Bei begrenztem Budget empfehlen wir diese Reihenfolge:
 
-1. **IHK-Prüfungsvorbereitung** — Schnellster ROI. Ersetzt typischerweise €500-€2.000 pro Person an externen Kurskosten und spart sofort Ausbilderzeit. Lesen Sie unseren [Leitfaden zur digitalen IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital).
-2. **Onboarding** — Größter Effekt auf die Abbruchquote. Ein strukturiertes [8-Wochen-Onboarding-Programm](/de/blog/azubi-onboarding) reduziert frühe Abgänge und beschleunigt die Produktivität.
-3. **Wissensbasis und Dokumentation** — Langfristig wertvollster Schritt. Einmal digitalisiertes Unternehmenswissen dient jedem zukünftigen Azubi ohne zusätzlichen Aufwand.
+1. **IHK-Prüfungsvorbereitung**: Schnellster ROI. Ersetzt typischerweise €500-€2.000 pro Person an externen Kurskosten und spart sofort Ausbilderzeit. Lesen Sie unseren [Leitfaden zur digitalen IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital).
+2. **Onboarding**: Größter Effekt auf die Abbruchquote. Ein strukturiertes [8-Wochen-Onboarding-Programm](/de/blog/azubi-onboarding) reduziert frühe Abgänge und beschleunigt die Produktivität.
+3. **Wissensbasis und Dokumentation**: Langfristig wertvollster Schritt. Einmal digitalisiertes Unternehmenswissen dient jedem zukünftigen Azubi ohne zusätzlichen Aufwand.
 
 Für einen Schritt-für-Schritt-Umsetzungsplan lesen Sie [Ausbildung digitalisieren: Der komplette Leitfaden](/de/blog/ausbildung-digitalisieren). Vergleichen Sie auch, wie KI-gestützte Ausbildung gegenüber [traditionellen Methoden](/de/learnslice-vs-traditionelle-ausbildung) abschneidet.
 
