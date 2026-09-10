@@ -6,6 +6,39 @@ plus a seed list of named starter accounts.
 
 ---
 
+## How targeting works (read this first)
+
+There are three separate jobs. Do not mix them up: the tools for each are different.
+
+1. **Find the accounts** (which organizations to target): use directories and portals, never
+   LinkedIn. This is where your list of 40 to 60 companies comes from.
+2. **Find the person** (who to contact inside a chosen account): use LinkedIn plus the account's
+   own website. LinkedIn is a people-finder, not a company-finder. You only open it after an
+   account is already on your scored list.
+3. **Close the deal** (the contract mechanism): a direct sale for Segment 1, and for Segment 2 a
+   negotiated award or, only above the EU threshold, a formal tender.
+
+Tendering is not how you find customers. It is only one of the two closing mechanics, and only in
+the public sector. The two segments run different playbooks:
+
+**Segment 1 (Bildungsträger): a normal outbound sales motion. No tendering.**
+1. List companies from `mein-now.de` and the association member lists (see List-building sources).
+2. Score each on the four axes; keep the top 15 to 20.
+3. Find the champion on LinkedIn and the provider website.
+4. Sell directly. They buy with their own budget (foundation funds, capex, ESF+ co-finance).
+
+**Segment 2 (Verwaltung academies): sovereignty-led, contract shape depends on deal size.**
+1. Build the account list two ways: proactively from Länder academy directories, and reactively
+   from saved-search alerts on the tender portals (an alert fires when an academy publishes a
+   live measure you can bid on).
+2. Find the champion on LinkedIn and the academy website.
+3. Close by the size rule. For sub-central buyers (Laender, municipalities, most academies) the
+   line is EUR 216k: under it, a negotiated award (Verhandlungsvergabe) or slotting in as a
+   subcontractor; above it, a formal EU tender. For a federal (Bund) buyer the line is EUR 140k.
+   Prefer the sub-threshold route. Confirm which authority type you are dealing with first.
+
+---
+
 ## Segment 1: Bildungsträger / Weiterbildung
 
 ### Need drivers (the forces creating demand now)
@@ -51,17 +84,23 @@ Bundeswehr, and public-health academies. Prefer bodies with a stated digitalizat
 initiative and an identifiable Referat or Akademieleitung.
 
 ### Procurement reality (the deal shape that is winnable)
-- Full EU tender kicks in above **EUR 216k net**. Below that, many states allow negotiated or
+- Full EU tender kicks in above **EUR 216k net** for sub-central contracting authorities, and
+  above **EUR 140k** for central government (Bund). Thresholds for 2026-2027 per Commission
+  Delegated Regulation (EU) 2025/2152. Below the line, many states allow negotiated or
   invited award (**Verhandlungsvergabe**); Direktauftrag is rising toward EUR 50k.
 - Winnable shape: a build priced **EUR 50k to 216k** awarded by negotiation, no EU-wide tender;
   or entering as a **subcontractor** under a larger framework holder.
 - Prepare EVB-IT contract terms and a DPA (AVV). Target Rahmenverträge (multi-year frameworks) so
   authorities can call off without re-tendering. DSGVO is an explicit award criterion.
 
-### Discovery sources (set saved-search alerts)
-- **service.bund.de** and **evergabe-online.de** (federal and public tenders)
-- **TED** (EU tenders above threshold; watch for framework calls)
-- Länder Vergabeplattformen and the individual academy websites for their digitalization pages
+### Where to find these accounts (step 1: build the list)
+Two feeds, both for finding accounts (not people):
+- **Proactive (academy directories):** Länder academy directories and the individual academy
+  websites (their digitalization pages) to name the bodies to pursue.
+- **Reactive (saved-search alerts on tender portals):** an alert fires when an academy publishes a
+  live measure to bid on.
+  - **service.bund.de** and **evergabe-online.de** (federal and public tenders)
+  - **TED** (EU tenders above threshold; watch for framework calls)
 
 ### Treatment
 Slow-burn. Pursue one or two lighthouse deals where sovereignty closes it automatically. Do not
@@ -86,7 +125,8 @@ triggers (Vergabe wins, AZAV recertification windows, funding deadlines).
 
 ---
 
-## List-building sources
+## List-building sources (step 1: find accounts, not people)
+These build the account list. None of them find contacts.
 - **mein-now.de** (Bundesagentur für Arbeit provider portal): filter by AZAV, Umschulung, reha,
   region, size. Primary discovery engine for Bildungsträger.
 - **Arbeitsgemeinschaft Deutscher Berufsförderungswerke:** the finite BFW reha list (Tier 1a).
@@ -95,9 +135,10 @@ triggers (Vergabe wins, AZAV recertification windows, funding deadlines).
 - **Wuppertaler Kreis:** commercial training leaders, well-funded.
 - **service.bund.de / evergabe-online.de / TED:** public-sector discovery.
 
-Note: individual contact-name and email discovery stays a manual per-account step (published
-business contacts, LinkedIn, academy websites). This kit gives the account list and where to find
-the people, not scraped personal data.
+## Finding the person (step 2: only after an account is scored and short-listed)
+Contact discovery is a manual per-account step: LinkedIn, the account's own website, and published
+business contacts. Use the "Likely champion" column in the seed list to know which role to look
+for. This kit gives the account list and where to find the people, not scraped personal data.
 
 ---
 
