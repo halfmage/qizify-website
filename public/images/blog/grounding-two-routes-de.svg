@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 566" role="img" aria-label="Diagramm: Dieselbe Frage eines Lernenden auf zwei Wegen. Weg A geht direkt zum Modell, das aus Allgemeinwissen antwortet und eine selbstbewusste, aber erfundene Antwort liefert. Weg B durchsucht zuerst Ihr indexiertes Material, uebergibt die passenden Passagen an das Modell und liefert eine Antwort mit Quellenangabe.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="440" height="566" rx="16" fill="#2a2622"/>
+  <text x="20" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="21" fill="#faf8f4" font-weight="600">Dieselbe Frage, zwei Wege</text>
+  <text x="20" y="57" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Warum Verankerung die Antwort verändert</text>
+  <rect x="20" y="76" width="400" height="88" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-width="1.5"/>
+  <text x="38" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a">Ein Lernender fragt</text>
+  <text x="38" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15.5" fill="#faf8f4">In welchem Modul stehen die Brandschutz-</text>
+  <text x="38" y="148" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15.5" fill="#faf8f4">regeln für unsere Lagerstandorte?</text>
+  <path d="M32,172 L32,350" stroke="#46402f" stroke-width="1.5"/>
+  <path d="M32,210 L46,210" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M32,348 L46,348" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="52" y="182" width="368" height="122" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="70" y="210" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">Weg A: direkt zum Modell</text>
+  <text x="70" y="236" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Es antwortet aus Allgemeinwissen</text>
+  <rect x="70" y="250" width="332" height="38" rx="8" fill="#3a3128" stroke="#a89e92" stroke-width="1"/>
+  <text x="86" y="274" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Selbstbewusst, flüssig, erfunden</text>
+  <rect x="52" y="320" width="368" height="188" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="70" y="348" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">Weg B: zuerst über Ihren Index</text>
+  <text x="70" y="376" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">1   Ihr indexiertes Material durchsuchen</text>
+  <text x="70" y="398" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">2   Passende Passagen ans Modell geben</text>
+  <text x="70" y="420" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">3   Daraus antworten, Quelle nennen</text>
+  <rect x="70" y="434" width="332" height="56" rx="8" fill="#3a3128" stroke="#cc7a3e" stroke-width="1.5"/>
+  <text x="86" y="458" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#e8b07a">Laut Modul 4.2, Abschnitt 3 ...</text>
+  <text x="86" y="478" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">mit Link, den der Lernende prüfen kann</text>
+  <text x="20" y="534" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Eine Schicht zwischen Ihren Inhalten und dem</text>
+  <text x="20" y="554" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Modell macht den ganzen Unterschied.</text>
+</svg>

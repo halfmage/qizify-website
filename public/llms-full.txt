@@ -420,6 +420,219 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
+# Add an AI Tutor to the LMS You Already Have
+
+Source: https://learnslice.com/blog/ai-tutor-for-existing-lms
+Language: en
+Published: 2026-09-10
+
+Your LMS has AI built in and learners still ignore it. Here is what it is actually designed to do, what a real tutor adds, and how to connect one without migrating.
+
+## Key Takeaways
+
+- The AI built into your LMS is authoring and reading assistance, not tutoring. Moodle 4.5 LTS offers three actions across two placements, and 5.2 adds a fourth: generate text, generate an image, summarise text, and explain text. Every one of them works on content the user already has open. None searches your course library.
+- That is why learners say it does not know your content. It is not a settings mistake and not a bad plugin. The feature was never designed to answer questions from your material, so no configuration will make it do so.
+- A tutor adds five things: answers from your whole library with the source attached, memory of the learner between sessions, marking against your syllabus, a change of route when someone struggles, and a refusal to guess.
+- You do not have to replace your LMS. An external tutor connects through LTI 1.3, so courses, enrolments, the gradebook and certificates all stay where they are.
+- Moodle reaches locally hosted models either way: a dedicated Ollama provider in 5.2, or the OpenAI-compatible layer on 4.5 LTS. Running the model on your own EU infrastructure is a documented path, not a special request.
+
+![A trainer and a colleague reviewing a learning platform on a laptop](/images/blog/pexels-yankrukov-7794078.webp)
+
+## You Switched It On, and Nobody Used It
+
+The sequence is almost always the same.
+
+Your administrator enables the AI features in your learning platform. There is a brief flurry of interest. The assistant tidily summarises the page a learner is already reading, which is pleasant but solves nothing. Then someone asks a real question, the kind people actually have: which module covers the fire safety rules for our warehouse sites? The assistant produces a confident, fluent, entirely invented answer. Word gets round, and by week three the panel is closed.
+
+Most organisations then reach one of two wrong conclusions. Either the plugin was bad and a better one exists, or the platform is outdated and needs replacing.
+
+Neither is true. **The AI in your LMS is doing exactly what it was built to do.** It was never built to be a tutor. Once that is clear, the decision in front of you gets simpler, and far cheaper than a migration.
+
+## A One Minute Check on Your Own Installation
+
+Open your Moodle site administration and go to General, then AI placements. Everything is disabled until someone switches it on, access is granted per role, and users have to accept an AI usage policy before their first use.
+
+Now look at what the actions actually are. On Moodle 4.5 LTS there are three, spread across two placements, and 5.2 adds a fourth ([MoodleDocs](https://docs.moodle.org/502/en/AI_placements)):
+
+| Placement | Actions | What they are for |
+|---|---|---|
+| Text editor | Generate text, Generate image | Drafting and illustrating, mostly for course authors |
+| Course assistance | Summarise text, plus Explain text in 5.2 | Shortening or unpacking content the reader already has open |
+
+<img src="/images/blog/lms-ai-reach.svg" alt="Diagram: every built-in AI action works on the page the learner already has open, while the course library sits on the other side of a barrier the actions never cross" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+
+Read that list again with a learner's question in mind. Every action works on text that is already in front of the user, or writes new text from the model's general knowledge. Not one of them goes and looks something up in your course library.
+
+That is the whole story. The assistant did not know your content because **nothing in the feature set was designed to find your content**. It is a genuinely good authoring aid that has been widely mistaken for a tutor. Your administrator did not misconfigure anything, and there is no setting you missed.
+
+## The Five Things a Tutor Does That Summarising Cannot
+
+Each one answers a complaint you have probably already heard.
+
+**1. It answers from your whole library, and shows its source.** *It makes things up.* A tutor finds the passage that actually answers the question, writes the answer from it, and links to it so the learner can check. This single capability turns a novelty into something trainers will let learners use unsupervised.
+
+**2. It remembers the learner.** *I have to explain my situation every time.* A tutor knows this person is in their second year, struggled with the same topic a fortnight ago, and has an assessment in three weeks.
+
+**3. It marks against your syllabus.** *It is encouraging but useless.* Generic models are relentlessly positive. A tutor holds an answer against the criteria you are actually assessed on, which is the only feedback that moves a pass rate.
+
+**4. It changes route when someone struggles.** *Everyone gets the same thing.* If a learner misses the same concept three times, repeating the explanation is not teaching. A tutor switches approach or hands the case to a human with a note about what went wrong.
+
+**5. It refuses to guess.** *We cannot trust it.* The most valuable sentence a tutor can produce is that the answer is not in your material and here is who to ask. In regulated training, a model with no boundary is not a quirk. It is a liability.
+
+## Why No Setting Fixes This
+
+A language model is like an exceptionally well read graduate on their first morning at your organisation. Enormous general knowledge, and no idea what is on your shared drive. Ask about your warehouse fire safety module and they will reason from what such modules usually contain. That is not lying. It is the only thing they can do.
+
+What fixes it is **retrieval**, often called RAG. Your courses, handbooks, past papers and internal notes are indexed. When a question arrives, the system searches that index first, pulls the passages that are genuinely relevant, and hands them to the model with an instruction to answer from those and cite which one it used.
+
+<img src="/images/blog/grounding-two-routes.svg" alt="Diagram: the same learner question sent two ways. Straight to the model it produces a confident invented answer. Through your search index first it returns an answer that cites module 4.2, section 3" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+
+The same model that invented an answer now says: according to module 4.2, section 3, the requirement for your warehouse sites is X, and here is the link.
+
+Retrieval is a layer between your content and the model, which is precisely why no checkbox in the LMS gets you there. For the architecture in depth, including models you host yourself, see our guide to [custom AI on open-source models](/blog/custom-ai-open-source-models).
+
+## Three Ways to Close the Gap
+
+These routes are not competing for the same organisation. For many readers the honest answer is the first one.
+
+| Route | Best when | What you give up |
+|---|---|---|
+| **Community plugin** | You want to test the idea, your content is small, no compliance pressure | Grounding in your library, learner memory, assessment, and any real support |
+| **SaaS tutor via LTI** | Your needs are standard, speed matters more than fit, per-user pricing works at your headcount | Control of the model and the data, and the tutor's behaviour is the vendor's decision |
+| **Your own layer** | Your material is specific, data cannot leave the EU, you train large groups, or an examination framework applies | A one-time build instead of a subscription, and you need a partner who does both instructional design and engineering |
+
+The useful question is not which is best in the abstract. It is this: **if the tutor gets an answer wrong, whose problem is it?** If the answer is "ours, and it matters", you need control over the grounding and the guardrails, which points to the third row. If a wrong answer is merely annoying, buy the finished product and get on with your week.
+
+For the full build, buy and white-label comparison with budgets, see our guide to [custom AI tutor development](/blog/custom-ai-tutor-development).
+
+## How an External Tutor Plugs In
+
+This is the part people expect to be difficult, and it is the part that is standardised.
+
+An external tutor connects through LTI 1.3, the interoperability standard maintained by [1EdTech](https://www.1edtech.org/standards/lti) and supported by Moodle, ILIAS and the other major platforms. Three services do the work:
+
+- **Deep Linking 2.0** lets a trainer drop the tutor into a course as an activity, scoped to the right material.
+- **Names and Role Provisioning Services 2.0** passes who the learner is and what role they hold, so a trainer is treated differently from a first-year apprentice.
+- **Assignment and Grade Services** creates a gradebook column and posts grades to it, so the work shows up in the reporting you already run.
+
+<img src="/images/blog/tutor-layer-not-migration.svg" alt="Diagram: your LMS keeps courses, enrolments, the gradebook, certificates and reporting, while the new tutor layer adds a search index, learner memory, marking and guardrails, connected by LTI 1.3" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+
+Single sign-on comes with the launch. The learner clicks an activity in the course they are already in and lands in the tutor, already signed in.
+
+Everything else stays put: enrolments, course structure, certificates, and the years of material your team has built. **You are adding a layer, not migrating a platform.**
+
+## Run This Before You Buy Anything
+
+Copy this and use it on your current installation and on anything you are considering. Most of it can be answered in an afternoon.
+
+<CopyBlock buttonLabel="Copy checklist" copiedLabel="Copied!">
+
+### LMS AI Readiness Check
+
+*Platform:* [name and version] · *Checked on:* [date] · *Checked by:* [name]
+
+#### 1. Test What You Already Have
+
+Ask your current assistant a question that can only be answered from one specific document in your library.
+
+- [ ] Did it answer correctly?
+- [ ] Did it name the document it used, and could a learner click through to it?
+- [ ] Did it admit uncertainty, or guess confidently?
+- [ ] Does it still know the answer if you ask from a different course?
+- [ ] Does it remember yesterday's conversation?
+
+If the answers are no, the gap is retrieval, not configuration.
+
+#### 2. Score Your Shortlist
+
+Score 0 to 3: 0 absent, 1 claimed, 2 shown in a demo, 3 proven on our own content.
+
+| Criterion | A | B | C |
+|---|---|---|---|
+| Answers from our own library, with the source cited | [0-3] | [0-3] | [0-3] |
+| Remembers the learner across sessions | [0-3] | [0-3] | [0-3] |
+| Marks against our syllabus or exam framework | [0-3] | [0-3] | [0-3] |
+| Says "not in your material" instead of guessing | [0-3] | [0-3] | [0-3] |
+| Connects by LTI 1.3 with single sign-on | [0-3] | [0-3] | [0-3] |
+| Posts results to our existing gradebook | [0-3] | [0-3] | [0-3] |
+| Model runs where our policy requires | [0-3] | [0-3] | [0-3] |
+| We can swap the underlying model later | [0-3] | [0-3] | [0-3] |
+| We can read and export the conversation logs | [0-3] | [0-3] | [0-3] |
+| **Total out of 27** | [sum] | [sum] | [sum] |
+
+#### 3. Settle Before You Sign
+
+- [ ] Where is the model hosted, and where is the search index stored?
+- [ ] Is there a signed data processing agreement covering both?
+- [ ] Is there a written opt-out from our data training anyone's models?
+- [ ] Who owns the conversation logs, and do we keep them if we leave?
+- [ ] Which content is in scope, and who keeps the index current?
+- [ ] Which single course do we pilot, and what does success look like?
+
+</CopyBlock>
+
+## Where the Data Goes
+
+Every question a learner types is personal data in context. It says what they do not understand, what they are preparing for, and often where they work. Hosting is therefore a governance decision, not a technical preference.
+
+The choice is already built into the platform. Moodle 4.5 LTS ships dedicated OpenAI and Azure providers and reaches anything else through the OpenAI-compatible layer, **Ollama for locally hosted models included**. Moodle 5.2 adds dedicated providers for Ollama, DeepSeek, Amazon Bedrock and Google Gemini ([MoodleDocs](https://docs.moodle.org/502/en/AI_providers)). Running the model on your own EU infrastructure is a documented path, and the tutoring layer above it does not care which you pick, so you can prototype on a hosted API and move later.
+
+Put three things in writing: the hosting location for the model and the search index, a data processing agreement covering both, and an explicit opt-out from your material training anyone's models. For the wider compliance picture, see our guide to [GDPR compliant AI tools for trainers](/blog/gdpr-compliant-ai-tools-for-trainers).
+
+One point that is easy to miss: the conversation logs are an asset. They are a running record of exactly what your learners do not understand, which your curriculum team has never had before.
+
+## What Drives the Price
+
+Anyone who quotes a number before seeing your content is guessing. The connection is standardised and small. The cost lives in four places:
+
+1. **The state of your content.** Clean, current, structured material indexes quickly. Twelve years of mixed PDFs, slide decks and scanned handouts is the real project.
+2. **How much is in scope.** One course is a pilot. A whole catalogue in three languages is a programme.
+3. **How much the tutor has to judge.** Answering questions is one thing. Marking against an examination framework and reporting a competency level is considerably more.
+4. **How strict the guardrails must be.** In regulated training, the effort spent on what the tutor must never do can match the effort spent on what it should do.
+
+The sensible way to find your number is to scope one course, put it in front of real learners, and measure whether questions to your trainers drop. That is also the right way to build it.
+
+## What to Do Next
+
+Run the one minute check on your own installation. Take the readiness check into any vendor conversation and score it on your own content, not on a demo. Ask whether a wrong answer is your problem or merely an annoyance, because that single question decides between buying a product and building a layer you control. Then pilot one course before you touch the rest.
+
+**Let's scope your first course.** Tell us which platform you run and what your learners keep asking, and you get a [no obligation quote](/solutions#project-inquiry) with a concrete plan for a first working version. Or book a free strategy call: no pitch, and a realistic roadmap plus a ballpark figure at the end.
+
+To see how we build AI tutors and learning platforms with EU hosting and ownership of the result, visit our page on [custom e-learning development](/solutions). Weighing up a full platform instead of a layer? Our guide to [what custom e-learning costs](/blog/custom-e-learning-development-costs) covers that decision.
+
+
+## Frequently Asked Questions
+
+### Can Moodle answer questions about our own course content out of the box?
+
+Not in the way learners expect. Moodle 4.5 LTS offers three AI actions, and 5.2 adds a fourth: generate text, generate an image, summarise text, and explain text. Summarise and explain work on the content the learner already has open in the course. None of them searches your course library to find and cite the passage that answers a question. That capability is called retrieval, and it is added on top of the LMS rather than switched on inside it.
+
+### What is the difference between an AI chatbot and an AI tutor?
+
+A chatbot answers a message. A tutor answers from your material with the source attached, remembers what the learner did last week, marks their work against your syllabus, changes approach when they struggle, and says it does not know rather than inventing an answer. The test is simple: ask a question that can only be answered from one specific document in your library, and see whether the tool names that document.
+
+### Do we have to replace our LMS to get an AI tutor?
+
+No, and in most cases you should not. Your LMS holds the enrolments, the gradebook, the certificates and years of course structure. An external tutor connects through the LTI 1.3 standard, appears inside the course as an activity, signs the learner in automatically, and can post results to the gradebook. The platform stays. Only the tutoring layer is new.
+
+### How does an external AI tutor connect to Moodle or ILIAS?
+
+Through LTI 1.3, the interoperability standard maintained by 1EdTech. Deep Linking 2.0 lets a teacher place the tutor inside a course. Names and Role Provisioning Services 2.0 passes who the learner is and what role they hold. Assignment and Grade Services creates a gradebook column and posts grades to it. Single sign-on comes with the launch, so learners never see a second login.
+
+### Is an AI tutor inside the LMS GDPR compliant?
+
+It depends on where the model runs and what the provider does with the text. Every question a learner types is personal data in context. Settle three things: the hosting location for both the model and the search index, a signed data processing agreement covering both, and a written opt-out from your data being used to train the provider's models.
+
+### Can we run our own model behind our LMS?
+
+Yes. The AI provider is a pluggable component, and Moodle 5.2 documents a dedicated Ollama provider for locally hosted models, and 4.5 LTS reaches the same models through the OpenAI-compatible layer. You can prototype on a hosted API and move to a model on your own EU infrastructure later without rebuilding the learner-facing layer, because the tutoring logic, the search index and the guardrails sit above the model.
+
+### What does it cost to add an AI tutor to an existing LMS?
+
+There is no honest single number, because the work is driven by your content rather than by the connection. The connection itself is standardised and small. The cost sits in preparing your material so it can be searched, deciding how the tutor behaves when it is unsure, and how deeply results flow back into your reporting. Scope one course first to get a real figure.
+
+---
+
 # Learning Platform for Training Providers: Digitise Your Own Courses
 
 Source: https://learnslice.com/blog/learning-platform-training-providers
@@ -3718,6 +3931,219 @@ Good platforms generate questions along the IHK topic areas, the standard occupa
 ### Which apprenticeship occupations benefit most from digital exam preparation?
 
 Commercial occupations such as office management clerk, IT occupations such as IT specialists across all four specialisms, and technical occupations such as automotive mechatronics technician and warehouse logistics specialist. Wherever extensive theory has to be linked to practice, personalised adaptive learning shows its strength.
+
+---
+
+# KI-Tutor ins bestehende LMS integrieren
+
+Source: https://learnslice.com/de/blog/ki-tutor-in-lms-integrieren
+Language: de
+Published: 2026-09-10
+
+Ihr LMS hat KI an Bord und die Lernenden ignorieren sie. Was die Funktion wirklich kann, was ein echter Lernbegleiter leistet und wie die Anbindung ohne Migration läuft.
+
+## Auf einen Blick
+
+- Die KI in Ihrem LMS ist Autoren- und Lesehilfe, keine Lernbegleitung. Moodle 4.5 LTS bietet drei Aktionen an zwei Platzierungen, 5.2 ergänzt eine vierte: Text erzeugen, Bild erzeugen, Text zusammenfassen und Text erklären. Alle arbeiten auf Inhalten, die der Nutzende bereits offen hat. Keine durchsucht Ihre Kursbibliothek.
+- Deshalb sagen Lernende, der Assistent kenne die eigenen Inhalte nicht. Das ist kein Konfigurationsfehler und kein schlechtes Plugin. Die Funktion war nie dafür gedacht, aus Ihrem Material zu antworten, also bringt auch keine Einstellung sie dazu.
+- Ein Lernbegleiter ergänzt fünf Dinge: Antworten aus Ihrer gesamten Bibliothek mit Quellenangabe, Gedächtnis für den Lernenden, Bewertung gegen Ihren Lehrplan, einen Wechsel des Wegs bei Schwierigkeiten und die Weigerung zu raten.
+- Sie müssen Ihr LMS dafür nicht ablösen. Ein externer Lernbegleiter wird über LTI 1.3 angebunden. Kurse, Einschreibungen, Notenbuch und Zertifikate bleiben, wo sie sind.
+- Moodle erreicht lokal betriebene Modelle auf beiden Wegen: dedizierter Ollama-Anbieter in 5.2, OpenAI-kompatible Schnittstelle in 4.5 LTS. Das Modell auf eigener EU-Infrastruktur zu betreiben, ist ein dokumentierter Weg und keine Sonderanfertigung.
+
+![Eine Ausbilderin und ein Kollege sehen sich gemeinsam eine Lernplattform am Laptop an](/images/blog/pexels-yankrukov-7794078.webp)
+
+## Sie haben sie eingeschaltet, und niemand nutzt sie
+
+Der Ablauf ist fast immer derselbe.
+
+Ihre Administration aktiviert die KI-Funktionen in der Lernplattform. Es gibt ein kurzes Aufflackern von Interesse. Der Assistent fasst die Seite ordentlich zusammen, die der Lernende ohnehin gerade liest, was nett ist, aber nichts löst. Dann stellt jemand eine echte Frage: In welchem Modul stehen die Brandschutzregeln für unsere Lagerstandorte? Der Assistent liefert eine selbstbewusste, flüssige, vollständig erfundene Antwort. Das spricht sich herum, und in Woche drei ist das Fenster zu.
+
+Die meisten Organisationen ziehen dann einen von zwei falschen Schlüssen. Entweder war das Plugin schlecht und es gibt ein besseres, oder die Plattform ist veraltet und muss ersetzt werden.
+
+Beides stimmt nicht. **Die KI in Ihrem LMS tut genau das, wofür sie gebaut wurde.** Sie wurde nie als Lernbegleiter gebaut. Wer das einmal klar sieht, steht vor einer einfacheren Entscheidung, und vor einer weit günstigeren als einer Migration.
+
+## Die Ein-Minuten-Prüfung an Ihrer eigenen Installation
+
+Öffnen Sie die Website-Administration Ihres Moodle und gehen Sie auf Allgemein, dann KI-Platzierungen. Alles ist deaktiviert, bis es jemand einschaltet, der Zugriff wird pro Rolle vergeben, und Nutzende müssen vor der ersten Verwendung eine KI-Nutzungsrichtlinie bestätigen.
+
+Sehen Sie sich jetzt an, welche Aktionen es überhaupt gibt. In Moodle 4.5 LTS sind es drei, verteilt auf zwei Platzierungen, 5.2 ergänzt eine vierte ([MoodleDocs](https://docs.moodle.org/502/en/AI_placements)):
+
+| Platzierung | Aktionen | Wofür sie gedacht sind |
+|---|---|---|
+| Texteditor | Text erzeugen, Bild erzeugen | Entwerfen und Bebildern, vor allem für Kursautoren |
+| Kursassistenz | Text zusammenfassen, dazu Text erklären ab 5.2 | Kürzen oder Aufschlüsseln von Inhalten, die der Lesende offen hat |
+
+<img src="/images/blog/lms-ai-reach-de.svg" alt="Diagramm: Jede eingebaute KI-Aktion arbeitet auf der Seite, die der Lernende offen hat, während die Kursbibliothek jenseits einer Grenze liegt, die keine Aktion überschreitet" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+
+Lesen Sie diese Liste noch einmal mit der Frage eines Lernenden im Kopf. Jede Aktion arbeitet auf Text, der bereits vor der Person liegt, oder erzeugt neuen Text aus dem Allgemeinwissen des Modells. Keine einzige schlägt etwas in Ihrer Kursbibliothek nach.
+
+Das ist die ganze Geschichte. Der Assistent kannte Ihre Inhalte nicht, weil **im Funktionsumfang nichts vorgesehen ist, das Ihre Inhalte findet**. Es ist eine gute Autorenhilfe, die verbreitet für einen Lernbegleiter gehalten wird. Ihre Administration hat nichts falsch eingestellt, und es gibt keinen übersehenen Schalter.
+
+## Fünf Dinge, die ein Lernbegleiter kann und Zusammenfassen nicht
+
+Jedes davon beantwortet eine Beschwerde, die Sie vermutlich schon gehört haben.
+
+**1. Er antwortet aus Ihrer gesamten Bibliothek und zeigt die Quelle.** *Er erfindet Dinge.* Ein Lernbegleiter findet die Passage, die die Frage tatsächlich beantwortet, formuliert daraus und verlinkt sie, sodass der Lernende nachsehen kann. Allein das macht aus einer Spielerei etwas, das Ausbilder unbeaufsichtigt freigeben.
+
+**2. Er erinnert sich an den Lernenden.** *Ich muss jedes Mal von vorn erklären, wo ich stehe.* Ein Lernbegleiter weiß, dass diese Person im zweiten Lehrjahr ist, vor zwei Wochen am selben Thema gescheitert ist und in drei Wochen eine Prüfung hat.
+
+**3. Er bewertet gegen Ihren Lehrplan.** *Er ist freundlich, aber nutzlos.* Generische Modelle sind unermüdlich positiv. Ein Lernbegleiter hält eine Antwort gegen die Kriterien, nach denen tatsächlich geprüft wird. Nur diese Rückmeldung bewegt eine Bestehensquote.
+
+**4. Er wechselt den Weg, wenn jemand hängt.** *Alle bekommen dasselbe.* Wer denselben Zusammenhang dreimal verfehlt, dem hilft die vierte Wiederholung nicht. Ein Lernbegleiter wechselt die Herangehensweise oder übergibt an einen Menschen, mit einer Notiz, woran es lag.
+
+**5. Er weigert sich zu raten.** *Wir können ihm nicht vertrauen.* Der wertvollste Satz lautet: Das steht nicht in Ihrem Material, fragen Sie bitte dort nach. In geregelter Ausbildung ist ein Modell ohne Grenze keine Marotte, sondern ein Haftungsthema.
+
+## Warum keine Einstellung das löst
+
+Ein Sprachmodell ist wie eine außergewöhnlich belesene Absolventin an ihrem ersten Arbeitstag bei Ihnen. Enormes Allgemeinwissen, und keine Ahnung, was auf Ihrem Laufwerk liegt. Fragen Sie nach Ihrem Brandschutzmodul, schließt sie daraus, was in solchen Modulen üblicherweise steht. Das ist keine Lüge, es ist das Einzige, was sie tun kann.
+
+Was das löst, heißt **Retrieval**, meist als RAG bezeichnet. Ihre Kurse, Handbücher, Altprüfungen und internen Notizen werden indexiert. Kommt eine Frage herein, durchsucht das System zuerst diesen Index, holt die einschlägigen Passagen und übergibt sie dem Modell mit der Anweisung, ausschließlich daraus zu antworten und die Stelle zu nennen.
+
+<img src="/images/blog/grounding-two-routes-de.svg" alt="Diagramm: Dieselbe Frage auf zwei Wegen. Direkt zum Modell entsteht eine selbstbewusste, erfundene Antwort. Zuerst über den Suchindex entsteht eine Antwort mit Verweis auf Modul 4.2, Abschnitt 3" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+
+Dasselbe Modell, das eben eine Antwort erfunden hat, sagt nun: Laut Modul 4.2, Abschnitt 3, gilt für Ihre Lagerstandorte X, hier ist der Link.
+
+Retrieval ist eine Schicht zwischen Ihren Inhalten und dem Modell, und genau deshalb bringt Sie kein Häkchen im LMS dorthin. Wie weit Sie damit gehen können, bis hin zu einem selbst betriebenen Modell, steht in unserem Beitrag zu [individueller KI mit Open-Source-Modellen](/de/blog/individuelle-ki-open-source-modelle).
+
+## Drei Wege, die Lücke zu schließen
+
+Diese Wege konkurrieren nicht um dieselbe Organisation. Für viele Lesende ist die ehrliche Antwort der erste.
+
+| Weg | Passt, wenn | Was Sie aufgeben |
+|---|---|---|
+| **Community-Plugin** | Sie die Idee testen wollen, wenig Inhalt haben, kein Compliance-Druck besteht | Verankerung in Ihrer Bibliothek, Gedächtnis, Bewertung und jede Form von Support |
+| **SaaS-Lernbegleiter per LTI** | Ihre Anforderungen Standard sind, Tempo mehr zählt als Passung, der Preis pro Kopf aufgeht | Kontrolle über Modell und Daten, und das Verhalten bestimmt der Anbieter |
+| **Eigene Schicht** | Ihr Material spezifisch ist, Daten die EU nicht verlassen dürfen, Sie große Gruppen schulen oder eine Prüfungsordnung gilt | Einmalige Entwicklung statt Abo, und Sie brauchen einen Partner für Didaktik und Engineering zugleich |
+
+Die nützliche Frage ist nicht, welcher Weg allgemein der beste ist. Sie lautet: **Wenn der Lernbegleiter falsch antwortet, wessen Problem ist das?** Lautet die Antwort, unseres, und es zählt, dann brauchen Sie Kontrolle über Verankerung und Leitplanken, und das führt in die dritte Zeile. Ist eine falsche Antwort lediglich ärgerlich, kaufen Sie das fertige Produkt.
+
+Den vollständigen Vergleich zwischen kaufen, White-Label lizenzieren und entwickeln lassen finden Sie in unserem Beitrag [KI-Lernbegleiter entwickeln lassen oder kaufen](/de/blog/ki-lernbegleiter-entwickeln-lassen).
+
+## Wie die Anbindung abläuft
+
+Das ist der Teil, den alle für schwierig halten, und es ist der Teil, der standardisiert ist.
+
+Ein externer Lernbegleiter wird über LTI 1.3 angebunden, den Interoperabilitätsstandard von [1EdTech](https://www.1edtech.org/standards/lti), den Moodle, ILIAS und die anderen großen Plattformen unterstützen. Drei Dienste erledigen die Arbeit:
+
+- **Deep Linking 2.0** erlaubt der Lehrkraft, den Lernbegleiter als Aktivität im Kurs zu platzieren, bezogen auf das richtige Material.
+- **Names and Role Provisioning Services 2.0** übergibt, wer der Lernende ist und welche Rolle er hat, damit ein Ausbilder anders behandelt wird als ein Auszubildender im ersten Jahr.
+- **Assignment and Grade Services** legt eine Spalte im Notenbuch an und schreibt Noten hinein, sodass die Arbeit in Ihrem gewohnten Reporting auftaucht.
+
+<img src="/images/blog/tutor-layer-not-migration-de.svg" alt="Diagramm: Ihr LMS behält Kurse, Einschreibungen, Notenbuch, Zertifikate und Reporting, während die neue Lernbegleiter-Schicht Suchindex, Gedächtnis, Bewertung und Leitplanken ergänzt, angebunden über LTI 1.3" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+
+Single Sign-on ist Teil des Aufrufs. Der Lernende klickt im Kurs auf eine Aktivität und landet angemeldet im Lernbegleiter.
+
+Alles andere bleibt, wo es ist: Einschreibungen, Kursstruktur, Zertifikate und die jahrelang aufgebauten Materialien Ihres Teams. **Sie ergänzen eine Schicht, Sie migrieren keine Plattform.**
+
+## Diese Prüfung vor jedem Kauf
+
+Kopieren Sie die Checkliste und wenden Sie sie auf Ihre Installation und auf jedes Produkt in der engeren Auswahl an. Das meiste lässt sich an einem Nachmittag beantworten.
+
+<CopyBlock buttonLabel="Checkliste kopieren" copiedLabel="Kopiert!">
+
+### LMS-KI-Check
+
+*Plattform:* [Name und Version] · *Geprüft am:* [Datum] · *Geprüft von:* [Name]
+
+#### 1. Prüfen Sie, was Sie bereits haben
+
+Stellen Sie Ihrem jetzigen Assistenten eine Frage, die sich nur aus einem bestimmten Dokument Ihrer Bibliothek beantworten lässt.
+
+- [ ] Hat er richtig geantwortet?
+- [ ] Hat er das verwendete Dokument benannt, und käme ein Lernender dorthin?
+- [ ] Hat er Unsicherheit angezeigt oder selbstbewusst geraten?
+- [ ] Weiß er die Antwort auch, wenn Sie aus einem anderen Kurs fragen?
+- [ ] Erinnert er sich an das Gespräch von gestern?
+
+Lauten die Antworten nein, ist die Lücke Retrieval und nicht Konfiguration.
+
+#### 2. Bewerten Sie Ihre engere Auswahl
+
+0 bis 3 Punkte: 0 nicht vorhanden, 1 behauptet, 2 in der Demo gezeigt, 3 an unseren eigenen Inhalten belegt.
+
+| Kriterium | A | B | C |
+|---|---|---|---|
+| Antwortet aus unserer eigenen Bibliothek, mit Quellenangabe | [0-3] | [0-3] | [0-3] |
+| Erinnert sich sitzungsübergreifend an den Lernenden | [0-3] | [0-3] | [0-3] |
+| Bewertet gegen unseren Lehrplan oder Rahmenstoffplan | [0-3] | [0-3] | [0-3] |
+| Sagt, dass etwas nicht im Material steht, statt zu raten | [0-3] | [0-3] | [0-3] |
+| Anbindung über LTI 1.3 mit Single Sign-on | [0-3] | [0-3] | [0-3] |
+| Schreibt Ergebnisse in unser Notenbuch | [0-3] | [0-3] | [0-3] |
+| Modell läuft dort, wo unsere Richtlinie es verlangt | [0-3] | [0-3] | [0-3] |
+| Wir können das Modell später austauschen | [0-3] | [0-3] | [0-3] |
+| Wir können die Gesprächsprotokolle einsehen und exportieren | [0-3] | [0-3] | [0-3] |
+| **Summe von 27** | [Summe] | [Summe] | [Summe] |
+
+#### 3. Vor der Unterschrift klären
+
+- [ ] Wo läuft das Modell, und wo liegt der Suchindex?
+- [ ] Gibt es einen unterzeichneten Auftragsverarbeitungsvertrag für beides?
+- [ ] Gibt es ein schriftliches Opt-out gegen Training mit unseren Daten?
+- [ ] Wem gehören die Gesprächsprotokolle, und behalten wir sie beim Wechsel?
+- [ ] Welche Inhalte sind im Umfang, und wer hält den Index aktuell?
+- [ ] Welchen einen Kurs pilotieren wir, und woran messen wir Erfolg?
+
+</CopyBlock>
+
+## Wo die Daten liegen
+
+Jede Frage, die ein Lernender eintippt, ist im Kontext ein personenbezogenes Datum. Sie verrät, was die Person nicht versteht, worauf sie sich vorbereitet und oft auch, wo sie arbeitet. Hosting ist damit eine Governance-Entscheidung, keine technische Vorliebe.
+
+Die Wahl ist bereits in der Plattform angelegt. Moodle 4.5 LTS bringt dedizierte Anbieter für OpenAI und Azure mit und erreicht alles Weitere über die OpenAI-kompatible Schnittstelle, **einschließlich Ollama für lokal betriebene Modelle**. Moodle 5.2 ergänzt dedizierte Anbieter für Ollama, DeepSeek, Amazon Bedrock und Google Gemini ([MoodleDocs](https://docs.moodle.org/502/en/AI_providers)). Das Modell auf eigener EU-Infrastruktur zu betreiben, ist ein dokumentierter Weg, und die Schicht darüber interessiert sich nicht für Ihre Wahl. Sie können auf einer gehosteten API starten und später verlagern.
+
+Drei Punkte gehören schriftlich fixiert: der Hosting-Ort für Modell und Suchindex, ein Auftragsverarbeitungsvertrag für beides und ein ausdrückliches Opt-out gegen die Nutzung Ihres Materials für fremdes Modelltraining. Das größere Compliance-Bild steht in unserem Beitrag zu [DSGVO-konformen KI-Tools für Ausbilder](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+Ein Punkt wird leicht übersehen: Die Gesprächsprotokolle sind ein Wert. Sie sind eine fortlaufende Aufzeichnung dessen, was Ihre Lernenden nicht verstehen, und diese Information hatte Ihre Lehrplanentwicklung vorher nie.
+
+## Was den Preis treibt
+
+Wer eine Zahl nennt, bevor er Ihre Inhalte gesehen hat, rät. Die Anbindung ist standardisiert und klein. Die Kosten stecken an vier Stellen:
+
+1. **Der Zustand Ihrer Inhalte.** Sauberes, aktuelles, strukturiertes Material ist schnell indexiert. Zwölf Jahre gemischte PDFs, Foliensätze und eingescannte Handreichungen sind das eigentliche Projekt.
+2. **Wie viel davon im Umfang ist.** Ein Kurs ist ein Pilot. Ein ganzer Katalog in drei Sprachen ist ein Programm.
+3. **Wie viel der Lernbegleiter beurteilen muss.** Fragen beantworten ist das eine. Gegen eine Prüfungsordnung bewerten und einen Kompetenzstand melden ist deutlich mehr.
+4. **Wie streng die Leitplanken sein müssen.** In geregelter Ausbildung kann der Aufwand für das, was der Lernbegleiter niemals tun darf, den Aufwand für seine eigentliche Aufgabe erreichen.
+
+Der vernünftige Weg zu Ihrer Zahl führt über einen Kurs: zuschneiden, echten Lernenden vorlegen und messen, ob die Rückfragen an Ihre Ausbilder zurückgehen. Genau so sollte man es ohnehin bauen.
+
+## Wie Sie jetzt vorgehen
+
+Führen Sie die Ein-Minuten-Prüfung an Ihrer eigenen Installation durch. Nehmen Sie die Checkliste in jedes Anbietergespräch und bewerten Sie an Ihren eigenen Inhalten, nicht an einer Demo. Klären Sie, ob eine falsche Antwort Ihr Problem ist oder nur ärgerlich, denn diese eine Frage entscheidet zwischen fertigem Produkt und eigener Schicht. Und pilotieren Sie einen Kurs, bevor Sie den Rest anfassen.
+
+**Fangen wir mit einem Kurs an.** Sagen Sie uns, welche Plattform Sie betreiben und was Ihre Lernenden immer wieder fragen, und Sie erhalten ein [unverbindliches Angebot](/de/loesungen#project-inquiry) mit einem konkreten Plan für eine erste funktionierende Version. Oder buchen Sie ein kostenloses Strategiegespräch: kein Pitch, am Ende eine realistische Roadmap und eine Größenordnung.
+
+Wie wir KI-Lernbegleiter und Lernplattformen mit EU-Hosting und Eigentum am Ergebnis bauen, sehen Sie auf unserer Seite zur [individuellen E-Learning-Entwicklung](/de/loesungen). Sie erwägen statt einer Schicht eine ganze Plattform? Dann hilft unser Beitrag [Was kostet E-Learning entwickeln lassen](/de/blog/e-learning-entwickeln-lassen).
+
+
+## Häufig gestellte Fragen
+
+### Kann Moodle von sich aus Fragen zu unseren Kursinhalten beantworten?
+
+Nicht so, wie Lernende es erwarten. Moodle 4.5 LTS bietet drei KI-Aktionen, 5.2 ergänzt eine vierte: Text erzeugen, Bild erzeugen, Text zusammenfassen und Text erklären. Zusammenfassen und Erklären arbeiten auf dem Inhalt, den der Lernende im Kurs ohnehin offen hat. Keine dieser Aktionen durchsucht Ihre Kursbibliothek, um die Passage zu finden und zu zitieren, die eine Frage beantwortet. Diese Fähigkeit heißt Retrieval und wird auf das LMS aufgesetzt, nicht darin eingeschaltet.
+
+### Was ist der Unterschied zwischen einem KI-Chatbot und einem KI-Lernbegleiter?
+
+Ein Chatbot beantwortet eine Nachricht. Ein Lernbegleiter antwortet aus Ihrem Material mit Quellenangabe, erinnert sich, was der Lernende vergangene Woche gemacht hat, bewertet gegen Ihren Lehrplan, wechselt die Herangehensweise bei Schwierigkeiten und sagt, dass er es nicht weiß, statt zu erfinden. Der Test ist einfach: Stellen Sie eine Frage, die sich nur aus einem bestimmten Dokument Ihrer Bibliothek beantworten lässt, und prüfen Sie, ob das Tool dieses Dokument benennt.
+
+### Müssen wir unser LMS ablösen, um einen KI-Tutor zu bekommen?
+
+Nein, und in den meisten Fällen sollten Sie es nicht. Ihr LMS hält die Einschreibungen, das Notenbuch, die Zertifikate und jahrelang gewachsene Kursstrukturen. Ein externer Lernbegleiter wird über den Standard LTI 1.3 angebunden, erscheint im Kurs als Aktivität, meldet den Lernenden automatisch an und kann Ergebnisse ins Notenbuch schreiben. Die Plattform bleibt. Neu ist nur die Begleitungsschicht.
+
+### Wie wird ein externer KI-Tutor an Moodle oder ILIAS angebunden?
+
+Über LTI 1.3, den Interoperabilitätsstandard von 1EdTech. Deep Linking 2.0 erlaubt der Lehrkraft, den Lernbegleiter im Kurs zu platzieren. Names and Role Provisioning Services 2.0 übergibt, wer der Lernende ist und welche Rolle er hat. Assignment and Grade Services legt eine Spalte im Notenbuch an und schreibt Noten hinein. Single Sign-on ist Teil des Aufrufs, ein zweiter Login entfällt.
+
+### Ist ein KI-Tutor im LMS DSGVO-konform?
+
+Das hängt davon ab, wo das Modell läuft und was der Anbieter mit den Texten macht. Jede Frage, die ein Lernender eintippt, ist im Kontext ein personenbezogenes Datum. Klären Sie drei Dinge: den Hosting-Ort für Modell und Suchindex, einen unterzeichneten Auftragsverarbeitungsvertrag für beides und ein schriftliches Opt-out gegen die Nutzung Ihrer Daten für das Training fremder Modelle.
+
+### Können wir ein eigenes Modell hinter unser LMS hängen?
+
+Ja. Der KI-Anbieter ist eine austauschbare Komponente, und Moodle 5.2 dokumentiert einen dedizierten Ollama-Anbieter für lokal betriebene Modelle, und 4.5 LTS erreicht dieselben Modelle über die OpenAI-kompatible Schnittstelle. Sie können auf einer gehosteten API starten und später auf ein Modell auf eigener EU-Infrastruktur wechseln, ohne die Schicht für die Lernenden neu zu bauen, denn Tutorenlogik, Suchindex und Leitplanken liegen über dem Modell.
+
+### Was kostet es, einen KI-Tutor an ein bestehendes LMS anzubinden?
+
+Eine seriöse Einzelzahl gibt es nicht, weil der Aufwand von Ihren Inhalten getrieben wird und nicht von der Anbindung. Die Verbindung selbst ist standardisiert und klein. Die Kosten stecken in der Aufbereitung Ihres Materials, in der Frage, wie sich der Lernbegleiter bei Unsicherheit verhält, und darin, wie tief Ergebnisse in Ihr Reporting zurückfließen. Scopen Sie zuerst einen Kurs, dann wird die Zahl belastbar.
 
 ---
 

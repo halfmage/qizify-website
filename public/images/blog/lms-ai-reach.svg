@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 538" role="img" aria-label="Diagram: every AI action built into Moodle works on the page the learner already has open. Generate text, generate image and summarise text, plus explain text from Moodle 5.2. None of them searches the course library, so the answer comes from the model&#x27;s general knowledge rather than from your material.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="440" height="538" rx="16" fill="#2a2622"/>
+  <text x="20" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="21" fill="#faf8f4" font-weight="600">What the built-in AI can reach</text>
+  <text x="20" y="57" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Every action works inside the open page</text>
+  <rect x="20" y="76" width="400" height="92" rx="10" fill="#2a2622" stroke="#a89e92" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="38" y="104" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">Your course library</text>
+  <text x="38" y="128" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Courses, handbooks, past papers, notes</text>
+  <text x="38" y="150" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Never searched by the built-in AI</text>
+  <path d="M56,190 L384,190" stroke="#cc7a3e" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <circle cx="220" cy="190" r="15" fill="#2a2622" stroke="#cc7a3e" stroke-width="1.5"/>
+  <path d="M214,184 L226,196 M226,184 L214,196" stroke="#e8b07a" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="220" y="224" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" text-anchor="middle">no path across</text>
+  <rect x="20" y="240" width="400" height="146" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="38" y="268" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">The page the learner has open</text>
+  <rect x="38" y="284" width="178" height="38" rx="8" fill="#3a3128" stroke="#46402f" stroke-width="1"/>
+  <text x="127" y="308" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be" text-anchor="middle">Generate text</text>
+  <rect x="224" y="284" width="178" height="38" rx="8" fill="#3a3128" stroke="#46402f" stroke-width="1"/>
+  <text x="313" y="308" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be" text-anchor="middle">Generate image</text>
+  <rect x="38" y="330" width="178" height="38" rx="8" fill="#3a3128" stroke="#46402f" stroke-width="1"/>
+  <text x="127" y="354" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be" text-anchor="middle">Summarise text</text>
+  <rect x="224" y="330" width="178" height="38" rx="8" fill="#3a3128" stroke="#46402f" stroke-width="1"/>
+  <text x="313" y="354" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be" text-anchor="middle">Explain text (5.2)</text>
+  <path d="M220,388 L220,400" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="20" y="406" width="400" height="76" rx="10" fill="#3a3128" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="38" y="434" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15.5" fill="#cfc7be">The answer comes from the model&#x27;s general</text>
+  <text x="38" y="456" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15.5" fill="#cfc7be">knowledge, not from your material.</text>
+  <text x="20" y="508" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">The learner&#x27;s question lives in the library.</text>
+  <text x="20" y="528" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">The actions never go there.</text>
+</svg>
