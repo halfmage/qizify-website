@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 596" role="img" aria-label="Diagram: your LMS stays as it is, holding courses and enrolments, the gradebook and certificates, reporting and roles, and years of material. The tutor layer is added alongside it and connected by LTI 1.3 through Deep Linking, Names and Roles, and Assignment and Grade Services. The new layer adds a search index over your content, memory of each learner, marking and guardrails, and a model you can swap.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
+  <rect x="0" y="0" width="440" height="596" rx="16" fill="#2a2622"/>
+  <text x="20" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="21" fill="#faf8f4" font-weight="600">You add a layer, you do not migrate</text>
+  <text x="20" y="57" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">What stays, and what is new</text>
+  <rect x="20" y="76" width="400" height="158" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
+  <text x="38" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#a89e92">STAYS AS IT IS</text>
+  <text x="38" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">Your LMS</text>
+  <circle cx="44" cy="149" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="154" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Courses and enrolments</text>
+  <circle cx="44" cy="171" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="176" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Gradebook and certificates</text>
+  <circle cx="44" cy="193" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Reporting and roles</text>
+  <circle cx="44" cy="215" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="220" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Years of material</text>
+  <path d="M220,238 L220,250" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="20" y="256" width="400" height="100" rx="10" fill="#2a2622" stroke="#cc7a3e" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="220" y="282" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#e8b07a" font-weight="600" text-anchor="middle">connected by LTI 1.3</text>
+  <text x="220" y="306" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="middle">Deep Linking 2.0</text>
+  <text x="220" y="326" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="middle">Names and Roles 2.0</text>
+  <text x="220" y="346" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="middle">Assignment and Grade Services</text>
+  <path d="M220,360 L220,372" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="20" y="378" width="400" height="158" rx="10" fill="#3a3128" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="38" y="402" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#e8b07a">NEW LAYER</text>
+  <text x="38" y="428" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">The tutor</text>
+  <circle cx="44" cy="451" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="456" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">A search index over your content</text>
+  <circle cx="44" cy="473" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="478" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Memory of each learner</text>
+  <circle cx="44" cy="495" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="500" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Marking and guardrails</text>
+  <circle cx="44" cy="517" r="2.5" fill="#cc7a3e"/>
+  <text x="58" y="522" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">A model you can swap</text>
+  <text x="20" y="564" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Nothing moves. The platform keeps its job</text>
+  <text x="20" y="584" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">and the tutor does the one it cannot.</text>
+</svg>
