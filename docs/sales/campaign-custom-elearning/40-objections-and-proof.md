@@ -33,9 +33,11 @@ Daten an Dritt-Modelle weiter. Genau dort scheitern Standardlösungen, die auße
 verarbeiten.
 
 ### "Wir müssen das ausschreiben."
-Verstanden. Unterhalb der EU-Schwelle von 216.000 Euro netto lassen viele Länder das
-Verhandlungsverfahren zu, teils bis 50.000 Euro auch den Direktauftrag. Wir schneiden das Projekt
-so zu, dass es in diesen Rahmen passt, oder treten als Unterauftragnehmer in einem bestehenden
+Verstanden. Unterhalb der EU-Schwelle lassen viele Länder das Verhandlungsverfahren zu, teils bis
+50.000 Euro auch den Direktauftrag. Die Schwelle liegt für Länder, Kommunen und die meisten
+Hochschulen bei 216.000 Euro netto, für Bundesstellen bei 140.000 Euro (Stand 2026/2027). Wir
+schneiden das Projekt so zu, dass es in diesen Rahmen passt, oder treten als Unterauftragnehmer
+in einem bestehenden
 Rahmenvertrag an. Wir liefern EVB-IT-fähige Vertragsunterlagen und einen AVV.
 
 ### "Können Sie als kleiner Anbieter die Anforderungen und Fristen tragen?"

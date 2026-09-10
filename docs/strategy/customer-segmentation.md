@@ -54,7 +54,7 @@ Private commissioning means **fast** cycles, and our low-cost positioning fits t
 
 This is the segment where our **single sharpest USP (data processing in Germany) is a mandatory procurement gate**, not a preference. Post the June 2025 Microsoft CLOUD-Act admission, German public data must be processed on German soil by vetted staff (Deutsche Verwaltungscloud live since April 2025; Bundeswehr/police on STACKIT; BfDI guidance). US hyperscalers are structurally disqualified, which is rare leverage for a small shop.
 
-- **The catch:** procurement. Full EU tender kicks in above EUR 216k net; below that, many states allow **negotiated/invited award (Verhandlungsvergabe)**, and Direktauftrag is rising toward EUR 50k. So the winnable shape is a **build priced EUR 50k-216k, awarded by negotiation, no EU-wide tender**, or entering as a **subcontractor** to a larger framework holder.
+- **The catch:** procurement. For sub-central buyers (Laender, municipalities, most universities and academies) full EU tender kicks in above EUR 216k net for services; for central government (Bund) the threshold is EUR 140k. Below it, many states allow **negotiated/invited award (Verhandlungsvergabe)**, and Direktauftrag is rising toward EUR 50k. So the winnable shape is a **build priced EUR 50k-216k, awarded by negotiation, no EU-wide tender**, or entering as a **subcontractor** to a larger framework holder.
 - **Treatment:** slow-burn, not the cash engine. Pursue 1-2 lighthouse deals where sovereignty closes it for us automatically. Do not staff the pipeline as if it were the primary motion.
 
 ### IHK / HWK: reference logos, not pipeline
@@ -139,7 +139,7 @@ The site runs two distinct businesses that must stay legible as separate offerin
 
 ## 8. Key sources
 
-- Procurement thresholds 2026: BHO-Legal, CMS, Optiso-Consult (EUR 216k EU threshold; Direktauftrag rising to EUR 50k via Vergabebeschleunigungsgesetz).
+- Procurement thresholds 2026-2027: European Commission, public procurement thresholds page, citing Commission Delegated Regulation (EU) 2025/2152 of 22 October 2025. Supplies and services: **EUR 216,000 for sub-central contracting authorities** (Laender, municipalities, most universities and academies), **EUR 140,000 for central government authorities** (Bund). Works: EUR 5,404,000. Verified against the issuing body, not provider or law-firm summaries. Direktauftrag rising to EUR 50k via Vergabebeschleunigungsgesetz: national reform, verify separately before quoting.
 - Funding pots: stiftung-hochschullehre.de; e-teaching.org (BMBF EUR 133M); BMFWF (Austria EUR 50M); swissuniversities (CH).
 - Sovereignty as procurement gate: Bitkom "Digitale Souveränität 2025"; Deutsche Verwaltungscloud; cosinex; KPMG sovereign cloud.
 - Demand signals: OneTutor (TUM, 30 universities); Syntea (IU, 80k students); serious-games safety training (RheinEnergie, Fraunhofer IFF, B.A.D); Mordor serious-games market.

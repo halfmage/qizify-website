@@ -49,7 +49,8 @@ hard cliff 2030), SGB IX accessibility duties for reha, and the EU AI Act KI-Kom
 months, tender-bound. We only win where **data-in-Germany is a mandatory procurement gate**,
 which since the 2025 CLOUD-Act developments and the Deutsche Verwaltungscloud it now is. Winnable
 deal shape: a build priced EUR 50k to 216k awarded by Verhandlungsvergabe (below the EU-tender
-threshold), or a subcontract under a framework holder. Pursue one or two lighthouse deals; do not
+threshold of EUR 216k for sub-central buyers; EUR 140k if the buyer is federal), or a subcontract
+under a framework holder. Pursue one or two lighthouse deals; do not
 staff this as the primary motion.
 
 **Land small, expand.** Open every account with a fixed-price 2 to 3 week discovery or prototype.
