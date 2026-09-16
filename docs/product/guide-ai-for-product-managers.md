@@ -12,6 +12,10 @@ Also blocking: the [signup] placeholder in Part 4 needs the real form, with a se
 unticked consent for the weekly. See ai-guide-probe.md section 9.
 Copilot behaviour checked against Microsoft documentation on 2026-09-15.
 Every profession figure traced to Product Focus 2026. No figure is estimated.
+Author: Alesia Kunz, CEO of LearnSlice. Field notes are her own experience, quoted from
+her answers, and are styled differently from the body so experience is never mistaken
+for sourced evidence. Do not add a field note she did not give.
+Pending: her photograph for the author block. Square crop, 400px or larger.
 Structure: docs/product/ai-guide-structure.md
 -->
 
@@ -19,6 +23,9 @@ Structure: docs/product/ai-guide-structure.md
 
 **97% of product managers say AI made them faster. Only 64% say it made their product
 better.**
+
+**Alesia Kunz**, CEO of LearnSlice. 17 years in software engineering as a product
+manager and product owner.
 
 *Inside: why your Copilot probably cannot see your work, the five places AI earns its
 keep in a product week, and the prompts worth saving.*
@@ -101,6 +108,12 @@ The same thing in detail, including what each tier can reach and how:
 | Copilot Chat (Basic) | No. Web data only. It sees your work only if you paste it, upload it, or have it open in Teams or Outlook |
 | Microsoft 365 Copilot (Basic) | Not in chat. But Copilot works inside Word, Excel, PowerPoint and OneNote |
 | Microsoft 365 Copilot (Premium), the paid add-on | Yes, automatically, through Microsoft Graph, and only for files you already have permission to open |
+
+> **Field note.** The problem I actually ran into was a step earlier than any of this.
+> Most of the team did not know we had Copilot licences at all. When they found out,
+> the next question was not which tier they were on. It was what they were supposed to
+> do with it on a Tuesday morning. Licences are the easy part to buy and the easy part
+> to waste.
 
 If you have asked Copilot "what did we decide in the roadmap review" and got nothing
 useful, you are almost certainly not on the premium tier. That is a licensing fact, not
@@ -189,6 +202,12 @@ paste into a roadmap review. That is the failure mode to expect. Not a made-up f
 would catch, but a real thing overstated, reading perfectly.
 
 ![How a single signal becomes a false pattern: thirty support tickets go in, one of them mentions single sign-on once in passing, and the summary that comes back says customers consistently request single sign-on. One ticket in thirty, reported as consistent.](/images/blog/pm-signal-to-pattern.svg)
+
+> **Field note.** In our work the failure is rarely an invented fact. It is a real
+> number with no source behind it, delivered with total confidence. We catch these
+> before they reach a presentation because we check the source every time, not because
+> the output looks doubtful. It never looks doubtful. Human verification is not a
+> nice-to-have step, it is the step.
 
 **The decision aid.** Before you use an output, ask one question: *could I tell if this
 were wrong?* If yes, use it and check it. If no, you are not the right person to accept
@@ -312,8 +331,9 @@ directors, against 59% among junior product managers.
 **Where it genuinely helps.**
 - Turning interview recordings or notes into themes with the original quotes still
   attached, so you can check the theme against the words.
-- Preparing sharper questions from what you already know, so the half hour you do get is
-  not spent on things you could have read.
+- Sharpening the questions before the interview, which is the single best use of AI in
+  discovery. Take your assumptions to the model, let it pull them apart, then take the
+  better questions to a real person.
 - Finding the contradictions between what two customers told you.
 
 **What it cannot do, and this one is serious.** It cannot talk to a customer for you, and
@@ -322,6 +342,13 @@ answer your questions produces fluent, confident, plausible fiction. It is the s
 most damaging misuse available to this profession, because the output looks exactly like
 research and carries none of the risk that real research carries: the risk of being
 told you are wrong.
+
+> **Field note.** I have seen product managers in my network treat what the model knows
+> as the voice of the customer. The models are trained on a spread of sources, and some
+> of it is outdated or simply about a different audience than yours. The teams that got
+> real value did the opposite: they used AI to prepare for interviews and focus groups,
+> so their assumptions could be confirmed or killed by actual users. Refine the
+> questions with it. Do not let it answer them.
 
 **One prompt.**
 ```
@@ -365,6 +392,12 @@ plausible one, and that is the trap: a fluent strategy nobody agreed to is worse
 admitted absence, because it ends arguments that needed to happen. Use it to sharpen a
 strategy that exists, or to make the absence of one visible. Never to fill the hole
 quietly.
+
+> **Field note.** What unblocks this in practice is not a better strategy document. It
+> is alignment with the handful of stakeholders who actually decide, and a
+> prioritisation matrix that puts effort against business value so the trade-off is
+> visible. AI helps on both sides of that: it clusters the topics so the list is
+> arguable, and it sharpens the questions you need to ask to place each item.
 
 **One prompt.**
 ```
@@ -649,6 +682,13 @@ activation plan after the training. Most organisations do the first and skip the
 
 ![What embeds a new product skill: standard tools and templates named first by 69% of leaders, then structured conversations between line managers and product managers, then an activation plan after the training. All three together, and only 33% of leaders run the third. Source: Product Focus 2026 Survey of the Product Management Profession.](/images/blog/pm-embedding-a-skill.svg)
 
+> **Field note.** Adopting any new tool needs a phase where people have dedicated time
+> to learn it, try it and work out where it fits. If the organisation expects the normal
+> workload alongside that, there is no time to experiment and the practice dies quietly.
+> The other half is measurement. Telling a team to play around with an AI tool, without
+> saying how adoption and results will be measured, leaves you with no idea afterwards
+> whether it stuck. Give the time, and set the KPI before you start.
+
 Three practical moves, in that order:
 
 1. **Make the prompt pack the team's shared templates.** Not a document nobody opens, a
@@ -694,6 +734,15 @@ own material. It cannot search your tickets, your documents or your decisions, s
 answers from the public web and from whatever you paste. We build the layer that fixes
 that, grounded on a company's own content, hosted where the company needs it hosted. If
 that is the wall you keep hitting, it is worth a conversation.
+
+> **Field note.** The assumption we meet most often is that an AI tool will read a
+> company's own documents and structure them correctly by itself. Two things have to be
+> settled first. Whether that data may be shared with a public AI provider at all, most
+> of which sit outside the EU, which is a GDPR question before it is a technical one.
+> And what the data is actually for: the use case, the goal and the expected result are
+> inputs, not outputs. The second assumption is that the results will be right
+> immediately. The more complex the use case, the more fine-tuning it needs, and that
+> is time and effort rather than a switch.
 
 **AI Mentor, for a team rather than a person.** The routine and the activation plan in
 this guide work for one person with thirty minutes a week. Running the same thing across

@@ -13,6 +13,10 @@ and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixe
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
 behaviour is unverified. [WEEKLY SIGNUP
 URL] needs filling.
+Author: Alesia Kunz, CEO of LearnSlice. Field notes are her own experience, quoted from
+her answers, and are styled differently from the body so experience is never mistaken
+for sourced evidence. Do not add a field note she did not give.
+Pending: her photograph for the author block. Square crop, 400px or larger.
 Structure: docs/product/ai-guide-structure.md
 -->
 
@@ -25,6 +29,9 @@ That is the whole problem. Access is not the constraint. 67% of organisations al
 provide the tools, and 55% of practitioners still spend a tenth or less of their working
 time with them. The most cited obstacle is uncertainty about how to integrate it, at 54%,
 followed by a lack of training material at 36% and not knowing where to start at 31%.
+
+**Alesia Kunz**, CEO of LearnSlice. 17 years in software engineering as a product
+manager and product owner.
 
 *Inside: why Copilot cannot read your backlog, the five things that are actually yours,
 and the prompts worth saving.*
@@ -95,9 +102,16 @@ web, and your organisation's own content. Only the premium tier reaches the seco
 by itself. Every other tier sees only what you hand it.
 
 **Your backlog probably is not in Microsoft 365.** If it lives in Jira or Azure DevOps,
-no tier of Copilot reads it automatically. You paste the item in, or you use whatever AI
-that tool has added itself. Check what your existing tools already switched on before
-buying anything new.
+no tier of Copilot reads it automatically. Microsoft does publish connectors for Jira
+and Confluence, but an administrator has to deploy them and they enforce the source
+system's own permissions, so a connected source is not the same as a readable project.
+
+> **Field note.** Even where Jira or Confluence shows up as an available source, Copilot
+> often still cannot pull data from your particular project. In practice that means
+> product owners and business analysts copy the ticket in by hand to refine a story or
+> its acceptance criteria. Before you paste anything into Copilot or any other AI tool,
+> check that your organisation allows it from a data protection point of view. That
+> check comes before the convenience.
 
 ### 3. The four-part prompt Microsoft wrote and nobody reads
 
@@ -157,6 +171,11 @@ epic. That is the failure mode to expect.
 
 ![How a single signal becomes a false pattern: thirty support tickets go in, one of them mentions single sign-on once in passing, and the summary that comes back says customers consistently request single sign-on. One ticket in thirty, reported as consistent.](/images/blog/pm-signal-to-pattern.svg)
 
+
+> **Field note.** The failure is rarely an invented fact. It is a real-looking number
+> with no source behind it, stated with total confidence. We catch these because we
+> check the source every time, not because the output looks doubtful. It never looks
+> doubtful.
 
 **The decision aid.** Before you use an output, ask one question: *could I tell if this
 were wrong?* If yes, use it and check it. If no, you are not the right person to accept
@@ -218,8 +237,8 @@ writing an item to showing what it changed.
 
 ### Chapter 1. Why your items come back from refinement
 
-**The need.** An item goes into refinement and comes back with questions you could have
-answered when you wrote it.
+**The need.** An item goes into refinement and the session is spent filling in things
+you could have written down first.
 
 **Where it genuinely helps.**
 - Turning a rough note into a first item you then rewrite, which is faster than facing
@@ -244,6 +263,13 @@ Source: only the item below.
 
 [paste the item]
 ```
+
+> **Field note.** These tools save a serious amount of time on the parts of an item you
+> should have settled before the session. They do not remove the questions, and they
+> should not. Where the team works well and the goal is clear, good questions still come
+> up about the aspect nobody considered, and that is exactly right. Writing a strong
+> epic, feature or story is team work. The tool clears the avoidable questions so the
+> session can reach the ones worth having.
 
 **Your first step.** Run it on the item currently at the top of your backlog. Anything on
 that list you cannot answer is what refinement was going to spend twenty minutes finding.
@@ -299,6 +325,12 @@ the product owner is one person, not a committee.
 model that has never met your users, does not know what your organisation can absorb and
 has not sat in the conversation is guessing, fluently. An AI draft never becomes the
 accountability. Use it to test an order you already hold, never to produce one.
+
+> **Field note.** What actually wins an argument about order is analytical data behind
+> the position, and this is where AI earns its place: finding validated sources that
+> support building a feature, or that show the assumption behind it was wrong and it
+> should be dropped. Note which way round that runs. The value is in being willing to
+> lose the argument to the data.
 
 **The specific danger.** Generating backlog items in bulk. It is the easiest thing to do
 with these tools and the least useful. Volume is not value, and every item you add is
@@ -528,6 +560,15 @@ own material. It cannot search your tickets, your documents or your decisions, s
 answers from the public web and from whatever you paste. We build the layer that fixes
 that, grounded on a company's own content, hosted where the company needs it hosted. If
 that is the wall you keep hitting, it is worth a conversation.
+
+> **Field note.** The assumption we meet most often is that an AI tool will read a
+> company's own documents and structure them correctly by itself. Two things have to be
+> settled first. Whether that data may be shared with a public AI provider at all, most
+> of which sit outside the EU, which is a GDPR question before it is a technical one.
+> And what the data is for: the use case, the goal and the expected result are inputs,
+> not outputs. The second assumption is that results will be right immediately. The more
+> complex the use case, the more fine-tuning it needs, and that is time and effort
+> rather than a switch.
 
 **AI Mentor, for a team rather than a person.** The routine and the activation plan in
 this guide work for one person with thirty minutes a week. Running the same thing across

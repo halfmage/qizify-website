@@ -137,8 +137,18 @@ p code, li code, td code{
 /* Figures */
 img{ display:block; width:100%; margin:4mm 0 5mm; page-break-inside:avoid; }
 blockquote{
-  margin:4mm 0; padding-left:5mm; border-left:2px solid var(--border-light); color:var(--gray);
+  margin:5mm 0 6mm; padding:4.5mm 5mm; border-left:2px solid var(--accent);
+  background:var(--surface); border-radius:0 3mm 3mm 0; color:var(--muted);
+  page-break-inside:avoid;
 }
+blockquote p{ margin:0 0 2.5mm; }
+blockquote p:last-child{ margin-bottom:0; }
+blockquote strong{ color:var(--accent); }
+/* Author line under the cover title */
+.cover .byline{
+  font-size:9.5pt; color:var(--muted); margin:0 0 7mm;
+}
+.cover .byline strong{ color:var(--white); font-weight:600; }
 /* Keep a heading with what follows it */
 h2,h3,h4{ break-after:avoid-page; }
 """
@@ -151,6 +161,9 @@ body = body.replace(m.group(0), "", 1) if m else body
 stat = re.search(r'<p><strong>(.*?)</strong></p>', body, re.S)
 stat_html = stat.group(1) if stat else ""
 if stat: body = body.replace(stat.group(0), "", 1)
+byline = re.search(r'<p><strong>Alesia Kunz</strong>.*?</p>', body, re.S)
+byline_html = byline.group(0) if byline else ""
+if byline: body = body.replace(byline_html, "", 1)
 meta = re.search(r'<p><em>Inside:.*?</p>', body, re.S)
 meta_html = meta.group(0) if meta else ""
 if meta: body = body.replace(meta_html, "", 1)
@@ -183,6 +196,7 @@ cover = f"""<section class="cover">
   <div class="eyebrow">LearnSlice guide</div>
   <h1>{title}</h1>
   <p class="stat">{stat_html}</p>
+  <div class="byline">{byline_html}</div>
   {'<div class="rule"></div>' if meta_html else ''}
   <div class="meta">{meta_html}</div>
   <div class="cover-mask"></div>
