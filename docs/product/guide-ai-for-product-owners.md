@@ -13,10 +13,9 @@ and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixe
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
 behaviour is unverified. [WEEKLY SIGNUP
 URL] needs filling.
-Author: Alesia Kunz, CEO of LearnSlice. Field notes are her own experience, quoted from
+Author: Alesia Kunz, CEO of LearnSlice. Portrait at public/images/blog/author-alesia-kunz.jpg. Field notes are her own experience, quoted from
 her answers, and are styled differently from the body so experience is never mistaken
 for sourced evidence. Do not add a field note she did not give.
-Pending: her photograph for the author block. Square crop, 400px or larger.
 Structure: docs/product/ai-guide-structure.md
 -->
 
@@ -106,8 +105,10 @@ no tier of Copilot reads it automatically. Microsoft does publish connectors for
 and Confluence, but an administrator has to deploy them and they enforce the source
 system's own permissions, so a connected source is not the same as a readable project.
 
-> **Field note.** Even where Jira or Confluence shows up as an available source, Copilot
-> often still cannot pull data from your particular project. In practice that means
+> **Field note.** Some Copilot licences offer the Jira integration, and you can check
+> yours under Copilot Chat, then Settings, then Sources. The catch is that even where
+> Jira or Confluence shows up there as an available source, Copilot often still cannot
+> pull data from your particular project. In practice that means
 > product owners and business analysts copy the ticket in by hand to refine a story or
 > its acceptance criteria. Before you paste anything into Copilot or any other AI tool,
 > check that your organisation allows it from a data protection point of view. That
@@ -549,6 +550,8 @@ where the other guide is.
 
 No figure here is estimated, modelled or taken from a vendor's marketing material. Where
 the evidence is thin, this guide says so rather than filling the gap.
+
+[AUTHOR]
 
 ## What we do
 

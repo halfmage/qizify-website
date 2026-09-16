@@ -60,6 +60,16 @@ body{
   font-size:7.6pt; letter-spacing:.09em; text-transform:uppercase;
   color:#6f6459; border-top:1px solid var(--border); padding-top:2mm;
 }
+/* Author block. The portrait is round and small; the guide is not about her face. */
+.author{
+  display:flex; gap:7mm; align-items:flex-start;
+  border-top:1px solid var(--border); padding-top:6mm; margin:9mm 0 0;
+  page-break-inside:avoid;
+}
+.author img{ width:26mm; height:26mm; border-radius:50%; object-fit:cover; margin:0; flex:0 0 auto; }
+.author .who{ font-size:10.4pt; }
+.author .who strong{ color:var(--white); display:block; margin-bottom:1mm; }
+.author .who span{ color:var(--gray); }
 /* The closing offer is the one page that must not split. */
 .closing{ page-break-before:always; page-break-inside:avoid; }
 .closing h2{ border-top:none; margin-top:0; padding-top:0; }
@@ -168,6 +178,15 @@ meta = re.search(r'<p><em>Inside:.*?</p>', body, re.S)
 meta_html = meta.group(0) if meta else ""
 if meta: body = body.replace(meta_html, "", 1)
 body = re.sub(r'^\s*<hr\s*/?>', '', body.strip(), count=1)
+
+# Author block, rendered from a marker the markdown carries.
+body = body.replace('<p>[AUTHOR]</p>',
+  '<div class="author">'
+  f'<img src="file://{ROOT}/public/images/blog/author-alesia-kunz.jpg" alt="Alesia Kunz">'
+  '<div class="who"><strong>Alesia Kunz, CEO of LearnSlice</strong>'
+  '<span>Seventeen years in software engineering as a product manager and product '
+  'owner. The field notes in this guide are hers. Everything else is sourced, and '
+  'the two are styled differently on purpose.</span></div></div>')
 
 # Keep the closing offer whole, on its own page.
 ix = body.find('<h2 id="what-we-do"')

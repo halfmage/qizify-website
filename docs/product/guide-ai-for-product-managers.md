@@ -12,10 +12,9 @@ Also blocking: the [signup] placeholder in Part 4 needs the real form, with a se
 unticked consent for the weekly. See ai-guide-probe.md section 9.
 Copilot behaviour checked against Microsoft documentation on 2026-09-15.
 Every profession figure traced to Product Focus 2026. No figure is estimated.
-Author: Alesia Kunz, CEO of LearnSlice. Field notes are her own experience, quoted from
+Author: Alesia Kunz, CEO of LearnSlice. Portrait at public/images/blog/author-alesia-kunz.jpg. Field notes are her own experience, quoted from
 her answers, and are styled differently from the body so experience is never mistaken
 for sourced evidence. Do not add a field note she did not give.
-Pending: her photograph for the author block. Square crop, 400px or larger.
 Structure: docs/product/ai-guide-structure.md
 -->
 
@@ -723,6 +722,8 @@ not your team's. Whatever the three moves above free up, that is where it should
 
 No figure in this guide is estimated, modelled or taken from a vendor's marketing
 material. Where we give advice rather than a finding, it is written as advice.
+
+[AUTHOR]
 
 ## What we do
 
