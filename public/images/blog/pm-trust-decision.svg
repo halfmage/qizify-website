@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330" role="img" aria-label="A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that fail most often, which are numbers, names, and anything stated as a fact about a customer. If no, you cannot accept that output yet. Get it from someone who would know, or go and find out.">
+  <rect x="0" y="0" width="520" height="330" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Before you use the output</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">One question, asked every time</text>
+  <rect x="76" y="82" width="368" height="46" rx="10" fill="#3a3128" stroke="#e8b07a"/>
+  <text x="260" y="111" text-anchor="middle" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">Could I tell if this were wrong?</text>
+  <path d="M170,128 L170,150 L146,150 L146,170" stroke="#a89e92" stroke-width="1.5" fill="none"/>
+  <path d="M350,128 L350,150 L374,150 L374,170" stroke="#a89e92" stroke-width="1.5" fill="none"/>
+  <text x="156" y="166" text-anchor="start" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#a89e92" font-weight="600" letter-spacing="0.08em">YES</text>
+  <text x="364" y="166" text-anchor="end" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#a89e92" font-weight="600" letter-spacing="0.08em">NO</text>
+  <rect x="24" y="176" width="228" height="130" rx="10" fill="#37322c"/>
+  <text x="42" y="204" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#faf8f4" font-weight="600">Use it, and check</text>
+  <rect x="42" y="220" width="6" height="6" rx="3" fill="#e8b07a"/>
+  <text x="58" y="226" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Numbers</text>
+  <rect x="42" y="248" width="6" height="6" rx="3" fill="#e8b07a"/>
+  <text x="58" y="254" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Names</text>
+  <rect x="42" y="276" width="6" height="6" rx="3" fill="#e8b07a"/>
+  <text x="58" y="282" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Claims about customers</text>
+  <rect x="268" y="176" width="228" height="130" rx="10" fill="#37322c"/>
+  <text x="286" y="204" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#faf8f4" font-weight="600">Do not accept it yet</text>
+  <text x="286" y="230" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Neither you nor the tool</text>
+  <text x="286" y="250" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">can judge it. Get it from</text>
+  <text x="286" y="270" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">someone who would know,</text>
+  <text x="286" y="290" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">or go and find out.</text>
+</svg>
