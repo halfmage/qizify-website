@@ -3,9 +3,9 @@ INTERNAL HEADER, REMOVE BEFORE PUBLICATION
 Status: draft audited 2026-09-15 for gaps, unverified statements, filler and
 readability. Eleven fixes applied, including one factual misquote (SaaS misread as
 software) and three claims asserted without evidence. Infographics not started.
-Prompts: all 13 run against a capable model on realistic fixtures 2026-09-16;
-15 defects found across both guides and fixed (dead clauses, self-contradicting
-constraints, counts that forced padding, premises that forced invention).
+Prompts: all 13 run against a capable model on realistic fixtures, twice.
+Round one found 15 defects across both guides; round two confirmed every fix held
+and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixed.
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
 behaviour is unverified. 
 Also blocking: the [signup] placeholder in Part 4 needs the real form, with a separate
@@ -368,7 +368,8 @@ quietly.
 
 **One prompt.**
 ```
-Goal: turn the strategy statement below into a prioritisation test.
+Goal: turn the strategy statement below into a prioritisation test,
+as far as the statement supports one.
 Context: I need to decide between competing requests and I want a test
 I can apply consistently and defend in a meeting.
 Expectations: up to five questions, each answerable yes or no about a
@@ -415,8 +416,8 @@ Context: same news, three readers: the engineering team, my head of
 product, and a customer-facing colleague who needs to answer questions
 about it.
 Expectations: three versions, each under 120 words. Each opens with what
-that reader must do or decide, if my draft states one. Where it states
-none, open by naming that gap instead of inventing a task. Do not add
+that reader must do or decide, if my draft states one for that reader.
+Where it states none, open by naming that gap instead of inventing a task. Do not add
 any information that is not in my draft. Flag anything too vague to
 translate.
 Source: only my draft below.
@@ -479,8 +480,9 @@ Theme a pile of requests: see Chapter 1.
 ```
 Goal: make the strongest case against the decision below.
 Context: [decision], [what it costs], [who disagrees].
-Expectations: five objections, strongest first, each with the
-evidence someone would need to defeat it. Where an objection needs
+Expectations: up to five objections, strongest first, each with the
+evidence someone would need to defeat it. Write only objections the
+material supports; if it supports fewer, say so. Where an objection needs
 a fact I have not given you, state that fact as a question rather
 than asserting it.
 Source: only what I have written.
@@ -490,9 +492,10 @@ Source: only what I have written.
 ```
 Goal: list the questions [role] will ask about the decision in the
 document below.
-Expectations: the five hardest. Give the honest answer to each
-where the document answers it, and say plainly "you do not have
-this" where it does not.
+Expectations: up to five of the hardest. Give the honest answer to
+each where the document answers it, say what it answers only in part
+where that is the case, and say plainly "you do not have this" where
+it does not.
 Source: only the document below.
 
 [paste the decision document]
@@ -529,9 +532,9 @@ Source: this meeting only.
 **Get what was left unresolved**, which the standard recap tends to leave out.
 ```
 Goal: list what this meeting did not settle.
-Expectations: open questions and disagreements only. Do not mention
-what was agreed, including noting that agreement existed. Name who
-raised each one, or mark it as raised by nobody.
+Expectations: open questions and disagreements only. Do not summarise
+what was agreed. Name who raised each one. Where something is plainly
+unresolved but nobody raised it, list it and say nobody did.
 Source: this meeting only.
 ```
 
@@ -542,8 +545,8 @@ Rewrite for three audiences: see Chapter 4.
 **Compress a document to the decision it asks for.**
 ```
 Goal: tell me what this document is asking the reader to decide.
-Expectations: the decision in one line, the three facts that bear
-on it, and anything the document assumes without stating.
+Expectations: the decision in one line, the facts that bear on it, at
+most three, and anything the document assumes without stating.
 Source: this document only.
 ```
 

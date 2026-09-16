@@ -7,9 +7,9 @@ Part 0 item 2 carries an extra paragraph on Jira and Azure DevOps. When a Micros
 fact changes, both files must change.
 Deliberately shorter than the PM guide: the PO evidence base is thinner, and padding
 it would be the thing this guide tells readers not to do.
-Prompts: all 10 run against a capable model on realistic fixtures 2026-09-16;
-15 defects found across both guides and fixed (dead clauses, self-contradicting
-constraints, counts that forced padding, premises that forced invention).
+Prompts: all 10 run against a capable model on realistic fixtures, twice.
+Round one found 15 defects across both guides; round two confirmed every fix held
+and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixed.
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
 behaviour is unverified. [WEEKLY SIGNUP
 URL] needs filling.
@@ -238,8 +238,8 @@ backlog item below.
 Context: [product], [team], the item is meant to fit inside one
 sprint.
 Expectations: the questions only, ordered by how much they would
-change the estimate, each tagged days, hours or unknown so I can
-check the order. Do not answer them and do not rewrite the item.
+change the estimate, each tagged days, hours or unknown for how much
+estimate the answer would move, so I can check the order. Do not answer them and do not rewrite the item.
 Source: only the item below.
 
 [paste the item]
@@ -309,9 +309,9 @@ something the team must read, estimate and eventually delete.
 Goal: make the strongest case against the order below.
 Context: the Product Goal is [goal]. These are the next [N] items in
 the order I have put them in: [items].
-Expectations: the three strongest objections, each naming what would
+Expectations: up to three of the strongest objections, each naming what would
 have to be true for the objection to win. Then list any item that
-does not serve the Product Goal at all.
+does not serve the Product Goal at all, or say none if they all do.
 Source: only what I have written.
 ```
 
@@ -341,9 +341,11 @@ meeting, so you arrive with a sentence instead of a list.
 Goal: draft a candidate sprint goal from the items below.
 Context: [product], a [length] sprint. The Product Goal is [goal].
 Expectations: one sentence naming the outcome a user or the business
-gets. It must not name any item, feature or component from the list.
-Then say which items do not contribute to that goal, and whether the
-set holds together as one objective or is really two.
+gets. It must not name any item, feature or component from the list. If
+every item belongs to one feature and the outcome cannot be stated
+without naming it, say so and name it rather than writing something
+vague. Then say which items do not contribute to that goal, and whether
+the set holds together as one objective or is really two.
 Source: only the items below.
 
 [paste the selected items]
@@ -378,8 +380,9 @@ Expectations: one line per item saying what someone can now do that
 they could not before. Mark any item where you cannot tell, rather
 than guessing. Then list the three questions a sceptical stakeholder
 would ask.
-Source: only the items below. This applies to the questions as well:
-do not reference any story, ticket or discussion not listed here.
+Source: only the items below, plus the stakeholders I named in Context.
+This applies to the questions as well: do not reference any story,
+ticket, discussion or prior release that is not listed here.
 
 [paste the completed items]
 ```
@@ -401,11 +404,10 @@ on Copilot Chat (Basic), because you supply the content yourself.
 ```
 Goal: review the backlog items below against the Product Goal.
 Context: the Product Goal is [goal].
-Expectations: three lists and no others. Items that clearly serve the
-goal, items that do not, and items that are duplicates or
-near-duplicates of each other. Where an item's fit is arguable, put it
-under does not serve and add three words saying why it is arguable.
-Quote the item titles, do not paraphrase them.
+Expectations: four lists. Items that clearly serve the goal, items that
+do not, items whose fit is arguable with three words on why, and items
+that are duplicates or near-duplicates of each other. An item may appear
+in more than one list. Quote the item titles, do not paraphrase them.
 Source: only the items below.
 ```
 
@@ -413,9 +415,9 @@ Source: only the items below.
 ```
 Goal: list the backlog items below that have no testable acceptance
 criteria.
-Expectations: the item titles only, and for each the category of what
-is missing: scope, measurable outcome, or definition of done. Name the
-category only. Do not give an example of the criterion.
+Expectations: the item titles only, and for each every category that is
+missing: scope, measurable outcome, or definition of done. Name the
+categories only. Do not give an example of the criterion.
 Source: only the items below.
 ```
 
@@ -436,8 +438,9 @@ Copilot in Teams reaches back over the last 30 days of meetings, which is easy t
 ```
 Goal: extract what this session decided about each item.
 Expectations: a table of item, decision, open question. Every item gets
-a row; leave decision blank where none was made. Then repeat those
-items in a separate list titled undecided. Do not invent decisions.
+a row; leave either column blank where there is nothing to put in it.
+Then list the items with a blank decision again under a heading titled
+undecided. Do not invent decisions.
 Source: this meeting only.
 ```
 
