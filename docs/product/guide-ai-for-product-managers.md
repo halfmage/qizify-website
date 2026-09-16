@@ -3,8 +3,11 @@ INTERNAL HEADER, REMOVE BEFORE PUBLICATION
 Status: draft audited 2026-09-15 for gaps, unverified statements, filler and
 readability. Eleven fixes applied, including one factual misquote (SaaS misread as
 software) and three claims asserted without evidence. Infographics not started.
-Blocking before publication: every prompt in Part 3 and Part 2 must be run on a real
-Copilot tenant and corrected. They are drafted, not yet verified in product.
+Prompts: all 13 run against a capable model on realistic fixtures 2026-09-16;
+15 defects found across both guides and fixed (dead clauses, self-contradicting
+constraints, counts that forced padding, premises that forced invention).
+Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
+behaviour is unverified. 
 Also blocking: the [signup] placeholder in Part 4 needs the real form, with a separate
 unticked consent for the weekly. See ai-guide-probe.md section 9.
 Copilot behaviour checked against Microsoft documentation on 2026-09-15.
@@ -282,9 +285,9 @@ Context: these are [N] requests that came to me this week as a
 product manager for [product].
 Expectations: for each theme give the theme in one line, how many
 requests it covers, and the single question I would need answered
-to decide what to do about it. Mark any theme that rests on only one
-request. Do not suggest solutions. Quote the requests, do not
-paraphrase them.
+to decide what to do about it. If a request fits no theme, list it
+separately as unthemed rather than forcing it into one. Do not suggest
+solutions. Quote the requests, do not paraphrase them.
 Source: only the text pasted below.
 
 [paste the requests]
@@ -325,11 +328,12 @@ told you are wrong.
 Goal: extract the themes from the customer interview transcript below.
 Context: [product], [segment]. I am looking for problems the customer
 described, not features they requested.
-Expectations: at most five themes. For each: the theme in one line, and
-up to two verbatim quotes that support it, nothing paraphrased. If only
-one quote supports a theme, give one and say so. Do not describe
-anything mentioned once as a pattern. Then a separate list of anything
-the customer said that contradicts another part of the same interview.
+Expectations: at most five themes, and a theme must rest on at least two
+separate mentions. Give each in one line with up to two verbatim quotes,
+nothing paraphrased. Put anything said only once in a separate list
+titled said once, rather than promoting it to a theme. Then a third list
+of anything the customer said that contradicts another part of the same
+interview.
 Source: only the transcript below.
 
 [paste the transcript]
@@ -367,9 +371,10 @@ quietly.
 Goal: turn the strategy statement below into a prioritisation test.
 Context: I need to decide between competing requests and I want a test
 I can apply consistently and defend in a meeting.
-Expectations: five questions, each answerable yes or no about a specific
-request. Then tell me which parts of the strategy statement are too vague
-to generate a question from, and say why.
+Expectations: up to five questions, each answerable yes or no about a
+specific request. Write only questions the statement actually supports.
+If it supports fewer than five, say so rather than filling the gap. Then
+tell me which parts are too vague to generate a question from, and why.
 Source: only the statement below.
 
 [paste your company or product strategy as written]
@@ -410,8 +415,10 @@ Context: same news, three readers: the engineering team, my head of
 product, and a customer-facing colleague who needs to answer questions
 about it.
 Expectations: three versions, each under 120 words. Each opens with what
-the reader must do or decide. Do not add any information that is not in
-my draft. Flag anything in my draft that is too vague to translate.
+that reader must do or decide, if my draft states one. Where it states
+none, open by naming that gap instead of inventing a task. Do not add
+any information that is not in my draft. Flag anything too vague to
+translate.
 Source: only my draft below.
 
 [paste your draft]
@@ -473,18 +480,25 @@ Theme a pile of requests: see Chapter 1.
 Goal: make the strongest case against the decision below.
 Context: [decision], [what it costs], [who disagrees].
 Expectations: five objections, strongest first, each with the
-evidence someone would need to defeat it.
+evidence someone would need to defeat it. Where an objection needs
+a fact I have not given you, state that fact as a question rather
+than asserting it.
 Source: only what I have written.
 ```
 
 **Prepare for a difficult conversation.**
 ```
-Goal: list the questions [role] will ask about [decision].
+Goal: list the questions [role] will ask about the decision in the
+document below.
 Expectations: the five hardest. Give the honest answer to each
-where I have given you enough to answer, and say plainly "you do
-not have this" where I have not.
-Source: only what I have written.
+where the document answers it, and say plainly "you do not have
+this" where it does not.
+Source: only the document below.
+
+[paste the decision document]
 ```
+Paste the document with it. Without one, every answer comes back as "you do not have
+this", which is correct and useless.
 
 #### Outlook, needs Microsoft 365 Copilot
 
@@ -515,8 +529,9 @@ Source: this meeting only.
 **Get what was left unresolved**, which the standard recap tends to leave out.
 ```
 Goal: list what this meeting did not settle.
-Expectations: open questions and disagreements only, no summary of
-what was agreed. Name who raised each one.
+Expectations: open questions and disagreements only. Do not mention
+what was agreed, including noting that agreement existed. Name who
+raised each one, or mark it as raised by nobody.
 Source: this meeting only.
 ```
 
@@ -549,9 +564,11 @@ Source: the selected data only.
 
 **Turn a decision document into slides.**
 ```
-Goal: turn the decision document below into five slides.
-Expectations: one slide per argument, the recommendation on slide
-one and not slide five, no slide with more than three bullets.
+Goal: turn the decision document below into slides.
+Expectations: slide one states the decision the document asks for,
+and its recommendation if it makes one. Then one slide per argument
+the document actually contains, up to five in total. Do not pad to
+reach five. No slide with more than three bullets.
 Source: only the document below.
 ```
 
