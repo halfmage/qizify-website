@@ -14,7 +14,7 @@ html,body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 html,body{ background:var(--dark); }
 /* Zero page margins so the dark ground reaches the paper edge, then the gutters
    come from padding that repeats on every fragment via box-decoration-break. */
-.doc{ padding:19mm 22mm 21mm; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+.doc{ padding:19mm 41mm 21mm; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
 body{
   background:transparent; color:var(--muted); margin:0;
   font-family:"Inter Variable","Inter",system-ui,-apple-system,sans-serif;
@@ -22,21 +22,22 @@ body{
 }
 /* Cover */
 .cover-mask{
-  position:absolute; left:-22mm; right:-22mm; bottom:-30mm; height:26mm;
+  position:absolute; left:-41mm; right:-41mm; bottom:-30mm; height:26mm;
   background:var(--dark); z-index:2;
 }
 .cover{
   page-break-after:always; box-sizing:border-box;
   position:relative; height:257mm;
   display:flex; flex-direction:column; justify-content:center;
-  padding-right:97mm;            /* clears the image column */
+  margin-left:-16mm;             /* claw back page margin: cover text starts at 25mm */
+  padding-right:66mm;            /* text stops well clear of the image column */
 }
 /* A full-height column on the right, bleeding off three edges. The text sits to its
    left and is centred against it. */
 .cover-img{
   max-width:none !important;
   position:absolute; z-index:3; top:-23mm; right:-22mm;
-  width:88mm; height:301mm; max-width:none;
+  width:78mm; height:297mm; max-width:none;
   object-fit:cover; object-position:center center;
 }
 .cover .eyebrow{
@@ -55,7 +56,7 @@ body{
 .cover .meta em{ font-style:normal; }
 /* Running footer. Fixed elements repeat on every printed page in Chrome. */
 .runner{
-  position:fixed; bottom:9mm; left:22mm; right:22mm;
+  position:fixed; bottom:9mm; left:41mm; right:41mm;
   font-size:7.6pt; letter-spacing:.09em; text-transform:uppercase;
   color:#6f6459; border-top:1px solid var(--border); padding-top:2mm;
 }
@@ -92,10 +93,6 @@ h4{
 }
 h2+h3{ margin-top:4mm; }
 p{ margin:0 0 3.6mm; }
-/* One measure for the whole document. Headings keep the full column so they can act
-   as rules across the page. */
-p, ul, ol, blockquote, table, pre, img{ max-width:128mm; }
-.cover p, .cover .stat, .cover .meta, .cover h1{ max-width:none; }
 strong{ color:var(--white); font-weight:600; }
 em{ color:var(--muted); }
 a{ color:var(--accent); text-decoration:none; }
