@@ -712,6 +712,20 @@ second-hand.
 No figure in this guide is estimated, modelled or taken from a vendor's marketing
 material. Where we give advice rather than a finding, it is written as advice.
 
+### Notices
+
+Microsoft, Microsoft 365 and Copilot are trademarks of Microsoft. Jira and Confluence
+are trademarks of Atlassian. Other product names are the marks of their owners and are
+used here only to refer to the products themselves. No affiliation or endorsement is
+implied by any of them.
+
+Figures from third-party research are quoted with attribution to make a point, and no
+chart from any source is reproduced. Every graphic here was drawn from the cited
+numbers.
+
+Nothing in this guide is legal advice. Your organisation's own policies govern what you
+may put into any tool.
+
 [AUTHOR]
 
 ## What we do

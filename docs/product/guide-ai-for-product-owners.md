@@ -534,8 +534,9 @@ where the other guide is.
 Every source below was read at source, not taken from a summary of it, and every link
 was checked on 17 September 2026.
 
-- **The Scrum Guide**, for every statement about what a product owner is accountable
-  for and what happens in each Scrum event. Quoted, not interpreted.
+- **The Scrum Guide**, by Ken Schwaber and Jeff Sutherland, for every statement about
+  what a product owner is accountable for and what happens in each Scrum event. Quoted,
+  not interpreted. Licensed under Creative Commons Attribution ShareAlike 4.0.
   scrumguides.org/scrum-guide.html
 - **IAB-Betriebspanel 2025**, the establishment panel run by the research institute of
   the German Federal Employment Agency, published as IAB-Kurzbericht 8 of 2026, for the
@@ -561,6 +562,25 @@ was checked on 17 September 2026.
 
 No figure here is estimated, modelled or taken from a vendor's marketing material. Where
 the evidence is thin, this guide says so rather than filling the gap.
+
+### Notices
+
+The Scrum Guide is by Ken Schwaber and Jeff Sutherland, published at scrumguides.org
+under the Creative Commons Attribution ShareAlike 4.0 licence,
+creativecommons.org/licenses/by-sa/4.0. Quoted here with attribution; this guide is not
+endorsed by or affiliated with its authors.
+
+Microsoft, Microsoft 365 and Copilot are trademarks of Microsoft. Jira and Confluence
+are trademarks of Atlassian. Other product names are the marks of their owners and are
+used here only to refer to the products themselves. No affiliation or endorsement is
+implied by any of them.
+
+Figures from third-party research are quoted with attribution to make a point, and no
+chart from any source is reproduced. Every graphic here was drawn from the cited
+numbers.
+
+Nothing in this guide is legal advice. Your organisation's own policies govern what you
+may put into any tool.
 
 [AUTHOR]
 
