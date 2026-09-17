@@ -47,18 +47,27 @@ const currentPath = '/';
 	>
 		<Fragment slot="belowHero">
 			<TrustBar currentLang={lang} />
-			<!-- Guide banner. Deliberately below the hero, not inside it: the award badge owns
-			     the pill slot and the hero's job is the apprenticeship buyer. This is the
-			     strongest internal link /ai-guides can get without diluting either. -->
-			<div class="px-6 lg:px-8 pt-6">
+			<!-- TEMPORARY guide banner. Announcement styling on purpose: accent tint rather
+			     than surface, so it does not read as another trust-bar row. Accent, not the
+			     primary purple, so it never competes with Book My Free Demo.
+			     TO REMOVE: delete this div and unwrap the Fragment back to
+			     <TrustBar slot="belowHero" currentLang={lang} />. Nothing else depends on it. -->
+			<div class="px-6 lg:px-8 pt-8">
 				<a href="/ai-guides"
-					class="max-w-container mx-auto flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 bg-surface border border-border rounded-xl px-5 py-4 no-underline hover:border-accent/40 transition-colors">
-					<span class="text-xs font-semibold tracking-[0.14em] uppercase text-accent shrink-0">New, free</span>
-					<span class="text-sm text-muted leading-relaxed">
-						<strong class="text-white font-medium">AI guides for product managers and product owners.</strong>
-						Every figure traced to its source.
+					class="group max-w-container mx-auto flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 bg-accent/[0.12] border border-accent/50 border-l-4 border-l-accent rounded-2xl px-6 py-5 md:px-8 md:py-6 no-underline hover:bg-accent/[0.18] transition-colors duration-200">
+					<span class="shrink-0 self-start sm:self-auto bg-accent text-dark text-[11px] font-bold tracking-[0.1em] uppercase px-2.5 py-1 rounded-full">New</span>
+					<span class="flex-1">
+						<span class="block text-base md:text-lg text-white font-medium leading-snug">
+							Free AI guides for product managers and product owners
+						</span>
+						<span class="block text-sm text-muted mt-1">
+							Which Copilot licence can read your work, prompts that hold up, and what these tools cannot do.
+						</span>
 					</span>
-					<span class="text-sm font-medium text-accent shrink-0 sm:ml-auto">Read them</span>
+					<span class="shrink-0 inline-flex items-center gap-2 bg-accent text-dark text-sm font-semibold rounded-lg px-5 py-2.5">
+						Read them
+						<span class="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+					</span>
 				</a>
 			</div>
 		</Fragment>
