@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 474" role="img" aria-label="Diagram: two layers turn an open base model into AI that is yours. Retrieval (RAG) answers from your own content and changes what the model knows. Fine-tuning (LoRA) takes on your style, formats and tasks and changes how it behaves. Both layers rest on one shared open base model.">
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="474" viewBox="0 0 520 474" role="img" aria-label="Diagram: two layers turn an open base model into AI that is yours. Retrieval (RAG) answers from your own content and changes what the model knows. Fine-tuning (LoRA) takes on your style, formats and tasks and changes how it behaves. Both layers rest on one shared open base model.">
   <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
   <rect x="0" y="0" width="520" height="474" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">How a generic model becomes your AI</text>

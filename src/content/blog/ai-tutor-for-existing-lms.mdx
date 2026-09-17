@@ -57,7 +57,7 @@ Now look at what the actions actually are. On Moodle 4.5 LTS there are three, sp
 | Text editor | Generate text, Generate image | Drafting and illustrating, mostly for course authors |
 | Course assistance | Summarise text, plus Explain text in 5.2 | Shortening or unpacking content the reader already has open |
 
-<img src="/images/blog/lms-ai-reach.svg" alt="Diagram: every built-in AI action works on the page the learner already has open, while the course library sits on the other side of a barrier the actions never cross" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+<img src="/images/blog/lms-ai-reach.svg" alt="Diagram: every built-in AI action works on the page the learner already has open, while the course library sits on the other side of a barrier the actions never cross" style={{ maxWidth: '440px', width: '100%', display: 'block', margin: '2rem auto' }} />
 
 Read that list again with a learner's question in mind. Every action works on text that is already in front of the user, or writes new text from the model's general knowledge. Not one of them goes and looks something up in your course library.
 
@@ -83,7 +83,7 @@ A language model is like an exceptionally well read graduate on their first morn
 
 What fixes it is **retrieval**, often called RAG. Your courses, handbooks, past papers and internal notes are indexed. When a question arrives, the system searches that index first, pulls the passages that are genuinely relevant, and hands them to the model with an instruction to answer from those and cite which one it used.
 
-<img src="/images/blog/grounding-two-routes.svg" alt="Diagram: the same learner question sent two ways. Straight to the model it produces a confident invented answer. Through your search index first it returns an answer that cites module 4.2, section 3" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+<img src="/images/blog/grounding-two-routes.svg" alt="Diagram: the same learner question sent two ways. Straight to the model it produces a confident invented answer. Through your search index first it returns an answer that cites module 4.2, section 3" style={{ maxWidth: '440px', width: '100%', display: 'block', margin: '2rem auto' }} />
 
 The same model that invented an answer now says: according to module 4.2, section 3, the requirement for your warehouse sites is X, and here is the link.
 
@@ -113,7 +113,7 @@ An external tutor connects through LTI 1.3, the interoperability standard mainta
 - **Names and Role Provisioning Services 2.0** passes who the learner is and what role they hold, so a trainer is treated differently from a first-year apprentice.
 - **Assignment and Grade Services** creates a gradebook column and posts grades to it, so the work shows up in the reporting you already run.
 
-<img src="/images/blog/tutor-layer-not-migration.svg" alt="Diagram: your LMS keeps courses, enrolments, the gradebook, certificates and reporting, while the new tutor layer adds a search index, learner memory, marking and guardrails, connected by LTI 1.3" style={{ maxWidth: '580px', width: '100%', display: 'block', margin: '2rem auto' }} />
+<img src="/images/blog/tutor-layer-not-migration.svg" alt="Diagram: your LMS keeps courses, enrolments, the gradebook, certificates and reporting, while the new tutor layer adds a search index, learner memory, marking and guardrails, connected by LTI 1.3" style={{ maxWidth: '440px', width: '100%', display: 'block', margin: '2rem auto' }} />
 
 Single sign-on comes with the launch. The learner clicks an activity in the course they are already in and lands in the tutor, already signed in.
 
