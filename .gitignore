@@ -26,3 +26,9 @@ pnpm-debug.log*
 
 # Python bytecode from the SVG generator scripts
 __pycache__/
+
+# Built guide PDFs and the intermediate HTML. Regenerate with
+# docs/product/pdf/build-guide-pdf.sh; the served copies live in public/guides/.
+docs/product/pdf/*.pdf
+docs/product/pdf/guide.html
+docs/product/pdf/*.png

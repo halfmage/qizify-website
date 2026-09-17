@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 276" role="img" aria-label="Which activity product managers say they spend the most time on: 56 percent name inbound activities, 25 percent name strategic activities such as deciding the right problems and products to pursue, and 19 percent name outbound activities. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.">
+  <rect x="0" y="0" width="520" height="276" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Where the week actually goes</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Share of product managers naming this as where most</text>
+  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">of their time goes</text>
+  <text x="24" y="118" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Inbound</text>
+  <rect x="140" y="104" width="284" height="24" rx="6" fill="#37322c"/>
+  <rect x="140" y="104" width="284" height="24" rx="6" fill="#e8b07a"/>
+  <text x="436" y="122" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">56%</text>
+  <text x="24" y="166" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Strategic</text>
+  <rect x="140" y="152" width="284" height="24" rx="6" fill="#37322c"/>
+  <rect x="140" y="152" width="127" height="24" rx="6" fill="#786d60"/>
+  <text x="436" y="170" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">25%</text>
+  <text x="24" y="214" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Outbound</text>
+  <rect x="140" y="200" width="284" height="24" rx="6" fill="#37322c"/>
+  <rect x="140" y="200" width="96" height="24" rx="6" fill="#786d60"/>
+  <text x="436" y="218" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">19%</text>
+  <path d="M24,240 L496,240" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="264" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#a89e92">Most of the job is inbound, and most of inbound is writing.</text>
+</svg>

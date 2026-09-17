@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 292" role="img" aria-label="Among establishments already using generative AI in Germany: 90 percent run on freely accessible AI systems, 27 percent offer their staff any training in the professional use of the technology, and 21 percent have written internal rules for its use. Source: IAB-Betriebspanel 2025, published as IAB-Kurzbericht 8 of 2026.">
+  <rect x="0" y="0" width="520" height="292" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Everyone is using it. Almost nobody set it up</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Of establishments that already use generative AI</text>
+  <text x="24" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Run on freely accessible tools</text>
+  <rect x="24" y="112" width="400" height="26" rx="6" fill="#37322c"/>
+  <rect x="24" y="112" width="360" height="26" rx="6" fill="#786d60"/>
+  <text x="436" y="131" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">90%</text>
+  <text x="24" y="174" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Offer their staff any training in it</text>
+  <rect x="24" y="186" width="400" height="26" rx="6" fill="#37322c"/>
+  <rect x="24" y="186" width="108" height="26" rx="6" fill="#e8b07a"/>
+  <text x="436" y="205" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">27%</text>
+  <text x="24" y="248" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Have written rules for using it</text>
+  <rect x="24" y="260" width="400" height="26" rx="6" fill="#37322c"/>
+  <rect x="24" y="260" width="84" height="26" rx="6" fill="#e8b07a"/>
+  <text x="436" y="279" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">21%</text>
+</svg>

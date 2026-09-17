@@ -53,6 +53,8 @@ export const EN_TO_DE = {
 // hreflang alternates to a counterpart that does not exist.
 export const EN_ONLY = new Set([
 	'/blog/private-ai-employee-onboarding',
+	// Gated AI guides for product managers and product owners. English only.
+	'/ai-guides',
 ]);
 
 export const DE_ONLY = new Set([

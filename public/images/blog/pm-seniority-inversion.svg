@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 282" role="img" aria-label="Customer time gets worse with seniority. 59 percent of junior product managers say they do not spend enough time with customers, 71 percent across the whole profession, and 75 percent among heads and directors. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.">
+  <rect x="0" y="0" width="520" height="282" rx="16" fill="#2a2622"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">It gets worse as you get senior</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Say they do not spend enough time with customers</text>
+  <text x="24" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Junior product managers</text>
+  <rect x="240" y="86" width="200" height="22" rx="5" fill="#37322c"/>
+  <rect x="240" y="86" width="157" height="22" rx="5" fill="#786d60"/>
+  <text x="452" y="102" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">59%</text>
+  <text x="24" y="150" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">The whole profession</text>
+  <rect x="240" y="136" width="200" height="22" rx="5" fill="#37322c"/>
+  <rect x="240" y="136" width="189" height="22" rx="5" fill="#786d60"/>
+  <text x="452" y="152" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">71%</text>
+  <text x="24" y="200" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Heads and directors</text>
+  <rect x="240" y="186" width="200" height="22" rx="5" fill="#37322c"/>
+  <rect x="240" y="186" width="200" height="22" rx="5" fill="#e8b07a"/>
+  <text x="452" y="202" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="16" fill="#faf8f4" font-weight="600">75%</text>
+  <path d="M24,232 L496,232" stroke="#46402f" stroke-width="1"/>
+  <text x="24" y="258" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cc7a3e" font-weight="600">The people who could fix it are the furthest from it.</text>
+</svg>
