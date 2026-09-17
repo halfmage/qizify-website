@@ -22,13 +22,49 @@ const GUIDES = {
 	},
 };
 
+// Ungated, indexable SEO body and FAQ. The PDFs behind the form are noindex, so this
+// section is the only thing on the page a search engine can match to a query. Every
+// figure repeats one already sourced inside the guides.
+const faq = [
+	{
+		q: 'Can Microsoft Copilot see your Jira tickets?',
+		a: 'If your backlog lives in Jira or Azure DevOps, no tier of Copilot reads it automatically. Microsoft publishes connectors for Jira and Confluence, but an administrator has to deploy them and they enforce the source system\'s own permissions. A connected source is not the same as a readable project.',
+	},
+	{
+		q: 'What is the difference between Copilot Chat and Microsoft 365 Copilot?',
+		a: 'Copilot Chat on the basic tier reaches web data only. It sees your work if you paste it, upload it, or have it open in Teams or Outlook. Microsoft 365 Copilot additionally works inside Word, Excel, PowerPoint and OneNote. Only the paid Premium add-on reaches your own files and mail by itself, through Microsoft Graph, and only for files you already have permission to open.',
+	},
+	{
+		q: 'Why does Copilot give a different answer to the same prompt?',
+		a: 'Microsoft states in its own guidance that using the same prompt several times can return different responses. That is how the technology works, not a fault. The consequence people miss is that one good answer does not prove the prompt was good. Keep a prompt only once it has produced a usable answer more than once, on different inputs.',
+	},
+	{
+		q: 'What should a product manager never paste into an AI tool?',
+		a: 'Three questions settle it in a second. Which account am I signed into, work or personal? Would I put this in an email to a supplier? Is it someone else\'s personal data, such as customer names, recordings, or support tickets with identities in them? Your own company policy overrides all three.',
+	},
+	{
+		q: 'Are the guides free, and do you email the file?',
+		a: 'They are free and the download opens straight away. We do not email the file to you. The form asks one question about which kind of help would actually be useful, and your answer decides nothing about the download.',
+	},
+];
+
+const faqPageSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: faq.map((item) => ({
+		'@type': 'Question',
+		name: item.q,
+		acceptedAnswer: { '@type': 'Answer', text: item.a },
+	})),
+};
+
 const INPUT =
 	'bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200';
 ---
 
 <BaseLayout
-	title="AI guides for product managers and product owners | LearnSlice"
-	description="97% of product managers say AI made them faster. Only 64% say it made their product better. Two practical guides on closing that gap, with every figure traced to its source."
+	title="AI Guides for Product Managers &amp; Product Owners | LearnSlice"
+	description="97% of product managers say AI made them faster. Only 64% say it made their product better. Two free guides on closing that gap, every figure sourced."
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="AI guides"
@@ -44,8 +80,8 @@ const INPUT =
 			<p class="text-lg text-muted leading-relaxed mb-8">
 				Two guides on closing that gap, one for product managers and one for product owners.
 				Every number was traced back to the organisation that published it: Product Focus,
-				the Scrum Guide, Microsoft's own documentation. Nothing is estimated. Nothing before
-				the last page is an advertisement.
+				the Scrum Guide, Microsoft's own documentation. Nothing is estimated, and there is
+				no sales pitch anywhere in either guide.
 			</p>
 
 			<p class="text-sm text-muted leading-relaxed mb-10">
@@ -184,6 +220,71 @@ const INPUT =
 			</div>
 		</div>
 	</section>
+
+
+
+	<section class="pb-24 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="text-heading-sm md:text-heading text-white mt-0 mb-4">
+				AI for product managers and product owners: what the guides cover
+			</h2>
+			<p class="text-base text-muted leading-relaxed m-0">
+				Most people who think Copilot is useless are on a licence tier that cannot read
+				their work. Most people who think it is dangerous are right about the risk and
+				unspecific about the rule. Both guides start there, then work through where these
+				tools genuinely help in a product week and where they stop. Every number is traced
+				to the organisation that published it, and nothing is estimated.
+			</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">
+				Why your Copilot probably cannot see your work
+			</h2>
+			<p class="text-base text-muted leading-relaxed m-0">
+				Two sources feed any answer: the public web, and your organisation's own content.
+				Only the premium tier reaches the second one by itself. Every other tier sees only
+				what you hand it. If you have asked Copilot what was decided in a review and got
+				nothing useful, that is a licensing fact rather than a skill problem, and the
+				guides give the tier table that tells you which one you are on.
+			</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">
+				Where AI helps in a product week, and where it does not
+			</h2>
+			<p class="text-base text-muted leading-relaxed m-0">
+				AI does two different things. It changes how fast you produce work, and it changes
+				what you decide. Only the second moves the product, which is why 97% of product
+				managers report better personal productivity while only 64% report better product
+				outcomes. Sharpening the questions before a customer interview is worth more than
+				drafting faster. The guides work through five places the week actually goes wrong,
+				and name what the tool cannot do in each.
+			</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">
+				AI prompts for product managers and product owners
+			</h2>
+			<p class="text-base text-muted leading-relaxed m-0">
+				Microsoft's own prompt framework has four parts: goal, context, expectations and
+				source. The prompt pack in each guide is written that way and is copyable as it
+				stands, with the parts you change marked. No prompt returns a finished piece of
+				work. Each one returns something you still have to decide on, which is the point.
+			</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-12 mb-6">Common questions</h2>
+			<div class="flex flex-col gap-3">
+				{faq.map((item) => (
+					<details class="group bg-surface border border-border rounded-xl px-5 py-4">
+						<summary class="flex items-center justify-between gap-4 cursor-pointer text-base font-medium text-white list-none marker:hidden [&::-webkit-details-marker]:hidden">
+							{item.q}
+							<span class="text-gray transition-transform duration-200 group-open:rotate-45">+</span>
+						</summary>
+						<p class="text-sm text-muted leading-relaxed mt-3 mb-0">{item.a}</p>
+					</details>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<script type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />
 
 	<Footer currentLang={lang} privacyLabel={enContent.footer.privacyLabel} termsLabel={enContent.footer.termsLabel} />
 </BaseLayout>
