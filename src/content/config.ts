@@ -8,6 +8,10 @@ const blog = defineCollection({
 		publishDate: z.date(),
 		updatedDate: z.date().optional(),
 		author: z.string().default('LearnSlice'),
+		// authorRole: shown under the byline and used as jobTitle in the Person
+		// schema. Defaults to the content-team role, so existing posts are
+		// unchanged. Set it whenever the author is not on the content team.
+		authorRole: z.string().optional(),
 		tags: z.array(z.string()).default([]),
 		lang: z.enum(['en', 'de']),
 		translationSlug: z.string().optional(),

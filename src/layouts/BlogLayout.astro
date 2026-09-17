@@ -17,6 +17,7 @@ interface Props {
 	publishDate: Date;
 	updatedDate?: Date;
 	author: string;
+	authorRole?: string;
 	tags: string[];
 	slug: string;
 	ogImage?: string;
@@ -26,7 +27,11 @@ interface Props {
 	heroImage?: string;
 }
 
-const { title, description, lang, publishDate, updatedDate, author, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo', heroImage } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo', heroImage } = Astro.props;
+
+// Byline role. Defaults to the content-team title the existing named posts were
+// written under, so those are unchanged; anyone else sets authorRole explicitly.
+const bylineRole = authorRole ?? 'Junior Content Manager';
 
 const content = lang === 'en' ? enContent : deContent;
 const basePath = lang === 'de' ? '/de' : '';
@@ -164,7 +169,7 @@ const blogPostingSchema = {
 		: {
 			'@type': 'Person',
 			name: author,
-			jobTitle: 'Junior Content Manager',
+			jobTitle: bylineRole,
 			worksFor: {
 				'@type': 'Organization',
 				name: 'LearnSlice',
@@ -290,7 +295,7 @@ const blogPostingSchema = {
 						<p class="text-white font-semibold text-sm m-0">{author}</p>
 						{author !== 'LearnSlice Team' && (
 							<p class="text-muted text-xs m-0">
-								{lang === 'en' ? 'Junior Content Manager, LearnSlice' : 'Junior Content Manager, LearnSlice'}
+								{`${bylineRole}, LearnSlice`}
 							</p>
 						)}
 					</div>
