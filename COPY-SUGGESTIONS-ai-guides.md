@@ -1,59 +1,28 @@
 # Copy Analysis & Suggestions: /ai-guides
-**Date:** 2026-09-17
-**Page Type:** Landing page, gated lead magnet
-**Copy Score:** 72/100
+**Date:** 2026-09-17 (re-run, current page state)
+**Page Type:** Landing page, gated lead magnet, learning-led
+**Copy Score:** 80/100
 
 ---
 
-## Keyword research: what the SERPs actually show
+## Executive Summary
 
-Five live searches were run on 2026-09-17. **No volume or difficulty numbers
-appear below.** No keyword tool was available, so every judgement here is based
-on who currently ranks, which is observable, rather than on estimated traffic,
-which would be invented.
+The copy is now doing what the strategy asks of it. It opens on a number pair
+nobody else in this category can match, gives the knowledge away without
+conditions, and states the three commercial routes once, late, and only as
+facts. The voice is restrained and evidence-led throughout, which is correct
+for an audience that discounts marketing language by reflex.
 
-### Do not target: owned by incumbents
+Two things hold it back, and only one is inside the page body.
 
-| Cluster | Who holds page one |
-|---|---|
-| AI for product managers | Atlassian, monday.com, Product School, Pragmatic Institute, ChatPRD, Scrum Alliance |
-| AI academy / AI training for product managers | Product School, Product Focus, Xebia, Thiga, Knowledge Academy, Maven, Coursera, IBM |
-| Copilot licence tiers, Copilot and GDPR | Microsoft's own support and Learn domains, plus compliance vendors |
+The first is a live contradiction. The body says a conversation is yours to
+start. The site header, visible on the same screen, carries **Book Free Demo**
+three times. The claim was reworded this run so it is at least accurate, but
+the header still pulls against the whole position.
 
-Two of these deserve comment.
-
-**Microsoft will always win questions about Microsoft's products.** The FAQ
-block added to the page is still worth keeping, because it serves AI answer
-engines and very specific long-tail phrasings, but it will not outrank
-learn.microsoft.com and should not be expected to.
-
-**Product Focus sells a competing course.** The organisation whose 2026 survey
-is the primary source for the product manager guide also sells "AI-Powered
-Product Management" training. They are simultaneously the guide's main citation
-and a direct competitor in the academy cluster. Worth knowing, and it touches
-the Product Focus item already open in the legal risk register.
-
-### Winnable: competitors are peer-sized
-
-| Cluster | Who holds page one | Intent | Fits |
-|---|---|---|---|
-| AI for product owners | agilemania, premieragile, agileseekers, Substack posts, plus Scrum.org and Scrum Alliance in blog format | Informational | The PO guide, exactly |
-| AI backlog refinement | Same weak set | Informational | PO guide, Chapters 1 and 2 |
-| AI workshop for product teams | LaunchPad Lab, Alaimo Labs, APG Technology, Improving. All peer-sized agencies | Commercial | The workshop offer |
-
-### The recommendation this leads to
-
-**Target the two informational clusters on this page. Do not target the
-workshop cluster here.**
-
-"AI workshop for product teams" is a commercial query. Someone typing it wants
-to buy a workshop, and landing them on a free PDF form serves neither of you.
-It is the most winnable term found, and it deserves its own page rather than a
-share of this one.
-
-The product owner angle is the genuine opening. Competition is weak, the guide
-is built on the Scrum Guide's five accountabilities rather than on generic
-advice, and nobody else in that result set has a sourced 20-page PDF.
+The second is that the page asks for the weekly email as a checkbox inside a
+form about something else. The strategy names the weekly as the conversion that
+matters. The copy does not treat it that way.
 
 ---
 
@@ -61,13 +30,13 @@ advice, and nobody else in that result set has a sourced 20-page PDF.
 
 | Dimension | Score | Note |
 |---|---|---|
-| Formality | 3/5 | Plain, professional, no corporate register |
-| Emotion | 2/5 | Restrained by design; the numbers do the work |
-| Complexity | 3/5 | Technical where it must be, never performatively |
-| Humour | 1/5 | None, correctly |
-| Authority | 4/5 | Expert, but peer-to-peer rather than lecturing |
+| Formality | 3/5 | Plain professional. No corporate register, no slang |
+| Emotion | 3/5 | Up from 2. Recognition plus a stated motive |
+| Complexity | 3/5 | Technical only where the subject demands it |
+| Humour | 1/5 | None. Correct for the audience |
+| Authority | 4/5 | Expert, peer to peer, never lecturing |
 
-The voice is the page's strongest asset. Every rewrite below stays inside it.
+Unchanged and worth protecting. Every rewrite below stays inside it.
 
 ---
 
@@ -75,11 +44,13 @@ The voice is the page's strongest asset. Every rewrite below stays inside it.
 
 | Dimension | Score | Why |
 |---|---|---|
-| Clarity | 8/10 | Plain language throughout, no jargon left unexplained |
-| Persuasion | 7/10 | The gate is well handled, the objection "will you spam me" is answered explicitly |
-| Specificity | 9/10 | 97 and 64, named sources, page counts, named author |
-| Emotion | 6/10 | Recognition is the only lever used. It is the right one, but it is used once |
-| Action | 6/10 | One CTA, honest, slightly flat as button text |
+| Clarity | 9/10 | Learning-first opening, plain sentences, nothing unexplained |
+| Persuasion | 8/10 | Indirect and well-structured. Costs a point to the header contradiction |
+| Specificity | 9/10 | 97 and 64, named sources, named author, page counts, real address |
+| Emotion | 7/10 | The motive is now stated once, which was the gap. Still a restrained page by choice |
+| Action | 7/10 | One honest CTA in first person, but a competing nav CTA and an under-sold weekly |
+
+**Total: 40/50 (80/100)**
 
 ---
 
@@ -87,119 +58,127 @@ The voice is the page's strongest asset. Every rewrite below stays inside it.
 
 | Element | Status |
 |---|---|
-| Target customer | Clear: product managers and product owners |
-| Problem | Clear: AI made me faster, not better |
-| Solution | Clear: two role-specific guides |
-| Unique mechanism | **Under-stated.** Every figure traced to the issuing body is the differentiator and it is one clause in a paragraph |
+| Target customer | Clear. Product managers and product owners, split by role in the body |
+| Problem | Clear. AI made me faster, not better |
+| Solution | Clear. Two role-specific guides built to be applied |
+| Unique mechanism | **Now stated.** A learning company, every figure traced, a practice routine rather than a prompt list |
 | Key benefit | Clear |
-| Proof | Named author, named sources, no logos or testimonials, which suits the audience |
+| Proof | Named author, named sources, no testimonials. Correct for this audience |
+
+The canvas is complete for the first time. The mechanism was the gap and the
+learning-first rewrite closed it.
 
 ---
 
-## Before / After
+## Headline Recommendations
 
-**1. Section heading, product owner**
-```
-BEFORE: Where AI helps in a product week, and where it does not
-AFTER:  AI for product owners: refinement, ordering, sprint goals
-WHY:    Carries the winnable phrase, and splits the two roles so each
-        guide has a heading a searcher can match.
-```
+Current H1 is strong and should stay: a 4U headline carrying two specific
+numbers, an implied problem and no adjective. Alternatives for testing only.
 
-**2. Section heading, product manager**
-```
-BEFORE: (none, the roles were merged)
-AFTER:  AI for product managers: discovery, prioritisation, updates
-WHY:    Same, and gives the PM guide its own anchor.
-```
+| # | Headline | Framework |
+|---|---|---|
+| 1 | 97% of product managers say AI made them faster. Only 64% say it made their product better. | 4U *(current, keep)* |
+| 2 | Faster is not better. The gap is 33 points wide. | PAS |
+| 3 | Your Copilot cannot read your backlog. That is a licence, not a skill problem. | PAS |
+| 4 | Learn it in an evening. Apply it in thirty minutes a week. | Before-After-Bridge |
+| 5 | Two AI guides for product roles, every figure traced to its source. | Useful, plain |
 
-**3. Copilot section**
-```
-BEFORE: Why your Copilot probably cannot see your work
-AFTER:  Why Copilot cannot see your backlog
-WHY:    "Backlog" is the noun the audience searches with. Shorter,
-        and closer to the query.
-```
+---
 
-**4. CTA button**
-```
-BEFORE: Show me the guide
-AFTER:  Get my guide, free
-WHY:    First person, names the object, removes the price objection
-        at the moment of click.
-```
+## Section-by-Section
 
-**5. Meta description**
+### Hero
+Working. No change recommended.
+
+### Role sections
+Working, and now carrying their keyword phrases. No change.
+
+### "Learn it here, then apply it"
+The strongest section on the page, and correctly placed after everything has
+been given away. No change.
+
+### The weekly opt-in
+**The weak point.** It is one checkbox inside a form about downloading a PDF,
+described in a single line. The strategy says it is the conversion that
+compounds. Nothing in the copy reflects that.
+
 ```
-BEFORE: 97% of product managers say AI made them faster. Only 64% say it
-        made their product better. Two practical guides on closing that
-        gap, with every figure traced to its source. (173 chars, truncates)
-AFTER:  97% of product managers say AI made them faster. Only 64% say it
-        made their product better. Two free guides on closing that gap,
-        every figure sourced. (150)
+BEFORE: Send me the weekly update: one change that matters, one prompt,
+        one thing worth reading. Five minutes, unsubscribe whenever.
+
+AFTER:  Send me the weekly. One change that matters, one prompt, one thing
+        worth reading, and one line on what we got wrong last week. Five
+        minutes, unsubscribe whenever.
+
+WHY:    "What we got wrong last week" is already promised inside both
+        guides and is the most disarming line available. It is missing
+        from the page, which is where the decision is actually made.
 ```
 
 ---
 
-## Swipe File
+## CTA Optimization
 
-### Headlines
-1. 97% of product managers say AI made them faster. Only 64% say it made their product better. *(current, 4U, keep)*
-2. Faster is not better. The gap is 33 points wide.
-3. Your Copilot cannot read your backlog. That is a licence, not a skill problem.
-4. Two AI guides for product managers and product owners, every figure sourced.
-5. AI made the week faster. The roadmap did not change.
+| CTA | Location | Assessment |
+|---|---|---|
+| Get my guide, free | Form submit | Good. First person, names the object, removes the price objection at the click |
+| Download the PDF | Success state | Good. Plain and unambiguous |
+| **Book Free Demo** | Site header, 3 instances | **Works against the page.** See below |
 
-### CTA alternatives
-1. Get my guide, free
-2. Show me the guide *(current)*
-3. Download my copy
-4. Send me the guide *(reject, we do not email it)*
+### The header problem
 
-### Meta descriptions
-1. The 150-character version above *(recommended)*
-2. Free AI guides for product managers and product owners. Copilot licence tiers, prompts that work, and what the tools cannot do. Every figure sourced.
-3. AI for product owners and product managers: refinement, ordering, prompts and the limits. Two free guides, every number traced to its source.
+This page's entire position is that the reader moves first. The header offers a
+booked demo before the reader has read a sentence. A visitor who reaches the
+closing section sees the honest claim and the demo button at the same time.
+
+Three options, in order of preference:
+
+1. **Override the header CTA on this page** to point at the form, for example
+   "Get the guides". The Header component already accepts a `cta` prop, so this
+   is a small change, though the modal trigger needs matching behaviour.
+2. **Suppress the header CTA here.** Cleanest for the position, largest
+   deviation from the rest of the site.
+3. **Leave it and accept the mismatch.** Defensible if the nav is judged more
+   valuable sitewide than this page's positioning.
+
+This is a judgement call about site consistency, so it is flagged rather than
+changed.
+
+---
+
+## Before / After from this run
+
+**1. The no-sales claim**
+```
+BEFORE: No call to book, no sales sequence. Nothing is emailed to you that
+        you did not ask for.
+AFTER:  Downloading starts no sales sequence, and nothing is emailed to you
+        that you did not ask for. If you want a conversation, you start it.
+WHY:    The old line was contradicted by the header three times over. The
+        new one is true whatever the nav does, and keeps the position.
+```
+
+**2. Section heading**
+```
+BEFORE: Who makes these, and what else we do
+AFTER:  Learn it here, then apply it
+WHY:    Carries the through-line instead of describing the section.
+```
+
+**3. Opening of that section**
+```
+BEFORE: LearnSlice builds AI systems that run on an organisation's own material
+AFTER:  LearnSlice is a learning company that builds with AI
+WHY:    The old line described an engineering shop that happens to publish.
+        The new one explains why the guides are free.
+```
 
 ---
 
 ## Implementation Priority
 
-1. Split the body into a product manager section and a product owner section,
-   each carrying its role phrase in the H2. **Done.**
-2. Shorten the Copilot heading to name the backlog. **Done.**
-3. Change the CTA to first person. **Done.**
-4. Meta description to 150 characters. **Done in the SEO pass.**
-5. Build a separate page for the workshop cluster. **Open, and the single
-   biggest commercial opportunity found in this research.**
-
-
----
-
-## Keyword re-run, 2026-09-17, against the narrowed strategy
-
-The strategy in `docs/product/ai-guides-page-strategy.md` removed the commercial
-clusters from scope. Search now has one job: bring product managers and product
-owners who want an answer. Four informational clusters were re-tested.
-
-| Cluster | Page one held by | Verdict |
-|---|---|---|
-| AI for product owners, AI backlog refinement | agilemania, premieragile, agileseekers, Substack posts | **Target.** Weakest field found |
-| AI user stories and acceptance criteria | Mountain Goat Software holds three of nine, then storiesonboard, agilemania, faqprime | **Reachable on long-tail.** Now woven into the product owner section |
-| AI prompts for product managers | Productboard twice, Glean, Upwork, pmprompt.com, bagel.ai, INSIDEA, plus named creators | **Skip.** Saturated, and competing on prompt count is a losing game |
-| Copilot vs ChatGPT for enterprise | Microsoft plus a wall of managed-service-provider blogs | **Skip.** Also not what the guides are about |
-
-### The signal worth acting on
-
-Mountain Goat Software, the most authoritative voice in that field, currently
-ranks with a piece arguing that AI-generated user stories still need human
-judgment. That is the same argument the product owner guide makes.
-
-Two conclusions follow. The positioning is externally validated, which is
-reassuring. And we should not try to outrank Mike Cohn on his own framing.
-The differentiator is the part he does not cover: the enterprise tool reality.
-Which Copilot licence can actually read a backlog, what may legally be pasted
-into it, and what to do when the answer is neither.
-
-That is why the page keeps a heading on Copilot and the backlog, and why the
-prompt section stays for readers without being a ranking target.
+1. **Decide the header CTA question.** Largest single copy issue on the page and
+   the only one that undermines a claim. Open.
+2. **Give the weekly its missing line.** One sentence, and it is the conversion
+   the strategy cares about most. Open.
+3. Everything else: done this session.
