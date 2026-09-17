@@ -202,7 +202,7 @@ const INPUT =
 
 					<button type="submit" id="g-submit" disabled
 						class="bg-primary text-white rounded-lg px-6 py-3 text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed transition-opacity duration-200">
-						Show me the guide
+						Get my guide, free
 					</button>
 				</form>
 			</div>
@@ -226,37 +226,38 @@ const INPUT =
 	<section class="pb-24 px-6 md:px-8">
 		<div class="max-w-3xl mx-auto">
 			<h2 class="text-heading-sm md:text-heading text-white mt-0 mb-4">
-				AI for product managers and product owners: what the guides cover
+				AI for product managers: discovery, prioritisation, updates
 			</h2>
 			<p class="text-base text-muted leading-relaxed m-0">
-				Most people who think Copilot is useless are on a licence tier that cannot read
-				their work. Most people who think it is dangerous are right about the risk and
-				unspecific about the rule. Both guides start there, then work through where these
-				tools genuinely help in a product week and where they stop. Every number is traced
-				to the organisation that published it, and nothing is estimated.
+				AI does two things in a product week. It changes how fast you produce work, and it
+				changes what you decide. Only the second moves the product, which is why 97% of
+				product managers report better personal productivity and only 64% report better
+				product outcomes. Sharpening the questions before a customer interview beats
+				drafting faster. The guide covers five places the week goes wrong, and names what
+				the tool cannot do in each.
 			</p>
 
 			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">
-				Why your Copilot probably cannot see your work
+				AI for product owners: refinement, ordering, sprint goals
+			</h2>
+			<p class="text-base text-muted leading-relaxed m-0">
+				The product owner guide follows the five accountabilities the Scrum Guide names as
+				yours: writing items, refining them, ordering them, proposing the value of a
+				sprint, and showing what changed. AI backlog refinement works on the parts you
+				should have settled before the session, such as the questions a developer will
+				ask. It cannot order your backlog, and it cannot decide what is valuable. That
+				judgment is the job.
+			</p>
+
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">
+				Why Copilot cannot see your backlog
 			</h2>
 			<p class="text-base text-muted leading-relaxed m-0">
 				Two sources feed any answer: the public web, and your organisation's own content.
-				Only the premium tier reaches the second one by itself. Every other tier sees only
-				what you hand it. If you have asked Copilot what was decided in a review and got
-				nothing useful, that is a licensing fact rather than a skill problem, and the
-				guides give the tier table that tells you which one you are on.
-			</p>
-
-			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">
-				Where AI helps in a product week, and where it does not
-			</h2>
-			<p class="text-base text-muted leading-relaxed m-0">
-				AI does two different things. It changes how fast you produce work, and it changes
-				what you decide. Only the second moves the product, which is why 97% of product
-				managers report better personal productivity while only 64% report better product
-				outcomes. Sharpening the questions before a customer interview is worth more than
-				drafting faster. The guides work through five places the week actually goes wrong,
-				and name what the tool cannot do in each.
+				Only the premium tier reaches the second by itself. If your backlog lives in Jira
+				or Azure DevOps, no tier reads it automatically. Most people who think Copilot is
+				useless are on a licence that cannot read their work, which is a licensing fact
+				rather than a skill problem. Both guides give the tier table.
 			</p>
 
 			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">
@@ -264,9 +265,9 @@ const INPUT =
 			</h2>
 			<p class="text-base text-muted leading-relaxed m-0">
 				Microsoft's own prompt framework has four parts: goal, context, expectations and
-				source. The prompt pack in each guide is written that way and is copyable as it
-				stands, with the parts you change marked. No prompt returns a finished piece of
-				work. Each one returns something you still have to decide on, which is the point.
+				source. Both prompt packs are written that way and are copyable as they stand,
+				with the parts you change marked. No prompt returns finished work. Each returns
+				something you still have to decide on, which is the point.
 			</p>
 
 			<h2 class="text-heading-sm md:text-heading text-white mt-12 mb-6">Common questions</h2>
@@ -347,7 +348,7 @@ const INPUT =
 				result.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			} catch (err) {
 				submitBtn.disabled = !consent.checked;
-				submitBtn.textContent = 'Show me the guide';
+				submitBtn.textContent = 'Get my guide, free';
 				error.textContent = 'Something went wrong. Please try again, or write to us directly.';
 				error.classList.remove('hidden');
 			}
