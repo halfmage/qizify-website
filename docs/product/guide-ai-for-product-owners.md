@@ -29,8 +29,9 @@ provide the tools, and 55% of practitioners still spend a tenth or less of their
 time with them. The most cited obstacle is uncertainty about how to integrate it, at 54%,
 followed by a lack of training material at 36% and not knowing where to start at 31%.
 
-**Alesia Kunz**, CEO of LearnSlice. 17 years in software engineering as a product
-manager and product owner.
+**Alesia Kunz**, CEO of LearnSlice. 17+ years in software engineering as a product
+manager and product owner. Built on experience from real teams and projects, and on
+published research.
 
 *Inside: why Copilot cannot read your backlog, the five things that are actually yours,
 and the prompts worth saving.*
@@ -253,13 +254,9 @@ and it is the part that makes the item worth building.
 
 **One prompt.** Works on any tier, because you paste the content in.
 ```
-Goal: list the questions a developer would ask before starting the
-backlog item below.
-Context: [product], [team], the item is meant to fit inside one
-sprint.
-Expectations: the questions only, ordered by how much they would
-change the estimate, each tagged days, hours or unknown for how much
-estimate the answer would move, so I can check the order. Do not answer them and do not rewrite the item.
+Goal: list the questions a developer would ask before starting the backlog item below.
+Context: [product], [team], the item is meant to fit inside one sprint.
+Expectations: the questions only, ordered by how much they would change the estimate, each tagged days, hours or unknown for how much estimate the answer would move, so I can check the order. Do not answer them and do not rewrite the item.
 Source: only the item below.
 
 [paste the item]
@@ -293,11 +290,8 @@ the work.
 **One prompt.**
 ```
 Goal: propose three ways to split the story below into smaller items.
-Context: [product]. Each resulting item must be independently
-valuable to a user and finishable inside one sprint.
-Expectations: for each split, the resulting items in one line each,
-and what a user could do after the first one alone. Then name the
-split you would not recommend and say why.
+Context: [product]. Each resulting item must be independently valuable to a user and finishable inside one sprint.
+Expectations: for each split, the resulting items in one line each, and what a user could do after the first one alone. Then name the split you would not recommend and say why.
 Source: only the story below.
 
 [paste the story]
@@ -340,11 +334,8 @@ something the team must read, estimate and eventually delete.
 **One prompt.**
 ```
 Goal: make the strongest case against the order below.
-Context: the Product Goal is [goal]. These are the next [N] items in
-the order I have put them in: [items].
-Expectations: up to three of the strongest objections, each naming what would
-have to be true for the objection to win. Then list any item that
-does not serve the Product Goal at all, or say none if they all do.
+Context: the Product Goal is [goal]. These are the next [N] items in the order I have put them in: [items].
+Expectations: up to three of the strongest objections, each naming what would have to be true for the objection to win. Then list any item that does not serve the Product Goal at all, or say none if they all do.
 Source: only what I have written.
 ```
 
@@ -373,12 +364,7 @@ meeting, so you arrive with a sentence instead of a list.
 ```
 Goal: draft a candidate sprint goal from the items below.
 Context: [product], a [length] sprint. The Product Goal is [goal].
-Expectations: one sentence naming the outcome a user or the business
-gets. It must not name any item, feature or component from the list. If
-every item belongs to one feature and the outcome cannot be stated
-without naming it, say so and name it rather than writing something
-vague. Then say which items do not contribute to that goal, and whether
-the set holds together as one objective or is really two.
+Expectations: one sentence naming the outcome a user or the business gets. It must not name any item, feature or component from the list. If every item belongs to one feature and the outcome cannot be stated without naming it, say so and name it rather than writing something vague. Then say which items do not contribute to that goal, and whether the set holds together as one objective or is really two.
 Source: only the items below.
 
 [paste the selected items]
@@ -407,15 +393,9 @@ you more than it buys.
 **One prompt.**
 ```
 Goal: turn the completed items below into what changed for a user.
-Context: [product], [stakeholders and what they care about]. The
-Product Goal is [goal].
-Expectations: one line per item saying what someone can now do that
-they could not before. Mark any item where you cannot tell, rather
-than guessing. Then list the three questions a sceptical stakeholder
-would ask.
-Source: only the items below, plus the stakeholders I named in Context.
-This applies to the questions as well: do not reference any story,
-ticket, discussion or prior release that is not listed here.
+Context: [product], [stakeholders and what they care about]. The Product Goal is [goal].
+Expectations: one line per item saying what someone can now do that they could not before. Mark any item where you cannot tell, rather than guessing. Then list the three questions a sceptical stakeholder would ask.
+Source: only the items below, plus the stakeholders I named in Context. This applies to the questions as well: do not reference any story, ticket, discussion or prior release that is not listed here.
 
 [paste the completed items]
 ```
@@ -437,20 +417,14 @@ on Copilot Chat (Basic), because you supply the content yourself.
 ```
 Goal: review the backlog items below against the Product Goal.
 Context: the Product Goal is [goal].
-Expectations: four lists. Items that clearly serve the goal, items that
-do not, items whose fit is arguable with three words on why, and items
-that are duplicates or near-duplicates of each other. An item may appear
-in more than one list. Quote the item titles, do not paraphrase them.
+Expectations: four lists. Items that clearly serve the goal, items that do not, items whose fit is arguable with three words on why, and items that are duplicates or near-duplicates of each other. An item may appear in more than one list. Quote the item titles, do not paraphrase them.
 Source: only the items below.
 ```
 
 **Find the items nobody can start.**
 ```
-Goal: list the backlog items below that have no testable acceptance
-criteria.
-Expectations: the item titles only, and for each every category that is
-missing: scope, measurable outcome, or definition of done. Name the
-categories only. Do not give an example of the criterion.
+Goal: list the backlog items below that have no testable acceptance criteria.
+Expectations: the item titles only, and for each every category that is missing: scope, measurable outcome, or definition of done. Name the categories only. Do not give an example of the criterion.
 Source: only the items below.
 ```
 
@@ -458,8 +432,7 @@ Source: only the items below.
 ```
 Goal: name the assumptions the story below depends on.
 Context: [product], [who the user is].
-Expectations: assumptions only, each with how we could check it
-cheaply. Do not propose solutions.
+Expectations: assumptions only, each with how we could check it cheaply. Do not propose solutions.
 Source: only the story below.
 ```
 
@@ -470,10 +443,7 @@ Copilot in Teams reaches back over the last 30 days of meetings, which is easy t
 **Turn a refinement session into decisions.**
 ```
 Goal: extract what this session decided about each item.
-Expectations: a table of item, decision, open question. Every item gets
-a row; leave either column blank where there is nothing to put in it.
-Then list the items with a blank decision again under a heading titled
-undecided. Do not invent decisions.
+Expectations: a table of item, decision, open question. Every item gets a row; leave either column blank where there is nothing to put in it. Then list the items with a blank decision again under a heading titled undecided. Do not invent decisions.
 Source: this meeting only.
 ```
 
@@ -481,12 +451,8 @@ Source: this meeting only.
 
 **Find the request buried in a long thread.**
 ```
-Goal: tell me what, if anything, this thread asks me to change in the
-backlog. If it asks for a commitment, a date or an estimate instead,
-say that and do not invent a backlog item.
-Expectations: the request in one line, everyone asking for it, what
-they say the value is, and whether they have said anything about
-urgency.
+Goal: tell me what, if anything, this thread asks me to change in the backlog. If it asks for a commitment, a date or an estimate instead, say that and do not invent a backlog item.
+Expectations: the request in one line, everyone asking for it, what they say the value is, and whether they have said anything about urgency.
 Source: this thread only.
 ```
 
@@ -537,16 +503,27 @@ where the other guide is.
 
 ## Sources
 
-- **The Scrum Guide**, scrumguides.org, for every statement about what a product owner
-  is accountable for and what happens in each Scrum event. Quoted, not interpreted.
+Every source below was checked on 17 September 2026 and resolves.
+
+- **The Scrum Guide**, for every statement about what a product owner is accountable
+  for and what happens in each Scrum event. Quoted, not interpreted.
+  scrumguides.org/scrum-guide.html
 - **AI4Agile Practitioners Report 2026**, 289 agile practitioners across more than 20
   countries, published February 2026, for every percentage about AI use among
-  practitioners. A small, self-selected sample with no breakdown by role. Directional.
-- **Microsoft**, product documentation on Microsoft Learn and Microsoft Support, for
-  Copilot licence tiers, grounding, data protection, file referencing and prompt
-  structure. Checked September 2026.
+  practitioners. Two limits, stated plainly. It is a small, self-selected sample with
+  no breakdown by role, so read it as a direction of travel. And unlike every other
+  source here, we have not read the report itself: its publisher's page would not open
+  to us, so the figures are taken as reported consistently by two independent sources.
+  scrum.org/resources/blog/ai4agile-practitioners-report-2026
+- **Microsoft**, product documentation, for Copilot licence tiers, grounding, data
+  protection, file referencing and prompt structure, and for the Jira and Confluence
+  connectors: an administrator must deploy them and they enforce the source system's
+  own permissions.
+  learn.microsoft.com/microsoft-365/copilot/microsoft-365-copilot-overview and
+  /copilot/connectors/jira-cloud-overview
 - **European Commission**, for the AI Act and the Article 4 AI literacy duty applicable
   since 2 February 2025.
+  digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers
 
 No figure here is estimated, modelled or taken from a vendor's marketing material. Where
 the evidence is thin, this guide says so rather than filling the gap.

@@ -132,12 +132,14 @@ tr:last-child td{ border-bottom:none; }
 /* Prompts */
 pre{
   background:var(--surface); border:1px solid var(--border); border-left:2px solid var(--accent);
-  border-radius:3mm; padding:4mm 5mm; margin:3.5mm 0 5mm; overflow:visible;
+  border-radius:0 2mm 2mm 0; padding:3.2mm 4mm; margin:3mm 0 4.5mm; overflow:visible;
   page-break-inside:avoid;
 }
 pre code{
   font-family:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
-  font-size:8.6pt; line-height:1.55; color:var(--muted); white-space:pre-wrap; word-break:break-word;
+  font-size:8.1pt; line-height:1.42; color:var(--muted);
+  white-space:pre-wrap; word-break:normal; overflow-wrap:break-word;
+  display:block;
 }
 p code, li code, td code{
   font-family:"JetBrains Mono","SF Mono",Menlo,monospace;
@@ -184,9 +186,12 @@ body = body.replace('<p>[AUTHOR]</p>',
   '<div class="author">'
   f'<img src="file://{ROOT}/public/images/blog/author-alesia-kunz.jpg" alt="Alesia Kunz">'
   '<div class="who"><strong>Alesia Kunz, CEO of LearnSlice</strong>'
-  '<span>Seventeen years in software engineering as a product manager and product '
-  'owner. The field notes in this guide are hers. Everything else is sourced, and '
-  'the two are styled differently on purpose.</span></div></div>')
+  '<span>17+ years in software engineering as a product manager and product owner. '
+  'This guide is built on two things: experience from real teams and projects, and '
+  'published research. The field notes are the experience. Every figure is traced to '
+  'the organisation that published it, and every source is listed above. The two '
+  'are styled differently on purpose, so you can always tell which you are '
+  'reading.</span></div></div>')
 
 # Keep the closing offer whole, on its own page.
 ix = body.find('<h2 id="what-we-do"')

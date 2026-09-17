@@ -23,8 +23,9 @@ Structure: docs/product/ai-guide-structure.md
 **97% of product managers say AI made them faster. Only 64% say it made their product
 better.**
 
-**Alesia Kunz**, CEO of LearnSlice. 17 years in software engineering as a product
-manager and product owner.
+**Alesia Kunz**, CEO of LearnSlice. 17+ years in software engineering as a product
+manager and product owner. Built on experience from real teams and projects, and on
+published research.
 
 *Inside: why your Copilot probably cannot see your work, the five places AI earns its
 keep in a product week, and the prompts worth saving.*
@@ -299,13 +300,8 @@ of your week each interruption costs after it arrives.
 **One prompt.** Works on any tier, because you paste the content in.
 ```
 Goal: group the requests below into at most six themes.
-Context: these are [N] requests that came to me this week as a
-product manager for [product].
-Expectations: for each theme give the theme in one line, how many
-requests it covers, and the single question I would need answered
-to decide what to do about it. If a request fits no theme, list it
-separately as unthemed rather than forcing it into one. Do not suggest
-solutions. Quote the requests, do not paraphrase them.
+Context: these are [N] requests that came to me this week as a product manager for [product].
+Expectations: for each theme give the theme in one line, how many requests it covers, and the single question I would need answered to decide what to do about it. If a request fits no theme, list it separately as unthemed rather than forcing it into one. Do not suggest solutions. Quote the requests, do not paraphrase them.
 Source: only the text pasted below.
 
 [paste the requests]
@@ -352,14 +348,8 @@ told you are wrong.
 **One prompt.**
 ```
 Goal: extract the themes from the customer interview transcript below.
-Context: [product], [segment]. I am looking for problems the customer
-described, not features they requested.
-Expectations: at most five themes, and a theme must rest on at least two
-separate mentions. Give each in one line with up to two verbatim quotes,
-nothing paraphrased. Put anything said only once in a separate list
-titled said once, rather than promoting it to a theme. Then a third list
-of anything the customer said that contradicts another part of the same
-interview.
+Context: [product], [segment]. I am looking for problems the customer described, not features they requested.
+Expectations: at most five themes, and a theme must rest on at least two separate mentions. Give each in one line with up to two verbatim quotes, nothing paraphrased. Put anything said only once in a separate list titled said once, rather than promoting it to a theme. Then a third list of anything the customer said that contradicts another part of the same interview.
 Source: only the transcript below.
 
 [paste the transcript]
@@ -400,14 +390,9 @@ quietly.
 
 **One prompt.**
 ```
-Goal: turn the strategy statement below into a prioritisation test,
-as far as the statement supports one.
-Context: I need to decide between competing requests and I want a test
-I can apply consistently and defend in a meeting.
-Expectations: up to five questions, each answerable yes or no about a
-specific request. Write only questions the statement actually supports.
-If it supports fewer than five, say so rather than filling the gap. Then
-tell me which parts are too vague to generate a question from, and why.
+Goal: turn the strategy statement below into a prioritisation test, as far as the statement supports one.
+Context: I need to decide between competing requests and I want a test I can apply consistently and defend in a meeting.
+Expectations: up to five questions, each answerable yes or no about a specific request. Write only questions the statement actually supports. If it supports fewer than five, say so rather than filling the gap. Then tell me which parts are too vague to generate a question from, and why.
 Source: only the statement below.
 
 [paste your company or product strategy as written]
@@ -444,14 +429,8 @@ editing someone else's argument instead of making your own.
 **One prompt.**
 ```
 Goal: rewrite the update below for three audiences.
-Context: same news, three readers: the engineering team, my head of
-product, and a customer-facing colleague who needs to answer questions
-about it.
-Expectations: three versions, each under 120 words. Each opens with what
-that reader must do or decide, if my draft states one for that reader.
-Where it states none, open by naming that gap instead of inventing a task. Do not add
-any information that is not in my draft. Flag anything too vague to
-translate.
+Context: same news, three readers: the engineering team, my head of product, and a customer-facing colleague who needs to answer questions about it.
+Expectations: three versions, each under 120 words. Each opens with what that reader must do or decide, if my draft states one for that reader. Where it states none, open by naming that gap instead of inventing a task. Do not add any information that is not in my draft. Flag anything too vague to translate.
 Source: only my draft below.
 
 [paste your draft]
@@ -486,10 +465,7 @@ Goal: list the plausible explanations for the change below.
 Context: [metric] moved from [x] to [y] between [date] and [date] for
 [product]. Known changes in that window: [releases, campaigns, pricing,
 seasonality, reporting changes].
-Expectations: rank the explanations by how easily each could be checked,
-cheapest first, and for each name the exact check. Include mundane
-explanations such as instrumentation or reporting changes. Do not
-calculate anything I have not given you.
+Expectations: rank the explanations by how easily each could be checked, cheapest first, and for each name the exact check. Include mundane explanations such as instrumentation or reporting changes. Do not calculate anything I have not given you.
 Source: only what I have written above.
 ```
 
@@ -512,22 +488,14 @@ Theme a pile of requests: see Chapter 1.
 ```
 Goal: make the strongest case against the decision below.
 Context: [decision], [what it costs], [who disagrees].
-Expectations: up to five objections, strongest first, each with the
-evidence someone would need to defeat it. Write only objections the
-material supports; if it supports fewer, say so. Where an objection needs
-a fact I have not given you, state that fact as a question rather
-than asserting it.
+Expectations: up to five objections, strongest first, each with the evidence someone would need to defeat it. Write only objections the material supports; if it supports fewer, say so. Where an objection needs a fact I have not given you, state that fact as a question rather than asserting it.
 Source: only what I have written.
 ```
 
 **Prepare for a difficult conversation.**
 ```
-Goal: list the questions [role] will ask about the decision in the
-document below.
-Expectations: up to five of the hardest. Give the honest answer to
-each where the document answers it, say what it answers only in part
-where that is the case, and say plainly "you do not have this" where
-it does not.
+Goal: list the questions [role] will ask about the decision in the document below.
+Expectations: up to five of the hardest. Give the honest answer to each where the document answers it, say what it answers only in part where that is the case, and say plainly "you do not have this" where it does not.
 Source: only the document below.
 
 [paste the decision document]
@@ -542,9 +510,7 @@ Draft the decline: see Chapter 1.
 **Find the decision buried in a long thread.**
 ```
 Goal: tell me what this thread is actually asking me to decide.
-Expectations: the decision in one line, who is waiting, what is
-blocking it, and anything decided earlier in the thread that
-people seem to have forgotten.
+Expectations: the decision in one line, who is waiting, what is blocking it, and anything decided earlier in the thread that people seem to have forgotten.
 Source: this thread only.
 ```
 
@@ -555,18 +521,14 @@ Copilot in Teams reaches back over the last 30 days of meetings, which is easy t
 **Turn a recap into owners and dates.**
 ```
 Goal: extract the commitments made in this meeting.
-Expectations: a table of commitment, owner, date. Anything without
-a named owner goes in a separate list titled unassigned. Do not
-invent owners or dates.
+Expectations: a table of commitment, owner, date. Anything without a named owner goes in a separate list titled unassigned. Do not invent owners or dates.
 Source: this meeting only.
 ```
 
 **Get what was left unresolved**, which the standard recap tends to leave out.
 ```
 Goal: list what this meeting did not settle.
-Expectations: open questions and disagreements only. Do not summarise
-what was agreed. Name who raised each one. Where something is plainly
-unresolved but nobody raised it, list it and say nobody did.
+Expectations: open questions and disagreements only. Do not summarise what was agreed. Name who raised each one. Where something is plainly unresolved but nobody raised it, list it and say nobody did.
 Source: this meeting only.
 ```
 
@@ -577,8 +539,7 @@ Rewrite for three audiences: see Chapter 4.
 **Compress a document to the decision it asks for.**
 ```
 Goal: tell me what this document is asking the reader to decide.
-Expectations: the decision in one line, the facts that bear on it, at
-most three, and anything the document assumes without stating.
+Expectations: the decision in one line, the facts that bear on it, at most three, and anything the document assumes without stating.
 Source: this document only.
 ```
 
@@ -589,9 +550,7 @@ Explain a metric movement: see Chapter 5.
 **Find what the analysis cannot answer.**
 ```
 Goal: tell me what is missing from this analysis.
-Expectations: list the questions a sceptical reader would ask that
-this data cannot answer. Do not attempt to answer them, and do not
-calculate anything new.
+Expectations: list the questions a sceptical reader would ask that this data cannot answer. Do not attempt to answer them, and do not calculate anything new.
 Source: the selected data only.
 ```
 
@@ -600,10 +559,7 @@ Source: the selected data only.
 **Turn a decision document into slides.**
 ```
 Goal: turn the decision document below into slides.
-Expectations: slide one states the decision the document asks for,
-and its recommendation if it makes one. Then one slide per argument
-the document actually contains, up to five in total. Do not pad to
-reach five. No slide with more than three bullets.
+Expectations: slide one states the decision the document asks for, and its recommendation if it makes one. Then one slide per argument the document actually contains, up to five in total. Do not pad to reach five. No slide with more than three bullets.
 Source: only the document below.
 ```
 
@@ -709,16 +665,24 @@ not your team's. Whatever the three moves above free up, that is where it should
 
 ## Sources
 
+Every source below was checked on 17 September 2026 and resolves. Nothing here is
+second-hand.
+
 - **Product Focus, 2026 Survey of the Product Management Profession.** 677 respondents
   across 40 countries, collected October 2025 to January 2026. 83% Europe, 8% United
   States, 9% elsewhere. Every figure about the profession in this guide comes from this
-  report. We are not affiliated with Product Focus and reproduce none of its charts.
-- **Microsoft**, product documentation on Microsoft Learn and Microsoft Support, for
-  Copilot licence tiers, grounding, data protection, file referencing, prompt structure
-  and per-application features. Checked September 2026. Copilot changes often, which is
-  what the weekly is for.
+  report, read in full, not from a summary of it. We are not affiliated with Product
+  Focus and reproduce none of its charts.
+  productfocus.com/product-management-resources/profession-survey
+- **Microsoft**, product documentation, for Copilot licence tiers, grounding, data
+  protection, file referencing, prompt structure and per-application features.
+  learn.microsoft.com/microsoft-365/copilot/microsoft-365-copilot-overview,
+  /copilot/enterprise-data-protection, and the prompt guidance at
+  support.microsoft.com/microsoft-365-copilot. Release notes, for what changes after
+  this guide is printed: learn.microsoft.com/microsoft-365/copilot/release-notes
 - **European Commission**, for the AI Act and the Article 4 AI literacy duty applicable
   since 2 February 2025.
+  digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers
 
 No figure in this guide is estimated, modelled or taken from a vendor's marketing
 material. Where we give advice rather than a finding, it is written as advice.
