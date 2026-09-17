@@ -75,6 +75,11 @@ const GUIDE_HREF = '/ai-guides';
 const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
 // A guide post's CTAs are links, so nothing should carry a modal trigger.
 const ctaHref = isGuide ? GUIDE_HREF : undefined;
+const navCta = isGuide
+	? (lang === 'en' ? 'Get the guides' : 'Leitfäden holen')
+	: isConsultation
+	? content.solutions.hero.ctaPrimary
+	: content.nav.cta;
 
 const sidebarCta = isGuide
 	? {
@@ -94,8 +99,9 @@ const sidebarCta = isGuide
 		button: lang === 'en' ? 'Get demo access' : 'Demo-Zugang erhalten',
 	};
 
-// Footer CTA: consultation posts reuse the solutions strategy-call copy (headline,
-// sub, button, micro-proof note); demo posts keep the site-wide blog CTA.
+// Footer CTA: guide posts link to the lead magnet; consultation posts reuse the
+// solutions strategy-call copy (headline, sub, button, micro-proof note); demo posts
+// keep the site-wide blog CTA.
 const footerCta = isGuide
 	? {
 		headline: lang === 'en' ? 'Practical, and ready to apply' : 'Praktisch und sofort anwendbar',
@@ -194,7 +200,7 @@ const blogPostingSchema = {
 	<Header
 		logo={content.nav.logo}
 		menu={content.nav.menu}
-		cta={isGuide ? (lang === 'en' ? 'Get the guides' : 'Leitfäden holen') : isConsultation ? content.solutions.hero.ctaPrimary : content.nav.cta}
+		cta={navCta}
 		ctaModalTrigger={ctaTrigger}
 		ctaHref={ctaHref}
 		currentLang={lang}
