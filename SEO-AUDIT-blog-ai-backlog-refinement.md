@@ -111,18 +111,20 @@ Without them, this post will rank on its own merits or not at all.
 ## Prioritized Recommendations
 
 ### Critical
-1. Write two more posts in this cluster, or accept that this one stands alone.
+1. **Open, needs a decision.** Write two more posts in this cluster, or accept
+   that this one stands alone.
 
 ### High
-2. Consider a named author. "LearnSlice Team" is weaker than "Alesia Kunz, CEO,
+2. **Open, needs a decision.** Consider a named author. "LearnSlice Team" is weaker than "Alesia Kunz, CEO,
    17+ years as a product manager and product owner" on a post whose whole
    argument is practitioner experience. The guides already carry that byline.
 
 ### Medium
-3. Add a second content image. The post has one chart in 3,000 words, and the
-   thirty-minute routine graphic already exists in the repo.
+3. ~~Add a second content image.~~ **Done.** The thirty-minute routine chart now
+   sits in the section it illustrates.
 4. Consider whether consultation posts should also drop the apprenticeship
-   `SoftwareApplication` schema. The same argument applies, more weakly.
+   `SoftwareApplication` schema. The same argument applies, more weakly, and it
+   would touch 11 posts. **Open, needs a decision.**
 
 ### Low
 5. Revisit in 90 days with Search Console data rather than assumptions.
