@@ -588,39 +588,38 @@ may put into any tool.
 
 Nothing before this page was an advertisement. This page is, and it is the only one.
 
-You have just read twenty-odd pages on what these tools do and what they do not. That is
-our work. We build AI systems that run on an organisation's own material, and we teach
-the people who use them. Three problems in this guide are ones we get asked to solve.
-Only one is software.
+You have just read twenty-odd pages on what these tools do and what they do not. Knowing
+that line is our work. Three of the problems in this guide are ones we get asked to
+solve, and they do not have the same answer.
 
-**Your team has the tools and no method.** This guide opens on the finding that among
+**Your team has the tools and no method.** This guide opens with the finding that among
 workplaces already using generative AI, 27% give their people any training in it and 21%
-have written down any rule for using it. A workshop closes that fastest: a day on your
-own backlog, your own tickets, your own documents. Your team arrives with the work it is
-behind on and leaves having done some of it, holding prompts it keeps and a written rule
-for what may go into which tool.
+have written down any rule for using it. A workshop is the fastest way to close that: a
+day on your own backlog, tickets and documents. Your team arrives with the work it is
+behind on and leaves having done some of it, holding prompts it keeps and the written
+rule it was missing.
 
 **You want it to hold, and to know whether it did.** A workshop teaches, and the
-thirty-minute routine in Part 4 keeps one person current. Neither tells you six months
-later who across the team actually changed how they work. AI Mentor is what we are
-building for that, with content matched to your sector and a record of who learned what.
-It is in pilot with paying customers rather than on general release, so the teams
-joining now still shape it.
+thirty-minute routine in Part 4 keeps one person current. Neither tells you, six months
+later, who across the team changed how they work. AI Mentor is what we are building for
+that, with content matched to your sector and a record of who learned what. It is in
+pilot with paying customers rather than on general release, so teams joining now shape
+it.
 
-**The tool cannot see your work.** Every chapter above ends with something the model
-cannot do, and most of those are one limit in different clothes: it cannot read your own
-material. We build the layer that fixes that, grounded on your content and hosted in the
-EU, or on your own infrastructure where that is the requirement. Engineering rather than
-configuration, and the largest of the three.
+**The tool cannot see your work.** Every chapter above names a limit you have to live
+with: it cannot order your backlog, decide what is valuable or know why an item matters.
+Part 0, item 2 named one you do not. Your Copilot probably cannot read your tickets,
+your documents or your decisions, and that is an engineering problem rather than a fact
+of life. We build the layer that closes it, grounded on your own content, hosted in the
+EU or on your own infrastructure.
 
-### Why us rather than a consultancy
+**Why us rather than a consultancy.** Grounding, verification and what may legally go
+into a prompt were engineering constraints for us before they were chapters in this
+guide. LearnSlice is co-developed with the IDiAL institute at Fachhochschule Dortmund,
+and funded by the German Federal Ministry for Economic Affairs and Energy under grant
+16GM200302. In a university pilot, every answer the system produced was traceable to a
+source. Learner data is hosted in Germany and is never used to train the model.
 
-LearnSlice is co-developed with the IDiAL institute at Fachhochschule Dortmund, in a
-project funded by the German Federal Ministry for Economic Affairs and Energy under
-grant 16GM200302. In a university pilot, every answer the system produced was traceable
-to a source. Learner data is hosted in Germany and is never used to train the model.
-Grounding, verification and prompt data legality were constraints we solved before we
-shipped, not topics we researched for this guide.
-
-You already told us which of the three, if any, was worth a conversation. We come back
-on that one and nothing else. If this was forwarded to you, learnslice.com/ai-guides.
+You already told us which of the three, if any, was worth a conversation, and we come
+back on that one only. If this guide was forwarded to you, learnslice.com/ai-guides is
+where to say which one applies.

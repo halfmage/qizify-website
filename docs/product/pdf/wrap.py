@@ -78,8 +78,8 @@ body{
    credentials only fit if the spacing here is tighter than the body's. */
 .closing{ page-break-before:always; page-break-inside:avoid; }
 .closing h2{ border-top:none; margin-top:0; padding-top:0; }
-.closing h3{ margin-top:3mm; }
-.closing p{ margin-bottom:2.2mm; page-break-inside:avoid; }
+.closing h3{ margin-top:2.5mm; }
+.closing p{ margin-bottom:1.7mm; page-break-inside:avoid; }
 /* Table of contents */
 .toc{ page-break-after:always; }
 .toc h2{ border-top:none; margin-top:0; padding-top:0; }
