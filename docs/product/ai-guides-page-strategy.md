@@ -8,8 +8,18 @@ assumed a workshop push. No workshop is promoted anywhere.
 
 ## The position
 
-LearnSlice does not sell a course here. It publishes what it knows, and works
-with the teams that ask. Everything below follows from that one sentence.
+**LearnSlice is a learning company that builds with AI.** Teaching people to use
+these tools well is the work, not a wrapper around it. That is the whole reason
+the guides can be free and complete without the page feeling like a trade.
+
+It follows that the page sells indirectly or not at all. A reader learns
+something here, applies it to their own week, and finds out for themselves
+whether we are any good. Nothing else we could write would demonstrate that.
+
+**The through-line is learn, then apply.** The guides are built for it: every
+chapter ends with a first step, and Part 4 is a thirty minute weekly routine.
+That is also the differentiator against the prompt-list competitors, who supply
+material to read and nothing to practise.
 
 Three things are available to a reader, and they differ by who moves first:
 
@@ -18,6 +28,7 @@ Three things are available to a reader, and they differ by who moves first:
 | The guides | Free, complete, sourced. No gate on the knowledge itself | Nobody. It is given |
 | Advice or support | A question answered by a named person | The reader |
 | The AI academy | In build. Teams apply | The reader applies, we select |
+| Their own academy | Built on their content and brand. The existing white-label motion | The reader |
 | AI software engineering | Custom work on a company's own data | The reader |
 
 Note what is missing: there is no offer the reader can be pushed into. Every
@@ -85,7 +96,9 @@ largest:
 
 1. **A question.** Named person, real address. No form, no call booking.
 2. **The academy.** In build, teams apply, content matched to the sector.
-3. **Engineering.** Custom AI on a company's own data, EU or on-premise.
+3. **Their own academy.** Built on their content and brand. This is the existing
+   white-label motion and it is a larger engagement than joining ours.
+4. **Engineering.** Custom AI on a company's own data, EU or on-premise.
 
 No section promotes a workshop. If a reader wants one, the question route
 already exists and they will ask.
