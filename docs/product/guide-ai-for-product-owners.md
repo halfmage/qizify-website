@@ -266,7 +266,7 @@ Source: only the item below.
 > should have settled before the session. They do not remove the questions, and they
 > should not. Where the team works well and the goal is clear, good questions still come
 > up about the aspect nobody considered, and that is exactly right. Writing a strong
-> epic, feature or story is team work. The tool clears the avoidable questions so the
+> epic, feature or story is teamwork. The tool clears the avoidable questions so the
 > session can reach the ones worth having.
 
 **Your first step.** Run it on the item currently at the top of your backlog. Anything on
@@ -324,7 +324,7 @@ accountability. Use it to test an order you already hold, never to produce one.
 > **Field note.** What actually wins an argument about order is analytical data behind
 > the position, and this is where AI earns its place: finding validated sources that
 > support building a feature, or that show the assumption behind it was wrong and it
-> should be dropped. Note which way round that runs. The value is in being willing to
+> should be dropped. Both directions count. The value is in being willing to
 > lose the argument to the data.
 
 **The specific danger.** Generating backlog items in bulk. It is the easiest thing to do
@@ -543,10 +543,11 @@ that is the wall you keep hitting, it is worth a conversation.
 
 > **Field note.** The assumption we meet most often is that an AI tool will read a
 > company's own documents and structure them correctly by itself. Two things have to be
-> settled first. Whether that data may be shared with a public AI provider at all, most
-> of which sit outside the EU, which is a GDPR question before it is a technical one.
-> And what the data is for: the use case, the goal and the expected result are inputs,
-> not outputs. The second assumption is that results will be right immediately. The more
+> settled before any of that. First, whether the data may be shared with a public AI
+> provider at all, most of which sit outside the EU, which is a GDPR question before it
+> is a technical one. Second, what the data is for: the use case, the goal and the
+> expected result are inputs, not outputs. A further assumption follows close behind,
+> that results will be right immediately. The more
 > complex the use case, the more fine-tuning it needs, and that is time and effort
 > rather than a switch.
 

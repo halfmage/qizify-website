@@ -385,8 +385,9 @@ quietly.
 > **Field note.** What unblocks this in practice is not a better strategy document. It
 > is alignment with the handful of stakeholders who actually decide, and a
 > prioritisation matrix that puts effort against business value so the trade-off is
-> visible. AI helps on both sides of that: it clusters the topics so the list is
-> arguable, and it sharpens the questions you need to ask to place each item.
+> visible. AI helps on both sides of that: it clusters the topics so you have
+> something concrete to argue about, and it sharpens the questions you need to ask to
+> place each item.
 
 **One prompt.**
 ```
@@ -641,8 +642,8 @@ activation plan after the training. Most organisations do the first and skip the
 > to learn it, try it and work out where it fits. If the organisation expects the normal
 > workload alongside that, there is no time to experiment and the practice dies quietly.
 > The other half is measurement. Telling a team to play around with an AI tool, without
-> saying how adoption and results will be measured, leaves you with no idea afterwards
-> whether it stuck. Give the time, and set the KPI before you start.
+> saying how adoption and results will be measured, leaves you with no way to tell
+> afterwards whether it stuck. Give the time, and set the KPI before you start.
 
 Three practical moves, in that order:
 
@@ -702,11 +703,11 @@ that is the wall you keep hitting, it is worth a conversation.
 
 > **Field note.** The assumption we meet most often is that an AI tool will read a
 > company's own documents and structure them correctly by itself. Two things have to be
-> settled first. Whether that data may be shared with a public AI provider at all, most
-> of which sit outside the EU, which is a GDPR question before it is a technical one.
-> And what the data is actually for: the use case, the goal and the expected result are
-> inputs, not outputs. The second assumption is that the results will be right
-> immediately. The more complex the use case, the more fine-tuning it needs, and that
+> settled before any of that. First, whether the data may be shared with a public AI
+> provider at all, most of which sit outside the EU, which is a GDPR question before it
+> is a technical one. Second, what the data is actually for: the use case, the goal and
+> the expected result are inputs, not outputs. A further assumption follows close
+> behind, that the results will be right immediately. The more complex the use case, the more fine-tuning it needs, and that
 > is time and effort rather than a switch.
 
 **AI Mentor, for a team rather than a person.** The routine and the activation plan in
