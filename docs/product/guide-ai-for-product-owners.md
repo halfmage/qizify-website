@@ -269,8 +269,9 @@ Source: only the item below.
 > epic, feature or story is teamwork. The tool clears the avoidable questions so the
 > session can reach the ones worth having.
 
-**Your first step.** Run it on the item currently at the top of your backlog. Anything on
-that list you cannot answer is what refinement was going to spend twenty minutes finding.
+**Your first step.** Run it on the item currently at the top of your backlog. Take
+anything on that list you cannot answer into refinement as a question for the team,
+rather than discovering it there.
 
 ### Chapter 2. Refinement is not a group reading session
 
@@ -402,6 +403,25 @@ Source: only the items below, plus the stakeholders I named in Context. This app
 
 **Your first step.** Run it on your last completed sprint. Any item where it cannot say
 what changed for a user is worth a conversation with the team.
+
+### Back to the obstacle
+
+The largest thing standing between agile practitioners and AI is not the tool and not
+the budget. It is uncertainty about how it integrates, named by 54%, well ahead of
+anything else.
+
+Those five chapters are the answer, and the answer is deliberately unexciting. Nothing
+above asks you to adopt a new practice, add a ceremony or change how your team works.
+Each one sits inside an accountability the Scrum Guide already names as yours: writing
+items, refining them, ordering them, proposing the value of a sprint, showing what
+changed. The work is the same work. What changes is what you bring to it.
+
+That is also why none of it survives without you. The tool drafts the split, and you
+decide which one delivers value on its own. It argues against your order, and you
+decide whether the argument wins. It proposes a sprint goal, and you decide whether the
+set holds together. The Scrum Guide is blunt about where that stops: you may delegate
+the work, but you remain accountable, and you are one person rather than a committee.
+No amount of tooling moves that line.
 
 ---
 
