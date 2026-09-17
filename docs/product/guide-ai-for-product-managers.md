@@ -477,9 +477,10 @@ cheapest check on the list is one nobody ran, that is your meeting.
 
 ### Back to the gap
 
-Five chapters in, it is worth returning to the number this guide opened with. 97% of
-product managers say AI made them faster. 64% say it made their product better. That
-missing third is not a mystery, and it is visible in the five chapters you just read.
+Five chapters in, it is worth returning to the number this guide opened with. In the
+survey's own words, 97% report improved productivity and only 64% report improved
+product outcomes, such as faster time to market. That missing third is not a mystery,
+and it is visible in the five chapters you just read.
 
 AI does two different things in a product week. It changes how fast you produce the
 work, which is Chapter 1 and Chapter 4: themes instead of a pile, a second draft instead
