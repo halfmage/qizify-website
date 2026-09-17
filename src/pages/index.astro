@@ -45,7 +45,23 @@ const currentPath = '/';
 		stats={enContent.hero.stats}
 		currentLang={lang}
 	>
-		<TrustBar slot="belowHero" currentLang={lang} />
+		<Fragment slot="belowHero">
+			<TrustBar currentLang={lang} />
+			<!-- Guide banner. Deliberately below the hero, not inside it: the award badge owns
+			     the pill slot and the hero's job is the apprenticeship buyer. This is the
+			     strongest internal link /ai-guides can get without diluting either. -->
+			<div class="px-6 lg:px-8 pt-6">
+				<a href="/ai-guides"
+					class="max-w-container mx-auto flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 bg-surface border border-border rounded-xl px-5 py-4 no-underline hover:border-accent/40 transition-colors">
+					<span class="text-xs font-semibold tracking-[0.14em] uppercase text-accent shrink-0">New, free</span>
+					<span class="text-sm text-muted leading-relaxed">
+						<b class="text-white font-medium">AI guides for product managers and product owners.</b>
+						Every figure traced to its source.
+					</span>
+					<span class="text-sm font-medium text-accent shrink-0 sm:ml-auto">Read them</span>
+				</a>
+			</div>
+		</Fragment>
 	</Hero>
 
 	<LogosSlider
