@@ -613,11 +613,10 @@ EU or on your own infrastructure.
 
 **Why us rather than a consultancy.** Grounding, verification and what may legally go
 into a prompt were engineering constraints for us before they were chapters in this
-guide. LearnSlice is co-developed with the IDiAL institute at Fachhochschule Dortmund,
-and funded by the German Federal Ministry for Economic Affairs and Energy under grant
-16GM200302. In a university pilot, every answer the system produced was traceable to a
-source. Learner data is hosted in Germany and is never used to train the model.
+guide.
 
 You already told us which of the three, if any, was worth a conversation, and we come
 back on that one only. If this guide was forwarded to you, learnslice.com/ai-guides is
 where to say which one applies.
+
+Good luck with it. The hard part was never the tool.
