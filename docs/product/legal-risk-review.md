@@ -134,11 +134,37 @@ The author portrait was supplied by the author, who is its subject.
 
 ## 7. Claims about our own services
 
-The closing page says LearnSlice builds a grounded layer on a company's own content,
-hosted where the company needs it, and that AI Mentor delivers the same discipline as a
-product with a record of who learned what. Those are capability claims in a commercial
-document and they must be deliverable as written. If any of it is roadmap rather than
-shipped, change the tense before this goes out.
+**Checked 2026-09-17. One claim was untrue as written and is corrected.**
+
+The closing page said that running the guide's routine across a team "is what AI Mentor
+does" and that it is "the same discipline as this guide, delivered as a product". The
+grant documentation in this repository puts AI Mentor at TRL5 with paid
+proof-of-concepts running, and a roadmap to take it from TRL5 to TRL7 during a project
+beginning September 2026. TRL5 is validation in a relevant environment. It is not a
+product on general release.
+
+Presenting it as one is the kind of statement covered by section 5 of the German Act
+Against Unfair Competition, which deals with misleading claims about the nature and
+availability of a product, and it is the sort of thing a competitor reads closely. The
+more immediate cost is simpler: a reader who asks to buy it would find something other
+than what the sentence promised.
+
+It now says we are building AI Mentor to do this, that it is in pilot with paying
+customers rather than on general release, and that a conversation now still shapes what
+it becomes. That is true, and it is a stronger line, because early access is concrete
+where "delivered as a product" is not.
+
+The second claim, that we build a grounded layer on a company's own content, is
+supported: there is a custom development service line, a solutions hub, and published
+work on retrieval and self-hosted open models. But it promised hosting "where the
+company needs it hosted", which is an unqualified promise. It now says hosted in the EU,
+or on your own infrastructure where that is the requirement.
+
+**For the author to confirm before publication.** Whether AI Mentor is still at pilot
+stage at the time of publication, and whether naming the number of paid pilots would be
+a stronger line than the general wording used here. Specific and checkable usually beats
+general, but those figures came from grant paperwork and are the author's to disclose,
+not mine.
 
 ---
 
@@ -151,4 +177,4 @@ shipped, change the tense before this goes out.
 | 3 | Privacy policy does not cover the form | Applied in both languages; counsel to confirm | Applied |
 | 4 | Legal notice absent from the guides | Applied below | Applied |
 | 5 | Future field notes | Rule recorded | You |
-| 6 | Service claims on the closing page | Confirm each is shipped, not planned | You |
+| 6 | Service claims on the closing page | One was untrue and is corrected; author to confirm current stage | Applied |

@@ -592,8 +592,9 @@ Nothing before this page was an advertisement. This page is, and it is the only 
 tool cannot do, and most of those limits are the same limit: the model cannot read your
 own material. It cannot search your tickets, your documents or your decisions, so it
 answers from the public web and from whatever you paste. We build the layer that fixes
-that, grounded on a company's own content, hosted where the company needs it hosted. If
-that is the wall you keep hitting, it is worth a conversation.
+that, grounded on a company's own content and hosted in the EU, or on your own
+infrastructure where that is the requirement. If that is the wall you keep hitting, it
+is worth a conversation.
 
 > **Field note.** The assumption we meet most often is that an AI tool will read a
 > company's own documents and structure them correctly by itself. Two things have to be
@@ -606,9 +607,10 @@ that is the wall you keep hitting, it is worth a conversation.
 > rather than a switch.
 
 **AI Mentor, for a team rather than a person.** The routine and the activation plan in
-this guide work for one person with thirty minutes a week. Running the same thing across
-a team, with content matched to your sector and a record of who actually learned what,
-is what AI Mentor does. It is the same discipline as this guide, delivered as a product.
+this guide work for one person with thirty minutes a week. Running the same thing across a
+team, with content matched to your sector and a record of who actually learned what, is
+what we are building AI Mentor to do. It is in pilot with paying customers rather than
+on general release, which means a conversation now still shapes what it becomes.
 
 If you picked one of those two on the download form, we have your answer and will
 come back to you on it. If you picked neither and changed your mind, or this was
