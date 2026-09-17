@@ -680,8 +680,8 @@ Three practical moves, in that order:
    three, prompts go into the shared place. Week four, one person shows what did not
    work. This is the element only a third of leaders have.
 
-If you want the four weeks run for the team rather than assembled by you, that is what
-the last page is about.
+If you want the four weeks run for the team rather than assembled by you, the contact
+details at the end are the place to ask.
 
 One last thing. Chapter 2 showed that the shortage of customer time is worst at your
 level, not your team's. Whatever the three moves above free up, that is where it should
@@ -729,40 +729,6 @@ may put into any tool.
 
 [AUTHOR]
 
-## What we do
-
-Nothing before this page was an advertisement. This page is, and it is the only one.
-
-You have just read twenty-odd pages on what these tools do and what they do not. Knowing
-that line is our work. Three of the problems in this guide are ones we get asked to
-solve, and they do not have the same answer.
-
-**Your team has the tools and no method.** This guide opens with the finding that the
-most common reason a product manager has not taken this up is not distrust or legal
-risk. It is not knowing how. A workshop is the fastest way to close that: a day on your
-own backlog, tickets and documents. Your team arrives with the work it is behind on and
-leaves having done some of it, holding prompts it keeps and a rule for what may go into
-which tool.
-
-**You want it to hold, and to know whether it did.** A workshop teaches. Six months
-later, nobody can tell you who changed how they work. Making it stick is the activation
-plan only a third of leaders run, and knowing whether it stuck needs a record. AI Mentor
-is what we are building for both, with content matched to your sector.
-
-**The tool cannot see your work.** Every chapter above names a limit you have to live
-with: it cannot supply your strategy, talk to your customers or know what you meant.
-Part 0, item 2 named one you do not. Your Copilot probably cannot read your tickets,
-your documents or your decisions, and that is an engineering problem rather than a fact
-of life. We build the layer that closes it, grounded on your own content, hosted in the
-EU or on your own infrastructure. What we have already built is at
-learnslice.com/solutions.
-
-**Why us rather than a consultancy.** Grounding, verification and what may legally go
-into a prompt were engineering constraints for us before they were chapters in this
-guide.
-
-You already told us which of the three, if any, was worth a conversation, and we come
-back on that one only. If this guide was forwarded to you, learnslice.com/ai-guides is
-where to say which one applies.
-
-Good luck with it. The hard part was never the tool.
+**If you have a question.** Whether it is about applying AI to your own working week, or
+about support with software engineering, write to me at info@learnslice.com or find me
+on LinkedIn at [linkedin.com/in/alesiakunz](https://www.linkedin.com/in/alesiakunz/).

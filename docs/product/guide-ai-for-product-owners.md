@@ -586,40 +586,6 @@ may put into any tool.
 
 [AUTHOR]
 
-## What we do
-
-Nothing before this page was an advertisement. This page is, and it is the only one.
-
-You have just read twenty-odd pages on what these tools do and what they do not. Knowing
-that line is our work. Three of the problems in this guide are ones we get asked to
-solve, and they do not have the same answer.
-
-**Your team has the tools and no method.** This guide opens with the finding that among
-workplaces already using generative AI, 27% give their people any training in it and 21%
-have written down any rule for using it. A workshop is the fastest way to close that: a
-day on your own backlog, tickets and documents. Your team arrives with the work it is
-behind on and leaves having done some of it, holding prompts it keeps and the written
-rule it was missing.
-
-**You want it to hold, and to know whether it did.** A workshop teaches, and the
-thirty-minute routine in Part 4 keeps one person current. Neither tells you, six months
-later, who across the team changed how they work. AI Mentor is what we are building for
-that, with content matched to your sector and a record of who learned what.
-
-**The tool cannot see your work.** Every chapter above names a limit you have to live
-with: it cannot order your backlog, decide what is valuable or know why an item matters.
-Part 0, item 2 named one you do not. Your Copilot probably cannot read your tickets,
-your documents or your decisions, and that is an engineering problem rather than a fact
-of life. We build the layer that closes it, grounded on your own content, hosted in the
-EU or on your own infrastructure. What we have already built is at
-learnslice.com/solutions.
-
-**Why us rather than a consultancy.** Grounding, verification and what may legally go
-into a prompt were engineering constraints for us before they were chapters in this
-guide.
-
-You already told us which of the three, if any, was worth a conversation, and we come
-back on that one only. If this guide was forwarded to you, learnslice.com/ai-guides is
-where to say which one applies.
-
-Good luck with it. The hard part was never the tool.
+**If you have a question.** Whether it is about applying AI to your own working week, or
+about support with software engineering, write to me at info@learnslice.com or find me
+on LinkedIn at [linkedin.com/in/alesiakunz](https://www.linkedin.com/in/alesiakunz/).

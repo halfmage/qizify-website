@@ -65,21 +65,18 @@ body{
   color:#6f6459; border-top:1px solid var(--border); padding-top:2mm;
 }
 /* Author block. The portrait is round and small; the guide is not about her face. */
+/* Author card and the contact line below it close the guide, on their own page
+   so the contact details never split across a page break. */
 .author{
   display:flex; gap:7mm; align-items:flex-start;
-  border-top:1px solid var(--border); padding-top:6mm; margin:9mm 0 0;
-  page-break-inside:avoid;
+  border-top:1px solid var(--border); padding-top:6mm; margin:0;
+  page-break-before:always; page-break-inside:avoid;
 }
+.author + p{ page-break-inside:avoid; margin-top:7mm; }
 .author img{ width:26mm; height:26mm; border-radius:50%; object-fit:cover; margin:0; flex:0 0 auto; }
 .author .who{ font-size:10.4pt; }
 .author .who strong{ color:var(--white); display:block; margin-bottom:1mm; }
 .author .who span{ color:var(--gray); }
-/* The closing offer is the one page that must not split. Three offers plus the
-   credentials only fit if the spacing here is tighter than the body's. */
-.closing{ page-break-before:always; page-break-inside:avoid; }
-.closing h2{ border-top:none; margin-top:0; padding-top:0; }
-.closing h3{ margin-top:5mm; }
-.closing p{ margin-bottom:3.2mm; page-break-inside:avoid; }
 /* Table of contents */
 .toc{ page-break-after:always; }
 .toc h2{ border-top:none; margin-top:0; padding-top:0; }
@@ -202,11 +199,6 @@ body = body.replace('<p>[AUTHOR]</p>',
   'the organisation that published it, and every source is listed above. The two '
   'are styled differently on purpose, so you can always tell which you are '
   'reading.</span></div></div>')
-
-# Keep the closing offer whole, on its own page.
-ix = body.find('<h2 id="what-we-do"')
-if ix != -1:
-    body = body[:ix] + '<section class="closing">' + body[ix:] + '</section>'
 
 # Table of contents, built from the body's own headings. Entries are internal links,
 # which survive into the PDF; Chrome cannot render page numbers in print.

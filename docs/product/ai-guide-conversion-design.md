@@ -8,9 +8,17 @@ software.
 create the question, and by routing three different readers to three different exits
 placed after the content, not inside it.
 
-**Revised 2026-09-17.** The closing page now carries three offers rather than two. The
-workshop was added as the low-commitment entry point, and the download form gained a
-matching option so the form, the guide and this plan agree.
+**Revised 2026-09-17.** The closing page has been removed from both guides. It briefly
+carried three offers, then the credentials behind them were cut, and then the page
+itself. The guides now end on the author card and a single contact line: info@learnslice.com
+and linkedin.com/in/alesiakunz, for applying AI to daily work or for software
+engineering support.
+
+What this means for the rest of this document: sections 3 and 6 describe exits inside
+the guide that no longer exist. The download form still asks the qualifying question and
+still carries four options, so the probe signal in section 7 is intact. The guide no
+longer does any routing of its own. Everything below is kept as the record of what was
+tried.
 
 ---
 
