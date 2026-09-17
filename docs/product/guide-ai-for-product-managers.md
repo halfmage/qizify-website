@@ -746,8 +746,7 @@ which tool.
 **You want it to hold, and to know whether it did.** A workshop teaches. Six months
 later, nobody can tell you who changed how they work. Making it stick is the activation
 plan only a third of leaders run, and knowing whether it stuck needs a record. AI Mentor
-is what we are building for both, with content matched to your sector. It is in pilot
-with paying customers rather than on general release, so teams joining now shape it.
+is what we are building for both, with content matched to your sector.
 
 **The tool cannot see your work.** Every chapter above names a limit you have to live
 with: it cannot supply your strategy, talk to your customers or know what you meant.

@@ -602,9 +602,7 @@ rule it was missing.
 **You want it to hold, and to know whether it did.** A workshop teaches, and the
 thirty-minute routine in Part 4 keeps one person current. Neither tells you, six months
 later, who across the team changed how they work. AI Mentor is what we are building for
-that, with content matched to your sector and a record of who learned what. It is in
-pilot with paying customers rather than on general release, so teams joining now shape
-it.
+that, with content matched to your sector and a record of who learned what.
 
 **The tool cannot see your work.** Every chapter above names a limit you have to live
 with: it cannot order your backlog, decide what is valuable or know why an item matters.
