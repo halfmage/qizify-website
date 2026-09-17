@@ -8,6 +8,9 @@ software.
 create the question, and by routing three different readers to three different exits
 placed after the content, not inside it.
 
+**Superseded 2026-09-17 by `ai-guides-page-strategy.md`,** which drops the workshop
+push and makes the weekly email the conversion that matters. Read that first.
+
 **Revised 2026-09-17.** The closing page has been removed from both guides. It briefly
 carried three offers, then the credentials behind them were cut, and then the page
 itself. The guides now end on the author card and a single contact line: info@learnslice.com
