@@ -170,6 +170,16 @@
 		@apply bg-surface/50;
 	}
 
+	/* Data charts are authored 440 to 520 units wide for the guides' PDF column.
+	   Left to fill the prose column they scale to about 1.4x, which makes their
+	   internal type larger than the article's own headings. Cap them at the width
+	   they were drawn for and centre them. Photos (.webp/.jpg) still go full width. */
+	.prose img[src$=".svg"] {
+		max-width: 520px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	/* Narrow screens: 3-column tables overflowed the prose column and were
 	   clipped by the body's overflow-x:hidden, hiding the last column entirely.
 	   Tighten the cells and let long German compounds break so the table fits. */
