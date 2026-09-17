@@ -64,9 +64,9 @@ body{
   font-size:7.6pt; letter-spacing:.09em; text-transform:uppercase;
   color:#6f6459; border-top:1px solid var(--border); padding-top:2mm;
 }
-/* Author block. The portrait is round and small; the guide is not about her face. */
-/* Author card and the contact line below it close the guide, on their own page
-   so the contact details never split across a page break. */
+/* Author block. The portrait is round and small; the guide is not about her face.
+   The card and the contact line below it close the guide on their own page, so the
+   contact details never split across a page break. */
 .author{
   display:flex; gap:7mm; align-items:flex-start;
   border-top:1px solid var(--border); padding-top:6mm; margin:0;
