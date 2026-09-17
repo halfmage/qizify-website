@@ -49,26 +49,27 @@ source rather than taken from a summary.
 
 ## The training barely exists
 
-If you have not started, it is not for want of trying. The OECD looked at the training
-actually on offer across Australia, Germany, Singapore and the United States and found
-that between 0.3% and 5.5% of courses deliver any AI content at all. Most of what does
-exist targets specialists rather than the people who simply need to use the thing.
+If you have not started, that is not because you did not try. The OECD looked at the
+training actually on offer across Australia, Germany, Singapore and the United States
+and found that between 0.3% and 5.5% of courses deliver any AI content at all. Most of
+what does exist is aimed at specialists, not at the people who just need to use it.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
-give it, trained on an enormous amount of writing. That is why it is fluent, why it is
-useful on anything language-shaped, and why it will state something false with complete
-confidence.
+give it, trained on an enormous amount of writing. That is why it writes so well, why it
+helps with anything made of words, and why it will tell you something false without
+hesitating.
 
-**Start here, once, this week.** Take a backlog item you wrote yourself and know well. Ask
-it to list the questions a developer would ask before picking the item up. You will know
-immediately whether the answer is any good, which is why you start on work you know.
+**Start here, once, this week.** Take a backlog item you wrote yourself and know well.
+Ask it to list the questions a developer would ask before picking the item up. You will
+know straight away whether the answer is any good. That is why you start on work you
+know.
 
 ---
 
 ## Part 0: six things nobody told you
 
-Six short sections before the guide proper. Each one takes a minute to read and heads
-off a specific frustration that otherwise looks like your own fault.
+Six short sections before the main guide, a minute each. Every one of them explains
+something that goes wrong and is not your fault.
 
 ### 1. Your best prompt might have been luck
 
@@ -148,9 +149,9 @@ up to ten files or pages. Checked September 2026.
 
 When you are signed in with your work account, prompts and responses are covered by
 enterprise data protection, and Microsoft states they are not used to train the
-foundation models. Access is scoped by your existing permissions, so Copilot cannot show
-you a document you could not already open yourself. For users in the European Union
-there are additional European Union Data Boundary safeguards.
+foundation models. Copilot cannot show you a document you could not already open
+yourself. For users in the European Union there are additional European Union Data
+Boundary safeguards.
 
 **The caveat that matters.** All of that describes a work account signed in with your
 company identity. A personal account is a different product with different terms.
@@ -194,8 +195,8 @@ that output yet, and neither is the tool.
 
 ## Part 1: four habits that separate method from luck
 
-Part 0 was how the tool behaves. These four are how you behave, and they are the whole
-difference between an answer that worked once and a result you can repeat.
+Part 0 was how the tool behaves. These four are how you behave. They are what turns an
+answer that happened to work into a result you can repeat.
 
 ### Rule 1. Give it your own material
 
@@ -240,7 +241,7 @@ habit rather than a one-off.
 ## Part 2: the five things that are actually yours
 
 Rules are easy to agree with and easy to forget. Here they are against the five
-accountabilities the Scrum Guide names as yours, in the order the work happens, from
+accountabilities the Scrum Guide names as yours, in the order the work happens: from
 writing an item to showing what it changed.
 
 ### Chapter 1. Why your items come back from refinement
@@ -324,15 +325,16 @@ the product owner is one person, not a committee.
   longer serve it.
 
 **What it cannot do, and this is the important one.** It cannot order your backlog. A
-model that has never met your users, does not know what your organisation can absorb and
-has not sat in the conversation is guessing, fluently. An AI draft never becomes the
-accountability. Use it to test an order you already hold, never to produce one.
+model that has never met your users, does not know how much change your organisation can
+take and has not sat in the conversation is guessing, fluently. A draft from a model
+does not take that accountability off you. Use it to test an order you already hold,
+never to produce one.
 
 > **Field note.** What actually wins an argument about order is analytical data behind
-> the position, and this is where AI earns its place: finding validated sources that
+> the position, and this is where AI is genuinely useful: finding checked sources that
 > support building a feature, or that show the assumption behind it was wrong and it
-> should be dropped. Both directions count. The value is in being willing to
-> lose the argument to the data.
+> should be dropped. Both directions count. The value is in being willing to lose the
+> argument to the data.
 
 **The specific danger.** Generating backlog items in bulk. It is the easiest thing to do
 with these tools and the least useful. Volume is not value, and every item you add is
@@ -355,7 +357,7 @@ not after.
 sprint is actually for.
 
 The first topic of sprint planning is why this sprint is valuable, and the Scrum Guide
-puts proposing that value increase with you.
+makes proposing that value your job.
 
 **Where it genuinely helps.**
 - Turning a set of selected items into a candidate sprint goal in one sentence, which
@@ -382,8 +384,8 @@ argue with beats a blank room.
 
 ### Chapter 5. What got done, and what actually changed
 
-**The need.** The room stays quiet, because nobody can tell what is different for a
-user who was not in it.
+**The need.** The room stays quiet, because nobody can say what is actually different
+for a user.
 
 **Where it genuinely helps.**
 - Turning what was built into what changed for a user, which is a different sentence and
@@ -423,12 +425,12 @@ Each one sits inside an accountability the Scrum Guide already names as yours: w
 items, refining them, ordering them, proposing the value of a sprint, showing what
 changed. The work is the same work. What changes is what you bring to it.
 
-That is also why none of it survives without you. The tool drafts the split, and you
-decide which one delivers value on its own. It argues against your order, and you
-decide whether the argument wins. It proposes a sprint goal, and you decide whether the
-set holds together. The Scrum Guide is blunt about where that stops: you may delegate
-the work, but you remain accountable, and you are one person rather than a committee.
-No amount of tooling moves that line.
+That is also why none of it works without you. The tool drafts the split, and you decide
+which one delivers value on its own. It argues against your order, and you decide
+whether the argument wins. It proposes a sprint goal, and you decide whether the set
+holds together. The Scrum Guide is blunt about where that stops: you may delegate the
+work, but you remain accountable, and you are one person rather than a committee. No
+amount of tooling moves that line.
 
 ---
 
@@ -487,9 +489,9 @@ Source: this thread only.
 
 ## Part 4: staying current on thirty minutes a week
 
-The training gap at the top of this guide is not going to be closed by waiting for a
-course, because on the OECD's count between 0.3% and 5.5% of courses carry any AI
-content and most of that aims at specialists. Here is a routine that costs nothing and needs nobody's approval.
+Waiting for a course will not close the training gap at the top of this guide. On the
+OECD's count, between 0.3% and 5.5% of courses carry any AI content, and most of that
+aims at specialists. Here is a routine that costs nothing and needs nobody's approval.
 
 ### Thirty minutes a week
 

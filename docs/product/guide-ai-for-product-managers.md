@@ -58,35 +58,35 @@ Otherwise, read four things and stop.
    fact about a customer.
 4. **One chapter**, whichever of the five describes your worst week.
 
-Everything else is depth you can come back for.
+The rest is detail you can come back to.
 
 ---
 
 ## Half the profession is stuck in the same place
 
 Half of the product managers in this survey who do not use AI say the reason is that
-they are unsure how. More than either distrust it, at 33%, or cite legal and security
-concerns, at 17%. Those three figures describe the minority who stay away, and the
-report does not state how many people that is, so read them as a ranking of reasons
-rather than as a precise count. The ranking is the useful part: not knowing how comes
-first. If that is you, you are in the largest group, not behind it.
+they are unsure how. That is more than the 33% who distrust it, and more than the 17%
+who worry about legal and security risks. These three figures cover only the people who
+stay away. The report does not say how many people that is, so treat them as a ranking
+of reasons and not as exact counts. The ranking is the useful part: not knowing how
+comes first. If that is you, you are in the largest group, not behind it.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
-give it, trained on an enormous amount of writing. That is why it is fluent, why it is
-useful on anything language-shaped, and why it will state something false with complete
-confidence.
+give it, trained on an enormous amount of writing. That is why it writes so well, why it
+helps with anything made of words, and why it will tell you something false without
+hesitating.
 
 **Start here, once, this week.** Take a document you already wrote and know well. Ask it
-to list the questions a sceptical reader would ask about it. You can judge that answer
-immediately, which is the point of starting on work you already understand. Then read
-the rest of this.
+to list the questions a sceptical reader would ask about it. You will know straight away
+whether the answer is any good. That is the point of starting on work you already
+understand. Then read the rest of this.
 
 ---
 
 ## Part 0: six things nobody told you
 
-Six short sections before the guide proper. Each one takes a minute to read and heads
-off a specific frustration that otherwise looks like your own fault.
+Six short sections before the main guide, a minute each. Every one of them explains
+something that goes wrong and is not your fault.
 
 ### 1. Your best prompt might have been luck
 
@@ -129,16 +129,16 @@ expect it to take longer on purpose.
 public web, and your organisation's own content. Only the premium tier reaches the
 second one by itself. Every other tier sees only what you hand it.
 
-**Which tool, not which winner.** In this profession 66% of AI users use ChatGPT
+**Pick per task, not per tool.** In this profession 66% of AI users use ChatGPT
 regularly, with Copilot second, then Gemini, Claude and Perplexity. 22% use three or
 more regularly, and 52% of ChatGPT users also use Copilot. Nobody getting value out of
-this is loyal to one tool. They pick per task: the one that can see your work for
-anything about your work, a general chat tool for thinking out loud.
+this is loyal to one tool. They choose per task. For anything about your own work, use
+the tool that can actually read it. For thinking out loud, any general chat tool will
+do.
 
 **Before you look for a new tool.** Jira is recommended by 58% of this profession and
 Confluence by 46%, so for most readers the product data already sits in tools that are
-adding their own AI on top of it. Check what you already pay for before buying
-anything new.
+adding AI of their own. Check what you already pay for before buying anything new.
 
 ### 3. The four-part prompt Microsoft wrote and nobody reads
 
@@ -164,16 +164,16 @@ In Copilot, type `/` and start typing the name of a file, person, meeting or ema
 You can attach a single file or a whole folder. Inside a SharePoint site you can
 reference up to ten files or pages. Checked September 2026.
 
-Most people paste content they could have referenced, and lose the formatting and the
-source link doing it.
+Most people paste content they could have referenced instead. Pasting loses the
+formatting and the source link.
 
 ### 5. Where your prompts actually go
 
 When you are signed in with your work account, prompts and responses are covered by
 enterprise data protection, and Microsoft states they are not used to train the
-foundation models. Access is scoped by your existing permissions, so Copilot cannot
-show you a document you could not already open yourself. For users in the European
-Union there are additional European Union Data Boundary safeguards.
+foundation models. Copilot cannot show you a document you could not already open
+yourself. For users in the European Union there are additional European Union Data
+Boundary safeguards.
 
 **The caveat that matters.** All of that describes a work account signed in with your
 company identity. A personal account is a different product with different terms. If
@@ -187,8 +187,8 @@ This is practical guidance, not legal advice. Your company's own rules sit on to
 It will state things that are not true, confidently and in your own house style. Three
 things need checking every single time:
 
-- **Numbers.** Check every figure you did not give it yourself. It may have retrieved a
-  real one, and it may have produced something that merely looks like one.
+- **Numbers.** Check every figure you did not give it yourself. It may have found a real
+  one. It may also have invented one that looks real.
 - **Names.** People, products, companies, competitors.
 - **Anything stated as a fact about a customer.** This is the dangerous one, because it
   is the hardest to spot and the most expensive to act on.
@@ -212,9 +212,9 @@ would catch, but a real thing overstated, reading perfectly.
 > nice-to-have step, it is the step.
 
 **The decision aid.** Before you use an output, ask one question: *could I tell if this
-were wrong?* If yes, use it and check it. If no, you are not the right person to accept
-that output yet, and neither is the tool. Get it from someone who would know, or go and
-find out. It is one question and it catches the outputs that are worth worrying about.
+were wrong?* If yes, use it and check it. If no, do not use it yet. Get the answer from
+someone who would know, or go and find out. It is one question and it catches the
+outputs that are worth worrying about.
 
 ![A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that fail most often, which are numbers, names, and anything stated as a fact about a customer. If no, you cannot accept that output yet: get it from someone who would know, or go and find out.](/images/blog/pm-trust-decision.svg)
 
@@ -222,8 +222,8 @@ find out. It is one question and it catches the outputs that are worth worrying 
 
 ## Part 1: four habits that separate method from luck
 
-Part 0 was how the tool behaves. These four are how you behave, and they are the whole
-difference between an answer that worked once and a result you can repeat.
+Part 0 was how the tool behaves. These four are how you behave. They are what turns an
+answer that happened to work into a result you can repeat.
 
 ### Rule 1. Give it your own material
 
@@ -251,9 +251,9 @@ does not, ask whoever would own it.
 
 ### Rule 3. Check it before it leaves you
 
-85% of this profession already validate AI output using their own expertise, so this
-rule confirms a habit rather than introducing one. What most people do not have is a
-consistent list. Use the three from Part 0, item 6: numbers, names and customer claims.
+85% of this profession already check AI output against their own expertise, so this rule
+is probably not new to you. What most people do not have is a consistent list. Use the
+three from Part 0, item 6: numbers, names and customer claims.
 
 The moment that matters is **before it leaves you**, not before it ships. Once a
 plausible wrong sentence is inside a document three other people have edited, it stops
@@ -261,7 +261,7 @@ being an AI problem and becomes a fact your organisation believes.
 
 ### Rule 4. Keep what works
 
-The habit with the most compounding value, and the easiest one to skip.
+The habit that pays back the most, and the easiest one to skip.
 
 When an answer comes out genuinely good, do not just use it. Save the prompt that
 produced it, with the parts that change marked in square brackets, in whatever you
@@ -273,8 +273,8 @@ a minute instead of twenty.
 ## Part 2: five places where AI is worth the time
 
 Rules are easy to agree with and easy to forget. Here they are in the five places a
-product week actually bends, ordered by how much the profession says each one hurts, so
-firefighting comes first.
+product week actually goes wrong, ordered by how much the profession says each one
+hurts. Firefighting comes first.
 
 ### Chapter 1. Why Wednesday never looks like Monday's plan
 
@@ -290,14 +290,14 @@ ahead of lack of resource and weak or missing company strategy.
   rather than tickets.
 - Drafting the reply that declines a request and still explains the reasoning. This is
   the message most people avoid writing, and therefore never send.
-- Capturing a corridor decision into three lines that go into the ticket before it
-  evaporates.
+- Turning a decision someone made in a corridor into three lines in the ticket, before
+  everyone forgets it.
 
-**What it cannot do.** It cannot reduce the number of interruptions. Firefighting tracks
-the environment, not the person: in this survey automotive reported 76% while SaaS
-reported 57%. If you are interrupted constantly, the fix is a conversation with your
-manager about routing, and no tool substitutes for it. What you can change is how much
-of your week each interruption costs after it arrives.
+**What it cannot do.** It cannot reduce the number of interruptions. How much of it you
+get depends on where you work, not on you: in this survey automotive reported 76% and
+SaaS 57%. If you are interrupted constantly, the fix is a conversation with your manager
+about routing, and no tool substitutes for it. What you can change is how much of your
+week each interruption costs after it arrives.
 
 **One prompt.** Works on any tier, because you paste the content in.
 ```
@@ -316,7 +316,7 @@ escalations.
 
 ### Chapter 2. You know the product better than the people using it
 
-**The need.** Every call you make is a guess about someone you have not spoken to in
+**The need.** Every decision you make is a guess about someone you have not spoken to in
 weeks.
 
 **The number.** 71% of product managers say they do not spend enough time with customers
@@ -363,13 +363,14 @@ roadmap is quietly wrong, and nobody can see that from a summary.
 
 ### Chapter 3. Everything is important, and that is the problem
 
-**The need.** You cannot say no, because there is nothing concrete to say no against.
+**The need.** You cannot say no, because there is nothing concrete to point at when you
+do.
 
 **The numbers.** 33% of product managers report a weak or missing company strategy. 34%
-have no clear primary metric they are accountable for. Those two travel together:
-product managers who report a weak company strategy are 15 percentage points more likely
-to lack a primary metric, 44% against 29%. It is difficult to prioritise if nobody has
-defined what winning looks like.
+have no clear primary metric they are accountable for. The two go together: product
+managers with a weak company strategy are 15 percentage points more likely to have no
+primary metric, 44% against 29%. It is difficult to prioritise if nobody has defined
+what winning looks like.
 
 **Where it genuinely helps.**
 - Turning a vague strategy statement into a written test you can actually apply, with
@@ -379,10 +380,10 @@ defined what winning looks like.
 - Arguing the other side of your own case before somebody else does it in the meeting.
 
 **What it cannot do.** It cannot supply the strategy. It will happily generate a
-plausible one, and that is the trap: a fluent strategy nobody agreed to is worse than an
-admitted absence, because it ends arguments that needed to happen. Use it to sharpen a
-strategy that exists, or to make the absence of one visible. Never to fill the hole
-quietly.
+plausible one, and that is the trap: a smooth-sounding strategy nobody agreed to is
+worse than openly having none, because it shuts down arguments that needed to happen.
+Use it to sharpen a strategy that exists, or to make the absence of one visible. Never
+to fill the hole quietly.
 
 > **Field note.** What unblocks this in practice is not a better strategy document. It
 > is alignment with the handful of stakeholders who actually decide, and a
@@ -460,7 +461,7 @@ only AI proficiency itself.
 
 **What it cannot do.** It cannot be trusted on arithmetic, and it cannot be trusted on
 any number it was not given. Every figure that leaves you is yours, not its. If you did
-not check it, you did not say it, you repeated it.
+not check it, you did not say it. You repeated it.
 
 **One prompt.**
 ```
@@ -491,11 +492,11 @@ test that lets you say no, the explanation you ruled out before the meeting.
 Only the second kind moves the product. If you use it for drafting alone you will land
 squarely in the 97% and your roadmap will look exactly as it did before.
 
-That is why no prompt in this guide hands you a finished artefact. Every one of them
-returns something you still have to decide: themes and the question behind each, the
-objections to your own case, the parts of a strategy too vague to test, the
-explanations ranked by which is cheapest to rule out. The output is not the work. It
-is the thing you take into the room where the work gets decided.
+That is why no prompt in this guide hands you finished work. Every one of them returns
+something you still have to decide: themes and the question behind each, the objections
+to your own case, the parts of a strategy too vague to test, the explanations ranked by
+which is cheapest to rule out. The output is not the work. It is the thing you take into
+the room where the work gets decided.
 
 ---
 
@@ -616,7 +617,7 @@ like. This is the only way to tell whether the output is any good, and it is why
 learning on your own work beats any course.
 
 **Five minutes, write it down.** One line in your saved prompts: what worked, what did
-not. This is Rule 4, and it is what turns thirty minutes into something cumulative.
+not. This is Rule 4, and it is what makes the thirty minutes add up.
 
 ### Where to look, and how often
 
@@ -647,14 +648,13 @@ where the other guide is.
 
 ## If you lead a product team
 
-41% of respondents manage a team of product people, so this section is for a large
-minority of readers.
+41% of respondents manage a team of product people, so this section is for about four
+readers in ten.
 
-Product leaders in the survey were asked what actually embeds new product skills and
-behaviour in the workplace. Standard tools and templates came first, named by 69%,
-ahead of structured meetings between line managers and product managers, and ahead of
-standardised training for teams. Developing a prioritised plan after training was named
-by 33%.
+Product leaders in the survey were asked what actually makes a new product skill stick
+at work. Standard tools and templates came first, named by 69%, ahead of structured
+meetings between line managers and product managers, and ahead of standardised training
+for teams. Developing a prioritised plan after training was named by 33%.
 
 The survey's own conclusion is the useful part: the best results need all three
 elements together, training and tools, structured manager conversations, and an
@@ -683,8 +683,9 @@ Three practical moves, in that order:
 If you want the four weeks run for the team rather than assembled by you, that is what
 the last page is about.
 
-One last thing. Chapter 2 showed that the customer-time deficit is worst at your level,
-not your team's. Whatever the three moves above free up, that is where it should go.
+One last thing. Chapter 2 showed that the shortage of customer time is worst at your
+level, not your team's. Whatever the three moves above free up, that is where it should
+go.
 
 ---
 
