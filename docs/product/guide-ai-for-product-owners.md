@@ -55,9 +55,9 @@ and found that between 0.3% and 5.5% of courses deliver any AI content at all. M
 what does exist is aimed at specialists, not at the people who just need to use it.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
-give it, trained on an enormous amount of writing. That is why it writes so well, why it
-helps with anything made of words, and why it will tell you something false without
-hesitating.
+give it, trained on an enormous amount of writing. That is why it writes so smoothly,
+why it helps with anything made of words, and why it will state something false with
+complete confidence.
 
 **Start here, once, this week.** Take a backlog item you wrote yourself and know well.
 Ask it to list the questions a developer would ask before picking the item up. You will
@@ -186,8 +186,8 @@ epic. That is the failure mode to expect.
 > doubtful.
 
 **The decision aid.** Before you use an output, ask one question: *could I tell if this
-were wrong?* If yes, use it and check it. If no, you are not the right person to accept
-that output yet, and neither is the tool.
+were wrong?* If yes, use it and check it. If no, do not use it yet. Get the answer from
+someone who would know, or go and find out.
 
 ![A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that fail most often, which are numbers, names, and anything stated as a fact about a customer. If no, you cannot accept that output yet: get it from someone who would know, or go and find out.](/images/blog/pm-trust-decision.svg)
 
@@ -331,7 +331,7 @@ does not take that accountability off you. Use it to test an order you already h
 never to produce one.
 
 > **Field note.** What actually wins an argument about order is analytical data behind
-> the position, and this is where AI is genuinely useful: finding checked sources that
+> the position, and this is where AI is genuinely useful: finding validated sources that
 > support building a feature, or that show the assumption behind it was wrong and it
 > should be dropped. Both directions count. The value is in being willing to lose the
 > argument to the data.

@@ -72,9 +72,9 @@ of reasons and not as exact counts. The ranking is the useful part: not knowing 
 comes first. If that is you, you are in the largest group, not behind it.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
-give it, trained on an enormous amount of writing. That is why it writes so well, why it
-helps with anything made of words, and why it will tell you something false without
-hesitating.
+give it, trained on an enormous amount of writing. That is why it writes so smoothly,
+why it helps with anything made of words, and why it will state something false with
+complete confidence.
 
 **Start here, once, this week.** Take a document you already wrote and know well. Ask it
 to list the questions a sceptical reader would ask about it. You will know straight away
@@ -293,11 +293,11 @@ ahead of lack of resource and weak or missing company strategy.
 - Turning a decision someone made in a corridor into three lines in the ticket, before
   everyone forgets it.
 
-**What it cannot do.** It cannot reduce the number of interruptions. How much of it you
-get depends on where you work, not on you: in this survey automotive reported 76% and
-SaaS 57%. If you are interrupted constantly, the fix is a conversation with your manager
-about routing, and no tool substitutes for it. What you can change is how much of your
-week each interruption costs after it arrives.
+**What it cannot do.** It cannot reduce the number of interruptions. How much
+firefighting you get depends on where you work, not on you: in this survey automotive
+reported 76% and SaaS 57%. If you are interrupted constantly, the fix is a conversation
+with your manager about routing, and no tool substitutes for it. What you can change is
+how much of your week each interruption costs after it arrives.
 
 **One prompt.** Works on any tier, because you paste the content in.
 ```
@@ -648,8 +648,8 @@ where the other guide is.
 
 ## If you lead a product team
 
-41% of respondents manage a team of product people, so this section is for about four
-readers in ten.
+41% of respondents manage a team of product people. If you are one of them, this section
+is for you.
 
 Product leaders in the survey were asked what actually makes a new product skill stick
 at work. Standard tools and templates came first, named by 69%, ahead of structured
