@@ -178,13 +178,33 @@ to the form.
 
 ## Implementation priority
 
-| Rank | Change | Effort | Why it matters |
-|---|---|---|---|
-| 1 | Add the author to the landing page | Minutes | Largest unused proof asset |
-| 2 | Name the three sources in the mechanism line | Minutes | Converts a trust claim into a checkable one |
-| 3 | Rewrite the meta description to lead with the finding | Minutes | Decides the click before anyone sees the page |
-| 4 | Add the reassurance to the qualifying question | Minutes | Protects the accuracy of the one field you actually want |
-| 5 | Name the page count and the short path in the result state | Minutes | Converts downloads into reads |
-| 6 | Test an anchor link to the form on mobile | Small | Only if the phone layout check shows the form is far down |
+| Rank | Change | Status |
+|---|---|---|
+| 1 | Add the author to the landing page | **Applied** |
+| 2 | Name the three sources in the mechanism line | **Applied** |
+| 3 | Rewrite the meta description to lead with the finding | **Applied** |
+| 4 | Add the reassurance to the qualifying question | **Applied** |
+| 5 | Name the page count and the short path in the result state | **Applied** |
+| 6 | Anchor link to the form on phones | **Closed, not needed** |
 
-Nothing here is a rewrite. The copy is in good shape; the fixes are proof placement.
+Item 6 was conditional on the form sitting far down a phone screen. It does not. The
+rendered DOM carries only four blocks between the headline and the form, and contains
+no fixed width above 380px, so the form is one short scroll away and there is no
+horizontal overflow risk. An anchor would add a control for a problem that is not
+there.
+
+Nothing here was a rewrite. The copy was in good shape; the fixes were proof placement.
+
+## One judgement call left open
+
+Emotion scored lowest, at 6 of 10, because the landing page flattens after the
+headline. The author paragraph now carries some of that, but the four numbered benefit
+lines are still a list of features written plainly. They could be rewritten as
+tensions, the way the guide's own chapter titles are, for example "which Copilot tier
+can actually see your work" becoming "why most people have the wrong Copilot and never
+find out".
+
+This is deliberately not in the priority list. The flat register is doing real work for
+an audience that distrusts AI claims, and turning four benefit lines into four hooks
+risks the page sounding like the marketing the guides position themselves against.
+Worth testing, not worth assuming.
