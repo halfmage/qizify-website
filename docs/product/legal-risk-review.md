@@ -79,8 +79,16 @@ consent and a storage consent. The privacy policy does not mention the guide dow
 the qualifying question or the weekly list. Under the GDPR the purposes, legal basis,
 retention and recipients have to be stated before collection begins.
 
-**Do not publish the page until the policy names this processing.** Netlify is also a
-processor here, which the policy should reflect.
+**Addressed 2026-09-17.** Both language versions of the policy now carry a section on
+the guide download: what is collected, why, the legal basis for each purpose, that the
+service question is treated as a request only where the reader selects a service, the
+separate consent and withdrawal route for the weekly update, Netlify named as processor,
+and a stated retention period of two years. The English retention clause previously tied
+everything to having an account, which was wrong for someone who only downloaded a
+guide, and now carves out the stated periods.
+
+Still worth a short review by counsel, since a privacy notice is the one document where
+a reviewer is cheaper than a complaint.
 
 ## 4. The field notes: currently safe, and one rule to keep them that way
 
@@ -140,7 +148,7 @@ shipped, change the tense before this goes out.
 |---|---|---|---|
 | 1 | Product Focus extraction and competitor status | Opinion before publication | Counsel |
 | 2 | Scrum Guide ShareAlike attribution | Attribution applied; scope question open | Applied, counsel to confirm |
-| 3 | Privacy policy does not cover the form | Blocks publication of the page | You |
+| 3 | Privacy policy does not cover the form | Applied in both languages; counsel to confirm | Applied |
 | 4 | Legal notice absent from the guides | Applied below | Applied |
 | 5 | Future field notes | Rule recorded | You |
 | 6 | Service claims on the closing page | Confirm each is shipped, not planned | You |
