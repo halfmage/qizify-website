@@ -588,31 +588,39 @@ may put into any tool.
 
 Nothing before this page was an advertisement. This page is, and it is the only one.
 
-**When the limit is the tool, not you.** Every chapter above ends with something the
-tool cannot do, and most of those limits are the same limit: the model cannot read your
-own material. It cannot search your tickets, your documents or your decisions, so it
-answers from the public web and from whatever you paste. We build the layer that fixes
-that, grounded on a company's own content and hosted in the EU, or on your own
-infrastructure where that is the requirement. If that is the wall you keep hitting, it
-is worth a conversation.
+You have just read twenty-odd pages on what these tools do and what they do not. That is
+our work. We build AI systems that run on an organisation's own material, and we teach
+the people who use them. Three problems in this guide are ones we get asked to solve.
+Only one is software.
 
-> **Field note.** The assumption we meet most often is that an AI tool will read a
-> company's own documents and structure them correctly by itself. Two things have to be
-> settled before any of that. First, whether the data may be shared with a public AI
-> provider at all, most of which sit outside the EU, which is a GDPR question before it
-> is a technical one. Second, what the data is for: the use case, the goal and the
-> expected result are inputs, not outputs. A further assumption follows close behind,
-> that results will be right immediately. The more
-> complex the use case, the more fine-tuning it needs, and that is time and effort
-> rather than a switch.
+**Your team has the tools and no method.** This guide opens on the finding that among
+workplaces already using generative AI, 27% give their people any training in it and 21%
+have written down any rule for using it. A workshop closes that fastest: a day on your
+own backlog, your own tickets, your own documents. Your team arrives with the work it is
+behind on and leaves having done some of it, holding prompts it keeps and a written rule
+for what may go into which tool.
 
-**AI Mentor, for a team rather than a person.** The routine and the activation plan in
-this guide work for one person with thirty minutes a week. Running the same thing across a
-team, with content matched to your sector and a record of who actually learned what, is
-what we are building AI Mentor to do. It is in pilot with paying customers rather than
-on general release, which means a conversation now still shapes what it becomes.
+**You want it to hold, and to know whether it did.** A workshop teaches, and the
+thirty-minute routine in Part 4 keeps one person current. Neither tells you six months
+later who across the team actually changed how they work. AI Mentor is what we are
+building for that, with content matched to your sector and a record of who learned what.
+It is in pilot with paying customers rather than on general release, so the teams
+joining now still shape it.
 
-If you picked one of those two on the download form, we have your answer and will
-come back to you on it. If you picked neither and changed your mind, or this was
-forwarded to you, learnslice.com/ai-guides is where to say so.
+**The tool cannot see your work.** Every chapter above ends with something the model
+cannot do, and most of those are one limit in different clothes: it cannot read your own
+material. We build the layer that fixes that, grounded on your content and hosted in the
+EU, or on your own infrastructure where that is the requirement. Engineering rather than
+configuration, and the largest of the three.
 
+### Why us rather than a consultancy
+
+LearnSlice is co-developed with the IDiAL institute at Fachhochschule Dortmund, in a
+project funded by the German Federal Ministry for Economic Affairs and Energy under
+grant 16GM200302. In a university pilot, every answer the system produced was traceable
+to a source. Learner data is hosted in Germany and is never used to train the model.
+Grounding, verification and prompt data legality were constraints we solved before we
+shipped, not topics we researched for this guide.
+
+You already told us which of the three, if any, was worth a conversation. We come back
+on that one and nothing else. If this was forwarded to you, learnslice.com/ai-guides.

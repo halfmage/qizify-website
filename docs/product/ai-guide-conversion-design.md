@@ -1,11 +1,16 @@
 # Turning the guides into two business conversations
 
 **Date:** 2026-09-15
-**Question:** the guides are gated. How do they lead to LearnSlice building AI
-automation and software, and to AI Mentor being used as an AI academy by their teams.
+**Question:** the guides are gated. How do they lead to a workshop with a team, to
+AI Mentor being used as an AI academy, and to LearnSlice building AI automation and
+software.
 **Short answer:** not by adding a pitch to the guide. By letting the guide's own limits
-create the question, and by routing two different readers to two different exits placed
-after the content, not inside it.
+create the question, and by routing three different readers to three different exits
+placed after the content, not inside it.
+
+**Revised 2026-09-17.** The closing page now carries three offers rather than two. The
+workshop was added as the low-commitment entry point, and the download form gained a
+matching option so the form, the guide and this plan agree.
 
 ---
 
@@ -50,9 +55,10 @@ context questions already exist in the probe.
 
 | Reader | Signal we already collect | Exit |
 |---|---|---|
+| Has the tools, no method | Any role, workshop selected | **A day with the team on their own backlog** |
 | Leads a product team | Role is Head of Product, Director, VP or CPO | **AI Mentor as an academy for the team** |
 | Individual whose blocker is data | Free text names "it cannot see our tickets, our docs, our backlog" | **Custom build: grounding on their own material** |
-| Everyone else | Neither | **The weekly. No ask at all.** |
+| Everyone else | None of the three | **The weekly. No ask at all.** |
 
 ### The academy exit is already written
 
@@ -99,7 +105,7 @@ copy to the address given.
 | Field | Why | Required |
 |---|---|---|
 | Work email | Sends the copy, and identifies the account | Yes |
-| Role | Routes to the academy or the build conversation | Yes |
+| Role | Routes to the workshop, the academy or the build conversation | Yes |
 | Country | Decides whether the build conversation is even offerable. See section 5 | Yes |
 | **"Which of these would actually help you?"** | **The yield.** See below | Yes |
 | "Send me the weekly update" | Marketing consent, unticked, confirmed opt-in | No |
@@ -107,13 +113,16 @@ copy to the address given.
 ### The question that does the work
 
 > **Which of these would actually help you?**
+> - A workshop with my team, on our own backlog, to find how these tools actually fit our work
 > - An AI academy for my team, with our own content and a record of who learned what
 > - Software that works on our own data, because the tools we have cannot see it
-> - Neither for now, I just want the guide
+> - None of these for now, I just want the guide
 
-This is the whole lead magnet. It is mandatory without being a consent. It tests both
+This is the whole lead magnet. It is mandatory without being a consent. It tests all three
 business lines from day one, on every single download, in the reader's own words rather
-than ours. And the two non-neutral answers are **inbound requests**, not cold contacts:
+than ours. The workshop sits first deliberately: it is the smallest commitment and the
+likeliest first yes, and it is the natural entry to the other two. And the three
+non-neutral answers are **inbound requests**, not cold contacts:
 someone who selects one has asked about a service, and replying to a request is a
 different act from marketing at a stranger. That is a far stronger position than a
 coerced tick would have given you.
@@ -208,8 +217,11 @@ This costs nothing and stops the pipeline filling with names nobody will call.
 
 Small, and all of it after the Sources page.
 
-1. **One page titled "What we do", after Sources**, in both guides. Two short blocks,
-   the grounding build and the academy, three sentences each. No logos, no claims.
+1. **One page titled "What we do", after Sources**, in both guides. Three blocks named
+   from the reader's problem rather than our service: no method, it did not hold, the
+   tool cannot see the work. Each maps to one offer, and each cites a finding the guide
+   has already proved. Closed by a short credentials block using only what is already
+   public on learnslice.com/research. It must fit one page.
 2. **One sentence in the leader block** of the product manager guide, pointing at the
    academy block. Not a pitch, a pointer.
 3. **Delete the line that says the guides sell nothing**, because after this they do,
@@ -224,12 +236,16 @@ The probe thresholds stand. Add three.
 
 | Signal | What it tells you |
 |---|---|
-| Share ticking the team conversation box | Real academy demand, separated from polite interest |
+| Split across the three offers | Which business line the audience actually wants first |
+| Share picking the workshop | Appetite for a paid day, the cheapest thing we can sell |
+| Share picking the academy | Real academy demand, separated from polite interest |
 | Free-text answers naming a data or integration limit | Custom build demand, and what to build |
 | Share of those who are in DACH | Whether the custom build exit is worth keeping at all |
 
-If the team box is ticked by fewer than one in ten, the academy framing is wrong rather
-than the market. If free text rarely mentions data or integration limits, the grounding
+Read the workshop share against the academy share rather than on its own. If the
+workshop takes most of the interest, the academy is not wrong, it is too large a first
+step. If the academy box is ticked by fewer than one in ten, the academy framing is
+wrong rather than the market. If free text rarely mentions data or integration limits, the grounding
 bridge in section 2 is our argument and not theirs, and it should be dropped rather than
 pushed harder.
 

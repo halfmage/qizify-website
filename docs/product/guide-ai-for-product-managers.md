@@ -732,56 +732,39 @@ may put into any tool.
 
 Nothing before this page was an advertisement. This page is, and it is the only one.
 
-**When the limit is the tool, not you.** Every chapter above ends with something the
-tool cannot do, and most of those limits are the same limit: the model cannot read your
-own material. It cannot search your tickets, your documents or your decisions, so it
-answers from the public web and from whatever you paste. We build the layer that fixes
-that, grounded on a company's own content and hosted in the EU, or on your own
-infrastructure where that is the requirement. If that is the wall you keep hitting, it
-is worth a conversation.
+You have just read twenty-odd pages on what these tools do and what they do not. That is
+our work. We build AI systems that run on an organisation's own material, and we teach
+the people who use them. Three problems in this guide are ones we get asked to solve.
+Only one is software.
 
-> **Field note.** The assumption we meet most often is that an AI tool will read a
-> company's own documents and structure them correctly by itself. Two things have to be
-> settled before any of that. First, whether the data may be shared with a public AI
-> provider at all, most of which sit outside the EU, which is a GDPR question before it
-> is a technical one. Second, what the data is actually for: the use case, the goal and
-> the expected result are inputs, not outputs. A further assumption follows close
-> behind, that the results will be right immediately. The more complex the use case, the more fine-tuning it needs, and that
-> is time and effort rather than a switch.
+**Your team has the tools and no method.** This guide opens on the finding that the
+commonest reason a product manager has not taken this up is not distrust or legal risk.
+It is not knowing how. A workshop closes that fastest: a day on your own backlog, your
+own tickets, your own documents. Your team arrives with the work it is behind on and
+leaves having done some of it, holding prompts it keeps and a rule for what may go into
+which tool.
 
-**AI Mentor, for a team rather than a person.** The routine and the activation plan in
-this guide work for one person with thirty minutes a week. Running the same thing across a
-team, with content matched to your sector and a record of who actually learned what, is
-what we are building AI Mentor to do. It is in pilot with paying customers rather than
-on general release, which means a conversation now still shapes what it becomes.
+**You want it to hold, and to know whether it did.** A workshop teaches. It does not
+tell you six months later who actually changed how they work. What closes that gap is
+the activation plan only a third of leaders run. AI Mentor is what we are building for
+it: content matched to your sector, a record of who learned what. It is in pilot with
+paying customers rather than on general release, so the teams joining now still shape
+it.
 
-If you picked one of those two on the download form, we have your answer and will
-come back to you on it. If you picked neither and changed your mind, or this was
-forwarded to you, learnslice.com/ai-guides is where to say so.
+**The tool cannot see your work.** Every chapter above ends with something the model
+cannot do, and most are one limit in different clothes: it cannot read your own
+material. We build the layer that fixes that, grounded on your content and hosted in the
+EU, or on your own infrastructure where that is the requirement. Engineering rather than
+configuration, and the largest of the three.
 
+### Why us rather than a consultancy
 
-<!--
-INTERNAL, REMOVE BEFORE PUBLICATION
-Infographics, built 2026-09-15. Six SVGs in public/images/blog/, house style:
-canvas #2a2622, panel #3a3128 / #37322c, heading #faf8f4, body #cfc7be, muted #a89e92,
-accent #e8b07a / #cc7a3e, rules #46402f, Inter, 520 wide. Each carries an aria-label
-and a markdown alt that states the data, so the figure survives without the image.
+LearnSlice is co-developed with the IDiAL institute at Fachhochschule Dortmund, in a
+project funded by the German Federal Ministry for Economic Affairs and Energy under
+grant 16GM200302. In a university pilot, every answer the system produced was traceable
+to a source. Learner data is hosted in Germany and is never used to train the model.
+Grounding, verification and prompt data legality were constraints we solved before we
+shipped, not topics we researched for this guide.
 
-  pm-outcome-gap.svg          hook, 97 against 64
-  pm-copilot-tiers.svg        Part 0, which Copilot can reach what
-  pm-signal-to-pattern.svg    Part 0, the failure mode
-  pm-trust-decision.svg       Part 0, could I tell if this were wrong
-  pm-where-the-week-goes.svg  Chapter 4
-  pm-thirty-minutes.svg       Part 4, the routine
-
-Deliberately not drawn: the top ten tools (only two have published percentages, so a
-ranked bar would carry eight empty bars), the Copilot per-app table (already optimal),
-and thin against four-part prompt (typography, not data).
-
-Building pm-where-the-week-goes surfaced a misreading in the text, now corrected here
-and in ai-guide-structure.md: the survey asked which activity respondents spend the
-MOST time on, so 56/25/19 is a share of respondents, not a split of the working week.
-
-Still blocking publication: prompts not yet run on a real Copilot tenant.
-German versions of all six SVGs needed only if a DE guide is produced.
--->
+You already told us which of the three, if any, was worth a conversation. We come back
+on that one and nothing else. If this was forwarded to you, learnslice.com/ai-guides.
