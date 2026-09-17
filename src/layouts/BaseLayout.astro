@@ -9,9 +9,12 @@ interface Props {
 	ogImage?: string;
 	breadcrumbTitle?: string;
 	heroImage?: string;
+	/* The SoftwareApplication schema describes the apprenticeship platform. Suppress it
+	   on pages whose subject is something else, so the entity signal stays honest. */
+	softwareSchema?: boolean;
 }
 
-const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg', breadcrumbTitle, heroImage } = Astro.props;
+const { title, description, lang, currentPath, ogImage = '/opengraph-image.jpg', breadcrumbTitle, heroImage, softwareSchema: emitSoftwareSchema = true } = Astro.props;
 
 import { getAlternatePath } from '../utils/i18n';
 import { SITE } from '../utils/page-pairs.mjs';
@@ -222,7 +225,7 @@ const breadcrumbSchema = {
 
 		<!-- Structured Data -->
 		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-		<script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+		{emitSoftwareSchema && <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />}
 		<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
