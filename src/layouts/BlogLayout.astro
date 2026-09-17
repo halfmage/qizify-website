@@ -22,7 +22,7 @@ interface Props {
 	ogImage?: string;
 	keyTakeaways?: string[];
 	faq?: { q: string; a: string }[];
-	ctaVariant?: 'demo' | 'consultation';
+	ctaVariant?: 'demo' | 'consultation' | 'guide';
 	heroImage?: string;
 }
 
@@ -67,11 +67,22 @@ const takeawaysHeading = lang === 'en' ? 'Key Takeaways' : 'Auf einen Blick';
 const faqHeading = lang === 'en' ? 'Frequently Asked Questions' : 'Häufig gestellte Fragen';
 const tocLabel = lang === 'en' ? 'On this page' : 'Auf dieser Seite';
 // Conversion path is chosen per post via `ctaVariant`. Solutions/custom-dev posts
-// use the strategy-call consultation flow; everything else keeps the product demo.
+// use the strategy-call consultation flow; 'guide' posts send the reader to the
+// /ai-guides lead magnet and open no modal at all; everything else keeps the demo.
 const isConsultation = ctaVariant === 'consultation';
+const isGuide = ctaVariant === 'guide';
+const GUIDE_HREF = '/ai-guides';
 const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
+// A guide post's CTAs are links, so nothing should carry a modal trigger.
+const ctaHref = isGuide ? GUIDE_HREF : undefined;
 
-const sidebarCta = isConsultation
+const sidebarCta = isGuide
+	? {
+		title: lang === 'en' ? 'The longer version is free' : 'Die ausführliche Fassung, kostenlos',
+		sub: lang === 'en' ? 'Guides for product managers and product owners. No email required.' : 'Leitfäden für Product Manager und Product Owner. Ohne E-Mail-Versand.',
+		button: lang === 'en' ? 'Get the guides' : 'Leitfäden holen',
+	}
+	: isConsultation
 	? {
 		title: lang === 'en' ? 'Quote or strategy call' : 'Angebot oder Gespräch',
 		sub: lang === 'en' ? 'A quote or a 30-min call, no pitch.' : 'Kostenschätzung oder 30-Min-Gespräch, kein Pitch.',
@@ -85,7 +96,17 @@ const sidebarCta = isConsultation
 
 // Footer CTA: consultation posts reuse the solutions strategy-call copy (headline,
 // sub, button, micro-proof note); demo posts keep the site-wide blog CTA.
-const footerCta = isConsultation
+const footerCta = isGuide
+	? {
+		headline: lang === 'en' ? 'Practical, and ready to apply' : 'Praktisch und sofort anwendbar',
+		subheadline: lang === 'en'
+			? 'Two free guides for product managers and product owners. Thirty minutes a week is enough to start. The download opens straight away, we do not email you the file, and it starts no sales sequence.'
+			: 'Zwei kostenlose Leitfäden für Product Manager und Product Owner. Dreißig Minuten pro Woche genügen für den Anfang. Der Download startet sofort, wir schicken die Datei nicht per E-Mail, und es folgt keine Verkaufssequenz.',
+		button: lang === 'en' ? 'Get the guides, free' : 'Leitfäden kostenlos holen',
+		note: undefined,
+		href: GUIDE_HREF,
+	}
+	: isConsultation
 	? {
 		headline: content.solutions.cta.headline,
 		subheadline: lang === 'en'
@@ -172,8 +193,9 @@ const blogPostingSchema = {
 	<Header
 		logo={content.nav.logo}
 		menu={content.nav.menu}
-		cta={isConsultation ? content.solutions.hero.ctaPrimary : content.nav.cta}
+		cta={isGuide ? (lang === 'en' ? 'Get the guides' : 'Leitfäden holen') : isConsultation ? content.solutions.hero.ctaPrimary : content.nav.cta}
 		ctaModalTrigger={ctaTrigger}
+		ctaHref={ctaHref}
 		currentLang={lang}
 		currentPath={currentPath}
 	/>
@@ -278,8 +300,8 @@ const blogPostingSchema = {
 						<nav id="toc" aria-label={tocLabel} class="flex flex-col border-l border-border text-sm"></nav>
 					</div>
 					<a
-						href={`#${ctaTrigger}`}
-						data-modal-trigger={ctaTrigger}
+						href={isGuide ? GUIDE_HREF : `#${ctaTrigger}`}
+						data-modal-trigger={isGuide ? undefined : ctaTrigger}
 						class="group block rounded-lg border border-border bg-surface p-5 hover:border-primary/40 transition-colors"
 					>
 						<p class="text-white font-semibold text-sm mb-1">{sidebarCta.title}</p>
@@ -348,9 +370,11 @@ const blogPostingSchema = {
 		demoHref={isConsultation ? '#project-inquiry' : '#demo-request'}
 	/>
 
-	<!-- Each post renders exactly the modal its CTAs (and the footer link) point to:
+	<!-- Each post renders the modal its CTAs and the site-footer link point to:
 	     ConsultationModal (#project-inquiry) for consultation posts, DemoRequestModal
-	     (#demo-request) otherwise. -->
+	     (#demo-request) otherwise. A 'guide' post's own CTAs are links rather than
+	     modals, but it still renders the demo modal so the sitewide footer's
+	     "Request Demo" link is not left dangling. -->
 	{isConsultation ? <ConsultationModal currentLang={lang} /> : <DemoRequestModal currentLang={lang} />}
 
 	<script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema).replace(/<\/script/gi, '<\\/script')} />

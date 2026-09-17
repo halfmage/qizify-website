@@ -20,7 +20,9 @@ const blog = defineCollection({
 		// ctaVariant: which conversion path the shared BlogLayout renders.
 		// 'demo' (default) = product-demo CTA + DemoRequestModal (Azubi platform posts).
 		// 'consultation' = strategy-call CTA + ConsultationModal (solutions / custom-dev posts).
-		ctaVariant: z.enum(['demo', 'consultation']).default('demo'),
+		// 'guide' = links to the /ai-guides lead magnet, no modal. For informational
+		// posts whose reader wants to learn rather than buy.
+		ctaVariant: z.enum(['demo', 'consultation', 'guide']).default('demo'),
 		// keyTakeaways: 3–5 bullets, rendered as a card above the article body
 		// and used by AI engines as a verbatim-citation target. Plain text only.
 		keyTakeaways: z.array(z.string()).optional(),
