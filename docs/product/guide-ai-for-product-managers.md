@@ -20,6 +20,8 @@ Structure: docs/product/ai-guide-structure.md
 
 # AI for product managers
 
+[DECK] Where it changes the product, not just the pace.
+
 **97% of product managers say AI made them faster. Only 64% say it made their product
 better.**
 

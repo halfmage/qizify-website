@@ -21,6 +21,8 @@ Structure: docs/product/ai-guide-structure.md
 
 # AI for product owners
 
+[DECK] Where it fits your sprint, and where it stops.
+
 **83% of agile practitioners use AI tools. 15% have had any training in using it in an
 agile context.**
 

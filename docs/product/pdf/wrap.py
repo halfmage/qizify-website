@@ -48,6 +48,10 @@ body{
   font-size:31pt; line-height:1.04; letter-spacing:-0.025em; font-weight:500;
   color:var(--white); margin:0 0 8mm; max-width:none;
 }
+.cover .deck{
+  font-size:14.5pt; line-height:1.25; letter-spacing:-0.012em; font-weight:500;
+  color:var(--accent); margin:0 0 8mm; max-width:none;
+}
 .cover .stat{
   font-size:13pt; line-height:1.45; color:var(--white); font-weight:500;
   border-left:2px solid var(--accent); padding-left:5mm; margin:0 0 8mm; max-width:none;
@@ -173,6 +177,9 @@ body = body.replace(m.group(0), "", 1) if m else body
 stat = re.search(r'<p><strong>(.*?)</strong></p>', body, re.S)
 stat_html = stat.group(1) if stat else ""
 if stat: body = body.replace(stat.group(0), "", 1)
+deck = re.search(r'<p>\[DECK\](.*?)</p>', body, re.S)
+deck_html = deck.group(1).strip() if deck else ""
+if deck: body = body.replace(deck.group(0), "", 1)
 byline = re.search(r'<p><strong>Alesia Kunz</strong>.*?</p>', body, re.S)
 byline_html = byline.group(0) if byline else ""
 if byline: body = body.replace(byline_html, "", 1)
@@ -217,8 +224,9 @@ if items:
     toc_html='<section class="toc"><h2>Contents</h2><ol>'+''.join(rows)+'</ol></section>'
 
 cover = f"""<section class="cover">
-  <div class="eyebrow">LearnSlice guide</div>
+  <div class="eyebrow">LearnSlice &middot; practical guide</div>
   <h1>{title}</h1>
+  <p class="deck">{deck_html}</p>
   <p class="stat">{stat_html}</p>
   <div class="byline">{byline_html}</div>
   {'<div class="rule"></div>' if meta_html else ''}
