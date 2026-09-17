@@ -28,7 +28,7 @@ manager and product owner. Built on experience from real teams and projects, and
 published research.
 
 *Inside: the licence nobody checks, the wrong answer that reads perfectly, and the five
-places in a product week where AI earns its keep.*
+places in a product week where AI is worth the time.*
 
 That gap is what this guide is about. Not how to write a clever prompt, but how to get
 from working quicker to shipping something a stakeholder would notice.
@@ -268,7 +268,7 @@ a minute instead of twenty.
 
 ---
 
-## Part 2: five places it earns its keep
+## Part 2: five places where AI is worth the time
 
 Rules are easy to agree with and easy to forget. Here they are in the five places a
 product week actually bends, ordered by how much the profession says each one hurts, so
