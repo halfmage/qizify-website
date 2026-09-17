@@ -33,8 +33,8 @@ followed by a lack of training material at 36% and not knowing where to start at
 manager and product owner. Built on experience from real teams and projects, and on
 published research.
 
-*Inside: why Copilot cannot read your backlog, the five things that are actually yours,
-and the prompts worth saving.*
+*Inside: the connector that works and still returns nothing, the one part of the job no
+tool can take, and the prompts worth keeping.*
 
 ![Everyone has it and almost nobody was taught: 83% of agile practitioners use AI tools, while only 15% have had any formal training on using it in an agile context, and 67% of their organisations already provide the tools. Source: AI4Agile Practitioners Report 2026, 289 practitioners across more than 20 countries.](/images/blog/po-training-gap.svg)
 

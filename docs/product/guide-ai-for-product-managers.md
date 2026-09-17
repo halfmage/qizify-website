@@ -27,8 +27,8 @@ better.**
 manager and product owner. Built on experience from real teams and projects, and on
 published research.
 
-*Inside: why your Copilot probably cannot see your work, the five places AI earns its
-keep in a product week, and the prompts worth saving.*
+*Inside: the licence nobody checks, the wrong answer that reads perfectly, and the five
+places in a product week where AI earns its keep.*
 
 That gap is what this guide is about. Not how to write a clever prompt, but how to get
 from working quicker to shipping something a stakeholder would notice.
