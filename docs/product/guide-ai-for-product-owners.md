@@ -23,13 +23,12 @@ Structure: docs/product/ai-guide-structure.md
 
 [DECK] Where it fits your sprint, and where it stops.
 
-**83% of agile practitioners use AI tools. 15% have had any training in using it in an
-agile context.**
+**Of the organisations already using generative AI, 27% give their people any training
+in it. Nine in ten are running on tools anyone can open in a browser.**
 
-That is the whole problem. Access is not the constraint. 67% of organisations already
-provide the tools, and 55% of practitioners still spend a tenth or less of their working
-time with them. The most cited obstacle is uncertainty about how to integrate it, at 54%,
-followed by a lack of training material at 36% and not knowing where to start at 31%.
+That is the whole problem, and it is not a budget problem. Only 21% of those
+organisations have written down any rules for using it. So the tool is in the building,
+nobody was taught it, and nobody agreed what may be typed into it.
 
 **Alesia Kunz**, CEO of LearnSlice. 17+ years in software engineering as a product
 manager and product owner. Built on experience from real teams and projects, and on
@@ -38,19 +37,22 @@ published research.
 *Inside: the connector that works and still returns nothing, the one part of the job no
 tool can take, and the prompts worth keeping.*
 
-![Everyone has it and almost nobody was taught: 83% of agile practitioners use AI tools, while only 15% have had any formal training on using it in an agile context, and 67% of their organisations already provide the tools. Source: AI4Agile Practitioners Report 2026, 289 practitioners across more than 20 countries.](/images/blog/po-training-gap.svg)
+![Everyone is using it and almost nobody set it up: among establishments already using generative AI, 90% run on freely accessible tools, 27% offer their staff any training in the professional use of it, and 21% have written internal rules for using it. Source: IAB-Betriebspanel 2025, published as IAB-Kurzbericht 8 of 2026.](/images/blog/po-training-gap.svg)
 
-Those figures come from the AI4Agile Practitioners Report 2026, 289 practitioners across
-more than 20 countries. It is a small, self-selected sample that does not break results
-out by role, so read it as a direction of travel rather than a measurement of product
-owners specifically. Everything about the role itself comes from the Scrum Guide, and
-everything about Copilot from Microsoft's own documentation, checked September 2026.
+Those figures come from the IAB-Betriebspanel, the establishment panel run by the
+research institute of the German Federal Employment Agency. Everything about the role
+itself comes from the Scrum Guide, everything about Copilot from Microsoft's own
+documentation, and the European figures from Eurostat. Every one of them was read at
+source rather than taken from a summary.
 
-![What actually stops agile practitioners using AI: uncertainty about how to integrate it 54%, lack of training material 36%, ethical and data concerns 35%, not knowing where to start 31%. Only 1% consider AI irrelevant to their work. Source: AI4Agile Practitioners Report 2026.](/images/blog/po-obstacles.svg)
+![What stops EU enterprises that considered AI from adopting it: no relevant expertise 71%, unclear legal consequences 53%, data protection and privacy 49%, and only 21% who judged it not useful for them. Source: Eurostat, use of artificial intelligence in enterprises, 2025 data, 157,000 enterprises surveyed.](/images/blog/po-obstacles.svg)
 
-## Nearly a third do not know where to start
+## The training barely exists
 
-Not knowing where to start is named by 31% of practitioners, so you are in company.
+If you have not started, it is not for want of trying. Across Australia, Germany,
+Singapore and the United States, between 0.3% and 5.5% of analysed training courses
+deliver any AI content at all, and most of what exists targets specialists rather than
+the people who simply need to use the thing.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
 give it, trained on an enormous amount of writing. That is why it is fluent, why it is
@@ -153,8 +155,9 @@ there are additional European Union Data Boundary safeguards.
 **The caveat that matters.** All of that describes a work account signed in with your
 company identity. A personal account is a different product with different terms.
 
-Ethical and data concerns are named by 35% of practitioners. This section is the answer
-to most of them. This is practical guidance, not
+Concerns about data protection and privacy keep 49% of the European enterprises that
+considered AI from adopting it, and unclear legal consequences another 53%. This
+section is the answer to most of both. This is practical guidance, not
 legal advice, and your company's own rules sit on top of it.
 
 ### 6. It will lie to you in your own house style
@@ -228,8 +231,9 @@ When an answer comes out genuinely good, save the prompt that produced it, with 
 parts that change marked in square brackets, wherever your team already looks. Next time
 the same job takes a minute instead of twenty.
 
-72% of practitioners report reduced cognitive load from using AI. Saved prompts are how
-you get that as a habit rather than a one-off.
+Nine in ten organisations using generative AI are running on freely accessible tools,
+which means nobody is saving your prompts for you. Saved prompts are how this becomes a
+habit rather than a one-off.
 
 ---
 
@@ -408,9 +412,10 @@ what changed for a user is worth a conversation with the team.
 
 ### Back to the obstacle
 
-The largest thing standing between agile practitioners and AI is not the tool and not
-the budget. It is uncertainty about how it integrates, named by 54%, well ahead of
-anything else.
+The largest thing standing between organisations and AI is not the tool and not the
+budget. It is a lack of relevant expertise, named by 71% of the EU enterprises that
+considered AI and did not adopt it, well ahead of anything else. Cost came nowhere
+near the top.
 
 Those five chapters are the answer, and the answer is deliberately unexciting. Nothing
 above asks you to adopt a new practice, add a ceremony or change how your team works.
@@ -483,7 +488,8 @@ Source: this thread only.
 ## Part 4: staying current on thirty minutes a week
 
 The training gap at the top of this guide is not going to be closed by waiting for a
-course. Here is a routine that costs nothing and needs nobody's approval.
+course, because between 0.3% and 5.5% of courses carry any AI content and most of that
+aims at specialists. Here is a routine that costs nothing and needs nobody's approval.
 
 ### Thirty minutes a week
 
@@ -525,18 +531,24 @@ where the other guide is.
 
 ## Sources
 
-Every source below was checked on 17 September 2026 and resolves.
+Every source below was read at source, not taken from a summary of it, and every link
+was checked on 17 September 2026.
 
 - **The Scrum Guide**, for every statement about what a product owner is accountable
   for and what happens in each Scrum event. Quoted, not interpreted.
   scrumguides.org/scrum-guide.html
-- **AI4Agile Practitioners Report 2026**, 289 agile practitioners across more than 20
-  countries, published February 2026, for every percentage about AI use among
-  practitioners. Two limits, stated plainly. It is a small, self-selected sample with
-  no breakdown by role, so read it as a direction of travel. And unlike every other
-  source here, we have not read the report itself: its publisher's page would not open
-  to us, so the figures are taken as reported consistently by two independent sources.
-  scrum.org/resources/blog/ai4agile-practitioners-report-2026
+- **IAB-Betriebspanel 2025**, the establishment panel run by the research institute of
+  the German Federal Employment Agency, published as IAB-Kurzbericht 8 of 2026, for the
+  figures on who uses generative AI, who trains people in it, who has written rules for
+  it, and what share run on freely accessible tools.
+  doku.iab.de/kurzber/2026/kb2026-08.pdf
+- **Eurostat**, use of artificial intelligence in enterprises, 2025 data, for why
+  enterprises that considered AI did not adopt it. 157,000 of the EU's 1.53 million
+  enterprises surveyed.
+  ec.europa.eu/eurostat/statistics-explained, dataset isoc_eb_ai
+- **OECD**, Bridging the AI skills gap: is training keeping up, April 2025, for how
+  little of the available training carries any AI content.
+  oecd.org/en/publications/bridging-the-ai-skills-gap_66d0702e-en.html
 - **Microsoft**, product documentation, for Copilot licence tiers, grounding, data
   protection, file referencing and prompt structure, and for the Jira and Confluence
   connectors: an administrator must deploy them and they enforce the source system's

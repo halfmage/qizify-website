@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img" aria-label="What stops agile practitioners using AI: uncertainty about how to integrate it 54 percent, lack of training material 36 percent, ethical and data concerns 35 percent, not knowing where to start 31 percent. Only 1 percent consider AI irrelevant to their work. Source: AI4Agile Practitioners Report 2026.">
-  <rect x="0" y="0" width="520" height="300" rx="16" fill="#2a2622"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 292" role="img" aria-label="Reasons EU enterprises that considered AI did not adopt it: lack of relevant expertise 71 percent, lack of clarity about the legal consequences 53 percent, concerns about data protection and privacy 49 percent, and the technologies not being considered useful for the enterprise 21 percent. Source: Eurostat, use of artificial intelligence in enterprises, 2025 data, 157,000 enterprises surveyed.">
+  <rect x="0" y="0" width="520" height="292" rx="16" fill="#2a2622"/>
   <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">What actually stops people</text>
   <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">Not the tool, and not the budget</text>
-  <text x="24" y="96" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">Not sure how it fits the work</text>
-  <rect x="270" y="84" width="170" height="18" rx="4" fill="#37322c"/>
-  <rect x="270" y="84" width="170" height="18" rx="4" fill="#e8b07a"/>
-  <text x="452" y="98" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">54%</text>
-  <text x="24" y="140" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">No training material</text>
-  <rect x="270" y="128" width="170" height="18" rx="4" fill="#37322c"/>
-  <rect x="270" y="128" width="113" height="18" rx="4" fill="#786d60"/>
-  <text x="452" y="142" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">36%</text>
-  <text x="24" y="184" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">Ethical and data concerns</text>
-  <rect x="270" y="172" width="170" height="18" rx="4" fill="#37322c"/>
-  <rect x="270" y="172" width="110" height="18" rx="4" fill="#786d60"/>
-  <text x="452" y="186" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">35%</text>
-  <text x="24" y="228" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">Do not know where to start</text>
-  <rect x="270" y="216" width="170" height="18" rx="4" fill="#37322c"/>
-  <rect x="270" y="216" width="98" height="18" rx="4" fill="#786d60"/>
-  <text x="452" y="230" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">31%</text>
+  <text x="24" y="96" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">No relevant expertise</text>
+  <rect x="280" y="84" width="160" height="18" rx="4" fill="#37322c"/>
+  <rect x="280" y="84" width="160" height="18" rx="4" fill="#e8b07a"/>
+  <text x="452" y="98" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">71%</text>
+  <text x="24" y="140" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">Unclear legal consequences</text>
+  <rect x="280" y="128" width="160" height="18" rx="4" fill="#37322c"/>
+  <rect x="280" y="128" width="119" height="18" rx="4" fill="#786d60"/>
+  <text x="452" y="142" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">53%</text>
+  <text x="24" y="184" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">Data protection and privacy</text>
+  <rect x="280" y="172" width="160" height="18" rx="4" fill="#37322c"/>
+  <rect x="280" y="172" width="110" height="18" rx="4" fill="#786d60"/>
+  <text x="452" y="186" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">49%</text>
+  <text x="24" y="228" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#cfc7be">Not useful for us</text>
+  <rect x="280" y="216" width="160" height="18" rx="4" fill="#37322c"/>
+  <rect x="280" y="216" width="47" height="18" rx="4" fill="#786d60"/>
+  <text x="452" y="230" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4" font-weight="600">21%</text>
   <path d="M24,256 L496,256" stroke="#46402f" stroke-width="1"/>
-  <text x="24" y="282" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cc7a3e" font-weight="600">1% think AI is irrelevant to their work.</text>
+  <text x="24" y="280" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cc7a3e" font-weight="600">Knowledge, not cost, is the binding constraint.</text>
 </svg>
