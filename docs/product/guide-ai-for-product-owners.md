@@ -609,7 +609,8 @@ with: it cannot order your backlog, decide what is valuable or know why an item 
 Part 0, item 2 named one you do not. Your Copilot probably cannot read your tickets,
 your documents or your decisions, and that is an engineering problem rather than a fact
 of life. We build the layer that closes it, grounded on your own content, hosted in the
-EU or on your own infrastructure.
+EU or on your own infrastructure. What we have already built is at
+learnslice.com/solutions.
 
 **Why us rather than a consultancy.** Grounding, verification and what may legally go
 into a prompt were engineering constraints for us before they were chapters in this
