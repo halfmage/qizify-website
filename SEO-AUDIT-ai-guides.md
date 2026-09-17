@@ -36,6 +36,13 @@ marks are near zero.
 | Meta description length | 173 chars | 150 |
 | Stale claim in body | "Nothing before the last page is an advertisement" | Corrected, that page no longer exists |
 
+**Scope narrowed 2026-09-17.** `docs/product/ai-guides-page-strategy.md` drops
+the workshop push and makes the weekly email the conversion that matters.
+Search now has one job here, which is to bring product managers and product
+owners who want an answer. Commercial clusters are out of scope, so the
+"AI academy" and workshop rows in the tables below are recorded as research
+rather than as targets. The product owner cluster is the whole opportunity.
+
 Still open: the topical cluster in the medium-priority section, and the decision
 about whether anything should sit above the gate.
 

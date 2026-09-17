@@ -172,3 +172,34 @@ AFTER:  97% of product managers say AI made them faster. Only 64% say it
 4. Meta description to 150 characters. **Done in the SEO pass.**
 5. Build a separate page for the workshop cluster. **Open, and the single
    biggest commercial opportunity found in this research.**
+
+
+---
+
+## Keyword re-run, 2026-09-17, against the narrowed strategy
+
+The strategy in `docs/product/ai-guides-page-strategy.md` removed the commercial
+clusters from scope. Search now has one job: bring product managers and product
+owners who want an answer. Four informational clusters were re-tested.
+
+| Cluster | Page one held by | Verdict |
+|---|---|---|
+| AI for product owners, AI backlog refinement | agilemania, premieragile, agileseekers, Substack posts | **Target.** Weakest field found |
+| AI user stories and acceptance criteria | Mountain Goat Software holds three of nine, then storiesonboard, agilemania, faqprime | **Reachable on long-tail.** Now woven into the product owner section |
+| AI prompts for product managers | Productboard twice, Glean, Upwork, pmprompt.com, bagel.ai, INSIDEA, plus named creators | **Skip.** Saturated, and competing on prompt count is a losing game |
+| Copilot vs ChatGPT for enterprise | Microsoft plus a wall of managed-service-provider blogs | **Skip.** Also not what the guides are about |
+
+### The signal worth acting on
+
+Mountain Goat Software, the most authoritative voice in that field, currently
+ranks with a piece arguing that AI-generated user stories still need human
+judgment. That is the same argument the product owner guide makes.
+
+Two conclusions follow. The positioning is externally validated, which is
+reassuring. And we should not try to outrank Mike Cohn on his own framing.
+The differentiator is the part he does not cover: the enterprise tool reality.
+Which Copilot licence can actually read a backlog, what may legally be pasted
+into it, and what to do when the answer is neither.
+
+That is why the page keeps a heading on Copilot and the backlog, and why the
+prompt section stays for readers without being a ranking target.
