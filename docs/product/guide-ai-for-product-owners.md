@@ -23,11 +23,11 @@ Structure: docs/product/ai-guide-structure.md
 
 [DECK] Where it fits your sprint, and where it stops.
 
-**Of the organisations already using generative AI, 27% give their people any training
-in it. Nine in ten are running on tools anyone can open in a browser.**
+**Of the workplaces already using generative AI, 27% give their people any training in
+it. Nine in ten are running on freely accessible tools.**
 
-That is the whole problem, and it is not a budget problem. Only 21% of those
-organisations have written down any rules for using it. So the tool is in the building,
+That is the whole problem, and it is not a budget problem. Only 21% of those workplaces
+have written down any rules for using it. So the tool is in the building,
 nobody was taught it, and nobody agreed what may be typed into it.
 
 **Alesia Kunz**, CEO of LearnSlice. 17+ years in software engineering as a product
@@ -49,10 +49,10 @@ source rather than taken from a summary.
 
 ## The training barely exists
 
-If you have not started, it is not for want of trying. Across Australia, Germany,
-Singapore and the United States, between 0.3% and 5.5% of analysed training courses
-deliver any AI content at all, and most of what exists targets specialists rather than
-the people who simply need to use the thing.
+If you have not started, it is not for want of trying. The OECD looked at the training
+actually on offer across Australia, Germany, Singapore and the United States and found
+that between 0.3% and 5.5% of courses deliver any AI content at all. Most of what does
+exist targets specialists rather than the people who simply need to use the thing.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
 give it, trained on an enormous amount of writing. That is why it is fluent, why it is
@@ -155,9 +155,9 @@ there are additional European Union Data Boundary safeguards.
 **The caveat that matters.** All of that describes a work account signed in with your
 company identity. A personal account is a different product with different terms.
 
-Concerns about data protection and privacy keep 49% of the European enterprises that
-considered AI from adopting it, and unclear legal consequences another 53%. This
-section is the answer to most of both. This is practical guidance, not
+In Eurostat's survey of EU enterprises, data protection and privacy is the reason 49%
+of those that considered AI did not adopt it, and unclear legal consequences the reason
+for another 53%. This section is the answer to most of both. This is practical guidance, not
 legal advice, and your company's own rules sit on top of it.
 
 ### 6. It will lie to you in your own house style
@@ -413,8 +413,8 @@ what changed for a user is worth a conversation with the team.
 ### Back to the obstacle
 
 The largest thing standing between organisations and AI is not the tool and not the
-budget. It is a lack of relevant expertise, named by 71% of the EU enterprises that
-considered AI and did not adopt it, well ahead of anything else. Cost came nowhere
+budget. It is a lack of relevant expertise, named by 71% of the EU enterprises Eurostat
+surveyed that considered AI and did not adopt it, well ahead of anything else. Cost came nowhere
 near the top.
 
 Those five chapters are the answer, and the answer is deliberately unexciting. Nothing
@@ -488,8 +488,8 @@ Source: this thread only.
 ## Part 4: staying current on thirty minutes a week
 
 The training gap at the top of this guide is not going to be closed by waiting for a
-course, because between 0.3% and 5.5% of courses carry any AI content and most of that
-aims at specialists. Here is a routine that costs nothing and needs nobody's approval.
+course, because on the OECD's count between 0.3% and 5.5% of courses carry any AI
+content and most of that aims at specialists. Here is a routine that costs nothing and needs nobody's approval.
 
 ### Thirty minutes a week
 
