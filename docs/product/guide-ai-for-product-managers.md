@@ -356,8 +356,8 @@ Source: only the transcript below.
 ```
 
 **Your first step.** Take the most recent customer conversation you have any record of,
-even rough notes, and run it. The contradictions list is usually the part that earns the
-fifteen minutes.
+even rough notes, and run it. Take the contradictions to the team. They are where your
+roadmap is quietly wrong, and nobody can see that from a summary.
 
 ### Chapter 3. Everything is important, and that is the problem
 
@@ -472,6 +472,27 @@ Source: only what I have written above.
 
 **Your first step.** Take the last metric movement you had to explain and run it. If the
 cheapest check on the list is one nobody ran, that is your meeting.
+
+### Back to the gap
+
+Five chapters in, it is worth returning to the number this guide opened with. 97% of
+product managers say AI made them faster. 64% say it made their product better. That
+missing third is not a mystery, and it is visible in the five chapters you just read.
+
+AI does two different things in a product week. It changes how fast you produce the
+work, which is Chapter 1 and Chapter 4: themes instead of a pile, a second draft instead
+of a blank page, one update rewritten three ways. And it changes what you decide, which
+is Chapter 2, 3 and 5: the question you had not thought to ask before the interview, the
+test that lets you say no, the explanation you ruled out before the meeting.
+
+Only the second kind moves the product. If you use it for drafting alone you will land
+squarely in the 97% and your roadmap will look exactly as it did before.
+
+That is why no prompt in this guide hands you a finished artefact. Every one of them
+returns something you still have to decide: themes and the question behind each, the
+objections to your own case, the parts of a strategy too vague to test, the
+explanations ranked by which is cheapest to rule out. The output is not the work. It
+is the thing you take into the room where the work gets decided.
 
 ---
 
