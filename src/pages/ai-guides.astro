@@ -28,7 +28,7 @@ const INPUT =
 
 <BaseLayout
 	title="AI guides for product managers and product owners | LearnSlice"
-	description="Two practical guides on using AI in product work, benchmarked against published research. What the tools can do, what they cannot, and the prompts worth keeping."
+	description="97% of product managers say AI made them faster. Only 64% say it made their product better. Two practical guides on closing that gap, with every figure traced to its source."
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="AI guides"
@@ -43,8 +43,15 @@ const INPUT =
 			</h1>
 			<p class="text-lg text-muted leading-relaxed mb-8">
 				Two guides on closing that gap, one for product managers and one for product owners.
-				Every figure is traced to the body that published it. Nothing is estimated, and nothing
-				before the last page is an advertisement.
+				Every number was traced back to the organisation that published it: Product Focus,
+				the Scrum Guide, Microsoft's own documentation. Nothing is estimated. Nothing before
+				the last page is an advertisement.
+			</p>
+
+			<p class="text-sm text-muted leading-relaxed mb-10">
+				Written by <strong class="text-white font-medium">Alesia Kunz</strong>, CEO of
+				LearnSlice, after 17+ years as a product manager and product owner. The field notes
+				throughout are hers.
 			</p>
 
 			<ul class="list-none p-0 m-0 mb-12 grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm text-muted">
@@ -124,7 +131,7 @@ const INPUT =
 
 					<fieldset class="border-0 p-0 m-0">
 						<legend class="text-sm font-medium text-white/80 mb-1 p-0">Which of these would actually help you?</legend>
-						<p class="text-xs text-gray m-0 mb-2">This is the only thing we ask for in return.</p>
+						<p class="text-xs text-gray m-0 mb-2">This is the only thing we ask for in return. It decides nothing about your download.</p>
 						<div class="flex flex-col gap-2">
 							<label class="flex items-start gap-2.5 text-sm text-muted cursor-pointer bg-input-bg border border-border-light rounded-lg px-4 py-2.5">
 								<input type="radio" name="interest" value="AI academy for my team" required class="accent-primary mt-0.5" />
@@ -228,7 +235,7 @@ const INPUT =
 					if (!res.ok) throw new Error('submission failed');
 				}
 				link.href = guide.file;
-				note.textContent = guide.title + ', ' + guide.pages + ', PDF.';
+				note.textContent = guide.title + ', ' + guide.pages + '. The twenty-minute path starts on page three.';
 				gate.classList.add('hidden');
 				result.classList.remove('hidden');
 				result.focus({ preventScroll: true });
