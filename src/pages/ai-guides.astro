@@ -11,11 +11,13 @@ const currentPath = '/ai-guides';
 // /guides/ is disallowed in robots.txt. See docs/product/ai-guide-conversion-design.md.
 const GUIDES = {
 	pm: {
+		id: 'pm',
 		file: '/guides/ai-for-product-managers-2ed946c94f23f52d.pdf',
 		title: 'AI for product managers',
 		pages: '24 pages',
 	},
 	po: {
+		id: 'po',
 		file: '/guides/ai-for-product-owners-cf79368567bb6cdc.pdf',
 		title: 'AI for product owners',
 		pages: '20 pages',
@@ -348,6 +350,16 @@ const INPUT =
 		const consent = document.getElementById('g-consent');
 		const error = document.getElementById('g-error');
 
+		// Simple Analytics events. The metadata carries the guide id only, never a form value.
+		function sa(name, meta) { try { if (typeof window.sa_event === 'function') window.sa_event(name, meta); } catch (e) {} }
+
+		// The first input in the form starts the funnel: start, submit, download.
+		let formStarted = false;
+		form.addEventListener('input', () => {
+			if (!formStarted) { formStarted = true; sa('guide_form_start'); }
+		});
+		link.addEventListener('click', () => sa('guide_download_click', { guide: link.dataset.guide }));
+
 		// Submit stays muted until consent is ticked, matching the readiness check.
 		const sync = () => { submitBtn.disabled = !consent.checked; };
 		consent.addEventListener('change', sync);
@@ -386,13 +398,16 @@ const INPUT =
 					});
 					if (!res.ok) throw new Error('submission failed');
 				}
+				sa('guide_form_submit', { guide: guide.id });
 				link.href = guide.file;
+				link.dataset.guide = guide.id;
 				note.textContent = guide.title + ', ' + guide.pages + '. The twenty-minute path starts on page three.';
 				gate.classList.add('hidden');
 				result.classList.remove('hidden');
 				result.focus({ preventScroll: true });
 				result.scrollIntoView({ behavior: 'smooth', block: 'start' });
 			} catch (err) {
+				sa('guide_form_error');
 				submitBtn.disabled = !consent.checked;
 				submitBtn.textContent = 'Get my guide, free';
 				error.textContent = 'Something went wrong. Please try again, or write to us directly.';

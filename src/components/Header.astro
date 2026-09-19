@@ -45,23 +45,49 @@ const blogBasePath = currentLang === 'de' ? '/de/blog' : '/blog';
 const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View all posts';
 
 // TEMPORARY guide announcement. The guides are English only, and the bar is not shown
-// on the page it points to. TO REMOVE: delete this flag and the <a> block below.
+// on the page it points to. TO REMOVE: delete this flag and the block below, script included.
 const showGuideBar = currentLang === 'en' && !currentPath.startsWith('/ai-guides');
 ---
 
 <!-- Announcement bar: in the page flow, so it scrolls away and the header takes the top.
      Accent, not the primary purple, so it never competes with the header CTA. -->
 {showGuideBar && (
-	<a href="/ai-guides" class="group block bg-accent text-dark no-underline hover:bg-[#e8b07a] transition-colors duration-200">
-		<span class="max-w-container mx-auto px-6 lg:px-8 py-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-xs sm:text-sm">
-			<span class="bg-dark text-accent text-[10px] font-bold tracking-[0.1em] uppercase px-2 py-0.5 rounded-full">New</span>
-			<span class="font-medium">Free AI guides for product managers and product owners</span>
-			<span class="hidden sm:inline-flex items-center gap-1 font-semibold">
-				Read them
-				<span class="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+	<Fragment>
+		<a href="/ai-guides" id="guide-bar" class="group block bg-accent text-dark no-underline hover:bg-[#e8b07a] transition-colors duration-200">
+			<span class="max-w-container mx-auto px-6 lg:px-8 py-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-xs sm:text-sm">
+				<span class="bg-dark text-accent text-[10px] font-bold tracking-[0.1em] uppercase px-2 py-0.5 rounded-full">New</span>
+				<span class="font-medium">Free AI guides for product managers and product owners</span>
+				<span class="hidden sm:inline-flex items-center gap-1 font-semibold">
+					Read them
+					<span class="transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+				</span>
 			</span>
-		</span>
-	</a>
+		</a>
+		<script is:inline>
+			(function () {
+				var bar = document.getElementById('guide-bar');
+				if (!bar) return;
+				bar.addEventListener('click', function (e) {
+					try {
+						if (typeof window.sa_event !== 'function') return;
+						// The click starts a full page load, which can cancel the event request.
+						// A plain left click waits for the request, 300 ms at most. A click that
+						// opens a new tab keeps this page alive, so it needs no wait. Neither does
+						// a blocked analytics script, which never calls back.
+						var plain = e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
+						if (!plain || !window.sa_loaded) { window.sa_event('guide_banner_click'); return; }
+						e.preventDefault();
+						var done = false;
+						var go = function () { if (done) return; done = true; location.href = bar.href; };
+						window.sa_event('guide_banner_click', go);
+						setTimeout(go, 300);
+					} catch (err) {
+						if (e.defaultPrevented) location.href = bar.href;
+					}
+				});
+			})();
+		</script>
+	</Fragment>
 )}
 
 <!-- Sticky, not fixed, so the header sits below the announcement bar until the bar scrolls
