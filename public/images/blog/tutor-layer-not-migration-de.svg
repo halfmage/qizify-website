@@ -1,37 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="596" viewBox="0 0 440 596" role="img" aria-label="Diagramm: Ihr LMS bleibt, wie es ist, mit Kursen und Einschreibungen, Notenbuch und Zertifikaten, Reporting und Rollen sowie jahrelang aufgebautem Material. Die Lernbegleiter-Schicht kommt daneben und wird ueber LTI 1.3 angebunden, mit Deep Linking, Names and Roles sowie Assignment and Grade Services. Die neue Schicht ergaenzt einen Suchindex ueber Ihre Inhalte, Gedaechtnis fuer jeden Lernenden, Bewertung und Leitplanken sowie ein austauschbares Modell.">
-  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a89e92"/></marker></defs>
-  <rect x="0" y="0" width="440" height="596" rx="16" fill="#2a2622"/>
-  <text x="20" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="21" fill="#faf8f4" font-weight="600">Eine Schicht statt einer Migration</text>
-  <text x="20" y="57" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a89e92">Was bleibt, und was neu dazukommt</text>
-  <rect x="20" y="76" width="400" height="158" rx="10" fill="#37322c" stroke="#46402f" stroke-width="1"/>
-  <text x="38" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#a89e92">BLEIBT, WIE ES IST</text>
-  <text x="38" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">Ihr LMS</text>
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a1a1aa"/></marker></defs>
+  <rect x="0" y="0" width="440" height="596" rx="16" fill="#18181b"/>
+  <text x="20" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="21" fill="#fafafa" font-weight="600">Eine Schicht statt einer Migration</text>
+  <text x="20" y="57" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a1a1aa">Was bleibt, und was neu dazukommt</text>
+  <rect x="20" y="76" width="400" height="158" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="38" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#a1a1aa">BLEIBT, WIE ES IST</text>
+  <text x="38" y="126" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#fafafa" font-weight="600">Ihr LMS</text>
   <circle cx="44" cy="149" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="154" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Kurse und Einschreibungen</text>
+  <text x="58" y="154" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Kurse und Einschreibungen</text>
   <circle cx="44" cy="171" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="176" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Notenbuch und Zertifikate</text>
+  <text x="58" y="176" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Notenbuch und Zertifikate</text>
   <circle cx="44" cy="193" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Reporting und Rollen</text>
+  <text x="58" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Reporting und Rollen</text>
   <circle cx="44" cy="215" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="220" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Jahre an Material</text>
-  <path d="M220,238 L220,250" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="20" y="256" width="400" height="100" rx="10" fill="#2a2622" stroke="#cc7a3e" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="58" y="220" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Jahre an Material</text>
+  <path d="M220,238 L220,250" stroke="#a1a1aa" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="20" y="256" width="400" height="100" rx="10" fill="#18181b" stroke="#cc7a3e" stroke-width="1.5" stroke-dasharray="5 4"/>
   <text x="220" y="282" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#e8b07a" font-weight="600" text-anchor="middle">angebunden über LTI 1.3</text>
-  <text x="220" y="306" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="middle">Deep Linking 2.0</text>
-  <text x="220" y="326" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="middle">Names and Roles 2.0</text>
-  <text x="220" y="346" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92" text-anchor="middle">Assignment and Grade Services</text>
-  <path d="M220,360 L220,372" stroke="#a89e92" stroke-width="1.5" marker-end="url(#ar)"/>
-  <rect x="20" y="378" width="400" height="158" rx="10" fill="#3a3128" stroke="#cc7a3e" stroke-width="2"/>
+  <text x="220" y="306" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa" text-anchor="middle">Deep Linking 2.0</text>
+  <text x="220" y="326" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa" text-anchor="middle">Names and Roles 2.0</text>
+  <text x="220" y="346" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa" text-anchor="middle">Assignment and Grade Services</text>
+  <path d="M220,360 L220,372" stroke="#a1a1aa" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="20" y="378" width="400" height="158" rx="10" fill="#27272a" stroke="#cc7a3e" stroke-width="2"/>
   <text x="38" y="402" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#e8b07a">NEUE SCHICHT</text>
-  <text x="38" y="428" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#faf8f4" font-weight="600">Der Lernbegleiter</text>
+  <text x="38" y="428" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#fafafa" font-weight="600">Der Lernbegleiter</text>
   <circle cx="44" cy="451" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="456" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Suchindex über Ihre Inhalte</text>
+  <text x="58" y="456" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Suchindex über Ihre Inhalte</text>
   <circle cx="44" cy="473" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="478" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Gedächtnis für jeden Lernenden</text>
+  <text x="58" y="478" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Gedächtnis für jeden Lernenden</text>
   <circle cx="44" cy="495" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="500" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Bewertung und Leitplanken</text>
+  <text x="58" y="500" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Bewertung und Leitplanken</text>
   <circle cx="44" cy="517" r="2.5" fill="#cc7a3e"/>
-  <text x="58" y="522" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#cfc7be">Ein austauschbares Modell</text>
-  <text x="20" y="564" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">Nichts wird verschoben. Die Plattform behält</text>
-  <text x="20" y="584" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a89e92">ihre Aufgabe, der Lernbegleiter übernimmt die andere.</text>
+  <text x="58" y="522" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#d4d4d8">Ein austauschbares Modell</text>
+  <text x="20" y="564" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Nichts wird verschoben. Die Plattform behält</text>
+  <text x="20" y="584" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">ihre Aufgabe, der Lernbegleiter übernimmt die andere.</text>
 </svg>

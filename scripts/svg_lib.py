@@ -12,11 +12,11 @@ PAD     = 24           # outer padding
 PAD_B   = 22           # panel floor, measured down from the last baseline inside it
 CW      = W - 2 * PAD  # content width = 472
 
-SURFACE, PANEL, STROKE = "#2a2622", "#37322c", "#46402f"
+SURFACE, PANEL, STROKE = "#18181b", "#27272a", "#3f3f46"
 ACCENT, ACCENT_LT      = "#cc7a3e", "#e8b07a"
-INK, MUTED, SEC        = "#faf8f4", "#a89e92", "#cfc7be"
-BAR_CTX, INK_ON_ACC    = "#786d60", "#241f1b"
-TINT, GHOST            = "#3a3128", "#6f6459"   # the living column, and an absence in it
+INK, MUTED, SEC        = "#fafafa", "#a1a1aa", "#d4d4d8"
+BAR_CTX, INK_ON_ACC    = "#71717a", "#18181b"
+TINT, GHOST            = "#27272a", "#71717a"   # the living column, and an absence in it
 FONT  = "'Inter', system-ui, -apple-system, sans-serif"
 
 T_TITLE, T_SUB, T_EYE, T_BODY, T_SMALL, T_NOTE, T_BIG = 23, 15, 14, 16, 14.5, 14, 34

@@ -35,7 +35,7 @@
     "ctaPrimary": "Book My Free Demo",
     "ctaSecondary": "Calculate My Savings",
     "stats": [
-      { "value": "Up to €15K", "label": "saved per apprentice" },
+      { "value": "≤ €15K", "label": "saved per apprentice" },
       { "value": "50%", "label": "less trainer time" },
       { "value": "65%", "label": "faster to productivity" }
     ]

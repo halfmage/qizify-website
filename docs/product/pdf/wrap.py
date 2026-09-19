@@ -5,8 +5,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(sys.argv[2]), '..', '..', '.
 # The first h1 becomes the cover title, the first strong paragraph the cover statement.
 CSS = """
 :root{
-  --dark:#2a2622; --surface:#37322c; --border:#46402f; --border-light:#5a5249;
-  --white:#faf8f4; --muted:#cfc7be; --gray:#a89e92;
+  --dark:#18181b; --surface:#27272a; --border:#3f3f46; --border-light:#52525b;
+  --white:#fafafa; --muted:#d4d4d8; --gray:#a1a1aa;
   --accent:#f4a261; --accent-graphic:#e8b07a; --primary:#7c5cfc;
 }
 @page{ size:A4; margin:0; }
@@ -62,7 +62,7 @@ body{
 .runner{
   position:fixed; bottom:9mm; left:41mm; right:41mm;
   font-size:7.6pt; letter-spacing:.09em; text-transform:uppercase;
-  color:#6f6459; border-top:1px solid var(--border); padding-top:2mm;
+  color:#71717a; border-top:1px solid var(--border); padding-top:2mm;
 }
 /* Author block. The portrait is round and small; the guide is not about her face.
    The card and the contact line below it close the guide on their own page, so the

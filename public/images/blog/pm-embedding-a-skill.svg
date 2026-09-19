@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="268" viewBox="0 0 520 268" role="img" aria-label="What actually embeds a new product skill: standard tools and templates, named first by 69 percent of leaders, then structured conversations between line managers and product managers, then an activation plan after the training. All three are needed together, and only 33 percent of leaders run the third. Source: Product Focus 2026 Survey of the Product Management Profession.">
-  <rect x="0" y="0" width="520" height="268" rx="16" fill="#2a2622"/>
-  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#faf8f4" font-weight="600">Three things, or it does not stick</text>
-  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a89e92">What leaders say embeds a new product skill</text>
-  <rect x="24" y="86" width="146" height="92" rx="10" fill="#3a3128"/>
+  <rect x="0" y="0" width="520" height="268" rx="16" fill="#18181b"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">Three things, or it does not stick</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">What leaders say embeds a new product skill</text>
+  <rect x="24" y="86" width="146" height="92" rx="10" fill="#27272a"/>
   <text x="40" y="112" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11" fill="#e8b07a" font-weight="600" letter-spacing="0.08em">NAMED FIRST</text>
-  <text x="40" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">Standard tools</text>
-  <text x="40" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">and templates</text>
-  <text x="40" y="172" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a89e92">69%</text>
-  <text x="180" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#786d60">+</text>
-  <rect x="200" y="86" width="146" height="92" rx="10" fill="#3a3128"/>
-  <text x="216" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">Manager and PM</text>
-  <text x="216" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">conversations</text>
-  <text x="356" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#786d60">+</text>
-  <rect x="376" y="86" width="120" height="92" rx="10" fill="#37322c" stroke="#cc7a3e" stroke-dasharray="4 3"/>
+  <text x="40" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa">Standard tools</text>
+  <text x="40" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa">and templates</text>
+  <text x="40" y="172" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">69%</text>
+  <text x="180" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#71717a">+</text>
+  <rect x="200" y="86" width="146" height="92" rx="10" fill="#27272a"/>
+  <text x="216" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa">Manager and PM</text>
+  <text x="216" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa">conversations</text>
+  <text x="356" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="17" fill="#71717a">+</text>
+  <rect x="376" y="86" width="120" height="92" rx="10" fill="#27272a" stroke="#cc7a3e" stroke-dasharray="4 3"/>
   <text x="392" y="112" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11" fill="#cc7a3e" font-weight="600" letter-spacing="0.08em">THE GAP</text>
-  <text x="392" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">A plan after</text>
-  <text x="392" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#faf8f4">the training</text>
+  <text x="392" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa">A plan after</text>
+  <text x="392" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa">the training</text>
   <text x="392" y="172" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#cc7a3e">33%</text>
-  <path d="M24,206 L496,206" stroke="#46402f" stroke-width="1"/>
-  <text x="24" y="232" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cfc7be">Most organisations do the first and skip the third.</text>
+  <path d="M24,206 L496,206" stroke="#3f3f46" stroke-width="1"/>
+  <text x="24" y="232" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Most organisations do the first and skip the third.</text>
   <text x="24" y="254" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#cc7a3e" font-weight="600">The third is the one this guide hands you for free.</text>
 </svg>

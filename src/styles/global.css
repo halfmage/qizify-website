@@ -15,24 +15,24 @@
 	}
 
 	/* Dark-mode autofill: keep text readable when browser/password manager autofills.
-	   The box-shadow color MUST match the `input-bg` token in tailwind.config.mjs.
+	   The box-shadow color is the `input-bg` token from tailwind.config.mjs.
 	   The 5000s transition is the standard trick to defeat Chrome's yellow autofill flash. */
 	input:-webkit-autofill,
 	input:-webkit-autofill:hover,
 	input:-webkit-autofill:focus,
 	input:-webkit-autofill:active,
 	textarea:-webkit-autofill {
-		-webkit-text-fill-color: #faf8f4;
-		-webkit-box-shadow: 0 0 0 1000px #4a4339 inset;
-		caret-color: #faf8f4;
+		-webkit-text-fill-color: theme('colors.white');
+		-webkit-box-shadow: 0 0 0 1000px theme('colors.input-bg') inset;
+		caret-color: theme('colors.white');
 		transition: background-color 5000s ease-in-out 0s;
 	}
 
 	/* Ensure typed text and caret are always visible on dark inputs */
 	input,
 	textarea {
-		color: #faf8f4;
-		caret-color: #faf8f4;
+		color: theme('colors.white');
+		caret-color: theme('colors.white');
 	}
 
 	/* Defeat browser default placeholder opacity (Firefox: 0.54) so placeholder color renders as authored */
@@ -83,17 +83,17 @@
 		filter: blur(50px);
 	}
 
-	/* Gradient text utility — warm off-white to warm gray */
+	/* Gradient text utility — off-white to gray */
 	.gradient-text {
-		background: linear-gradient(135deg, #faf8f4 0%, #a89e92 100%);
+		background: linear-gradient(135deg, theme('colors.white') 0%, theme('colors.gray') 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 	}
 
-	/* Violet → warm-white gradient for headline accents */
+	/* Violet → off-white gradient for headline accents */
 	.gradient-text-primary {
-		background: linear-gradient(135deg, #7c5cfc 0%, #faf8f4 70%);
+		background: linear-gradient(135deg, theme('colors.primary') 0%, theme('colors.white') 70%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;

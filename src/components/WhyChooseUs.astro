@@ -31,7 +31,7 @@ const { headline, items } = Astro.props;
 				const iconColor = useAccent ? 'text-accent' : 'text-primary';
 				const glowClass = useAccent ? 'card-hover-glow-accent' : 'card-hover-glow-primary';
 				return (
-					<div class={`card-hover-glow ${glowClass} bg-surface p-8 flex flex-col gap-4 group hover:bg-[#403930] transition-colors duration-200`}>
+					<div class={`card-hover-glow ${glowClass} bg-surface p-8 flex flex-col gap-4 group hover:bg-surface-hover transition-colors duration-200`}>
 						<div class={`w-10 h-10 flex items-center justify-center rounded-lg ${tileBg} group-hover:scale-110 transition-all duration-200`}>
 							<Icon name={item.icon} class={`w-5 h-5 ${iconColor}`} />
 						</div>

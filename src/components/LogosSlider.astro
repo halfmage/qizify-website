@@ -23,7 +23,7 @@ const logoMap: Record<string, string> = {
 // from this set the moment a colored replacement asset lands in /public/images/logos.
 const grayscaleLogos = new Set(['dci.png', 'jaeger-gruppe-logo.png', 'uni-cologne.png']);
 
-// Triple the array so Swiper's loop has enough buffer for seamless wrap at slidesPerView: 8
+// Triple the array so Swiper's loop has enough buffer for seamless wrap at slidesPerView: 6
 const slideLogos = [...logos, ...logos, ...logos];
 ---
 
@@ -41,7 +41,7 @@ const slideLogos = [...logos, ...logos, ...logos];
 						const isGray = grayscaleLogos.has(logoFile);
 						return (
 							<div class="swiper-slide !flex items-center justify-center h-auto">
-								<div class="logo-tile flex items-center justify-center w-full h-16 px-4 opacity-60 transition-opacity duration-300">
+								<div class="logo-tile flex items-center justify-center w-full h-24 px-4 opacity-60 transition-opacity duration-300">
 									{isGray ? (
 										<span
 											class="logo-mask block w-full h-full"
@@ -120,8 +120,8 @@ const slideLogos = [...logos, ...logos, ...logos];
 				},
 				breakpoints: {
 					640: { slidesPerView: 4, spaceBetween: 40 },
-					768: { slidesPerView: 6, spaceBetween: 50 },
-					1024: { slidesPerView: 8, spaceBetween: 60 },
+					768: { slidesPerView: 5, spaceBetween: 50 },
+					1024: { slidesPerView: 6, spaceBetween: 60 },
 				},
 			});
 			if (fallbackEl) {
@@ -171,7 +171,7 @@ const slideLogos = [...logos, ...logos, ...logos];
 	   mask. Stay white in both states — hover feedback comes from the wrapper's
 	   opacity lift (60% → 100%) and a slight scale-up. */
 	.logo-mask {
-		background-color: #faf8f4;
+		background-color: #fafafa;
 		transition: background-color 300ms ease, transform 300ms ease;
 	}
 

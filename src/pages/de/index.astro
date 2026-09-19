@@ -38,6 +38,7 @@ const currentPath = '/de';
 	/>
 	
 	<Hero
+		eyebrow={deContent.hero.badge}
 		headline={deContent.hero.headline}
 		subheadline={deContent.hero.subheadline}
 		ctaPrimary={deContent.hero.ctaPrimary}
@@ -45,7 +46,7 @@ const currentPath = '/de';
 		stats={deContent.hero.stats}
 		currentLang={lang}
 	>
-		<TrustBar slot="belowHero" currentLang={lang} />
+		<TrustBar slot="belowHero" currentLang={lang} center={true} />
 	</Hero>
 
 	<LogosSlider

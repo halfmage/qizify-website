@@ -8,6 +8,7 @@ interface HeroStat {
 }
 
 interface Props {
+	eyebrow?: string;
 	headline: string;
 	subheadline: string;
 	ctaPrimary: string;
@@ -16,18 +17,20 @@ interface Props {
 	currentLang: 'en' | 'de';
 }
 
-const { headline, subheadline, ctaPrimary, ctaSecondary, stats = [], currentLang } = Astro.props;
+const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, stats = [], currentLang } = Astro.props;
 
 const headlineLines = headline.split('\n');
 ---
 
 <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-6" id="hero">
-	<!-- Full-bleed hero photo — LCP element, preloaded in BaseLayout head -->
+	<!-- Full-bleed hero photo — LCP element, preloaded in BaseLayout head.
+	     Below lg the text spans the full width, beyond the left-side scrim, so the photo
+	     fades into the page background there to keep the text readable. -->
 	<img
 		src="/images/hero/hero-background.webp"
 		alt=""
 		role="presentation"
-		class="absolute inset-0 w-full h-full object-cover object-[70%_center] z-0"
+		class="absolute inset-0 w-full h-full object-cover object-[70%_center] z-0 opacity-40 md:opacity-60 lg:opacity-100"
 		loading="eager"
 		fetchpriority="high"
 		decoding="async"
@@ -36,18 +39,15 @@ const headlineLines = headline.split('\n');
 	/>
 
 	<!-- Localized scrim — dark on the left for text legibility, vivid on the right (the people), plus a bottom fade to page background for a seamless transition into the mockup -->
-	<div class="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(to_right,rgba(42,38,34,0.80),rgba(42,38,34,0.46)_45%,rgba(42,38,34,0.12)_78%),linear-gradient(to_bottom,transparent_72%,#2a2622_98%)]" aria-hidden="true"></div>
+	<div class="absolute inset-0 z-[1] pointer-events-none bg-[linear-gradient(to_right,theme(colors.dark/80%),theme(colors.dark/46%)_45%,theme(colors.dark/12%)_78%),linear-gradient(to_bottom,transparent_72%,theme(colors.dark)_98%)]" aria-hidden="true"></div>
 
 	<!-- Aurora glow — dual radial blobs (violet + amber) for brand warmth over the photo -->
 	<div class="absolute inset-0 z-[2] pointer-events-none glow-aurora" aria-hidden="true"></div>
 
 	<div class="relative z-10 max-w-container mx-auto w-full px-6 lg:px-8">
-		<div class="max-w-2xl lg:max-w-3xl text-left flex flex-col items-start gap-6">
-			<!-- Award badge — strongest single trust signal for German B2B audience -->
-			<a href={currentLang === 'de' ? '/de#why-choose-us' : '/#why-choose-us'} class="inline-flex items-center gap-1.5 text-xs font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-3 py-1 hover:bg-accent/15 transition-colors no-underline">
-				<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 6.4L21 9l-5 4.6L17.6 21 12 17.3 6.4 21 8 13.6 3 9l6.6-.6L12 2z"/></svg>
-				{currentLang === 'en' ? 'BMWE KI-Preis 2025 Winner' : 'BMWE KI-Preis 2025 Gewinner'}
-			</a>
+		<div class="max-w-2xl text-left flex flex-col items-start">
+			<!-- 1. Message: what we do (eyebrow), the promise (headline), how (subheadline) -->
+			{eyebrow && <p class="section-label text-white m-0 mb-4">{eyebrow}</p>}
 
 			<!-- Headline — gradient on the last line (the "conclusion" sentence) -->
 			<h1 class="text-display-sm md:text-display text-white m-0">
@@ -62,22 +62,16 @@ const headlineLines = headline.split('\n');
 			</h1>
 
 			<!-- Subheadline — full white at text-xl for Ausbilder readability -->
-			<p class="text-xl leading-relaxed text-white max-w-2xl m-0">
+			<p class="text-xl leading-relaxed text-white text-balance m-0 mt-5 max-w-xl">
 				{subheadline}
 			</p>
 
-			<!-- Trust + compliance — single row, replaces the previous two-line cluster -->
-			<p class="text-sm text-muted m-0 max-w-2xl">
-				{currentLang === 'en'
-					? '30+ German companies · GDPR-compliant · German-hosted · IHK-aligned'
-					: '30+ Unternehmen · DSGVO-konform · Server in Deutschland · IHK-konform'}
-			</p>
-
-			<!-- CTA group: primary, secondary, Calendly fallback -->
-			<div class="flex flex-col items-start gap-2 mt-2">
+			<!-- 2. Action: primary, secondary, Calendly fallback -->
+			<div class="flex flex-col items-start gap-3 mt-8">
 				<div class="flex flex-col sm:flex-row gap-3">
 					<Button
 						variant="primary"
+						size="lg"
 						href="#demo-request"
 						aria-label={ctaPrimary}
 					>
@@ -86,6 +80,7 @@ const headlineLines = headline.split('\n');
 					</Button>
 					<Button
 						variant="secondary"
+						size="lg"
 						href={currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator'}
 						aria-label={ctaSecondary}
 						class="!border-white/40 !text-white hover:!border-white/60 backdrop-blur-sm"
@@ -94,28 +89,36 @@ const headlineLines = headline.split('\n');
 					</Button>
 				</div>
 
-				<p class="text-xs text-muted/80 m-0">{currentLang === 'en' ? 'No-obligation · 30 minutes · no prep needed' : 'Unverbindlich · 30 Minuten · keine Vorbereitung nötig'}</p>
-
-					<a href="https://calendly.com/learnslice-team/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm text-muted hover:text-white transition-colors">
+				<a href="https://calendly.com/learnslice-team/30min" target="_blank" rel="noopener noreferrer" class="inline-flex items-center py-1 text-xs text-muted hover:text-white transition-colors">
 					{currentLang === 'en' ? 'Or pick a 30-min slot directly' : 'Oder direkt einen 30-Min-Termin wählen'}
-					<svg class="w-3.5 h-3.5 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+					<svg class="w-3 h-3 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
 				</a>
 			</div>
 
-			<!-- Stat strip — proof points above-fold with amber numbers -->
+			<!-- 3. Proof: stat columns with amber numbers, then the award and the trust line -->
 			{stats.length > 0 && (
-				<ul class="flex flex-wrap items-center justify-start gap-x-4 gap-y-2 mt-2 text-base text-muted m-0 p-0 list-none">
-					{stats.map((stat, index) => (
-						<>
-							<li class="flex items-baseline gap-1.5">
-								<span class="text-accent font-semibold">{stat.value}</span>
-								<span>{stat.label}</span>
-							</li>
-							{index < stats.length - 1 && <li class="text-border-light" aria-hidden="true">·</li>}
-						</>
+				<ul class="grid grid-cols-3 gap-x-6 sm:gap-x-10 w-full sm:w-auto mt-10 pt-6 border-t border-white/15 m-0 p-0 list-none">
+					{stats.map((stat) => (
+						<li class="flex flex-col gap-1">
+							<span class="text-lg sm:text-2xl leading-tight text-accent font-semibold">{stat.value}</span>
+							<span class="text-xs sm:text-sm leading-snug text-muted">{stat.label}</span>
+						</li>
 					))}
 				</ul>
 			)}
+
+			<div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-6">
+				<!-- Award badge — strongest single trust signal for German B2B audience -->
+				<a href={currentLang === 'de' ? '/de#why-choose-us' : '/#why-choose-us'} class="inline-flex items-center gap-1.5 text-xs font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-3 py-1 hover:bg-accent/15 transition-colors no-underline">
+					<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 6.4L21 9l-5 4.6L17.6 21 12 17.3 6.4 21 8 13.6 3 9l6.6-.6L12 2z"/></svg>
+					{currentLang === 'en' ? 'BMWE KI-Preis 2025 Winner' : 'BMWE KI-Preis 2025 Gewinner'}
+				</a>
+				<p class="text-xs text-muted m-0">
+					{currentLang === 'en'
+						? '30+ German companies · GDPR-compliant · German-hosted · IHK-aligned'
+						: '30+ Unternehmen · DSGVO-konform · Server in Deutschland · IHK-konform'}
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
