@@ -40,7 +40,7 @@ it hold up well and six things needed fixing.
 
 And what leaders say actually embeds a new skill: standard tools and templates, named
 by 69%, then structured meetings between line managers and product managers, then
-standardised training, then a post-training activation plan, which only 33% do. The
+standardised training, then a post-training activation plan, which only 33% name. The
 survey's own conclusion is that the best results need all three of tools, manager
 conversations, and an activation plan.
 
@@ -337,7 +337,7 @@ opt-in, unsubscribe in every issue. German sender, EU audience.
 Two pages for the 24% who are Head of Product, Director, VP or CPO. Built on the
 survey's own finding that embedding a skill needs all three of standard tools and
 templates, structured manager conversations, and a post-training activation plan, and
-that only 33% of leaders run the third. Practical: how to use the prompt pack as the
+that only 33% of leaders named the third. Practical: how to use the prompt pack as the
 team's shared templates, what to ask in a one to one, and what the activation plan
 looks like over four weeks.
 

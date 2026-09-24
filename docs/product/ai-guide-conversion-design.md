@@ -76,7 +76,7 @@ context questions already exist in the probe.
 The leader block in the product manager guide gives away the four-week activation plan
 and cites the survey finding behind it: embedding a skill needs standard tools and
 templates at 69%, structured manager conversations, and a post-training activation plan
-that only 33% of leaders run. We hand them the plan for free.
+that only 33% of leaders name. We hand them the plan for free.
 
 The offer is the obvious next sentence: running that for a team, at scale, with content
 matched to their sector, is what AI Mentor does. No claim needs inventing. The guide has

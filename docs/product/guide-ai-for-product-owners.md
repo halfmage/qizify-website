@@ -11,8 +11,8 @@ Prompts: all 10 run against a capable model on realistic fixtures, twice.
 Round one found 15 defects across both guides; round two confirmed every fix held
 and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixed.
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
-behaviour is unverified. [WEEKLY SIGNUP
-URL] needs filling.
+behaviour is unverified. Weekly newsletter promise removed 2026-09-24: Part 4 now
+asks interested readers to write to info@learnslice.com instead.
 Author: Alesia Kunz, CEO of LearnSlice. Portrait at public/images/blog/author-alesia-kunz.jpg. Field notes are her own experience, quoted from
 her answers, and are styled differently from the body so experience is never mistaken
 for sourced evidence. Do not add a field note she did not give.
@@ -26,8 +26,7 @@ Structure: docs/product/ai-guide-structure.md
 **Of the workplaces already using generative AI, 27% give their people any training in
 it. Nine in ten are running on freely accessible tools.**
 
-That is the whole problem, and it is not a budget problem. Only 21% of those workplaces
-have written down any rules for using it. So the tool is in the building,
+Only 21% of those workplaces have written down any rules for using it. So the tool is in the building,
 nobody was taught it, and nobody agreed what may be typed into it.
 
 **Alesia Kunz**, CEO of LearnSlice. 17+ years in software engineering as a product
@@ -49,7 +48,7 @@ source rather than taken from a summary.
 
 ## The training barely exists
 
-If you have not started, that is not because you did not try. The OECD looked at the
+If nobody has trained you, that is normal. The OECD looked at the
 training actually on offer across Australia, Germany, Singapore and the United States
 and found that between 0.3% and 5.5% of courses deliver any AI content at all. Most of
 what does exist is aimed at specialists, not at the people who just need to use it.
@@ -95,8 +94,8 @@ The same thing in detail, including what each tier can reach and how:
 | Microsoft 365 Copilot (Premium), the paid add-on | Yes, automatically, through Microsoft Graph, and only for files you already have permission to open |
 
 If you have asked Copilot "what did we agree about this epic" and got nothing useful,
-you are almost certainly not on the premium tier. That is a licensing fact, not a skill
-problem.
+check your tier before you blame your prompt. Only the premium tier reaches your own
+content by itself.
 
 **The model picker.** Copilot offers Auto, Quick response and Think deeper. Auto chooses
 for you. Switch to Think deeper when the task is a judgment rather than a lookup, and
@@ -156,9 +155,9 @@ Boundary safeguards.
 **The caveat that matters.** All of that describes a work account signed in with your
 company identity. A personal account is a different product with different terms.
 
-In Eurostat's survey of EU enterprises, data protection and privacy is the reason 49%
-of those that considered AI did not adopt it, and unclear legal consequences the reason
-for another 53%. This section is the answer to most of both. This is practical guidance, not
+In Eurostat's survey of EU enterprises, 49% of enterprises that considered AI and did
+not adopt it named data protection and privacy, and 53% named unclear legal
+consequences. Respondents could name more than one. This section answers part of both. This is practical guidance, not
 legal advice, and your company's own rules sit on top of it.
 
 ### 6. It will lie to you in your own house style
@@ -180,10 +179,9 @@ epic. That is the failure mode to expect.
 ![How a single signal becomes a false pattern: thirty support tickets go in, one of them mentions single sign-on once in passing, and the summary that comes back says customers consistently request single sign-on. One ticket in thirty, reported as consistent.](/images/blog/pm-signal-to-pattern.svg)
 
 
-> **Field note.** The failure is rarely an invented fact. It is a real-looking number
-> with no source behind it, stated with total confidence. We catch these because we
-> check the source every time, not because the output looks doubtful. It never looks
-> doubtful.
+> **Field note.** Our rule for any number an AI tool hands us: if we cannot trace it to
+> its source, we remove it. It does not matter how plausible it looks. It always looks
+> plausible.
 
 **The decision aid.** Before you use an output, ask one question: *could I tell if this
 were wrong?* If yes, use it and check it. If no, do not use it yet. Get the answer from
@@ -230,18 +228,18 @@ becomes something a team builds.
 
 When an answer comes out genuinely good, save the prompt that produced it, with the
 parts that change marked in square brackets, wherever your team already looks. Next time
-the same job takes a minute instead of twenty.
+the same job starts from something that has already worked, instead of from nothing.
 
 Nine in ten organisations using generative AI are running on freely accessible tools,
-which means nobody is saving your prompts for you. Saved prompts are how this becomes a
+which usually means there is no shared place for prompts unless you make one. Saved prompts are how this becomes a
 habit rather than a one-off.
 
 ---
 
 ## Part 2: the five things that are actually yours
 
-Rules are easy to agree with and easy to forget. Here they are against the five
-accountabilities the Scrum Guide names as yours, in the order the work happens: from
+Rules are easy to agree with and easy to forget. Here they are against the product
+owner's work as the Scrum Guide describes it, in the order the work happens: from
 writing an item to showing what it changed.
 
 ### Chapter 1. Why your items come back from refinement
@@ -306,7 +304,7 @@ Source: only the story below.
 ```
 
 **Your first step.** Take the largest item in your backlog and run it. The split you would
-not recommend is usually the one the team would have proposed.
+not recommend is often the one a team reaches for first.
 
 ### Chapter 3. Ordering is the part nobody can do for you
 
@@ -333,8 +331,11 @@ never to produce one.
 > **Field note.** What actually wins an argument about order is analytical data behind
 > the position, and this is where AI is genuinely useful: finding validated sources that
 > support building a feature, or that show the assumption behind it was wrong and it
-> should be dropped. Both directions count. The value is in being willing to lose the
-> argument to the data.
+> should be dropped. Both directions count. On one project the assumption was that all
+> customers were asking for AI avatars in the platform. When the data was analysed in
+> detail, only 10% of users had asked for it, and 90% said it was nice to have. The
+> feature was deprioritised. The value is in being willing to lose the argument to the
+> data.
 
 **The specific danger.** Generating backlog items in bulk. It is the easiest thing to do
 with these tools and the least useful. Volume is not value, and every item you add is
@@ -416,12 +417,11 @@ what changed for a user is worth a conversation with the team.
 
 The largest thing standing between organisations and AI is not the tool and not the
 budget. It is a lack of relevant expertise, named by 71% of the EU enterprises Eurostat
-surveyed that considered AI and did not adopt it, well ahead of anything else. Cost came nowhere
-near the top.
+surveyed that considered AI and did not adopt it, well ahead of anything else.
 
 Those five chapters are the answer, and the answer is deliberately unexciting. Nothing
 above asks you to adopt a new practice, add a ceremony or change how your team works.
-Each one sits inside an accountability the Scrum Guide already names as yours: writing
+Each one sits inside work the Scrum Guide already gives you or your Scrum Team: writing
 items, refining them, ordering them, proposing the value of a sprint, showing what
 changed. The work is the same work. What changes is what you bring to it.
 
@@ -519,15 +519,12 @@ Do not treat vendor blogs, news aggregators or social threads as primary sources
 number in this guide had to survive being traced back to the organisation that published
 it, and most of what circulates does not.
 
-### The weekly
+### A weekly on AI news
 
-If you would rather not do the first ten minutes yourself, we do it and send one email a
-week. One change that matters and what to do about it, one prompt of the week, one thing
-worth reading and why, and one line on what we got wrong the week before. Five minutes.
-Unsubscribe whenever.
+If you would be interested in a weekly newsletter on AI news, write to us at
+info@learnslice.com.
 
-Sign up at learnslice.com/ai-guides. If this was forwarded to you, that is also
-where the other guide is.
+If this guide was forwarded to you, the other one is at learnslice.com/ai-guides.
 
 ---
 

@@ -8,8 +8,8 @@ Round one found 15 defects across both guides; round two confirmed every fix hel
 and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixed.
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
 behaviour is unverified. 
-Also blocking: the [signup] placeholder in Part 4 needs the real form, with a separate
-unticked consent for the weekly. See ai-guide-probe.md section 9.
+Weekly newsletter promise removed 2026-09-24: Part 4 now asks interested readers to
+write to info@learnslice.com instead.
 Copilot behaviour checked against Microsoft documentation on 2026-09-15.
 Every profession figure traced to Product Focus 2026. No figure is estimated.
 Author: Alesia Kunz, CEO of LearnSlice. Portrait at public/images/blog/author-alesia-kunz.jpg. Field notes are her own experience, quoted from
@@ -50,8 +50,8 @@ documentation and was checked in September 2026. We are not affiliated with eith
 If you have barely used AI at work, skip this and read the next section instead.
 Otherwise, read four things and stop.
 
-1. **Your Copilot probably cannot see your work**, Part 0, item 2. Most people who
-   think Copilot is useless are on a tier that cannot read their work.
+1. **Your Copilot probably cannot see your work**, Part 0, item 2. Many people who
+   find Copilot useless are on a tier that cannot read their work.
 2. **Give it your own material.** Rule 1. This is the difference between a generic
    answer and a useful one, and it is not about phrasing.
 3. **Check it before it leaves you.** Rule 3. Numbers, names, and anything stated as a
@@ -118,8 +118,8 @@ The same thing in detail, including what each tier can reach and how:
 > to waste.
 
 If you have asked Copilot "what did we decide in the roadmap review" and got nothing
-useful, you are almost certainly not on the premium tier. That is a licensing fact, not
-a skill problem.
+useful, check your tier before you blame your prompt. Only the premium tier reaches
+your own content by itself.
 
 **The model picker.** Copilot offers Auto, Quick response and Think deeper. Auto chooses
 for you. Switch to Think deeper when the task is a judgment rather than a lookup, and
@@ -206,10 +206,10 @@ would catch, but a real thing overstated, reading perfectly.
 ![How a single signal becomes a false pattern: thirty support tickets go in, one of them mentions single sign-on once in passing, and the summary that comes back says customers consistently request single sign-on. One ticket in thirty, reported as consistent.](/images/blog/pm-signal-to-pattern.svg)
 
 > **Field note.** In our work the failure is rarely an invented fact. It is a real
-> number with no source behind it, delivered with total confidence. We catch these
-> before they reach a presentation because we check the source every time, not because
-> the output looks doubtful. It never looks doubtful. Human verification is not a
-> nice-to-have step, it is the step.
+> number with no source behind it, delivered with total confidence. It never looks
+> doubtful, so how it looks tells you nothing. Our rule is simple: if we cannot trace a
+> number to its source, it comes out before anything reaches a presentation. Human
+> verification is not a nice-to-have step, it is the step.
 
 **The decision aid.** Before you use an output, ask one question: *could I tell if this
 were wrong?* If yes, use it and check it. If no, do not use it yet. Get the answer from
@@ -266,7 +266,7 @@ The habit that pays back the most, and the easiest one to skip.
 When an answer comes out genuinely good, do not just use it. Save the prompt that
 produced it, with the parts that change marked in square brackets, in whatever you
 already use: a note, a Confluence page, a pinned message. Next time the same job takes
-a minute instead of twenty.
+starts from something that has already worked, instead of from nothing.
 
 ---
 
@@ -294,7 +294,7 @@ ahead of lack of resource and weak or missing company strategy.
   everyone forgets it.
 
 **What it cannot do.** It cannot reduce the number of interruptions. How much
-firefighting you get depends on where you work, not on you: in this survey automotive
+firefighting you get depends heavily on where you work: in this survey automotive
 reported 76% and SaaS 57%. If you are interrupted constantly, the fix is a conversation
 with your manager about routing, and no tool substitutes for it. What you can change is
 how much of your week each interruption costs after it arrives.
@@ -311,7 +311,7 @@ Source: only the text pasted below.
 
 **Your first step, under fifteen minutes.** Take this week's inbound, in whatever form it
 is in, and run that prompt once. If the six themes come out wrong, that tells you
-something too. Usually it means the requests are not really requests, they are
+something too. Often it means the requests are not really requests, they are
 escalations.
 
 ### Chapter 2. You know the product better than the people using it
@@ -328,7 +328,7 @@ directors, against 59% among junior product managers.
 **Where it genuinely helps.**
 - Turning interview recordings or notes into themes with the original quotes still
   attached, so you can check the theme against the words.
-- Sharpening the questions before the interview, which is the single best use of AI in
+- Sharpening the questions before the interview, which is where AI earns its place in
   discovery. Take your assumptions to the model, let it pull them apart, then take the
   better questions to a real person.
 - Finding the contradictions between what two customers told you.
@@ -358,8 +358,8 @@ Source: only the transcript below.
 ```
 
 **Your first step.** Take the most recent customer conversation you have any record of,
-even rough notes, and run it. Take the contradictions to the team. They are where your
-roadmap is quietly wrong, and nobody can see that from a summary.
+even rough notes, and run it. Take the contradictions to the team. They are often where
+your roadmap is quietly wrong, and nobody can see that from a summary.
 
 ### Chapter 3. Everything is important, and that is the problem
 
@@ -385,12 +385,14 @@ worse than openly having none, because it shuts down arguments that needed to ha
 Use it to sharpen a strategy that exists, or to make the absence of one visible. Never
 to fill the hole quietly.
 
-> **Field note.** What unblocks this in practice is not a better strategy document. It
-> is alignment with the handful of stakeholders who actually decide, and a
-> prioritisation matrix that puts effort against business value so the trade-off is
-> visible. AI helps on both sides of that: it clusters the topics so you have
-> something concrete to argue about, and it sharpens the questions you need to ask to
-> place each item.
+> **Field note.** While building a product you rarely have one stakeholder. You have
+> many, each responsible for one part of the product and each with different priorities
+> for the features. What unblocks this in practice is not a better strategy document.
+> It is a prioritisation matrix that puts effort against business value, so every
+> stakeholder can see, objectively and tangibly, which features add the most value to
+> the whole product and not only to the part they are responsible for. AI helps on both
+> sides of that: it clusters the topics so you have something concrete to argue about,
+> and it sharpens the questions you need to ask to place each item.
 
 **One prompt.**
 ```
@@ -402,7 +404,7 @@ Source: only the statement below.
 [paste your company or product strategy as written]
 ```
 
-**Your first step.** Run it on your actual strategy, then apply the five questions to the
+**Your first step.** Run it on your actual strategy, then apply the questions to the
 two requests currently competing for the same sprint. The list of what was too vague to
 test is the more valuable half of the output, and it is the thing to bring to your
 manager.
@@ -414,7 +416,8 @@ has thirty seconds.
 
 **The number.** Asked which activity they spend the most time on, 56% of product
 managers name inbound activities, against 25% naming strategic activities and 19%
-outbound. A great deal of that inbound work is documents, updates, tickets and mail.
+outbound. The survey does not break inbound down further, but in most product teams a
+large part of it is written: documents, updates, tickets and mail.
 
 ![Which activity product managers say they spend the most time on: 56% name inbound activities, 25% name strategic activities such as deciding the right problems and products to pursue, and 19% name outbound activities. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.](/images/blog/pm-where-the-week-goes.svg)
 
@@ -490,7 +493,7 @@ is Chapter 2, 3 and 5: the question you had not thought to ask before the interv
 test that lets you say no, the explanation you ruled out before the meeting.
 
 Only the second kind moves the product. If you use it for drafting alone you will land
-squarely in the 97% and your roadmap will look exactly as it did before.
+in the gap: faster, with a roadmap that looks exactly as it did before.
 
 That is why no prompt in this guide hands you finished work. Every one of them returns
 something you still have to decide: themes and the question behind each, the objections
@@ -632,17 +635,12 @@ One policy worth adopting: **do not treat vendor blogs, news aggregators or soci
 threads as primary sources.** Every number in this guide had to survive being traced back
 to the organisation that published it. Most of what circulates does not survive that.
 
-### The weekly
+### A weekly on AI news
 
-If you would rather not do the first ten minutes yourself, we do it and send one email a
-week. One change that matters and what to do about it, one prompt of the week, one thing
-worth reading and why, and one line on what we got wrong the week before. Five minutes.
-Unsubscribe whenever.
+If you would be interested in a weekly newsletter on AI news, write to us at
+info@learnslice.com.
 
-Sign up at learnslice.com/ai-guides. If this was forwarded to you, that is also
-where the other guide is.
-
-[signup]
+If this guide was forwarded to you, the other one is at learnslice.com/ai-guides.
 
 ---
 
@@ -658,16 +656,20 @@ for teams. Developing a prioritised plan after training was named by 33%.
 
 The survey's own conclusion is the useful part: the best results need all three
 elements together, training and tools, structured manager conversations, and an
-activation plan after the training. Most organisations do the first and skip the third.
+activation plan after the training. Tools and templates are the element most leaders
+name. The activation plan is the one the fewest name.
 
-![What embeds a new product skill: standard tools and templates named first by 69% of leaders, then structured conversations between line managers and product managers, then an activation plan after the training. All three together, and only 33% of leaders run the third. Source: Product Focus 2026 Survey of the Product Management Profession.](/images/blog/pm-embedding-a-skill.svg)
+![What embeds a new product skill: standard tools and templates named first by 69% of leaders, then structured conversations between line managers and product managers, then an activation plan after the training, named by 33%. The survey's conclusion is that all three are needed together. Source: Product Focus 2026 Survey of the Product Management Profession.](/images/blog/pm-embedding-a-skill.svg)
 
 > **Field note.** Adopting any new tool needs a phase where people have dedicated time
 > to learn it, try it and work out where it fits. If the organisation expects the normal
 > workload alongside that, there is no time to experiment and the practice dies quietly.
-> The other half is measurement. Telling a team to play around with an AI tool, without
-> saying how adoption and results will be measured, leaves you with no way to tell
-> afterwards whether it stuck. Give the time, and set the KPI before you start.
+> The other half is measurement. The ask from management was simply "use AI". Without
+> saying how adoption and results will be measured, you have no way to tell afterwards
+> whether it stuck. Two KPIs would have caught it: whether people use AI daily, and more
+> importantly, how many hours a week the provided prompts save each person, by their
+> own calculation. Track that second one weekly while the prompts and the adoption
+> evolve. Give the time, and set the KPI before you start.
 
 Three practical moves, in that order:
 
@@ -678,7 +680,7 @@ Three practical moves, in that order:
 3. **Run a four week activation plan after anyone learns anything.** Week one, everyone
    picks a recurring task. Week two, they do it with the tool and keep the prompt. Week
    three, prompts go into the shared place. Week four, one person shows what did not
-   work. This is the element only a third of leaders have.
+   work. This is the element only a third of leaders named.
 
 If you want the four weeks run for the team rather than assembled by you, the contact
 details at the end are the place to ask.
