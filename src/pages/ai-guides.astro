@@ -14,7 +14,7 @@ const GUIDES = {
 		id: 'pm',
 		file: '/guides/ai-for-product-managers-2ed946c94f23f52d.pdf',
 		title: 'AI for product managers',
-		pages: '24 pages',
+		pages: '25 pages',
 	},
 	po: {
 		id: 'po',
@@ -30,7 +30,7 @@ const GUIDES = {
 const faq = [
 	{
 		q: 'Can Microsoft Copilot see your Jira tickets?',
-		a: 'If your backlog lives in Jira or Azure DevOps, no tier of Copilot reads it automatically. Microsoft publishes connectors for Jira and Confluence, but an administrator has to deploy them and they enforce the source system\'s own permissions. A connected source is not the same as a readable project.',
+		a: 'If your backlog lives in Jira or Azure DevOps, no tier of Copilot reads it automatically. Microsoft publishes connectors for Jira and Confluence, but an administrator has to deploy them and choose whether they respect Jira\'s own permissions. The Jira connector also works only with Jira Cloud, not Jira Server or Data Center. A connected source is not the same as a readable project.',
 	},
 	{
 		q: 'What is the difference between Copilot Chat and Microsoft 365 Copilot?',
@@ -38,7 +38,7 @@ const faq = [
 	},
 	{
 		q: 'Why does Copilot give a different answer to the same prompt?',
-		a: 'Microsoft states in its own guidance that using the same prompt several times can return different responses. That is how the technology works, not a fault. The consequence people miss is that one good answer does not prove the prompt was good. Keep a prompt only once it has produced a usable answer more than once, on different inputs.',
+		a: 'Microsoft states in its own guidance that using the same prompt several times can return different responses. That is how the technology works. It also means one good answer does not prove the prompt was good. Keep a prompt only once it has produced a usable answer more than once, on different inputs.',
 	},
 	{
 		q: 'What should a product manager never paste into an AI tool?',
@@ -83,9 +83,7 @@ const INPUT =
 			</h1>
 			<p class="text-lg text-muted leading-relaxed mb-8">
 				Two guides on closing that gap, one for product managers and one for product owners.
-				Every number was traced back to the organisation that published it: Product Focus,
-				the Scrum Guide, Microsoft's own documentation. Nothing is estimated, and there is
-				no sales pitch anywhere in either guide.
+				Every figure was traced to the organisation that published it: Product Focus, IAB, Eurostat, the OECD and Microsoft's own documentation. Nothing is estimated.
 			</p>
 
 			<p class="text-sm text-muted leading-relaxed mb-10">
@@ -95,8 +93,8 @@ const INPUT =
 			</p>
 
 			<ul class="list-none p-0 m-0 mb-12 grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm text-muted">
-				<li class="flex gap-3"><span class="text-accent">01</span> Which Copilot tier can actually see your work, and why most people have the wrong one</li>
-				<li class="flex gap-3"><span class="text-accent">02</span> Where AI genuinely helps in a product week, and where it cannot</li>
+				<li class="flex gap-3"><span class="text-accent">01</span> Which Copilot tier can actually see your work, and how to check yours</li>
+				<li class="flex gap-3"><span class="text-accent">02</span> Where AI helps in a product week, and where it cannot</li>
 				<li class="flex gap-3"><span class="text-accent">03</span> Prompts you can paste today, with the four parts that make them work</li>
 				<li class="flex gap-3"><span class="text-accent">04</span> A thirty minute weekly routine that needs no budget and nobody's approval</li>
 			</ul>
@@ -236,9 +234,7 @@ const INPUT =
 			</h2>
 			<p class="text-base text-muted leading-relaxed m-0">
 				AI does two things in a product week. It changes how fast you produce work, and it
-				changes what you decide. Only the second moves the product, which is why 97% of
-				product managers report better personal productivity and only 64% report better
-				product outcomes. Sharpening the questions before a customer interview beats
+				changes what you decide. Only the second moves the product. Product Focus found 97% of product managers report better personal productivity and only 64% better product outcomes. Sharpening the questions before a customer interview beats
 				drafting faster. The guide covers five places the week goes wrong, and names what
 				the tool cannot do in each.
 			</p>
@@ -251,13 +247,12 @@ const INPUT =
 				AI for product owners: refinement, ordering, sprint goals
 			</h2>
 			<p class="text-base text-muted leading-relaxed m-0">
-				The product owner guide follows the five accountabilities the Scrum Guide names as
-				yours: writing items, refining them, ordering them, proposing the value of a
+				The product owner guide follows the product owner's work as the Scrum Guide describes it: writing items, refining them, ordering them, proposing the value of a
 				sprint, and showing what changed. AI backlog refinement works on the parts you
 				should have settled before the session. It will list the questions a developer
 				would ask before picking an item up, and draft acceptance criteria that are
 				testable rather than a restatement of the title. It cannot order your backlog and
-				it cannot decide what is valuable. That judgment is the job, and writing a good
+				it cannot decide what is valuable. That judgement is the job, and writing a good
 				user story stays teamwork.
 			</p>
 
@@ -267,9 +262,7 @@ const INPUT =
 			<p class="text-base text-muted leading-relaxed m-0">
 				Two sources feed any answer: the public web, and your organisation's own content.
 				Only the premium tier reaches the second by itself. If your backlog lives in Jira
-				or Azure DevOps, no tier reads it automatically. Most people who think Copilot is
-				useless are on a licence that cannot read their work, which is a licensing fact
-				rather than a skill problem. Both guides give the tier table.
+				or Azure DevOps, no tier reads it automatically. Many people who find Copilot useless are on a licence that cannot read their work. Both guides give the tier table.
 			</p>
 
 			<img src="/images/blog/pm-copilot-tiers.svg" width="520" height="348"
@@ -282,8 +275,7 @@ const INPUT =
 			<p class="text-base text-muted leading-relaxed m-0">
 				Microsoft's own prompt framework has four parts: goal, context, expectations and
 				source. Both prompt packs are written that way and are copyable as they stand,
-				with the parts you change marked. No prompt returns finished work. Each returns
-				something you still have to decide on, which is the point.
+				with the parts you change marked. Most prompts return something you still have to decide on, which is the point.
 			</p>
 
 			<h2 class="text-heading-sm md:text-heading text-white mt-12 mb-4">Learn it here, then apply it</h2>

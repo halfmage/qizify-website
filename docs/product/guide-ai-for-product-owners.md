@@ -8,6 +8,9 @@ fact changes, both files must change.
 Deliberately shorter than the PM guide: the PO evidence base is thinner, and padding
 it would be the thing this guide tells readers not to do.
 Prompts: all 10 run against a capable model on realistic fixtures, twice.
+2026-09-24: every prompt re-tested on Claude Haiku, Sonnet and Opus with trap fixtures,
+one fresh session per prompt; 11 prompts reworded where models failed the same way.
+On the reworded prompts Sonnet now passes 95% of checks and Opus 98%. Structure kept to Goal/Context/Expectations/Source.
 Round one found 15 defects across both guides; round two confirmed every fix held
 and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixed.
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
@@ -23,11 +26,9 @@ Structure: docs/product/ai-guide-structure.md
 
 [DECK] Where it fits your sprint, and where it stops.
 
-**Of the workplaces already using generative AI, 27% give their people any training in
-it. Nine in ten are running on freely accessible tools.**
+**Of German workplaces already using generative AI, 27% give their people any training in it. Nine in ten use freely accessible tools.**
 
-Only 21% of those workplaces have written down any rules for using it. So the tool is in the building,
-nobody was taught it, and nobody agreed what may be typed into it.
+Only 21% of those workplaces have written down any rules for using it. So in most of them the tool is in the building, nobody was taught it, and nobody agreed what may be typed into it.
 
 **Alesia Kunz**, CEO of LearnSlice. 17+ years in software engineering as a product
 manager and product owner. Built on experience from real teams and projects, and on
@@ -41,8 +42,7 @@ tool can take, and the prompts worth keeping.*
 Those figures come from the IAB-Betriebspanel, the establishment panel run by the
 research institute of the German Federal Employment Agency. Everything about the role
 itself comes from the Scrum Guide, everything about Copilot from Microsoft's own
-documentation, and the European figures from Eurostat. Every one of them was read at
-source rather than taken from a summary.
+documentation, and the European and training figures from Eurostat and the OECD.
 
 ![What stops EU enterprises that considered AI from adopting it: no relevant expertise 71%, unclear legal consequences 53%, data protection and privacy 49%, and only 21% who judged it not useful for them. Source: Eurostat, use of artificial intelligence in enterprises, 2025 data, 157,000 enterprises surveyed.](/images/blog/po-obstacles.svg)
 
@@ -50,8 +50,7 @@ source rather than taken from a summary.
 
 If nobody has trained you, that is normal. The OECD looked at the
 training actually on offer across Australia, Germany, Singapore and the United States
-and found that between 0.3% and 5.5% of courses deliver any AI content at all. Most of
-what does exist is aimed at specialists, not at the people who just need to use it.
+and found that between 0.3% and 5.5% of courses deliver any AI content at all. Most of the public programmes the OECD reviewed focus on advanced AI skills rather than everyday use. The OECD notes the share may be underestimated, since some learning happens on the job.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
 give it, trained on an enormous amount of writing. That is why it writes so smoothly,
@@ -65,8 +64,7 @@ Ask it to list the questions a developer would ask before picking the item up. B
 
 ## Part 0: six things nobody told you
 
-Six short sections before the main guide, a minute each. Every one of them explains
-something that goes wrong and is not your fault.
+Six short sections before the main guide, a minute each. Most of them explain something that goes wrong and is not your fault.
 
 ### 1. Your best prompt might have been luck
 
@@ -90,12 +88,14 @@ The same thing in detail, including what each tier can reach and how:
 | Microsoft 365 Copilot (Basic) | Not in chat. But Copilot works inside Word, Excel, PowerPoint and OneNote |
 | Microsoft 365 Copilot (Premium), the paid add-on | Yes, automatically, through Microsoft Graph, and only for files you already have permission to open |
 
+Microsoft is renaming Microsoft 365 Copilot to Microsoft Copilot, and Copilot Chat to Microsoft Copilot Chat, so your screen may show either name.
+
 If you have asked Copilot "what did we agree about this epic" and got nothing useful,
 check your tier before you blame your prompt. Only the premium tier reaches your own
 content by itself.
 
 **The model picker.** Copilot offers Auto, Quick response and Think deeper. Auto chooses
-for you. Switch to Think deeper when the task is a judgment rather than a lookup, and
+for you. Switch to Think deeper when the task is a judgement rather than a lookup, and
 expect it to take longer on purpose.
 
 **Grounding, which is the word for all of this.** Two sources feed any answer: the public
@@ -104,8 +104,7 @@ by itself. Every other tier sees only what you hand it.
 
 **Your backlog probably is not in Microsoft 365.** If it lives in Jira or Azure DevOps,
 no tier of Copilot reads it automatically. Microsoft does publish connectors for Jira
-and Confluence, but an administrator has to deploy them and they enforce the source
-system's own permissions, so a connected source is not the same as a readable project.
+and Confluence, but an administrator has to deploy them and choose whether they respect Jira's own permissions. The Jira connector also works only with Jira Cloud, not Jira Server or Data Center. A connected source is not the same as a readable project.
 
 > **Field note.** Some Copilot licences offer the Jira integration, and you can check
 > yours under Copilot Chat, then Settings, then Sources. The catch is that even where
@@ -133,11 +132,11 @@ finish in one. Expectations: each item independently valuable and testable on it
 with the acceptance criteria that would prove it. Say which split you would not
 recommend and why. Source: only the story below.*
 
-The second one is not cleverer, just more specific about what you already know.
+The second one is just more specific about what you already know.
 
 ### 4. The slash key
 
-In Copilot, type `/` and start typing the name of a file, person, meeting or email. You
+In Copilot, type `/` and start typing the name of a file. With the paid Microsoft 365 Copilot licence you can also reference people, meetings and emails. You
 can attach a single file or a whole folder. Inside a SharePoint site you can reference
 up to ten files or pages. Checked September 2026.
 
@@ -146,8 +145,7 @@ up to ten files or pages. Checked September 2026.
 When you are signed in with your work account, prompts and responses are covered by
 enterprise data protection, and Microsoft states they are not used to train the
 foundation models. Copilot cannot show you a document you could not already open
-yourself. For users in the European Union there are additional European Union Data
-Boundary safeguards.
+yourself. For users in the European Union there are additional European Union Data Boundary safeguards, with two exceptions: web search queries, and Anthropic models where your administrator has enabled them, are not covered by the EU Data Boundary.
 
 **The caveat that matters.** All of that describes a work account signed in with your
 company identity. A personal account is a different product with different terms.
@@ -183,7 +181,7 @@ epic. That is the failure to expect.
 were wrong?* If yes, use it and check it. If no, do not use it yet. Get the answer from
 someone who would know, or go and find out.
 
-![A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that fail most often, which are numbers, names, and anything stated as a fact about a customer. If no, you cannot accept that output yet: get it from someone who would know, or go and find out.](/images/blog/pm-trust-decision.svg)
+![A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that always need checking, which are numbers, names, and anything stated as a fact about a user or a customer. If no, you cannot accept that output yet: get it from someone who would know, or go and find out.](/images/blog/pm-trust-decision.svg)
 
 ---
 
@@ -225,8 +223,7 @@ When an answer comes out good, save the prompt that produced it, with the
 parts that change marked in square brackets, wherever your team already looks. Next time
 the same job starts from something that has already worked, instead of from nothing.
 
-Nine in ten organisations using generative AI are running on freely accessible tools,
-which usually means there is no shared place for prompts unless you make one. Saved prompts are how this becomes a
+If your team has no shared place for prompts yet, make one. Saved prompts are how this becomes a
 habit rather than a one-off.
 
 ---
@@ -256,7 +253,7 @@ and it is the part that makes the item worth building.
 ```
 Goal: list the questions a developer would ask before starting the backlog item below.
 Context: [product], [team], the item is meant to fit inside one sprint.
-Expectations: the questions only, ordered by how much they would change the estimate, each tagged days, hours or unknown for how much estimate the answer would move, so I can check the order. Do not answer them and do not rewrite the item.
+Expectations: the questions only, at most ten, ordered by how much the answer could change the size of the item, each tagged big, small or unknown, with unknown ones placed before small ones, so I can check the order. Do not answer them and do not rewrite the item.
 Source: only the item below.
 
 [paste the item]
@@ -285,14 +282,13 @@ time.
 - Finding the assumption buried in a story, the thing everyone reads past.
 
 **What it cannot do.** It cannot tell you which split delivers value on its own. It will
-happily split by technical layer, which produces items nobody can ship. That judgment is
-the work.
+happily split by technical layer, which produces items nobody can ship.
 
 **One prompt.**
 ```
-Goal: propose three ways to split the story below into smaller items.
-Context: [product]. Each resulting item must be independently valuable to a user and finishable inside one sprint.
-Expectations: for each split, the resulting items in one line each, and what a user could do after the first one alone. Then name the split you would not recommend and say why.
+Goal: propose three different ways to split the story below into smaller items, each cutting along a different line.
+Context: [product]. Each resulting item must be independently valuable to a user and finishable inside one sprint, so do not split by technical layer.
+Expectations: for each split, the resulting items in one line each, and what a user could do after the first one alone. Flag any item that breaks a rule in Context. Then name the split you would not recommend and say why.
 Source: only the story below.
 
 [paste the story]
@@ -333,14 +329,13 @@ never to produce one.
 > data.
 
 **The specific danger.** Generating backlog items in bulk. It is the easiest thing to do
-with these tools and the least useful. Volume is not value, and every item you add is
-something the team must read, estimate and eventually delete.
+with these tools and the least useful. Every item you add is something the team must read, estimate and eventually delete.
 
 **One prompt.**
 ```
 Goal: make the strongest case against the order below.
 Context: the Product Goal is [goal]. These are the next [N] items in the order I have put them in: [items].
-Expectations: up to three of the strongest objections, each naming what would have to be true for the objection to win. Then list any item that does not serve the Product Goal at all, or say none if they all do.
+Expectations: up to three of the strongest objections to the order of the items that serve the goal, each naming what would have to be true for the objection to win. Then list any item that does not serve the Product Goal at all, or say none if they all do.
 Source: only what I have written.
 ```
 
@@ -369,14 +364,13 @@ meeting, so you arrive with a sentence instead of a list.
 ```
 Goal: draft a candidate sprint goal from the items below.
 Context: [product], a [length] sprint. The Product Goal is [goal].
-Expectations: one sentence naming the outcome a user or the business gets. It must not name any item, feature or component from the list. If every item belongs to one feature and the outcome cannot be stated without naming it, say so and name it rather than writing something vague. Then say which items do not contribute to that goal, and whether the set holds together as one objective or is really two.
+Expectations: one sentence naming the outcome a user or the business gets, in terms of the Product Goal. It must not name or reword any item, feature or component from the list: say what is different for the user afterwards, not what the feature lets them do. If most items belong to one feature and the outcome cannot be stated without it, say so and name it rather than writing something vague. Then say which items do not contribute to that goal, and whether the items that do contribute hold together as one objective or are really two.
 Source: only the items below.
 
 [paste the selected items]
 ```
 
-**Your first step.** Draft it before planning and bring it as a proposal. A sentence to
-argue with beats a blank room.
+**Your first step.** Draft it before planning and bring it as a proposal. The Scrum Team defines the sprint goal together, and a draft gives that conversation somewhere to start.
 
 ### Chapter 5. What got done, and what actually changed
 
@@ -416,20 +410,17 @@ surveyed that considered AI and did not adopt it, well ahead of anything else.
 The five chapters answer that, and the answer is deliberately plain. Nothing
 above asks you to adopt a new practice, add a ceremony or change how your team works.
 Each one sits inside work the Scrum Guide already gives you or your Scrum Team: writing
-items, refining them, ordering them, proposing the value of a sprint, showing what
-changed. The work is the same work. What changes is what you bring to it.
+items, refining them, ordering them, proposing the value of a sprint, showing what changed.
 
-That is also why none of it works without you. The tool drafts the split, and you decide
-which one delivers value on its own. It argues against your order, and you decide
-whether the argument wins. It proposes a sprint goal, and you decide whether the set
-holds together. The Scrum Guide is clear about where that stops: you may delegate the
-work, but you remain accountable, and you are one person rather than a committee.
+That is also why none of it works without you. The tool drafts and argues. You decide which split delivers value, whether an objection to your order wins, and whether the sprint goal holds together.
 
 ---
 
 ## Part 3: the prompt pack
 
-Every prompt below uses the four parts from Part 0, item 3. Square brackets
+Start a new chat for each prompt, so nothing from an earlier task leaks into the answer, and on a fast or free model check the output against the prompt's own rules before you use it.
+
+Every prompt below uses the four parts from Part 0, item 3, though the in-app prompts skip Context, because the open thread or meeting supplies it. Square brackets
 mark the parts you change. Each says what it needs, and "any tier" means it works even
 on Copilot Chat (Basic), because you supply the content yourself.
 
@@ -446,7 +437,7 @@ Source: only the items below.
 **Find the items nobody can start.**
 ```
 Goal: list the backlog items below that have no testable acceptance criteria.
-Expectations: the item titles only, and for each every category that is missing: scope, measurable outcome, or definition of done. Name the categories only. Do not give an example of the criterion.
+Expectations: the item titles only, and for each every category that is missing: scope, measurable outcome, or pass/fail condition. Name the categories only. Do not give an example of the criterion.
 Source: only the items below.
 ```
 
@@ -473,7 +464,7 @@ Source: this meeting only.
 
 **Find the request buried in a long thread.**
 ```
-Goal: tell me what, if anything, this thread asks me to change in the backlog. If it asks for a commitment, a date or an estimate instead, say that and do not invent a backlog item.
+Goal: tell me what, if anything, this thread asks me to change in the backlog. If it asks for a commitment, a date or an estimate instead, say that, and do not invent a backlog item or say what is already in it.
 Expectations: the request in one line, everyone asking for it, what they say the value is, and whether they have said anything about urgency.
 Source: this thread only.
 ```
@@ -482,11 +473,7 @@ Source: this thread only.
 
 ## Part 4: staying current on thirty minutes a week
 
-Waiting for a course will not close the training gap at the top of this guide. On the
-OECD's count, between 0.3% and 5.5% of courses carry any AI content, and most of that
-aims at specialists. Here is a routine that costs nothing and needs nobody's approval.
-
-### Thirty minutes a week
+Waiting for a course will not close the training gap at the top of this guide. On the OECD's count, between 0.3% and 5.5% of courses carry any AI content. Here is a routine that costs nothing and needs nobody's approval.
 
 ![A thirty minute weekly routine that costs nothing: ten minutes checking one source for what changed, fifteen minutes redoing a real task from your own week with the tool so you can judge the output, and five minutes writing down what worked and what did not.](/images/blog/pm-thirty-minutes.svg)
 
@@ -508,9 +495,7 @@ not. This is Rule 4.
 | What changed in the framework | The Scrum Guide at scrumguides.org, which is versioned and short | When a version lands |
 | What changed in the rules, in the EU | The European Commission's AI Act pages. The AI literacy duty in Article 4 has applied since 2 February 2025 | Quarterly |
 
-Do not treat vendor blogs, news aggregators or social threads as primary sources. Every
-number in this guide had to survive being traced back to the organisation that published
-it, and most of what circulates does not.
+Do not treat vendor blogs, news aggregators or social threads as primary sources. Go back to whoever published the number.
 
 ### A weekly on AI news
 
@@ -523,12 +508,10 @@ If this guide was forwarded to you, the other one is at learnslice.com/ai-guides
 
 ## Sources
 
-Every source below was read at source, not taken from a summary of it, and every link
-was checked on 17 September 2026.
+Every source below was checked on 17 September 2026.
 
 - **The Scrum Guide**, by Ken Schwaber and Jeff Sutherland, for every statement about
-  what a product owner is accountable for and what happens in each Scrum event. Quoted,
-  not interpreted. Licensed under Creative Commons Attribution ShareAlike 4.0.
+  what a product owner is accountable for and what happens in each Scrum event. Licensed under Creative Commons Attribution ShareAlike 4.0.
   scrumguides.org/scrum-guide.html
 - **IAB-Betriebspanel 2025**, the establishment panel run by the research institute of
   the German Federal Employment Agency, published as IAB-Kurzbericht 8 of 2026, for the
@@ -544,16 +527,14 @@ was checked on 17 September 2026.
   oecd.org/en/publications/bridging-the-ai-skills-gap_66d0702e-en.html
 - **Microsoft**, product documentation, for Copilot licence tiers, grounding, data
   protection, file referencing and prompt structure, and for the Jira and Confluence
-  connectors: an administrator must deploy them and they enforce the source system's
-  own permissions.
+  connectors: an administrator must deploy them and set their permissions, and the Jira connector supports Jira Cloud only.
   learn.microsoft.com/microsoft-365/copilot/microsoft-365-copilot-overview and
   /copilot/connectors/jira-cloud-overview
 - **European Commission**, for the AI Act and the Article 4 AI literacy duty applicable
   since 2 February 2025.
   digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers
 
-No figure here is estimated, modelled or taken from a vendor's marketing material. Where
-the evidence is thin, this guide says so rather than filling the gap.
+No figure here is estimated, modelled or taken from a vendor's marketing material.
 
 ### Notices
 

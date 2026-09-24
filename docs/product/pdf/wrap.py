@@ -139,6 +139,9 @@ pre{
   border-radius:0 2mm 2mm 0; padding:3.2mm 4mm; margin:3mm 0 4.5mm; overflow:visible;
   page-break-inside:avoid;
 }
+/* Keep a prompt's label ("One prompt.", "Find the buried assumption.") on the same
+   page as the prompt itself. */
+p:has(+ pre){ break-after:avoid; page-break-after:avoid; }
 pre code{
   font-family:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
   font-size:8.1pt; line-height:1.42; color:var(--muted);

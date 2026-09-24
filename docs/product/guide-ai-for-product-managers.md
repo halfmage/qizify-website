@@ -4,6 +4,9 @@ Status: draft audited 2026-09-15 for gaps, unverified statements, filler and
 readability. Eleven fixes applied, including one factual misquote (SaaS misread as
 software) and three claims asserted without evidence. Infographics not started.
 Prompts: all 13 run against a capable model on realistic fixtures, twice.
+2026-09-24: every prompt re-tested on Claude Haiku, Sonnet and Opus with trap fixtures,
+one fresh session per prompt; 11 prompts reworded where models failed the same way.
+On the reworded prompts Sonnet now passes 95% of checks and Opus 98%. Structure kept to Goal/Context/Expectations/Source.
 Round one found 15 defects across both guides; round two confirmed every fix held
 and surfaced smaller edges, mostly fixed counts and absolute bans, now also fixed.
 Still blocking: none has been run on a real Copilot tenant, so per-app and per-tier
@@ -36,7 +39,7 @@ This guide is about that gap: how to get from working faster to shipping somethi
 
 ![Faster but not better: 97% of product managers report improved personal productivity from AI, while 64% report improved product outcomes such as more revenue or faster time to market, a gap of 33 percentage points. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.](/images/blog/pm-outcome-gap.svg)
 
-Every number here comes from one source: the Product Focus 2026 Survey of the Product
+Every figure about the profession comes from one source: the Product Focus 2026 Survey of the Product
 Management Profession, 677 respondents across 40 countries, collected between October
 2025 and January 2026. Most respondents were in Europe, 83%, with 8% in the United
 States. Anything about how Microsoft Copilot behaves comes from Microsoft's own
@@ -49,8 +52,7 @@ documentation and was checked in September 2026. We are not affiliated with eith
 If you have barely used AI at work, skip this and read the next section instead.
 Otherwise, read four things and stop.
 
-1. **Your Copilot probably cannot see your work**, Part 0, item 2. Many people who
-   find Copilot useless are on a tier that cannot read their work.
+1. **Your Copilot probably cannot see your work**, Part 0, item 2. If Copilot has seemed useless, check first whether your tier can read your work.
 2. **Give it your own material.** Rule 1. This is the difference between a generic
    answer and a useful one, and it is not about phrasing.
 3. **Check it before it leaves you.** Rule 3. Numbers, names, and anything stated as a
@@ -61,13 +63,11 @@ The rest is detail you can come back to.
 
 ---
 
-## Half the profession is stuck in the same place
+## Not knowing how is the biggest barrier
 
 Half of the product managers in this survey who do not use AI say the reason is that
 they are unsure how. That is more than the 33% who distrust it, and more than the 17%
-who worry about legal and security risks. These three figures cover only the people who
-stay away. The report does not say how many people that is, so treat them as a ranking
-of reasons and not as exact counts. The ranking is the useful part: not knowing how
+who worry about legal and security risks. These three figures cover only the people who stay away, and only 4% of respondents never use AI, so treat them as a ranking of reasons and not as counts. The ranking is the useful part: not knowing how
 comes first. If that is you, you are in the largest group.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
@@ -82,8 +82,7 @@ to list the questions a sceptical reader would ask about it. Because you know th
 
 ## Part 0: six things nobody told you
 
-Six short sections before the main guide, a minute each. Every one of them explains
-something that goes wrong and is not your fault.
+Six short sections before the main guide, a minute each. Most of them explain something that goes wrong and is not your fault.
 
 ### 1. Your best prompt might have been luck
 
@@ -107,6 +106,8 @@ The same thing in detail, including what each tier can reach and how:
 | Microsoft 365 Copilot (Basic) | Not in chat. But Copilot works inside Word, Excel, PowerPoint and OneNote |
 | Microsoft 365 Copilot (Premium), the paid add-on | Yes, automatically, through Microsoft Graph, and only for files you already have permission to open |
 
+Microsoft is renaming Microsoft 365 Copilot to Microsoft Copilot, and Copilot Chat to Microsoft Copilot Chat, so your screen may show either name.
+
 > **Field note.** The problem I actually ran into was a step earlier than any of this.
 > Most of the team did not know we had Copilot licences at all. When they found out,
 > the next question was not which tier they were on. It was what they were supposed to
@@ -118,7 +119,7 @@ useful, check your tier before you blame your prompt. Only the premium tier reac
 your own content by itself.
 
 **The model picker.** Copilot offers Auto, Quick response and Think deeper. Auto chooses
-for you. Switch to Think deeper when the task is a judgment rather than a lookup, and
+for you. Switch to Think deeper when the task is a judgement rather than a lookup, and
 expect it to take longer on purpose.
 
 **Grounding, which is the word for all of this.** Two sources feed any answer: the
@@ -151,11 +152,11 @@ Context: I am preparing a prioritisation session for a B2B product and I need th
 not individual complaints. Expectations: at most six themes, each with a count and one
 verbatim quote, no recommendations. Source: only the attached file.*
 
-The second one is not cleverer, just more specific about what you already know.
+The second one is just more specific about what you already know.
 
 ### 4. The slash key
 
-In Copilot, type `/` and start typing the name of a file, person, meeting or email.
+In Copilot, type `/` and start typing the name of a file. With the paid Microsoft 365 Copilot licence you can also reference people, meetings and emails.
 You can attach a single file or a whole folder. Inside a SharePoint site you can
 reference up to ten files or pages. Checked September 2026.
 
@@ -166,8 +167,7 @@ Referencing is better than pasting, because pasting loses the formatting and the
 When you are signed in with your work account, prompts and responses are covered by
 enterprise data protection, and Microsoft states they are not used to train the
 foundation models. Copilot cannot show you a document you could not already open
-yourself. For users in the European Union there are additional European Union Data
-Boundary safeguards.
+yourself. For users in the European Union there are additional European Union Data Boundary safeguards, with two exceptions: web search queries, and Anthropic models where your administrator has enabled them, are not covered by the EU Data Boundary.
 
 **The caveat that matters.** All of that describes a work account signed in with your
 company identity. A personal account is a different product with different terms. If
@@ -192,7 +192,7 @@ Microsoft's own guidance says to review and verify responses.
 themes. Back comes: "Customers consistently request single sign-on." You go looking, and
 one ticket mentioned it once, as an aside. Nothing was invented exactly. A single signal
 was promoted to a pattern, in confident language, in a sentence you could reasonably
-paste into a roadmap review. That is the failure to expect: not a made-up fact you would catch, but a real signal overstated in a sentence that reads perfectly.
+paste into a roadmap review. That is the failure to expect: a real signal, overstated, in a sentence that reads perfectly.
 
 ![How a single signal becomes a false pattern: thirty support tickets go in, one of them mentions single sign-on once in passing, and the summary that comes back says customers consistently request single sign-on. One ticket in thirty, reported as consistent.](/images/blog/pm-signal-to-pattern.svg)
 
@@ -206,7 +206,7 @@ paste into a roadmap review. That is the failure to expect: not a made-up fact y
 were wrong?* If yes, use it and check it. If no, do not use it yet. Get the answer from
 someone who would know, or go and find out.
 
-![A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that fail most often, which are numbers, names, and anything stated as a fact about a customer. If no, you cannot accept that output yet: get it from someone who would know, or go and find out.](/images/blog/pm-trust-decision.svg)
+![A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that always need checking, which are numbers, names, and anything stated as a fact about a customer. If no, you cannot accept that output yet: get it from someone who would know, or go and find out.](/images/blog/pm-trust-decision.svg)
 
 ---
 
@@ -239,7 +239,7 @@ does not, ask whoever would own it.
 ### Rule 3. Check it before it leaves you
 
 85% of this profession already check AI output against their own expertise, so this rule
-is probably not new to you. What most people do not have is a consistent list. Use the
+is probably not new to you. What helps is a consistent list. Use the
 three from Part 0, item 6: numbers, names and customer claims.
 
 The moment that matters is **before it leaves you**, not before it ships. Once a
@@ -289,14 +289,14 @@ how much of your week each interruption costs after it arrives.
 ```
 Goal: group the requests below into at most six themes.
 Context: these are [N] requests that came to me this week as a product manager for [product].
-Expectations: for each theme give the theme in one line, how many requests it covers, and the single question I would need answered to decide what to do about it. If a request fits no theme, list it separately as unthemed rather than forcing it into one. Do not suggest solutions. Quote the requests, do not paraphrase them.
+Expectations: for each theme give the theme in one line, how many requests it covers, and the one question I would need answered to decide what to do about it, with no "and". Every request appears exactly once. If one fits no theme, list it separately as unthemed rather than forcing it into one. Do not suggest solutions. Under each theme, list the requests it covers, quoted as written.
 Source: only the text pasted below.
 
 [paste the requests]
 ```
 
 **Your first step, under fifteen minutes.** Take this week's inbound, in whatever form it
-is in, and run that prompt once. If the six themes come out wrong, that tells you
+is in, and run that prompt once. If the themes come out wrong, that tells you
 something too. Often it means the requests are not really requests, they are
 escalations.
 
@@ -320,7 +320,7 @@ directors, against 59% among junior product managers.
 
 **What it cannot do, and this one is serious.** It cannot talk to a customer for you, and
 it must never be used to invent one. Asking a model to "act as our typical user" and
-answer your questions produces fluent, confident, plausible fiction. It is one of the most damaging misuses in this profession, because the output looks exactly like research without the one thing research is for: the chance of being told you are wrong.
+answer your questions produces fluent, confident, plausible fiction. It is a damaging misuse, because the output looks like research but can never tell you that you are wrong.
 
 > **Field note.** I have seen product managers in my network treat what the model knows
 > as the voice of the customer. The models are trained on a spread of sources, and some
@@ -391,13 +391,11 @@ manager.
 
 ### Chapter 4. Most of your week is writing
 
-**The need.** Most of the job is writing, and most of the writing is read by someone who
+**The need.** Much of the job is writing, and much of the writing is read by someone who
 has thirty seconds.
 
 **The number.** Asked which activity they spend the most time on, 56% of product
-managers name inbound activities, against 25% naming strategic activities and 19%
-outbound. The survey does not break inbound down further, but in most product teams a
-large part of it is written: documents, updates, tickets and mail.
+managers name inbound activities, which the survey defines as helping the business deliver the product, against 25% naming strategic activities and 19% outbound. Much of that work, requirements above all, is written: documents, updates, tickets and mail.
 
 ![Which activity product managers say they spend the most time on: 56% name inbound activities, 25% name strategic activities such as deciding the right problems and products to pursue, and 19% name outbound activities. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.](/images/blog/pm-where-the-week-goes.svg)
 
@@ -431,8 +429,7 @@ comes back as "too vague to translate" is usually the reason it got no reply.
 right one, and you are presenting it tomorrow.
 
 **The number.** When product managers were asked which skills will matter most over the
-next two years, data analysis and literacy was named second among hard skills, behind
-only AI proficiency itself.
+next two years, data analysis and literacy was listed second among hard skills, after AI proficiency.
 
 **Where it helps.**
 - Drafting the query or the formula, which is a language problem more than a maths one.
@@ -441,17 +438,14 @@ only AI proficiency itself.
 - Telling you what is missing from an analysis before you present it, which is a much
   better use than asking it to do the analysis.
 
-**What it cannot do.** It cannot be trusted on arithmetic, and it cannot be trusted on
-any number it was not given. Every figure that leaves you is yours, not its. If you did
+**What it cannot do.** Do not trust its arithmetic unchecked, and do not trust any number it was not given. Every figure that leaves you is yours, not its. If you did
 not check it, you did not say it. You repeated it.
 
 **One prompt.**
 ```
 Goal: list the plausible explanations for the change below.
-Context: [metric] moved from [x] to [y] between [date] and [date] for
-[product]. Known changes in that window: [releases, campaigns, pricing,
-seasonality, reporting changes].
-Expectations: rank the explanations by how easily each could be checked, cheapest first, and for each name the exact check. Include mundane explanations such as instrumentation or reporting changes. Do not calculate anything I have not given you.
+Context: [metric] moved from [x] to [y] between [start date] and [end date] for [product]. Known changes in that window: [releases, campaigns, pricing, seasonality, reporting changes].
+Expectations: rank the explanations by how easily each could be checked, cheapest first, and for each name the exact check. Include mundane explanations such as instrumentation or reporting changes. Do not calculate anything new, such as a difference or a percentage.
 Source: only what I have written above.
 ```
 
@@ -467,14 +461,13 @@ product outcomes, such as faster time to market. The five chapters you just read
 AI does two different things in a product week. It changes how fast you produce the
 work, which is Chapter 1 and Chapter 4: themes instead of a pile, a second draft instead
 of a blank page, one update rewritten three ways. And it changes what you decide, which
-is Chapter 2, 3 and 5: the question you had not thought to ask before the interview, the
+is Chapters 2, 3 and 5: the question you had not thought to ask before the interview, the
 test that lets you say no, the explanation you ruled out before the meeting.
 
 Only the second kind moves the product. If you use it for drafting alone you will land
 in the gap: faster, with a roadmap that looks exactly as it did before.
 
-That is why no prompt in this guide hands you finished work. Every one of them returns
-something you still have to decide: themes and the question behind each, the objections
+That is why most prompts in this guide return something you still have to decide: themes and the question behind each, the objections
 to your own case, the parts of a strategy too vague to test, the explanations ranked by
 which is cheapest to rule out. The output is what you take into the room where the decision gets made.
 
@@ -482,7 +475,9 @@ which is cheapest to rule out. The output is what you take into the room where t
 
 ## Part 3: the prompt pack
 
-Every prompt below uses the four parts from Part 0, item 3. Square brackets
+Start a new chat for each prompt, so nothing from an earlier task leaks into the answer, and on a fast or free model check the output against the prompt's own rules before you use it.
+
+Every prompt below uses the four parts from Part 0, item 3, though the in-app prompts skip Context, because the open thread, meeting or file supplies it. Square brackets
 mark the parts you change. Each says what it needs, and "any tier" means it works even
 on Copilot Chat (Basic), because you supply the content yourself.
 
@@ -492,8 +487,8 @@ Theme a pile of requests: see Chapter 1.
 
 **Argue the other side.**
 ```
-Goal: make the strongest case against the decision below.
-Context: [decision], [what it costs], [who disagrees].
+Goal: make the strongest case against this decision.
+Context: the decision is [decision]. It costs [what it costs]. We are making it because [your reasons]. [Who disagrees] disagrees because [what they said, or "unknown"].
 Expectations: up to five objections, strongest first, each with the evidence someone would need to defeat it. Write only objections the material supports; if it supports fewer, say so. Where an objection needs a fact I have not given you, state that fact as a question rather than asserting it.
 Source: only what I have written.
 ```
@@ -511,7 +506,13 @@ this", which is correct and useless.
 
 #### Outlook, needs Microsoft 365 Copilot
 
-Draft the decline: see Chapter 1.
+**Draft the decline.**
+```
+Goal: draft a reply that declines the request in this thread.
+Context: my reasoning is [reason]. What I can offer instead: [alternative, or nothing].
+Expectations: under 120 words. Say no to the request itself, not only to its deadline, in the first sentence, then give the reasoning. Do not promise anything I have not listed.
+Source: this thread and what I have written above.
+```
 
 **Find the decision buried in a long thread.**
 ```
@@ -527,14 +528,14 @@ Copilot in Teams reaches back over the last 30 days of meetings, which is easy t
 **Turn a recap into owners and dates.**
 ```
 Goal: extract the commitments made in this meeting.
-Expectations: a table of commitment, owner, date. Anything without a named owner goes in a separate list titled unassigned. Do not invent owners or dates.
+Expectations: a table of commitment, owner, date. Any commitment without a named owner goes in a separate list titled unassigned. Do not invent owners or dates.
 Source: this meeting only.
 ```
 
 **Get what was left unresolved**, which the standard recap tends to leave out.
 ```
 Goal: list what this meeting did not settle.
-Expectations: open questions and disagreements only. Do not summarise what was agreed. Name who raised each one. Where something is plainly unresolved but nobody raised it, list it and say nobody did.
+Expectations: open questions and disagreements only. Do not summarise what was agreed. Name who raised each one. Then list anything that still lacks an owner, a date or an answer and that nobody raised, and say nobody did.
 Source: this meeting only.
 ```
 
@@ -564,17 +565,16 @@ Source: the selected data only.
 
 **Turn a decision document into slides.**
 ```
-Goal: turn the decision document below into slides.
-Expectations: slide one states the decision the document asks for, and its recommendation if it makes one. Then one slide per argument the document actually contains, up to five in total. Do not pad to reach five. No slide with more than three bullets.
-Source: only the document below.
+Goal: turn the decision document I reference into slides.
+Expectations: slide one states the decision the document asks for, and its recommendation if it makes one. Then one slide per argument the document actually contains, at most five slides including the first. Do not pad to reach five. No slide with more than three bullets.
+Source: only the document I reference with /.
 ```
 
 ---
 
 ## Part 4: staying current on thirty minutes a week
 
-93% of this profession say they want to learn more about AI tools. What holds them back is budget and backing: 48% say a lack of budget prevents them getting training and 23% say there is
-no management support for it, and only 32% rate the development opportunities at their
+93% of this profession say they want to learn more about AI tools. Training in general is hard to get: asked about the biggest barrier to product management training, 48% name a lack of budget and 23% a lack of management support, and only 32% rate the development opportunities at their
 organisation as better than average.
 
 So here is a routine that costs nothing and needs nobody's approval.
@@ -583,16 +583,13 @@ If your company has deployed nothing at all, it still works. Use a free tier wit
 personal account, never put company material into it, see Rule 2, and practise on public
 material or your own writing. The habits transfer. The grounding does not.
 
-### Thirty minutes a week
-
 ![A thirty minute weekly routine that costs nothing: ten minutes checking one source for what changed, fifteen minutes redoing a real task from your own week with the tool so you can judge the output, and five minutes writing down what worked and what did not.](/images/blog/pm-thirty-minutes.svg)
 
 **Ten minutes, what changed.** Check one source from the list below, rotating through it.
 
 **Fifteen minutes, on your own real work.** Take a task you did this week and do it again
 with the tool. Not an exercise, the actual task, where you already know what good looks
-like. This is the only way to tell whether the output is any good, and it is why
-learning on your own work beats any course.
+like. This is the only way to tell whether the output is any good, and it is why practising on your own work teaches more than exercises do.
 
 **Five minutes, write it down.** One line in your saved prompts: what worked, what did
 not. This is Rule 4, and it is what makes the thirty minutes add up.
@@ -607,8 +604,7 @@ not. This is Rule 4, and it is what makes the thirty minutes add up.
 | What changed in the rules, in the EU | The European Commission's AI Act pages. The AI literacy duty in Article 4 has applied since 2 February 2025 | Quarterly |
 
 One policy worth adopting: **do not treat vendor blogs, news aggregators or social
-threads as primary sources.** Every number in this guide had to survive being traced back
-to the organisation that published it. Most of what circulates does not survive that.
+threads as primary sources.** Go back to whoever published the number.
 
 ### A weekly on AI news
 
@@ -659,8 +655,7 @@ Three practical moves, in that order:
 If you want the four weeks run for the team rather than assembled by you, the contact
 details at the end are the place to ask.
 
-One last thing. Chapter 2 showed that the shortage of customer time is worst at your
-level, not your team's. Whatever the three moves above free up, that is where it should
+One last thing. Chapter 2 showed that the shortage of customer time is worst at the most senior level. Whatever the three moves above free up, that is where it should
 go.
 
 ---
@@ -672,7 +667,7 @@ Every source below was checked on 17 September 2026.
 - **Product Focus, 2026 Survey of the Product Management Profession.** 677 respondents
   across 40 countries, collected October 2025 to January 2026. 83% Europe, 8% United
   States, 9% elsewhere. Every figure about the profession in this guide comes from this
-  report, read in full, not from a summary of it. We are not affiliated with Product
+  report. We are not affiliated with Product
   Focus and reproduce none of its charts.
   productfocus.com/product-management-resources/profession-survey
 - **Microsoft**, product documentation, for Copilot licence tiers, grounding, data
