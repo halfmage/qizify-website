@@ -32,3 +32,14 @@ __pycache__/
 docs/product/pdf/*.pdf
 docs/product/pdf/guide.html
 docs/product/pdf/*.png
+
+# Internal strategy, grants and sales notes: keep local, this repo is public
+docs/grants/
+docs/strategy/
+docs/sales/linkedin-targeting-dach.md
+docs/sales/us-agency-partnerships.md
+docs/sales/campaign-custom-elearning/60-execution-plan.md
+docs/linkedin-tag-der-lehre.md
+docs/product/ai-guides-distribution-campaign.md
+COPY-SUGGESTIONS-*.md
+SEO-AUDIT-*.md
