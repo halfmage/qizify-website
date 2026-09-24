@@ -20,6 +20,10 @@ Author: Alesia Kunz, CEO of LearnSlice. Portrait at public/images/blog/author-al
 her answers, and are styled differently from the body so experience is never mistaken
 for sourced evidence. Do not add a field note she did not give.
 Structure: docs/product/ai-guide-structure.md
+Closing section "When the limit is the tool, not you" added 2026-09-24. Proof point is
+the AI mentor from /solutions#selected-work, the only listed project about grounding.
+Swap in a PM/PO engineering project with a counted number when one exists.
+Reply promise: two working days.
 -->
 
 # AI for product owners
@@ -503,6 +507,40 @@ If you would be interested in a weekly newsletter on AI news, write to us at
 info@learnslice.com.
 
 If this guide was forwarded to you, the other one is at learnslice.com/ai-guides.
+
+---
+
+## When the limit is the tool, not you
+
+Most of this guide is method, and method is yours to fix. Some limits are not. You have
+met four of them already:
+
+- If your backlog lives in Jira or Azure DevOps, no tier of Copilot reads it
+  automatically (Part 0, item 2).
+- The Jira connector works only with Jira Cloud, not Jira Server or Data Center, and even
+  a connected source is often not a readable project.
+- So in practice, product owners copy tickets in by hand. Every prompt in this guide
+  starts from what you paste.
+- Web search queries and Anthropic models sit outside the EU Data Boundary (Part 0,
+  item 5).
+
+When a model can read your backlog directly, those limits move. It can check every item
+against the Product Goal, find duplicates across the whole backlog rather than the
+twenty items you pasted, and refine a story against its real history, while respecting
+who may see which project. That is called grounding, and it does not have to mean
+sending your data abroad: the model can run on servers in Germany, and it can be a model
+you own.
+
+This is the software engineering work LearnSlice does: connecting AI to the systems a
+product team already uses, Jira and Confluence included, and hosting it in Germany.
+
+The same technique already runs in the AI mentor we build: it answers from an
+organisation's own material and cites each answer back to its source
+(learnslice.com/solutions).
+
+**If you have hit one of these limits,** write to info@learnslice.com with the limit and
+the system your backlog lives in. Alesia replies herself, within two working days, with
+whether it is solvable and roughly what it would take. No sales sequence follows.
 
 ---
 

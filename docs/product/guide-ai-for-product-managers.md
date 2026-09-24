@@ -19,6 +19,10 @@ Author: Alesia Kunz, CEO of LearnSlice. Portrait at public/images/blog/author-al
 her answers, and are styled differently from the body so experience is never mistaken
 for sourced evidence. Do not add a field note she did not give.
 Structure: docs/product/ai-guide-structure.md
+Closing section "When the limit is the tool, not you" added 2026-09-24. Proof point is
+the AI mentor from /solutions#selected-work, the only listed project about grounding.
+Swap in a PM/PO engineering project with a counted number when one exists.
+Reply promise: two working days.
 -->
 
 # AI for product managers
@@ -657,6 +661,40 @@ details at the end are the place to ask.
 
 One last thing. Chapter 2 showed that the shortage of customer time is worst at the most senior level. Whatever the three moves above free up, that is where it should
 go.
+
+---
+
+## When the limit is the tool, not you
+
+Most of this guide is method, and method is yours to fix. Some limits are not. You have
+met four of them already:
+
+- Copilot reads your own files and mail by itself only on the paid Premium tier. On
+  every other tier, you paste (Part 0, item 2).
+- Every prompt in this guide works on what you hand it. Customer notes in a CRM, product
+  data in an analytics tool and specs spread across three systems stay out of reach.
+- Checking a claim like "customers consistently request single sign-on" means going back
+  to the source by hand, because what you pasted is a copy with no link back to where it
+  came from (Part 0, item 6).
+- Web search queries and Anthropic models sit outside the EU Data Boundary (Part 0,
+  item 5).
+
+When a model can read your own material, those limits move. It answers from your
+tickets, specs and customer notes, shows which document each statement came from, and
+respects who may see what. That is called grounding, and it does not have to mean
+sending your data abroad: the model can run on servers in Germany, and it can be a model
+you own.
+
+This is the software engineering work LearnSlice does: connecting AI to the systems a
+product team already uses, and hosting it in Germany.
+
+The same technique already runs in the AI mentor we build: it answers from an
+organisation's own material and cites each answer back to its source
+(learnslice.com/solutions).
+
+**If you have hit one of these limits,** write to info@learnslice.com with the limit and
+the system your data lives in. Alesia replies herself, within two working days, with
+whether it is solvable and roughly what it would take. No sales sequence follows.
 
 ---
 
