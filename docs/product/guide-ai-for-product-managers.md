@@ -32,8 +32,7 @@ published research.
 *Inside: the licence nobody checks, the wrong answer that reads perfectly, and the five
 places in a product week where AI is worth the time.*
 
-That gap is what this guide is about. Not how to write a clever prompt, but how to get
-from working quicker to shipping something a stakeholder would notice.
+This guide is about that gap: how to get from working faster to shipping something a stakeholder would notice. Clever prompts are a small part of it.
 
 ![Faster but not better: 97% of product managers report improved personal productivity from AI, while 64% report improved product outcomes such as more revenue or faster time to market, a gap of 33 percentage points. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.](/images/blog/pm-outcome-gap.svg)
 
@@ -69,7 +68,7 @@ they are unsure how. That is more than the 33% who distrust it, and more than th
 who worry about legal and security risks. These three figures cover only the people who
 stay away. The report does not say how many people that is, so treat them as a ranking
 of reasons and not as exact counts. The ranking is the useful part: not knowing how
-comes first. If that is you, you are in the largest group, not behind it.
+comes first. If that is you, you are in the largest group.
 
 What the tool is, in two sentences: a system that predicts likely text from the text you
 give it, trained on an enormous amount of writing. That is why it writes so smoothly,
@@ -77,9 +76,7 @@ why it helps with anything made of words, and why it will state something false 
 complete confidence.
 
 **Start here, once, this week.** Take a document you already wrote and know well. Ask it
-to list the questions a sceptical reader would ask about it. You will know straight away
-whether the answer is any good. That is the point of starting on work you already
-understand. Then read the rest of this.
+to list the questions a sceptical reader would ask about it. Because you know the document, you can judge the answer straight away. Then read the rest of this.
 
 ---
 
@@ -91,15 +88,14 @@ something that goes wrong and is not your fault.
 ### 1. Your best prompt might have been luck
 
 Microsoft says it plainly in its own guidance: using the same prompt multiple times can
-result in different responses. This is how the technology works, not a fault.
+result in different responses. That is how the technology works.
 
-The practical consequence is the one people miss. **One good answer does not prove the
-prompt was good.** It might have been luck. A prompt is only worth keeping once it has
+**One good answer does not prove the prompt was good.** It might have been luck. A prompt is only worth keeping once it has
 produced a usable answer more than once, on different inputs. That is why Rule 4 exists.
 
 ### 2. Your Copilot probably cannot see your work
 
-There are three tiers and they behave completely differently.
+There are three tiers, and they reach very different things.
 
 ![What each Copilot tier can reach: Copilot Chat Basic reaches web data only; Microsoft 365 Copilot Basic reaches web data and works inside Word, Excel, PowerPoint and OneNote; Microsoft 365 Copilot Premium, the paid add-on, additionally reaches your own files and mail automatically through Microsoft Graph, limited to files you already have permission to open.](/images/blog/pm-copilot-tiers.svg)
 
@@ -131,8 +127,7 @@ second one by itself. Every other tier sees only what you hand it.
 
 **Pick per task, not per tool.** In this profession 66% of AI users use ChatGPT
 regularly, with Copilot second, then Gemini, Claude and Perplexity. 22% use three or
-more regularly, and 52% of ChatGPT users also use Copilot. Nobody getting value out of
-this is loyal to one tool. They choose per task. For anything about your own work, use
+more regularly, and 52% of ChatGPT users also use Copilot. Plenty of people already mix tools, and that is the right instinct: choose per task. For anything about your own work, use
 the tool that can actually read it. For thinking out loud, any general chat tool will
 do.
 
@@ -140,9 +135,9 @@ do.
 Confluence by 46%, so for most readers the product data already sits in tools that are
 adding AI of their own. Check what you already pay for before buying anything new.
 
-### 3. The four-part prompt Microsoft wrote and nobody reads
+### 3. Microsoft's four-part prompt
 
-This is Microsoft's own framework, and it is a good one.
+This framework comes from Microsoft's own guidance, and it is a good one.
 
 **Goal.** What you want.
 **Context.** The situation, who it is for, what has already been decided.
@@ -156,16 +151,15 @@ Context: I am preparing a prioritisation session for a B2B product and I need th
 not individual complaints. Expectations: at most six themes, each with a count and one
 verbatim quote, no recommendations. Source: only the attached file.*
 
-The second one is not more clever. It is more specific about what you already know.
+The second one is not cleverer, just more specific about what you already know.
 
-### 4. The one key most people never find
+### 4. The slash key
 
 In Copilot, type `/` and start typing the name of a file, person, meeting or email.
 You can attach a single file or a whole folder. Inside a SharePoint site you can
 reference up to ten files or pages. Checked September 2026.
 
-Most people paste content they could have referenced instead. Pasting loses the
-formatting and the source link.
+Referencing is better than pasting, because pasting loses the formatting and the source link.
 
 ### 5. Where your prompts actually go
 
@@ -182,10 +176,9 @@ matters.
 
 This is practical guidance, not legal advice. Your company's own rules sit on top of it.
 
-### 6. It will lie to you in your own house style
+### 6. It will be wrong in your own house style
 
-It will state things that are not true, confidently and in your own house style. Three
-things need checking every single time:
+It will state things that are not true, and it will state them confidently. Three things need checking every time:
 
 - **Numbers.** Check every figure you did not give it yourself. It may have found a real
   one. It may also have invented one that looks real.
@@ -193,15 +186,13 @@ things need checking every single time:
 - **Anything stated as a fact about a customer.** This is the dangerous one, because it
   is the hardest to spot and the most expensive to act on.
 
-Microsoft's own guidance says to review and verify responses. Take the vendor at its
-word.
+Microsoft's own guidance says to review and verify responses.
 
 **What this looks like in practice.** You paste thirty support tickets and ask for the
 themes. Back comes: "Customers consistently request single sign-on." You go looking, and
 one ticket mentioned it once, as an aside. Nothing was invented exactly. A single signal
 was promoted to a pattern, in confident language, in a sentence you could reasonably
-paste into a roadmap review. That is the failure mode to expect. Not a made-up fact you
-would catch, but a real thing overstated, reading perfectly.
+paste into a roadmap review. That is the failure to expect: not a made-up fact you would catch, but a real signal overstated in a sentence that reads perfectly.
 
 ![How a single signal becomes a false pattern: thirty support tickets go in, one of them mentions single sign-on once in passing, and the summary that comes back says customers consistently request single sign-on. One ticket in thirty, reported as consistent.](/images/blog/pm-signal-to-pattern.svg)
 
@@ -213,8 +204,7 @@ would catch, but a real thing overstated, reading perfectly.
 
 **The decision aid.** Before you use an output, ask one question: *could I tell if this
 were wrong?* If yes, use it and check it. If no, do not use it yet. Get the answer from
-someone who would know, or go and find out. It is one question and it catches the
-outputs that are worth worrying about.
+someone who would know, or go and find out.
 
 ![A decision aid for AI output. Ask one question: could I tell if this were wrong? If yes, use it and check the three things that fail most often, which are numbers, names, and anything stated as a fact about a customer. If no, you cannot accept that output yet: get it from someone who would know, or go and find out.](/images/blog/pm-trust-decision.svg)
 
@@ -222,8 +212,7 @@ outputs that are worth worrying about.
 
 ## Part 1: four habits that separate method from luck
 
-Part 0 was how the tool behaves. These four are how you behave. They are what turns an
-answer that happened to work into a result you can repeat.
+Part 0 was about how the tool behaves. These four habits are about how you work with it, and they are what makes a good result repeatable.
 
 ### Rule 1. Give it your own material
 
@@ -236,9 +225,7 @@ description of a thing is working from a copy of a copy.
 
 ### Rule 2. Know what must never go in
 
-Among product managers who avoid AI, 17% name legal or security reasons. They are not
-being irrational, they are being unspecific. Turn it into three questions you can answer
-in a second:
+Among product managers who avoid AI, 17% name legal or security reasons. The concern is reasonable but too vague to act on. Three questions make it concrete, and each takes a second:
 
 1. **Which account am I in?** Work identity, or personal. See Part 0, item 5.
 2. **Would I put this in an email to a supplier?** If not, it does not go in a chat
@@ -261,11 +248,11 @@ being an AI problem and becomes a fact your organisation believes.
 
 ### Rule 4. Keep what works
 
-The habit that pays back the most, and the easiest one to skip.
+This is the easiest habit to skip.
 
-When an answer comes out genuinely good, do not just use it. Save the prompt that
+When an answer comes out good, save the prompt that
 produced it, with the parts that change marked in square brackets, in whatever you
-already use: a note, a Confluence page, a pinned message. Next time the same job takes
+already use: a note, a Confluence page, a pinned message. Next time the same job
 starts from something that has already worked, instead of from nothing.
 
 ---
@@ -285,11 +272,10 @@ it.
 schedule. Firefighting heads the survey's list of the big issues the profession faces,
 ahead of lack of resource and weak or missing company strategy.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Turning fifty inbound requests into six themes, so the argument is about categories
   rather than tickets.
-- Drafting the reply that declines a request and still explains the reasoning. This is
-  the message most people avoid writing, and therefore never send.
+- Drafting the reply that declines a request and still explains the reasoning. It is the message that is easiest to put off.
 - Turning a decision someone made in a corridor into three lines in the ticket, before
   everyone forgets it.
 
@@ -325,20 +311,16 @@ directors, against 59% among junior product managers.
 
 ![Customer time gets worse with seniority: 59% of junior product managers say they do not spend enough time with customers, 71% across the whole profession, and 75% among heads and directors. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.](/images/blog/pm-seniority-inversion.svg)
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Turning interview recordings or notes into themes with the original quotes still
   attached, so you can check the theme against the words.
-- Sharpening the questions before the interview, which is where AI earns its place in
-  discovery. Take your assumptions to the model, let it pull them apart, then take the
+- Sharpening the questions before the interview, which is where AI earns its place in discovery. Take your assumptions to the model, let it pull them apart, then take the
   better questions to a real person.
 - Finding the contradictions between what two customers told you.
 
 **What it cannot do, and this one is serious.** It cannot talk to a customer for you, and
 it must never be used to invent one. Asking a model to "act as our typical user" and
-answer your questions produces fluent, confident, plausible fiction. It is the single
-most damaging misuse available to this profession, because the output looks exactly like
-research and carries none of the risk that real research carries: the risk of being
-told you are wrong.
+answer your questions produces fluent, confident, plausible fiction. It is one of the most damaging misuses in this profession, because the output looks exactly like research without the one thing research is for: the chance of being told you are wrong.
 
 > **Field note.** I have seen product managers in my network treat what the model knows
 > as the voice of the customer. The models are trained on a spread of sources, and some
@@ -358,8 +340,7 @@ Source: only the transcript below.
 ```
 
 **Your first step.** Take the most recent customer conversation you have any record of,
-even rough notes, and run it. Take the contradictions to the team. They are often where
-your roadmap is quietly wrong, and nobody can see that from a summary.
+even rough notes, and run it. Take the contradictions to the team. They are often where your roadmap is wrong, and a summary hides them.
 
 ### Chapter 3. Everything is important, and that is the problem
 
@@ -372,7 +353,7 @@ managers with a weak company strategy are 15 percentage points more likely to ha
 primary metric, 44% against 29%. It is difficult to prioritise if nobody has defined
 what winning looks like.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Turning a vague strategy statement into a written test you can actually apply, with
   the questions it would have to answer to decide a real case.
 - Making the trade-off in a decision explicit, so the thing you are giving up is on the
@@ -382,8 +363,7 @@ what winning looks like.
 **What it cannot do.** It cannot supply the strategy. It will happily generate a
 plausible one, and that is the trap: a smooth-sounding strategy nobody agreed to is
 worse than openly having none, because it shuts down arguments that needed to happen.
-Use it to sharpen a strategy that exists, or to make the absence of one visible. Never
-to fill the hole quietly.
+Use it to sharpen a strategy that exists, or to make the absence of one visible. Never to fill the gap without saying so.
 
 > **Field note.** While building a product you rarely have one stakeholder. You have
 > many, each responsible for one part of the product and each with different priorities
@@ -409,7 +389,7 @@ two requests currently competing for the same sprint. The list of what was too v
 test is the more valuable half of the output, and it is the thing to bring to your
 manager.
 
-### Chapter 4. Most of your week is writing nobody acts on
+### Chapter 4. Most of your week is writing
 
 **The need.** Most of the job is writing, and most of the writing is read by someone who
 has thirty seconds.
@@ -421,13 +401,12 @@ large part of it is written: documents, updates, tickets and mail.
 
 ![Which activity product managers say they spend the most time on: 56% name inbound activities, 25% name strategic activities such as deciding the right problems and products to pursue, and 19% name outbound activities. Source: Product Focus 2026 Survey of the Product Management Profession, 677 respondents across 40 countries.](/images/blog/pm-where-the-week-goes.svg)
 
-**Where it genuinely helps.**
+**Where it helps.**
 - The second draft, not the first. Write the bad version yourself in five minutes, then
   hand it over to be tightened. The first draft carries your intent and that is the part
   a model cannot guess.
 - Compressing a long document down to the decision it is asking for.
-- Rewriting one update for three audiences, because the engineering version and the
-  executive version of the same news are genuinely different documents.
+- Rewriting one update for three audiences, because the engineering version and the executive version of the same news are different documents.
 
 **What it cannot do.** It cannot know what you meant. A first draft generated from an
 empty prompt costs more to fix than it would have cost to write, because you end up
@@ -455,7 +434,7 @@ right one, and you are presenting it tomorrow.
 next two years, data analysis and literacy was named second among hard skills, behind
 only AI proficiency itself.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Drafting the query or the formula, which is a language problem more than a maths one.
 - Listing the plausible explanations for a movement, including the boring ones like a
   reporting change or a seasonal effect, so you walk in having ruled things out.
@@ -483,8 +462,7 @@ cheapest check on the list is one nobody ran, that is your meeting.
 
 Five chapters in, it is worth returning to the number this guide opened with. In the
 survey's own words, 97% report improved productivity and only 64% report improved
-product outcomes, such as faster time to market. That missing third is not a mystery,
-and it is visible in the five chapters you just read.
+product outcomes, such as faster time to market. The five chapters you just read show where that missing third goes.
 
 AI does two different things in a product week. It changes how fast you produce the
 work, which is Chapter 1 and Chapter 4: themes instead of a pile, a second draft instead
@@ -498,8 +476,7 @@ in the gap: faster, with a roadmap that looks exactly as it did before.
 That is why no prompt in this guide hands you finished work. Every one of them returns
 something you still have to decide: themes and the question behind each, the objections
 to your own case, the parts of a strategy too vague to test, the explanations ranked by
-which is cheapest to rule out. The output is not the work. It is the thing you take into
-the room where the work gets decided.
+which is cheapest to rule out. The output is what you take into the room where the decision gets made.
 
 ---
 
@@ -596,8 +573,7 @@ Source: only the document below.
 
 ## Part 4: staying current on thirty minutes a week
 
-93% of this profession say they want to learn more about AI tools. The obstacle is not
-appetite. 48% say a lack of budget prevents them getting training and 23% say there is
+93% of this profession say they want to learn more about AI tools. What holds them back is budget and backing: 48% say a lack of budget prevents them getting training and 23% say there is
 no management support for it, and only 32% rate the development opportunities at their
 organisation as better than average.
 
@@ -611,8 +587,7 @@ material or your own writing. The habits transfer. The grounding does not.
 
 ![A thirty minute weekly routine that costs nothing: ten minutes checking one source for what changed, fifteen minutes redoing a real task from your own week with the tool so you can judge the output, and five minutes writing down what worked and what did not.](/images/blog/pm-thirty-minutes.svg)
 
-**Ten minutes, what changed.** Check one source from the list below. Not all of them,
-one, rotating.
+**Ten minutes, what changed.** Check one source from the list below, rotating through it.
 
 **Fifteen minutes, on your own real work.** Take a task you did this week and do it again
 with the tool. Not an exercise, the actual task, where you already know what good looks
@@ -673,8 +648,7 @@ name. The activation plan is the one the fewest name.
 
 Three practical moves, in that order:
 
-1. **Make the prompt pack the team's shared templates.** Not a document nobody opens, a
-   place where anyone can add one that worked. This is the 69% finding applied.
+1. **Make the prompt pack the team's shared templates.** Keep them somewhere people actually open, where anyone can add a prompt that worked. This is the 69% finding applied.
 2. **Put one question in the one to one.** "What did you try with AI this month and what
    came out wrong?" The second half is what makes it safe to answer honestly.
 3. **Run a four week activation plan after anyone learns anything.** Week one, everyone
@@ -693,8 +667,7 @@ go.
 
 ## Sources
 
-Every source below was checked on 17 September 2026 and resolves. Nothing here is
-second-hand.
+Every source below was checked on 17 September 2026.
 
 - **Product Focus, 2026 Survey of the Product Management Profession.** 677 respondents
   across 40 countries, collected October 2025 to January 2026. 83% Europe, 8% United

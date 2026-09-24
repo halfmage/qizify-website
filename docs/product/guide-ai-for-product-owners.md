@@ -59,9 +59,7 @@ why it helps with anything made of words, and why it will state something false 
 complete confidence.
 
 **Start here, once, this week.** Take a backlog item you wrote yourself and know well.
-Ask it to list the questions a developer would ask before picking the item up. You will
-know straight away whether the answer is any good. That is why you start on work you
-know.
+Ask it to list the questions a developer would ask before picking the item up. Because you wrote the item, you can judge the answer straight away.
 
 ---
 
@@ -73,15 +71,14 @@ something that goes wrong and is not your fault.
 ### 1. Your best prompt might have been luck
 
 Microsoft says it plainly in its own guidance: using the same prompt multiple times can
-result in different responses. This is how the technology works, not a fault.
+result in different responses. That is how the technology works.
 
-The practical consequence is the one people miss. **One good answer does not prove the
-prompt was good.** It might have been luck. A prompt is only worth keeping once it has
+**One good answer does not prove the prompt was good.** It might have been luck. A prompt is only worth keeping once it has
 produced a usable answer more than once, on different inputs. That is why Rule 4 exists.
 
 ### 2. Your Copilot probably cannot see your work
 
-There are three tiers and they behave completely differently.
+There are three tiers, and they reach very different things.
 
 ![What each Copilot tier can reach: Copilot Chat Basic reaches web data only; Microsoft 365 Copilot Basic reaches web data and works inside Word, Excel, PowerPoint and OneNote; Microsoft 365 Copilot Premium, the paid add-on, additionally reaches your own files and mail automatically through Microsoft Graph, limited to files you already have permission to open.](/images/blog/pm-copilot-tiers.svg)
 
@@ -119,9 +116,9 @@ system's own permissions, so a connected source is not the same as a readable pr
 > check that your organisation allows it from a data protection point of view. That
 > check comes before the convenience.
 
-### 3. The four-part prompt Microsoft wrote and nobody reads
+### 3. Microsoft's four-part prompt
 
-This is Microsoft's own framework, and it is a good one.
+This framework comes from Microsoft's own guidance, and it is a good one.
 
 **Goal.** What you want.
 **Context.** The situation, who it is for, what has already been decided.
@@ -136,9 +133,9 @@ finish in one. Expectations: each item independently valuable and testable on it
 with the acceptance criteria that would prove it. Say which split you would not
 recommend and why. Source: only the story below.*
 
-The second one is not more clever. It is more specific about what you already know.
+The second one is not cleverer, just more specific about what you already know.
 
-### 4. The one key most people never find
+### 4. The slash key
 
 In Copilot, type `/` and start typing the name of a file, person, meeting or email. You
 can attach a single file or a whole folder. Inside a SharePoint site you can reference
@@ -160,10 +157,9 @@ not adopt it named data protection and privacy, and 53% named unclear legal
 consequences. Respondents could name more than one. This section answers part of both. This is practical guidance, not
 legal advice, and your company's own rules sit on top of it.
 
-### 6. It will lie to you in your own house style
+### 6. It will be wrong in your own house style
 
-It will state things that are not true, confidently and in your own house style. Three
-things need checking every single time:
+It will state things that are not true, and it will state them confidently. Three things need checking every time:
 
 - **Numbers.** Check every figure you did not give it yourself.
 - **Names.** People, products, teams, systems.
@@ -174,7 +170,7 @@ things need checking every single time:
 themes. Back comes: "Customers consistently request single sign-on." You go looking, and
 one ticket mentioned it once, as an aside. Nothing was invented exactly. A single signal
 was promoted to a pattern, in confident language, in a sentence that could become an
-epic. That is the failure mode to expect.
+epic. That is the failure to expect.
 
 ![How a single signal becomes a false pattern: thirty support tickets go in, one of them mentions single sign-on once in passing, and the summary that comes back says customers consistently request single sign-on. One ticket in thirty, reported as consistent.](/images/blog/pm-signal-to-pattern.svg)
 
@@ -193,8 +189,7 @@ someone who would know, or go and find out.
 
 ## Part 1: four habits that separate method from luck
 
-Part 0 was how the tool behaves. These four are how you behave. They are what turns an
-answer that happened to work into a result you can repeat.
+Part 0 was about how the tool behaves. These four habits are about how you work with it, and they are what makes a good result repeatable.
 
 ### Rule 1. Give it your own material
 
@@ -226,7 +221,7 @@ becomes something a team builds.
 
 ### Rule 4. Keep what works
 
-When an answer comes out genuinely good, save the prompt that produced it, with the
+When an answer comes out good, save the prompt that produced it, with the
 parts that change marked in square brackets, wherever your team already looks. Next time
 the same job starts from something that has already worked, instead of from nothing.
 
@@ -247,7 +242,7 @@ writing an item to showing what it changed.
 **The need.** An item goes into refinement and the session is spent filling in things
 you could have written down first.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Turning a rough note into a first item you then rewrite, which is faster than facing
   an empty field.
 - Listing the questions a developer would ask before picking the item up, which is the
@@ -283,7 +278,7 @@ rather than discovering it there.
 **The need.** Refinement becomes forty minutes of the team reading a story for the first
 time.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Proposing splits for an item that is too large, which you then accept or reject.
 - Drafting acceptance criteria that are actually testable rather than restatements of
   the title.
@@ -314,7 +309,7 @@ the one who has to defend it anyway.
 The Scrum Guide is explicit here: you may delegate the work but remain accountable, and
 the product owner is one person, not a committee.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Arguing the other side of an ordering decision before a stakeholder does it for you.
 - Making the trade-off explicit, so what you are giving up is written down rather than
   discovered later.
@@ -360,7 +355,7 @@ sprint is actually for.
 The first topic of sprint planning is why this sprint is valuable, and the Scrum Guide
 makes proposing that value your job.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Turning a set of selected items into a candidate sprint goal in one sentence, which
   you then correct.
 - Asking whether the selected items actually hold together, or whether they are just the
@@ -388,7 +383,7 @@ argue with beats a blank room.
 **The need.** The room stays quiet, because nobody can say what is actually different
 for a user.
 
-**Where it genuinely helps.**
+**Where it helps.**
 - Turning what was built into what changed for a user, which is a different sentence and
   the one stakeholders need.
 - Preparing for the questions you will be asked, including the uncomfortable one about
@@ -415,11 +410,10 @@ what changed for a user is worth a conversation with the team.
 
 ### Back to the obstacle
 
-The largest thing standing between organisations and AI is not the tool and not the
-budget. It is a lack of relevant expertise, named by 71% of the EU enterprises Eurostat
+The largest thing standing between organisations and AI is a lack of relevant expertise, named by 71% of the EU enterprises Eurostat
 surveyed that considered AI and did not adopt it, well ahead of anything else.
 
-Those five chapters are the answer, and the answer is deliberately unexciting. Nothing
+The five chapters answer that, and the answer is deliberately plain. Nothing
 above asks you to adopt a new practice, add a ceremony or change how your team works.
 Each one sits inside work the Scrum Guide already gives you or your Scrum Team: writing
 items, refining them, ordering them, proposing the value of a sprint, showing what
@@ -428,9 +422,8 @@ changed. The work is the same work. What changes is what you bring to it.
 That is also why none of it works without you. The tool drafts the split, and you decide
 which one delivers value on its own. It argues against your order, and you decide
 whether the argument wins. It proposes a sprint goal, and you decide whether the set
-holds together. The Scrum Guide is blunt about where that stops: you may delegate the
-work, but you remain accountable, and you are one person rather than a committee. No
-amount of tooling moves that line.
+holds together. The Scrum Guide is clear about where that stops: you may delegate the
+work, but you remain accountable, and you are one person rather than a committee.
 
 ---
 
@@ -497,7 +490,7 @@ aims at specialists. Here is a routine that costs nothing and needs nobody's app
 
 ![A thirty minute weekly routine that costs nothing: ten minutes checking one source for what changed, fifteen minutes redoing a real task from your own week with the tool so you can judge the output, and five minutes writing down what worked and what did not.](/images/blog/pm-thirty-minutes.svg)
 
-**Ten minutes, what changed.** One source from the list below, rotating. Not all of them.
+**Ten minutes, what changed.** One source from the list below, rotating through it.
 
 **Fifteen minutes, on your own real work.** Take something you did this week, a split, an
 item, a sprint goal, and do it again with the tool. Not an exercise, the actual work,
