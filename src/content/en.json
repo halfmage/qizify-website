@@ -177,7 +177,7 @@
         "image": "/images/company-slider/schools-vocational.webp",
         "points": [
           {
-            "text": "15-25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high level job preparation.",
+            "text": "15-25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high-level job preparation.",
             "highlight": "15-25% higher transition rate into apprenticeship and employment."
           },
           {
@@ -200,7 +200,7 @@
         "name": "Lienne Julie Wolff",
         "title": "Apprentice Industrial Clerk",
         "company": "Tremonia Mobility GmbH",
-        "quote": "We're very satisfied with LearnSlice. The team quickly transformed our materials into precise, effective quizzes with high quality and efficiency. Questions boost knowledge transfer. Excellent support team answers fast and proactively solves our challenges. We highly recommend this innovative tool.",
+        "quote": "We're very satisfied with LearnSlice. The team quickly transformed our materials into precise, effective quizzes with high quality and efficiency. The questions boost knowledge transfer. The excellent support team answers quickly and proactively solves our challenges. We highly recommend this innovative tool.",
         "pullQuote": "The team quickly transformed our materials into precise, effective quizzes. We're very satisfied with LearnSlice."
       },
       {
@@ -213,7 +213,7 @@
         "name": "Philipp Schulte",
         "title": "Director of Studies",
         "company": "Carl-Severing Vocational College",
-        "quote": "LearnSlice significantly increases learner motivation and enables effective, differentiated exam preparation using modern technologies such as AI. The software enhances traditional teaching methods, encourages interactive collaboration, and prepares learners for the demands of working world"
+        "quote": "LearnSlice significantly increases learner motivation and enables effective, differentiated exam preparation using modern technologies such as AI. The software enhances traditional teaching methods, encourages interactive collaboration, and prepares learners for the demands of the working world."
       }
     ]
   },
@@ -238,7 +238,7 @@
       {
         "icon": "hugeicons:security-check",
         "title": "Made in\nGermany",
-        "description": "GDPR, German servers, Local LLM."
+        "description": "GDPR, German servers, local LLM."
       }
     ]
   },
@@ -286,7 +286,7 @@
       },
       {
         "question": "Can we customise training for our company?",
-        "answer": "Absolutely. Ready-made role simulations are included out-of-the-box, and you can optionally upload internal documents to tailor onboarding, upskilling and lateral-entry (Quereinstieg) scenarios. Most companies are live with custom content within two weeks."
+        "answer": "Absolutely. Ready-made role simulations are included out of the box, and you can optionally upload internal documents to tailor onboarding, upskilling and lateral-entry (Quereinstieg) scenarios. Most companies are live with custom content within two weeks."
       },
       {
         "question": "How does the AI personalise learning?",
