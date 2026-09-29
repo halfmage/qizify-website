@@ -135,6 +135,9 @@ svg.i{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-widt
 .input,.select,.textarea{border:1px solid var(--line-strong);background:var(--surface);border-radius:10px;padding:9px 12px;width:100%;min-width:0}
 .textarea{min-height:96px;resize:vertical;line-height:1.5}
 .src{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-top:6px}
+.srcbtn{font-weight:600;background:var(--accent-soft);color:var(--accent-ink);padding:1px 8px;border-radius:99px;border:0;font-size:12px;cursor:pointer}
+.srcbtn:hover{background:color-mix(in srgb,var(--accent) 20%,var(--surface))}
+.passage{border-left:3px solid var(--accent);background:var(--sunken);padding:12px 14px;border-radius:0 10px 10px 0;line-height:1.6}
 .src b{font-weight:600;background:var(--accent-soft);color:var(--accent-ink);padding:1px 8px;border-radius:99px}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:13.5px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:60;max-width:calc(100% - 32px)}
 .toast.show{opacity:1;transform:translate(-50%,0)}
@@ -496,8 +499,8 @@ const COURSES={
    {t:'Threats, Vulnerabilities & Mitigations',s:9,st:'done',score:78,qa:'phish'},
    {t:'Security Architecture',s:8,st:'active',doneS:4,score:58,qa:'pki'},
    {t:'Security Operations',s:10,st:'open',qa:'ids'},
-   {t:'Security Program Management',s:6,st:'open',qa:'seg'},
-   {t:'Full practice exam',s:1,st:'open',sub:'90 questions · timed',qa:'crypto'}
+   {t:'Security Program Management',s:6,st:'open',qa:'risk'},
+   {t:'Full practice exam',s:1,st:'open',sub:'90 questions · timed',qa:null}
   ],
   home:{h:'Your first passing score is within reach.',p:'A little targeted review gets you over the 70% target.',cont:'Module 3 · PKI and certificates: how the chain of trust works',contQa:'pki',
    sugg:[{tag:'AI Tutor',badge:'New',t:'Have Alex explain PKI and certificates. You missed the most points there.',qa:'pki',go:'tutor'},
@@ -539,13 +542,13 @@ const COURSES={
   practice:[
    {type:'mc',topic:'Network appliances',q:'Which control can stop malicious traffic in real time, instead of only alerting?',o:['IDS','IPS','SIEM','NetFlow collector'],c:1,ex:'An IPS sits inline, so it can drop traffic. An IDS only alerts.',src:'Module 3 · p. 31'},
    {type:'mc',topic:'PKI and certificates',q:'A browser warns that your intranet certificate was revoked yesterday. How did it most likely find out?',o:['From the site’s DNS record','From an OCSP response or a CRL','From the user’s password manager','From the TLS cipher suite'],c:1,ex:'Revocation status is published by the CA through CRLs and OCSP responders.',src:'Module 3 · p. 24'},
-   {type:'mc',topic:'Cryptography',q:'Which key does a sender use so that only the recipient can read the message?',o:['The sender’s private key','The sender’s public key','The recipient’s public key','The recipient’s private key'],c:2,ex:'Encrypt with the recipient’s public key; only their private key can decrypt it.',src:'Module 1 · p. 15'},
+   {type:'mc',topic:'Secure infrastructure',q:'Your public web server must be reachable from the internet without giving access to internal systems. Where do you place it?',o:['On the internal user VLAN','In a screened subnet (DMZ)','On the same subnet as the database','Behind the VPN gateway only'],c:1,ex:'A screened subnet exposes public services while firewalls keep them apart from the internal network.',src:'Module 3 · p. 28'},
    {type:'mc',topic:'Secure infrastructure',q:'Guest Wi-Fi is put on its own VLAN, with firewall rules blocking internal subnets. What is this?',o:['Segmentation','Hashing','Tokenization','Load balancing'],c:0,ex:'Separating zones and controlling traffic between them is network segmentation.',src:'Module 3 · p. 27'},
-   {type:'open',topic:'Zero trust',q:'In two or three sentences: why does zero trust limit the damage from a stolen password?',
-    rub:[{k:['every request','each request','verif','check','continuous','re-auth','always'],p:'Every request is verified, not just the first login'},
-         {k:['device','context','location','posture','managed','mfa','factor'],p:'Access also depends on device and context, not only the password'},
-         {k:['least privilege','limit','only the','only what','lateral','segment','restrict'],p:'Access is limited, so the attacker can’t move freely'}],
-    model:'Zero trust checks every request, not just the login, and looks at the device and context as well as the password. Access is limited to what each user needs, so an attacker with a stolen password can’t move freely through the network.',src:'Module 1 · p. 9'}
+   {type:'open',topic:'PKI and certificates',q:'In two or three sentences: how does your browser decide whether to trust a website’s certificate?',
+    rub:[{k:['chain','intermediate','root','trusted ca','trust store','signed','signature'],p:'It follows the chain of signatures up to a root CA it already trusts'},
+         {k:['expir','valid','date','period'],p:'It checks that the certificate is within its validity period'},
+         {k:['revok','crl','ocsp'],p:'It checks that the certificate hasn’t been revoked (CRL or OCSP)'}],
+    model:'The browser follows the chain of signatures from the site’s certificate through any intermediates up to a root CA in its trust store. It also checks that the certificate hasn’t expired and hasn’t been revoked, using a CRL or OCSP.',src:'Module 3 · p. 22–24'}
   ],
   cohort:{name:'Fall 2026 · Evening cohort',kpi:['14 of 18','71%','342','3'],
    topics:[['PKI and certificates',38],['Network appliances',55],['Incident response',61],['Access control',69],['Cryptography',72],['Zero trust',76],['Social engineering',84]],
@@ -594,7 +597,7 @@ Discussion questions:
 4. How would a zero-trust setup change the risk if an attacker had exploited the outage?
 
 Built from: Module 3 · PKI and certificates · p. 22–26 and Instructor notes – PKI`},
-  materials:[['Security+ Prep Workbook v3.pdf','186 pages',1420],['Module 3 slides – Security Architecture.pptx','42 slides',210],['Lab guide – Firewall rules.pdf','24 pages',160],['Instructor notes – PKI.docx','11 pages',74],['SY0-701 exam objectives (public).pdf','26 pages',190]],
+  materials:[['Security+ Prep Workbook v3.pdf','186 pages',1420],['Module 3 slides – Security Architecture.pptx','42 slides',210],['Lab guide – Firewall rules.pdf','24 pages',160],['Instructor notes – PKI.docx','11 pages',74,true],['SY0-701 exam objectives (public).pdf','26 pages',190]],
   certTags:['Security concepts','Threats & mitigations','Security architecture','Security operations','Program management']
  },
  ai:{
@@ -602,12 +605,12 @@ Built from: Module 3 · PKI and certificates · p. 22–26 and Instructor notes 
   note:'An AI literacy program for staff: what AI can do, how to use it safely, and which rules apply.',
   access:'Oct 18, 2026', pct:48, activeModule:'Module 3 · Prompting at work',
   modules:[
-   {t:'What AI is, and what it isn’t',s:7,st:'done',score:83,qa:'hall'},
+   {t:'What AI is, and what it isn’t',s:7,st:'done',score:83,qa:'basics'},
    {t:'Understanding language models',s:8,st:'done',score:92,qa:'hall'},
    {t:'Prompting at work',s:9,st:'active',doneS:4,score:58,qa:'prompt'},
    {t:'Data privacy and confidential information',s:6,st:'open',qa:'privacy'},
    {t:'Rules and responsible use',s:5,st:'open',qa:'rules'},
-   {t:'AI in your role',s:6,st:'open',qa:'good'}
+   {t:'AI in your role',s:6,st:'open',qa:null}
   ],
   home:{h:'Your AI License is halfway done.',p:'A few targeted reviews get your Module 3 test over 70%.',cont:'Prompting at work: roles, context and system instructions',contQa:'prompt',
    sugg:[{tag:'AI Tutor',badge:'New',t:'Have Alex explain Module 3. You made the most mistakes there.',qa:'prompt',go:'tutor'},
@@ -642,15 +645,15 @@ Built from: Module 3 · PKI and certificates · p. 22–26 and Instructor notes 
     src:'Module 3 · Prompting at work · p. 15'}
   },
   practice:[
-   {type:'mc',topic:'Data privacy',q:'You need to summarize a customer complaint with an AI tool. It includes the customer’s name and account number. What do you do first?',o:['Paste it as is; AI tools are secure','Use an approved tool, or remove the identifying details','Forward it to a colleague to summarize','Rewrite it in all caps'],c:1,ex:'Personal data only goes into approved tools. Otherwise, remove identifying details first.',src:'Module 4 · p. 7'},
-   {type:'mc',topic:'Language models',q:'What is a “hallucination” in a language model?',o:['A bug that crashes the tool','A confident answer that is factually wrong','An image the model generates','A model that answers slowly'],c:1,ex:'A hallucination is fluent, confident output that isn’t true.',src:'Module 2 · p. 18'},
+   {type:'mc',topic:'Prompting',q:'Which part of a prompt tells the model who the answer is for?',o:['The audience','The format','The file name','The length'],c:0,ex:'Naming the audience, for example “existing customers”, changes the tone, the detail and the word choice.',src:'Module 3 · p. 15'},
+   {type:'mc',topic:'Prompting for reliable answers',q:'An answer sounds right, but you’re not sure it is. What do you add to your prompt?',o:['“Be more confident”','“Answer only from the text below and quote the passage you used”','“Make it longer”','Nothing; AI answers are always checked'],c:1,ex:'Giving the model the source and asking it to quote from it makes the answer checkable.',src:'Module 3 · p. 17'},
    {type:'mc',topic:'Prompting',q:'Who usually writes the system instruction for an AI assistant at work?',o:['Each user, every time','The IT team or the tool’s admin','The customer','Nobody; it’s random'],c:1,ex:'System instructions are set in advance, usually by IT or the admin.',src:'Module 3 · p. 12'},
    {type:'mc',topic:'Prompting',q:'Which prompt is most likely to get a useful answer?',o:['“Write something about our product”','“Make it good”','“Draft a 100-word update for existing customers, friendly tone, mention the new export feature”','“Email”'],c:2,ex:'Goal, audience, length, tone and content: the model has what it needs.',src:'Module 3 · p. 15'},
-   {type:'open',topic:'Responsible use',q:'Describe two ways to reduce the risk of wrong AI answers at work.',need:2,
+   {type:'open',topic:'Prompting for reliable answers',q:'Describe two ways to reduce the risk of wrong AI answers at work.',need:2,
     rub:[{k:['source','document','material','paste the','provide','context','policy'],p:'Give the model the source material'},
          {k:['check','verify','review','fact','double'],p:'Check important facts yourself'},
          {k:['cite','citation','reference','quote'],p:'Ask for sources or citations'}],
-    model:'Give the model the source material and ask it to answer only from that. Then check any fact that matters before you use it, for example against the original document.',src:'Module 2 · p. 19'}
+    model:'Give the model the source material and ask it to answer only from that. Then check any fact that matters before you use it, for example against the original document.',src:'Module 3 · p. 17'}
   ],
   cohort:{name:'Fall 2026 · Operations team',kpi:['15 of 18','76%','268','3'],
    topics:[['Data privacy',44],['Rules and responsible use',58],['Prompting at work',63],['Checking AI output',71],['Language models',82],['What AI is',88]],
@@ -698,6 +701,34 @@ Built from: Module 4 · Data privacy · p. 3–9 and Company AI policy (sample)`
   certTags:['AI basics','Language models','Prompting','Data privacy','Rules & responsible use','AI in your role']
  }
 };
+COURSES.sec.qa.risk={k:['risk register','risk','governance','likelihood','impact'],q:'What is a risk register?',
+ a:'A risk register is the list an organization keeps of its known risks. For each risk it records the likelihood, the impact, an owner, and how the risk is handled: accepted, avoided, transferred or mitigated. It’s reviewed regularly, so security spending follows the biggest risks.',
+ simple:'It’s the to-do list of everything that could go wrong, with who is responsible and what the plan is.',
+ ex:'A lost laptop with customer data might be listed as likely, high impact, owned by IT, and mitigated with disk encryption and remote wipe.',
+ src:'Module 5 · Risk management · p. 8'};
+COURSES.ai.qa.basics={k:['normal program','regular software','what is ai','what ai is','difference between ai','traditional software'],q:'How is AI different from regular software?',
+ a:'Regular software follows rules a developer wrote step by step. An AI system learns patterns from many examples and uses them to make predictions, like which word comes next or whether an email is spam. That’s why it can handle messy, new input, and also why it can be confidently wrong.',
+ simple:'Regular software follows a recipe. AI learned from thousands of meals and makes an educated guess.',
+ ex:'A rule-based spam filter blocks emails with certain words. An AI spam filter learned from millions of emails and also catches spam it has never seen before, but sometimes flags a real email.',
+ src:'Module 1 · What AI is · p. 5'};
+const EXTRA={
+ sec:{crypto:['Symmetric vs. asymmetric encryption','Symmetric algorithms such as AES use a single shared key and are efficient for encrypting large amounts of data. Asymmetric algorithms such as RSA and ECC use a mathematically related key pair and are typically used for key exchange and digital signatures.'],
+  pki:['PKI and certificates','A certificate authority (CA) validates the identity of a subject and issues a digital certificate that binds that identity to a public key. Clients validate a certificate by building a chain of trust to a trusted root CA and by checking its revocation status through a CRL or OCSP.'],
+  ids:['IDS vs. IPS','An intrusion detection system (IDS) monitors traffic, often from a SPAN port or network tap, and generates alerts. An intrusion prevention system (IPS) is deployed inline and can block or drop malicious traffic, which also means a false positive can interrupt legitimate traffic.'],
+  zt:['Zero trust','Zero trust removes implicit trust based on network location. Each access request is evaluated by the control plane (policy engine and policy administrator) and enforced in the data plane by a policy enforcement point.'],
+  phish:['Phishing, vishing and smishing','Phishing uses email, vishing uses voice calls and smishing uses SMS messages to manipulate targets. Spear phishing targets specific individuals; whaling targets senior executives.'],
+  seg:['Network segmentation','Segmentation divides a network into zones with controlled traffic between them, using VLANs, firewalls or a screened subnet. It limits lateral movement and reduces the scope of compliance requirements.'],
+  risk:['Risk registers','A risk register records identified risks with their likelihood, impact, owner and chosen response: accept, avoid, transfer or mitigate. It is reviewed on a regular schedule.']},
+ ai:{prompt:['Prompts vs. system instructions','The system instruction defines the assistant’s role, tone and limits for the whole conversation and is usually configured by an administrator. The prompt is the individual request a user enters.'],
+  privacy:['Customer data in AI tools','Do not enter personal data or confidential business information into AI tools the company has not approved. Where possible, remove or replace identifying details before using an AI tool.'],
+  hall:['Why AI makes things up','Language models generate text by predicting likely next words. Without access to a source, they can produce fluent statements that are factually wrong, known as hallucinations.'],
+  rules:['Rules for AI at work','Under Article 4 of the EU AI Act, organizations that use AI systems must ensure a sufficient level of AI literacy among their staff. Follow the company AI policy for day-to-day use.'],
+  good:['Writing a good prompt','An effective prompt states the goal, provides context and the relevant facts, names the audience, and specifies the format and length of the answer.'],
+  basics:['AI vs. regular software','Traditional software follows rules written by developers. AI systems learn patterns from examples and use them to make predictions about new input.']},
+ onb:{week1:['My first week','Week 1 checklist: activate your lab account, join the cohort channel, complete the orientation module. Live sessions: Tuesdays and Thursdays, 6:30 PM Central. Recordings are posted by 9 AM the next day.'],
+  voucher:['Exam voucher','Exam vouchers are issued after a learner scores at least 80% on the full practice exam. The program lead emails the voucher within two business days.'],
+  absence:['Missing a live session','Notify your instructor in advance where possible. All live sessions are recorded. After two consecutive missed sessions, the program lead contacts the learner to plan a catch-up.']}
+};
 COURSES.sec.mode='Exam prep';COURSES.ai.mode='Upskilling';
 COURSES.sec.assess=[
  {t:'Security Architecture',type:'Deep Dive',d:'5 mixed questions',best:58,att:3,last:'Yesterday',st:'in_progress'},
@@ -731,6 +762,7 @@ COURSES.onb={id:'onb',short:'Onboarding',mode:'Onboarding',title:'Student onboar
    ex:'If you work a late shift on Thursday, message your instructor, watch the recording on Friday, and bring questions to Tuesday’s session.',
    src:'Student handbook · Attendance · p. 7'}
  }};
+for(const [c,items] of Object.entries(EXTRA))for(const [id,[t,pass]] of Object.entries(items))Object.assign(COURSES[c].qa[id],{t,pass});
 const MODES=[
  {c:'sec',icon:'cap',chats:[['pki',1],['ids',0],['crypto',2],['phish',1],['seg',0]]},
  {c:'onb',icon:'building',chats:[['week1',0],['voucher',0]]},
@@ -746,7 +778,7 @@ const LEARNERS=[
  {n:'Marcus Hill',e:'marcus.hill@learner.demo',att:11,lvl:'Confident',min:24,last:'Yesterday'},
  {n:'Priya Natarajan',e:'priya.n@learner.demo',att:9,lvl:'Building',min:19,last:'Today'},
  {n:'Diego Alvarez',e:'diego.a@learner.demo',att:6,lvl:'Building',min:12,last:'2 days ago',risk:'Scores dropping: 72% → 54%'},
- {n:'Hannah Brooks',e:'hannah.b@learner.demo',att:2,lvl:'Getting started',min:6,last:'6 days ago',risk:'No activity for 6 days'},
+ {n:'Hannah Price',e:'hannah.p@learner.demo',att:2,lvl:'Getting started',min:6,last:'6 days ago',risk:'No activity for 6 days'},
  {n:'Tyler Nguyen',e:'tyler.n@learner.demo',att:0,lvl:'Getting started',min:0,last:'—',invite:true,risk:'Hasn’t accepted the invite'}
 ];
 const VOICES=['US English · warm, clear','US English · calm, measured','British English · friendly','US English · upbeat'];
@@ -797,7 +829,7 @@ function renderSide(){
  if(S.role==='learner'){
   h+=`<div style="height:12px"></div>`+MODES.map(m=>{const c=COURSES[m.c],open=S.open[m.c];
    return `<div class="mode"><div class="mode-h"><button class="mh ${open?'open':''} ${S.course===m.c?'cur':''}" data-act="togglemode" data-c="${m.c}" aria-expanded="${open}">${ic(m.icon)}<span>${c.mode}</span>${ic('chev','chev')}</button><button class="plus" data-act="newchat" data-c="${m.c}" aria-label="New ${c.mode} chat">${ic('plus')}</button></div>`+
-   (open?`<div class="chats">${m.chats.map(([qa,n])=>{const on=S.view==='tutor'&&!S.voiceMode&&S.activeChat===m.c+':'+qa;return `<button class="${on?'on':''}" data-act="openchat" data-c="${m.c}" data-qa="${qa}" title="${esc(c.qa[qa].q)}">${ic('chat')}<span class="t">${esc(c.qa[qa].q)}</span>${n?`<span class="badge num">${n}</span>`:''}</button>`}).join('')}</div>`:'')+`</div>`}).join('');
+   (open?`<div class="chats">${m.chats.map(([qa,n])=>{const on=S.view==='tutor'&&!S.voiceMode&&S.activeChat===m.c+':'+qa;return `<button class="${on?'on':''}" data-act="openchat" data-c="${m.c}" data-qa="${qa}" title="${esc(c.qa[qa].t)}">${ic('chat')}<span class="t">${esc(c.qa[qa].t)}</span>${n?`<span class="badge num">${n}</span>`:''}</button>`}).join('')}</div>`:'')+`</div>`}).join('');
  }else{
   h+=`<div class="side-label">Courses</div><div class="courses">`+['sec','ai'].map(id=>{const c=COURSES[id];return `<button data-act="course" data-c="${c.id}" class="${S.course===c.id?'on':''}">${ic(c.id==='sec'?'cap':'briefcase')}<span>${c.short}</span><span class="cnt num">${c.count}</span></button>`}).join('')+`</div>`;
  }
@@ -811,7 +843,7 @@ function renderTop(){
  let crumb=`${names[S.view]}`;
  if(S.view==='tutor'){
   if(S.voiceMode) crumb=`Voice tutor ${soon()} <span>/ ${esc(c.activeModule)}</span>`;
-  else{const qa=S.activeChat&&S.activeChat.split(':')[1];crumb=`${esc(c.mode)} <span>/ ${esc(qa&&c.qa[qa]?c.qa[qa].q:'New chat')}</span>`}
+  else{const qa=S.activeChat&&S.activeChat.split(':')[1];crumb=`${esc(c.mode)} <span>/ ${esc(qa&&c.qa[qa]?c.qa[qa].t:'New chat')}</span>`}
  }
  else if(!['settings','branding','cert','home','log','docs'].includes(S.view)) crumb+=` <span>/ ${esc(c.title)}</span>`;
  let right='';
@@ -857,7 +889,7 @@ function toast(t){const el=document.getElementById('toast');el.textContent=t;el.
 function vHome(){
  const t=esc(S.tutor.name);
  const sugg=[{c:'sec',qa:'ids',icon:'cap',badge:'Next',t:'Network appliances: explain when to use an IDS, an IPS or a proxy'},
-  {c:'onb',qa:'week1',icon:'building',t:'What do I need to know in my first week?'},
+  {c:'onb',qa:'voucher',icon:'building',t:'How do I get my exam voucher?'},
   {c:'ai',qa:'hall',icon:'briefcase',t:'AI License: why do AI models sometimes make things up?'}];
  return `<div class="page narrow"><div class="home">
   <div class="spark">${ic('sparkles')}</div>
@@ -896,7 +928,7 @@ function vTutor(){
  let thread='';
  if(!msgs.length) thread=`<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble">Hi Jordan, I’m ${t}. ${S.course==='onb'?'I can help with anything about getting started at your academy.':`I’m your tutor for ${esc(c.title)}.`} I answer from your academy’s course material and show where each answer comes from. Ask me anything, or pick a question below.</div></div></div>`;
  thread+=msgs.map((m,i)=>msgHTML(m,i)).join('');
- const chips=msgs.length?[['example','Give me an example from my job'],['simple','Explain it more simply'],['deep','Create assessment']]:c.starters.map(k=>['q:'+k,c.qa[k].q]);
+ const chips=msgs.length?[['example','Give me an example from my job'],['simple','Explain it more simply']].concat(S.course==='onb'?[]:[['deep','Create assessment']]):c.starters.map(k=>['q:'+k,c.qa[k].q]);
  return `<div class="tutor-wrap"><div class="tutor-scroll" id="tscroll"><div class="tutor-inner">${stage}<div class="thread" id="thread">${thread}</div><div class="chips" id="chips">${chips.map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('')}</div></div></div>
  <div class="composer-wrap"><form class="composer" id="composer"><input id="q" autocomplete="off" placeholder="Ask ${t} something. Speak or type." aria-label="Ask the tutor"><button type="button" class="iconbtn ${S.voiceOut?'on':''}" data-act="voiceout" title="${S.voiceOut?'Stop reading answers aloud':'Read answers aloud'}" aria-pressed="${S.voiceOut}">${ic('speaker')}</button><button type="button" class="mic ${S.listening?'on':''}" data-act="mic" aria-label="Speak your question">${ic('mic')}</button></form></div></div>`;
 }
@@ -909,7 +941,7 @@ function msgHTML(m,i){
   const done=m.ans.filter(x=>x!=null).length,right=m.ans.filter((x,k)=>x===m.items[k].c).length;
   return `<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack" style="flex:1"><div class="bubble" style="max-width:100%;width:100%"><div class="cq"><div>Here are 3 quick questions from your material.</div>${items}${done===3?`<div class="fb ${right===3?'good':'part'}"><b>${right} of 3 correct.</b>${right<3?'I added the missed topic to your review list.':'Nice work. +15 XP'}</div>`:''}</div></div></div></div>`;
  }
- return `<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble" data-mi="${i}">${esc(m.text)}</div>${m.src?`<span class="src">Source <b>${esc(m.src)}</b></span>`:''}${m.kind==='nomatch'?`<span class="nomatch">${ic('alert')}Not part of this demo</span>`:''}</div></div>`;
+ return `<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble" data-mi="${i}">${esc(m.text)}</div>${m.src?`<span class="src">Source <button class="srcbtn" data-act="cite" data-mi="${i}" title="Show the passage">${esc(m.src)}</button></span>`:''}${m.kind==='nomatch'?`<span class="nomatch">${ic('alert')}Not part of this demo</span>`:''}</div></div>`;
 }
 function scrollChat(){const s=document.getElementById('tscroll');if(s)s.scrollTop=s.scrollHeight}
 function redrawThread(){
@@ -917,7 +949,7 @@ function redrawThread(){
  const msgs=S.chats[S.course];const t=esc(S.tutor.name);
  th.innerHTML=(msgs.length?'':`<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble">Hi Jordan.</div></div></div>`)+msgs.map((m,i)=>msgHTML(m,i)).join('');
  const ch=document.getElementById('chips');
- if(ch&&msgs.length)ch.innerHTML=[['example','Give me an example from my job'],['simple','Explain it more simply'],['deep','Create assessment']].map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('');
+ if(ch&&msgs.length)ch.innerHTML=[['example','Give me an example from my job'],['simple','Explain it more simply']].concat(S.course==='onb'?[]:[['deep','Create assessment']]).map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('');
  scrollChat();
 }
 function setStage(){
@@ -942,11 +974,11 @@ function ask(text,forced){
  }else if(forced==='example'||forced==='simple'){
   const qa=c.qa[S.last[S.course]];
   msgs.push({role:'user',text:forced==='example'?'Give me an example from my job':'Explain it more simply'});
-  reply={role:'ai',kind:'answer',text:forced==='example'?qa.ex:qa.simple,src:qa.src};
+  reply={role:'ai',kind:'answer',text:forced==='example'?qa.ex:qa.simple,src:qa.src,pass:qa.pass};
  }else{
   msgs.push({role:'user',text});
   const id=matchQA(text);
-  if(id){S.last[S.course]=id;if(!S.asked[S.course].includes(id))S.asked[S.course].push(id);const qa=c.qa[id];reply={role:'ai',kind:'answer',text:qa.a,src:qa.src}}
+  if(id){S.last[S.course]=id;if(!S.asked[S.course].includes(id))S.asked[S.course].push(id);const qa=c.qa[id];reply={role:'ai',kind:'answer',text:qa.a,src:qa.src,pass:qa.pass}}
   else{const topics=Object.values(c.qa).slice(0,3).map(q=>q.q.replace(/\?$/,'').toLowerCase());reply={role:'ai',kind:'nomatch',text:`That question isn’t part of this demo. The demo answers a set of sample questions, like “${c.qa[c.starters[0]].q}” With your academy, the tutor answers from your own course material.`}}
  }
  S.busy=true;
@@ -1021,7 +1053,7 @@ function vPlan(){
   <div class="plan-list">${c.modules.map((m,i)=>{
    const st=m.st==='done'?'<span class="pill good">Completed</span>':m.st==='active'?'<span class="pill acc">In progress</span>':'<span class="pill mute">Not started</span>';
    const sub=m.sub||(m.st==='done'?`${m.s} sections · Test passed (${m.score}%)`:m.st==='active'?`${m.s} sections · ${m.doneS} done · Test ${m.score}%`:`${m.s} sections`);
-   return `<div class="mod ${m.st}"><div class="n num">${i+1}</div><div class="tx"><b>${esc(m.t)}</b><small class="num">${sub}</small></div>${st}<button class="btn sm" data-act="goask" data-qa="${m.qa}">${ic('chat')}Explain it</button></div>`}).join('')}</div>
+   return `<div class="mod ${m.st}"><div class="n num">${i+1}</div><div class="tx"><b>${esc(m.t)}</b><small class="num">${sub}</small></div>${st}${m.qa?`<button class="btn sm" data-act="goask" data-qa="${m.qa}">${ic('chat')}Explain it</button>`:''}</div>`}).join('')}</div>
   <p class="muted" style="font-size:12.5px;margin-top:16px">${esc(c.note)}</p>
  </div>`;
 }
@@ -1065,18 +1097,18 @@ function vPractice(){
 function vCert(){
  const c=C();
  return `<div class="page" style="max-width:900px">
-  <div class="row" style="justify-content:space-between"><div><h1 class="h2">Certificate</h1><p class="muted" style="margin-top:4px">Sample certificate from a learner who finished the course.</p></div></div>
+  <div class="row" style="justify-content:space-between"><div><h1 class="h2">Certificate</h1><p class="muted" style="margin-top:4px">Sample certificate from a learner in the spring cohort.</p></div></div>
   <div class="card cert">
-   <div class="cert-top"><div class="row"><div class="logo" style="width:30px;height:30px;font-size:13px">${esc(S.brand.initial||'A')}</div><div><b>${esc(S.brand.name)}</b><div class="muted" style="font-size:12.5px">${esc(c.title)} · ${esc(c.cohort.name.split('·')[0].trim())}</div></div></div><span class="pill mute num" style="border:1px solid var(--line)">No. 2026-09-014</span></div>
+   <div class="cert-top"><div class="row"><div class="logo" style="width:30px;height:30px;font-size:13px">${esc(S.brand.initial||'A')}</div><div><b>${esc(S.brand.name)}</b><div class="muted" style="font-size:12.5px">${esc(c.title)} · Spring 2026</div></div></div><span class="pill mute num" style="border:1px solid var(--line)">No. 2026-06-014</span></div>
    <span class="eyebrow" style="color:var(--accent-ink)">Certificate of completion</span>
    <h2>${esc(c.title)}</h2>
    <p class="muted">This certifies that</p>
-   <div class="who-n">Amelia Clarke</div>
+   <div class="who-n">Sofia Ramirez</div>
    <p style="max-width:60ch">completed all ${c.modules.length} modules of the course and passed the knowledge check for each one.</p>
    <div class="tags">${c.certTags.map(t=>`<span>${esc(t)}</span>`).join('')}</div>
-   <div class="cert-foot"><div class="sign"><b>Dana Brooks</b><small>Program lead · confirmed Sep 24, 2026</small></div><small class="num">Chicago, IL · September 24, 2026</small></div>
+   <div class="cert-foot"><div class="sign"><b>Dana Brooks</b><small>Program lead · confirmed Jun 12, 2026</small></div><small class="num">Chicago, IL · June 12, 2026</small></div>
   </div>
-  <div class="card row" style="margin-top:14px;padding:14px 16px;justify-content:space-between"><span class="muted" style="font-size:13px;flex:1;min-width:220px">Confirms participation and completed knowledge checks. It isn’t an official exam result. The program lead confirms each certificate.</span><button class="btn sm" data-act="copy" data-text="Certificate No. 2026-09-014 · ${esc(S.brand.name)} · ${esc(c.title)} · Amelia Clarke">${ic('copy')}Copy certificate ID</button></div>
+  <div class="card row" style="margin-top:14px;padding:14px 16px;justify-content:space-between"><span class="muted" style="font-size:13px;flex:1;min-width:220px">Confirms participation and completed knowledge checks. It isn’t an official exam result. The program lead confirms each certificate.</span><button class="btn sm" data-act="copy" data-text="Certificate No. 2026-06-014 · ${esc(S.brand.name)} · ${esc(c.title)} · Sofia Ramirez">${ic('copy')}Copy certificate ID</button></div>
  </div>`;
 }
 
@@ -1143,8 +1175,8 @@ function vCohort(){
     <div class="qlist">${co.questions.map(([q,n])=>`<div><span>${esc(q)}</span><b class="num">${n}</b></div>`).join('')}</div></div>
   </div>
   <div class="card panel" style="margin-top:16px"><div class="panel-h"><h2 class="h3">Learners</h2><span class="muted" style="font-size:12.5px">Select a learner to see topics, level and score history. A level appears after three different practice sets.</span></div>
-   <div class="table-wrap"><table><thead><tr><th>Name</th><th>Practice sets</th><th>Level</th><th>Tutor min.</th><th>Last active</th><th>Status</th></tr></thead><tbody>
-   ${LEARNERS.map((l,i)=>`<tr class="click" data-act="learner" data-i="${i}" tabindex="0"><td><b>${esc(l.n)}</b>${l.invite?' <span class="pill mute">Invite pending</span>':''}<small>${esc(l.e)}</small></td><td class="num">${l.att}</td><td class="${l.lvl==='Confident'?'lvl-good':l.lvl==='Building'?'lvl-mid':'lvl-low'}">${l.lvl}</td><td class="num">${l.min} of ${S.tutor.minutes}</td><td>${l.last}</td><td>${l.risk?`<span class="pill warn">${ic('alert')}Needs attention</span>`:'<span class="pill good">On track</span>'}</td></tr>`).join('')}
+   <div class="table-wrap"><table><thead><tr><th>Name</th><th>Practice sets</th><th>Level</th><th>Tutor time</th><th>Last active</th><th>Status</th></tr></thead><tbody>
+   ${LEARNERS.map((l,i)=>`<tr class="click" data-act="learner" data-i="${i}" tabindex="0"><td><b>${esc(l.n)}</b>${l.invite?' <span class="pill mute">Invite pending</span>':''}<small>${esc(l.e)}</small></td><td class="num">${l.att}</td><td class="${l.lvl==='Confident'?'lvl-good':l.lvl==='Building'?'lvl-mid':'lvl-low'}">${l.lvl}</td><td class="num">${l.min} min</td><td>${l.last}</td><td>${l.risk?`<span class="pill warn">${ic('alert')}Needs attention</span>`:'<span class="pill good">On track</span>'}</td></tr>`).join('')}
    </tbody></table></div>
    <p class="muted" style="font-size:12.5px;margin-top:10px">6 of 18 learners shown. Access for this cohort ends ${c.access}; accounts and conversations are then deleted, issued certificates are kept.</p>
   </div>
@@ -1170,7 +1202,7 @@ function closeModal(){document.getElementById('modal-root').innerHTML=''}
 function vCopilot(){
  const c=C(),co=c.cohort,key=S.course;
  const acts=[['quiz','clip','Warm-up quiz',`A 10-minute quiz on ${co.weak}, the cohort’s weakest topic, built from your material.`,'Generate quiz'],
-  ['msg','mail','Check-in for Hannah Brooks','A short, friendly message for a learner who has been inactive for 6 days.','Draft message'],
+  ['msg','mail','Check-in for Hannah Price','A short, friendly message for a learner who has been inactive for 6 days.','Draft message'],
   ['case','book','Case study for class','A realistic scenario with discussion questions for Thursday’s session.','Create case study']];
  const out=S.outputs[key];
  const risk=LEARNERS.filter(l=>l.risk);
@@ -1196,7 +1228,7 @@ function outputHTML(o){
 }
 function vMaterials(){
  const c=C(),ups=S.uploads[S.course];
- const rows=c.materials.map(([n,s,p])=>({n,s,p,st:'ready'})).concat(ups);
+ const rows=c.materials.filter(m=>!(m[3]&&S.role==='learner')).map(([n,s,p])=>({n,s,p,st:'ready'})).concat(ups);
  return `<div class="page">
   <div class="page-h"><div><h1 class="h2">${S.role==='learner'?'Documents':'Course material'}</h1>
   <p class="muted" style="margin-top:4px">${S.role==='learner'?`Your academy’s material for ${esc(c.title)}, plus notes you add yourself. ${esc(S.tutor.name)} cites the page for every answer.`:`${esc(S.tutor.name)} answers from these files and cites the page for every answer.`}</p></div>${cSwitch()}</div>
@@ -1282,11 +1314,13 @@ document.addEventListener('click',e=>{
   case 'upcoming':{e.preventDefault();S.upcoming=!S.upcoming;stopSpeaking();if(!S.upcoming&&isSoon()){S.voiceMode=false;go(HOME[S.role])}else render();toast(S.upcoming?'Showing upcoming features, marked “Soon”':'Showing only what’s in the product today');break}
   case 'togglemode':{const c=t.dataset.c;S.open[c]=!S.open[c];renderSide();break}
   case 'newchat':{const c=t.dataset.c;stopSpeaking();S.course=c;S.chats[c]=[];S.asked[c]=[];S.activeChat=null;S.open[c]=true;go('tutor',{voice:false});break}
-  case 'openchat':case 'closeopen':{closeModal();const c=t.dataset.c,qa=t.dataset.qa,q=COURSES[c].qa[qa];stopSpeaking();S.course=c;S.open[c]=true;S.chats[c]=[{role:'user',text:q.q},{role:'ai',kind:'answer',text:q.a,src:q.src}];S.last[c]=qa;S.asked[c]=[qa];S.activeChat=c+':'+qa;go('tutor',{voice:false});break}
+  case 'openchat':case 'closeopen':{closeModal();const c=t.dataset.c,qa=t.dataset.qa,q=COURSES[c].qa[qa];stopSpeaking();S.course=c;S.open[c]=true;S.chats[c]=[{role:'user',text:q.q},{role:'ai',kind:'answer',text:q.a,src:q.src,pass:q.pass}];S.last[c]=qa;S.asked[c]=[qa];S.activeChat=c+':'+qa;go('tutor',{voice:false});break}
   case 'suggest':{const c=t.dataset.c,qa=t.dataset.qa;stopSpeaking();S.course=c;S.open[c]=true;S.chats[c]=[];S.asked[c]=[];S.activeChat=c+':'+qa;go('tutor',{voice:false,ask:COURSES[c].qa[qa].q});break}
   case 'voicemode':S.voiceMode=true;render();break;
   case 'markdone':S.markDone=!S.markDone;render();if(S.markDone)toast('Marked as done. Up next: Network appliances');break;
   case 'missed':missedModal();break;
+  case 'cite':{const m=S.chats[S.course][+t.dataset.mi];if(!m||!m.pass)break;const doc=S.course==='onb'?'Student handbook.pdf':C().materials[0][0];
+   modal(`<div class="modal-h"><div><span class="eyebrow">Source</span><h2 class="h3" style="margin-top:4px">${esc(doc)}</h2><p class="muted" style="font-size:13px">${esc(m.src)}</p></div><button class="iconbtn" data-act="close" aria-label="Close">${ic('x')}</button></div><div class="passage">${esc(m.pass)}</div><p class="muted" style="font-size:12.5px">${esc(S.tutor.name)}’s answer is based on this passage from your course material.</p>`);break}
   case 'closepractice':closeModal();go('practice');break;
   case 'streak':toast('5-day streak. Learn something today to keep it going.');break;
   case 'wsswitch':brandModal();break;
@@ -1318,7 +1352,7 @@ document.addEventListener('click',e=>{
   case 'copysummary':{const c=C(),co=c.cohort;copyText(`${c.title} · ${co.name}\nActive this week: ${co.kpi[0]}\nAvg. practice score: ${co.kpi[1]} (target 70%)\nTutor questions this week: ${co.kpi[2]}\nWeakest topic: ${co.weak} (${co.topics[0][1]}%, ${co.weakN} below target)\nNeed attention: ${LEARNERS.filter(l=>l.risk).map(l=>l.n+' ('+l.risk+')').join('; ')}`,'Cohort summary copied');break}
   case 'gen':S.outputs[S.course]={id:t.dataset.g,text:C().copilot[t.dataset.g],done:false};render();runGen();break;
   case 'copyout':{const o=S.outputs[S.course];if(o)copyText(o.text,'Copied');break}
-  case 'useout':{const o=S.outputs[S.course];toast(o&&o.id==='msg'?'Message sent to Hannah Brooks (demo)':'Added to the Module 3 practice set (demo)');break}
+  case 'useout':{const o=S.outputs[S.course];toast(o&&o.id==='msg'?'Message sent to Hannah Price (demo)':'Added to the Module 3 practice set (demo)');break}
   case 'strict':S.strict=!S.strict;t.classList.toggle('on',S.strict);t.setAttribute('aria-checked',S.strict);toast(S.strict?'Tutor answers only from course material':'Tutor may add general knowledge, marked as such');break;
   case 'pres':readTutorFields();S.tutor.pres=t.dataset.p;render();break;
   case 'previewvoice':{readTutorFields();const old=S.voiceOut;S.voiceOut=true;speak(`Hi, I’m ${S.tutor.name}. I’ll help you learn from your course material, and I’ll always show you where my answers come from.`);S.voiceOut=old;const pv=document.querySelector('.set-prev');if(pv){pv.classList.add('speaking');setTimeout(()=>pv.classList.remove('speaking'),5000)}break}
