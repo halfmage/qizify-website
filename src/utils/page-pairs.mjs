@@ -58,6 +58,8 @@ export const EN_ONLY = new Set([
 	// Product owner cluster supporting /ai-guides. International audience, and the
 	// guides it promotes are English only.
 	'/blog/ai-backlog-refinement-product-owners',
+	// US landing page for training providers. US market only.
+	'/us',
 ]);
 
 export const DE_ONLY = new Set([

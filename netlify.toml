@@ -6,3 +6,10 @@
   for = "/guides/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow, noarchive"
+
+# The US demo is embedded on /us only. Block framing by other sites.
+[[headers]]
+  for = "/us-demo*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self'"

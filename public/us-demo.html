@@ -1,0 +1,1386 @@
+<!doctype html>
+<!-- Built from the interactive demo prototype. Personalize with ?academy=Name&color=1D4ED8&letter=N -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LearnSlice Tutor Demo</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+<style>
+/* Layout: app shell — fixed sidebar (workspace, courses, roles) + scrolling work area; collapses to a drawer on phones. Follows the LearnSlice product design (violet accent, quiet greys, dark tutor stage). */
+:root{
+  --bg:#FFFFFF; --panel:#FAF9FD; --surface:#FFFFFF; --sunken:#F4F3F8;
+  --line:#E8E6EF; --line-strong:#D7D4E1;
+  --fg:#16141D; --muted:#676478; --faint:#9895A7;
+  --accent-default:#6D28D9; --accent:var(--accent-default); --on-accent:#FFFFFF;
+  --good:#15803D; --good-soft:#E7F5EC; --warn:#B45309; --warn-soft:#FCF1E1; --bad:#B42318; --bad-soft:#FDECEA;
+  --xp:#F59E0B; --stage:#17151F; --stage-2:#221F2E; --stage-fg:#F4F2FA; --stage-muted:#A9A5BA;
+  --shadow:0 1px 2px rgba(22,18,40,.05),0 6px 20px rgba(22,18,40,.06);
+  --f-ui:"Plus Jakarta Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --r:12px; --r-lg:16px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111016; --panel:#15141B; --surface:#1B1A22; --sunken:#201F28;
+  --line:#2A2833; --line-strong:#3A3846;
+  --fg:#EEEBF5; --muted:#A7A3B6; --faint:#78758A;
+  --accent-default:#8B5CF6;
+  --good:#4ADE80; --good-soft:#15291C; --warn:#FBBF24; --warn-soft:#2C2313; --bad:#F87171; --bad-soft:#2E1717;
+  --stage:#0C0B11; --stage-2:#17151F; --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111016; --panel:#15141B; --surface:#1B1A22; --sunken:#201F28;
+  --line:#2A2833; --line-strong:#3A3846;
+  --fg:#EEEBF5; --muted:#A7A3B6; --faint:#78758A;
+  --accent-default:#8B5CF6;
+  --good:#4ADE80; --good-soft:#15291C; --warn:#FBBF24; --warn-soft:#2C2313; --bad:#F87171; --bad-soft:#2E1717;
+  --stage:#0C0B11; --stage-2:#17151F; --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+  color-scheme:dark}
+:root{--accent-soft:color-mix(in srgb,var(--accent) 11%,var(--surface));--accent-line:color-mix(in srgb,var(--accent) 30%,var(--line));--accent-ink:color-mix(in srgb,var(--accent) 82%,var(--fg))}
+
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-ui);font-size:14.5px;line-height:1.5;overflow:hidden}
+*{box-sizing:border-box}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+h1,h2,h3{text-wrap:balance;margin:0;letter-spacing:-.015em}
+p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+svg.i{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+.app{display:grid;grid-template-columns:268px minmax(0,1fr);height:100%}
+/* Sidebar */
+.side{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0;overflow-y:auto}
+.ws{display:flex;align-items:center;gap:10px;padding:16px 16px 12px}
+.logo{width:34px;height:34px;border-radius:9px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-weight:800;font-size:15px;flex:none}
+.ws b{display:block;font-size:14.5px;line-height:1.2}
+.ws small{color:var(--muted);font-size:12px}
+.xp{padding:4px 16px 14px}
+.xp-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700}
+.xp-row span:last-child{color:var(--muted);font-weight:500}
+.bar{height:5px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:6px}
+.bar>i{display:block;height:100%;background:var(--xp);border-radius:9px}
+.nav{display:flex;flex-direction:column;gap:2px;padding:4px 10px}
+.nav button{display:flex;align-items:center;gap:11px;border:0;background:none;padding:8px 10px;border-radius:9px;text-align:left;font-weight:500;color:var(--fg)}
+.nav button:hover{background:var(--sunken)}
+.nav button.on{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
+.pill.soon{background:none;border:1px dashed var(--line-strong);color:var(--muted)}
+.nav .new.soon{background:none;border:1px dashed var(--line-strong);color:var(--muted);font-weight:600}
+.up{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:4px 6px 4px 12px;background:var(--surface)}
+.up .sw{width:36px;height:20px}
+.up .sw::after{width:14px;height:14px}
+.up .sw.on::after{transform:translateX(16px)}
+.soon-bar{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:8px 16px;background:var(--sunken);border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.nav .new{margin-left:auto;font-size:11px;font-weight:700;background:var(--accent-soft);color:var(--accent-ink);padding:1px 7px;border-radius:99px}
+.side-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);padding:18px 20px 6px}
+.courses{display:flex;flex-direction:column;gap:2px;padding:0 10px}
+.courses button{display:flex;align-items:center;gap:10px;border:0;background:none;padding:8px 10px;border-radius:9px;text-align:left;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.courses button:hover{background:var(--sunken)}
+.courses button.on{color:var(--accent-ink)}
+.courses .cnt{margin-left:auto;font-weight:600;color:var(--faint)}
+.side-foot{margin-top:auto;border-top:1px solid var(--line);padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.who{display:flex;align-items:center;gap:10px}
+.av{width:32px;height:32px;border-radius:50%;background:var(--sunken);border:1px solid var(--line);display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--muted);flex:none}
+.who b{display:block;font-size:13.5px;line-height:1.2}
+.who small{color:var(--muted);font-size:12px}
+.powered{font-size:11.5px;color:var(--faint)}
+.powered b{color:var(--muted)}
+
+/* Main */
+.main{display:flex;flex-direction:column;min-width:0;min-height:0}
+.top{display:flex;align-items:center;gap:12px;padding:10px 24px;border-bottom:1px solid var(--line);min-height:56px;flex-wrap:wrap}
+.crumb{font-weight:600;display:flex;gap:8px;align-items:center;min-width:0}
+.crumb span{color:var(--muted);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .grow{flex:1}
+.menu-btn{display:none;border:1px solid var(--line);background:var(--surface);border-radius:9px;padding:6px}
+.seg{display:inline-flex;background:var(--sunken);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px}
+.seg button{border:0;background:none;padding:5px 12px;border-radius:7px;font-size:13px;font-weight:600;color:var(--muted)}
+.seg button.on{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.seg-label{font-size:12px;color:var(--faint);font-weight:600}
+.demo-pill{font-size:12px;color:var(--muted);border:1px dashed var(--line-strong);border-radius:99px;padding:3px 10px}
+.scroll{flex:1;overflow-y:auto;min-height:0}
+.foot-note{border-top:1px solid var(--line);color:var(--muted);font-size:12px;text-align:center;padding:10px 16px}
+.page{padding-block:32px 48px;padding-inline:24px;max-width:1120px;margin:0 auto}
+.narrow{max-width:720px}
+
+/* Generic */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line-strong);background:var(--surface);border-radius:99px;padding:9px 18px;font-weight:600;font-size:14px;color:var(--fg);transition:background .15s,border-color .15s}
+.btn:hover{background:var(--sunken)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:color-mix(in srgb,var(--accent) 88%,#000)}
+.btn.sm{padding:6px 13px;font-size:13px}
+.btn.ghost{border-color:transparent;background:none}
+.btn:disabled{opacity:.5;cursor:default}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg)}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.pill.good{background:var(--good-soft);color:var(--good)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.pill.acc{background:var(--accent-soft);color:var(--accent-ink)}
+.pill.mute{background:var(--sunken);color:var(--muted)}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.h1{font-size:30px;font-weight:800;line-height:1.15}
+.h2{font-size:22px;font-weight:800}
+.h3{font-size:16px;font-weight:700}
+.muted{color:var(--muted)}
+.stack{display:flex;flex-direction:column}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:13px;font-weight:600}
+.input,.select,.textarea{border:1px solid var(--line-strong);background:var(--surface);border-radius:10px;padding:9px 12px;width:100%;min-width:0}
+.textarea{min-height:96px;resize:vertical;line-height:1.5}
+.src{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-top:6px}
+.src b{font-weight:600;background:var(--accent-soft);color:var(--accent-ink);padding:1px 8px;border-radius:99px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:13.5px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:60;max-width:calc(100% - 32px)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* Home */
+.home{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.spark{width:60px;height:60px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.spark svg{width:26px;height:26px}
+.continue{width:100%;background:var(--accent);color:var(--on-accent);border:0;border-radius:99px;padding:14px 22px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:15px;text-align:left}
+.continue span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.continue:hover{background:color-mix(in srgb,var(--accent) 88%,#000)}
+.sugg{width:100%;display:flex;flex-direction:column;gap:10px;text-align:left}
+.sugg button{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-align:left;width:100%}
+.sugg button:hover{border-color:var(--accent-line)}
+.sugg .ic{width:40px;height:40px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.sugg .tx{flex:1;min-width:0}
+.sugg .tx small{display:flex;gap:8px;align-items:center;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.sugg .arrow{color:var(--faint)}
+
+/* Tutor */
+.tutor-wrap{display:flex;flex-direction:column;height:100%;min-height:0}
+.tutor-scroll{flex:1;overflow-y:auto;min-height:0}
+.tutor-inner{max-width:760px;margin:0 auto;padding:20px 24px 12px;display:flex;flex-direction:column;gap:18px}
+.stage{position:relative;background:var(--stage);color:var(--stage-fg);border-radius:18px;overflow:hidden;height:250px;display:grid;place-items:center;flex:none}
+.stage .tl,.stage .tr,.stage .bl,.stage .br{position:absolute;display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600}
+.stage .tl{top:14px;left:14px}.stage .tr{top:14px;right:14px}.stage .bl{bottom:14px;left:16px;flex-direction:column;align-items:flex-start;gap:0}.stage .br{bottom:14px;right:14px}
+.chip-dark{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);padding:3px 10px;border-radius:99px;color:var(--stage-fg)}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#4ADE80;display:inline-block}
+.stage .bl b{font-size:15px}.stage .bl small{color:var(--stage-muted);font-size:12px}
+.orb{width:128px;height:128px;border-radius:50%;position:relative;background:radial-gradient(circle at 35% 30%,color-mix(in srgb,var(--accent) 35%,#fff),var(--accent) 55%,color-mix(in srgb,var(--accent) 60%,#000));box-shadow:0 0 60px color-mix(in srgb,var(--accent) 55%,transparent);transition:transform .3s}
+.orb::before,.orb::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);opacity:.0}
+.speaking .orb{animation:pulse 1.1s ease-in-out infinite}
+.speaking .orb::before{animation:ring 1.6s ease-out infinite}
+.speaking .orb::after{animation:ring 1.6s .8s ease-out infinite}
+.listening .orb{transform:scale(.9)}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes ring{0%{opacity:.7;transform:scale(.95)}100%{opacity:0;transform:scale(1.35)}}
+.wave{display:flex;gap:4px;align-items:center;height:28px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:0;transition:opacity .2s}
+.listening .wave{opacity:1}
+.wave i{width:4px;border-radius:4px;background:var(--stage-muted);height:6px}
+.listening .wave i{animation:wv .9s ease-in-out infinite;background:#fff}
+.wave i:nth-child(2){animation-delay:.1s}.wave i:nth-child(3){animation-delay:.2s}.wave i:nth-child(4){animation-delay:.3s}.wave i:nth-child(5){animation-delay:.4s}
+@keyframes wv{0%,100%{height:6px}50%{height:24px}}
+.illu svg{width:150px;height:150px}
+.speaking .illu .mouth{animation:mouth .35s ease-in-out infinite}
+@keyframes mouth{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1)}}
+.illu .mouth{transform-origin:75px 84px;transform-box:view-box}
+.silhouette{width:170px;height:190px;border-radius:14px;background:linear-gradient(180deg,var(--stage-2),var(--stage));display:grid;place-items:end center;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.silhouette svg{width:150px;height:170px}
+.thread{display:flex;flex-direction:column;gap:16px}
+.msg{display:flex;gap:10px;align-items:flex-start}
+.msg.user{justify-content:flex-end}
+.bubble{max-width:min(560px,100%);padding:11px 15px;border-radius:16px;line-height:1.55;min-width:0;overflow-wrap:anywhere}
+.msg.user .bubble{background:var(--accent);color:var(--on-accent);border-bottom-right-radius:6px}
+.msg.ai .bubble{background:var(--sunken);border-bottom-left-radius:6px}
+.msg .av{width:28px;height:28px;background:var(--fg);color:var(--bg);border:0;font-size:12px}
+.msg.ai .stack{min-width:0}
+.nomatch{display:inline-flex;gap:6px;align-items:center;font-size:12px;color:var(--warn);margin-top:6px;font-weight:600}
+.cq{display:flex;flex-direction:column;gap:14px}
+.cq .q{font-weight:600}
+.cq .opts{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.opt{border:1px solid var(--line-strong);background:var(--surface);border-radius:10px;padding:8px 12px;text-align:left;width:100%}
+.opt:hover:not(:disabled){border-color:var(--accent-line)}
+.opt.right{border-color:var(--good);background:var(--good-soft);color:var(--good);font-weight:600}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
+.opt:disabled{cursor:default}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips button{border:1px solid var(--line-strong);background:var(--surface);border-radius:99px;padding:6px 13px;font-size:13px;font-weight:500}
+.chips button:hover{border-color:var(--accent-line);background:var(--accent-soft)}
+.composer-wrap{border-top:1px solid var(--line);padding:12px 24px calc(12px + env(safe-area-inset-bottom,0px))}
+.composer{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:8px;border:1px solid var(--line-strong);border-radius:99px;padding:6px 6px 6px 18px;background:var(--surface)}
+.composer input{flex:1;border:0;background:none;outline:none;min-width:0;padding:6px 0}
+.mic{width:42px;height:42px;border-radius:50%;border:0;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;flex:none}
+.mic.on{animation:pulse 1s infinite}
+.iconbtn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;color:var(--muted);flex:none}
+.iconbtn.on{color:var(--accent);border-color:var(--accent-line);background:var(--accent-soft)}
+.meter{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:12.5px;color:var(--muted)}
+.meter .bar{width:44px;margin:0;height:4px}
+.meter .bar>i{background:var(--accent)}
+.typing{display:inline-flex;gap:4px}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--faint);animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.3}50%{opacity:1}}
+
+/* Plan */
+.plan-list{display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.mod{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);flex-wrap:wrap}
+.mod .n{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;font-weight:700;background:var(--sunken);color:var(--muted);flex:none}
+.mod.done .n{background:var(--good-soft);color:var(--good)}
+.mod.active .n{background:var(--accent-soft);color:var(--accent-ink)}
+.mod .tx{flex:1;min-width:180px}
+.mod .tx b{display:block}
+.mod .tx small{color:var(--muted)}
+.mod.open .tx b{color:var(--muted)}
+.plan-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.plan-head .pct{color:var(--accent-ink);font-weight:800}
+.bar.acc>i{background:var(--accent)}
+
+/* Practice */
+.qcard{padding:24px;display:flex;flex-direction:column;gap:14px;margin-top:20px}
+.qmeta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.qtext{font-size:18px;font-weight:700;line-height:1.4}
+.fb{border-radius:12px;padding:12px 14px;font-size:14px;display:flex;flex-direction:column;gap:4px}
+.fb.good{background:var(--good-soft)}
+.fb.bad{background:var(--bad-soft)}
+.fb.part{background:var(--warn-soft)}
+.fb b{font-weight:700}
+.rub{display:flex;flex-direction:column;gap:6px;margin-top:4px}
+.rub div{display:flex;gap:8px;align-items:flex-start}
+.rub .ok{color:var(--good)}.rub .no{color:var(--bad)}
+.score-big{font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.steps{display:flex;gap:4px}
+.steps i{height:4px;flex:1;border-radius:4px;background:var(--line)}
+.steps i.done{background:var(--accent)}
+
+/* Instructor */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+.kpi{padding:16px}
+.kpi small{color:var(--muted);font-size:12.5px;font-weight:600}
+.kpi b{display:block;font-size:26px;font-weight:800;letter-spacing:-.02em;margin-top:2px}
+.kpi span{font-size:12px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;margin-top:16px}
+.panel{padding:20px;min-width:0}
+.panel-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.mastery{display:flex;flex-direction:column;gap:12px}
+.mrow{display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:4px 12px;align-items:center}
+.mrow .lbl{font-size:13.5px;font-weight:500;display:flex;gap:8px;align-items:center;min-width:0}
+.mrow .lbl span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mrow .v{text-align:right;font-weight:700;font-size:13px}
+.mbar{grid-column:1/-1;height:8px;border-radius:9px;background:var(--sunken);position:relative;overflow:visible}
+.mbar i{display:block;height:100%;border-radius:9px}
+.mbar::after{content:"";position:absolute;left:70%;top:-3px;bottom:-3px;width:2px;background:var(--fg);opacity:.35;border-radius:2px}
+.lvl-good{color:var(--good);font-weight:600}.lvl-mid{font-weight:600}.lvl-low{color:var(--muted)}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th{font-size:12.5px;color:var(--muted);font-weight:600;text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+td{padding:12px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:middle}
+tr.click{cursor:pointer}
+tr.click:hover td{background:var(--sunken)}
+td small{display:block;color:var(--muted);font-size:12.5px}
+.qlist{display:flex;flex-direction:column}
+.qlist div{display:flex;gap:12px;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.qlist div:last-child{border-bottom:0}
+.qlist b{font-weight:700;color:var(--muted)}
+.callout{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:14px;background:var(--warn-soft);margin-top:16px}
+.callout svg{color:var(--warn);margin-top:2px}
+.cp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}
+.cp{padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.cp .ic{width:38px;height:38px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.cp p{color:var(--muted);font-size:13.5px;flex:1}
+.output{margin-top:16px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.output pre{white-space:pre-wrap;font-family:var(--f-ui);font-size:14px;margin:0;line-height:1.6;overflow-wrap:anywhere}
+.risk{display:flex;flex-direction:column;gap:10px}
+.risk div{display:flex;gap:12px;align-items:center}
+.risk .tx{flex:1;min-width:0}
+.risk small{display:block;color:var(--muted);font-size:12.5px}
+.drop{border:1.5px dashed var(--line-strong);border-radius:16px;padding:26px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:20px;background:var(--panel)}
+.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.doc-ic{width:34px;height:34px;border-radius:8px;background:var(--sunken);display:grid;place-items:center;color:var(--muted);flex:none}
+.dname{display:flex;gap:12px;align-items:center;min-width:0}
+.dname b{font-weight:600;display:block;overflow-wrap:anywhere}
+.prog{height:5px;border-radius:9px;background:var(--line);overflow:hidden;width:120px}
+.prog i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.toggle{display:flex;gap:14px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:14px}
+.toggle .tx{flex:1;min-width:0}
+.toggle small{display:block;color:var(--muted);font-size:12.5px}
+.sw{width:42px;height:24px;border-radius:99px;background:var(--line-strong);border:0;position:relative;flex:none;transition:background .2s}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.sw.on{background:var(--accent)}
+.sw.on::after{transform:translateX(18px)}
+.sw:disabled{opacity:.85;cursor:not-allowed}
+
+/* Admin */
+.set-head{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;align-items:start;margin-top:20px}
+.set-prev{height:200px;border-radius:16px;background:var(--stage);display:grid;place-items:center;position:relative;overflow:hidden}
+.set-prev .orb{width:90px;height:90px}
+.set-prev .illu svg{width:120px;height:120px}
+.set-prev .silhouette{width:130px;height:150px}
+.set-prev .silhouette svg{width:120px;height:140px}
+.fields2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.pres{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:10px}
+.pres button{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:8px;text-align:left}
+.pres button.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.pres .thumb{height:84px;border-radius:9px;background:var(--stage);display:grid;place-items:center;overflow:hidden;position:relative}
+.pres .thumb .orb{width:44px;height:44px}
+.pres .thumb .illu svg{width:70px;height:70px}
+.pres .thumb .silhouette{width:64px;height:74px;border-radius:8px}
+.pres .thumb .silhouette svg{width:60px;height:70px}
+.pres .thumb.light{background:var(--sunken);color:var(--muted)}
+.pres b{font-size:13.5px}
+.pres small{color:var(--muted);font-size:12px;line-height:1.35}
+.tag{position:absolute;top:6px;left:6px;font-size:10.5px;font-weight:700;background:rgba(255,255,255,.12);color:#fff;padding:1px 7px;border-radius:99px}
+.swatches{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.swatch{width:34px;height:34px;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--line-strong)}
+.swatch.on{box-shadow:0 0 0 2px var(--fg)}
+input[type=color]{width:40px;height:36px;border:1px solid var(--line-strong);border-radius:9px;background:var(--surface);padding:2px}
+.brand-prev{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+
+/* Certificate */
+.cert{padding:40px 44px;margin-top:20px;display:flex;flex-direction:column;gap:14px}
+.cert-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.cert h2{font-family:var(--f-serif);font-weight:600;font-size:44px;letter-spacing:-.01em}
+.cert .who-n{font-size:24px;font-weight:800}
+.cert .tags{display:flex;gap:8px;flex-wrap:wrap}
+.cert .tags span{background:var(--sunken);border-radius:99px;padding:4px 12px;font-size:12.5px}
+.cert-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-top:22px;flex-wrap:wrap}
+.sign{border-top:1px solid var(--line-strong);padding-top:8px;min-width:220px}
+.sign b{display:block}
+.sign small,.cert-foot>small{color:var(--muted);font-size:12.5px}
+
+/* Modal */
+.scrim{position:fixed;inset:0;background:rgba(10,8,20,.45);display:grid;place-items:center;padding:16px;z-index:50}
+.modal{width:min(520px,100%);max-height:90%;overflow:auto;padding:24px;display:flex;flex-direction:column;gap:14px}
+.modal-h{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+
+/* Sidebar modes (matches the product) */
+.ws-home{display:flex;align-items:center;gap:10px;border:0;background:none;padding:0;min-width:0;flex:1;text-align:left}
+.ws-home>div{min-width:0}
+.ws-home b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.iconbtn.sm{width:30px;height:30px}
+.iconbtn.ghost{border-color:transparent;background:none}
+.iconbtn.sm svg{width:16px;height:16px}
+.mode{padding:0 10px}
+.mode-h{display:flex;align-items:center;gap:2px}
+.mode-h .mh{flex:1;display:flex;align-items:center;gap:10px;border:0;background:none;padding:8px 10px;border-radius:9px;font-size:12.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-align:left;min-width:0}
+.mode-h .mh:hover,.mode-h .plus:hover{background:var(--sunken)}
+.mode-h .mh.cur{color:var(--accent-ink)}
+.mode-h .chev{margin-left:auto;width:14px;height:14px;transition:transform .2s}
+.mode-h .mh.open .chev{transform:rotate(180deg)}
+.mode-h .plus{border:0;background:none;color:var(--faint);width:28px;height:28px;border-radius:7px;display:grid;place-items:center;flex:none}
+.mode-h .plus svg{width:16px;height:16px}
+.chats{display:flex;flex-direction:column;gap:1px;padding-bottom:6px}
+.chats button{display:flex;align-items:center;gap:10px;border:0;background:none;padding:7px 10px;border-radius:9px;text-align:left;font-size:13.5px;color:var(--fg);min-width:0;width:100%}
+.chats button:hover{background:var(--sunken)}
+.chats button.on{background:var(--accent-soft);color:var(--accent-ink)}
+.chats .t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.badge{min-width:20px;height:20px;border-radius:99px;background:var(--sunken);font-size:11.5px;font-weight:700;display:grid;place-items:center;padding:0 6px;color:var(--fg)}
+.spark{border:1px solid var(--accent-line)}
+.cont-head{display:flex;justify-content:space-between;align-items:center;width:100%;margin-top:22px;gap:10px}
+.markdone{display:inline-flex;gap:6px;align-items:center;border:0;background:none;font-size:13px;font-weight:600;color:var(--fg);padding:4px}
+.markdone.on{color:var(--good)}
+.markdone svg{width:16px;height:16px}
+.sugg .mode-tag{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+/* Assessments hub */
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:20px}
+.stat{padding:14px 16px}
+.stat small{color:var(--muted);font-size:12.5px;font-weight:600;display:flex;gap:6px;align-items:center}
+.stat b{display:block;font-size:22px;font-weight:800;letter-spacing:-.02em;margin-top:2px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-top:22px}
+.tabs button{border:0;background:none;padding:10px 12px;font-weight:600;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button.on{color:var(--fg);border-color:var(--accent)}
+.rec{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:10px}
+.rec .card{padding:14px 16px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.acards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:10px}
+.acard{padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.acard .meta{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+.acard p{font-size:13px;color:var(--muted)}
+.sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:24px;flex-wrap:wrap}
+.page-h{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+/* Training log */
+.log{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+.log .card{padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.log ul{margin:0;padding-left:18px}
+.log li{margin:3px 0}
+.missed{display:flex;flex-direction:column;gap:12px}
+.missed>div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+@media (max-width:1000px){.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.rec{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:1000px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2{grid-template-columns:minmax(0,1fr)}.cp-grid{grid-template-columns:minmax(0,1fr)}.pres{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){
+  .app{grid-template-columns:minmax(0,1fr)}
+  .side{position:fixed;inset:0 auto 0 0;width:280px;z-index:40;transform:translateX(-100%);transition:transform .25s;box-shadow:var(--shadow);padding-top:env(safe-area-inset-top,0px)}
+  .side.open{transform:none}
+  .menu-btn{display:grid;place-items:center}
+  .top{padding:10px 16px}
+  .page{padding-inline:16px;padding-block:22px 40px}
+  .tutor-inner{padding:14px 16px 10px}
+  .composer-wrap{padding-inline:16px}
+  .demo-pill{display:none}
+  .set-head{grid-template-columns:minmax(0,1fr)}
+  .fields2{grid-template-columns:minmax(0,1fr)}
+  .cert{padding:24px 20px}.cert h2{font-size:34px}
+  .h1{font-size:25px}
+  .stage{height:210px}
+}
+@media (max-width:520px){.seg-label{display:none}.seg button{padding:5px 9px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.pres{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side" aria-label="Navigation"></aside>
+  <div class="main">
+    <header class="top" id="top"></header>
+    <main class="scroll" id="main"></main>
+    <div class="foot-note" id="footnote"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div id="modal-root"></div>
+
+<script>
+(function(){
+"use strict";
+/* ---------- Icons ---------- */
+const P={
+  doc:'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/>',
+  chart:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  cap:'<path d="M22 9 12 4 2 9l10 5 10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>',
+  book:'<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19a2 2 0 0 1 2-2h13"/>',
+  mic:'<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
+  home:'<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/>',
+  check:'<path d="m5 12 5 5 9-10"/>',
+  x:'<path d="M6 6l12 12M18 6 6 18"/>',
+  play:'<path d="M7 5v14l11-7z" fill="currentColor" stroke="none"/>',
+  retry:'<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/>',
+  arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+  send:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+  wand:'<path d="m4 20 10-10M15 4v3M20 9h-3M18.5 5.5l-2 2M13 4l1 2M20 11l-2-1"/>',
+  users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/>',
+  spark:'<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
+  folder:'<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+  user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  palette:'<circle cx="12" cy="12" r="9"/><circle cx="8" cy="10" r="1.2"/><circle cx="12" cy="7.5" r="1.2"/><circle cx="16" cy="10" r="1.2"/><path d="M12 21c-1.5 0-2-1-2-2s1-2 2.5-2H15a3 3 0 0 0 3-3"/>',
+  award:'<circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/>',
+  target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+  alert:'<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17.5v.01"/>',
+  copy:'<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>',
+  upload:'<path d="M12 16V4M6 10l6-6 6 6"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/>',
+  menu:'<path d="M4 7h16M4 12h16M4 17h16"/>',
+  speaker:'<path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/>',
+  bolt:'<path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="currentColor" stroke="none"/>',
+  flame:'<path d="M12 22c4 0 7-2.7 7-7 0-4-3-6-4-10-2 2-3 4-3 6-1-1-2-2-2-4-3 3-5 5.5-5 8.5C5 19.3 8 22 12 22z"/>',
+  chat:'<path d="M4 5h16v11H9l-5 4z"/>',
+  mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+  updown:'<path d="m8 9 4-4 4 4M8 15l4 4 4-4"/>',
+  building:'<rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/>',
+  briefcase:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  chev:'<path d="m6 9 6 6 6-6"/>',
+  sparkles:'<path d="M11 3l1.8 4.7 4.7 1.8-4.7 1.8L11 16l-1.8-4.7L4.5 9.5l4.7-1.8z"/><path d="M18.5 14l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/>',
+  list:'<path d="M10 6h10M10 12h10M10 18h10"/><path d="m3.5 6 1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"/>',
+  circle:'<circle cx="12" cy="12" r="8"/>',
+  checkc:'<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
+  clip:'<path d="M9 5h6M9 3h6v4H9z"/><path d="M7 5H5v16h14V5h-2"/><path d="M8 12h8M8 16h5"/>'
+};
+const ic=(n,cls)=>`<svg class="i ${cls||''}" viewBox="0 0 24 24" aria-hidden="true">${P[n]||''}</svg>`;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---------- Content ---------- */
+const COURSES={
+ sec:{
+  id:'sec', short:'Security+ Prep', title:'Security+ Exam Prep', count:6,
+  note:'Built on the public SY0-701 exam objectives and the academy’s own material. Not affiliated with CompTIA.',
+  access:'Dec 18, 2026', pct:41, activeModule:'Module 3 · Security Architecture',
+  modules:[
+   {t:'General Security Concepts',s:7,st:'done',score:86,qa:'zt'},
+   {t:'Threats, Vulnerabilities & Mitigations',s:9,st:'done',score:78,qa:'phish'},
+   {t:'Security Architecture',s:8,st:'active',doneS:4,score:58,qa:'pki'},
+   {t:'Security Operations',s:10,st:'open',qa:'ids'},
+   {t:'Security Program Management',s:6,st:'open',qa:'seg'},
+   {t:'Full practice exam',s:1,st:'open',sub:'90 questions · timed',qa:'crypto'}
+  ],
+  home:{h:'Your first passing score is within reach.',p:'A little targeted review gets you over the 70% target.',cont:'Module 3 · PKI and certificates: how the chain of trust works',contQa:'pki',
+   sugg:[{tag:'AI Tutor',badge:'New',t:'Have Alex explain PKI and certificates. You missed the most points there.',qa:'pki',go:'tutor'},
+         {tag:'Security+ Prep',badge:'Up next',t:'Network appliances: when to use an IDS, an IPS or a proxy',qa:'ids',go:'tutor'},
+         {tag:'Practice',t:'5-question check: Security Architecture',go:'practice'}]},
+  starters:['pki','ids','seg'],
+  qa:{
+   crypto:{k:['symmetric','asymmetric','encrypt','key pair','public key','private key','aes','rsa'],q:'What’s the difference between symmetric and asymmetric encryption?',
+    a:'Symmetric encryption uses one shared key to encrypt and decrypt. It’s fast, so it protects bulk data, like AES on a disk or inside a VPN tunnel. Asymmetric encryption uses a key pair: a public key anyone can have and a private key only the owner keeps. It’s slower, so it’s mainly used to exchange keys and to sign things. TLS uses both: asymmetric to agree on a key, then symmetric for the actual traffic.',
+    simple:'Symmetric is one key that locks and unlocks a box, and both people need a copy. Asymmetric works like a mailbox: anyone can drop a letter in with the public key, but only the owner’s private key opens it.',
+    ex:'Your company VPN is a good example. When you connect, your laptop and the VPN gateway use asymmetric keys to agree on a secret. After that, everything you send is encrypted with that shared symmetric key, because it’s much faster.',
+    src:'Module 1 · Cryptographic solutions · p. 14'},
+   pki:{k:['pki','certificate','cert','certificate authority',' ca','crl','ocsp','chain of trust','revok'],q:'Can you explain PKI and certificates?',
+    a:'PKI (public key infrastructure) is the system that lets you trust that a public key really belongs to someone. A certificate authority (CA) checks an identity and signs a certificate that binds a name, like portal.example.com, to a public key. Your browser trusts a short list of root CAs and follows the chain from the site’s certificate up to one of them. If a certificate is compromised, the CA revokes it and publishes that through a CRL or an OCSP responder.',
+    simple:'A certificate is a passport for a website. The CA is the passport office. Your browser checks that the passport came from an office it trusts and hasn’t been cancelled.',
+    ex:'When you open your company’s HR portal and see the lock icon, your browser just checked the portal’s certificate, followed the chain to a trusted root CA, and confirmed it wasn’t revoked. If the certificate expired last night, every user gets a warning, which is why IT teams track expiry dates.',
+    src:'Module 3 · PKI and certificates · p. 22'},
+   ids:{k:['ids','ips','intrusion','detection','prevention','inline'],q:'What’s the difference between an IDS and an IPS?',
+    a:'An IDS (intrusion detection system) watches traffic and raises an alert when it sees something suspicious. It’s passive and usually sits out of band, on a mirrored port. An IPS (intrusion prevention system) sits inline, so it can also block or drop the traffic. The trade-off: an IPS stops attacks in real time, but a false positive can block legitimate traffic.',
+    simple:'An IDS is a security camera: it records and alerts. An IPS is a guard at the door: it can stop someone from coming in.',
+    ex:'If your office network sees a burst of login attempts against the file server, an IDS sends an alert to the security team. An IPS in the same spot would drop the traffic from that source right away.',
+    src:'Module 3 · Network appliances · p. 31'},
+   zt:{k:['zero trust','zerotrust','implicit trust','policy engine','trust'],q:'What is zero trust?',
+    a:'Zero trust means no user or device is trusted just because it’s inside the network. Every request is checked: who is asking, from which device, for which resource, and whether that fits policy. The exam objectives describe a control plane (policy engine and policy administrator) that makes the decision, and a data plane where a policy enforcement point applies it.',
+    simple:'Old model: once you’re in the building, every door opens. Zero trust: you show your badge at every door, every time.',
+    ex:'A contractor logs in from a personal laptop. Under zero trust they might reach the ticketing tool but not the finance share, because the device isn’t managed, even though the password was correct.',
+    src:'Module 1 · Zero trust concepts · p. 9'},
+   phish:{k:['phishing','social engineering','pretext','vishing','smishing','whaling'],q:'How do phishing, vishing and smishing differ?',
+    a:'All three trick people into giving up access or information. Phishing uses email, vishing uses voice calls, and smishing uses text messages. Spear phishing targets one person with researched details, and whaling targets executives. The defenses follow the same idea: awareness training, confirming requests through a second channel, and technical controls like email filtering.',
+    simple:'Same trick, different channel: email is phishing, a phone call is vishing, a text message is smishing.',
+    ex:'A text saying “Your payroll account is locked, log in here” is smishing. The right move is to open the payroll site yourself instead of the link, and report the text to IT.',
+    src:'Module 2 · Social engineering · p. 6'},
+   seg:{k:['segment','vlan','dmz','screened subnet','microsegment','lateral'],q:'Why do we segment networks?',
+    a:'Segmentation splits a network into zones so a problem in one zone doesn’t spread to the rest. You can use VLANs, firewalls between zones, or a screened subnet (DMZ) for public-facing servers. It limits lateral movement, makes monitoring easier, and helps with compliance, for example by keeping payment systems separate.',
+    simple:'It works like fire doors in a building. If one room catches fire, the doors stop it from spreading.',
+    ex:'Guest Wi-Fi at your office should sit on its own segment, so a visitor’s infected laptop can’t reach the printers or the file server.',
+    src:'Module 3 · Secure infrastructure · p. 27'}
+  },
+  practice:[
+   {type:'mc',topic:'Network appliances',q:'Which control can stop malicious traffic in real time, instead of only alerting?',o:['IDS','IPS','SIEM','NetFlow collector'],c:1,ex:'An IPS sits inline, so it can drop traffic. An IDS only alerts.',src:'Module 3 · p. 31'},
+   {type:'mc',topic:'PKI and certificates',q:'A browser warns that your intranet certificate was revoked yesterday. How did it most likely find out?',o:['From the site’s DNS record','From an OCSP response or a CRL','From the user’s password manager','From the TLS cipher suite'],c:1,ex:'Revocation status is published by the CA through CRLs and OCSP responders.',src:'Module 3 · p. 24'},
+   {type:'mc',topic:'Cryptography',q:'Which key does a sender use so that only the recipient can read the message?',o:['The sender’s private key','The sender’s public key','The recipient’s public key','The recipient’s private key'],c:2,ex:'Encrypt with the recipient’s public key; only their private key can decrypt it.',src:'Module 1 · p. 15'},
+   {type:'mc',topic:'Secure infrastructure',q:'Guest Wi-Fi is put on its own VLAN, with firewall rules blocking internal subnets. What is this?',o:['Segmentation','Hashing','Tokenization','Load balancing'],c:0,ex:'Separating zones and controlling traffic between them is network segmentation.',src:'Module 3 · p. 27'},
+   {type:'open',topic:'Zero trust',q:'In two or three sentences: why does zero trust limit the damage from a stolen password?',
+    rub:[{k:['every request','each request','verif','check','continuous','re-auth','always'],p:'Every request is verified, not just the first login'},
+         {k:['device','context','location','posture','managed','mfa','factor'],p:'Access also depends on device and context, not only the password'},
+         {k:['least privilege','limit','only the','only what','lateral','segment','restrict'],p:'Access is limited, so the attacker can’t move freely'}],
+    model:'Zero trust checks every request, not just the login, and looks at the device and context as well as the password. Access is limited to what each user needs, so an attacker with a stolen password can’t move freely through the network.',src:'Module 1 · p. 9'}
+  ],
+  cohort:{name:'Fall 2026 · Evening cohort',kpi:['14 of 18','71%','342','3'],
+   topics:[['PKI and certificates',38],['Network appliances',55],['Incident response',61],['Access control',69],['Cryptography',72],['Zero trust',76],['Social engineering',84]],
+   weak:'PKI and certificates', weakN:'11 of 18',
+   questions:[['What’s the difference between OCSP and a CRL?',41],['When do I use an IPS instead of an IDS?',33],['How does a certificate chain work?',29],['What is a screened subnet?',18],['Which is faster, symmetric or asymmetric?',15]]},
+  copilot:{
+   quiz:`Warm-up quiz: PKI and certificates (10 minutes)
+
+1. What does a certificate authority sign, and why does that matter?
+   Answer: It signs a certificate that binds a name to a public key, so others can trust that the key belongs to that name.
+
+2. Your browser shows a warning for a certificate that expired last night. Which part of the check failed?
+   Answer: The validity period. The chain can be fine and the certificate still rejected.
+
+3. OCSP or CRL: which one gives a real-time answer for a single certificate?
+   Answer: OCSP. A CRL is a periodically published list.
+
+4. A server sends only its own certificate, not the intermediate. What will some clients report?
+   Answer: An incomplete chain; they can't link the certificate to a trusted root.
+
+Sources: Module 3 · PKI and certificates · p. 22–26`,
+   msg:`Hi Hannah,
+
+I noticed you haven't logged in for about a week, and Module 3 (Security Architecture) is where most people in the cohort find it gets harder. That's normal.
+
+Two things that might help before Thursday:
+• Ask Alex to walk you through PKI and certificates. It takes about 10 minutes.
+• Try the 5-question practice set for Module 3. It shows you exactly which topics to review.
+
+If something else is getting in the way, reply here and we can find a time to talk.
+
+Dana`,
+   case:`Case study: The expired certificate at Harbor Clinic
+
+Monday, 7:40 AM. Staff at a mid-sized clinic can't open the patient scheduling portal. Browsers show "Your connection is not private." The help desk gets 60 calls in 20 minutes.
+
+What you know:
+• The portal certificate was issued by a public CA 13 months ago.
+• The IT admin who renewed certificates left the company in the spring.
+• Some staff clicked through the warning on their own.
+
+Discussion questions:
+1. What is the most likely cause, and how do you confirm it?
+2. Why is clicking through the warning a security risk, even today?
+3. Which process change prevents this from happening again?
+4. How would a zero-trust setup change the risk if an attacker had exploited the outage?
+
+Built from: Module 3 · PKI and certificates · p. 22–26 and Instructor notes – PKI`},
+  materials:[['Security+ Prep Workbook v3.pdf','186 pages',1420],['Module 3 slides – Security Architecture.pptx','42 slides',210],['Lab guide – Firewall rules.pdf','24 pages',160],['Instructor notes – PKI.docx','11 pages',74],['SY0-701 exam objectives (public).pdf','26 pages',190]],
+  certTags:['Security concepts','Threats & mitigations','Security architecture','Security operations','Program management']
+ },
+ ai:{
+  id:'ai', short:'AI License', title:'AI License', count:6,
+  note:'An AI literacy program for staff: what AI can do, how to use it safely, and which rules apply.',
+  access:'Oct 18, 2026', pct:48, activeModule:'Module 3 · Prompting at work',
+  modules:[
+   {t:'What AI is, and what it isn’t',s:7,st:'done',score:83,qa:'hall'},
+   {t:'Understanding language models',s:8,st:'done',score:92,qa:'hall'},
+   {t:'Prompting at work',s:9,st:'active',doneS:4,score:58,qa:'prompt'},
+   {t:'Data privacy and confidential information',s:6,st:'open',qa:'privacy'},
+   {t:'Rules and responsible use',s:5,st:'open',qa:'rules'},
+   {t:'AI in your role',s:6,st:'open',qa:'good'}
+  ],
+  home:{h:'Your AI License is halfway done.',p:'A few targeted reviews get your Module 3 test over 70%.',cont:'Prompting at work: roles, context and system instructions',contQa:'prompt',
+   sugg:[{tag:'AI Tutor',badge:'New',t:'Have Alex explain Module 3. You made the most mistakes there.',qa:'prompt',go:'tutor'},
+         {tag:'AI License',badge:'Up next',t:'Data privacy: spotting personal data before you use an AI tool',qa:'privacy',go:'tutor'},
+         {tag:'Practice',t:'5-question check: Prompting at work',go:'practice'}]},
+  starters:['prompt','privacy','hall'],
+  qa:{
+   prompt:{k:['system','instruction','prompt vs','difference between a prompt'],q:'What’s the difference between a prompt and a system instruction?',
+    a:'A prompt is the single request you type. A system instruction is set up in advance and tells the model how to behave in every answer: its role, tone and limits. At work, the system instruction is usually written by IT or the tool’s admin, and you write the prompts.',
+    simple:'The system instruction is the job description. The prompt is today’s task.',
+    ex:'In a customer-support assistant, the system instruction might say “Answer only about our products, stay polite, never promise refunds.” Your prompt is “Draft a reply to this customer about a late delivery.”',
+    src:'Module 3 · Prompting at work · p. 12'},
+   privacy:{k:['customer data','personal data','paste','confidential','chatgpt','privacy','pii','sensitive'],q:'Can I paste customer data into a public AI tool?',
+    a:'Only if your company has approved that tool for that kind of data. Public AI tools may store what you enter, and some use it to improve their models. Personal data, like names, emails, account numbers or health details, and confidential business information belong only in approved tools. When in doubt, remove or replace the identifying details first.',
+    simple:'If you wouldn’t post it on a public website, don’t paste it into an AI tool your company hasn’t approved.',
+    ex:'Instead of pasting a real complaint with the customer’s name and order number, write “Customer A, order 123, received a damaged item” and ask for a reply draft.',
+    src:'Module 4 · Data privacy and confidential information · p. 7'},
+   hall:{k:['make things up','hallucinat','wrong','made up','invent','accurate','lie','false'],q:'Why do AI models sometimes make things up?',
+    a:'Language models predict the most likely next words. Unless they’re connected to a source, they don’t look facts up. So when they don’t know, they can still write a fluent, confident answer that is wrong. This is called a hallucination. To reduce it, give the model the source material, ask it to cite sources, and check any fact that matters.',
+    simple:'The model is very good at sounding right. Sounding right and being right aren’t the same thing.',
+    ex:'Ask an AI tool for your return policy and it may invent “60 days.” Paste the actual policy and ask it to answer only from that text, and it will usually get it right.',
+    src:'Module 2 · How language models work · p. 18'},
+   rules:{k:['ai act','eu','law','regulation','legal','rules','compliance','policy'],q:'Which rules apply to using AI at work?',
+    a:'It depends on where your company operates. The EU AI Act already requires companies that use AI to make sure staff have sufficient AI literacy (Article 4), and it adds transparency duties, like labeling AI-generated content. The US has no single federal AI law yet, but some states and cities have their own rules, for example on AI in hiring decisions. Day to day, your company’s AI policy is the rulebook you follow.',
+    simple:'Follow your company’s AI policy. It turns the laws that apply to your company into everyday rules.',
+    ex:'If your team wants an AI tool to screen job applications, specific rules can apply in some US states and cities, and in the EU it counts as high-risk use. Check with HR or legal before you start.',
+    src:'Module 5 · Rules and responsible use · p. 4'},
+   good:{k:['good prompt','better prompt','write a prompt','how to prompt','structure','tips'],q:'What makes a good prompt?',
+    a:'A good prompt gives the model what a new colleague would need: the goal, the context, the audience, the format you want, and any limits. For example: the role (“You’re helping our support team”), the task (“draft a reply”), the facts to use, and the format (“under 120 words, friendly tone”). Then read the result and refine it.',
+    simple:'Say who it’s helping, what you need, which facts to use, and what the answer should look like.',
+    ex:'Weak: “Write an email about the delay.” Better: “Draft a short, friendly email to a customer whose order #123 is 3 days late because of a supplier issue. Offer free shipping on their next order. Under 120 words.”',
+    src:'Module 3 · Prompting at work · p. 15'}
+  },
+  practice:[
+   {type:'mc',topic:'Data privacy',q:'You need to summarize a customer complaint with an AI tool. It includes the customer’s name and account number. What do you do first?',o:['Paste it as is; AI tools are secure','Use an approved tool, or remove the identifying details','Forward it to a colleague to summarize','Rewrite it in all caps'],c:1,ex:'Personal data only goes into approved tools. Otherwise, remove identifying details first.',src:'Module 4 · p. 7'},
+   {type:'mc',topic:'Language models',q:'What is a “hallucination” in a language model?',o:['A bug that crashes the tool','A confident answer that is factually wrong','An image the model generates','A model that answers slowly'],c:1,ex:'A hallucination is fluent, confident output that isn’t true.',src:'Module 2 · p. 18'},
+   {type:'mc',topic:'Prompting',q:'Who usually writes the system instruction for an AI assistant at work?',o:['Each user, every time','The IT team or the tool’s admin','The customer','Nobody; it’s random'],c:1,ex:'System instructions are set in advance, usually by IT or the admin.',src:'Module 3 · p. 12'},
+   {type:'mc',topic:'Prompting',q:'Which prompt is most likely to get a useful answer?',o:['“Write something about our product”','“Make it good”','“Draft a 100-word update for existing customers, friendly tone, mention the new export feature”','“Email”'],c:2,ex:'Goal, audience, length, tone and content: the model has what it needs.',src:'Module 3 · p. 15'},
+   {type:'open',topic:'Responsible use',q:'Describe two ways to reduce the risk of wrong AI answers at work.',need:2,
+    rub:[{k:['source','document','material','paste the','provide','context','policy'],p:'Give the model the source material'},
+         {k:['check','verify','review','fact','double'],p:'Check important facts yourself'},
+         {k:['cite','citation','reference','quote'],p:'Ask for sources or citations'}],
+    model:'Give the model the source material and ask it to answer only from that. Then check any fact that matters before you use it, for example against the original document.',src:'Module 2 · p. 19'}
+  ],
+  cohort:{name:'Fall 2026 · Operations team',kpi:['15 of 18','76%','268','3'],
+   topics:[['Data privacy',44],['Rules and responsible use',58],['Prompting at work',63],['Checking AI output',71],['Language models',82],['What AI is',88]],
+   weak:'Data privacy', weakN:'10 of 18',
+   questions:[['Can I use ChatGPT for customer emails?',37],['Is a customer ID personal data?',26],['What does the EU AI Act mean for us?',21],['How do I stop the AI from making things up?',19],['Which AI tools are approved here?',17]]},
+  copilot:{
+   quiz:`Warm-up quiz: Data privacy with AI tools (10 minutes)
+
+1. Name three kinds of personal data you should never paste into an unapproved AI tool.
+   Answer: For example names, email addresses, account or customer numbers, health details.
+
+2. True or false: removing the customer's name is always enough.
+   Answer: False. An order number or a unique detail can still identify the person.
+
+3. Where do you check which AI tools are approved for confidential data?
+   Answer: The company AI policy (Module 4, p. 3).
+
+4. Rewrite this prompt so it's safe: "Summarize the complaint from Maria Lopez, account 88213."
+   Answer: "Summarize this complaint from a customer about a damaged delivery: ..."
+
+Sources: Module 4 · Data privacy · p. 3–9; Company AI policy (sample)`,
+   msg:`Hi Hannah,
+
+I noticed you haven't logged in for about a week. Module 4 on data privacy is the one that matters most for your day-to-day work, so I'd love for you to finish it before our session on Thursday.
+
+Quick way back in:
+• Ask Alex: "Can I paste customer data into an AI tool?" It takes 5 minutes.
+• Then try the 5-question practice set.
+
+Reply here if anything is unclear.
+
+Dana`,
+   case:`Case study: The helpful summary
+
+A support agent is behind on tickets. She pastes 40 customer emails, with names, phone numbers and order details, into a free AI chatbot and asks for a summary of the top complaints. The summary is excellent, and her manager shares it in the team meeting.
+
+Discussion questions:
+1. What went wrong, even though the result was useful?
+2. Which details should have been removed first, and how?
+3. What would an approved alternative look like at our company?
+4. What should the agent do now that the data has been shared?
+
+Built from: Module 4 · Data privacy · p. 3–9 and Company AI policy (sample)`},
+  materials:[['AI at Work handbook.pdf','64 pages',480],['Company AI policy (sample).docx','8 pages',52],['Prompting examples.pdf','22 pages',140],['EU AI Act – summary for staff.pdf','12 pages',88]],
+  certTags:['AI basics','Language models','Prompting','Data privacy','Rules & responsible use','AI in your role']
+ }
+};
+COURSES.sec.mode='Exam prep';COURSES.ai.mode='Upskilling';
+COURSES.sec.assess=[
+ {t:'Security Architecture',type:'Deep Dive',d:'5 mixed questions',best:58,att:3,last:'Yesterday',st:'in_progress'},
+ {t:'Cryptographic solutions',type:'Quiz',d:'10 multiple choice questions',best:90,att:2,last:'Sep 18',st:'completed',mastered:true},
+ {t:'Social engineering at a hospital',type:'Case Study',d:'3 text-based questions',best:67,att:1,last:'Sep 3',st:'completed'},
+ {t:'Zero trust concepts',type:'Quiz',d:'10 multiple choice questions',best:70,att:4,last:'Sep 12',st:'completed'},
+ {t:'Network appliances',type:'Deep Dive',d:'5 mixed questions',st:'not_started'}];
+COURSES.sec.rec=[['Security Architecture','Low accuracy','bad'],['Social engineering','Not practiced recently','warn'],['Network appliances','Not yet started','mute']];
+COURSES.ai.assess=[
+ {t:'Prompting at work',type:'Deep Dive',d:'5 mixed questions',best:58,att:3,last:'Yesterday',st:'in_progress'},
+ {t:'Understanding language models',type:'Quiz',d:'10 multiple choice questions',best:92,att:2,last:'Sep 17',st:'completed',mastered:true},
+ {t:'What AI is, and what it isn’t',type:'Quiz',d:'10 multiple choice questions',best:83,att:1,last:'Sep 2',st:'completed'},
+ {t:'The helpful summary',type:'Case Study',d:'3 text-based questions',st:'not_started'},
+ {t:'Data privacy',type:'Deep Dive',d:'5 mixed questions',st:'not_started'}];
+COURSES.ai.rec=[['Prompting at work','Low accuracy','bad'],['What AI is','Not practiced recently','warn'],['Data privacy','Not yet started','mute']];
+COURSES.onb={id:'onb',short:'Onboarding',mode:'Onboarding',title:'Student onboarding',activeModule:'Student onboarding',starters:['week1','voucher','absence'],
+ qa:{
+  week1:{k:['first week','start','week one','first day','need to know','orientation'],q:'What do I need to know in my first week?',
+   a:'In your first week you set up your lab account, join the cohort channel and finish the orientation module. Live sessions run Tuesdays and Thursdays at 6:30 PM Central, and recordings are posted the next morning. Before Thursday, do the Module 1 reading and the short practice set, so your instructor can see where you’re starting.',
+   simple:'Set up your accounts, finish orientation, and do the Module 1 reading before Thursday’s session.',
+   ex:'If you start on a Monday: set up the lab account that evening, watch the 20-minute orientation on Tuesday, join the live session, and do the Module 1 practice set before Thursday.',
+   src:'Student handbook · Getting started · p. 3'},
+  voucher:{k:['voucher','exam','book','schedule','register','test center'],q:'How do I get my exam voucher?',
+   a:'You get your exam voucher after you pass the full practice exam with at least 80%. Your program lead sends it by email within two business days. You then book the exam date yourself, online or at a test center.',
+   simple:'Score 80% or more on the full practice exam, and the voucher arrives by email within two business days.',
+   ex:'If you pass the practice exam on a Friday, expect the voucher by Tuesday. Book a date one to two weeks out, while the material is fresh.',
+   src:'Student handbook · Exam vouchers · p. 11'},
+  absence:{k:['miss','absent','sick','late','attendance','recording'],q:'What happens if I miss a live session?',
+   a:'Tell your instructor in advance if you can. Every live session is recorded and posted by the next morning. If you miss more than two sessions in a row, your program lead reaches out to plan a catch-up.',
+   simple:'Watch the recording the next day. Miss more than two in a row, and your program lead will check in.',
+   ex:'If you work a late shift on Thursday, message your instructor, watch the recording on Friday, and bring questions to Tuesday’s session.',
+   src:'Student handbook · Attendance · p. 7'}
+ }};
+const MODES=[
+ {c:'sec',icon:'cap',chats:[['pki',1],['ids',0],['crypto',2],['phish',1],['seg',0]]},
+ {c:'onb',icon:'building',chats:[['week1',0],['voucher',0]]},
+ {c:'ai',icon:'briefcase',chats:[['prompt',1],['hall',0],['privacy',0]]}
+];
+const LOG=[
+ {w:'Week 39 · Sep 21–27, 2026',hrs:'12.5',st:'draft',items:['Module 3: PKI and certificates, tutor session (25 min)','Deep Dive: Security Architecture, best score 58%','Lab: firewall rules, 2 hours','Live sessions: Tuesday and Thursday, 3 hours']},
+ {w:'Week 38 · Sep 14–20, 2026',hrs:'11',st:'signed',items:['Module 2: threats and mitigations, finished','Quiz: Cryptographic solutions, 90%','Live sessions: Tuesday and Thursday, 3 hours']},
+ {w:'Week 37 · Sep 7–13, 2026',hrs:'9.5',st:'signed',items:['Module 2: social engineering and malware','Case Study: Social engineering at a hospital, 67%','Live session: Tuesday, 1.5 hours']}
+];
+const LEARNERS=[
+ {n:'Amelia Clarke',e:'amelia.clarke@learner.demo',att:14,lvl:'Confident',min:31,last:'Today'},
+ {n:'Marcus Hill',e:'marcus.hill@learner.demo',att:11,lvl:'Confident',min:24,last:'Yesterday'},
+ {n:'Priya Natarajan',e:'priya.n@learner.demo',att:9,lvl:'Building',min:19,last:'Today'},
+ {n:'Diego Alvarez',e:'diego.a@learner.demo',att:6,lvl:'Building',min:12,last:'2 days ago',risk:'Scores dropping: 72% → 54%'},
+ {n:'Hannah Brooks',e:'hannah.b@learner.demo',att:2,lvl:'Getting started',min:6,last:'6 days ago',risk:'No activity for 6 days'},
+ {n:'Tyler Nguyen',e:'tyler.n@learner.demo',att:0,lvl:'Getting started',min:0,last:'—',invite:true,risk:'Hasn’t accepted the invite'}
+];
+const VOICES=['US English · warm, clear','US English · calm, measured','British English · friendly','US English · upbeat'];
+const PRESETS=['#6D28D9','#1D4ED8','#0F766E','#B45309','#BE123C','#334155'];
+const DEF={brand:{name:'Northfield Tech Academy',slug:'northfield-tech',initial:'N',color:''},tutor:{name:'Alex',voice:0,minutes:45,pres:'orb'},voiceOut:false};
+
+/* ---------- State ---------- */
+let saved={};
+try{saved=JSON.parse(localStorage.getItem('ls-us-demo')||'{}')||{}}catch(e){saved={}}
+const S={
+ role:'learner',view:'home',course:'sec',
+ brand:Object.assign({},DEF.brand,saved.brand||{}),
+ tutor:Object.assign({},DEF.tutor,saved.tutor||{}),
+ voiceOut:!!saved.voiceOut,
+ chats:{sec:[],ai:[],onb:[]},last:{sec:'pki',ai:'prompt',onb:'week1'},asked:{sec:[],ai:[],onb:[]},
+ minutes:{sec:12,ai:12,onb:12},upcoming:true,voiceMode:false,open:{sec:true,onb:false,ai:false},activeChat:null,markDone:false,aTab:'list',logSent:false,speaking:false,listening:false,busy:false,
+ practice:{sec:null,ai:null},
+ outputs:{},uploads:{sec:[],ai:[]},strict:true,sideOpen:false
+};
+function persist(){try{localStorage.setItem('ls-us-demo',JSON.stringify({brand:S.brand,tutor:S.tutor,voiceOut:S.voiceOut}))}catch(e){}}
+const C=()=>COURSES[S.course];
+// The prospect-branding tool shows only on internal links (?setup), never to prospects.
+const SETUP=(()=>{try{return new URLSearchParams(location.search).has('setup')}catch(e){return false}})();
+const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Items marked true are planned features: hidden until "Upcoming features" is switched on.
+const VIEWS={
+ learner:[['docs','Documents','doc'],['analytics','Analytics','chart'],['plan','Learning plan','cap'],['log','Training log','book'],['tutor','Voice tutor','mic',true],['cert','Certificate','award',true]],
+ trainer:[['materials','Course material','folder'],['cohort','Cohort analytics','chart',true],['copilot','Teaching co-pilot','wand',true],['settings','Tutor settings','user',true]]
+};
+const HOME={learner:'home',trainer:'materials'};
+const ROUTES={learner:['home','docs','analytics','plan','log','tutor','practice','cert'],trainer:['materials','cohort','copilot','settings']};
+const ROLE_USER={learner:['Jordan Rivera','Learner','JR'],trainer:['Dana Brooks','Program lead','DB']};
+
+/* ---------- Shell ---------- */
+function applyBrand(){
+ const r=document.documentElement;
+ if(S.brand.color) r.style.setProperty('--accent',S.brand.color); else r.style.removeProperty('--accent');
+}
+function renderSide(){
+ const b=S.brand, u=ROLE_USER[S.role];
+ let h=`<div class="ws"><button class="ws-home" data-act="nav" data-v="${HOME[S.role]}" aria-label="Go to home"><div class="logo">${esc(b.initial||'A')}</div><div><b>${esc(b.name)}</b><small>${esc(b.slug)}</small></div></button>${SETUP?`<button class="iconbtn sm" data-act="wsswitch" aria-label="Demo setup: prospect branding" title="Demo setup: prospect branding">${ic('updown')}</button>`:''}${S.role==='learner'?`<button class="iconbtn sm ghost" data-act="streak" aria-label="5-day streak">${ic('flame')}</button>`:''}</div>`;
+ if(S.role==='learner') h+=`<div class="xp"><div class="xp-row"><span class="row" style="gap:6px"><span style="color:var(--xp)">${ic('bolt')}</span>Level 5</span><span class="num">395 / 500</span></div><div class="bar"><i style="width:79%"></i></div></div>`;
+ else h+=`<div class="side-label" style="padding-top:6px">Teaching</div>`;
+ const navBtn=([id,l,i])=>{const on=S.view===id&&(id!=='tutor'||S.voiceMode);return `<button data-act="nav" data-v="${id}" class="${on?'on':''}" ${on?'aria-current="page"':''}>${ic(i)}<span>${l}</span></button>`};
+ h+=`<nav class="nav">`+navItems().map(navBtn).join('')+`</nav>`;
+ h+=`<div class="side-label">Coming soon</div><nav class="nav" aria-label="Coming soon">`+soonItems().map(navBtn).join('')+`</nav>`;
+ if(S.role==='learner'){
+  h+=`<div style="height:12px"></div>`+MODES.map(m=>{const c=COURSES[m.c],open=S.open[m.c];
+   return `<div class="mode"><div class="mode-h"><button class="mh ${open?'open':''} ${S.course===m.c?'cur':''}" data-act="togglemode" data-c="${m.c}" aria-expanded="${open}">${ic(m.icon)}<span>${c.mode}</span>${ic('chev','chev')}</button><button class="plus" data-act="newchat" data-c="${m.c}" aria-label="New ${c.mode} chat">${ic('plus')}</button></div>`+
+   (open?`<div class="chats">${m.chats.map(([qa,n])=>{const on=S.view==='tutor'&&!S.voiceMode&&S.activeChat===m.c+':'+qa;return `<button class="${on?'on':''}" data-act="openchat" data-c="${m.c}" data-qa="${qa}" title="${esc(c.qa[qa].q)}">${ic('chat')}<span class="t">${esc(c.qa[qa].q)}</span>${n?`<span class="badge num">${n}</span>`:''}</button>`}).join('')}</div>`:'')+`</div>`}).join('');
+ }else{
+  h+=`<div class="side-label">Courses</div><div class="courses">`+['sec','ai'].map(id=>{const c=COURSES[id];return `<button data-act="course" data-c="${c.id}" class="${S.course===c.id?'on':''}">${ic(c.id==='sec'?'cap':'briefcase')}<span>${c.short}</span><span class="cnt num">${c.count}</span></button>`}).join('')+`</div>`;
+ }
+ h+=`<div class="side-foot"><div class="who"><div class="av">${u[2]}</div><div><b>${u[0]}</b><small>${u[1]}</small></div></div><div class="powered">Powered by <b>LearnSlice</b></div></div>`;
+ side.innerHTML=h;
+ side.classList.toggle('open',S.sideOpen);
+}
+function renderTop(){
+ const names={home:'Home',tutor:'AI Tutor',plan:'Learning plan',practice:'Assessment',cert:'Certificate',docs:'Documents',analytics:'Analytics',log:'Training log',cohort:'Cohort analytics',copilot:'Teaching co-pilot',materials:'Course material',settings:'AI tutor settings',branding:'Branding'};
+ const c=C();
+ let crumb=`${names[S.view]}`;
+ if(S.view==='tutor'){
+  if(S.voiceMode) crumb=`Voice tutor ${soon()} <span>/ ${esc(c.activeModule)}</span>`;
+  else{const qa=S.activeChat&&S.activeChat.split(':')[1];crumb=`${esc(c.mode)} <span>/ ${esc(qa&&c.qa[qa]?c.qa[qa].q:'New chat')}</span>`}
+ }
+ else if(!['settings','branding','cert','home','log','docs'].includes(S.view)) crumb+=` <span>/ ${esc(c.title)}</span>`;
+ let right='';
+ if(S.view==='tutor'){
+  if(S.voiceMode){const m=S.minutes[S.course],t=S.tutor.minutes;right=`<div class="meter num"><div class="bar"><i style="width:${Math.min(100,m/t*100)}%"></i></div>${m} of ${t} min this month</div><button class="btn sm" data-act="endsession">${ic('x')}End session</button>`}
+  else if(false) right=`<button class="btn sm" data-act="voicemode">${ic('mic')}Talk with ${esc(S.tutor.name)}${soon()}</button>`;
+ }
+ top.innerHTML=`<button class="menu-btn" data-act="menu" aria-label="Open menu">${ic('menu')}</button><div class="crumb">${crumb}</div><div class="grow"></div>${right}<div class="seg" role="tablist" aria-label="View as">${['learner','trainer'].map(r=>`<button role="tab" aria-selected="${S.role===r}" class="${S.role===r?'on':''}" data-act="role" data-r="${r}">${r[0].toUpperCase()+r.slice(1)}</button>`).join('')}</div>`;
+ const tn=S.tutor.name;
+ footnote.innerHTML=S.view==='tutor'&&S.voiceMode?`${esc(tn)} is an AI and can make mistakes. Check important answers. Voice isn’t recorded; the conversation is deleted when the course ends.`:`${esc(tn)} is an AI and can make mistakes. Check important answers, and don’t enter sensitive personal data.`;
+}
+function render(){
+ if(S.course==='onb'&&!['tutor','home'].includes(S.view))S.course='sec';
+ applyBrand();renderSide();renderTop();
+ const v=S.view;
+ main.className='scroll';
+ if(v==='tutor'){main.className='';main.style.cssText='flex:1;min-height:0;display:flex;flex-direction:column';main.innerHTML=`<div style="flex:1;min-height:0">${vTutor()}</div>`;scrollChat();return}
+ main.style.cssText='';
+ main.innerHTML=({home:vHome,docs:vMaterials,analytics:vAnalytics,log:vLog,plan:vPlan,practice:vPractice,cert:vCert,cohort:vCohort,copilot:vCopilot,materials:vMaterials,settings:vSettings,branding:vBranding})[v]();
+ if(isSoon()){const h=main.querySelector('h1');if(h)h.insertAdjacentHTML('beforeend',' '+soon())}
+ main.scrollTop=0;
+}
+function go(view,opts){
+ S.view=view;S.sideOpen=false;
+ if(opts&&'voice' in opts)S.voiceMode=opts.voice;
+ try{history.replaceState(null,'','#'+view)}catch(e){}
+ render();
+ if(opts&&opts.ask) setTimeout(()=>ask(opts.ask),reduce?0:250);
+}
+const SOON=['cohort','copilot','settings','cert'];
+const soon=(t)=>`<span class="pill soon">${t||'Coming soon'}</span>`;
+function isSoon(){return SOON.includes(S.view)||(S.view==='tutor'&&S.voiceMode)}
+function navItems(){return VIEWS[S.role].filter(v=>!v[3])}
+function soonItems(){return VIEWS[S.role].filter(v=>v[3])}
+function soonBar(){return false?`<div class="soon-bar">${soon()}<span>This screen shows a planned feature. Everything else in the demo is in the product today.</span></div>`:''}
+function cSwitch(){
+ if(S.role!=='learner')return '';
+ return `<div class="seg">${['sec','ai'].map(id=>`<button class="${S.course===id?'on':''}" data-act="csw" data-c="${id}">${COURSES[id].short}</button>`).join('')}</div>`;
+}
+function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>el.classList.remove('show'),2600)}
+
+/* ---------- Learner views ---------- */
+function vHome(){
+ const t=esc(S.tutor.name);
+ const sugg=[{c:'sec',qa:'ids',icon:'cap',badge:'Next',t:'Network appliances: explain when to use an IDS, an IPS or a proxy'},
+  {c:'onb',qa:'week1',icon:'building',t:'What do I need to know in my first week?'},
+  {c:'ai',qa:'hall',icon:'briefcase',t:'AI License: why do AI models sometimes make things up?'}];
+ return `<div class="page narrow"><div class="home">
+  <div class="spark">${ic('sparkles')}</div>
+  <h1 class="h1">1 of 5 assessments mastered. Keep going.</h1>
+  <p class="muted">Here are your most useful next steps.</p>
+  <div class="row" style="justify-content:center;margin-top:4px"><button class="btn" data-act="nav" data-v="practice">${ic('retry')}Retake your weakest exercise</button><button class="btn" data-act="missed">${ic('list')}Review your top missed questions</button></div>
+  <div class="cont-head"><span class="eyebrow">Continue where you left off</span><button class="markdone ${S.markDone?'on':''}" data-act="markdone" aria-pressed="${S.markDone}">${ic(S.markDone?'checkc':'circle')}${S.markDone?'Done':'Mark as done'}</button></div>
+  <button class="continue" data-act="openchat" data-c="sec" data-qa="pki">${ic('play')}<span>PKI and certificates: explain how the chain of trust works</span></button>
+  ${false?`<button class="btn sm" data-act="talk">${ic('mic')}Talk it through with ${t} instead${soon()}</button>`:''}
+  <div class="eyebrow" style="margin-top:22px">Suggested for you</div>
+  <div class="sugg">${sugg.map(s=>`<button data-act="suggest" data-c="${s.c}" data-qa="${s.qa}"><span class="ic">${ic(s.icon)}</span><span class="tx"><small>${COURSES[s.c].mode}${s.badge?`<span class="pill mute" style="letter-spacing:0;text-transform:none">${s.badge}</span>`:''}</small>${esc(s.t)}</span><span class="arrow">${ic('arrow')}</span></button>`).join('')}</div>
+ </div></div>`;
+}
+function missedModal(){
+ const c=COURSES.sec,items=[[c.practice[1],3],[c.practice[0],2],[c.practice[2],2]];
+ modal(`<div class="modal-h"><div><h2 class="h3">Your top missed questions</h2><p class="muted" style="font-size:13px">From your last assessments in ${esc(c.title)}</p></div><button class="iconbtn" data-act="close" aria-label="Close">${ic('x')}</button></div>
+ <div class="missed">${items.map(([q,n])=>`<div><span class="row" style="justify-content:space-between"><span class="eyebrow">${esc(q.topic)}</span><span class="pill bad num">Missed ${n}×</span></span><b>${esc(q.q)}</b><span><span class="muted">Correct answer:</span> ${esc(q.o[q.c])}</span><span class="src" style="margin:0">Source <b>${esc(q.src)}</b></span></div>`).join('')}</div>
+ <div class="row" style="justify-content:flex-end"><button class="btn sm" data-act="closeopen" data-c="sec" data-qa="pki">${ic('chat')}Ask ${esc(S.tutor.name)}</button><button class="btn sm primary" data-act="closepractice">Practice these</button></div>`);
+}
+function stageInner(pres,small){
+ if(pres==='illustrated') return `<div class="illu"><svg viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="70" style="fill:color-mix(in srgb,var(--accent) 30%,#1b1830)"/><path d="M28 140c6-28 26-40 47-40s41 12 47 40" style="fill:var(--accent)"/><circle cx="75" cy="68" r="30" fill="#F2D6C4"/><path d="M45 64c0-20 14-32 30-32s30 12 30 32c-8-10-18-14-30-14s-22 4-30 14z" fill="#3B2A4A"/><circle cx="64" cy="70" r="3.2" fill="#2A2233"/><circle cx="86" cy="70" r="3.2" fill="#2A2233"/><ellipse class="mouth" cx="75" cy="84" rx="7" ry="3.5" fill="#9B3B4A"/></svg></div>`;
+ if(pres==='avatar') return `<div class="silhouette"><svg viewBox="0 0 150 170" aria-hidden="true"><circle cx="75" cy="62" r="32" fill="#3A3649"/><path d="M15 170c4-40 30-62 60-62s56 22 60 62z" fill="#3A3649"/></svg></div>`;
+ return `<div class="orb"></div>`;
+}
+function vTutor(){
+ const c=C(),t=esc(S.tutor.name),pres=S.tutor.pres,msgs=S.chats[S.course];
+ let stage='';
+ if(S.voiceMode&&pres!=='text') stage=`<div class="stage ${S.speaking?'speaking':''} ${S.listening?'listening':''}" id="stage">
+   <span class="tl chip-dark"><span class="live-dot"></span>Live</span>
+   <span class="tr chip-dark">${ic('spark')}AI-generated</span>
+   ${stageInner(pres)}
+   <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+   <span class="bl"><b>${t}</b><small id="stage-status">${S.listening?'Listening…':S.speaking?'Speaking':'Answers from your course material, with sources'}</small></span>
+   ${pres==='avatar'?'<span class="br chip-dark">Avatar add-on preview</span>':''}
+  </div>`;
+ let thread='';
+ if(!msgs.length) thread=`<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble">Hi Jordan, I’m ${t}. ${S.course==='onb'?'I can help with anything about getting started at your academy.':`I’m your tutor for ${esc(c.title)}.`} I answer from your academy’s course material and show where each answer comes from. Ask me anything, or pick a question below.</div></div></div>`;
+ thread+=msgs.map((m,i)=>msgHTML(m,i)).join('');
+ const chips=msgs.length?[['example','Give me an example from my job'],['simple','Explain it more simply'],['deep','Create assessment']]:c.starters.map(k=>['q:'+k,c.qa[k].q]);
+ return `<div class="tutor-wrap"><div class="tutor-scroll" id="tscroll"><div class="tutor-inner">${stage}<div class="thread" id="thread">${thread}</div><div class="chips" id="chips">${chips.map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('')}</div></div></div>
+ <div class="composer-wrap"><form class="composer" id="composer"><input id="q" autocomplete="off" placeholder="Ask ${t} something. Speak or type." aria-label="Ask the tutor"><button type="button" class="iconbtn ${S.voiceOut?'on':''}" data-act="voiceout" title="${S.voiceOut?'Stop reading answers aloud':'Read answers aloud'}" aria-pressed="${S.voiceOut}">${ic('speaker')}</button><button type="button" class="mic ${S.listening?'on':''}" data-act="mic" aria-label="Speak your question">${ic('mic')}</button></form></div></div>`;
+}
+function msgHTML(m,i){
+ const t=esc(S.tutor.name);
+ if(m.role==='user') return `<div class="msg user"><div class="bubble">${esc(m.text)}</div></div>`;
+ if(m.kind==='typing') return `<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="bubble"><span class="typing"><i></i><i></i><i></i></span></div></div>`;
+ if(m.kind==='quiz'){
+  const items=m.items.map((q,qi)=>{const a=m.ans[qi];return `<div><div class="q">${qi+1}. ${esc(q.q)}</div><div class="opts">${q.o.map((o,oi)=>{let cls='';if(a!=null){if(oi===q.c)cls='right';else if(oi===a)cls='wrong'}return `<button class="opt ${cls}" data-act="cq" data-m="${i}" data-q="${qi}" data-o="${oi}" ${a!=null?'disabled':''}>${esc(o)}</button>`}).join('')}</div>${a!=null?`<div class="src">${a===q.c?'Correct.':'Not quite.'} ${esc(q.ex)} <b>${esc(q.src)}</b></div>`:''}</div>`}).join('');
+  const done=m.ans.filter(x=>x!=null).length,right=m.ans.filter((x,k)=>x===m.items[k].c).length;
+  return `<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack" style="flex:1"><div class="bubble" style="max-width:100%;width:100%"><div class="cq"><div>Here are 3 quick questions from your material.</div>${items}${done===3?`<div class="fb ${right===3?'good':'part'}"><b>${right} of 3 correct.</b>${right<3?'I added the missed topic to your review list.':'Nice work. +15 XP'}</div>`:''}</div></div></div></div>`;
+ }
+ return `<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble" data-mi="${i}">${esc(m.text)}</div>${m.src?`<span class="src">Source <b>${esc(m.src)}</b></span>`:''}${m.kind==='nomatch'?`<span class="nomatch">${ic('alert')}Not part of this demo</span>`:''}</div></div>`;
+}
+function scrollChat(){const s=document.getElementById('tscroll');if(s)s.scrollTop=s.scrollHeight}
+function redrawThread(){
+ const th=document.getElementById('thread');if(!th){return}
+ const msgs=S.chats[S.course];const t=esc(S.tutor.name);
+ th.innerHTML=(msgs.length?'':`<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble">Hi Jordan.</div></div></div>`)+msgs.map((m,i)=>msgHTML(m,i)).join('');
+ const ch=document.getElementById('chips');
+ if(ch&&msgs.length)ch.innerHTML=[['example','Give me an example from my job'],['simple','Explain it more simply'],['deep','Create assessment']].map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('');
+ scrollChat();
+}
+function setStage(){
+ const st=document.getElementById('stage');if(!st)return;
+ st.classList.toggle('speaking',S.speaking);st.classList.toggle('listening',S.listening);
+ const ss=document.getElementById('stage-status');if(ss)ss.textContent=S.listening?'Listening…':S.speaking?'Speaking':'Answers from your course material, with sources';
+ const mic=document.querySelector('.mic');if(mic)mic.classList.toggle('on',S.listening);
+}
+function matchQA(text){
+ const c=C(),t=' '+text.toLowerCase()+' ';let best=null,score=0;
+ for(const [id,qa] of Object.entries(c.qa)){let s=0;qa.k.forEach(k=>{if(t.includes(k))s+=k.length>4?2:1});if(s>score){score=s;best=id}}
+ return score>0?best:null;
+}
+function ask(text,forced){
+ if(S.busy)return;
+ const c=C(),msgs=S.chats[S.course];
+ if(S.view!=='tutor'){S.view='tutor';render()}
+ let reply;
+ if(forced==='quiz'){
+  msgs.push({role:'user',text:'Quiz me with 3 questions'});
+  reply={role:'ai',kind:'quiz',items:(c.practice||COURSES.sec.practice).filter(p=>p.type==='mc').slice(0,3),ans:[null,null,null]};
+ }else if(forced==='example'||forced==='simple'){
+  const qa=c.qa[S.last[S.course]];
+  msgs.push({role:'user',text:forced==='example'?'Give me an example from my job':'Explain it more simply'});
+  reply={role:'ai',kind:'answer',text:forced==='example'?qa.ex:qa.simple,src:qa.src};
+ }else{
+  msgs.push({role:'user',text});
+  const id=matchQA(text);
+  if(id){S.last[S.course]=id;if(!S.asked[S.course].includes(id))S.asked[S.course].push(id);const qa=c.qa[id];reply={role:'ai',kind:'answer',text:qa.a,src:qa.src}}
+  else{const topics=Object.values(c.qa).slice(0,3).map(q=>q.q.replace(/\?$/,'').toLowerCase());reply={role:'ai',kind:'nomatch',text:`That question isn’t part of this demo. The demo answers a set of sample questions, like “${c.qa[c.starters[0]].q}” With your academy, the tutor answers from your own course material.`}}
+ }
+ S.busy=true;
+ msgs.push({role:'ai',kind:'typing'});redrawThread();
+ setTimeout(()=>{
+  msgs.pop();msgs.push(reply);
+  const idx=msgs.length-1;redrawThread();
+  if(msgs.filter(m=>m.role==='ai').length%2===0){S.minutes[S.course]=Math.min(S.tutor.minutes,S.minutes[S.course]+1);renderTop()}
+  if(reply.kind==='quiz'){S.busy=false;return}
+  streamInto(idx,reply.text,()=>{S.busy=false});
+  speak(reply.text);
+ },reduce?50:650);
+}
+function streamInto(idx,text,done){
+ const el=document.querySelector(`[data-mi="${idx}"]`);
+ if(!el||reduce){done();return}
+ const words=text.split(' ');let n=0;el.textContent='';
+ const src=el.parentElement.querySelector('.src,.nomatch');if(src)src.style.visibility='hidden';
+ const tick=setInterval(()=>{n+=2;el.textContent=words.slice(0,n).join(' ');scrollChat();if(n>=words.length){clearInterval(tick);if(src)src.style.visibility='';scrollChat();done()}},45);
+}
+let speakTimer;
+function speak(text){
+ clearTimeout(speakTimer);
+ const fallback=()=>{S.speaking=true;setStage();speakTimer=setTimeout(()=>{S.speaking=false;setStage()},Math.min(9000,text.length*28))};
+ if(!S.voiceOut||!('speechSynthesis' in window)){fallback();return}
+ try{
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  const pref=S.tutor.voice,lang=pref===2?'en-GB':'en-US';u.lang=lang;
+  const vs=speechSynthesis.getVoices().filter(v=>v.lang&&v.lang.replace('_','-').startsWith(lang.slice(0,5)));
+  if(vs.length)u.voice=vs[pref===1&&vs[1]?1:0];
+  u.rate=pref===1?.95:pref===3?1.1:1.02;
+  u.onstart=()=>{S.speaking=true;setStage()};
+  u.onend=u.onerror=()=>{S.speaking=false;setStage()};
+  speechSynthesis.speak(u);
+  speakTimer=setTimeout(()=>{if(!speechSynthesis.speaking){fallback()}},700);
+ }catch(e){fallback()}
+}
+function stopSpeaking(){clearTimeout(speakTimer);try{speechSynthesis.cancel()}catch(e){}S.speaking=false;setStage()}
+function listen(){
+ if(S.listening||S.busy)return;
+ stopSpeaking();
+ const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+ let handled=false;
+ const simulate=()=>{
+  if(handled)return;handled=true;
+  const c=C();const next=c.starters.concat(Object.keys(c.qa)).find(k=>!S.asked[S.course].includes(k))||c.starters[0];
+  const q=c.qa[next].q;const inp=document.getElementById('q');
+  S.listening=true;setStage();
+  let n=0;const words=q.split(' ');
+  const tick=setInterval(()=>{n++;if(inp)inp.value=words.slice(0,n).join(' ');if(n>=words.length){clearInterval(tick);setTimeout(()=>{S.listening=false;setStage();if(inp)inp.value='';ask(q)},350)}},reduce?1:140);
+ };
+ if(!SR){simulate();return}
+ try{
+  const r=new SR();r.lang='en-US';r.interimResults=true;r.maxAlternatives=1;
+  let finalText='';
+  S.listening=true;setStage();
+  r.onresult=e=>{let t='';for(const res of e.results)t+=res[0].transcript;finalText=t;const inp=document.getElementById('q');if(inp)inp.value=t};
+  r.onerror=()=>{S.listening=false;setStage();simulate()};
+  r.onend=()=>{if(handled)return;S.listening=false;setStage();if(finalText.trim()){handled=true;const inp=document.getElementById('q');if(inp)inp.value='';ask(finalText.trim())}else simulate()};
+  r.start();
+  setTimeout(()=>{if(!handled&&!finalText){try{r.abort()}catch(err){}S.listening=false;simulate()}},4000);
+ }catch(e){S.listening=false;simulate()}
+}
+
+function vPlan(){
+ const c=C();
+ return `<div class="page narrow">
+  <div class="row" style="justify-content:space-between;margin-bottom:18px">${cSwitch()}${false?`<button class="btn sm" data-act="nav" data-v="cert">${ic('award')}Sample certificate${soon()}</button>`:''}</div>
+  <div class="plan-head"><div><h1 class="h2">${esc(c.title)}</h1><p class="muted" style="margin-top:4px">${c.modules.length} modules · Certificate at the end · Access until ${c.access}</p></div><span class="pct num">${c.pct}%</span></div>
+  <div class="bar acc" style="height:6px;margin-top:10px"><i style="width:${c.pct}%"></i></div>
+  <div class="plan-list">${c.modules.map((m,i)=>{
+   const st=m.st==='done'?'<span class="pill good">Completed</span>':m.st==='active'?'<span class="pill acc">In progress</span>':'<span class="pill mute">Not started</span>';
+   const sub=m.sub||(m.st==='done'?`${m.s} sections · Test passed (${m.score}%)`:m.st==='active'?`${m.s} sections · ${m.doneS} done · Test ${m.score}%`:`${m.s} sections`);
+   return `<div class="mod ${m.st}"><div class="n num">${i+1}</div><div class="tx"><b>${esc(m.t)}</b><small class="num">${sub}</small></div>${st}<button class="btn sm" data-act="goask" data-qa="${m.qa}">${ic('chat')}Explain it</button></div>`}).join('')}</div>
+  <p class="muted" style="font-size:12.5px;margin-top:16px">${esc(c.note)}</p>
+ </div>`;
+}
+function vPractice(){
+ const c=C();let p=S.practice[S.course];
+ if(!p){p=S.practice[S.course]={i:0,res:[],sel:null,open:'',graded:null}}
+ const items=c.practice;
+ if(p.i>=items.length){
+  const pts=p.res.reduce((a,r)=>a+r.pts,0),max=p.res.reduce((a,r)=>a+r.max,0),pct=Math.round(pts/max*100);
+  const weak=p.res.filter(r=>r.pts<r.max).map(r=>r.topic);
+  return `<div class="page narrow"><div class="card qcard" style="align-items:flex-start">
+   <span class="eyebrow">Practice set complete</span>
+   <div class="score-big num" style="color:${pct>=70?'var(--good)':'var(--warn)'}">${pct}%</div>
+   <p>${pct>=70?'You’re above the 70% target for this module.':'You’re close to the 70% target. Review the topics below and try again.'}</p>
+   <div class="stack" style="gap:8px;width:100%">${p.res.map(r=>`<div class="row" style="justify-content:space-between;border-top:1px solid var(--line);padding-top:8px"><span>${esc(r.topic)}</span><span class="pill ${r.pts===r.max?'good':r.pts>0?'warn':'bad'} num">${r.pts} / ${r.max}</span></div>`).join('')}</div>
+   <div class="row" style="margin-top:6px">${weak.length?`<button class="btn primary" data-act="reviewweak" data-t="${esc(weak[0])}">${ic('mic')}Review ${esc(weak[0])} with ${esc(S.tutor.name)}</button>`:''}<button class="btn" data-act="restartpractice">${ic('retry')}Try again</button></div>
+  </div></div>`;
+ }
+ const q=items[p.i];
+ let body='';
+ if(q.type==='mc'){
+  body=`<div class="opts stack" style="gap:8px">${q.o.map((o,oi)=>{let cls='';if(p.graded){if(oi===q.c)cls='right';else if(oi===p.sel)cls='wrong'}return `<button class="opt ${cls}" data-act="pick" data-o="${oi}" ${p.graded?'disabled':''} style="${!p.graded&&p.sel===oi?'border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)':''}">${esc(o)}</button>`}).join('')}</div>`;
+  if(p.graded) body+=`<div class="fb ${p.sel===q.c?'good':'bad'}"><b>${p.sel===q.c?'Correct':'Not quite'}</b><span>${esc(q.ex)}</span><span class="src" style="margin:0">Source <b>${esc(q.src)}</b></span></div>`;
+ }else{
+  body=`<textarea class="textarea" id="openans" placeholder="Write your answer in your own words" ${p.graded?'disabled':''}>${esc(p.open)}</textarea>`;
+  if(p.graded){const g=p.graded;body+=`<div class="fb ${g.pts===g.max?'good':g.pts>0?'part':'bad'}"><b class="num">${g.pts} of ${g.max} points · AI feedback</b><div class="rub">${g.hits.map(h=>`<div>${h.ok?`<span class="ok">${ic('check')}</span>`:`<span class="no">${ic('x')}</span>`}<span>${esc(h.p)}</span></div>`).join('')}</div><span style="margin-top:6px"><b>Model answer:</b> ${esc(q.model)}</span><span class="src" style="margin:0">Source <b>${esc(q.src)}</b></span></div>`}
+ }
+ const canCheck=q.type==='mc'?p.sel!=null:true;
+ return `<div class="page narrow">
+  <div class="page-h"><div><span class="pill acc">Deep Dive · 5 mixed questions</span><h1 class="h2" style="margin-top:8px">${esc(c.activeModule.split('·')[1].trim())}</h1>
+  <p class="muted" style="margin-top:4px">Generated from your course material. Open answers get AI feedback with partial credit.</p></div>${cSwitch()}</div>
+  <div class="card qcard">
+   <div class="steps">${items.map((_,k)=>`<i class="${k<p.i||(k===p.i&&p.graded)?'done':''}"></i>`).join('')}</div>
+   <div class="qmeta"><span class="eyebrow num">Question ${p.i+1} of ${items.length} · ${esc(q.topic)}</span><span class="pill ${q.type==='mc'?'mute':'acc'}">${q.type==='mc'?'Multiple choice':'Open answer'}</span></div>
+   <div class="qtext">${esc(q.q)}</div>
+   ${body}
+   <div class="row" style="justify-content:flex-end">${p.graded?`<button class="btn primary" data-act="nextq">${p.i+1<items.length?'Next question':'See results'}${ic('arrow')}</button>`:`<button class="btn primary" data-act="checkq" ${canCheck?'':'disabled'}>Check answer</button>`}</div>
+  </div>
+ </div>`;
+}
+function vCert(){
+ const c=C();
+ return `<div class="page" style="max-width:900px">
+  <div class="row" style="justify-content:space-between"><div><h1 class="h2">Certificate</h1><p class="muted" style="margin-top:4px">Sample certificate from a learner who finished the course.</p></div></div>
+  <div class="card cert">
+   <div class="cert-top"><div class="row"><div class="logo" style="width:30px;height:30px;font-size:13px">${esc(S.brand.initial||'A')}</div><div><b>${esc(S.brand.name)}</b><div class="muted" style="font-size:12.5px">${esc(c.title)} · ${esc(c.cohort.name.split('·')[0].trim())}</div></div></div><span class="pill mute num" style="border:1px solid var(--line)">No. 2026-09-014</span></div>
+   <span class="eyebrow" style="color:var(--accent-ink)">Certificate of completion</span>
+   <h2>${esc(c.title)}</h2>
+   <p class="muted">This certifies that</p>
+   <div class="who-n">Amelia Clarke</div>
+   <p style="max-width:60ch">completed all ${c.modules.length} modules of the course and passed the knowledge check for each one.</p>
+   <div class="tags">${c.certTags.map(t=>`<span>${esc(t)}</span>`).join('')}</div>
+   <div class="cert-foot"><div class="sign"><b>Dana Brooks</b><small>Program lead · confirmed Sep 24, 2026</small></div><small class="num">Chicago, IL · September 24, 2026</small></div>
+  </div>
+  <div class="card row" style="margin-top:14px;padding:14px 16px;justify-content:space-between"><span class="muted" style="font-size:13px;flex:1;min-width:220px">Confirms participation and completed knowledge checks. It isn’t an official exam result. The program lead confirms each certificate.</span><button class="btn sm" data-act="copy" data-text="Certificate No. 2026-09-014 · ${esc(S.brand.name)} · ${esc(c.title)} · Amelia Clarke">${ic('copy')}Copy certificate ID</button></div>
+ </div>`;
+}
+
+function vAnalytics(){
+ const c=C(),mastered=c.assess.filter(a=>a.mastered).length;
+ const stats=[['Assessments',`${mastered} of ${c.assess.length} mastered`,'target'],['Attempts','12','retry'],['Avg. score','68%','chart'],['Points','395','bolt'],['Streak','5 days','flame']];
+ const stLabel={completed:['Completed','good'],in_progress:['In progress','acc'],not_started:['Not started','mute']};
+ let body='';
+ if(S.aTab==='list'){
+  body=`<div class="sec-h"><h2 class="h3">Recommended to review</h2><span class="muted" style="font-size:12.5px">Based on accuracy and when you last practiced</span></div>
+  <div class="rec">${c.rec.map(([t,r,k])=>`<div class="card"><span class="pill ${k}">${r}</span><b>${esc(t)}</b><button class="btn sm" data-act="nav" data-v="practice">Review</button></div>`).join('')}</div>
+  <div class="sec-h"><h2 class="h3">My assessments</h2><span class="muted" style="font-size:12.5px">Create one from any conversation with ${esc(S.tutor.name)}</span></div>
+  <div class="acards">${c.assess.map(a=>`<div class="card acard"><div class="row" style="justify-content:space-between"><span class="pill ${a.type==='Quiz'?'mute':'acc'}">${a.type}</span>${a.mastered?`<span class="pill good">${ic('check')}Mastered</span>`:`<span class="pill ${stLabel[a.st][1]}">${stLabel[a.st][0]}</span>`}</div><b>${esc(a.t)}</b><p>${a.d}</p><div class="meta num"><span>${a.best!=null?`Best ${a.best}%`:'No attempts yet'}</span><span>${a.att?`${a.att} attempt${a.att>1?'s':''} · ${a.last}`:''}</span></div><button class="btn sm ${a.st==='not_started'?'primary':''}" data-act="nav" data-v="practice" style="align-self:flex-start">${a.st==='not_started'?'Start':a.st==='completed'?'Play again':'Continue'}</button></div>`).join('')}</div>`;
+ }else{
+  const tp=c.cohort.topics.map(([t,v],k)=>[t,Math.max(20,Math.min(96,v+[4,-6,9,-3,6,-2,5][k%7]))]);
+  body=`<div class="grid2"><div class="card panel"><div class="panel-h"><h2 class="h3">Your level by topic</h2><span class="muted" style="font-size:12.5px">Line marks the 70% target</span></div><div class="mastery">${tp.map(([t,v])=>`<div class="mrow"><div class="lbl"><span>${esc(t)}</span></div><div class="v num" style="color:${mcolor(v)}">${v}%</div><div class="mbar"><i style="width:${v}%;background:${mcolor(v)}"></i></div></div>`).join('')}</div></div>
+  <div class="card panel"><div class="panel-h"><h2 class="h3">Recent attempts</h2></div><div class="qlist">${c.assess.filter(a=>a.att).map(a=>`<div><span>${esc(a.t)} <span class="muted">· ${a.type}</span></span><b class="num" style="color:${mcolor(a.best)}">${a.best}%</b></div>`).join('')}</div></div></div>`;
+ }
+ return `<div class="page">
+  <div class="page-h"><div><h1 class="h2">Assessments</h1><p class="muted" style="margin-top:4px">Test your knowledge with quizzes, deep dives, and case studies.</p></div>${cSwitch()}</div>
+  <div class="stats">${stats.map(([l,v,i])=>`<div class="card stat"><small>${ic(i)}${l}</small><b class="num">${v}</b></div>`).join('')}</div>
+  <div class="tabs" role="tablist"><button role="tab" aria-selected="${S.aTab==='list'}" class="${S.aTab==='list'?'on':''}" data-act="atab" data-t="list">My assessments</button><button role="tab" aria-selected="${S.aTab==='stats'}" class="${S.aTab==='stats'?'on':''}" data-act="atab" data-t="stats">Analytics</button></div>
+  ${body}
+ </div>`;
+}
+function vLog(){
+ const auto=false;
+ return `<div class="page narrow">
+  <h1 class="h2">Training log</h1>
+  <p class="muted" style="margin-top:4px">Your weekly record of learning hours and activities, signed off by your program lead. Useful for apprenticeship and workforce-grant reporting.</p>
+  <div class="log">${LOG.map(e=>{const draft=e.st==='draft'&&!S.logSent;
+   const status=draft?'<span class="pill warn">Draft</span>':e.st==='draft'?'<span class="pill acc">Waiting for sign-off</span>':'<span class="pill good">'+ic('check')+'Signed by Dana Brooks</span>';
+   let body;
+   if(draft&&!auto) body=`<div class="field"><label for="log-text">What did you work on this week?</label><textarea class="textarea" id="log-text" placeholder="For example: Module 3, PKI and certificates. Lab on firewall rules."></textarea></div><div class="row" style="justify-content:space-between"><div class="row"><label for="log-hrs" style="font-size:13px;font-weight:600">Hours</label><input class="input num" id="log-hrs" type="number" min="0" step="0.5" value="12.5" style="width:90px"></div><button class="btn sm primary" data-act="submitlog">Submit for sign-off</button></div><p class="muted" style="font-size:12.5px">${soon()} Entries filled in automatically from tutor sessions and assessments.</p>`;
+   else body=`<span class="muted num" style="font-size:13px">${e.hrs} hours</span><ul>${e.items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${draft?`<div class="row" style="justify-content:space-between;margin-top:6px"><span class="muted" style="font-size:12.5px">${soon()} Filled in automatically from tutor sessions and assessments. Check it before you submit.</span><button class="btn sm primary" data-act="submitlog">Submit for sign-off</button></div>`:''}`;
+   return `<div class="card"><div class="row" style="justify-content:space-between"><b>${e.w}</b>${status}</div>${body}</div>`}).join('')}</div>
+ </div>`;
+}
+function brandModal(){
+ const b=S.brand,cur=b.color||'';
+ modal(`<div class="modal-h" id="brand-modal"><div><h2 class="h3">Demo setup</h2><p class="muted" style="font-size:13px">Show the prospect’s academy name and color before a call or a Loom recording. Saved in this browser only.</p></div><button class="iconbtn" data-act="close" aria-label="Close">${ic('x')}</button></div>
+  <div class="fields2">
+   <div class="field"><label for="b-name">Academy name</label><input class="input" id="b-name" value="${esc(b.name)}" maxlength="40"></div>
+   <div class="field"><label for="b-init">Logo letter</label><input class="input" id="b-init" value="${esc(b.initial)}" maxlength="2"></div>
+  </div>
+  <div class="field"><label>Brand color</label><div class="swatches">${PRESETS.map(c=>`<button class="swatch ${cur.toLowerCase()===c.toLowerCase()||(!cur&&c==='#6D28D9')?'on':''}" style="background:${c}" data-act="swatch" data-c="${c}" aria-label="Use color ${c}"></button>`).join('')}<input type="color" id="b-color" value="${cur||'#6D28D9'}" aria-label="Custom color"></div></div>
+  <div class="row" style="justify-content:space-between"><button class="btn sm" data-act="resetbrand">${ic('retry')}Reset</button><button class="btn sm primary" data-act="close">Done</button></div>`);
+}
+
+/* ---------- Instructor views ---------- */
+function mcolor(v){return v<50?'var(--bad)':v<70?'var(--warn)':'var(--good)'}
+function vCohort(){
+ const c=C(),co=c.cohort;
+ const k=[['Active this week',co.kpi[0],'learners'],['Avg. practice score',co.kpi[1],'target 70%'],['Tutor questions',co.kpi[2],'this week'],['Need attention',co.kpi[3],'learners']];
+ return `<div class="page">
+  <div class="row" style="justify-content:space-between"><div><h1 class="h2">Cohort analytics</h1><p class="muted" style="margin-top:4px">${esc(c.title)} · ${esc(co.name)} · 18 learners</p></div>
+   <div class="row"><label class="btn sm" style="cursor:pointer">${ic('upload')}Import roster<input type="file" accept=".csv,.xlsx" hidden data-act="roster"></label><button class="btn sm" data-act="copysummary">${ic('copy')}Copy summary</button></div></div>
+  <div class="kpis">${k.map((x,i)=>`<div class="card kpi"><small>${x[0]}</small><b class="num" style="${i===3?'color:var(--warn)':''}">${x[1]}</b><span>${x[2]}</span></div>`).join('')}</div>
+  <div class="callout">${ic('alert')}<div><b>${co.weakN} learners are below target on ${esc(co.weak)}.</b> <span class="muted">It’s also the topic learners ask ${esc(S.tutor.name)} about most. The co-pilot has a warm-up quiz ready for your next session.</span> <button class="btn sm ghost" data-act="nav" data-v="copilot" style="padding-inline:6px;color:var(--accent-ink)">Open co-pilot ${ic('arrow')}</button></div></div>
+  <div class="grid2">
+   <div class="card panel"><div class="panel-h"><h2 class="h3">Mastery by topic</h2><span class="muted" style="font-size:12.5px">Line marks the 70% target</span></div>
+    <div class="mastery">${co.topics.map(([t,v])=>`<div class="mrow"><div class="lbl"><span>${esc(t)}</span></div><div class="v num" style="color:${mcolor(v)}">${v}%</div><div class="mbar"><i style="width:${v}%;background:${mcolor(v)}"></i></div></div>`).join('')}</div></div>
+   <div class="card panel"><div class="panel-h"><h2 class="h3">Most asked tutor questions</h2><span class="muted" style="font-size:12.5px">Last 7 days</span></div>
+    <div class="qlist">${co.questions.map(([q,n])=>`<div><span>${esc(q)}</span><b class="num">${n}</b></div>`).join('')}</div></div>
+  </div>
+  <div class="card panel" style="margin-top:16px"><div class="panel-h"><h2 class="h3">Learners</h2><span class="muted" style="font-size:12.5px">Select a learner to see topics, level and score history. A level appears after three different practice sets.</span></div>
+   <div class="table-wrap"><table><thead><tr><th>Name</th><th>Practice sets</th><th>Level</th><th>Tutor min.</th><th>Last active</th><th>Status</th></tr></thead><tbody>
+   ${LEARNERS.map((l,i)=>`<tr class="click" data-act="learner" data-i="${i}" tabindex="0"><td><b>${esc(l.n)}</b>${l.invite?' <span class="pill mute">Invite pending</span>':''}<small>${esc(l.e)}</small></td><td class="num">${l.att}</td><td class="${l.lvl==='Confident'?'lvl-good':l.lvl==='Building'?'lvl-mid':'lvl-low'}">${l.lvl}</td><td class="num">${l.min} of ${S.tutor.minutes}</td><td>${l.last}</td><td>${l.risk?`<span class="pill warn">${ic('alert')}Needs attention</span>`:'<span class="pill good">On track</span>'}</td></tr>`).join('')}
+   </tbody></table></div>
+   <p class="muted" style="font-size:12.5px;margin-top:10px">6 of 18 learners shown. Access for this cohort ends ${c.access}; accounts and conversations are then deleted, issued certificates are kept.</p>
+  </div>
+ </div>`;
+}
+function learnerModal(i){
+ const l=LEARNERS[i],c=C();
+ const seed=l.n.length*7+i*13;
+ const tp=c.cohort.topics.map(([t,v],k)=>[t,Math.max(8,Math.min(98,v+((seed*(k+3))%41)-20+(l.lvl==='Confident'?18:l.lvl==='Building'?4:-14)))]);
+ const weakest=tp.slice().sort((a,b)=>a[1]-b[1])[0];
+ modal(`<div class="modal-h"><div><h2 class="h3">${esc(l.n)}</h2><p class="muted" style="font-size:13px">${esc(l.e)} · ${l.att} practice sets · ${l.min} tutor min.</p></div><button class="iconbtn" data-act="close" aria-label="Close">${ic('x')}</button></div>
+ ${l.risk?`<div class="callout" style="margin:0">${ic('alert')}<div><b>${esc(l.risk)}</b></div></div>`:''}
+ <div class="mastery">${l.att===0?'<p class="muted">No practice results yet.</p>':tp.map(([t,v])=>`<div class="mrow"><div class="lbl"><span>${esc(t)}</span></div><div class="v num" style="color:${mcolor(v)}">${v}%</div><div class="mbar"><i style="width:${v}%;background:${mcolor(v)}"></i></div></div>`).join('')}</div>
+ <div class="fb part" style="background:var(--accent-soft)"><b>Suggested next step</b><span>${l.att===0?'Resend the invite and share a 2-minute intro to the tutor.':`Assign a short review of ${esc(weakest[0])}, then a practice set.`}</span></div>
+ <div class="row" style="justify-content:flex-end"><button class="btn sm" data-act="close">Close</button><button class="btn sm primary" data-act="draftfor">${ic('mail')}Draft a check-in</button></div>`);
+}
+function modal(html){
+ const root=document.getElementById('modal-root');
+ root.innerHTML=`<div class="scrim" data-act="scrim"><div class="card modal" role="dialog" aria-modal="true">${html}</div></div>`;
+ const b=root.querySelector('.modal button');if(b)b.focus();
+}
+function closeModal(){document.getElementById('modal-root').innerHTML=''}
+function vCopilot(){
+ const c=C(),co=c.cohort,key=S.course;
+ const acts=[['quiz','clip','Warm-up quiz',`A 10-minute quiz on ${co.weak}, the cohort’s weakest topic, built from your material.`,'Generate quiz'],
+  ['msg','mail','Check-in for Hannah Brooks','A short, friendly message for a learner who has been inactive for 6 days.','Draft message'],
+  ['case','book','Case study for class','A realistic scenario with discussion questions for Thursday’s session.','Create case study']];
+ const out=S.outputs[key];
+ const risk=LEARNERS.filter(l=>l.risk);
+ return `<div class="page">
+  <h1 class="h2">Teaching co-pilot</h1>
+  <p class="muted" style="margin-top:4px">Prepares your next session from cohort data and your course material. You review everything before learners see it.</p>
+  <div class="grid2">
+   <div class="card panel"><span class="eyebrow">Next session</span><h2 class="h3" style="margin-top:6px">Thursday, Oct 1 · 6:30 PM · ${esc(c.activeModule.split('·')[1].trim())}</h2>
+    <div class="stack" style="gap:8px;margin-top:12px;font-size:14px">
+     <div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span style="color:var(--warn)">${ic('alert')}</span><span><b>${co.weakN}</b> learners are below target on <b>${esc(co.weak)}</b> (cohort average ${co.topics[0][1]}%).</span></div>
+     <div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span style="color:var(--accent)">${ic('chat')}</span><span>Top question this week: “${esc(co.questions[0][0])}” (asked ${co.questions[0][1]} times).</span></div>
+     <div class="row" style="flex-wrap:nowrap;align-items:flex-start"><span style="color:var(--good)">${ic('check')}</span><span>${esc(co.topics[co.topics.length-1][0])} is solid (${co.topics[co.topics.length-1][1]}%). You can skip the review.</span></div>
+    </div></div>
+   <div class="card panel"><span class="eyebrow">Learners who need attention</span><div class="risk" style="margin-top:12px">${risk.map(l=>`<div><div class="av">${l.n.split(' ').map(x=>x[0]).join('')}</div><div class="tx"><b>${esc(l.n)}</b><small>${esc(l.risk)}</small></div></div>`).join('')}</div></div>
+  </div>
+  <div class="cp-grid">${acts.map(([id,i,t,d,b])=>`<div class="card cp"><span class="ic">${ic(i)}</span><h3 class="h3">${t}</h3><p>${d}</p><button class="btn sm ${out&&out.id===id?'':'primary'}" data-act="gen" data-g="${id}" style="align-self:flex-start">${ic('wand')}${b}</button></div>`).join('')}</div>
+  <div id="genout">${out?outputHTML(out):''}</div>
+ </div>`;
+}
+function outputHTML(o){
+ const titles={quiz:'Warm-up quiz',msg:'Check-in message',case:'Case study'};
+ return `<div class="card output"><div class="row" style="justify-content:space-between"><div class="row"><span class="pill acc">${ic('spark')}Draft</span><b>${titles[o.id]}</b></div><div class="row"><button class="btn sm" data-act="copyout">${ic('copy')}Copy</button><button class="btn sm primary" data-act="useout">${o.id==='msg'?'Send to learner':'Add to course'}</button></div></div><pre id="outtext">${esc(o.done?o.text:'')}</pre></div>`;
+}
+function vMaterials(){
+ const c=C(),ups=S.uploads[S.course];
+ const rows=c.materials.map(([n,s,p])=>({n,s,p,st:'ready'})).concat(ups);
+ return `<div class="page">
+  <div class="page-h"><div><h1 class="h2">${S.role==='learner'?'Documents':'Course material'}</h1>
+  <p class="muted" style="margin-top:4px">${S.role==='learner'?`Your academy’s material for ${esc(c.title)}, plus notes you add yourself. ${esc(S.tutor.name)} cites the page for every answer.`:`${esc(S.tutor.name)} answers from these files and cites the page for every answer.`}</p></div>${cSwitch()}</div>
+  <label class="drop" id="drop"><span class="ic" style="width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center">${ic('upload')}</span><b>${S.role==='learner'?'Add your own notes':'Drop PDFs, Word files or slides here'}</b><span class="muted" style="font-size:13px">or click to choose files. New material is ready for the tutor in minutes.</span><input type="file" multiple accept=".pdf,.docx,.pptx,.txt,.md" hidden data-act="upload"></label>
+
+  <div class="card panel" style="margin-top:16px"><div class="table-wrap"><table><thead><tr><th>File</th><th>Size</th><th>Passages</th><th>Status</th></tr></thead><tbody>
+   ${rows.map((r,i)=>`<tr><td><div class="dname"><span class="doc-ic">${ic('doc')}</span><b>${esc(r.n)}</b></div></td><td class="num">${esc(r.s)}</td><td class="num">${r.st==='ready'?r.p.toLocaleString('en-US'):'—'}</td><td>${r.st==='ready'?'<span class="pill good">'+ic('check')+'Ready</span>':`<div class="stack" style="gap:4px"><span class="muted" style="font-size:12.5px" id="upst-${i}">${esc(r.step||'Reading file')}</span><div class="prog"><i id="upbar-${i}" style="width:${r.prog||5}%"></i></div></div>`}</td></tr>`).join('')}
+  </tbody></table></div></div>
+ </div>`;
+}
+function addUploads(files){
+ const list=S.uploads[S.course],base=C().materials.length;
+ Array.from(files).slice(0,6).forEach(f=>{
+  const kb=Math.max(1,Math.round(f.size/1024));
+  const item={n:f.name,s:kb>1024?(kb/1024).toFixed(1)+' MB':kb+' KB',p:Math.max(12,Math.round(kb/9)),st:'busy',prog:5,step:'Reading file'};
+  list.push(item);
+ });
+ render();
+ list.forEach((item,j)=>{
+  if(item.st!=='busy'||item.run)return;item.run=true;
+  const steps=[[25,'Reading file'],[55,'Splitting into passages'],[85,'Indexing for search'],[100,'Ready']];let k=0;
+  const t=setInterval(()=>{
+   const [p,s]=steps[k];item.prog=p;item.step=s;
+   const idx=base+j;const bar=document.getElementById('upbar-'+idx),st=document.getElementById('upst-'+idx);
+   if(bar)bar.style.width=p+'%';if(st)st.textContent=s;
+   k++;if(k>=steps.length){clearInterval(t);item.st='ready';if(S.view==='materials')render();toast(`${item.n} is ready for the tutor`)}
+  },reduce?50:900);
+ });
+}
+
+/* ---------- Admin views ---------- */
+function vSettings(){
+ const tu=S.tutor;
+ const pres=[['orb','Voice + text','Included. Animated voice indicator.'],['illustrated','Illustrated tutor','Included. Runs in the learner’s browser.'],['avatar','Photoreal avatar','Add-on. Stock or your own presenter, with consent.'],['text','Text only','No voice or image. Lowest data use.']];
+ return `<div class="page" style="max-width:920px">
+  <div class="row" style="justify-content:space-between"><div><h1 class="h2">AI tutor</h1><p class="muted" style="margin-top:4px">How the tutor looks, sounds and how much voice time each learner gets.</p></div><button class="btn primary" data-act="savetutor">Save</button></div>
+  <div class="set-head">
+   <div class="set-prev ${S.speaking?'speaking':''}">${tu.pres==='text'?'<span style="color:var(--stage-muted);font-size:13px">Text only</span>':stageInner(tu.pres)}</div>
+   <div class="stack" style="gap:14px">
+    <div class="fields2">
+     <div class="field"><label for="t-name">Name shown to learners</label><input class="input" id="t-name" value="${esc(tu.name)}" maxlength="20"></div>
+     <div class="field"><label for="t-voice">Voice</label><select class="select" id="t-voice">${VOICES.map((v,i)=>`<option value="${i}" ${tu.voice==i?'selected':''}>${v}</option>`).join('')}</select></div>
+    </div>
+    <div class="row" style="align-items:flex-end">
+     <div class="field" style="width:130px"><label for="t-min">Voice minutes</label><input class="input num" id="t-min" type="number" min="5" max="600" value="${tu.minutes}"></div>
+     <span class="muted" style="font-size:13px;padding-bottom:10px;flex:1;min-width:160px">per learner per month, then text chat continues</span>
+     <button class="btn sm" data-act="previewvoice" style="margin-bottom:4px">${ic('speaker')}Preview voice</button>
+    </div>
+   </div>
+  </div>
+  <div class="toggle" style="margin-top:20px"><div class="tx"><b>Always show the “AI-generated” label</b><small>Always on. Required in the EU (AI Act, Article 50) and a good practice everywhere.</small></div><button class="sw on" disabled role="switch" aria-checked="true" aria-label="AI-generated label"></button></div>
+  <div class="eyebrow" style="margin-top:24px">Presentation</div>
+  <div class="pres">${pres.map(([id,t,d])=>`<button class="${tu.pres===id?'on':''}" data-act="pres" data-p="${id}" aria-pressed="${tu.pres===id}"><div class="thumb ${id==='text'?'light':''}">${id==='text'?ic('chat'):stageInner(id)}${id==='avatar'?'<span class="tag">Add-on</span>':''}</div><b>${t}</b><small>${d}</small></button>`).join('')}</div>
+  <p class="muted" style="font-size:12.5px;margin-top:12px;display:flex;gap:8px">${ic('alert')}A custom avatar can be made from a video recording of a real presenter, only with that person’s written consent.</p>
+ </div>`;
+}
+function vBranding(){
+ const b=S.brand,cur=b.color||'';
+ return `<div class="page" style="max-width:760px">
+  <h1 class="h2">Branding</h1>
+  <p class="muted" style="margin-top:4px">The platform, tutor and certificates carry your academy’s name and color. Changes apply right away.</p>
+  <div class="stack" style="gap:16px;margin-top:20px">
+   <div class="fields2">
+    <div class="field"><label for="b-name">Academy name</label><input class="input" id="b-name" value="${esc(b.name)}" maxlength="40"></div>
+    <div class="field"><label for="b-init">Logo letter</label><input class="input" id="b-init" value="${esc(b.initial)}" maxlength="2"></div>
+   </div>
+   <div class="field"><label>Brand color</label><div class="swatches">${PRESETS.map(c=>`<button class="swatch ${cur.toLowerCase()===c.toLowerCase()||(!cur&&c==='#6D28D9')?'on':''}" style="background:${c}" data-act="swatch" data-c="${c}" aria-label="Use color ${c}"></button>`).join('')}<input type="color" id="b-color" value="${cur||'#6D28D9'}" aria-label="Custom color"></div></div>
+   <div class="brand-prev"><div class="logo">${esc(b.initial||'A')}</div><div style="flex:1;min-width:0"><b>${esc(b.name)}</b><div class="muted" style="font-size:12.5px">${esc(b.slug)}</div></div><button class="btn sm primary" tabindex="-1">Primary button</button></div>
+   <div class="row"><button class="btn" data-act="resetbrand">${ic('retry')}Reset demo branding</button></div>
+  </div>
+ </div>`;
+}
+function slugify(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,28)||'academy'}
+
+/* ---------- Events ---------- */
+document.addEventListener('click',e=>{
+ if(S.sideOpen&&!e.target.closest('#side')&&!e.target.closest('.menu-btn')){S.sideOpen=false;renderSide()}
+ const t=e.target.closest('[data-act]');if(!t)return;
+ const a=t.dataset.act;
+ switch(a){
+  case 'nav':{const v=t.dataset.v;if(v==='tutor'&&S.course==='onb')S.course='sec';go(v,v==='tutor'?{voice:true}:undefined);break}
+  case 'role':{S.role=t.dataset.r;stopSpeaking();if(S.course==='onb')S.course='sec';go(HOME[S.role]);break}
+  case 'upcoming':{e.preventDefault();S.upcoming=!S.upcoming;stopSpeaking();if(!S.upcoming&&isSoon()){S.voiceMode=false;go(HOME[S.role])}else render();toast(S.upcoming?'Showing upcoming features, marked “Soon”':'Showing only what’s in the product today');break}
+  case 'togglemode':{const c=t.dataset.c;S.open[c]=!S.open[c];renderSide();break}
+  case 'newchat':{const c=t.dataset.c;stopSpeaking();S.course=c;S.chats[c]=[];S.asked[c]=[];S.activeChat=null;S.open[c]=true;go('tutor',{voice:false});break}
+  case 'openchat':case 'closeopen':{closeModal();const c=t.dataset.c,qa=t.dataset.qa,q=COURSES[c].qa[qa];stopSpeaking();S.course=c;S.open[c]=true;S.chats[c]=[{role:'user',text:q.q},{role:'ai',kind:'answer',text:q.a,src:q.src}];S.last[c]=qa;S.asked[c]=[qa];S.activeChat=c+':'+qa;go('tutor',{voice:false});break}
+  case 'suggest':{const c=t.dataset.c,qa=t.dataset.qa;stopSpeaking();S.course=c;S.open[c]=true;S.chats[c]=[];S.asked[c]=[];S.activeChat=c+':'+qa;go('tutor',{voice:false,ask:COURSES[c].qa[qa].q});break}
+  case 'voicemode':S.voiceMode=true;render();break;
+  case 'markdone':S.markDone=!S.markDone;render();if(S.markDone)toast('Marked as done. Up next: Network appliances');break;
+  case 'missed':missedModal();break;
+  case 'closepractice':closeModal();go('practice');break;
+  case 'streak':toast('5-day streak. Learn something today to keep it going.');break;
+  case 'wsswitch':brandModal();break;
+  case 'csw':S.course=t.dataset.c;render();break;
+  case 'atab':S.aTab=t.dataset.t;render();break;
+  case 'submitlog':S.logSent=true;render();toast('Sent to Dana Brooks for sign-off');break;
+  case 'course':S.course=t.dataset.c;stopSpeaking();S.sideOpen=false;render();break;
+  case 'menu':S.sideOpen=!S.sideOpen;renderSide();break;
+  case 'goask':{const qa=t.dataset.qa;if(!qa){go('practice');break}S.view='tutor';S.voiceMode=false;S.sideOpen=false;try{history.replaceState(null,'','#tutor')}catch(err){}render();setTimeout(()=>ask(C().qa[qa].q),reduce?0:250);break}
+  case 'talk':S.course='sec';go('tutor',{voice:true});setTimeout(listen,300);break;
+  case 'chip':{const k=t.dataset.k;if(k==='deep'){toast('Deep Dive created from this conversation');go('practice');break}if(k.startsWith('q:'))ask(C().qa[k.slice(2)].q);else ask(null,k);break}
+  case 'mic':listen();break;
+  case 'voiceout':S.voiceOut=!S.voiceOut;persist();if(!S.voiceOut)stopSpeaking();t.classList.toggle('on',S.voiceOut);t.setAttribute('aria-pressed',S.voiceOut);t.title=S.voiceOut?'Stop reading answers aloud':'Read answers aloud';toast(S.voiceOut?`${S.tutor.name} will read answers aloud`:'Voice output off');break;
+  case 'endsession':stopSpeaking();S.chats[S.course]=[];S.asked[S.course]=[];render();toast('Session ended. Your progress is saved.');break;
+  case 'cq':{const m=S.chats[S.course][+t.dataset.m];m.ans[+t.dataset.q]=+t.dataset.o;redrawThread();break}
+  case 'pick':S.practice[S.course].sel=+t.dataset.o;render();break;
+  case 'checkq':{const p=S.practice[S.course],q=C().practice[p.i];
+   if(q.type==='mc'){p.graded=true;p.res.push({topic:q.topic,pts:p.sel===q.c?1:0,max:1})}
+   else{const txt=(document.getElementById('openans').value||'').toLowerCase();p.open=document.getElementById('openans').value;const hits=q.rub.map(r=>({p:r.p,ok:r.k.some(k=>txt.includes(k))}));const max=q.need||q.rub.length;const pts=Math.min(max,hits.filter(h=>h.ok).length);p.graded={hits,pts,max};p.res.push({topic:q.topic,pts,max})}
+   render();break}
+  case 'nextq':{const p=S.practice[S.course];p.i++;p.sel=null;p.graded=null;p.open='';render();break}
+  case 'restartpractice':S.practice[S.course]=null;render();break;
+  case 'reviewweak':{const c=C(),topic=t.dataset.t.toLowerCase();const id=matchQA(topic)||c.starters[0];go('tutor');setTimeout(()=>ask(c.qa[id].q),reduce?0:250);break}
+  case 'copy':copyText(t.dataset.text,'Certificate ID copied');break;
+  case 'learner':learnerModal(+t.dataset.i);break;
+  case 'close':closeModal();break;
+  case 'scrim':if(e.target===t)closeModal();break;
+  case 'draftfor':closeModal();S.outputs[S.course]={id:'msg',text:C().copilot.msg,done:false};go('copilot');runGen();break;
+  case 'copysummary':{const c=C(),co=c.cohort;copyText(`${c.title} · ${co.name}\nActive this week: ${co.kpi[0]}\nAvg. practice score: ${co.kpi[1]} (target 70%)\nTutor questions this week: ${co.kpi[2]}\nWeakest topic: ${co.weak} (${co.topics[0][1]}%, ${co.weakN} below target)\nNeed attention: ${LEARNERS.filter(l=>l.risk).map(l=>l.n+' ('+l.risk+')').join('; ')}`,'Cohort summary copied');break}
+  case 'gen':S.outputs[S.course]={id:t.dataset.g,text:C().copilot[t.dataset.g],done:false};render();runGen();break;
+  case 'copyout':{const o=S.outputs[S.course];if(o)copyText(o.text,'Copied');break}
+  case 'useout':{const o=S.outputs[S.course];toast(o&&o.id==='msg'?'Message sent to Hannah Brooks (demo)':'Added to the Module 3 practice set (demo)');break}
+  case 'strict':S.strict=!S.strict;t.classList.toggle('on',S.strict);t.setAttribute('aria-checked',S.strict);toast(S.strict?'Tutor answers only from course material':'Tutor may add general knowledge, marked as such');break;
+  case 'pres':readTutorFields();S.tutor.pres=t.dataset.p;render();break;
+  case 'previewvoice':{readTutorFields();const old=S.voiceOut;S.voiceOut=true;speak(`Hi, I’m ${S.tutor.name}. I’ll help you learn from your course material, and I’ll always show you where my answers come from.`);S.voiceOut=old;const pv=document.querySelector('.set-prev');if(pv){pv.classList.add('speaking');setTimeout(()=>pv.classList.remove('speaking'),5000)}break}
+  case 'savetutor':readTutorFields();persist();render();toast('Tutor settings saved');break;
+  case 'swatch':S.brand.color=t.dataset.c==='#6D28D9'?'':t.dataset.c;persist();render();brandModal();break;
+  case 'resetbrand':S.brand=Object.assign({},DEF.brand);persist();render();brandModal();toast('Demo branding restored');break;
+ }
+});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape')closeModal();
+ if(e.key==='Enter'){const r=e.target.closest&&e.target.closest('tr[data-act="learner"]');if(r)learnerModal(+r.dataset.i)}
+});
+document.addEventListener('submit',e=>{
+ if(e.target.id==='composer'){e.preventDefault();const inp=document.getElementById('q');const v=inp.value.trim();if(!v)return;inp.value='';stopSpeaking();ask(v)}
+});
+document.addEventListener('input',e=>{
+ const id=e.target.id;
+ if(id==='b-name'){S.brand.name=e.target.value||'Your Academy';S.brand.slug=slugify(S.brand.name);if(!S.brand._initTouched)S.brand.initial=(S.brand.name.trim()[0]||'A').toUpperCase();persist();renderSide();const bp=document.querySelector('.brand-prev');if(bp){bp.querySelector('b').textContent=S.brand.name;bp.querySelector('.muted').textContent=S.brand.slug;bp.querySelector('.logo').textContent=S.brand.initial}const bi=document.getElementById('b-init');if(bi&&!S.brand._initTouched)bi.value=S.brand.initial}
+ if(id==='b-init'){S.brand._initTouched=true;S.brand.initial=e.target.value.toUpperCase();persist();renderSide();const l=document.querySelector('.brand-prev .logo');if(l)l.textContent=S.brand.initial}
+ if(id==='b-color'){S.brand.color=e.target.value;persist();applyBrand();document.querySelectorAll('.swatch').forEach(s=>s.classList.remove('on'))}
+ if(id==='openans'){S.practice[S.course].open=e.target.value}
+});
+document.addEventListener('change',e=>{
+ const a=e.target.dataset&&e.target.dataset.act;
+ if(a==='upload'&&e.target.files.length){addUploads(e.target.files);e.target.value=''}
+ if(a==='roster'&&e.target.files.length){toast(`${e.target.files[0].name}: learners imported and invited (demo)`);e.target.value=''}
+});
+['dragover','dragenter'].forEach(ev=>document.addEventListener(ev,e=>{const d=e.target.closest&&e.target.closest('#drop');if(d){e.preventDefault();d.classList.add('over')}}));
+['dragleave','drop'].forEach(ev=>document.addEventListener(ev,e=>{const d=e.target.closest&&e.target.closest('#drop');if(d){e.preventDefault();d.classList.remove('over');if(ev==='drop'&&e.dataTransfer.files.length)addUploads(e.dataTransfer.files)}}));
+
+function readTutorFields(){
+ const n=document.getElementById('t-name'),v=document.getElementById('t-voice'),m=document.getElementById('t-min');
+ if(n)S.tutor.name=(n.value.trim()||'Alex').slice(0,20);
+ if(v)S.tutor.voice=+v.value;
+ if(m)S.tutor.minutes=Math.max(5,Math.min(600,+m.value||45));
+}
+function runGen(){
+ const o=S.outputs[S.course];if(!o)return;
+ const el=document.getElementById('outtext');if(!el){o.done=true;return}
+ el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});
+ if(reduce){el.textContent=o.text;o.done=true;return}
+ let n=0;const txt=o.text;clearInterval(runGen._t);
+ runGen._t=setInterval(()=>{n+=9;el.textContent=txt.slice(0,n);if(n>=txt.length){clearInterval(runGen._t);o.done=true}},16);
+}
+function copyText(text,msg){
+ const fallback=()=>{const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast(msg)}catch(e){toast('Select the text to copy it')}ta.remove()};
+ try{navigator.clipboard.writeText(text).then(()=>toast(msg),fallback)}catch(e){fallback()}
+}
+
+/* ---------- Boot ---------- */
+const side=document.getElementById('side'),top=document.getElementById('top'),main=document.getElementById('main'),footnote=document.getElementById('footnote');
+const all=Object.values(ROUTES).flat();
+const h=(location.hash||'').slice(1);
+if(all.includes(h)){S.view=h;S.role=Object.keys(ROUTES).find(r=>ROUTES[r].includes(h));if(h==='tutor')S.voiceMode=true;if(isSoon())S.upcoming=true}
+// Personalized links: ?academy=Summit+Tech+Academy&color=1D4ED8&letter=S (not saved)
+try{const q=new URLSearchParams(location.search),an=(q.get('academy')||'').trim(),col=(q.get('color')||'').replace('#','');
+ if(an){S.brand.name=an.slice(0,40);S.brand.slug=slugify(S.brand.name);S.brand.initial=((q.get('letter')||an[0])+'').slice(0,2).toUpperCase()}
+ if(/^[0-9a-f]{6}$/i.test(col))S.brand.color='#'+col;
+}catch(e){}
+if('speechSynthesis' in window){try{speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>{}}catch(e){}}
+render();
+})();
+</script>
+</body>
+</html>
