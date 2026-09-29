@@ -30,9 +30,11 @@ interface Props {
 	/* When set, the header CTA is a plain link to this URL and opens no modal.
 	   Used by posts whose conversion is a page (a lead magnet) rather than a form. */
 	ctaHref?: string;
+	/* Hide the EN/DE switcher on single-market pages (e.g. /us) that have no counterpart. */
+	hideLanguageSwitcher?: boolean;
 }
 
-const { logo, menu, cta, currentLang, currentPath, ctaModalTrigger = 'demo-request', ctaHref } = Astro.props;
+const { logo, menu, cta, currentLang, currentPath, ctaModalTrigger = 'demo-request', ctaHref, hideLanguageSwitcher = false } = Astro.props;
 
 // Fetch latest 3 blog posts for blog mega menu
 const allPosts = await getCollection('blog');
@@ -46,7 +48,7 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 
 // TEMPORARY guide announcement. The guides are English only, and the bar is not shown
 // on the page it points to. TO REMOVE: delete this flag and the block below, script included.
-const showGuideBar = currentLang === 'en' && !currentPath.startsWith('/ai-guides');
+const showGuideBar = currentLang === 'en' && !currentPath.startsWith('/ai-guides') && currentPath !== '/us';
 ---
 
 <!-- Announcement bar: in the page flow, so it scrolls away and the header takes the top.
@@ -178,10 +180,14 @@ const showGuideBar = currentLang === 'en' && !currentPath.startsWith('/ai-guides
 		<!-- Right side -->
 		<div class="flex items-center gap-3 shrink-0">
 			<!-- Language switcher lives in the mobile menu below; hidden here to keep the bar uncrowded on phones -->
-			<div class="hidden lg:block">
-				<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
-			</div>
-			<div class="hidden lg:block w-px h-4 bg-border"></div>
+			{!hideLanguageSwitcher && (
+				<Fragment>
+					<div class="hidden lg:block">
+						<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
+					</div>
+					<div class="hidden lg:block w-px h-4 bg-border"></div>
+				</Fragment>
+			)}
 			<Button
 				variant="primary"
 				href={ctaHref}
@@ -248,7 +254,7 @@ const showGuideBar = currentLang === 'en' && !currentPath.startsWith('/ai-guides
 				)
 			)}
 			<div class="border-t border-border mt-3 pt-4 flex flex-col gap-3">
-				<LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />
+				{!hideLanguageSwitcher && <LanguageSwitcher currentLang={currentLang} currentPath={currentPath} />}
 				<Button variant="primary" href={ctaHref} data-modal-trigger={ctaHref ? undefined : ctaModalTrigger} class="w-full justify-center">
 					{cta}
 				</Button>

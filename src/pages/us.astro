@@ -1,0 +1,547 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import FAQ from '../components/FAQ.astro';
+import Footer from '../components/Footer.astro';
+import HeroProductStage from '../components/HeroProductStage.astro';
+import enContent from '../content/en.json';
+
+const lang = 'en';
+// Direct booking. Linked, not embedded, so no third-party script loads on the page.
+const CALENDLY = 'https://calendly.com/learnslice-team/30min';
+const currentPath = '/us';
+
+// US landing page for training providers. The live demo is the static file
+// public/us-demo.html. Personalized outreach links point here with
+// ?academy=Name&color=1D4ED8&letter=N, and the script below passes them on to the demo.
+
+const today = [
+	{
+		title: 'Answers from your material, with the source',
+		body: 'Answers name the document and page they come from. Questions that have nothing to do with your course are declined.',
+	},
+	{
+		title: 'Practice built from your content',
+		body: 'Quizzes, deep dives and case studies are generated from your course material. Open answers get feedback with partial credit.',
+	},
+	{
+		title: 'A learning plan learners can follow',
+		body: 'Learners see which modules are done, what comes next, and which topics to review before the exam.',
+	},
+	{
+		title: 'Exam prep, onboarding and upskilling',
+		body: 'Separate spaces for each purpose, and each one works from its own documents.',
+	},
+	{
+		title: 'Training log',
+		body: 'A weekly record of hours and activities, signed off by the program lead.',
+	},
+	{
+		title: 'Under your academy’s name',
+		body: 'The platform runs under your academy’s name, so learners see your program, not ours.',
+	},
+];
+
+const programs = [
+	{
+		title: 'IT and cybersecurity certifications',
+		body: 'Certification exams follow a published list of objectives. The tutor works through your material objective by objective, answers the questions learners ask late at night, and builds practice questions from your own content, so learners find their weak areas before exam day.',
+	},
+	{
+		title: 'Healthcare and skilled trades',
+		body: 'Programs for medical assistants, pharmacy technicians or HVAC and electrical trainees mix theory with hands-on work. The tutor covers the theory between sessions, and the training log keeps a weekly record of hours and activities.',
+	},
+	{
+		title: 'Compliance and corporate training',
+		body: 'Policy and compliance courses are mostly reading. The tutor turns them into a conversation: learners ask how a rule applies to their job, get an answer with the source, and check what they understood with a short assessment.',
+	},
+];
+
+const next = [
+	['Voice tutor', 'Learners talk the topic through instead of typing.'],
+	['Cohort analytics', 'Instructors see which topics each cohort struggles with.'],
+	['Teaching co-pilot', 'Drafts warm-up quizzes, check-in messages and case studies for the next session.'],
+	['Certificates', 'Certificates of completion, confirmed by the program lead.'],
+	['Automatic training log', 'Weekly entries filled in from tutor sessions and assessments.'],
+];
+
+const steps = [
+	['Send us one module', 'Slides, handouts, a question bank. Whatever you already teach from.'],
+	['We set up your tutor', 'Branded for your academy and loaded with your material. You test it with a small group of learners for four weeks.'],
+	['Decide with real data', 'We review usage, the questions learners asked and their assessment results with you. Then you decide whether to roll it out.'],
+];
+
+const faq = [
+	{
+		question: 'Does the tutor make things up?',
+		answer: 'It answers from the material you upload and cites the source. In exam prep, it can also explain a topic from your syllabus that your documents don’t cover yet. Questions that have nothing to do with your course are declined.',
+	},
+	{
+		question: 'Where is our data stored?',
+		answer: 'By default on servers in Germany, under the GDPR. Organizations that need it can also run LearnSlice on their own servers. Your content and learner data are not used to train AI models, and we sign a data processing agreement with every customer.',
+	},
+	{
+		question: 'Does it work with our LMS?',
+		answer: 'Learners can use LearnSlice in the browser without any setup. If you want the tutor inside your existing LMS, we connect it as part of the project. Tell us which system you use.',
+	},
+	{
+		question: 'What does a pilot cost?',
+		answer: 'The pilot has a fixed price in US dollars. We quote it after a 30-minute call, once we know the size of the course and the number of learners.',
+	},
+	{
+		question: 'How long does setup take?',
+		answer: 'The tutor for your pilot module is ready in the first week. Your effort is a 60-minute kickoff, the material you already have, and about 30 minutes of feedback a week during the pilot.',
+	},
+	{
+		question: 'What happens to learner data?',
+		answer: 'Data is kept only as long as it’s needed: account data is deleted no later than 12 months after an account is deactivated, chat histories after 24 months of inactivity, and log data after 90 days at most. Tell us if your program needs shorter periods.',
+	},
+	{
+		question: 'Which courses does it work for?',
+		answer: 'Any course with written material: IT and cybersecurity certifications, healthcare and skilled-trades programs, professional certifications, and compliance training.',
+	},
+	{
+		question: 'We’re in the US and you’re in Europe. How does that work?',
+		answer: 'Our team works in Germany and Poland, six hours ahead of US Eastern time. We hold calls between 9 AM and noon Eastern, and support requests are answered within our business day.',
+	},
+];
+
+const benefits = [
+	['European rates, no US agency overhead', 'Senior engineers at European rates, with fixed prices in US dollars. You pay for engineering, not account managers.'],
+	['Live in the first week', 'The tutor for your pilot course is ready in the first week, not after a months-long project.'],
+	['Little effort on your side', 'A 60-minute kickoff and the material you already have. We do the setup.'],
+	['Works with what you have', 'Learners use it in the browser, or we connect it to the LMS you already run.'],
+];
+
+const offers = [
+	{
+		id: 'pilot',
+		label: 'Ready-made, your brand',
+		title: 'AI tutor platform, customized for you',
+		body: 'Our platform with your academy’s name, colors and course material, adapted to your programs. Start with a four-week pilot on one course, then a monthly subscription.',
+		points: ['Running in the first week', 'Your syllabus, your material, your brand', 'Monthly subscription after the pilot'],
+		cta: 'Start with a pilot',
+	},
+	{
+		id: 'custom',
+		label: 'Built from scratch',
+		title: 'Custom e-learning, built for you',
+		body: 'AI tutors, learning platforms, quiz and assessment tools, LMS integrations and mobile learning apps, built for your programs. We also build on Moodle and Open edX.',
+		points: ['Fixed-price project, scoped in a free call', 'First working version in 6 to 8 weeks', 'You own the result'],
+		cta: 'Discuss your project',
+	},
+];
+
+const interestOptions = [
+	['pilot', 'A pilot of the AI tutor'],
+	['custom', 'A custom e-learning build'],
+	['unsure', 'Not sure yet'],
+];
+
+const trainingOptions = [
+	'IT and cybersecurity certifications',
+	'Healthcare programs',
+	'Skilled trades',
+	'Professional certifications',
+	'Corporate or compliance training',
+	'Something else',
+];
+
+const INPUT =
+	'bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted';
+---
+
+<BaseLayout
+	title="AI Tutor for Training Providers & Online Courses | LearnSlice"
+	description="An AI tutor for training providers: built on your course material, cites its sources and creates practice assessments. Try the live demo."
+	ogImage="/images/og-us.jpg"
+	lang={lang}
+	currentPath={currentPath}
+	softwareSchema={false}
+	breadcrumbTitle="For US training providers"
+>
+	<Header
+		logo={enContent.nav.logo}
+		menu={[
+			{ label: 'Demo', href: '#demo' },
+			{ label: 'Ways to work with us', href: '#offers' },
+			{ label: 'Pilot', href: '#pilot' },
+			{ label: 'FAQ', href: '#faq' },
+		]}
+		cta="Book a call"
+		ctaHref="#book"
+		hideLanguageSwitcher
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+
+	<!-- Hero -->
+	<section class="relative pt-32 pb-12 md:pb-16 px-6 md:px-8 overflow-hidden">
+		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[420px] opacity-25 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.25) 0%, transparent 70%);"></div>
+		<div class="max-w-container mx-auto relative z-10 grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_600px] gap-12 items-center">
+			<div class="max-w-[720px]">
+				<span class="section-label mb-5 block">For training providers in the US</span>
+				<p id="prepared-for" class="hidden mb-5 text-sm text-muted">
+					Demo prepared for <strong id="prepared-name" class="text-white font-semibold"></strong>
+				</p>
+				<h1 class="text-display-sm md:text-display text-white mb-6">
+					Give every learner an AI tutor built on your course material
+				</h1>
+				<p class="text-lg text-muted mb-4 max-w-[620px] leading-relaxed">
+					Your learners get answers at 11 PM, practice built from your own material, and a clear plan to exam day. Your instructors answer fewer of the same questions every cohort.
+				</p>
+				<p class="text-base text-white/90 mb-8 max-w-[620px] leading-relaxed">
+					Use our ready-made AI tutor under your academy’s name, or have us build your own learning platform. Senior engineers at European rates, no US agency overhead.
+				</p>
+				<div class="flex flex-wrap gap-3">
+					<a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
+						Book a 30-minute call
+					</a>
+					<a href="#demo" class="inline-flex items-center justify-center px-5 py-2.5 border border-border-light text-white text-sm font-medium rounded-lg hover:bg-surface transition-colors">
+						Try the live demo
+						<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+					</a>
+				</div>
+				<ul class="list-none p-0 m-0 mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
+					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Winner of the BMWE KI-Preis 2025, a German AI award</li>
+					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Co-developed with FH Dortmund in research funded by the German government</li>
+					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Engineering team on Central European Time, 6 hours ahead of US Eastern</li>
+				</ul>
+			</div>
+			<div class="hidden xl:block">
+				<HeroProductStage />
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits -->
+	<section class="px-6 md:px-8 pb-16" aria-label="Why training providers work with us">
+		<div class="max-w-container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
+			{benefits.map(([title, body]) => (
+				<div class="bg-surface p-6">
+					<p class="text-sm font-semibold text-white m-0 mb-2">{title}</p>
+					<p class="text-sm text-muted leading-relaxed m-0">{body}</p>
+				</div>
+			))}
+		</div>
+	</section>
+
+	<!-- Live demo -->
+	<section id="demo" class="py-12 md:py-16 px-4 md:px-8 border-t border-border scroll-mt-20">
+		<div class="max-w-container mx-auto">
+			<div class="flex flex-wrap items-end justify-between gap-4 mb-6 px-2 md:px-0">
+				<div class="max-w-[640px]">
+					<span class="section-label mb-3 block">Live demo</span>
+					<h2 class="text-heading md:text-display-sm text-white m-0 mb-3">Try the AI tutor demo</h2>
+					<p class="text-base text-muted leading-relaxed m-0">
+						A working demo with sample data. Switch between the learner and the trainer view at the top right. Features listed under “Coming soon” in the sidebar are on our roadmap.
+					</p>
+				</div>
+				<a id="demo-full" href="/us-demo.html" target="_blank" rel="noopener" class="text-sm font-medium text-primary hover:text-white transition-colors">
+					Open the demo full screen ↗
+				</a>
+			</div>
+			<!-- Phones: a link instead of an embed, so page scrolling doesn't get caught inside the demo. -->
+			<div class="md:hidden bg-surface border border-border rounded-xl p-6 flex flex-col gap-4">
+				<p class="text-base text-muted leading-relaxed m-0">The demo works best full screen on your phone.</p>
+				<a id="demo-mobile" href="/us-demo.html" class="inline-flex items-center justify-center px-5 py-3 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Open the demo</a>
+			</div>
+			<div class="hidden md:block rounded-xl border border-border-light overflow-hidden bg-surface shadow-2xl">
+				<iframe
+					id="demo-frame"
+					src="/us-demo.html"
+					title="LearnSlice interactive demo"
+					loading="lazy"
+					class="block w-full h-[780px] bg-white"
+				></iframe>
+			</div>
+			<div class="mt-8 flex flex-wrap items-center justify-between gap-4 px-2 md:px-0">
+				<p class="text-base text-white m-0">Seen enough? See it on one of your own modules.</p>
+				<a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Book a 30-minute call</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Two ways to work with us -->
+	<section id="offers" class="py-20 md:py-28 px-6 md:px-8 border-t border-border scroll-mt-20">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[640px] mb-12">
+				<span class="section-label mb-4 block">How we work with you</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">Two ways to work with us</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				{offers.map((o) => (
+					<div class="bg-surface border border-border rounded-xl p-8 flex flex-col">
+						<span class="font-mono text-xs uppercase tracking-widest text-accent">{o.label}</span>
+						<h3 class="text-heading-sm text-white mt-3 mb-3">{o.title}</h3>
+						<p class="text-base text-muted leading-relaxed m-0 mb-5">{o.body}</p>
+						<ul class="list-none p-0 m-0 mb-8 flex flex-col gap-2 text-sm text-white/90">
+							{o.points.map((pt) => (
+								<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7" /></svg>{pt}</li>
+							))}
+						</ul>
+						<a href="#book" data-interest={o.id} class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors mt-auto self-start">{o.cta}</a>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- What's in the product -->
+	<section class="py-20 md:py-28 px-6 md:px-8">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[640px] mb-12">
+				<span class="section-label mb-4 block">In the product today</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">What the AI tutor does today</h2>
+				<p class="text-base text-muted leading-relaxed m-0">Fewer repeat questions for your instructors, and a feature you can put in your course description.</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				{today.map((item) => (
+					<div class="bg-surface p-8">
+						<h3 class="text-base font-semibold text-white mb-3">{item.title}</h3>
+						<p class="text-base text-muted leading-relaxed m-0">{item.body}</p>
+					</div>
+				))}
+			</div>
+
+			<div class="mt-16 max-w-[640px] mb-8">
+				<span class="section-label mb-4 block">Coming soon</span>
+				<h2 class="text-heading-sm text-white m-0">Coming next to the AI tutor</h2>
+			</div>
+			<ul class="list-none p-0 m-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+				{next.map(([title, body]) => (
+					<li class="border border-dashed border-border-light rounded-xl p-5">
+						<p class="text-sm font-semibold text-white m-0 mb-1.5">{title}</p>
+						<p class="text-sm text-muted leading-relaxed m-0">{body}</p>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<!-- Programs -->
+	<section class="py-20 md:py-28 px-6 md:px-8 border-t border-border">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[640px] mb-12">
+				<span class="section-label mb-4 block">Built for your programs</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">An AI tutor for certification, career and compliance training</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				{programs.map((item) => (
+					<div>
+						<h3 class="text-base font-semibold text-white mb-3">{item.title}</h3>
+						<p class="text-base text-muted leading-relaxed m-0">{item.body}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Pilot -->
+	<section id="pilot" class="py-20 md:py-28 px-6 md:px-8 border-t border-border scroll-mt-20">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[640px] mb-12">
+				<span class="section-label mb-4 block">How a pilot works</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">How the AI tutor pilot works</h2>
+				<p class="text-base text-muted leading-relaxed m-0">Four weeks on one of your courses, at a fixed price in US dollars agreed before we start. Your effort: a 60-minute kickoff, the material you already have, and about 30 minutes of feedback a week.</p>
+			</div>
+			<ol class="list-none p-0 m-0 grid grid-cols-1 md:grid-cols-3 gap-8">
+				{steps.map(([title, body], i) => (
+					<li>
+						<span class="font-mono text-accent text-sm">Step {i + 1}</span>
+						<h3 class="text-lg font-semibold text-white mt-2 mb-2">{title}</h3>
+						<p class="text-base text-muted leading-relaxed m-0">{body}</p>
+					</li>
+				))}
+			</ol>
+			<div class="mt-12">
+				<a href="#book" data-interest="pilot" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Start with a pilot</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why us -->
+	<section class="py-20 md:py-28 px-6 md:px-8 border-t border-border">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[640px] mb-12">
+				<span class="section-label mb-4 block">Why LearnSlice</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">Built where training is strictly regulated</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div>
+					<h3 class="text-base font-semibold text-white mb-3">From German apprenticeship training</h3>
+					<p class="text-base text-muted leading-relaxed m-0">LearnSlice started in German vocational training, where curricula, exams and training records are defined in detail. The tutor follows your syllabus the same way.</p>
+				</div>
+				<div>
+					<h3 class="text-base font-semibold text-white mb-3">Privacy by design</h3>
+					<p class="text-base text-muted leading-relaxed m-0">Built to meet the GDPR and the EU AI Act. Your content and learner data are not used to train AI models.</p>
+				</div>
+				<div>
+					<h3 class="text-base font-semibold text-white mb-3">Six hours ahead, on your schedule</h3>
+					<p class="text-base text-muted leading-relaxed m-0">We hold calls between 9 AM and noon Eastern, and your pilot moves forward while you sleep.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<FAQ headline="Questions from training providers" items={faq} />
+
+	<!-- Booking -->
+	<section id="book" class="py-20 md:py-28 px-6 md:px-8 border-t border-border scroll-mt-20">
+		<div class="max-w-2xl mx-auto">
+			<span class="section-label mb-4 block">Book a call</span>
+			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">See the tutor on one of your own modules</h2>
+			<p class="text-base text-muted leading-relaxed m-0 mb-8">
+				In a 30-minute call with Alesia Kunz, our CEO, we show you the tutor and agree on the next step: a pilot on one of your modules, or a scope for your custom project.
+			</p>
+			<div class="bg-surface border border-border rounded-xl p-6 md:p-8 flex flex-wrap items-center justify-between gap-5 mb-10">
+				<div>
+					<p class="text-base font-semibold text-white m-0 mb-1">Pick a time that suits you</p>
+					<p class="text-sm text-muted m-0">Calendly shows the open times in your own time zone.</p>
+				</div>
+				<a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
+					Book a 30-minute call ↗
+				</a>
+			</div>
+			<p class="text-sm text-muted m-0 mb-4">Prefer to write first? Send us a message and we’ll get back to you.</p>
+
+			<!-- Netlify form detection stub. The visible form below posts via fetch. -->
+			<form name="us-pilot-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="hidden">
+				<input type="text" name="bot-field" />
+				<input type="text" name="name" />
+				<input type="email" name="email" />
+				<input type="text" name="organization" />
+				<input type="text" name="training" />
+				<input type="text" name="interest" />
+				<textarea name="message"></textarea>
+				<input type="text" name="academy-param" />
+				<input type="checkbox" name="consent" />
+			</form>
+
+			<form id="us-form" class="bg-surface border border-border rounded-xl p-6 md:p-8 flex flex-col gap-5" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<input type="hidden" name="form-name" value="us-pilot-request" />
+				<input type="hidden" name="academy-param" id="academy-param" value="" />
+				<input type="text" name="bot-field" class="hidden" tabindex="-1" autocomplete="off" />
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+					<div class="flex flex-col gap-1.5">
+						<label for="us-name" class="text-sm font-medium text-white/80">Name</label>
+						<input id="us-name" name="name" type="text" required autocomplete="name" class={INPUT} />
+					</div>
+					<div class="flex flex-col gap-1.5">
+						<label for="us-email" class="text-sm font-medium text-white/80">Work email</label>
+						<input id="us-email" name="email" type="email" required autocomplete="email" class={INPUT} />
+					</div>
+				</div>
+				<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+					<div class="flex flex-col gap-1.5">
+						<label for="us-org" class="text-sm font-medium text-white/80">Academy or company</label>
+						<input id="us-org" name="organization" type="text" required autocomplete="organization" class={INPUT} />
+					</div>
+					<div class="flex flex-col gap-1.5">
+						<label for="us-training" class="text-sm font-medium text-white/80">What you train</label>
+						<select id="us-training" name="training" class={INPUT}>
+							{trainingOptions.map((o) => <option value={o}>{o}</option>)}
+						</select>
+					</div>
+				</div>
+				<div class="flex flex-col gap-1.5">
+					<label for="us-interest" class="text-sm font-medium text-white/80">I’m interested in</label>
+					<select id="us-interest" name="interest" class={INPUT}>
+						{interestOptions.map(([value, label]) => <option value={value}>{label}</option>)}
+					</select>
+				</div>
+				<div class="flex flex-col gap-1.5">
+					<label for="us-message" class="text-sm font-medium text-white/80">Anything we should know? <span class="text-muted font-normal">(optional)</span></label>
+					<textarea id="us-message" name="message" rows="3" class={INPUT} placeholder="For example: a Security+ course with about 60 learners per cohort"></textarea>
+				</div>
+				<label class="flex items-start gap-3 text-sm text-muted">
+					<input type="checkbox" name="consent" required class="mt-1 accent-primary" />
+					<span>I agree that LearnSlice may contact me about this request. See our <a href="/privacy" class="text-primary hover:text-white">privacy policy</a>.</span>
+				</label>
+				<button type="submit" class="inline-flex items-center justify-center px-5 py-3 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors disabled:opacity-60">
+					Send message
+				</button>
+				<div id="us-error" class="hidden p-3 rounded-lg text-sm bg-red-500/10 border border-red-500/20 text-red-300" role="alert"></div>
+				<div id="us-success" class="hidden p-3 rounded-lg text-sm bg-green-500/10 border border-green-500/20 text-green-300" role="status">
+					Thanks. We’ll get back to you shortly. If you’d rather pick a time now, <a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="underline">book a call in Calendly</a>.
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<Footer currentLang={lang} privacyLabel={enContent.footer.privacyLabel} termsLabel={enContent.footer.termsLabel} demoHref="#book" />
+</BaseLayout>
+
+<script>
+	// Pass personalized-link parameters (?academy=...&color=...&letter=...) on to the demo.
+	const params = new URLSearchParams(window.location.search);
+	const academy = (params.get('academy') || '').trim().slice(0, 40);
+	const forward = new URLSearchParams();
+	for (const key of ['academy', 'color', 'letter']) {
+		const value = params.get(key);
+		if (value) forward.set(key, value);
+	}
+	if (forward.toString()) {
+		const query = `?${forward.toString()}`;
+		const frame = document.getElementById('demo-frame') as HTMLIFrameElement | null;
+		const full = document.getElementById('demo-full') as HTMLAnchorElement | null;
+		const mobile = document.getElementById('demo-mobile') as HTMLAnchorElement | null;
+		if (mobile) mobile.href = `/us-demo.html${query}`;
+		if (frame) frame.src = `/us-demo.html${query}`;
+		if (full) full.href = `/us-demo.html${query}`;
+	}
+	if (academy) {
+		const note = document.getElementById('prepared-for');
+		const name = document.getElementById('prepared-name');
+		const hidden = document.getElementById('academy-param') as HTMLInputElement | null;
+		if (name) name.textContent = academy;
+		if (note) note.classList.remove('hidden');
+		if (hidden) hidden.value = academy;
+		const org = document.getElementById('us-org') as HTMLInputElement | null;
+		if (org && !org.value) org.value = academy;
+	}
+
+	// Tag Calendly links so bookings show where they came from, incl. the personalized academy.
+	document.querySelectorAll<HTMLAnchorElement>('a[data-calendly]').forEach((link) => {
+		const url = new URL(link.href);
+		url.searchParams.set('utm_source', 'learnslice.com');
+		url.searchParams.set('utm_campaign', 'us-landing');
+		if (academy) url.searchParams.set('utm_content', academy);
+		link.href = url.toString();
+	});
+
+	// Buttons in the offer cards preselect what the visitor is interested in.
+	document.querySelectorAll<HTMLAnchorElement>('a[data-interest]').forEach((link) => {
+		link.addEventListener('click', () => {
+			const select = document.getElementById('us-interest') as HTMLSelectElement | null;
+			if (select && link.dataset.interest) select.value = link.dataset.interest;
+		});
+	});
+
+	const form = document.getElementById('us-form') as HTMLFormElement | null;
+	const error = document.getElementById('us-error');
+	const success = document.getElementById('us-success');
+	form?.addEventListener('submit', async (e) => {
+		e.preventDefault();
+		const button = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+		error?.classList.add('hidden');
+		if (button) button.disabled = true;
+		try {
+			const response = await fetch('/', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: new URLSearchParams(new FormData(form) as any).toString(),
+			});
+			if (!response.ok) throw new Error(String(response.status));
+			form.reset();
+			success?.classList.remove('hidden');
+		} catch {
+			if (error) {
+				error.textContent = 'The request didn’t go through. Please try again, or email info@learnslice.com.';
+				error.classList.remove('hidden');
+			}
+		} finally {
+			if (button) button.disabled = false;
+		}
+	});
+</script>
