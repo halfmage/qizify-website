@@ -1,0 +1,688 @@
+---
+// Hero visual for /us. A small product "stage" that loops through academies:
+// the branding panel types an academy name and picks its color, the app re-brands
+// itself, the tutor answers a question from that academy's own course (with a
+// source), a practice question gets answered, and the voice tutor (coming soon)
+// speaks along. Personalized links (?academy, ?color, ?letter) keep the prospect's
+// brand. With prefers-reduced-motion it shows one finished frame.
+---
+
+<div class="hps" id="hps" aria-hidden="true">
+	<div class="hps-glow"></div>
+
+	<!-- App window -->
+	<div class="hps-app">
+		<div class="hps-bar"><i></i><i></i><i></i><span id="hps-url">summit-tech.learnslice.com</span></div>
+		<div class="hps-shell">
+			<aside class="hps-side">
+				<div class="hps-logo" id="hps-logo">S</div>
+				<span class="hps-nav on"></span><span class="hps-nav"></span><span class="hps-nav"></span><span class="hps-nav"></span>
+			</aside>
+			<div class="hps-main">
+				<div class="hps-head">
+					<div>
+						<p class="hps-org" id="hps-org">Summit Tech Academy</p>
+						<p class="hps-course" id="hps-course">Security+ Prep · Module 3</p>
+					</div>
+					<span class="hps-xp">Level 5</span>
+				</div>
+				<div class="hps-chat">
+					<div class="hps-q" id="hps-q"></div>
+					<div class="hps-a" id="hps-a"></div>
+					<div class="hps-src" id="hps-src"><span>Source</span><b id="hps-src-text"></b></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Branding panel -->
+	<div class="hps-brand">
+		<p class="hps-label">Your branding</p>
+		<div class="hps-field"><span id="hps-name">Summit Tech Academy</span><i class="hps-caret"></i></div>
+		<div class="hps-swatches" id="hps-swatches"></div>
+	</div>
+
+	<!-- Voice tutor -->
+	<div class="hps-voice">
+		<span class="hps-soon">Voice tutor · coming soon</span>
+		<div class="hps-portrait" id="hps-portrait">
+			<svg viewBox="0 0 120 120">
+				<defs>
+					<linearGradient id="hps-bg" x1="0" y1="0" x2="1" y2="1">
+						<stop offset="0" stop-color="#2a2540" />
+						<stop offset="1" stop-color="#15131c" />
+					</linearGradient>
+				</defs>
+				<rect width="120" height="120" rx="60" fill="url(#hps-bg)" />
+				<path class="hps-top" d="M20 120c4-26 20-38 40-38s36 12 40 38z" />
+				<rect x="52" y="70" width="16" height="14" rx="6" fill="#e7b99b" />
+				<ellipse cx="60" cy="54" rx="21" ry="24" fill="#f1cdb3" />
+				<path d="M38 52c0-18 10-28 23-28 14 0 23 10 22 27-4-9-12-14-22-14-10 0-18 5-23 15z" fill="#3b2a3f" />
+				<g class="hps-eyes"><ellipse cx="52" cy="56" rx="2.4" ry="2.8" fill="#2a2233" /><ellipse cx="68" cy="56" rx="2.4" ry="2.8" fill="#2a2233" /></g>
+				<ellipse class="hps-mouth" cx="60" cy="68" rx="5.5" ry="2.6" fill="#a1414f" />
+			</svg>
+		</div>
+		<div class="hps-wave" id="hps-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+		<p class="hps-caption" id="hps-caption"></p>
+	</div>
+
+	<!-- Practice card -->
+	<div class="hps-quiz" id="hps-quiz">
+		<div class="hps-quiz-top"><span id="hps-quiz-type">Deep Dive · 5 questions</span><b class="hps-xp-pop" id="hps-xp-pop">+15 XP</b></div>
+		<p class="hps-quiz-q" id="hps-quiz-q"></p>
+		<div class="hps-opts" id="hps-opts"></div>
+	</div>
+</div>
+
+<style>
+	@property --acc {
+		syntax: '<color>';
+		inherits: true;
+		initial-value: #1d4ed8;
+	}
+	.hps {
+		--acc: #1d4ed8;
+		position: relative;
+		height: 490px;
+		transition: --acc 0.8s ease;
+		font-family: inherit;
+	}
+	.hps p {
+		margin: 0;
+	}
+	.hps-glow {
+		position: absolute;
+		inset: 0 -40px 0 -20px;
+		background:
+			radial-gradient(ellipse 55% 50% at 55% 40%, color-mix(in srgb, var(--acc) 45%, transparent), transparent 70%),
+			radial-gradient(ellipse 40% 35% at 15% 90%, rgba(244, 162, 97, 0.2), transparent 70%);
+		filter: blur(40px);
+		opacity: 0.8;
+	}
+
+	/* App window */
+	.hps-app {
+		position: absolute;
+		left: 0;
+		top: 36px;
+		width: 420px;
+		height: 340px;
+		background: #fff;
+		border-radius: 16px;
+		box-shadow: 0 40px 90px rgba(0, 0, 0, 0.5);
+		overflow: hidden;
+		color: #16141d;
+	}
+	.hps-bar {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		height: 32px;
+		padding: 0 12px;
+		background: #f4f3f8;
+		border-bottom: 1px solid #e8e6ef;
+	}
+	.hps-bar i {
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background: #d7d4e1;
+	}
+	.hps-bar span {
+		margin-left: 14px;
+		font-size: 11px;
+		color: #8a879a;
+		background: #fff;
+		border-radius: 6px;
+		padding: 2px 10px;
+	}
+	.hps-shell {
+		display: grid;
+		grid-template-columns: 54px 1fr;
+		height: calc(100% - 32px);
+	}
+	.hps-side {
+		background: #faf9fd;
+		border-right: 1px solid #ebe9f1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		padding-top: 14px;
+	}
+	.hps-logo {
+		width: 30px;
+		height: 30px;
+		border-radius: 8px;
+		background: var(--acc);
+		color: #fff;
+		display: grid;
+		place-items: center;
+		font-weight: 800;
+		font-size: 14px;
+		margin-bottom: 6px;
+	}
+	.hps-nav {
+		width: 22px;
+		height: 6px;
+		border-radius: 4px;
+		background: #e3e1ea;
+	}
+	.hps-nav.on {
+		background: color-mix(in srgb, var(--acc) 35%, #fff);
+	}
+	.hps-main {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+	}
+	.hps-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 12px 16px;
+		border-bottom: 1px solid #ebe9f1;
+	}
+	.hps-org {
+		font-weight: 700;
+		font-size: 13.5px;
+	}
+	.hps-course {
+		font-size: 11.5px;
+		color: #676478;
+	}
+	.hps-xp {
+		font-size: 11px;
+		font-weight: 700;
+		color: #b45309;
+		background: #fcf1e1;
+		padding: 2px 8px;
+		border-radius: 99px;
+	}
+	.hps-chat {
+		padding: 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: flex-start;
+	}
+	.hps-q {
+		align-self: flex-end;
+		max-width: 88%;
+		background: var(--acc);
+		color: #fff;
+		padding: 9px 13px;
+		border-radius: 14px 14px 5px 14px;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 1.4;
+		min-height: 36px;
+	}
+	.hps-a:empty {
+		display: none;
+	}
+	.hps-a {
+		max-width: 94%;
+		background: #f4f3f8;
+		padding: 10px 13px;
+		border-radius: 14px 14px 14px 5px;
+		font-size: 12.5px;
+		line-height: 1.5;
+		color: #2a2733;
+		min-height: 38px;
+	}
+	.hps-src {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-size: 11px;
+		color: #676478;
+		opacity: 0;
+		transform: translateY(4px);
+		transition: opacity 0.35s, transform 0.35s;
+	}
+	.hps-src.show {
+		opacity: 1;
+		transform: none;
+	}
+	.hps-src b {
+		background: color-mix(in srgb, var(--acc) 12%, #fff);
+		color: color-mix(in srgb, var(--acc) 80%, #000);
+		padding: 2px 9px;
+		border-radius: 99px;
+		font-weight: 600;
+	}
+
+	/* Branding panel */
+	.hps-brand {
+		position: absolute;
+		left: 24px;
+		bottom: 0;
+		width: 250px;
+		background: #1f1f23;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 14px;
+		padding: 14px;
+		box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+	}
+	.hps-label {
+		font-size: 10.5px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: #a1a1aa;
+		font-weight: 600;
+	}
+	.hps-field {
+		margin-top: 8px;
+		display: flex;
+		align-items: center;
+		background: #27272a;
+		border: 1px solid #3f3f46;
+		border-radius: 8px;
+		padding: 7px 10px;
+		font-size: 13px;
+		color: #fafafa;
+		min-height: 34px;
+	}
+	.hps-caret {
+		width: 1.5px;
+		height: 15px;
+		background: #fafafa;
+		margin-left: 2px;
+		animation: hps-caret 1s steps(1) infinite;
+	}
+	@keyframes hps-caret {
+		50% {
+			opacity: 0;
+		}
+	}
+	.hps-swatches {
+		display: flex;
+		gap: 8px;
+		margin-top: 10px;
+	}
+	.hps-swatches :global(i) {
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		box-shadow: 0 0 0 2px #1f1f23;
+		transition: box-shadow 0.25s, transform 0.25s;
+	}
+	.hps-swatches :global(i.on) {
+		box-shadow: 0 0 0 2px #1f1f23, 0 0 0 4px #fafafa;
+		transform: scale(1.08);
+	}
+
+	/* Voice tutor */
+	.hps-voice {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 184px;
+		background: #1f1f23;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 18px;
+		padding: 12px 14px 14px;
+		box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+	}
+	.hps-soon {
+		align-self: stretch;
+		text-align: center;
+		font-size: 10.5px;
+		font-weight: 600;
+		color: #a1a1aa;
+		border: 1px dashed #52525b;
+		border-radius: 99px;
+		padding: 2px 8px;
+	}
+	.hps-portrait {
+		width: 104px;
+		height: 104px;
+		border-radius: 50%;
+		color: var(--acc);
+		border: 3px solid currentColor;
+	}
+	.hps-portrait.talk {
+		animation: hps-ring 1.4s ease-out infinite;
+	}
+	@keyframes hps-ring {
+		0% {
+			box-shadow: 0 0 0 0 currentColor;
+		}
+		100% {
+			box-shadow: 0 0 0 16px transparent;
+		}
+	}
+	.hps-portrait svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.hps-top {
+		fill: var(--acc);
+	}
+	.hps-mouth {
+		transform-origin: 60px 68px;
+		transform-box: view-box;
+	}
+	.talk .hps-mouth {
+		animation: hps-mouth 0.28s ease-in-out infinite alternate;
+	}
+	@keyframes hps-mouth {
+		from {
+			transform: scaleY(0.35);
+		}
+		to {
+			transform: scaleY(1.25);
+		}
+	}
+	.hps-eyes {
+		transform-origin: 60px 56px;
+		transform-box: view-box;
+		animation: hps-blink 4.5s infinite;
+	}
+	@keyframes hps-blink {
+		0%,
+		94%,
+		100% {
+			transform: scaleY(1);
+		}
+		96% {
+			transform: scaleY(0.1);
+		}
+	}
+	.hps-wave {
+		display: flex;
+		gap: 3px;
+		align-items: center;
+		height: 18px;
+	}
+	.hps-wave i {
+		width: 3px;
+		height: 4px;
+		border-radius: 3px;
+		background: color-mix(in srgb, var(--acc) 60%, #fff);
+	}
+	.hps-wave.talk i {
+		animation: hps-wave 0.8s ease-in-out infinite;
+	}
+	.hps-wave i:nth-child(2) { animation-delay: 0.1s; }
+	.hps-wave i:nth-child(3) { animation-delay: 0.2s; }
+	.hps-wave i:nth-child(4) { animation-delay: 0.3s; }
+	.hps-wave i:nth-child(5) { animation-delay: 0.15s; }
+	.hps-wave i:nth-child(6) { animation-delay: 0.05s; }
+	.hps-wave i:nth-child(7) { animation-delay: 0.25s; }
+	@keyframes hps-wave {
+		0%,
+		100% {
+			height: 4px;
+		}
+		50% {
+			height: 16px;
+		}
+	}
+	.hps-caption {
+		font-size: 11.5px;
+		line-height: 1.4;
+		color: #e4e4e7;
+		text-align: center;
+		min-height: 32px;
+		transition: opacity 0.3s;
+	}
+
+	/* Practice card */
+	.hps-quiz {
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+		width: 236px;
+		background: #fff;
+		color: #16141d;
+		border-radius: 14px;
+		padding: 13px 14px;
+		box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+		opacity: 0;
+		transform: translateY(16px) scale(0.97);
+		transition: opacity 0.45s, transform 0.45s;
+	}
+	.hps-quiz.show {
+		opacity: 1;
+		transform: none;
+	}
+	.hps-quiz-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 10.5px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: color-mix(in srgb, var(--acc) 80%, #000);
+	}
+	.hps-xp-pop {
+		font-size: 11px;
+		color: #b45309;
+		background: #fcf1e1;
+		padding: 1px 8px;
+		border-radius: 99px;
+		letter-spacing: 0;
+		opacity: 0;
+		transform: scale(0.6);
+		transition: opacity 0.3s, transform 0.3s cubic-bezier(0.3, 1.6, 0.5, 1);
+	}
+	.hps-xp-pop.show {
+		opacity: 1;
+		transform: scale(1);
+	}
+	.hps-quiz-q {
+		font-size: 12.5px;
+		font-weight: 600;
+		line-height: 1.4;
+		margin-top: 7px !important;
+	}
+	.hps-opts {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		margin-top: 9px;
+	}
+	.hps .hps-opts :global(span) {
+		font-size: 12px;
+		border: 1px solid #d7d4e1;
+		border-radius: 8px;
+		padding: 5px 9px;
+		transition: all 0.25s;
+	}
+	.hps .hps-opts :global(span.pick) {
+		border-color: var(--acc);
+		box-shadow: 0 0 0 1px var(--acc);
+	}
+	.hps .hps-opts :global(span.right) {
+		border-color: #15803d;
+		background: #e7f5ec;
+		color: #15803d;
+		font-weight: 600;
+		box-shadow: none;
+	}
+</style>
+
+<script>
+	type Scene = {
+		name: string;
+		letter: string;
+		color: string;
+		url: string;
+		course: string;
+		q: string;
+		a: string;
+		src: string;
+		say: string;
+		quiz: { q: string; o: string[]; c: number };
+	};
+
+	const SCENES: Scene[] = [
+		{
+			name: 'Summit Tech Academy', letter: 'S', color: '#1d4ed8', url: 'summit-tech.learnslice.com',
+			course: 'Security+ Prep · Module 3',
+			q: 'When do I use an IPS instead of an IDS?',
+			a: 'An IDS watches traffic and raises an alert. An IPS sits inline, so it can also block the traffic before it reaches the server.',
+			src: 'Module 3 · Network appliances · p. 31',
+			say: 'Think of an IDS as a camera, and an IPS as a guard at the door.',
+			quiz: { q: 'Which device can block malicious traffic inline?', o: ['IDS', 'IPS', 'SIEM'], c: 1 },
+		},
+		{
+			name: 'Harbor Health Institute', letter: 'H', color: '#0f766e', url: 'harbor-health.learnslice.com',
+			course: 'Medical Assistant Program · Unit 2',
+			q: 'What’s the difference between the HIPAA Privacy Rule and the Security Rule?',
+			a: 'The Privacy Rule covers how patient health information may be used and shared, in any form. The Security Rule sets safeguards for health information stored or sent electronically.',
+			src: 'Unit 2 · HIPAA basics · p. 14',
+			say: 'Privacy is about who may see it. Security is about how electronic records are protected.',
+			quiz: { q: 'Which HIPAA rule sets safeguards for electronic health records?', o: ['Privacy Rule', 'Security Rule', 'Breach Notification Rule'], c: 1 },
+		},
+		{
+			name: 'Ironline Trades School', letter: 'I', color: '#c2410c', url: 'ironline-trades.learnslice.com',
+			course: 'HVAC Fundamentals · Chapter 6',
+			q: 'What does a SEER2 rating tell me?',
+			a: 'SEER2 measures how efficiently an air conditioner or heat pump cools over a typical season. It uses test conditions closer to real ductwork than the older SEER rating.',
+			src: 'HVAC Fundamentals · Ch. 6 · p. 88',
+			say: 'A higher SEER2 means more cooling for every unit of electricity.',
+			quiz: { q: 'A SEER2 rating describes an AC unit’s…', o: ['Heating output', 'Seasonal cooling efficiency', 'Refrigerant charge'], c: 1 },
+		},
+	];
+
+	const $ = (id: string) => document.getElementById(id) as HTMLElement;
+	const root = $('hps');
+	if (root) {
+		const el = {
+			url: $('hps-url'), logo: $('hps-logo'), org: $('hps-org'), course: $('hps-course'),
+			q: $('hps-q'), a: $('hps-a'), src: $('hps-src'), srcText: $('hps-src-text'),
+			name: $('hps-name'), swatches: $('hps-swatches'),
+			portrait: $('hps-portrait'), wave: $('hps-wave'), caption: $('hps-caption'),
+			quiz: $('hps-quiz'), quizQ: $('hps-quiz-q'), opts: $('hps-opts'), xp: $('hps-xp-pop'),
+		};
+
+		// Personalized links: keep the prospect's brand in every scene.
+		const params = new URLSearchParams(window.location.search);
+		const academy = (params.get('academy') || '').trim().slice(0, 40);
+		const pColor = (params.get('color') || '').replace('#', '');
+		if (academy) {
+			const color = /^[0-9a-f]{6}$/i.test(pColor) ? `#${pColor}` : '#6d28d9';
+			const letter = ((params.get('letter') || academy[0]) + '').slice(0, 2).toUpperCase();
+			const slug = academy.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 24);
+			SCENES.forEach((s) => Object.assign(s, { name: academy, letter, color, url: `${slug}.learnslice.com` }));
+		}
+
+		const colors = [...new Set(SCENES.map((s) => s.color))];
+		el.swatches.innerHTML = colors.map((c) => `<i style="background:${c}" data-c="${c}"></i>`).join('');
+
+		const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+		let visible = true;
+		if ('IntersectionObserver' in window) {
+			new IntersectionObserver((e) => (visible = e[0].isIntersecting)).observe(root);
+		}
+		const ready = async () => {
+			while (document.hidden || !visible) await sleep(400);
+		};
+
+		function brand(s: Scene) {
+			root.style.setProperty('--acc', s.color);
+			el.logo.textContent = s.letter;
+			el.org.textContent = s.name;
+			el.url.textContent = s.url;
+			el.course.textContent = s.course;
+			el.swatches.querySelectorAll('i').forEach((i) => i.classList.toggle('on', (i as HTMLElement).dataset.c === s.color));
+		}
+		function quiz(s: Scene, answered: boolean) {
+			el.quizQ.textContent = s.quiz.q;
+			el.opts.innerHTML = s.quiz.o.map((o, i) => `<span class="${answered && i === s.quiz.c ? 'right' : ''}">${o}</span>`).join('');
+		}
+		function talk(on: boolean) {
+			el.portrait.classList.toggle('talk', on);
+			el.wave.classList.toggle('talk', on);
+		}
+
+		function still(s: Scene) {
+			brand(s);
+			el.name.textContent = s.name;
+			el.q.textContent = s.q;
+			el.a.textContent = s.a;
+			el.srcText.textContent = s.src;
+			el.src.classList.add('show');
+			el.caption.textContent = s.say;
+			quiz(s, true);
+			el.quiz.classList.add('show');
+			el.xp.classList.add('show');
+		}
+
+		async function play() {
+			let i = 0;
+			let lastName = '';
+			for (;;) {
+				await ready();
+				const s = SCENES[i % SCENES.length];
+
+				// 1. Branding: type the name, pick the color, the app follows.
+				el.src.classList.remove('show');
+				el.quiz.classList.remove('show');
+				el.xp.classList.remove('show');
+				el.q.textContent = '';
+				el.a.textContent = '';
+				el.caption.textContent = '';
+				if (s.name !== lastName) {
+					el.name.textContent = '';
+					for (let c = 1; c <= s.name.length; c++) {
+						el.name.textContent = s.name.slice(0, c);
+						await sleep(45);
+					}
+					await sleep(250);
+				} else {
+					el.name.textContent = s.name;
+				}
+				lastName = s.name;
+				brand(s);
+				await sleep(900);
+
+				// 2. The learner asks; the tutor answers with a source and speaks along.
+				for (let c = 1; c <= s.q.length; c++) {
+					el.q.textContent = s.q.slice(0, c);
+					await sleep(24);
+				}
+				await sleep(500);
+				talk(true);
+				el.caption.textContent = s.say;
+				const words = s.a.split(' ');
+				for (let w = 1; w <= words.length; w++) {
+					el.a.textContent = words.slice(0, w).join(' ');
+					await sleep(50);
+				}
+				el.srcText.textContent = s.src;
+				el.src.classList.add('show');
+				await sleep(900);
+				talk(false);
+
+				// 3. Practice from the same material.
+				quiz(s, false);
+				el.quiz.classList.add('show');
+				await sleep(1200);
+				const pick = el.opts.children[s.quiz.c] as HTMLElement;
+				pick?.classList.add('pick');
+				await sleep(600);
+				pick?.classList.remove('pick');
+				pick?.classList.add('right');
+				el.xp.classList.add('show');
+				await sleep(2600);
+				i++;
+			}
+		}
+
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) still(SCENES[0]);
+		else {
+			brand(SCENES[0]);
+			play();
+		}
+	}
+</script>
