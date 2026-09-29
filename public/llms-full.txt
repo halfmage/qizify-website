@@ -111,7 +111,7 @@ The AI mentor provides daily guidance and standard instruction, enabling compani
 
 ### Schools (Vocational Colleges · Schools)
 
-- 15-25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high level job preparation.
+- 15-25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high-level job preparation.
 - 30 % fewer dropouts in the first year of apprenticeship.
 - Up to 25 % time saved for teachers. Automated exercises, simulations and feedback reduce preparation and grading workload.
 
@@ -119,7 +119,7 @@ Early skills diagnostics and individual AI coaching prevent overload and disenga
 
 ## What Our Customers Say
 
-> We're very satisfied with LearnSlice. The team quickly transformed our materials into precise, effective quizzes with high quality and efficiency. Questions boost knowledge transfer. Excellent support team answers fast and proactively solves our challenges. We highly recommend this innovative tool.
+> We're very satisfied with LearnSlice. The team quickly transformed our materials into precise, effective quizzes with high quality and efficiency. The questions boost knowledge transfer. The excellent support team answers quickly and proactively solves our challenges. We highly recommend this innovative tool.
 >
 > — Lienne Julie Wolff, Apprentice Industrial Clerk, Tremonia Mobility GmbH
 
@@ -127,7 +127,7 @@ Early skills diagnostics and individual AI coaching prevent overload and disenga
 >
 > — Kinga Patrycja Peters, Employment Promotion, Regional Agency Westphalian Ruhr Area
 
-> LearnSlice significantly increases learner motivation and enables effective, differentiated exam preparation using modern technologies such as AI. The software enhances traditional teaching methods, encourages interactive collaboration, and prepares learners for the demands of working world
+> LearnSlice significantly increases learner motivation and enables effective, differentiated exam preparation using modern technologies such as AI. The software enhances traditional teaching methods, encourages interactive collaboration, and prepares learners for the demands of the working world.
 >
 > — Philipp Schulte, Director of Studies, Carl-Severing Vocational College
 
@@ -147,7 +147,7 @@ Federal Ministry award
 
 ### Made in Germany
 
-GDPR, German servers, Local LLM.
+GDPR, German servers, local LLM.
 
 ## Frequently Asked Questions
 
@@ -161,7 +161,7 @@ Yes. The platform recreates realistic IHK and university exam scenarios and maps
 
 ### Can we customise training for our company?
 
-Absolutely. Ready-made role simulations are included out-of-the-box, and you can optionally upload internal documents to tailor onboarding, upskilling and lateral-entry (Quereinstieg) scenarios. Most companies are live with custom content within two weeks.
+Absolutely. Ready-made role simulations are included out of the box, and you can optionally upload internal documents to tailor onboarding, upskilling and lateral-entry (Quereinstieg) scenarios. Most companies are live with custom content within two weeks.
 
 ### How does the AI personalise learning?
 
@@ -884,7 +884,7 @@ Run the one minute check on your own installation. Take the readiness check into
 
 **Let's scope your first course.** Tell us which platform you run and what your learners keep asking, and you get a [no obligation quote](/solutions#project-inquiry) with a concrete plan for a first working version. Or book a free strategy call: no pitch, and a realistic roadmap plus a ballpark figure at the end.
 
-To see how we build AI tutors and learning platforms with EU hosting and ownership of the result, visit our page on [custom e-learning development](/solutions). Weighing up a full platform instead of a layer? Our guide to [what custom e-learning costs](/blog/custom-e-learning-development-costs) covers that decision.
+To see how we build AI tutors and learning platforms with EU hosting and ownership of the result, visit our page on [custom e-learning development](/solutions). Weighing up a full platform instead of a layer? Our guide to [what custom e-learning costs](/blog/custom-e-learning-development-costs) covers that decision. Running a training program in the US? [Try the AI tutor demo for training providers](/us).
 
 
 ## Frequently Asked Questions
@@ -1087,7 +1087,7 @@ More evidence from that pilot is on our [research and evidence](/research) page.
 3. **Ship a first version in 6 to 8 weeks.** One subject area complete, a mock exam in the real format, real learners. We deliberately scope that first version down to a single subject area, because only real usage shows which feature earns the next slot. Their results decide what gets built next, not a concept paper.
 4. **Roll out to further exams.** Once the structure stands, the second exam is mostly content work. This is where the distance opens up between you and providers still working from PDFs and classroom time.
 
-If you prepare people for a regulated exam and your current system does not know the syllabus behind it, the first building block is worth a conversation. Our [custom e-learning development](/solutions) page sets out how we work as a development partner.
+If you prepare people for a regulated exam and your current system does not know the syllabus behind it, the first building block is worth a conversation. Our [custom e-learning development](/solutions) page sets out how we work as a development partner. Based in the US? See [our AI tutor for training providers](/us) and try the live demo.
 
 
 ## Frequently Asked Questions
@@ -1427,7 +1427,7 @@ That is what our offering is built around. To see how LearnSlice builds custom A
 
 The lowest-risk way into a custom AI tutor is not a six-month contract; it is a small first version grounded in a slice of your real content and tested on real learners. If it answers accurately from your material and people actually use it, you scale it. If it does not, you have spent weeks, not a budget.
 
-**Let's outline your AI tutor.** Request a [no-obligation quote](/solutions#project-inquiry) or book a free 30-minute strategy call: no pitch, and a concrete roadmap plus a ballpark price for your own AI tutor at the end. To put it to work in apprenticeship and workplace training, see [LearnSlice for companies](/companies), and for vocational schools, [LearnSlice for schools](/schools).
+**Let's outline your AI tutor.** Request a [no-obligation quote](/solutions#project-inquiry) or book a free 30-minute strategy call: no pitch, and a concrete roadmap plus a ballpark price for your own AI tutor at the end. To put it to work in apprenticeship and workplace training, see [LearnSlice for companies](/companies), and for vocational schools, [LearnSlice for schools](/schools). Training providers in the US can [try the AI tutor demo](/us) on sample course material.
 
 
 ## Frequently Asked Questions

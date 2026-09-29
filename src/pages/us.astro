@@ -39,6 +39,21 @@ const today = [
 	},
 ];
 
+const programs = [
+	{
+		title: 'IT and cybersecurity certifications',
+		body: 'Certification exams follow a published list of objectives. The tutor works through your material objective by objective, answers the questions learners ask late at night, and builds practice questions from your own content, so learners find their weak areas before exam day.',
+	},
+	{
+		title: 'Healthcare and skilled trades',
+		body: 'Programs for medical assistants, pharmacy technicians or HVAC and electrical trainees mix theory with hands-on work. The tutor covers the theory between sessions, and the training log keeps a weekly record of hours and activities.',
+	},
+	{
+		title: 'Compliance and corporate training',
+		body: 'Policy and compliance courses are mostly reading. The tutor turns them into a conversation: learners ask how a rule applies to their job, get an answer with the source, and check what they understood with a short assessment.',
+	},
+];
+
 const next = [
 	['Voice tutor', 'Learners talk the topic through instead of typing.'],
 	['Cohort analytics', 'Instructors see which topics each cohort struggles with.'],
@@ -71,12 +86,20 @@ const faq = [
 		answer: 'The pilot has a fixed price in US dollars. We quote it after a 20-minute call, once we know the size of the course and the number of learners.',
 	},
 	{
+		question: 'How long does setup take?',
+		answer: 'The tutor for your pilot module is ready in the first week. Your effort is a 60-minute kickoff, the material you already have, and about 30 minutes of feedback a week during the pilot.',
+	},
+	{
+		question: 'What happens to learner data?',
+		answer: 'Data is kept only as long as it’s needed: account data is deleted no later than 12 months after an account is deactivated, chat histories after 24 months of inactivity, and log data after 90 days at most. Tell us if your program needs shorter periods.',
+	},
+	{
 		question: 'Which courses does it work for?',
 		answer: 'Any course with written material: IT and cybersecurity certifications, healthcare and skilled-trades programs, professional certifications, and compliance training.',
 	},
 	{
 		question: 'We’re in the US and you’re in Europe. How does that work?',
-		answer: 'Our team works in Germany and Poland. We hold calls between 9 AM and noon US Eastern time, and support requests are answered within our business day.',
+		answer: 'Our team works in Germany and Poland, six hours ahead of US Eastern time. We hold calls between 9 AM and noon Eastern, and support requests are answered within our business day.',
 	},
 ];
 
@@ -94,8 +117,9 @@ const INPUT =
 ---
 
 <BaseLayout
-	title="AI Tutor for Training Providers in the US | LearnSlice"
-	description="An AI tutor built on your course material that cites its sources, creates practice assessments and follows your syllabus. Try the live demo."
+	title="AI Tutor for Training Providers & Online Courses | LearnSlice"
+	description="An AI tutor for training providers: built on your course material, cites its sources and creates practice assessments. Try the live demo."
+	ogImage="/images/og-us.jpg"
 	lang={lang}
 	currentPath={currentPath}
 	softwareSchema={false}
@@ -128,7 +152,7 @@ const INPUT =
 					Give every learner an AI tutor built on your course material
 				</h1>
 				<p class="text-lg text-muted mb-8 max-w-[620px] leading-relaxed">
-					LearnSlice adds an AI tutor to your courses. It answers from your own slides and handouts and shows the source, builds practice assessments from them, and keeps each learner on their learning plan.
+					Your learners get answers at 11 PM, practice built from your own material, and a clear plan to exam day. Your instructors answer fewer of the same questions every cohort.
 				</p>
 				<div class="flex flex-wrap gap-3">
 					<a href="#demo" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
@@ -140,8 +164,8 @@ const INPUT =
 					</a>
 				</div>
 				<ul class="list-none p-0 m-0 mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
-					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>BMWE KI-Preis 2025 winner</li>
-					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Co-developed with FH Dortmund in federally funded research</li>
+					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Winner of the BMWE KI-Preis 2025, a German AI award</li>
+					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Co-developed with FH Dortmund in research funded by the German government</li>
 					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Engineering team in Germany and Poland</li>
 				</ul>
 			</div>
@@ -154,7 +178,7 @@ const INPUT =
 			<div class="flex flex-wrap items-end justify-between gap-4 mb-6 px-2 md:px-0">
 				<div class="max-w-[640px]">
 					<span class="section-label mb-3 block">Live demo</span>
-					<h2 class="text-heading md:text-display-sm text-white m-0 mb-3">Click through it yourself</h2>
+					<h2 class="text-heading md:text-display-sm text-white m-0 mb-3">Try the AI tutor demo</h2>
 					<p class="text-base text-muted leading-relaxed m-0">
 						A working demo with sample data. Switch between the learner and the trainer view at the top right. Features listed under “Coming soon” in the sidebar are on our roadmap.
 					</p>
@@ -185,7 +209,8 @@ const INPUT =
 		<div class="max-w-container mx-auto">
 			<div class="max-w-[640px] mb-12">
 				<span class="section-label mb-4 block">In the product today</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0">What your learners get</h2>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">What the AI tutor does today</h2>
+				<p class="text-base text-muted leading-relaxed m-0">Fewer repeat questions for your instructors, and a feature you can put in your course description.</p>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
 				{today.map((item) => (
@@ -198,7 +223,7 @@ const INPUT =
 
 			<div class="mt-16 max-w-[640px] mb-8">
 				<span class="section-label mb-4 block">Coming soon</span>
-				<h2 class="text-heading-sm text-white m-0">On the roadmap</h2>
+				<h2 class="text-heading-sm text-white m-0">Coming next to the AI tutor</h2>
 			</div>
 			<ul class="list-none p-0 m-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 				{next.map(([title, body]) => (
@@ -211,13 +236,31 @@ const INPUT =
 		</div>
 	</section>
 
+	<!-- Programs -->
+	<section class="py-20 md:py-28 px-6 md:px-8 border-t border-border">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[640px] mb-12">
+				<span class="section-label mb-4 block">Built for your programs</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">An AI tutor for certification, career and compliance training</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				{programs.map((item) => (
+					<div>
+						<h3 class="text-base font-semibold text-white mb-3">{item.title}</h3>
+						<p class="text-base text-muted leading-relaxed m-0">{item.body}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
 	<!-- Pilot -->
 	<section id="pilot" class="py-20 md:py-28 px-6 md:px-8 border-t border-border scroll-mt-20">
 		<div class="max-w-container mx-auto">
 			<div class="max-w-[640px] mb-12">
 				<span class="section-label mb-4 block">How a pilot works</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Four weeks on one of your courses</h2>
-				<p class="text-base text-muted leading-relaxed m-0">The pilot has a fixed price in US dollars, agreed before we start.</p>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">How the AI tutor pilot works</h2>
+				<p class="text-base text-muted leading-relaxed m-0">Four weeks on one of your courses, at a fixed price in US dollars agreed before we start. Your effort: a 60-minute kickoff, the material you already have, and about 30 minutes of feedback a week.</p>
 			</div>
 			<ol class="list-none p-0 m-0 grid grid-cols-1 md:grid-cols-3 gap-8">
 				{steps.map(([title, body], i) => (
@@ -248,8 +291,8 @@ const INPUT =
 					<p class="text-base text-muted leading-relaxed m-0">Built to meet the GDPR and the EU AI Act. Your content and learner data are not used to train AI models.</p>
 				</div>
 				<div>
-					<h3 class="text-base font-semibold text-white mb-3">Research-backed</h3>
-					<p class="text-base text-muted leading-relaxed m-0">Co-developed with the IDiAL institute at FH Dortmund in a research project funded by the German Federal Ministry for Economic Affairs and Energy.</p>
+					<h3 class="text-base font-semibold text-white mb-3">Six hours ahead, on your schedule</h3>
+					<p class="text-base text-muted leading-relaxed m-0">We hold calls between 9 AM and noon Eastern, and your pilot moves forward while you sleep.</p>
 				</div>
 			</div>
 		</div>
@@ -261,9 +304,9 @@ const INPUT =
 	<section id="book" class="py-20 md:py-28 px-6 md:px-8 border-t border-border scroll-mt-20">
 		<div class="max-w-2xl mx-auto">
 			<span class="section-label mb-4 block">Book a call</span>
-			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Talk to us for 20 minutes</h2>
+			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">See the tutor on one of your own modules</h2>
 			<p class="text-base text-muted leading-relaxed m-0 mb-10">
-				Tell us what you teach. Alesia Kunz, our CEO, will get back to you with a few time slots between 9 AM and noon US Eastern.
+				Tell us what you teach. In a 20-minute call, we show you the tutor and agree which module to use for the pilot. Alesia Kunz, our CEO, will get back to you with a few time slots between 9 AM and noon US Eastern.
 			</p>
 
 			<!-- Netlify form detection stub. The visible form below posts via fetch. -->
