@@ -104,6 +104,38 @@ const faq = [
 	},
 ];
 
+const benefits = [
+	['European rates, no US agency overhead', 'Senior engineers at European rates, with fixed prices in US dollars. You pay for engineering, not account managers.'],
+	['Live in the first week', 'The tutor for your pilot course is ready in the first week, not after a months-long project.'],
+	['Little effort on your side', 'A 60-minute kickoff and the material you already have. We do the setup.'],
+	['Works with what you have', 'Learners use it in the browser, or we connect it to the LMS you already run.'],
+];
+
+const offers = [
+	{
+		id: 'pilot',
+		label: 'Ready-made, your brand',
+		title: 'AI tutor platform, customized for you',
+		body: 'Our platform with your academy’s name, colors and course material, adapted to your programs. Start with a four-week pilot on one course, then a monthly subscription.',
+		points: ['Running in the first week', 'Your syllabus, your material, your brand', 'Monthly subscription after the pilot'],
+		cta: 'Start with a pilot',
+	},
+	{
+		id: 'custom',
+		label: 'Built from scratch',
+		title: 'Custom e-learning, built for you',
+		body: 'AI tutors, learning platforms, quiz and assessment tools, LMS integrations and mobile learning apps, built for your programs. We also build on Moodle and Open edX.',
+		points: ['Fixed-price project, scoped in a free call', 'First working version in 6 to 8 weeks', 'You own the result'],
+		cta: 'Discuss your project',
+	},
+];
+
+const interestOptions = [
+	['pilot', 'A pilot of the AI tutor'],
+	['custom', 'A custom e-learning build'],
+	['unsure', 'Not sure yet'],
+];
+
 const trainingOptions = [
 	'IT and cybersecurity certifications',
 	'Healthcare programs',
@@ -130,6 +162,7 @@ const INPUT =
 		logo={enContent.nav.logo}
 		menu={[
 			{ label: 'Demo', href: '#demo' },
+			{ label: 'Ways to work with us', href: '#offers' },
 			{ label: 'Pilot', href: '#pilot' },
 			{ label: 'FAQ', href: '#faq' },
 		]}
@@ -152,16 +185,19 @@ const INPUT =
 				<h1 class="text-display-sm md:text-display text-white mb-6">
 					Give every learner an AI tutor built on your course material
 				</h1>
-				<p class="text-lg text-muted mb-8 max-w-[620px] leading-relaxed">
+				<p class="text-lg text-muted mb-4 max-w-[620px] leading-relaxed">
 					Your learners get answers at 11 PM, practice built from your own material, and a clear plan to exam day. Your instructors answer fewer of the same questions every cohort.
 				</p>
+				<p class="text-base text-white/90 mb-8 max-w-[620px] leading-relaxed">
+					Use our ready-made AI tutor under your academy’s name, or have us build your own learning platform. Senior engineers at European rates, no US agency overhead.
+				</p>
 				<div class="flex flex-wrap gap-3">
-					<a href="#demo" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
+					<a href="#book" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
+						Book a 20-minute call
+					</a>
+					<a href="#demo" class="inline-flex items-center justify-center px-5 py-2.5 border border-border-light text-white text-sm font-medium rounded-lg hover:bg-surface transition-colors">
 						Try the live demo
 						<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
-					</a>
-					<a href="#book" class="inline-flex items-center justify-center px-5 py-2.5 border border-border-light text-white text-sm font-medium rounded-lg hover:bg-surface transition-colors">
-						Book a 20-minute call
 					</a>
 				</div>
 				<ul class="list-none p-0 m-0 mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
@@ -173,6 +209,18 @@ const INPUT =
 			<div class="hidden xl:block">
 				<HeroProductStage />
 			</div>
+		</div>
+	</section>
+
+	<!-- Benefits -->
+	<section class="px-6 md:px-8 pb-16" aria-label="Why training providers work with us">
+		<div class="max-w-container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
+			{benefits.map(([title, body]) => (
+				<div class="bg-surface p-6">
+					<p class="text-sm font-semibold text-white m-0 mb-2">{title}</p>
+					<p class="text-sm text-muted leading-relaxed m-0">{body}</p>
+				</div>
+			))}
 		</div>
 	</section>
 
@@ -204,6 +252,35 @@ const INPUT =
 					loading="lazy"
 					class="block w-full h-[780px] bg-white"
 				></iframe>
+			</div>
+			<div class="mt-8 flex flex-wrap items-center justify-between gap-4 px-2 md:px-0">
+				<p class="text-base text-white m-0">Seen enough? See it on one of your own modules.</p>
+				<a href="#book" data-interest="pilot" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Book a 20-minute call</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Two ways to work with us -->
+	<section id="offers" class="py-20 md:py-28 px-6 md:px-8 border-t border-border scroll-mt-20">
+		<div class="max-w-container mx-auto">
+			<div class="max-w-[640px] mb-12">
+				<span class="section-label mb-4 block">How we work with you</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">Two ways to work with us</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				{offers.map((o) => (
+					<div class="bg-surface border border-border rounded-xl p-8 flex flex-col">
+						<span class="font-mono text-xs uppercase tracking-widest text-accent">{o.label}</span>
+						<h3 class="text-heading-sm text-white mt-3 mb-3">{o.title}</h3>
+						<p class="text-base text-muted leading-relaxed m-0 mb-5">{o.body}</p>
+						<ul class="list-none p-0 m-0 mb-8 flex flex-col gap-2 text-sm text-white/90">
+							{o.points.map((pt) => (
+								<li class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7" /></svg>{pt}</li>
+							))}
+						</ul>
+						<a href="#book" data-interest={o.id} class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors mt-auto self-start">{o.cta}</a>
+					</div>
+				))}
 			</div>
 		</div>
 	</section>
@@ -275,6 +352,9 @@ const INPUT =
 					</li>
 				))}
 			</ol>
+			<div class="mt-12">
+				<a href="#book" data-interest="pilot" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Start with a pilot</a>
+			</div>
 		</div>
 	</section>
 
@@ -310,7 +390,7 @@ const INPUT =
 			<span class="section-label mb-4 block">Book a call</span>
 			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">See the tutor on one of your own modules</h2>
 			<p class="text-base text-muted leading-relaxed m-0 mb-10">
-				Tell us what you teach. In a 20-minute call, we show you the tutor and agree which module to use for the pilot. Alesia Kunz, our CEO, will get back to you with a few time slots between 9 AM and noon US Eastern.
+				Tell us what you teach. In a 20-minute call, we show you the tutor and agree on the next step: a pilot on one of your modules, or a scope for your custom project. Alesia Kunz, our CEO, will get back to you with a few time slots between 9 AM and noon US Eastern.
 			</p>
 
 			<!-- Netlify form detection stub. The visible form below posts via fetch. -->
@@ -320,6 +400,7 @@ const INPUT =
 				<input type="email" name="email" />
 				<input type="text" name="organization" />
 				<input type="text" name="training" />
+				<input type="text" name="interest" />
 				<textarea name="message"></textarea>
 				<input type="text" name="academy-param" />
 				<input type="checkbox" name="consent" />
@@ -350,6 +431,12 @@ const INPUT =
 							{trainingOptions.map((o) => <option value={o}>{o}</option>)}
 						</select>
 					</div>
+				</div>
+				<div class="flex flex-col gap-1.5">
+					<label for="us-interest" class="text-sm font-medium text-white/80">I’m interested in</label>
+					<select id="us-interest" name="interest" class={INPUT}>
+						{interestOptions.map(([value, label]) => <option value={value}>{label}</option>)}
+					</select>
 				</div>
 				<div class="flex flex-col gap-1.5">
 					<label for="us-message" class="text-sm font-medium text-white/80">Anything we should know? <span class="text-muted font-normal">(optional)</span></label>
@@ -401,6 +488,14 @@ const INPUT =
 		const org = document.getElementById('us-org') as HTMLInputElement | null;
 		if (org && !org.value) org.value = academy;
 	}
+
+	// Buttons in the offer cards preselect what the visitor is interested in.
+	document.querySelectorAll<HTMLAnchorElement>('a[data-interest]').forEach((link) => {
+		link.addEventListener('click', () => {
+			const select = document.getElementById('us-interest') as HTMLSelectElement | null;
+			if (select && link.dataset.interest) select.value = link.dataset.interest;
+		});
+	});
 
 	const form = document.getElementById('us-form') as HTMLFormElement | null;
 	const error = document.getElementById('us-error');
