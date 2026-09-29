@@ -511,17 +511,17 @@ const COURSES={
    crypto:{k:['symmetric','asymmetric','encrypt','key pair','public key','private key','aes','rsa'],q:'What’s the difference between symmetric and asymmetric encryption?',
     a:'Symmetric encryption uses one shared key to encrypt and decrypt. It’s fast, so it protects bulk data, like AES on a disk or inside a VPN tunnel. Asymmetric encryption uses a key pair: a public key anyone can have and a private key only the owner keeps. It’s slower, so it’s mainly used to exchange keys and to sign things. TLS uses both: asymmetric to agree on a key, then symmetric for the actual traffic.',
     simple:'Symmetric is one key that locks and unlocks a box, and both people need a copy. Asymmetric works like a mailbox: anyone can drop a letter in with the public key, but only the owner’s private key opens it.',
-    ex:'Your company VPN is a good example. When you connect, your laptop and the VPN gateway use asymmetric keys to agree on a secret. After that, everything you send is encrypted with that shared symmetric key, because it’s much faster.',
+    ex:'A company VPN is a good example. When an employee connects, their laptop and the VPN gateway use asymmetric keys to agree on a secret. After that, everything you send is encrypted with that shared symmetric key, because it’s much faster.',
     src:'Module 1 · Cryptographic solutions · p. 14'},
    pki:{k:['pki','certificate','cert','certificate authority',' ca','crl','ocsp','chain of trust','revok'],q:'Can you explain PKI and certificates?',
     a:'PKI (public key infrastructure) is the system that lets you trust that a public key really belongs to someone. A certificate authority (CA) checks an identity and signs a certificate that binds a name, like portal.example.com, to a public key. Your browser trusts a short list of root CAs and follows the chain from the site’s certificate up to one of them. If a certificate is compromised, the CA revokes it and publishes that through a CRL or an OCSP responder.',
     simple:'A certificate is a passport for a website. The CA is the passport office. Your browser checks that the passport came from an office it trusts and hasn’t been cancelled.',
-    ex:'When you open your company’s HR portal and see the lock icon, your browser just checked the portal’s certificate, followed the chain to a trusted root CA, and confirmed it wasn’t revoked. If the certificate expired last night, every user gets a warning, which is why IT teams track expiry dates.',
+    ex:'When you open your bank’s website and see the lock icon, your browser just checked the site’s certificate, followed the chain to a trusted root CA, and confirmed it wasn’t revoked. If a company’s certificate expires overnight, every visitor gets a warning, which is why IT teams track expiry dates.',
     src:'Module 3 · PKI and certificates · p. 22'},
    ids:{k:['ids','ips','intrusion','detection','prevention','inline'],q:'What’s the difference between an IDS and an IPS?',
     a:'An IDS (intrusion detection system) watches traffic and raises an alert when it sees something suspicious. It’s passive and usually sits out of band, on a mirrored port. An IPS (intrusion prevention system) sits inline, so it can also block or drop the traffic. The trade-off: an IPS stops attacks in real time, but a false positive can block legitimate traffic.',
     simple:'An IDS is a security camera: it records and alerts. An IPS is a guard at the door: it can stop someone from coming in.',
-    ex:'If your office network sees a burst of login attempts against the file server, an IDS sends an alert to the security team. An IPS in the same spot would drop the traffic from that source right away.',
+    ex:'If a company network sees a burst of login attempts against the file server, an IDS sends an alert to the security team. An IPS in the same spot would drop the traffic from that source right away.',
     src:'Module 3 · Network appliances · p. 31'},
    zt:{k:['zero trust','zerotrust','implicit trust','policy engine','trust'],q:'What is zero trust?',
     a:'Zero trust means no user or device is trusted just because it’s inside the network. Every request is checked: who is asking, from which device, for which resource, and whether that fits policy. The exam objectives describe a control plane (policy engine and policy administrator) that makes the decision, and a data plane where a policy enforcement point applies it.',
@@ -536,7 +536,7 @@ const COURSES={
    seg:{k:['segment','vlan','dmz','screened subnet','microsegment','lateral'],q:'Why do we segment networks?',
     a:'Segmentation splits a network into zones so a problem in one zone doesn’t spread to the rest. You can use VLANs, firewalls between zones, or a screened subnet (DMZ) for public-facing servers. It limits lateral movement, makes monitoring easier, and helps with compliance, for example by keeping payment systems separate.',
     simple:'It works like fire doors in a building. If one room catches fire, the doors stop it from spreading.',
-    ex:'Guest Wi-Fi at your office should sit on its own segment, so a visitor’s infected laptop can’t reach the printers or the file server.',
+    ex:'Guest Wi-Fi at a coffee shop or an office should sit on its own segment, so a visitor’s infected laptop can’t reach the printers or the file server.',
     src:'Module 3 · Secure infrastructure · p. 27'}
   },
   practice:[
@@ -636,7 +636,7 @@ Built from: Module 3 · PKI and certificates · p. 22–26 and Instructor notes 
    rules:{k:['ai act','eu','law','regulation','legal','rules','compliance','policy'],q:'Which rules apply to using AI at work?',
     a:'It depends on where your company operates. The EU AI Act already requires companies that use AI to make sure staff have sufficient AI literacy (Article 4), and it adds transparency duties, like labeling AI-generated content. The US has no single federal AI law yet, but some states and cities have their own rules, for example on AI in hiring decisions. Day to day, your company’s AI policy is the rulebook you follow.',
     simple:'Follow your company’s AI policy. It turns the laws that apply to your company into everyday rules.',
-    ex:'If your team wants an AI tool to screen job applications, specific rules can apply in some US states and cities, and in the EU it counts as high-risk use. Check with HR or legal before you start.',
+    ex:'If a company wants an AI tool to screen job applications, specific rules can apply in some US states and cities, and in the EU it counts as high-risk use. Check with HR or legal before you start.',
     src:'Module 5 · Rules and responsible use · p. 4'},
    good:{k:['good prompt','better prompt','write a prompt','how to prompt','structure','tips'],q:'What makes a good prompt?',
     a:'A good prompt gives the model what a new colleague would need: the goal, the context, the audience, the format you want, and any limits. For example: the role (“You’re helping our support team”), the task (“draft a reply”), the facts to use, and the format (“under 120 words, friendly tone”). Then read the result and refine it.',
@@ -928,7 +928,7 @@ function vTutor(){
  let thread='';
  if(!msgs.length) thread=`<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble">Hi Jordan, I’m ${t}. ${S.course==='onb'?'I can help with anything about getting started at your academy.':`I’m your tutor for ${esc(c.title)}.`} I answer from your academy’s course material and show where each answer comes from. Ask me anything, or pick a question below.</div></div></div>`;
  thread+=msgs.map((m,i)=>msgHTML(m,i)).join('');
- const chips=msgs.length?[['example','Give me an example from my job'],['simple','Explain it more simply']].concat(S.course==='onb'?[]:[['deep','Create assessment']]):c.starters.map(k=>['q:'+k,c.qa[k].q]);
+ const chips=msgs.length?[['example','Give me a real-world example'],['simple','Explain it more simply']].concat(S.course==='onb'?[]:[['deep','Create assessment']]):c.starters.map(k=>['q:'+k,c.qa[k].q]);
  return `<div class="tutor-wrap"><div class="tutor-scroll" id="tscroll"><div class="tutor-inner">${stage}<div class="thread" id="thread">${thread}</div><div class="chips" id="chips">${chips.map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('')}</div></div></div>
  <div class="composer-wrap"><form class="composer" id="composer"><input id="q" autocomplete="off" placeholder="Ask ${t} something. Speak or type." aria-label="Ask the tutor"><button type="button" class="iconbtn ${S.voiceOut?'on':''}" data-act="voiceout" title="${S.voiceOut?'Stop reading answers aloud':'Read answers aloud'}" aria-pressed="${S.voiceOut}">${ic('speaker')}</button><button type="button" class="mic ${S.listening?'on':''}" data-act="mic" aria-label="Speak your question">${ic('mic')}</button></form></div></div>`;
 }
@@ -949,7 +949,7 @@ function redrawThread(){
  const msgs=S.chats[S.course];const t=esc(S.tutor.name);
  th.innerHTML=(msgs.length?'':`<div class="msg ai"><div class="av">${esc(t[0])}</div><div class="stack"><div class="bubble">Hi Jordan.</div></div></div>`)+msgs.map((m,i)=>msgHTML(m,i)).join('');
  const ch=document.getElementById('chips');
- if(ch&&msgs.length)ch.innerHTML=[['example','Give me an example from my job'],['simple','Explain it more simply']].concat(S.course==='onb'?[]:[['deep','Create assessment']]).map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('');
+ if(ch&&msgs.length)ch.innerHTML=[['example','Give me a real-world example'],['simple','Explain it more simply']].concat(S.course==='onb'?[]:[['deep','Create assessment']]).map(([k,l])=>`<button data-act="chip" data-k="${k}">${esc(l)}</button>`).join('');
  scrollChat();
 }
 function setStage(){
@@ -973,7 +973,7 @@ function ask(text,forced){
   reply={role:'ai',kind:'quiz',items:(c.practice||COURSES.sec.practice).filter(p=>p.type==='mc').slice(0,3),ans:[null,null,null]};
  }else if(forced==='example'||forced==='simple'){
   const qa=c.qa[S.last[S.course]];
-  msgs.push({role:'user',text:forced==='example'?'Give me an example from my job':'Explain it more simply'});
+  msgs.push({role:'user',text:forced==='example'?'Give me a real-world example':'Explain it more simply'});
   reply={role:'ai',kind:'answer',text:forced==='example'?qa.ex:qa.simple,src:qa.src,pass:qa.pass};
  }else{
   msgs.push({role:'user',text});
