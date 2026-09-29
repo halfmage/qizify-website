@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import FAQ from '../components/FAQ.astro';
 import Footer from '../components/Footer.astro';
+import TutorChatAnimation from '../components/TutorChatAnimation.astro';
 import enContent from '../content/en.json';
 
 const lang = 'en';
@@ -142,8 +143,8 @@ const INPUT =
 	<!-- Hero -->
 	<section class="relative pt-32 pb-12 md:pb-16 px-6 md:px-8 overflow-hidden">
 		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[420px] opacity-25 pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.25) 0%, transparent 70%);"></div>
-		<div class="max-w-container mx-auto relative z-10">
-			<div class="max-w-[760px]">
+		<div class="max-w-container mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_460px] gap-12 xl:gap-16 items-center">
+			<div class="max-w-[720px]">
 				<span class="section-label mb-5 block">For training providers in the US</span>
 				<p id="prepared-for" class="hidden mb-5 text-sm text-muted">
 					Demo prepared for <strong id="prepared-name" class="text-white font-semibold"></strong>
@@ -168,6 +169,9 @@ const INPUT =
 					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Co-developed with FH Dortmund in research funded by the German government</li>
 					<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true"></span>Engineering team in Germany and Poland</li>
 				</ul>
+			</div>
+			<div class="hidden lg:block">
+				<TutorChatAnimation />
 			</div>
 		</div>
 	</section>
