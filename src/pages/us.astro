@@ -7,6 +7,8 @@ import HeroProductStage from '../components/HeroProductStage.astro';
 import enContent from '../content/en.json';
 
 const lang = 'en';
+// Direct booking. Linked, not embedded, so no third-party script loads on the page.
+const CALENDLY = 'https://calendly.com/learnslice-team/30min';
 const currentPath = '/us';
 
 // US landing page for training providers. The live demo is the static file
@@ -84,7 +86,7 @@ const faq = [
 	},
 	{
 		question: 'What does a pilot cost?',
-		answer: 'The pilot has a fixed price in US dollars. We quote it after a 20-minute call, once we know the size of the course and the number of learners.',
+		answer: 'The pilot has a fixed price in US dollars. We quote it after a 30-minute call, once we know the size of the course and the number of learners.',
 	},
 	{
 		question: 'How long does setup take?',
@@ -192,8 +194,8 @@ const INPUT =
 					Use our ready-made AI tutor under your academy’s name, or have us build your own learning platform. Senior engineers at European rates, no US agency overhead.
 				</p>
 				<div class="flex flex-wrap gap-3">
-					<a href="#book" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
-						Book a 20-minute call
+					<a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
+						Book a 30-minute call
 					</a>
 					<a href="#demo" class="inline-flex items-center justify-center px-5 py-2.5 border border-border-light text-white text-sm font-medium rounded-lg hover:bg-surface transition-colors">
 						Try the live demo
@@ -255,7 +257,7 @@ const INPUT =
 			</div>
 			<div class="mt-8 flex flex-wrap items-center justify-between gap-4 px-2 md:px-0">
 				<p class="text-base text-white m-0">Seen enough? See it on one of your own modules.</p>
-				<a href="#book" data-interest="pilot" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Book a 20-minute call</a>
+				<a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">Book a 30-minute call</a>
 			</div>
 		</div>
 	</section>
@@ -389,9 +391,19 @@ const INPUT =
 		<div class="max-w-2xl mx-auto">
 			<span class="section-label mb-4 block">Book a call</span>
 			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">See the tutor on one of your own modules</h2>
-			<p class="text-base text-muted leading-relaxed m-0 mb-10">
-				Tell us what you teach. In a 20-minute call, we show you the tutor and agree on the next step: a pilot on one of your modules, or a scope for your custom project. Alesia Kunz, our CEO, will get back to you with a few time slots between 9 AM and noon US Eastern.
+			<p class="text-base text-muted leading-relaxed m-0 mb-8">
+				In a 30-minute call with Alesia Kunz, our CEO, we show you the tutor and agree on the next step: a pilot on one of your modules, or a scope for your custom project.
 			</p>
+			<div class="bg-surface border border-border rounded-xl p-6 md:p-8 flex flex-wrap items-center justify-between gap-5 mb-10">
+				<div>
+					<p class="text-base font-semibold text-white m-0 mb-1">Pick a time that suits you</p>
+					<p class="text-sm text-muted m-0">Calendly shows the open times in your own time zone.</p>
+				</div>
+				<a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors">
+					Book a 30-minute call ↗
+				</a>
+			</div>
+			<p class="text-sm text-muted m-0 mb-4">Prefer to write first? Send us a message and we’ll get back to you.</p>
 
 			<!-- Netlify form detection stub. The visible form below posts via fetch. -->
 			<form name="us-pilot-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="hidden">
@@ -447,11 +459,11 @@ const INPUT =
 					<span>I agree that LearnSlice may contact me about this request. See our <a href="/privacy" class="text-primary hover:text-white">privacy policy</a>.</span>
 				</label>
 				<button type="submit" class="inline-flex items-center justify-center px-5 py-3 bg-primary text-white text-sm font-medium rounded-lg hover:bg-[#6a4ae0] transition-colors disabled:opacity-60">
-					Request a call
+					Send message
 				</button>
 				<div id="us-error" class="hidden p-3 rounded-lg text-sm bg-red-500/10 border border-red-500/20 text-red-300" role="alert"></div>
 				<div id="us-success" class="hidden p-3 rounded-lg text-sm bg-green-500/10 border border-green-500/20 text-green-300" role="status">
-					Thanks. We’ll get back to you with a few time slots.
+					Thanks. We’ll get back to you shortly. If you’d rather pick a time now, <a href={CALENDLY} data-calendly target="_blank" rel="noopener" class="underline">book a call in Calendly</a>.
 				</div>
 			</form>
 		</div>
@@ -488,6 +500,15 @@ const INPUT =
 		const org = document.getElementById('us-org') as HTMLInputElement | null;
 		if (org && !org.value) org.value = academy;
 	}
+
+	// Tag Calendly links so bookings show where they came from, incl. the personalized academy.
+	document.querySelectorAll<HTMLAnchorElement>('a[data-calendly]').forEach((link) => {
+		const url = new URL(link.href);
+		url.searchParams.set('utm_source', 'learnslice.com');
+		url.searchParams.set('utm_campaign', 'us-landing');
+		if (academy) url.searchParams.set('utm_content', academy);
+		link.href = url.toString();
+	});
 
 	// Buttons in the offer cards preselect what the visitor is interested in.
 	document.querySelectorAll<HTMLAnchorElement>('a[data-interest]').forEach((link) => {
