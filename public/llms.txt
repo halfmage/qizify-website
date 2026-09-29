@@ -102,6 +102,7 @@ Reference customers include FH Dortmund, the University of Cologne, and Carl-Sev
 - German: https://learnslice.com/de/
 - Custom e-learning development and engineering services: https://learnslice.com/solutions
 - Individuelle E-Learning-Entwicklung: https://learnslice.com/de/loesungen
+- AI tutor for US training providers, with live demo: https://learnslice.com/us
 - Research and evidence: https://learnslice.com/research
 - Blog: https://learnslice.com/blog
 - Demo: https://learnslice.com/#demo-request
