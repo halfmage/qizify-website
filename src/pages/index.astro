@@ -46,28 +46,7 @@ const currentPath = '/';
 		stats={enContent.hero.stats}
 		currentLang={lang}
 	>
-		<Fragment slot="belowHero">
-			<TrustBar currentLang={lang} center={true} />
-			<!-- TEMPORARY guide block. Quiet on purpose: the announcement bar above the header
-			     (Header.astro) does the advertising, this is only a small pointer with a link.
-			     TO REMOVE: delete this div and unwrap the Fragment back to
-			     <TrustBar slot="belowHero" currentLang={lang} center={true} />. Nothing else depends on it. -->
-			<div class="max-w-container mx-auto px-6 lg:px-8 pt-8">
-				<div class="max-w-3xl mx-auto flex flex-col sm:flex-row sm:items-center gap-x-6 gap-y-2 border border-border rounded-xl px-5 py-4">
-					<div class="flex-1">
-						<p class="text-sm text-white font-medium m-0">
-							Free AI guides for product managers and product owners
-						</p>
-						<p class="text-sm text-muted m-0 mt-0.5">
-							Practical, ready to apply, and built to improve your daily work. Thirty minutes a week is enough to start.
-						</p>
-					</div>
-					<a href="/ai-guides" class="text-sm text-primary hover:text-white transition-colors whitespace-nowrap shrink-0">
-						Read them &rsaquo;
-					</a>
-				</div>
-			</div>
-		</Fragment>
+		<TrustBar slot="belowHero" currentLang={lang} center={true} />
 	</Hero>
 
 	<LogosSlider
