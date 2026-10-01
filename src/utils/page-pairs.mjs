@@ -68,6 +68,8 @@ export const DE_ONLY = new Set([
 	'/de/digital-readiness-check',
 	// AZAV/BFSG cluster posts (German-law-specific), no English counterpart.
 	'/de/blog/azav-digitalisierung-bildungstraeger',
+	// Defence campaign pillar (Q4 2026). EN pair planned; move to EN_TO_DE once it ships.
+	'/de/blog/ausbildung-ruestungsindustrie',
 ]);
 
 const DE_TO_EN = Object.fromEntries(
