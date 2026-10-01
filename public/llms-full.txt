@@ -19,7 +19,7 @@ AI learning paths plus your company knowledge, from onboarding to IHK exam.
 
 ## Training Is Broken. The Numbers Prove It.
 
-30% of apprentices drop out before completing their training. Trainers spend 12 hours a week per apprentice on repetitive tasks. And every failed apprenticeship costs companies €20,000 to €35,000. The problem isn't effort. It's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale.
+29.7% of apprenticeship contracts in Germany end early, two thirds of them in the first year (BIBB, 2024). Trainers spend 12 hours a week per apprentice on repetitive tasks. And each apprentice is an investment of about €26,200 a year (BIBB). The problem isn't effort. It's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale.
 
 ## About €26,200 per Apprentice, Every Year. Make That Investment Count.
 
@@ -32,8 +32,8 @@ AI learning paths plus your company knowledge, from onboarding to IHK exam.
 
 ### Companies With LearnSlice
 
-- An AI tutor on your own training material, available between sessions
-- Trainers see early who is falling behind
+- 65% faster to productivity (~6 months → 8 weeks)
+- 50% less trainer time
 - Less routine explaining, more time for real coaching
 - Calculate your own figures with our BIBB-based calculator
 
@@ -227,7 +227,7 @@ KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.
 
 ## Ausbildung ist kaputt. Die Zahlen belegen es.
 
-30 % der Azubis brechen ihre Ausbildung ab. Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder gescheiterte Ausbildungsvertrag kostet Unternehmen €20.000 bis €35.000. Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind.
+29,7 % der Ausbildungsverträge werden vorzeitig gelöst, zwei Drittel davon im ersten Ausbildungsjahr (BIBB, 2024). Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder Azubi ist eine Investition von rund 26.200 € pro Jahr (BIBB). Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind.
 
 ## Rund 26.200 € pro Azubi, jedes Jahr. Machen Sie mehr aus dieser Investition.
 
@@ -240,8 +240,8 @@ KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.
 
 ### Unternehmen mit LearnSlice
 
-- KI-Tutor auf Ihren eigenen Ausbildungsunterlagen, auch zwischen den Terminen.
-- Ausbilder sehen früh, wer den Anschluss verliert.
+- 65 % schneller einsatzbereit (~6 Monate → 8 Wochen).
+- 50 % weniger Ausbilderzeit.
 - Weniger Routinefragen, mehr Zeit für echte Begleitung.
 - Eigene Zahlen berechnen mit unserem Rechner auf BIBB-Basis.
 

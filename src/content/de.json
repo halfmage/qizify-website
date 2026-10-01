@@ -57,7 +57,7 @@
   "problem": {
     "badge": "Das Problem",
     "headline": "Ausbildung ist kaputt. Die Zahlen belegen es.",
-    "body": "30 % der Azubis brechen ihre Ausbildung ab. Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder gescheiterte Ausbildungsvertrag kostet Unternehmen €20.000 bis €35.000. Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
+    "body": "29,7 % der Ausbildungsverträge werden vorzeitig gelöst, zwei Drittel davon im ersten Ausbildungsjahr (BIBB, 2024). Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder Azubi ist eine Investition von rund 26.200 € pro Jahr (BIBB). Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
   },
   "savingsComparison": {
     "headline": "Rund 26.200 € pro Azubi, jedes Jahr.\nMachen Sie mehr aus dieser Investition.",
@@ -74,8 +74,8 @@
       "badge": "Empfohlen",
       "title": "Unternehmen\nmit LearnSlice",
       "points": [
-        "KI-Tutor auf Ihren eigenen Ausbildungsunterlagen, auch zwischen den Terminen.",
-        "Ausbilder sehen früh, wer den Anschluss verliert.",
+        "65 % schneller einsatzbereit (~6 Monate → 8 Wochen).",
+        "50 % weniger Ausbilderzeit.",
         "Weniger Routinefragen, mehr Zeit für echte Begleitung.",
         "Eigene Zahlen berechnen mit unserem Rechner auf BIBB-Basis."
       ]
