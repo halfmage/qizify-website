@@ -183,7 +183,7 @@ Most apprentices log in voluntarily multiple times per week once the first two-w
 
 Yes. 100% GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise.
 
-### How does this help reduce dropout and trainer load?
+### How does this help with early contract cancellations and trainer load?
 
 Targeted, practice-led learning shortens ramp time, reduces friction and keeps talent engaged, freeing senior staff to focus on strategic work. According to BIBB, an apprentice costs a company about €26,200 a year on average (2022/23). Our savings calculator shows, based on BIBB averages and your own assumptions, what fewer early cancellations and less trainer time can be worth.
 
@@ -390,7 +390,7 @@ Die meisten Azubis loggen sich nach den ersten zwei Wochen freiwillig mehrmals p
 
 Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders.
 
-### Wie hilft LearnSlice, Abbrüche und Traineraufwand zu reduzieren?
+### Wie hilft LearnSlice bei vorzeitigen Vertragslösungen und Ausbilderaufwand?
 
 Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert, während Ausbilder entlastet werden. Laut BIBB kostet ein Azubi einen Betrieb im Schnitt rund 26.200 € pro Jahr (2022/23). Unser Einsparungsrechner zeigt auf Basis der BIBB-Durchschnitte und Ihrer eigenen Annahmen, was weniger vorzeitige Vertragslösungen und weniger Ausbilderzeit wert sein können.
 
