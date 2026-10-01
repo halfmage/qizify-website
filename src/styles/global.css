@@ -175,7 +175,11 @@
 	   internal type larger than the article's own headings. Cap them at the width
 	   they were drawn for and centre them. Photos (.webp/.jpg) still go full width. */
 	.prose img[src$=".svg"] {
-		max-width: 520px;
+		/* min() keeps the cap on desktop but lets the chart shrink with the column
+		   on phones; a bare 520px replaced the base max-width:100% and the chart
+		   overflowed the ~342px column, clipped by body overflow-x:hidden. */
+		max-width: min(520px, 100%);
+		height: auto;
 		margin-left: auto;
 		margin-right: auto;
 	}
