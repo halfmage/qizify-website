@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="630" viewBox="0 0 520 630" role="img" aria-label="Dot chart: share of apprenticeship contracts cancelled early, 2022 and 2024, in eight metal and electrical trades. Up for metal fabricators from 26.8 to 27.8 percent, CNC machinists 21.8 to 26.0, electronics technicians for devices and systems 16.3 to 19.8, industrial electricians 14.3 to 18.6, industrial mechanics 12.3 to 16.2, mechatronics technicians 10.5 to 14.5, electronics technicians for automation 10.6 to 13.0. Down for aircraft mechanics from 13.7 to 12.3 percent. Source: BIBB, Germany, all industries.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a1a1aa"/></marker></defs>
+  <rect x="0" y="0" width="520" height="630" rx="16" fill="#18181b"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">In 7 of 8 trades, more contracts end early</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">Share of apprenticeship contracts cancelled early, 2022 and</text>
+  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">2024</text>
+  <text x="24" y="112" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Metal fabricator</text>
+  <line x1="24" y1="130" x2="432" y2="130" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="388.5" y1="130" x2="402.1" y2="130" stroke="#cc7a3e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="388.5" cy="130" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="402.1" cy="130" r="7" fill="#cc7a3e"/>
+  <text x="496" y="135" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">27.8%</text>
+  <text x="24" y="162" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">CNC machinist</text>
+  <line x1="24" y1="180" x2="432" y2="180" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="320.5" y1="180" x2="377.6" y2="180" stroke="#cc7a3e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="320.5" cy="180" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="377.6" cy="180" r="7" fill="#cc7a3e"/>
+  <text x="496" y="185" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">26.0%</text>
+  <text x="24" y="212" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Electronics tech., devices and systems</text>
+  <line x1="24" y1="230" x2="432" y2="230" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="245.7" y1="230" x2="293.3" y2="230" stroke="#cc7a3e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="245.7" cy="230" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="293.3" cy="230" r="7" fill="#cc7a3e"/>
+  <text x="496" y="235" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">19.8%</text>
+  <text x="24" y="262" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Industrial electrician</text>
+  <line x1="24" y1="280" x2="432" y2="280" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="218.5" y1="280" x2="277.0" y2="280" stroke="#cc7a3e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="218.5" cy="280" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="277.0" cy="280" r="7" fill="#cc7a3e"/>
+  <text x="496" y="285" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">18.6%</text>
+  <text x="24" y="312" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Industrial mechanic</text>
+  <line x1="24" y1="330" x2="432" y2="330" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="191.3" y1="330" x2="244.3" y2="330" stroke="#cc7a3e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="191.3" cy="330" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="244.3" cy="330" r="7" fill="#cc7a3e"/>
+  <text x="496" y="335" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">16.2%</text>
+  <text x="24" y="362" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Mechatronics technician</text>
+  <line x1="24" y1="380" x2="432" y2="380" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="166.8" y1="380" x2="221.2" y2="380" stroke="#cc7a3e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="166.8" cy="380" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="221.2" cy="380" r="7" fill="#cc7a3e"/>
+  <text x="496" y="385" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">14.5%</text>
+  <text x="24" y="412" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Electronics tech., automation</text>
+  <line x1="24" y1="430" x2="432" y2="430" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="168.2" y1="430" x2="200.8" y2="430" stroke="#cc7a3e" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="168.2" cy="430" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="200.8" cy="430" r="7" fill="#cc7a3e"/>
+  <text x="496" y="435" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600" text-anchor="end">13.0%</text>
+  <text x="24" y="462" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Aircraft mechanic</text>
+  <line x1="24" y1="480" x2="432" y2="480" stroke="#3f3f46" stroke-width="2"/>
+  <line x1="191.3" y1="480" x2="210.3" y2="480" stroke="#a1a1aa" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="210.3" cy="480" r="6" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <circle cx="191.3" cy="480" r="7" fill="#a1a1aa"/>
+  <text x="496" y="485" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#a1a1aa" font-weight="600" text-anchor="end">12.3%</text>
+  <text x="24.0" y="508" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#a1a1aa" text-anchor="middle">0%</text>
+  <text x="160.0" y="508" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#a1a1aa" text-anchor="middle">10%</text>
+  <text x="296.0" y="508" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#a1a1aa" text-anchor="middle">20%</text>
+  <text x="432.0" y="508" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#a1a1aa" text-anchor="middle">30%</text>
+  <circle cx="30" cy="528" r="5" fill="#18181b" stroke="#a1a1aa" stroke-width="2.5"/>
+  <text x="42" y="533" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">2022</text>
+  <circle cx="100" cy="528" r="6" fill="#cc7a3e"/>
+  <text x="112" y="533" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">2024, up</text>
+  <circle cx="204" cy="528" r="6" fill="#a1a1aa"/>
+  <text x="216" y="533" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">2024, down</text>
+  <text x="24" y="570" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Source: BIBB data sheets, reporting year 2024. Contract</text>
+  <text x="24" y="588" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">cancellation rate (Lösungsquote), Germany, all industries. Not a</text>
+  <text x="24" y="606" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">dropout rate.</text>
+</svg>

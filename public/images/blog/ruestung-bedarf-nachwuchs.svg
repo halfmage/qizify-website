@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="417" viewBox="0 0 520 417" role="img" aria-label="Comparison: Germany&#x27;s defence industry posted 22 percent more job ads in the first half of 2026 than a year earlier, about 4,700. In the classic metal and electrical trades, 9.1 percent fewer apprenticeship contracts were signed in 2025 than in 2024, about 25,800. Sources: Index Research, IG Metall.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a1a1aa"/></marker></defs>
+  <rect x="0" y="0" width="520" height="417" rx="16" fill="#18181b"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">More demand, fewer apprentices</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">Defence job ads and new apprenticeship contracts in metal and</text>
+  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">electrical trades, Germany</text>
+  <rect x="24" y="100" width="472" height="103" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="44" y="165.5" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="40" fill="#e8b07a" font-weight="600">+22%</text>
+  <text x="214" y="132" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">Job ads in the defence industry</text>
+  <text x="214" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">about 4,700 in the first half of 2026,</text>
+  <text x="214" y="173" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">compared with a year earlier</text>
+  <rect x="24" y="215" width="472" height="122" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="44" y="290.0" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="40" fill="#a1a1aa" font-weight="600">−9.1%</text>
+  <text x="214" y="247" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">New metal and electrical</text>
+  <text x="214" y="266" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">apprenticeship contracts</text>
+  <text x="214" y="289" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">about 25,800 in 2025, compared with</text>
+  <text x="214" y="307" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">2024</text>
+  <text x="24" y="375" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Sources: Index Research (26 Aug 2026), IG Metall apprenticeship</text>
+  <text x="24" y="393" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">report 2025 (5 Mar 2026).</text>
+</svg>
