@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="436" viewBox="0 0 520 436" role="img" aria-label="Gegenüberstellung: Die Rüstungsindustrie hat im ersten Halbjahr 2026 22 Prozent mehr Stellen ausgeschrieben als im Vorjahr, rund 4.700. In den klassischen Metall- und Elektroberufen wurden 2025 9,1 Prozent weniger Ausbildungsverträge geschlossen als 2024, rund 25.800. Quellen: Index Research, IG Metall Ausbildungsbilanz.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a1a1aa"/></marker></defs>
+  <rect x="0" y="0" width="520" height="436" rx="16" fill="#18181b"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">Mehr Bedarf, weniger Nachwuchs</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">Stellen in der Rüstungsindustrie und neue Ausbildungsverträge</text>
+  <text x="24" y="78" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">in Metall- und Elektroberufen</text>
+  <rect x="24" y="100" width="472" height="122" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="44" y="175.0" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="40" fill="#e8b07a" font-weight="600">+22 %</text>
+  <text x="214" y="132" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">Stellenanzeigen der</text>
+  <text x="214" y="151" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">Rüstungsindustrie</text>
+  <text x="214" y="174" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">rund 4.700 im ersten Halbjahr 2026,</text>
+  <text x="214" y="192" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">im Vergleich zum Vorjahr</text>
+  <rect x="24" y="234" width="472" height="122" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="44" y="309.0" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="40" fill="#a1a1aa" font-weight="600">−9,1 %</text>
+  <text x="214" y="266" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">Neue Ausbildungsverträge Metall</text>
+  <text x="214" y="285" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">und Elektro</text>
+  <text x="214" y="308" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">rund 25.800 im Jahr 2025, im</text>
+  <text x="214" y="326" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Vergleich zu 2024</text>
+  <text x="24" y="394" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Quellen: Index Research (26.08.2026), IG Metall Ausbildungsbilanz</text>
+  <text x="24" y="412" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">auf Basis von BIBB-Daten (05.03.2026).</text>
+</svg>
