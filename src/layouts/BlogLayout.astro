@@ -24,10 +24,11 @@ interface Props {
 	keyTakeaways?: string[];
 	faq?: { q: string; a: string }[];
 	ctaVariant?: 'demo' | 'consultation' | 'guide';
+	ctaFooter?: { label?: string; headline: string; subheadline: string; button: string };
 	heroImage?: string;
 }
 
-const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo', heroImage } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo', ctaFooter, heroImage } = Astro.props;
 
 // Byline role. Defaults to the content-team title the existing named posts were
 // written under, so those are unchanged; anyone else sets authorRole explicitly.
@@ -126,6 +127,15 @@ const footerCta = isGuide
 		button: lang === 'en' ? 'Get a project quote' : 'Angebot anfragen',
 		note: content.solutions.cta.note,
 		href: '#project-inquiry',
+	}
+	: ctaFooter
+	? {
+		label: ctaFooter.label,
+		headline: ctaFooter.headline,
+		subheadline: ctaFooter.subheadline,
+		button: ctaFooter.button,
+		note: undefined,
+		href: '#demo-request',
 	}
 	: {
 		headline: content.cta.headline,
@@ -367,6 +377,7 @@ const blogPostingSchema = {
 	)}
 
 	<CTAFooter
+		label={'label' in footerCta ? footerCta.label : undefined}
 		headline={footerCta.headline}
 		subheadline={footerCta.subheadline}
 		button={footerCta.button}
