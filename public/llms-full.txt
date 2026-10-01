@@ -96,7 +96,7 @@ Points, badges, and leaderboards turn daily practice into a motivating experienc
 ### Companies (CEOs · HR · Trainers)
 
 - Up to 65 % faster time-to-productivity. New hires work on real, job-critical tasks using your company knowledge from day one - not generic training content.
-- Up to 15 % fewer dropouts during onboarding and apprenticeship. Personalised learning paths and continuous AI feedback keep apprentices and early-career talent on track.
+- Up to 15 % fewer early contract cancellations and onboarding departures. Personalised learning paths and continuous AI feedback keep apprentices and early-career talent on track.
 - Up to 50 % less training effort for senior teams.
 
 The AI mentor handles standard knowledge and daily practice: experts focus on value creation, not basic instruction.
@@ -112,7 +112,7 @@ The AI mentor provides daily guidance and standard instruction, enabling compani
 ### Schools (Vocational Colleges · Schools)
 
 - 15-25% higher transition rate into apprenticeship and employment. Practice-oriented learning paths make students job-ready from day one. Vocational schools stand out with high-level job preparation.
-- 30 % fewer dropouts in the first year of apprenticeship.
+- Up to 30 % fewer early contract cancellations in the first year of apprenticeship, the year in which two thirds of all cancellations happen (BIBB).
 - Up to 25 % time saved for teachers. Automated exercises, simulations and feedback reduce preparation and grading workload.
 
 Early skills diagnostics and individual AI coaching prevent overload and disengagement.
@@ -303,7 +303,7 @@ Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Er
 ### Unternehmen (CEOs · HR · Ausbilder)
 
 - Bis zu 65 % schnellere Einsatzbereitschaft. Neue Mitarbeitende bearbeiten ab Tag 1 echte, jobkritische Aufgaben mit Ihrem Unternehmenswissen - keine generischen Trainingsinhalte.
-- Bis zu 15 % weniger Abbrüche beim Onboarding & in der Ausbildung. Personalisierte Lernpfade und kontinuierliches KI-Feedback halten Azubis und Nachwuchskräfte auf Kurs.
+- Bis zu 15 % weniger vorzeitige Vertragslösungen und Abgänge im Onboarding. Personalisierte Lernpfade und kontinuierliches KI-Feedback halten Azubis und Nachwuchskräfte auf Kurs.
 - Bis zu 50 % weniger Schulungsaufwand für erfahrene Teams.
 
 Der KI-Mentor übernimmt Standardwissen und Routinepraxis. Erfahrene Mitarbeitende konzentrieren sich auf Wertschöpfung.
@@ -319,7 +319,7 @@ Der KI-Mentor liefert tägliche Anleitung und Standardwissen, sodass Unternehmen
 ### Schulen (Berufsschulen · Schulen)
 
 - 15-25 % höhere Übergangsquote in Ausbildung und Job. Praxisnahe Lernpfade machen Schüler sofort einsetzbar. Berufsschulen glänzen mit zusätzlicher Jobvorbereitung.
-- 30 % weniger Abbrüche im ersten Ausbildungsjahr.
+- Bis zu 30 % weniger vorzeitige Vertragslösungen im ersten Ausbildungsjahr, in dem zwei Drittel aller Lösungen passieren (BIBB).
 - Bis zu 25 % Zeitersparnis für Lehrkräfte. Automatisierte Übungen, Simulationen und Feedback reduzieren Vorbereitungs- und Korrekturaufwand.
 
 Frühe Kompetenzdiagnose und individuelles KI-Coaching verhindern Überlastung und Demotivation.
