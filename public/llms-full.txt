@@ -3055,11 +3055,11 @@ Step-by-step guide to digitizing vocational training in your company - from lear
 
 ## Why Digitize Apprenticeship Training?
 
-German companies spend **€20,000 to €35,000 per apprentice per year** in gross training costs (source: [BIBB](https://www.bibb.de) cost-benefit survey). Despite this investment, around 30% of training contracts are dissolved before completion (BIBB 2022). Each dropout can cost a company €8,000 to €23,000 in lost investment and recruitment costs.
+German companies spend about **€26,200 per apprentice per year** in gross training costs ([BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)). Despite this investment, 29.7% of training contracts were cancelled early in 2024 ([BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)). Each of those contracts takes the training investment made so far with it.
 
 The root causes are often the same: overloaded trainers who cannot provide enough individual attention, inconsistent knowledge transfer, and apprentices who feel unsupported. Digitization addresses all three problems simultaneously - not by replacing human trainers, but by giving them better tools.
 
-Based on our analysis, companies that digitize their training programs can save **up to €17,000 per apprentice** through reduced trainer workload, faster onboarding, and lower dropout rates. Here is a step-by-step guide to making it happen.
+Digitizing training pays off where the costs sit: according to BIBB, an apprentice costs a company about **€26,200 a year** on average, and 29.7% of apprenticeship contracts end early. Less trainer workload, faster onboarding and fewer early cancellations all protect that investment. Here is a step-by-step guide to making it happen.
 
 ## What to Digitize: The Four Pillars
 
@@ -3154,14 +3154,7 @@ If trainers feel that the new tools are imposed on them, adoption will fail. Inv
 
 ## The ROI of Digital Training
 
-Based on the assumptions in our [Savings Calculator](/apprenticeship-savings-calculator) (5 apprentices, €45/hr trainer cost, €8K recruiting cost):
-
-- **Trainer time saved:** 200 hours per apprentice at €45/hour = €9,000/year
-- **Faster onboarding:** 4 months earlier productivity = €5,000/year
-- **Reduced dropouts:** Lowering the rate from 30% to 15% = €3,450/year
-- **Total:** Up to €17,450 per apprentice per year
-
-For a team of 5 apprentices, that adds up to over €87,000 in annual savings. [Calculate your personalized estimate](/apprenticeship-savings-calculator).
+According to the [BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php), an apprentice costs a company about €26,200 a year on average. Our [savings calculator](/apprenticeship-savings-calculator) shows what less trainer time and fewer early contract cancellations can be worth for you: with its default values, about €13,216 a year for 5 new apprentices, and up to €19,687 at the upper end of our customer results. These are estimates, not guaranteed results. [Calculate your personalized estimate](/apprenticeship-savings-calculator).
 
 ## Getting Started
 
@@ -3187,7 +3180,7 @@ Help your apprentices pass their IHK exam with these 10 proven strategies - from
 
 The [IHK](https://www.ihk.de) final exam (Abschlussprufung) is the culmination of every apprenticeship in Germany. It determines whether an apprentice earns their professional qualification - and for companies, it reflects directly on training quality.
 
-Yet many apprentices struggle with exam preparation. They start too late, focus on the wrong topics, or simply do not know how to study effectively. With training costs of **€20,000 to €35,000 per apprentice per year** ([BIBB](https://www.bibb.de)) and a contract dissolution rate of around 30% (BIBB 2022), a failed exam is an expensive outcome for everyone involved.
+Yet many apprentices struggle with exam preparation. They start too late, focus on the wrong topics, or simply do not know how to study effectively. With training costs of about **€26,200 per apprentice per year** ([BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)) and 29.7% of training contracts cancelled early in 2024 ([BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)), a failed exam is an expensive outcome for everyone involved.
 
 The good news: exam success is largely a matter of strategy. Here are 10 proven tips that trainers and apprentices can apply immediately.
 
@@ -3264,7 +3257,7 @@ Many apprentices run out of time because they spend too long on difficult questi
 
 Many apprentices underestimate the support available to them. Talk to your trainer about which topics to prioritize. Ask colleagues who passed the exam recently for their advice. If your company uses a learning platform, make full use of it - the analytics alone can save weeks of unfocused studying.
 
-Companies that invest in digital training tools give their apprentices a significant advantage. Based on our analysis, savings of **up to €17,000 per apprentice** are possible when platforms reduce trainer workload, accelerate learning, and improve pass rates. [Calculate your company's potential savings](/apprenticeship-savings-calculator).
+Companies that invest in digital training tools give their apprentices a significant advantage. With an apprentice costing about €26,200 a year on average (BIBB), platforms that reduce trainer workload and help apprentices learn more effectively protect a substantial investment. [Calculate your company's potential savings](/apprenticeship-savings-calculator).
 
 ## Study Timeline: From 6 Months to Exam Day
 
@@ -3292,7 +3285,7 @@ Exam success is not just the apprentice's responsibility. Companies play a criti
 
 IHK exam success comes down to starting early, studying smart, and using the right tools. The days of relying solely on textbooks and last-minute cramming are over. Digital platforms that generate practice questions modeled on IHK topic areas and format, combined with AI coaching that adapts to individual learning needs, give apprentices the best possible chance of passing.
 
-For companies, supporting exam preparation is not just about the pass rate - it is about protecting the **€20,000 to €35,000** already invested in each apprentice and building a reputation as an employer that develops talent successfully.
+For companies, supporting exam preparation is not just about the pass rate - it is about protecting the investment already made in each apprentice, about **€26,200 a year** on average (BIBB), and building a reputation as an employer that develops talent successfully.
 
 **Give your apprentices the best chance of IHK exam success.** [Book a free demo of LearnSlice](/companies) to see how AI-powered exam preparation works, or use our [Savings Calculator](/apprenticeship-savings-calculator) to see the ROI of investing in digital training tools.
 
@@ -3560,9 +3553,9 @@ How AI-powered learning platforms are transforming vocational training in German
 
 ## Why AI Is Changing Vocational Training
 
-Germany's dual vocational training system is renowned worldwide, but companies are struggling with rising contract dissolution rates (currently around 30% according to [BIBB](https://www.bibb.de)), a shortage of skilled workers, and overburdened trainers. AI offers concrete solutions - not as a replacement for human trainers, but as a powerful complement.
+Germany's dual vocational training system is renowned worldwide, but companies are struggling with a high share of training contracts cancelled early (29.7% in 2024 according to the [BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)), a shortage of skilled workers, and overburdened trainers. AI offers concrete solutions - not as a replacement for human trainers, but as a powerful complement.
 
-The numbers tell the story: companies spend **€20,000 to €35,000 per apprentice per year** in gross training costs (source: BIBB cost-benefit survey), and nearly one in three training contracts is dissolved before completion. That's a massive drain on resources that AI can help reduce.
+The numbers tell the story: companies spend about **€26,200 per apprentice per year** in gross training costs ([BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)), and 29.7% of training contracts were cancelled early in 2024 ([BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)). That's a significant drain on resources that AI can help reduce.
 
 ## What AI Can Actually Do in Apprenticeship Training
 
@@ -3593,9 +3586,9 @@ Beyond IHK exam preparation, companies can integrate their own documents, proces
 | Time to productivity | 4 to 6 months | As little as 2 months |
 | Trainer hours saved/year | - | Up to 200 hours |
 | Contract dissolution rate | ~30% | Target: 15% |
-| Annual savings per apprentice | - | Up to €17K* |
+| Annual savings per apprentice | - | About €2,600 to €3,900* |
 
-*\*Based on default assumptions in our [Savings Calculator](/apprenticeship-savings-calculator). Actual results vary by company size, industry, and configuration.*
+*\*Estimate from our [Savings Calculator](/apprenticeship-savings-calculator): BIBB cost averages, 20% fewer early contract cancellations and 30% (conservative) to 50% (upper end of our customer results) less trainer time. Actual results vary by company size, industry, and configuration.*
 
 ## What Makes a Genuine AI-Based Learning Platform Different
 
@@ -3883,7 +3876,7 @@ Use the analytics features to identify patterns. Are certain apprentices consist
 
 The direct costs of paper logbooks are small - paper, printing, storage. But the indirect costs are substantial. Trainer time spent collecting, reviewing, and chasing incomplete logbooks adds up to **2-4 hours per week** across a typical cohort. At €45/hour, that is **€4,680 to €9,360 per year** in trainer time alone.
 
-Digital logbooks can cut review time by an estimated 50-70%, while improving documentation quality and ensuring IHK compliance. When factored into the broader cost of apprenticeship training - **€20,000 to €35,000 per apprentice per year** according to [BIBB](https://www.bibb.de) - every efficiency gain matters. Companies that digitize their training processes comprehensively can save **up to €17,000 per apprentice** annually, based on our analysis.
+Digital logbooks can cut review time by an estimated 50-70%, while improving documentation quality and ensuring IHK compliance. Set against the broader cost of apprenticeship training, about **€26,200 per apprentice per year** according to the [BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php), every efficiency gain matters. Our [savings calculator](/apprenticeship-savings-calculator) shows what less trainer time and fewer early contract cancellations could be worth for your company.
 
 Curious about your specific savings potential? Try our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator).
 
@@ -4055,7 +4048,7 @@ What AI tools are available for apprenticeship training? From chatbots and learn
 
 ## Why AI Tools Matter for Apprenticeship Training
 
-Apprenticeship training in Germany is under pressure. Gross training costs per apprentice range from **€20,000 to €35,000 per year** ([BIBB](https://www.bibb.de) cost-benefit survey), while the contract dissolution rate sits at roughly **30%** (BIBB 2022). Training managers are expected to do more with less - from onboarding and daily supervision to exam preparation.
+Apprenticeship training in Germany is under pressure. Gross training costs average about **€26,200 per apprentice per year** ([BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)), while **29.7%** of training contracts were cancelled early in 2024 ([BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)). Training managers are expected to do more with less - from onboarding and daily supervision to exam preparation.
 
 Artificial intelligence can provide meaningful relief. Not as a replacement for human trainers, but as a tool that handles repetitive tasks, builds personalized learning paths, and automatically identifies knowledge gaps. The market for AI tools in education is growing rapidly - but which categories exist, and what should companies look for?
 
@@ -4178,7 +4171,7 @@ AI tools work best when trainers actively use them and integrate them into their
 
 ### Measure ROI
 
-Define from the start which metrics you want to improve: trainer time saved, exam pass rates, onboarding duration, dropout rate. Companies using AI-powered learning platforms can save, based on our analysis, **up to €17,000 per apprentice** in costs. Calculate your potential with our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator).
+Define from the start which metrics you want to improve: trainer time saved, exam pass rates, onboarding duration, dropout rate. For the business case, start from the cost: according to the [BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php), an apprentice costs about €26,200 a year. Calculate what better support could save with our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator).
 
 ### Roll Out Gradually
 
@@ -6852,9 +6845,9 @@ Berufsausbildung im Unternehmen digitalisieren, Schritt für Schritt: Lernplattf
 
 ## Warum die Digitalisierung der Ausbildung jetzt notwendig ist
 
-Die duale Berufsausbildung in Deutschland steht unter Druck. Die Vertragslösungsquote liegt bei rund **30 %** ([BIBB](https://www.bibb.de)), gleichzeitig steigen die Bruttokosten pro Azubi auf **€20.000 bis €35.000 pro Jahr**. Viele Unternehmen kämpfen mit überlasteten Ausbildern, veralteten Lernmaterialien und einer Generation von Azubis, die digitale Lernformate erwartet. Gerade im Mittelstand, wo selten eine eigene Ausbildungsabteilung existiert, kann Digitalisierung kleine Teams entscheidend stärken.
+Die duale Berufsausbildung in Deutschland steht unter Druck. 2024 wurden **29,7 %** der Ausbildungsverträge vorzeitig gelöst ([BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)), und ein Azubi kostet einen Betrieb im Schnitt rund **26.200 € brutto pro Jahr** ([BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)). Viele Unternehmen kämpfen mit überlasteten Ausbildern, veralteten Lernmaterialien und einer Generation von Azubis, die digitale Lernformate erwartet. Gerade im Mittelstand, wo selten eine eigene Ausbildungsabteilung existiert, kann Digitalisierung kleine Teams entscheidend stärken.
 
-Die gute Nachricht: Die Digitalisierung der Ausbildung ist kein Mammutprojekt. Mit den richtigen Werkzeugen und einem klaren Plan können Unternehmen in wenigen Wochen messbare Verbesserungen erzielen - und dabei nach unserer Berechnung **bis zu €17.000 pro Azubi** einsparen. [Berechnen Sie Ihr individuelles Einsparpotenzial mit unserem Ausbildungskosten-Rechner.](/de/ausbildungskosten-rechner)
+Die gute Nachricht: Die Digitalisierung der Ausbildung ist kein Mammutprojekt. Mit den richtigen Werkzeugen und einem klaren Plan können Unternehmen in wenigen Wochen messbare Verbesserungen erzielen. Es geht um viel Geld: Laut BIBB kostet ein Azubi einen Betrieb im Schnitt rund **26.200 € pro Jahr**. [Berechnen Sie Ihr individuelles Einsparpotenzial mit unserem Ausbildungskosten-Rechner.](/de/ausbildungskosten-rechner)
 
 ## Was genau sollten Sie digitalisieren?
 
@@ -6947,7 +6940,7 @@ Personenbezogene Daten von Azubis unterliegen der DSGVO. Wählen Sie eine Plattf
 
 ## Der ROI der digitalen Ausbildung
 
-Die Investition in digitale Ausbildung rechnet sich schnell. Bei 5 Azubis und durchschnittlichen Kosten können Unternehmen nach unserer Berechnung bis zu **€17.000 pro Azubi pro Jahr** einsparen - durch weniger Ausbilderzeit, schnelleres Onboarding und eine niedrigere Vertragslösungsquote. [Berechnen Sie Ihre individuelle Einsparung mit unserem Rechner.](/de/ausbildungskosten-rechner)
+Laut [BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php) kostet ein Azubi einen Betrieb im Schnitt rund 26.200 € pro Jahr. Unser [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner) zeigt, was weniger Ausbilderzeit und weniger vorzeitige Vertragslösungen für Sie wert sein können: mit den Standardwerten rund 13.216 € pro Jahr bei 5 neuen Azubis, bis zu 19.687 € am oberen Ende unserer Kundenergebnisse. Das sind Schätzungen, keine garantierten Ergebnisse. [Berechnen Sie Ihre individuelle Einsparung mit unserem Rechner.](/de/ausbildungskosten-rechner)
 
 Lesen Sie auch unseren ausführlichen Beitrag zum Thema [Ausbildungskosten senken](/de/blog/ausbildungskosten-senken) für eine detaillierte ROI-Berechnung.
 
@@ -7002,7 +6995,7 @@ Updated: 2026-05-13
 
 Die [IHK](https://www.ihk.de)-Abschlussprüfung ist der entscheidende Meilenstein jeder Berufsausbildung. Sie bestimmt nicht nur den Ausbildungsabschluss, sondern beeinflusst auch die Startposition auf dem Arbeitsmarkt. Trotzdem bereiten sich viele Azubis zu spät, zu unstrukturiert oder mit den falschen Materialien vor.
 
-Die Vertragslösungsquote in der dualen Ausbildung liegt bei rund **30 %** ([BIBB](https://www.bibb.de)) - und Prüfungsangst sowie mangelnde Vorbereitung sind häufige Gründe. Die guten Nachrichten: Mit der richtigen Strategie und den passenden Werkzeugen lässt sich die Prüfung souverän meistern. Hier sind 10 bewährte Tipps, die wirklich funktionieren.
+2024 wurden **29,7 %** der Ausbildungsverträge vorzeitig gelöst ([BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)), und wer die Prüfung erreicht, will sie auch bestehen. Die gute Nachricht: Mit der richtigen Strategie und den passenden Werkzeugen lässt sich die Prüfung souverän meistern. Hier sind 10 bewährte Tipps, die wirklich funktionieren.
 
 ## Ihr Lernplan: Von 6 Monaten bis zum Prüfungstag
 
@@ -7095,7 +7088,7 @@ Sprechen Sie mit Ihrem Ausbilder und bitten Sie um Feedback zu Ihren praktischen
 
 ## So unterstützen Unternehmen ihre Azubis
 
-Unternehmen investieren pro Azubi **€20.000 bis €35.000 brutto pro Jahr** (BIBB). Es liegt also auch im Interesse des Betriebs, dass Azubis die Prüfung bestehen. Digitale Lernplattformen ermöglichen Ausbildern, den Fortschritt ihrer Azubis in Echtzeit zu verfolgen und gezielt einzugreifen, wenn jemand Hilfe braucht.
+Unternehmen investieren pro Azubi im Schnitt rund **26.200 € brutto pro Jahr** ([BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)). Es liegt also auch im Interesse des Betriebs, dass Azubis die Prüfung bestehen. Digitale Lernplattformen ermöglichen Ausbildern, den Fortschritt ihrer Azubis in Echtzeit zu verfolgen und gezielt einzugreifen, wenn jemand Hilfe braucht.
 
 Erfahren Sie, wie Sie als Unternehmen [Ihre Ausbildungskosten senken](/de/blog/ausbildungskosten-senken) und [Ausbilder effektiv entlasten](/de/blog/ausbilder-entlasten) können.
 
@@ -7105,7 +7098,7 @@ Eine bestandene IHK-Prüfung ist kein Zufall, sondern das Ergebnis strukturierte
 
 **Für Ausbildungsverantwortliche:** Erleben Sie in einer kostenlosen Demo, wie KI-gestützte Prüfungsvorbereitung Ihren Azubis den entscheidenden Vorteil verschafft. [Demo vereinbaren](/de/companies)
 
-**Für Geschäftsführung und HR-Leitung:** Jede bestandene IHK-Prüfung schützt Ihre Investition von €20.000 bis €35.000 pro Azubi. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+**Für Geschäftsführung und HR-Leitung:** Jede bestandene IHK-Prüfung schützt Ihre Investition von im Schnitt rund 26.200 € pro Azubi und Jahr (BIBB). [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
 
 ---
@@ -7428,9 +7421,9 @@ Wie KI-Lernplattformen die Berufsausbildung transformieren: personalisierte Lern
 
 ## Warum KI die Berufsausbildung verändert
 
-Die deutsche Berufsausbildung steht vor einem Umbruch. Während das duale System weltweit als Vorbild gilt, kämpfen Unternehmen mit steigenden Vertragslösungsquoten (aktuell rund 30 % laut [BIBB](https://www.bibb.de)), Fachkräftemangel und überlasteten Ausbildern. Künstliche Intelligenz bietet hier konkrete Lösungen - nicht als Ersatz für menschliche Ausbilder, sondern als leistungsstarke Ergänzung.
+Die deutsche Berufsausbildung steht vor einem Umbruch. Während das duale System weltweit als Vorbild gilt, kämpfen Unternehmen mit vielen vorzeitig gelösten Ausbildungsverträgen (29,7 % im Jahr 2024 laut [BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)), Fachkräftemangel und überlasteten Ausbildern. Künstliche Intelligenz bietet hier konkrete Lösungen - nicht als Ersatz für menschliche Ausbilder, sondern als leistungsstarke Ergänzung.
 
-Die Zahlen sprechen für sich: Unternehmen investieren **€20.000 bis €35.000 pro Azubi pro Jahr** an Bruttoausbildungskosten (Quelle: BIBB-Kosten-Nutzen-Erhebung), und fast jeder dritte Ausbildungsvertrag wird vorzeitig aufgelöst. Das ist ein enormer Ressourcenverlust, den KI deutlich reduzieren kann.
+Die Zahlen sprechen für sich: Unternehmen investieren im Schnitt rund **26.200 € pro Azubi und Jahr** an Bruttoausbildungskosten ([BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)), und 2024 wurden 29,7 % der Ausbildungsverträge vorzeitig gelöst ([BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)). Das ist ein erheblicher Ressourcenverlust, bei dem KI helfen kann.
 
 ## Was KI in der Ausbildung konkret leisten kann
 
@@ -7461,9 +7454,9 @@ Neben der IHK-Prüfungsvorbereitung können Unternehmen eigene Dokumente, Prozes
 | Zeit bis zur Produktivität | 4 bis 6 Monate | Ab 2 Monaten |
 | Eingesparte Ausbilderstunden/Jahr | - | Bis zu 200 Stunden |
 | Vertragslösungsquote | ~30 % | Ziel: 15 % |
-| Jährliche Einsparung pro Azubi | - | Bis zu €17K* |
+| Jährliche Einsparung pro Azubi | - | Rund 2.600 bis 3.900 €* |
 
-*\*Basierend auf den Standardannahmen in unserem [Einsparungsrechner](/de/ausbildungskosten-rechner). Die tatsächlichen Ergebnisse variieren je nach Unternehmensgröße, Branche und Konfiguration.*
+*\*Schätzung aus unserem [Einsparungsrechner](/de/ausbildungskosten-rechner): BIBB-Kostendurchschnitte, 20 % weniger vorzeitige Vertragslösungen und 30 % (konservativ) bis 50 % (oberes Ende unserer Kundenergebnisse) weniger Ausbilderzeit. Die tatsächlichen Ergebnisse variieren je nach Unternehmensgröße, Branche und Konfiguration.*
 
 ## Was eine KI-basierte Lernplattform von klassischem E-Learning unterscheidet
 
@@ -7560,7 +7553,7 @@ Das Berichtsheft (auch Ausbildungsnachweis genannt) ist weit mehr als eine Pflic
 
 Trotzdem wird das Berichtsheft in vielen Betrieben stiefmütterlich behandelt. Azubis füllen es Wochen oder Monate verspätet aus, Ausbilder unterschreiben stapelweise Seiten auf einmal, und am Ende fehlen Einträge. Das Resultat: Stress vor der Prüfungsanmeldung und im schlimmsten Fall eine gefährdete Zulassung.
 
-Bei einer Vertragslösungsquote von rund 30 % ([BIBB](https://www.bibb.de) 2022) und Bruttokosten von **€20.000 bis €35.000 pro Azubi und Jahr** (BIBB-Kosten-Nutzen-Erhebung) ist jede vermeidbare Komplikation ein Risiko, das Unternehmen nicht eingehen sollten.
+Bei 29,7 % vorzeitig gelösten Ausbildungsverträgen ([BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037), Jahr 2024) und Bruttokosten von rund **26.200 € pro Azubi und Jahr** ([BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)) ist jede vermeidbare Komplikation ein Risiko, das Unternehmen nicht eingehen sollten.
 
 ## Rechtliche Anforderungen nach BBiG §13
 
@@ -7720,7 +7713,7 @@ Diese Verknüpfung bietet mehrere Vorteile:
 - **Bessere Nachvollziehbarkeit** - Lernfortschritt und Dokumentation stimmen überein
 - **Frühwarnsystem** - Lücken in der Ausbildung werden sichtbar, bevor sie zum Problem werden
 
-Plattformen wie LearnSlice verbinden KI-gestütztes Lernen, das an IHK-Themenbereichen und -Format orientiert ist, mit strukturierter Ausbildungsdokumentation. So sparen Unternehmen laut unserer Kalkulation **bis zu €17.000 pro Azubi** an Gesamtkosten - durch eingesparte Ausbilderzeit, schnelleres Onboarding und reduzierte Abbruchquoten. Berechnen Sie Ihre individuelle Einsparung mit unserem [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner).
+Plattformen wie LearnSlice verbinden KI-gestütztes Lernen, das an IHK-Themenbereichen und -Format orientiert ist, mit strukturierter Ausbildungsdokumentation. Bei Ausbildungskosten von rund 26.200 € pro Azubi und Jahr (laut [BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)) zählt jede eingesparte Ausbilderstunde und jeder Vertrag, der nicht vorzeitig endet. Was das für Ihr Unternehmen bedeutet, berechnen Sie mit unserem [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner).
 
 ## Tipps für die Umstellung
 
@@ -7946,7 +7939,7 @@ Welche KI-Tools gibt es für die Berufsausbildung? Chatbots, Lernplattformen und
 
 ## Warum KI-Tools in der Ausbildung?
 
-Die Berufsausbildung steht unter Druck. Die Bruttokosten pro Azubi liegen bei **€20.000 bis €35.000 pro Jahr** ([BIBB](https://www.bibb.de)-Kosten-Nutzen-Erhebung), gleichzeitig liegt die Vertragslösungsquote bei rund 30 % (BIBB 2022). Ausbildungsverantwortliche müssen mit knappen Zeitbudgets immer mehr leisten - vom Onboarding über die tägliche Betreuung bis zur Prüfungsvorbereitung.
+Die Berufsausbildung steht unter Druck. Die Bruttokosten pro Azubi liegen im Schnitt bei rund **26.200 € pro Jahr** ([BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)), gleichzeitig wurden 2024 29,7 % der Ausbildungsverträge vorzeitig gelöst ([BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)). Ausbildungsverantwortliche müssen mit knappen Zeitbudgets immer mehr leisten - vom Onboarding über die tägliche Betreuung bis zur Prüfungsvorbereitung.
 
 Künstliche Intelligenz kann hier entscheidend entlasten. Nicht als Ersatz für den menschlichen Ausbilder, sondern als Werkzeug, das repetitive Aufgaben übernimmt, individuelle Lernpfade erstellt und Wissenslücken automatisch erkennt. Der Markt für KI-Tools in der Bildung wächst rasant - doch welche Kategorien gibt es, und worauf sollten Unternehmen achten?
 
@@ -8069,7 +8062,7 @@ KI-Tools funktionieren am besten, wenn Ausbilder sie aktiv nutzen und in ihren A
 
 ### ROI messen
 
-Definieren Sie von Anfang an, welche Kennzahlen Sie verbessern wollen: eingesparte Ausbilderzeit, Prüfungsbestehensquote, Onboarding-Dauer, Abbruchquote. Unternehmen, die KI-gestützte Lernplattformen einsetzen, können laut unserer Berechnung **bis zu €17.000 pro Azubi** an Kosten einsparen. Berechnen Sie Ihr Potenzial mit dem [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner).
+Definieren Sie von Anfang an, welche Kennzahlen Sie verbessern wollen: eingesparte Ausbilderzeit, Prüfungsbestehensquote, Onboarding-Dauer, Abbruchquote. Für die Wirtschaftlichkeitsrechnung starten Sie bei den Kosten: Laut [BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php) kostet ein Azubi rund 26.200 € pro Jahr. Was bessere Begleitung sparen kann, berechnen Sie mit dem [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner).
 
 ### Schrittweise ausrollen
 
@@ -8103,7 +8096,7 @@ Ja - die Einführung von KI-Tools, die das Verhalten oder die Leistung von Azubi
 
 **Für Ausbildungsverantwortliche:** Erleben Sie in einer kostenlosen Demo, wie LearnSlice KI-Coaching, Prüfungsvorbereitung und Analytics in einer Plattform vereint. [Demo vereinbaren](/de/companies)
 
-**Für Geschäftsführung und HR-Leitung:** KI-gestützte Ausbildung spart nach unserer Berechnung bis zu €17.000 pro Azubi, bei voller DSGVO-Konformität. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+**Für Geschäftsführung und HR-Leitung:** Ein Azubi kostet laut BIBB rund 26.200 € pro Jahr. Was weniger Ausbilderzeit und weniger vorzeitige Vertragslösungen davon sichern, zeigt der Rechner, bei voller DSGVO-Konformität der Plattform. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
 
 ---
