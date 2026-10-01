@@ -50,7 +50,7 @@ def squeeze():
         for i, ln in enumerate(subs):
             d.t(tx, top + 32 + len(lines) * 19 + 4 + i * 18, ln, T_NOTE, MUTED)
         d.y = top + h + 12
-    d.note("Quellen: Index Research (26.08.2026), IG Metall Ausbildungsbilanz auf Basis von BIBB-Daten (05.03.2026).")
+    d.note("Quellen: Index Research (26.08.2026), IG Metall-Ausbildungsbilanz 2025 (05.03.2026).")
     return render(d, "ruestung-bedarf-nachwuchs-de.svg")
 
 
