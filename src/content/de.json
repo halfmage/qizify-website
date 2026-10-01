@@ -57,7 +57,7 @@
   "problem": {
     "badge": "Das Problem",
     "headline": "Ausbildung ist kaputt. Die Zahlen belegen es.",
-    "body": "29,7 % der Ausbildungsverträge werden vorzeitig gelöst, zwei Drittel davon im ersten Ausbildungsjahr (BIBB, 2024). Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder Azubi ist eine Investition von rund 26.200 € pro Jahr (BIBB). Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
+    "body": "29,7 % der Ausbildungsverträge werden vorzeitig gelöst, zwei Drittel davon im ersten Ausbildungsjahr (BIBB, 2024). In unseren Kundenprojekten verbringen Ausbilder bis zu 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder Azubi ist eine Investition von rund 26.200 € pro Jahr (BIBB). Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
   },
   "savingsComparison": {
     "headline": "Rund 26.200 € pro Azubi, jedes Jahr.\nMachen Sie mehr aus dieser Investition.",
@@ -74,7 +74,7 @@
       "badge": "Empfohlen",
       "title": "Unternehmen\nmit LearnSlice",
       "points": [
-        "Bis zu 65 % schneller einsatzbereit (von ~6 Monaten auf bis zu 8 Wochen).",
+        "Bis zu 65 % schneller einsatzbereit (von ~6 Monaten auf nur 8 Wochen).",
         "Bis zu 50 % weniger Ausbilderzeit.",
         "Weniger Routinefragen, mehr Zeit für echte Begleitung.",
         "Eigene Zahlen berechnen mit unserem Rechner auf BIBB-Basis."
@@ -142,8 +142,8 @@
             "highlight": "Bis zu 65 % schnellere Einsatzbereitschaft."
           },
           {
-            "text": "Bis zu 15 % weniger vorzeitige Vertragslösungen und Abgänge im Onboarding. Personalisierte Lernpfade und kontinuierliches KI-Feedback halten Azubis und Nachwuchskräfte auf Kurs.",
-            "highlight": "Bis zu 15 % weniger vorzeitige Vertragslösungen und Abgänge im Onboarding."
+            "text": "Bis zu 20 % weniger vorzeitige Vertragslösungen und Abgänge im Onboarding. Personalisierte Lernpfade und kontinuierliches KI-Feedback halten Azubis und Nachwuchskräfte auf Kurs.",
+            "highlight": "Bis zu 20 % weniger vorzeitige Vertragslösungen und Abgänge im Onboarding."
           },
           {
             "text": "Bis zu 50 % weniger Schulungsaufwand für erfahrene Teams.",

@@ -56,7 +56,7 @@
   "problem": {
     "badge": "The Problem",
     "headline": "Training Is Broken. The Numbers Prove It.",
-    "body": "29.7% of apprenticeship contracts in Germany end early, two thirds of them in the first year (BIBB, 2024). Trainers spend 12 hours a week per apprentice on repetitive tasks. And each apprentice is an investment of about €26,200 a year (BIBB). The problem isn't effort. It's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale."
+    "body": "29.7% of apprenticeship contracts in Germany end early, two thirds of them in the first year (BIBB, 2024). In our customer projects, trainers spend up to 12 hours a week per apprentice on repetitive tasks. And each apprentice is an investment of about €26,200 a year (BIBB). The problem isn't effort. It's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale."
   },
   "savingsComparison": {
     "headline": "About €26,200 per Apprentice, Every Year.\nMake That Investment Count.",
@@ -141,8 +141,8 @@
             "highlight": "Up to 65 % faster time-to-productivity."
           },
           {
-            "text": "Up to 15 % fewer early contract cancellations and onboarding departures. Personalised learning paths and continuous AI feedback keep apprentices and early-career talent on track.",
-            "highlight": "Up to 15 % fewer early contract cancellations and onboarding departures."
+            "text": "Up to 20 % fewer early contract cancellations and onboarding departures. Personalised learning paths and continuous AI feedback keep apprentices and early-career talent on track.",
+            "highlight": "Up to 20 % fewer early contract cancellations and onboarding departures."
           },
           {
             "text": "Up to 50 % less training effort for senior teams.",
