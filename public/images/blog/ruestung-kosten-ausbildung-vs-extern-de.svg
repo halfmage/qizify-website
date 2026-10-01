@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="399" viewBox="0 0 520 399" role="img" aria-label="Balkendiagramm: Ein Azubi kostet im Schnitt rund 26.200 Euro brutto pro Jahr, netto nach den Erträgen seiner Mitarbeit rund 8.100 Euro. Eine Fachkraft extern zu gewinnen kostet rund 13.700 Euro. Quelle: BIBB-Kosten-Nutzen-Erhebung 2022/23.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a1a1aa"/></marker></defs>
+  <rect x="0" y="0" width="520" height="399" rx="16" fill="#18181b"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">Was Ausbildung kostet, und was die</text>
+  <text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">Alternative kostet</text>
+  <text x="24" y="87" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">Durchschnitt pro Person, alle Berufe, Ausbildungsjahr 2022/23</text>
+  <text x="24" y="121" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Ausbildung, brutto pro Jahr</text>
+  <rect x="24" y="129" width="388.0" height="24" rx="4" fill="#71717a"/>
+  <text x="422.0" y="147" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">26.200 €</text>
+  <text x="24" y="183" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Ausbildung, netto pro Jahr (nach Mitarbeit)</text>
+  <rect x="24" y="191" width="120.0" height="24" rx="4" fill="#71717a"/>
+  <text x="153.95419847328245" y="209" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">8.100 €</text>
+  <text x="24" y="245" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">Fachkraft extern gewinnen, einmalig</text>
+  <rect x="24" y="253" width="202.9" height="24" rx="4" fill="#cc7a3e"/>
+  <text x="236.8854961832061" y="271" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">13.700 €</text>
+  <text x="24" y="321" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Quelle: BIBB-Kosten-Nutzen-Erhebung 2022/23 (Pressemitteilung</text>
+  <text x="24" y="339" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">31.07.2025). Personalgewinnungskosten stiegen gegenüber</text>
+  <text x="24" y="357" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">früheren Erhebungen um 65 %, die Nettokosten der Ausbildung um</text>
+  <text x="24" y="375" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">28 %.</text>
+</svg>
