@@ -36,7 +36,7 @@
     "ctaPrimary": "Kostenlose Demo buchen",
     "ctaSecondary": "Einsparpotenzial berechnen",
     "stats": [
-      { "value": "≤ €15K", "label": "Ersparnis pro Azubi" },
+      { "value": "26K €", "label": "Kosten pro Azubi und Jahr (BIBB)" },
       { "value": "50 %", "label": "weniger Ausbilderzeit" },
       { "value": "65 %", "label": "schneller einsatzbereit" }
     ]
@@ -60,24 +60,24 @@
     "body": "30 % der Azubis brechen ihre Ausbildung ab. Ausbilder verbringen 12 Stunden pro Woche pro Azubi mit repetitiven Aufgaben. Und jeder gescheiterte Ausbildungsvertrag kostet Unternehmen €20.000 bis €35.000. Das Problem ist nicht mangelnder Einsatz, sondern dass Onboarding, Prüfungsvorbereitung und Upskilling voneinander getrennt, manuell und nicht skalierbar sind."
   },
   "savingsComparison": {
-    "headline": "Bis zu 15K € Ersparnis pro Azubi.\nSo rechnet sich das.",
+    "headline": "Rund 26.200 € pro Azubi, jedes Jahr.\nMachen Sie mehr aus dieser Investition.",
     "without": {
       "title": "Unternehmen\nohne LearnSlice",
       "points": [
-        "Produktivität: Auszubildende erst nach rund 6 Monaten einsatzfähig.",
-        "Betreuungsaufwand: 8-12 Std. Ausbilderzeit pro Azubi/Woche.",
-        "Abbruchquote: rund 30 % in der Ausbildung.",
-        "Umsatzverlust: verzögerte Produktivität bremst Erlöse."
+        "Rund 26.200 € Bruttokosten pro Azubi und Jahr (BIBB 2022/23).",
+        "29,7 % der Ausbildungsverträge werden vorzeitig gelöst (BIBB 2024).",
+        "Zwei Drittel dieser Lösungen fallen ins erste Ausbildungsjahr.",
+        "Rund 6.500 € pro Azubi und Jahr entfallen auf das Ausbildungspersonal (BIBB)."
       ]
     },
     "with": {
       "badge": "Empfohlen",
       "title": "Unternehmen\nmit LearnSlice",
       "points": [
-        "65 % schneller einsatzbereit (~6 Monate → 8 Wochen).",
-        "50 % weniger Ausbilderzeit = 9K € Ersparnis pro Azubi.",
-        "Abbruchquote: halbiert von 30 % auf 15 %.",
-        "Bis zu 75K € Ersparnis pro Jahr bei 5 Azubis."
+        "KI-Tutor auf Ihren eigenen Ausbildungsunterlagen, auch zwischen den Terminen.",
+        "Ausbilder sehen früh, wer den Anschluss verliert.",
+        "Weniger Routinefragen, mehr Zeit für echte Begleitung.",
+        "Eigene Zahlen berechnen mit unserem Rechner auf BIBB-Basis."
       ]
     }
   },
@@ -311,7 +311,7 @@
       },
       {
         "question": "Wie hilft LearnSlice, Abbrüche und Traineraufwand zu reduzieren?",
-        "answer": "Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert, während Ausbilder entlastet werden. Nach unserer Berechnung sparen Unternehmen bis zu €15K pro Azubi pro Jahr."
+        "answer": "Gezieltes, praxisorientiertes Lernen verkürzt die Einarbeitungszeit, reduziert Reibungsverluste und hält Talente motiviert, während Ausbilder entlastet werden. Laut BIBB kostet ein Azubi einen Betrieb im Schnitt rund 26.200 € pro Jahr (2022/23). Unser Einsparungsrechner zeigt auf Basis der BIBB-Durchschnitte und Ihrer eigenen Annahmen, was weniger vorzeitige Vertragslösungen und weniger Ausbilderzeit wert sein können."
       },
       {
         "question": "Wie stellen wir sicher, dass unsere Ausbilder die Plattform nutzen?",
@@ -337,7 +337,7 @@
   },
   "cta": {
     "headline": "Durchbrechen Sie den Kreislauf",
-    "subheadline": "IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen statt Monaten Leistung bringen. Bis zu €15K Ersparnis pro Azubi.",
+    "subheadline": "IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen statt Monaten Leistung bringen. Jeder Azubi ist eine Investition von rund 26.200 € pro Jahr (BIBB): Machen Sie mehr daraus.",
     "button": "Kostenlose Demo buchen"
   },
   "homepageCta": {

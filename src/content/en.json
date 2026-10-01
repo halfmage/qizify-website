@@ -35,7 +35,7 @@
     "ctaPrimary": "Book My Free Demo",
     "ctaSecondary": "Calculate My Savings",
     "stats": [
-      { "value": "≤ €15K", "label": "saved per apprentice" },
+      { "value": "€26K", "label": "cost per apprentice per year (BIBB)" },
       { "value": "50%", "label": "less trainer time" },
       { "value": "65%", "label": "faster to productivity" }
     ]
@@ -59,24 +59,24 @@
     "body": "30% of apprentices drop out before completing their training. Trainers spend 12 hours a week per apprentice on repetitive tasks. And every failed apprenticeship costs companies €20,000 to €35,000. The problem isn't effort. It's that onboarding, exam prep, and upskilling are disconnected, manual, and impossible to scale."
   },
   "savingsComparison": {
-    "headline": "Up to €15K Saved Per Apprentice.\nHere's the Math.",
+    "headline": "About €26,200 per Apprentice, Every Year.\nMake That Investment Count.",
     "without": {
       "title": "Companies\nWithout LearnSlice",
       "points": [
-        "Apprentices need around 6 months to productivity",
-        "8-12 hrs of trainer time per apprentice weekly",
-        "30 % dropout",
-        "Delayed revenue from slow productivity"
+        "About €26,200 gross training cost per apprentice per year (BIBB 2022/23)",
+        "29.7% of apprenticeship contracts end early (BIBB 2024)",
+        "Two thirds of those cancellations happen in the first year",
+        "About €6,500 per apprentice per year goes to training staff (BIBB)"
       ]
     },
     "with": {
       "badge": "Recommended",
       "title": "Companies\nWith LearnSlice",
       "points": [
-        "65 % faster to productivity (~6 months → 8 weeks)",
-        "50% less trainer time = €9K saved per apprentice",
-        "Dropout reduced: 30 % → 15%",
-        "Up to €75K saved per year with 5 apprentices"
+        "An AI tutor on your own training material, available between sessions",
+        "Trainers see early who is falling behind",
+        "Less routine explaining, more time for real coaching",
+        "Calculate your own figures with our BIBB-based calculator"
       ]
     }
   },
@@ -310,7 +310,7 @@
       },
       {
         "question": "How does this help reduce dropout and trainer load?",
-        "answer": "Targeted, practice-led learning shortens ramp time, reduces friction and keeps talent engaged, freeing senior staff to focus on strategic work. Based on our analysis, companies save up to €15K per apprentice per year."
+        "answer": "Targeted, practice-led learning shortens ramp time, reduces friction and keeps talent engaged, freeing senior staff to focus on strategic work. According to BIBB, an apprentice costs a company about €26,200 a year on average (2022/23). Our savings calculator shows, based on BIBB averages and your own assumptions, what fewer early cancellations and less trainer time can be worth."
       },
       {
         "question": "How do we make sure our trainers actually use it?",
@@ -336,7 +336,7 @@
   },
   "cta": {
     "headline": "Stop the Cycle",
-    "subheadline": "IHK prep. Onboarding. Upskilling. One platform. Apprentices who deliver value in weeks, not months. Up to €15K saved per apprentice.",
+    "subheadline": "IHK prep. Onboarding. Upskilling. One platform. Apprentices who deliver value in weeks, not months. Each apprentice is a €26,200-a-year investment (BIBB): make it count.",
     "button": "Book My Free Demo"
   },
   "homepageCta": {
