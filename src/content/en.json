@@ -36,8 +36,8 @@
     "ctaSecondary": "Calculate My Savings",
     "stats": [
       { "value": "€26K", "label": "cost per apprentice per year (BIBB)" },
-      { "value": "50%", "label": "less trainer time" },
-      { "value": "65%", "label": "faster to productivity" }
+      { "value": "up to 50%", "label": "less trainer time" },
+      { "value": "up to 65%", "label": "faster to productivity" }
     ]
   },
   "trustedBy": {
@@ -73,8 +73,8 @@
       "badge": "Recommended",
       "title": "Companies\nWith LearnSlice",
       "points": [
-        "65% faster to productivity (~6 months → 8 weeks)",
-        "50% less trainer time",
+        "Up to 65% faster to productivity (from ~6 months to as little as 8 weeks)",
+        "Up to 50% less trainer time",
         "Less routine explaining, more time for real coaching",
         "Calculate your own figures with our BIBB-based calculator"
       ]
@@ -165,8 +165,8 @@
             "highlight": "Reduces apprenticeship dropouts measurably (10-15 %)."
           },
           {
-            "text": "Relieves overloaded trainers in SMEs (45-50 % less supervision effort).",
-            "highlight": "Relieves overloaded trainers in SMEs (45-50 % less supervision effort)."
+            "text": "Relieves overloaded trainers in SMEs (up to 50 % less supervision effort).",
+            "highlight": "Relieves overloaded trainers in SMEs (up to 50 % less supervision effort)."
           }
         ],
         "note": "The AI mentor provides daily guidance and standard instruction, enabling companies to support apprentices consistently."

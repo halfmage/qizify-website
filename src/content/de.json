@@ -37,8 +37,8 @@
     "ctaSecondary": "Einsparpotenzial berechnen",
     "stats": [
       { "value": "26K €", "label": "Kosten pro Azubi und Jahr (BIBB)" },
-      { "value": "50 %", "label": "weniger Ausbilderzeit" },
-      { "value": "65 %", "label": "schneller einsatzbereit" }
+      { "value": "bis zu 50 %", "label": "weniger Ausbilderzeit" },
+      { "value": "bis zu 65 %", "label": "schneller einsatzbereit" }
     ]
   },
   "trustedBy": {
@@ -74,8 +74,8 @@
       "badge": "Empfohlen",
       "title": "Unternehmen\nmit LearnSlice",
       "points": [
-        "65 % schneller einsatzbereit (~6 Monate → 8 Wochen).",
-        "50 % weniger Ausbilderzeit.",
+        "Bis zu 65 % schneller einsatzbereit (von ~6 Monaten auf bis zu 8 Wochen).",
+        "Bis zu 50 % weniger Ausbilderzeit.",
         "Weniger Routinefragen, mehr Zeit für echte Begleitung.",
         "Eigene Zahlen berechnen mit unserem Rechner auf BIBB-Basis."
       ]
@@ -166,8 +166,8 @@
             "highlight": "Abbrüche in der Ausbildung messbar senken (10-15 %)."
           },
           {
-            "text": "Entlastung überlasteter Ausbilder in KMU (45-50 % weniger Betreuungsaufwand).",
-            "highlight": "Entlastung überlasteter Ausbilder in KMU (45-50 % weniger Betreuungsaufwand)."
+            "text": "Entlastung überlasteter Ausbilder in KMU (bis zu 50 % weniger Betreuungsaufwand).",
+            "highlight": "Entlastung überlasteter Ausbilder in KMU (bis zu 50 % weniger Betreuungsaufwand)."
           }
         ],
         "note": "Der KI-Mentor liefert tägliche Anleitung und Standardwissen, sodass Unternehmen ihre Azubis kontinuierlich unterstützen können."
