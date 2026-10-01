@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="344" viewBox="0 0 520 344" role="img" aria-label="Stacked bars: when apprenticeship contracts cancelled early in 2024 ended. All trades: 34.7 percent during probation, 32.9 percent later in the first year, 23.1 percent in the second year, 9.3 percent later. Industry and commerce: 36.5, 33.9, 22.3 and 7.3 percent. Source: BIBB Datenreport 2026, table A5.6-1.">
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a1a1aa"/></marker></defs>
+  <rect x="0" y="0" width="520" height="344" rx="16" fill="#18181b"/>
+  <text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">Two thirds end in the first year</text>
+  <text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">When apprenticeship contracts cancelled early in 2024 ended</text>
+  <text x="24" y="92" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Industry and commerce</text>
+  <rect x="24" y="102" width="170.1" height="34" rx="4" fill="#cc7a3e"/>
+  <text x="109.045" y="125" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#18181b" font-weight="600" text-anchor="middle">36.5%</text>
+  <rect x="196.09" y="102" width="158.0" height="34" rx="4" fill="#e8b07a"/>
+  <text x="275.077" y="125" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#18181b" font-weight="600" text-anchor="middle">33.9%</text>
+  <rect x="356.064" y="102" width="103.9" height="34" rx="4" fill="#71717a"/>
+  <text x="408.023" y="125" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600" text-anchor="middle">22.3%</text>
+  <rect x="461.982" y="102" width="34.0" height="34" rx="4" fill="#52525b"/>
+  <text x="24" y="164" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">All trades</text>
+  <rect x="24" y="174" width="161.7" height="34" rx="4" fill="#cc7a3e"/>
+  <text x="104.851" y="197" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#18181b" font-weight="600" text-anchor="middle">34.7%</text>
+  <rect x="187.702" y="174" width="153.3" height="34" rx="4" fill="#e8b07a"/>
+  <text x="264.359" y="197" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#18181b" font-weight="600" text-anchor="middle">32.9%</text>
+  <rect x="343.01599999999996" y="174" width="107.6" height="34" rx="4" fill="#71717a"/>
+  <text x="396.83899999999994" y="197" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600" text-anchor="middle">23.1%</text>
+  <rect x="452.662" y="174" width="43.3" height="34" rx="4" fill="#52525b"/>
+  <rect x="24" y="228" width="12" height="12" rx="2" fill="#cc7a3e"/>
+  <text x="44" y="239" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Probation (up to 4 months)</text>
+  <rect x="252.72000000000008" y="228" width="12" height="12" rx="2" fill="#e8b07a"/>
+  <text x="272.7200000000001" y="239" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Rest of year 1</text>
+  <rect x="24" y="252" width="12" height="12" rx="2" fill="#71717a"/>
+  <text x="44" y="263" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Year 2</text>
+  <rect x="107.53999999999999" y="252" width="12" height="12" rx="2" fill="#52525b"/>
+  <text x="127.53999999999999" y="263" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Later (7.3% and 9.3%)</text>
+  <text x="24" y="302" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Source: BIBB Datenreport 2026, table A5.6-1. Share of all contracts</text>
+  <text x="24" y="320" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">cancelled early in 2024, Germany.</text>
+</svg>

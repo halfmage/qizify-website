@@ -47,6 +47,7 @@ export const EN_TO_DE = {
 	'/blog/custom-ai-open-source-models': '/de/blog/individuelle-ki-open-source-modelle',
 	'/blog/learning-platform-training-providers': '/de/blog/lernplattform-bildungstraeger',
 	'/blog/ai-tutor-for-existing-lms': '/de/blog/ki-tutor-in-lms-integrieren',
+	'/blog/apprenticeships-defence-industry-germany': '/de/blog/ausbildung-ruestungsindustrie',
 };
 
 // Pages that exist only in one language and therefore should not emit
@@ -68,8 +69,6 @@ export const DE_ONLY = new Set([
 	'/de/digital-readiness-check',
 	// AZAV/BFSG cluster posts (German-law-specific), no English counterpart.
 	'/de/blog/azav-digitalisierung-bildungstraeger',
-	// Defence campaign pillar (Q4 2026). EN pair planned; move to EN_TO_DE once it ships.
-	'/de/blog/ausbildung-ruestungsindustrie',
 ]);
 
 const DE_TO_EN = Object.fromEntries(
