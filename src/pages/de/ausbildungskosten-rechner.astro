@@ -63,8 +63,8 @@ const currentPath = '/de/ausbildungskosten-rechner';
 						<div class="mt-6 flex flex-col gap-5 animate-fadeIn">
 							<span class="font-mono text-label uppercase tracking-widest text-muted">BIBB-Durchschnittswerte</span>
 							<div>
-								<label class="text-xs text-muted block mb-1.5" for="dropout-rate">Anteil vorzeitig gel&ouml;ster Vertr&auml;ge (%)</label>
-								<input type="number" id="dropout-rate" value="29.7" min="0" max="100" step="0.1" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+								<label class="text-xs text-muted block mb-1.5" for="cancel-rate">Anteil vorzeitig gel&ouml;ster Vertr&auml;ge (%)</label>
+								<input type="number" id="cancel-rate" value="29.7" min="0" max="100" step="0.1" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
 								<p class="text-[11px] text-muted/80 mt-1 m-0 leading-snug">BIBB, 2024, alle Berufe</p>
 							</div>
 							<div>
@@ -80,22 +80,26 @@ const currentPath = '/de/ausbildungskosten-rechner';
 							<span class="font-mono text-label uppercase tracking-widest text-primary mt-2">Wirkung von LearnSlice (Schätzungen)</span>
 							<div>
 								<label class="text-xs text-muted block mb-1.5" for="cancel-reduction">Weniger vorzeitige Vertragsl&ouml;sungen (%)</label>
-								<input type="number" id="cancel-reduction" value="20" min="0" max="100" step="5" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
-								<p class="text-[11px] text-muted/80 mt-1 m-0 leading-snug">Unsere Annahme, kein gemessenes Ergebnis. Passen Sie den Wert an Ihre Erwartung an.</p>
+								<input type="number" id="cancel-reduction" value="10" min="0" max="100" step="5" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
+								<div class="flex gap-2 mt-2">
+									<button type="button" data-preset-for="cancel-reduction" data-preset="10" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">10 % konservativ</button>
+									<button type="button" data-preset-for="cancel-reduction" data-preset="20" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">20 % obere Spanne</button>
+								</div>
+								<p class="text-[11px] text-muted/80 mt-1.5 m-0 leading-snug">Konservative Schätzung aus unseren Kundenprojekten; die Ergebnisse liegen bei bis zu 20 %.</p>
 							</div>
 							<div>
 								<label class="text-xs text-muted block mb-1.5" for="time-reduction">Weniger Ausbilderzeit (%)</label>
 								<input type="number" id="time-reduction" value="30" min="0" max="100" step="5" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
 								<div class="flex gap-2 mt-2">
-									<button type="button" data-time-preset="30" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">30 % konservativ</button>
-									<button type="button" data-time-preset="50" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">50 % obere Spanne</button>
+									<button type="button" data-preset-for="time-reduction" data-preset="30" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">30 % konservativ</button>
+									<button type="button" data-preset-for="time-reduction" data-preset="50" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">50 % obere Spanne</button>
 								</div>
 								<p class="text-[11px] text-muted/80 mt-1.5 m-0 leading-snug">Konservative Schätzung aus unseren Kundenprojekten; die Ergebnisse variieren je nach Unternehmen und liegen bei bis zu 50 %.</p>
 							</div>
 						</div>
 					</details>
 
-					<p class="text-xs text-muted leading-relaxed m-0">Die Werte beziehen sich auf einen Ausbildungsjahrgang im ersten Ausbildungsjahr. Jede vorzeitige Vertragsl&ouml;sung wird mit den Nettokosten des ersten Ausbildungsjahres bewertet; die Kosten f&uuml;r die Besetzung der Stelle sind in den BIBB-Kosten bereits enthalten. Quellen: <a href="https://www.bibb.de/dienst/publikationen/de/21037" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB-Datenreport 2026</a> und <a href="https://www.bibb.de/de/pressemitteilung_210430.php" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB-Kosten-Nutzen-Erhebung 2022/23</a>. Die Wirkung von LearnSlice ist geschätzt: 20&nbsp;% weniger vorzeitige Vertragslösungen ist unsere Annahme; 30&nbsp;% weniger Ausbilderzeit ist eine konservative Schätzung aus Kundenprojekten, in denen die Ergebnisse bei bis zu 50&nbsp;% liegen.</p>
+					<p class="text-xs text-muted leading-relaxed m-0">Die Werte beziehen sich auf einen Ausbildungsjahrgang im ersten Ausbildungsjahr. Jede vorzeitige Vertragsl&ouml;sung wird mit den Nettokosten des ersten Ausbildungsjahres bewertet; die Kosten f&uuml;r die Besetzung der Stelle sind in den BIBB-Kosten bereits enthalten. Quellen: <a href="https://www.bibb.de/dienst/publikationen/de/21037" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB-Datenreport 2026</a> und <a href="https://www.bibb.de/de/pressemitteilung_210430.php" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB-Kosten-Nutzen-Erhebung 2022/23</a>. Die Wirkung von LearnSlice beruht auf konservativen Schätzungen aus unseren Kundenprojekten: 10&nbsp;% weniger vorzeitige Vertragslösungen (Ergebnisse bis zu 20&nbsp;%) und 30&nbsp;% weniger Ausbilderzeit (Ergebnisse bis zu 50&nbsp;%).</p>
 				</div>
 
 				<!-- Right: Results -->
@@ -107,7 +111,7 @@ const currentPath = '/de/ausbildungskosten-rechner';
 							<span class="font-mono text-label uppercase tracking-widest text-primary block mb-2">Gesch&auml;tzte j&auml;hrliche Einsparung</span>
 							<div class="text-5xl md:text-6xl font-bold text-white tracking-tight mb-3" id="total-savings">&euro;0</div>
 							<p class="text-sm text-muted m-0">pro Jahr bei <span id="result-count">5</span> neuen Azubis</p>
-							<p class="text-sm text-muted m-0 mt-2" id="upper-range-line">Mit bis zu 50&nbsp;% weniger Ausbilderzeit: bis zu <span class="text-white font-medium" id="upper-savings">0&nbsp;&euro;</span> pro Jahr.</p>
+							<p class="text-sm text-muted m-0 mt-2" id="upper-range-line">Am oberen Ende unserer Kundenergebnisse (20&nbsp;% weniger vorzeitige Vertragsl&ouml;sungen, 50&nbsp;% weniger Ausbilderzeit): bis zu <span class="text-white font-medium" id="upper-savings">0&nbsp;&euro;</span> pro Jahr.</p>
 						</div>
 					</div>
 
@@ -193,7 +197,8 @@ const currentPath = '/de/ausbildungskosten-rechner';
 <script>
 	// All costs from BIBB (Datenreport 2026; cost-benefit survey 2022/23). The two
 	// reduction percentages are LearnSlice assumptions and are labelled as such in the UI.
-	// Trainer time: 30% conservative default, customer results range up to 50%.
+	// Defaults are conservative estimates from customer projects: 10% fewer early
+	// cancellations (up to 20%), 30% less trainer time (up to 50%).
 	// Scope: one intake (new apprentices per year) in its first training year.
 	function initCalculator() {
 		const slider = document.getElementById('apprentice-count') as HTMLInputElement;
@@ -220,7 +225,7 @@ const currentPath = '/de/ausbildungskosten-rechner';
 
 		function calculate() {
 			const count = parseInt(slider.value, 10);
-			const cancelRate = pct('dropout-rate');
+			const cancelRate = pct('cancel-rate');
 			const netCostY1 = num('net-cost-y1');
 			const staffCost = num('staff-cost');
 			const cancelReduction = pct('cancel-reduction');
@@ -240,10 +245,13 @@ const currentPath = '/de/ausbildungskosten-rechner';
 
 			const totalSavings = cancelSavings + trainerSavings;
 
-			// Upper range: same inputs, trainer time reduced by 50% (top of observed range).
-			const upperTotal = cancelSavings + staffWithout * 0.5;
+			// Upper range: top of our customer results (20% fewer early cancellations,
+			// 50% less trainer time), never below what the visitor already entered.
+			const upperCancel = Math.max(cancelReduction, 0.2);
+			const upperTime = Math.max(timeReduction, 0.5);
+			const upperTotal = lostWithout * upperCancel + staffWithout * upperTime;
 			const upperLine = document.getElementById('upper-range-line');
-			if (upperLine) upperLine.hidden = timeReduction >= 0.5;
+			if (upperLine) upperLine.hidden = cancelReduction >= 0.2 && timeReduction >= 0.5;
 
 			const set = (id: string, val: string) => { const e = document.getElementById(id); if (e) e.textContent = val; };
 			if (countDisplay) countDisplay.textContent = count.toString();
@@ -264,8 +272,8 @@ const currentPath = '/de/ausbildungskosten-rechner';
 
 		slider.addEventListener('input', calculate);
 		document.querySelectorAll<HTMLButtonElement>('.calc-preset').forEach(btn => btn.addEventListener('click', () => {
-			const field = document.getElementById('time-reduction') as HTMLInputElement | null;
-			if (field) { field.value = btn.dataset.timePreset || '30'; calculate(); }
+			const field = document.getElementById(btn.dataset.presetFor || '') as HTMLInputElement | null;
+			if (field && btn.dataset.preset) { field.value = btn.dataset.preset; calculate(); }
 		}));
 		inputs.forEach(input => input.addEventListener('input', calculate));
 
