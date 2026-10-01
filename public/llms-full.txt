@@ -96,7 +96,7 @@ Points, badges, and leaderboards turn daily practice into a motivating experienc
 ### Companies (CEOs · HR · Trainers)
 
 - Up to 65 % faster time-to-productivity. New hires work on real, job-critical tasks using your company knowledge from day one - not generic training content.
-- Up to 20 % fewer early contract cancellations and onboarding departures. Personalised learning paths and continuous AI feedback keep apprentices and early-career talent on track.
+- Up to 15 % fewer early contract cancellations and onboarding departures. Personalised learning paths and continuous AI feedback keep apprentices and early-career talent on track.
 - Up to 50 % less training effort for senior teams.
 
 The AI mentor handles standard knowledge and daily practice: experts focus on value creation, not basic instruction.
@@ -303,7 +303,7 @@ Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Er
 ### Unternehmen (CEOs · HR · Ausbilder)
 
 - Bis zu 65 % schnellere Einsatzbereitschaft. Neue Mitarbeitende bearbeiten ab Tag 1 echte, jobkritische Aufgaben mit Ihrem Unternehmenswissen - keine generischen Trainingsinhalte.
-- Bis zu 20 % weniger vorzeitige Vertragslösungen und Abgänge im Onboarding. Personalisierte Lernpfade und kontinuierliches KI-Feedback halten Azubis und Nachwuchskräfte auf Kurs.
+- Bis zu 15 % weniger vorzeitige Vertragslösungen und Abgänge im Onboarding. Personalisierte Lernpfade und kontinuierliches KI-Feedback halten Azubis und Nachwuchskräfte auf Kurs.
 - Bis zu 50 % weniger Schulungsaufwand für erfahrene Teams.
 
 Der KI-Mentor übernimmt Standardwissen und Routinepraxis. Erfahrene Mitarbeitende konzentrieren sich auf Wertschöpfung.
@@ -3154,7 +3154,7 @@ If trainers feel that the new tools are imposed on them, adoption will fail. Inv
 
 ## The ROI of Digital Training
 
-According to the [BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php), an apprentice costs a company about €26,200 a year on average. Our [savings calculator](/apprenticeship-savings-calculator) shows what less trainer time and fewer early contract cancellations can be worth for you: with its default values, about €11,461 a year for 5 new apprentices, and up to €19,687 at the upper end of our customer results. These are estimates, not guaranteed results. [Calculate your personalized estimate](/apprenticeship-savings-calculator).
+According to the [BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php), an apprentice costs a company about €26,200 a year on average. Our [savings calculator](/apprenticeship-savings-calculator) shows what less trainer time and fewer early contract cancellations can be worth for you: with its default values, about €11,461 a year for 5 new apprentices, and up to €19,687 in an optimistic scenario. These are estimates, not guaranteed results. [Calculate your personalized estimate](/apprenticeship-savings-calculator).
 
 ## Getting Started
 
@@ -3588,7 +3588,7 @@ Beyond IHK exam preparation, companies can integrate their own documents, proces
 | Contract dissolution rate | ~30% | Target: 15% |
 | Annual savings per apprentice | - | About €2,300 to €3,900* |
 
-*\*Estimate from our [Savings Calculator](/apprenticeship-savings-calculator): BIBB cost averages, 10% to 20% fewer early contract cancellations and 30% to 50% less trainer time (conservative estimate to upper end of our customer results). Actual results vary by company size, industry, and configuration.*
+*\*Estimate from our [Savings Calculator](/apprenticeship-savings-calculator): BIBB cost averages, 10% fewer early contract cancellations and 30% less trainer time (conservative estimates from our customer projects) up to an optimistic scenario of 20% and 50%. Actual results vary by company size, industry, and configuration.*
 
 ## What Makes a Genuine AI-Based Learning Platform Different
 
@@ -3958,7 +3958,7 @@ The faster an apprentice becomes productive, the faster training costs pay off. 
 
 A note on terms: the BIBB rate counts training contracts cancelled early, and BIBB stresses that it is not a dropout rate. Many apprentices whose contract ends switch to another company or occupation and continue training. For the company that loses them, however, the cost is the same: the training investment to date plus recruiting a replacement. Personalized support through AI coaching and early detection of problems can help reduce early cancellations.
 
-**Example:** At the BIBB rate of 29.7%, a conservative 10% reduction (our customer projects reach up to 20%) means roughly 3 fewer early cancellations per 100 new apprentices. Every contract kept preserves the training investment already made; the worked example below puts a figure on it.
+**Example:** At the BIBB rate of 29.7%, a conservative 10% reduction (20% in an optimistic scenario) means roughly 3 fewer early cancellations per 100 new apprentices. Every contract kept preserves the training investment already made; the worked example below puts a figure on it.
 
 Current BIBB figures on what training and external recruiting cost, and on when contracts end, are in our [analysis of apprenticeships in Germany's defence industry](/blog/apprenticeships-defence-industry-germany).
 
@@ -3976,7 +3976,7 @@ When company knowledge only lives in individual employees' heads, every new appr
 
 ## Worked Example: AI Learning Platform
 
-The following is an illustrative example, not survey data. It uses the default values of our [Savings Calculator](/apprenticeship-savings-calculator): 5 new apprentices per year, the BIBB averages (29.7% of contracts cancelled early, €11,818 net training cost in the first year, €6,471 training staff cost per apprentice per year) and two conservative estimates from our customer projects: 10% fewer early cancellations (results reach up to 20%) and 30% less trainer time (results reach up to 50%).
+The following is an illustrative example, not survey data. It uses the default values of our [Savings Calculator](/apprenticeship-savings-calculator): 5 new apprentices per year, the BIBB averages (29.7% of contracts cancelled early, €11,818 net training cost in the first year, €6,471 training staff cost per apprentice per year) and two conservative estimates from our customer projects: 10% fewer early cancellations (20% as an optimistic scenario) and 30% less trainer time (results reach up to 50%).
 
 | Savings category (illustrative) | Per apprentice/year | For 5 apprentices |
 |-----------------|--------------------|--------------------|
@@ -3984,7 +3984,7 @@ The following is an illustrative example, not survey data. It uses the default v
 | Fewer early cancellations (10% of 29.7% × €11,818) | €351 | €1,755 |
 | **Total annual savings** | **~€2,292** | **~€11,461** |
 
-*This is an example calculation. At the upper end of our customer results (20% and 50%), the total for 5 apprentices is up to about €19,687. The percentages are estimates, not guaranteed results, and actual savings depend on your company's costs and team size. [Calculate your personalized estimate →](/apprenticeship-savings-calculator)*
+*This is an example calculation. In an optimistic scenario (20% fewer early cancellations, 50% less trainer time), the total for 5 apprentices is up to about €19,687. The percentages are estimates, not guaranteed results, and actual savings depend on your company's costs and team size. [Calculate your personalized estimate →](/apprenticeship-savings-calculator)*
 
 ## What to Look For When Choosing a Platform
 
@@ -6940,7 +6940,7 @@ Personenbezogene Daten von Azubis unterliegen der DSGVO. Wählen Sie eine Plattf
 
 ## Der ROI der digitalen Ausbildung
 
-Laut [BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php) kostet ein Azubi einen Betrieb im Schnitt rund 26.200 € pro Jahr. Unser [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner) zeigt, was weniger Ausbilderzeit und weniger vorzeitige Vertragslösungen für Sie wert sein können: mit den Standardwerten rund 11.461 € pro Jahr bei 5 neuen Azubis, bis zu 19.687 € am oberen Ende unserer Kundenergebnisse. Das sind Schätzungen, keine garantierten Ergebnisse. [Berechnen Sie Ihre individuelle Einsparung mit unserem Rechner.](/de/ausbildungskosten-rechner)
+Laut [BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php) kostet ein Azubi einen Betrieb im Schnitt rund 26.200 € pro Jahr. Unser [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner) zeigt, was weniger Ausbilderzeit und weniger vorzeitige Vertragslösungen für Sie wert sein können: mit den Standardwerten rund 11.461 € pro Jahr bei 5 neuen Azubis, bis zu 19.687 € im optimistischen Szenario. Das sind Schätzungen, keine garantierten Ergebnisse. [Berechnen Sie Ihre individuelle Einsparung mit unserem Rechner.](/de/ausbildungskosten-rechner)
 
 Lesen Sie auch unseren ausführlichen Beitrag zum Thema [Ausbildungskosten senken](/de/blog/ausbildungskosten-senken) für eine detaillierte ROI-Berechnung.
 
@@ -7456,7 +7456,7 @@ Neben der IHK-Prüfungsvorbereitung können Unternehmen eigene Dokumente, Prozes
 | Vertragslösungsquote | ~30 % | Ziel: 15 % |
 | Jährliche Einsparung pro Azubi | - | Rund 2.300 bis 3.900 €* |
 
-*\*Schätzung aus unserem [Einsparungsrechner](/de/ausbildungskosten-rechner): BIBB-Kostendurchschnitte, 10 bis 20 % weniger vorzeitige Vertragslösungen und 30 bis 50 % weniger Ausbilderzeit (konservative Schätzung bis oberes Ende unserer Kundenergebnisse). Die tatsächlichen Ergebnisse variieren je nach Unternehmensgröße, Branche und Konfiguration.*
+*\*Schätzung aus unserem [Einsparungsrechner](/de/ausbildungskosten-rechner): BIBB-Kostendurchschnitte, 10 % weniger vorzeitige Vertragslösungen und 30 % weniger Ausbilderzeit (konservative Schätzungen aus unseren Kundenprojekten) bis zu einem optimistischen Szenario mit 20 % und 50 %. Die tatsächlichen Ergebnisse variieren je nach Unternehmensgröße, Branche und Konfiguration.*
 
 ## Was eine KI-basierte Lernplattform von klassischem E-Learning unterscheidet
 
@@ -7821,7 +7821,7 @@ Je schneller ein Azubi produktiv wird, desto schneller amortisieren sich die Aus
 
 Zur Begriffsklärung: Die BIBB-Vertragslösungsquote zählt vorzeitig gelöste Ausbildungsverträge und ist laut BIBB ausdrücklich keine Abbruchquote. Viele Azubis wechseln nach einer Vertragslösung nur den Betrieb oder Beruf und setzen die Ausbildung fort. Für den Betrieb, der sie verliert, sind die Kosten trotzdem dieselben: der bisherige Ausbildungsaufwand plus die Rekrutierung eines Ersatzes. Personalisierte Betreuung durch KI-Coaching und frühzeitige Erkennung von Problemen können helfen, vorzeitige Vertragslösungen zu verringern.
 
-**Beispiel:** Bei der BIBB-Quote von 29,7 % bedeutet eine konservative Senkung um 10 % (in unseren Kundenprojekten bis zu 20 %) rund 3 vorzeitige Vertragslösungen weniger pro 100 neue Azubis. Jeder gehaltene Vertrag sichert die bereits geleistete Ausbildungsinvestition; das Rechenbeispiel unten beziffert sie.
+**Beispiel:** Bei der BIBB-Quote von 29,7 % bedeutet eine konservative Senkung um 10 % (20 % im optimistischen Szenario) rund 3 vorzeitige Vertragslösungen weniger pro 100 neue Azubis. Jeder gehaltene Vertrag sichert die bereits geleistete Ausbildungsinvestition; das Rechenbeispiel unten beziffert sie.
 
 Aktuelle BIBB-Zahlen zu den Kosten von Ausbildung und externer Fachkräftegewinnung und dazu, wann Verträge enden, finden Sie in unserem [Datencheck zur Ausbildung in der Rüstungsindustrie](/de/blog/ausbildung-ruestungsindustrie).
 
@@ -7839,7 +7839,7 @@ Wenn Unternehmenswissen nur in den Köpfen einzelner Mitarbeiter steckt, muss je
 
 ## Rechenbeispiel: ROI einer KI-Lernplattform
 
-Das folgende Beispiel ist eine Modellrechnung, keine Erhebungsdaten. Es nutzt die Standardwerte unseres [Einsparungsrechners](/de/ausbildungskosten-rechner): 5 neue Azubis pro Jahr, die BIBB-Durchschnitte (29,7 % vorzeitig gelöste Verträge, 11.818 € Nettokosten im ersten Ausbildungsjahr, 6.471 € Kosten für Ausbildungspersonal pro Azubi und Jahr) und zwei konservative Schätzungen aus unseren Kundenprojekten: 10 % weniger vorzeitige Vertragslösungen (Ergebnisse bis zu 20 %) und 30 % weniger Ausbilderzeit (Ergebnisse bis zu 50 %).
+Das folgende Beispiel ist eine Modellrechnung, keine Erhebungsdaten. Es nutzt die Standardwerte unseres [Einsparungsrechners](/de/ausbildungskosten-rechner): 5 neue Azubis pro Jahr, die BIBB-Durchschnitte (29,7 % vorzeitig gelöste Verträge, 11.818 € Nettokosten im ersten Ausbildungsjahr, 6.471 € Kosten für Ausbildungspersonal pro Azubi und Jahr) und zwei konservative Schätzungen aus unseren Kundenprojekten: 10 % weniger vorzeitige Vertragslösungen (20 % als optimistisches Szenario) und 30 % weniger Ausbilderzeit (Ergebnisse bis zu 50 %).
 
 | Einsparungskategorie (Beispiel) | Pro Azubi/Jahr | Bei 5 Azubis |
 |---------------------|---------------|--------------|
@@ -7847,7 +7847,7 @@ Das folgende Beispiel ist eine Modellrechnung, keine Erhebungsdaten. Es nutzt di
 | Weniger vorzeitige Vertragslösungen (10 % von 29,7 % × 11.818 €) | 351 € | 1.755 € |
 | **Jährliche Gesamteinsparung** | **~2.292 €** | **~11.461 €** |
 
-*Dies ist eine Beispielrechnung. Am oberen Ende unserer Kundenergebnisse (20 % und 50 %) liegt die Summe bei 5 Azubis bei bis zu rund 19.687 €. Die Prozentwerte sind Schätzungen, keine garantierten Ergebnisse, und die tatsächlichen Einsparungen hängen von den Kosten und der Teamgröße Ihres Unternehmens ab. [Berechnen Sie Ihre individuelle Einsparung →](/de/ausbildungskosten-rechner)*
+*Dies ist eine Beispielrechnung. Im optimistischen Szenario (20 % weniger vorzeitige Vertragslösungen, 50 % weniger Ausbilderzeit) liegt die Summe bei 5 Azubis bei bis zu rund 19.687 €. Die Prozentwerte sind Schätzungen, keine garantierten Ergebnisse, und die tatsächlichen Einsparungen hängen von den Kosten und der Teamgröße Ihres Unternehmens ab. [Berechnen Sie Ihre individuelle Einsparung →](/de/ausbildungskosten-rechner)*
 
 ## Worauf Sie bei der Auswahl achten sollten
 

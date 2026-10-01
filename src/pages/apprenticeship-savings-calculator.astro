@@ -83,9 +83,9 @@ const currentPath = '/apprenticeship-savings-calculator';
 								<input type="number" id="cancel-reduction" value="10" min="0" max="100" step="5" class="calc-input w-full bg-dark border border-border rounded-lg px-3 py-2 text-sm text-white focus:border-primary focus:outline-none transition-colors" />
 								<div class="flex gap-2 mt-2">
 									<button type="button" data-preset-for="cancel-reduction" data-preset="10" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">10% conservative</button>
-									<button type="button" data-preset-for="cancel-reduction" data-preset="20" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">20% upper range</button>
+									<button type="button" data-preset-for="cancel-reduction" data-preset="20" class="calc-preset text-[11px] px-2.5 py-1 rounded-full border border-border text-muted hover:text-white hover:border-primary transition-colors">20% optimistic</button>
 								</div>
-								<p class="text-[11px] text-muted/80 mt-1.5 m-0 leading-snug">Conservative estimate from our customer projects, where results reach up to 20%.</p>
+								<p class="text-[11px] text-muted/80 mt-1.5 m-0 leading-snug">Conservative estimate from our customer projects. 20% is an optimistic scenario.</p>
 							</div>
 							<div>
 								<label class="text-xs text-muted block mb-1.5" for="time-reduction">Less trainer time (%)</label>
@@ -99,7 +99,7 @@ const currentPath = '/apprenticeship-savings-calculator';
 						</div>
 					</details>
 
-					<p class="text-xs text-muted leading-relaxed m-0">Figures refer to one intake in its first training year. Each early cancellation is valued at the net cost of the first training year; the cost of filling the place is already part of the BIBB cost figures. Sources: <a href="https://www.bibb.de/dienst/publikationen/de/21037" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB Datenreport 2026</a> and <a href="https://www.bibb.de/de/pressemitteilung_210430.php" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB cost-benefit survey 2022/23</a>. The LearnSlice effects are conservative estimates from our customer projects: 10% fewer early cancellations (results reach up to 20%) and 30% less trainer time (results reach up to 50%).</p>
+					<p class="text-xs text-muted leading-relaxed m-0">Figures refer to one intake in its first training year. Each early cancellation is valued at the net cost of the first training year; the cost of filling the place is already part of the BIBB cost figures. Sources: <a href="https://www.bibb.de/dienst/publikationen/de/21037" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB Datenreport 2026</a> and <a href="https://www.bibb.de/de/pressemitteilung_210430.php" class="text-primary hover:underline" target="_blank" rel="noopener">BIBB cost-benefit survey 2022/23</a>. The LearnSlice effects are conservative estimates from our customer projects: 10% fewer early cancellations (20% as an optimistic scenario) and 30% less trainer time (results reach up to 50%).</p>
 				</div>
 
 				<!-- Right: Results -->
@@ -111,7 +111,7 @@ const currentPath = '/apprenticeship-savings-calculator';
 							<span class="font-mono text-label uppercase tracking-widest text-primary block mb-2">Estimated annual savings</span>
 							<div class="text-5xl md:text-6xl font-bold text-white tracking-tight mb-3" id="total-savings">&euro;0</div>
 							<p class="text-sm text-muted m-0">per year with <span id="result-count">5</span> new apprentices</p>
-							<p class="text-sm text-muted m-0 mt-2" id="upper-range-line">At the upper end of our customer results (20% fewer early cancellations, 50% less trainer time): up to <span class="text-white font-medium" id="upper-savings">&euro;0</span> per year.</p>
+							<p class="text-sm text-muted m-0 mt-2" id="upper-range-line">Optimistic scenario (20% fewer early cancellations, 50% less trainer time): up to <span class="text-white font-medium" id="upper-savings">&euro;0</span> per year.</p>
 						</div>
 					</div>
 
@@ -198,7 +198,7 @@ const currentPath = '/apprenticeship-savings-calculator';
 	// All costs from BIBB (Datenreport 2026; cost-benefit survey 2022/23). The two
 	// reduction percentages are LearnSlice assumptions and are labelled as such in the UI.
 	// Defaults are conservative estimates from customer projects: 10% fewer early
-	// cancellations (up to 20%), 30% less trainer time (up to 50%).
+	// cancellations (20% as optimistic scenario), 30% less trainer time (up to 50%).
 	// Scope: one intake (new apprentices per year) in its first training year.
 	function initCalculator() {
 		const slider = document.getElementById('apprentice-count') as HTMLInputElement;
@@ -245,8 +245,8 @@ const currentPath = '/apprenticeship-savings-calculator';
 
 			const totalSavings = cancelSavings + trainerSavings;
 
-			// Upper range: top of our customer results (20% fewer early cancellations,
-			// 50% less trainer time), never below what the visitor already entered.
+			// Optimistic scenario: 20% fewer early cancellations, 50% less trainer time
+			// (top of customer results), never below what the visitor already entered.
 			const upperCancel = Math.max(cancelReduction, 0.2);
 			const upperTime = Math.max(timeReduction, 0.5);
 			const upperTotal = lostWithout * upperCancel + staffWithout * upperTime;
