@@ -15,7 +15,7 @@ AI-Powered Apprenticeship Training
 
 AI learning paths plus your company knowledge, from onboarding to IHK exam.
 
-**Proof points:** €26K — cost per apprentice per year (BIBB) · 50% — less trainer time · 65% — faster to productivity
+**Proof points:** €26K — cost per apprentice per year (BIBB) · up to 50% — less trainer time · up to 65% — faster to productivity
 
 ## Training Is Broken. The Numbers Prove It.
 
@@ -32,8 +32,8 @@ AI learning paths plus your company knowledge, from onboarding to IHK exam.
 
 ### Companies With LearnSlice
 
-- 65% faster to productivity (~6 months → 8 weeks)
-- 50% less trainer time
+- Up to 65% faster to productivity (from ~6 months to as little as 8 weeks)
+- Up to 50% less trainer time
 - Less routine explaining, more time for real coaching
 - Calculate your own figures with our BIBB-based calculator
 
@@ -105,7 +105,7 @@ The AI mentor handles standard knowledge and daily practice: experts focus on va
 
 - Makes apprenticeship training affordable for SMEs and resource-constrained companies. Shared license models enable AI mentoring without internal budgets or IT capacity.
 - Reduces apprenticeship dropouts measurably (10-15 %). Job-relevant tasks and exam-level simulations stabilise apprentices in daily work and training.
-- Relieves overloaded trainers in SMEs (45-50 % less supervision effort).
+- Relieves overloaded trainers in SMEs (up to 50 % less supervision effort).
 
 The AI mentor provides daily guidance and standard instruction, enabling companies to support apprentices consistently.
 
@@ -223,7 +223,7 @@ KI-gestützte Ausbildungsplattform
 
 KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.
 
-**Beweispunkte:** 26K € — Kosten pro Azubi und Jahr (BIBB) · 50 % — weniger Ausbilderzeit · 65 % — schneller einsatzbereit
+**Beweispunkte:** 26K € — Kosten pro Azubi und Jahr (BIBB) · bis zu 50 % — weniger Ausbilderzeit · bis zu 65 % — schneller einsatzbereit
 
 ## Ausbildung ist kaputt. Die Zahlen belegen es.
 
@@ -240,8 +240,8 @@ KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.
 
 ### Unternehmen mit LearnSlice
 
-- 65 % schneller einsatzbereit (~6 Monate → 8 Wochen).
-- 50 % weniger Ausbilderzeit.
+- Bis zu 65 % schneller einsatzbereit (von ~6 Monaten auf bis zu 8 Wochen).
+- Bis zu 50 % weniger Ausbilderzeit.
 - Weniger Routinefragen, mehr Zeit für echte Begleitung.
 - Eigene Zahlen berechnen mit unserem Rechner auf BIBB-Basis.
 
@@ -312,7 +312,7 @@ Der KI-Mentor übernimmt Standardwissen und Routinepraxis. Erfahrene Mitarbeiten
 
 - Ausbildung für KMU bezahlbar machen. Geförderte Lizenzmodelle ermöglichen KI-Mentoring ohne internes Budget oder IT-Kapazitäten.
 - Abbrüche in der Ausbildung messbar senken (10-15 %). Jobrelevante Aufgaben und prüfungsnahe Simulationen stabilisieren Azubis im Arbeitsalltag.
-- Entlastung überlasteter Ausbilder in KMU (45-50 % weniger Betreuungsaufwand).
+- Entlastung überlasteter Ausbilder in KMU (bis zu 50 % weniger Betreuungsaufwand).
 
 Der KI-Mentor liefert tägliche Anleitung und Standardwissen, sodass Unternehmen ihre Azubis kontinuierlich unterstützen können.
 
@@ -3951,7 +3951,7 @@ It gets more expensive when a training contract ends early. According to the [BI
 
 The biggest cost lever is digitizing training. Instead of relying on in-person sessions and manual supervision, AI-powered learning platforms take over a large portion of knowledge transfer.
 
-**Example assumption:** If a platform takes 20% off trainer time, that is about **€1,300** per apprentice per year at the BIBB average training staff cost of €6,471.
+**Example assumption:** If a platform takes 30% off trainer time (our conservative estimate; customer results reach up to 50%), that is about **€1,940** per apprentice per year at the BIBB average training staff cost of €6,471.
 
 ### 2. Accelerate Onboarding
 
@@ -3983,15 +3983,15 @@ When company knowledge only lives in individual employees' heads, every new appr
 
 ## Worked Example: AI Learning Platform
 
-The following is an illustrative example, not survey data. It uses the default values of our [Savings Calculator](/apprenticeship-savings-calculator): 5 new apprentices per year, the BIBB averages (29.7% of contracts cancelled early, €11,818 net training cost in the first year, €6,471 training staff cost per apprentice per year) and two assumptions of ours: 20% fewer early cancellations and 20% less trainer time.
+The following is an illustrative example, not survey data. It uses the default values of our [Savings Calculator](/apprenticeship-savings-calculator): 5 new apprentices per year, the BIBB averages (29.7% of contracts cancelled early, €11,818 net training cost in the first year, €6,471 training staff cost per apprentice per year) and two estimates of ours: 20% fewer early cancellations and 30% less trainer time (conservative; customer results reach up to 50%).
 
 | Savings category (illustrative) | Per apprentice/year | For 5 apprentices |
 |-----------------|--------------------|--------------------|
-| Less trainer time (20% of €6,471) | €1,294 | €6,471 |
+| Less trainer time (30% of €6,471) | €1,941 | €9,707 |
 | Fewer early cancellations (20% of 29.7% × €11,818) | €702 | €3,510 |
-| **Total annual savings** | **~€1,996** | **~€9,981** |
+| **Total annual savings** | **~€2,643** | **~€13,216** |
 
-*This is an example calculation. The two percentages are our assumptions, not measured results, and actual savings depend on your company's costs and team size. [Calculate your personalized estimate →](/apprenticeship-savings-calculator)*
+*This is an example calculation. The two percentages are estimates, not guaranteed results, and actual savings depend on your company's costs and team size. [Calculate your personalized estimate →](/apprenticeship-savings-calculator)*
 
 ## What to Look For When Choosing a Platform
 
@@ -7814,7 +7814,7 @@ Teurer wird es, wenn ein Ausbildungsvertrag vorzeitig endet. Laut [BIBB-Datenrep
 
 Der größte Kostenhebel liegt in der Digitalisierung der Ausbildung. Statt auf Präsenzschulungen und manuelle Betreuung zu setzen, übernehmen KI-gestützte Lernplattformen einen Großteil der Wissensvermittlung.
 
-**Beispielannahme:** Nimmt eine Plattform 20 % der Ausbilderzeit ab, sind das beim BIBB-Durchschnitt von 6.471 € für Ausbildungspersonal rund **1.300 €** pro Azubi und Jahr.
+**Beispielannahme:** Nimmt eine Plattform 30 % der Ausbilderzeit ab (unsere konservative Schätzung; in Kundenprojekten bis zu 50 %), sind das beim BIBB-Durchschnitt von 6.471 € für Ausbildungspersonal rund **1.940 €** pro Azubi und Jahr.
 
 ### 2. Onboarding beschleunigen
 
@@ -7846,15 +7846,15 @@ Wenn Unternehmenswissen nur in den Köpfen einzelner Mitarbeiter steckt, muss je
 
 ## Rechenbeispiel: ROI einer KI-Lernplattform
 
-Das folgende Beispiel ist eine Modellrechnung, keine Erhebungsdaten. Es nutzt die Standardwerte unseres [Einsparungsrechners](/de/ausbildungskosten-rechner): 5 neue Azubis pro Jahr, die BIBB-Durchschnitte (29,7 % vorzeitig gelöste Verträge, 11.818 € Nettokosten im ersten Ausbildungsjahr, 6.471 € Kosten für Ausbildungspersonal pro Azubi und Jahr) und zwei Annahmen von uns: 20 % weniger vorzeitige Vertragslösungen und 20 % weniger Ausbilderzeit.
+Das folgende Beispiel ist eine Modellrechnung, keine Erhebungsdaten. Es nutzt die Standardwerte unseres [Einsparungsrechners](/de/ausbildungskosten-rechner): 5 neue Azubis pro Jahr, die BIBB-Durchschnitte (29,7 % vorzeitig gelöste Verträge, 11.818 € Nettokosten im ersten Ausbildungsjahr, 6.471 € Kosten für Ausbildungspersonal pro Azubi und Jahr) und zwei Schätzungen von uns: 20 % weniger vorzeitige Vertragslösungen und 30 % weniger Ausbilderzeit (konservativ; in Kundenprojekten bis zu 50 %).
 
 | Einsparungskategorie (Beispiel) | Pro Azubi/Jahr | Bei 5 Azubis |
 |---------------------|---------------|--------------|
-| Weniger Ausbilderzeit (20 % von 6.471 €) | 1.294 € | 6.471 € |
+| Weniger Ausbilderzeit (30 % von 6.471 €) | 1.941 € | 9.707 € |
 | Weniger vorzeitige Vertragslösungen (20 % von 29,7 % × 11.818 €) | 702 € | 3.510 € |
-| **Jährliche Gesamteinsparung** | **~1.996 €** | **~9.981 €** |
+| **Jährliche Gesamteinsparung** | **~2.643 €** | **~13.216 €** |
 
-*Dies ist eine Beispielrechnung. Die beiden Prozentwerte sind unsere Annahmen, keine gemessenen Ergebnisse, und die tatsächlichen Einsparungen hängen von den Kosten und der Teamgröße Ihres Unternehmens ab. [Berechnen Sie Ihre individuelle Einsparung →](/de/ausbildungskosten-rechner)*
+*Dies ist eine Beispielrechnung. Die beiden Prozentwerte sind Schätzungen, keine garantierten Ergebnisse, und die tatsächlichen Einsparungen hängen von den Kosten und der Teamgröße Ihres Unternehmens ab. [Berechnen Sie Ihre individuelle Einsparung →](/de/ausbildungskosten-rechner)*
 
 ## Worauf Sie bei der Auswahl achten sollten
 
