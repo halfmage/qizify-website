@@ -27,6 +27,15 @@ const blog = defineCollection({
 		// 'guide' = links to the /ai-guides lead magnet, no modal. For informational
 		// posts whose reader wants to learn rather than buy.
 		ctaVariant: z.enum(['demo', 'consultation', 'guide']).default('demo'),
+		// ctaFooter: optional per-post copy for the closing CTA block. Only used with
+		// the 'demo' variant, for campaign posts whose reader needs a different promise
+		// than the site-wide blog CTA. Button still opens the demo modal.
+		ctaFooter: z.object({
+			label: z.string().optional(),
+			headline: z.string(),
+			subheadline: z.string(),
+			button: z.string(),
+		}).optional(),
 		// keyTakeaways: 3–5 bullets, rendered as a card above the article body
 		// and used by AI engines as a verbatim-citation target. Plain text only.
 		keyTakeaways: z.array(z.string()).optional(),

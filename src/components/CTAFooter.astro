@@ -2,6 +2,8 @@
 import Button from './Button.astro';
 
 interface Props {
+	// Small eyebrow above the headline. Defaults to the site-wide "Get Started".
+	label?: string;
 	headline: string;
 	subheadline: string;
 	button: string;
@@ -14,7 +16,7 @@ interface Props {
 	secondaryHref?: string;
 }
 
-const { headline, subheadline, button, currentLang, buttonHref = '#demo-request', note, secondaryLabel, secondaryHref } = Astro.props;
+const { label = 'Get Started', headline, subheadline, button, currentLang, buttonHref = '#demo-request', note, secondaryLabel, secondaryHref } = Astro.props;
 
 const subheadlineLines = subheadline.split('\n');
 ---
@@ -24,7 +26,7 @@ const subheadlineLines = subheadline.split('\n');
 	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] pointer-events-none" aria-hidden="true" style="background: radial-gradient(ellipse 55% 60% at 35% 50%, rgba(124, 92, 252, 0.42) 0%, transparent 70%), radial-gradient(ellipse 50% 55% at 70% 55%, rgba(244, 162, 97, 0.32) 0%, transparent 70%); filter: blur(40px);"></div>
 
 	<div class="max-w-xl mx-auto relative z-10 text-center flex flex-col items-center gap-6">
-		<span class="section-label">Get Started</span>
+		<span class="section-label">{label}</span>
 		<h2 class="text-heading md:text-display-sm text-white m-0">
 			{headline}
 		</h2>
