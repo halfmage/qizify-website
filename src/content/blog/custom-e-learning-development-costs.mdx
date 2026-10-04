@@ -4,7 +4,7 @@ description: "Custom e-learning development in 2026: price benchmarks per module
 publishDate: 2026-07-01
 updatedDate: 2026-10-04
 author: "LearnSlice Team"
-tags: ["Custom E-Learning", "E-Learning Development", "Learning Software", "AI Chatbot", "Cost", "GDPR"]
+tags: ["Custom E-Learning", "E-Learning Development", "Learning Software", "AI Chatbot", "Cost", "Data Privacy"]
 lang: "en"
 translationSlug: "e-learning-entwickeln-lassen"
 ogImage: "/images/blog/custom-elearning-consultation.jpg"
@@ -15,7 +15,7 @@ keyTakeaways:
   - "Cost depends heavily on type and interactivity. A Chapman Alliance survey of 249 organisations (2010) put the average cost per finished hour at about 10,000 dollars for basic e-learning, 18,600 for interactive and 50,400 for advanced, simulation-based content. Interactivity is the single biggest cost driver."
   - "A first usable module is often ready in 6 to 8 weeks; a complete solution with several building blocks takes 3 to 6 months. Budget for ongoing operation and iteration, not just the build."
   - "Off-the-shelf software is cheap and instant but rarely fits your processes exactly. Custom development costs more up front, but you own the result, can extend it freely, and can build in AI and your own knowledge. As a one-time investment rather than a recurring per-user licence, it pays off over the years, especially for anyone training large groups: training providers, universities, and course providers."
-  - "When choosing a vendor, look for both instructional design and software engineering, GDPR-compliant EU hosting, a clear agreement on who owns the code, and a partner who plans for operation and scale."
+  - "When choosing a vendor, look for both instructional design and software engineering, hosting that meets your data rules (GDPR, UK GDPR, FERPA or HIPAA where they apply), accessibility to WCAG AA, a clear agreement on who owns the code, and a partner who plans for operation and scale."
 faq:
   - q: "How much does custom e-learning development cost?"
     a: "It depends on the type. Per finished hour of content, a Chapman Alliance survey of 249 organisations (2010) found average costs of about 10,000 dollars for basic e-learning (pages and a quiz), 18,600 for interactive e-learning and 50,400 for advanced, simulation-based courses. A custom learning platform is a software project, typically from the mid five figures into six figures depending on scope. The single biggest cost driver is the level of interactivity."
@@ -27,14 +27,14 @@ faq:
     a: "Building in-house only pays off if you have your own team combining instructional design and software engineering. An off-the-shelf LMS is the fast, cheap option when your requirements are standard. Custom development is the right path when the solution must fit your processes exactly, belong to you, and grow with AI and your own knowledge."
   - q: "What is the difference between custom e-learning software and a standard LMS?"
     a: "A standard learning management system (LMS) is finished software you rent and fill with content. It is instant, but it follows its own logic. Custom e-learning software is built around your processes: your roles, your workflows, integration with your systems, AI features, and data control. It costs more, but you own it and can extend it freely."
-  - q: "Is custom-built e-learning GDPR compliant?"
-    a: "It can and should be, but only if it is built that way from the start. Look for hosting in Germany or the EU, a data processing agreement, a clean role and deletion model, and a clear separation between your data and any publicly trained models. Custom development has the advantage that data protection and sovereignty are designed in from the ground up."
+  - q: "Is custom e-learning compliant with US and UK data rules?"
+    a: "It can and should be, but only if it is built that way from the start. In the US there is no single federal privacy law: sector rules such as FERPA for student records and HIPAA for health data, plus state laws, decide where data may live and who may process it. In the UK, the UK GDPR applies; transfers to the EEA are covered by the UK adequacy regulations, so EU hosting needs no extra transfer paperwork. In every case, ask for a data processing agreement, a clean role and deletion model, a clear separation between your data and publicly trained AI models, and whether the vendor can deploy on your own servers if your contracts require it."
   - q: "Who owns the code and the intellectual property?"
     a: "That is negotiable and should be settled in writing before the project starts. With genuine custom development, the rights to the code and content you commission should sit with you, so you are not permanently locked to one vendor. Get ownership, usage rights, and handover of the source code contractually guaranteed."
   - q: "Can you have a custom AI chatbot for learning built?"
-    a: "Yes, a custom learning chatbot is one of the most common use cases. Unlike a generic assistant, it answers from your own company knowledge, guides learners through the content, and gives feedback. For workplace use it needs a clear processing purpose, EU hosting, and a training-data opt-out to stay GDPR compliant."
+    a: "Yes, a custom learning chatbot is one of the most common use cases. Unlike a generic assistant, it answers from your own company knowledge, guides learners through the content, and gives feedback. For workplace use it needs a clear processing purpose, hosting that meets your data rules, and a guarantee that your content is not used to train the vendor's AI models."
   - q: "Is AI worth it in custom learning software?"
-    a: "In most cases yes, because this is where the value over off-the-shelf software lives. AI can tailor learning paths per person, pull in your own company knowledge, and give feedback. To keep that GDPR compliant, the AI processing has to be planned in from the start, including EU hosting and a training-data opt-out."
+    a: "In most cases yes, because this is where the value over off-the-shelf software lives. AI can tailor learning paths per person, pull in your own company knowledge, and give feedback. To keep that compliant with your privacy rules, the AI processing has to be planned in from the start, including where it runs and a guarantee that your data does not train external models."
 ---
 import CopyBlock from '../../components/CopyBlock.astro';
 
@@ -50,7 +50,7 @@ That is what this guide is for: **what a custom build actually costs**, the real
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Looking for a custom e-learning development partner?</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">LearnSlice builds custom learning software: AI tutors, learning platforms and learning apps, GDPR compliant, hosted in Germany and owned by you. After the first call, you know the price range for your project.</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">LearnSlice builds custom learning software: AI tutors, learning platforms and learning apps, at a fixed price agreed up front, with calls in US and UK business hours, and owned by you. After the first call, you know the price range for your project.</p>
   <p class="m-0 mt-4"><a href="/solutions" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">See services and projects</a></p>
 </div>
 
@@ -135,7 +135,11 @@ A good vendor combines two skills that rarely come together: instructional desig
 
 - **Instructional design and engineering under one roof.** Beautiful software with no learning impact is wasted budget; a strong concept on weak technology is too.
 - **AI capability.** Can the vendor build adaptive learning paths and a real learning chatbot that answers from your own knowledge, rather than just bolt on a generic assistant?
-- **GDPR and sovereignty.** Hosting in Germany or the EU, a data processing agreement, and a clean role and deletion model.
+- **Data privacy and hosting.** A data processing agreement, a clean role and deletion model, and hosting that fits your rules: GDPR or UK GDPR, FERPA for student records, HIPAA for health data. Ask whether the vendor can deploy on your own servers.
+- **E-learning standards.** SCORM, xAPI, cmi5 or LTI, depending on your LMS, so content and learner data flow into the systems you already run.
+- **Accessibility.** Interfaces built to WCAG AA, the standard behind Section 508, the ADA Title II rule for public institutions, and the UK public sector accessibility regulations. Ask for an accessibility conformance report (VPAT).
+- **Security documentation.** If your procurement asks for a SOC 2 or ISO 27001 report, raise it in the first call rather than at contract stage.
+- **Working hours.** Enough overlap with your team for reviews and decisions. A vendor six hours ahead can still work well if calls sit in your morning and the work moves on overnight.
 - **Ownership of the code.** Who owns the result and the source after the project? Get it guaranteed in writing.
 - **Operation and scale.** Will the solution be maintained and extended after go-live, or are you on your own?
 - **References and evidence.** Proof over promises. A vendor who shows results beats one who only shows slides. For what solid evidence looks like, see our [research and evidence](/research) from a university pilot.
@@ -166,11 +170,12 @@ Score 0 to 3 per criterion: 0 absent, 1 claimed, 2 demonstrated, 3 proven with e
 |---|---|---|---|
 | Instructional design and engineering under one roof | [0-3] | [0-3] | [0-3] |
 | AI capability: adaptive paths, chatbot grounded in your own knowledge | [0-3] | [0-3] | [0-3] |
-| GDPR: EU or German hosting, processing agreement, deletion model | [0-3] | [0-3] | [0-3] |
+| Data privacy: hosting that fits your rules, processing agreement, deletion model | [0-3] | [0-3] | [0-3] |
+| Standards and accessibility: SCORM/xAPI/LTI, WCAG AA, conformance report | [0-3] | [0-3] | [0-3] |
 | Ownership of the code and content after the project | [0-3] | [0-3] | [0-3] |
 | Operation and further development after go-live | [0-3] | [0-3] | [0-3] |
 | References with evidence, not slides | [0-3] | [0-3] | [0-3] |
-| **Total out of 18** | [sum] | [sum] | [sum] |
+| **Total out of 21** | [sum] | [sum] | [sum] |
 
 #### 2. Settle Before You Request Quotes
 
@@ -178,7 +183,8 @@ Score 0 to 3 per criterion: 0 absent, 1 claimed, 2 demonstrated, 3 proven with e
 - [ ] Who are the user groups, and how many people in each?
 - [ ] Which systems must it connect to? [LMS, SSO, xAPI, SCORM, HR system]
 - [ ] What content already exists, and in what format?
-- [ ] Where must the data live?
+- [ ] Where must the data live, and which rules apply (GDPR, UK GDPR, FERPA, HIPAA, state law)?
+- [ ] Which accessibility level do we need (WCAG AA, Section 508)?
 - [ ] Who operates the solution after go-live, us or the vendor?
 - [ ] Budget range and target go-live date?
 
@@ -187,19 +193,20 @@ Score 0 to 3 per criterion: 0 absent, 1 claimed, 2 demonstrated, 3 proven with e
 - [ ] Ownership of the source code and the content
 - [ ] Usage rights and handover of the source on contract end
 - [ ] Data processing agreement and hosting location
+- [ ] Accessibility target and conformance report
 - [ ] Maintenance, service levels, and further development
 - [ ] How training data is handled for any AI features
 - [ ] What happens to your data if you change vendor
 
 </CopyBlock>
 
-## GDPR, Sovereignty, and Owning the Code
+## Data Privacy, Accessibility, and Owning the Code
 
 The real advantage of custom development is control: over your data, your technology, and the result. With finished software you accept the vendor's rules. With a tailored solution, you set them.
 
-This matters in three ways that are especially important in Germany and the wider DACH region. First, **data protection**: a solution built from the ground up for EU hosting, data processing, and clean data separation spares you the debates that generic tools regularly trigger. Second, **sovereignty**: you are not permanently tied to one vendor, one pricing model, or a data centre outside the EU. Third, **ownership**: when the rights to the code sit with you, the solution is an asset of your company, not a rented tool.
+This matters in three ways. First, **data protection**: in the US, sector rules such as FERPA and HIPAA and a growing set of state privacy laws decide where learner data may live; in the UK, the UK GDPR does. A solution built for your rules from the start, including the option to run on your own servers, spares you the debates that generic tools trigger in every security review. Second, **accessibility**: US public colleges and agencies under the ADA Title II rule and UK public sector bodies are required to meet WCAG AA, and retrofitting accessibility costs far more than building it in. Third, **ownership**: when the rights to the code sit with you, the solution is an asset of your organisation, not a rented tool, and you are not tied to one vendor or one pricing model.
 
-That is exactly what our offering is built around. To see how LearnSlice delivers custom e-learning software with AI, EU hosting, and ownership of the result, visit our page on [custom e-learning development](/solutions).
+That is exactly what our offering is built around. To see how LearnSlice delivers custom e-learning software with AI, hosting that fits your rules, and ownership of the result, visit our page on [custom e-learning development](/solutions).
 
 ## Conclusion: Four Steps to the Right Solution
 
