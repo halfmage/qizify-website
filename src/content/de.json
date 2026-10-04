@@ -199,7 +199,7 @@
     "items": [
       {
         "name": "Lienne Julie Wolff",
-        "title": "Auszubildene zur Industriekauffrau",
+        "title": "Auszubildende zur Industriekauffrau",
         "company": "Tremonia Mobility GmbH",
         "quote": "Wir sind sehr zufrieden mit LearnSlice. Das Team hat unsere Materialien schnell in präzise, effektive Quizfragen umgesetzt, hochwertig und effizient. Die Fragen fördern den Wissenstransfer. Das Support-Team reagiert schnell und löst Herausforderungen proaktiv. Wir empfehlen dieses innovative Tool uneingeschränkt.",
         "pullQuote": "Das Team hat unsere Materialien schnell in präzise, effektive Quizfragen umgesetzt. Wir sind sehr zufrieden mit LearnSlice."
@@ -656,9 +656,9 @@
       "headline": "Fragen zur individuellen E-Learning-Entwicklung",
       "items": [
         { "question": "Wem gehören die Lösung und die Daten?", "answer": "Ihnen. Ihnen gehören der Einsatz, die Inhalte und die Lernerdaten. Sie bleiben in der Umgebung, die Sie wählen, und werden nie zum Training von KI-Modellen genutzt." },
-        { "question": "Ist die Lösung DSGVO- und EU-KI-Verordnungs-konform?", "answer": "Ja. Wir liefern einen Auftragsverarbeitungsvertrag (AVV) und integrieren die menschliche Aufsicht, Transparenz und Dokumentation, die die EU-KI-Verordnung für Bildungs-KI verlangt. Das Hosting erfolgt in Deutschland, der EU oder On-Premise." },
-        { "question": "Können Sie Moodle oder unsere bestehenden Systeme integrieren?", "answer": "Ja. Wir bauen neue Plattformen oder erweitern bestehende, inklusive Moodle und individuellen LMS, und binden die Tools und Prozesse an, die Ihre Teams bereits nutzen." },
-        { "question": "Wie lange dauert ein Projekt?", "answer": "Das hängt vom Umfang ab. Ein fokussierter Chatbot kann schnell live gehen, eine vollständige Plattform dauert länger. In der Analysephase vereinbaren wir eine klare Roadmap mit Meilensteinen." },
+        { "question": "Ist die Lösung DSGVO- und EU-KI-Verordnungs-konform?", "answer": "Ja. Wir liefern einen Auftragsverarbeitungsvertrag (AVV) und integrieren die menschliche Aufsicht, Transparenz und Dokumentation, die die EU-KI-Verordnung für Bildungs-KI verlangt. Oberflächen gestalten wir barrierefrei nach WCAG AA, orientiert an den Anforderungen des BFSG. Das Hosting erfolgt in Deutschland, der EU oder On-Premise." },
+        { "question": "Können Sie Moodle oder unsere bestehenden Systeme integrieren?", "answer": "Ja. Wir bauen neue Plattformen oder erweitern bestehende, inklusive Moodle, Open edX und individuellen LMS, und binden sie über SCORM, xAPI, LTI und Single Sign-on an die Tools an, die Ihre Teams bereits nutzen." },
+        { "question": "Wie lange dauert ein Projekt?", "answer": "Eine erste funktionsfähige Version steht meist nach 6 bis 8 Wochen. Auf unserer bestehenden Lern-Engine geht es deutlich schneller: Ein markeneigener Finanzbildungs-Begleiter stand nach zwei Wochen als MVP und lief innerhalb eines Monats im Produktivbetrieb." },
         { "question": "Was kostet das?", "answer": "Zur Orientierung die Marktrichtwerte: Professionell produzierte Lernmodule kosten rund 1.000 Euro pro Minute (Empfehlung der Verbände BDVT und VBT), eine individuelle Lernplattform etwa 13.000 bis 90.000 Euro und ein Serious Game ab rund 15.000 Euro pro Modul. Den Preis bestimmen vor allem vier Hebel: Interaktivität, Integrationen in bestehende Systeme, KI und Personalisierung sowie Umfang und Nutzungsrechte. Im Strategiegespräch wird daraus ein konkreter Preisrahmen für Ihr Projekt, unverbindlich.", "link": {"href": "/de/blog/e-learning-entwickeln-lassen", "label": "Alle Richtwerte mit Quellen: E-Learning entwickeln lassen, Kosten und Ablauf"} },
         { "question": "Wo wird alles gehostet?", "answer": "In Deutschland, in einer dedizierten EU-Cloud oder vollständig On-Premise. Sie wählen die Umgebung, die zu Ihren Compliance- und IT-Anforderungen passt." },
         { "question": "Was passiert nach dem Launch?", "answer": "Wir schulen Ihre Mitarbeitenden, bieten Support und verbessern das System weiter, während sich Ihre Inhalte und Anforderungen entwickeln." },
