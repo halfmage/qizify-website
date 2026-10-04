@@ -40,18 +40,19 @@ const t = isDE
 		aria-label={t.play}
 	>
 		<img src={poster} alt={t.alt} width="1600" height="1000" loading="lazy" decoding="async" class="block w-full h-auto" />
-		<span class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/25 group-hover:bg-black/35 transition-colors">
-			<span class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white shadow-2xl shadow-black/40">
-				<svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l11-7z" /></svg>
+		<span class="absolute inset-0 flex items-end justify-center pb-[9%] bg-black/20 group-hover:bg-black/30 transition-colors">
+			<span class="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-semibold text-white shadow-2xl shadow-black/40">
+				<svg class="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l11-7z" /></svg>
 				{t.play}
 			</span>
-			<span class="text-sm text-white/90 bg-black/40 rounded-full px-3 py-1">{t.hint}</span>
 		</span>
 	</button>
 </div>
-<p class="mt-4 mb-0 text-right">
+<!-- The hint sits below the screenshot, so the overlay stays small enough for phones. -->
+<div class="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+	<p class="m-0 text-sm text-white/80">{t.hint}</p>
 	<a href={demoSrc} target="_blank" rel="noopener" class="text-sm font-medium text-white/80 hover:text-white transition-colors">{t.full} ↗</a>
-</p>
+</div>
 
 <script>
 	// Desktop: swap the screenshot for the live demo in place. Phones: open the
