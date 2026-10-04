@@ -2667,14 +2667,14 @@ Frame it as capacity recovery. A trainer who spends a meaningful share of their 
 
 ---
 
-# Free Apprenticeship Plan Template (§14 BBiG, Copy-Paste)
+# Free Apprenticeship Plan Template (§14 BBiG, Word Download)
 
 Source: https://learnslice.com/blog/apprenticeship-plan-template-free
 Language: en
 Published: 2026-04-19
-Updated: 2026-09-09
+Updated: 2026-10-04
 
-Free apprenticeship plan template aligned with § 14 BBiG: copy-paste sample, trainer checklist, and when to graduate to a dynamic, AI-powered plan.
+Free apprenticeship plan template aligned with § 14 BBiG: Word download, copy-paste sample, trainer checklist, and when to graduate to a dynamic, AI-powered plan.
 
 ![Trainer and apprentice working on an apprenticeship plan template at a laptop](/images/blog/pexels-yankrukov-7794078.webp)
 
@@ -2704,7 +2704,13 @@ Before the sample is useful, the mandatory components need to be clear. Without 
 
 ## Free Apprenticeship Plan Template - Copy-Paste Sample
 
-The following template is structured so it can be copied into any word-processor. It meets the minimum requirements under § 14 BBiG and can be filled in for any apprenticeship profession.
+The following template is available as a Word file to download, or as text to copy into any word processor. It meets the minimum requirements under § 14 BBiG and can be filled in for any apprenticeship profession.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Apprenticeship plan template as a Word file (.docx)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">The same template, ready to fill in: every section as a table, signature block, change log and the checklist below. Free, no sign-up, the download starts straight away.</p>
+  <p class="m-0 mt-4"><a href="/downloads/apprenticeship-plan-template.docx" download class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Download the Word template</a></p>
+</div>
 
 <CopyBlock buttonLabel="Copy template" copiedLabel="Copied!">
 
@@ -6447,14 +6453,14 @@ Nein. § 14 Absatz 1 Nummer 1 BBiG verpflichtet den Ausbildenden, einen betriebl
 
 ---
 
-# Ausbildungsplan-Vorlage kostenlos: Muster + Checkliste
+# Ausbildungsplan-Vorlage kostenlos: Word-Muster + Checkliste
 
 Source: https://learnslice.com/de/blog/ausbildungsplan-vorlage-kostenlos
 Language: de
 Published: 2026-04-19
-Updated: 2026-09-09
+Updated: 2026-10-04
 
-Kostenlose Ausbildungsplan-Vorlage nach § 14 BBiG: Muster zum Kopieren, Ausbilder-Checkliste und wann sich der Sprung zur KI-gestützten Lösung lohnt.
+Kostenlose Ausbildungsplan-Vorlage nach § 14 BBiG: Word-Datei zum Download, Ausbilder-Checkliste und wann sich der Sprung zur KI-gestützten Lösung lohnt.
 
 ![Ausbilderin und Auszubildender arbeiten an einer Ausbildungsplan-Vorlage am Laptop](/images/blog/pexels-yankrukov-7794078.webp)
 
@@ -6484,7 +6490,13 @@ Bevor das Muster sinnvoll benutzt werden kann, gehören die Pflichtbestandteile 
 
 ## Ausbildungsplan-Vorlage (kostenlos) - Muster zum direkten Übernehmen
 
-Die folgende Vorlage ist so aufgebaut, dass sie sich in jedem Textverarbeitungsprogramm übernehmen lässt. Sie erfüllt die Mindestanforderungen aus § 14 BBiG und lässt sich für jeden Ausbildungsberuf befüllen.
+Die folgende Vorlage gibt es als Word-Datei zum Herunterladen oder als Text zum Kopieren in jedes Textverarbeitungsprogramm. Sie erfüllt die Mindestanforderungen aus § 14 BBiG und lässt sich für jeden Ausbildungsberuf befüllen.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Ausbildungsplan-Vorlage als Word-Datei (.docx)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Dieselbe Vorlage zum Ausfüllen: alle Abschnitte als Tabellen, Unterschriftenfeld, Änderungshistorie und die Checkliste unten. Kostenlos, ohne Anmeldung, der Download startet sofort.</p>
+  <p class="m-0 mt-4"><a href="/downloads/ausbildungsplan-vorlage.docx" download class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Word-Vorlage herunterladen</a></p>
+</div>
 
 <CopyBlock buttonLabel="Vorlage kopieren" copiedLabel="Kopiert!">
 
