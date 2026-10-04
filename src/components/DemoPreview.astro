@@ -1,6 +1,7 @@
 ---
 // Homepage product preview: a screenshot of the live apprenticeship demo
 // (public/demo-ausbildung.html) that turns into the interactive demo on click.
+// theme=light keeps the live demo in the same colour scheme as the screenshot.
 // The iframe only loads after the click, so the homepage stays fast. Phones get
 // the full-screen demo instead of an embed, so page scrolling isn't trapped.
 interface Props {
@@ -9,21 +10,21 @@ interface Props {
 
 const { currentLang } = Astro.props;
 const isDE = currentLang === 'de';
-const demoSrc = `/demo-ausbildung.html?lang=${currentLang}`;
+const demoSrc = `/demo-ausbildung.html?lang=${currentLang}&theme=light`;
 const poster = `/images/demo/ausbildung-demo-${currentLang}.webp`;
 
 const t = isDE
 	? {
 			alt: 'LearnSlice-Demo: Startseite eines Fachinformatiker-Azubis mit Lernfortschritt, nächsten Übungen und KI-Tutor',
 			play: 'Demo live ausprobieren',
-			hint: 'Echte App mit Beispieldaten, ohne Anmeldung',
+			hint: 'Interaktive Demo mit Beispieldaten, ohne Anmeldung',
 			full: 'Vollbild öffnen',
 			title: 'Interaktive LearnSlice-Demo',
 		}
 	: {
 			alt: 'LearnSlice demo: home screen of an IT specialist apprentice with learning progress, next exercises and the AI tutor',
 			play: 'Try the live demo',
-			hint: 'The real app with sample data, no sign-up',
+			hint: 'Interactive demo with sample data, no sign-up',
 			full: 'Open full screen',
 			title: 'Interactive LearnSlice demo',
 		};

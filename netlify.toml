@@ -13,3 +13,10 @@
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     Content-Security-Policy = "frame-ancestors 'self'"
+
+# Same for the apprenticeship demo embedded on the homepage.
+[[headers]]
+  for = "/demo-ausbildung*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self'"

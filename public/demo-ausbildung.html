@@ -493,6 +493,8 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"
 /* ---------- Language (selected once at startup: ?lang=de|en, default de) ---------- */
 const QS=(()=>{try{return new URLSearchParams(location.search)}catch(e){return new URLSearchParams('')}})();
 const LANG=String(QS.get('lang')||'de').toLowerCase().slice(0,2)==='en'?'en':'de';
+/* ?theme=light|dark pins the colour scheme, e.g. so the homepage embed matches its light screenshot. */
+{const th=String(QS.get('theme')||'').toLowerCase();if(th==='light'||th==='dark')document.documentElement.setAttribute('data-theme',th);}
 const LOC=LANG==='de'?'de-DE':'en-US';
 const MONTHS={de:['Jan.','Feb.','März','Apr.','Mai','Juni','Juli','Aug.','Sept.','Okt.','Nov.','Dez.'],en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']};
 // D('2026-12-18') -> "18. Dez. 2026" (de) or "Dec 18, 2026" (en); short=true drops the year.
@@ -581,8 +583,8 @@ de:{
  correctB:'Richtig',notQuiteB:'Nicht ganz',
  certH:'Zertifikat',
  certSub:'Beispielzertifikat einer Auszubildenden aus dem Frühjahrsdurchgang.',
- certSeason:'Frühjahr 2026',
- certNo:'Nr. 2026-06-014',
+ certSeason:'Frühjahr 2027',
+ certNo:'Nr. 2027-03-014',
  certKind:'Teilnahmebestätigung',
  certThis:'Hiermit wird bestätigt, dass',
  certBody:n=>`alle ${n} Module des Kurses abgeschlossen und den Wissenscheck zu jedem Modul bestanden hat.`,
@@ -780,8 +782,8 @@ en:{
  correctB:'Correct',notQuiteB:'Not quite',
  certH:'Certificate',
  certSub:'Sample certificate from an apprentice in the spring group.',
- certSeason:'Spring 2026',
- certNo:'No. 2026-06-014',
+ certSeason:'Spring 2027',
+ certNo:'No. 2027-03-014',
  certKind:'Certificate of participation',
  certThis:'This certifies that',
  certBody:n=>`completed all ${n} modules of the course and passed the knowledge check for each one.`,
@@ -924,10 +926,10 @@ CONTENT.de=()=>({
   fiae:{
    id:'fiae',short:'Ausbildung FIAE',mode:'Ausbildung',title:'Fachinformatiker/-in Anwendungsentwicklung',count:6,
    note:'Aufgebaut auf dem Ausbildungsrahmenplan Fachinformatiker/-in 2020 und dem eigenen Ausbildungsmaterial des Betriebs. Nicht mit der IHK verbunden.',
-   access:D('2028-07-31'),pct:44,activeModule:'Modul 3 · Datenbanken und SQL',
+   access:D('2028-07-31'),pct:41,activeModule:'Modul 3 · Datenbanken und SQL',
    modules:[
-    {t:'Projektmanagement und Arbeitsplanung',s:6,st:'done',score:84,qa:'netz'},
-    {t:'Programmieren: prozedural und objektorientiert',s:8,st:'done',score:78,qa:'oop'},
+    {t:'Projektmanagement und Arbeitsplanung',s:6,st:'done',score:70,qa:'netz'},
+    {t:'Programmieren: prozedural und objektorientiert',s:8,st:'done',score:90,qa:'oop'},
     {t:'Datenbanken und SQL',s:9,st:'active',doneS:4,score:46,qa:'norm'},
     {t:'IT-Sicherheit und Datenschutz',s:7,st:'open',qa:'crypto'},
     {t:'Netzwerke und Betrieb von IT-Systemen',s:8,st:'open',qa:'subnet'},
@@ -1047,7 +1049,7 @@ Erstellt aus: Modul 3 · Normalisierung · S. 12-16 und Ausbildernotizen Normali
    assess:[
     {t:'Datenbanken und SQL',type:'deep',best:46,att:3,last:T.yesterday,st:'in_progress'},
     {t:'Objektorientierung',type:'quiz',best:90,att:2,last:D('2026-09-18',true),st:'completed',mastered:true},
-    {t:'Der Netzplan im Azubi-Projekt',type:'case',best:67,att:1,last:D('2026-09-03',true),st:'completed'},
+    {t:'Der Netzplan im Azubi-Projekt',type:'case',best:67,att:1,last:D('2026-09-09',true),st:'completed'},
     {t:'Projektmanagement',type:'quiz',best:70,att:4,last:D('2026-09-12',true),st:'completed'},
     {t:'Netzwerke und Subnetting',type:'deep',st:'not_started'}],
    rec:[['Datenbanken und SQL','low'],['Projektmanagement','stale'],['Netzwerke und Subnetting','new']]
@@ -1055,7 +1057,7 @@ Erstellt aus: Modul 3 · Normalisierung · S. 12-16 und Ausbildernotizen Normali
   ap1:{
    id:'ap1',short:'Prüfung Teil 1',mode:'Prüfung Teil 1',title:'Abschlussprüfung Teil 1',count:6,
    note:'Vorbereitung auf Teil 1 der Abschlussprüfung, „Einrichten eines IT-gestützten Arbeitsplatzes“. Aufgebaut auf dem Ausbildungsrahmenplan Fachinformatiker/-in 2020 und dem eigenen Material des Betriebs. Nicht mit der IHK verbunden.',
-   access:D('2027-04-30'),pct:46,activeModule:'Modul 3 · Arbeitsplatz ins Netzwerk einbinden',
+   access:D('2027-04-30'),pct:45,activeModule:'Modul 3 · Arbeitsplatz ins Netzwerk einbinden',
    modules:[
     {t:'Kundenanforderungen und Angebotsvergleich',s:5,st:'done',score:83,qa:'nutz'},
     {t:'Hardware, Speicher und Betriebssystem',s:7,st:'done',score:92,qa:'raid'},
@@ -1225,10 +1227,10 @@ CONTENT.en=()=>({
   fiae:{
    id:'fiae',short:'Apprenticeship',mode:'Apprenticeship',title:'IT specialist apprentice, application development',count:6,
    note:'Built on the official training framework for IT specialists (Ausbildungsrahmenplan Fachinformatiker/-in 2020) and the company’s own training material. Not affiliated with the IHK (German Chamber of Industry and Commerce).',
-   access:D('2028-07-31'),pct:44,activeModule:'Module 3 · Databases and SQL',
+   access:D('2028-07-31'),pct:41,activeModule:'Module 3 · Databases and SQL',
    modules:[
-    {t:'Project management and work planning',s:6,st:'done',score:84,qa:'netz'},
-    {t:'Programming: procedural and object-oriented',s:8,st:'done',score:78,qa:'oop'},
+    {t:'Project management and work planning',s:6,st:'done',score:70,qa:'netz'},
+    {t:'Programming: procedural and object-oriented',s:8,st:'done',score:90,qa:'oop'},
     {t:'Databases and SQL',s:9,st:'active',doneS:4,score:46,qa:'norm'},
     {t:'IT security and data protection',s:7,st:'open',qa:'crypto'},
     {t:'Networks and running IT systems',s:8,st:'open',qa:'subnet'},
@@ -1348,7 +1350,7 @@ Built from: Module 3 · Normalization · p. 12-16 and Trainer notes, normalizati
    assess:[
     {t:'Databases and SQL',type:'deep',best:46,att:3,last:T.yesterday,st:'in_progress'},
     {t:'Object orientation',type:'quiz',best:90,att:2,last:D('2026-09-18',true),st:'completed',mastered:true},
-    {t:'The network diagram in the apprentice project',type:'case',best:67,att:1,last:D('2026-09-03',true),st:'completed'},
+    {t:'The network diagram in the apprentice project',type:'case',best:67,att:1,last:D('2026-09-09',true),st:'completed'},
     {t:'Project management',type:'quiz',best:70,att:4,last:D('2026-09-12',true),st:'completed'},
     {t:'Networks and subnetting',type:'deep',st:'not_started'}],
    rec:[['Databases and SQL','low'],['Project management','stale'],['Networks and subnetting','new']]
@@ -1356,7 +1358,7 @@ Built from: Module 3 · Normalization · p. 12-16 and Trainer notes, normalizati
   ap1:{
    id:'ap1',short:'Exam Part 1',mode:'Exam prep',title:'IHK final exam, Part 1',count:6,
    note:'Preparation for Part 1 of the final exam, “Setting up an IT-supported workstation”. Built on the official training framework for IT specialists (2020) and the company’s own material. Not affiliated with the IHK.',
-   access:D('2027-04-30'),pct:46,activeModule:'Module 3 · Connecting a workstation to the network',
+   access:D('2027-04-30'),pct:45,activeModule:'Module 3 · Connecting a workstation to the network',
    modules:[
     {t:'Customer requirements and comparing offers',s:5,st:'done',score:83,qa:'nutz'},
     {t:'Hardware, storage and operating system',s:7,st:'done',score:92,qa:'raid'},
@@ -1849,12 +1851,14 @@ function vCert(){
 
 function vAnalytics(){
  const c=C(),mastered=c.assess.filter(a=>a.mastered).length;
- const stats=[[T.stAssess,T.mastered(mastered,c.assess.length),'target'],[T.attempts,'12','retry'],[T.avg,pts(68),'chart'],[T.xp,'395','bolt'],[T.streak,T.days(5),'flame']];
+ /* Attempts and average follow from the course's own assessment list, so the numbers always add up. */
+ const tried=c.assess.filter(a=>a.att),attempts=tried.reduce((n,a)=>n+a.att,0),avg=Math.round(tried.reduce((n,a)=>n+a.best,0)/(tried.length||1));
+ const stats=[[T.stAssess,T.mastered(mastered,c.assess.length),'target'],[T.attempts,String(attempts),'retry'],[T.avg,pts(avg),'chart'],[T.xp,'395','bolt'],[T.streak,T.days(5),'flame']];
  const stCls={completed:'good',in_progress:'acc',not_started:'mute'};
  let body='';
  if(S.aTab==='list'){
   body=`<div class="sec-h"><h2 class="h3">${T.recTitle}</h2><span class="muted" style="font-size:12.5px">${T.recSub}</span></div>
-  <div class="rec">${c.rec.map(([t,k])=>{const [r,cls]=T.recLbl[k];return `<div class="card"><span class="pill ${cls}">${r}</span><b>${esc(t)}</b><button class="btn sm" data-act="nav" data-v="practice">${T.review}</button></div>`}).join('')}</div>
+  <div class="rec">${c.rec.map(([t,k])=>{const [r,cls]=T.recLbl[k];return `<div class="card"><span class="pill ${cls}">${r}</span><b>${esc(t)}</b><button class="btn sm" data-act="nav" data-v="practice">${k==='new'?T.start:T.review}</button></div>`}).join('')}</div>
   <div class="sec-h"><h2 class="h3">${T.myAssess}</h2><span class="muted" style="font-size:12.5px">${esc(T.createFrom(S.tutor.name))}</span></div>
   <div class="acards">${c.assess.map(a=>`<div class="card acard"><div class="row" style="justify-content:space-between"><span class="pill ${a.type==='quiz'?'mute':'acc'}">${T.typeLbl[a.type]}</span>${a.mastered?`<span class="pill good">${ic('check')}${T.masteredPill}</span>`:`<span class="pill ${stCls[a.st]}">${T.stLabel[a.st]}</span>`}</div><b>${esc(a.t)}</b><p>${T.typeDesc[a.type]}</p><div class="meta num"><span>${a.best!=null?T.best(pts(a.best)):T.noAttempts}</span><span>${a.att?esc(T.attemptsN(a.att,a.last)):''}</span></div><button class="btn sm ${a.st==='not_started'?'primary':''}" data-act="nav" data-v="practice" style="align-self:flex-start">${a.st==='not_started'?T.start:a.st==='completed'?T.again:T.cont}</button></div>`).join('')}</div>`;
  }else{
