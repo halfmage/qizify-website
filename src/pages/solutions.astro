@@ -85,7 +85,9 @@ const serviceSchema = {
 					<Button variant="secondary" href="#selected-work" aria-label={s.hero.ctaSecondary}>{s.hero.ctaSecondary}</Button>
 				</div>
 				<p class="text-sm text-muted mb-1.5">{s.hero.microcopy}</p>
-				<p class="text-sm text-white/70 mb-6">{s.hero.riskReversal}</p>
+				<p class="text-sm text-white/70 mb-4">{s.hero.riskReversal}</p>
+				<!-- English only: the live demo on /us shows the engine before anyone books a call. -->
+				<p class="text-sm mb-6"><a href="/us#demo" class="text-accent hover:text-white underline underline-offset-4 transition-colors">Or try the live AI tutor demo first &rarr;</a></p>
 				<div class="flex items-center gap-2.5 text-xs md:text-sm text-muted border-t border-white/10 pt-5">
 					<Icon name="hugeicons:security-check" class="w-4 h-4 text-primary shrink-0" />
 					<span>{s.hero.trust}</span>
@@ -256,9 +258,9 @@ const serviceSchema = {
 					</div>
 				))}
 			</div>
-			<!-- English only: US market link, no counterpart on /de/loesungen. -->
+			<!-- English only: live demo link, no counterpart on /de/loesungen. -->
 			<p class="text-center text-sm text-muted mt-8 mb-0">
-				Training provider in the US? <a href="/us" class="text-primary hover:text-white transition-colors">Try the AI tutor demo</a>
+				Want to see one working? <a href="/us#demo" class="text-primary hover:text-white transition-colors">Try the live AI tutor demo</a>
 			</p>
 		</div>
 	</section>
