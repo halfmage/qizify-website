@@ -2,7 +2,7 @@
 import Button from './Button.astro';
 
 interface Props {
-	// Small eyebrow above the headline. Defaults to the site-wide "Get Started".
+	// Small eyebrow above the headline. Defaults to "Get Started" / "Jetzt starten" by language.
 	label?: string;
 	headline: string;
 	subheadline: string;
@@ -16,8 +16,9 @@ interface Props {
 	secondaryHref?: string;
 }
 
-const { label = 'Get Started', headline, subheadline, button, currentLang, buttonHref = '#demo-request', note, secondaryLabel, secondaryHref } = Astro.props;
+const { label: labelProp, headline, subheadline, button, currentLang, buttonHref = '#demo-request', note, secondaryLabel, secondaryHref } = Astro.props;
 
+const label = labelProp ?? (currentLang === 'de' ? 'Jetzt starten' : 'Get Started');
 const subheadlineLines = subheadline.split('\n');
 ---
 
