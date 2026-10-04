@@ -1,0 +1,75 @@
+---
+// Homepage product preview: a screenshot of the live apprenticeship demo
+// (public/demo-ausbildung.html) that turns into the interactive demo on click.
+// theme=light keeps the live demo in the same colour scheme as the screenshot.
+// The iframe only loads after the click, so the homepage stays fast. Phones get
+// the full-screen demo instead of an embed, so page scrolling isn't trapped.
+interface Props {
+	currentLang: 'en' | 'de';
+}
+
+const { currentLang } = Astro.props;
+const isDE = currentLang === 'de';
+const demoSrc = `/demo-ausbildung.html?lang=${currentLang}&theme=light`;
+const poster = `/images/demo/ausbildung-demo-${currentLang}.webp`;
+
+const t = isDE
+	? {
+			alt: 'LearnSlice-Demo: Startseite eines Fachinformatiker-Azubis mit Lernfortschritt, nächsten Übungen und KI-Tutor',
+			play: 'Demo live ausprobieren',
+			hint: 'Interaktive Demo mit Beispieldaten, ohne Anmeldung',
+			full: 'Vollbild öffnen',
+			title: 'Interaktive LearnSlice-Demo',
+		}
+	: {
+			alt: 'LearnSlice demo: home screen of an IT specialist apprentice with learning progress, next exercises and the AI tutor',
+			play: 'Try the live demo',
+			hint: 'Interactive demo with sample data, no sign-up',
+			full: 'Open full screen',
+			title: 'Interactive LearnSlice demo',
+		};
+---
+
+<div class="demo-preview relative rounded-xl overflow-hidden border border-border-light bg-surface shadow-2xl" data-demo-preview>
+	<button
+		type="button"
+		class="group relative block w-full p-0 border-0 bg-transparent cursor-pointer"
+		data-demo-play
+		data-demo-src={demoSrc}
+		data-demo-title={t.title}
+		aria-label={t.play}
+	>
+		<img src={poster} alt={t.alt} width="1600" height="1000" loading="lazy" decoding="async" class="block w-full h-auto" />
+		<span class="absolute inset-0 flex items-end justify-center pb-[9%] bg-black/20 group-hover:bg-black/30 transition-colors">
+			<span class="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-semibold text-white shadow-2xl shadow-black/40">
+				<svg class="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l11-7z" /></svg>
+				{t.play}
+			</span>
+		</span>
+	</button>
+</div>
+<!-- The hint sits below the screenshot, so the overlay stays small enough for phones. -->
+<div class="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+	<p class="m-0 text-sm text-white/80">{t.hint}</p>
+	<a href={demoSrc} target="_blank" rel="noopener" class="text-sm font-medium text-white/80 hover:text-white transition-colors">{t.full} ↗</a>
+</div>
+
+<script>
+	// Desktop: swap the screenshot for the live demo in place. Phones: open the
+	// demo full screen, since an embedded app would capture page scrolling.
+	document.querySelectorAll<HTMLButtonElement>('[data-demo-play]').forEach((button) => {
+		button.addEventListener('click', () => {
+			const src = button.dataset.demoSrc;
+			if (!src) return;
+			if (window.matchMedia('(max-width: 767px)').matches) {
+				window.location.href = src;
+				return;
+			}
+			const frame = document.createElement('iframe');
+			frame.src = src;
+			frame.title = button.dataset.demoTitle || '';
+			frame.className = 'block w-full h-[780px] bg-white';
+			button.replaceWith(frame);
+		});
+	});
+</script>
