@@ -22,7 +22,7 @@
           { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
-      { "label": "Custom Development", "href": "/solutions" },
+      { "label": "Custom Development", "mega": true, "children": [{ "label": "Custom Development", "description": "AI tutors, platforms and LMS built for you", "href": "/solutions", "icon": "hugeicons:code" }, { "label": "Live AI Tutor Demo", "description": "Try it with sample data, no sign-up", "href": "/us#demo", "icon": "hugeicons:play-circle" }, { "label": "What It Costs", "description": "Price benchmarks and a vendor checklist", "href": "/blog/custom-e-learning-development-costs", "icon": "hugeicons:calculator" }] },
       { "label": "Blog", "href": "/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/#faq" }
     ],
