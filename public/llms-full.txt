@@ -2124,9 +2124,9 @@ It depends on how many apprentices you have, which occupations you cover, and ho
 Source: https://learnslice.com/blog/apprenticeship-framework-plan-explained
 Language: en
 Published: 2026-05-26
-Updated: 2026-09-09
+Updated: 2026-10-04
 
-What the Ausbildungsrahmenplan regulates, how it is structured, and how to turn it into a company-specific plan. With a conversion table to copy.
+What the Ausbildungsrahmenplan regulates, how it is structured, and how to turn it into a company-specific plan. With a conversion table as a Word download.
 
 ## Key Takeaways
 
@@ -2218,7 +2218,13 @@ A template start point that is BBiG-compliant lives in the [free apprenticeship 
 
 ## Conversion Table: Moving Framework Plan Positions Into the Company Plan
 
-The five steps above fit into a table you set up once per occupation and then copy per apprentice. Section A is already filled in: the four standard occupational profile positions apply in every occupation modernised since 1 August 2021 and have to be covered regardless.
+The five steps above fit into a table you set up once per occupation and then copy per apprentice. It is available as a Word file to download, or as text to copy. Section A is already filled in: the four standard occupational profile positions apply in every occupation modernised since 1 August 2021 and have to be covered regardless.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Conversion table as a Word file (.docx)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">The same table, ready to fill in, with section A pre-filled and room for your occupation-specific positions. Free, no sign-up, the download starts straight away.</p>
+  <p class="m-0 mt-4"><a href="/downloads/framework-plan-conversion-table.docx" download class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Download the Word template</a></p>
+</div>
 
 <CopyBlock buttonLabel="Copy table" copiedLabel="Copied!">
 
@@ -2228,7 +2234,7 @@ The five steps above fit into a table you set up once per occupation and then co
 *Training ordinance dated:* [date, BGBl. Part I reference]
 *Version checked on:* [date] · *Prepared by:* [name]
 
-#### A. Standard Occupational Profile Positions (mandatory since 01.08.2021)
+#### A. Standard Occupational Profile Positions (occupations regulated from 1 Aug 2021 onwards)
 
 | Position per framework plan | Department / location | Responsible | Year / half |
 |---|---|---|---|
@@ -2682,9 +2688,9 @@ Free apprenticeship plan template aligned with § 14 BBiG: Word download, copy-p
 
 "Apprenticeship plan template free" is one of the most common searches in the German vocational training space, and for good reason. § 14 paragraph 1 number 1 of the Vocational Training Act ([BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)) requires every training company to run the apprenticeship "in a planned, temporally and factually structured" manner. Without a clean planning document the requirement isn't met, and the [IHK](https://www.ihk.de) (German Chamber of Commerce) verifies the completeness of the submitted documents when the apprenticeship contract is registered.
 
-The problem is less the existence of templates than their quality. Most of the Word and PDF files offered for free download contain two or three traps: they cover the required fields only, they don't track the current training ordinance, and they're outdated the moment they're first saved.
+The problem is less the existence of templates than their quality. Most templates online cover the required fields only and don't track the current training ordinance. And every template, ours included, goes out of date as soon as something changes in the company and nobody updates it.
 
-This page delivers both: a structured free template you can copy-paste - and an honest look at when the template is enough and when it stops serving the day-to-day training reality.
+This page delivers both: a structured free template you can download or copy-paste - and an honest look at when the template is enough and when it stops serving the day-to-day training reality.
 
 ## What a Legally Sound Apprenticeship Plan Template Must Contain
 
@@ -6215,9 +6221,9 @@ Als Kapazitätsrückgewinnung. Ein Ausbilder, der einen erheblichen Teil seiner 
 Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
 Published: 2026-05-04
-Updated: 2026-09-09
+Updated: 2026-10-04
 
-Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den betrieblichen Plan überführen. Mit Umsetzungstabelle zum Kopieren.
+Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den betrieblichen Plan überführen. Mit Umsetzungstabelle als Word-Vorlage zum Download.
 
 ## Auf einen Blick
 
@@ -6309,7 +6315,13 @@ Wer einen Vorlagenstart sucht, findet eine kostenlose, BBiG-konforme Variante in
 
 ## Umsetzungstabelle: Rahmenplan-Positionen in den betrieblichen Plan überführen
 
-Die fünf Schritte oben lassen sich in einer Tabelle festhalten, die Sie pro Beruf einmal anlegen und danach pro Azubi kopieren. Abschnitt A ist bereits ausgefüllt: Die vier Standardberufsbildpositionen gelten in jedem ab dem 1. August 2021 modernisierten Beruf und müssen ohnehin abgedeckt werden.
+Die fünf Schritte oben lassen sich in einer Tabelle festhalten, die Sie pro Beruf einmal anlegen und danach pro Azubi kopieren. Sie gibt es als Word-Datei zum Herunterladen oder als Text zum Kopieren. Abschnitt A ist bereits ausgefüllt: Die vier Standardberufsbildpositionen gelten in jedem ab dem 1. August 2021 modernisierten Beruf und müssen ohnehin abgedeckt werden.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Umsetzungstabelle als Word-Datei (.docx)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Dieselbe Tabelle zum Ausfüllen, Abschnitt A vorausgefüllt, mit Platz für Ihre berufsspezifischen Positionen. Kostenlos, ohne Anmeldung, der Download startet sofort.</p>
+  <p class="m-0 mt-4"><a href="/downloads/ausbildungsrahmenplan-umsetzungstabelle.docx" download class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Word-Vorlage herunterladen</a></p>
+</div>
 
 <CopyBlock buttonLabel="Tabelle kopieren" copiedLabel="Kopiert!">
 
@@ -6319,7 +6331,7 @@ Die fünf Schritte oben lassen sich in einer Tabelle festhalten, die Sie pro Ber
 *Ausbildungsordnung vom:* [Datum, Fundstelle BGBl. Teil I]
 *Fassung geprüft am:* [Datum] · *Bearbeitet von:* [Name]
 
-#### A. Standardberufsbildpositionen (verbindlich seit 01.08.2021)
+#### A. Standardberufsbildpositionen (für ab 01.08.2021 neu geordnete Berufe)
 
 | Position laut Rahmenplan | Einsatzort / Abteilung | Verantwortlich | AJ / Halbjahr |
 |---|---|---|---|
@@ -6468,9 +6480,9 @@ Kostenlose Ausbildungsplan-Vorlage nach § 14 BBiG: Word-Datei zum Download, Aus
 
 Die Kombination "Ausbildungsplan Vorlage kostenlos" gehört zu den am häufigsten gesuchten Begriffen im Ausbildungsbereich - aus gutem Grund. § 14 Absatz 1 Nummer 1 des Berufsbildungsgesetzes ([BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)) verpflichtet jeden Ausbildungsbetrieb, die Berufsausbildung "planmäßig, zeitlich und sachlich gegliedert" durchzuführen. Ohne sauberes Plandokument ist die Anforderung nicht erfüllt, und die [IHK](https://www.ihk.de) prüft die Vollständigkeit der Unterlagen bei der Eintragung des Ausbildungsverhältnisses.
 
-Das Problem ist weniger die Existenz einer Vorlage als ihre Qualität. Die meisten Word- und PDF-Templates, die im Internet zum freien Download angeboten werden, enthalten zwei oder drei Fallen: sie bilden nur die Pflichtfelder ab, greifen die Ausbildungsordnung nicht aktuell auf, und sie sind in dem Moment veraltet, in dem sie das erste Mal abgespeichert werden.
+Das Problem ist weniger die Existenz einer Vorlage als ihre Qualität. Die meisten Vorlagen im Internet bilden nur die Pflichtfelder ab und greifen die Ausbildungsordnung nicht aktuell auf. Und jede Vorlage, auch unsere, veraltet, sobald sich im Betrieb etwas ändert und niemand sie nachzieht.
 
-Diese Seite liefert beides: eine strukturierte, kostenlose Vorlage zum direkten Kopieren - und einen ehrlichen Blick darauf, wann die Vorlage reicht und wann sie für die Ausbildungspraxis nicht mehr genügt.
+Diese Seite liefert beides: eine strukturierte, kostenlose Vorlage zum Download oder Kopieren - und einen ehrlichen Blick darauf, wann die Vorlage reicht und wann sie für die Ausbildungspraxis nicht mehr genügt.
 
 ## Was eine rechtssichere Ausbildungsplan-Vorlage mindestens enthalten muss
 
