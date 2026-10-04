@@ -612,7 +612,7 @@
       "label": "Von Grund auf geschützt",
       "headline": "Souverän, DSGVO-konform und in Ihrem Besitz",
       "items": [
-        { "icon": "hugeicons:database-locked", "title": "Ihre Daten bleiben Ihre", "body": "Lernerdaten werden auf Ihrer Infrastruktur verarbeitet. Keine Schülerdaten gehen an Dritt-KI-Anbieter, und keine werden zum Training externer Modelle genutzt." },
+        { "icon": "hugeicons:database-locked", "title": "Ihre Daten bleiben Ihre", "body": "Lernerdaten bleiben in der Umgebung, die Sie wählen, und werden nie zum Training von KI-Modellen genutzt, weder von unseren noch von fremden." },
         { "icon": "hugeicons:legal-document-02", "title": "DSGVO mit unterzeichnetem AVV", "body": "Vollständige DSGVO-Konformität mit inkludiertem Auftragsverarbeitungsvertrag (AVV). Hosting in Deutschland, der EU oder On-Premise, je nach Ihrer Richtlinie." },
         { "icon": "hugeicons:security-check", "title": "Bereit für die EU-KI-Verordnung", "body": "Bildungs-KI gilt nach der EU-KI-Verordnung als hochriskant. Wir integrieren menschliche Aufsicht, Transparenz und Dokumentation, damit Ihr Einsatz die Anforderungen erfüllt." },
         { "icon": "hugeicons:ai-brain-01", "title": "Lehrplanbasierte Antworten", "body": "Abruf, verankert in Ihrem geprüften Material, sodass Antworten korrekt, didaktisch fundiert und mit Quellen belegt sind." },
@@ -655,7 +655,7 @@
     "faq": {
       "headline": "Fragen zur individuellen E-Learning-Entwicklung",
       "items": [
-        { "question": "Wem gehören die Lösung und die Daten?", "answer": "Ihnen. Ihnen gehören der Einsatz, die Inhalte und die Lernerdaten. Die Daten werden auf Ihrer Infrastruktur verarbeitet und nie zum Training von Dritt-Modellen genutzt." },
+        { "question": "Wem gehören die Lösung und die Daten?", "answer": "Ihnen. Ihnen gehören der Einsatz, die Inhalte und die Lernerdaten. Sie bleiben in der Umgebung, die Sie wählen, und werden nie zum Training von KI-Modellen genutzt." },
         { "question": "Ist die Lösung DSGVO- und EU-KI-Verordnungs-konform?", "answer": "Ja. Wir liefern einen Auftragsverarbeitungsvertrag (AVV) und integrieren die menschliche Aufsicht, Transparenz und Dokumentation, die die EU-KI-Verordnung für Bildungs-KI verlangt. Das Hosting erfolgt in Deutschland, der EU oder On-Premise." },
         { "question": "Können Sie Moodle oder unsere bestehenden Systeme integrieren?", "answer": "Ja. Wir bauen neue Plattformen oder erweitern bestehende, inklusive Moodle und individuellen LMS, und binden die Tools und Prozesse an, die Ihre Teams bereits nutzen." },
         { "question": "Wie lange dauert ein Projekt?", "answer": "Das hängt vom Umfang ab. Ein fokussierter Chatbot kann schnell live gehen, eine vollständige Plattform dauert länger. In der Analysephase vereinbaren wir eine klare Roadmap mit Meilensteinen." },

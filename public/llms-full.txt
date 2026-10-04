@@ -1684,7 +1684,7 @@ That is what this guide is for: **what a custom build actually costs**, the real
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Looking for a custom e-learning development partner?</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">LearnSlice builds custom learning software: AI tutors, learning platforms and learning apps, at a fixed price agreed up front, with calls in US and UK business hours, and owned by you. After the first call, you know the price range for your project.</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">LearnSlice builds custom learning software: AI tutors, learning platforms and learning apps, as fixed-price projects with calls in US and UK business hours, hosted where your data has to stay and owned by you. After the first call, you know the price range for your project.</p>
   <p class="m-0 mt-4"><a href="/solutions" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">See services and projects</a></p>
 </div>
 
@@ -5554,7 +5554,7 @@ Wie schnell ein Projekt vorankommt, hängt davon ab, worauf es aufsetzt. Für ei
 
 - **Woche 1 und 2:** Anpassung bis zum funktionsfähigen MVP, mit Marke und Fachinhalten des Partners, einem geführten Lernprogramm, einem Finanz-Gesundheitscheck und einem auf den Lehrzweck zugeschnittenen Chatbot.
 - **Woche 3 und 4:** Verbesserungen auf Basis des MVP.
-- **Nach einem Monat:** Die App lief im Produktivbetrieb.
+- **Innerhalb eines Monats:** Die App lief im Produktivbetrieb.
 
 Die 6 bis 8 Wochen oben gelten für ein erstes Modul, das von Grund auf entsteht. Wer auf einer erprobten Engine aufbaut, ist deutlich schneller. Fragen Sie deshalb jeden Anbieter, worauf er aufsetzt. Den Begleiter sehen Sie unter unseren Projekten auf der Seite zur [individuellen E-Learning-Entwicklung](/de/loesungen).
 
