@@ -42,7 +42,7 @@ const serviceSchema = {
 	'@type': 'Service',
 	name: 'Custom e-learning development',
 	serviceType: 'E-learning development',
-	description: 'Custom learning software: AI tutors, learning platforms, LMS, learning apps and simulations, built around your curriculum, GDPR compliant, hosted in Germany or on your own servers.',
+	description: 'Custom learning software: AI tutors, learning platforms, LMS, learning apps and simulations, built around your curriculum, fixed-price and owned by you.',
 	url: `${SITE}${currentPath}`,
 	inLanguage: 'en-US',
 	provider: { '@type': 'Organization', name: 'LearnSlice', url: SITE },
@@ -51,7 +51,7 @@ const serviceSchema = {
 
 <BaseLayout
 	title="Custom E-Learning Development: AI Tutors, LMS, Apps | LearnSlice"
-	description="Custom e-learning development: AI tutors, LMS, apps and simulations built around your curriculum. GDPR compliant, EU AI Act ready, hosted in Germany."
+	description="Custom e-learning development: AI tutors, LMS, apps and simulations built around your curriculum. Fixed-price projects, and you own the code."
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="Solutions"
@@ -265,7 +265,7 @@ const serviceSchema = {
 
 	<GuideLinks label={s.guides.label} headline={s.guides.headline} intro={s.guides.intro} items={s.guides.items} />
 
-	<FAQ headline={s.faq.headline} items={s.faq.items.slice(0, 6)} />
+	<FAQ headline={s.faq.headline} items={s.faq.items.slice(0, 7)} />
 
 	<CTAFooter headline={s.cta.headline} subheadline={s.cta.subheadline} button={s.cta.button} buttonHref="#project-inquiry" note={s.cta.note} currentLang={lang} />
 	<Footer currentLang={lang} privacyLabel={enContent.footer.privacyLabel} termsLabel={enContent.footer.termsLabel} demoHref="#project-inquiry" />
