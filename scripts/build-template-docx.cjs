@@ -3,7 +3,8 @@
 //     -> public/downloads/ausbildungsplan-vorlage.docx, apprenticeship-plan-template.docx
 //   ausbildungsrahmenplan-erklaert / apprenticeship-framework-plan-explained
 //     -> public/downloads/ausbildungsrahmenplan-umsetzungstabelle.docx, framework-plan-conversion-table.docx
-// The content mirrors the CopyBlock in each post; keep them in sync.
+// Each file carries the CopyBlock content of its post plus fill-in extras (rows, change log,
+// signatures). When a CopyBlock changes, update the matching content here and rerun.
 // Run: npm i --no-save docx && node scripts/build-template-docx.cjs
 
 const fs = require('fs');
@@ -11,7 +12,7 @@ const path = require('path');
 const {
 	Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, WidthType,
 	ShadingType, BorderStyle, AlignmentType, HeadingLevel, Footer, PageNumber,
-	LevelFormat, TableLayoutType,
+	LevelFormat, TableLayoutType, ExternalHyperlink,
 } = require('docx');
 
 const ACCENT = '1F6F5C';
@@ -82,7 +83,7 @@ const plan = {
 		s8head: ['Version', 'Datum', 'Änderung', 'Bearbeitet von'],
 		s8rows: [['1', '[Datum]', 'Erstfassung', '[Name]']],
 		sign: 'Kenntnisnahme',
-		signText: 'Der Ausbildungsplan wurde besprochen und dem Auszubildenden ausgehändigt.',
+		signText: 'Der Ausbildungsplan wurde besprochen und der/dem Auszubildenden ausgehändigt.',
 		signers: ['Ort, Datum, Ausbildende/r', 'Ort, Datum, Ausbilder/in', 'Ort, Datum, Auszubildende/r'],
 		signMinor: 'Bei minderjährigen Auszubildenden zusätzlich: gesetzliche Vertretung',
 		check: 'Checkliste: Ist der Plan einsatzbereit?',
@@ -188,7 +189,7 @@ const rahmenplan = {
 		file: 'ausbildungsrahmenplan-umsetzungstabelle.docx',
 		title: 'Ausbildungsrahmenplan: Umsetzungstabelle',
 		subtitle: 'Rahmenplan-Positionen der Ausbildungsordnung in den betrieblichen Ausbildungsplan überführen',
-		howto: 'So nutzen Sie die Tabelle: Pro Beruf einmal anlegen, danach pro Azubi kopieren. Abschnitt A ist vorausgefüllt. In Abschnitt B den Wortlaut des Rahmenplans unverändert übernehmen. Graue Felder ausfüllen; weitere Zeilen fügen Sie in Word mit Rechtsklick > Einfügen > Zeilen unterhalb ein.',
+		howto: 'So nutzen Sie die Tabelle: Pro Beruf einmal anlegen, danach pro Azubi kopieren. Abschnitt A ist für ab 01.08.2021 neu geordnete Berufe vorausgefüllt; bei älteren Ausbildungsordnungen die dort genannten Positionen eintragen. In Abschnitt B den Wortlaut des Rahmenplans unverändert übernehmen. Graue Felder ausfüllen; weitere Zeilen fügen Sie in Word mit Rechtsklick > Einfügen > Zeilen unterhalb ein.',
 		master: [
 			['Ausbildungsberuf', '[Bezeichnung nach Ausbildungsordnung]'],
 			['Ausbildungsordnung vom', '[Datum, Fundstelle BGBl. Teil I]'],
@@ -196,7 +197,7 @@ const rahmenplan = {
 			['Fassung geprüft am', '[Datum]'],
 			['Bearbeitet von', '[Name]'],
 		],
-		sA: 'A. Standardberufsbildpositionen (verbindlich seit 01.08.2021)',
+		sA: 'A. Standardberufsbildpositionen (für ab 01.08.2021 neu geordnete Berufe)',
 		headA: ['Position laut Rahmenplan', 'Einsatzort/Abteilung', 'Verantwortlich', 'AJ/Halbjahr'],
 		rowsA: [
 			['1. Organisation des Ausbildungsbetriebes, Berufsbildung sowie Arbeits- und Tarifrecht', '[Abteilung]', '[Name]', '[1/1]'],
@@ -238,7 +239,7 @@ const rahmenplan = {
 		file: 'framework-plan-conversion-table.docx',
 		title: 'Ausbildungsrahmenplan: Conversion Table',
 		subtitle: 'Moving the positions of the training ordinance’s framework plan into the company apprenticeship plan',
-		howto: 'How to use this table: set it up once per occupation, then copy it per apprentice. Section A is already filled in. In section B, copy the framework plan wording unchanged. Fill in the grey fields; to add rows in Word, right-click a row > Insert > Rows below.',
+		howto: 'How to use this table: set it up once per occupation, then copy it per apprentice. Section A is pre-filled for occupations regulated from 1 Aug 2021 onwards; for older training ordinances, enter the positions listed there. In section B, copy the framework plan wording unchanged. Fill in the grey fields; to add rows in Word, right-click a row > Insert > Rows below.',
 		master: [
 			['Occupation', '[Designation per training ordinance]'],
 			['Training ordinance dated', '[Date, BGBl. Part I reference]'],
@@ -246,7 +247,7 @@ const rahmenplan = {
 			['Version checked on', '[Date]'],
 			['Prepared by', '[Name]'],
 		],
-		sA: 'A. Standard Occupational Profile Positions (mandatory since 01.08.2021)',
+		sA: 'A. Standard Occupational Profile Positions (occupations regulated from 1 Aug 2021 onwards)',
 		headA: ['Position per framework plan', 'Department/location', 'Responsible', 'Year/half'],
 		rowsA: [
 			['1. Organisation of the training company, vocational training, labour and collective agreement law', '[Department]', '[Name]', '[1/1]'],
@@ -403,15 +404,27 @@ function rahmenplanBody(c) {
 	return [
 		...intro(c),
 		heading(c.sA), table([4038, 2200, 1900, 1500], c.headA, c.rowsA, 0),
-		heading(c.sB), para(c.textB), table([900, 3738, 1300, 2300, 1400], c.headB, c.rowsB, 8),
+		heading(c.sB), para(c.textB), table([900, 3538, 1500, 2300, 1400], c.headB, c.rowsB, 8),
 		heading(c.sC), table([4238, 1900, 1900, 1600], c.headC, c.rowsC, 1),
 		heading(c.sD), ...c.itemsD.map((item) => checkbox(item, 100)),
+	];
+}
+
+// Footer text with its learnslice.com URL as a clickable link.
+function footerLink(text) {
+	const [before, url, after] = text.split(/(learnslice\.com\S*)/);
+	const small = { size: 16, color: MUTED };
+	return [
+		new TextRun({ text: before, ...small }),
+		new ExternalHyperlink({ link: `https://${url}`, children: [new TextRun({ text: url, ...small, underline: {} })] }),
+		new TextRun({ text: after, ...small }),
 	];
 }
 
 function build(c, body) {
 	return new Document({
 		creator: 'LearnSlice',
+		lastModifiedBy: 'LearnSlice',
 		title: c.title,
 		styles: {
 			default: { document: { run: { font: 'Arial', size: 20 } } },
@@ -433,7 +446,8 @@ function build(c, body) {
 					children: [new Paragraph({
 						alignment: AlignmentType.CENTER,
 						children: [
-							new TextRun({ text: `${c.footer} · ${c.page}`, size: 16, color: MUTED }),
+							...footerLink(c.footer),
+							new TextRun({ text: ` · ${c.page}`, size: 16, color: MUTED }),
 							new TextRun({ children: [PageNumber.CURRENT], size: 16, color: MUTED }),
 							new TextRun({ text: c.of, size: 16, color: MUTED }),
 							new TextRun({ children: [PageNumber.TOTAL_PAGES], size: 16, color: MUTED }),
