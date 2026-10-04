@@ -1,8 +1,10 @@
-// Builds the Word downloads for the Ausbildungsplan template pair:
-//   public/downloads/ausbildungsplan-vorlage.docx        (DE post)
-//   public/downloads/apprenticeship-plan-template.docx   (EN post)
-// The content mirrors the CopyBlock template in both posts; keep them in sync.
-// Run: npm i --no-save docx && node scripts/build-plan-template-docx.cjs
+// Builds the Word downloads offered next to the CopyBlock templates in:
+//   ausbildungsplan-vorlage-kostenlos / apprenticeship-plan-template-free
+//     -> public/downloads/ausbildungsplan-vorlage.docx, apprenticeship-plan-template.docx
+//   ausbildungsrahmenplan-erklaert / apprenticeship-framework-plan-explained
+//     -> public/downloads/ausbildungsrahmenplan-umsetzungstabelle.docx, framework-plan-conversion-table.docx
+// The content mirrors the CopyBlock in each post; keep them in sync.
+// Run: npm i --no-save docx && node scripts/build-template-docx.cjs
 
 const fs = require('fs');
 const path = require('path');
@@ -20,7 +22,7 @@ const BORDERS = { top: BORDER, bottom: BORDER, left: BORDER, right: BORDER };
 const NO_BORDER = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
 const CONTENT_WIDTH = 9638; // A4 minus 2 cm margins
 
-const t = {
+const plan = {
 	de: {
 		file: 'ausbildungsplan-vorlage.docx',
 		title: 'Betrieblicher Ausbildungsplan',
@@ -181,6 +183,109 @@ const t = {
 	},
 };
 
+const rahmenplan = {
+	de: {
+		file: 'ausbildungsrahmenplan-umsetzungstabelle.docx',
+		title: 'Ausbildungsrahmenplan: Umsetzungstabelle',
+		subtitle: 'Rahmenplan-Positionen der Ausbildungsordnung in den betrieblichen Ausbildungsplan überführen',
+		howto: 'So nutzen Sie die Tabelle: Pro Beruf einmal anlegen, danach pro Azubi kopieren. Abschnitt A ist vorausgefüllt. In Abschnitt B den Wortlaut des Rahmenplans unverändert übernehmen. Graue Felder ausfüllen; weitere Zeilen fügen Sie in Word mit Rechtsklick > Einfügen > Zeilen unterhalb ein.',
+		master: [
+			['Ausbildungsberuf', '[Bezeichnung nach Ausbildungsordnung]'],
+			['Ausbildungsordnung vom', '[Datum, Fundstelle BGBl. Teil I]'],
+			['Auszubildende/r', '[Name, bei Kopie pro Azubi]'],
+			['Fassung geprüft am', '[Datum]'],
+			['Bearbeitet von', '[Name]'],
+		],
+		sA: 'A. Standardberufsbildpositionen (verbindlich seit 01.08.2021)',
+		headA: ['Position laut Rahmenplan', 'Einsatzort/Abteilung', 'Verantwortlich', 'AJ/Halbjahr'],
+		rowsA: [
+			['1. Organisation des Ausbildungsbetriebes, Berufsbildung sowie Arbeits- und Tarifrecht', '[Abteilung]', '[Name]', '[1/1]'],
+			['2. Sicherheit und Gesundheit bei der Arbeit', '[Abteilung]', '[Name]', '[1/1]'],
+			['3. Umweltschutz und Nachhaltigkeit', '[Abteilung]', '[Name]', ''],
+			['4. Digitalisierte Arbeitswelt', '[Abteilung]', '[Name]', ''],
+		],
+		sB: 'B. Berufsspezifische Positionen',
+		textB: 'Je eine Zeile pro Position aus dem Rahmenplan Ihres Berufs. Übernehmen Sie den Wortlaut unverändert, damit die Zuordnung zur Ausbildungsordnung nachvollziehbar bleibt.',
+		headB: ['Lfd. Nr.', 'Zu vermittelnde Fertigkeit (Wortlaut)', 'Zeitrahmen', 'Einsatzort/Verantwortlich', 'AJ/Halbjahr'],
+		rowsB: [
+			['[1.1]', '[Wortlaut aus dem Rahmenplan]', '[Wochen]', '[Abteilung, Name]', '[1/1]'],
+			['[1.2]', '[…]', '[Wochen]', '[…]', '[…]'],
+			['[2.1]', '[…]', '[Wochen]', '[…]', '[…]'],
+		],
+		sC: 'C. Meilensteine',
+		headC: ['Meilenstein', 'Termin', 'Verantwortlich', 'Status'],
+		rowsC: [
+			['Ende der Probezeit (§ 20 BBiG: ein bis vier Monate)', '[Datum aus Vertrag]', '[Name]', '[offen]'],
+			['Zwischenprüfung bzw. Teil 1 der gestreckten Abschlussprüfung', '[Datum]', '[Name]', '[offen]'],
+			['Beurteilungsgespräch/Zwischenbeurteilung', '[Datum]', '[Name]', '[offen]'],
+			['Anmeldung zur Abschlussprüfung', '[Datum]', '[Name]', '[offen]'],
+			['Teil 2 der Abschlussprüfung', '[Datum]', '[Name]', '[offen]'],
+		],
+		sD: 'D. Prüfschritte vor Freigabe',
+		itemsD: [
+			'Der zugrunde gelegte Rahmenplan ist die geltende Fassung (Neuordnung geprüft)',
+			'Alle vier Standardberufsbildpositionen sind zugeordnet',
+			'Jede berufsspezifische Position hat Abteilung, Verantwortliche und Zeitfenster',
+			'Die Rotationen decken alle Einsatzorte ab, die der Rahmenplan voraussetzt',
+			'Berufsschulturnus und überbetriebliche Lehrgänge sind eingetragen',
+			'Der Plan ist dem Azubi ausgehändigt und mit dem Berichtsheft verknüpft',
+		],
+		footer: 'Kostenlose Vorlage von LearnSlice · learnslice.com/de/blog/ausbildungsrahmenplan-erklaert · Keine Rechtsberatung',
+		page: 'Seite ',
+		of: ' von ',
+	},
+	en: {
+		file: 'framework-plan-conversion-table.docx',
+		title: 'Ausbildungsrahmenplan: Conversion Table',
+		subtitle: 'Moving the positions of the training ordinance’s framework plan into the company apprenticeship plan',
+		howto: 'How to use this table: set it up once per occupation, then copy it per apprentice. Section A is already filled in. In section B, copy the framework plan wording unchanged. Fill in the grey fields; to add rows in Word, right-click a row > Insert > Rows below.',
+		master: [
+			['Occupation', '[Designation per training ordinance]'],
+			['Training ordinance dated', '[Date, BGBl. Part I reference]'],
+			['Apprentice', '[Name, when copied per apprentice]'],
+			['Version checked on', '[Date]'],
+			['Prepared by', '[Name]'],
+		],
+		sA: 'A. Standard Occupational Profile Positions (mandatory since 01.08.2021)',
+		headA: ['Position per framework plan', 'Department/location', 'Responsible', 'Year/half'],
+		rowsA: [
+			['1. Organisation of the training company, vocational training, labour and collective agreement law', '[Department]', '[Name]', '[1/1]'],
+			['2. Safety and health at work', '[Department]', '[Name]', '[1/1]'],
+			['3. Environmental protection and sustainability', '[Department]', '[Name]', ''],
+			['4. Digitalised working world', '[Department]', '[Name]', ''],
+		],
+		sB: 'B. Occupation-Specific Positions',
+		textB: 'One row per position from your occupation’s framework plan. Copy the wording unchanged so the mapping back to the training ordinance stays traceable.',
+		headB: ['Ref.', 'Skill to be taught (verbatim)', 'Timeframe', 'Department/responsible', 'Year/half'],
+		rowsB: [
+			['[1.1]', '[Wording from the framework plan]', '[Weeks]', '[Department, name]', '[1/1]'],
+			['[1.2]', '[…]', '[Weeks]', '[…]', '[…]'],
+			['[2.1]', '[…]', '[Weeks]', '[…]', '[…]'],
+		],
+		sC: 'C. Milestones',
+		headC: ['Milestone', 'Date', 'Responsible', 'Status'],
+		rowsC: [
+			['End of probation period (§ 20 BBiG: one to four months)', '[Date from contract]', '[Name]', '[Open]'],
+			['Intermediate examination or Part 1 of the stretched final examination', '[Date]', '[Name]', '[Open]'],
+			['Assessment conversation/interim assessment', '[Date]', '[Name]', '[Open]'],
+			['Registration for the final examination', '[Date]', '[Name]', '[Open]'],
+			['Part 2 of the final examination', '[Date]', '[Name]', '[Open]'],
+		],
+		sD: 'D. Checks Before Sign-Off',
+		itemsD: [
+			'The framework plan used is the version currently in force (reorganisation checked)',
+			'All four standard occupational profile positions are assigned',
+			'Every occupation-specific position has a department, an owner, and a time window',
+			'Rotations cover every location the framework plan assumes',
+			'Vocational school rotation and inter-company courses are entered',
+			'The plan has been handed to the apprentice and linked to the training logbook',
+		],
+		footer: 'Free template by LearnSlice · learnslice.com/blog/apprenticeship-framework-plan-explained · Not legal advice',
+		page: 'Page ',
+		of: ' of ',
+	},
+};
+
 const run = (text, opts = {}) => {
 	const placeholder = /^\[.*\]$|^…$|^\[…\]$/.test(text.trim());
 	return new TextRun({ text, color: placeholder ? MUTED : undefined, ...opts });
@@ -257,9 +362,10 @@ function signatures(labels) {
 
 const spacer = (after = 120) => new Paragraph({ spacing: { after }, children: [] });
 
-function build(lang) {
-	const c = t[lang];
-	const children = [
+const checkbox = (item, after) => new Paragraph({ numbering: { reference: 'boxes', level: 0 }, spacing: after === undefined ? undefined : { after }, children: [new TextRun(item)] });
+
+function intro(c) {
+	return [
 		new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun(c.title)] }),
 		new Paragraph({ spacing: { after: 200 }, children: [new TextRun({ text: c.subtitle, color: MUTED })] }),
 		new Paragraph({
@@ -269,6 +375,12 @@ function build(lang) {
 			children: [new TextRun({ text: c.howto, size: 19 })],
 		}),
 		masterTable(c.master),
+	];
+}
+
+function planBody(c) {
+	return [
+		...intro(c),
 		heading(c.s1), para(c.s1text),
 		heading(c.s2), table([900, 2900, 4038, 1800], c.s2head, c.s2rows, 3),
 		heading(c.s3), table([1300, 1100, 2738, 2500, 2000], c.s3head, c.s3rows, 0),
@@ -276,16 +388,28 @@ function build(lang) {
 		heading(c.s5), table([5038, 2000, 2600], c.s5head, c.s5rows, 1),
 		heading(c.s6), table([3200, 2400, 4038], c.s6head, c.s6rows, 1),
 		heading(c.s7),
-		...c.s7items.map((item) => new Paragraph({ numbering: { reference: 'boxes', level: 0 }, children: [new TextRun(item)] })),
+		...c.s7items.map((item) => checkbox(item)),
 		heading(c.s8), table([1100, 1700, 4638, 2200], c.s8head, c.s8rows, 3),
 		new Paragraph({ heading: HeadingLevel.HEADING_2, pageBreakBefore: true, children: [new TextRun(c.sign)] }), para(c.signText),
 		spacer(600), signatures(c.signers),
 		spacer(600), signatures([c.signMinor, '', '']),
 		spacer(240),
 		heading(c.check), para(c.checkIntro, { run: { color: MUTED } }),
-		...c.checkItems.map((item) => new Paragraph({ numbering: { reference: 'boxes', level: 0 }, spacing: { after: 100 }, children: [new TextRun(item)] })),
+		...c.checkItems.map((item) => checkbox(item, 100)),
 	];
+}
 
+function rahmenplanBody(c) {
+	return [
+		...intro(c),
+		heading(c.sA), table([4038, 2200, 1900, 1500], c.headA, c.rowsA, 0),
+		heading(c.sB), para(c.textB), table([900, 3738, 1300, 2300, 1400], c.headB, c.rowsB, 8),
+		heading(c.sC), table([4238, 1900, 1900, 1600], c.headC, c.rowsC, 1),
+		heading(c.sD), ...c.itemsD.map((item) => checkbox(item, 100)),
+	];
+}
+
+function build(c, body) {
 	return new Document({
 		creator: 'LearnSlice',
 		title: c.title,
@@ -317,16 +441,18 @@ function build(lang) {
 					})],
 				}),
 			},
-			children,
+			children: body(c),
 		}],
 	});
 }
 
 const outDir = path.join(__dirname, '..', 'public', 'downloads');
 fs.mkdirSync(outDir, { recursive: true });
-for (const lang of Object.keys(t)) {
-	Packer.toBuffer(build(lang)).then((buf) => {
-		fs.writeFileSync(path.join(outDir, t[lang].file), buf);
-		console.log(`wrote public/downloads/${t[lang].file}`);
-	});
+for (const [content, body] of [[plan, planBody], [rahmenplan, rahmenplanBody]]) {
+	for (const c of Object.values(content)) {
+		Packer.toBuffer(build(c, body)).then((buf) => {
+			fs.writeFileSync(path.join(outDir, c.file), buf);
+			console.log(`wrote public/downloads/${c.file}`);
+		});
+	}
 }

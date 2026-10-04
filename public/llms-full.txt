@@ -2124,9 +2124,9 @@ It depends on how many apprentices you have, which occupations you cover, and ho
 Source: https://learnslice.com/blog/apprenticeship-framework-plan-explained
 Language: en
 Published: 2026-05-26
-Updated: 2026-09-09
+Updated: 2026-10-04
 
-What the Ausbildungsrahmenplan regulates, how it is structured, and how to turn it into a company-specific plan. With a conversion table to copy.
+What the Ausbildungsrahmenplan regulates, how it is structured, and how to turn it into a company-specific plan. With a conversion table as a Word download.
 
 ## Key Takeaways
 
@@ -2218,7 +2218,13 @@ A template start point that is BBiG-compliant lives in the [free apprenticeship 
 
 ## Conversion Table: Moving Framework Plan Positions Into the Company Plan
 
-The five steps above fit into a table you set up once per occupation and then copy per apprentice. Section A is already filled in: the four standard occupational profile positions apply in every occupation modernised since 1 August 2021 and have to be covered regardless.
+The five steps above fit into a table you set up once per occupation and then copy per apprentice. It is available as a Word file to download, or as text to copy. Section A is already filled in: the four standard occupational profile positions apply in every occupation modernised since 1 August 2021 and have to be covered regardless.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Conversion table as a Word file (.docx)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">The same table, ready to fill in, with section A pre-filled and room for your occupation-specific positions. Free, no sign-up, the download starts straight away.</p>
+  <p class="m-0 mt-4"><a href="/downloads/framework-plan-conversion-table.docx" download class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Download the Word template</a></p>
+</div>
 
 <CopyBlock buttonLabel="Copy table" copiedLabel="Copied!">
 
@@ -6215,9 +6221,9 @@ Als Kapazitätsrückgewinnung. Ein Ausbilder, der einen erheblichen Teil seiner 
 Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
 Published: 2026-05-04
-Updated: 2026-09-09
+Updated: 2026-10-04
 
-Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den betrieblichen Plan überführen. Mit Umsetzungstabelle zum Kopieren.
+Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den betrieblichen Plan überführen. Mit Umsetzungstabelle als Word-Vorlage zum Download.
 
 ## Auf einen Blick
 
@@ -6309,7 +6315,13 @@ Wer einen Vorlagenstart sucht, findet eine kostenlose, BBiG-konforme Variante in
 
 ## Umsetzungstabelle: Rahmenplan-Positionen in den betrieblichen Plan überführen
 
-Die fünf Schritte oben lassen sich in einer Tabelle festhalten, die Sie pro Beruf einmal anlegen und danach pro Azubi kopieren. Abschnitt A ist bereits ausgefüllt: Die vier Standardberufsbildpositionen gelten in jedem ab dem 1. August 2021 modernisierten Beruf und müssen ohnehin abgedeckt werden.
+Die fünf Schritte oben lassen sich in einer Tabelle festhalten, die Sie pro Beruf einmal anlegen und danach pro Azubi kopieren. Sie gibt es als Word-Datei zum Herunterladen oder als Text zum Kopieren. Abschnitt A ist bereits ausgefüllt: Die vier Standardberufsbildpositionen gelten in jedem ab dem 1. August 2021 modernisierten Beruf und müssen ohnehin abgedeckt werden.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Umsetzungstabelle als Word-Datei (.docx)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Dieselbe Tabelle zum Ausfüllen, Abschnitt A vorausgefüllt, mit Platz für Ihre berufsspezifischen Positionen. Kostenlos, ohne Anmeldung, der Download startet sofort.</p>
+  <p class="m-0 mt-4"><a href="/downloads/ausbildungsrahmenplan-umsetzungstabelle.docx" download class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Word-Vorlage herunterladen</a></p>
+</div>
 
 <CopyBlock buttonLabel="Tabelle kopieren" copiedLabel="Kopiert!">
 
