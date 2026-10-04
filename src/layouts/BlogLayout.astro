@@ -316,12 +316,15 @@ const blogPostingSchema = {
 			<!-- On-this-page sidebar (large screens only). The CTA is always rendered so
 			     the column is never empty, even on short posts or when the TOC is absent. -->
 			<aside class="hidden lg:block">
-				<!-- Capped at the viewport height: a long TOC scrolls inside its own box, so the
-				     CTA below it always stays on screen instead of being pushed out of the sticky column. -->
-				<div class="sticky top-28 flex flex-col max-h-[calc(100vh-8rem)]">
-					<div id="toc-wrap" class="mb-8 min-h-0 overflow-y-auto overscroll-contain pr-1" hidden>
-						<p class="text-xs font-mono uppercase tracking-widest text-muted mb-4">{tocLabel}</p>
-						<nav id="toc" aria-label={tocLabel} class="flex flex-col border-l border-border text-sm"></nav>
+				<!-- Capped at the viewport height: a long TOC list scrolls inside its own box (the
+				     label stays put), so the CTA below always stays on screen instead of being
+				     pushed out of the sticky column. 11rem leaves room for the
+				     English guide banner above the header before the column sticks. `[&:not([hidden])]:flex` keeps the hidden
+				     attribute working, which a plain `flex` class would override. -->
+				<div class="sticky top-28 flex flex-col max-h-[calc(100vh-11rem)]">
+					<div id="toc-wrap" class="mb-8 min-h-0 [&:not([hidden])]:flex flex-col" hidden>
+						<p class="shrink-0 text-xs font-mono uppercase tracking-widest text-muted mb-4">{tocLabel}</p>
+						<nav id="toc" aria-label={tocLabel} class="toc-list min-h-0 overflow-y-auto pr-1 flex flex-col border-l border-border text-sm"></nav>
 					</div>
 					<a
 						href={isGuide ? GUIDE_HREF : `#${ctaTrigger}`}
@@ -410,14 +413,21 @@ const blogPostingSchema = {
 	<style is:global>
 		html { scroll-behavior: smooth; }
 		@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-	</style>
+		/* Bottom fade on the sidebar TOC while it has more entries below (see initBlogToc). */
+	.toc-list.toc-more {
+		-webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 2.5rem), transparent);
+		mask-image: linear-gradient(to bottom, #000 calc(100% - 2.5rem), transparent);
+	}
+</style>
 
 	<script>
 		let tocObserver = null;
+		let tocFadeOnResize = null;
 
 		function initBlogToc() {
 			// Re-initialised on view-transition navigations: drop the old observer first.
 			if (tocObserver) { tocObserver.disconnect(); tocObserver = null; }
+			if (tocFadeOnResize) { window.removeEventListener('resize', tocFadeOnResize); tocFadeOnResize = null; }
 
 			const article = document.querySelector('article .prose');
 			const nav = document.getElementById('toc');
@@ -468,6 +478,13 @@ const blogPostingSchema = {
 
 			wrap.hidden = false;
 
+			// Fade the bottom edge while more entries sit below the visible part of the list.
+			const updateFade = () => nav.classList.toggle('toc-more', nav.scrollTop + nav.clientHeight < nav.scrollHeight - 2);
+			nav.onscroll = updateFade;
+			tocFadeOnResize = updateFade;
+			window.addEventListener('resize', updateFade, { passive: true });
+			requestAnimationFrame(updateFade);
+
 			let active = null;
 			const setActive = (id) => {
 				const link = linkById[id];
@@ -477,9 +494,9 @@ const blogPostingSchema = {
 				active.classList.add('text-white', 'border-primary');
 				// Keep the active entry visible when the TOC box scrolls (long posts).
 				// Adjusts only the box, never the page.
-				const box = wrap.getBoundingClientRect(), r = link.getBoundingClientRect();
-				if (r.top < box.top) wrap.scrollTop -= box.top - r.top + 8;
-				else if (r.bottom > box.bottom) wrap.scrollTop += r.bottom - box.bottom + 8;
+				const box = nav.getBoundingClientRect(), r = link.getBoundingClientRect();
+				if (r.top < box.top) nav.scrollTop -= box.top - r.top + 8;
+				else if (r.bottom > box.bottom) nav.scrollTop += r.bottom - box.bottom + 8;
 			};
 
 			tocObserver = new IntersectionObserver((entries) => {
