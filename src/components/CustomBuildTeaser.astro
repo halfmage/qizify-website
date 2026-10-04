@@ -1,0 +1,45 @@
+---
+// Homepage band that sends visitors whose needs the standard product does not
+// cover to the custom development page (/solutions, /de/loesungen).
+import Button from './Button.astro';
+
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const copy = {
+	en: {
+		label: 'Custom development',
+		headline: 'Not quite what you need?',
+		body: 'We adapt LearnSlice to your processes or build your own learning software: AI tutors, learning platforms and apps, hosted in Germany or on your own servers and owned by you.',
+		button: 'See how we customise it',
+		href: '/solutions',
+	},
+	de: {
+		label: 'Individuelle Entwicklung',
+		headline: 'Passt nicht ganz zu Ihren Anforderungen?',
+		body: 'Wir passen LearnSlice an Ihre Abläufe an oder entwickeln Ihre eigene Lernsoftware: KI-Tutoren, Lernplattformen und Apps, in Deutschland oder bei Ihnen gehostet und in Ihrem Besitz.',
+		button: 'So passen wir es an',
+		href: '/de/loesungen',
+	},
+};
+
+const c = copy[Astro.props.lang];
+---
+
+<section id="custom-build" class="px-6 md:px-8 py-8 md:py-12">
+	<div class="max-w-4xl mx-auto relative overflow-hidden rounded-2xl border border-border bg-surface p-8 md:p-10">
+		<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
+		<div class="grid md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-center">
+			<div>
+				<span class="section-label mb-3 block">{c.label}</span>
+				<h2 class="text-heading-sm md:text-heading text-white m-0 mb-3">{c.headline}</h2>
+				<p class="text-base text-muted leading-relaxed m-0">{c.body}</p>
+			</div>
+			<Button variant="secondary" href={c.href} aria-label={c.button}>
+				{c.button}
+				<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+			</Button>
+		</div>
+	</div>
+</section>

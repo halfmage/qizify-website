@@ -10,6 +10,8 @@ import Footer from '../components/Footer.astro';
 import ConsultationModal from '../components/ConsultationModal.astro';
 import Button from '../components/Button.astro';
 import UseCaseSlider from '../components/UseCaseSlider.astro';
+import GuideLinks from '../components/GuideLinks.astro';
+import { SITE } from '../utils/page-pairs.mjs';
 import { Icon } from 'astro-icon/components';
 import enContent from '../content/en.json';
 
@@ -32,15 +34,31 @@ const ucItemDims = ucOrder.map((i) => ucDims[i]);
 
 const heroImage = '/images/solutions/learnslice-home.webp';
 const heroImageAlt = 'The LearnSlice learner home screen: level progress, suggested next exercises, and sections for IHK exams, onboarding, and continuing education';
+
+// Service schema: this page sells custom development, not the apprenticeship app,
+// so the layout's SoftwareApplication schema is switched off below.
+const serviceSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Service',
+	name: 'Custom e-learning development',
+	serviceType: 'E-learning development',
+	description: 'Custom learning software: AI tutors, learning platforms, LMS, learning apps and simulations, built around your curriculum, GDPR compliant, hosted in Germany or on your own servers.',
+	url: `${SITE}${currentPath}`,
+	inLanguage: 'en-US',
+	provider: { '@type': 'Organization', name: 'LearnSlice', url: SITE },
+};
 ---
 
 <BaseLayout
 	title="Custom E-Learning Development: AI Tutors, LMS, Apps | LearnSlice"
-	description="Custom e-learning development: AI tutors, LMS, mobile apps, and simulations built around your curriculum. Sovereign, GDPR and EU AI Act ready, hosted in Germany. Book a strategy call."
+	description="Custom e-learning development: AI tutors, LMS, apps and simulations built around your curriculum. GDPR compliant, EU AI Act ready, hosted in Germany."
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="Solutions"
+	softwareSchema={false}
 >
+	<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
 	<Header logo={enContent.nav.logo} menu={enContent.nav.menu} cta={s.hero.ctaPrimary} ctaModalTrigger="project-inquiry" currentLang={lang} currentPath={currentPath} />
 
 	<!-- Hero: copy + product screenshot (product-shot heroes convert; stock photos do not) -->
@@ -244,6 +262,8 @@ const heroImageAlt = 'The LearnSlice learner home screen: level progress, sugges
 			</p>
 		</div>
 	</section>
+
+	<GuideLinks label={s.guides.label} headline={s.guides.headline} intro={s.guides.intro} items={s.guides.items} />
 
 	<FAQ headline={s.faq.headline} items={s.faq.items.slice(0, 6)} />
 
