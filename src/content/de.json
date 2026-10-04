@@ -490,7 +490,7 @@
     "trustedByLine": "Vertraut von der FH Dortmund, der Universität zu Köln, dem Carl-Severing-Berufskolleg und weiteren",
     "build": {
       "label": "Was wir bauen",
-      "headline": "Wenn es Ihre Lernenden voranbringt, entwickeln wir es",
+      "headline": "KI-Tutoren, Lernplattformen und Apps nach Maß",
       "intro": "Vom einzelnen KI-Tutor bis zur vollständigen Plattform: das entwickeln wir für Sie. Eine Auswahl, keine Grenze.",
       "items": [
         { "icon": "hugeicons:ai-chat-02", "title": "KI-Tutoren und Chatbots", "body": "White-Label-Lernassistenten mit adaptiven Pfaden und quellenbelegten Antworten, verankert in Ihrem Lehrplan." },
@@ -510,7 +510,7 @@
     },
     "useCases": {
       "label": "Ausgewählte Projekte",
-      "headline": "Produkte, die wir ausgeliefert haben",
+      "headline": "Referenzen: Lernsoftware, die wir ausgeliefert haben",
       "intro": "Eine kleine Auswahl, vom souveränen KI-Tutor bis zum markeneigenen Finanzbildungs-Begleiter. Wir bauen weit darüber hinaus.",
       "items": [
         {
@@ -579,7 +579,7 @@
     },
     "engagement": {
       "label": "So arbeiten Sie mit uns",
-      "headline": "Ein Modell, das zu Ihrem Team passt",
+      "headline": "Zusammenarbeit: vom Festpreis bis zum dedizierten Team",
       "intro": "Ob Sie ein fertiges Produkt oder zusätzliche Engineering-Kapazität brauchen, es gibt einen passenden Weg der Zusammenarbeit.",
       "items": [
         { "icon": "hugeicons:target-02", "title": "Festpreis-Projekt", "body": "Wir umreißen es, kalkulieren es und liefern es zu festem Budget und Zeitplan. Ideal für ein klares Produkt oder MVP." },
@@ -610,7 +610,7 @@
     },
     "sovereignty": {
       "label": "Von Grund auf geschützt",
-      "headline": "Souverän, konform und in Ihrem Besitz",
+      "headline": "Souverän, DSGVO-konform und in Ihrem Besitz",
       "items": [
         { "icon": "hugeicons:database-locked", "title": "Ihre Daten bleiben Ihre", "body": "Lernerdaten werden auf Ihrer Infrastruktur verarbeitet. Keine Schülerdaten gehen an Dritt-KI-Anbieter, und keine werden zum Training externer Modelle genutzt." },
         { "icon": "hugeicons:legal-document-02", "title": "DSGVO mit unterzeichnetem AVV", "body": "Vollständige DSGVO-Konformität mit inkludiertem Auftragsverarbeitungsvertrag (AVV). Hosting in Deutschland, der EU oder On-Premise, je nach Ihrer Richtlinie." },
@@ -632,7 +632,7 @@
     },
     "process": {
       "label": "So arbeiten wir",
-      "headline": "Vom ersten Gespräch bis zum Live-Betrieb",
+      "headline": "Ablauf: vom ersten Gespräch bis zum Live-Betrieb",
       "steps": [
         { "icon": "hugeicons:search-01", "number": "1", "title": "Analyse und Scoping", "body": "Wir erfassen Ihren Anwendungsfall, Ihre Lernenden, Inhalte und Compliance-Anforderungen und vereinbaren eine konkrete Roadmap mit Erfolgskriterien." },
         { "icon": "hugeicons:idea-01", "number": "2", "title": "Konzept und Lehrplanabgleich", "body": "Wir gestalten das Lernerlebnis und verankern das System in Ihrem geprüften Lehrplan, mit den didaktischen Methoden, die zu Ihren Zielen passen." },
@@ -653,13 +653,13 @@
       ]
     },
     "faq": {
-      "headline": "Fragen zu individuellen Projekten",
+      "headline": "Fragen zur individuellen E-Learning-Entwicklung",
       "items": [
         { "question": "Wem gehören die Lösung und die Daten?", "answer": "Ihnen. Ihnen gehören der Einsatz, die Inhalte und die Lernerdaten. Die Daten werden auf Ihrer Infrastruktur verarbeitet und nie zum Training von Dritt-Modellen genutzt." },
         { "question": "Ist die Lösung DSGVO- und EU-KI-Verordnungs-konform?", "answer": "Ja. Wir liefern einen Auftragsverarbeitungsvertrag (AVV) und integrieren die menschliche Aufsicht, Transparenz und Dokumentation, die die EU-KI-Verordnung für Bildungs-KI verlangt. Das Hosting erfolgt in Deutschland, der EU oder On-Premise." },
         { "question": "Können Sie Moodle oder unsere bestehenden Systeme integrieren?", "answer": "Ja. Wir bauen neue Plattformen oder erweitern bestehende, inklusive Moodle und individuellen LMS, und binden die Tools und Prozesse an, die Ihre Teams bereits nutzen." },
         { "question": "Wie lange dauert ein Projekt?", "answer": "Das hängt vom Umfang ab. Ein fokussierter Chatbot kann schnell live gehen, eine vollständige Plattform dauert länger. In der Analysephase vereinbaren wir eine klare Roadmap mit Meilensteinen." },
-        { "question": "Was kostet das?", "answer": "Jedes Projekt wird auf Ihren Anwendungsfall zugeschnitten, daher hängt der Preis von den Anforderungen ab. Das Strategiegespräch liefert Ihnen eine konkrete Roadmap und eine ehrliche Einschätzung, unverbindlich." },
+        { "question": "Was kostet das?", "answer": "Zur Orientierung die Marktrichtwerte: Professionell produzierte Lernmodule kosten rund 1.000 Euro pro Minute (Empfehlung der Verbände BDVT und VBT), eine individuelle Lernplattform etwa 13.000 bis 90.000 Euro und ein Serious Game ab rund 15.000 Euro pro Modul. Den Preis bestimmen vor allem vier Hebel: Interaktivität, Integrationen in bestehende Systeme, KI und Personalisierung sowie Umfang und Nutzungsrechte. Im Strategiegespräch wird daraus ein konkreter Preisrahmen für Ihr Projekt, unverbindlich.", "link": {"href": "/de/blog/e-learning-entwickeln-lassen", "label": "Alle Richtwerte mit Quellen: Was kostet E-Learning entwickeln lassen?"} },
         { "question": "Wo wird alles gehostet?", "answer": "In Deutschland, in einer dedizierten EU-Cloud oder vollständig On-Premise. Sie wählen die Umgebung, die zu Ihren Compliance- und IT-Anforderungen passt." },
         { "question": "Was passiert nach dem Launch?", "answer": "Wir schulen Ihre Mitarbeitenden, bieten Support und verbessern das System weiter, während sich Ihre Inhalte und Anforderungen entwickeln." },
         { "question": "Können Sie eine Art von Lern-App bauen, die hier nicht aufgeführt ist?", "answer": "Mit hoher Wahrscheinlichkeit ja. Die Liste ist eine Auswahl dessen, was wir bauen, keine Grenze. Wenn es beim Lernen hilft, bringen Sie es ins Strategiegespräch, und wir umreißen es gemeinsam." },
@@ -667,6 +667,7 @@
         { "question": "Wie arbeiten wir mit Ihnen zusammen?", "answer": "Auf vier Wegen: ein Festpreis-Projekt oder MVP, ein dediziertes Team, Staff Augmentation, bei der unsere Entwickler Ihre verstärken, oder eine gemanagte Lösung, die wir hosten und betreuen. Den passenden Weg empfehlen wir im Strategiegespräch." }
       ]
     },
+    "guides": {"label": "Ratgeber", "headline": "Ratgeber für Ihr E-Learning-Projekt", "intro": "Kosten, Ablauf und die wichtigsten Entscheidungen, bevor Sie ein Projekt beauftragen.", "items": [{"href": "/de/blog/e-learning-entwickeln-lassen", "title": "E-Learning entwickeln lassen: Kosten, Ablauf, Anbieter", "body": "Marktpreise für Modul, Plattform und KI-Tutor, der realistische Projektablauf und eine Anbieter-Checkliste."}, {"href": "/de/blog/ki-lernbegleiter-entwickeln-lassen", "title": "KI-Lernbegleiter entwickeln lassen oder kaufen?", "body": "Kaufen, White-Label oder Eigenentwicklung: was Verankerung und Adaptivität kosten und wie Sie Anbieter prüfen."}, {"href": "/de/blog/ki-tutor-in-lms-integrieren", "title": "KI-Tutor ins bestehende LMS integrieren", "body": "Was die eingebaute KI Ihres LMS kann, was ein echter Lernbegleiter leistet und wie die Anbindung ohne Migration läuft."}, {"href": "/de/blog/lernplattform-bildungstraeger", "title": "Lernplattform für Bildungsträger", "body": "Eigene Kurse digitalisieren statt fertige Kurse mieten: Bausteine, Kosten und Ablauf."}, {"href": "/de/blog/individuelle-ki-open-source-modelle", "title": "Souveräne KI mit Open-Source-Modellen", "body": "Individuelle KI auf offenen Modellen, in der EU selbst gehostet und in Ihrem Besitz."}]},
     "midCta": {
       "headline": "Ein Lernprodukt im Kopf?",
       "sub": "Sagen Sie uns, welches Problem Sie lösen. Wir machen daraus einen konkreten Build und einen realistischen Plan.",

@@ -1,0 +1,43 @@
+---
+// Hub block on the service pages: links the guides that support the page's topic,
+// so readers (and search engines) find the cost, AI-tutor and platform articles
+// from the page they are meant to feed. With five items the first one spans two
+// columns, so the grid closes without an empty cell at both sm and lg widths.
+interface GuideItem {
+	href: string;
+	title: string;
+	body: string;
+}
+
+interface Props {
+	label: string;
+	headline: string;
+	intro: string;
+	items: GuideItem[];
+}
+
+const { label, headline, intro, items } = Astro.props;
+---
+
+<section id="guides" class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50">
+	<div class="max-w-container mx-auto">
+		<div class="text-center mb-12 max-w-2xl mx-auto">
+			<span class="section-label mb-4 block">{label}</span>
+			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{headline}</h2>
+			<p class="text-base text-muted leading-relaxed m-0">{intro}</p>
+		</div>
+		<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden list-none m-0 p-0">
+			{items.map((item, i) => (
+				<li class={`bg-surface ${i === 0 && items.length % 3 === 2 ? 'sm:col-span-2' : ''}`}>
+					<a href={item.href} class="group flex h-full flex-col p-7 no-underline hover:bg-surface-hover transition-colors duration-200">
+						<h3 class="text-base font-semibold text-white mb-2 group-hover:text-accent transition-colors">{item.title}</h3>
+						<p class="text-sm text-muted leading-relaxed m-0 mb-4">{item.body}</p>
+						<span class="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-accent">
+							<svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+						</span>
+					</a>
+				</li>
+			))}
+		</ul>
+	</div>
+</section>

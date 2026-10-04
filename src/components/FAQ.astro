@@ -2,6 +2,9 @@
 interface FAQItem {
 	question: string;
 	answer: string;
+	// Optional follow-up link shown under the answer. Kept out of the FAQPage
+	// schema, whose answer text stays plain.
+	link?: { href: string; label: string };
 }
 
 interface Props {
@@ -61,6 +64,11 @@ const faqSchema = {
 						<p class="text-base leading-relaxed text-muted m-0">
 							{item.answer}
 						</p>
+						{item.link && (
+							<p class="text-base leading-relaxed m-0 mt-3">
+								<a href={item.link.href} class="text-accent hover:text-white underline underline-offset-4 transition-colors">{item.link.label}</a>
+							</p>
+						)}
 					</div>
 				</details>
 			))}

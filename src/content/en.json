@@ -490,7 +490,7 @@
     "trustedByLine": "Trusted by FH Dortmund, the University of Cologne, Carl-Severing-Berufskolleg, and more",
     "build": {
       "label": "What we build",
-      "headline": "If it helps your people learn, we engineer it",
+      "headline": "AI tutors, learning platforms and apps, built to order",
       "intro": "From a single AI tutor to a full platform, this is the range we engineer for you. A sample, not a limit.",
       "items": [
         { "icon": "hugeicons:ai-chat-02", "title": "AI tutors and chatbots", "body": "White-label tutoring assistants with adaptive paths and source-cited answers, grounded in your curriculum." },
@@ -510,7 +510,7 @@
     },
     "useCases": {
       "label": "Selected work",
-      "headline": "Products we have shipped",
+      "headline": "Case studies: learning software we have shipped",
       "intro": "A small sample, from a sovereign AI tutor to a branded financial-literacy companion. We build well beyond these.",
       "items": [
         {
@@ -579,7 +579,7 @@
     },
     "engagement": {
       "label": "How you work with us",
-      "headline": "An engagement model that fits your team",
+      "headline": "Engagement models: from fixed price to a dedicated team",
       "intro": "Whether you need a finished product or extra engineering capacity, there is a way to work together.",
       "items": [
         { "icon": "hugeicons:target-02", "title": "Fixed-scope project", "body": "We scope it, quote it, and ship it for a defined budget and timeline. Best for a clear product or MVP." },
@@ -610,7 +610,7 @@
     },
     "sovereignty": {
       "label": "Protected by design",
-      "headline": "Sovereign, compliant, and yours to own",
+      "headline": "Sovereign, GDPR compliant, and yours to own",
       "items": [
         { "icon": "hugeicons:database-locked", "title": "Your data stays yours", "body": "Learner data is processed on your infrastructure. No student data is sent to third-party AI providers, and none is used to train external models." },
         { "icon": "hugeicons:legal-document-02", "title": "GDPR with a signed DPA", "body": "Full GDPR compliance with a data processing agreement (AVV) included. Hosting in Germany, the EU, or on premise, per your policy." },
@@ -632,7 +632,7 @@
     },
     "process": {
       "label": "How we work",
-      "headline": "From first call to live deployment",
+      "headline": "Process: from first call to live deployment",
       "steps": [
         { "icon": "hugeicons:search-01", "number": "1", "title": "Discovery and scoping", "body": "We map your use case, learners, content, and compliance requirements, and agree on a concrete roadmap and success criteria." },
         { "icon": "hugeicons:idea-01", "number": "2", "title": "Design and curriculum alignment", "body": "We design the learning experience and ground the system on your verified curriculum, with the didactic methods that fit your goals." },
@@ -653,13 +653,13 @@
       ]
     },
     "faq": {
-      "headline": "Questions about custom builds",
+      "headline": "Questions about custom e-learning development",
       "items": [
         { "question": "Who owns the solution and the data?", "answer": "You do. You own the deployment, the content, and the learner data. Data is processed on your infrastructure and is never used to train third-party models." },
         { "question": "Is it GDPR and EU AI Act compliant?", "answer": "Yes. We include a data processing agreement (AVV), and we build in the human oversight, transparency, and documentation that the EU AI Act requires for educational AI. Hosting is in Germany, the EU, or on premise." },
         { "question": "Can you integrate with Moodle or our existing systems?", "answer": "Yes. We build new platforms or extend existing ones, including Moodle and custom LMS, and connect to the tools and processes your teams already use." },
         { "question": "How long does a project take?", "answer": "It depends on scope. A focused chatbot can go live quickly, while a full platform takes longer. We agree on a clear roadmap and milestones in the discovery phase." },
-        { "question": "What does it cost?", "answer": "Every build is scoped to your use case, so pricing depends on requirements. The strategy call gives you a concrete roadmap and an honest estimate, with no obligation." },
+        { "question": "What does it cost?", "answer": "As a market reference: industry pricing surveys put custom content at roughly 5,000 to 50,000 dollars per finished hour, a full custom platform runs from the mid five figures into six figures, and a serious game starts at about 15,000 dollars per module. Four levers drive the price: interactivity, integrations with existing systems, AI and personalisation, and scope and ownership rights. The strategy call turns these ranges into a concrete price range for your project, with no obligation.", "link": {"href": "/blog/custom-e-learning-development-costs", "label": "All benchmarks with sources: How much does custom e-learning cost?"} },
         { "question": "Where is everything hosted?", "answer": "In Germany, in a dedicated EU cloud, or fully on premise. You choose the environment that fits your compliance and IT requirements." },
         { "question": "What happens after launch?", "answer": "We train your staff, provide support, and keep improving the system as your content and needs evolve." },
         { "question": "Can you build a type of learning app that is not listed here?", "answer": "Almost certainly. The list is a sample of what we build, not a limit. If it helps people learn, bring it to the strategy call and we will scope it with you." },
@@ -667,6 +667,7 @@
         { "question": "How do we engage you?", "answer": "Four ways: a fixed-scope project or MVP, a dedicated team, staff augmentation where our engineers join yours, or a managed solution we host and support. We recommend the right fit in the strategy call." }
       ]
     },
+    "guides": {"label": "Guides", "headline": "Guides for your e-learning project", "intro": "Cost, process and the key decisions before you commission a project.", "items": [{"href": "/blog/custom-e-learning-development-costs", "title": "How much does custom e-learning cost?", "body": "Market prices for modules, platforms and AI tutors, the realistic project flow, and a vendor checklist."}, {"href": "/blog/custom-ai-tutor-development", "title": "Custom AI tutor development: build, buy, or white-label", "body": "What grounding and adaptivity really cost, and how to vet an AI tutor provider."}, {"href": "/blog/ai-tutor-for-existing-lms", "title": "Add an AI tutor to the LMS you already have", "body": "What your LMS’s built-in AI can do, what a real tutor adds, and how to connect one without migrating."}, {"href": "/blog/learning-platform-training-providers", "title": "Learning platform for training providers", "body": "Digitise your own courses instead of renting ready-made content: building blocks, cost and process."}, {"href": "/blog/custom-ai-open-source-models", "title": "Custom AI on open-source models", "body": "Personalized AI on open models, self-hosted in the EU and owned by you."}]},
     "midCta": {
       "headline": "Have a learning product in mind?",
       "sub": "Tell us the problem you are solving. We turn it into a concrete build and a realistic plan.",

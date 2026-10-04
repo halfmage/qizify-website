@@ -10,6 +10,8 @@ import Footer from '../../components/Footer.astro';
 import ConsultationModal from '../../components/ConsultationModal.astro';
 import Button from '../../components/Button.astro';
 import UseCaseSlider from '../../components/UseCaseSlider.astro';
+import GuideLinks from '../../components/GuideLinks.astro';
+import { SITE } from '../../utils/page-pairs.mjs';
 import { Icon } from 'astro-icon/components';
 import deContent from '../../content/de.json';
 
@@ -32,6 +34,24 @@ const ucItemDims = ucOrder.map((i) => ucDims[i]);
 
 const heroImage = '/images/solutions/learnslice-home.webp';
 const heroImageAlt = 'Der LearnSlice-Startbildschirm: Level-Fortschritt, vorgeschlagene nächste Übungen sowie Bereiche für IHK-Prüfungen, Onboarding und Weiterbildung';
+
+// Service schema: this page sells custom development, not the apprenticeship app,
+// so the layout's SoftwareApplication schema is switched off below.
+const serviceSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Service',
+	name: 'Individuelle E-Learning-Entwicklung',
+	serviceType: 'E-Learning-Entwicklung',
+	description: 'Maßgeschneiderte Lernsoftware: KI-Tutoren, Lernplattformen, LMS, Lern-Apps und Simulationen, entwickelt rund um Ihren Lehrplan, DSGVO-konform und in Deutschland gehostet.',
+	url: `${SITE}${currentPath}`,
+	inLanguage: 'de-DE',
+	provider: { '@type': 'Organization', name: 'LearnSlice', url: SITE },
+	areaServed: [
+		{ '@type': 'Country', name: 'Deutschland' },
+		{ '@type': 'Country', name: 'Österreich' },
+		{ '@type': 'Country', name: 'Schweiz' },
+	],
+};
 ---
 
 <BaseLayout
@@ -40,7 +60,10 @@ const heroImageAlt = 'Der LearnSlice-Startbildschirm: Level-Fortschritt, vorgesc
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="Lösungen"
+	softwareSchema={false}
 >
+	<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
 	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={s.hero.ctaPrimary} ctaModalTrigger="project-inquiry" currentLang={lang} currentPath={currentPath} />
 
 	<!-- Hero: Copy + Produkt-Screenshot (Produkt-Hero konvertiert, Stockfoto nicht) -->
@@ -308,6 +331,8 @@ const heroImageAlt = 'Der LearnSlice-Startbildschirm: Level-Fortschritt, vorgesc
 			</div>
 		</div>
 	</section>
+
+	<GuideLinks label={s.guides.label} headline={s.guides.headline} intro={s.guides.intro} items={s.guides.items} />
 
 	<FAQ headline={s.faq.headline} items={s.faq.items.slice(0, 6)} />
 

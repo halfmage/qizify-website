@@ -6,6 +6,7 @@ import Hero from '../components/Hero.astro';
 import LogosSlider from '../components/LogosSlider.astro';
 import ProblemStatement from '../components/ProblemStatement.astro';
 import SavingsComparison from '../components/SavingsComparison.astro';
+import CustomBuildTeaser from '../components/CustomBuildTeaser.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import LearningResults from '../components/LearningResults.astro';
 import CompanySlider from '../components/CompanySlider.astro';
@@ -72,6 +73,8 @@ const currentPath = '/';
 		steps={enContent.howItWorks.steps}
 		lang={lang}
 	/>
+
+	<CustomBuildTeaser lang="en" />
 	
 	<LearningResults 
 		badge={enContent.learningResults.badge}
