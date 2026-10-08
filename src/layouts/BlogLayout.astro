@@ -74,10 +74,11 @@ const faqHeading = lang === 'en' ? 'Frequently Asked Questions' : 'Häufig geste
 const tocLabel = lang === 'en' ? 'On this page' : 'Auf dieser Seite';
 // Conversion path is chosen per post via `ctaVariant`. Solutions/custom-dev posts
 // use the strategy-call consultation flow; 'guide' posts send the reader to the
-// /ai-guides lead magnet and open no modal at all; everything else keeps the demo.
+// AI guides (now on ironum.com) and open no modal at all; everything else keeps the demo.
 const isConsultation = ctaVariant === 'consultation';
 const isGuide = ctaVariant === 'guide';
-const GUIDE_HREF = '/ai-guides';
+// The AI guides moved to Ironum (Oct 2026); no LearnSlice post uses this variant today.
+const GUIDE_HREF = 'https://ironum.com/resources/guides/';
 const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
 // A guide post's CTAs are links, so nothing should carry a modal trigger.
 const ctaHref = isGuide ? GUIDE_HREF : undefined;
