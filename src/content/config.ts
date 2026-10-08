@@ -24,7 +24,7 @@ const blog = defineCollection({
 		// ctaVariant: which conversion path the shared BlogLayout renders.
 		// 'demo' (default) = product-demo CTA + DemoRequestModal (Azubi platform posts).
 		// 'consultation' = strategy-call CTA + ConsultationModal (solutions / custom-dev posts).
-		// 'guide' = links to the /ai-guides lead magnet, no modal. For informational
+		// 'guide' = links to the AI guides (now on ironum.com), no modal. For informational
 		// posts whose reader wants to learn rather than buy.
 		ctaVariant: z.enum(['demo', 'consultation', 'guide']).default('demo'),
 		// ctaFooter: optional per-post copy for the closing CTA block. Only used with

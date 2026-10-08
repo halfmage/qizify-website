@@ -1,12 +1,5 @@
 # Headers only. Build settings stay in the Netlify UI, which is where they are today.
 
-# Gated assets. robots.txt stops a crawl, but a URL linked from elsewhere can still be
-# indexed without being crawled. This is the control that actually prevents indexing.
-[[headers]]
-  for = "/guides/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow, noarchive"
-
 # The US demo is embedded on /us only. Block framing by other sites.
 [[headers]]
   for = "/us-demo*"

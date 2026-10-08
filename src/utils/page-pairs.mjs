@@ -54,11 +54,6 @@ export const EN_TO_DE = {
 // hreflang alternates to a counterpart that does not exist.
 export const EN_ONLY = new Set([
 	'/blog/private-ai-employee-onboarding',
-	// Gated AI guides for product managers and product owners. English only.
-	'/ai-guides',
-	// Product owner cluster supporting /ai-guides. International audience, and the
-	// guides it promotes are English only.
-	'/blog/ai-backlog-refinement-product-owners',
 	// US landing page for training providers. US market only.
 	'/us',
 ]);
