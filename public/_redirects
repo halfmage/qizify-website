@@ -144,3 +144,7 @@
 
 # Crawlers and SEO tools probe /sitemap.xml by default; ours is the index file.
 /sitemap.xml        /sitemap-index.xml   301!
+
+# Misspelled post URLs Google shows in results (GSC performance export, 2026-10-12)
+/blog/custom-elearning-development-costs    /blog/custom-e-learning-development-costs    301
+/de/blog/ausbildung-vorlage-kostenlos       /de/blog/ausbildungsplan-vorlage-kostenlos  301
