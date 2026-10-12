@@ -141,3 +141,6 @@
 /contact            /   301
 /en/coaches         /   301
 /settings           /   301
+
+# Crawlers and SEO tools probe /sitemap.xml by default; ours is the index file.
+/sitemap.xml        /sitemap-index.xml   301
