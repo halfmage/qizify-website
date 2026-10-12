@@ -1,7 +1,8 @@
 ---
 title: "Custom AI on Open-Source Models: Personalized and Sovereign"
-description: "How to build custom AI on open-source models like Kimi K2 and gpt-oss: personalized to your operation, self-hosted in the EU, and owned by you. Book a scoping call."
+description: "Custom AI on open-source models like Kimi K2 and gpt-oss, from AI tutors to team assistants: grounded in your content, self-hosted in the EU, owned by you."
 publishDate: 2026-07-30
+updatedDate: 2026-10-12
 author: "LearnSlice Team"
 tags: ["Custom AI", "Open-Source Models", "Self-Hosted AI", "AI Integration", "Data Sovereignty", "GDPR"]
 lang: "en"
@@ -28,6 +29,10 @@ faq:
     a: "Two costs matter: build and run. The build is the custom layer (retrieval, fine-tuning, integrations) and is a one-time investment. Running the model on EU infrastructure can start around 900 euros a month for a single high-memory GPU server that already handles a 120-billion-parameter model, and scales up with size and traffic. One 2025 cost analysis puts payback on a small self-hosted setup at well under a year once steady volume is past roughly 10 to 50 million tokens a month. Below that, a closed or hosted API is often cheaper, so the decision is genuinely use-case dependent."
   - q: "Which open-source model should we use?"
     a: "It depends on the task, the languages you need, your hardware, and the license. As of 2026, Qwen and Mistral offer strong models under a clean Apache 2.0 license (Mistral is also EU-headquartered), gpt-oss is Apache 2.0 and runs a 120-billion-parameter model on a single 80GB GPU, and DeepSeek ships under MIT. Some models, including parts of the Llama family, carry license terms that restrict commercial or EU use, so the license matters as much as the benchmark. Matching model to use case is part of what a scoping call is for."
+  - q: "Do we have to manage the servers ourselves?"
+    a: "No. There are three common setups. Your build partner operates the model on EU infrastructure as part of the service, so you use it like any other application. Or it runs on your own servers and your IT team operates it, with the partner handing over documentation and updates. Or, for lower volumes, you call an open model through a hosted API from an EU provider such as Scaleway or IONOS, so nobody manages a GPU at all. Which one fits depends on your data rules, your volume, and whether you have IT staff who want to run it."
+  - q: "Can an open model power an AI tutor for our courses?"
+    a: "Yes, and it is one of the strongest uses. The tutor answers from your own course material through retrieval and cites the passage it used, so learners get answers that match what you teach rather than what a public chatbot guesses. It connects to an existing LMS such as Moodle through the LTI 1.3 standard, so courses and gradebook stay where they are. Self-hosting matters most here, because questions learners type are personal data, and on an open model in the EU they never leave your jurisdiction."
   - q: "Do we own the AI, or are we locked into a vendor?"
     a: "That is the point of building on an open model. With a genuine custom build on open weights, the model runs on your infrastructure, the retrieval setup and fine-tuned adapters are yours, and the integration code is yours by contract. There is no per-seat licence you can be cut off from and no closed model that can be retired under you. Settle ownership, usage rights, and source-code handover in writing before the project starts."
 ---
@@ -40,7 +45,7 @@ If you are looking into custom AI built on open-source models, you have probably
 
 That is what open-weight models make possible, and it is what this guide is about. We will be precise about what these models are, why you would self-host one instead of calling a closed API, how a generic model becomes personalized AI for your specific business, where it actually boosts operations, and what it costs to build and run. The goal is not to convince you that AI is useful. It is to help you decide whether an open model, built around your operation and hosted under your control, is the right foundation, and what the first step looks like.
 
-It is also what we build at LearnSlice: sovereign, EU-hosted custom AI and learning software for universities, training providers, and regulated teams, owned by the organizations we build it for.
+It is also what we build at LearnSlice: sovereign, EU-hosted custom AI and learning software for universities, training providers, and regulated teams, owned by the organizations we build it for. For training providers and universities, the most direct use is an AI tutor that answers from your own course material, and this guide covers it alongside the other uses.
 
 Prefer to talk it through first? [Book a free 30-minute scoping call](#project-inquiry), no pitch.
 
@@ -104,6 +109,7 @@ The clean architecture that ties this together, and the one worth asking any par
 
 The models are general, but the value is specific. A custom AI built on an open model tends to pay for itself in a handful of well-worn places:
 
+- **Learning and training.** An AI tutor grounded in your course material answers learner questions with citations, explains in the learner's own language, and runs inside the LMS you already have. Self-hosting matters most here, because learner questions are personal data. See [how to add an AI tutor to your existing LMS](/blog/ai-tutor-for-existing-lms).
 - **Customer and internal support.** An assistant grounded in your product docs and policies deflects routine questions around the clock, in multiple languages, and hands the hard ones to a human with context attached.
 - **A knowledge assistant for your team.** New and experienced staff get grounded answers from your own SOPs, runbooks, and playbooks instead of interrupting a senior colleague or reaching for a public chatbot. This is the highest-leverage use for onboarding and upskilling; see [LearnSlice for companies](/companies) for how that looks in practice.
 - **Document and data processing.** Extracting fields from invoices, contracts, and forms, summarizing long records, and routing them, with a human reviewing the exceptions rather than every case.
