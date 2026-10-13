@@ -605,7 +605,11 @@ According to the BIBB cost-benefit survey for the 2022/23 training year, about �
 
 ### Can defence companies use digital learning support when content is sensitive?
 
-Yes, if they start with non-sensitive content. The official training framework, vocational school material and exam preparation need no internal documents. Company documents are added only once IT security and export control have approved them, and then on servers in Germany or in the company's own data centre.
+Yes, if they start with non-sensitive content. The official training framework, vocational school material and exam preparation need no internal documents. Company documents are added only once IT security and export control have approved them, A pilot runs on servers in Germany; in production the tutor can also run in the company's own data centre. Classified material does not belong in any AI tutor for apprentices.
+
+### Which trades does LearnSlice already cover?
+
+Ready today are, among others, Mechatroniker (mechatronics technician), Elektroniker für Betriebstechnik (industrial electrician) and Elektroniker für Maschinen und Antriebstechnik (electrician for machines and drive systems). For other metal and electrical trades, such as industrial, cutting or construction mechanics, we set the tutor up on the official training framework for that trade.
 
 ---
 
@@ -4351,7 +4355,11 @@ Laut BIBB-Kosten-Nutzen-Erhebung für das Ausbildungsjahr 2022/23 im Schnitt run
 
 ### Kann man Azubis in der Rüstungsindustrie digital unterstützen, wenn Inhalte sensibel sind?
 
-Ja, wenn man mit nicht sensiblen Inhalten anfängt. Ausbildungsrahmenplan, Berufsschulstoff und Prüfungsvorbereitung brauchen keine internen Unterlagen. Firmendokumente kommen erst dazu, wenn IT-Sicherheit und Exportkontrolle zugestimmt haben, und dann auf Servern in Deutschland oder im eigenen Rechenzentrum.
+Ja, wenn man mit nicht sensiblen Inhalten anfängt. Ausbildungsrahmenplan, Berufsschulstoff und Prüfungsvorbereitung brauchen keine internen Unterlagen. Firmendokumente kommen erst dazu, wenn IT-Sicherheit und Exportkontrolle zugestimmt haben. Ein Pilot läuft auf Servern in Deutschland, der Regelbetrieb auf Wunsch im eigenen Rechenzentrum. Verschlusssachen gehören in keinen KI-Tutor für Azubis.
+
+### Für welche Berufe gibt es LearnSlice schon?
+
+Fertig eingerichtet sind heute unter anderem Mechatroniker, Elektroniker für Betriebstechnik sowie Elektroniker für Maschinen und Antriebstechnik. Für weitere Metall- und Elektroberufe wie Industrie-, Zerspanungs- oder Konstruktionsmechaniker richten wir den Tutor auf Basis des jeweiligen Ausbildungsrahmenplans ein.
 
 ---
 
