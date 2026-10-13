@@ -17,14 +17,14 @@ import deContent from '../../content/de.json';
 
 const lang = 'de';
 const currentPath = '/de/verteidigungsindustrie';
-const ctaLabel = 'Demo mit meinem Beruf ansehen';
+const ctaLabel = '30-Minuten-Demo ansehen';
 
 // Pain points in the reader's own words, each with the fact behind it.
 const pains = [
 	{
 		icon: 'hugeicons:factory',
 		quote: 'Wir stellen mehr ein als je zuvor. Unsere Ausbilder sind nicht mehr geworden.',
-		fact: 'Rund 4.700 Stellenanzeigen schaltete die Branche im ersten Halbjahr 2026, 22 % mehr als im Vorjahr. Neue Werke in Unterlüß, Görlitz und Wismar wollen besetzt werden.',
+		fact: 'Rund 4.700 Stellenanzeigen schaltete die Rüstungs- und Verteidigungsbranche laut Index Research im ersten Halbjahr 2026, 22 % mehr als im Vorjahr. Neue Werke in Unterlüß, Görlitz und Wismar wollen besetzt werden.',
 	},
 	{
 		icon: 'hugeicons:alarm-clock',
@@ -44,12 +44,12 @@ const pains = [
 	{
 		icon: 'hugeicons:time-quarter-pass',
 		quote: 'Die Neuen sind da, dürfen aber noch nicht überall ran.',
-		fact: 'Sicherheitsüberprüfungen dauern oft Monate. Mit öffentlichem Ausbildungsstoff kann trotzdem ab dem ersten Tag gelernt werden.',
+		fact: 'Sicherheitsüberprüfungen dauern oft Monate. Mit öffentlichem Ausbildungsstoff kann die Einarbeitung trotzdem früh beginnen, wenn Ihr Sicherheitsbevollmächtigter zustimmt.',
 	},
 	{
 		icon: 'hugeicons:user-switch',
 		quote: 'Am neuen Standort bilden wir Leute aus, die vorher Autoteile oder Züge gebaut haben.',
-		fact: 'In Görlitz arbeiten im früheren Alstom-Bahnwerk heute rund 300 Menschen für KNDS. Sie können viel. Ihre Normen, Prozesse und Dokumentation sind trotzdem neu.',
+		fact: 'Ein Beispiel: KNDS hat in Görlitz ein früheres Alstom-Bahnwerk übernommen, dort arbeiten rund 300 Menschen (Stand Juli 2026). Sie können viel. Ihre Normen, Prozesse und Dokumentation sind trotzdem neu.',
 	},
 ];
 
@@ -57,7 +57,7 @@ const features = [
 	{
 		icon: 'hugeicons:ai-chat-02',
 		title: 'Ein Tutor auf Basis des Ausbildungsrahmenplans',
-		body: 'Er erklärt Lernfelder, fragt nach und übt mit Prüfungsaufgaben. Zu jeder Antwort nennt er die Quelle, damit Azubis und Ausbilder sie prüfen können.',
+		body: 'Er erklärt Lernfelder, fragt nach und übt mit Aufgaben, bis der Stoff sitzt. Zu jeder Antwort nennt er die Quelle, damit Azubis und Ausbilder sie prüfen können.',
 	},
 	{
 		icon: 'hugeicons:dashboard-square-01',
@@ -72,8 +72,8 @@ const features = [
 ];
 
 const week = [
-	{ when: 'Dienstag', what: 'Ein Mechatroniker-Azubi versteht in der Berufsschule die Reihenschaltung nicht. Abends fragt er den Tutor. Der erklärt es an einem Beispiel, nennt die Stelle im Lernfeld und stellt drei Kontrollfragen.' },
-	{ when: 'Donnerstag', what: 'Der Tutor holt das Thema mit zwei Übungsaufgaben zurück, diesmal im Stil von Teil 1 der Abschlussprüfung.' },
+	{ when: 'Dienstag', what: 'Ein Mechatroniker-Azubi versteht in der Berufsschule die Reihenschaltung nicht. Danach fragt er den Tutor. Der erklärt es an einem Beispiel, nennt die Stelle im Lernfeld und stellt drei Kontrollfragen.' },
+	{ when: 'Donnerstag', what: 'Der Tutor holt das Thema mit zwei Übungsaufgaben zurück, damit es nicht wieder verloren geht.' },
 	{ when: 'Freitag', what: 'Ihr Ausbilder sieht im Abgleich mit dem Lernplan: Vier von achtzehn Azubis liegen bei Schaltungen zurück, einer ist seit zwei Wochen nicht weitergekommen. Er plant 20 Minuten Wiederholung in der Werkstatt und ein kurzes Gespräch.' },
 ];
 
@@ -93,17 +93,17 @@ const security = [
 	{
 		icon: 'hugeicons:ai-brain-01',
 		title: 'Welches Modell antwortet?',
-		body: 'Ein Open-Weight-Modell auf Servern in Deutschland oder bei Ihnen. Keine Anfrage geht an OpenAI oder einen anderen KI-Dienst in den USA.',
+		body: 'Ein Open-Weight-Modell auf Servern in Deutschland oder bei Ihnen. Kein Prompt und keine Lerndaten gehen an OpenAI oder einen anderen KI-Dienst außerhalb dieser Server.',
 	},
 	{
 		icon: 'hugeicons:database-locked',
 		title: 'Was passiert mit den Daten?',
-		body: 'Ihre Inhalte und die Lerndaten Ihrer Azubis werden nicht zum Training von KI-Modellen genutzt. Endet die Zusammenarbeit, löschen wir alles.',
+		body: 'Ihre Inhalte und die Lerndaten Ihrer Azubis werden nicht zum Training von KI-Modellen genutzt. Endet die Zusammenarbeit, löschen wir Ihre Inhalte und die Lerndaten Ihrer Azubis. Den Ablauf regelt der Auftragsverarbeitungsvertrag.',
 	},
 	{
 		icon: 'hugeicons:lock-key',
 		title: 'Und Verschlusssachen?',
-		body: 'Gehören nicht hinein. Der Tutor ist für Ausbildungsinhalte ohne Verschlusssachen gedacht. Was dazukommt, entscheidet Ihr Geheimschutzbeauftragter.',
+		body: 'Gehören nicht hinein. Der Tutor ist für Ausbildungsinhalte ohne Verschlusssachen gedacht. Was dazukommt, entscheidet Ihr Sicherheitsbevollmächtigter.',
 	},
 	{
 		icon: 'hugeicons:legal-document-01',
@@ -113,14 +113,14 @@ const security = [
 	{
 		icon: 'hugeicons:user-group',
 		title: 'Und der Betriebsrat?',
-		body: 'Die Frühwarnung soll unterstützen, nicht kontrollieren. Welche Daten Ausbilder sehen, legen Sie gemeinsam mit Ihrem Betriebsrat fest.',
+		body: 'Die Frühwarnung soll unterstützen, nicht kontrollieren, und sie unterliegt der Mitbestimmung. Wir zeigen Ihrem Betriebsrat vorab, welche Daten entstehen und wer sie sieht.',
 	},
 ];
 
 const pilotSteps = [
 	{ icon: 'hugeicons:target-02', title: 'Ein Beruf, ein Jahrgang', body: 'Zum Beispiel Ihre Mechatroniker im ersten Lehrjahr. 8 bis 10 Wochen.' },
-	{ icon: 'hugeicons:book-02', title: 'Nur öffentlicher Stoff', body: 'Ausbildungsrahmenplan und Prüfungsvorbereitung. Ihre IT-Sicherheit muss nichts Internes freigeben.' },
-	{ icon: 'hugeicons:analytics-up', title: 'Ziele vorher festgelegt', body: 'Wie viele Rückfragen noch bei den Ausbildern landen, wie der Jahrgang in einer Übungsprüfung zu Teil 1 abschneidet, wer den Tutor jede Woche nutzt und wen die Frühwarnung früh gezeigt hat.' },
+	{ icon: 'hugeicons:book-02', title: 'Nur öffentlicher Stoff', body: 'Ausbildungsrahmenplan und Prüfungsvorbereitung. Ihre IT-Sicherheit muss keine internen Unterlagen freigeben.' },
+	{ icon: 'hugeicons:analytics-up', title: 'Ziele vorher festgelegt', body: 'Wie viele Rückfragen noch bei den Ausbildern landen, wie sich der Lernstand im Abgleich mit dem Lernplan entwickelt, wer den Tutor jede Woche nutzt und wen die Frühwarnung früh gezeigt hat.' },
 	{ icon: 'hugeicons:checkmark-badge-01', title: 'Festpreis, angerechnet', body: 'Der Pilot kostet einen festen Betrag. Entscheiden Sie sich danach für eine Lizenz, wird er angerechnet.' },
 ];
 
@@ -142,7 +142,7 @@ const faqItems = [
 	},
 	{
 		question: 'Ist LearnSlice für VS-NfD zugelassen?',
-		answer: 'Nein, und dafür ist es auch nicht gedacht. Der Tutor arbeitet mit Ausbildungsinhalten ohne Verschlusssachen. Welche Unterlagen später dazukommen, entscheiden Ihr Geheimschutzbeauftragter und Ihre IT-Sicherheit.',
+		answer: 'Nein, und dafür ist es auch nicht gedacht. Der Tutor arbeitet mit Ausbildungsinhalten ohne Verschlusssachen. Welche Unterlagen später dazukommen, entscheiden Ihr Sicherheitsbevollmächtigter und Ihre IT-Sicherheit.',
 	},
 	{
 		question: 'Wir haben schon ein LMS. Brauchen wir LearnSlice?',
@@ -150,7 +150,7 @@ const faqItems = [
 	},
 	{
 		question: 'Was passiert, wenn der Tutor etwas Falsches erklärt?',
-		answer: 'Der Tutor antwortet aus dem Ausbildungsrahmenplan und den Unterlagen, die Sie freigegeben haben, und nennt zu jeder Antwort die Quelle. In der Studie mit der FH Dortmund trug jede Antwort eine gültige Quellenangabe. Ausbilder können jede Aussage nachprüfen.',
+		answer: 'Das kann vorkommen, wie bei jeder KI. Deshalb antwortet der Tutor aus dem Ausbildungsrahmenplan und den Unterlagen, die Sie freigegeben haben, und nennt zu jeder Antwort die Quelle. So können Azubis und Ausbilder jede Aussage nachprüfen. In der Studie mit der FH Dortmund (Studierende, keine Azubis) trug jede Antwort eine gültige Quellenangabe.',
 	},
 	{
 		question: 'Wie binden wir den Betriebsrat ein?',
@@ -164,8 +164,8 @@ const faqItems = [
 ---
 
 <BaseLayout
-	title="Ausbildung in der Verteidigungsindustrie: KI-Tutor für Azubis | LearnSlice"
-	description="KI-Tutor für Azubis in der Rüstungs- und Verteidigungsindustrie: auf Basis des Ausbildungsrahmenplans, mit Frühwarnung für Ausbilder, gehostet in Deutschland oder bei Ihnen."
+	title="KI-Tutor für Azubis in der Verteidigungsindustrie | LearnSlice"
+	description="KI-Tutor für Azubis in Rüstung und Verteidigung: auf Basis des Ausbildungsrahmenplans, mit Frühwarnung für Ausbilder. Server in Deutschland oder bei Ihnen."
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="Verteidigungsindustrie"
@@ -221,7 +221,7 @@ const faqItems = [
 						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
 							<Icon name={p.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
 						</div>
-						<p class="text-base font-semibold text-white leading-snug mb-3">„{p.quote}“</p>
+						<p class="text-base font-semibold text-white leading-snug mb-3">{p.quote}</p>
 						<p class="text-sm text-muted leading-relaxed m-0">{p.fact}</p>
 					</div>
 				))}

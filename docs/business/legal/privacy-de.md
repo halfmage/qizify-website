@@ -550,42 +550,6 @@ Als Grundlage der Datenverarbeitung bei Empfängern mit Sitz in Drittstaaten (au
 Die Amazon Datenverarbeitungsbedingung (AWS GDPR DATA PROCESSING), welche den Standardvertragsklauseln entsprechen, finden Sie unter https://d1.awsstatic.com/legal/aws-gdpr/AWS_GDPR_DPA.pdf.
 
 Mehr über die Daten, die durch die Verwendung von Amazon verarbeitet werden, erfahren Sie in der Datenschutzerklärung auf https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010&ref_=footer_privacy .
-OpenAI Datenschutzerklärung Zusammenfassung
-👥 Betroffene: Besucher der Website
-🤝 Zweck: Optimierung des Webangebots
-📓 Verarbeitete Daten: abhängig von den Eingaben und zuvor getätigten Einstellungen. Mehr Details dazu finden Sie weiter unten in dieser Datenschutzerklärung.
-📅 Speicherdauer: Daten bleiben grundsätzlich gespeichert, solange sie für den Dienstzweck nötig sind
-⚖️ Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)
-
-
-Was ist OpenAI?
-
-OpenAI hat sich auf die Entwicklung künstlicher Intelligenz (KI) und maschinellen Lernens spezialisiert. Das Unternehmen wurde von einer Gruppe an Forschern und Technologie-Unternehmern gegründet. Die beiden bekanntesten Gründer-Namen sind vermutlich Elon Musk und Sam Altman. OpenAI hat es sich zur Aufgabe gemacht, die Entwicklung von KI-Systemen zu fördern und dabei sicherzustellen, dass die Technologie auch einen gesellschaftlichen Nutzen hat. Das wohl bekannteste Produkt von OpenAI ist ChatGPT, aber das Unternehmen bietet auch andere Produkte an, auf die wir über die API-Schnittstelle Zugriff haben.
-Warum verwenden wir OpenAI-Dienste auf unserer Website?
-
-Wir verwenden auf unserer Website Dienste von OpenAI, um Ihnen eine bessere und interaktive Benutzererfahrung bieten zu können. Das Tool steht für Sie bei jeder Tages- und Nachtzeit zur Verfügung und verbessert dadurch Ihre Nutzererfahrung auf unserer Website. Wir nutzen OpenAI-Produkte, um eigene Lösungen und Anwendungen für unser Unternehmen zu entwickeln.
-Welche Daten werden durch OpenAI-Produkte verarbeitet?
-
-Welche Daten gespeichert werden, hängt stets von Ihren Eingaben und dem konkret verwendeten KI-Tool ab. Grundsätzlich verarbeitet OpenAI natürliche Sprache, Bilder und andere Datenformate, die zur Erstellung von Maschinen-Lern-Modellen verwendet werden können. Wenn Sie OpenAI-Produkte verwenden, wird Ihre IP-Adresse verarbeitet. Doch im Allgemeinen gilt: sofern Sie keine personenbezogenen Daten eingeben, werden (außer der IP-Adresse) diese nicht verarbeitet und gespeichert. Alle eingegebenen Daten werden anonymisiert und verschlüsselt gespeichert, um Ihre Privatsphäre bestmöglich zu schützen. Das Tool setzt ohne Ihre Einwilligung auch keine Cookies ein, um Daten zu speichern und zu verarbeiten. Die eingegebenen Daten werden ausschließlich dazu verwendet, um die Qualität der KI-Ergebnisse zu verbessern.
-
-Hier ein Überblick der häufigsten Daten, die von OpenAI-Produkten gesammelt werden:
-
-Informationen über den Inhalt: Quiz-Titel, eingefügter Text, das hochgeladene PDF-Dokument sowie Sprache, Komplexität, Themen und Einheiten.
-Wie lange und wo werden die Daten gespeichert?
-
-Texte und PDF-Dateien, die von Open.AI zur Quiz-Erstellung genutzt werden, werden automatisch gelöscht, sobald das Quiz generiert wurde. Diese Daten werden außerdem nicht für Trainingszwecke verwendet.
-Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?
-
-Nach dem Datenschutzrecht der Europäischen Union haben Sie das Recht, Auskunft über Ihre Daten zu erhalten, sie zu aktualisieren, zu löschen oder einzuschränken. Eine vollständige Datenverarbeitung können Sie allerdings nur verhindern, indem Sie OpenAI-Produkte nicht nutzen.
-Rechtsgrundlage für die Verarbeitung personenbezogener Daten
-
-Für uns besteht ein berechtigtes Interesse, unseren Service zu optimieren und so unser Angebot technisch und wirtschaftlich zu verbessern. Mit Hilfe von OpenAI-Produkten verbessern wir Ihre Benutzererfahrung auf unserer Website und erweitern unser Angebot. Die Rechtsgrundlage dafür stellt Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen) dar.
-
-OpenAI verarbeitet Ihre Daten u.a. auch in den USA. Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Dies kann mit verschiedenen Risiken für die Rechtmäßigkeit und Sicherheit der Datenverarbeitung einhergehen.
-
-Als Grundlage der Datenverarbeitung bei Empfängern mit Sitz in Drittstaaten (außerhalb der Europäischen Union, Island, Liechtenstein, Norwegen, also insbesondere in den USA) oder einer Datenweitergabe dorthin verwendet OpenAI sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechend verarbeitet werden, wenn diese in Drittländer (wie beispielsweise in die USA) übermittelt und dort gespeichert werden. Durch diese Klauseln verpflichtet sich OpenAI, bei der Verarbeitung Ihrer personenbezogenen Daten das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verwaltet oder auf sonstige Weise verarbeitet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission (Durchführungsbeschluss (EU) 2021/914 der Kommission vom 4. Juni 2021). Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier: https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de
-
-Wir hoffen, wir konnten Ihnen die wichtigsten Informationen rund um die Datenverarbeitung von OpenAI näherbringen. Mehr über die Datenverarbeitung durch OpenAI erfahren Sie in der Datenschutzerklärung unter https://openai.com/policies/privacy-policy.
 Plugins und Tools
 Google reCAPTCHA
 
