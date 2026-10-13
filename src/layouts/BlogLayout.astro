@@ -166,7 +166,9 @@ const blogPostingSchema = {
 	description: description,
 	image: `https://learnslice.com${blogOgImage}`,
 	datePublished: publishDate.toISOString(),
-	...(updatedDate && { dateModified: updatedDate.toISOString() }),
+	// Google and Bing read dateModified as the freshness signal; fall back to the publish date.
+	dateModified: (updatedDate ?? publishDate).toISOString(),
+	inLanguage: lang === 'de' ? 'de-DE' : 'en-US',
 	author: author === 'LearnSlice Team'
 		? {
 			'@type': 'Organization',
