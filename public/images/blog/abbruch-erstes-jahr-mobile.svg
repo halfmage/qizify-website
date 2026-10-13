@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="406" viewBox="0 0 340 406" role="img" aria-label="Timeline of the first apprenticeship year: get in touch monthly before the start; conversations in weeks 2, 6 and 12; probation ends after 1 to 4 months, 34.7 percent of early terminations happen during probation; then conversations every three months; until month 12 another 32.9 percent. Source: BIBB Datenreport 2026.">
+<rect x="0" y="0" width="340" height="406" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">The first year at a glance</text>
+<text x="18" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">When contracts end, when to schedule</text>
+<text x="18" y="76" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">conversations</text>
+<line x1="30" y1="114" x2="30" y2="322" stroke="#3f3f46" stroke-width="2"/>
+<circle cx="30" cy="114" r="7" fill="#52525b" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="119" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Before the start</text>
+<text x="50" y="138" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">get in touch monthly</text>
+<circle cx="30" cy="166" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="171" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Weeks 2, 6 and 12</text>
+<text x="50" y="190" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">fixed conversations</text>
+<circle cx="30" cy="218" r="7" fill="#cc7a3e" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="223" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">End of probation</text>
+<text x="50" y="242" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">month 1 to 4: 34.7% of terminations</text>
+<circle cx="30" cy="270" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="275" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Then every 3 months</text>
+<text x="50" y="294" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">conversation, check progress</text>
+<circle cx="30" cy="322" r="7" fill="#e8b07a" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="327" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Until month 12</text>
+<text x="50" y="346" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">another 32.9% of terminations</text>
+<text x="18" y="392" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Source: BIBB Datenreport 2026, table A5.6-1</text>
+</svg>

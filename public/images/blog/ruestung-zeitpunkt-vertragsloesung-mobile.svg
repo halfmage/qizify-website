@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="404" viewBox="0 0 340 404" role="img" aria-label="Stacked bars: when apprenticeship contracts terminated early in 2024 ended. Industry and commerce: 36.5 percent during probation, 33.9 percent later in the first year, 22.3 in the second year, 7.3 later. All trades: 34.7, 32.9, 23.1 and 9.3 percent. Source: BIBB Datenreport 2026, table A5.6-1.">
+<rect x="0" y="0" width="340" height="404" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">Two thirds end in the first</text>
+<text x="18" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">year</text>
+<text x="18" y="82" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">When contracts terminated early in 2024</text>
+<text x="18" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">ended</text>
+<text x="18" y="134" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">Industry and commerce</text>
+<rect x="18.0" y="142" width="109.0" height="28" rx="4" fill="#cc7a3e"/>
+<text x="73.5" y="161" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">36.5%</text>
+<rect x="129.0" y="142" width="101.1" height="28" rx="4" fill="#e8b07a"/>
+<text x="180.5" y="161" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">33.9%</text>
+<rect x="232.0" y="142" width="65.8" height="28" rx="4" fill="#71717a"/>
+<text x="265.9" y="161" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#fafafa" font-weight="600" text-anchor="middle">22.3%</text>
+<rect x="299.8" y="142" width="20.2" height="28" rx="4" fill="#52525b"/>
+<text x="18" y="194" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">All trades</text>
+<rect x="18.0" y="202" width="103.5" height="28" rx="4" fill="#cc7a3e"/>
+<text x="70.7" y="221" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">34.7%</text>
+<rect x="123.5" y="202" width="98.0" height="28" rx="4" fill="#e8b07a"/>
+<text x="173.5" y="221" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">32.9%</text>
+<rect x="223.5" y="202" width="68.2" height="28" rx="4" fill="#71717a"/>
+<text x="258.6" y="221" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#fafafa" font-weight="600" text-anchor="middle">23.1%</text>
+<rect x="293.7" y="202" width="26.3" height="28" rx="4" fill="#52525b"/>
+<rect x="18" y="254" width="12" height="12" rx="2" fill="#cc7a3e"/>
+<text x="36" y="265" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Probation (up to 4 months)</text>
+<rect x="18" y="276" width="12" height="12" rx="2" fill="#e8b07a"/>
+<text x="36" y="287" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Rest of year 1</text>
+<rect x="18" y="298" width="12" height="12" rx="2" fill="#71717a"/>
+<text x="36" y="309" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Year 2</text>
+<rect x="18" y="320" width="12" height="12" rx="2" fill="#52525b"/>
+<text x="36" y="331" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Later (7.3% and 9.3%)</text>
+<text x="18" y="372" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Source: BIBB Datenreport 2026, table A5.6-1.</text>
+<text x="18" y="390" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Share of all early terminations in 2024, Germany.</text>
+</svg>

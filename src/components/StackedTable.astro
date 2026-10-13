@@ -1,0 +1,70 @@
+---
+// A table that stays a table on desktop but turns each row into a labelled card on
+// phones. Four-column tables in the ~342px prose column otherwise break every word
+// across lines. Cells are plain text; each one repeats its column header as a label
+// on small screens, so the content reads the same in both layouts (and for crawlers,
+// which still see a normal <table>).
+interface Props {
+	headers: string[];
+	rows: string[][];
+}
+
+const { headers, rows } = Astro.props;
+---
+
+<div class="stacked-table">
+	<table>
+		<thead>
+			<tr>{headers.map((h) => <th>{h}</th>)}</tr>
+		</thead>
+		<tbody>
+			{rows.map((row) => (
+				<tr>{row.map((cell, i) => <td data-label={headers[i]}>{cell}</td>)}</tr>
+			))}
+		</tbody>
+	</table>
+</div>
+
+<style>
+	@media (max-width: 640px) {
+		.stacked-table :global(table) {
+			border: 0;
+			background: transparent;
+		}
+		.stacked-table thead {
+			display: none;
+		}
+		.stacked-table tr {
+			display: block;
+			margin-bottom: 0.75rem;
+			border: 1px solid rgb(255 255 255 / 0.1);
+			border-radius: 0.75rem;
+			padding: 0.75rem 0.9rem;
+			background: rgb(255 255 255 / 0.03);
+		}
+		.stacked-table td {
+			display: block;
+			border: 0;
+			padding: 0.2rem 0 !important;
+			font-size: 0.875rem;
+			overflow-wrap: normal;
+			hyphens: manual;
+		}
+		/* First cell is the period: show it as the card title, no label. */
+		.stacked-table td:first-child {
+			font-weight: 600;
+			color: #fafafa;
+			font-size: 0.95rem;
+			padding-bottom: 0.35rem !important;
+		}
+		.stacked-table td:not(:first-child)::before {
+			content: attr(data-label);
+			display: block;
+			font-size: 0.7rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			color: #a1a1aa;
+			margin-bottom: 0.1rem;
+		}
+	}
+</style>

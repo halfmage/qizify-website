@@ -29,6 +29,7 @@ ctaFooter:
   button: "Book a 30-minute demo"
 ---
 import InlineCta from '../../components/InlineCta.astro';
+import StackedTable from '../../components/StackedTable.astro';
 
 ![Two apprentices in blue work aprons at an electronics bench, she with safety glasses and a smartphone, he working on a circuit board](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
@@ -44,7 +45,7 @@ The [BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037), 
 - **32.9%** later in the first year
 - in **industry and commerce**, which includes the metal and electrical trades, about **70%** in the first year combined
 
-![Stacked bars: of all apprenticeship contracts terminated early in 2024, 36.5 percent in industry and commerce ended during probation and 33.9 percent later in the first year; across all trades 34.7 and 32.9 percent](/images/blog/ruestung-zeitpunkt-vertragsloesung.svg)
+<picture><source media="(max-width: 640px)" srcset="/images/blog/ruestung-zeitpunkt-vertragsloesung-mobile.svg" /><img src="/images/blog/ruestung-zeitpunkt-vertragsloesung.svg" alt="Stacked bars: of all apprenticeship contracts terminated early in 2024, 36.5 percent in industry and commerce ended during probation and 33.9 percent later in the first year; across all trades 34.7 and 32.9 percent" /></picture>
 
 Across all trades, 29.7% of apprenticeship contracts were terminated early in 2024. How the rate developed in the individual metal and electrical trades is shown in our [data check on apprenticeships in Germany's defence industry](/blog/apprenticeships-defence-industry-germany).
 
@@ -83,7 +84,7 @@ Only 13% name a better alternative. Most of the other reasons lie within the app
 
 Sorted by where a company can act, the reasons fall into three groups:
 
-![Bar chart of reasons for thinking about quitting, coloured by where a company can act: before the first day wrong expectations 30 and no longer liking the trade 24 percent, in the company among others learning and working conditions 29 percent, outside the trainer's role mental strain 36 and personal reasons 20 percent](/images/blog/abbruch-gruende.svg)
+<picture><source media="(max-width: 640px)" srcset="/images/blog/abbruch-gruende-mobile.svg" /><img src="/images/blog/abbruch-gruende.svg" alt="Bar chart of reasons for thinking about quitting, coloured by where a company can act: before the first day wrong expectations 30 and no longer liking the trade 24 percent, in the company among others learning and working conditions 29 percent, outside the trainer's role mental strain 36 and personal reasons 20 percent" /></picture>
 
 1. **Before the first day:** wrong expectations (30%) and a trade that does not fit (24%) usually start with the career choice. An honest internship, a trial day in the workshop and a conversation with a second-year apprentice show more than any glossy brochure.
 2. **In the company:** working conditions, quality of teaching, conflicts with trainers or colleagues, bullying. This is your core territory, and this is where the fixed conversations below come in.
@@ -93,17 +94,20 @@ Sorted by where a company can act, the reasons fall into three groups:
 
 The table shows the typical situation, the warning sign and what you do for each period. In Germany, probation lasts one to four months depending on the contract ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html), the Vocational Training Act). Adjust the rows to your contract.
 
-![Timeline of the first apprenticeship year: monthly contact before the start, 34.7 percent of early terminations during probation, 32.9 percent in the rest of the first year, conversations in weeks 2, 6 and 12, then every three months](/images/blog/abbruch-erstes-jahr.svg)
+<picture><source media="(max-width: 640px)" srcset="/images/blog/abbruch-erstes-jahr-mobile.svg" /><img src="/images/blog/abbruch-erstes-jahr.svg" alt="Timeline of the first apprenticeship year: monthly contact before the start, 34.7 percent of early terminations during probation, 32.9 percent in the rest of the first year, conversations in weeks 2, 6 and 12, then every three months" /></picture>
 
-| Period | Typical situation | Warning sign | What you do |
-|---|---|---|---|
-| Between contract and start | Months without contact, the apprentice only hears from friends what an apprenticeship is "really" like | No reply to invitations, doubts in conversation | Get in touch once a month, explain the training plan and the first day, meet the rest of the intake |
-| Weeks 1 to 2 | New surroundings, many names, rules, protective equipment | Often stands alone, asks nothing | Assign a buddy from the second year, first conversation in week 2 |
-| Months 1 to 2 | First vocational school blocks, theory meets workshop | Unsure about basics such as Ohm's law, training log (Berichtsheft, the record apprentices must keep) stays empty | Ask which topic school is covering right now, look at the training log weekly |
-| Months 3 to 4 | Probation ends, the decision "do I stay?" is often made here | More days absent, vague answers, suddenly no more questions | Probation review with specific questions, feedback in both directions |
-| Months 5 to 6 | First vocational school grades, first routine | Poor grades are kept quiet, withdrawal from the team | Talk about grades openly, targeted help instead of pressure, organise learning support if needed |
-| Months 7 to 9 | Routine instead of novelty, motivation drops | Little progress in the learning plan, conflicts with colleagues, complaints about hours | Give tasks with a visible result, mediate conflicts early, check working hours |
-| Months 10 to 12 | First year ends, taking stock | Apprentice talks about other trades or university | Annual review: what went well, what should change, what comes in the second year |
+<StackedTable
+  headers={["Period", "Typical situation", "Warning sign", "What you do"]}
+  rows={[
+    ["Between contract and start", "Months without contact, the apprentice only hears from friends what an apprenticeship is \"really\" like", "No reply to invitations, doubts in conversation", "Get in touch once a month, explain the training plan and the first day, meet the rest of the intake"],
+    ["Weeks 1 to 2", "New surroundings, many names, rules, protective equipment", "Often stands alone, asks nothing", "Assign a buddy from the second year, first conversation in week 2"],
+    ["Months 1 to 2", "First vocational school blocks, theory meets workshop", "Unsure about basics such as Ohm's law, training log (Berichtsheft, the record apprentices must keep) stays empty", "Ask which topic school is covering right now, look at the training log weekly"],
+    ["Months 3 to 4", "Probation ends, the decision \"do I stay?\" is often made here", "More days absent, vague answers, suddenly no more questions", "Probation review with specific questions, feedback in both directions"],
+    ["Months 5 to 6", "First vocational school grades, first routine", "Poor grades are kept quiet, withdrawal from the team", "Talk about grades openly, targeted help instead of pressure, organise learning support if needed"],
+    ["Months 7 to 9", "Routine instead of novelty, motivation drops", "Little progress in the learning plan, conflicts with colleagues, complaints about hours", "Give tasks with a visible result, mediate conflicts early, check working hours"],
+    ["Months 10 to 12", "First year ends, taking stock", "Apprentice talks about other trades or university", "Annual review: what went well, what should change, what comes in the second year"]
+  ]}
+/>
 
 **Between contract and start.** There are often several months between signing and the first day. During that time, the company is just a name on paper for the future apprentice. A message or a photo of the future workplace costs you five minutes. What belongs in the first eight weeks is in our [apprentice onboarding checklist](/blog/apprentice-onboarding).
 
@@ -146,7 +150,7 @@ And if the apprentice leaves anyway: an honest exit conversation shows you what 
 
 Two figures from the [BIBB cost-benefit survey](https://www.bibb.de/de/pressemitteilung_210430.php) for the 2022/23 training year help when you make the case to management or finance: an apprentice costs about €26,200 a year on average. Subtract the returns from their productive work, about €18,100, and about €8,100 remain. Hiring a skilled worker externally costs about €13,700 on average.
 
-![Bar chart: an apprentice costs about 26,200 euros gross and 8,100 euros net per year, recruiting a skilled worker externally about 13,700 euros](/images/blog/ruestung-kosten-ausbildung-vs-extern.svg)
+<picture><source media="(max-width: 640px)" srcset="/images/blog/ruestung-kosten-ausbildung-vs-extern-mobile.svg" /><img src="/images/blog/ruestung-kosten-ausbildung-vs-extern.svg" alt="Bar chart: an apprentice costs about 26,200 euros gross and 8,100 euros net per year, recruiting a skilled worker externally about 13,700 euros" /></picture>
 
 An apprentice who leaves in the first year costs you twice: once for training that produces no skilled worker, and once for the position you end up filling externally. Our [apprenticeship savings calculator](/apprenticeship-savings-calculator) gives an estimate for your company.
 

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="406" viewBox="0 0 340 406" role="img" aria-label="Zeitleiste des ersten Ausbildungsjahres: vor dem Start monatlich melden; Gespräche in Woche 2, 6 und 12; Ende der Probezeit nach 1 bis 4 Monaten, 34,7 Prozent der Vertragslösungen fallen in die Probezeit; danach Gespräche alle drei Monate; bis Monat 12 weitere 32,9 Prozent. Quelle: BIBB-Datenreport 2026.">
+<rect x="0" y="0" width="340" height="406" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">Das erste Jahr im Überblick</text>
+<text x="18" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Wann Verträge enden, wann Sie Gespräche</text>
+<text x="18" y="76" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">einplanen</text>
+<line x1="30" y1="114" x2="30" y2="322" stroke="#3f3f46" stroke-width="2"/>
+<circle cx="30" cy="114" r="7" fill="#52525b" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="119" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Vor dem Start</text>
+<text x="50" y="138" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">monatlich melden</text>
+<circle cx="30" cy="166" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="171" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Woche 2, 6 und 12</text>
+<text x="50" y="190" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">feste Gespräche</text>
+<circle cx="30" cy="218" r="7" fill="#cc7a3e" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="223" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Ende der Probezeit</text>
+<text x="50" y="242" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Monat 1 bis 4: 34,7 % der Lösungen</text>
+<circle cx="30" cy="270" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="275" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Danach alle 3 Monate</text>
+<text x="50" y="294" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Gespräch, Lernstand ansehen</text>
+<circle cx="30" cy="322" r="7" fill="#e8b07a" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="327" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Bis Monat 12</text>
+<text x="50" y="346" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">weitere 32,9 % der Lösungen</text>
+<text x="18" y="392" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Quelle: BIBB-Datenreport 2026, Tabelle A5.6-1</text>
+</svg>
