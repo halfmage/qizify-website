@@ -426,7 +426,7 @@ Source: https://learnslice.com/blog/prevent-apprenticeship-dropout
 Language: en
 Published: 2026-10-13
 
-Two thirds of terminated apprenticeship contracts in Germany end in year one. A month-by-month plan with warning signs and questions for trainers.
+Apprenticeship dropout starts early: two thirds of early terminations in Germany happen in year one. A month-by-month plan with warning signs for trainers.
 
 ## Key Takeaways
 
@@ -437,13 +437,13 @@ Two thirds of terminated apprenticeship contracts in Germany end in year one. A 
 
 ![Two apprentices in blue work aprons at an electronics bench, she with safety glasses and a smartphone, he working on a circuit board](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
-Most apprentices who leave, leave early. In Germany, two thirds of apprenticeship contracts terminated early end within the first twelve months, more than a third during probation. If you only step in during the second year, you are often too late.
+Most apprentices who leave, leave early. In Germany, two thirds of early contract terminations happen within the first twelve months, more than a third during probation. Preventing apprenticeship dropout therefore starts in year one. If you only step in during the second year, you are often too late.
 
-This article shows what to watch for in which month, which questions actually surface problems in a conversation, and what to do when an apprentice says: "I'm quitting."
+This article shows what to watch for in which month, which questions surface problems in a conversation, and what to do when an apprentice says: "I'm quitting."
 
 ## When apprenticeship contracts are terminated early
 
-The [BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037), the annual report of Germany's Federal Institute for Vocational Education and Training, shows when the contracts terminated early in 2024 ended:
+The [BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037), the annual report of Germany's Federal Institute for Vocational Education and Training, shows when contracts were terminated in 2024:
 
 - **34.7%** during probation
 - **32.9%** later in the first year
@@ -555,7 +555,7 @@ For the three most common reasons, mental strain, wrong expectations and poor wo
 
 Digital learning support helps in two other places:
 
-- **With theory.** In the electrical trades many topics build on each other, and a gap that opens early is carried along. A tutor built on the [official training framework (Ausbildungsrahmenplan)](/blog/apprenticeship-framework-plan-explained) answers subject questions even when no trainer has time, and cites the source for every answer. That addresses a reason 24% name: the quality of teaching.
+- **With theory.** In the electrical trades many topics build on each other, and a gap that opens early tends to stay. A tutor built on the [official training framework (Ausbildungsrahmenplan)](/blog/apprenticeship-framework-plan-explained) answers subject questions even when no trainer has time, and cites the source for every answer. That addresses a reason 24% name: the quality of teaching.
 - **With spotting problems early.** When trainers see each apprentice's progress against the learning plan, it becomes clear who has not moved forward for weeks. That does not replace a conversation, but it tells you who to talk to first. A [digital training log](/blog/digital-training-logbook) gives similar signals sooner than a paper folder at the end of the month.
 
 The MEKI project, funded under the federal InnoVET PLUS programme, follows a similar approach: the chambers of commerce in Reutlingen and the Stuttgart region are developing AI support for vocational school content together with universities in Stuttgart and Munich, for trades with high early termination rates and skills shortages, starting with IT systems electronics technicians.
@@ -708,7 +708,7 @@ The table becomes useful once you put your own numbers next to it. A simple calc
 
 BIBB uses a different method, so your result is an approximation. It is good enough for an honest assessment. If you are well above 16% for industrial mechanics, a closer look is worthwhile. If you are below it, you are evidently doing a lot right. With only a few apprentices a year, the figures fluctuate strongly, so combine several intakes.
 
-Finally, look at when the contracts ended. If most cases fall within the first twelve months, you know where to start.
+Finally, look at when the contracts ended. If most cases fall within the first twelve months, you know where to start. A month-by-month plan with warning signs and conversation questions is in [preventing apprenticeship dropout](/blog/prevent-apprenticeship-dropout).
 
 ### What a cancelled contract costs
 
@@ -3472,7 +3472,7 @@ Use our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator) 
 
 1. **Information overload in week one:** Spreading orientation over two weeks is better than cramming everything into a single day
 2. **No written plan:** If the plan only exists in the trainer's head, it is not a plan. It is improvisation
-3. **Skipping the feedback loops:** Weekly check-ins catch problems early, before they lead to a cancelled contract
+3. **Skipping the feedback loops:** Weekly check-ins catch problems early, before they lead to a cancelled contract. Which questions work in these check-ins is covered in our [plan to prevent apprenticeship dropout](/blog/prevent-apprenticeship-dropout).
 4. **Ignoring the digital training logbook:** Starting late creates a backlog that is stressful and hard to fix
 5. **Treating every apprentice the same:** Use learning analytics to personalize the pace and focus areas
 
