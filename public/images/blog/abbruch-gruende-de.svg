@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="546" viewBox="0 0 520 546" role="img" aria-label="Balkendiagramm der Gründe für Abbruchgedanken, eingefärbt nach Ansatzpunkt: Psychisch belastet 36 Prozent; Ausbildung anders als erwartet 30 Prozent; Lern- und Arbeitsbedingungen 29 Prozent; Keine Zeit für anderes 28 Prozent; Qualität der Vermittlung 24 Prozent; Beruf gefällt nicht (mehr) 24 Prozent; Probleme mit dem Ausbilder 22 Prozent; Probleme mit Kollegen 22 Prozent; Persönliche Gründe 20 Prozent; Lieber Geld verdienen 18 Prozent; Mobbing, Diskriminierung, Gewalt 17 Prozent; Bessere Alternative 13 Prozent. Quelle: Bertelsmann Stiftung, Ausbildungsperspektiven 2026.">
+<rect x="0" y="0" width="520" height="546" rx="16" fill="#18181b"/>
+<text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">Warum Azubis ans Aufhören denken</text>
+<text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#a1a1aa">Gründe, Mehrfachnennung, n = 467</text>
+<text x="24" y="119" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Psychisch belastet</text>
+<rect x="248" y="106" width="214.0" height="18" rx="3" fill="#71717a"/>
+<text x="470.0" y="120" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">36 %</text>
+<text x="24" y="146" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Ausbildung anders als erwartet</text>
+<rect x="248" y="133" width="178.3" height="18" rx="3" fill="#e8b07a"/>
+<text x="434.3" y="147" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">30 %</text>
+<text x="24" y="173" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Lern- und Arbeitsbedingungen</text>
+<rect x="248" y="160" width="172.4" height="18" rx="3" fill="#cc7a3e"/>
+<text x="428.4" y="174" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">29 %</text>
+<text x="24" y="200" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Keine Zeit für anderes</text>
+<rect x="248" y="187" width="166.4" height="18" rx="3" fill="#cc7a3e"/>
+<text x="422.4" y="201" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">28 %</text>
+<text x="24" y="227" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Qualität der Vermittlung</text>
+<rect x="248" y="214" width="142.7" height="18" rx="3" fill="#cc7a3e"/>
+<text x="398.7" y="228" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">24 %</text>
+<text x="24" y="254" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Beruf gefällt nicht (mehr)</text>
+<rect x="248" y="241" width="142.7" height="18" rx="3" fill="#e8b07a"/>
+<text x="398.7" y="255" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">24 %</text>
+<text x="24" y="281" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Probleme mit dem Ausbilder</text>
+<rect x="248" y="268" width="130.8" height="18" rx="3" fill="#cc7a3e"/>
+<text x="386.8" y="282" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">22 %</text>
+<text x="24" y="308" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Probleme mit Kollegen</text>
+<rect x="248" y="295" width="130.8" height="18" rx="3" fill="#cc7a3e"/>
+<text x="386.8" y="309" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">22 %</text>
+<text x="24" y="335" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Persönliche Gründe</text>
+<rect x="248" y="322" width="118.9" height="18" rx="3" fill="#71717a"/>
+<text x="374.9" y="336" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">20 %</text>
+<text x="24" y="362" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Lieber Geld verdienen</text>
+<rect x="248" y="349" width="107.0" height="18" rx="3" fill="#52525b"/>
+<text x="363.0" y="363" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">18 %</text>
+<text x="24" y="389" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Mobbing, Diskriminierung, Gewalt</text>
+<rect x="248" y="376" width="101.1" height="18" rx="3" fill="#cc7a3e"/>
+<text x="357.1" y="390" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">17 %</text>
+<text x="24" y="416" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Bessere Alternative</text>
+<rect x="248" y="403" width="77.3" height="18" rx="3" fill="#52525b"/>
+<text x="333.3" y="417" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#fafafa" font-weight="600">13 %</text>
+<rect x="24" y="450" width="12" height="12" rx="2" fill="#e8b07a"/>
+<text x="42" y="461" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Vor dem ersten Tag</text>
+<rect x="193.6" y="450" width="12" height="12" rx="2" fill="#cc7a3e"/>
+<text x="211.6" y="461" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Im Betrieb</text>
+<rect x="305.6" y="450" width="12" height="12" rx="2" fill="#71717a"/>
+<text x="323.6" y="461" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Außerhalb Ihrer Rolle</text>
+<rect x="24" y="472" width="12" height="12" rx="2" fill="#52525b"/>
+<text x="42" y="483" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Sonstige</text>
+<text x="24" y="526" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#71717a">Quelle: Bertelsmann Stiftung, Ausbildungsperspektiven 2026</text>
+</svg>

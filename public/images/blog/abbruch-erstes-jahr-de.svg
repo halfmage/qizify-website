@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="284" viewBox="0 0 520 284" role="img" aria-label="Zeitleiste des ersten Ausbildungsjahres: vor dem Start einmal im Monat melden; Gespräche in Woche 2, 6 und 12, danach alle drei Monate; die Probezeit dauert ein bis vier Monate. 34,7 Prozent aller Vertragslösungen fallen in die Probezeit, 32,9 Prozent später ins erste Jahr. Quelle: BIBB-Datenreport 2026.">
+<rect x="0" y="0" width="520" height="284" rx="16" fill="#18181b"/>
+<text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">Das erste Jahr im Überblick</text>
+<text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#a1a1aa">Wann Verträge enden und wann Sie Gespräche einplanen</text>
+<rect x="24" y="96" width="98" height="40" rx="6" fill="#27272a"/>
+<text x="73.0" y="113" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#e8b07a" font-weight="600" text-anchor="middle">Vor Start</text>
+<text x="73.0" y="129" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8" text-anchor="middle">monatlich</text>
+<rect x="134.0" y="96" width="114.33333333333331" height="40" rx="6" fill="#cc7a3e"/>
+<text x="192.66666666666666" y="113" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">Probezeit</text>
+<text x="192.66666666666666" y="129" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#18181b" text-anchor="middle">34,7 %</text>
+<rect x="251.33333333333331" y="96" width="234.66666666666669" height="40" rx="6" fill="#e8b07a"/>
+<text x="368.66666666666663" y="113" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">Rest des ersten Jahres</text>
+<text x="368.66666666666663" y="129" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#18181b" text-anchor="middle">32,9 % der Lösungen</text>
+<line x1="134.0" y1="176" x2="486.0" y2="176" stroke="#52525b" stroke-width="2"/>
+<line x1="134.0" y1="172" x2="134.0" y2="180" stroke="#52525b" stroke-width="2"/>
+<text x="134.0" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#a1a1aa" text-anchor="middle">Start</text>
+<line x1="251.33333333333331" y1="172" x2="251.33333333333331" y2="180" stroke="#52525b" stroke-width="2"/>
+<text x="251.33333333333331" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#a1a1aa" text-anchor="middle">Monat 4</text>
+<line x1="368.66666666666663" y1="172" x2="368.66666666666663" y2="180" stroke="#52525b" stroke-width="2"/>
+<text x="368.66666666666663" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#a1a1aa" text-anchor="middle">Monat 8</text>
+<line x1="486.0" y1="172" x2="486.0" y2="180" stroke="#52525b" stroke-width="2"/>
+<text x="486.0" y="198" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#a1a1aa" text-anchor="middle">Monat 12</text>
+<text x="24" y="181" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Gespräche</text>
+<circle cx="148.7" cy="176" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="148.7" y="162" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#fafafa" font-weight="600" text-anchor="middle">W2</text>
+<circle cx="175.1" cy="176" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="175.1" y="162" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#fafafa" font-weight="600" text-anchor="middle">W6</text>
+<circle cx="216.1" cy="176" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="216.1" y="162" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#fafafa" font-weight="600" text-anchor="middle">W12</text>
+<circle cx="304.1" cy="176" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<circle cx="392.1" cy="176" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<circle cx="480.1" cy="176" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="392.1" y="162" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#fafafa" font-weight="600" text-anchor="middle">alle 3 Monate</text>
+<text x="24" y="238" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">W = Woche. Die Probezeit dauert je nach Vertrag 1 bis 4 Monate.</text>
+<text x="24" y="264" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#71717a">Quelle: BIBB-Datenreport 2026, Tabelle A5.6-1; Probezeit nach § 20 BBiG</text>
+</svg>

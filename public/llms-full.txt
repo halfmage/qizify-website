@@ -488,6 +488,8 @@ Only 13% name a better alternative. Most of the other reasons lie within the app
 
 Sorted by where a company can act, the reasons fall into three groups:
 
+![Bar chart of reasons for thinking about quitting, coloured by where a company can act: before the first day wrong expectations 30 and no longer liking the trade 24 percent, in the company among others learning and working conditions 29 percent, outside the trainer's role mental strain 36 and personal reasons 20 percent](/images/blog/abbruch-gruende.svg)
+
 1. **Before the first day:** wrong expectations (30%) and a trade that does not fit (24%) usually start with the career choice. An honest internship, a trial day in the workshop and a conversation with a second-year apprentice show more than any glossy brochure.
 2. **In the company:** working conditions, quality of teaching, conflicts with trainers or colleagues, bullying. This is your core territory, and this is where the fixed conversations below come in.
 3. **Outside your role:** mental strain and personal reasons cannot be solved with a checklist or an app. They need professionals, such as the company doctor or external counselling services, not trainers.
@@ -495,6 +497,8 @@ Sorted by where a company can act, the reasons fall into three groups:
 ## The 12-month plan
 
 The table shows the typical situation, the warning sign and what you do for each period. In Germany, probation lasts one to four months depending on the contract ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html), the Vocational Training Act). Adjust the rows to your contract.
+
+![Timeline of the first apprenticeship year: monthly contact before the start, 34.7 percent of early terminations during probation, 32.9 percent in the rest of the first year, conversations in weeks 2, 6 and 12, then every three months](/images/blog/abbruch-erstes-jahr.svg)
 
 | Period | Typical situation | Warning sign | What you do |
 |---|---|---|---|
@@ -547,6 +551,8 @@ And if the apprentice leaves anyway: an honest exit conversation shows you what 
 
 Two figures from the [BIBB cost-benefit survey](https://www.bibb.de/de/pressemitteilung_210430.php) for the 2022/23 training year help when you make the case to management or finance: an apprentice costs about €26,200 a year on average. Subtract the returns from their productive work, about €18,100, and about €8,100 remain. Hiring a skilled worker externally costs about €13,700 on average.
 
+![Bar chart: an apprentice costs about 26,200 euros gross and 8,100 euros net per year, recruiting a skilled worker externally about 13,700 euros](/images/blog/ruestung-kosten-ausbildung-vs-extern.svg)
+
 An apprentice who leaves in the first year costs you twice: once for training that produces no skilled worker, and once for the position you end up filling externally. Our [apprenticeship savings calculator](/apprenticeship-savings-calculator) gives an estimate for your company.
 
 ## Where digital learning support helps and where it doesn't
@@ -563,6 +569,8 @@ The MEKI project, funded under the federal InnoVET PLUS programme, follows a sim
 How you introduce such tools matters: as support, not as control. Clarify with the works council and your data protection officer beforehand who sees which learning data. What this looks like in an industry with particularly strict security requirements is covered in our [data check on apprenticeships in Germany's defence industry](/blog/apprenticeships-defence-industry-germany).
 
 ## Your plan for the next intake
+
+![A team cheers with raised arms around a meeting table with laptops, sticky notes and a flip chart](/images/blog/pexels-yankrukov-7793179.webp)
 
 1. **Get in touch between contract and start,** once a month.
 2. **Set the conversation dates now:** weeks 2, 6 and 12, then every three months.
@@ -4430,6 +4438,8 @@ Nur 13 % nennen eine bessere Alternative. Die meisten übrigen Gründe liegen in
 
 Sortiert man die Gründe danach, wo ein Betrieb ansetzen kann, ergeben sich drei Gruppen:
 
+![Balkendiagramm der Gründe für Abbruchgedanken, eingefärbt nach Ansatzpunkt: vor dem ersten Tag falsche Erwartungen 30 und Beruf gefällt nicht 24 Prozent, im Betrieb unter anderem Lern- und Arbeitsbedingungen 29 Prozent, außerhalb der Rolle des Ausbilders psychische Belastung 36 und persönliche Gründe 20 Prozent](/images/blog/abbruch-gruende-de.svg)
+
 1. **Vor dem ersten Tag:** Falsche Erwartungen (30 %) und ein Beruf, der nicht passt (24 %), entstehen meist bei der Berufswahl. Ein ehrliches Praktikum, ein Probetag in der Werkstatt und ein Gespräch mit einem Azubi aus dem zweiten Lehrjahr zeigen mehr als jede Hochglanzbroschüre.
 2. **Im Betrieb:** Arbeitsbedingungen, Qualität der Vermittlung, Konflikte mit Ausbildern oder Kollegen, Mobbing. Das ist Ihr Kerngebiet, und hier setzen die festen Gespräche weiter unten an.
 3. **Außerhalb Ihrer Rolle:** Psychische Belastung und persönliche Gründe lassen sich mit keiner Checkliste und keiner App lösen. Hier sind Fachleute gefragt, etwa der Betriebsarzt oder externe Beratungsstellen, nicht Ausbilder.
@@ -4437,6 +4447,8 @@ Sortiert man die Gründe danach, wo ein Betrieb ansetzen kann, ergeben sich drei
 ## Der 12-Monats-Plan
 
 Die Tabelle zeigt für jeden Zeitraum die typische Situation, das Warnsignal und was Sie tun. Die Probezeit dauert je nach Vertrag einen bis vier Monate ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html)). Passen Sie die Zeilen an Ihren Vertrag an.
+
+![Zeitleiste des ersten Ausbildungsjahres: vor dem Start monatlich melden, 34,7 Prozent der Vertragslösungen in der Probezeit, 32,9 Prozent im Rest des ersten Jahres, Gespräche in Woche 2, 6 und 12, danach alle drei Monate](/images/blog/abbruch-erstes-jahr-de.svg)
 
 | Zeitraum | Typische Situation | Warnsignal | Was Sie tun |
 |---|---|---|---|
@@ -4489,6 +4501,8 @@ Und wenn der Azubi trotzdem geht: Ein ehrliches Abschlussgespräch zeigt Ihnen, 
 
 Für das Gespräch mit Geschäftsführung oder Controlling helfen zwei Zahlen aus der [BIBB-Kosten-Nutzen-Erhebung](https://www.bibb.de/de/pressemitteilung_210430.php) für das Ausbildungsjahr 2022/23: Ein Azubi kostet im Schnitt rund 26.200 € pro Jahr. Zieht man die Erträge aus seiner Mitarbeit ab, rund 18.100 €, bleiben rund 8.100 €. Eine Fachkraft von außen zu gewinnen kostet im Schnitt rund 13.700 €.
 
+![Balkendiagramm: Ausbildung kostet im Schnitt rund 26.200 Euro brutto und 8.100 Euro netto pro Jahr, eine Fachkraft extern zu gewinnen rund 13.700 Euro](/images/blog/ruestung-kosten-ausbildung-vs-extern-de.svg)
+
 Ein Azubi, der im ersten Jahr geht, kostet also doppelt: einmal die Ausbildung ohne Fachkraft am Ende, und einmal die Stelle, die Sie später doch extern besetzen. Eine Schätzung für Ihren Betrieb liefert unser [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner).
 
 ## Wo digitale Lernbegleitung hilft und wo nicht
@@ -4505,6 +4519,8 @@ Einen ähnlichen Ansatz verfolgt das Projekt MEKI aus dem Förderprogramm InnoVE
 Wichtig ist, wie Sie solche Werkzeuge einführen: als Unterstützung, nicht als Kontrolle. Klären Sie vorab mit Betriebsrat und Datenschutzbeauftragtem, wer welche Lerndaten sieht. Wie das in einer Branche mit besonders hohen Anforderungen an Datenschutz und Sicherheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie).
 
 ## Ihr Plan für den nächsten Jahrgang
+
+![Ein Team jubelt mit erhobenen Armen an einem Besprechungstisch mit Laptops, Notizzetteln und Flipchart](/images/blog/pexels-yankrukov-7793179.webp)
 
 1. **Melden Sie sich zwischen Vertrag und Start,** einmal im Monat.
 2. **Legen Sie die Gesprächstermine jetzt fest:** Woche 2, 6 und 12, dann alle drei Monate.
