@@ -1046,13 +1046,14 @@ A realistic first milestone is 6 to 8 weeks: one subject area mapped completely,
 Source: https://learnslice.com/blog/custom-ai-open-source-models
 Language: en
 Published: 2026-07-30
+Updated: 2026-10-12
 
-How to build custom AI on open-source models like Kimi K2 and gpt-oss: personalized to your operation, self-hosted in the EU, and owned by you. Book a scoping call.
+Custom AI on open-source models like Kimi K2 and gpt-oss, from AI tutors to team assistants: grounded in your content, self-hosted in the EU, owned by you.
 
 ## Key Takeaways
 
 - Open-weight models (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek and others) are AI models whose weights you can download and run on your own infrastructure. That is the one class of frontier-adjacent AI you can fully self-host, so your data stays on your own servers and you are not billed per token.
-- A custom AI is not a raw model. It is a model wrapped around your operation: grounded in your own data through retrieval (RAG), shaped to your process and voice through light fine-tuning (LoRA), and connected to your systems. That layer is what turns a generic model into personalized AI for your business.
+- A custom AI is not a raw model. It is a model wrapped around your operation: grounded in your own data through retrieval (RAG), shaped to your process and voice through light fine-tuning (LoRA), and connected to your systems, for example an AI tutor that answers from your course material. That layer is what turns a generic model into personalized AI for your business.
 - The strongest reason to self-host an open model is sovereignty, not price. Every call to a US-hosted AI API is a cross-border data transfer under GDPR; a model running on EU infrastructure removes that transfer entirely and keeps you in the lighter deployer role under the EU AI Act.
 - The cost case is real but narrow: self-hosting tends to pay off past roughly 10 to 50 million tokens a month at steady use. A single high-memory GPU server in the EU starts around 900 euros a month and already runs a 120-billion-parameter open model. Below that volume, an API is often cheaper.
 - Not every open model is safe to use commercially in the EU. Licenses differ sharply, from clean Apache 2.0 (Qwen, Mistral, gpt-oss) to custom terms with regional restrictions. Choosing the right model, license, and hosting for your use case is exactly the kind of decision to settle in a short scoping call before you build.
@@ -1065,7 +1066,7 @@ If you are looking into custom AI built on open-source models, you have probably
 
 That is what open-weight models make possible, and it is what this guide is about. We will be precise about what these models are, why you would self-host one instead of calling a closed API, how a generic model becomes personalized AI for your specific business, where it actually boosts operations, and what it costs to build and run. The goal is not to convince you that AI is useful. It is to help you decide whether an open model, built around your operation and hosted under your control, is the right foundation, and what the first step looks like.
 
-It is also what we build at LearnSlice: sovereign, EU-hosted custom AI and learning software for universities, training providers, and regulated teams, owned by the organizations we build it for.
+It is also what we build at LearnSlice: sovereign, EU-hosted custom AI and learning software for universities, training providers, and regulated teams, owned by the organizations we build it for. For training providers and universities, the most direct use is an AI tutor that answers from your own course material.
 
 Prefer to talk it through first? [Book a free 30-minute scoping call](#project-inquiry), no pitch.
 
@@ -1129,6 +1130,7 @@ The clean architecture that ties this together, and the one worth asking any par
 
 The models are general, but the value is specific. A custom AI built on an open model tends to pay for itself in a handful of well-worn places:
 
+- **Learning and training.** An AI tutor grounded in your course material answers learner questions with citations, explains in the learner's own language, and runs inside the LMS you already have. See [how to add an AI tutor to your existing LMS](/blog/ai-tutor-for-existing-lms).
 - **Customer and internal support.** An assistant grounded in your product docs and policies deflects routine questions around the clock, in multiple languages, and hands the hard ones to a human with context attached.
 - **A knowledge assistant for your team.** New and experienced staff get grounded answers from your own SOPs, runbooks, and playbooks instead of interrupting a senior colleague or reaching for a public chatbot. This is the highest-leverage use for onboarding and upskilling; see [LearnSlice for companies](/companies) for how that looks in practice.
 - **Document and data processing.** Extracting fields from invoices, contracts, and forms, summarizing long records, and routing them, with a human reviewing the exceptions rather than every case.
@@ -1211,6 +1213,14 @@ Two costs matter: build and run. The build is the custom layer (retrieval, fine-
 ### Which open-source model should we use?
 
 It depends on the task, the languages you need, your hardware, and the license. As of 2026, Qwen and Mistral offer strong models under a clean Apache 2.0 license (Mistral is also EU-headquartered), gpt-oss is Apache 2.0 and runs a 120-billion-parameter model on a single 80GB GPU, and DeepSeek ships under MIT. Some models, including parts of the Llama family, carry license terms that restrict commercial or EU use, so the license matters as much as the benchmark. Matching model to use case is part of what a scoping call is for.
+
+### Do we have to manage the servers ourselves?
+
+No. Self-hosted means the model runs on infrastructure you control, not that your team has to run it. In one common setup, your build partner operates the model on a dedicated EU server for you, so you use it like any other application. In the other, it runs on your own servers and your IT team operates it, with documentation and updates from the partner. Either way the data stays on servers you control, and there is no per-token bill.
+
+### Can an open model power an AI tutor for our courses?
+
+Yes. The tutor answers from your own course material through retrieval and cites the passage it used, so learners get answers that match what you teach rather than what a public chatbot guesses. Running it on an open model hosted on EU infrastructure you control means the questions learners type, which are personal data, never leave your jurisdiction.
 
 ### Do we own the AI, or are we locked into a vendor?
 
@@ -4295,7 +4305,7 @@ Die Antwort muss konkret sein. Ein KI-Tutor für Azubis lässt sich vollständig
 
 Noch einfacher wird es, wenn Sie mit nicht sensiblen Inhalten beginnen. Ausbildungsrahmenplan, Berufsschulstoff und die Vorbereitung auf Teil 1 der Abschlussprüfung brauchen keine einzige interne Zeichnung. Firmendokumente kommen erst dazu, wenn IT-Sicherheit und Exportkontrolle zugestimmt haben. Mehr dazu lesen Sie in unserem Beitrag über [DSGVO-konforme KI-Tools für Ausbilder](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
 
-So arbeitet auch LearnSlice. Ihre Azubis bekommen einen Tutor, der auf dem Ausbildungsrahmenplan und Ihren eigenen Unterlagen aufbaut und zu jeder Antwort die Quelle nennt. Ihre Ausbilder sehen früh, wer den Anschluss verliert.
+So arbeitet auch [LearnSlice für die Verteidigungsindustrie](/de/verteidigungsindustrie). Ihre Azubis bekommen einen Tutor, der auf dem Ausbildungsrahmenplan und Ihren eigenen Unterlagen aufbaut und zu jeder Antwort die Quelle nennt. Ihre Ausbilder sehen früh, wer den Anschluss verliert.
 
 ![Startseite von LearnSlice aus Sicht eines Azubis: Lernplan, Berichtsheft, Themen zur IHK-Prüfung und Onboarding im Menü, in der Mitte die nächste vorgeschlagene Übung und die schwächste Übung zum Wiederholen](/images/blog/learnslice-azubi-startseite.webp)
 
@@ -4303,7 +4313,7 @@ So arbeitet auch LearnSlice. Ihre Azubis bekommen einen Tutor, der auf dem Ausbi
 
 Das ersetzt weder das Gespräch in der Werkstatt noch eine gute Ausbildungskultur. Aber es sorgt dafür, dass der Azubi im dritten Monat mit seiner Frage nicht allein bleibt.
 
-Sie bilden Mechatroniker oder Elektroniker aus? [In einer kurzen Demo zeigen wir Ihnen, wie das mit Ihrem Ausbildungsrahmenplan aussieht.](/de/companies)
+Sie bilden Mechatroniker oder Elektroniker aus? [In einer kurzen Demo zeigen wir Ihnen, wie das mit Ihrem Ausbildungsrahmenplan aussieht.](/de/verteidigungsindustrie#demo-request)
 
 ## Quellen
 
@@ -4774,13 +4784,14 @@ Sie sind das Ausgangsmaterial, und das ist der schnellste Weg zu einem ersten nu
 Source: https://learnslice.com/de/blog/individuelle-ki-open-source-modelle
 Language: de
 Published: 2026-07-30
+Updated: 2026-10-12
 
-Individuelle KI auf Open-Source-Modellen wie Kimi K2 und gpt-oss: personalisiert auf Ihren Betrieb, in der EU selbst gehostet und Ihr Eigentum. Gespräch buchen.
+Individuelle KI auf Open-Source-Modellen wie Kimi K2 und gpt-oss, vom KI-Tutor bis zum Wissensassistenten: auf Ihren Daten, EU-gehostet, Ihr Eigentum.
 
 ## Auf einen Blick
 
 - Open-Weight-Modelle (Kimi K2, gpt-oss, Qwen, Mistral, DeepSeek und andere) sind KI-Modelle, deren Gewichte Sie herunterladen und auf Ihrer eigenen Infrastruktur betreiben können. Das ist die einzige Klasse leistungsstarker KI, die Sie vollständig selbst hosten können, sodass Ihre Daten auf Ihren eigenen Servern bleiben und Sie nicht pro Token zahlen.
-- Eine individuelle KI ist nicht das rohe Modell. Sie ist ein Modell, das um Ihren Betrieb herum gebaut ist: in Ihren eigenen Daten verankert über Retrieval (RAG), auf Ihren Prozess und Ihre Sprache zugeschnitten über leichtes Fine-Tuning (LoRA) und an Ihre Systeme angebunden. Diese Schicht macht aus einem generischen Modell eine personalisierte KI für Ihr Unternehmen.
+- Eine individuelle KI ist nicht das rohe Modell. Sie ist ein Modell, das um Ihren Betrieb herum gebaut ist: in Ihren eigenen Daten verankert über Retrieval (RAG), auf Ihren Prozess und Ihre Sprache zugeschnitten über leichtes Fine-Tuning (LoRA) und an Ihre Systeme angebunden, etwa als KI-Tutor, der aus Ihren Kursinhalten antwortet. Diese Schicht macht aus einem generischen Modell eine personalisierte KI für Ihr Unternehmen.
 - Das stärkste Argument für Self-Hosting eines offenen Modells ist Souveränität, nicht der Preis. Jeder Aufruf einer in den USA gehosteten KI-API ist nach DSGVO eine Datenübermittlung ins Ausland. Ein Modell, das auf EU-Infrastruktur läuft, beseitigt diese Übermittlung vollständig und hält Sie in der leichteren Betreiberrolle nach der EU-KI-Verordnung.
 - Der Kostenvorteil ist real, aber eng: Self-Hosting lohnt sich meist ab etwa 10 bis 50 Millionen Token pro Monat bei stetiger Nutzung. Ein einzelner GPU-Server mit viel Speicher in der EU startet bei rund 900 Euro pro Monat und betreibt bereits ein Modell mit 120 Milliarden Parametern. Darunter ist eine API oft günstiger.
 - Nicht jedes offene Modell ist in der EU kommerziell unbedenklich nutzbar. Die Lizenzen unterscheiden sich stark, von sauberem Apache 2.0 (Qwen, Mistral, gpt-oss) bis zu individuellen Bedingungen mit regionalen Einschränkungen. Das richtige Modell, die richtige Lizenz und das richtige Hosting für Ihren Anwendungsfall zu wählen, ist genau die Entscheidung, die vor dem Bau in ein kurzes Gespräch gehört.
@@ -4793,7 +4804,7 @@ Wenn Sie sich mit individueller KI auf Open-Source-Modellen beschäftigen, haben
 
 Genau das ermöglichen Open-Weight-Modelle, und darum geht es in diesem Leitfaden. Wir werden präzise sein: was diese Modelle sind, warum Sie eines selbst hosten statt eine geschlossene API aufzurufen, wie aus einem generischen Modell eine personalisierte KI für Ihr konkretes Unternehmen wird, wo sie den Betrieb tatsächlich stärkt und was Bau und Betrieb kosten. Das Ziel ist nicht, Sie vom Nutzen der KI zu überzeugen. Es geht darum, Ihnen die Entscheidung zu erleichtern, ob ein offenes Modell, um Ihren Betrieb herum gebaut und unter Ihrer Kontrolle gehostet, die richtige Grundlage ist, und wie der erste Schritt aussieht.
 
-Genau das bauen wir bei LearnSlice: souveräne, EU-gehostete individuelle KI und Lernsoftware für Hochschulen, Bildungsträger und regulierte Teams, im Eigentum der Organisationen, für die wir sie bauen.
+Genau das bauen wir bei LearnSlice: souveräne, EU-gehostete individuelle KI und Lernsoftware für Hochschulen, Bildungsträger und regulierte Teams, im Eigentum der Organisationen, für die wir sie bauen. Für Bildungsträger und Hochschulen ist der direkteste Einsatz ein KI-Tutor, der aus Ihren eigenen Kursinhalten antwortet.
 
 Lieber erst sprechen? [Buchen Sie ein kostenloses 30-minütiges Gespräch](#project-inquiry), kein Pitch.
 
@@ -4857,7 +4868,8 @@ Die saubere Architektur, die das zusammenhält und nach der Sie jeden Partner fr
 
 Die Modelle sind allgemein, der Wert ist konkret. Eine individuelle KI auf einem offenen Modell zahlt sich meist an einer Handvoll bewährter Stellen aus:
 
-- **Kunden- und internes Support.** Ein Assistent, verankert in Ihren Produktunterlagen und Richtlinien, fängt Routinefragen rund um die Uhr ab, in mehreren Sprachen, und gibt die schwierigen mit Kontext an einen Menschen weiter.
+- **Lernen und Weiterbildung.** Ein KI-Tutor, verankert in Ihren Kursinhalten, beantwortet Fragen der Lernenden mit Quellenangabe, erklärt in ihrer eigenen Sprache und läuft in dem LMS, das Sie schon haben. Wie das geht, zeigt unser Beitrag zum [KI-Tutor im bestehenden LMS](/de/blog/ki-tutor-in-lms-integrieren).
+- **Kunden- und interner Support.** Ein Assistent, verankert in Ihren Produktunterlagen und Richtlinien, fängt Routinefragen rund um die Uhr ab, in mehreren Sprachen, und gibt die schwierigen mit Kontext an einen Menschen weiter.
 - **Ein Wissensassistent für Ihr Team.** Neue und erfahrene Mitarbeitende erhalten fundierte Antworten aus Ihren eigenen Prozessbeschreibungen, Runbooks und Playbooks, statt eine erfahrene Kollegin zu unterbrechen oder zu einem öffentlichen Chatbot zu greifen. Das ist der wirkungsvollste Einsatz für Onboarding und Weiterbildung, wie das aussieht, zeigt [LearnSlice für Unternehmen](/de/companies).
 - **Dokumenten- und Datenverarbeitung.** Felder aus Rechnungen, Verträgen und Formularen extrahieren, lange Unterlagen zusammenfassen und weiterleiten, wobei ein Mensch die Ausnahmen prüft statt jeden Fall.
 - **Agentische Abläufe.** Mehrstufige Aufgaben, bei denen die KI plant, Ihre Werkzeuge aufruft und handelt. Analysten erwarten, dass aufgabenspezifische KI-Agenten 2026 von einer seltenen Funktion zu einer verbreiteten in Unternehmenssoftware werden, was eine eigene, kontrollierbare Grundlage wertvoller macht, nicht weniger wert.
@@ -4939,6 +4951,14 @@ Zwei Kosten zählen: Bau und Betrieb. Der Bau ist die individuelle Schicht (Retr
 ### Welches Open-Source-Modell sollten wir nehmen?
 
 Das hängt von der Aufgabe, den benötigten Sprachen, Ihrer Hardware und der Lizenz ab. Stand 2026 bieten Qwen und Mistral starke Modelle unter einer sauberen Apache-2.0-Lizenz (Mistral hat zudem seinen Sitz in der EU), gpt-oss ist Apache 2.0 und betreibt ein Modell mit 120 Milliarden Parametern auf einer einzigen 80-GB-GPU, und DeepSeek erscheint unter MIT. Einige Modelle, darunter Teile der Llama-Familie, tragen Lizenzbedingungen, die die kommerzielle oder EU-Nutzung einschränken, die Lizenz zählt also so viel wie der Benchmark. Modell und Anwendungsfall zusammenzubringen ist genau der Zweck eines Beratungsgesprächs.
+
+### Müssen wir die Server selbst betreiben?
+
+Nein. Selbst gehostet heißt, das Modell läuft auf einer Infrastruktur, die Sie kontrollieren, nicht, dass Ihr Team es betreiben muss. In einer üblichen Variante betreibt Ihr Entwicklungspartner das Modell für Sie auf einem dedizierten EU-Server, und Sie nutzen es wie jede andere Anwendung. In der anderen läuft es auf Ihren eigenen Servern und Ihre IT betreibt es, mit Dokumentation und Updates vom Partner. In beiden Fällen bleiben die Daten auf Servern unter Ihrer Kontrolle, und es gibt keine Abrechnung pro Token.
+
+### Kann ein offenes Modell einen KI-Tutor für unsere Kurse antreiben?
+
+Ja. Der Tutor antwortet über Retrieval aus Ihren eigenen Kursinhalten und nennt die Stelle, auf die er sich stützt, sodass Lernende Antworten bekommen, die zu Ihrem Unterricht passen, statt Vermutungen eines öffentlichen Chatbots. Läuft er auf einem offenen Modell, das auf EU-Infrastruktur unter Ihrer Kontrolle gehostet ist, verlassen die Fragen der Lernenden, also personenbezogene Daten, Ihren Rechtsraum nicht.
 
 ### Gehört uns die KI, oder sind wir an einen Anbieter gebunden?
 
