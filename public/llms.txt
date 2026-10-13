@@ -95,6 +95,8 @@ Reference customers include FH Dortmund, the University of Cologne, and Carl-Sev
 - Custom AI on open-source models, personalised and sovereign: https://learnslice.com/blog/custom-ai-open-source-models
 - GDPR-compliant AI tools, the 7-point check: https://learnslice.com/blog/gdpr-compliant-ai-tools-for-trainers
 - AZAV und Digitalisierung für Bildungsträger: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
+- Ausbildungsabbruch verhindern, Plan für die ersten 12 Monate: https://learnslice.com/de/blog/ausbildungsabbruch-verhindern
+- Preventing apprenticeship dropout, a plan for the first year: https://learnslice.com/blog/prevent-apprenticeship-dropout
 
 ## Links
 

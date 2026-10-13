@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="360" viewBox="0 0 340 360" role="img" aria-label="Bar chart: an apprentice costs a German employer about 26,200 euros gross per year on average, about 8,100 euros net after the value of their work. Recruiting a skilled worker externally costs about 13,700 euros. Source: BIBB cost-benefit survey 2022/23.">
+<rect x="0" y="0" width="340" height="360" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">What training costs, and what</text>
+<text x="18" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">the alternative costs</text>
+<text x="18" y="82" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Average per person, all trades, Germany,</text>
+<text x="18" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">2022/23</text>
+<text x="18" y="134" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">Apprentice, gross cost per year</text>
+<rect x="18" y="142" width="234.0" height="22" rx="4" fill="#71717a"/>
+<text x="260.0" y="158" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">€26,200</text>
+<text x="18" y="186" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">Apprentice, net cost per year (after</text>
+<text x="18" y="204" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">their work)</text>
+<rect x="18" y="212" width="72.3" height="22" rx="4" fill="#e8b07a"/>
+<text x="98.3" y="228" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">€8,100</text>
+<text x="18" y="256" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">Recruiting a skilled worker externally,</text>
+<text x="18" y="274" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">one-off</text>
+<rect x="18" y="282" width="122.4" height="22" rx="4" fill="#cc7a3e"/>
+<text x="148.4" y="298" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">€13,700</text>
+<text x="18" y="328" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Source: BIBB cost-benefit survey 2022/23</text>
+<text x="18" y="346" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">(press release, 31 Jul 2025)</text>
+</svg>

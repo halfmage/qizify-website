@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="404" viewBox="0 0 340 404" role="img" aria-label="Gestapelte Balken: Zeitpunkt vorzeitiger Vertragslösungen 2024. Industrie und Handel: 36,5 Prozent in der Probezeit, 33,9 Prozent später im ersten Jahr, 22,3 im zweiten Jahr, 7,3 später. Alle Berufe: 34,7, 32,9, 23,1 und 9,3 Prozent. Quelle: BIBB-Datenreport 2026, Tabelle A5.6-1.">
+<rect x="0" y="0" width="340" height="404" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">Zwei Drittel gehen im ersten</text>
+<text x="18" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">Jahr</text>
+<text x="18" y="82" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Wann vorzeitig gelöste Verträge 2024 endeten</text>
+<text x="18" y="116" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">Industrie und Handel</text>
+<rect x="18.0" y="124" width="109.0" height="28" rx="4" fill="#cc7a3e"/>
+<text x="73.5" y="143" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">36,5 %</text>
+<rect x="129.0" y="124" width="101.1" height="28" rx="4" fill="#e8b07a"/>
+<text x="180.5" y="143" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">33,9 %</text>
+<rect x="232.0" y="124" width="65.8" height="28" rx="4" fill="#71717a"/>
+<text x="265.9" y="143" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#fafafa" font-weight="600" text-anchor="middle">22,3 %</text>
+<rect x="299.8" y="124" width="20.2" height="28" rx="4" fill="#52525b"/>
+<text x="18" y="176" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13.5" fill="#d4d4d8">Alle Berufe</text>
+<rect x="18.0" y="184" width="103.5" height="28" rx="4" fill="#cc7a3e"/>
+<text x="70.7" y="203" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">34,7 %</text>
+<rect x="123.5" y="184" width="98.0" height="28" rx="4" fill="#e8b07a"/>
+<text x="173.5" y="203" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#18181b" font-weight="600" text-anchor="middle">32,9 %</text>
+<rect x="223.5" y="184" width="68.2" height="28" rx="4" fill="#71717a"/>
+<text x="258.6" y="203" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#fafafa" font-weight="600" text-anchor="middle">23,1 %</text>
+<rect x="293.7" y="184" width="26.3" height="28" rx="4" fill="#52525b"/>
+<rect x="18" y="236" width="12" height="12" rx="2" fill="#cc7a3e"/>
+<text x="36" y="247" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Probezeit (bis 4 Monate)</text>
+<rect x="18" y="258" width="12" height="12" rx="2" fill="#e8b07a"/>
+<text x="36" y="269" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Rest des 1. Jahres</text>
+<rect x="18" y="280" width="12" height="12" rx="2" fill="#71717a"/>
+<text x="36" y="291" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">2. Jahr</text>
+<rect x="18" y="302" width="12" height="12" rx="2" fill="#52525b"/>
+<text x="36" y="313" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">später (7,3 % bzw. 9,3 %)</text>
+<text x="18" y="372" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Quelle: BIBB-Datenreport 2026, Tabelle A5.6-1.</text>
+<text x="18" y="390" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Anteil an allen Vertragslösungen 2024, bundesweit.</text>
+</svg>

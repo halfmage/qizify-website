@@ -48,6 +48,7 @@ export const EN_TO_DE = {
 	'/blog/learning-platform-training-providers': '/de/blog/lernplattform-bildungstraeger',
 	'/blog/ai-tutor-for-existing-lms': '/de/blog/ki-tutor-in-lms-integrieren',
 	'/blog/apprenticeships-defence-industry-germany': '/de/blog/ausbildung-ruestungsindustrie',
+	'/blog/prevent-apprenticeship-dropout': '/de/blog/ausbildungsabbruch-verhindern',
 };
 
 // Pages that exist only in one language and therefore should not emit
