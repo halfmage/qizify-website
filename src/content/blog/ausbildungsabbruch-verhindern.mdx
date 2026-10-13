@@ -5,6 +5,7 @@ publishDate: 2026-10-13
 author: "LearnSlice Team"
 tags: ["Ausbildungsabbruch", "Ausbilder", "Azubis", "Metall und Elektro", "Unternehmen"]
 lang: "de"
+translationSlug: "prevent-apprenticeship-dropout"
 ogImage: "/images/blog/pexels-mikhail-nilov-9242810.jpg"
 heroImage: "/images/blog/pexels-mikhail-nilov-9242810.webp"
 keyTakeaways:
@@ -24,9 +25,11 @@ faq:
 ctaFooter:
   label: "Für Ausbildungsleitung"
   headline: "Rückstand sehen, bevor er wächst"
-  subheadline: "In 30 Minuten zeigen wir Ihnen, wie Ihre Ausbilder den Lernstand jedes Azubis im Abgleich mit dem Lernplan sehen. Gehostet in Deutschland oder in Ihrem eigenen Rechenzentrum."
-  button: "30-Minuten-Demo ansehen"
+  subheadline: "Ein Blick zeigt Ihren Ausbildern, wer seit Wochen feststeckt. Gehostet in Deutschland oder in Ihrem eigenen Rechenzentrum."
+  button: "30-Minuten-Demo anfragen"
 ---
+import InlineCta from '../../components/InlineCta.astro';
+
 ![Zwei Azubis in blauen Arbeitsschürzen arbeiten an einer Elektronik-Werkbank, sie mit Schutzbrille und Smartphone, er an einer Platine](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
 Die meisten Azubis, die gehen, gehen früh. Zwei Drittel aller vorzeitig gelösten Ausbildungsverträge enden in den ersten zwölf Monaten, mehr als ein Drittel schon in der Probezeit. Wer erst im zweiten Lehrjahr gegensteuert, kommt oft zu spät.
@@ -53,7 +56,7 @@ Die Bertelsmann Stiftung hat für die Studie [Ausbildungsperspektiven 2026](http
 
 - **90 %** sind mit ihrer Ausbildung insgesamt zufrieden, 46 % sogar sehr.
 - Jeder zweite duale Azubi ist mit seinem Ausbilder **sehr zufrieden**, weitere 38 % eher.
-- Trotzdem haben **23 %** schon ernsthaft daran gedacht, die Ausbildung abzubrechen. Bei Azubis, die schon einmal eine Ausbildung beendet haben, sind es 44 %.
+- Trotzdem haben **23 %** schon ernsthaft daran gedacht, die Ausbildung abzubrechen. Bei Azubis, die schon einmal eine Ausbildung vorzeitig beendet haben, sind es 44 %.
 
 Zufriedenheit schützt also nicht vor Abbruchgedanken. Ein Azubi kann sein Team mögen, seine Ausbilderin schätzen und trotzdem jeden Sonntagabend mit einem Kloß im Hals an Montag denken. Rund ein Viertel der Befragten fühlt sich häufig oder fast immer emotional belastet, rund ein Fünftel überfordert.
 
@@ -74,7 +77,7 @@ Die 467 Azubis, die ans Aufhören denken oder schon einmal eine Ausbildung abgeb
 | Mobbing, Diskriminierung oder Gewalt erlebt | 17 % |
 | Eine bessere Alternative hat sich ergeben | 13 % |
 
-Nur 13 % nennen eine bessere Alternative. Die übrigen Gründe liegen in der Ausbildung selbst, und dort können Sie ansetzen.
+Nur 13 % nennen eine bessere Alternative. Die meisten übrigen Gründe liegen in der Ausbildung selbst, und dort können Sie ansetzen.
 
 ### Was Sie beeinflussen können und wann
 
@@ -82,7 +85,7 @@ Sortiert man die Gründe danach, wo ein Betrieb ansetzen kann, ergeben sich drei
 
 1. **Vor dem ersten Tag:** Falsche Erwartungen (30 %) und ein Beruf, der nicht passt (24 %), entstehen meist bei der Berufswahl. Ein ehrliches Praktikum, ein Probetag in der Werkstatt und ein Gespräch mit einem Azubi aus dem zweiten Lehrjahr zeigen mehr als jede Hochglanzbroschüre.
 2. **Im Betrieb:** Arbeitsbedingungen, Qualität der Vermittlung, Konflikte mit Ausbildern oder Kollegen, Mobbing. Das ist Ihr Kerngebiet, und hier setzen die festen Gespräche weiter unten an.
-3. **Außerhalb Ihrer Rolle:** Psychische Belastung und persönliche Gründe lassen sich mit keiner Checkliste und keiner App lösen. Hier sind Fachleute gefragt, nicht Ausbilder.
+3. **Außerhalb Ihrer Rolle:** Psychische Belastung und persönliche Gründe lassen sich mit keiner Checkliste und keiner App lösen. Hier sind Fachleute gefragt, etwa der Betriebsarzt oder externe Beratungsstellen, nicht Ausbilder.
 
 ## Der 12-Monats-Plan
 
@@ -100,7 +103,7 @@ Die Tabelle zeigt für jeden Zeitraum die typische Situation, das Warnsignal und
 
 **Zwischen Vertrag und Start.** Oft liegen zwischen Unterschrift und erstem Tag mehrere Monate. In dieser Zeit ist der Betrieb für den künftigen Azubi nur ein Name auf Papier. Eine Nachricht oder ein Foto vom künftigen Arbeitsplatz kostet Sie fünf Minuten. Was in die ersten acht Wochen gehört, finden Sie in unserer [Checkliste zum Azubi-Onboarding](/de/blog/azubi-onboarding).
 
-**Monat 3 bis 4.** Mit dem Ende der Probezeit ändern sich die Regeln für eine Kündigung ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Ein gutes Drittel aller Vertragslösungen fällt in die Probezeit. Wer hier zweifelt und niemanden zum Reden hat, entscheidet oft allein.
+**Monat 3 bis 4.** Mit dem Ende der Probezeit ändern sich die Regeln für eine Kündigung ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Wer hier zweifelt und niemanden zum Reden hat, entscheidet oft allein.
 
 ## Gespräche, die wirken
 
@@ -117,7 +120,7 @@ Oft gibt es Gespräche erst, wenn etwas schiefläuft. Wirksamer sind feste Termi
 
 Die Fragen drei bis fünf zielen auf drei Gründe aus der Studie: Probleme mit Menschen, falsche Erwartungen, fehlende Zeit.
 
-Tun Sie etwas mit der Antwort, sonst erzählt der Azubi beim nächsten Mal nichts mehr. Für Persönliches braucht er außerdem jemanden, der ihn nicht beurteilt: einen Paten, die Jugend- und Auszubildendenvertretung, falls es eine gibt, oder jemanden aus der Personalabteilung.
+Lassen Sie der Antwort eine Reaktion folgen, sonst erzählt der Azubi beim nächsten Mal nichts mehr. Für Persönliches braucht er außerdem jemanden, der ihn nicht beurteilt: einen Paten, die Jugend- und Auszubildendenvertretung oder den Betriebsrat, falls es sie gibt.
 
 Damit für diese Gespräche überhaupt Zeit bleibt, müssen Ausbilder an anderer Stelle Zeit gewinnen. Sieben Ansätze dafür haben wir in [Ausbilder entlasten](/de/blog/ausbilder-entlasten) zusammengestellt.
 
@@ -125,7 +128,7 @@ Damit für diese Gespräche überhaupt Zeit bleibt, müssen Ausbilder an anderer
 
 **1. Nicht sofort reagieren, sondern fragen.** „Was ist passiert?“ bringt mehr als „Überleg dir das gut“. Oft steckt hinter dem Satz ein konkretes Problem: ein Konflikt mit einem Kollegen, ein Thema in der Berufsschule, ein privates Problem. Manches davon lässt sich lösen.
 
-**2. Rechtliches prüfen lassen.** Fristen, Form und Sonderfälle, etwa bei minderjährigen Azubis, regelt das Berufsbildungsgesetz ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Lassen Sie den Einzelfall von den Ausbildungsberatern Ihrer Kammer oder einer Fachanwältin für Arbeitsrecht prüfen, bevor jemand etwas unterschreibt.
+**2. Rechtliches prüfen lassen.** Fristen und Form einer Kündigung regelt das Berufsbildungsgesetz ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Lassen Sie den Einzelfall vor jeder Entscheidung von den Ausbildungsberatern Ihrer Kammer oder einer Fachanwältin für Arbeitsrecht prüfen.
 
 **3. Hilfe von außen holen.** Diese Stellen helfen kostenlos:
 
@@ -143,22 +146,32 @@ Ein Azubi, der im ersten Jahr geht, kostet also doppelt: einmal die Ausbildung o
 
 ## Wo digitale Lernbegleitung hilft und wo nicht
 
-Bei den drei häufigsten Gründen, psychischer Belastung, falschen Erwartungen und schlechten Arbeitsbedingungen, hilft keine Software, sondern nur Menschen, die zuhören.
+Bei den drei häufigsten Gründen, psychischer Belastung, falschen Erwartungen und schlechten Arbeitsbedingungen, hilft keine Software. Dort helfen ehrliche Einblicke vor dem Start, gute Bedingungen und Menschen, die zuhören.
 
 Digitale Lernbegleitung hilft an zwei anderen Stellen:
 
 - **Bei der Theorie.** In den Elektroberufen bauen viele Themen aufeinander auf, wer früh eine Lücke hat, trägt sie mit. Ein Tutor, der auf dem [Ausbildungsrahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) aufbaut, beantwortet Fachfragen auch dann, wenn gerade kein Ausbilder Zeit hat, und nennt die Quelle zu jeder Antwort. Das setzt bei einem Grund an, den 24 % nennen: der Qualität der Vermittlung.
 - **Beim frühen Erkennen.** Wenn Ausbilder den Lernstand jedes Azubis im Abgleich mit dem Lernplan sehen, fällt auf, wer seit Wochen nicht weiterkommt. Das ersetzt kein Gespräch, aber es sagt Ihnen, mit wem Sie es zuerst führen sollten. Ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) liefert ähnliche Signale früher als der Papierordner am Monatsende.
 
-Einen ähnlichen Ansatz verfolgt das Projekt MEKI aus dem Förderprogramm InnoVET PLUS: Die IHKs Reutlingen und Region Stuttgart entwickeln dort mit Hochschulen aus Stuttgart und München KI-Unterstützung für den Berufsschulstoff in Berufen mit hohen Abbruchquoten und Fachkräftemangel, zuerst für IT-Systemelektroniker.
+Einen ähnlichen Ansatz verfolgt das Projekt MEKI aus dem Förderprogramm InnoVET PLUS: Die IHKs Reutlingen und Region Stuttgart entwickeln dort mit Hochschulen aus Stuttgart und München KI-Unterstützung für den Berufsschulstoff in Berufen mit hohen Lösungsquoten und Fachkräftemangel, zuerst für IT-Systemelektroniker.
 
 Wichtig ist, wie Sie solche Werkzeuge einführen: als Unterstützung, nicht als Kontrolle. Klären Sie vorab mit Betriebsrat und Datenschutzbeauftragtem, wer welche Lerndaten sieht. Wie das in einer Branche mit besonders hohen Anforderungen an Datenschutz und Sicherheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie).
+
+<InlineCta
+  lang="de"
+  trigger="demo-request"
+  eyebrow="Für Ausbildungsleitung"
+  headline="Wer kommt im Lernplan nicht mehr mit?"
+  sub="In 30 Minuten zeigen wir Ihnen, wie Ihre Ausbilder den Lernstand jedes Azubis im Abgleich mit dem Lernplan sehen und wie der Tutor Fachfragen mit Quelle beantwortet. Für Mechatroniker und Elektroniker."
+  button="30-Minuten-Demo anfragen"
+  note="Gehostet in Deutschland oder in Ihrem eigenen Rechenzentrum."
+/>
 
 ## Ihr Plan für den nächsten Jahrgang
 
 1. **Melden Sie sich zwischen Vertrag und Start,** einmal im Monat.
 2. **Legen Sie die Gesprächstermine jetzt fest:** Woche 2, 6 und 12, dann alle drei Monate.
-3. **Stellen Sie offene Fragen** und tun Sie etwas mit den Antworten.
+3. **Stellen Sie offene Fragen** und reagieren Sie auf die Antworten.
 4. **Kennen Sie die Hilfen von außen,** bevor Sie sie brauchen: Ausbildungsberater, VerAplus, Assistierte Ausbildung.
 5. **Führen Sie bei jeder Vertragslösung ein Abschlussgespräch.** So sehen Sie mit der Zeit, wo Ihr Betrieb ansetzen kann.
 

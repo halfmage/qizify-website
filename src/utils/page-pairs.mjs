@@ -48,6 +48,7 @@ export const EN_TO_DE = {
 	'/blog/learning-platform-training-providers': '/de/blog/lernplattform-bildungstraeger',
 	'/blog/ai-tutor-for-existing-lms': '/de/blog/ki-tutor-in-lms-integrieren',
 	'/blog/apprenticeships-defence-industry-germany': '/de/blog/ausbildung-ruestungsindustrie',
+	'/blog/prevent-apprenticeship-dropout': '/de/blog/ausbildungsabbruch-verhindern',
 };
 
 // Pages that exist only in one language and therefore should not emit
@@ -64,8 +65,6 @@ export const DE_ONLY = new Set([
 	'/de/digital-readiness-check',
 	// AZAV/BFSG cluster posts (German-law-specific), no English counterpart.
 	'/de/blog/azav-digitalisierung-bildungstraeger',
-	// Defence campaign cluster posts (Q4 2026), German market only.
-	'/de/blog/ausbildungsabbruch-verhindern',
 	// Defence campaign landing page (Q4 2026), German market only.
 	'/de/verteidigungsindustrie',
 ]);

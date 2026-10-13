@@ -1,17 +1,22 @@
 ---
 import Button from './Button.astro';
 
-// Mid-article CTA for the project-inquiry path. Sits inside the blog `prose`
-// container, so the wrapper carries `not-prose`: typography styles would
-// otherwise re-space the heading and colour the button like a body link.
-// It drives the same ConsultationModal (#project-inquiry) that the sidebar and
-// footer CTAs open, so a reader converts on one form wherever they click.
+// Mid-article CTA. Sits inside the blog `prose` container, so the wrapper carries
+// `not-prose`: typography styles would otherwise re-space the heading and colour the
+// button like a body link. `trigger` picks the modal: ConsultationModal
+// (#project-inquiry, default) or DemoRequestModal (#demo-request), matching the
+// post's sidebar and footer CTAs so a reader converts on one form wherever they click.
 interface Props {
 	lang: 'en' | 'de';
 	headline?: string;
 	sub?: string;
 	button?: string;
 	note?: string;
+	// Small label above the headline; defaults to the project eyebrow.
+	eyebrow?: string;
+	// Which modal the button opens: 'project-inquiry' (ConsultationModal, default) or
+	// 'demo-request' (DemoRequestModal) for posts on the default demo CTA path.
+	trigger?: 'project-inquiry' | 'demo-request';
 	// Anchor for linking straight to the CTA. No default: a post is free to embed
 	// two of these with different copy, and a baked-in id would ship duplicates.
 	id?: string;
@@ -34,7 +39,7 @@ const copy = {
 	},
 };
 
-const { lang, id } = Astro.props;
+const { lang, id, trigger = 'project-inquiry' } = Astro.props;
 // MDX call sites are not type-checked and `astro check` is not part of `npm run
 // build`, so a typo'd lang would otherwise fail the build on `c.headline` being
 // undefined, several frames from the actual mistake.
@@ -44,20 +49,21 @@ const headline = Astro.props.headline ?? c.headline;
 const sub = Astro.props.sub ?? c.sub;
 const button = Astro.props.button ?? c.button;
 const note = Astro.props.note ?? c.note;
+const eyebrow = Astro.props.eyebrow ?? c.eyebrow;
 ---
 
 <aside id={id} class="not-prose my-12 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
 	<!-- Amber wash on the left edge marks this as an offer, not another prose panel -->
 	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
 
-	<span class="section-label block mb-3">{c.eyebrow}</span>
+	<span class="section-label block mb-3">{eyebrow}</span>
 	<h2 class="text-heading-sm text-white m-0 mb-3">{headline}</h2>
 	<p class="text-base leading-relaxed text-muted m-0 mb-6">{sub}</p>
 
 	<Button
 		variant="primary"
-		href="#project-inquiry"
-		data-modal-trigger="project-inquiry"
+		href={`#${trigger}`}
+		data-modal-trigger={trigger}
 		aria-label={button}
 	>
 		{button}

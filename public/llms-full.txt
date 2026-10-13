@@ -420,6 +420,188 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
+# Preventing Apprenticeship Dropout: A Plan for the First Year
+
+Source: https://learnslice.com/blog/prevent-apprenticeship-dropout
+Language: en
+Published: 2026-10-13
+
+Two thirds of terminated apprenticeship contracts in Germany end in year one. A month-by-month plan with warning signs and questions for trainers.
+
+## Key Takeaways
+
+- About two thirds of all apprenticeship contracts terminated early in Germany end in the first year, more than a third during probation (BIBB Datenreport 2026). In industry and commerce the figure is about 70%.
+- Almost one in four apprentices has seriously considered quitting, even though 90% are satisfied overall. The most common reasons: mental strain (36%), wrong expectations (30%) and learning and working conditions (29%).
+- Only 13% name a better alternative. Most reasons lie within the apprenticeship itself, and many can be addressed, some even before the first working day.
+- The most effective lever is fixed conversations at fixed times, with specific questions instead of \"Everything OK?\".
+
+![Two apprentices in blue work aprons at an electronics bench, she with safety glasses and a smartphone, he working on a circuit board](/images/blog/pexels-mikhail-nilov-9242810.webp)
+
+Most apprentices who leave, leave early. In Germany, two thirds of apprenticeship contracts terminated early end within the first twelve months, more than a third during probation. If you only step in during the second year, you are often too late.
+
+This article shows what to watch for in which month, which questions actually surface problems in a conversation, and what to do when an apprentice says: "I'm quitting."
+
+## When apprenticeship contracts are terminated early
+
+The [BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037), the annual report of Germany's Federal Institute for Vocational Education and Training, shows when the contracts terminated early in 2024 ended:
+
+- **34.7%** during probation
+- **32.9%** later in the first year
+- in **industry and commerce**, which includes the metal and electrical trades, about **70%** in the first year combined
+
+![Stacked bars: of all apprenticeship contracts terminated early in 2024, 36.5 percent in industry and commerce ended during probation and 33.9 percent later in the first year; across all trades 34.7 and 32.9 percent](/images/blog/ruestung-zeitpunkt-vertragsloesung.svg)
+
+Across all trades, 29.7% of apprenticeship contracts were terminated early in 2024. How the rate developed in the individual metal and electrical trades is shown in our [data check on apprenticeships in Germany's defence industry](/blog/apprenticeships-defence-industry-germany).
+
+**Terminated early does not mean dropped out.** About half of these young people sign a new apprenticeship contract afterwards. Many simply change employer or trade. For your company that changes little: you hired, onboarded and paid, and the skilled worker ends up somewhere else or nowhere.
+
+## Why apprentices think about quitting
+
+For its study [Ausbildungsperspektiven 2026](https://www.bertelsmann-stiftung.de/de/publikationen/publikation/did/ausbildungsperspektiven-2026), the Bertelsmann Stiftung surveyed 1,325 apprentices aged 15 to 25 in spring 2026, in dual training (company plus vocational school) and in school-based training:
+
+- **90%** are satisfied with their apprenticeship overall, 46% very satisfied.
+- Every second apprentice in dual training is **very satisfied** with their trainer, another 38% fairly satisfied.
+- Even so, **23%** have seriously thought about quitting. Among apprentices who have left an apprenticeship early before, it is 44%.
+
+Satisfaction does not protect against thoughts of quitting. An apprentice can like the team, respect the trainer and still spend every Sunday evening dreading Monday. About a quarter of respondents often or almost always feel emotionally strained, about a fifth overwhelmed.
+
+The 467 apprentices who are thinking about quitting or have quit an apprenticeship before were asked for their reasons. Multiple answers were possible.
+
+| Reason | Share |
+|---|---|
+| Mental strain from the apprenticeship | 36% |
+| Apprenticeship very different from what I imagined | 30% |
+| Dissatisfied with learning and working conditions (hours, equipment) | 29% |
+| No time for anything else, poor work-life balance | 28% |
+| Dissatisfied with the quality of training (tasks, teaching) | 24% |
+| No longer like the trade | 24% |
+| Problems with the trainer | 22% |
+| Problems with other apprentices or colleagues | 22% |
+| Personal reasons (illness, family) | 20% |
+| Prefer to earn money right away | 18% |
+| Experienced bullying, discrimination or violence | 17% |
+| A better alternative came up | 13% |
+
+Only 13% name a better alternative. Most of the other reasons lie within the apprenticeship itself, and that is where you can act.
+
+### What you can influence and when
+
+Sorted by where a company can act, the reasons fall into three groups:
+
+1. **Before the first day:** wrong expectations (30%) and a trade that does not fit (24%) usually start with the career choice. An honest internship, a trial day in the workshop and a conversation with a second-year apprentice show more than any glossy brochure.
+2. **In the company:** working conditions, quality of teaching, conflicts with trainers or colleagues, bullying. This is your core territory, and this is where the fixed conversations below come in.
+3. **Outside your role:** mental strain and personal reasons cannot be solved with a checklist or an app. They need professionals, such as the company doctor or external counselling services, not trainers.
+
+## The 12-month plan
+
+The table shows the typical situation, the warning sign and what you do for each period. In Germany, probation lasts one to four months depending on the contract ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html), the Vocational Training Act). Adjust the rows to your contract.
+
+| Period | Typical situation | Warning sign | What you do |
+|---|---|---|---|
+| Between contract and start | Months without contact, the apprentice only hears from friends what an apprenticeship is "really" like | No reply to invitations, doubts in conversation | Get in touch once a month, explain the training plan and the first day, meet the rest of the intake |
+| Weeks 1 to 2 | New surroundings, many names, rules, protective equipment | Often stands alone, asks nothing | Assign a buddy from the second year, first conversation in week 2 |
+| Months 1 to 2 | First vocational school blocks, theory meets workshop | Unsure about basics such as Ohm's law, training log (Berichtsheft, the record apprentices must keep) stays empty | Ask which topic school is covering right now, look at the training log weekly |
+| Months 3 to 4 | Probation ends, the decision "do I stay?" is often made here | More days absent, vague answers, suddenly no more questions | Probation review with specific questions, feedback in both directions |
+| Months 5 to 6 | First vocational school grades, first routine | Poor grades are kept quiet, withdrawal from the team | Talk about grades openly, targeted help instead of pressure, organise learning support if needed |
+| Months 7 to 9 | Routine instead of novelty, motivation drops | Little progress in the learning plan, conflicts with colleagues, complaints about hours | Give tasks with a visible result, mediate conflicts early, check working hours |
+| Months 10 to 12 | First year ends, taking stock | Apprentice talks about other trades or university | Annual review: what went well, what should change, what comes in the second year |
+
+**Between contract and start.** There are often several months between signing and the first day. During that time, the company is just a name on paper for the future apprentice. A message or a photo of the future workplace costs you five minutes. What belongs in the first eight weeks is in our [apprentice onboarding checklist](/blog/apprentice-onboarding).
+
+**Months 3 to 4.** When probation ends, the rules for termination change ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Anyone who has doubts here and nobody to talk to often decides alone.
+
+## Conversations that work
+
+Often, a conversation only happens once something has gone wrong. Fixed appointments that take place even when everything looks fine work better. A rhythm that suits the first year: week 2, week 6, week 12, then every three months. Twenty minutes each, away from workshop noise and without time pressure.
+
+Almost every apprentice answers "Everything OK?" with "Yes". Questions that cannot be answered in one word work better:
+
+- "What was the hardest task this week?"
+- "Which topic at vocational school are you struggling to keep up with right now?"
+- "Who do you ask when you're stuck? And who would you rather not ask?"
+- "What is different from what you imagined?"
+- "How much time do you have right now for things outside your apprenticeship?"
+- "If you could change one thing about your apprenticeship, what would it be?"
+
+Questions three to five target three reasons from the study: problems with people, wrong expectations, lack of time.
+
+Respond to what you hear, or the apprentice will tell you nothing next time. For personal matters they also need someone who does not assess them: a buddy, the youth and apprentice representatives (JAV) or the works council, where they exist.
+
+To have time for these conversations at all, trainers need to save time elsewhere. We collected seven approaches in [reducing trainer workload](/blog/reduce-trainer-workload).
+
+## When an apprentice says: "I'm quitting"
+
+**1. Don't react right away, ask instead.** "What happened?" gets you further than "Think about it carefully". There is often a specific problem behind it: a conflict with a colleague, a topic at vocational school, a private matter. Some of it can be solved.
+
+**2. Have the legal side checked.** Notice periods and the form of a termination are set out in the Vocational Training Act ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Have the individual case checked by the training advisers at your chamber or an employment lawyer before any decision.
+
+**3. Get outside help.** These offers are free:
+
+- **Training advisers at the chamber (Ausbildungsberater).** Every chamber of industry and commerce (IHK) and chamber of crafts (HWK) has them. They mediate in conflicts and know the options, for example a move to a related trade where the chamber can shorten the training period on request ([§ 8 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__8.html)).
+- **[VerAplus](https://vera.ses-bonn.de)** from the Senior Experten Service. Volunteer mentors, mostly experienced retired professionals, support apprentices one to one. Free for apprentices, companies and vocational schools.
+- **[Assisted Apprenticeship (Assistierte Ausbildung)](https://www.arbeitsagentur.de/bildung/ausbildung/assistierte-ausbildung)** from the Federal Employment Agency. Learning support and guidance during the apprenticeship, for apprentice and company.
+
+And if the apprentice leaves anyway: an honest exit conversation shows you what you can do differently with the next intake.
+
+## What apprenticeship dropout costs your company
+
+Two figures from the [BIBB cost-benefit survey](https://www.bibb.de/de/pressemitteilung_210430.php) for the 2022/23 training year help when you make the case to management or finance: an apprentice costs about €26,200 a year on average. Subtract the returns from their productive work, about €18,100, and about €8,100 remain. Hiring a skilled worker externally costs about €13,700 on average.
+
+An apprentice who leaves in the first year costs you twice: once for training that produces no skilled worker, and once for the position you end up filling externally. Our [apprenticeship savings calculator](/apprenticeship-savings-calculator) gives an estimate for your company.
+
+## Where digital learning support helps and where it doesn't
+
+For the three most common reasons, mental strain, wrong expectations and poor working conditions, no software helps. What helps there is an honest look before the start, good conditions and people who listen.
+
+Digital learning support helps in two other places:
+
+- **With theory.** In the electrical trades many topics build on each other, and a gap that opens early is carried along. A tutor built on the [official training framework (Ausbildungsrahmenplan)](/blog/apprenticeship-framework-plan-explained) answers subject questions even when no trainer has time, and cites the source for every answer. That addresses a reason 24% name: the quality of teaching.
+- **With spotting problems early.** When trainers see each apprentice's progress against the learning plan, it becomes clear who has not moved forward for weeks. That does not replace a conversation, but it tells you who to talk to first. A [digital training log](/blog/digital-training-logbook) gives similar signals sooner than a paper folder at the end of the month.
+
+The MEKI project, funded under the federal InnoVET PLUS programme, follows a similar approach: the chambers of commerce in Reutlingen and the Stuttgart region are developing AI support for vocational school content together with universities in Stuttgart and Munich, for trades with high early termination rates and skills shortages, starting with IT systems electronics technicians.
+
+How you introduce such tools matters: as support, not as control. Clarify with the works council and your data protection officer beforehand who sees which learning data. What this looks like in an industry with particularly strict security requirements is covered in our [data check on apprenticeships in Germany's defence industry](/blog/apprenticeships-defence-industry-germany).
+
+## Your plan for the next intake
+
+1. **Get in touch between contract and start,** once a month.
+2. **Set the conversation dates now:** weeks 2, 6 and 12, then every three months.
+3. **Ask open questions** and respond to the answers.
+4. **Know the outside help** before you need it: training advisers, VerAplus, Assisted Apprenticeship.
+5. **Hold an exit conversation every time a contract ends early.** Over time you will see where your company can act.
+
+## Sources
+
+This article provides general information and does not replace legal, health or HR advice in individual cases.
+
+All figures come from the following sources; we calculated the net cost per apprentice from the BIBB figures. Checked on 13 October 2026.
+
+- BIBB: [Datenreport zum Berufsbildungsbericht 2026](https://www.bibb.de/dienst/publikationen/de/21037), chapters A5.6 (early termination of training contracts) and C4 (MEKI project)
+- Bertelsmann Stiftung: [Ausbildungsperspektiven 2026](https://doi.org/10.11586/2026062), July 2026. Survey of 1,325 apprentices aged 15 to 25, 11 March to 20 April 2026
+- BIBB: [Costs and benefits of apprenticeships 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)
+- German Vocational Training Act (BBiG): [§ 8 shortening](https://www.gesetze-im-internet.de/bbig_2005/__8.html), [§ 20 probation](https://www.gesetze-im-internet.de/bbig_2005/__20.html), [§ 22 termination](https://www.gesetze-im-internet.de/bbig_2005/__22.html)
+
+
+## Frequently Asked Questions
+
+### When are most apprenticeship contracts in Germany terminated early?
+
+In the first year. Of all contracts terminated early in 2024, 34.7% ended during probation and another 32.9% later in the first year, according to the BIBB Datenreport 2026. In industry and commerce the two together came to about 70%.
+
+### Why do apprentices quit?
+
+In the Bertelsmann Stiftung study Ausbildungsperspektiven 2026, apprentices who had thought about quitting most often named mental strain (36%), an apprenticeship very different from what they expected (30%), dissatisfaction with learning and working conditions (29%) and no time for anything else (28%). Only 13% named a better alternative. Usually several reasons come together.
+
+### Is the German early termination rate a dropout rate?
+
+No. The early termination rate (Lösungsquote) counts apprenticeship contracts ended early. About half of these young people sign a new apprenticeship contract afterwards, often with another employer or in another trade. For the company that hired and trained them, the investment is still lost.
+
+### Where can German companies get free support when an apprentice is struggling?
+
+The first point of contact is the training advisers (Ausbildungsberater) at your chamber. There is also VerAplus from the Senior Experten Service, which pairs apprentices with volunteer mentors and is free for apprentices and companies, and Assisted Apprenticeship (Assistierte Ausbildung) from the Federal Employment Agency, which offers learning support and guidance.
+
+---
+
 # Apprenticeships in Germany's Defence Industry: 8 Trades
 
 Source: https://learnslice.com/blog/apprenticeships-defence-industry-germany
@@ -4221,7 +4403,7 @@ Die Bertelsmann Stiftung hat für die Studie [Ausbildungsperspektiven 2026](http
 
 - **90 %** sind mit ihrer Ausbildung insgesamt zufrieden, 46 % sogar sehr.
 - Jeder zweite duale Azubi ist mit seinem Ausbilder **sehr zufrieden**, weitere 38 % eher.
-- Trotzdem haben **23 %** schon ernsthaft daran gedacht, die Ausbildung abzubrechen. Bei Azubis, die schon einmal eine Ausbildung beendet haben, sind es 44 %.
+- Trotzdem haben **23 %** schon ernsthaft daran gedacht, die Ausbildung abzubrechen. Bei Azubis, die schon einmal eine Ausbildung vorzeitig beendet haben, sind es 44 %.
 
 Zufriedenheit schützt also nicht vor Abbruchgedanken. Ein Azubi kann sein Team mögen, seine Ausbilderin schätzen und trotzdem jeden Sonntagabend mit einem Kloß im Hals an Montag denken. Rund ein Viertel der Befragten fühlt sich häufig oder fast immer emotional belastet, rund ein Fünftel überfordert.
 
@@ -4242,7 +4424,7 @@ Die 467 Azubis, die ans Aufhören denken oder schon einmal eine Ausbildung abgeb
 | Mobbing, Diskriminierung oder Gewalt erlebt | 17 % |
 | Eine bessere Alternative hat sich ergeben | 13 % |
 
-Nur 13 % nennen eine bessere Alternative. Die übrigen Gründe liegen in der Ausbildung selbst, und dort können Sie ansetzen.
+Nur 13 % nennen eine bessere Alternative. Die meisten übrigen Gründe liegen in der Ausbildung selbst, und dort können Sie ansetzen.
 
 ### Was Sie beeinflussen können und wann
 
@@ -4250,7 +4432,7 @@ Sortiert man die Gründe danach, wo ein Betrieb ansetzen kann, ergeben sich drei
 
 1. **Vor dem ersten Tag:** Falsche Erwartungen (30 %) und ein Beruf, der nicht passt (24 %), entstehen meist bei der Berufswahl. Ein ehrliches Praktikum, ein Probetag in der Werkstatt und ein Gespräch mit einem Azubi aus dem zweiten Lehrjahr zeigen mehr als jede Hochglanzbroschüre.
 2. **Im Betrieb:** Arbeitsbedingungen, Qualität der Vermittlung, Konflikte mit Ausbildern oder Kollegen, Mobbing. Das ist Ihr Kerngebiet, und hier setzen die festen Gespräche weiter unten an.
-3. **Außerhalb Ihrer Rolle:** Psychische Belastung und persönliche Gründe lassen sich mit keiner Checkliste und keiner App lösen. Hier sind Fachleute gefragt, nicht Ausbilder.
+3. **Außerhalb Ihrer Rolle:** Psychische Belastung und persönliche Gründe lassen sich mit keiner Checkliste und keiner App lösen. Hier sind Fachleute gefragt, etwa der Betriebsarzt oder externe Beratungsstellen, nicht Ausbilder.
 
 ## Der 12-Monats-Plan
 
@@ -4268,7 +4450,7 @@ Die Tabelle zeigt für jeden Zeitraum die typische Situation, das Warnsignal und
 
 **Zwischen Vertrag und Start.** Oft liegen zwischen Unterschrift und erstem Tag mehrere Monate. In dieser Zeit ist der Betrieb für den künftigen Azubi nur ein Name auf Papier. Eine Nachricht oder ein Foto vom künftigen Arbeitsplatz kostet Sie fünf Minuten. Was in die ersten acht Wochen gehört, finden Sie in unserer [Checkliste zum Azubi-Onboarding](/de/blog/azubi-onboarding).
 
-**Monat 3 bis 4.** Mit dem Ende der Probezeit ändern sich die Regeln für eine Kündigung ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Ein gutes Drittel aller Vertragslösungen fällt in die Probezeit. Wer hier zweifelt und niemanden zum Reden hat, entscheidet oft allein.
+**Monat 3 bis 4.** Mit dem Ende der Probezeit ändern sich die Regeln für eine Kündigung ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Wer hier zweifelt und niemanden zum Reden hat, entscheidet oft allein.
 
 ## Gespräche, die wirken
 
@@ -4285,7 +4467,7 @@ Oft gibt es Gespräche erst, wenn etwas schiefläuft. Wirksamer sind feste Termi
 
 Die Fragen drei bis fünf zielen auf drei Gründe aus der Studie: Probleme mit Menschen, falsche Erwartungen, fehlende Zeit.
 
-Tun Sie etwas mit der Antwort, sonst erzählt der Azubi beim nächsten Mal nichts mehr. Für Persönliches braucht er außerdem jemanden, der ihn nicht beurteilt: einen Paten, die Jugend- und Auszubildendenvertretung, falls es eine gibt, oder jemanden aus der Personalabteilung.
+Lassen Sie der Antwort eine Reaktion folgen, sonst erzählt der Azubi beim nächsten Mal nichts mehr. Für Persönliches braucht er außerdem jemanden, der ihn nicht beurteilt: einen Paten, die Jugend- und Auszubildendenvertretung oder den Betriebsrat, falls es sie gibt.
 
 Damit für diese Gespräche überhaupt Zeit bleibt, müssen Ausbilder an anderer Stelle Zeit gewinnen. Sieben Ansätze dafür haben wir in [Ausbilder entlasten](/de/blog/ausbilder-entlasten) zusammengestellt.
 
@@ -4293,7 +4475,7 @@ Damit für diese Gespräche überhaupt Zeit bleibt, müssen Ausbilder an anderer
 
 **1. Nicht sofort reagieren, sondern fragen.** „Was ist passiert?“ bringt mehr als „Überleg dir das gut“. Oft steckt hinter dem Satz ein konkretes Problem: ein Konflikt mit einem Kollegen, ein Thema in der Berufsschule, ein privates Problem. Manches davon lässt sich lösen.
 
-**2. Rechtliches prüfen lassen.** Fristen, Form und Sonderfälle, etwa bei minderjährigen Azubis, regelt das Berufsbildungsgesetz ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Lassen Sie den Einzelfall von den Ausbildungsberatern Ihrer Kammer oder einer Fachanwältin für Arbeitsrecht prüfen, bevor jemand etwas unterschreibt.
+**2. Rechtliches prüfen lassen.** Fristen und Form einer Kündigung regelt das Berufsbildungsgesetz ([§ 22 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__22.html)). Lassen Sie den Einzelfall vor jeder Entscheidung von den Ausbildungsberatern Ihrer Kammer oder einer Fachanwältin für Arbeitsrecht prüfen.
 
 **3. Hilfe von außen holen.** Diese Stellen helfen kostenlos:
 
@@ -4311,14 +4493,14 @@ Ein Azubi, der im ersten Jahr geht, kostet also doppelt: einmal die Ausbildung o
 
 ## Wo digitale Lernbegleitung hilft und wo nicht
 
-Bei den drei häufigsten Gründen, psychischer Belastung, falschen Erwartungen und schlechten Arbeitsbedingungen, hilft keine Software, sondern nur Menschen, die zuhören.
+Bei den drei häufigsten Gründen, psychischer Belastung, falschen Erwartungen und schlechten Arbeitsbedingungen, hilft keine Software. Dort helfen ehrliche Einblicke vor dem Start, gute Bedingungen und Menschen, die zuhören.
 
 Digitale Lernbegleitung hilft an zwei anderen Stellen:
 
 - **Bei der Theorie.** In den Elektroberufen bauen viele Themen aufeinander auf, wer früh eine Lücke hat, trägt sie mit. Ein Tutor, der auf dem [Ausbildungsrahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) aufbaut, beantwortet Fachfragen auch dann, wenn gerade kein Ausbilder Zeit hat, und nennt die Quelle zu jeder Antwort. Das setzt bei einem Grund an, den 24 % nennen: der Qualität der Vermittlung.
 - **Beim frühen Erkennen.** Wenn Ausbilder den Lernstand jedes Azubis im Abgleich mit dem Lernplan sehen, fällt auf, wer seit Wochen nicht weiterkommt. Das ersetzt kein Gespräch, aber es sagt Ihnen, mit wem Sie es zuerst führen sollten. Ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) liefert ähnliche Signale früher als der Papierordner am Monatsende.
 
-Einen ähnlichen Ansatz verfolgt das Projekt MEKI aus dem Förderprogramm InnoVET PLUS: Die IHKs Reutlingen und Region Stuttgart entwickeln dort mit Hochschulen aus Stuttgart und München KI-Unterstützung für den Berufsschulstoff in Berufen mit hohen Abbruchquoten und Fachkräftemangel, zuerst für IT-Systemelektroniker.
+Einen ähnlichen Ansatz verfolgt das Projekt MEKI aus dem Förderprogramm InnoVET PLUS: Die IHKs Reutlingen und Region Stuttgart entwickeln dort mit Hochschulen aus Stuttgart und München KI-Unterstützung für den Berufsschulstoff in Berufen mit hohen Lösungsquoten und Fachkräftemangel, zuerst für IT-Systemelektroniker.
 
 Wichtig ist, wie Sie solche Werkzeuge einführen: als Unterstützung, nicht als Kontrolle. Klären Sie vorab mit Betriebsrat und Datenschutzbeauftragtem, wer welche Lerndaten sieht. Wie das in einer Branche mit besonders hohen Anforderungen an Datenschutz und Sicherheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie).
 
@@ -4326,7 +4508,7 @@ Wichtig ist, wie Sie solche Werkzeuge einführen: als Unterstützung, nicht als 
 
 1. **Melden Sie sich zwischen Vertrag und Start,** einmal im Monat.
 2. **Legen Sie die Gesprächstermine jetzt fest:** Woche 2, 6 und 12, dann alle drei Monate.
-3. **Stellen Sie offene Fragen** und tun Sie etwas mit den Antworten.
+3. **Stellen Sie offene Fragen** und reagieren Sie auf die Antworten.
 4. **Kennen Sie die Hilfen von außen,** bevor Sie sie brauchen: Ausbildungsberater, VerAplus, Assistierte Ausbildung.
 5. **Führen Sie bei jeder Vertragslösung ein Abschlussgespräch.** So sehen Sie mit der Zeit, wo Ihr Betrieb ansetzen kann.
 
