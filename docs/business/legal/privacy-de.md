@@ -539,17 +539,6 @@ Rechtsgrundlage
 Wenn Sie eingewilligt haben, dass Daten von Ihnen durch externe Plattformen verarbeitet und gespeichert werden können, gilt diese Einwilligung als Rechtsgrundlage der Datenverarbeitung (Art. 6 Abs. 1 lit. a DSGVO). Grundsätzlich werden Ihre Daten bei Vorliegen einer Einwilligung auch auf Grundlage eines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO) an einer schnellen und guten Kommunikation mit Ihnen oder anderen Kunden und Geschäftspartnern gespeichert und verarbeitet. Falls wir eingebundene Elemente externer Plattformen auf unser Website haben, setzen wir diese gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben.
 
 Informationen zu speziellen externen Plattformen erfahren Sie – sofern vorhanden – in den folgenden Abschnitten.
-Amazon (Europe) Datenschutzerklärung
-
-Wir nutzen auch die Online-Handelsplattform Amazon (Europe). Dienstanbieter ist das amerikanische Unternehmen Amazon Inc. Für den europäischen Raum ist das Unternehmen Amazon Europe Core S.à r.l. (Société à responsabilité limitée), 38 avenue John F. Kennedy, L-1855 Luxemburg verantwortlich.
-
-Amazon verarbeitet Daten von Ihnen u.a. auch in den USA. Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Dies kann mit verschiedenen Risiken für die Rechtmäßigkeit und Sicherheit der Datenverarbeitung einhergehen.
-
-Als Grundlage der Datenverarbeitung bei Empfängern mit Sitz in Drittstaaten (außerhalb der Europäischen Union, Island, Liechtenstein, Norwegen, also insbesondere in den USA) oder einer Datenweitergabe dorthin verwendet Amazon sogenannte Standardvertragsklauseln (= Art. 46. Abs. 2 und 3 DSGVO). Standardvertragsklauseln (Standard Contractual Clauses – SCC) sind von der EU-Kommission bereitgestellte Mustervorlagen und sollen sicherstellen, dass Ihre Daten auch dann den europäischen Datenschutzstandards entsprechen, wenn diese in Drittländer (wie beispielsweise in die USA) überliefert und dort gespeichert werden. Durch diese Klauseln verpflichtet sich Amazon, bei der Verarbeitung Ihrer relevanten Daten, das europäische Datenschutzniveau einzuhalten, selbst wenn die Daten in den USA gespeichert, verarbeitet und verwaltet werden. Diese Klauseln basieren auf einem Durchführungsbeschluss der EU-Kommission. Sie finden den Beschluss und die entsprechenden Standardvertragsklauseln u.a. hier: https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj?locale=de
-
-Die Amazon Datenverarbeitungsbedingung (AWS GDPR DATA PROCESSING), welche den Standardvertragsklauseln entsprechen, finden Sie unter https://d1.awsstatic.com/legal/aws-gdpr/AWS_GDPR_DPA.pdf.
-
-Mehr über die Daten, die durch die Verwendung von Amazon verarbeitet werden, erfahren Sie in der Datenschutzerklärung auf https://www.amazon.de/gp/help/customer/display.html?nodeId=201909010&ref_=footer_privacy .
 Plugins und Tools
 Google reCAPTCHA
 
