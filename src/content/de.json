@@ -18,6 +18,7 @@
         "mega": true,
         "children": [
           { "label": "Für Unternehmen", "description": "CEOs, HR, Ausbilder", "href": "/de/companies", "icon": "hugeicons:building-06" },
+          { "label": "Verteidigungsindustrie", "description": "Metall- und Elektro-Azubis, on-prem", "href": "/de/verteidigungsindustrie", "icon": "hugeicons:shield-01" },
           { "label": "Für Schulen", "description": "Berufsschulen & Kollegs", "href": "/de/schools", "icon": "hugeicons:mortarboard-02" },
           { "label": "Für Agenturen", "description": "IHK, HWK, Wirtschaftsförderung", "href": "/de/agencies", "icon": "hugeicons:building-03" },
           { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
