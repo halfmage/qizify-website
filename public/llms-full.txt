@@ -5781,6 +5781,8 @@ Ein moderner KI-Stack besteht selten aus einem einzigen Anbieter. Typisch ist ei
 
 Die Prüfung der Subunternehmer-Kette ist die Stelle, an der "DSGVO-konform" im Werbetext und "DSGVO-konform" im Vertrag spürbar auseinanderlaufen. Wer hier hartnäckig nachfragt, sortiert die Spreu vom Weizen schneller als jede Demo es kann.
 
+Noch strenger wird die Prüfung in Branchen mit Geheimschutz und Exportkontrolle. Welche Fragen dort vor jeder digitalen Lernhilfe stehen, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie#sicherheit).
+
 ## Sonderfall Art. 22 DSGVO: Wo automatisierte KI-Entscheidungen unzulässig sind
 
 Art. 22 Abs. 1 DSGVO räumt der betroffenen Person das Recht ein, keiner Entscheidung unterworfen zu werden, die ausschließlich auf automatisierter Verarbeitung (einschließlich Profiling) beruht und ihr gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt. Für die Ausbildung ist das hochrelevant.
@@ -6933,7 +6935,7 @@ Gleichzeitig wurden 2024 **29,7 % aller begonnenen Ausbildungsverträge vorzeiti
 
 Die Lösung liegt nicht darin, mehr Ausbilder einzustellen, sondern die vorhandenen Ausbilder intelligent zu entlasten. Hier sind 7 Strategien dafür.
 
-Die Strategien lassen sich in Betrieben jeder Größe umsetzen, vom Handwerksbetrieb mit zwei Azubis bis zum Mittelständler mit 20.
+Die Strategien lassen sich in Betrieben jeder Größe umsetzen, vom Handwerksbetrieb mit zwei Azubis bis zum Mittelständler mit 20. Besonders eng wird es dort, wo Werke gerade schnell wachsen, etwa in der [Verteidigungsindustrie](/de/verteidigungsindustrie).
 
 ## Zeitaufwand pro Aufgabe: ein Rechenbeispiel
 
