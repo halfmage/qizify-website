@@ -64,6 +64,8 @@ export const DE_ONLY = new Set([
 	'/de/digital-readiness-check',
 	// AZAV/BFSG cluster posts (German-law-specific), no English counterpart.
 	'/de/blog/azav-digitalisierung-bildungstraeger',
+	// Defence campaign cluster posts (Q4 2026), German market only.
+	'/de/blog/ausbildungsabbruch-verhindern',
 	// Defence campaign landing page (Q4 2026), German market only.
 	'/de/verteidigungsindustrie',
 ]);
