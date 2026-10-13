@@ -107,7 +107,7 @@ Sie bestätigen in Bezug auf Benutzerinhalte, die Sie in LearnSlice posten, dass
 Sie sind allein für alle Benutzerinhalte verantwortlich, die Sie auf LearnSlice veröffentlichen. LearnSlice bestätigt nicht die Richtigkeit von Benutzerinhalten oder darin enthaltenen Meinungen.
 Anwendungen von Drittanbietern:
 
-LearnSlice Dienst ist in Anwendungen von Drittanbietern integriert, die Ihnen Inhalte, Produkte und/oder Dienstleistungen zur Verfügung stellen. Die Verwendung dieser Drittanbieteranwendungen ist optional. Für die Anwendungen von Drittanbietern können eigene Geschäftsbedingungen und Datenschutzrichtlinien gelten, an die Sie gebunden sind, wenn Sie diese Anwendungen von Drittanbietern nutzen, insbesondere Amazon Europe Core S.à r.l. und OpenAI, L.L.C .
+LearnSlice Dienst ist in Anwendungen von Drittanbietern integriert, die Ihnen Inhalte, Produkte und/oder Dienstleistungen zur Verfügung stellen. Die Verwendung dieser Drittanbieteranwendungen ist optional. Für die Anwendungen von Drittanbietern können eigene Geschäftsbedingungen und Datenschutzrichtlinien gelten, an die Sie gebunden sind, wenn Sie diese Anwendungen von Drittanbietern nutzen.
 Testversionen
 
 Wir können Ihnen nach eigenem Ermessen eine Testversion anbieten. Wir behalten uns das Recht vor, eine Testversion zu widerrufen und Ihr Konto zu sperren, falls wir zu dem Schluss kommen, dass Sie für dieses Angebot nicht infrage kommen. Für die Nutzung eines LearnSlice Dienstes im Rahmen einer Testversion gelten möglicherweise gesonderte Bedingungen, einschließlich Einschränkungen der verfügbaren Funktionen oder Nutzungsbereiche.

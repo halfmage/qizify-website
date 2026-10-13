@@ -1,0 +1,420 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTAFooter from '../../components/CTAFooter.astro';
+import Footer from '../../components/Footer.astro';
+import DemoRequestModal from '../../components/DemoRequestModal.astro';
+import Button from '../../components/Button.astro';
+import { Icon } from 'astro-icon/components';
+import deContent from '../../content/de.json';
+
+// Defence campaign landing page (Q4 2026). DE solo, not in the main nav: reached via
+// the blog cluster, LinkedIn and sales emails. Research and sources behind the copy:
+// docs/sales/verteidigungsindustrie/landing-page-research.md
+// Claim rules: never "VS-NfD-zugelassen/-konform", no ISO 27001, no pilot price,
+// pilots run on German servers only (on-prem is for production).
+
+const lang = 'de';
+const currentPath = '/de/verteidigungsindustrie';
+const ctaLabel = '30-Minuten-Demo ansehen';
+
+// Pain points in the reader's own words, each with the fact behind it.
+const pains = [
+	{
+		icon: 'hugeicons:factory',
+		quote: 'Wir stellen mehr ein als je zuvor. Unsere Ausbilder sind nicht mehr geworden.',
+		fact: 'Rund 4.700 Stellenanzeigen schaltete die Rüstungs- und Verteidigungsbranche laut Index Research im ersten Halbjahr 2026, 22 % mehr als im Vorjahr. Neue Werke in Unterlüß, Görlitz und Wismar wollen besetzt werden.',
+	},
+	{
+		icon: 'hugeicons:alarm-clock',
+		quote: 'Dass ein Azubi abgehängt ist, merken wir oft erst bei Teil 1 der Prüfung.',
+		fact: 'In Industrie und Handel enden rund 70 % aller vorzeitig gelösten Ausbildungsverträge in den ersten zwölf Monaten (BIBB-Datenreport 2026).',
+	},
+	{
+		icon: 'hugeicons:book-open-01',
+		quote: 'In der Werkstatt läuft es. Bei der Elektrotechnik in der Berufsschule hängen viele.',
+		fact: 'Ohmsches Gesetz, Schaltpläne, Steuerungstechnik: Wer im ersten Lehrjahr den Anschluss verliert, holt ihn selten allein auf. Und in der Werkstatt fragt er irgendwann nicht mehr.',
+	},
+	{
+		icon: 'hugeicons:shield-key',
+		quote: 'Ein US-Cloud-Tool kommt bei uns nicht durchs Security-Gate.',
+		fact: 'Zu Recht. Wo die Daten liegen, wer darauf zugreift und welches Modell antwortet, entscheidet über jede digitale Lernhilfe.',
+	},
+	{
+		icon: 'hugeicons:time-quarter-pass',
+		quote: 'Die Neuen sind da, dürfen aber noch nicht überall ran.',
+		fact: 'Sicherheitsüberprüfungen dauern oft Monate. Mit öffentlichem Ausbildungsstoff kann die Einarbeitung trotzdem früh beginnen, wenn Ihr Sicherheitsbevollmächtigter zustimmt.',
+	},
+	{
+		icon: 'hugeicons:user-switch',
+		quote: 'Am neuen Standort bilden wir Leute aus, die vorher Autoteile oder Züge gebaut haben.',
+		fact: 'Ein Beispiel: KNDS hat in Görlitz ein früheres Alstom-Bahnwerk übernommen, dort arbeiten rund 300 Menschen (Stand Juli 2026). Sie können viel. Ihre Normen, Prozesse und Dokumentation sind trotzdem neu.',
+	},
+];
+
+const features = [
+	{
+		icon: 'hugeicons:ai-chat-02',
+		title: 'Antworten, wenn gerade kein Ausbilder Zeit hat',
+		body: 'Der Tutor baut auf dem Ausbildungsrahmenplan auf. Er erklärt Lernfelder, fragt nach und übt mit Aufgaben, bis der Stoff sitzt. Zu jeder Antwort nennt er die Quelle, damit Azubis und Ausbilder sie prüfen können.',
+	},
+	{
+		icon: 'hugeicons:dashboard-square-01',
+		title: 'Rückstand sehen, bevor er wächst',
+		body: 'Sie sehen den Fortschritt jedes Azubis im Abgleich mit dem Lernplan: wer wo zurückliegt und bei welchem Thema. So wissen Sie, wo ein Gespräch fällig ist, lange vor Teil 1 der Prüfung.',
+	},
+	{
+		icon: 'hugeicons:file-validation',
+		title: 'Ihre Unterlagen, wenn Sie so weit sind',
+		body: 'Arbeitsanweisungen, Normen, Sicherheitsunterweisungen: Sie kommen erst nach Freigabe durch IT-Sicherheit und Exportkontrolle dazu, und nur das, was Sie freigeben.',
+	},
+];
+
+const week = [
+	{ when: 'Dienstag', what: 'Ein Mechatroniker-Azubi versteht in der Berufsschule die Reihenschaltung nicht. Danach fragt er den Tutor. Der erklärt es an einem Beispiel, nennt die Stelle im Lernfeld und stellt drei Kontrollfragen.' },
+	{ when: 'Donnerstag', what: 'Der Tutor holt das Thema mit zwei Übungsaufgaben zurück, damit es nicht wieder verloren geht.' },
+	{ when: 'Freitag', what: 'Ihr Ausbilder sieht im Abgleich mit dem Lernplan: Vier von achtzehn Azubis liegen bei Schaltungen zurück, einer ist seit zwei Wochen nicht weitergekommen. Er plant 20 Minuten Wiederholung in der Werkstatt und ein kurzes Gespräch.' },
+];
+
+// Trades configured in the product today (confirmed 2026-10-13). Others are set up on request.
+const berufe = [
+	'Mechatroniker',
+	'Elektroniker für Betriebstechnik',
+	'Elektroniker für Maschinen und Antriebstechnik',
+];
+
+const security = [
+	{
+		icon: 'hugeicons:server-stack-01',
+		title: 'Wo läuft das?',
+		body: 'Im Pilot auf Servern in Deutschland, auf Wunsch auf einem dedizierten Server nur für Sie. Im Regelbetrieb auch vollständig auf Ihren eigenen Servern.',
+	},
+	{
+		icon: 'hugeicons:ai-brain-01',
+		title: 'Welches Modell antwortet?',
+		body: 'Ein Open-Weight-Modell auf Servern in Deutschland oder bei Ihnen. Kein Prompt und keine Lerndaten gehen an OpenAI oder einen anderen KI-Dienst außerhalb dieser Server.',
+	},
+	{
+		icon: 'hugeicons:database-locked',
+		title: 'Was passiert mit den Daten?',
+		body: 'Ihre Inhalte und die Lerndaten Ihrer Azubis werden nicht zum Training von KI-Modellen genutzt. Endet die Zusammenarbeit, löschen wir Ihre Inhalte und die Lerndaten Ihrer Azubis. Den Ablauf regelt der Auftragsverarbeitungsvertrag.',
+	},
+	{
+		icon: 'hugeicons:lock-key',
+		title: 'Und Verschlusssachen?',
+		body: 'Gehören nicht hinein. Der Tutor ist für Ausbildungsinhalte ohne Verschlusssachen gedacht. Was dazukommt, entscheidet Ihr Sicherheitsbevollmächtigter.',
+	},
+	{
+		icon: 'hugeicons:legal-document-01',
+		title: 'Und die Exportkontrolle?',
+		body: 'Der Pilot nutzt nur öffentlichen Stoff: Rahmenplan, Lernfelder, Prüfungsvorbereitung. Keine Zeichnung, kein Datenblatt. Was später dazukommt, entscheidet Ihre Exportkontrolle.',
+	},
+	{
+		icon: 'hugeicons:user-group',
+		title: 'Und der Betriebsrat?',
+		body: 'Die Frühwarnung soll unterstützen, nicht kontrollieren, und sie unterliegt der Mitbestimmung. Wir zeigen Ihrem Betriebsrat vorab, welche Daten entstehen und wer sie sieht.',
+	},
+];
+
+const pilotSteps = [
+	{ icon: 'hugeicons:target-02', title: 'Ein Beruf, ein Jahrgang', body: 'Zum Beispiel Ihre Mechatroniker im ersten Lehrjahr. 8 bis 10 Wochen.' },
+	{ icon: 'hugeicons:book-02', title: 'Nur öffentlicher Stoff', body: 'Ausbildungsrahmenplan und Prüfungsvorbereitung. Ihre IT-Sicherheit muss keine internen Unterlagen freigeben.' },
+	{ icon: 'hugeicons:analytics-up', title: 'Ziele vorher festgelegt', body: 'Wie viele Rückfragen noch bei den Ausbildern landen, wie sich der Lernstand im Abgleich mit dem Lernplan entwickelt, wer den Tutor jede Woche nutzt und wen die Frühwarnung früh gezeigt hat.' },
+	{ icon: 'hugeicons:checkmark-badge-01', title: 'Festpreis, angerechnet', body: 'Der Pilot kostet einen festen Betrag. Entscheiden Sie sich danach für eine Lizenz, wird er angerechnet.' },
+];
+
+const limits = [
+	'Er ersetzt weder die Werkstatt noch Ihre Ausbilder.',
+	'Er löst keine Konflikte im Betrieb und keine falsche Berufswahl.',
+	'Er ist keine Hilfe bei psychischer Belastung. Dafür braucht es Menschen und klare Ansprechpartner.',
+	'Er verarbeitet keine Verschlusssachen.',
+];
+
+const faqItems = [
+	{
+		question: 'Für welche Unternehmen ist LearnSlice gedacht?',
+		answer: 'Für Unternehmen und Standorte der Rüstungs- und Verteidigungsindustrie und ihre Zulieferer, die rund 20 bis 100 Azubis in Metall- und Elektroberufen ausbilden. Dazu kommen Anbieter von Auftrags- und Verbundausbildung, die für mehrere Betriebe ausbilden.',
+	},
+	{
+		question: 'Läuft LearnSlice auf unseren eigenen Servern?',
+		answer: 'Im Regelbetrieb ja, vollständig in Ihrem Rechenzentrum. Der Pilot läuft auf Servern in Deutschland, auf Wunsch auf einem dedizierten Server nur für Sie. So können Sie starten, bevor ein eigener Betrieb aufgesetzt ist.',
+	},
+	{
+		question: 'Ist LearnSlice für VS-NfD zugelassen?',
+		answer: 'Nein, und dafür ist es auch nicht gedacht. Der Tutor arbeitet mit Ausbildungsinhalten ohne Verschlusssachen. Welche Unterlagen später dazukommen, entscheiden Ihr Sicherheitsbevollmächtigter und Ihre IT-Sicherheit.',
+	},
+	{
+		question: 'Wir haben schon ein LMS. Brauchen wir LearnSlice?',
+		answer: 'LearnSlice ersetzt Ihr LMS nicht. Pflichtschulungen und Nachweise bleiben, wo sie sind. LearnSlice ergänzt die Ausbildung dort, wo ein LMS nicht hilft: beim Verstehen der Theorie, beim Üben für die Prüfung und beim frühen Erkennen, wer Unterstützung braucht.',
+	},
+	{
+		question: 'Was passiert, wenn der Tutor etwas Falsches erklärt?',
+		answer: 'Das kann vorkommen, wie bei jeder KI. Deshalb antwortet der Tutor aus dem Ausbildungsrahmenplan und den Unterlagen, die Sie freigegeben haben, und nennt zu jeder Antwort die Quelle. So können Azubis und Ausbilder jede Aussage nachprüfen. In der Studie mit der FH Dortmund (Studierende, keine Azubis) trug jede Antwort eine gültige Quellenangabe.',
+	},
+	{
+		question: 'Wie binden wir den Betriebsrat ein?',
+		answer: 'Am besten vor dem Pilot. Daten zum Lernfortschritt sind ein Thema für die Mitbestimmung. Wir zeigen Ihrem Betriebsrat, welche Daten entstehen und wer sie sieht, und Sie legen die Regeln gemeinsam fest.',
+	},
+	{
+		question: 'Was kostet ein Pilot?',
+		answer: 'Der Pilot hat einen Festpreis, der vom Beruf und der Größe des Jahrgangs abhängt. Entscheiden Sie sich danach für eine Jahreslizenz, wird er angerechnet. Den genauen Betrag nennen wir Ihnen im ersten Gespräch.',
+	},
+];
+---
+
+<BaseLayout
+	title="KI-Tutor für Azubis in der Verteidigungsindustrie | LearnSlice"
+	description="KI-Tutor für Azubis in Rüstung und Verteidigung: auf Basis des Ausbildungsrahmenplans, mit Frühwarnung für Ausbilder. Server in Deutschland oder bei Ihnen."
+	lang={lang}
+	currentPath={currentPath}
+	breadcrumbTitle="Verteidigungsindustrie"
+	ogImage="/images/blog/ausbildung-werkstatt-mechatronik.jpg"
+>
+	<Header logo={deContent.nav.logo} menu={deContent.nav.menu} cta={ctaLabel} currentLang={lang} currentPath={currentPath} />
+
+	<!-- Hero -->
+	<section class="relative overflow-hidden pt-28 md:pt-32 pb-12 md:pb-20 px-6 md:px-8">
+		<div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[520px] pointer-events-none glow-aurora opacity-40" aria-hidden="true"></div>
+		<div class="max-w-container mx-auto relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+			<div class="max-w-xl">
+				<!-- The eyebrow sits inside the H1 so the keyword is part of the main heading -->
+				<h1 class="text-display-sm xl:text-display text-balance text-white mb-6">
+					<span class="section-label mb-5 block">KI-Tutor für Azubis in der Verteidigungsindustrie</span>
+					Die Werke wachsen.<br /><span class="gradient-text-primary">Ihre Ausbilder nicht.</span>
+				</h1>
+				<p class="text-lg md:text-xl text-white leading-relaxed mb-6">LearnSlice gibt Ihren Mechatronikern und Elektronikern einen KI-Tutor, der auf dem Ausbildungsrahmenplan aufbaut. Ihre Ausbilder sehen früh, wer den Anschluss verliert. Betrieben in Deutschland oder auf Ihren eigenen Servern.</p>
+				<div class="flex flex-wrap items-center gap-3 mb-3">
+					<Button variant="primary" href="#demo-request" aria-label={ctaLabel}>
+						{ctaLabel}
+						<svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+					</Button>
+					<Button variant="secondary" href="#pilot">So läuft der Pilot</Button>
+				</div>
+				<p class="text-sm text-muted mb-6">30 Minuten. Wir zeigen den Tutor an einem Lernfeld aus der Mechatroniker- oder Elektroniker-Ausbildung.</p>
+				<div class="flex items-center gap-2.5 text-xs md:text-sm text-muted border-t border-white/10 pt-5">
+					<Icon name="hugeicons:security-check" class="w-4 h-4 text-primary shrink-0" />
+					<span>Open-Weight-Modell · Server in Deutschland oder bei Ihnen · Keine Lerndaten für KI-Training</span>
+				</div>
+			</div>
+			<div class="relative">
+				<div class="absolute -inset-8 glow-aurora opacity-70 pointer-events-none" aria-hidden="true"></div>
+				<div class="relative p-3 md:p-4 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/45 ring-1 ring-primary/25">
+					<div class="rounded-xl overflow-hidden shadow-xl shadow-black/40">
+						<img src="/images/solutions/learnslice-lernplan-elektroniker.webp" alt="Lernplan in LearnSlice für Elektroniker für Maschinen und Antriebstechnik, 1. Lehrjahr: Themen aus dem Ausbildungsrahmenplan wie Montieren und Anschließen elektrischer Betriebsmittel, jeweils mit Fortschritt" width="1600" height="853" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto block" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Ihre Lage: pains in the reader's words -->
+	<section class="py-12 md:py-20 px-6 md:px-8">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-14 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">Ihre Lage</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Die Aufträge reichen für Jahre. Die Ausbildung muss mithalten.</h2>
+				<p class="text-base text-muted leading-relaxed m-0">Erkennen Sie Ihren Betrieb wieder?</p>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				{pains.map((p, i) => (
+					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-7 group hover:bg-surface-hover transition-colors duration-200`}>
+						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+							<Icon name={p.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+						</div>
+						<p class="text-base font-semibold text-white leading-snug mb-3">{p.quote}</p>
+						<p class="text-sm text-muted leading-relaxed m-0">{p.fact}</p>
+					</div>
+				))}
+			</div>
+			<p class="text-xs text-white/55 text-center mt-6 m-0">Quellen: Index Research (Stellenanzeigen, 1. Halbjahr 2026), BIBB-Datenreport 2026, Meldungen zu den Werken Unterlüß (Rheinmetall, 2025), Görlitz (KNDS, 2026) und Wismar (TKMS, 2026). Die BIBB-Zahlen Beruf für Beruf finden Sie im Beitrag <a href="/de/blog/ausbildung-ruestungsindustrie" class="underline hover:text-white">Ausbildung in der Rüstungsindustrie</a>.</p>
+		</div>
+	</section>
+
+	<!-- Was LearnSlice macht -->
+	<section class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-14 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">Was LearnSlice macht</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">Ein Tutor für Ihre Azubis. Eine Frühwarnung für Ihre Ausbilder.</h2>
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				{features.map((f, i) => (
+					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-8 group hover:bg-surface-hover transition-colors duration-200`}>
+						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+							<Icon name={f.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+						</div>
+						<h3 class="text-base font-semibold text-white mb-2">{f.title}</h3>
+						<p class="text-sm text-muted leading-relaxed m-0">{f.body}</p>
+					</div>
+				))}
+			</div>
+
+			<!-- One concrete week, so the value is tangible -->
+			<div class="mt-10 max-w-3xl mx-auto bg-surface border border-border rounded-2xl p-7 md:p-9">
+				<h3 class="text-base font-semibold text-white m-0 mb-5">So sieht eine Woche aus</h3>
+				<ol class="list-none p-0 m-0 space-y-4">
+					{week.map((w) => (
+						<li class="grid grid-cols-[6.5rem_1fr] gap-4 text-sm leading-relaxed">
+							<span class="font-mono text-label text-primary/80 pt-0.5">{w.when}</span>
+							<span class="text-muted">{w.what}</span>
+						</li>
+					))}
+				</ol>
+			</div>
+
+			<div class="mt-12 text-center">
+				<h3 class="text-base font-semibold text-white mb-4">Heute fertig eingerichtet</h3>
+				<ul class="flex flex-wrap justify-center gap-2 list-none p-0 m-0 max-w-3xl mx-auto">
+					{berufe.map((b) => (
+						<li class="text-sm text-white/90 bg-surface border border-border rounded-full px-3.5 py-1.5">{b}</li>
+					))}
+				</ul>
+				<p class="text-sm text-muted mt-5 mb-2 max-w-2xl mx-auto">Sie bilden Industrie-, Zerspanungs- oder Konstruktionsmechaniker aus? Dann richten wir den Tutor auf Basis des Ausbildungsrahmenplans für Ihren Beruf ein. Sprechen Sie uns an.</p>
+				<p class="text-sm text-muted m-0">Wie aus dem Ausbildungsrahmenplan ein Lernplan wird, zeigt unser Beitrag zum <a href="/de/blog/ausbildungsrahmenplan-erklaert" class="text-white underline hover:text-primary">Ausbildungsrahmenplan</a>.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sicherheit: answers for the security gate -->
+	<section id="sicherheit" class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-14 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">Bevor Ihre IT-Sicherheit fragt</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Die Antworten für Ihr Security-Gate</h2>
+				<p class="text-base text-muted leading-relaxed m-0">In der Verteidigungsindustrie beginnt jede digitale Lernhilfe mit denselben Fragen. Hier sind unsere Antworten.</p>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				{security.map((s, i) => (
+					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-7 group hover:bg-surface-hover transition-colors duration-200`}>
+						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+							<Icon name={s.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+						</div>
+						<h3 class="text-base font-semibold text-white mb-2">{s.title}</h3>
+						<p class="text-sm text-muted leading-relaxed m-0">{s.body}</p>
+					</div>
+				))}
+			</div>
+			<p class="text-sm text-white/90 text-center mt-8 m-0">Auftragsverarbeitungsvertrag und technisch-organisatorische Maßnahmen bekommen Sie vor dem Pilot. Mehr dazu im Beitrag über <a href="/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder" class="underline hover:text-primary">DSGVO-konforme KI-Tools für Ausbilder</a>.</p>
+		</div>
+	</section>
+
+	<!-- Pilot -->
+	<section id="pilot" class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50 scroll-mt-24">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-14 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">Der Pilot</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Klein anfangen, ehrlich messen</h2>
+				<p class="text-base text-muted leading-relaxed m-0">Ein Beruf, acht bis zehn Wochen, klare Zahlen am Ende.</p>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
+				{pilotSteps.map((step, i) => (
+					<div class="card-hover-glow card-hover-glow-primary bg-surface p-7 group hover:bg-surface-hover transition-colors duration-200">
+						<div class="flex items-center justify-between mb-4">
+							<div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+								<Icon name={step.icon} class="w-5 h-5 text-primary" />
+							</div>
+							<span class="font-mono text-label text-primary/70">0{i + 1}</span>
+						</div>
+						<h3 class="text-base font-semibold text-white mb-2">{step.title}</h3>
+						<p class="text-sm text-muted leading-relaxed m-0">{step.body}</p>
+					</div>
+				))}
+			</div>
+			<p class="text-sm text-white/90 text-center mt-8 mb-8">Ihre eigenen Unterlagen und der Betrieb auf Ihren Servern folgen nach dem Pilot, wenn Sie so weit sind.</p>
+			<div class="text-center">
+				<Button variant="primary" href="#demo-request" aria-label={ctaLabel}>{ctaLabel}</Button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Quereinsteiger an neuen Standorten -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto relative">
+			<div class="absolute -inset-4 glow-aurora opacity-40 pointer-events-none" aria-hidden="true"></div>
+			<div class="relative bg-surface border border-border rounded-2xl p-8 md:p-12 grid md:grid-cols-[auto_1fr] gap-6 md:gap-8 items-start">
+				<div class="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
+					<Icon name="hugeicons:user-switch" class="w-6 h-6 text-accent" />
+				</div>
+				<div>
+					<span class="section-label mb-3 block">Für neue Standorte</span>
+					<h2 class="text-heading-sm md:text-heading text-white m-0 mb-3">Quereinsteiger schneller einarbeiten</h2>
+					<p class="text-base text-muted leading-relaxed m-0">Dieselbe Technik, gefüttert mit Ihren Werksunterlagen und Sicherheitsunterweisungen. Neue Kollegen fragen zuerst den Tutor, und Ihre erfahrenen Leute behalten Zeit für die Fragen, die Erfahrung brauchen. Gemessen wird, wie schnell die Neuen selbstständig arbeiten.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Proof: FH Dortmund study, with its honest limit -->
+	<section class="py-12 md:py-20 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">Forschung</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Mit der FH Dortmund entwickelt</h2>
+				<p class="text-base text-muted leading-relaxed m-0">LearnSlice entsteht in einem vom BMWE geförderten Forschungsprojekt mit dem Institut IDiAL der FH Dortmund. Die erste Studie lief im Mai 2026 mit 50 Masterstudierenden.</p>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-border rounded-xl overflow-hidden max-w-3xl mx-auto">
+				<div class="bg-surface p-8 text-center">
+					<div class="text-display-sm font-bold text-primary mb-2">100&nbsp;%</div>
+					<p class="text-sm text-muted leading-relaxed m-0">der Antworten trugen in der Systemauswertung eine gültige Quellenangabe, ohne erfundene Quellen.</p>
+				</div>
+				<div class="bg-surface p-8 text-center">
+					<div class="text-display-sm font-bold text-primary mb-2">80&nbsp;%</div>
+					<p class="text-sm text-muted leading-relaxed m-0">der Studierenden erreichten ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas.</p>
+				</div>
+			</div>
+			<p class="text-sm text-white/90 text-center mt-8 max-w-2xl mx-auto m-0">Wichtig: Teilgenommen haben Studierende, keine Azubis. Die Studie zeigt, wie der Tutor arbeitet. Was er in Ihrer Ausbildung bewirkt, misst der Pilot. <a href="/de/forschung" class="underline hover:text-primary">Zur Studie</a></p>
+		</div>
+	</section>
+
+	<!-- Ehrliche Grenzen -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto bg-surface border border-border rounded-2xl p-8 md:p-10">
+			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-5">Was ein KI-Tutor nicht kann</h2>
+			<ul class="list-none p-0 m-0 space-y-3">
+				{limits.map((l) => (
+					<li class="flex items-start gap-3 text-base text-muted leading-relaxed">
+						<Icon name="hugeicons:cancel-circle" class="w-5 h-5 text-accent shrink-0 mt-0.5" />
+						<span>{l}</span>
+					</li>
+				))}
+			</ul>
+			<p class="text-base text-white/90 leading-relaxed mt-6 mb-0">Was er kann: dafür sorgen, dass der Azubi im dritten Monat mit seiner Frage zum ohmschen Gesetz nicht allein bleibt. Und dass Sie es merken, wenn er aufhört zu fragen.</p>
+		</div>
+	</section>
+
+	<FAQ headline="Häufige Fragen aus der Verteidigungsindustrie" items={faqItems} />
+
+	<!-- Named contact: defence buyers want to know who they will talk to -->
+	<section class="px-6 md:px-8 pb-4">
+		<div class="max-w-3xl mx-auto bg-surface border border-border rounded-2xl p-7 md:p-9 flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
+			<img src="/images/team/alesia-kunz.webp" alt="Alesia Kunz, CEO von LearnSlice" width="320" height="320" loading="lazy" decoding="async" class="w-24 h-24 rounded-full object-cover ring-2 ring-primary/30 shrink-0" />
+			<div>
+				<p class="text-base text-white leading-relaxed m-0 mb-4">Die Demo zeige ich Ihnen selbst, und ich bleibe Ihre Ansprechpartnerin bis zum Ende des Pilots. Fragen Ihrer IT-Sicherheit oder Ihres Betriebsrats beantworte ich gern schon vor dem Pilot.</p>
+				<p class="text-sm font-semibold text-white m-0">Alesia Kunz</p>
+				<p class="text-sm text-muted m-0">CEO von LearnSlice</p>
+			</div>
+		</div>
+	</section>
+
+	<CTAFooter
+		label="Für Ausbildungsleitung und HR"
+		headline="Wie sieht das mit Ihrem Ausbildungsrahmenplan aus?"
+		subheadline="In 30 Minuten zeigen wir Ihnen den Tutor an einem Lernfeld aus der Mechatroniker- oder Elektroniker-Ausbildung. Danach wissen Sie, ob ein Pilot zu Ihnen passt."
+		button={ctaLabel}
+		buttonHref="#demo-request"
+		currentLang={lang}
+	/>
+	<Footer currentLang={lang} privacyLabel={deContent.footer.privacyLabel} termsLabel={deContent.footer.termsLabel} />
+
+	<!-- Sticky Mobile CTA -->
+	<div class="md:hidden h-20" aria-hidden="true"></div>
+	<a
+		href="#demo-request"
+		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
+	>
+		{ctaLabel}
+	</a>
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

@@ -106,5 +106,6 @@ Reference customers include FH Dortmund, the University of Cologne, and Carl-Sev
 - Research and evidence: https://learnslice.com/research
 - Blog: https://learnslice.com/blog
 - Demo: https://learnslice.com/#demo-request
+- KI-Tutor für Azubis in der Verteidigungsindustrie (German hosting or on-prem, pilot offer): https://learnslice.com/de/verteidigungsindustrie
 - Digital-Readiness-Check (AZAV/BFSG/KI self-assessment for German training providers): https://learnslice.com/de/digital-readiness-check
 - Full content feed for AI crawlers: https://learnslice.com/llms-full.txt
