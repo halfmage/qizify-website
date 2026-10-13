@@ -4180,7 +4180,7 @@ Commercial occupations such as office management clerk, IT occupations such as I
 
 ---
 
-# Ausbildungsabbruch verhindern: Was in den ersten 12 Monaten passieren muss
+# Ausbildungsabbruch verhindern: Plan für die ersten 12 Monate
 
 Source: https://learnslice.com/de/blog/ausbildungsabbruch-verhindern
 Language: de
@@ -4192,14 +4192,14 @@ Zwei Drittel aller gelösten Ausbildungsverträge enden im ersten Jahr. Ein Mona
 
 - Rund zwei Drittel aller vorzeitig gelösten Ausbildungsverträge enden im ersten Jahr, mehr als ein Drittel schon in der Probezeit (BIBB-Datenreport 2026). In Industrie und Handel sind es rund 70 %.
 - Fast jeder vierte Azubi hat schon ernsthaft ans Aufhören gedacht, obwohl 90 % insgesamt zufrieden sind. Häufigste Gründe: psychische Belastung (36 %), falsche Erwartungen (30 %) und die Lern- und Arbeitsbedingungen (29 %).
-- Eine bessere Alternative nennen nur 13 %. Die meisten Gründe entstehen im Betrieb und lassen sich dort auch angehen, viele davon schon vor dem ersten Arbeitstag.
-- Der wirksamste Hebel sind feste Gespräche zu festen Zeitpunkten, mit konkreten Fragen statt „Läuft alles?“. Wer erst im zweiten Lehrjahr gegensteuert, kommt oft zu spät.
+- Eine bessere Alternative nennen nur 13 %. Die meisten Gründe liegen in der Ausbildung selbst, und viele lassen sich angehen, manche schon vor dem ersten Arbeitstag.
+- Der wirksamste Hebel sind feste Gespräche zu festen Zeitpunkten, mit konkreten Fragen statt „Läuft alles?“.
 
 ![Zwei Azubis in blauen Arbeitsschürzen arbeiten an einer Elektronik-Werkbank, sie mit Schutzbrille und Smartphone, er an einer Platine](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
 Die meisten Azubis, die gehen, gehen früh. Zwei Drittel aller vorzeitig gelösten Ausbildungsverträge enden in den ersten zwölf Monaten, mehr als ein Drittel schon in der Probezeit. Wer erst im zweiten Lehrjahr gegensteuert, kommt oft zu spät.
 
-Dieser Beitrag zeigt Ihnen, worauf Sie in welchem Monat achten, welche Fragen im Gespräch wirklich etwas zutage bringen und was Sie tun, wenn ein Azubi sagt: „Ich höre auf.“
+Dieser Beitrag zeigt, worauf Sie in welchem Monat achten, welche Fragen im Gespräch etwas zutage bringen und was Sie tun, wenn ein Azubi sagt: „Ich höre auf.“
 
 ## Wann Ausbildungsverträge gelöst werden
 
@@ -4217,7 +4217,7 @@ Der [BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037) z
 
 ## Warum Azubis ans Aufhören denken
 
-Die Bertelsmann Stiftung hat für die Studie [Ausbildungsperspektiven 2026](https://www.bertelsmann-stiftung.de/de/publikationen/publikation/did/ausbildungsperspektiven-2026) im Frühjahr 2026 1.325 Azubis zwischen 15 und 25 Jahren befragt. Das Ergebnis klingt zunächst widersprüchlich:
+Die Bertelsmann Stiftung hat für die Studie [Ausbildungsperspektiven 2026](https://www.bertelsmann-stiftung.de/de/publikationen/publikation/did/ausbildungsperspektiven-2026) im Frühjahr 2026 1.325 Azubis zwischen 15 und 25 Jahren befragt, in dualer und in schulischer Ausbildung:
 
 - **90 %** sind mit ihrer Ausbildung insgesamt zufrieden, 46 % sogar sehr.
 - Jeder zweite duale Azubi ist mit seinem Ausbilder **sehr zufrieden**, weitere 38 % eher.
@@ -4225,7 +4225,7 @@ Die Bertelsmann Stiftung hat für die Studie [Ausbildungsperspektiven 2026](http
 
 Zufriedenheit schützt also nicht vor Abbruchgedanken. Ein Azubi kann sein Team mögen, seine Ausbilderin schätzen und trotzdem jeden Sonntagabend mit einem Kloß im Hals an Montag denken. Rund ein Viertel der Befragten fühlt sich häufig oder fast immer emotional belastet, rund ein Fünftel überfordert.
 
-Gefragt wurden auch die 467 Azubis, die ans Aufhören denken oder schon einmal abgebrochen haben: Was sind die Gründe? Mehrfachnennungen waren möglich.
+Die 467 Azubis, die ans Aufhören denken oder schon einmal eine Ausbildung abgebrochen haben, wurden nach den Gründen gefragt. Mehrfachnennungen waren möglich.
 
 | Grund | Anteil |
 |---|---|
@@ -4242,7 +4242,7 @@ Gefragt wurden auch die 467 Azubis, die ans Aufhören denken oder schon einmal a
 | Mobbing, Diskriminierung oder Gewalt erlebt | 17 % |
 | Eine bessere Alternative hat sich ergeben | 13 % |
 
-Die wichtigste Zeile steht ganz unten. Nur 13 % gehen, weil sich etwas Besseres ergeben hat. Die meisten Gründe entstehen in der Ausbildung selbst. Das heißt auch: Sie können etwas dagegen tun.
+Nur 13 % nennen eine bessere Alternative. Die übrigen Gründe liegen in der Ausbildung selbst, und dort können Sie ansetzen.
 
 ### Was Sie beeinflussen können und wann
 
@@ -4254,29 +4254,27 @@ Sortiert man die Gründe danach, wo ein Betrieb ansetzen kann, ergeben sich drei
 
 ## Der 12-Monats-Plan
 
-Die folgende Übersicht fasst zusammen, was in welchem Zeitraum typisch ist, woran Sie Probleme früh erkennen und was Sie konkret tun. Die Probezeit dauert je nach Vertrag einen bis vier Monate ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html)). Passen Sie die Zeilen an Ihren Vertrag an.
+Die Tabelle zeigt für jeden Zeitraum die typische Situation, das Warnsignal und was Sie tun. Die Probezeit dauert je nach Vertrag einen bis vier Monate ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html)). Passen Sie die Zeilen an Ihren Vertrag an.
 
 | Zeitraum | Typische Situation | Warnsignal | Was Sie tun |
 |---|---|---|---|
-| Zwischen Vertrag und Start | Monate ohne Kontakt, der Azubi hört nur von Freunden, wie Ausbildung „wirklich“ ist | Keine Rückmeldung auf Einladungen, Zweifel im Gespräch | Einmal melden, Ausbildungsplan und ersten Tag erklären, Kennenlerntreffen mit dem Jahrgang |
+| Zwischen Vertrag und Start | Monate ohne Kontakt, der Azubi hört nur von Freunden, wie Ausbildung „wirklich“ ist | Keine Rückmeldung auf Einladungen, Zweifel im Gespräch | Einmal im Monat melden, Ausbildungsplan und ersten Tag erklären, Kennenlerntreffen mit dem Jahrgang |
 | Woche 1 bis 2 | Neue Umgebung, viele Namen, Regeln, Schutzausrüstung | Steht oft allein, fragt nichts | Paten aus dem zweiten Lehrjahr benennen, erstes Gespräch in Woche 2 |
 | Monat 1 bis 2 | Erste Berufsschulblöcke, Theorie trifft Werkstatt | Unsicher bei Grundlagen wie dem ohmschen Gesetz, Berichtsheft bleibt leer | Kurz nachfragen, welches Thema in der Schule gerade dran ist, Berichtsheft wöchentlich ansehen |
 | Monat 3 bis 4 | Probezeit endet, die Entscheidung „bleibe ich?“ fällt oft hier | Mehr Fehltage, vage Antworten, plötzlich keine Fragen mehr | Probezeitgespräch mit konkreten Fragen, Rückmeldung in beide Richtungen |
 | Monat 5 bis 6 | Erste Noten aus der Berufsschule, erste Routine | Schlechte Noten werden verschwiegen, Rückzug im Team | Noten offen ansprechen, gezielte Hilfe statt Druck, bei Bedarf Lernförderung organisieren |
-| Monat 7 bis 9 | Alltag statt Neuheit, Motivation sinkt | Kaum Fortschritt im Lernplan, Konflikte mit Kollegen, Klagen über Arbeitszeiten | Aufgaben mit sichtbarem Ergebnis geben, Konflikte früh moderieren, Zeiten prüfen |
+| Monat 7 bis 9 | Alltag statt Neuheit, Motivation sinkt | Kaum Fortschritt im Lernplan, Konflikte mit Kollegen, Klagen über Arbeitszeiten | Aufgaben mit sichtbarem Ergebnis geben, Konflikte früh moderieren, Arbeitszeiten prüfen, bei Minderjährigen nach dem Jugendarbeitsschutzgesetz |
 | Monat 10 bis 12 | Erstes Jahr endet, Bilanz | Azubi spricht über andere Berufe oder ein Studium | Jahresgespräch: Was lief gut, was soll anders werden, was kommt im zweiten Jahr |
 
-Zwei Zeilen verdienen besondere Aufmerksamkeit.
-
-**Zwischen Vertrag und Start.** Viele Verträge werden im Frühjahr unterschrieben, die Ausbildung beginnt im August oder September. In diesen Monaten ist der Betrieb für den künftigen Azubi oft nur ein Name auf Papier. Eine Nachricht, ein Treffen, ein Foto vom Arbeitsplatz: wenig Aufwand, viel Bindung. Was in die ersten acht Wochen gehört, finden Sie in unserer [Checkliste zum Azubi-Onboarding](/de/blog/azubi-onboarding).
+**Zwischen Vertrag und Start.** Oft liegen zwischen Unterschrift und erstem Tag mehrere Monate. In dieser Zeit ist der Betrieb für den künftigen Azubi nur ein Name auf Papier. Eine Nachricht oder ein Foto vom künftigen Arbeitsplatz kostet Sie fünf Minuten. Was in die ersten acht Wochen gehört, finden Sie in unserer [Checkliste zum Azubi-Onboarding](/de/blog/azubi-onboarding).
 
 **Monat 3 bis 4.** Das Ende der Probezeit ist der letzte Zeitpunkt, an dem beide Seiten ohne Frist und ohne Begründung gehen können. Wer hier zweifelt und niemanden zum Reden hat, entscheidet oft allein.
 
 ## Gespräche, die wirken
 
-Die meisten Ausbilder führen Gespräche, wenn etwas schiefläuft. Wirksamer sind feste Termine, die stattfinden, auch wenn alles gut aussieht. Ein Rhythmus, der sich im ersten Jahr anbietet: Woche 2, Woche 6, Woche 12, danach alle drei Monate. Jeweils 20 Minuten, ohne Werkstattlärm und ohne Zeitdruck.
+Oft gibt es Gespräche erst, wenn etwas schiefläuft. Wirksamer sind feste Termine, die stattfinden, auch wenn alles gut aussieht. Ein Rhythmus, der sich im ersten Jahr anbietet: Woche 2, Woche 6, Woche 12, danach alle drei Monate. Jeweils 20 Minuten, ohne Werkstattlärm und ohne Zeitdruck.
 
-Entscheidend sind die Fragen. „Läuft alles?“ beantwortet fast jeder Azubi mit „Ja“. Besser funktionieren Fragen, auf die man nicht mit einem Wort antworten kann:
+„Läuft alles?“ beantwortet fast jeder Azubi mit „Ja“. Besser funktionieren Fragen, auf die man nicht mit einem Wort antworten kann:
 
 - „Was war diese Woche die schwierigste Aufgabe?“
 - „Bei welchem Thema in der Berufsschule kommst du gerade nicht mit?“
@@ -4285,15 +4283,15 @@ Entscheidend sind die Fragen. „Läuft alles?“ beantwortet fast jeder Azubi m
 - „Wie viel Zeit bleibt dir gerade für Dinge außerhalb der Ausbildung?“
 - „Wenn du eine Sache an deiner Ausbildung ändern könntest, welche wäre das?“
 
-Die Fragen drei bis fünf zielen direkt auf die häufigsten Abbruchgründe aus der Studie: Probleme mit Menschen, falsche Erwartungen, fehlende Zeit.
+Die Fragen drei bis fünf zielen auf drei Gründe aus der Studie: Probleme mit Menschen, falsche Erwartungen, fehlende Zeit.
 
-Zwei Regeln machen den Unterschied. Erstens: Wer fragt, muss mit der Antwort etwas tun, sonst hört das Erzählen auf. Zweitens: Für persönliche Themen braucht es eine Ansprechperson, die nicht gleichzeitig beurteilt. Das kann ein Pate, die Jugend- und Auszubildendenvertretung oder jemand aus der Personalabteilung sein.
+Tun Sie etwas mit der Antwort, sonst erzählt der Azubi beim nächsten Mal nichts mehr. Für Persönliches braucht er außerdem jemanden, der ihn nicht beurteilt: einen Paten, die Jugend- und Auszubildendenvertretung, falls es eine gibt, oder jemanden aus der Personalabteilung.
+
+Wenn ein Azubi von starker Belastung erzählt, sind Sie nicht der Therapeut. Ihre Aufgabe ist, zuzuhören und auf Hilfe hinzuweisen: Betriebsarzt, Hausarzt, die TelefonSeelsorge (0800 111 0 111) oder für Jugendliche die Nummer gegen Kummer (116 111).
 
 Damit für diese Gespräche überhaupt Zeit bleibt, müssen Ausbilder an anderer Stelle Zeit gewinnen. Sieben Ansätze dafür haben wir in [Ausbilder entlasten](/de/blog/ausbilder-entlasten) zusammengestellt.
 
 ## Wenn ein Azubi sagt: „Ich höre auf“
-
-Irgendwann kommt der Satz trotzdem. Dann helfen drei Schritte.
 
 **1. Nicht sofort reagieren, sondern fragen.** „Was ist passiert?“ bringt mehr als „Überleg dir das gut“. Oft steckt hinter dem Satz ein konkretes Problem: ein Konflikt mit einem Kollegen, ein Thema in der Berufsschule, ein privates Problem. Manches davon lässt sich lösen.
 
@@ -4302,54 +4300,54 @@ Irgendwann kommt der Satz trotzdem. Dann helfen drei Schritte.
 - In der **Probezeit** können beide Seiten jederzeit ohne Frist kündigen.
 - **Nach der Probezeit** kann ein Azubi mit vier Wochen Frist kündigen, wenn er die Ausbildung aufgeben oder einen anderen Beruf lernen will. Sonst ist eine Kündigung nur aus wichtigem Grund möglich.
 - Jede Kündigung muss **schriftlich** erfolgen, nach der Probezeit mit Angabe der Gründe. Eine E-Mail reicht nicht.
+- Bei **minderjährigen** Azubis müssen die Eltern einer Kündigung durch den Azubi zustimmen. Eine Kündigung durch den Betrieb geht an die Eltern.
+- Ein **Aufhebungsvertrag** ist jederzeit möglich, auch mit sofortiger Wirkung.
 
-Das heißt: Nach der Probezeit gibt es fast immer ein paar Wochen Zeit für ein Gespräch, eine zweite Meinung oder einen Lösungsversuch.
+Kündigt der Azubi nach der Probezeit selbst, bleiben vier Wochen. Nutzen Sie sie für ein Gespräch oder eine zweite Meinung, bevor jemand einen Aufhebungsvertrag unterschreibt. Das ist keine Rechtsberatung: Im Einzelfall helfen die Kammer oder ein Fachanwalt für Arbeitsrecht.
 
-**3. Hilfe von außen holen.** Viele Betriebe wissen nicht, dass es kostenlose Unterstützung gibt:
+**3. Hilfe von außen holen.** Diese Stellen helfen kostenlos:
 
-- **Ausbildungsberater der Kammer.** Jede IHK und HWK hat sie. Sie vermitteln bei Konflikten und kennen die Optionen, etwa einen Wechsel in einen verwandten Beruf, bei dem die bisherige Ausbildungszeit angerechnet werden kann.
+- **Ausbildungsberater der Kammer.** Jede IHK und HWK hat sie. Sie vermitteln bei Konflikten und kennen die Optionen, etwa einen Wechsel in einen verwandten Beruf, bei dem die Kammer die Ausbildungszeit auf Antrag verkürzen kann ([§ 8 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__8.html)).
 - **[VerAplus](https://vera.ses-bonn.de)** vom Senior Experten Service. Ehrenamtliche Mentoren, meist erfahrene Fachleute im Ruhestand, begleiten Azubis eins zu eins. Kostenlos für Azubis, Betriebe und Berufsschulen.
 - **[Assistierte Ausbildung](https://www.arbeitsagentur.de/bildung/ausbildung/assistierte-ausbildung)** der Agentur für Arbeit. Lernförderung und Begleitung während der Ausbildung, für Azubi und Betrieb.
 
-Und wenn der Azubi trotzdem geht: Ein ehrliches Abschlussgespräch zeigt Ihnen, was Sie beim nächsten Jahrgang anders machen sollten. Notieren Sie Zeitpunkt und Grund. Nach zwei, drei Jahrgängen sehen Sie ein Muster.
+Und wenn der Azubi trotzdem geht: Ein ehrliches Abschlussgespräch zeigt Ihnen, was Sie beim nächsten Jahrgang anders machen sollten. Halten Sie Zeitpunkt und Grund knapp fest, ohne Gesundheitsdetails und getrennt von der Personalakte. Nach zwei, drei Jahrgängen sehen Sie ein Muster.
 
-## Was ein Abbruch Ihren Betrieb kostet
+## Was ein Ausbildungsabbruch Ihren Betrieb kostet
 
-Für das Gespräch mit Geschäftsführung oder Controlling helfen zwei Zahlen aus der [BIBB-Kosten-Nutzen-Erhebung](https://www.bibb.de/de/pressemitteilung_210430.php) für das Ausbildungsjahr 2022/23: Ein Azubi kostet im Schnitt rund 26.200 € pro Jahr brutto, netto nach seiner produktiven Mitarbeit rund 8.100 €. Eine Fachkraft von außen zu gewinnen kostet im Schnitt rund 13.700 €.
+Für das Gespräch mit Geschäftsführung oder Controlling helfen zwei Zahlen aus der [BIBB-Kosten-Nutzen-Erhebung](https://www.bibb.de/de/pressemitteilung_210430.php) für das Ausbildungsjahr 2022/23: Ein Azubi kostet im Schnitt rund 26.200 € pro Jahr. Zieht man die Erträge aus seiner Mitarbeit ab, rund 18.100 €, bleiben rund 8.100 €. Eine Fachkraft von außen zu gewinnen kostet im Schnitt rund 13.700 €.
 
 Ein Azubi, der im ersten Jahr geht, kostet also doppelt: einmal die Ausbildung ohne Fachkraft am Ende, und einmal die Stelle, die Sie später doch extern besetzen. Eine Schätzung für Ihren Betrieb liefert unser [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner).
 
 ## Wo digitale Lernbegleitung hilft und wo nicht
 
-Vorweg: Bei den drei häufigsten Abbruchgründen, psychischer Belastung, falschen Erwartungen und schlechten Arbeitsbedingungen, hilft keine Software. Dafür braucht es Menschen, gute Gespräche und einen Betrieb, der zuhört. Eine Lern-App ist auch keine Hilfe bei psychischen Problemen und darf nicht so verkauft werden.
+Bei den drei häufigsten Gründen, psychischer Belastung, falschen Erwartungen und schlechten Arbeitsbedingungen, hilft keine Software, sondern nur Menschen, die zuhören.
 
 Digitale Lernbegleitung hilft an zwei anderen Stellen:
 
-- **Bei der Theorie.** Gerade in den Elektroberufen entstehen Lücken früh und wachsen mit jedem Lernfeld. Ein Tutor, der auf dem [Ausbildungsrahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) aufbaut, beantwortet Fragen auch dann, wenn gerade kein Ausbilder Zeit hat, und nennt die Quelle zu jeder Antwort. Das entlastet beim Punkt „Qualität der Vermittlung“, den 24 % der Azubis mit Abbruchgedanken nennen.
+- **Bei der Theorie.** In den Elektroberufen bauen viele Themen aufeinander auf, wer früh eine Lücke hat, trägt sie mit. Ein Tutor, der auf dem [Ausbildungsrahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) aufbaut, beantwortet Fachfragen auch dann, wenn gerade kein Ausbilder Zeit hat, und nennt die Quelle zu jeder Antwort. Das setzt bei einem Grund an, den 24 % nennen: der Qualität der Vermittlung.
 - **Beim frühen Erkennen.** Wenn Ausbilder den Lernstand jedes Azubis im Abgleich mit dem Lernplan sehen, fällt auf, wer seit Wochen nicht weiterkommt. Das ersetzt kein Gespräch, aber es sagt Ihnen, mit wem Sie es zuerst führen sollten. Ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) liefert ähnliche Signale früher als der Papierordner am Monatsende.
 
-Dass der Ansatz ernst genommen wird, zeigt auch das vom BIBB geförderte Projekt MEKI: IHKs und Hochschulen in Baden-Württemberg und Bayern entwickeln dort KI-Unterstützung für den Berufsschulstoff in Berufen mit hohen Lösungsquoten.
+Einen ähnlichen Ansatz verfolgt das Projekt MEKI aus dem Förderprogramm InnoVET PLUS: Die IHKs Reutlingen und Region Stuttgart entwickeln dort mit Hochschulen aus Stuttgart und München KI-Unterstützung für den Berufsschulstoff in Berufen mit hohen Abbruchquoten und Fachkräftemangel, zuerst für IT-Systemelektroniker.
 
-Wichtig ist, wie Sie solche Werkzeuge einführen: als Unterstützung, nicht als Kontrolle. Daten zum Lernfortschritt sind ein Thema für die Mitbestimmung, binden Sie den Betriebsrat deshalb von Anfang an ein. Wie das in einer Branche mit besonders hohen Anforderungen an Datenschutz und Sicherheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie).
+Wichtig ist, wie Sie solche Werkzeuge einführen: als Unterstützung, nicht als Kontrolle. Daten zum Lernfortschritt sind ein Thema für die Mitbestimmung (§ 87 Abs. 1 Nr. 6 BetrVG), binden Sie den Betriebsrat deshalb von Anfang an ein. Ohne Betriebsrat informieren Sie die Azubis vorab schriftlich, wer welche Lerndaten sieht. Wie das in einer Branche mit besonders hohen Anforderungen an Datenschutz und Sicherheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie).
 
 ## Ihr Plan für den nächsten Jahrgang
 
-Wenn Sie nur fünf Dinge mitnehmen:
-
-1. **Melden Sie sich zwischen Vertrag und Start.** Ein Kontakt pro Monat reicht.
+1. **Melden Sie sich zwischen Vertrag und Start,** einmal im Monat.
 2. **Legen Sie die Gesprächstermine jetzt fest:** Woche 2, 6 und 12, dann alle drei Monate.
 3. **Stellen Sie offene Fragen** und tun Sie etwas mit den Antworten.
 4. **Kennen Sie die Hilfen von außen,** bevor Sie sie brauchen: Ausbildungsberater, VerAplus, Assistierte Ausbildung.
-5. **Notieren Sie bei jeder Vertragslösung Zeitpunkt und Grund.** Nur so sehen Sie, wo Ihr Betrieb ansetzen muss.
+5. **Halten Sie bei jeder Vertragslösung Zeitpunkt und Grund fest,** knapp und ohne Gesundheitsdetails. Nur so sehen Sie, wo Ihr Betrieb ansetzen muss.
 
 ## Quellen
 
-Alle Zahlen in diesem Beitrag stammen aus den folgenden Quellen. Geprüft am 13. Oktober 2026.
+Alle Zahlen in diesem Beitrag stammen aus den folgenden Quellen, die Nettokosten pro Azubi haben wir aus den BIBB-Werten berechnet. Geprüft am 13. Oktober 2026.
 
-- BIBB: [Datenreport zum Berufsbildungsbericht 2026](https://www.bibb.de/dienst/publikationen/de/21037), Kapitel A5.6 (vorzeitige Vertragslösungen) und C3 (Projekt MEKI)
+- BIBB: [Datenreport zum Berufsbildungsbericht 2026](https://www.bibb.de/dienst/publikationen/de/21037), Kapitel A5.6 (vorzeitige Vertragslösungen) und C4 (Projekt MEKI)
 - Bertelsmann Stiftung: [Ausbildungsperspektiven 2026](https://doi.org/10.11586/2026062), Juli 2026. Befragung von 1.325 Azubis zwischen 15 und 25 Jahren, 11. März bis 20. April 2026
 - BIBB: [Kosten und Nutzen der Ausbildung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)
-- Berufsbildungsgesetz: [§ 20 Probezeit](https://www.gesetze-im-internet.de/bbig_2005/__20.html), [§ 22 Kündigung](https://www.gesetze-im-internet.de/bbig_2005/__22.html)
+- Berufsbildungsgesetz: [§ 8 Verkürzung](https://www.gesetze-im-internet.de/bbig_2005/__8.html), [§ 20 Probezeit](https://www.gesetze-im-internet.de/bbig_2005/__20.html), [§ 22 Kündigung](https://www.gesetze-im-internet.de/bbig_2005/__22.html)
 
 
 ## Häufig gestellte Fragen
@@ -4368,7 +4366,7 @@ Nein. Die Lösungsquote zählt vorzeitig gelöste Ausbildungsverträge. Etwa die
 
 ### Kann ein Azubi nach der Probezeit einfach kündigen?
 
-In der Probezeit können beide Seiten jederzeit ohne Frist kündigen. Danach kann ein Azubi mit vier Wochen Frist kündigen, wenn er die Berufsausbildung aufgeben oder einen anderen Beruf lernen will, und sonst nur aus wichtigem Grund. Die Kündigung muss schriftlich sein, nach der Probezeit mit Angabe der Gründe (§ 22 BBiG).
+In der Probezeit können beide Seiten jederzeit ohne Frist kündigen. Danach kann ein Azubi mit vier Wochen Frist kündigen, wenn er die Berufsausbildung aufgeben oder einen anderen Beruf lernen will, und sonst nur aus wichtigem Grund. Die Kündigung muss schriftlich sein, nach der Probezeit mit Angabe der Gründe (§ 22 BBiG). Bei minderjährigen Azubis müssen die Eltern zustimmen.
 
 ### Wo bekommen Betriebe kostenlose Unterstützung, wenn ein Azubi zu scheitern droht?
 
@@ -7381,7 +7379,7 @@ Neue Azubis können nicht in der ersten Woche alles lernen. Strukturieren Sie di
 
 ### Fehler 3: Kein Feedback in den ersten Wochen
 
-Azubis brauchen frühzeitige Rückmeldung. Warten Sie nicht bis zum Ende der Probezeit. Regelmäßige kurze Check-ins sind deutlich wirksamer als ein einziges großes Gespräch.
+Azubis brauchen frühzeitige Rückmeldung. Warten Sie nicht bis zum Ende der Probezeit. Regelmäßige kurze Check-ins sind deutlich wirksamer als ein einziges großes Gespräch. Welche Fragen in diesen Gesprächen wirklich etwas zutage bringen, steht in unserem Plan gegen den [Ausbildungsabbruch im ersten Jahr](/de/blog/ausbildungsabbruch-verhindern).
 
 ### Fehler 4: Digitale Tools ignorieren
 
