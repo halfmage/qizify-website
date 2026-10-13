@@ -38,7 +38,7 @@ const pains = [
 	},
 	{
 		icon: 'hugeicons:shield-key',
-		quote: 'Ein US-Cloud-Tool kommt bei uns nicht durchs Security-Gate.',
+		quote: 'Ein US-Cloud-Tool kommt bei uns nicht durchs Security‑Gate.',
 		fact: 'Zu Recht. Wo die Daten liegen, wer darauf zugreift und welches Modell antwortet, entscheidet über jede digitale Lernhilfe.',
 	},
 	{
@@ -219,10 +219,12 @@ const faqItems = [
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
 				{pains.map((p, i) => (
 					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-7 group hover:bg-surface-hover transition-colors duration-200`}>
-						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
-							<Icon name={p.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+						<div class="flex items-start gap-3 mb-3">
+							<div class={`w-11 h-11 rounded-lg flex items-center justify-center shrink-0 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+								<Icon name={p.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+							</div>
+							<p class="text-base font-semibold text-white leading-snug m-0 pt-0.5">{p.quote}</p>
 						</div>
-						<p class="text-base font-semibold text-white leading-snug mb-3">{p.quote}</p>
 						<p class="text-sm text-muted leading-relaxed m-0">{p.fact}</p>
 					</div>
 				))}
@@ -241,10 +243,12 @@ const faqItems = [
 			<div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
 				{features.map((f, i) => (
 					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-8 group hover:bg-surface-hover transition-colors duration-200`}>
-						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
-							<Icon name={f.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+						<div class="flex items-center gap-3 mb-3">
+							<div class={`w-11 h-11 rounded-lg flex items-center justify-center shrink-0 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+								<Icon name={f.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+							</div>
+							<h3 class="text-base font-semibold text-white m-0">{f.title}</h3>
 						</div>
-						<h3 class="text-base font-semibold text-white mb-2">{f.title}</h3>
 						<p class="text-sm text-muted leading-relaxed m-0">{f.body}</p>
 					</div>
 				))}
@@ -281,16 +285,18 @@ const faqItems = [
 		<div class="max-w-container mx-auto">
 			<div class="text-center mb-14 max-w-2xl mx-auto">
 				<span class="section-label mb-4 block">Bevor Ihre IT-Sicherheit fragt</span>
-				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Die Antworten für Ihr Security-Gate</h2>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">Die Antworten für Ihr Security‑Gate</h2>
 				<p class="text-base text-muted leading-relaxed m-0">In der Verteidigungsindustrie beginnt jede digitale Lernhilfe mit denselben Fragen. Hier sind unsere Antworten.</p>
 			</div>
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
 				{security.map((s, i) => (
 					<div class={`card-hover-glow ${i % 2 === 0 ? 'card-hover-glow-primary' : 'card-hover-glow-accent'} bg-surface p-7 group hover:bg-surface-hover transition-colors duration-200`}>
-						<div class={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
-							<Icon name={s.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+						<div class="flex items-center gap-3 mb-3">
+							<div class={`w-11 h-11 rounded-lg flex items-center justify-center shrink-0 ${i % 2 === 0 ? 'bg-primary/10' : 'bg-accent/10'} group-hover:scale-110 transition-transform duration-200`}>
+								<Icon name={s.icon} class={`w-5 h-5 ${i % 2 === 0 ? 'text-primary' : 'text-accent'}`} />
+							</div>
+							<h3 class="text-base font-semibold text-white m-0">{s.title}</h3>
 						</div>
-						<h3 class="text-base font-semibold text-white mb-2">{s.title}</h3>
 						<p class="text-sm text-muted leading-relaxed m-0">{s.body}</p>
 					</div>
 				))}
