@@ -11,7 +11,7 @@ heroImage: "/images/blog/pexels-mikhail-nilov-9242206.webp"
 keyTakeaways:
   - "Mechatronics apprentices learn mechanical, electrical, fluid power and controls at the same time. In Germany's curriculum, year one alone covers five learning fields and 320 lesson hours."
   - "Most of an apprenticeship happens at work. A US registered apprenticeship recommends 144 hours of related instruction a year, and the English mechatronics standard sets a minimum of 744 off-the-job hours over about 42 months. Theory questions come up on the shop floor, between classes."
-  - "AI tutors can close that gap or widen it. In a PNAS study, students with plain ChatGPT did 17% worse on a later exam without AI. A version that gave hints instead of answers removed that harm, and a structured tutor at Harvard more than doubled learning gains."
+  - "AI tutors can close that gap or widen it. In a PNAS study, students with plain ChatGPT did 17% worse on a later exam without AI. A version that gave hints instead of answers removed that harm, and a structured tutor at Harvard more than doubled learning gains compared with an active-learning class."
 faq:
   - q: "How long is a mechatronics apprenticeship?"
     a: "It depends on the country. In Germany, the Mechatroniker apprenticeship takes three and a half years. The US Department of Labor lists the Mechatronics Technician registered apprenticeship with a training term of 8,000 hours. In England, the Level 3 Mechatronics maintenance technician standard has a typical duration of 42 months."
@@ -20,7 +20,7 @@ faq:
   - q: "Do AI tutors actually help apprentices learn?"
     a: "The evidence so far comes from schools, universities and one workplace study, not from apprenticeships themselves. It points one way: AI that hands out answers makes learners faster but can hurt what they retain, while tutors designed to give hints, scaffold the steps and stick to verified content have matched or beaten conventional teaching. Design decides the result."
   - q: "Should apprentices be allowed to use ChatGPT?"
-    a: "Germany's Federal Institute for Vocational Education and Training (BIBB) concludes that bans are neither practical nor sensible, because generative AI is already part of apprentices' working day. The better question is which tool they use: one that gives finished answers, or one that asks what they have tried and points to the source in their learning material."
+    a: "After a study with IT apprentices, researchers at Germany's Federal Institute for Vocational Education and Training (BIBB) concluded that bans are neither practical nor sensible, because generative AI was already part of those apprentices' working day. The better question is which tool they use: one that gives finished answers, or one that asks what they have tried and points to the source in their learning material."
 ctaFooter:
   label: "For training leads"
   headline: "A tutor that asks first"
@@ -32,7 +32,7 @@ import StackedTable from '../../components/StackedTable.astro';
 
 ![An apprentice in safety glasses and a blue work apron operates a CNC milling machine in a training workshop](/images/blog/pexels-mikhail-nilov-9242206.webp)
 
-A mechatronics apprentice learns several trades at once: mechanical, electrical, fluid power, controls. Most of that learning happens on the shop floor, and the classroom hours are few. So the theory questions come up at work, often when no trainer has time to answer them.
+A mechatronics apprentice learns several trades at once: mechanical, electrical, fluid power, controls. Most of that learning happens on the shop floor, and the classroom hours are few. So many theory questions come up at work, where a trainer is not always free to answer them.
 
 This article shows what year one actually demands, how little instruction time apprentices get in Germany, the US and England, and what the research says about AI tutors filling the gap. It ends with three questions to test any AI tool before your apprentices use it.
 
@@ -49,11 +49,11 @@ Mechatronics apprenticeships look different in each country, but they share one 
   ]}
 />
 
-The definitions differ, so read the numbers as orders of magnitude, not as a league table. The point holds anyway: in every system, an apprentice spends most of the week at work, and most theory questions come up there.
+The definitions differ, so read the numbers as orders of magnitude, not as a league table. The point holds anyway: in every system, an apprentice spends most of their time at work, and most theory questions come up there.
 
 ## What year one demands: the German curriculum as a reference
 
-Germany's curriculum is the most detailed public description of what a mechatronics apprentice has to learn, which makes it a useful reference wherever you train. The [KMK framework curriculum](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) packs five learning fields and 320 lesson hours into year one, more than any later year.
+Germany's curriculum is public and spells out, year by year, what a mechatronics apprentice has to learn, which makes it a useful reference wherever you train. The [KMK framework curriculum](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) packs five learning fields and 320 lesson hours into year one, more than any later year.
 
 <StackedTable
   headers={["Learning field (hours)", "What the curriculum requires", "How to check it on the shop floor"]}
@@ -72,19 +72,19 @@ Early gaps also cost later. German mechatronics apprentices sit Part 1 of their 
 
 ## What the research says about AI tutors
 
-Many apprentices already use AI. Germany's BIBB finds generative AI is already firmly part of apprentices' working day. The question is what it does to their learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
+In a study of IT apprentices, researchers at Germany's Federal Institute for Vocational Education and Training (BIBB) found generative AI already firmly part of their working day. The question is what it does to learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
 
 <StackedTable
   headers={["Study", "Setting", "What happened", "Lesson for apprentice training"]}
   rows={[
     ["BIBB experiment, Germany (Datenreport 2026, C3.3)", "27 second-year IT apprentices, with and without ChatGPT", "The ChatGPT group solved more tasks, faster, with less frustration, but understood code no better and on some tasks worse. Many copied AI code unchecked.", "Speed is not understanding"],
     ["Bastani et al., PNAS 2025", "Nearly 1,000 high school maths students in Turkey, randomised by class", "Plain ChatGPT: 48% better in practice, 17% worse on the later exam without AI. Hint-only tutor: 127% better in practice, no harm on the exam, but no gain either.", "An answer machine can hurt; guardrails remove the harm"],
-    ["Kestin et al., Scientific Reports 2025", "194 Harvard physics students, AI tutor at home vs active-learning class", "Median learning gains more than double the in-class group, in less time (median 49 minutes with the tutor vs a 60-minute lesson).", "A carefully designed tutor can teach well"],
+    ["Kestin et al., Scientific Reports 2025", "194 students in a Harvard physics course, AI tutor at home vs active-learning class", "Median learning gains more than double the in-class group, in less time (median 49 minutes with the tutor vs a 60-minute lesson).", "A carefully designed tutor can teach well"],
     ["Brynjolfsson et al., QJE 2025", "5,172 customer support agents, AI assistant rolled out over time", "Productivity up 15% on average and about 30% for less experienced agents. Agents with two months on the job performed like untreated agents with over six.", "Novices gain most, and the gains stuck when the AI was down"]
   ]}
 />
 
-None of these is an apprenticeship study, and each has limits: one school, two physics lessons, one company. Together they point the same way. **What decides the result is not whether learners use AI, but what the AI is built to do.**
+None of these is an apprenticeship study, and each has limits: 27 apprentices, one school, two physics lessons, one company. Together they point the same way. **What decides the result is not whether learners use AI, but what the AI is built to do.**
 
 The Turkish study shows the mechanism. The most common message in the plain ChatGPT group was "What is the answer?", and many students copied what came back. When the researchers asked that question about the session problems, the model was right only about half the time, and the students did not notice that they had learned less. The tutor version was told to give hints, not answers, and was given the teachers' correct solutions to work from.
 
@@ -110,7 +110,7 @@ Before apprentices use a tool officially, give it three tasks yourself:
 2. **A question about your own material,** such as a machine or a work instruction from your site. Does it answer from your documents with a source, or guess from general knowledge?
 3. **A question your material does not answer.** Does it say it does not know, or invent something plausible?
 
-A tool that calculates instantly on question 1 and invents on question 3 will make apprentices faster, not competent. For the data protection side of choosing a tool, see our [checklist for GDPR compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers).
+A tool that calculates instantly on question 1 and invents on question 3 can make apprentices faster without making them understand more, which is the pattern in the studies above. For the data protection side of choosing a tool, see our [checklist for GDPR compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers).
 
 ## Where LearnSlice fits
 

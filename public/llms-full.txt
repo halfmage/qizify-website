@@ -432,11 +432,11 @@ What year one of a mechatronics apprenticeship demands, how little classroom tim
 
 - Mechatronics apprentices learn mechanical, electrical, fluid power and controls at the same time. In Germany's curriculum, year one alone covers five learning fields and 320 lesson hours.
 - Most of an apprenticeship happens at work. A US registered apprenticeship recommends 144 hours of related instruction a year, and the English mechatronics standard sets a minimum of 744 off-the-job hours over about 42 months. Theory questions come up on the shop floor, between classes.
-- AI tutors can close that gap or widen it. In a PNAS study, students with plain ChatGPT did 17% worse on a later exam without AI. A version that gave hints instead of answers removed that harm, and a structured tutor at Harvard more than doubled learning gains.
+- AI tutors can close that gap or widen it. In a PNAS study, students with plain ChatGPT did 17% worse on a later exam without AI. A version that gave hints instead of answers removed that harm, and a structured tutor at Harvard more than doubled learning gains compared with an active-learning class.
 
 ![An apprentice in safety glasses and a blue work apron operates a CNC milling machine in a training workshop](/images/blog/pexels-mikhail-nilov-9242206.webp)
 
-A mechatronics apprentice learns several trades at once: mechanical, electrical, fluid power, controls. Most of that learning happens on the shop floor, and the classroom hours are few. So the theory questions come up at work, often when no trainer has time to answer them.
+A mechatronics apprentice learns several trades at once: mechanical, electrical, fluid power, controls. Most of that learning happens on the shop floor, and the classroom hours are few. So many theory questions come up at work, where a trainer is not always free to answer them.
 
 This article shows what year one actually demands, how little instruction time apprentices get in Germany, the US and England, and what the research says about AI tutors filling the gap. It ends with three questions to test any AI tool before your apprentices use it.
 
@@ -444,11 +444,11 @@ This article shows what year one actually demands, how little instruction time a
 
 Mechatronics apprenticeships look different in each country, but they share one feature: the job is the main classroom. The table puts the three systems side by side.
 
-The definitions differ, so read the numbers as orders of magnitude, not as a league table. The point holds anyway: in every system, an apprentice spends most of the week at work, and most theory questions come up there.
+The definitions differ, so read the numbers as orders of magnitude, not as a league table. The point holds anyway: in every system, an apprentice spends most of their time at work, and most theory questions come up there.
 
 ## What year one demands: the German curriculum as a reference
 
-Germany's curriculum is the most detailed public description of what a mechatronics apprentice has to learn, which makes it a useful reference wherever you train. The [KMK framework curriculum](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) packs five learning fields and 320 lesson hours into year one, more than any later year.
+Germany's curriculum is public and spells out, year by year, what a mechatronics apprentice has to learn, which makes it a useful reference wherever you train. The [KMK framework curriculum](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) packs five learning fields and 320 lesson hours into year one, more than any later year.
 
 Two details are easy to miss. The curriculum teaches maths and technical English inside the learning fields, not as separate ones, and it builds on the lowest German school-leaving certificate. And English appears in all five fields, from vocabulary to product manuals. An apprentice who struggles with either struggles a little everywhere.
 
@@ -456,9 +456,9 @@ Early gaps also cost later. German mechatronics apprentices sit Part 1 of their 
 
 ## What the research says about AI tutors
 
-Many apprentices already use AI. Germany's BIBB finds generative AI is already firmly part of apprentices' working day. The question is what it does to their learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
+In a study of IT apprentices, researchers at Germany's Federal Institute for Vocational Education and Training (BIBB) found generative AI already firmly part of their working day. The question is what it does to learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
 
-None of these is an apprenticeship study, and each has limits: one school, two physics lessons, one company. Together they point the same way. **What decides the result is not whether learners use AI, but what the AI is built to do.**
+None of these is an apprenticeship study, and each has limits: 27 apprentices, one school, two physics lessons, one company. Together they point the same way. **What decides the result is not whether learners use AI, but what the AI is built to do.**
 
 The Turkish study shows the mechanism. The most common message in the plain ChatGPT group was "What is the answer?", and many students copied what came back. When the researchers asked that question about the session problems, the model was right only about half the time, and the students did not notice that they had learned less. The tutor version was told to give hints, not answers, and was given the teachers' correct solutions to work from.
 
@@ -484,7 +484,7 @@ Before apprentices use a tool officially, give it three tasks yourself:
 2. **A question about your own material,** such as a machine or a work instruction from your site. Does it answer from your documents with a source, or guess from general knowledge?
 3. **A question your material does not answer.** Does it say it does not know, or invent something plausible?
 
-A tool that calculates instantly on question 1 and invents on question 3 will make apprentices faster, not competent. For the data protection side of choosing a tool, see our [checklist for GDPR compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers).
+A tool that calculates instantly on question 1 and invents on question 3 can make apprentices faster without making them understand more, which is the pattern in the studies above. For the data protection side of choosing a tool, see our [checklist for GDPR compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers).
 
 ## Where LearnSlice fits
 
@@ -534,7 +534,7 @@ The evidence so far comes from schools, universities and one workplace study, no
 
 ### Should apprentices be allowed to use ChatGPT?
 
-Germany's Federal Institute for Vocational Education and Training (BIBB) concludes that bans are neither practical nor sensible, because generative AI is already part of apprentices' working day. The better question is which tool they use: one that gives finished answers, or one that asks what they have tried and points to the source in their learning material.
+After a study with IT apprentices, researchers at Germany's Federal Institute for Vocational Education and Training (BIBB) concluded that bans are neither practical nor sensible, because generative AI was already part of those apprentices' working day. The better question is which tool they use: one that gives finished answers, or one that asks what they have tried and points to the source in their learning material.
 
 ---
 
@@ -4514,11 +4514,11 @@ Fünf Lernfelder, 320 Stunden, Metall und Elektro gleichzeitig: Was Mechatronike
 
 - Im ersten Jahr sieht der Rahmenlehrplan fünf Lernfelder mit 320 Stunden vor: Mechanik, Elektrotechnik mit Berechnungen, Pneumatik und Hydraulik mit Steuerungstechnik, dazu Datenverarbeitung. Englisch nennt der Plan in allen fünf.
 - Teil 1 der Abschlussprüfung findet vor Ende des zweiten Jahres statt und zählt 40 % der Gesamtnote. Lücken aus dem ersten Jahr landen also direkt im Abschlusszeugnis.
-- KI macht Azubis schneller, aber nicht automatisch klüger: In einem BIBB-Experiment lösten Azubis mit ChatGPT mehr Aufgaben, verstanden den Code aber nicht besser. Entscheidend ist, ob ein Werkzeug Lösungen ausgibt oder erst Fragen stellt.
+- KI kann Azubis schneller machen, ohne dass sie mehr verstehen: In einem BIBB-Experiment lösten Azubis mit ChatGPT mehr Aufgaben, verstanden den Code aber nicht besser. Entscheidend ist, ob ein Werkzeug Lösungen ausgibt oder erst Fragen stellt.
 
 ![Ein Azubi mit Schutzbrille und blauer Arbeitsschürze bedient eine CNC-Fräse in einer Lehrwerkstatt](/images/blog/pexels-mikhail-nilov-9242206.webp)
 
-Ein Mechatroniker lernt in dreieinhalb Jahren zwei Welten: Metall und Elektro. Im ersten Jahr kommt beides gleichzeitig, dazu Pneumatik, Hydraulik, Steuerungstechnik und Datenverarbeitung. Für viele Azubis ist das der Moment, in dem die Theorie davonläuft.
+Ein Mechatroniker lernt in dreieinhalb Jahren zwei Welten: Metall und Elektro. Im ersten Jahr kommt beides gleichzeitig, dazu Pneumatik, Hydraulik, Steuerungstechnik und Datenverarbeitung. Das ist viel Theorie für ein einziges Jahr.
 
 Diese Übersicht zeigt, was der Rahmenlehrplan im ersten Jahr konkret verlangt, woran Sie in der Werkstatt erkennen, ob es sitzt, und warum KI dabei helfen oder schaden kann.
 
@@ -4526,7 +4526,7 @@ Diese Übersicht zeigt, was der Rahmenlehrplan im ersten Jahr konkret verlangt, 
 
 Der [Rahmenlehrplan der KMK](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) sieht für das erste Jahr fünf Lernfelder vor. Zusammen sind es 320 Unterrichtsstunden, mehr als in jedem anderen Ausbildungsjahr. Er baut auf dem Hauptschulabschluss auf. Mathematik, Naturwissenschaften und Fachenglisch vermittelt er innerhalb der Lernfelder, nicht als eigene Lernfelder.
 
-Die Tabelle zeigt pro Lernfeld, was der Plan verlangt, und eine Frage, mit der Sie in der Werkstatt prüfen, ob es angekommen ist. Offizielle Zahlen dazu, wo Mechatroniker-Azubis am häufigsten scheitern, gibt es nicht. Die Prüfstatistik erfasst nur Abschlussprüfungen, keine einzelnen Teile.
+Die Tabelle zeigt pro Lernfeld, was der Plan verlangt, und eine Frage, mit der Sie in der Werkstatt prüfen, ob es angekommen ist. Offizielle Zahlen dazu, wo Mechatroniker-Azubis am häufigsten scheitern, haben wir nicht gefunden. Die [Berufsbildungsstatistik](https://www.bibb.de/dokumente/pdf/dazubi_daten.pdf) erfasst nur Abschlussprüfungen, keine Teilprüfungen.
 
 Was in der Tabelle leicht untergeht: In allen fünf Lernfeldern nennt der Plan Englisch, von Fachbegriffen bis zu Handbüchern. Wer mit Englisch kämpft, kämpft also nicht in einem Lernfeld, sondern überall ein bisschen.
 
@@ -4540,15 +4540,15 @@ Teil 1 zählt 40 % der Gesamtnote und hat keine eigene Bestehensgrenze. Teil 2 v
 
 Für Sie heißt das: Wer im ersten Jahr Elektrotechnik oder Pneumatik nur halb versteht, verliert nicht nur Zeit. Er verliert Punkte, die er in Teil 2 erst wieder aufholen muss.
 
-Dazu kommt ein Hinweis aus der Praxis. In einem [BIBB-Workshop zu den industriellen Elektroberufen](https://www.bibb.de/dienst/dapro/daprodocs/verweise/so_42395%205%20workshopmitanlagen.pdf) nannten Fachleute 2012 als Schwierigkeit, dass der mechanische Anteil zum Prüfungszeitpunkt oft „nicht mehr präsent“ sei. Das ist eine Einschätzung, keine Messung. Sie passt aber zur Struktur: Was im ersten Jahr nur einmal drankommt, ist bis zur Prüfung oft vergessen.
+Dazu kommt ein Hinweis aus der Praxis. In einem [BIBB-Workshop zu den industriellen Elektroberufen](https://www.bibb.de/dienst/dapro/daprodocs/verweise/so_42395%205%20workshopmitanlagen.pdf) nannten Fachleute 2012 als Schwierigkeit, dass der mechanische Anteil zum Prüfungszeitpunkt oft „nicht mehr präsent“ sei. Das ist eine Einschätzung, keine Messung. Sie passt aber zur Struktur der Prüfung: Teil 1 fragt Stoff ab, den die Azubis teils schon im ersten Ausbildungsjahr gelernt haben.
 
 ## Wer bei Ihnen anfängt
 
-Mechatroniker ist einer der großen Industrieberufe. Laut [BIBB-Datenblatt](https://www.bibb.de/dienst/dazubi/dazubi/datasheet/download/30-7640.pdf) waren Ende 2024 bundesweit 28.080 Azubis in Ausbildung, 8.874 Verträge kamen 2024 neu dazu.
+Laut [BIBB-Datenblatt](https://www.bibb.de/dienst/dazubi/dazubi/datasheet/download/30-7640.pdf) waren Ende 2024 bundesweit 28.080 Azubis in Ausbildung, 8.874 Verträge kamen 2024 neu dazu.
 
-Die Vorbildung ist gemischt. Von den neuen Azubis 2024 hatten rund 61 % einen mittleren Schulabschluss und rund 32 % Abitur oder Fachhochschulreife, knapp 5 % den ersten Schulabschluss. In einer Berufsschulklasse sitzen also Azubis, die Physik aus der Oberstufe mitbringen, neben anderen, die zum ersten Mal mit Formeln umstellen.
+Die Vorbildung ist gemischt. Von den neuen Azubis 2024 hatten rund 61 % einen mittleren Schulabschluss und rund 32 % Abitur oder Fachhochschulreife, knapp 5 % den ersten Schulabschluss. Die Ausgangslage in einer Berufsschulklasse kann also sehr unterschiedlich sein.
 
-Die Abschlussprüfung bestehen am Ende fast alle: Die Erfolgsquote lag 2024 bei 96,0 % aller Prüfungsteilnahmen. Das Problem liegt davor. Die Lösungsquote, also der Anteil vorzeitig gelöster Verträge, stieg von 10,5 % (2022) über 12,9 % (2023) auf 14,5 % (2024). Das ist keine Abbruchquote, denn viele setzen ihre Ausbildung anderswo fort. Für den Betrieb ist die Investition trotzdem verloren. Wann und warum Verträge gelöst werden, zeigen wir in [Ausbildungsabbruch verhindern](/de/blog/ausbildungsabbruch-verhindern).
+Die Abschlussprüfung bestehen am Ende fast alle: Die Erfolgsquote lag 2024 bei 96,0 % aller Prüfungsteilnahmen. Vorher sieht es anders aus. Die Lösungsquote, also der Anteil vorzeitig gelöster Verträge, stieg von 10,5 % (2022) über 12,9 % (2023) auf 14,5 % (2024). Das ist keine Abbruchquote, denn viele setzen ihre Ausbildung anderswo fort. Für den Betrieb ist die Investition trotzdem verloren. Wann und warum Verträge gelöst werden, zeigen wir in [Ausbildungsabbruch verhindern](/de/blog/ausbildungsabbruch-verhindern).
 
 ## Fünf Dinge, die Ausbilder im ersten Jahr tun können
 
@@ -4562,20 +4562,20 @@ Die Abschlussprüfung bestehen am Ende fast alle: Die Erfolgsquote lag 2024 bei 
 
 **5. Halten Sie Lücken wöchentlich fest, nicht erst zum Zeugnis.** Ein kurzer Blick ins Berichtsheft und eine Frage zum aktuellen Berufsschulthema reichen. Wie ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) dabei hilft und wo Sie dafür Zeit gewinnen, steht in [Ausbilder entlasten](/de/blog/ausbilder-entlasten).
 
-## KI macht Azubis schneller, aber nicht automatisch klüger
+## KI kann schneller machen, ohne klüger zu machen
 
 Viele Beschäftigte nutzen KI, ob der Betrieb es geregelt hat oder nicht. In der [DiWaBe-Befragung 2024](https://www.bibb.de/dienst/publikationen/de/21037) gaben rund 60 % der Beschäftigten, die KI-Anwendungen nutzen, an, dass diese nicht offiziell vom Arbeitgeber eingeführt wurden.
 
-Was das fürs Lernen bedeutet, hat das BIBB untersucht. Im [Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037) (Kapitel C3.3) beschreiben Manuel Merkel und Jens Dörpinghaus ein Experiment mit 27 Fachinformatik-Azubis im zweiten Jahr. Eine Gruppe durfte ChatGPT nutzen, die andere nicht. Die Gruppe mit KI löste mehr Aufgaben, schneller und mit weniger Frust. Beim Verständnis von Programmcode zeigte sie aber keinen Vorteil, bei einzelnen Aufgaben schnitt sie sogar schlechter ab. Viele übernahmen den KI-Code, ohne ihn zu prüfen.
+Was KI beim Lernen bewirkt, zeigt ein Experiment im [Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037) des BIBB (Kapitel C3.3). Manuel Merkel und Jens Dörpinghaus ließen 27 Fachinformatik-Azubis im zweiten Jahr typische Aufgaben aus der Softwareentwicklung bearbeiten. Eine Gruppe durfte ChatGPT nutzen, die andere nicht. Die Gruppe mit KI löste mehr Aufgaben, schneller und mit weniger Frust. Beim Verständnis von Programmcode zeigte sie aber keinen Vorteil, bei einzelnen Aufgaben schnitt sie sogar schlechter ab. Viele übernahmen den KI-Code, ohne ihn zu prüfen.
 
 Das ist eine IT-Studie, kein Mechatroniker-Experiment. Ein größeres Experiment an einer Schule in der Türkei mit rund 1.000 Schülern zeigt aber dasselbe Muster ([Bastani et al., PNAS 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/)):
 
 - Mit einem normalen ChatGPT-Zugang schnitten Schüler beim Üben 48 % besser ab, in der anschließenden Prüfung ohne KI aber 17 % schlechter als die Vergleichsgruppe. Viele hatten sich Lösungen geben lassen und abgeschrieben.
 - Mit einer Tutor-Version, die nur Hinweise gibt und keine fertigen Lösungen, schnitten sie beim Üben 127 % besser ab. In der Prüfung waren sie so gut wie die Vergleichsgruppe, nicht schlechter, aber auch nicht besser.
 
-Die Lehre für die Ausbildung: Entscheidend ist nicht, ob Azubis KI nutzen, sondern welche. Das BIBB hält Verbote ohnehin weder für praktikabel noch für sinnvoll, weil generative KI im Arbeitsalltag der Azubis bereits fest verankert ist. Die Frage ist, ob ein Werkzeug Lösungen ausgibt oder erst fragt, was der Azubi schon versucht hat, und auf die Stelle im Lernmaterial verweist.
+Die Lehre für die Ausbildung: Entscheidend ist nicht, ob Azubis KI nutzen, sondern welche. Die Autoren der BIBB-Studie halten Verbote ohnehin weder für praktikabel noch für sinnvoll, weil generative KI im Arbeitsalltag der untersuchten Azubis bereits fest verankert war. Die Frage ist, ob ein Werkzeug Lösungen ausgibt oder erst fragt, was der Azubi schon versucht hat, und auf die Stelle im Lernmaterial verweist.
 
-Auch in der Verteidigungsindustrie ist Lernen mit digitalem Anteil längst normal. [Quantum Systems](https://quantum-systems.com/news/lufabw-certification/) bildet Drohnenpiloten der Bundeswehr nach eigenen Angaben mit einem firmeneigenen Lernsystem aus und verkürzt so die praktische Ausbildung auf zehn Arbeitstage.
+Ein Beispiel aus der Verteidigungsindustrie: [Quantum Systems](https://quantum-systems.com/news/lufabw-certification/) bildet Drohnenpiloten der Bundeswehr nach eigenen Angaben mit einem firmeneigenen Lernsystem aus und verkürzt so die praktische Ausbildung auf zehn Arbeitstage.
 
 ## Drei Fragen, mit denen Sie jedes KI-Werkzeug testen
 
@@ -4585,7 +4585,7 @@ Bevor Ihre Azubis ein Werkzeug offiziell nutzen, stellen Sie ihm selbst drei Auf
 2. **Eine Frage zu Ihrem eigenen Material,** etwa zu einer Anlage oder einer Arbeitsanweisung aus Ihrem Betrieb. Antwortet es aus Ihren Unterlagen und nennt die Quelle, oder rät es aus allgemeinem Wissen?
 3. **Eine Frage, die in Ihrem Material nicht beantwortet wird.** Sagt es, dass es das nicht weiß, oder erfindet es eine plausible Antwort?
 
-Ein Werkzeug, das bei Frage 1 sofort rechnet und bei Frage 3 erfindet, macht Ihre Azubis schneller, aber nicht prüfungsfest. Welche Datenschutzfragen Sie vor der Einführung klären sollten, steht in unserem [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+Ein Werkzeug, das bei Frage 1 sofort rechnet und bei Frage 3 erfindet, kann Ihre Azubis schneller machen, ohne dass sie mehr verstehen. Das ist das Muster aus beiden Studien oben. Welche Datenschutzfragen Sie vor der Einführung klären sollten, steht in unserem [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
 
 ## Wo LearnSlice ansetzt
 
@@ -4593,7 +4593,7 @@ LearnSlice ist ein KI-Tutor, der genau so arbeitet: Er fragt erst nach, gibt Hin
 
 Den Werkstattblick ersetzt das nicht. Es sorgt dafür, dass Fragen zwischen zwei Berufsschulblöcken nicht liegen bleiben, wenn gerade kein Ausbilder Zeit hat.
 
-Wie das in Betrieben mit besonders hohen Anforderungen an Sicherheit und Datenhoheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie). Die Zahlen zu allen acht großen Metall- und Elektroberufen finden Sie im [Datencheck Rüstungsindustrie](/de/blog/ausbildung-ruestungsindustrie).
+Wie das in Betrieben mit besonders hohen Anforderungen an Sicherheit und Datenhoheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie). Die Zahlen zu acht Metall- und Elektroberufen finden Sie im [Datencheck Rüstungsindustrie](/de/blog/ausbildung-ruestungsindustrie).
 
 ## Ihr Plan für den nächsten Jahrgang
 
@@ -4611,7 +4611,7 @@ Alle Zahlen stammen aus den folgenden Quellen, die Prozentanteile zur Vorbildung
 
 - KMK: [Rahmenlehrplan Mechatroniker/Mechatronikerin](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf), Beschluss vom 30.01.1998 in der Fassung vom 23.02.2018
 - [Mechatroniker-Ausbildungsverordnung](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html), §§ 2, 6, 7 und 8
-- BIBB: [DAZUBI-Datenblatt Mechatroniker/-in](https://www.bibb.de/dienst/dazubi/dazubi/datasheet/download/30-7640.pdf), Berichtsjahr 2024, Stand 28.10.2025
+- BIBB: [DAZUBI-Datenblatt Mechatroniker/-in](https://www.bibb.de/dienst/dazubi/dazubi/datasheet/download/30-7640.pdf), Berichtsjahr 2024, Stand 28.10.2025, und [Erläuterungen zu den Daten](https://www.bibb.de/dokumente/pdf/dazubi_daten.pdf) (Lösungsquote, Erfolgsquote)
 - BIBB: [Datenreport zum Berufsbildungsbericht 2026](https://www.bibb.de/dienst/publikationen/de/21037), Kapitel C3.3 (KI-Experiment mit Fachinformatik-Azubis) und C5.3 bis C5.4 (DiWaBe 2.0, Befragung 2024)
 - BIBB: [Protokoll zum ersten Workshop, Berufsfeldanalyse industrielle Elektroberufe](https://www.bibb.de/dienst/dapro/daprodocs/verweise/so_42395%205%20workshopmitanlagen.pdf), Dezember 2012
 - Bastani et al.: [Generative AI without guardrails can harm learning](https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/), PNAS 122(26), 2025
@@ -4634,7 +4634,7 @@ Laut BIBB waren Ende 2024 bundesweit 28.080 Mechatroniker in Ausbildung, 8.874 V
 
 ### Sollten Azubis ChatGPT zum Lernen nutzen dürfen?
 
-Das BIBB hält Verbote weder für praktikabel noch für sinnvoll, weil generative KI im Arbeitsalltag der Azubis bereits fest verankert ist. Wichtiger ist, welches Werkzeug sie nutzen: eines, das Lösungen fertig ausgibt, oder eines, das erst nachfragt und auf die Quelle verweist. Regeln für den Einsatz im Betrieb stimmen Sie mit Betriebsrat und Datenschutzbeauftragtem ab.
+Die Autoren einer BIBB-Studie mit Fachinformatik-Azubis halten Verbote weder für praktikabel noch für sinnvoll, weil generative KI im Arbeitsalltag dieser Azubis bereits fest verankert war. Wichtiger ist, welches Werkzeug sie nutzen: eines, das Lösungen fertig ausgibt, oder eines, das erst nachfragt und auf die Quelle verweist. Regeln für den Einsatz im Betrieb stimmen Sie mit Betriebsrat und Datenschutzbeauftragtem ab.
 
 ---
 
