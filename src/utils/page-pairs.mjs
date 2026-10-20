@@ -49,6 +49,7 @@ export const EN_TO_DE = {
 	'/blog/ai-tutor-for-existing-lms': '/de/blog/ki-tutor-in-lms-integrieren',
 	'/blog/apprenticeships-defence-industry-germany': '/de/blog/ausbildung-ruestungsindustrie',
 	'/blog/prevent-apprenticeship-dropout': '/de/blog/ausbildungsabbruch-verhindern',
+	'/blog/training-mechatronics-apprentices': '/de/blog/mechatroniker-ausbilden',
 };
 
 // Pages that exist only in one language and therefore should not emit

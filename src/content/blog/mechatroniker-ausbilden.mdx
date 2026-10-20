@@ -1,0 +1,153 @@
+---
+title: "Mechatroniker ausbilden: Wo Azubis hängen bleiben"
+description: "Fünf Lernfelder, 320 Stunden, Metall und Elektro gleichzeitig: Was Mechatroniker-Azubis im ersten Jahr lernen müssen und wie Ausbilder gegensteuern."
+publishDate: 2026-10-20
+author: "LearnSlice Team"
+tags: ["Mechatroniker", "Ausbilder", "Metall und Elektro", "KI in der Ausbildung", "Unternehmen"]
+lang: "de"
+translationSlug: "training-mechatronics-apprentices"
+ogImage: "/images/blog/pexels-mikhail-nilov-9242206.jpg"
+heroImage: "/images/blog/pexels-mikhail-nilov-9242206.webp"
+keyTakeaways:
+  - "Im ersten Jahr sieht der Rahmenlehrplan fünf Lernfelder mit 320 Stunden vor: Mechanik, Elektrotechnik mit Berechnungen, Pneumatik und Hydraulik mit Steuerungstechnik, dazu Datenverarbeitung. Englische Fachunterlagen kommen in allen fünf vor."
+  - "Teil 1 der Abschlussprüfung findet vor Ende des zweiten Jahres statt und zählt 40 % der Gesamtnote. Lücken aus dem ersten Jahr landen also direkt im Abschlusszeugnis."
+  - "KI macht Azubis schneller, aber nicht automatisch klüger: In einem BIBB-Experiment lösten Azubis mit ChatGPT mehr Aufgaben, verstanden den Code aber nicht besser. Entscheidend ist, ob ein Werkzeug Lösungen ausgibt oder erst Fragen stellt."
+faq:
+  - q: "Wie lange dauert die Ausbildung zum Mechatroniker?"
+    a: "Dreieinhalb Jahre, so legt es § 2 der Mechatroniker-Ausbildungsverordnung fest. Ob eine Verkürzung im Einzelfall möglich ist, entscheidet auf Antrag die Kammer. Klären Sie das mit Ihrer IHK."
+  - q: "Wann ist Teil 1 der Abschlussprüfung für Mechatroniker und wie viel zählt er?"
+    a: "Teil 1 soll vor dem Ende des zweiten Ausbildungsjahres stattfinden und dauert acht Stunden. Geprüft wird das Arbeiten an einem mechatronischen Teilsystem, mit Arbeitsaufgabe, situativen Fachgesprächen und schriftlichen Aufgaben. Teil 1 zählt 40 % der Gesamtnote, eine eigene Bestehensgrenze hat er nicht."
+  - q: "Wie viele Mechatroniker werden in Deutschland ausgebildet?"
+    a: "Laut BIBB waren Ende 2024 bundesweit 28.080 Mechatroniker in Ausbildung, 8.874 Verträge wurden 2024 neu abgeschlossen. Die Erfolgsquote bei den Abschlussprüfungen lag bei 96,0 %, die Lösungsquote bei 14,5 %."
+  - q: "Sollten Azubis ChatGPT zum Lernen nutzen dürfen?"
+    a: "Das BIBB hält Verbote weder für praktikabel noch für sinnvoll, weil generative KI im Arbeitsalltag der Azubis bereits fest verankert ist. Wichtiger ist, welches Werkzeug sie nutzen: eines, das Lösungen fertig ausgibt, oder eines, das erst nachfragt und auf die Quelle verweist. Regeln für den Einsatz im Betrieb stimmen Sie mit Betriebsrat und Datenschutzbeauftragtem ab."
+ctaFooter:
+  label: "Für Ausbildungsleitung"
+  headline: "Ein Tutor, der erst fragt"
+  subheadline: "Für Mechatroniker und Elektroniker, aufgebaut auf dem Rahmenplan, mit Quelle zu jeder Antwort. Gehostet in Deutschland oder in Ihrem eigenen Rechenzentrum."
+  button: "30-Minuten-Demo anfragen"
+---
+import InlineCta from '../../components/InlineCta.astro';
+import StackedTable from '../../components/StackedTable.astro';
+
+![Ein Azubi mit Schutzbrille und blauer Arbeitsschürze bedient eine CNC-Fräse in einer Lehrwerkstatt](/images/blog/pexels-mikhail-nilov-9242206.webp)
+
+Ein Mechatroniker lernt in dreieinhalb Jahren zwei Welten: Metall und Elektro. Im ersten Jahr kommt beides gleichzeitig, dazu Pneumatik, Hydraulik, Steuerungstechnik und Datenverarbeitung. Für viele Azubis ist das der Moment, in dem die Theorie davonläuft.
+
+Diese Übersicht zeigt, was der Rahmenlehrplan im ersten Jahr konkret verlangt, woran Sie in der Werkstatt erkennen, ob es sitzt, und warum KI dabei helfen oder schaden kann.
+
+## Was das erste Jahr verlangt: fünf Lernfelder, 320 Stunden
+
+Der [Rahmenlehrplan der KMK](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) sieht für das erste Jahr fünf Lernfelder vor. Zusammen sind es 320 Unterrichtsstunden, mehr als in jedem anderen Ausbildungsjahr. Er setzt als Minimum den Hauptschulabschluss voraus. Mathematik und Englisch sind kein eigenes Fach, sondern laufen in den Lernfeldern mit.
+
+Die Tabelle zeigt pro Lernfeld, was der Plan verlangt, und eine Frage, mit der Sie in der Werkstatt prüfen, ob es angekommen ist. Offizielle Zahlen dazu, wo Mechatroniker-Azubis am häufigsten scheitern, gibt es nicht. Die Prüfstatistik erfasst nur Abschlussprüfungen, keine einzelnen Teile.
+
+<StackedTable
+  headers={["Lernfeld (Stunden)", "Was der Rahmenlehrplan verlangt", "So prüfen Sie es in der Werkstatt", "Was hilft"]}
+  rows={[
+    ["LF 1: Funktionszusammenhänge analysieren (40)", "Blockschaltbilder lesen, Signal-, Stoff- und Energiefluss erkennen, Ergebnisse dokumentieren", "Kann der Azubi eine Anlage aus Ihrem Betrieb anhand ihres Blockschaltbilds erklären?", "Eine echte Anlage als roten Faden für das ganze erste Jahr wählen"],
+    ["LF 2: Mechanische Teilsysteme herstellen (80)", "Konstruktionszeichnungen, Passungen und Toleranzen, Spanen, Fügen, Messen und Messfehler", "Liest er eine Zeichnung und begründet, warum eine Passung so toleriert ist?", "Zeichnung und Werkstück immer zusammen besprechen, nicht nacheinander"],
+    ["LF 3: Elektrische Betriebsmittel installieren (100)", "Elektrische Größen und Berechnungen, Gleich- und Wechselstrom, Schutzmaßnahmen, Prüfen nach Vorschrift", "Rechnet er Strom und Leistung an einer realen Schaltung aus und misst dann nach?", "Rechnung und Messung an derselben Schaltung, damit Formeln einen Sinn bekommen"],
+    ["LF 4: Energie- und Informationsflüsse untersuchen (60)", "Steuerungstechnische Grundschaltungen, Pneumatik und Hydraulik mit Größen und Berechnungen, Schaltpläne", "Kann er einen Pneumatikschaltplan lesen und vorhersagen, was beim Schalten passiert?", "Erst vorhersagen lassen, dann ausprobieren"],
+    ["LF 5: Kommunizieren mit DV-Systemen (40)", "Betriebssysteme, Netzwerke, Datenschutz und Datensicherheit, Zugriffsrechte, Dokumentation", "Weiß er, auf welche Systeme er im Betrieb zugreifen darf und warum?", "Die eigenen IT-Regeln des Betriebs als Lernmaterial nutzen"]
+  ]}
+/>
+
+Was in der Tabelle leicht untergeht: In allen fünf Lernfeldern stehen englische Fachbegriffe, Produktbeschreibungen oder Handbücher. Wer mit Englisch kämpft, kämpft also nicht in einem Fach, sondern überall ein bisschen.
+
+Wie der Rahmenlehrplan der Berufsschule mit dem Ausbildungsrahmenplan Ihres Betriebs zusammenhängt, erklären wir in [Ausbildungsrahmenplan erklärt](/de/blog/ausbildungsrahmenplan-erklaert).
+
+## Warum das erste Jahr in die Abschlussnote zählt
+
+Mechatroniker haben eine gestreckte Abschlussprüfung. Teil 1 soll vor dem Ende des zweiten Ausbildungsjahres stattfinden und prüft den Stoff des ersten Jahres und des dritten Halbjahres ([§ 6 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Die Prüfung dauert acht Stunden: eine Arbeitsaufgabe an einem mechatronischen Teilsystem, dazu Fachgespräche und rund 90 Minuten schriftliche Aufgaben.
+
+Teil 1 zählt 40 % der Gesamtnote. Eine eigene Bestehensgrenze hat er nicht, die Note geht aber voll in das Ergebnis ein. Teil 2 verteilt die übrigen 60 %: Arbeitsauftrag 30 %, Arbeitsplanung 12 %, Funktionsanalyse 12 %, Wirtschafts- und Sozialkunde 6 % (§ 8).
+
+Für Sie heißt das: Wer im ersten Jahr Elektrotechnik oder Pneumatik nur halb versteht, verliert nicht nur Zeit. Er verliert Punkte, die er in Teil 2 erst wieder aufholen muss.
+
+Dazu kommt ein Hinweis aus der Praxis. In einem [BIBB-Workshop zu den industriellen Elektroberufen](https://www.bibb.de/dienst/dapro/daprodocs/verweise/so_42395%205%20workshopmitanlagen.pdf) nannten Fachleute aus Betrieben und Schulen 2012 als Schwierigkeit, dass der mechanische Anteil zum Prüfungszeitpunkt oft „nicht mehr präsent“ sei. Das ist eine Einschätzung, keine Messung. Sie passt aber zur Struktur: Was im ersten Jahr nur einmal drankommt, ist bis zur Prüfung oft vergessen.
+
+## Wer bei Ihnen anfängt
+
+Mechatroniker ist einer der großen Industrieberufe. Laut [BIBB-Datenblatt](https://www.bibb.de/dienst/dazubi/dazubi/datasheet/download/30-7640.pdf) waren Ende 2024 bundesweit 28.080 Azubis in Ausbildung, 8.874 Verträge kamen 2024 neu dazu.
+
+Die Vorbildung ist gemischt. Von den neuen Azubis 2024 hatten rund 61 % einen mittleren Schulabschluss und rund 32 % Abitur oder Fachhochschulreife, knapp 5 % den ersten Schulabschluss. In einer Berufsschulklasse sitzen also Azubis, die Physik aus der Oberstufe mitbringen, neben anderen, die zum ersten Mal mit Formeln umstellen.
+
+Die Abschlussprüfung bestehen am Ende fast alle: Die Erfolgsquote lag 2024 bei 96,0 % aller Prüfungsteilnahmen. Das Problem liegt davor. Die Lösungsquote, also der Anteil vorzeitig gelöster Verträge, stieg von 10,5 % (2022) über 12,9 % (2023) auf 14,5 % (2024). Das ist keine Abbruchquote, denn viele setzen ihre Ausbildung anderswo fort. Für den Betrieb ist die Investition trotzdem verloren. Wann und warum Verträge gelöst werden, zeigen wir in [Ausbildungsabbruch verhindern](/de/blog/ausbildungsabbruch-verhindern).
+
+## Fünf Dinge, die Ausbilder im ersten Jahr tun können
+
+**1. Fragen Sie die Berufsschule nach der Reihenfolge der Lernfelder.** Im selben BIBB-Workshop berichteten Fachleute von einer „unglücklichen Reihenfolge bei der Vermittlung der Lernfelder im ersten Ausbildungsjahr“, die Azubis verwirrt habe. Wenn Sie wissen, wann LF 3 und LF 4 drankommen, können Sie die passenden Aufgaben in der Werkstatt in dieselben Wochen legen.
+
+**2. Verbinden Sie jede Formel mit einem Messgerät.** Das ohmsche Gesetz bleibt abstrakt, bis der Azubi seinen eigenen Rechenwert mit dem Multimeter vergleicht und den Unterschied erklären muss.
+
+**3. Lassen Sie vorhersagen, bevor geschaltet wird.** Bei Pneumatik und Steuerungstechnik zeigt eine einfache Frage, ob jemand den Plan versteht: „Was passiert, wenn du dieses Ventil schaltest?“ Wer nur ausprobiert, lernt die Anlage, nicht das Prinzip.
+
+**4. Holen Sie die Mechanik vor Teil 1 zurück.** Planen Sie im dritten Halbjahr bewusst Aufgaben mit Zeichnungen, Passungen und Messen ein, damit der Stoff aus LF 2 zur Prüfung wieder präsent ist.
+
+**5. Halten Sie Lücken wöchentlich fest, nicht erst zum Zeugnis.** Ein kurzer Blick ins Berichtsheft und eine Frage zum aktuellen Berufsschulthema reichen. Wie ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) dabei hilft und wo Sie dafür Zeit gewinnen, steht in [Ausbilder entlasten](/de/blog/ausbilder-entlasten).
+
+## KI macht Azubis schneller, aber nicht automatisch klüger
+
+Ihre Azubis nutzen KI, ob Sie es geregelt haben oder nicht. In der [DiWaBe-Befragung 2024](https://www.bibb.de/dienst/publikationen/de/21037) gaben rund 60 % der Beschäftigten, die KI-Anwendungen nutzen, an, dass diese nicht offiziell vom Arbeitgeber eingeführt wurden.
+
+Was das fürs Lernen bedeutet, hat das BIBB untersucht. Im [Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037) (Kapitel C3.3) beschreiben Manuel Merkel und Jens Dörpinghaus ein Experiment mit 27 Fachinformatik-Azubis im zweiten Jahr. Eine Gruppe durfte ChatGPT nutzen, die andere nicht. Die Gruppe mit KI löste mehr Aufgaben, schneller und mit weniger Frust. Beim Verständnis von Programmcode zeigte sie aber keinen Vorteil, bei einzelnen Aufgaben schnitt sie sogar schlechter ab. Viele übernahmen den KI-Code, ohne ihn zu prüfen.
+
+Das ist eine IT-Studie, kein Mechatroniker-Experiment. Ein größeres Experiment an einer Schule in der Türkei mit rund 1.000 Schülern zeigt aber dasselbe Muster ([Bastani et al., PNAS 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/)):
+
+- Mit einem normalen ChatGPT-Zugang schnitten Schüler beim Üben 48 % besser ab, in der anschließenden Prüfung ohne KI aber 17 % schlechter als die Vergleichsgruppe. Viele hatten sich Lösungen geben lassen und abgeschrieben.
+- Mit einer Tutor-Version, die nur Hinweise gibt und keine fertigen Lösungen, schnitten sie beim Üben 127 % besser ab. In der Prüfung waren sie so gut wie die Vergleichsgruppe, nicht schlechter, aber auch nicht besser.
+
+Die Lehre für die Ausbildung: Verbieten hilft nicht. Das BIBB hält Verbote weder für praktikabel noch für sinnvoll. Die Frage ist, ob ein Werkzeug Lösungen ausgibt oder erst fragt, was der Azubi schon versucht hat, und auf die Stelle im Lernmaterial verweist.
+
+Auch in der Verteidigungsindustrie ist Lernen mit digitalem Anteil längst normal. [Quantum Systems](https://quantum-systems.com/news/lufabw-certification/) bildet Drohnenpiloten der Bundeswehr nach eigenen Angaben mit einem firmeneigenen Lernsystem aus und verkürzt so die praktische Ausbildung auf zehn Arbeitstage.
+
+## Drei Fragen, mit denen Sie jedes KI-Werkzeug testen
+
+Bevor Ihre Azubis ein Werkzeug offiziell nutzen, stellen Sie ihm selbst drei Aufgaben:
+
+1. **Eine Rechenaufgabe aus LF 3,** etwa: „Welcher Strom fließt bei 230 V durch einen Verbraucher mit 2 kW?“ Gibt es sofort das Ergebnis aus, oder fragt es, welche Formel der Azubi nehmen würde?
+2. **Eine Frage zu Ihrem eigenen Material,** etwa zu einer Anlage oder einer Arbeitsanweisung aus Ihrem Betrieb. Antwortet es aus Ihren Unterlagen und nennt die Quelle, oder rät es aus allgemeinem Wissen?
+3. **Eine Frage, die in Ihrem Material nicht beantwortet wird.** Sagt es, dass es das nicht weiß, oder erfindet es eine plausible Antwort?
+
+Ein Werkzeug, das bei Frage 1 sofort rechnet und bei Frage 3 erfindet, macht Ihre Azubis schneller, aber nicht prüfungsfest. Welche Datenschutzfragen Sie vor der Einführung klären sollten, steht in unserem [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+## Wo LearnSlice ansetzt
+
+LearnSlice ist ein KI-Tutor, der genau so arbeitet: Er fragt erst nach, gibt Hinweise statt fertiger Lösungen und antwortet aus dem Rahmenplan und Ihren eigenen Unterlagen, mit Quelle zu jeder Antwort. Ausbilder sehen den Lernstand jedes Azubis im Abgleich mit dem Lernplan und erkennen früh, wer bei LF 3 oder LF 4 seit Wochen feststeckt.
+
+Den Werkstattblick ersetzt das nicht. Es sorgt dafür, dass Fragen zwischen zwei Berufsschulblöcken nicht liegen bleiben, wenn gerade kein Ausbilder Zeit hat.
+
+<InlineCta
+  lang="de"
+  trigger="demo-request"
+  eyebrow="Für Ausbildungsleitung"
+  headline="Sehen Sie den Tutor an einer LF-3-Aufgabe"
+  sub="In 30 Minuten zeigen wir Ihnen, wie der Tutor eine Elektrotechnik-Frage eines Mechatroniker-Azubis begleitet, ohne die Lösung vorzusagen, und wie Ihre Ausbilder den Lernstand sehen."
+  button="30-Minuten-Demo anfragen"
+  note="Gehostet in Deutschland oder in Ihrem eigenen Rechenzentrum."
+/>
+
+Wie das in Betrieben mit besonders hohen Anforderungen an Sicherheit und Datenhoheit aussieht, zeigen wir am Beispiel der [Ausbildung in der Verteidigungsindustrie](/de/verteidigungsindustrie). Die Zahlen zu allen acht großen Metall- und Elektroberufen finden Sie im [Datencheck Rüstungsindustrie](/de/blog/ausbildung-ruestungsindustrie).
+
+## Ihr Plan für den nächsten Jahrgang
+
+1. **Holen Sie sich die Lernfeld-Reihenfolge** Ihrer Berufsschule für das erste Jahr und legen Sie die Werkstattaufgaben daneben.
+2. **Wählen Sie eine Anlage aus Ihrem Betrieb** als roten Faden für LF 1 bis LF 4.
+3. **Verbinden Sie jede Rechnung mit einer Messung** und jeden Schaltplan mit einer Vorhersage.
+4. **Planen Sie im dritten Halbjahr eine Mechanik-Wiederholung** vor Teil 1.
+5. **Testen Sie jedes KI-Werkzeug mit den drei Fragen,** bevor Sie es freigeben.
+
+## Quellen
+
+Dieser Beitrag gibt allgemeine Informationen und ersetzt keine Rechts- oder Personalberatung im Einzelfall. Fragen zu Prüfung und Ausbildungszeit klären Sie mit Ihrer IHK.
+
+Alle Zahlen stammen aus den folgenden Quellen, die Prozentanteile zur Vorbildung haben wir aus den absoluten Werten des BIBB-Datenblatts berechnet. Geprüft am 20. Oktober 2026.
+
+- KMK: [Rahmenlehrplan Mechatroniker/Mechatronikerin](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf), Beschluss vom 30.01.1998 in der Fassung vom 23.02.2018
+- [Mechatroniker-Ausbildungsverordnung](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html), §§ 2, 6, 7 und 8
+- BIBB: [DAZUBI-Datenblatt Mechatroniker/-in](https://www.bibb.de/dienst/dazubi/dazubi/datasheet/download/30-7640.pdf), Berichtsjahr 2024, Stand 28.10.2025
+- BIBB: [Datenreport zum Berufsbildungsbericht 2026](https://www.bibb.de/dienst/publikationen/de/21037), Kapitel C3.3 (KI-Experiment mit Fachinformatik-Azubis) und C5.3 bis C5.4 (DiWaBe 2.0, Befragung 2024)
+- BIBB: [Protokoll zum ersten Workshop, Berufsfeldanalyse industrielle Elektroberufe](https://www.bibb.de/dienst/dapro/daprodocs/verweise/so_42395%205%20workshopmitanlagen.pdf), Dezember 2012
+- Bastani et al.: [Generative AI without guardrails can harm learning](https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/), PNAS 122(26), 2025
+- Quantum Systems: [Pressemitteilung zur LufABw-Zertifizierung](https://quantum-systems.com/news/lufabw-certification/), 11.12.2024
