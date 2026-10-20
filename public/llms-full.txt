@@ -454,11 +454,15 @@ Two details are easy to miss. The curriculum teaches maths and technical English
 
 Early gaps also cost later. German mechatronics apprentices sit Part 1 of their final exam before the end of year two: eight hours built around a practical task on a mechatronic subsystem. It counts for 40% of the final grade ([§ 8 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Whatever was only half understood in year one shows up in the certificate.
 
+<picture><source media="(max-width: 640px)" srcset="/images/blog/mechatroniker-pruefung-gewichtung-mobile.svg" /><img src="/images/blog/mechatroniker-pruefung-gewichtung.svg" alt="Bar chart of the German mechatronics final exam: Part 1, work on a mechatronic subsystem, counts for 40 percent. Part 2: work assignment 30, work planning 12, functional analysis 12, economic and social studies 6 percent" /></picture>
+
 ## What the research says about AI tutors
 
 In a study of IT apprentices, researchers at Germany's Federal Institute for Vocational Education and Training (BIBB) found generative AI already firmly part of their working day. The question is what it does to learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
 
 None of these is an apprenticeship study, and each has limits: 27 apprentices, one school, two physics lessons, one company. Together they point the same way. **What decides the result is not whether learners use AI, but what the AI is built to do.**
+
+<picture><source media="(max-width: 640px)" srcset="/images/blog/ki-ueben-vs-pruefung-mobile.svg" /><img src="/images/blog/ki-ueben-vs-pruefung.svg" alt="Bar chart: in practice with AI, plus 48 percent with plain ChatGPT and plus 127 percent with the tutor version. In the exam without AI, minus 17 percent for the ChatGPT group and no significant difference for the tutor group" /></picture>
 
 The Turkish study shows the mechanism. The most common message in the plain ChatGPT group was "What is the answer?", and many students copied what came back. When the researchers asked that question about the session problems, the model was right only about half the time, and the students did not notice that they had learned less. The tutor version was told to give hints, not answers, and was given the teachers' correct solutions to work from.
 
@@ -4534,9 +4538,11 @@ Wie der Rahmenlehrplan der Berufsschule mit dem Ausbildungsrahmenplan Ihres Betr
 
 ## Abschlussprüfung Teil 1: Warum das erste Jahr zählt
 
-Mechatroniker haben eine gestreckte Abschlussprüfung. Teil 1 soll vor dem Ende des zweiten Ausbildungsjahres stattfinden und prüft den Stoff des ersten Jahres und des dritten Halbjahres ([§ 6 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Die Prüfung dauert acht Stunden: eine Arbeitsaufgabe an einem mechatronischen Teilsystem, dazu Fachgespräche und rund 90 Minuten schriftliche Aufgaben.
+Mechatroniker haben eine gestreckte Abschlussprüfung, also eine Prüfung in zwei zeitlich getrennten Teilen ([§ 5](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Teil 1 soll vor dem Ende des zweiten Ausbildungsjahres stattfinden und prüft den Stoff des ersten Jahres und des dritten Halbjahres ([§ 6 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Die Prüfung dauert acht Stunden: eine Arbeitsaufgabe an einem mechatronischen Teilsystem, dazu Fachgespräche und rund 90 Minuten schriftliche Aufgaben.
 
 Teil 1 zählt 40 % der Gesamtnote und hat keine eigene Bestehensgrenze. Teil 2 verteilt die übrigen 60 %: Arbeitsauftrag 30 %, Arbeitsplanung 12 %, Funktionsanalyse 12 %, Wirtschafts- und Sozialkunde 6 % (§ 8).
+
+<picture><source media="(max-width: 640px)" srcset="/images/blog/mechatroniker-pruefung-gewichtung-de-mobile.svg" /><img src="/images/blog/mechatroniker-pruefung-gewichtung-de.svg" alt="Balkendiagramm der Abschlussprüfung Mechatroniker: Teil 1, Arbeiten an einem mechatronischen Teilsystem, zählt 40 Prozent. Teil 2: Arbeitsauftrag 30, Arbeitsplanung 12, Funktionsanalyse 12, Wirtschafts- und Sozialkunde 6 Prozent" /></picture>
 
 Für Sie heißt das: Wer im ersten Jahr Elektrotechnik oder Pneumatik nur halb versteht, verliert nicht nur Zeit. Er verliert Punkte, die er in Teil 2 erst wieder aufholen muss.
 
@@ -4572,6 +4578,8 @@ Das ist eine IT-Studie, kein Mechatroniker-Experiment. Ein größeres Experiment
 
 - Mit einem normalen ChatGPT-Zugang schnitten Schüler beim Üben 48 % besser ab, in der anschließenden Prüfung ohne KI aber 17 % schlechter als die Vergleichsgruppe. Viele hatten sich Lösungen geben lassen und abgeschrieben.
 - Mit einer Tutor-Version, die nur Hinweise gibt und keine fertigen Lösungen, schnitten sie beim Üben 127 % besser ab. In der Prüfung waren sie so gut wie die Vergleichsgruppe, nicht schlechter, aber auch nicht besser.
+
+<picture><source media="(max-width: 640px)" srcset="/images/blog/ki-ueben-vs-pruefung-de-mobile.svg" /><img src="/images/blog/ki-ueben-vs-pruefung-de.svg" alt="Balkendiagramm: Beim Üben mit KI plus 48 Prozent mit normalem ChatGPT und plus 127 Prozent mit der Tutor-Version. In der Prüfung ohne KI minus 17 Prozent für die ChatGPT-Gruppe und kein messbarer Unterschied für die Tutor-Gruppe" /></picture>
 
 Die Lehre für die Ausbildung: Entscheidend ist nicht, ob Azubis KI nutzen, sondern welche. Die Autoren der BIBB-Studie halten Verbote ohnehin weder für praktikabel noch für sinnvoll, weil generative KI im Arbeitsalltag der untersuchten Azubis bereits fest verankert war. Die Frage ist, ob ein Werkzeug Lösungen ausgibt oder erst fragt, was der Azubi schon versucht hat, und auf die Stelle im Lernmaterial verweist.
 

@@ -97,6 +97,8 @@ Reference customers include FH Dortmund, the University of Cologne, and Carl-Sev
 - AZAV und Digitalisierung für Bildungsträger: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
 - Ausbildungsabbruch verhindern, Plan für die ersten 12 Monate: https://learnslice.com/de/blog/ausbildungsabbruch-verhindern
 - Preventing apprenticeship dropout, a plan for the first year: https://learnslice.com/blog/prevent-apprenticeship-dropout
+- Mechatroniker ausbilden, Lernfelder im ersten Jahr, Prüfungsgewichtung und KI-Werkzeuge: https://learnslice.com/de/blog/mechatroniker-ausbilden
+- Training mechatronics apprentices, classroom hours in Germany, the US and England, and the research on AI tutors: https://learnslice.com/blog/training-mechatronics-apprentices
 
 ## Links
 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="519" viewBox="0 0 520 519" role="img" aria-label="Bar chart: in practice with AI, students with plain ChatGPT scored 48 percent higher than the control group and students with the tutor version 127 percent higher. In the exam without AI, the ChatGPT group scored 17 percent lower and the tutor group showed no significant difference. Source: Bastani et al., PNAS 2025.">
+<rect x="0" y="0" width="520" height="519" rx="16" fill="#18181b"/>
+<text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">AI in practice, then the</text>
+<text x="24" y="63" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="23" fill="#fafafa" font-weight="600">exam without AI</text>
+<text x="24" y="89" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">Change versus the control group without AI,</text>
+<text x="24" y="109" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#a1a1aa">nearly 1,000 maths students, Turkey</text>
+<line x1="100" y1="407" x2="100" y2="439" stroke="#a1a1aa" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="100" y1="345" x2="100" y2="377" stroke="#a1a1aa" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="100" y1="243" x2="100" y2="275" stroke="#a1a1aa" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="100" y1="181" x2="100" y2="213" stroke="#a1a1aa" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="24" y="149" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15.5" fill="#fafafa" font-weight="600">In practice, with AI</text>
+<text x="24" y="177" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Plain ChatGPT access</text>
+<rect x="100" y="185" width="122.4" height="24" rx="4" fill="#71717a"/>
+<text x="230.39999999999998" y="202" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">+48%</text>
+<text x="24" y="239" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">Tutor version: hints instead of answers</text>
+<rect x="100" y="247" width="323.8" height="24" rx="4" fill="#cc7a3e"/>
+<text x="431.84999999999997" y="264" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">+127%</text>
+<text x="24" y="313" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15.5" fill="#fafafa" font-weight="600">In the exam, without AI</text>
+<text x="24" y="341" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#d4d4d8">Plain ChatGPT access</text>
+<rect x="56.7" y="349" width="43.3" height="24" rx="4" fill="#71717a"/>
+<text x="108" y="366" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#fafafa" font-weight="600">−17%</text>
+<text x="24" y="403" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">Tutor version: hints instead of answers</text>
+<rect x="98" y="411" width="4" height="24" rx="2" fill="#cc7a3e"/>
+<text x="110" y="428" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14.5" fill="#e8b07a" font-weight="600">≈ 0, no significant difference</text>
+<text x="24" y="477" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">Source: Bastani et al., PNAS 2025. Grades on a 0 to 1</text>
+<text x="24" y="495" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#a1a1aa">scale, effect as a share of the control group mean.</text>
+</svg>

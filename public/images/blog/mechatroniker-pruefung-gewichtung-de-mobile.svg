@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="514" viewBox="0 0 340 514" role="img" aria-label="Balkendiagramm: Teil 1 der Abschlussprüfung, Arbeiten an einem mechatronischen Teilsystem, zählt 40 Prozent. Teil 2: Arbeitsauftrag 30 Prozent, Arbeitsplanung 12, Funktionsanalyse 12, Wirtschafts- und Sozialkunde 6 Prozent. Quelle: Mechatroniker-Ausbildungsverordnung.">
+<rect x="0" y="0" width="340" height="514" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">Teil 1 zählt 40 % der</text>
+<text x="18" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="19" fill="#fafafa" font-weight="600">Abschlussnote</text>
+<text x="18" y="82" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Gestreckte Abschlussprüfung,</text>
+<text x="18" y="100" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Gewichtung der Prüfungsbereiche</text>
+<text x="18" y="140" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Teil 1, vor Ende des 2. Jahres</text>
+<text x="18" y="166" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#e8b07a" font-weight="600">Arbeiten an mechatron. Teilsystem</text>
+<rect x="18" y="174" width="240.0" height="20" rx="4" fill="#cc7a3e"/>
+<text x="266.0" y="187" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#e8b07a" font-weight="600">40 %</text>
+<text x="18" y="234" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">Teil 2</text>
+<text x="18" y="260" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Arbeitsauftrag</text>
+<rect x="18" y="268" width="180.0" height="20" rx="4" fill="#71717a"/>
+<text x="206.0" y="281" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#fafafa" font-weight="600">30 %</text>
+<text x="18" y="314" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Arbeitsplanung</text>
+<rect x="18" y="322" width="72.0" height="20" rx="4" fill="#71717a"/>
+<text x="98.0" y="335" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#fafafa" font-weight="600">12 %</text>
+<text x="18" y="368" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Funktionsanalyse</text>
+<rect x="18" y="376" width="72.0" height="20" rx="4" fill="#71717a"/>
+<text x="98.0" y="389" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#fafafa" font-weight="600">12 %</text>
+<text x="18" y="422" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#d4d4d8">Wirtschafts- und Sozialkunde</text>
+<rect x="18" y="430" width="36.0" height="20" rx="4" fill="#71717a"/>
+<text x="62.0" y="443" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#fafafa" font-weight="600">6 %</text>
+<text x="18" y="490" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Quelle: MechatronikerAusbV, §§ 6 und 8</text>
+</svg>
