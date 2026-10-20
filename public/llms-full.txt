@@ -431,14 +431,14 @@ What year one of a mechatronics apprenticeship demands, how little classroom tim
 ## Key Takeaways
 
 - Mechatronics apprentices learn mechanical, electrical, fluid power and controls at the same time. In Germany's curriculum, year one alone covers five learning fields and 320 lesson hours.
-- Most of an apprenticeship happens at work. A US registered apprenticeship recommends 144 hours of related instruction a year, and the UK mechatronics standard sets a minimum of 744 off-the-job hours over about 42 months. Theory questions come up on the shop floor, between classes.
+- Most of an apprenticeship happens at work. A US registered apprenticeship recommends 144 hours of related instruction a year, and the English mechatronics standard sets a minimum of 744 off-the-job hours over about 42 months. Theory questions come up on the shop floor, between classes.
 - AI tutors can close that gap or widen it. In a PNAS study, students with plain ChatGPT did 17% worse on a later exam without AI. A version that gave hints instead of answers removed that harm, and a structured tutor at Harvard more than doubled learning gains.
 
 ![An apprentice in safety glasses and a blue work apron operates a CNC milling machine in a training workshop](/images/blog/pexels-mikhail-nilov-9242206.webp)
 
 A mechatronics apprentice learns several trades at once: mechanical, electrical, fluid power, controls. Most of that learning happens on the shop floor, and the classroom hours are few. So the theory questions come up at work, often when no trainer has time to answer them.
 
-This article shows what year one actually demands, how little instruction time apprentices get in Germany, the US and the UK, and what the research says about AI tutors filling the gap. It ends with three questions to test any AI tool before your apprentices use it.
+This article shows what year one actually demands, how little instruction time apprentices get in Germany, the US and England, and what the research says about AI tutors filling the gap. It ends with three questions to test any AI tool before your apprentices use it.
 
 ## How much classroom time apprentices actually get
 
@@ -450,19 +450,19 @@ The definitions differ, so read the numbers as orders of magnitude, not as a lea
 
 Germany's curriculum is the most detailed public description of what a mechatronics apprentice has to learn, which makes it a useful reference wherever you train. The [KMK framework curriculum](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) packs five learning fields and 320 lesson hours into year one, more than any later year.
 
-Two details are easy to miss. Maths is not a separate subject: the curriculum teaches it inside the learning fields, starting from the minimum school-leaving level. And all five fields require technical English, from vocabulary to product manuals. An apprentice who struggles with either struggles a little everywhere.
+Two details are easy to miss. The curriculum teaches maths and technical English inside the learning fields, not as separate ones, and it builds on the lowest German school-leaving certificate. And English appears in all five fields, from vocabulary to product manuals. An apprentice who struggles with either struggles a little everywhere.
 
-Early gaps also cost later. German mechatronics apprentices sit Part 1 of their final exam before the end of year two, an eight-hour practical task on a mechatronic subsystem. It counts for 40% of the final grade ([§ 8 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Whatever was only half understood in year one shows up in the certificate.
+Early gaps also cost later. German mechatronics apprentices sit Part 1 of their final exam before the end of year two: eight hours built around a practical task on a mechatronic subsystem. It counts for 40% of the final grade ([§ 8 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Whatever was only half understood in year one shows up in the certificate.
 
 ## What the research says about AI tutors
 
-Your apprentices already use AI, whether you have rules for it or not. The question is what it does to their learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
+Many apprentices already use AI. Germany's BIBB finds generative AI is already firmly part of apprentices' working day. The question is what it does to their learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
 
 None of these is an apprenticeship study, and each has limits: one school, two physics lessons, one company. Together they point the same way. **What decides the result is not whether learners use AI, but what the AI is built to do.**
 
-The Turkish study shows the mechanism. Students in the plain ChatGPT group mostly typed "What is the answer?" and copied it. The model was right only about half the time on those problems, and the students did not notice that they had learned less. The tutor version was told to give hints, not answers, and was given the teachers' correct solutions to work from.
+The Turkish study shows the mechanism. The most common message in the plain ChatGPT group was "What is the answer?", and many students copied what came back. When the researchers asked that question about the session problems, the model was right only about half the time, and the students did not notice that they had learned less. The tutor version was told to give hints, not answers, and was given the teachers' correct solutions to work from.
 
-The Harvard tutor went further. Its authors built it on seven principles: active learning, managing cognitive load, a growth mindset, scaffolding, accurate information, timely feedback and self-pacing. One finding matters for anyone building such a tool: a system prompt alone could not provide enough structure, so the platform itself stepped students through each part. The authors also say plainly that an AI tutor should not replace in-person teaching.
+The Harvard tutor went further. Its authors designed it around seven principles of good teaching: active learning, managing cognitive load, a growth mindset, scaffolding, accurate information, timely feedback and self-pacing. One finding matters for anyone building such a tool: a system prompt alone could not provide enough structure, so the platform itself stepped students through each part. The authors also say plainly that an AI tutor should not replace in-person teaching.
 
 ## What a good AI tutor for apprentices does
 
@@ -4512,7 +4512,7 @@ Fünf Lernfelder, 320 Stunden, Metall und Elektro gleichzeitig: Was Mechatronike
 
 ## Auf einen Blick
 
-- Im ersten Jahr sieht der Rahmenlehrplan fünf Lernfelder mit 320 Stunden vor: Mechanik, Elektrotechnik mit Berechnungen, Pneumatik und Hydraulik mit Steuerungstechnik, dazu Datenverarbeitung. Englische Fachunterlagen kommen in allen fünf vor.
+- Im ersten Jahr sieht der Rahmenlehrplan fünf Lernfelder mit 320 Stunden vor: Mechanik, Elektrotechnik mit Berechnungen, Pneumatik und Hydraulik mit Steuerungstechnik, dazu Datenverarbeitung. Englisch nennt der Plan in allen fünf.
 - Teil 1 der Abschlussprüfung findet vor Ende des zweiten Jahres statt und zählt 40 % der Gesamtnote. Lücken aus dem ersten Jahr landen also direkt im Abschlusszeugnis.
 - KI macht Azubis schneller, aber nicht automatisch klüger: In einem BIBB-Experiment lösten Azubis mit ChatGPT mehr Aufgaben, verstanden den Code aber nicht besser. Entscheidend ist, ob ein Werkzeug Lösungen ausgibt oder erst Fragen stellt.
 
@@ -4524,11 +4524,11 @@ Diese Übersicht zeigt, was der Rahmenlehrplan im ersten Jahr konkret verlangt, 
 
 ## Was das erste Jahr verlangt: fünf Lernfelder, 320 Stunden
 
-Der [Rahmenlehrplan der KMK](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) sieht für das erste Jahr fünf Lernfelder vor. Zusammen sind es 320 Unterrichtsstunden, mehr als in jedem anderen Ausbildungsjahr. Er setzt als Minimum den Hauptschulabschluss voraus. Mathematik und Englisch sind kein eigenes Fach, sondern laufen in den Lernfeldern mit.
+Der [Rahmenlehrplan der KMK](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) sieht für das erste Jahr fünf Lernfelder vor. Zusammen sind es 320 Unterrichtsstunden, mehr als in jedem anderen Ausbildungsjahr. Er baut auf dem Hauptschulabschluss auf. Mathematik, Naturwissenschaften und Fachenglisch vermittelt er innerhalb der Lernfelder, nicht als eigene Lernfelder.
 
 Die Tabelle zeigt pro Lernfeld, was der Plan verlangt, und eine Frage, mit der Sie in der Werkstatt prüfen, ob es angekommen ist. Offizielle Zahlen dazu, wo Mechatroniker-Azubis am häufigsten scheitern, gibt es nicht. Die Prüfstatistik erfasst nur Abschlussprüfungen, keine einzelnen Teile.
 
-Was in der Tabelle leicht untergeht: In allen fünf Lernfeldern stehen englische Fachbegriffe, Produktbeschreibungen oder Handbücher. Wer mit Englisch kämpft, kämpft also nicht in einem Fach, sondern überall ein bisschen.
+Was in der Tabelle leicht untergeht: In allen fünf Lernfeldern nennt der Plan Englisch, von Fachbegriffen bis zu Handbüchern. Wer mit Englisch kämpft, kämpft also nicht in einem Lernfeld, sondern überall ein bisschen.
 
 Wie der Rahmenlehrplan der Berufsschule mit dem Ausbildungsrahmenplan Ihres Betriebs zusammenhängt, erklären wir in [Ausbildungsrahmenplan erklärt](/de/blog/ausbildungsrahmenplan-erklaert).
 
@@ -4536,11 +4536,11 @@ Wie der Rahmenlehrplan der Berufsschule mit dem Ausbildungsrahmenplan Ihres Betr
 
 Mechatroniker haben eine gestreckte Abschlussprüfung. Teil 1 soll vor dem Ende des zweiten Ausbildungsjahres stattfinden und prüft den Stoff des ersten Jahres und des dritten Halbjahres ([§ 6 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Die Prüfung dauert acht Stunden: eine Arbeitsaufgabe an einem mechatronischen Teilsystem, dazu Fachgespräche und rund 90 Minuten schriftliche Aufgaben.
 
-Teil 1 zählt 40 % der Gesamtnote. Eine eigene Bestehensgrenze hat er nicht, die Note geht aber voll in das Ergebnis ein. Teil 2 verteilt die übrigen 60 %: Arbeitsauftrag 30 %, Arbeitsplanung 12 %, Funktionsanalyse 12 %, Wirtschafts- und Sozialkunde 6 % (§ 8).
+Teil 1 zählt 40 % der Gesamtnote und hat keine eigene Bestehensgrenze. Teil 2 verteilt die übrigen 60 %: Arbeitsauftrag 30 %, Arbeitsplanung 12 %, Funktionsanalyse 12 %, Wirtschafts- und Sozialkunde 6 % (§ 8).
 
 Für Sie heißt das: Wer im ersten Jahr Elektrotechnik oder Pneumatik nur halb versteht, verliert nicht nur Zeit. Er verliert Punkte, die er in Teil 2 erst wieder aufholen muss.
 
-Dazu kommt ein Hinweis aus der Praxis. In einem [BIBB-Workshop zu den industriellen Elektroberufen](https://www.bibb.de/dienst/dapro/daprodocs/verweise/so_42395%205%20workshopmitanlagen.pdf) nannten Fachleute aus Betrieben und Schulen 2012 als Schwierigkeit, dass der mechanische Anteil zum Prüfungszeitpunkt oft „nicht mehr präsent“ sei. Das ist eine Einschätzung, keine Messung. Sie passt aber zur Struktur: Was im ersten Jahr nur einmal drankommt, ist bis zur Prüfung oft vergessen.
+Dazu kommt ein Hinweis aus der Praxis. In einem [BIBB-Workshop zu den industriellen Elektroberufen](https://www.bibb.de/dienst/dapro/daprodocs/verweise/so_42395%205%20workshopmitanlagen.pdf) nannten Fachleute 2012 als Schwierigkeit, dass der mechanische Anteil zum Prüfungszeitpunkt oft „nicht mehr präsent“ sei. Das ist eine Einschätzung, keine Messung. Sie passt aber zur Struktur: Was im ersten Jahr nur einmal drankommt, ist bis zur Prüfung oft vergessen.
 
 ## Wer bei Ihnen anfängt
 
@@ -4564,7 +4564,7 @@ Die Abschlussprüfung bestehen am Ende fast alle: Die Erfolgsquote lag 2024 bei 
 
 ## KI macht Azubis schneller, aber nicht automatisch klüger
 
-Ihre Azubis nutzen KI, ob Sie es geregelt haben oder nicht. In der [DiWaBe-Befragung 2024](https://www.bibb.de/dienst/publikationen/de/21037) gaben rund 60 % der Beschäftigten, die KI-Anwendungen nutzen, an, dass diese nicht offiziell vom Arbeitgeber eingeführt wurden.
+Viele Beschäftigte nutzen KI, ob der Betrieb es geregelt hat oder nicht. In der [DiWaBe-Befragung 2024](https://www.bibb.de/dienst/publikationen/de/21037) gaben rund 60 % der Beschäftigten, die KI-Anwendungen nutzen, an, dass diese nicht offiziell vom Arbeitgeber eingeführt wurden.
 
 Was das fürs Lernen bedeutet, hat das BIBB untersucht. Im [Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037) (Kapitel C3.3) beschreiben Manuel Merkel und Jens Dörpinghaus ein Experiment mit 27 Fachinformatik-Azubis im zweiten Jahr. Eine Gruppe durfte ChatGPT nutzen, die andere nicht. Die Gruppe mit KI löste mehr Aufgaben, schneller und mit weniger Frust. Beim Verständnis von Programmcode zeigte sie aber keinen Vorteil, bei einzelnen Aufgaben schnitt sie sogar schlechter ab. Viele übernahmen den KI-Code, ohne ihn zu prüfen.
 
@@ -4573,7 +4573,7 @@ Das ist eine IT-Studie, kein Mechatroniker-Experiment. Ein größeres Experiment
 - Mit einem normalen ChatGPT-Zugang schnitten Schüler beim Üben 48 % besser ab, in der anschließenden Prüfung ohne KI aber 17 % schlechter als die Vergleichsgruppe. Viele hatten sich Lösungen geben lassen und abgeschrieben.
 - Mit einer Tutor-Version, die nur Hinweise gibt und keine fertigen Lösungen, schnitten sie beim Üben 127 % besser ab. In der Prüfung waren sie so gut wie die Vergleichsgruppe, nicht schlechter, aber auch nicht besser.
 
-Die Lehre für die Ausbildung: Verbieten hilft nicht. Das BIBB hält Verbote weder für praktikabel noch für sinnvoll. Die Frage ist, ob ein Werkzeug Lösungen ausgibt oder erst fragt, was der Azubi schon versucht hat, und auf die Stelle im Lernmaterial verweist.
+Die Lehre für die Ausbildung: Entscheidend ist nicht, ob Azubis KI nutzen, sondern welche. Das BIBB hält Verbote ohnehin weder für praktikabel noch für sinnvoll, weil generative KI im Arbeitsalltag der Azubis bereits fest verankert ist. Die Frage ist, ob ein Werkzeug Lösungen ausgibt oder erst fragt, was der Azubi schon versucht hat, und auf die Stelle im Lernmaterial verweist.
 
 Auch in der Verteidigungsindustrie ist Lernen mit digitalem Anteil längst normal. [Quantum Systems](https://quantum-systems.com/news/lufabw-certification/) bildet Drohnenpiloten der Bundeswehr nach eigenen Angaben mit einem firmeneigenen Lernsystem aus und verkürzt so die praktische Ausbildung auf zehn Arbeitstage.
 
@@ -4589,7 +4589,7 @@ Ein Werkzeug, das bei Frage 1 sofort rechnet und bei Frage 3 erfindet, macht Ihr
 
 ## Wo LearnSlice ansetzt
 
-LearnSlice ist ein KI-Tutor, der genau so arbeitet: Er fragt erst nach, gibt Hinweise statt fertiger Lösungen und antwortet aus dem Rahmenplan und Ihren eigenen Unterlagen, mit Quelle zu jeder Antwort. Ausbilder sehen den Lernstand jedes Azubis im Abgleich mit dem Lernplan und erkennen früh, wer bei LF 3 oder LF 4 seit Wochen feststeckt.
+LearnSlice ist ein KI-Tutor, der genau so arbeitet: Er fragt erst nach, gibt Hinweise statt fertiger Lösungen und antwortet aus dem Rahmenplan und Ihren eigenen Unterlagen, mit Quelle zu jeder Antwort. Ausbilder sehen den Lernstand jedes Azubis im Abgleich mit dem Lernplan und erkennen früh, wer bei einem Thema seit Wochen feststeckt.
 
 Den Werkstattblick ersetzt das nicht. Es sorgt dafür, dass Fragen zwischen zwei Berufsschulblöcken nicht liegen bleiben, wenn gerade kein Ausbilder Zeit hat.
 
