@@ -436,17 +436,17 @@ What year one of a mechatronics apprenticeship demands, how little classroom tim
 
 ![An apprentice in safety glasses and a blue work apron operates a CNC milling machine in a training workshop](/images/blog/pexels-mikhail-nilov-9242206.webp)
 
-A mechatronics apprentice learns several trades at once: mechanical, electrical, fluid power, controls. Most of that learning happens on the shop floor, and the classroom hours are few. So many theory questions come up at work, where a trainer is not always free to answer them.
+A mechatronics apprentice learns several trades at once: mechanical, electrical, fluid power, controls. Most of that learning happens on the shop floor. In the US, the federal rule recommends 144 hours of classroom instruction a year: less than four working weeks. So many theory questions come up at work, where a trainer is not always free to answer them.
 
 This article shows what year one actually demands, how little instruction time apprentices get in Germany, the US and England, and what the research says about AI tutors filling the gap. It ends with three questions to test any AI tool before your apprentices use it.
 
-## How much classroom time apprentices actually get
+## How much classroom time mechatronics apprentices get
 
 Mechatronics apprenticeships look different in each country, but they share one feature: the job is the main classroom. The table puts the three systems side by side.
 
 The definitions differ, so read the numbers as orders of magnitude, not as a league table. The point holds anyway: in every system, an apprentice spends most of their time at work, and most theory questions come up there.
 
-## What year one demands: the German curriculum as a reference
+## What year one of a mechatronics apprenticeship demands
 
 Germany's curriculum is public and spells out, year by year, what a mechatronics apprentice has to learn, which makes it a useful reference wherever you train. The [KMK framework curriculum](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) packs five learning fields and 320 lesson hours into year one, more than any later year.
 
@@ -669,7 +669,7 @@ For the three most common reasons, mental strain, wrong expectations and poor wo
 
 Digital learning support helps in two other places:
 
-- **With theory.** In the electrical trades many topics build on each other, and a gap that opens early tends to stay. A tutor built on the [official training framework (Ausbildungsrahmenplan)](/blog/apprenticeship-framework-plan-explained) answers subject questions even when no trainer has time, and cites the source for every answer. That addresses a reason 24% name: the quality of teaching.
+- **With theory.** In the electrical trades many topics build on each other, and a gap that opens early tends to stay. For mechatronics, we go through year one field by field in [training mechatronics apprentices](/blog/training-mechatronics-apprentices). A tutor built on the [official training framework (Ausbildungsrahmenplan)](/blog/apprenticeship-framework-plan-explained) answers subject questions even when no trainer has time, and cites the source for every answer. That addresses a reason 24% name: the quality of teaching.
 - **With spotting problems early.** When trainers see each apprentice's progress against the learning plan, it becomes clear who has not moved forward for weeks. That does not replace a conversation, but it tells you who to talk to first. A [digital training log](/blog/digital-training-logbook) gives similar signals sooner than a paper folder at the end of the month.
 
 The MEKI project, funded under the federal InnoVET PLUS programme, follows a similar approach: the chambers of commerce in Reutlingen and the Stuttgart region are developing AI support for vocational school content together with universities in Stuttgart and Munich, for trades with high early termination rates and skills shortages, starting with IT systems electronics technicians.
@@ -810,7 +810,7 @@ When do contracts end? The [BIBB Datenreport 2026](https://www.bibb.de/dienst/pu
 
 In industry and commerce, which includes the metal and electrical trades, about 70% of all cancelled contracts end within the first twelve months.
 
-Picture a mechatronics apprentice in their third month. A new workshop, new colleagues, vocational school, and electrical engineering for the first time. They can no longer follow Ohm's law. They have already asked three times and do not dare ask a fourth. Nobody notices from the outside. This is how the path out of a contract can begin.
+Picture a mechatronics apprentice in their third month. A new workshop, new colleagues, vocational school, and electrical engineering for the first time. They can no longer follow Ohm's law. They have already asked three times and do not dare ask a fourth. Nobody notices from the outside. This is how the path out of a contract can begin. What mechatronics apprentices have to learn in year one, and where AI tutors help, is covered in [training mechatronics apprentices](/blog/training-mechatronics-apprentices).
 
 Of course, not every contract ends because of the subject matter. No learning aid fixes a conflict at work or the wrong choice of career. But much of what an employer can influence happens in this first year.
 
@@ -4518,9 +4518,9 @@ Fünf Lernfelder, 320 Stunden, Metall und Elektro gleichzeitig: Was Mechatronike
 
 ![Ein Azubi mit Schutzbrille und blauer Arbeitsschürze bedient eine CNC-Fräse in einer Lehrwerkstatt](/images/blog/pexels-mikhail-nilov-9242206.webp)
 
-Ein Mechatroniker lernt in dreieinhalb Jahren zwei Welten: Metall und Elektro. Im ersten Jahr kommt beides gleichzeitig, dazu Pneumatik, Hydraulik, Steuerungstechnik und Datenverarbeitung. Das ist viel Theorie für ein einziges Jahr.
+Ein Mechatroniker lernt in dreieinhalb Jahren zwei Welten: Metall und Elektro. Im ersten Jahr kommt beides gleichzeitig, dazu Pneumatik, Hydraulik, Steuerungstechnik und Datenverarbeitung. Allein die Berufsschule plant dafür 320 Stunden ein.
 
-Diese Übersicht zeigt, was der Rahmenlehrplan im ersten Jahr konkret verlangt, woran Sie in der Werkstatt erkennen, ob es sitzt, und warum KI dabei helfen oder schaden kann.
+Wer Mechatroniker ausbildet, findet hier, was der Rahmenlehrplan im ersten Jahr konkret verlangt, woran Sie in der Werkstatt erkennen, ob es sitzt, und warum KI dabei helfen oder schaden kann.
 
 ## Was das erste Jahr verlangt: fünf Lernfelder, 320 Stunden
 
@@ -4532,7 +4532,7 @@ Was in der Tabelle leicht untergeht: In allen fünf Lernfeldern nennt der Plan E
 
 Wie der Rahmenlehrplan der Berufsschule mit dem Ausbildungsrahmenplan Ihres Betriebs zusammenhängt, erklären wir in [Ausbildungsrahmenplan erklärt](/de/blog/ausbildungsrahmenplan-erklaert).
 
-## Warum das erste Jahr in die Abschlussnote zählt
+## Abschlussprüfung Teil 1: Warum das erste Jahr zählt
 
 Mechatroniker haben eine gestreckte Abschlussprüfung. Teil 1 soll vor dem Ende des zweiten Ausbildungsjahres stattfinden und prüft den Stoff des ersten Jahres und des dritten Halbjahres ([§ 6 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Die Prüfung dauert acht Stunden: eine Arbeitsaufgabe an einem mechatronischen Teilsystem, dazu Fachgespräche und rund 90 Minuten schriftliche Aufgaben.
 
@@ -4548,9 +4548,9 @@ Laut [BIBB-Datenblatt](https://www.bibb.de/dienst/dazubi/dazubi/datasheet/downlo
 
 Die Vorbildung ist gemischt. Von den neuen Azubis 2024 hatten rund 61 % einen mittleren Schulabschluss und rund 32 % Abitur oder Fachhochschulreife, knapp 5 % den ersten Schulabschluss. Die Ausgangslage in einer Berufsschulklasse kann also sehr unterschiedlich sein.
 
-Die Abschlussprüfung bestehen am Ende fast alle: Die Erfolgsquote lag 2024 bei 96,0 % aller Prüfungsteilnahmen. Vorher sieht es anders aus. Die Lösungsquote, also der Anteil vorzeitig gelöster Verträge, stieg von 10,5 % (2022) über 12,9 % (2023) auf 14,5 % (2024). Das ist keine Abbruchquote, denn viele setzen ihre Ausbildung anderswo fort. Für den Betrieb ist die Investition trotzdem verloren. Wann und warum Verträge gelöst werden, zeigen wir in [Ausbildungsabbruch verhindern](/de/blog/ausbildungsabbruch-verhindern).
+Die Abschlussprüfung bestehen am Ende fast alle: Die Erfolgsquote lag 2024 bei 96,0 % aller Prüfungsteilnahmen. Vorher sieht es anders aus. Die Lösungsquote, also der Anteil vorzeitig gelöster Verträge, stieg von 10,5 % (2022) über 12,9 % (2023) auf 14,5 % (2024). Das ist keine Abbruchquote, denn viele setzen ihre Ausbildung anderswo fort. Für den Betrieb ist die Investition trotzdem verloren. Was das bei Ihnen kostet, schätzt unser [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner). Wann und warum Verträge gelöst werden, zeigen wir in [Ausbildungsabbruch verhindern](/de/blog/ausbildungsabbruch-verhindern).
 
-## Fünf Dinge, die Ausbilder im ersten Jahr tun können
+## Mechatroniker ausbilden: fünf Dinge für das erste Jahr
 
 **1. Fragen Sie die Berufsschule nach der Reihenfolge der Lernfelder.** Im selben BIBB-Workshop berichteten Fachleute von einer „unglücklichen Reihenfolge bei der Vermittlung der Lernfelder im ersten Ausbildungsjahr“, die Azubis verwirrt habe. Wenn Sie wissen, wann LF 3 und LF 4 drankommen, können Sie die passenden Aufgaben in der Werkstatt in dieselben Wochen legen.
 
@@ -4769,7 +4769,7 @@ Bei den drei häufigsten Gründen, psychischer Belastung, falschen Erwartungen u
 
 Digitale Lernbegleitung hilft an zwei anderen Stellen:
 
-- **Bei der Theorie.** In den Elektroberufen bauen viele Themen aufeinander auf, wer früh eine Lücke hat, trägt sie mit. Ein Tutor, der auf dem [Ausbildungsrahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) aufbaut, beantwortet Fachfragen auch dann, wenn gerade kein Ausbilder Zeit hat, und nennt die Quelle zu jeder Antwort. Das setzt bei einem Grund an, den 24 % nennen: der Qualität der Vermittlung.
+- **Bei der Theorie.** In den Elektroberufen bauen viele Themen aufeinander auf, wer früh eine Lücke hat, trägt sie mit. Für Mechatroniker zeigen wir das Lernfeld für Lernfeld in [Mechatroniker ausbilden](/de/blog/mechatroniker-ausbilden). Ein Tutor, der auf dem [Ausbildungsrahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) aufbaut, beantwortet Fachfragen auch dann, wenn gerade kein Ausbilder Zeit hat, und nennt die Quelle zu jeder Antwort. Das setzt bei einem Grund an, den 24 % nennen: der Qualität der Vermittlung.
 - **Beim frühen Erkennen.** Wenn Ausbilder den Lernstand jedes Azubis im Abgleich mit dem Lernplan sehen, fällt auf, wer seit Wochen nicht weiterkommt. Das ersetzt kein Gespräch, aber es sagt Ihnen, mit wem Sie es zuerst führen sollten. Ein [digitales Berichtsheft](/de/blog/berichtsheft-digital) liefert ähnliche Signale früher als der Papierordner am Monatsende.
 
 Einen ähnlichen Ansatz verfolgt das Projekt MEKI aus dem Förderprogramm InnoVET PLUS: Die IHKs Reutlingen und Region Stuttgart entwickeln dort mit Hochschulen aus Stuttgart und München KI-Unterstützung für den Berufsschulstoff in Berufen mit hohen Lösungsquoten und Fachkräftemangel, zuerst für IT-Systemelektroniker.
@@ -4900,7 +4900,7 @@ Wann enden die Verträge? Der [BIBB-Datenreport 2026](https://www.bibb.de/dienst
 
 In Industrie und Handel, wozu die Metall- und Elektroberufe zählen, enden also rund 70 % aller gelösten Verträge in den ersten zwölf Monaten.
 
-Stellen Sie sich einen Mechatroniker-Azubi im dritten Monat vor. Neue Werkstatt, neue Kollegen, Berufsschule, dazu zum ersten Mal Elektrotechnik. Beim ohmschen Gesetz kommt er nicht mehr mit. Er hat schon dreimal nachgefragt und traut sich kein viertes Mal. Von außen sieht niemand etwas. So kann der Weg aus dem Vertrag beginnen.
+Stellen Sie sich einen Mechatroniker-Azubi im dritten Monat vor. Neue Werkstatt, neue Kollegen, Berufsschule, dazu zum ersten Mal Elektrotechnik. Beim ohmschen Gesetz kommt er nicht mehr mit. Er hat schon dreimal nachgefragt und traut sich kein viertes Mal. Von außen sieht niemand etwas. So kann der Weg aus dem Vertrag beginnen. Was Mechatroniker im ersten Jahr lernen müssen und wie Sie solche Lücken früh sehen, zeigen wir in [Mechatroniker ausbilden](/de/blog/mechatroniker-ausbilden).
 
 Natürlich endet nicht jeder Vertrag wegen des Lernstoffs. Bei Konflikten im Betrieb oder einer falschen Berufswahl hilft keine Lernhilfe. Aber vieles, was Sie als Betrieb beeinflussen können, passiert in diesem ersten Jahr.
 
