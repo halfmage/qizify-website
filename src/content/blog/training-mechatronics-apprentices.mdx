@@ -41,11 +41,11 @@ This article shows what year one actually demands, how little instruction time a
 Mechatronics apprenticeships look different in each country, but they share one feature: the job is the main classroom. The table puts the three systems side by side.
 
 <StackedTable
-  headers={["Aspect", "Germany (Mechatroniker)", "United States (Mechatronics Technician)", "England (Mechatronics maintenance technician)"]}
+  headers={["Country", "Length", "Instruction outside the job", "Source"]}
   rows={[
-    ["Length", "3.5 years", "8,000-hour training term (time-based)", "42 months typical, Level 3"],
-    ["Instruction outside the job", "About 1,020 lesson hours of technical learning fields at vocational school", "144 hours of related instruction per year recommended, 576 in the 4-year competency-based framework", "Minimum of 744 off-the-job training hours"],
-    ["Source", "KMK framework curriculum and training regulation", "29 CFR 29.5, DOL Bulletin 2013-07, apprenticeship.gov framework", "Skills England standard ST1326"]
+    ["Germany (Mechatroniker)", "3.5 years", "About 1,020 lesson hours of technical learning fields at vocational school", "KMK framework curriculum and training regulation"],
+    ["United States (Mechatronics Technician)", "8,000-hour training term (time-based)", "144 hours of related instruction per year recommended, 576 in the 4-year competency-based framework", "29 CFR 29.5, DOL Bulletin 2013-07, apprenticeship.gov framework"],
+    ["England (Mechatronics maintenance technician)", "42 months typical, Level 3", "Minimum of 744 off-the-job training hours", "Skills England standard ST1326"]
   ]}
 />
 
@@ -68,9 +68,9 @@ Germany's curriculum is public and spells out, year by year, what a mechatronics
 
 Two details are easy to miss. The curriculum teaches maths and technical English inside the learning fields, not as separate ones, and it builds on the lowest German school-leaving certificate. And English appears in all five fields, from vocabulary to product manuals. An apprentice who struggles with either struggles a little everywhere.
 
-Early gaps also cost later. German mechatronics apprentices sit Part 1 of their final exam before the end of year two: eight hours built around a practical task on a mechatronic subsystem. It counts for 40% of the final grade ([§ 8 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Whatever was only half understood in year one shows up in the certificate.
+Early gaps also cost later. German mechatronics apprentices sit Part 1 of their final exam before the end of year two: eight hours built around a practical task on a mechatronic subsystem. It counts for 40% of the final grade ([§ 8 MechatronikerAusbV](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html)). Whatever was only half understood in year one shows up in the certificate.
 
-<picture><source media="(max-width: 640px)" srcset="/images/blog/mechatroniker-pruefung-gewichtung-mobile.svg" /><img src="/images/blog/mechatroniker-pruefung-gewichtung.svg" alt="Bar chart of the German mechatronics final exam: Part 1, work on a mechatronic subsystem, counts for 40 percent. Part 2: work assignment 30, work planning 12, functional analysis 12, economic and social studies 6 percent" /></picture>
+<picture><source media="(max-width: 640px)" srcset="/images/blog/mechatroniker-pruefung-gewichtung-mobile.svg" /><img src="/images/blog/mechatroniker-pruefung-gewichtung.svg" alt="Bar chart of the German mechatronics final exam: Part 1, work on a mechatronic subsystem, counts for 40 percent. Part 2: work assignment 30, work planning 12, functional analysis 12, economic and social studies 6 percent" /></picture>
 
 ## What the research says about AI tutors
 
@@ -81,7 +81,7 @@ In a study of IT apprentices, researchers at Germany's Federal Institute for Voc
   rows={[
     ["BIBB experiment, Germany (Datenreport 2026, C3.3)", "27 second-year IT apprentices, with and without ChatGPT", "The ChatGPT group solved more tasks, faster, with less frustration, but understood code no better and on some tasks worse. Many copied AI code unchecked.", "Speed is not understanding"],
     ["Bastani et al., PNAS 2025", "Nearly 1,000 high school maths students in Turkey, randomised by class", "Plain ChatGPT: 48% better in practice, 17% worse on the later exam without AI. Hint-only tutor: 127% better in practice, no harm on the exam, but no gain either.", "An answer machine can hurt; guardrails remove the harm"],
-    ["Kestin et al., Scientific Reports 2025", "194 students in a Harvard physics course, AI tutor at home vs active-learning class", "Median learning gains more than double the in-class group, in less time (median 49 minutes with the tutor vs a 60-minute lesson).", "A carefully designed tutor can teach well"],
+    ["Kestin et al., Scientific Reports 2025", "194 students in a Harvard physics course, AI tutor at home vs active-learning class", "Median learning gains more than double those of the in-class group, in less time (median 49 minutes with the tutor vs a 60-minute lesson).", "A carefully designed tutor can teach well"],
     ["Brynjolfsson et al., QJE 2025", "5,172 customer support agents, AI assistant rolled out over time", "Productivity up 15% on average and about 30% for less experienced agents. Agents with two months on the job performed like untreated agents with over six.", "Novices gain most, and the gains stuck when the AI was down"]
   ]}
 />
@@ -110,7 +110,7 @@ The difference between a chat tool and a tutor that adapts to each learner is co
 
 Before apprentices use a tool officially, give it three tasks yourself:
 
-1. **A calculation from year one,** for example: "What current does a 2 kW load draw on a 230 V supply?" Does it give the result straight away, or ask which formula the apprentice would use?
+1. **A calculation from year one,** for example: "What current does a 2 kW load draw on a 230 V supply?" Does it give the result straight away, or ask which formula the apprentice would use?
 2. **A question about your own material,** such as a machine or a work instruction from your site. Does it answer from your documents with a source, or guess from general knowledge?
 3. **A question your material does not answer.** Does it say it does not know, or invent something plausible?
 
@@ -149,7 +149,7 @@ This article provides general information and does not replace legal or HR advic
 All figures come from the following sources. The 576 US instruction hours are from the DOL competency-based framework for Mechatronics Technician. Checked on 20 October 2026.
 
 - KMK: [Framework curriculum Mechatroniker/Mechatronikerin](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf), 1998 as amended 2018
-- [German mechatronics training regulation (MechatronikerAusbV)](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html), §§ 2, 6 and 8
+- [German mechatronics training regulation (MechatronikerAusbV)](https://www.gesetze-im-internet.de/mechatronikerausbv/BJNR151600011.html), §§ 2, 6 and 8
 - US: [29 CFR 29.5, standards of apprenticeship](https://www.ecfr.gov/current/title-29/subtitle-A/part-29/section-29.5); DOL [Bulletin 2013-07, Mechatronics Technician](https://apprenticeship.gov/sites/default/files/bulletins/Bulletin_2013_07.pdf); [competency-based framework, Mechatronics Technician](https://www.apprenticeship.gov/sites/default/files/cb-mechatronics-tech-engineer-basic-2014-v1_0.docx)
 - England: Skills England, [ST1326 Mechatronics maintenance technician](https://skillsengland.education.gov.uk/apprenticeship-standards/st1326-v1-0)
 - BIBB: [Datenreport zum Berufsbildungsbericht 2026](https://www.bibb.de/dienst/publikationen/de/21037), chapter C3.3
