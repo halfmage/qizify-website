@@ -852,6 +852,8 @@ Each one answers a complaint you have probably already heard.
 
 **5. It refuses to guess.** *We cannot trust it.* The most valuable sentence a tutor can produce is that the answer is not in your material and here is who to ask. In regulated training, a model with no boundary is not a quirk. It is a liability.
 
+Point 4 is what most people mean by adaptive learning. Classic adaptive learning software does it with pre-written exercises and a mastery model, and a tutor adds the conversation on top. How the two differ, and why the strongest setups combine them, is covered in [AI tutor vs. adaptive learning software](/blog/custom-ai-tutor-development#ai-tutor-vs-adaptive-learning-software-what-is-the-difference).
+
 ## Why No Setting Fixes This
 
 A language model is like an exceptionally well read graduate on their first morning at your organisation. Enormous general knowledge, and no idea what is on your shared drive. Ask about your warehouse fire safety module and they will reason from what such modules usually contain. That is not lying. It is the only thing they can do.
@@ -1444,6 +1446,24 @@ The difference from an off-the-shelf assistant is grounding. A generic chatbot a
 
 ![The LearnSlice AI tutor: a chat interface with IHK exam, onboarding, company knowledge, and upskilling modes, grounded in your own content](/images/solutions/learnslice.webp)
 
+## AI Tutor vs. Adaptive Learning Software: What Is the Difference?
+
+The two terms get used as if they meant the same thing. They do not, and the difference decides what you are actually buying.
+
+**Adaptive learning software** is the older idea. Authors write content and exercises in advance and tag each one to a skill. A mastery model tracks what each learner has shown they can do and picks the next item: more practice where they are weak, skipping what they already know. It is predictable and measurable, and it works well where a subject breaks into clear steps, such as maths or an exam question bank. Its limit is the authoring: every path and every exercise has to exist before a learner can take it, and the software has no answer to a question nobody wrote down.
+
+**A plain AI tutor**, a chat layer over your content, works the other way round. It writes its answer in conversation, from your material, so a learner can ask anything your content covers and get an explanation that fits them. Its limit is the opposite one: it is reactive. It waits to be asked and has no view of what the learner should work on next.
+
+| | Adaptive learning software | Plain AI tutor (chat only) |
+|---|---|---|
+| How it personalises | picks the next pre-written item from a mastery model | explains and answers in dialogue |
+| Content | authored in advance, item by item | drawn from your existing material |
+| Open questions | only what was authored in advance | anything your content covers |
+| Who steers | the system | mostly the learner |
+| Effort sits in | writing and tagging items | grounding and guardrails |
+
+Both are forms of personalised learning, and the strongest setup combines them: a mastery model decides what each learner works on next, and the tutor explains, answers, and gives feedback along the way. That is what a custom AI tutor guiding each learner along an adaptive path means, and it is what "adaptivity" means in the cost section below. When a vendor calls their product adaptive, ask which of the two they mean: a model that tracks mastery and changes the path, or a chatbot that changes its wording.
+
 ## Who Builds a Custom AI Tutor
 
 Three groups commission custom AI tutors, for different reasons:
@@ -1544,6 +1564,10 @@ A first usable version with your content and a working learning flow is often re
 ### What is the difference between a custom AI tutor and a generic chatbot?
 
 A generic chatbot answers from the open internet and a general model. A custom AI tutor is grounded in your own curriculum and knowledge, so it answers from your material, follows your didactic structure, guides each learner along an adaptive path, and gives feedback. It runs under your brand, with your roles and your data-protection rules built in.
+
+### What is the difference between an AI tutor and adaptive learning software?
+
+Adaptive learning software picks the next pre-written exercise for each learner from a mastery model, so every path and question has to be authored in advance. A chat-only AI tutor answers and explains in conversation from your existing material, but does not steer the learner. Both are forms of personalised learning, and the strongest setup combines them: the mastery model decides what comes next, and the tutor explains along the way.
 
 ### Can a custom AI tutor be white-labelled for our brand?
 
@@ -4782,6 +4806,8 @@ Jedes davon beantwortet eine Beschwerde, die Sie vermutlich schon gehört haben.
 
 **5. Er weigert sich zu raten.** *Wir können ihm nicht vertrauen.* Der wertvollste Satz lautet: Das steht nicht in Ihrem Material, fragen Sie bitte dort nach. In geregelter Ausbildung ist ein Modell ohne Grenze keine Marotte, sondern ein Haftungsthema.
 
+Punkt 4 ist das, was meist mit adaptivem Lernen gemeint ist. Klassische adaptive Lernsoftware löst das mit vorab geschriebenen Übungen und einem Kompetenzmodell, ein Lernbegleiter ergänzt den Dialog. Worin sich beide unterscheiden und warum die besten Lösungen sie kombinieren, steht in [KI-Tutor oder adaptive Lernsoftware](/de/blog/ki-lernbegleiter-entwickeln-lassen#ki-tutor-oder-adaptive-lernsoftware-was-ist-der-unterschied).
+
 ## Warum keine Einstellung das löst
 
 Ein Sprachmodell ist wie eine außergewöhnlich belesene Absolventin an ihrem ersten Arbeitstag bei Ihnen. Enormes Allgemeinwissen, und keine Ahnung, was auf Ihrem Laufwerk liegt. Fragen Sie nach Ihrem Brandschutzmodul, schließt sie daraus, was in solchen Modulen üblicherweise steht. Das ist keine Lüge, es ist das Einzige, was sie tun kann.
@@ -5366,6 +5392,24 @@ Der Unterschied zu einem Standard-Assistenten ist die Verankerung. Ein generisch
 
 ![Der KI-Lernbegleiter von LearnSlice: eine Chat-Oberfläche mit Modi für IHK-Prüfung, Onboarding, Unternehmenswissen und Weiterbildung, verankert in Ihren eigenen Inhalten](/images/solutions/learnslice.webp)
 
+## KI-Tutor oder adaptive Lernsoftware: Was ist der Unterschied?
+
+Die beiden Begriffe werden oft gleichgesetzt. Sie meinen aber Verschiedenes, und der Unterschied entscheidet, was Sie tatsächlich einkaufen.
+
+**Adaptive Lernsoftware** ist die ältere Idee. Autorinnen und Autoren schreiben Inhalte und Übungen vorab und ordnen jede einer Kompetenz zu. Ein Kompetenzmodell verfolgt, was jeder Lernende bereits nachgewiesen hat, und wählt die nächste Einheit: mehr Übung, wo es hakt, überspringen, was schon sitzt. Das ist planbar und messbar und funktioniert gut, wo sich ein Fach in klare Schritte zerlegen lässt, etwa in Mathematik oder einem Pool von Prüfungsfragen. Die Grenze ist der Erstellungsaufwand: Jeder Pfad und jede Übung muss existieren, bevor jemand sie bearbeiten kann, und auf eine Frage, die niemand vorab aufgeschrieben hat, hat die Software keine Antwort.
+
+**Ein reiner KI-Tutor**, also eine Chat-Schicht über Ihren Inhalten, arbeitet umgekehrt. Er formuliert seine Antwort im Dialog, aus Ihrem Material. Lernende können also alles fragen, was Ihre Inhalte abdecken, und bekommen eine Erklärung, die zu ihnen passt. Seine Grenze ist die entgegengesetzte: Er ist reaktiv. Er wartet auf Fragen und hat keinen Plan, woran der Lernende als Nächstes arbeiten sollte.
+
+| | Adaptive Lernsoftware | Reiner KI-Tutor (nur Chat) |
+|---|---|---|
+| Wie personalisiert wird | wählt per Kompetenzmodell die nächste vorab geschriebene Übung | erklärt und antwortet im Dialog |
+| Inhalte | vorab erstellt, Übung für Übung | aus Ihrem vorhandenen Material |
+| Offene Fragen | nur, was vorab erstellt wurde | alles, was Ihre Inhalte abdecken |
+| Wer steuert | das System | überwiegend der Lernende |
+| Der Aufwand steckt in | Erstellen und Zuordnen der Übungen | Verankerung und Leitplanken |
+
+Beides sind Formen personalisierten Lernens, und am stärksten ist die Kombination: Ein Kompetenzmodell entscheidet, woran jeder Lernende als Nächstes arbeitet, und der KI-Tutor erklärt, antwortet und gibt unterwegs Feedback. So ist ein KI-Lernbegleiter gemeint, der jeden Lernenden über einen adaptiven Lernpfad führt, und genau das meint „Adaptivität“ im Kostenabschnitt weiter unten. Wenn ein Anbieter sein Produkt adaptiv nennt, fragen Sie nach, welches von beiden gemeint ist: ein Modell, das den Lernstand verfolgt und den Pfad ändert, oder ein Chatbot, der seine Formulierung ändert.
+
 ## Für wen sich ein eigener KI-Lernbegleiter lohnt
 
 Drei Gruppen lassen KI-Lernbegleiter entwickeln, aus unterschiedlichen Gründen:
@@ -5466,6 +5510,10 @@ Eine erste nutzbare Version mit Ihren Inhalten und einem funktionierenden Lernab
 ### Was ist der Unterschied zwischen einem KI-Lernbegleiter und einem generischen Chatbot?
 
 Ein generischer Chatbot antwortet aus dem offenen Internet und einem allgemeinen Modell. Ein KI-Lernbegleiter ist in Ihrem eigenen Wissen verankert: Er antwortet aus Ihren Materialien, folgt Ihrer didaktischen Struktur, führt jeden Lernenden über einen adaptiven Pfad und gibt Feedback. Er läuft unter Ihrer Marke, mit Ihren Rollen und Ihren Datenschutzregeln.
+
+### Was ist der Unterschied zwischen einem KI-Tutor und adaptiver Lernsoftware?
+
+Adaptive Lernsoftware wählt per Kompetenzmodell für jeden Lernenden die nächste vorab geschriebene Übung, jeder Pfad und jede Frage muss also vorher erstellt werden. Ein reiner Chat-Tutor antwortet und erklärt im Dialog aus Ihrem vorhandenen Material, steuert den Lernenden aber nicht. Beides sind Formen personalisierten Lernens, und am stärksten ist die Kombination: Das Kompetenzmodell entscheidet, was als Nächstes kommt, der KI-Tutor erklärt unterwegs.
 
 ### Kann ein KI-Lernbegleiter als White-Label unter unserer Marke laufen?
 
