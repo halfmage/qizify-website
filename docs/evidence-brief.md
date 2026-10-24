@@ -18,7 +18,7 @@ Here is what the first university pilot found.
 ## The credibility trio (top band)
 
 - **University co-development:** Built with the IDiAL institute at FH Dortmund.
-- **Federally funded research:** Funded by the German Federal Ministry for Economic Affairs and Energy (BMWE), grant 16GM200301.
+- **Federally funded research:** Funded by the German Federal Ministry for Economic Affairs and Energy (BMWE), grant 16GM200301 (grant recipient: Alesia Kunz, sole proprietorship).
 - **Hosted in Germany:** Learner data stays in Germany and is never used to train the model.
 
 ---

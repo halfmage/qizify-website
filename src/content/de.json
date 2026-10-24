@@ -372,7 +372,7 @@
     "subheadline": "LearnSlice wird in einem öffentlich geförderten Forschungsprojekt mit der FH Dortmund entwickelt. Hier sehen Sie, was die erste Hochschulstudie untersucht und gefunden hat.",
     "context": {
       "headline": "Was die Studie untersucht hat",
-      "body": "LearnSlice wurde gemeinsam mit dem Institut IDiAL der FH Dortmund in einem Forschungsprojekt entwickelt, das vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200301) gefördert wird. Im Mai 2026 nutzten 50 Masterstudierende es zur Vorbereitung auf eine Prüfung im Fach Usability Engineering. Die Auswertung folgte einem Design-Science-Research-Ansatz mit zwei Studierendenbefragungen und einer Fokusgruppe aus fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung. Dies ist die erste von drei geplanten Iterationen."
+      "body": "LearnSlice wurde gemeinsam mit dem Institut IDiAL der FH Dortmund in einem Forschungsprojekt entwickelt, das vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200301; Zuwendungsempfängerin: Alesia Kunz, Einzelunternehmen) gefördert wird. Im Mai 2026 nutzten 50 Masterstudierende es zur Vorbereitung auf eine Prüfung im Fach Usability Engineering. Die Auswertung folgte einem Design-Science-Research-Ansatz mit zwei Studierendenbefragungen und einer Fokusgruppe aus fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung. Dies ist die erste von drei geplanten Iterationen."
     },
     "challenges": {
       "label": "Der Ausgangspunkt",
@@ -471,7 +471,7 @@
       "headline": "Woran wir noch arbeiten",
       "body": "Dies war eine erste Studie zu einem grundlegenden Thema, und die Gewinne bei Lerntempo und Engagement waren teilweise. Die Lehrenden merkten an, dass der Nutzen eines maßgeschneiderten Assistenten bei spezialisiertem, reguliertem und kuratiertem Material am größten ist. Die nächsten Iterationen widmen sich dem projektbasierten Lernen und der Integration unternehmensspezifischen Wissens. Wir aktualisieren diese Seite im Verlauf der Forschung."
     },
-    "disclosure": "Erste Forschungsstudie, 50 Studierende, ein Kurs, Mai 2026. LearnSlice ist Partner im geförderten Forschungsprojekt. Die Ergebnisse beschreiben eine frühe Studie und sind keine begutachtete Veröffentlichung.",
+    "disclosure": "Erste Forschungsstudie, 50 Studierende, ein Kurs, Mai 2026. Das geförderte Vorhaben führt Alesia Kunz (Einzelunternehmen) gemeinsam mit der FH Dortmund durch. Die Ergebnisse beschreiben eine frühe Studie und sind keine begutachtete Veröffentlichung.",
     "cta": {
       "headline": "Sehen Sie die Belege in Ihrem eigenen Kontext",
       "subheadline": "Mit einer deutschen Hochschule entwickelt, in Deutschland gehostet, auf Ihrem Lehrplan aufgebaut. Wir führen Sie durch die Studienergebnisse und zeigen, wie ein Setup für Ihre Teams aussieht.",

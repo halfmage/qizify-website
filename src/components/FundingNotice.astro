@@ -10,7 +10,9 @@ const { currentLang, variant = 'section' } = Astro.props;
 
 // BMWE logo with Förderzusatz, required by the IGP Zuwendungsbescheid (FKZ 16GM200301)
 // on all project-related publicity. Logo source: Wikimedia Commons.
-const grant = currentLang === 'de' ? 'Förderkennzeichen 16GM200301' : 'Grant 16GM200301';
+const grant = currentLang === 'de'
+	? 'Zuwendungsempfängerin: Alesia Kunz (Einzelunternehmen) · Förderkennzeichen 16GM200301'
+	: 'Grant recipient: Alesia Kunz (sole proprietorship) · Grant 16GM200301';
 const isFooter = variant === 'footer';
 ---
 
