@@ -1,4 +1,6 @@
 ---
+import FundingNotice from './FundingNotice.astro';
+
 interface Props {
 	currentLang: 'en' | 'de';
 	privacyLabel: string;
@@ -148,6 +150,9 @@ const columns = Object.values(footerColumns);
 					</div>
 				))}
 			</div>
+
+			<!-- Public funding notice (IGP, BMWE) -->
+			<FundingNotice currentLang={currentLang} variant="footer" />
 
 			<!-- Divider -->
 			<div class="border-t border-border"></div>
