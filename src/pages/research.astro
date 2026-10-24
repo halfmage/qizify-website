@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import DataBars from '../components/DataBars.astro';
 import TrustBar from '../components/TrustBar.astro';
+import FundingNotice from '../components/FundingNotice.astro';
 import CTAFooter from '../components/CTAFooter.astro';
 import Footer from '../components/Footer.astro';
 import DemoRequestModal from '../components/DemoRequestModal.astro';
@@ -45,6 +46,7 @@ const r = enContent.research;
 
 	<!-- University trust strip -->
 	<TrustBar currentLang={lang} showLink={false} center={true} />
+	<FundingNotice currentLang={lang} />
 
 	<!-- What the study looked at -->
 	<section class="pb-14 md:pb-20 px-6 md:px-8 border-t border-border/50 pt-14 md:pt-20">

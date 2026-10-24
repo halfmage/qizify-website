@@ -2075,7 +2075,7 @@ Yes, especially there. Dual students face a double load of study and company wor
 
 ### Where do these numbers come from?
 
-From a research study at FH Dortmund (IDiAL institute), funded by the German Federal Ministry for Economic Affairs and Energy (BMWE, grant 16GM200302). 50 master's students used LearnSlice in May 2026 to prepare for an exam. The method was Design Science Research with two surveys and a focus group of five lecturers with 8 to 19 years of teaching experience.
+From a research study at FH Dortmund (IDiAL institute), funded by the German Federal Ministry for Economic Affairs and Energy (BMWE, grant 16GM200301). 50 master's students used LearnSlice in May 2026 to prepare for an exam. The method was Design Science Research with two surveys and a focus group of five lecturers with 8 to 19 years of teaching experience.
 
 ### What sets an AI learning platform apart from a general chatbot?
 
@@ -6237,7 +6237,7 @@ Ja, besonders dort. Duale Studierende stehen unter Doppelbelastung aus Studium u
 
 ### Woher stammen diese Zahlen?
 
-Aus einer Forschungsstudie der FH Dortmund (Institut IDiAL), gefördert vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200302). 50 Masterstudierende nutzten LearnSlice im Mai 2026 zur Prüfungsvorbereitung. Die Auswertung folgte einem Design-Science-Research-Ansatz mit zwei Befragungen und einer Fokusgruppe aus fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung.
+Aus einer Forschungsstudie der FH Dortmund (Institut IDiAL), gefördert vom Bundesministerium für Wirtschaft und Energie (BMWE, Förderkennzeichen 16GM200301). 50 Masterstudierende nutzten LearnSlice im Mai 2026 zur Prüfungsvorbereitung. Die Auswertung folgte einem Design-Science-Research-Ansatz mit zwei Befragungen und einer Fokusgruppe aus fünf Lehrenden mit 8 bis 19 Jahren Lehrerfahrung.
 
 ### Was unterscheidet eine KI-Lernplattform von einem allgemeinen Chatbot?
 

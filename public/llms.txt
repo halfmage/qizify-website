@@ -61,7 +61,7 @@ How projects run: discovery and scoping, design and curriculum alignment, build 
 
 ## Research and Evidence
 
-LearnSlice is co-developed with the IDiAL institute at FH Dortmund in a research project funded by the German Federal Ministry for Economic Affairs and Energy (BMWE, grant 16GM200302). In May 2026, 50 master's students used it to prepare for a university exam:
+LearnSlice is co-developed with the IDiAL institute at FH Dortmund in a research project funded by the German Federal Ministry for Economic Affairs and Energy (BMWE, grant 16GM200301; grant recipient: Alesia Kunz, sole proprietorship). In May 2026, 50 master's students used it to prepare for a university exam:
 
 - Every answer in the system evaluation carried a valid citation back to its source passage, with no invented references
 - 80% of students reached complete or near-complete understanding of the exam topic
