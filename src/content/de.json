@@ -129,7 +129,7 @@
         "description": "Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Erlebnis, das Azubis bei der Stange hält und Abschlussquoten steigert."
       }
     ],
-    "compliance": "100 % DSGVO-konform. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur"
+    "compliance": "DSGVO-konform betrieben. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur."
   },
   "madeForCompany": {
     "headline": "Für Unternehmen, Schulen und Agenturen",
@@ -240,8 +240,8 @@
       },
       {
         "icon": "hugeicons:security-check",
-        "title": "Made in\nGermany",
-        "description": "DSGVO-konform, Server in Deutschland, Lokales LLM"
+        "title": "Gehostet in\nDeutschland",
+        "description": "DSGVO-konform betrieben, Server in Deutschland, Lokales LLM"
       }
     ]
   },
@@ -309,7 +309,7 @@
       },
       {
         "question": "Sind meine Daten sicher / DSGVO-konform?",
-        "answer": "Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders."
+        "answer": "Ja. LearnSlice wird DSGVO-konform betrieben. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders."
       },
       {
         "question": "Wie hilft LearnSlice bei vorzeitigen Vertragslösungen und Ausbilderaufwand?",

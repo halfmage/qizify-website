@@ -70,7 +70,7 @@ Real-time dashboards show apprentice status, progress trends, and team-wide perf
 
 Points, badges, and leaderboards turn daily practice into a motivating experience that keeps apprentices engaged and completing their learning paths.
 
-100% GDPR-compliant. Hosted in Germany or your infrastructure.
+Run GDPR-compliant. Hosted in Germany or on your own infrastructure.
 
 ## Vocational Professions
 
@@ -145,9 +145,9 @@ Science-proven learning methods, tested by young professionals
 
 Federal Ministry award
 
-### Made in Germany
+### Hosted in Germany
 
-GDPR, German servers, local LLM.
+Run GDPR-compliant, German servers, local LLM.
 
 ## Frequently Asked Questions
 
@@ -181,7 +181,7 @@ Most apprentices log in voluntarily multiple times per week once the first two-w
 
 ### Is my data safe / GDPR compliant?
 
-Yes. 100% GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise.
+Yes. LearnSlice is run GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise.
 
 ### How does this help with early contract cancellations and trainer load?
 
@@ -277,7 +277,7 @@ Echtzeit-Dashboards zeigen Azubi-Status, Fortschrittstrends und teamweite Leistu
 
 Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Erlebnis, das Azubis bei der Stange hält und Abschlussquoten steigert.
 
-100 % DSGVO-konform. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur
+DSGVO-konform betrieben. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur.
 
 ## Ausbildungsberufe
 
@@ -352,9 +352,9 @@ Wissenschaftlich geprüfte Lernmethoden, getestet von Nachwuchskräften
 
 Unterstützt durch das Bundesministerium
 
-### Made in Germany
+### Gehostet in Deutschland
 
-DSGVO-konform, Server in Deutschland, Lokales LLM
+DSGVO-konform betrieben, Server in Deutschland, Lokales LLM
 
 ## Häufig gestellte Fragen
 
@@ -388,7 +388,7 @@ Die meisten Azubis loggen sich nach den ersten zwei Wochen freiwillig mehrmals p
 
 ### Sind meine Daten sicher / DSGVO-konform?
 
-Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders.
+Ja. LearnSlice wird DSGVO-konform betrieben. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders.
 
 ### Wie hilft LearnSlice bei vorzeitigen Vertragslösungen und Ausbilderaufwand?
 

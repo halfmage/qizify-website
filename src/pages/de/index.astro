@@ -26,13 +26,14 @@ const ctaLabel = 'Kostenlose Demo buchen';
 const hero = {
 	eyebrow: 'KI-Lernplattform',
 	headline: 'Jeder Mensch verdient\neinen persönlichen Tutor.',
-	subheadline: 'LearnSlice macht aus Ihren Inhalten und Zielen einen persönlichen Tutor für jede Person: eigener Lernpfad, Jobsimulationen und Quizze, Antworten rund um die Uhr und Fortschritt, den Sie sehen.',
+	subheadline: 'Für Azubis, neue Mitarbeitende und Ihr ganzes Team: LearnSlice macht aus Ihren Inhalten einen Tutor, der jede Person zu ihrem Ziel führt. Rund um die Uhr.',
 	// Results of the FH Dortmund study, see /de/forschung
 	stats: [
-		{ value: '100 %', label: 'Antworten mit Quelle (Studie FH Dortmund)' },
-		{ value: '80 %', label: 'nahezu vollständiges Verständnis' },
+		{ value: '100 %', label: 'der Antworten mit Quelle' },
+		{ value: '80 %', label: 'erreichten nahezu volles Verständnis' },
 		{ value: '70 %', label: 'fanden ihr Lerntempo passend' },
 	],
+	statsNote: 'Studie mit der FH Dortmund, 50 Studierende',
 };
 
 const features = [
@@ -58,12 +59,16 @@ const companions = [
 		body: 'Finanzbildung für junge Menschen: ein Finanz-Check und geführte Lernprogramme, unter der Marke eines Partners.',
 		image: '/images/solutions/financial-companion.webp',
 		imageAlt: 'Finanz-Begleiter mit Finanz-Check und Lernprogramm',
+		href: '#demo-request',
+		linkLabel: 'Ähnlichen Begleiter besprechen',
 	},
 	{
 		status: 'In Entwicklung',
 		title: 'Gründer-Begleiter',
 		body: 'Begleitet Gründerinnen und Gründer Schritt für Schritt auf dem Weg zum eigenen Unternehmen.',
 		icon: 'hugeicons:rocket-01',
+		href: '#demo-request',
+		linkLabel: 'Interesse melden',
 	},
 	{
 		status: 'Für Ihr Thema',
@@ -96,7 +101,7 @@ const faqItems = [
 
 <BaseLayout
 	title="KI-Lernplattform mit persönlichem KI-Tutor | LearnSlice"
-	description="LearnSlice macht aus Ihren Inhalten und Zielen einen persönlichen KI-Tutor für jede Person: Lernpfad, Jobsimulationen, Quizze und Analytics. Server in Deutschland."
+	description="LearnSlice macht aus Ihren Inhalten und Zielen einen persönlichen KI-Tutor für jede Person: Lernpfad, Jobsimulationen, Quizze, Analytics. Server in Deutschland."
 	lang={lang}
 	currentPath={currentPath}
 	heroImage="/images/hero/hero-background.webp"
@@ -114,9 +119,11 @@ const faqItems = [
 		headline={hero.headline}
 		subheadline={hero.subheadline}
 		ctaPrimary={ctaLabel}
-		ctaSecondary="Begleiter ansehen"
-		ctaSecondaryHref="#begleiter"
+		ctaSecondary="Demo live ausprobieren"
+		ctaSecondaryHref="#product-preview"
 		stats={hero.stats}
+		statsNote={hero.statsNote}
+		statsNoteHref="/de/forschung"
 		currentLang={lang}
 	>
 		<TrustBar slot="belowHero" currentLang={lang} center={true} />

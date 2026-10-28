@@ -26,13 +26,14 @@ const ctaLabel = 'Book a free demo';
 const hero = {
 	eyebrow: 'AI learning platform',
 	headline: 'Every learner deserves\na personal tutor.',
-	subheadline: 'LearnSlice turns your content and goals into a personal tutor for every learner: their own learning path, job simulations and quizzes, answers 24/7, and progress you can see.',
+	subheadline: 'For apprentices, new hires and your whole team: LearnSlice turns your content into a tutor that takes every learner to their goal. 24/7.',
 	// Results of the FH Dortmund study, see /research
 	stats: [
-		{ value: '100%', label: 'of answers cite a source (FH Dortmund study)' },
+		{ value: '100%', label: 'of answers cite a source' },
 		{ value: '80%', label: 'reached near-complete mastery' },
 		{ value: '70%', label: 'found the learning pace right' },
 	],
+	statsNote: 'Study with FH Dortmund, 50 students',
 };
 
 const features = [
@@ -58,12 +59,16 @@ const companions = [
 		body: 'Financial literacy for young people: a financial check-up and guided learning programmes, under a partner\'s brand.',
 		image: '/images/solutions/financial-companion.webp',
 		imageAlt: 'Financial companion with a financial check-up and a learning programme',
+		href: '#demo-request',
+		linkLabel: 'Discuss a similar companion',
 	},
 	{
 		status: 'In development',
 		title: 'Founder companion',
 		body: 'Guides founders step by step on the way to their own company.',
 		icon: 'hugeicons:rocket-01',
+		href: '#demo-request',
+		linkLabel: 'Register your interest',
 	},
 	{
 		status: 'For your topic',
@@ -114,9 +119,11 @@ const faqItems = [
 		headline={hero.headline}
 		subheadline={hero.subheadline}
 		ctaPrimary={ctaLabel}
-		ctaSecondary="See the companions"
-		ctaSecondaryHref="#companions"
+		ctaSecondary="Try the live demo"
+		ctaSecondaryHref="#product-preview"
 		stats={hero.stats}
+		statsNote={hero.statsNote}
+		statsNoteHref="/research"
 		currentLang={lang}
 	>
 		<TrustBar slot="belowHero" currentLang={lang} center={true} />

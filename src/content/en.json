@@ -127,7 +127,7 @@
         "description": "Points, badges, and leaderboards turn daily practice into a motivating experience that keeps apprentices engaged and completing their learning paths."
       }
     ],
-    "compliance": "100% GDPR-compliant. Hosted in Germany or your infrastructure."
+    "compliance": "Run GDPR-compliant. Hosted in Germany or on your own infrastructure."
   },
   "madeForCompany": {
     "headline": "Built for Companies, Schools, and Agencies",
@@ -238,8 +238,8 @@
       },
       {
         "icon": "hugeicons:security-check",
-        "title": "Made in\nGermany",
-        "description": "GDPR, German servers, local LLM."
+        "title": "Hosted in\nGermany",
+        "description": "Run GDPR-compliant, German servers, local LLM."
       }
     ]
   },
@@ -307,7 +307,7 @@
       },
       {
         "question": "Is my data safe / GDPR compliant?",
-        "answer": "Yes. 100% GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise."
+        "answer": "Yes. LearnSlice is run GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise."
       },
       {
         "question": "How does this help with early contract cancellations and trainer load?",
