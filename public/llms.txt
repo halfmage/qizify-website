@@ -1,6 +1,6 @@
 # LearnSlice
 
-> German e-learning software company. Two lines of business: a custom development partner that builds learning platforms, AI tutors and assessment software for organisations that own their content, and LearnSlice, an AI learning platform for German apprenticeship training (Ausbildung).
+> AI learning platform from Düsseldorf. LearnSlice turns an organisation's content and goals into a personal AI tutor for every learner: learning path, job simulations and quizzes, answers 24/7 with sources, and analytics. Ready-made companions (AI tutor for apprenticeships), example companions (financial literacy; founder companion in development), custom companions, and custom e-learning development.
 
 ## About
 

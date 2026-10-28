@@ -6,10 +6,10 @@
         "label": "Product",
         "mega": true,
         "children": [
+          { "label": "AI Learning Platform", "description": "A personal tutor for every learner", "href": "/", "icon": "hugeicons:sparkles" },
+          { "label": "Features", "description": "Learning path, 24/7 answers, simulations, analytics", "href": "/#learning-results", "icon": "hugeicons:workflow-circle-06" },
+          { "label": "Companions", "description": "Ready-made and custom tutors", "href": "/#companions", "icon": "hugeicons:user-group" },
           { "label": "AI Tutor for Apprenticeships", "description": "IHK exam prep, onboarding, upskilling", "href": "/ai-tutor-apprenticeships", "icon": "hugeicons:mortarboard-01" },
-          { "label": "How It Works", "description": "3-step AI learning path", "href": "/ai-tutor-apprenticeships#how-it-works", "icon": "hugeicons:workflow-circle-06" },
-          { "label": "Features", "description": "AI coaching, assessments, analytics", "href": "/ai-tutor-apprenticeships#learning-results", "icon": "hugeicons:sparkles" },
-          { "label": "Vocational Professions", "description": "Commercial, IT, technical trades", "href": "/ai-tutor-apprenticeships#vocational-professions", "icon": "hugeicons:briefcase-02" },
           { "label": "Savings Calculator", "description": "See your ROI instantly", "href": "/apprenticeship-savings-calculator", "icon": "hugeicons:calculator" }
         ]
       },
@@ -27,7 +27,7 @@
       { "label": "Blog", "href": "/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/#faq" }
     ],
-    "cta": "Book Free Demo"
+    "cta": "Book a free demo"
   },
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",

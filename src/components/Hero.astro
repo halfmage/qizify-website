@@ -13,11 +13,14 @@ interface Props {
 	subheadline: string;
 	ctaPrimary: string;
 	ctaSecondary: string;
+	// Where the secondary button points. Defaults to the savings calculator.
+	ctaSecondaryHref?: string;
 	stats?: HeroStat[];
 	currentLang: 'en' | 'de';
 }
 
-const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, stats = [], currentLang } = Astro.props;
+const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, ctaSecondaryHref, stats = [], currentLang } = Astro.props;
+const secondaryHref = ctaSecondaryHref ?? (currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator');
 
 const headlineLines = headline.split('\n');
 ---
@@ -81,7 +84,7 @@ const headlineLines = headline.split('\n');
 					<Button
 						variant="secondary"
 						size="lg"
-						href={currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator'}
+						href={secondaryHref}
 						aria-label={ctaSecondary}
 						class="!border-white/40 !text-white hover:!border-white/60 backdrop-blur-sm"
 					>

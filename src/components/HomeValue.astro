@@ -1,0 +1,24 @@
+---
+// Vision statement right after the trust strip: two outcome lines, then one
+// sentence on how LearnSlice gets there. Features follow in the next section.
+interface Props {
+	label: string;
+	lines: [string, string];
+	sentence: string;
+}
+
+const { label, lines, sentence } = Astro.props;
+---
+
+<section class="py-20 md:py-28 px-6 md:px-8" id="vision">
+	<div class="max-w-container mx-auto text-center">
+		<span class="section-label mb-6 block">{label}</span>
+		<h2 class="text-display-sm md:text-display text-white m-0">
+			{lines[0]}<br />
+			<span class="gradient-text-primary">{lines[1]}</span>
+		</h2>
+		<p class="text-xl leading-relaxed text-muted text-balance m-0 mt-6 max-w-2xl mx-auto">
+			{sentence}
+		</p>
+	</div>
+</section>

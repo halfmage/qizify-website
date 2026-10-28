@@ -4,15 +4,12 @@ import Header from '../../components/Header.astro';
 import TrustBar from '../../components/TrustBar.astro';
 import Hero from '../../components/Hero.astro';
 import LogosSlider from '../../components/LogosSlider.astro';
-import ProblemStatement from '../../components/ProblemStatement.astro';
-import SavingsComparison from '../../components/SavingsComparison.astro';
-import CustomBuildTeaser from '../../components/CustomBuildTeaser.astro';
-import HowItWorks from '../../components/HowItWorks.astro';
+import HomeValue from '../../components/HomeValue.astro';
 import LearningResults from '../../components/LearningResults.astro';
-import CompanySlider from '../../components/CompanySlider.astro';
+import Companions from '../../components/Companions.astro';
 import Testimonials from '../../components/Testimonials.astro';
 import WhyChooseUs from '../../components/WhyChooseUs.astro';
-import VocationalProfessions from '../../components/VocationalProfessions.astro';
+import StartSteps from '../../components/StartSteps.astro';
 import FAQ from '../../components/FAQ.astro';
 import CTAFooter from '../../components/CTAFooter.astro';
 import Footer from '../../components/Footer.astro';
@@ -21,11 +18,85 @@ import deContent from '../../content/de.json';
 
 const lang = 'de';
 const currentPath = '/de';
+
+// Homepage = the KI-Lernplattform and its companions. The Ausbildung product page
+// (/de/ki-tutor-ausbildung) carries the former homepage content.
+const ctaLabel = 'Kostenlose Demo buchen';
+
+const hero = {
+	eyebrow: 'KI-Lernplattform',
+	headline: 'Jeder Mensch verdient\neinen persönlichen Tutor.',
+	subheadline: 'LearnSlice macht aus Ihren Inhalten und Zielen einen persönlichen Tutor für jede Person: eigener Lernpfad, Jobsimulationen und Quizze, Antworten rund um die Uhr und Fortschritt, den Sie sehen.',
+	// Results of the FH Dortmund study, see /de/forschung
+	stats: [
+		{ value: '100 %', label: 'Antworten mit Quelle (Studie FH Dortmund)' },
+		{ value: '80 %', label: 'nahezu vollständiges Verständnis' },
+		{ value: '70 %', label: 'fanden ihr Lerntempo passend' },
+	],
+};
+
+const features = [
+	{ icon: 'hugeicons:target-02', title: 'Kennt das Ziel.', description: 'Aus Ihren Inhalten und dem Ziel jeder Person entsteht ein eigener Lernpfad, der sich mit jedem Schritt anpasst.' },
+	{ icon: 'hugeicons:ai-chat-02', title: 'Ist da, wenn man ihn braucht.', description: 'Antworten rund um die Uhr, jede mit Quelle aus Ihren Unterlagen.' },
+	{ icon: 'hugeicons:game-controller-01', title: 'Lässt üben.', description: 'Jobsimulationen und Quizze aus dem echten Arbeitsalltag, mit sofortigem Feedback.' },
+	{ icon: 'hugeicons:analytics-up', title: 'Weiß, wo jemand steht.', description: 'Analytics zeigen Lernenden, Ausbildern und Führungskräften den Fortschritt und wo es hakt.' },
+];
+
+const companions = [
+	{
+		status: 'Einsatzbereit',
+		title: 'KI-Tutor für die Ausbildung',
+		body: 'IHK-Prüfungsvorbereitung, Einarbeitung und Upskilling für Azubis, mit den Inhalten ihres Ausbildungsberufs und Ihrem Firmenwissen.',
+		image: '/images/solutions/learnslice.webp',
+		imageAlt: 'KI-Tutor mit Lernmodi für IHK-Prüfung, Einarbeitung, Firmenwissen und Upskilling',
+		href: '/de/ki-tutor-ausbildung',
+		linkLabel: 'Zum KI-Tutor für die Ausbildung',
+	},
+	{
+		status: 'Beispiel aus einem Kundenprojekt',
+		title: 'Finanz-Begleiter',
+		body: 'Finanzbildung für junge Menschen: ein Finanz-Check und geführte Lernprogramme, unter der Marke eines Partners.',
+		image: '/images/solutions/financial-companion.webp',
+		imageAlt: 'Finanz-Begleiter mit Finanz-Check und Lernprogramm',
+	},
+	{
+		status: 'In Entwicklung',
+		title: 'Gründer-Begleiter',
+		body: 'Begleitet Gründerinnen und Gründer Schritt für Schritt auf dem Weg zum eigenen Unternehmen.',
+		icon: 'hugeicons:rocket-01',
+	},
+	{
+		status: 'Für Ihr Thema',
+		title: 'Ihr eigener Begleiter',
+		body: 'Ihr Thema, Ihre Inhalte, Ihre Marke: Wir richten den Begleiter auf Ihre Ziele und Ihre Lernenden aus.',
+		icon: 'hugeicons:puzzle',
+		href: '#demo-request',
+		linkLabel: 'Ihr Thema besprechen',
+	},
+];
+
+const steps = [
+	{ title: 'Demo und Ziel', body: 'In 30 Minuten zeigen wir Ihnen die Plattform und klären Ihr Ziel, Ihre Lernenden und Ihre Inhalte.' },
+	{ title: 'Pilot zum Festpreis', body: '10 Wochen mit Ihren Lernenden und Ihren Inhalten, zu einem festen Preis und mit vorher vereinbarten Zielen.' },
+	{ title: 'Einsatz im Alltag', body: 'Danach läuft der Tutor per Lizenz weiter: auf Servern in Deutschland, auf einem dedizierten EU-Server oder bei Ihnen.' },
+];
+
+const dataFaq = deContent.faq.items.find((item) => item.question.startsWith('Sind meine Daten sicher'));
+
+const faqItems = [
+	{ question: 'Was ist LearnSlice?', answer: 'LearnSlice ist eine KI-Lernplattform. Sie macht aus Ihren Inhalten und Zielen einen persönlichen Tutor für jede Person: mit eigenem Lernpfad, Jobsimulationen und Quizzen, Antworten rund um die Uhr und Analytics für Verantwortliche.' },
+	{ question: 'Ist das nur ein Chatbot?', answer: 'Nein. Der Chat ist einer von vier Bausteinen. Dazu kommen der persönliche Lernpfad, Übungen in Jobsimulationen und Quizzen sowie Analytics, die Fortschritt und Lücken sichtbar machen.' },
+	{ question: 'Ersetzt LearnSlice unser LMS?', answer: 'Nein. LearnSlice läuft eigenständig oder ergänzt Ihr bestehendes LMS. Sie müssen nichts ablösen, um zu starten.' },
+	{ question: 'Woher kommen die Inhalte?', answer: 'Aus Ihren Unterlagen, zum Beispiel Handbüchern, Prozessbeschreibungen oder Schulungsmaterial. Für die Ausbildung sind prüfungsrelevante Inhalte bereits enthalten. Jede Antwort verweist auf die Stelle, aus der sie stammt.' },
+	...(dataFaq ? [dataFaq] : []),
+	{ question: 'Was kostet LearnSlice?', answer: 'Sie starten mit einem Pilot zu einem festen Preis. Danach zahlen Sie eine jährliche Lizenz pro Person, Support ist inklusive. Individuelle Anpassungen oder Integrationen kalkulieren wir vorab. Den Preis für Ihre Teamgröße nennen wir Ihnen in der Demo.' },
+	{ question: 'Was bedeutet die KI-Verordnung für uns?', answer: 'LearnSlice zeigt zu jeder Antwort die Quelle, Ausbilder können Inhalte freigeben, und die Daten bleiben in der EU. Welche Pflichten der KI-Verordnung für Ihren konkreten Einsatz gelten, klären Sie bitte mit Ihrer Rechtsberatung. Diese Angaben sind allgemeine Informationen und keine Rechtsberatung.' },
+];
 ---
 
-<BaseLayout 
-	title="KI-Ausbildung & IHK-Prüfungsvorbereitung | LearnSlice"
-	description="KI-Plattform für die gesamte Berufsausbildung: IHK-Prüfung, Onboarding und Upskilling vereint. Jeder Azubi kostet rund 26.200 € pro Jahr (BIBB), Ausbilder spürbar entlastet."
+<BaseLayout
+	title="KI-Lernplattform mit persönlichem KI-Tutor | LearnSlice"
+	description="LearnSlice macht aus Ihren Inhalten und Zielen einen persönlichen KI-Tutor für jede Person: Lernpfad, Jobsimulationen, Quizze und Analytics. Server in Deutschland."
 	lang={lang}
 	currentPath={currentPath}
 	heroImage="/images/hero/hero-background.webp"
@@ -37,14 +108,15 @@ const currentPath = '/de';
 		currentLang={lang}
 		currentPath={currentPath}
 	/>
-	
+
 	<Hero
-		eyebrow={deContent.hero.badge}
-		headline={deContent.hero.headline}
-		subheadline={deContent.hero.subheadline}
-		ctaPrimary={deContent.hero.ctaPrimary}
-		ctaSecondary={deContent.hero.ctaSecondary}
-		stats={deContent.hero.stats}
+		eyebrow={hero.eyebrow}
+		headline={hero.headline}
+		subheadline={hero.subheadline}
+		ctaPrimary={ctaLabel}
+		ctaSecondary="Begleiter ansehen"
+		ctaSecondaryHref="#begleiter"
+		stats={hero.stats}
 		currentLang={lang}
 	>
 		<TrustBar slot="belowHero" currentLang={lang} center={true} />
@@ -54,43 +126,26 @@ const currentPath = '/de';
 		headline={deContent.trustedBy.headline}
 		logos={deContent.trustedBy.logos}
 	/>
-	
-	<ProblemStatement
-		badge={deContent.problem.badge}
-		headline={deContent.problem.headline}
-		body={deContent.problem.body}
+
+	<HomeValue
+		label="Das Ergebnis"
+		lines={['Lernende, die liefern.', 'Führungskräfte, die Fortschritt sehen.']}
+		sentence="Ein persönlicher KI-Tutor für jede Person, gebaut aus Ihren Inhalten und Zielen."
 	/>
 
-	<SavingsComparison
-		headline={deContent.savingsComparison.headline}
-		without={deContent.savingsComparison.without}
-		with={deContent.savingsComparison.with}
-	/>
-	
-	<HowItWorks
-		badge={deContent.howItWorks.badge}
-		headline={deContent.howItWorks.headline}
-		steps={deContent.howItWorks.steps}
-		lang={lang}
-	/>
-
-	<CustomBuildTeaser lang="de" />
-	
-	<LearningResults 
-		badge={deContent.learningResults.badge}
-		headline={deContent.learningResults.headline}
-		features={deContent.learningResults.features}
+	<LearningResults
+		badge="Was ein guter Tutor tut"
+		headline="Ein guter Tutor beantwortet nicht nur Fragen."
+		features={features}
 		compliance={deContent.learningResults.compliance}
-	/>
-	
-	<VocationalProfessions
-		headline={deContent.vocationalProfessions.headline}
-		items={deContent.vocationalProfessions.items}
+		showScreenshot={false}
 	/>
 
-	<CompanySlider
-		headline={deContent.madeForCompany.headline}
-		tabs={deContent.madeForCompany.tabs}
+	<Companions
+		label="Begleiter"
+		headline="Ein Tutor für jedes Ziel"
+		subheadline="Alle Begleiter laufen auf derselben Plattform. Starten Sie mit einem fertigen Begleiter oder mit einem, der auf Ihr Thema zugeschnitten ist."
+		items={companions}
 	/>
 
 	<Testimonials
@@ -99,23 +154,42 @@ const currentPath = '/de';
 		currentLang={lang}
 	/>
 
-	<WhyChooseUs
+	<WhyChooseUs currentLang="de"
 		headline={deContent.whyChooseUs.headline}
 		items={deContent.whyChooseUs.items}
 	/>
 
-	<FAQ
-		headline={deContent.faq.headline}
-		items={deContent.faq.items}
+	<StartSteps
+		label="So starten Sie"
+		headline="In drei Schritten zum eigenen Tutor"
+		steps={steps}
 	/>
 
+	<FAQ
+		headline={deContent.faq.headline}
+		items={faqItems}
+	/>
+
+	<!-- Named contact: a small company sells through a person -->
+	<section class="px-6 md:px-8 pb-4">
+		<div class="max-w-3xl mx-auto bg-surface border border-border rounded-2xl p-7 md:p-9 flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
+			<img src="/images/team/alesia-kunz.webp" alt="Alesia Kunz, CEO von LearnSlice" width="320" height="320" loading="lazy" decoding="async" class="w-24 h-24 rounded-full object-cover ring-2 ring-primary/30 shrink-0" />
+			<div>
+				<p class="text-base text-white leading-relaxed m-0 mb-4">Die Demo zeige ich Ihnen selbst, und ich bleibe Ihre Ansprechpartnerin vom ersten Gespräch bis zum Einsatz im Alltag.</p>
+				<p class="text-sm font-semibold text-white m-0">Alesia Kunz</p>
+				<p class="text-sm text-muted m-0">CEO von LearnSlice, Düsseldorf</p>
+			</div>
+		</div>
+	</section>
+
 	<CTAFooter
-		headline={deContent.homepageCta.headline}
-		subheadline={deContent.homepageCta.subheadline}
-		button={deContent.homepageCta.button}
+		label="Für Ausbildung, HR und Weiterbildung"
+		headline="Wie sähe Ihr persönlicher Tutor aus?"
+		subheadline="In 30 Minuten zeigen wir Ihnen die Plattform an Ihrem Thema. Danach wissen Sie, ob ein Pilot zu Ihnen passt."
+		button={ctaLabel}
 		currentLang={lang}
 	/>
-	
+
 	<Footer
 		currentLang={lang}
 		privacyLabel={deContent.footer.privacyLabel}
@@ -128,9 +202,8 @@ const currentPath = '/de';
 		href="#demo-request"
 		class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-colors"
 	>
-		Kostenlose Demo buchen
+		{ctaLabel}
 	</a>
 
 	<DemoRequestModal currentLang={lang} />
 </BaseLayout>
-
