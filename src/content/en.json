@@ -6,9 +6,10 @@
         "label": "Product",
         "mega": true,
         "children": [
-          { "label": "How It Works", "description": "3-step AI learning path", "href": "/#how-it-works", "icon": "hugeicons:workflow-circle-06" },
-          { "label": "Features", "description": "AI coaching, assessments, analytics", "href": "/#learning-results", "icon": "hugeicons:sparkles" },
-          { "label": "Vocational Professions", "description": "Commercial, IT, technical trades", "href": "/#vocational-professions", "icon": "hugeicons:briefcase-02" },
+          { "label": "AI Tutor for Apprenticeships", "description": "IHK exam prep, onboarding, upskilling", "href": "/ai-tutor-apprenticeships", "icon": "hugeicons:mortarboard-01" },
+          { "label": "How It Works", "description": "3-step AI learning path", "href": "/ai-tutor-apprenticeships#how-it-works", "icon": "hugeicons:workflow-circle-06" },
+          { "label": "Features", "description": "AI coaching, assessments, analytics", "href": "/ai-tutor-apprenticeships#learning-results", "icon": "hugeicons:sparkles" },
+          { "label": "Vocational Professions", "description": "Commercial, IT, technical trades", "href": "/ai-tutor-apprenticeships#vocational-professions", "icon": "hugeicons:briefcase-02" },
           { "label": "Savings Calculator", "description": "See your ROI instantly", "href": "/apprenticeship-savings-calculator", "icon": "hugeicons:calculator" }
         ]
       },
@@ -19,7 +20,7 @@
           { "label": "For Companies", "description": "CEOs, HR, trainers", "href": "/companies", "icon": "hugeicons:building-06" },
           { "label": "For Schools", "description": "Vocational colleges", "href": "/schools", "icon": "hugeicons:mortarboard-02" },
           { "label": "For Agencies", "description": "IHK, HWK, public agencies", "href": "/agencies", "icon": "hugeicons:building-03" },
-          { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
+          { "label": "Testimonials", "description": "What customers say", "href": "/ai-tutor-apprenticeships#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
       { "label": "Custom Development", "mega": true, "children": [{ "label": "Custom Development", "description": "AI tutors, platforms and LMS built for you", "href": "/solutions", "icon": "hugeicons:code" }, { "label": "Live AI Tutor Demo", "description": "Try it with sample data, no sign-up", "href": "/us#demo", "icon": "hugeicons:play-circle" }, { "label": "What It Costs", "description": "Price benchmarks and a vendor checklist", "href": "/blog/custom-e-learning-development-costs", "icon": "hugeicons:calculator" }] },

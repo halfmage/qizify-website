@@ -6,9 +6,10 @@
         "label": "Produkt",
         "mega": true,
         "children": [
-          { "label": "So funktioniert's", "description": "3-Schritte KI-Lernpfad", "href": "/de#how-it-works", "icon": "hugeicons:workflow-circle-06" },
-          { "label": "Features", "description": "KI-Coaching, Assessments, Analytics", "href": "/de#learning-results", "icon": "hugeicons:sparkles" },
-          { "label": "Ausbildungsberufe", "description": "Kaufmännisch, IT, gewerblich", "href": "/de#vocational-professions", "icon": "hugeicons:briefcase-02" },
+          { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01" },
+          { "label": "So funktioniert's", "description": "3-Schritte KI-Lernpfad", "href": "/de/ki-tutor-ausbildung#how-it-works", "icon": "hugeicons:workflow-circle-06" },
+          { "label": "Features", "description": "KI-Coaching, Assessments, Analytics", "href": "/de/ki-tutor-ausbildung#learning-results", "icon": "hugeicons:sparkles" },
+          { "label": "Ausbildungsberufe", "description": "Kaufmännisch, IT, gewerblich", "href": "/de/ki-tutor-ausbildung#vocational-professions", "icon": "hugeicons:briefcase-02" },
           { "label": "Einsparungsrechner", "description": "Ihren ROI sofort sehen", "href": "/de/ausbildungskosten-rechner", "icon": "hugeicons:calculator" },
           { "label": "Digital-Readiness-Check", "description": "AZAV, BFSG & KI in 3 Minuten", "href": "/de/digital-readiness-check", "icon": "hugeicons:security-check" }
         ]
@@ -21,7 +22,7 @@
           { "label": "Verteidigungsindustrie", "description": "Metall- und Elektro-Azubis, on-prem", "href": "/de/verteidigungsindustrie", "icon": "hugeicons:shield-01" },
           { "label": "Für Schulen", "description": "Berufsschulen & Kollegs", "href": "/de/schools", "icon": "hugeicons:mortarboard-02" },
           { "label": "Für Agenturen", "description": "IHK, HWK, Wirtschaftsförderung", "href": "/de/agencies", "icon": "hugeicons:building-03" },
-          { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
+          { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de/ki-tutor-ausbildung#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
       { "label": "Individuelle Entwicklung", "href": "/de/loesungen" },
