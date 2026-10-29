@@ -1,4 +1,5 @@
 ---
+import { CALENDLY_URL } from '../utils/links';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import FAQ from '../components/FAQ.astro';
@@ -8,7 +9,7 @@ import enContent from '../content/en.json';
 
 const lang = 'en';
 // Direct booking. Linked, not embedded, so no third-party script loads on the page.
-const CALENDLY = 'https://calendly.com/learnslice-team/30min';
+const CALENDLY = CALENDLY_URL;
 const currentPath = '/us';
 
 // US landing page for training providers. The live demo is the static file

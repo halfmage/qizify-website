@@ -6,6 +6,8 @@ import Footer from '../Footer.astro';
 import Button from '../Button.astro';
 import StickyCta from '../StickyCta.astro';
 import LeadForm from '../LeadForm.astro';
+import LeadFormHandler from '../LeadFormHandler.astro';
+import { formInputClass } from '../../utils/forms';
 import { Icon } from 'astro-icon/components';
 import enContent from '../../content/en.json';
 import deContent from '../../content/de.json';
@@ -33,7 +35,7 @@ const heroImage = `/images/solutions/founder-companion-${lang}.webp`;
 // 1200x630 JPG: BaseLayout declares OG images as JPEG at that size
 const ogImage = `/images/solutions/founder-companion-og-${lang}.jpg`;
 const privacyHref = lang === 'de' ? '/de/privacy' : '/privacy';
-const inputClass = 'bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted';
+const inputClass = formInputClass;
 ---
 
 <BaseLayout
@@ -302,6 +304,8 @@ const inputClass = 'bg-input-bg border border-border-light rounded-lg px-4 py-2.
 			</form>
 			<p class="text-xs text-white/50 m-0 mt-8">{copy.disclaimer}</p>
 		</div>
+		<!-- Submits the waitlist inline; does not rely on LeadForm being on the page -->
+		<LeadFormHandler />
 	</section>
 
 	<Footer currentLang={lang} privacyLabel={content.footer.privacyLabel} termsLabel={content.footer.termsLabel} demoHref="#pilot" />

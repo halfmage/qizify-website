@@ -231,7 +231,62 @@ function buildHomepageSection(c, lang) {
 
 const enContent = JSON.parse(await readFile(join(CONTENT_DIR, 'en.json'), 'utf8'));
 const deContent = JSON.parse(await readFile(join(CONTENT_DIR, 'de.json'), 'utf8'));
-const homepageSections = buildHomepageSection(enContent, 'en') + '\n' + buildHomepageSection(deContent, 'de');
+const apprenticeshipSections = buildHomepageSection(enContent, 'en') + '\n' + buildHomepageSection(deContent, 'de');
+
+// ---- Homepage (/ and /de) --------------------------------------------------------
+// Copy lives in src/content/homepage.json. Study numbers are looked up by id in the
+// research content, the same way src/content/homepage.ts resolves them for the page.
+const homepageCopy = JSON.parse(await readFile(join(CONTENT_DIR, 'homepage.json'), 'utf8'));
+
+function buildMainHomepageSection(c, site, lang) {
+	const parts = [];
+	const findings = site.research?.findings?.items || [];
+	parts.push(`# ${flatten(c.hero.headline)}`);
+	parts.push('');
+	parts.push(`Source: ${SITE}${c.path}\nLanguage: ${lang}\nType: ${lang === 'de' ? 'Startseite: KI-Lernplattform' : 'Homepage: AI learning platform'}`);
+	parts.push('');
+	parts.push(`${c.hero.eyebrow}\n\n${c.hero.subheadline}`);
+	const stats = c.hero.stats.map((st) => {
+		const f = findings.find((item) => item.id === st.studyId);
+		if (!f) throw new Error(`homepage.json: research finding "${st.studyId}" missing in ${lang}.json`);
+		return `${f.stat} ${st.label}`;
+	});
+	parts.push('');
+	parts.push(`**${c.hero.trustLine}:** ${stats.join(' · ')}`);
+	parts.push('');
+	parts.push(`## ${c.value.label}`);
+	parts.push('');
+	parts.push(`${c.value.lines.join(' ')} ${c.value.sentence}`);
+	parts.push('');
+	parts.push(`## ${c.features.headline}`);
+	parts.push('');
+	for (const f of c.features.items) parts.push(`- **${f.title}** ${f.description}`);
+	parts.push('');
+	parts.push(`## ${c.companions.headline}`);
+	parts.push('');
+	parts.push(c.companions.subheadline);
+	parts.push('');
+	for (const co of c.companions.items) parts.push(`- **${co.title}:** ${co.body} (${co.href.startsWith('/') ? SITE + co.href : co.href})`);
+	parts.push('');
+	parts.push(`## ${c.steps.headline}`);
+	parts.push('');
+	c.steps.items.forEach((st, i) => parts.push(`${i + 1}. **${st.title}:** ${st.body}`));
+	parts.push('');
+	const dataFaq = (site.faq?.items || []).find((item) => item.id === 'data-protection');
+	const faq = [...c.faqBefore, ...(dataFaq ? [dataFaq] : []), ...c.faqAfter];
+	parts.push(`## ${lang === 'de' ? 'Häufige Fragen' : 'Frequently Asked Questions'}`);
+	parts.push('');
+	for (const f of faq) parts.push(`### ${f.question}\n\n${f.answer}\n`);
+	parts.push(`## ${c.cta.headline}`);
+	parts.push('');
+	parts.push(c.cta.subheadline);
+	parts.push('');
+	parts.push('---');
+	parts.push('');
+	return parts.join('\n');
+}
+
+const homepageSections = buildMainHomepageSection(homepageCopy.en, enContent, 'en') + '\n' + buildMainHomepageSection(homepageCopy.de, deContent, 'de');
 
 // ---- Founder companion page ----------------------------------------------------
 // Copy lives in src/content/founder.json, shared with FounderPage.astro. AI
@@ -359,7 +414,7 @@ posts.sort((a, b) => {
 
 const header = `# LearnSlice — Full Content Corpus
 
-> Full marketing homepage copy plus every LearnSlice blog post, intended for
+> Homepage, product pages and every LearnSlice blog post, intended for
 > ingestion by AI systems and LLMs.
 > See https://learnslice.com/llms.txt for the structured site index.
 > Documents are delimited by level-1 headings and include canonical URLs.
@@ -397,9 +452,9 @@ ${faqBlock}---
 `;
 }).join('\n');
 
-const corpus = header + homepageSections + '\n' + founderSections + '\n' + financeSections + '\n' + sections;
+const corpus = header + homepageSections + '\n' + apprenticeshipSections + '\n' + founderSections + '\n' + financeSections + '\n' + sections;
 await writeFile(OUTPUT, corpus, 'utf8');
 
 const sizeKB = (corpus.length / 1024).toFixed(1);
 const enriched = posts.filter(p => p.keyTakeaways.length > 0 || p.faq.length > 0).length;
-console.log(`llms-full.txt written: 2 homepages + ${posts.length} posts (${enriched} with takeaways/FAQ), ${sizeKB} KB → ${OUTPUT}`);
+console.log(`llms-full.txt written: homepage, apprenticeship, founder and finance pages (DE+EN) + ${posts.length} posts (${enriched} with takeaways/FAQ), ${sizeKB} KB → ${OUTPUT}`);

@@ -381,16 +381,19 @@
       "headline": "What the first pilot showed",
       "items": [
         {
+          "id": "sourced-answers",
           "stat": "100%",
           "title": "Every answer traceable to a source",
           "body": "In the system evaluation, every answer carried a valid citation back to its source passage, with no invented references."
         },
         {
+          "id": "mastery",
           "stat": "80%",
           "title": "Reached near-complete mastery",
           "body": "After preparing with LearnSlice, 80% of students reached complete or near-complete understanding of the exam topic."
         },
         {
+          "id": "pace",
           "stat": "70%",
           "title": "Found the learning pace appropriate",
           "body": "70% of students felt the personalized learning pace matched their individual needs."

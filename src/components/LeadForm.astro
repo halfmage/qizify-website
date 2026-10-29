@@ -1,7 +1,10 @@
 ---
+import LeadFormHandler from './LeadFormHandler.astro';
+import { CALENDLY_URL } from '../utils/links';
+import { formInputClass } from '../utils/forms';
+
 // Contact card for the companion pages: a short Netlify form plus a direct Calendly link.
-// The script also handles any other form[data-lead-form] on the page (e.g. a waitlist),
-// posting to Netlify Forms via fetch so the result shows inline.
+// Submission is handled by LeadFormHandler, which posts every form[data-lead-form] to Netlify via fetch.
 interface Props {
 	// Netlify form name, e.g. "founder-pilot"
 	name: string;
@@ -26,9 +29,9 @@ interface Props {
 }
 
 const { name, lang, error, form } = Astro.props;
-const calendly = 'https://calendly.com/learnslice-team/30min';
+const calendly = CALENDLY_URL;
 const privacyHref = lang === 'de' ? '/de/privacy' : '/privacy';
-const inputClass = 'bg-input-bg border border-border-light rounded-lg px-4 py-2.5 text-sm text-white font-sans w-full focus:outline-none focus:border-primary transition-colors duration-200 placeholder:text-muted';
+const inputClass = formInputClass;
 ---
 
 <div class="bg-surface border border-border-light rounded-2xl p-7 md:p-9">
@@ -65,30 +68,4 @@ const inputClass = 'bg-input-bg border border-border-light rounded-lg px-4 py-2.
 	<a href={calendly} target="_blank" rel="noopener noreferrer" class="block text-center text-sm text-white/80 hover:text-white underline underline-offset-4 decoration-white/30 mt-3 py-2">{form.calendly}</a>
 </div>
 
-<script>
-	document.querySelectorAll<HTMLFormElement>('form[data-lead-form]').forEach((form) => {
-		const error = form.querySelector('[data-form-error]');
-		const success = form.querySelector('[data-form-success]');
-		const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
-		form.addEventListener('submit', async (e) => {
-			e.preventDefault();
-			error?.classList.add('hidden');
-			success?.classList.add('hidden');
-			if (button) button.disabled = true;
-			try {
-				const response = await fetch('/', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-					body: new URLSearchParams(new FormData(form) as any).toString(),
-				});
-				if (!response.ok) throw new Error('Form submission failed');
-				success?.classList.remove('hidden');
-				form.reset();
-			} catch {
-				error?.classList.remove('hidden');
-			} finally {
-				if (button) button.disabled = false;
-			}
-		});
-	});
-</script>
+<LeadFormHandler />

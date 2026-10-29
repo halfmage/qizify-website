@@ -1,0 +1,32 @@
+---
+// Posts every form[data-lead-form] on the page to Netlify Forms via fetch, so the
+// result shows inline. Astro bundles this script once per page, however often it is rendered.
+---
+
+<script>
+	document.querySelectorAll<HTMLFormElement>('form[data-lead-form]').forEach((form) => {
+		const error = form.querySelector('[data-form-error]');
+		const success = form.querySelector('[data-form-success]');
+		const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			error?.classList.add('hidden');
+			success?.classList.add('hidden');
+			if (button) button.disabled = true;
+			try {
+				const response = await fetch('/', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+					body: new URLSearchParams(new FormData(form) as any).toString(),
+				});
+				if (!response.ok) throw new Error('Form submission failed');
+				success?.classList.remove('hidden');
+				form.reset();
+			} catch {
+				error?.classList.remove('hidden');
+			} finally {
+				if (button) button.disabled = false;
+			}
+		});
+	});
+</script>

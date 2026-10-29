@@ -381,16 +381,19 @@
       "headline": "Was die erste Studie gezeigt hat",
       "items": [
         {
+          "id": "sourced-answers",
           "stat": "100%",
           "title": "Jede Antwort auf eine Quelle zurückführbar",
           "body": "In der Systemauswertung trug jede Antwort eine gültige Quellenangabe zur Textstelle, ohne erfundene Quellen."
         },
         {
+          "id": "mastery",
           "stat": "80%",
           "title": "Nahezu vollständiges Verständnis erreicht",
           "body": "Nach der Vorbereitung mit LearnSlice erreichten 80% der Studierenden ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas."
         },
         {
+          "id": "pace",
           "stat": "70%",
           "title": "Empfanden das Lerntempo als passend",
           "body": "70% der Studierenden empfanden das personalisierte Lerntempo als passend für ihre individuellen Bedürfnisse."
