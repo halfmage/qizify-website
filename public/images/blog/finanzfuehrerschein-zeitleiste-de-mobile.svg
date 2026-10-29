@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="438" viewBox="0 0 340 438" role="img" aria-label="Zeitleiste: 2005 entsteht der FinanzFührerschein der Schuldnerhilfe Essen. 2006 erste Kurse in Oberösterreich. Februar 2020 Start in Wien. Schuljahr 2022/23: 3.500 Abschlüsse in Oberösterreich. Juni 2025: 50.000ster Finanzführerschein in Oberösterreich. Quellen: Schuldnerhilfe Essen, Schuldnerhilfe OÖ, FSW Wien, Land Oberösterreich.">
+<rect x="0" y="0" width="340" height="438" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="18" fill="#fafafa" font-weight="600">Zwanzig Jahre Finanzführerschein</text>
+<text x="18" y="56" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Ausgewählte Stationen in Deutschland</text>
+<text x="18" y="74" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">und Österreich</text>
+<line x1="30" y1="112" x2="30" y2="334" stroke="#3f3f46" stroke-width="2"/>
+<circle cx="30" cy="112" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="117" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">2005</text>
+<text x="50" y="136" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">FinanzFührerschein der</text>
+<text x="50" y="153" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Schuldnerhilfe Essen entsteht</text>
+<circle cx="30" cy="176" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="181" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">2006</text>
+<text x="50" y="200" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Erste Kurse in Oberösterreich</text>
+<circle cx="30" cy="223" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="228" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">2020</text>
+<text x="50" y="247" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Wien startet im Februar</text>
+<circle cx="30" cy="270" r="7" fill="#fafafa" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="275" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#fafafa" font-weight="600">2022/23</text>
+<text x="50" y="294" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">3.500 Abschlüsse in Oberösterreich</text>
+<text x="50" y="311" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">in einem Schuljahr</text>
+<circle cx="30" cy="334" r="7" fill="#e8b07a" stroke="#18181b" stroke-width="2"/>
+<text x="50" y="339" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" fill="#e8b07a" font-weight="600">2025</text>
+<text x="50" y="358" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">50.000ster Finanzführerschein</text>
+<text x="50" y="375" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">in Oberösterreich (Juni)</text>
+<text x="18" y="402" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Quellen: Schuldnerhilfe Essen, Schuldnerhilfe OÖ,</text>
+<text x="18" y="419" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">FSW Wien, Land OÖ; Stand Oktober 2026</text>
+</svg>

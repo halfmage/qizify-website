@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="326" viewBox="0 0 520 326" role="img" aria-label="Ablauf eines Finanzführerscheins in vier Schritten: 1. Anmelden, die Lehrkraft meldet die Klasse beim Anbieter an. 2. Lernen, mehrere Module, zum Beispiel fünf mit 8 bis 15 Personen in Niederösterreich. 3. Prüfen, Abschlusstest oder Prüfungsbögen wie beim Führerschein. 4. Zertifikat, eine Urkunde, die man Bewerbungen beilegen kann. Quellen: FSW Wien, NÖ Finanzführerschein, Schuldnerhilfe Essen, Raiffeisenbank Straubing.">
+<rect x="0" y="0" width="520" height="326" rx="16" fill="#18181b"/>
+<text x="24" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="21" fill="#fafafa" font-weight="600">So läuft ein Finanzführerschein ab</text>
+<text x="24" y="58" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Typischer Ablauf, zusammengestellt aus mehreren Programmen</text>
+<rect x="24" y="82" width="230" height="84" rx="8" fill="#27272a"/>
+<text x="38" y="108" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">01</text>
+<text x="64" y="108" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Anmelden</text>
+<text x="38" y="132" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">Die Lehrkraft meldet die Klasse</text>
+<text x="38" y="149" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">beim Anbieter an.</text>
+<rect x="266" y="82" width="230" height="84" rx="8" fill="#27272a"/>
+<text x="280" y="108" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">02</text>
+<text x="306" y="108" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Lernen</text>
+<text x="280" y="132" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">Mehrere Module, zum Beispiel</text>
+<text x="280" y="149" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">fünf mit 8 bis 15 Personen (NÖ).</text>
+<rect x="24" y="178" width="230" height="84" rx="8" fill="#27272a"/>
+<text x="38" y="204" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">03</text>
+<text x="64" y="204" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Prüfen</text>
+<text x="38" y="228" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">Abschlusstest oder Prüfungsbögen,</text>
+<text x="38" y="245" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">wie beim Führerschein.</text>
+<rect x="266" y="178" width="230" height="84" rx="8" fill="#27272a"/>
+<text x="280" y="204" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">04</text>
+<text x="306" y="204" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Zertifikat</text>
+<text x="280" y="228" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">Eine Urkunde, die man</text>
+<text x="280" y="245" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d4d8">Bewerbungen beilegen kann.</text>
+<text x="24" y="292" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Quellen: FSW Wien, NÖ Finanzführerschein, Schuldnerhilfe Essen,</text>
+<text x="24" y="308" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Raiffeisenbank Straubing; Stand Oktober 2026</text>
+</svg>

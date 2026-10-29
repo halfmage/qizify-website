@@ -100,6 +100,13 @@ const sidebarCta = isGuide
 		sub: lang === 'en' ? 'A quote or a 30-min call, no pitch.' : 'Kostenschätzung oder 30-Min-Gespräch, kein Pitch.',
 		button: lang === 'en' ? 'Get a project quote' : 'Angebot anfragen',
 	}
+	: ctaFooter
+	? {
+		// Campaign posts with their own footer promise get a matching sidebar card
+		title: ctaFooter.label ?? ctaFooter.headline,
+		sub: lang === 'en' ? '30 minutes, no pitch.' : '30 Minuten, kein Pitch.',
+		button: ctaFooter.button,
+	}
 	: {
 		title: lang === 'en' ? 'See it on your occupation' : 'An Ihrem Beruf sehen',
 		sub: lang === 'en' ? '30-min demo, no pitch.' : '30-Min-Demo, kein Pitch.',

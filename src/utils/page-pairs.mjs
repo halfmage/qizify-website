@@ -71,6 +71,8 @@ export const DE_ONLY = new Set([
 	'/de/blog/azav-digitalisierung-bildungstraeger',
 	// Defence campaign landing page (Q4 2026), German market only.
 	'/de/verteidigungsindustrie',
+	// Finanzführerschein guide (search demand is DACH-only, mostly Austria), no English counterpart.
+	'/de/blog/finanzfuehrerschein',
 ]);
 
 const DE_TO_EN = Object.fromEntries(

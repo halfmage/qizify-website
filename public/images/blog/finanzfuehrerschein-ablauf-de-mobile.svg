@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="524" viewBox="0 0 340 524" role="img" aria-label="Ablauf eines Finanzführerscheins in vier Schritten: 1. Anmelden, die Lehrkraft meldet die Klasse beim Anbieter an. 2. Lernen, mehrere Module, in Niederösterreich fünf, mit 8 bis 15 Personen. 3. Prüfen, Abschlusstest oder Prüfungsbögen wie beim Führerschein. 4. Zertifikat, eine Urkunde, die man Bewerbungen beilegen kann. Quellen: FSW Wien, NÖ Finanzführerschein, Schuldnerhilfe Essen, Raiffeisenbank Straubing.">
+<rect x="0" y="0" width="340" height="524" rx="14" fill="#18181b"/>
+<text x="18" y="34" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="18" fill="#fafafa" font-weight="600">So läuft ein Finanzführerschein ab</text>
+<text x="18" y="56" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">Typischer Ablauf, zusammengestellt</text>
+<text x="18" y="74" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="13" fill="#a1a1aa">aus mehreren Programmen</text>
+<rect x="18" y="98" width="304" height="80" rx="8" fill="#27272a"/>
+<text x="32" y="124" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">01</text>
+<text x="60" y="124" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Anmelden</text>
+<text x="60" y="145" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Die Lehrkraft meldet die Klasse</text>
+<text x="60" y="162" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">beim Anbieter an.</text>
+<rect x="18" y="188" width="304" height="80" rx="8" fill="#27272a"/>
+<text x="32" y="214" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">02</text>
+<text x="60" y="214" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Lernen</text>
+<text x="60" y="235" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Mehrere Module, in Niederösterreich</text>
+<text x="60" y="252" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">fünf, mit 8 bis 15 Personen.</text>
+<rect x="18" y="278" width="304" height="80" rx="8" fill="#27272a"/>
+<text x="32" y="304" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">03</text>
+<text x="60" y="304" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Prüfen</text>
+<text x="60" y="325" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Abschlusstest oder Prüfungsbögen,</text>
+<text x="60" y="342" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">wie beim Führerschein.</text>
+<rect x="18" y="368" width="304" height="80" rx="8" fill="#27272a"/>
+<text x="32" y="394" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12" fill="#e8b07a" font-weight="600">04</text>
+<text x="60" y="394" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" fill="#fafafa" font-weight="600">Zertifikat</text>
+<text x="60" y="415" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Eine Urkunde, die man</text>
+<text x="60" y="432" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" fill="#d4d4d8">Bewerbungen beilegen kann.</text>
+<text x="18" y="472" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Quellen: FSW Wien, NÖ Finanzführerschein,</text>
+<text x="18" y="489" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Schuldnerhilfe Essen, Raiffeisenbank Straubing;</text>
+<text x="18" y="506" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#71717a">Stand Oktober 2026</text>
+</svg>
