@@ -4,9 +4,11 @@
 interface Props {
 	label: string;
 	href?: string;
+	// Optional selector: the bar also hides while that element is on screen (e.g. the form it points to)
+	hideWhileVisible?: string;
 }
 
-const { label, href = '#demo-request' } = Astro.props;
+const { label, href = '#demo-request', hideWhileVisible } = Astro.props;
 ---
 
 <div class="md:hidden h-20" aria-hidden="true"></div>
@@ -14,6 +16,7 @@ const { label, href = '#demo-request' } = Astro.props;
 <a
 	href={href}
 	data-sticky-cta
+	data-hide-while-visible={hideWhileVisible}
 	class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-all duration-200 translate-y-24 opacity-0 pointer-events-none"
 >
 	{label}
@@ -23,10 +26,18 @@ const { label, href = '#demo-request' } = Astro.props;
 	const cta = document.querySelector<HTMLElement>('[data-sticky-cta]');
 	if (cta) {
 		const hidden = ['translate-y-24', 'opacity-0', 'pointer-events-none'];
+		const target = cta.dataset.hideWhileVisible ? document.querySelector(cta.dataset.hideWhileVisible) : null;
+		let targetVisible = false;
 		const update = () => {
-			const show = window.scrollY > window.innerHeight * 0.7;
+			const show = window.scrollY > window.innerHeight * 0.7 && !targetVisible;
 			hidden.forEach((c) => cta.classList.toggle(c, !show));
 		};
+		if (target) {
+			new IntersectionObserver(([entry]) => {
+				targetVisible = entry.isIntersecting;
+				update();
+			}).observe(target);
+		}
 		update();
 		window.addEventListener('scroll', update, { passive: true });
 	}

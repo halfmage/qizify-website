@@ -22,6 +22,7 @@ export const EN_TO_DE = {
 	'/research': '/de/forschung',
 	'/solutions': '/de/loesungen',
 	'/ai-tutor-apprenticeships': '/de/ki-tutor-ausbildung',
+	'/founder-companion': '/de/gruender-begleiter',
 	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
 	'/learnslice-vs-publisher-lms': '/de/learnslice-vs-verlags-lms',
 	'/learnslice-vs-video-ihk-tools': '/de/learnslice-vs-video-ihk-tools',

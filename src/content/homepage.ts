@@ -64,11 +64,11 @@ export const homepage = {
 				},
 				{
 					title: 'Gründer-Begleiter',
-					body: 'Begleitet Gründerinnen und Gründer Schritt für Schritt auf dem Weg zum eigenen Unternehmen.',
+					body: 'Prüft Finanzplan und Pitch Deck, zeigt, wie Gründende sie stärken, und übt Gespräche mit Bank und Kunden.',
 					image: '/images/solutions/founder-companion-de.webp',
-					imageAlt: 'Gründer-Begleiter mit Modi für Pitch Deck, Finanzplan, Businessplan und Gründungsschritte',
-					href: '#demo-request',
-					linkLabel: 'Interesse melden',
+					imageAlt: 'Gründer-Begleiter: geprüfter Finanzplan mit erfüllten Prüfpunkten und Verbesserungen, Abgleich mit dem Pitch Deck und Simulation des Bankgesprächs',
+					href: '/de/gruender-begleiter',
+					linkLabel: 'Mehr erfahren',
 				},
 				{
 					title: 'Ihr eigener Begleiter',
@@ -164,11 +164,11 @@ export const homepage = {
 				},
 				{
 					title: 'Founder companion',
-					body: 'Guides founders step by step on the way to their own company.',
+					body: 'Checks the financial plan and pitch deck, shows founders how to strengthen them, and rehearses bank and customer calls.',
 					image: '/images/solutions/founder-companion-en.webp',
-					imageAlt: 'Founder companion with modes for pitch deck, financial plan, business plan and founding steps',
-					href: '#demo-request',
-					linkLabel: 'Register your interest',
+					imageAlt: 'Founder companion: checked financial plan with checkpoints met and improvements, a match with the pitch deck and a bank meeting simulation',
+					href: '/founder-companion',
+					linkLabel: 'Learn more',
 				},
 				{
 					title: 'Your own companion',

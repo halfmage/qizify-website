@@ -233,6 +233,59 @@ const enContent = JSON.parse(await readFile(join(CONTENT_DIR, 'en.json'), 'utf8'
 const deContent = JSON.parse(await readFile(join(CONTENT_DIR, 'de.json'), 'utf8'));
 const homepageSections = buildHomepageSection(enContent, 'en') + '\n' + buildHomepageSection(deContent, 'de');
 
+// ---- Founder companion page ----------------------------------------------------
+// Copy lives in src/content/founder.json, shared with FounderPage.astro. AI
+// answer engines get the same definition, limits and FAQ that visitors see.
+const founder = JSON.parse(await readFile(join(CONTENT_DIR, 'founder.json'), 'utf8'));
+
+function buildFounderSection(c, lang) {
+	const parts = [];
+	parts.push(`# ${c.hero.eyebrow}: ${c.hero.headline} ${c.hero.headlineAccent}`);
+	parts.push('');
+	parts.push(`Source: ${SITE}${c.path}\nLanguage: ${lang}\nType: ${lang === 'de' ? 'Produktseite, in Entwicklung mit Pilotpartnern' : 'Product page, in development with pilot partners'}`);
+	parts.push('');
+	parts.push(c.hero.sub);
+	parts.push('');
+	parts.push(`## ${c.problem.headline}`);
+	parts.push('');
+	for (const st of c.problem.stats) parts.push(`- ${st.value} ${st.label}`);
+	parts.push(`\n${c.problem.source}`);
+	parts.push('');
+	parts.push(`## ${c.loop.headline}`);
+	parts.push('');
+	for (const st of c.loop.steps) parts.push(`- **${st.title}:** ${st.body}`);
+	parts.push('');
+	parts.push(`## ${c.institutions.headline}`);
+	parts.push('');
+	parts.push(c.institutions.sub);
+	parts.push('');
+	for (const f of c.institutions.features) parts.push(`- **${f.title}:** ${f.body}`);
+	parts.push('');
+	parts.push(`## ${c.oneplace.headline}`);
+	parts.push('');
+	for (const r of c.oneplace.rows) parts.push(`- **${r.task}:** ${r.after}`);
+	parts.push(`\n${c.oneplace.note.lead} ${c.oneplace.note.pre} ${c.oneplace.note.link} ${c.oneplace.note.post}`);
+	parts.push('');
+	parts.push(`## ${c.growth.headline}`);
+	parts.push('');
+	for (const g of c.growth.items) parts.push(`- **${g.title}:** ${g.body}`);
+	parts.push('');
+	parts.push(`## ${c.limits.headline}`);
+	parts.push('');
+	for (const l of c.limits.items) parts.push(`- ${l}`);
+	parts.push('');
+	parts.push(`## ${c.faqHeadline}`);
+	parts.push('');
+	for (const f of c.faq) parts.push(`### ${f.question}\n\n${f.answer}\n`);
+	parts.push(c.disclaimer);
+	parts.push('');
+	parts.push('---');
+	parts.push('');
+	return parts.join('\n');
+}
+
+const founderSections = buildFounderSection(founder.en, 'en') + '\n' + buildFounderSection(founder.de, 'de');
+
 // ---- Blog corpus -------------------------------------------------------------
 
 const files = (await readdir(BLOG_DIR)).filter((f) => f.endsWith('.mdx')).sort();
@@ -303,7 +356,7 @@ ${faqBlock}---
 `;
 }).join('\n');
 
-const corpus = header + homepageSections + '\n' + sections;
+const corpus = header + homepageSections + '\n' + founderSections + '\n' + sections;
 await writeFile(OUTPUT, corpus, 'utf8');
 
 const sizeKB = (corpus.length / 1024).toFixed(1);
