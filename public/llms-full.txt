@@ -1837,14 +1837,14 @@ A realistic first milestone is 6 to 8 weeks: one subject area mapped completely,
 
 ---
 
-# Custom AI on Open-Source Models: Personalized and Sovereign
+# Self-Hosting Open-Source AI in the EU: Costs and Licenses
 
 Source: https://learnslice.com/blog/custom-ai-open-source-models
 Language: en
 Published: 2026-07-30
 Updated: 2026-10-12
 
-Custom AI on open-source models like Kimi K2 and gpt-oss, from AI tutors to team assistants: grounded in your content, self-hosted in the EU, owned by you.
+Run custom AI on open models like gpt-oss, Qwen or Kimi K2 in the EU: GPU servers from about 900 euros a month, safe licenses, and when an API is cheaper.
 
 ## Key Takeaways
 
@@ -4791,14 +4791,14 @@ Yes - introducing AI tools that can measure apprentice or employee behavior or p
 
 ---
 
-# IHK Exam Preparation: 6-Month Study Plan + Checklist
+# IHK Exam Prep: Courses vs. Digital + 6-Month Study Plan
 
 Source: https://learnslice.com/blog/ihk-exam-preparation-digital
 Language: en
 Published: 2026-03-14
 Updated: 2026-09-09
 
-Digital IHK exam preparation in four steps: AI-generated exam questions and adaptive review. With a six-month study plan and exam-day checklist to copy.
+Preparing for an IHK (Chamber of Commerce) exam? Compare prep courses at 500 to 2,000 euros with digital practice, plus a 6-month study plan and checklist.
 
 ## Key Takeaways
 
@@ -8509,14 +8509,14 @@ KI in der Ausbildung ist kein Zukunftsszenario mehr, sondern Realität. Unterneh
 
 ---
 
-# Digitales Berichtsheft: Vorlage und Prüfliste
+# Berichtsheft digital führen: Vorlage + Prüfliste (§ 13 BBiG)
 
 Source: https://learnslice.com/de/blog/berichtsheft-digital
 Language: de
 Published: 2026-03-19
 Updated: 2026-09-09
 
-Digitales Berichtsheft nach § 13 BBiG: rechtliche Anforderungen, Vorteile gegenüber Papier und der Umstieg. Mit Eintrags-Vorlage und Prüfliste zum Kopieren.
+Digitaler Ausbildungsnachweis statt Papier: was § 13 BBiG verlangt, wer zustimmen muss und wie der Umstieg klappt. Mit Berichtsheft-Vorlage zum Kopieren.
 
 ![Auszubildende arbeiten am Laptop an digitaler Dokumentation](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
