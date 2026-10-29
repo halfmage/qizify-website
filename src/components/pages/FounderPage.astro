@@ -5,6 +5,7 @@ import FAQ from '../FAQ.astro';
 import Footer from '../Footer.astro';
 import Button from '../Button.astro';
 import StickyCta from '../StickyCta.astro';
+import LeadForm from '../LeadForm.astro';
 import { Icon } from 'astro-icon/components';
 import enContent from '../../content/en.json';
 import deContent from '../../content/de.json';
@@ -24,7 +25,6 @@ interface Props {
 
 const { lang } = Astro.props;
 const content = lang === 'de' ? deContent : enContent;
-const calendly = 'https://calendly.com/learnslice-team/30min';
 const kfwSource = 'https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Gr%C3%BCndungsmonitor/KfW-Gr%C3%BCndungsmonitor-2026.pdf';
 
 const copy = founder[lang];
@@ -274,39 +274,7 @@ const inputClass = 'bg-input-bg border border-border-light rounded-lg px-4 py-2.
 				</div>
 			</div>
 
-			<div class="bg-surface border border-border-light rounded-2xl p-7 md:p-9">
-				<form name="founder-pilot" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col gap-5" data-lead-form>
-					<input type="hidden" name="form-name" value="founder-pilot" />
-					<input type="hidden" name="language" value={lang} />
-					<input type="text" name="bot-field" class="hidden" tabindex="-1" autocomplete="off" />
-					<div class="grid sm:grid-cols-2 gap-5">
-						<label class="flex flex-col gap-1.5 text-sm font-medium text-white/80">{copy.pilot.form.name}
-							<input type="text" name="name" autocomplete="name" required class={inputClass} />
-						</label>
-						<label class="flex flex-col gap-1.5 text-sm font-medium text-white/80">{copy.pilot.form.org}
-							<input type="text" name="organisation" autocomplete="organization" required class={inputClass} />
-						</label>
-					</div>
-					<label class="flex flex-col gap-1.5 text-sm font-medium text-white/80">{copy.pilot.form.type}
-						<select name="organisation-type" class={inputClass}>
-							<option value="" selected>{copy.pilot.form.choose}</option>
-							{copy.pilot.form.typeOptions.map((o) => <option value={o}>{o}</option>)}
-						</select>
-					</label>
-					<label class="flex flex-col gap-1.5 text-sm font-medium text-white/80">{copy.pilot.form.email}
-						<input type="email" name="email" autocomplete="email" required class={inputClass} />
-					</label>
-					<label class="flex flex-col gap-1.5 text-sm font-medium text-white/80">{copy.pilot.form.message}
-						<textarea name="message" rows="3" placeholder={copy.pilot.form.optional} class={`${inputClass} min-h-[80px] resize-y`}></textarea>
-					</label>
-					<p class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300 m-0" data-form-error role="alert">{copy.error}</p>
-					<p class="hidden p-3 rounded-lg text-sm bg-green-500/10 border border-green-500/20 text-green-300 m-0" data-form-success role="status">{copy.pilot.form.success} <a href={calendly} target="_blank" rel="noopener noreferrer" class="underline font-medium text-white">{copy.pilot.form.successCalendly}</a></p>
-					<button type="submit" class="bg-primary text-white border-none rounded-full px-6 py-3 text-base font-medium cursor-pointer hover:bg-[#6a4ae0] transition-colors font-sans disabled:opacity-50">{copy.pilot.form.submit}</button>
-					<p class="text-xs text-muted text-center m-0">{copy.pilot.form.note}</p>
-					<p class="text-xs text-muted/80 text-center m-0">{copy.pilot.form.privacy.pre} <a href={privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{copy.pilot.form.privacy.link}</a>{copy.pilot.form.privacy.post}</p>
-				</form>
-				<a href={calendly} target="_blank" rel="noopener noreferrer" class="block text-center text-sm text-white/80 hover:text-white underline underline-offset-4 decoration-white/30 mt-5">{copy.pilot.form.calendly}</a>
-			</div>
+			<LeadForm name="founder-pilot" lang={lang} error={copy.error} form={copy.pilot.form} />
 		</div>
 	</section>
 
@@ -342,31 +310,3 @@ const inputClass = 'bg-input-bg border border-border-light rounded-lg px-4 py-2.
 	<StickyCta label={copy.cta} href="#pilot" hideWhileVisible="#pilot" />
 </BaseLayout>
 
-<script>
-	// Both forms post to Netlify Forms via fetch, so the page stays put and shows the result inline
-	document.querySelectorAll<HTMLFormElement>('form[data-lead-form]').forEach((form) => {
-		const error = form.querySelector('[data-form-error]');
-		const success = form.querySelector('[data-form-success]');
-		const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
-		form.addEventListener('submit', async (e) => {
-			e.preventDefault();
-			error?.classList.add('hidden');
-			success?.classList.add('hidden');
-			if (button) button.disabled = true;
-			try {
-				const response = await fetch('/', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-					body: new URLSearchParams(new FormData(form) as any).toString(),
-				});
-				if (!response.ok) throw new Error('Form submission failed');
-				success?.classList.remove('hidden');
-				form.reset();
-			} catch {
-				error?.classList.remove('hidden');
-			} finally {
-				if (button) button.disabled = false;
-			}
-		});
-	});
-</script>

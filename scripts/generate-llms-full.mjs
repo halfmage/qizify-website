@@ -286,6 +286,47 @@ function buildFounderSection(c, lang) {
 
 const founderSections = buildFounderSection(founder.en, 'en') + '\n' + buildFounderSection(founder.de, 'de');
 
+// ---- Financial companion page ----------------------------------------------------
+const finance = JSON.parse(await readFile(join(CONTENT_DIR, 'finance.json'), 'utf8'));
+
+function buildFinanceSection(c, lang) {
+	const parts = [];
+	parts.push(`# ${c.hero.eyebrow}: ${c.hero.headline} ${c.hero.headlineAccent}`);
+	parts.push('');
+	parts.push(`Source: ${SITE}${c.path}\nLanguage: ${lang}\nType: ${lang === 'de' ? 'Produktseite, White-Label' : 'Product page, white-label'}`);
+	parts.push('');
+	parts.push(`${c.hero.sub} ${c.hero.note}`);
+	parts.push('');
+	parts.push(`## ${c.how.headline}`);
+	parts.push('');
+	for (const st of c.how.steps) parts.push(`- **${st.title}:** ${st.body}`);
+	parts.push('');
+	parts.push(`## ${c.trust.headline}`);
+	parts.push('');
+	parts.push(c.trust.sub);
+	parts.push('');
+	for (const t of c.trust.items) parts.push(`- **${t.title}:** ${t.body}`);
+	parts.push('');
+	parts.push(`## ${c.audiences.headline}`);
+	parts.push('');
+	for (const a of c.audiences.items) parts.push(`- **${a.title}:** ${a.body}`);
+	parts.push('');
+	parts.push(`## ${c.limits.headline}`);
+	parts.push('');
+	for (const l of c.limits.items) parts.push(`- ${l}`);
+	parts.push('');
+	parts.push(`## ${c.faqHeadline}`);
+	parts.push('');
+	for (const f of c.faq) parts.push(`### ${f.question}\n\n${f.answer}\n`);
+	parts.push(c.disclaimer);
+	parts.push('');
+	parts.push('---');
+	parts.push('');
+	return parts.join('\n');
+}
+
+const financeSections = buildFinanceSection(finance.en, 'en') + '\n' + buildFinanceSection(finance.de, 'de');
+
 // ---- Blog corpus -------------------------------------------------------------
 
 const files = (await readdir(BLOG_DIR)).filter((f) => f.endsWith('.mdx')).sort();
@@ -356,7 +397,7 @@ ${faqBlock}---
 `;
 }).join('\n');
 
-const corpus = header + homepageSections + '\n' + founderSections + '\n' + sections;
+const corpus = header + homepageSections + '\n' + founderSections + '\n' + financeSections + '\n' + sections;
 await writeFile(OUTPUT, corpus, 'utf8');
 
 const sizeKB = (corpus.length / 1024).toFixed(1);

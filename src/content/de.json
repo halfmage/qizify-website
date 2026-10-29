@@ -8,7 +8,7 @@
         "children": [
           { "label": "KI-Lernplattform", "description": "Ein persönlicher Tutor für jede Person: Lernpfad, Antworten rund um die Uhr, Simulationen, Analytics", "href": "/de", "icon": "hugeicons:sparkles", "featured": true },
           { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01" },
-          { "label": "Finanz-Begleiter", "description": "Finanzbildung für junge Menschen", "href": "/de#begleiter", "icon": "hugeicons:bank" },
+          { "label": "Finanz-Begleiter", "description": "Finanzbildung unter Ihrer Marke", "href": "/de/finanz-begleiter", "icon": "hugeicons:bank" },
           { "label": "Gründer-Begleiter", "description": "Finanzplan, Pitch Deck, Bankgespräch", "href": "/de/gruender-begleiter", "icon": "hugeicons:rocket-01" },
           { "label": "Ihr eigener Begleiter", "description": "Ihr Thema, Ihre Inhalte, Ihre Marke", "href": "/de#begleiter", "icon": "hugeicons:puzzle" }
         ]
@@ -306,6 +306,11 @@
       {
         "question": "Ich habe eine Frage, Anmerkung oder Feedback. An wen kann ich mich wenden?",
         "answer": "Sie erreichen uns per WhatsApp/Telegram unter +49 1578 3914112, über das Kontaktformular auf unserer Website oder per E-Mail an info@learnslice.com."
+      },
+      {
+        "question": "Gibt es auch Finanzbildung für Azubis?",
+        "answer": "Ja, mit dem Finanz-Begleiter auf derselben Plattform. Er erklärt Azubis Budget, erstes Gehalt, Notgroschen, Sparen und Vorsorge, mit Finanz-Check, Lernweg in drei Stufen und einem Coach, der mit Quellen erklärt und nichts verkauft. Sie setzen ihn unter Ihrer Marke ein.",
+        "link": { "href": "/de/finanz-begleiter", "label": "Zum Finanz-Begleiter" }
       }
     ]
   },
@@ -512,14 +517,14 @@
           ]
         },
         {
-          "image": "/images/solutions/financial-companion.webp",
-          "imageAlt": "Financial-Companion-KI mit Finanz-Gesundheitscheck und Lernprogramm",
+          "image": "/images/solutions/financial-companion-coach-de.webp",
+          "imageAlt": "Finanz-Begleiter unter Kundenmarke: Coach erklärt Teilzeit und Rente mit Quelle und Was-wäre-wenn-Rechner",
           "eyebrow": "Branchenlösungen",
           "title": "Ein markeneigener Begleiter für Ihre Domäne",
-          "body": "Dieselbe Engine, als White-Label für ein konkretes Feld, hier ein Finanzbildungs-Begleiter für einen Partner.",
+          "body": "Dieselbe Engine, als White-Label für ein konkretes Feld, hier ein Finanz-Begleiter für Finanzbildung.",
           "bullets": [
             "Ihre Marke, Ihre Domäne, Ihre Inhalte",
-            "Geführte Programme und ein Health-Check-Ablauf",
+            "Finanz-Check, Lernweg und Coach mit Quellen",
             "Ein angepasster Chatbot für Ihre Lehr- und Schulungszwecke"
           ]
         },

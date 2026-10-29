@@ -115,6 +115,8 @@ Each profession ships with its full IHK framework curriculum (Ausbildungsrahmenp
 - KI-Tutor für die Ausbildung (IHK-Prüfungsvorbereitung, Einarbeitung, Upskilling): https://learnslice.com/de/ki-tutor-ausbildung
 - Founder Companion, in development with pilot partners (checks financial plan and pitch deck, rehearses bank, customer and investor conversations, supports growth planning after founding, coach view for founder advisors, chambers, economic development agencies, incubators and accelerators; no legal or tax advice): https://learnslice.com/founder-companion
 - Gründer-Begleiter, in Entwicklung mit Pilotpartnern: https://learnslice.com/de/gruender-begleiter
+- Financial Companion, white-label financial education (money check, three-level learning path, AI coach with sources and what-if calculators; explains, gives no investment, insurance or tax advice, sells nothing; hosted in Germany): https://learnslice.com/financial-companion
+- Finanz-Begleiter, Finanzbildung unter Ihrer Marke: https://learnslice.com/de/finanz-begleiter
 - AI tutor for US training providers, with live demo: https://learnslice.com/us
 - Research and evidence: https://learnslice.com/research
 - Blog: https://learnslice.com/blog

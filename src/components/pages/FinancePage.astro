@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import FAQ from '../FAQ.astro';
+import Footer from '../Footer.astro';
+import Button from '../Button.astro';
+import StickyCta from '../StickyCta.astro';
+import LeadForm from '../LeadForm.astro';
+import { Icon } from 'astro-icon/components';
+import enContent from '../../content/en.json';
+import deContent from '../../content/de.json';
+import finance from '../../content/finance.json';
+
+// Financial companion page, for /de/finanz-begleiter and /financial-companion. A short
+// white-label page for banks, employers, foundations and education programmes.
+// Copy: src/content/finance.json (also feeds public/llms-full.txt).
+// Research and claim rules: docs/strategy/reports/Finanz Begleiter competition.md.
+// Never: "nach DIN 77230", "Finanzberatung" as an offer, "passend für Ihre Situation",
+// BaFin claims, pilot prices, the partner's name.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+const content = lang === 'de' ? deContent : enContent;
+const copy = finance[lang];
+
+const heroImage = `/images/solutions/financial-companion-coach-${lang}.webp`;
+// 1200x630 JPG: BaseLayout declares OG images as JPEG at that size
+const ogImage = `/images/solutions/financial-companion-og-${lang}.jpg`;
+---
+
+<BaseLayout
+	title={copy.title}
+	description={copy.description}
+	lang={lang}
+	currentPath={copy.path}
+	breadcrumbTitle={copy.breadcrumb}
+	ogImage={ogImage}
+	heroImage={heroImage}
+	softwareSchema={false}
+>
+	<Header logo={content.nav.logo} menu={content.nav.menu} cta={copy.cta} ctaHref="#kontakt" currentLang={lang} currentPath={copy.path} />
+
+	<!-- Hero: the buyer's benefit (their brand) and the trust promise -->
+	<section class="relative overflow-hidden pt-32 md:pt-40 pb-10 md:pb-14 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center relative z-10">
+			<!-- The eyebrow sits inside the H1 so the product name is part of the main heading -->
+			<h1 class="text-display-sm md:text-display text-white m-0 tracking-tight">
+				<span class="block text-base md:text-lg font-semibold text-white/70 tracking-normal mb-3">{copy.hero.eyebrow}<span class="sr-only">:</span></span>
+				{copy.hero.headline}{' '}<br /><span class="gradient-text-primary">{copy.hero.headlineAccent}</span>
+			</h1>
+			<p class="text-lg md:text-xl leading-relaxed text-white/80 text-balance m-0 mt-6">{copy.hero.sub}</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-3 mt-9">
+				<Button variant="primary" size="lg" href="#kontakt" class="!rounded-full">{copy.cta}</Button>
+				<Button variant="secondary" size="lg" href="#so-funktioniert" class="!rounded-full !border-white/30 !text-white hover:!border-white/60 hover:!bg-white/5">
+					{copy.hero.secondary} <span class="ml-1.5" aria-hidden="true">&rsaquo;</span>
+				</Button>
+			</div>
+			<p class="text-sm text-white/70 m-0 mt-4">{copy.hero.note}</p>
+			<p class="text-sm text-muted m-0 mt-6 text-balance">{copy.hero.audience}</p>
+		</div>
+	</section>
+
+	<section class="px-6 md:px-8 pb-16 md:pb-24">
+		<div class="max-w-container mx-auto">
+			<div class="relative p-3 md:p-8 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/45 ring-1 ring-primary/25 overflow-hidden">
+				<img src={heroImage} alt={copy.hero.imageAlt} width="2900" height="1520" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto block rounded-xl shadow-2xl shadow-black/40" />
+			</div>
+			<p class="text-xs text-white/50 text-center m-0 mt-4">{copy.hero.imageCaption}</p>
+		</div>
+	</section>
+
+	<!-- How it works: check, learn, ask -->
+	<section id="so-funktioniert" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{copy.how.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.how.headline}</h2>
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				{copy.how.steps.map((step, i) => (
+					<div class="bg-surface p-7">
+						<div class="flex items-center gap-3 mb-3">
+							<div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+								<Icon name={step.icon} class="w-5 h-5 text-primary" />
+							</div>
+							<h3 class="text-base font-semibold text-white m-0 flex-1">{step.title}</h3>
+							<span class="font-mono text-label text-primary/70 shrink-0">{String(i + 1).padStart(2, '0')}</span>
+						</div>
+						<p class="text-sm text-muted leading-relaxed m-0">{step.body}</p>
+					</div>
+				))}
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+				{copy.how.images.map((img) => (
+					<div class="p-2 md:p-3 rounded-2xl bg-gradient-to-b from-primary/10 to-primary/30 ring-1 ring-primary/20">
+						<img src={img.src} alt={img.alt} width="2400" height="1000" loading="lazy" decoding="async" class="w-full h-auto block rounded-lg" />
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Trust: why a companion that sells nothing is worth more to the brand -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{copy.trust.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4 text-balance">{copy.trust.headline}</h2>
+				<p class="text-lg text-muted leading-relaxed m-0">{copy.trust.sub}</p>
+			</div>
+			<ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 list-none p-0 m-0 max-w-4xl mx-auto">
+				{copy.trust.items.map((item) => (
+					<li class="flex items-start gap-3">
+						<Icon name="hugeicons:checkmark-circle-02" class="w-5 h-5 text-primary shrink-0 mt-0.5" />
+						<div>
+							<h3 class="text-base font-semibold text-white m-0 mb-1">{item.title}</h3>
+							<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
+						</div>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<!-- Audiences: one sentence each -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{copy.audiences.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.audiences.headline}</h2>
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+				{copy.audiences.items.map((a) => (
+					<div class="bg-surface border border-border rounded-2xl p-7">
+						<div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+							<Icon name={a.icon} class="w-5 h-5 text-primary" />
+						</div>
+						<h3 class="text-lg font-semibold text-white m-0 mb-2">{a.title}</h3>
+						<p class="text-base text-muted leading-relaxed m-0">{a.body}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Your brand, fast -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto bg-surface border border-border rounded-2xl p-8 md:p-12 text-center">
+			<span class="section-label mb-3 block">{copy.brand.label}</span>
+			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-6">{copy.brand.headline}</h2>
+			<ul class="flex flex-wrap justify-center gap-x-6 gap-y-3 list-none p-0 m-0">
+				{copy.brand.points.map((p) => (
+					<li class="inline-flex items-center gap-2 text-base text-white/90">
+						<Icon name="hugeicons:checkmark-circle-02" class="w-5 h-5 text-primary" />{p}
+					</li>
+				))}
+			</ul>
+			<p class="text-sm text-muted m-0 mt-8">{copy.brand.platform.pre} <a href={copy.brand.platform.href} class="underline hover:text-white">{copy.brand.platform.link}</a>{copy.brand.platform.post}</p>
+		</div>
+	</section>
+
+	<!-- Limits: the regulatory line, turned into trust -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-6 text-center">{copy.limits.headline}</h2>
+			<ul class="list-none p-0 m-0 space-y-4">
+				{copy.limits.items.map((l) => (
+					<li class="flex items-start gap-3 text-base text-muted leading-relaxed">
+						<Icon name="hugeicons:cancel-circle" class="w-5 h-5 text-accent shrink-0 mt-0.5" />
+						<span>{l}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<FAQ headline={copy.faqHeadline} items={copy.faq} />
+
+	<!-- Contact: the one conversion -->
+	<section id="kontakt" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
+		<div class="max-w-container mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+			<div>
+				<span class="section-label mb-4 block">{copy.contact.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.contact.headline}</h2>
+				<p class="text-lg text-muted leading-relaxed m-0 mb-10">{copy.contact.sub}</p>
+				<div class="flex items-start gap-5 border-t border-border pt-8">
+					<img src="/images/team/alesia-kunz.webp" alt={`Alesia Kunz, ${copy.contact.role}`} width="320" height="320" loading="lazy" decoding="async" class="w-16 h-16 rounded-full object-cover ring-2 ring-primary/30 shrink-0" />
+					<div>
+						<p class="text-base text-white leading-relaxed m-0 mb-3">{copy.contact.person}</p>
+						<p class="text-sm font-semibold text-white m-0">Alesia Kunz</p>
+						<p class="text-sm text-muted m-0">{copy.contact.role}</p>
+					</div>
+				</div>
+			</div>
+			<LeadForm name="finance-companion" lang={lang} error={copy.error} form={copy.contact.form} />
+		</div>
+		<p class="text-xs text-white/50 text-center m-0 mt-12 max-w-2xl mx-auto">{copy.disclaimer}</p>
+	</section>
+
+	<Footer currentLang={lang} privacyLabel={content.footer.privacyLabel} termsLabel={content.footer.termsLabel} demoHref="#kontakt" />
+
+	<!-- Mobile sticky CTA: appears after the hero, hides while the contact form is on screen -->
+	<StickyCta label={copy.cta} href="#kontakt" hideWhileVisible="#kontakt" />
+</BaseLayout>

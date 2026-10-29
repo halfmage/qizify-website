@@ -8,7 +8,7 @@
         "children": [
           { "label": "AI Learning Platform", "description": "A personal tutor for every learner: learning path, 24/7 answers, simulations, analytics", "href": "/", "icon": "hugeicons:sparkles", "featured": true },
           { "label": "AI Tutor for Apprenticeships", "description": "IHK exam prep, onboarding, upskilling", "href": "/ai-tutor-apprenticeships", "icon": "hugeicons:mortarboard-01" },
-          { "label": "Financial Companion", "description": "Financial literacy for young people", "href": "/#companions", "icon": "hugeicons:bank" },
+          { "label": "Financial Companion", "description": "Financial education under your brand", "href": "/financial-companion", "icon": "hugeicons:bank" },
           { "label": "Founder Companion", "description": "Financial plan, pitch deck, bank meeting", "href": "/founder-companion", "icon": "hugeicons:rocket-01" },
           { "label": "Your Own Companion", "description": "Your topic, your content, your brand", "href": "/#companions", "icon": "hugeicons:puzzle" }
         ]
@@ -305,6 +305,11 @@
       {
         "question": "I have a question, concern, or feedback. Who can I contact?",
         "answer": "You can contact us via WhatsApp/Telegram at +49 1578 3914112, via the contact form on our website, or via email at info@learnslice.com."
+      },
+      {
+        "question": "Is there financial education for apprentices too?",
+        "answer": "Yes, with the Financial Companion on the same platform. It explains budgeting, the first salary, an emergency fund, saving and provision to apprentices, with a money check, a three-level learning path and a coach that explains with sources and sells nothing. You run it under your own brand.",
+        "link": { "href": "/financial-companion", "label": "See the Financial Companion" }
       }
     ]
   },
@@ -512,14 +517,14 @@
           ]
         },
         {
-          "image": "/images/solutions/financial-companion.webp",
-          "imageAlt": "Financial Companion AI interface with a financial health check and a learning programme",
+          "image": "/images/solutions/financial-companion-coach-en.webp",
+          "imageAlt": "Financial companion under a client brand: the coach explains part-time work and pension with a source and a what-if calculator",
           "eyebrow": "Sector solutions",
           "title": "A branded companion for your domain",
-          "body": "The same engine, white-labelled for a specific field, here a financial-literacy companion for a partner.",
+          "body": "The same engine, white-labelled for a specific field, here a financial companion for financial education.",
           "bullets": [
             "Your brand, your domain, your content",
-            "Guided programmes and a health-check flow",
+            "Money check, learning path and a coach with sources",
             "A customised chatbot for your teaching purposes"
           ]
         },

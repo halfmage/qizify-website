@@ -56,11 +56,11 @@ export const homepage = {
 				},
 				{
 					title: 'Finanz-Begleiter',
-					body: 'Finanzbildung für junge Menschen: ein Finanz-Check und geführte Lernprogramme, unter der Marke eines Partners.',
-					image: '/images/solutions/financial-companion.webp',
-					imageAlt: 'Finanz-Begleiter mit Finanz-Check und Lernprogramm',
-					href: '#demo-request',
-					linkLabel: 'Ähnlichen Begleiter besprechen',
+					body: 'Finanzbildung unter Ihrer Marke: Finanz-Check, Lernweg und ein Coach, der mit Quellen erklärt und nichts verkauft.',
+					image: '/images/solutions/financial-companion-coach-de.webp',
+					imageAlt: 'Finanz-Begleiter: Coach erklärt Teilzeit und Rente mit Quelle und Was-wäre-wenn-Rechner',
+					href: '/de/finanz-begleiter',
+					linkLabel: 'Mehr erfahren',
 				},
 				{
 					title: 'Gründer-Begleiter',
@@ -156,11 +156,11 @@ export const homepage = {
 				},
 				{
 					title: 'Financial companion',
-					body: "Financial literacy for young people: a financial check-up and guided learning programmes, under a partner's brand.",
-					image: '/images/solutions/financial-companion.webp',
-					imageAlt: 'Financial companion with a financial check-up and a learning programme',
-					href: '#demo-request',
-					linkLabel: 'Discuss a similar companion',
+					body: 'Financial education under your brand: a money check, a learning path and a coach that explains with sources and sells nothing.',
+					image: '/images/solutions/financial-companion-coach-en.webp',
+					imageAlt: 'Financial companion: the coach explains part-time work and pension with a source and a what-if calculator',
+					href: '/financial-companion',
+					linkLabel: 'Learn more',
 				},
 				{
 					title: 'Founder companion',
