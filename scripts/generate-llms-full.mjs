@@ -107,14 +107,15 @@ function cleanBody(body) {
 // tabs, testimonials, trust pillars, FAQ, final CTA. Nav/footer are skipped.
 
 const HOMEPAGE_LABELS = {
-	en: { type: 'Marketing homepage', proof: 'Proof points' },
-	de: { type: 'Marketing-Homepage', proof: 'Beweispunkte' },
+	en: { type: 'Product page: AI tutor for apprenticeships', proof: 'Proof points' },
+	de: { type: 'Produktseite: KI-Tutor für die Ausbildung', proof: 'Beweispunkte' },
 };
 
 const flatten = (s) => (s || '').replace(/\n/g, ' ');
 
 function buildHomepageSection(c, lang) {
-	const url = `${SITE}${lang === 'de' ? '/de' : ''}`;
+	// This copy moved from the homepage to the apprenticeship product pages.
+	const url = `${SITE}${lang === 'de' ? '/de/ki-tutor-ausbildung' : '/ai-tutor-apprenticeships'}`;
 	const labels = HOMEPAGE_LABELS[lang];
 	const parts = [];
 

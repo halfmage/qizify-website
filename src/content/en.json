@@ -33,7 +33,7 @@
     "badge": "AI-Powered Apprenticeship Training",
     "headline": "Apprentices who deliver.\nTrainers who can breathe.",
     "subheadline": "AI learning paths plus your company knowledge, from onboarding to IHK exam.",
-    "ctaPrimary": "Book My Free Demo",
+    "ctaPrimary": "Book a free demo",
     "ctaSecondary": "Calculate My Savings",
     "stats": [
       { "value": "€26K", "label": "cost per apprentice per year (BIBB)" },
@@ -306,6 +306,7 @@
         "answer": "Most apprentices log in voluntarily multiple times per week once the first two-week rollout settles. The format respects how Azubis learn: short, exam-relevant tasks, gamification (points, badges, levels), and a trainer dashboard that flags any apprentice whose usage drops below the rollout average. Disengagement is caught and corrected early, not at the IHK exam."
       },
       {
+        "id": "data-protection",
         "question": "Is my data safe / GDPR compliant?",
         "answer": "Yes. LearnSlice is run GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise."
       },

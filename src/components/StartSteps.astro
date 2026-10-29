@@ -25,7 +25,7 @@ const { label, headline, steps } = Astro.props;
 		<ol class="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden list-none m-0 p-0">
 			{steps.map((step, index) => (
 				<li class="bg-surface p-6 md:p-8 flex flex-col gap-3">
-					<span class="font-mono text-label text-primary">0{index + 1}</span>
+					<span class="font-mono text-label text-primary">{String(index + 1).padStart(2, '0')}</span>
 					<h3 class="text-lg font-semibold text-white m-0 leading-snug">{step.title}</h3>
 					<p class="text-base leading-relaxed text-muted m-0">{step.body}</p>
 				</li>

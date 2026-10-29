@@ -308,6 +308,7 @@
         "answer": "Die meisten Azubis loggen sich nach den ersten zwei Wochen freiwillig mehrmals pro Woche ein. Das Format passt zur Lernrealität: kurze, prüfungsrelevante Aufgaben, Gamification (Punkte, Badges, Levels) und ein Ausbilder-Dashboard, das jeden Azubi markiert, dessen Nutzung unter den Rollout-Durchschnitt fällt. Sinkende Beteiligung wird früh erkannt, nicht erst bei der IHK-Prüfung."
       },
       {
+        "id": "data-protection",
         "question": "Sind meine Daten sicher / DSGVO-konform?",
         "answer": "Ja. LearnSlice wird DSGVO-konform betrieben. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders."
       },

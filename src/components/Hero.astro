@@ -19,10 +19,12 @@ interface Props {
 	// Source line under the stats, e.g. the study they come from
 	statsNote?: string;
 	statsNoteHref?: string;
+	// Short trust line next to the award badge. Defaults to the apprenticeship line.
+	trustLine?: string;
 	currentLang: 'en' | 'de';
 }
 
-const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, ctaSecondaryHref, stats = [], statsNote, statsNoteHref, currentLang } = Astro.props;
+const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, ctaSecondaryHref, stats = [], statsNote, statsNoteHref, trustLine, currentLang } = Astro.props;
 const secondaryHref = ctaSecondaryHref ?? (currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator');
 
 const headlineLines = headline.split('\n');
@@ -123,14 +125,14 @@ const headlineLines = headline.split('\n');
 
 			<div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-6">
 				<!-- Award badge — strongest single trust signal for German B2B audience -->
-				<a href={currentLang === 'de' ? '/de#why-choose-us' : '/#why-choose-us'} class="inline-flex items-center gap-1.5 text-xs font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-3 py-1 hover:bg-accent/15 transition-colors no-underline">
+				<a href="#why-choose-us" class="inline-flex items-center gap-1.5 text-xs font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-3 py-1 hover:bg-accent/15 transition-colors no-underline">
 					<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 6.4L21 9l-5 4.6L17.6 21 12 17.3 6.4 21 8 13.6 3 9l6.6-.6L12 2z"/></svg>
 					{currentLang === 'en' ? 'BMWE KI-Preis 2025 Winner' : 'BMWE KI-Preis 2025 Gewinner'}
 				</a>
 				<p class="text-xs text-muted m-0">
-					{currentLang === 'en'
+					{trustLine ?? (currentLang === 'en'
 						? '30+ German companies · GDPR-compliant · German-hosted · IHK-aligned'
-						: '30+ Unternehmen · DSGVO-konform · Server in Deutschland · IHK-konform'}
+						: '30+ Unternehmen · DSGVO-konform · Server in Deutschland · IHK-konform')}
 				</p>
 			</div>
 		</div>

@@ -7,9 +7,9 @@
 
 # Apprentices who deliver. Trainers who can breathe.
 
-Source: https://learnslice.com
+Source: https://learnslice.com/ai-tutor-apprenticeships
 Language: en
-Type: Marketing homepage
+Type: Product page: AI tutor for apprenticeships
 
 AI-Powered Apprenticeship Training
 
@@ -215,9 +215,9 @@ IHK prep. Onboarding. Upskilling. One platform. Apprentices who deliver value in
 
 # Azubis, die liefern. Ausbilder, die aufatmen.
 
-Source: https://learnslice.com/de
+Source: https://learnslice.com/de/ki-tutor-ausbildung
 Language: de
-Type: Marketing-Homepage
+Type: Produktseite: KI-Tutor für die Ausbildung
 
 KI-gestützte Ausbildungsplattform
 

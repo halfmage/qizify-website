@@ -37,21 +37,22 @@ const { label, headline, subheadline, items, id = 'begleiter' } = Astro.props;
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 			{items.map((item) => (
 				<article class="card-hover-glow card-hover-glow-primary bg-surface border border-border rounded-2xl overflow-hidden flex flex-col">
-					{item.image ? (
-						<img
-							src={item.image}
-							alt={item.imageAlt ?? ''}
-							class="w-full aspect-[16/9] object-cover object-top border-b border-border"
-							loading="lazy"
-							decoding="async"
-							width="1200"
-							height="675"
-						/>
-					) : (
-						<div class="w-full aspect-[16/9] flex items-center justify-center border-b border-border bg-gradient-to-br from-primary/15 to-accent/10" aria-hidden="true">
-							<Icon name={item.icon ?? 'hugeicons:sparkles'} class="w-14 h-14 text-primary" />
-						</div>
-					)}
+					<!-- Fixed frame, screenshot shown whole (contain), so wide UIs are never cut -->
+					<div class="w-full aspect-[16/10] p-4 md:p-6 flex items-center justify-center border-b border-border bg-gradient-to-br from-primary/15 to-accent/10">
+						{item.image ? (
+							<img
+								src={item.image}
+								alt={item.imageAlt ?? ''}
+								class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg ring-1 ring-white/10 shadow-2xl shadow-black/40"
+								loading="lazy"
+								decoding="async"
+								width="1450"
+								height="760"
+							/>
+						) : (
+							<Icon name={item.icon ?? 'hugeicons:sparkles'} class="w-14 h-14 text-primary" aria-hidden="true" />
+						)}
+					</div>
 					<div class="p-6 md:p-8 flex flex-col gap-3 flex-1">
 						<span class="self-start text-xs font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-3 py-1">{item.status}</span>
 						<h3 class="text-xl font-semibold text-white m-0 leading-snug">{item.title}</h3>

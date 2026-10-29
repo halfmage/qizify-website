@@ -1,0 +1,33 @@
+---
+// Mobile-only bottom CTA. Hidden while the hero is on screen (the hero has its own
+// buttons and the bar would cover the hero's trust line), shown once the visitor scrolls on.
+interface Props {
+	label: string;
+	href?: string;
+}
+
+const { label, href = '#demo-request' } = Astro.props;
+---
+
+<div class="md:hidden h-20" aria-hidden="true"></div>
+
+<a
+	href={href}
+	data-sticky-cta
+	class="md:hidden fixed bottom-0 left-0 right-0 z-40 mx-3 mb-[max(0.75rem,env(safe-area-inset-bottom))] text-center bg-primary text-white px-4 py-3 rounded-lg font-medium text-sm shadow-2xl shadow-black/40 hover:bg-[#6a4ae0] transition-all duration-200 translate-y-24 opacity-0 pointer-events-none"
+>
+	{label}
+</a>
+
+<script>
+	const cta = document.querySelector<HTMLElement>('[data-sticky-cta]');
+	if (cta) {
+		const hidden = ['translate-y-24', 'opacity-0', 'pointer-events-none'];
+		const update = () => {
+			const show = window.scrollY > window.innerHeight * 0.7;
+			hidden.forEach((c) => cta.classList.toggle(c, !show));
+		};
+		update();
+		window.addEventListener('scroll', update, { passive: true });
+	}
+</script>
