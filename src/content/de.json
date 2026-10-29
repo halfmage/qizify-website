@@ -7,9 +7,9 @@
         "mega": true,
         "children": [
           { "label": "KI-Lernplattform", "description": "Ein persönlicher Tutor für jede Person: Lernpfad, Antworten rund um die Uhr, Simulationen, Analytics", "href": "/de", "icon": "hugeicons:sparkles", "featured": true },
-          { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01", "badge": "Einsatzbereit" },
-          { "label": "Finanz-Begleiter", "description": "Finanzbildung für junge Menschen", "href": "/de#begleiter", "icon": "hugeicons:bank", "badge": "Kundenbeispiel" },
-          { "label": "Gründer-Begleiter", "description": "Pitch Deck, Finanzplan, Gründungsschritte", "href": "/de#begleiter", "icon": "hugeicons:rocket-01", "badge": "In Entwicklung" },
+          { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01" },
+          { "label": "Finanz-Begleiter", "description": "Finanzbildung für junge Menschen", "href": "/de#begleiter", "icon": "hugeicons:bank" },
+          { "label": "Gründer-Begleiter", "description": "Pitch Deck, Finanzplan, Gründungsschritte", "href": "/de#begleiter", "icon": "hugeicons:rocket-01" },
           { "label": "Ihr eigener Begleiter", "description": "Ihr Thema, Ihre Inhalte, Ihre Marke", "href": "/de#begleiter", "icon": "hugeicons:puzzle" }
         ]
       },
@@ -35,12 +35,7 @@
     "headline": "Azubis, die liefern.\nAusbilder, die aufatmen.",
     "subheadline": "KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.",
     "ctaPrimary": "Kostenlose Demo buchen",
-    "ctaSecondary": "Einsparpotenzial berechnen",
-    "stats": [
-      { "value": "26K €", "label": "Kosten pro Azubi und Jahr (BIBB)" },
-      { "value": "bis zu 50 %", "label": "weniger Ausbilderzeit" },
-      { "value": "bis zu 65 %", "label": "schneller einsatzbereit" }
-    ]
+    "ctaSecondary": "Einsparpotenzial berechnen"
   },
   "trustedBy": {
     "headline": "Sie sind in guter Gesellschaft",

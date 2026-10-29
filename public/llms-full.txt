@@ -15,7 +15,7 @@ AI-Powered Apprenticeship Training
 
 AI learning paths plus your company knowledge, from onboarding to IHK exam.
 
-**Proof points:** €26K — cost per apprentice per year (BIBB) · up to 50% — less trainer time · up to 65% — faster to productivity
+**Proof points (FH Dortmund study, 50 master’s students):** 100%: Every answer traceable to a source · 80%: Reached near-complete mastery · 70%: Found the learning pace appropriate
 
 ## Training Is Broken. The Numbers Prove It.
 
@@ -223,7 +223,7 @@ KI-gestützte Ausbildungsplattform
 
 KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.
 
-**Beweispunkte:** 26K € — Kosten pro Azubi und Jahr (BIBB) · bis zu 50 % — weniger Ausbilderzeit · bis zu 65 % — schneller einsatzbereit
+**Beweispunkte (Studie mit 50 Masterstudierenden der FH Dortmund):** 100%: Jede Antwort auf eine Quelle zurückführbar · 80%: Nahezu vollständiges Verständnis erreicht · 70%: Empfanden das Lerntempo als passend
 
 ## Ausbildung ist kaputt. Die Zahlen belegen es.
 

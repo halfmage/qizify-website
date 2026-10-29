@@ -2,9 +2,7 @@
 import { Icon } from 'astro-icon/components';
 
 // Product line on the homepage: ready companions, example builds and the custom option.
-// Every card carries an honest status label (ready, example, in development).
 interface Companion {
-	status: string;
 	title: string;
 	body: string;
 	image?: string;
@@ -54,7 +52,6 @@ const { label, headline, subheadline, items, id = 'begleiter' } = Astro.props;
 						)}
 					</div>
 					<div class="p-6 md:p-8 flex flex-col gap-3 flex-1">
-						<span class="self-start text-xs font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-3 py-1">{item.status}</span>
 						<h3 class="text-xl font-semibold text-white m-0 leading-snug">{item.title}</h3>
 						<p class="text-base leading-relaxed text-muted m-0 flex-1">{item.body}</p>
 						{item.href && item.linkLabel && (

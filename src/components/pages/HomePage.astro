@@ -28,6 +28,8 @@ interface Props {
 const { lang } = Astro.props;
 const content = lang === 'de' ? deContent : enContent;
 const h = homepage[lang];
+// Rendered by Hero and preloaded by BaseLayout: one path for both
+const heroImage = '/images/hero/hero-background.webp';
 
 // Shared with the apprenticeship FAQ. Fail the build rather than drop it silently.
 const dataFaq = content.faq.items.find((item) => 'id' in item && item.id === 'data-protection');
@@ -40,7 +42,7 @@ const faqItems = [...h.faqBefore, { question: dataFaq.question, answer: dataFaq.
 	description={h.description}
 	lang={lang}
 	currentPath={h.path}
-	heroImage="/images/hero/hero-background.webp"
+	heroImage={heroImage}
 >
 	<Header
 		logo={content.nav.logo}
@@ -57,8 +59,10 @@ const faqItems = [...h.faqBefore, { question: dataFaq.question, answer: dataFaq.
 		ctaPrimary={h.ctaLabel}
 		ctaSecondary={h.hero.ctaSecondary}
 		ctaSecondaryHref="#product-preview"
+		image={heroImage}
 		stats={h.hero.stats}
 		trustLine={h.hero.trustLine}
+		awardHref="#why-choose-us"
 		currentLang={lang}
 	>
 		<TrustBar slot="belowHero" currentLang={lang} center={true} />
@@ -120,6 +124,7 @@ const faqItems = [...h.faqBefore, { question: dataFaq.question, answer: dataFaq.
 		subheadline={h.cta.subheadline}
 		button={h.ctaLabel}
 		note={h.cta.note}
+		calendly
 		currentLang={lang}
 	/>
 

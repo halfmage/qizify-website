@@ -11,7 +11,6 @@ import HowItWorks from '../HowItWorks.astro';
 import LearningResults from '../LearningResults.astro';
 import CompanySlider from '../CompanySlider.astro';
 import Testimonials from '../Testimonials.astro';
-import WhyChooseUs from '../WhyChooseUs.astro';
 import VocationalProfessions from '../VocationalProfessions.astro';
 import FAQ from '../FAQ.astro';
 import CTAFooter from '../CTAFooter.astro';
@@ -19,6 +18,7 @@ import Footer from '../Footer.astro';
 import StickyCta from '../StickyCta.astro';
 import DemoRequestModal from '../DemoRequestModal.astro';
 import enContent from '../../content/en.json';
+import { homepage } from '../../content/homepage';
 import deContent from '../../content/de.json';
 
 // Apprenticeship product page (the former homepage), rendered for both languages:
@@ -36,15 +36,20 @@ const meta = {
 		title: 'AI Tutor for Apprenticeship Training | IHK Exam Prep | LearnSlice',
 		description: 'AI platform that gets apprentices job-ready in as little as 8 weeks: IHK exam prep, onboarding, and upskilling in one place. Each apprentice costs about €26,200 a year (BIBB).',
 		eyebrow: 'AI tutor for apprenticeship training',
+		// Source of the hero numbers (FH Dortmund study, same figures as the homepage)
+		trustLine: 'Study with 50 master’s students at FH Dortmund',
 	},
 	de: {
 		path: '/de/ki-tutor-ausbildung',
 		title: 'KI-Tutor Ausbildung & IHK-Prüfungsvorbereitung | LearnSlice',
 		description: 'KI-Plattform für die gesamte Berufsausbildung: IHK-Prüfung, Onboarding und Upskilling vereint. Jeder Azubi kostet rund 26.200 € pro Jahr (BIBB), Ausbilder spürbar entlastet.',
 		eyebrow: 'KI-Tutor für die Ausbildung',
+		trustLine: 'Studie mit 50 Masterstudierenden der FH Dortmund',
 	},
 }[lang];
 const currentPath = meta.path;
+// Rendered by Hero and preloaded by BaseLayout: one path for both
+const heroImage = '/images/hero/ausbildung-hero.webp';
 ---
 
 <BaseLayout
@@ -52,7 +57,7 @@ const currentPath = meta.path;
 	description={meta.description}
 	lang={lang}
 	currentPath={currentPath}
-	heroImage="/images/hero/hero-background.webp"
+	heroImage={heroImage}
 >
 	<Header
 		logo={content.nav.logo}
@@ -68,7 +73,10 @@ const currentPath = meta.path;
 		subheadline={content.hero.subheadline}
 		ctaPrimary={content.hero.ctaPrimary}
 		ctaSecondary={content.hero.ctaSecondary}
-		stats={content.hero.stats}
+		stats={homepage[lang].hero.stats}
+		trustLine={meta.trustLine}
+		image={heroImage}
+		imagePosition="object-right"
 		currentLang={lang}
 	>
 		<TrustBar slot="belowHero" currentLang={lang} center={true} />
@@ -123,11 +131,6 @@ const currentPath = meta.path;
 		currentLang={lang}
 	/>
 
-	<WhyChooseUs
-		currentLang={lang}
-		headline={content.whyChooseUs.headline}
-		items={content.whyChooseUs.items}
-	/>
 
 	<FAQ
 		headline={content.faq.headline}
@@ -138,6 +141,7 @@ const currentPath = meta.path;
 		headline={content.homepageCta.headline}
 		subheadline={content.homepageCta.subheadline}
 		button={content.homepageCta.button}
+		calendly
 		currentLang={lang}
 	/>
 	

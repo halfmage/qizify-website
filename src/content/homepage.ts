@@ -23,7 +23,7 @@ export const homepage = {
 				{ value: deStudy[2].stat, label: 'fanden ihr Lerntempo passend' },
 			],
 			// Source of the stats, next to the award badge. Hosting and research links sit in the trust bar below.
-			trustLine: 'Studie mit der FH Dortmund, 50 Studierende',
+			trustLine: 'Studie mit 50 Masterstudierenden der FH Dortmund',
 		},
 		value: {
 			label: 'Das Ergebnis',
@@ -47,7 +47,6 @@ export const homepage = {
 			subheadline: 'Alle Begleiter laufen auf derselben Plattform. Starten Sie mit einem fertigen Begleiter oder mit einem, der auf Ihr Thema zugeschnitten ist.',
 			items: [
 				{
-					status: 'Einsatzbereit',
 					title: 'KI-Tutor für die Ausbildung',
 					body: 'IHK-Prüfungsvorbereitung, Einarbeitung und Upskilling für Azubis, mit den Inhalten ihres Ausbildungsberufs und Ihrem Firmenwissen.',
 					image: '/images/solutions/learnslice-analytics.webp',
@@ -56,7 +55,6 @@ export const homepage = {
 					linkLabel: 'Zum KI-Tutor für die Ausbildung',
 				},
 				{
-					status: 'Beispiel aus einem Kundenprojekt',
 					title: 'Finanz-Begleiter',
 					body: 'Finanzbildung für junge Menschen: ein Finanz-Check und geführte Lernprogramme, unter der Marke eines Partners.',
 					image: '/images/solutions/financial-companion.webp',
@@ -65,7 +63,6 @@ export const homepage = {
 					linkLabel: 'Ähnlichen Begleiter besprechen',
 				},
 				{
-					status: 'In Entwicklung',
 					title: 'Gründer-Begleiter',
 					body: 'Begleitet Gründerinnen und Gründer Schritt für Schritt auf dem Weg zum eigenen Unternehmen.',
 					image: '/images/solutions/founder-companion-de.webp',
@@ -74,7 +71,6 @@ export const homepage = {
 					linkLabel: 'Interesse melden',
 				},
 				{
-					status: 'Für Ihr Thema',
 					title: 'Ihr eigener Begleiter',
 					body: 'Ihr Thema, Ihre Inhalte, Ihre Marke: Wir richten den Begleiter auf Ihre Ziele und Ihre Lernenden aus.',
 					image: '/images/solutions/custom-companion-de.webp',
@@ -127,7 +123,7 @@ export const homepage = {
 				{ value: enStudy[2].stat, label: 'found the learning pace right' },
 			],
 			// Source of the stats, next to the award badge. Hosting and research links sit in the trust bar below.
-			trustLine: 'Study with FH Dortmund, 50 students',
+			trustLine: 'Study with 50 master’s students at FH Dortmund',
 		},
 		value: {
 			label: 'The outcome',
@@ -151,7 +147,6 @@ export const homepage = {
 			subheadline: 'All companions run on the same platform. Start with a ready-made companion or one tailored to your topic.',
 			items: [
 				{
-					status: 'Ready to use',
 					title: 'AI tutor for apprenticeships',
 					body: 'IHK exam prep, onboarding and upskilling for apprentices, with the content of their occupation and your company knowledge.',
 					image: '/images/solutions/learnslice-analytics.webp',
@@ -160,7 +155,6 @@ export const homepage = {
 					linkLabel: 'See the AI tutor for apprenticeships',
 				},
 				{
-					status: 'Example from a client project',
 					title: 'Financial companion',
 					body: "Financial literacy for young people: a financial check-up and guided learning programmes, under a partner's brand.",
 					image: '/images/solutions/financial-companion.webp',
@@ -169,7 +163,6 @@ export const homepage = {
 					linkLabel: 'Discuss a similar companion',
 				},
 				{
-					status: 'In development',
 					title: 'Founder companion',
 					body: 'Guides founders step by step on the way to their own company.',
 					image: '/images/solutions/founder-companion-en.webp',
@@ -178,7 +171,6 @@ export const homepage = {
 					linkLabel: 'Register your interest',
 				},
 				{
-					status: 'For your topic',
 					title: 'Your own companion',
 					body: 'Your topic, your content, your brand: we set the companion up for your goals and your learners.',
 					image: '/images/solutions/custom-companion-en.webp',

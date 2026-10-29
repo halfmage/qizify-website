@@ -130,7 +130,7 @@ const columns = Object.values(footerColumns);
 					</div>
 				</div>
 
-				{columns.map(column => (
+				{columns.map((column, i) => (
 					<div>
 						<h4 class="font-mono text-label uppercase tracking-widest text-muted mb-4">
 							{column.title}
@@ -147,12 +147,21 @@ const columns = Object.values(footerColumns);
 								</li>
 							))}
 						</ul>
+						{/* Public funding notice (IGP, BMWE), directly under the Legal links on wide screens */}
+						{i === columns.length - 1 && (
+							<div class="hidden xl:block mt-8">
+								<FundingNotice currentLang={currentLang} />
+							</div>
+						)}
 					</div>
 				))}
+
+				<!-- Same notice on mobile and tablet, as its own row under the link columns -->
+				<div class="col-span-2 md:col-span-4 lg:col-span-5 xl:hidden">
+					<FundingNotice currentLang={currentLang} />
+				</div>
 			</div>
 
-			<!-- Public funding notice (IGP, BMWE) -->
-			<FundingNotice currentLang={currentLang} />
 
 			<!-- Divider -->
 			<div class="border-t border-border"></div>
