@@ -11,6 +11,7 @@ import ConsultationModal from '../../components/ConsultationModal.astro';
 import Button from '../../components/Button.astro';
 import UseCaseSlider from '../../components/UseCaseSlider.astro';
 import GuideLinks from '../../components/GuideLinks.astro';
+import OwnCompanion from '../../components/OwnCompanion.astro';
 import { SITE } from '../../utils/page-pairs.mjs';
 import { Icon } from 'astro-icon/components';
 import deContent from '../../content/de.json';
@@ -23,7 +24,7 @@ const s = deContent.solutions;
 const ucDims = [
 	{ w: 2890, h: 1516 },
 	{ w: 2620, h: 1432 },
-	{ w: 2912, h: 1570 },
+	{ w: 2900, h: 1520 },
 	{ w: 1950, h: 1190 },
 ];
 // Reihenfolge des Projekt-Sliders (Tab 1 ist standardmäßig sichtbar):
@@ -133,6 +134,9 @@ const serviceSchema = {
 			<p class="text-sm text-white/90 text-center mt-8 m-0">{s.build.note}</p>
 		</div>
 	</section>
+
+	<!-- Ihr eigener Begleiter: target of the homepage card and the nav item -->
+	<OwnCompanion lang="de" ctaLabel={s.hero.ctaPrimary} />
 
 	<!-- Ausgewählte Projekte: klickbarer Use-Case-Slider -->
 	<UseCaseSlider

@@ -10,7 +10,7 @@
           { "label": "AI Tutor for Apprenticeships", "description": "IHK exam prep, onboarding, upskilling", "href": "/ai-tutor-apprenticeships", "icon": "hugeicons:mortarboard-01" },
           { "label": "Financial Companion", "description": "Financial education under your brand", "href": "/financial-companion", "icon": "hugeicons:bank" },
           { "label": "Founder Companion", "description": "Financial plan, pitch deck, bank meeting", "href": "/founder-companion", "icon": "hugeicons:rocket-01" },
-          { "label": "Your Own Companion", "description": "Your topic, your content, your brand", "href": "/#companions", "icon": "hugeicons:puzzle" }
+          { "label": "Your Own Companion", "description": "Your topic, your content, your brand", "href": "/solutions#own-companion", "icon": "hugeicons:puzzle" }
         ]
       },
       {

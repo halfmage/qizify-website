@@ -10,7 +10,7 @@
           { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01" },
           { "label": "Finanz-Begleiter", "description": "Finanzbildung unter Ihrer Marke", "href": "/de/finanz-begleiter", "icon": "hugeicons:bank" },
           { "label": "Gründer-Begleiter", "description": "Finanzplan, Pitch Deck, Bankgespräch", "href": "/de/gruender-begleiter", "icon": "hugeicons:rocket-01" },
-          { "label": "Ihr eigener Begleiter", "description": "Ihr Thema, Ihre Inhalte, Ihre Marke", "href": "/de#begleiter", "icon": "hugeicons:puzzle" }
+          { "label": "Ihr eigener Begleiter", "description": "Ihr Thema, Ihre Inhalte, Ihre Marke", "href": "/de/loesungen#eigener-begleiter", "icon": "hugeicons:puzzle" }
         ]
       },
       {

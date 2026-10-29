@@ -11,6 +11,7 @@ import ConsultationModal from '../components/ConsultationModal.astro';
 import Button from '../components/Button.astro';
 import UseCaseSlider from '../components/UseCaseSlider.astro';
 import GuideLinks from '../components/GuideLinks.astro';
+import OwnCompanion from '../components/OwnCompanion.astro';
 import { SITE } from '../utils/page-pairs.mjs';
 import { Icon } from 'astro-icon/components';
 import enContent from '../content/en.json';
@@ -23,7 +24,7 @@ const s = enContent.solutions;
 const ucDims = [
 	{ w: 2890, h: 1516 },
 	{ w: 2620, h: 1432 },
-	{ w: 2912, h: 1570 },
+	{ w: 2900, h: 1520 },
 	{ w: 1950, h: 1190 },
 ];
 // Display order for the work slider (tab 1 is the default-visible panel):
@@ -130,6 +131,9 @@ const serviceSchema = {
 			<p class="text-sm text-white/90 text-center mt-8 m-0">{s.build.note}</p>
 		</div>
 	</section>
+
+	<!-- Your own companion: target of the homepage card and the nav item -->
+	<OwnCompanion lang="en" ctaLabel={s.hero.ctaPrimary} />
 
 	<!-- Selected work: clickable use-case slider -->
 	<UseCaseSlider
