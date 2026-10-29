@@ -16,15 +16,12 @@ interface Props {
 	// Where the secondary button points. Defaults to the savings calculator.
 	ctaSecondaryHref?: string;
 	stats?: HeroStat[];
-	// Source line under the stats, e.g. the study they come from
-	statsNote?: string;
-	statsNoteHref?: string;
 	// Short trust line next to the award badge. Defaults to the apprenticeship line.
 	trustLine?: string;
 	currentLang: 'en' | 'de';
 }
 
-const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, ctaSecondaryHref, stats = [], statsNote, statsNoteHref, trustLine, currentLang } = Astro.props;
+const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, ctaSecondaryHref, stats = [], trustLine, currentLang } = Astro.props;
 const secondaryHref = ctaSecondaryHref ?? (currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator');
 
 const headlineLines = headline.split('\n');
@@ -113,14 +110,6 @@ const headlineLines = headline.split('\n');
 						</li>
 					))}
 				</ul>
-			)}
-
-			{statsNote && (
-				<p class="text-xs text-muted m-0 mt-3">
-					{statsNoteHref
-						? <a href={statsNoteHref} class="text-muted hover:text-white underline underline-offset-4 decoration-white/30 transition-colors">{statsNote} &rsaquo;</a>
-						: statsNote}
-				</p>
 			)}
 
 			<div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-6">

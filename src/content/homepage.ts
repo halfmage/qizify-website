@@ -22,9 +22,8 @@ export const homepage = {
 				{ value: deStudy[1].stat, label: 'erreichten nahezu volles Verständnis' },
 				{ value: deStudy[2].stat, label: 'fanden ihr Lerntempo passend' },
 			],
-			statsNote: 'Studie mit der FH Dortmund, 50 Studierende',
-			statsNoteHref: '/de/forschung',
-			trustLine: '30+ Unternehmen · DSGVO-konform betrieben · Server in Deutschland',
+			// Source of the stats, next to the award badge. Hosting and research links sit in the trust bar below.
+			trustLine: 'Studie mit der FH Dortmund, 50 Studierende',
 		},
 		value: {
 			label: 'Das Ergebnis',
@@ -127,9 +126,8 @@ export const homepage = {
 				{ value: enStudy[1].stat, label: 'reached near-complete mastery' },
 				{ value: enStudy[2].stat, label: 'found the learning pace right' },
 			],
-			statsNote: 'Study with FH Dortmund, 50 students',
-			statsNoteHref: '/research',
-			trustLine: '30+ companies · Run GDPR-compliant · Hosted in Germany',
+			// Source of the stats, next to the award badge. Hosting and research links sit in the trust bar below.
+			trustLine: 'Study with FH Dortmund, 50 students',
 		},
 		value: {
 			label: 'The outcome',

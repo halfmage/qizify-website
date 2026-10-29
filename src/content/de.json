@@ -6,12 +6,11 @@
         "label": "Produkt",
         "mega": true,
         "children": [
-          { "label": "KI-Lernplattform", "description": "Ein persönlicher Tutor für jede Person", "href": "/de", "icon": "hugeicons:sparkles" },
-          { "label": "Funktionen", "description": "Lernpfad, Antworten rund um die Uhr, Simulationen, Analytics", "href": "/de#learning-results", "icon": "hugeicons:workflow-circle-06" },
-          { "label": "Begleiter", "description": "Fertige und eigene Tutoren", "href": "/de#begleiter", "icon": "hugeicons:user-group" },
-          { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01" },
-          { "label": "Einsparungsrechner", "description": "Ihren ROI sofort sehen", "href": "/de/ausbildungskosten-rechner", "icon": "hugeicons:calculator" },
-          { "label": "Digital-Readiness-Check", "description": "AZAV, BFSG & KI in 3 Minuten", "href": "/de/digital-readiness-check", "icon": "hugeicons:security-check" }
+          { "label": "KI-Lernplattform", "description": "Ein persönlicher Tutor für jede Person: Lernpfad, Antworten rund um die Uhr, Simulationen, Analytics", "href": "/de", "icon": "hugeicons:sparkles", "featured": true },
+          { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01", "badge": "Einsatzbereit" },
+          { "label": "Finanz-Begleiter", "description": "Finanzbildung für junge Menschen", "href": "/de#begleiter", "icon": "hugeicons:bank", "badge": "Kundenbeispiel" },
+          { "label": "Gründer-Begleiter", "description": "Pitch Deck, Finanzplan, Gründungsschritte", "href": "/de#begleiter", "icon": "hugeicons:rocket-01", "badge": "In Entwicklung" },
+          { "label": "Ihr eigener Begleiter", "description": "Ihr Thema, Ihre Inhalte, Ihre Marke", "href": "/de#begleiter", "icon": "hugeicons:puzzle" }
         ]
       },
       {

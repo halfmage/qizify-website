@@ -6,11 +6,11 @@
         "label": "Product",
         "mega": true,
         "children": [
-          { "label": "AI Learning Platform", "description": "A personal tutor for every learner", "href": "/", "icon": "hugeicons:sparkles" },
-          { "label": "Features", "description": "Learning path, 24/7 answers, simulations, analytics", "href": "/#learning-results", "icon": "hugeicons:workflow-circle-06" },
-          { "label": "Companions", "description": "Ready-made and custom tutors", "href": "/#companions", "icon": "hugeicons:user-group" },
-          { "label": "AI Tutor for Apprenticeships", "description": "IHK exam prep, onboarding, upskilling", "href": "/ai-tutor-apprenticeships", "icon": "hugeicons:mortarboard-01" },
-          { "label": "Savings Calculator", "description": "See your ROI instantly", "href": "/apprenticeship-savings-calculator", "icon": "hugeicons:calculator" }
+          { "label": "AI Learning Platform", "description": "A personal tutor for every learner: learning path, 24/7 answers, simulations, analytics", "href": "/", "icon": "hugeicons:sparkles", "featured": true },
+          { "label": "AI Tutor for Apprenticeships", "description": "IHK exam prep, onboarding, upskilling", "href": "/ai-tutor-apprenticeships", "icon": "hugeicons:mortarboard-01", "badge": "Ready to use" },
+          { "label": "Financial Companion", "description": "Financial literacy for young people", "href": "/#companions", "icon": "hugeicons:bank", "badge": "Client example" },
+          { "label": "Founder Companion", "description": "Pitch deck, financial plan, founding steps", "href": "/#companions", "icon": "hugeicons:rocket-01", "badge": "In development" },
+          { "label": "Your Own Companion", "description": "Your topic, your content, your brand", "href": "/#companions", "icon": "hugeicons:puzzle" }
         ]
       },
       {

@@ -9,6 +9,10 @@ interface ChildItem {
 	description?: string;
 	href: string;
 	icon?: string;
+	// Spans the full width of the mega menu, e.g. the platform overview above its products
+	featured?: boolean;
+	// Short status shown next to the label, e.g. "In development"
+	badge?: string;
 }
 
 interface MenuItem {
@@ -72,14 +76,17 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 							<div class="bg-surface border border-border rounded-xl p-3 shadow-2xl shadow-black/40">
 								<div class="grid grid-cols-2 gap-1 w-[480px]">
 									{item.children.map((child) => (
-										<a href={child.href} class="flex items-start gap-3 px-3 py-3 rounded-lg text-muted hover:bg-white/[0.04] transition-colors duration-100 no-underline group">
+										<a href={child.href} class:list={["flex items-start gap-3 px-3 py-3 rounded-lg text-muted hover:bg-white/[0.04] transition-colors duration-100 no-underline group", child.featured && "col-span-2 bg-primary/[0.06] border border-primary/15 mb-1"]}>
 											{child.icon && (
 												<div class="w-10 h-10 rounded-lg bg-primary/10 group-hover:bg-primary/15 flex items-center justify-center shrink-0 transition-colors duration-150">
 													<Icon name={child.icon} class="w-5 h-5 text-primary" />
 												</div>
 											)}
 											<div class="flex flex-col gap-0.5 min-w-0">
-												<span class="text-sm text-white font-medium">{child.label}</span>
+												<span class="text-sm text-white font-medium flex items-center gap-2 flex-wrap">
+													{child.label}
+													{child.badge && <span class="text-[10px] font-medium text-accent bg-accent/10 border border-accent/30 rounded-full px-2 py-px leading-4">{child.badge}</span>}
+												</span>
 												{child.description && (
 													<span class="text-xs text-muted leading-snug">{child.description}</span>
 												)}
@@ -178,6 +185,7 @@ const allPostsLabel = currentLang === 'de' ? 'Alle Beiträge ansehen' : 'View al
 								<a href={child.href} class="flex items-center gap-3 py-2 text-sm text-muted hover:text-white no-underline transition-colors">
 									{child.icon && <Icon name={child.icon} class="w-4 h-4 text-primary shrink-0" />}
 									<span>{child.label}</span>
+									{child.badge && <span class="text-[10px] text-accent">{child.badge}</span>}
 								</a>
 							))}
 						</div>
