@@ -33,7 +33,7 @@
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
     "headline": "Azubis, die liefern.\nAusbilder, die aufatmen.",
-    "subheadline": "KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.",
+    "subheadline": "KI-Lernpfade plus Ihr Unternehmenswissen, von der Einarbeitung über die IHK-Prüfung bis zum Upskilling.",
     "ctaPrimary": "Kostenlose Demo buchen",
     "ctaSecondary": "Einsparpotenzial berechnen"
   },
@@ -242,33 +242,10 @@
   "vocationalProfessions": {
     "headline": "Ausbildungsberufe",
     "items": [
-      {
-        "icon": "hugeicons:briefcase-02",
-        "title": "Kaufmännisch",
-        "professions": [
-          "Kaufmann/-frau für Büromanagement",
-          "Kaufmann für Spedition und Logistikdienstleistung",
-          "Fachkraft für Lagerlogistik"
-        ]
-      },
-      {
-        "icon": "hugeicons:source-code",
-        "title": "Informationstechnik",
-        "professions": [
-          "Fachinformatiker/-in Fachrichtung Systemintegration",
-          "Fachinformatiker/-in Fachrichtung Anwendungsentwicklung",
-          "Fachinformatiker/-in Fachrichtung Digitale Vernetzung",
-          "Fachinformatiker/-in Fachrichtung Daten- und Prozessanalyse"
-        ]
-      },
-      {
-        "icon": "hugeicons:wrench-01",
-        "title": "Gewerblich-technisch",
-        "professions": [
-          "Kfz-Mechatroniker/-in"
-        ]
-      }
-    ]
+        {"icon": "hugeicons:briefcase-02", "title": "Kaufmännisch", "professions": ["Industriekaufmann/-frau", "Kaufmann/-frau für Büromanagement", "Fachkraft für Lagerlogistik"]},
+        {"icon": "hugeicons:source-code", "title": "Informationstechnik", "professions": ["Fachinformatiker/-in Fachrichtung Anwendungsentwicklung", "Fachinformatiker/-in Fachrichtung Systemintegration", "Fachinformatiker/-in Fachrichtung Daten- und Prozessanalyse", "Fachinformatiker/-in Fachrichtung Digitale Vernetzung"]},
+        {"icon": "hugeicons:wrench-01", "title": "Gewerblich-technisch", "professions": ["Mechatroniker/-in", "Elektroniker/-in für Betriebstechnik", "Elektroniker/-in für Maschinen und Antriebstechnik", "Kfz-Mechatroniker/-in"]}
+      ]
   },
   "faq": {
     "headline": "Häufig gestellte Fragen",

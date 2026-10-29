@@ -32,7 +32,7 @@
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",
     "headline": "Apprentices who deliver.\nTrainers who can breathe.",
-    "subheadline": "AI learning paths plus your company knowledge, from onboarding to IHK exam.",
+    "subheadline": "AI learning paths plus your company knowledge, from onboarding through the IHK exam to upskilling.",
     "ctaPrimary": "Book a free demo",
     "ctaSecondary": "Calculate your savings"
   },
@@ -241,33 +241,10 @@
   "vocationalProfessions": {
     "headline": "Vocational Professions",
     "items": [
-      {
-        "icon": "hugeicons:briefcase-02",
-        "title": "Commercial",
-        "professions": [
-          "Office Management Clerk",
-          "Forwarding and Logistics Services Clerk",
-          "Warehouse Logistics Specialist"
-        ]
-      },
-      {
-        "icon": "hugeicons:source-code",
-        "title": "Information Technology",
-        "professions": [
-          "IT Specialist, System Integration",
-          "IT Specialist, Application Development",
-          "IT Specialist, Digital Networking",
-          "IT Specialist, Data and Process Analysis"
-        ]
-      },
-      {
-        "icon": "hugeicons:wrench-01",
-        "title": "Technical Trades",
-        "professions": [
-          "Automotive Mechatronics Technician"
-        ]
-      }
-    ]
+        {"icon": "hugeicons:briefcase-02", "title": "Commercial", "professions": ["Industrial Clerk (Industriekaufmann/-frau)", "Office Management Clerk (Kaufmann/-frau für Büromanagement)", "Warehouse Logistics Specialist (Fachkraft für Lagerlogistik)"]},
+        {"icon": "hugeicons:source-code", "title": "Information Technology", "professions": ["IT Specialist, Application Development", "IT Specialist, System Integration", "IT Specialist, Data and Process Analysis", "IT Specialist, Digital Networking"]},
+        {"icon": "hugeicons:wrench-01", "title": "Technical Trades", "professions": ["Mechatronics Technician (Mechatroniker/-in)", "Electronics Technician for Industrial Engineering (Elektroniker/-in für Betriebstechnik)", "Electronics Technician for Machines and Drive Technology", "Automotive Mechatronics Technician (Kfz-Mechatroniker/-in)"]}
+      ]
   },
   "faq": {
     "headline": "Frequently Asked Questions",

@@ -104,6 +104,11 @@ const heroImage = '/images/hero/ausbildung-hero.webp';
 		headline={content.howItWorks.headline}
 		steps={content.howItWorks.steps}
 		lang={lang}
+		images={[
+			'/images/solutions/learnslice-ihk-chat.webp',
+			'/images/solutions/learnslice-quiz-pool.webp',
+			'/images/solutions/learnslice-analytics.webp',
+		]}
 	/>
 
 	<CustomBuildTeaser lang={lang} />
@@ -113,9 +118,16 @@ const heroImage = '/images/hero/ausbildung-hero.webp';
 		headline={content.learningResults.headline}
 		features={content.learningResults.features}
 		compliance={content.learningResults.compliance}
+		screenshot={{
+			src: '/images/solutions/learnslice-analytics.webp',
+			alt: lang === 'de' ? 'Lern-Analytics im KI-Tutor: Beherrschungsquote, Trefferquote und Fortschritt pro Thema' : 'Learning analytics in the AI tutor: mastery rate, accuracy and progress per topic',
+			width: 2415,
+			height: 1266,
+		}}
 	/>
 	
 	<VocationalProfessions
+		label={lang === 'de' ? 'Lehrpläne inklusive' : 'Curricula included'}
 		headline={content.vocationalProfessions.headline}
 		items={content.vocationalProfessions.items}
 	/>

@@ -14,13 +14,13 @@ const recipient = currentLang === 'de'
 const grantNumber = currentLang === 'de' ? 'Förderkennzeichen 16GM200301' : 'Grant 16GM200301';
 ---
 
-<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-2">
 	{/* Official Förderzusatz layout: label above, logo, Bundestag line below, aligned with the eagle.
 	    The SVG file stays unaltered; the wrapper crops its built-in margin (viewBox 0 0 168 104)
 	    to the artwork area (x 23..147, y 19..84), so all offsets are percentages of that crop. */}
-	<div class="bg-white rounded-xl px-5 py-4 self-start shadow-sm ring-1 ring-black/5">
-		<p class="text-[11px] text-neutral-700 leading-none m-0 mb-3">Gefördert durch:</p>
-		<div class="relative w-[160px] aspect-[124/65] overflow-hidden">
+	<div class="bg-white rounded-lg px-3.5 py-3 self-start shadow-sm ring-1 ring-black/5">
+		<p class="text-[9px] text-neutral-700 leading-none m-0 mb-2">Gefördert durch:</p>
+		<div class="relative w-[128px] aspect-[124/65] overflow-hidden">
 			<img
 				src="/images/logos/bmwe-logo.svg"
 				alt="Bundesministerium für Wirtschaft und Energie"
@@ -30,9 +30,9 @@ const grantNumber = currentLang === 'de' ? 'Förderkennzeichen 16GM200301' : 'Gr
 				loading="lazy"
 			/>
 		</div>
-		<p class="text-[11px] text-neutral-700 leading-snug m-0 mt-3">aufgrund eines Beschlusses<br />des Deutschen Bundestages</p>
+		<p class="text-[9px] text-neutral-700 leading-snug m-0 mt-2">aufgrund eines Beschlusses<br />des Deutschen Bundestages</p>
 	</div>
-	<div class="text-muted text-xs leading-relaxed">
+	<div class="text-muted text-[11px] leading-relaxed">
 		<p class="m-0">{recipient}</p>
 		<p class="m-0">{grantNumber}</p>
 	</div>

@@ -71,14 +71,19 @@ Reference customers include FH Dortmund, the University of Cologne, and Carl-Sev
 
 ## Vocational Professions Covered
 
-- Kauffrau/Kaufmann für Büromanagement (Office Management)
-- Kauffrau/Kaufmann für Spedition und Logistikdienstleistung
-- Fachkraft für Lagerlogistik (Warehouse Logistics)
-- Fachinformatiker Systemintegration
-- Fachinformatiker Anwendungsentwicklung
-- Fachinformatiker Digitale Vernetzung
-- Fachinformatiker Daten- und Prozessanalyse
-- KFZ-Mechatroniker (Automotive Mechatronics)
+Each profession ships with its full IHK framework curriculum (Ausbildungsrahmenplan) as a learning plan.
+
+- Industriekaufmann/-frau (Industrial Clerk)
+- Kaufmann/-frau für Büromanagement (Office Management Clerk)
+- Fachkraft für Lagerlogistik (Warehouse Logistics Specialist)
+- Fachinformatiker/-in Anwendungsentwicklung (IT Specialist, Application Development)
+- Fachinformatiker/-in Systemintegration (IT Specialist, System Integration)
+- Fachinformatiker/-in Daten- und Prozessanalyse (IT Specialist, Data and Process Analysis)
+- Fachinformatiker/-in Digitale Vernetzung (IT Specialist, Digital Networking)
+- Mechatroniker/-in (Mechatronics Technician)
+- Elektroniker/-in für Betriebstechnik (Electronics Technician for Industrial Engineering)
+- Elektroniker/-in für Maschinen und Antriebstechnik (Electronics Technician for Machines and Drive Technology)
+- Kfz-Mechatroniker/-in (Automotive Mechatronics Technician)
 
 ## Company
 

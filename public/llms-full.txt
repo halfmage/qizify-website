@@ -13,7 +13,7 @@ Type: Product page: AI tutor for apprenticeships
 
 AI-Powered Apprenticeship Training
 
-AI learning paths plus your company knowledge, from onboarding to IHK exam.
+AI learning paths plus your company knowledge, from onboarding through the IHK exam to upskilling.
 
 **Proof points (FH Dortmund study, 50 master’s students):** 100%: Every answer traceable to a source · 80%: Reached near-complete mastery · 70%: Found the learning pace appropriate
 
@@ -76,20 +76,23 @@ Run GDPR-compliant. Hosted in Germany or on your own infrastructure.
 
 ### Commercial
 
-- Office Management Clerk
-- Forwarding and Logistics Services Clerk
-- Warehouse Logistics Specialist
+- Industrial Clerk (Industriekaufmann/-frau)
+- Office Management Clerk (Kaufmann/-frau für Büromanagement)
+- Warehouse Logistics Specialist (Fachkraft für Lagerlogistik)
 
 ### Information Technology
 
-- IT Specialist, System Integration
 - IT Specialist, Application Development
-- IT Specialist, Digital Networking
+- IT Specialist, System Integration
 - IT Specialist, Data and Process Analysis
+- IT Specialist, Digital Networking
 
 ### Technical Trades
 
-- Automotive Mechatronics Technician
+- Mechatronics Technician (Mechatroniker/-in)
+- Electronics Technician for Industrial Engineering (Elektroniker/-in für Betriebstechnik)
+- Electronics Technician for Machines and Drive Technology
+- Automotive Mechatronics Technician (Kfz-Mechatroniker/-in)
 
 ## Built for Companies, Schools, and Agencies
 
@@ -221,7 +224,7 @@ Type: Produktseite: KI-Tutor für die Ausbildung
 
 KI-gestützte Ausbildungsplattform
 
-KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.
+KI-Lernpfade plus Ihr Unternehmenswissen, von der Einarbeitung über die IHK-Prüfung bis zum Upskilling.
 
 **Beweispunkte (Studie mit 50 Masterstudierenden der FH Dortmund):** 100%: Jede Antwort auf eine Quelle zurückführbar · 80%: Nahezu vollständiges Verständnis erreicht · 70%: Empfanden das Lerntempo als passend
 
@@ -283,19 +286,22 @@ DSGVO-konform betrieben. Gehostet in Deutschland oder in Ihrer eigenen Infrastru
 
 ### Kaufmännisch
 
+- Industriekaufmann/-frau
 - Kaufmann/-frau für Büromanagement
-- Kaufmann für Spedition und Logistikdienstleistung
 - Fachkraft für Lagerlogistik
 
 ### Informationstechnik
 
-- Fachinformatiker/-in Fachrichtung Systemintegration
 - Fachinformatiker/-in Fachrichtung Anwendungsentwicklung
-- Fachinformatiker/-in Fachrichtung Digitale Vernetzung
+- Fachinformatiker/-in Fachrichtung Systemintegration
 - Fachinformatiker/-in Fachrichtung Daten- und Prozessanalyse
+- Fachinformatiker/-in Fachrichtung Digitale Vernetzung
 
 ### Gewerblich-technisch
 
+- Mechatroniker/-in
+- Elektroniker/-in für Betriebstechnik
+- Elektroniker/-in für Maschinen und Antriebstechnik
 - Kfz-Mechatroniker/-in
 
 ## Für Unternehmen, Schulen und Agenturen
