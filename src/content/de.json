@@ -6,11 +6,11 @@
         "label": "Produkt",
         "mega": true,
         "children": [
-          { "label": "So funktioniert's", "description": "3-Schritte KI-Lernpfad", "href": "/de#how-it-works", "icon": "hugeicons:workflow-circle-06" },
-          { "label": "Features", "description": "KI-Coaching, Assessments, Analytics", "href": "/de#learning-results", "icon": "hugeicons:sparkles" },
-          { "label": "Ausbildungsberufe", "description": "Kaufmännisch, IT, gewerblich", "href": "/de#vocational-professions", "icon": "hugeicons:briefcase-02" },
-          { "label": "Einsparungsrechner", "description": "Ihren ROI sofort sehen", "href": "/de/ausbildungskosten-rechner", "icon": "hugeicons:calculator" },
-          { "label": "Digital-Readiness-Check", "description": "AZAV, BFSG & KI in 3 Minuten", "href": "/de/digital-readiness-check", "icon": "hugeicons:security-check" }
+          { "label": "KI-Lernplattform", "description": "Ein persönlicher Tutor für jede Person: Lernpfad, Antworten rund um die Uhr, Simulationen, Analytics", "href": "/de", "icon": "hugeicons:sparkles", "featured": true },
+          { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01" },
+          { "label": "Finanz-Begleiter", "description": "Finanzbildung unter Ihrer Marke", "href": "/de/finanz-begleiter", "icon": "hugeicons:bank" },
+          { "label": "Gründer-Begleiter", "description": "Finanzplan, Pitch Deck, Bankgespräch", "href": "/de/gruender-begleiter", "icon": "hugeicons:rocket-01" },
+          { "label": "Ihr eigener Begleiter", "description": "Ihr Thema, Ihre Inhalte, Ihre Marke", "href": "/de/loesungen#eigener-begleiter", "icon": "hugeicons:puzzle" }
         ]
       },
       {
@@ -21,7 +21,7 @@
           { "label": "Verteidigungsindustrie", "description": "Metall- und Elektro-Azubis, on-prem", "href": "/de/verteidigungsindustrie", "icon": "hugeicons:shield-01" },
           { "label": "Für Schulen", "description": "Berufsschulen & Kollegs", "href": "/de/schools", "icon": "hugeicons:mortarboard-02" },
           { "label": "Für Agenturen", "description": "IHK, HWK, Wirtschaftsförderung", "href": "/de/agencies", "icon": "hugeicons:building-03" },
-          { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de#testimonials", "icon": "hugeicons:quote-up" }
+          { "label": "Erfolgsgeschichten", "description": "Kundenstimmen", "href": "/de/ki-tutor-ausbildung#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
       { "label": "Individuelle Entwicklung", "href": "/de/loesungen" },
@@ -33,14 +33,9 @@
   "hero": {
     "badge": "KI-gestützte Ausbildungsplattform",
     "headline": "Azubis, die liefern.\nAusbilder, die aufatmen.",
-    "subheadline": "KI-Lernpfade plus Ihr Unternehmenswissen, von Einarbeitung bis IHK-Prüfung.",
+    "subheadline": "KI-Lernpfade plus Ihr Unternehmenswissen, von der Einarbeitung über die IHK-Prüfung bis zum Upskilling.",
     "ctaPrimary": "Kostenlose Demo buchen",
-    "ctaSecondary": "Einsparpotenzial berechnen",
-    "stats": [
-      { "value": "26K €", "label": "Kosten pro Azubi und Jahr (BIBB)" },
-      { "value": "bis zu 50 %", "label": "weniger Ausbilderzeit" },
-      { "value": "bis zu 65 %", "label": "schneller einsatzbereit" }
-    ]
+    "ctaSecondary": "Einsparpotenzial berechnen"
   },
   "trustedBy": {
     "headline": "Sie sind in guter Gesellschaft",
@@ -128,7 +123,7 @@
         "description": "Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Erlebnis, das Azubis bei der Stange hält und Abschlussquoten steigert."
       }
     ],
-    "compliance": "100 % DSGVO-konform. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur"
+    "compliance": "DSGVO-konform betrieben. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur."
   },
   "madeForCompany": {
     "headline": "Für Unternehmen, Schulen und Agenturen",
@@ -239,41 +234,18 @@
       },
       {
         "icon": "hugeicons:security-check",
-        "title": "Made in\nGermany",
-        "description": "DSGVO-konform, Server in Deutschland, Lokales LLM"
+        "title": "Gehostet in\nDeutschland",
+        "description": "DSGVO-konform betrieben, Server in Deutschland, Lokales LLM"
       }
     ]
   },
   "vocationalProfessions": {
     "headline": "Ausbildungsberufe",
     "items": [
-      {
-        "icon": "hugeicons:briefcase-02",
-        "title": "Kaufmännisch",
-        "professions": [
-          "Kaufmann/-frau für Büromanagement",
-          "Kaufmann für Spedition und Logistikdienstleistung",
-          "Fachkraft für Lagerlogistik"
-        ]
-      },
-      {
-        "icon": "hugeicons:source-code",
-        "title": "Informationstechnik",
-        "professions": [
-          "Fachinformatiker/-in Fachrichtung Systemintegration",
-          "Fachinformatiker/-in Fachrichtung Anwendungsentwicklung",
-          "Fachinformatiker/-in Fachrichtung Digitale Vernetzung",
-          "Fachinformatiker/-in Fachrichtung Daten- und Prozessanalyse"
-        ]
-      },
-      {
-        "icon": "hugeicons:wrench-01",
-        "title": "Gewerblich-technisch",
-        "professions": [
-          "Kfz-Mechatroniker/-in"
-        ]
-      }
-    ]
+        {"icon": "hugeicons:briefcase-02", "title": "Kaufmännisch", "professions": ["Industriekaufmann/-frau", "Kaufmann/-frau für Büromanagement", "Fachkraft für Lagerlogistik"]},
+        {"icon": "hugeicons:source-code", "title": "Informationstechnik", "professions": ["Fachinformatiker/-in Fachrichtung Anwendungsentwicklung", "Fachinformatiker/-in Fachrichtung Systemintegration", "Fachinformatiker/-in Fachrichtung Daten- und Prozessanalyse", "Fachinformatiker/-in Fachrichtung Digitale Vernetzung"]},
+        {"icon": "hugeicons:wrench-01", "title": "Gewerblich-technisch", "professions": ["Mechatroniker/-in", "Elektroniker/-in für Betriebstechnik", "Elektroniker/-in für Maschinen und Antriebstechnik", "Kfz-Mechatroniker/-in"]}
+      ]
   },
   "faq": {
     "headline": "Häufig gestellte Fragen",
@@ -307,8 +279,9 @@
         "answer": "Die meisten Azubis loggen sich nach den ersten zwei Wochen freiwillig mehrmals pro Woche ein. Das Format passt zur Lernrealität: kurze, prüfungsrelevante Aufgaben, Gamification (Punkte, Badges, Levels) und ein Ausbilder-Dashboard, das jeden Azubi markiert, dessen Nutzung unter den Rollout-Durchschnitt fällt. Sinkende Beteiligung wird früh erkannt, nicht erst bei der IHK-Prüfung."
       },
       {
+        "id": "data-protection",
         "question": "Sind meine Daten sicher / DSGVO-konform?",
-        "answer": "Ja. LearnSlice ist 100 % DSGVO-konform. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders."
+        "answer": "Ja. LearnSlice wird DSGVO-konform betrieben. Daten können je nach Richtlinie auf deutschen, europäischen oder unternehmenseigenen Systemen gespeichert werden. Keine Daten verlassen die EU, es sei denn, Sie entscheiden anders."
       },
       {
         "question": "Wie hilft LearnSlice bei vorzeitigen Vertragslösungen und Ausbilderaufwand?",
@@ -333,6 +306,11 @@
       {
         "question": "Ich habe eine Frage, Anmerkung oder Feedback. An wen kann ich mich wenden?",
         "answer": "Sie erreichen uns per WhatsApp/Telegram unter +49 1578 3914112, über das Kontaktformular auf unserer Website oder per E-Mail an info@learnslice.com."
+      },
+      {
+        "question": "Gibt es auch Finanzbildung für Azubis?",
+        "answer": "Ja, mit dem Finanz-Begleiter auf derselben Plattform. Er erklärt Azubis Budget, erstes Gehalt, Notgroschen, Sparen und Vorsorge, mit Finanz-Check, Lernweg in drei Stufen und einem Coach, der mit Quellen erklärt und nichts verkauft. Sie setzen ihn unter Ihrer Marke ein.",
+        "link": { "href": "/de/finanz-begleiter", "label": "Zum Finanz-Begleiter" }
       }
     ]
   },
@@ -403,16 +381,19 @@
       "headline": "Was die erste Studie gezeigt hat",
       "items": [
         {
+          "id": "sourced-answers",
           "stat": "100%",
           "title": "Jede Antwort auf eine Quelle zurückführbar",
           "body": "In der Systemauswertung trug jede Antwort eine gültige Quellenangabe zur Textstelle, ohne erfundene Quellen."
         },
         {
+          "id": "mastery",
           "stat": "80%",
           "title": "Nahezu vollständiges Verständnis erreicht",
           "body": "Nach der Vorbereitung mit LearnSlice erreichten 80% der Studierenden ein vollständiges oder nahezu vollständiges Verständnis des Prüfungsthemas."
         },
         {
+          "id": "pace",
           "stat": "70%",
           "title": "Empfanden das Lerntempo als passend",
           "body": "70% der Studierenden empfanden das personalisierte Lerntempo als passend für ihre individuellen Bedürfnisse."
@@ -539,14 +520,14 @@
           ]
         },
         {
-          "image": "/images/solutions/financial-companion.webp",
-          "imageAlt": "Financial-Companion-KI mit Finanz-Gesundheitscheck und Lernprogramm",
+          "image": "/images/solutions/financial-companion-coach-de.webp",
+          "imageAlt": "Finanz-Begleiter unter Kundenmarke: Coach erklärt Teilzeit und Rente mit Quelle und Was-wäre-wenn-Rechner",
           "eyebrow": "Branchenlösungen",
           "title": "Ein markeneigener Begleiter für Ihre Domäne",
-          "body": "Dieselbe Engine, als White-Label für ein konkretes Feld, hier ein Finanzbildungs-Begleiter für einen Partner.",
+          "body": "Dieselbe Engine, als White-Label für ein konkretes Feld, hier ein Finanz-Begleiter für Finanzbildung.",
           "bullets": [
             "Ihre Marke, Ihre Domäne, Ihre Inhalte",
-            "Geführte Programme und ein Health-Check-Ablauf",
+            "Finanz-Check, Lernweg und Coach mit Quellen",
             "Ein angepasster Chatbot für Ihre Lehr- und Schulungszwecke"
           ]
         },

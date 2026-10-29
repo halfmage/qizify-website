@@ -59,8 +59,8 @@ const softwareSchema = {
 	applicationCategory: 'BusinessApplication',
 	operatingSystem: 'Web',
 	description: lang === 'en'
-		? 'AI-powered learning platform for German apprenticeships. Combines IHK exam preparation with company-specific knowledge into personalized learning paths with 24/7 AI coaching.'
-		: 'KI-gestützte Lernplattform für die Berufsausbildung. Verbindet IHK-Prüfungsvorbereitung mit unternehmensspezifischem Wissen zu personalisierten Lernpfaden mit 24/7 KI-Coaching.',
+		? 'AI learning platform that turns an organisation\'s content and goals into a personal AI tutor for every learner: learning paths, job simulations, quizzes, 24/7 answers with sources and analytics. Ready-made companions, including one for German apprenticeships, plus custom companions.'
+		: 'KI-Lernplattform, die aus den Inhalten und Zielen einer Organisation einen persönlichen KI-Tutor für jede Person macht: Lernpfade, Jobsimulationen, Quizze, Antworten rund um die Uhr mit Quelle und Analytics. Fertige Begleiter, darunter einer für die Berufsausbildung, sowie eigene Begleiter.',
 	url: siteUrl,
 };
 
@@ -88,6 +88,7 @@ const segmentLabels: Record<string, Record<string, string>> = {
 		schools: 'For Schools',
 		agencies: 'For Agencies',
 		us: 'For US Training Providers',
+		'ai-tutor-apprenticeships': 'AI Tutor for Apprenticeships',
 		'apprenticeship-savings-calculator': 'Savings Calculator',
 		'learnslice-vs-traditional-training': 'LearnSlice vs. Traditional Training',
 		'learnslice-vs-video-ihk-tools': 'LearnSlice vs. Video IHK Tools',
@@ -103,6 +104,7 @@ const segmentLabels: Record<string, Record<string, string>> = {
 		companies: 'Für Unternehmen',
 		schools: 'Für Schulen',
 		agencies: 'Für Agenturen',
+		'ki-tutor-ausbildung': 'KI-Tutor für die Ausbildung',
 		'ausbildungskosten-rechner': 'Ausbildungskosten-Rechner',
 		'learnslice-vs-traditionelle-ausbildung': 'LearnSlice vs. Traditionelle Ausbildung',
 		'learnslice-vs-video-ihk-tools': 'LearnSlice vs. Video-IHK-Tools',

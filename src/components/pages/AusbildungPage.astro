@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import TrustBar from '../TrustBar.astro';
+import Hero from '../Hero.astro';
+import LogosSlider from '../LogosSlider.astro';
+import ProblemStatement from '../ProblemStatement.astro';
+import SavingsComparison from '../SavingsComparison.astro';
+import CustomBuildTeaser from '../CustomBuildTeaser.astro';
+import HowItWorks from '../HowItWorks.astro';
+import LearningResults from '../LearningResults.astro';
+import CompanySlider from '../CompanySlider.astro';
+import Testimonials from '../Testimonials.astro';
+import VocationalProfessions from '../VocationalProfessions.astro';
+import FAQ from '../FAQ.astro';
+import CTAFooter from '../CTAFooter.astro';
+import Footer from '../Footer.astro';
+import StickyCta from '../StickyCta.astro';
+import DemoRequestModal from '../DemoRequestModal.astro';
+import enContent from '../../content/en.json';
+import { homepage } from '../../content/homepage';
+import deContent from '../../content/de.json';
+
+// Apprenticeship product page (the former homepage), rendered for both languages:
+// /ai-tutor-apprenticeships and /de/ki-tutor-ausbildung.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+const content = lang === 'de' ? deContent : enContent;
+
+const meta = {
+	en: {
+		path: '/ai-tutor-apprenticeships',
+		title: 'AI Tutor for Apprenticeship Training | IHK Exam Prep | LearnSlice',
+		description: 'AI platform that gets apprentices job-ready in as little as 8 weeks: IHK exam prep, onboarding, and upskilling in one place. Each apprentice costs about €26,200 a year (BIBB).',
+		eyebrow: 'AI tutor for apprenticeship training',
+	},
+	de: {
+		path: '/de/ki-tutor-ausbildung',
+		title: 'KI-Tutor Ausbildung & IHK-Prüfungsvorbereitung | LearnSlice',
+		description: 'KI-Plattform für die gesamte Berufsausbildung: IHK-Prüfung, Onboarding und Upskilling vereint. Jeder Azubi kostet rund 26.200 € pro Jahr (BIBB), Ausbilder spürbar entlastet.',
+		eyebrow: 'KI-Tutor für die Ausbildung',
+	},
+}[lang];
+const currentPath = meta.path;
+// Rendered by Hero and preloaded by BaseLayout: one path for both
+const heroImage = '/images/hero/ausbildung-hero.webp';
+---
+
+<BaseLayout
+	title={meta.title}
+	description={meta.description}
+	lang={lang}
+	currentPath={currentPath}
+	heroImage={heroImage}
+>
+	<Header
+		logo={content.nav.logo}
+		menu={content.nav.menu}
+		cta={content.nav.cta}
+		currentLang={lang}
+		currentPath={currentPath}
+	/>
+	
+	<Hero
+		eyebrow={meta.eyebrow}
+		headline={content.hero.headline}
+		subheadline={content.hero.subheadline}
+		ctaPrimary={content.hero.ctaPrimary}
+		ctaSecondary={content.hero.ctaSecondary}
+		stats={homepage[lang].hero.stats}
+		trustLine={homepage[lang].hero.trustLine}
+		image={heroImage}
+		imagePosition="object-right"
+		currentLang={lang}
+	>
+		<TrustBar slot="belowHero" currentLang={lang} center={true} />
+	</Hero>
+
+	<LogosSlider
+		headline={content.trustedBy.headline}
+		logos={content.trustedBy.logos}
+	/>
+	
+	<ProblemStatement
+		badge={content.problem.badge}
+		headline={content.problem.headline}
+		body={content.problem.body}
+	/>
+
+	<SavingsComparison
+		headline={content.savingsComparison.headline}
+		without={content.savingsComparison.without}
+		with={content.savingsComparison.with}
+	/>
+	
+	<HowItWorks
+		badge={content.howItWorks.badge}
+		headline={content.howItWorks.headline}
+		steps={content.howItWorks.steps}
+		lang={lang}
+		images={[
+			'/images/solutions/learnslice-ihk-chat.webp',
+			'/images/solutions/learnslice-quiz-pool.webp',
+			'/images/solutions/learnslice-analytics.webp',
+		]}
+	/>
+
+	<CustomBuildTeaser lang={lang} />
+	
+	<LearningResults 
+		badge={content.learningResults.badge}
+		headline={content.learningResults.headline}
+		features={content.learningResults.features}
+		compliance={content.learningResults.compliance}
+		screenshot={{
+			src: '/images/solutions/learnslice-analytics.webp',
+			alt: lang === 'de' ? 'Lern-Analytics im KI-Tutor: Beherrschungsquote, Trefferquote und Fortschritt pro Thema' : 'Learning analytics in the AI tutor: mastery rate, accuracy and progress per topic',
+			width: 2415,
+			height: 1266,
+		}}
+	/>
+	
+	<VocationalProfessions
+		label={lang === 'de' ? 'Lehrpläne inklusive' : 'Curricula included'}
+		headline={content.vocationalProfessions.headline}
+		items={content.vocationalProfessions.items}
+	/>
+
+	<CompanySlider
+		headline={content.madeForCompany.headline}
+		tabs={content.madeForCompany.tabs}
+	/>
+
+	<Testimonials
+		headline={content.testimonials.headline}
+		items={content.testimonials.items}
+		currentLang={lang}
+	/>
+
+
+	<FAQ
+		headline={content.faq.headline}
+		items={content.faq.items}
+	/>
+
+	<CTAFooter
+		headline={content.homepageCta.headline}
+		subheadline={content.homepageCta.subheadline}
+		button={content.homepageCta.button}
+		calendly
+		currentLang={lang}
+	/>
+	
+	<Footer
+		currentLang={lang}
+		privacyLabel={content.footer.privacyLabel}
+		termsLabel={content.footer.termsLabel}
+	/>
+
+	<StickyCta label={content.nav.cta} />
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

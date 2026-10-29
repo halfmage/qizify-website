@@ -1,0 +1,552 @@
+{
+  "de": {
+    "path": "/de/gruender-begleiter",
+    "title": "Gründer-Begleiter: Finanzplan prüfen, Bankgespräch üben",
+    "description": "KI-Begleiter für Gründungsberatung, IHKs, Wirtschaftsförderungen und Inkubatoren: prüft Finanzplan und Pitch Deck, zeigt Lücken, übt Bank- und Kundengespräche.",
+    "breadcrumb": "Gründer-Begleiter",
+    "cta": "Gespräch vereinbaren",
+    "hero": {
+      "eyebrow": "Gründer-Begleiter",
+      "headline": "Vom Finanzplan",
+      "headlineAccent": "zur Zusage.",
+      "sub": "Er prüft Finanzplan und Pitch Deck Ihrer Gründenden, zeigt, was fehlt, und übt das Bankgespräch. Alles an einem Ort, mit den Inhalten Ihres Programms.",
+      "secondary": "So funktioniert es",
+      "note": "30 Minuten, unverbindlich. Wir zeigen den Begleiter und klären, ob ein Pilot zu Ihrem Programm passt.",
+      "audience": "Für Gründungsberatung, IHKs, Wirtschaftsförderungen, Inkubatoren, Acceleratoren und Hochschulen.",
+      "founders": "Du gründest selbst?",
+      "foundersLink": "Zur Warteliste",
+      "imageCaption": "Beispieldarstellung mit fiktiven Daten.",
+      "imageAlt": "Gründer-Begleiter: Finanzplan mit 11 von 16 erfüllten Prüfpunkten und drei Verbesserungen, Abgleich von Pitch Deck und Finanzplan, Simulation des Bankgesprächs und Notiz des Coaches"
+    },
+    "problem": {
+      "label": "Das Problem",
+      "headline": "Gründungen scheitern selten am Formular. Sie scheitern am Geld.",
+      "stats": [
+        {
+          "value": "fast 2×",
+          "label": "höhere Abbruchwahrscheinlichkeit bei finanziellen Risiken und Finanzierungsproblemen. Bürokratie ärgert mehr, bremst aber kaum."
+        },
+        {
+          "value": "4 von 10",
+          "label": "Gründungsplanenden geben ihr Vorhaben jedes Jahr wieder auf."
+        },
+        {
+          "value": "57 %",
+          "label": "der Gründenden kämpfen mit der Kundengewinnung, mehr als doppelt so viele wie zwei Jahre zuvor."
+        }
+      ],
+      "source": "Quelle: KfW-Gründungsmonitor 2026"
+    },
+    "loop": {
+      "label": "So funktioniert es",
+      "headline": "Prüfen. Verbessern. Üben.",
+      "sub": "Der Begleiter arbeitet mit dem Plan, den Gründende schon haben, und bringt ihn bis zum Termin, auf den es ankommt.",
+      "steps": [
+        {
+          "title": "Prüfen",
+          "body": "Gründende laden Finanzplan und Pitch Deck hoch. Der Begleiter prüft beides auf Basis öffentlicher Checklisten von KfW und IHK und gleicht die Dokumente ab: Passt der Umsatz im Deck zum Finanzplan?",
+          "image": "/images/solutions/founder-check-de.webp",
+          "alt": "Prüfung des Finanzplans mit Prüfpunkten in Rot, Gelb und Grün und Abgleich mit dem Pitch Deck"
+        },
+        {
+          "title": "Verbessern",
+          "body": "Zu jedem offenen Punkt zeigt er, warum er zählt und wie man ihn löst, mit den eigenen Zahlen der Gründenden. Danach wird neu geprüft, bis der Plan steht.",
+          "image": "/images/solutions/founder-improve-de.webp",
+          "alt": "Verbesserung eines Prüfpunkts: fehlende Lebenshaltungskosten, drei Schritte zur Lösung und die angepasste Liquidität"
+        },
+        {
+          "title": "Üben",
+          "body": "Im simulierten Bankgespräch, Kunden- oder Investorengespräch kommen genau die Fragen, bei denen der Plan noch wackelt. Zu jeder Antwort gibt es Feedback.",
+          "image": "/images/solutions/founder-simulation-de.webp",
+          "alt": "Simuliertes Bankgespräch mit einer Bankberaterin und Feedback zur Antwort"
+        }
+      ]
+    },
+    "growth": {
+      "label": "Nach der Gründung",
+      "headline": "Der Begleiter bleibt, wenn die ersten Kunden kommen.",
+      "sub": "Gründen ist erst der Anfang. Für Inkubatoren und Acceleratoren begleitet er auch die Zeit danach.",
+      "image": "/images/solutions/founder-customer-call-de.webp",
+      "imageAlt": "Simuliertes Kundengespräch mit der Inhaberin einer Bäckerei und Feedback zur Antwort",
+      "items": [
+        {
+          "title": "Kundengespräche üben",
+          "body": "Erstgespräch, Preisfrage, Einwände: Gründende üben mit simulierten Kundinnen und Kunden, bevor es um echte Aufträge geht."
+        },
+        {
+          "title": "Angebot und Preise schärfen",
+          "body": "Was sagen die ersten Kunden, und was heißt das für Angebot und Preis? Der Begleiter hilft, das Feedback auszuwerten."
+        },
+        {
+          "title": "Wachstum planen",
+          "body": "Erstes Team, nächste Finanzierung, die wichtigen Kennzahlen: mit dem Finanzplan als Grundlage, Schritt für Schritt."
+        }
+      ]
+    },
+    "oneplace": {
+      "label": "Alles an einem Ort",
+      "headline": "Alles für die Gründung an einem Ort. Abgestimmt auf Ihr Programm.",
+      "sub": "Vieles geht auch mit einem allgemeinen KI-Chat, Tabellen und Ordnern. Dann sind die Antworten allgemein, Zahlen und Feedback verteilt, und niemand sieht den Fortschritt. Der Gründer-Begleiter bringt alles zusammen.",
+      "beforeTitle": "Verteilt auf viele Werkzeuge",
+      "beforeShort": "Sonst:",
+      "note": {
+        "lead": "Die Gründerplattform hilft beim Schreiben. Der Begleiter beim Bestehen.",
+        "pre": "Den Businessplan schreiben Gründende weiter in der kostenlosen",
+        "link": "Gründerplattform von KfW und Bundeswirtschaftsministerium",
+        "post": "oder in der IHK-Unternehmenswerkstatt. Der Begleiter übernimmt den Plan und baut darauf auf."
+      },
+      "afterTitle": "Im Gründer-Begleiter",
+      "rows": [
+        {
+          "task": "Fragen klären",
+          "before": "KI-Chat mit allgemeinem Wissen, ohne Bezug zu Ihrem Programm",
+          "after": "Antworten aus Ihren Inhalten: Ihre Förderprogramme, Termine und Checklisten, mit Quelle"
+        },
+        {
+          "task": "Zahlen prüfen",
+          "before": "Eigene Tabellen, die niemand gegenprüft",
+          "after": "Finanzplan geprüft und mit dem Pitch Deck abgeglichen"
+        },
+        {
+          "task": "Gespräche vorbereiten",
+          "before": "Allein oder gar nicht",
+          "after": "Bank, Kunden und Investoren als Simulation, mit Feedback"
+        },
+        {
+          "task": "Fortschritt sehen",
+          "before": "Der Coach fragt per E-Mail nach",
+          "after": "Coach-Ansicht für die ganze Kohorte"
+        }
+      ]
+    },
+    "institutions": {
+      "label": "Für Ihre Organisation",
+      "headline": "Mehr Gründende begleiten, mit derselben Beratungszeit.",
+      "sub": "Zu viele Gründende, zu wenig Beratungszeit, und ein großer Teil des Termins geht für fehlende Zahlen drauf? Der Begleiter übernimmt die erste Prüfung und das Üben. Ihre Leute kümmern sich um die Fragen, die Erfahrung brauchen.",
+      "image": "/images/solutions/founder-coach-view-de.webp",
+      "imageAlt": "Coach-Ansicht einer Kohorte: Fortschritt im Finanzplan, offene Punkte und wer seit Wochen nicht weiterkommt",
+      "features": [
+        {
+          "icon": "hugeicons:dashboard-square-01",
+          "title": "Coach-Ansicht",
+          "body": "Wer steht wo, welche Punkte sind offen, wer kommt seit Wochen nicht weiter. Sie wissen, wo ein Gespräch fällig ist."
+        },
+        {
+          "icon": "hugeicons:book-02",
+          "title": "Ihre Inhalte",
+          "body": "Ihre Förderprogramme, Ihre Region, Ihre Checklisten und Termine. Der Begleiter antwortet daraus und nennt die Quelle."
+        },
+        {
+          "icon": "hugeicons:file-validation",
+          "title": "Gründungszuschuss vorbereiten",
+          "body": "Für Gründungsberatung und AVGS-Coaching: Gründende bereiten ihren Plan auf die Prüfung der Tragfähigkeit vor."
+        },
+        {
+          "icon": "hugeicons:paint-board",
+          "title": "Ihre Marke",
+          "body": "Im Design Ihrer Organisation, als Teil Ihres Programms oder Ihrer Beratung."
+        }
+      ],
+      "audiences": [
+        "Gründungsberatung und AVGS-Coaching",
+        "IHKs und Handwerkskammern",
+        "Wirtschaftsförderungen",
+        "Inkubatoren und Acceleratoren",
+        "Gründungszentren an Hochschulen",
+        "Programme für junge Gründende"
+      ]
+    },
+    "youth": {
+      "label": "Für junge Gründende ab 16",
+      "headline": "Gründen lernen, bevor es ernst wird.",
+      "body": "Für Schulen und Programme: von der Idee über die ersten Kunden bis zur Schülerfirma oder zum Nebengewerbe. Wer vor dem 18. Geburtstag ein Gewerbe anmelden will, braucht die Zustimmung der Eltern und des Familiengerichts (§ 112 BGB). Der Begleiter erklärt den Weg und zeigt, wer weiterhilft."
+    },
+    "limits": {
+      "headline": "Was der Begleiter nicht tut",
+      "items": [
+        "Er berät nicht im Einzelfall zu Rechtsform, Steuern oder Verträgen. Er vergleicht Optionen und verweist an IHK, Steuerberatung oder Anwalt.",
+        "Er sagt keine Kreditzusage voraus. Er zeigt, welche Fragen noch offen sind.",
+        "Er ersetzt Ihre Beraterinnen und Coaches nicht. Er gibt ihnen Zeit für die Gespräche, die zählen."
+      ]
+    },
+    "platform": {
+      "label": "Die Plattform dahinter",
+      "body": "Der Gründer-Begleiter läuft auf derselben Lernplattform wie unser",
+      "link": "KI-Tutor für die Ausbildung",
+      "linkHref": "/de/ki-tutor-ausbildung",
+      "after": ". Die Plattform wurde mit dem KI-Preis des BMWE 2025 ausgezeichnet und entsteht in einem Forschungsprojekt mit der FH Dortmund.",
+      "chips": [
+        "Server in Deutschland",
+        "Keine Daten für KI-Training",
+        "Antworten mit Quelle"
+      ]
+    },
+    "pilot": {
+      "label": "Pilot",
+      "headline": "Pilotpartner werden",
+      "sub": "Wir entwickeln den Gründer-Begleiter mit ersten Partnern. So läuft ein Pilot:",
+      "points": [
+        "Ein Programm oder eine Kohorte zum Start",
+        "Ihre Förderprogramme und Checklisten als Inhalt",
+        "Ziele vorher festgelegt: geprüfte Pläne, gelöste Punkte, gesparte Beratungszeit",
+        "Fester Preis für den Pilot"
+      ],
+      "contact": "Das Gespräch führe ich selbst. Ich zeige Ihnen den Begleiter und wir klären, ob ein Pilot zu Ihrem Programm passt.",
+      "role": "CEO von LearnSlice",
+      "form": {
+        "name": "Name",
+        "org": "Organisation",
+        "type": "Art der Organisation",
+        "choose": "Bitte wählen (optional)",
+        "typeOptions": [
+          "Gründungsberatung oder AVGS-Coaching",
+          "IHK oder Handwerkskammer",
+          "Wirtschaftsförderung",
+          "Inkubator oder Accelerator",
+          "Hochschule oder Gründungszentrum",
+          "Programm für junge Gründende",
+          "Andere"
+        ],
+        "email": "E-Mail",
+        "message": "Wie viele Gründende begleiten Sie im Jahr?",
+        "optional": "Optional",
+        "submit": "Pilotgespräch anfragen",
+        "note": "30 Minuten · Antwort innerhalb von 1 Werktag",
+        "calendly": "Oder direkt einen Termin wählen",
+        "success": "Vielen Dank. Wir melden uns innerhalb von 1 Werktag mit Terminvorschlägen.",
+        "successCalendly": "Schneller geht es direkt im Kalender ›",
+        "privacy": {
+          "pre": "Mit dem Absenden akzeptieren Sie die",
+          "link": "Datenschutzerklärung",
+          "post": "."
+        }
+      }
+    },
+    "waitlist": {
+      "headline": "Du gründest selbst?",
+      "body": "Trag dich ein. Wir melden uns, sobald der Gründer-Begleiter für Gründende offen ist.",
+      "email": "Deine E-Mail",
+      "submit": "Frühen Zugang sichern",
+      "success": "Danke, du stehst auf der Liste.",
+      "consent": "Ich möchte per E-Mail informiert werden, sobald der Gründer-Begleiter für Gründende offen ist. Abmeldung jederzeit möglich.",
+      "privacy": "Datenschutzerklärung",
+      "error": "Da ist etwas schiefgelaufen. Bitte versuch es noch einmal oder schreib an info@learnslice.com."
+    },
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie an info@learnslice.com.",
+    "faqHeadline": "Fragen und Antworten",
+    "faq": [
+      {
+        "question": "Was ist der Gründer-Begleiter?",
+        "answer": "Der Gründer-Begleiter ist ein KI-Begleiter von LearnSlice für Organisationen, die Gründende unterstützen. Er prüft Finanzplan und Pitch Deck auf Basis öffentlicher Checklisten von KfW und IHK, zeigt Lücken mit Lösungswegen, übt Bank-, Kunden- und Investorengespräche und zeigt Coaches den Fortschritt. Wir entwickeln ihn mit ersten Pilotpartnern."
+      },
+      {
+        "question": "Für wen ist der Gründer-Begleiter gedacht?",
+        "answer": "Für Organisationen, die Gründende begleiten: Gründungsberatung und AVGS-Coaching, IHKs und Handwerkskammern, Wirtschaftsförderungen, Inkubatoren, Acceleratoren und Gründungszentren an Hochschulen. Dazu Schulen und Programme für junge Gründende ab 16."
+      },
+      {
+        "question": "Ist das Rechts- oder Steuerberatung?",
+        "answer": "Nein. Der Begleiter erklärt allgemein und mit Quelle, rechnet mit den Zahlen, die Gründende selbst eingeben, und prüft ihre Unterlagen auf Vollständigkeit und Stimmigkeit. Fragen zum Einzelfall, etwa welche Rechtsform passt, beantwortet er nicht. Dafür verweist er an IHK, Steuerberatung oder Anwalt."
+      },
+      {
+        "question": "Warum nicht einfach ein allgemeiner KI-Chat?",
+        "answer": "Ein allgemeiner KI-Chat schreibt schnell einen Businessplan, antwortet aber aus allgemeinem Wissen und kennt weder Ihr Programm noch Ihre Förderangebote. Der Gründer-Begleiter antwortet aus Ihren Inhalten mit Quelle, rechnet den Finanzplan nach festen Formeln, gleicht Unterlagen ab, übt Gespräche und zeigt Ihnen den Fortschritt. Alles an einem Ort, die Daten auf Servern in Deutschland."
+      },
+      {
+        "question": "Ersetzt er die Gründerplattform oder die IHK-Beratung?",
+        "answer": "Nein, er ergänzt sie. Den Businessplan schreiben Gründende weiter dort, wo sie wollen, zum Beispiel in der Gründerplattform. Der Begleiter prüft den Plan, zeigt Lücken und übt das Gespräch. So kommen Gründende besser vorbereitet in die Beratung."
+      },
+      {
+        "question": "Wer sieht die Daten der Gründenden?",
+        "answer": "Die Daten liegen auf Servern in Deutschland und werden nicht zum Training von KI-Modellen genutzt. Was der Coach sieht, legen Sie im Pilot gemeinsam mit uns fest. Den Rahmen regelt der Auftragsverarbeitungsvertrag."
+      },
+      {
+        "question": "Ab welchem Alter kann man ihn nutzen?",
+        "answer": "Ab 16, über Schulen und Programme. Für Gründende unter 18 erklärt der Begleiter, was für eine eigene Gewerbeanmeldung nötig ist, und verweist an die zuständigen Stellen."
+      },
+      {
+        "question": "Wann können wir starten?",
+        "answer": "Wir entwickeln den Gründer-Begleiter gemeinsam mit ersten Pilotpartnern. Im Gespräch klären wir, ob Ihr Programm passt und wann ein Pilot beginnen kann."
+      },
+      {
+        "question": "Was kostet ein Pilot?",
+        "answer": "Der Pilot hat einen festen Preis, der von der Zahl der Gründenden und Ihren Inhalten abhängt. Den Betrag nennen wir Ihnen im ersten Gespräch."
+      }
+    ],
+    "disclaimer": "Der Gründer-Begleiter gibt allgemeine Informationen und ersetzt keine Rechts- oder Steuerberatung."
+  },
+  "en": {
+    "path": "/founder-companion",
+    "title": "Founder Companion: check plans, rehearse bank meetings",
+    "description": "AI companion for founder advisors, chambers, development agencies and incubators: checks the financial plan and pitch deck, rehearses bank and customer calls.",
+    "breadcrumb": "Founder Companion",
+    "cta": "Book a call",
+    "hero": {
+      "eyebrow": "Founder Companion",
+      "headline": "From financial plan",
+      "headlineAccent": "to approval.",
+      "sub": "It checks your founders’ financial plan and pitch deck, shows what is missing, and rehearses the bank meeting. All in one place, with your programme’s content.",
+      "secondary": "How it works",
+      "note": "30 minutes, no obligation. We show the companion and work out whether a pilot fits your programme.",
+      "audience": "For founder advisors, chambers of commerce, economic development agencies, incubators, accelerators and universities.",
+      "founders": "Founding yourself?",
+      "foundersLink": "Join the waitlist",
+      "imageCaption": "Example screen with fictional data.",
+      "imageAlt": "Founder Companion: financial plan with 11 of 16 checkpoints met and three improvements, pitch deck matched against the financial plan, bank meeting simulation and a note from the coach"
+    },
+    "problem": {
+      "label": "The problem",
+      "headline": "Founders rarely fail on paperwork. They fail on money.",
+      "stats": [
+        {
+          "value": "nearly 2×",
+          "label": "higher chance of giving up when financial risk and financing problems hit. Bureaucracy annoys more but barely stops anyone."
+        },
+        {
+          "value": "4 in 10",
+          "label": "people planning to found give up their plans every year."
+        },
+        {
+          "value": "57%",
+          "label": "of founders struggle to win customers, more than twice as many as two years earlier."
+        }
+      ],
+      "source": "Source: KfW-Gründungsmonitor 2026"
+    },
+    "loop": {
+      "label": "How it works",
+      "headline": "Check. Improve. Rehearse.",
+      "sub": "The companion works with the plan founders already have and gets it ready for the meeting that matters.",
+      "steps": [
+        {
+          "title": "Check",
+          "body": "Founders upload their financial plan and pitch deck. The companion checks both against public KfW and IHK checklists and matches the documents: does the revenue in the deck fit the financial plan?",
+          "image": "/images/solutions/founder-check-en.webp",
+          "alt": "Financial plan check with red, amber and green checkpoints and a match against the pitch deck"
+        },
+        {
+          "title": "Improve",
+          "body": "For every open point it shows why it matters and how to fix it, using the founder’s own numbers. Then it checks again until the plan holds.",
+          "image": "/images/solutions/founder-improve-en.webp",
+          "alt": "Improving a checkpoint: missing living costs, three steps to fix it and the adjusted cash flow"
+        },
+        {
+          "title": "Rehearse",
+          "body": "In a simulated bank meeting, customer call or investor pitch, the questions target exactly where the plan is still weak. Every answer gets feedback.",
+          "image": "/images/solutions/founder-simulation-en.webp",
+          "alt": "Simulated bank meeting with a bank advisor and feedback on the answer"
+        }
+      ]
+    },
+    "growth": {
+      "label": "After founding",
+      "headline": "The companion stays when the first customers arrive.",
+      "sub": "Founding is only the start. For incubators and accelerators it also supports the time after.",
+      "image": "/images/solutions/founder-customer-call-en.webp",
+      "imageAlt": "Simulated customer call with a bakery owner and feedback on the answer",
+      "items": [
+        {
+          "title": "Rehearse customer calls",
+          "body": "First meeting, the price question, objections: founders practise with simulated customers before real deals are on the line."
+        },
+        {
+          "title": "Sharpen offer and pricing",
+          "body": "What do the first customers say, and what does it mean for the offer and the price? The companion helps make sense of the feedback."
+        },
+        {
+          "title": "Plan growth",
+          "body": "First hires, the next round of funding, the key numbers: built on the financial plan, step by step."
+        }
+      ]
+    },
+    "oneplace": {
+      "label": "Everything in one place",
+      "headline": "Everything founders need, in one place. Aligned with your programme.",
+      "sub": "Much of this works with a general AI chat, spreadsheets and folders. Then the answers are generic, numbers and feedback are scattered, and nobody sees the progress. The Founder Companion brings it all together.",
+      "beforeTitle": "Spread across many tools",
+      "beforeShort": "Otherwise:",
+      "note": {
+        "lead": "The Gründerplattform helps founders write the plan. The companion helps them defend it.",
+        "pre": "Founders keep writing their business plan in the free",
+        "link": "Gründerplattform by KfW and the Federal Ministry for Economic Affairs",
+        "post": "or the IHK Unternehmenswerkstatt. The companion takes the plan from there and builds on it."
+      },
+      "afterTitle": "In the Founder Companion",
+      "rows": [
+        {
+          "task": "Get answers",
+          "before": "An AI chat with general knowledge, unrelated to your programme",
+          "after": "Answers from your content: your funding programmes, dates and checklists, with sources"
+        },
+        {
+          "task": "Check the numbers",
+          "before": "Own spreadsheets that nobody cross-checks",
+          "after": "Financial plan checked and matched against the pitch deck"
+        },
+        {
+          "task": "Prepare conversations",
+          "before": "Alone, or not at all",
+          "after": "Bank, customers and investors as a simulation, with feedback"
+        },
+        {
+          "task": "See progress",
+          "before": "The coach chases updates by email",
+          "after": "Coach view for the whole cohort"
+        }
+      ]
+    },
+    "institutions": {
+      "label": "For your organisation",
+      "headline": "Support more founders with the same advisory time.",
+      "sub": "Too many founders, too little advisory time, and much of each meeting goes on missing numbers? The companion takes on the first check and the practice. Your people handle the questions that need experience.",
+      "image": "/images/solutions/founder-coach-view-en.webp",
+      "imageAlt": "Coach view of a cohort: financial plan progress, open points and who has been stuck for weeks",
+      "features": [
+        {
+          "icon": "hugeicons:dashboard-square-01",
+          "title": "Coach view",
+          "body": "Who stands where, which points are open, who has been stuck for weeks. You know where a conversation is due."
+        },
+        {
+          "icon": "hugeicons:book-02",
+          "title": "Your content",
+          "body": "Your funding programmes, your region, your checklists and dates. The companion answers from them and names the source."
+        },
+        {
+          "icon": "hugeicons:file-validation",
+          "title": "Prepare the start-up grant",
+          "body": "For founder advisors and AVGS coaching: founders prepare their plan for the viability assessment."
+        },
+        {
+          "icon": "hugeicons:paint-board",
+          "title": "Your brand",
+          "body": "In your organisation’s design, as part of your programme or advisory service."
+        }
+      ],
+      "audiences": [
+        "Founder advisors and AVGS coaching",
+        "Chambers of commerce and crafts",
+        "Economic development agencies",
+        "Incubators and accelerators",
+        "University founder centres",
+        "Programmes for young founders"
+      ]
+    },
+    "youth": {
+      "label": "For young founders from 16",
+      "headline": "Learn to found before it gets serious.",
+      "body": "For schools and programmes: from the idea and the first customers to a student company or a side business. In Germany, anyone under 18 who wants to register a business needs consent from their parents and the family court (§ 112 BGB). The companion explains the steps and shows who can help."
+    },
+    "limits": {
+      "headline": "What the companion does not do",
+      "items": [
+        "It gives no individual advice on legal form, taxes or contracts. It compares options and refers to the chamber, a tax advisor or a lawyer.",
+        "It does not predict a loan decision. It shows which questions are still open.",
+        "It does not replace your advisors and coaches. It gives them time for the conversations that matter."
+      ]
+    },
+    "platform": {
+      "label": "The platform behind it",
+      "body": "The Founder Companion runs on the same learning platform as our",
+      "link": "AI tutor for apprenticeships",
+      "linkHref": "/ai-tutor-apprenticeships",
+      "after": ". The platform won the BMWE AI Prize 2025 and is developed in a research project with FH Dortmund.",
+      "chips": [
+        "Hosted in Germany",
+        "No data for AI training",
+        "Answers with sources"
+      ]
+    },
+    "pilot": {
+      "label": "Pilot",
+      "headline": "Become a pilot partner",
+      "sub": "We are developing the Founder Companion with our first partners. This is how a pilot works:",
+      "points": [
+        "One programme or cohort to start",
+        "Your funding programmes and checklists as content",
+        "Goals agreed upfront: plans checked, points solved, advisory time saved",
+        "A fixed price for the pilot"
+      ],
+      "contact": "I run the call myself. I show you the companion and we work out whether a pilot fits your programme.",
+      "role": "CEO of LearnSlice",
+      "form": {
+        "name": "Name",
+        "org": "Organisation",
+        "type": "Type of organisation",
+        "choose": "Please choose (optional)",
+        "typeOptions": [
+          "Founder advisory or AVGS coaching",
+          "Chamber of commerce or crafts",
+          "Economic development agency",
+          "Incubator or accelerator",
+          "University or founder centre",
+          "Programme for young founders",
+          "Other"
+        ],
+        "email": "Email",
+        "message": "How many founders do you support each year?",
+        "optional": "Optional",
+        "submit": "Request a pilot call",
+        "note": "30 minutes · reply within 1 business day",
+        "calendly": "Or pick a slot directly",
+        "success": "Thank you. We will email calendar options within 1 business day.",
+        "successCalendly": "Faster: pick a slot in the calendar ›",
+        "privacy": {
+          "pre": "By sending this form you accept our",
+          "link": "Privacy Policy",
+          "post": "."
+        }
+      }
+    },
+    "waitlist": {
+      "headline": "Founding yourself?",
+      "body": "Join the list. We will let you know when the Founder Companion opens for founders.",
+      "email": "Your email",
+      "submit": "Get early access",
+      "success": "Thanks, you are on the list.",
+      "consent": "I want to be informed by email when the Founder Companion opens for founders. Unsubscribe at any time.",
+      "privacy": "Privacy Policy",
+      "error": "Something went wrong. Please try again or email info@learnslice.com."
+    },
+    "error": "Something went wrong. Please try again or email info@learnslice.com.",
+    "faqHeadline": "Questions and answers",
+    "faq": [
+      {
+        "question": "What is the Founder Companion?",
+        "answer": "The Founder Companion is an AI companion by LearnSlice for organisations that support founders. It checks the financial plan and pitch deck against public KfW and IHK checklists, shows gaps with ways to fix them, rehearses bank, customer and investor conversations and shows coaches the progress. We are developing it with our first pilot partners."
+      },
+      {
+        "question": "Who is the Founder Companion for?",
+        "answer": "For organisations that support founders: founder advisors and AVGS coaching, chambers of commerce and crafts, economic development agencies, incubators, accelerators and university founder centres. Also schools and programmes for young founders from 16."
+      },
+      {
+        "question": "Is this legal or tax advice?",
+        "answer": "No. The companion explains in general terms with sources, calculates with the numbers founders enter themselves, and checks their documents for completeness and consistency. It does not answer individual questions such as which legal form fits. For those it refers to the chamber, a tax advisor or a lawyer."
+      },
+      {
+        "question": "Why not just use a general AI chat?",
+        "answer": "A general AI chat can draft a business plan quickly, but it answers from general knowledge and knows neither your programme nor your funding offers. The Founder Companion answers from your content with sources, calculates the financial plan with fixed formulas, matches documents, rehearses conversations and shows you the progress. All in one place, with data on servers in Germany."
+      },
+      {
+        "question": "Does it replace the Gründerplattform or chamber advice?",
+        "answer": "No, it complements them. Founders keep writing their business plan wherever they like, for example in the Gründerplattform. The companion checks the plan, shows the gaps and rehearses the meeting, so founders arrive at their advisory sessions better prepared."
+      },
+      {
+        "question": "Who sees the founders’ data?",
+        "answer": "Data is stored on servers in Germany and is not used to train AI models. What the coach sees is agreed with you in the pilot. The data processing agreement sets the rules."
+      },
+      {
+        "question": "From what age can it be used?",
+        "answer": "From 16, through schools and programmes. For founders under 18 the companion explains what registering their own business requires and refers to the responsible offices."
+      },
+      {
+        "question": "When can we start?",
+        "answer": "We are developing the Founder Companion together with our first pilot partners. In a first call we check whether your programme fits and when a pilot can begin."
+      },
+      {
+        "question": "What does a pilot cost?",
+        "answer": "The pilot has a fixed price that depends on the number of founders and your content. We give you the amount in the first call."
+      }
+    ],
+    "disclaimer": "The Founder Companion provides general information and does not replace legal or tax advice."
+  }
+}

@@ -181,3 +181,113 @@ https://www.gesetze-im-internet.de/mechatronikerausbv/__8.html
 Where Mechatroniker apprentices get stuck, field by field: [link to `/de/blog/mechatroniker-ausbilden` once live]
 
 **Check before posting:** "four disciplines" = mechanics, electrics, hydraulics/energy flows, IT, as named in learning fields 1 to 5. The "Hosted ... on-premise" and "trainer decides which material" claims must match the current product.
+
+---
+
+## Week 4 option (Mon 26 Oct 2026): the answer machine vs the tutor
+
+Suggested 20 Oct 2026 as a swap for the career-changer post, since `quereinsteiger-metall-elektro-einarbeiten` is not written yet. Draws on the research table in `training-mechatronics-apprentices`. Image: the "practice vs exam" chart (`public/images/blog/ki-ueben-vs-pruefung.svg`), exported as PNG.
+
+**Post text**
+
+Students who practised with ChatGPT scored 48% better.
+
+Then they sat the exam without it and scored 17% worse.
+
+That is a randomised study of nearly 1,000 high school students in Turkey, published in PNAS last year.
+
+The message they typed most often: "What is the answer?"
+They copied what came back. The AI was right only about half the time. And the students did not notice they had learned less.
+
+Then the researchers changed the rules, not the model. Give hints, not answers. Work from the teachers' own solutions.
+
+Practice: +127%. The exam damage: gone.
+
+One study is a data point. Here is the pattern:
+
+📉 PNAS 2025: plain ChatGPT, 17% worse on the exam without AI
+📈 Harvard 2025: a tutor built on seven teaching principles more than doubled learning gains compared with an active-learning class
+🧑‍🔧 QJE 2025: 5,172 support agents got an AI assistant. After two months they performed like colleagues with six, and novices gained the most
+
+My read: "AI in learning, yes or no?" is the wrong debate. What the AI is built to do decides the result.
+
+This matters most in apprenticeships. The US federal rule recommends 144 hours of classroom instruction a year. That is less than four working weeks. Every other question comes up on the shop floor, often when no trainer is free. Apprentices will ask something. The only question is what answers them.
+
+That is why we built LearnSlice to ask before it tells, and to show the source in the curriculum for every answer.
+
+I will be straight about the limits: none of these studies is about apprentices. We could not find a randomised one. Until someone runs it, nobody should promise you results in percent. Including us.
+
+My prediction: by 2028, buying AI for training will be less about which model it uses and more about what it is not allowed to do.
+
+👉 If you could set one rule for the AI your learners use, what would it be?
+
+Sources in the first comment.
+
+#AIinEducation #Apprenticeship #Ausbildung #KI #EdTech #Mechatronik
+
+**First comment (sources with links, post right after publishing)**
+
+Sources:
+📑 Bastani et al., "Generative AI without guardrails can harm learning", PNAS 122(26), 2025
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/
+📑 Kestin et al., "AI tutoring outperforms in-class active learning", Scientific Reports 15, 2025
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12179260/
+📑 Brynjolfsson, Li and Raymond, "Generative AI at Work", Quarterly Journal of Economics 140(2), 2025
+https://doi.org/10.1093/qje/qjae044
+⚖️ 144 hours of related instruction per year (recommended minimum): 29 CFR 29.5
+https://www.ecfr.gov/current/title-29/subtitle-A/part-29/section-29.5
+
+All four studies side by side, plus three questions to test any AI tool before apprentices use it: https://learnslice.com/blog/training-mechatronics-apprentices
+
+**Check before posting:** blog URL is live after deploy. "Two months performed like six" is the paper's comparison of treated agents with untreated agents; keep the wording, do not round it into "3x faster".
+
+---
+
+## Off-campaign (20 Oct 2026): AI agents rebuilding established software
+
+Topical post on the ArtCraft "Crafting Apps". Legal and fact review done 20 Oct 2026 (GitHub API, PhotoCraft README, getartcraft.com/apps, Phoronix). Rules: never write "reverse-engineered", "clone" or "copied" about ArtCraft (they call it clean-room and say they did not reverse-engineer Adobe); keep "reportedly" on the AI claim (Phoronix: "appears to rely predominantly on AI"; only part of the recent commits carry an AI co-author line, so it is not provable from the repo); the clean-room question stays general, not aimed at ArtCraft; update stars and commits on posting day.
+
+**Post text**
+
+Adobe, Microsoft and Autodesk just got a new competitor.
+It is free, three weeks old, and reportedly built largely by AI agents.
+
+It is called ArtCraft. Its first app, PhotoCraft, went up on GitHub on 30 September. Today it has 69,000 stars and 2,881 commits, and its README calls it a "clean-room reimplementation of Adobe Photoshop".
+
+Within ten days the same team opened repos for a video editor, a photo developer, and what they call clean-room versions of Word, Excel, PowerPoint, AutoCAD and Pro Tools. Thirteen apps on one page. Free, open source, written in Rust.
+
+The method is the part I keep thinking about:
+
+🔍 "Implemented from public specs and observed behaviour only," says the README. In plain words: study what a tool does, then let agents build it again from scratch.
+🔌 500+ commands, all reachable through an MCP server. Built to be driven by AI agents, not only by people.
+📂 It opens Photoshop files, with support written from Adobe's public file specification.
+
+I will be straight about the limits: these are early alpha, and most of the apps are still marked "in development". Decades of edge cases do not disappear in three weeks. And stars are not users.
+
+But the direction is clear. The cost of rebuilding the surface of software is falling fast.
+
+So what is left to sell?
+
+My read: the moat moves from the code to everything around it. The domain knowledge inside it. The data and workflows customers trust you with. Accountability when it breaks. We build custom learning software, and our clients do not pay us for lines of code. They pay for a team that understands their training and stands behind the result.
+
+The questions I cannot answer yet:
+
+⚖️ What does "clean-room" mean when the developer is a model trained on huge amounts of public code?
+💰 What happens to per-seat pricing when a free alternative is good enough for most everyday users?
+🧑‍💻 If agents rebuild software, how do junior engineers learn the craft?
+
+My prediction: within three years, "we built X" will impress nobody. "We run X, and we are accountable for it" will.
+
+👉 What does this mean for the software engineering market: the end of the moat, or just a new baseline every team will have?
+
+Links in the first comment.
+
+#SoftwareEngineering #AI #OpenSource #AgenticAI #SaaS #Softwareentwicklung
+
+**First comment (post right after publishing)**
+
+Sources:
+🧩 ArtCraft Crafting Apps (13 apps, free, permissive licences): https://getartcraft.com/apps
+📂 PhotoCraft repo and README ("clean-room", "public specs and observed behaviour only", 500+ commands, MCP): https://github.com/storytold/photocraft
+📂 All ArtCraft repos, incl. WordCraft, GridCraft, DeckCraft, CADCraft, SoundCraft: https://github.com/storytold
+📰 Phoronix, 7 Oct 2026, "AI Makes 'Open-Source, Clean Room' Implementations Of Adobe Photoshop & Premier In Rust": https://www.phoronix.com/news/Photocraft-Filmcraft-AI

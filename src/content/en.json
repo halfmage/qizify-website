@@ -6,10 +6,11 @@
         "label": "Product",
         "mega": true,
         "children": [
-          { "label": "How It Works", "description": "3-step AI learning path", "href": "/#how-it-works", "icon": "hugeicons:workflow-circle-06" },
-          { "label": "Features", "description": "AI coaching, assessments, analytics", "href": "/#learning-results", "icon": "hugeicons:sparkles" },
-          { "label": "Vocational Professions", "description": "Commercial, IT, technical trades", "href": "/#vocational-professions", "icon": "hugeicons:briefcase-02" },
-          { "label": "Savings Calculator", "description": "See your ROI instantly", "href": "/apprenticeship-savings-calculator", "icon": "hugeicons:calculator" }
+          { "label": "AI Learning Platform", "description": "A personal tutor for every learner: learning path, 24/7 answers, simulations, analytics", "href": "/", "icon": "hugeicons:sparkles", "featured": true },
+          { "label": "AI Tutor for Apprenticeships", "description": "IHK exam prep, onboarding, upskilling", "href": "/ai-tutor-apprenticeships", "icon": "hugeicons:mortarboard-01" },
+          { "label": "Financial Companion", "description": "Financial education under your brand", "href": "/financial-companion", "icon": "hugeicons:bank" },
+          { "label": "Founder Companion", "description": "Financial plan, pitch deck, bank meeting", "href": "/founder-companion", "icon": "hugeicons:rocket-01" },
+          { "label": "Your Own Companion", "description": "Your topic, your content, your brand", "href": "/solutions#own-companion", "icon": "hugeicons:puzzle" }
         ]
       },
       {
@@ -19,26 +20,21 @@
           { "label": "For Companies", "description": "CEOs, HR, trainers", "href": "/companies", "icon": "hugeicons:building-06" },
           { "label": "For Schools", "description": "Vocational colleges", "href": "/schools", "icon": "hugeicons:mortarboard-02" },
           { "label": "For Agencies", "description": "IHK, HWK, public agencies", "href": "/agencies", "icon": "hugeicons:building-03" },
-          { "label": "Testimonials", "description": "What customers say", "href": "/#testimonials", "icon": "hugeicons:quote-up" }
+          { "label": "Testimonials", "description": "What customers say", "href": "/ai-tutor-apprenticeships#testimonials", "icon": "hugeicons:quote-up" }
         ]
       },
       { "label": "Custom Development", "mega": true, "children": [{ "label": "Custom Development", "description": "AI tutors, platforms and LMS built for you", "href": "/solutions", "icon": "hugeicons:code" }, { "label": "Live AI Tutor Demo", "description": "Try it with sample data, no sign-up", "href": "/us#demo", "icon": "hugeicons:play-circle" }, { "label": "What It Costs", "description": "Price benchmarks and a vendor checklist", "href": "/blog/custom-e-learning-development-costs", "icon": "hugeicons:calculator" }] },
       { "label": "Blog", "href": "/blog", "mega": true, "blogDropdown": true },
       { "label": "FAQ", "href": "/#faq" }
     ],
-    "cta": "Book Free Demo"
+    "cta": "Book a free demo"
   },
   "hero": {
     "badge": "AI-Powered Apprenticeship Training",
     "headline": "Apprentices who deliver.\nTrainers who can breathe.",
-    "subheadline": "AI learning paths plus your company knowledge, from onboarding to IHK exam.",
-    "ctaPrimary": "Book My Free Demo",
-    "ctaSecondary": "Calculate My Savings",
-    "stats": [
-      { "value": "€26K", "label": "cost per apprentice per year (BIBB)" },
-      { "value": "up to 50%", "label": "less trainer time" },
-      { "value": "up to 65%", "label": "faster to productivity" }
-    ]
+    "subheadline": "AI learning paths plus your company knowledge, from onboarding through the IHK exam to upskilling.",
+    "ctaPrimary": "Book a free demo",
+    "ctaSecondary": "Calculate your savings"
   },
   "trustedBy": {
     "headline": "You are in good company",
@@ -126,7 +122,7 @@
         "description": "Points, badges, and leaderboards turn daily practice into a motivating experience that keeps apprentices engaged and completing their learning paths."
       }
     ],
-    "compliance": "100% GDPR-compliant. Hosted in Germany or your infrastructure."
+    "compliance": "Run GDPR-compliant. Hosted in Germany or on your own infrastructure."
   },
   "madeForCompany": {
     "headline": "Built for Companies, Schools, and Agencies",
@@ -237,41 +233,18 @@
       },
       {
         "icon": "hugeicons:security-check",
-        "title": "Made in\nGermany",
-        "description": "GDPR, German servers, local LLM."
+        "title": "Hosted in\nGermany",
+        "description": "Run GDPR-compliant, German servers, local LLM."
       }
     ]
   },
   "vocationalProfessions": {
     "headline": "Vocational Professions",
     "items": [
-      {
-        "icon": "hugeicons:briefcase-02",
-        "title": "Commercial",
-        "professions": [
-          "Office Management Clerk",
-          "Forwarding and Logistics Services Clerk",
-          "Warehouse Logistics Specialist"
-        ]
-      },
-      {
-        "icon": "hugeicons:source-code",
-        "title": "Information Technology",
-        "professions": [
-          "IT Specialist, System Integration",
-          "IT Specialist, Application Development",
-          "IT Specialist, Digital Networking",
-          "IT Specialist, Data and Process Analysis"
-        ]
-      },
-      {
-        "icon": "hugeicons:wrench-01",
-        "title": "Technical Trades",
-        "professions": [
-          "Automotive Mechatronics Technician"
-        ]
-      }
-    ]
+        {"icon": "hugeicons:briefcase-02", "title": "Commercial", "professions": ["Industrial Clerk (Industriekaufmann/-frau)", "Office Management Clerk (Kaufmann/-frau für Büromanagement)", "Warehouse Logistics Specialist (Fachkraft für Lagerlogistik)"]},
+        {"icon": "hugeicons:source-code", "title": "Information Technology", "professions": ["IT Specialist, Application Development", "IT Specialist, System Integration", "IT Specialist, Data and Process Analysis", "IT Specialist, Digital Networking"]},
+        {"icon": "hugeicons:wrench-01", "title": "Technical Trades", "professions": ["Mechatronics Technician (Mechatroniker/-in)", "Electronics Technician for Industrial Engineering (Elektroniker/-in für Betriebstechnik)", "Electronics Technician for Machines and Drive Technology", "Automotive Mechatronics Technician (Kfz-Mechatroniker/-in)"]}
+      ]
   },
   "faq": {
     "headline": "Frequently Asked Questions",
@@ -305,8 +278,9 @@
         "answer": "Most apprentices log in voluntarily multiple times per week once the first two-week rollout settles. The format respects how Azubis learn: short, exam-relevant tasks, gamification (points, badges, levels), and a trainer dashboard that flags any apprentice whose usage drops below the rollout average. Disengagement is caught and corrected early, not at the IHK exam."
       },
       {
+        "id": "data-protection",
         "question": "Is my data safe / GDPR compliant?",
-        "answer": "Yes. 100% GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise."
+        "answer": "Yes. LearnSlice is run GDPR-compliant. Data can be stored on German, European or your company systems per your policy. No data leaves the EU unless you choose otherwise."
       },
       {
         "question": "How does this help with early contract cancellations and trainer load?",
@@ -331,6 +305,11 @@
       {
         "question": "I have a question, concern, or feedback. Who can I contact?",
         "answer": "You can contact us via WhatsApp/Telegram at +49 1578 3914112, via the contact form on our website, or via email at info@learnslice.com."
+      },
+      {
+        "question": "Is there financial education for apprentices too?",
+        "answer": "Yes, with the Financial Companion on the same platform. It explains budgeting, the first salary, an emergency fund, saving and provision to apprentices, with a money check, a three-level learning path and a coach that explains with sources and sells nothing. You run it under your own brand.",
+        "link": { "href": "/financial-companion", "label": "See the Financial Companion" }
       }
     ]
   },
@@ -402,16 +381,19 @@
       "headline": "What the first pilot showed",
       "items": [
         {
+          "id": "sourced-answers",
           "stat": "100%",
           "title": "Every answer traceable to a source",
           "body": "In the system evaluation, every answer carried a valid citation back to its source passage, with no invented references."
         },
         {
+          "id": "mastery",
           "stat": "80%",
           "title": "Reached near-complete mastery",
           "body": "After preparing with LearnSlice, 80% of students reached complete or near-complete understanding of the exam topic."
         },
         {
+          "id": "pace",
           "stat": "70%",
           "title": "Found the learning pace appropriate",
           "body": "70% of students felt the personalized learning pace matched their individual needs."
@@ -538,14 +520,14 @@
           ]
         },
         {
-          "image": "/images/solutions/financial-companion.webp",
-          "imageAlt": "Financial Companion AI interface with a financial health check and a learning programme",
+          "image": "/images/solutions/financial-companion-coach-en.webp",
+          "imageAlt": "Financial companion under a client brand: the coach explains part-time work and pension with a source and a what-if calculator",
           "eyebrow": "Sector solutions",
           "title": "A branded companion for your domain",
-          "body": "The same engine, white-labelled for a specific field, here a financial-literacy companion for a partner.",
+          "body": "The same engine, white-labelled for a specific field, here a financial companion for financial education.",
           "bullets": [
             "Your brand, your domain, your content",
-            "Guided programmes and a health-check flow",
+            "Money check, learning path and a coach with sources",
             "A customised chatbot for your teaching purposes"
           ]
         },

@@ -1,0 +1,316 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import FAQ from '../FAQ.astro';
+import Footer from '../Footer.astro';
+import Button from '../Button.astro';
+import StickyCta from '../StickyCta.astro';
+import LeadForm from '../LeadForm.astro';
+import LeadFormHandler from '../LeadFormHandler.astro';
+import { formInputClass } from '../../utils/forms';
+import { Icon } from 'astro-icon/components';
+import enContent from '../../content/en.json';
+import deContent from '../../content/de.json';
+import founder from '../../content/founder.json';
+
+// Founder companion page, for /de/gruender-begleiter and /founder-companion. Sold to
+// institutions (Gründungsberatung, IHKs, Wirtschaftsförderungen, incubators, accelerators,
+// Hochschulen); founders get a waitlist so we can measure their interest.
+// Plan and sources: docs/strategy/gruender-begleiter-page-scope.md and
+// docs/strategy/reports/Founder companion market analysis.md (KfW-Gründungsmonitor 2026).
+// Copy: src/content/founder.json (also feeds public/llms-full.txt).
+// Claim rules: the product is in development. No client claims, no "live", no status tag,
+// no pilot price, no prediction of a bank decision, no individual legal or tax advice.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+const content = lang === 'de' ? deContent : enContent;
+const kfwSource = 'https://www.kfw.de/PDF/Download-Center/Konzernthemen/Research/PDF-Dokumente-Gr%C3%BCndungsmonitor/KfW-Gr%C3%BCndungsmonitor-2026.pdf';
+
+const copy = founder[lang];
+
+const heroImage = `/images/solutions/founder-companion-${lang}.webp`;
+// 1200x630 JPG: BaseLayout declares OG images as JPEG at that size
+const ogImage = `/images/solutions/founder-companion-og-${lang}.jpg`;
+const privacyHref = lang === 'de' ? '/de/privacy' : '/privacy';
+const inputClass = formInputClass;
+---
+
+<BaseLayout
+	title={copy.title}
+	description={copy.description}
+	lang={lang}
+	currentPath={copy.path}
+	breadcrumbTitle={copy.breadcrumb}
+	ogImage={ogImage}
+	heroImage={heroImage}
+	softwareSchema={false}
+>
+	<Header logo={content.nav.logo} menu={content.nav.menu} cta={copy.cta} ctaHref="#pilot" currentLang={lang} currentPath={copy.path} />
+
+	<!-- Hero: one promise, one sentence, the product -->
+	<section class="relative overflow-hidden pt-32 md:pt-40 pb-10 md:pb-14 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center relative z-10">
+			<!-- The eyebrow sits inside the H1 so the product name is part of the main heading -->
+			<h1 class="text-display-sm md:text-display text-white m-0 tracking-tight">
+				<span class="block text-base md:text-lg font-semibold text-white/70 tracking-normal mb-3">{copy.hero.eyebrow}<span class="sr-only">:</span></span>
+				{copy.hero.headline}{' '}<br /><span class="gradient-text-primary">{copy.hero.headlineAccent}</span>
+			</h1>
+			<p class="text-lg md:text-xl leading-relaxed text-white/80 text-balance m-0 mt-6">{copy.hero.sub}</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-3 mt-9">
+				<Button variant="primary" size="lg" href="#pilot" class="!rounded-full">{copy.cta}</Button>
+				<Button variant="secondary" size="lg" href="#so-funktioniert" class="!rounded-full !border-white/30 !text-white hover:!border-white/60 hover:!bg-white/5">
+					{copy.hero.secondary} <span class="ml-1.5" aria-hidden="true">&rsaquo;</span>
+				</Button>
+			</div>
+			<p class="text-sm text-white/70 m-0 mt-4">{copy.hero.note}</p>
+			<p class="text-sm text-muted m-0 mt-6 text-balance">{copy.hero.audience} {copy.hero.founders} <a href="#warteliste" class="text-white/80 underline underline-offset-4 decoration-white/30 hover:text-white">{copy.hero.foundersLink}</a> <span aria-hidden="true">&rsaquo;</span></p>
+		</div>
+	</section>
+
+	<section class="px-6 md:px-8 pb-16 md:pb-24">
+		<div class="max-w-container mx-auto">
+			<div class="relative p-3 md:p-8 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/45 ring-1 ring-primary/25 overflow-hidden">
+				<img src={heroImage} alt={copy.hero.imageAlt} width="2900" height="1520" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto block rounded-xl shadow-2xl shadow-black/40" />
+			</div>
+			<p class="text-xs text-white/50 text-center m-0 mt-4">{copy.hero.imageCaption}</p>
+		</div>
+	</section>
+
+	<!-- Problem: three sourced numbers -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto text-center">
+			<span class="section-label mb-4 block">{copy.problem.label}</span>
+			<h2 class="text-heading md:text-display-sm text-white m-0 mb-14 max-w-3xl mx-auto text-balance">{copy.problem.headline}</h2>
+			<ul class="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-8 list-none m-0 p-0">
+				{copy.problem.stats.map((stat) => (
+					<li class="flex flex-col items-center gap-3">
+						<span class="text-5xl md:text-6xl font-semibold tracking-tight gradient-text-primary leading-none">{stat.value}</span>
+						<span class="text-base text-muted max-w-[18rem]">{stat.label}</span>
+					</li>
+				))}
+			</ul>
+			<p class="text-xs text-white/55 m-0 mt-10"><a href={kfwSource} target="_blank" rel="noopener noreferrer" class="underline hover:text-white">{copy.problem.source}</a></p>
+		</div>
+	</section>
+
+	<!-- The loop: check, improve, rehearse -->
+	<section id="so-funktioniert" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-14 md:mb-20 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{copy.loop.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.loop.headline}</h2>
+				<p class="text-lg text-muted leading-relaxed m-0">{copy.loop.sub}</p>
+			</div>
+			<ol class="list-none m-0 p-0 flex flex-col gap-16 md:gap-24">
+				{copy.loop.steps.map((step, i) => (
+					<li class="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-8 lg:gap-14 items-center">
+						<div class={i % 2 === 1 ? 'lg:order-2' : ''}>
+							<span class="font-mono text-label text-primary/80 block mb-3">{String(i + 1).padStart(2, '0')}</span>
+							<h3 class="text-heading md:text-display-sm text-white m-0 mb-4">{step.title}</h3>
+							<p class="text-lg text-muted leading-relaxed m-0">{step.body}</p>
+						</div>
+						<div class={`p-2 md:p-4 rounded-2xl bg-gradient-to-b from-primary/10 to-primary/30 ring-1 ring-primary/20 ${i % 2 === 1 ? 'lg:order-1' : ''}`}>
+							<img src={step.image} alt={step.alt} width="1800" height="920" loading="lazy" decoding="async" class="w-full h-auto block rounded-lg" />
+						</div>
+					</li>
+				))}
+			</ol>
+		</div>
+	</section>
+
+	<!-- For institutions: the buyer section -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{copy.institutions.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4 text-balance">{copy.institutions.headline}</h2>
+				<p class="text-lg text-muted leading-relaxed m-0">{copy.institutions.sub}</p>
+			</div>
+			<div class="p-2 md:p-4 rounded-2xl bg-gradient-to-b from-primary/10 to-primary/30 ring-1 ring-primary/20 max-w-4xl mx-auto mb-12">
+				<img src={copy.institutions.image} alt={copy.institutions.imageAlt} width="1800" height="920" loading="lazy" decoding="async" class="w-full h-auto block rounded-lg" />
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
+				{copy.institutions.features.map((f) => (
+					<div class="bg-surface p-7">
+						<div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+							<Icon name={f.icon} class="w-5 h-5 text-primary" />
+						</div>
+						<h3 class="text-base font-semibold text-white m-0 mb-2">{f.title}</h3>
+						<p class="text-sm text-muted leading-relaxed m-0">{f.body}</p>
+					</div>
+				))}
+			</div>
+			<ul class="flex flex-wrap justify-center gap-2 list-none p-0 m-0 mt-10 max-w-3xl mx-auto">
+				{copy.institutions.audiences.map((a) => (
+					<li class="text-sm text-white/90 bg-surface border border-border rounded-full px-3.5 py-1.5">{a}</li>
+				))}
+			</ul>
+			<p class="text-center m-0 mt-8"><a href="#pilot" class="text-base font-medium text-primary hover:text-white transition-colors">{copy.cta} <span aria-hidden="true">&rsaquo;</span></a></p>
+		</div>
+	</section>
+
+	<!-- USP: one place, aligned with the programme. Generic tools stay unnamed (UWG); the public Gründerplattform is named as the place to write the plan -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-3xl mx-auto">
+				<span class="section-label mb-4 block">{copy.oneplace.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4 text-balance">{copy.oneplace.headline}</h2>
+				<p class="text-lg text-muted leading-relaxed m-0">{copy.oneplace.sub}</p>
+			</div>
+			<div class="max-w-5xl mx-auto rounded-2xl border border-border overflow-hidden">
+				<div class="hidden md:grid grid-cols-[minmax(0,3fr)_minmax(0,5fr)_minmax(0,5fr)] bg-surface border-b border-border text-sm font-semibold">
+					<span class="p-5"></span>
+					<span class="p-5 text-white/60">{copy.oneplace.beforeTitle}</span>
+					<span class="p-5 text-primary">{copy.oneplace.afterTitle}</span>
+				</div>
+				{copy.oneplace.rows.map((row, i) => (
+					<div class={`grid grid-cols-1 md:grid-cols-[minmax(0,3fr)_minmax(0,5fr)_minmax(0,5fr)] ${i > 0 ? 'border-t border-border' : ''}`}>
+						<h3 class="text-base font-semibold text-white m-0 px-5 pt-5 md:p-5">{row.task}</h3>
+						<p class="text-sm text-muted leading-relaxed m-0 px-5 pt-2 md:p-5 flex gap-2.5 items-start">
+							<Icon name="hugeicons:cancel-circle" class="w-4 h-4 text-white/40 shrink-0 mt-0.5" />
+							<span><span class="md:hidden text-white/50">{copy.oneplace.beforeShort} </span>{row.before}</span>
+						</p>
+						<p class="text-sm text-white/90 leading-relaxed m-0 px-5 pt-2 pb-5 md:p-5 flex gap-2.5 items-start md:bg-primary/5">
+							<Icon name="hugeicons:checkmark-circle-02" class="w-4 h-4 text-primary shrink-0 mt-0.5" />
+							<span>{row.after}</span>
+						</p>
+					</div>
+				))}
+			</div>
+			<p class="max-w-3xl mx-auto text-center text-base text-muted leading-relaxed m-0 mt-10">
+				<strong class="text-white font-semibold">{copy.oneplace.note.lead}</strong> {copy.oneplace.note.pre} <a href="https://gruenderplattform.de/businessplan" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">{copy.oneplace.note.link}</a> {copy.oneplace.note.post}
+			</p>
+		</div>
+	</section>
+
+	<!-- After founding: customer calls and growth, the part accelerators care about -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto grid lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] gap-8 lg:gap-14 items-center">
+			<div class="lg:order-2">
+				<span class="section-label mb-4 block">{copy.growth.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4 text-balance">{copy.growth.headline}</h2>
+				<p class="text-lg text-muted leading-relaxed m-0 mb-8">{copy.growth.sub}</p>
+				<ul class="list-none p-0 m-0 space-y-5">
+					{copy.growth.items.map((item) => (
+						<li>
+							<h3 class="text-base font-semibold text-white m-0 mb-1">{item.title}</h3>
+							<p class="text-base text-muted leading-relaxed m-0">{item.body}</p>
+						</li>
+					))}
+				</ul>
+			</div>
+			<div class="p-2 md:p-4 rounded-2xl bg-gradient-to-b from-primary/10 to-primary/30 ring-1 ring-primary/20 lg:order-1">
+				<img src={copy.growth.image} alt={copy.growth.imageAlt} width="1800" height="920" loading="lazy" decoding="async" class="w-full h-auto block rounded-lg" />
+			</div>
+		</div>
+	</section>
+
+	<!-- Young founders 16+ -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-4xl mx-auto bg-surface border border-border rounded-2xl p-8 md:p-12">
+			<span class="section-label mb-3 block">{copy.youth.label}</span>
+			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-4">{copy.youth.headline}</h2>
+			<p class="text-base text-muted leading-relaxed m-0">{copy.youth.body}</p>
+		</div>
+	</section>
+
+	<!-- Honest limits: the legal line, turned into trust -->
+	<section class="py-12 md:py-16 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-6 text-center">{copy.limits.headline}</h2>
+			<ul class="list-none p-0 m-0 space-y-4">
+				{copy.limits.items.map((l) => (
+					<li class="flex items-start gap-3 text-base text-muted leading-relaxed">
+						<Icon name="hugeicons:cancel-circle" class="w-5 h-5 text-accent shrink-0 mt-0.5" />
+						<span>{l}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<!-- Platform proof: facts about LearnSlice, no founder client claims -->
+	<section class="py-12 md:py-16 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-3xl mx-auto text-center">
+			<span class="section-label mb-4 block">{copy.platform.label}</span>
+			<p class="text-lg text-white/90 leading-relaxed m-0">
+				{copy.platform.body} <a href={copy.platform.linkHref} class="underline hover:text-primary">{copy.platform.link}</a>{copy.platform.after}
+			</p>
+			<ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 list-none p-0 m-0 mt-6">
+				{copy.platform.chips.map((c) => (
+					<li class="inline-flex items-center gap-1.5 text-sm text-muted">
+						<Icon name="hugeicons:checkmark-circle-02" class="w-4 h-4 text-primary" />{c}
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<FAQ headline={copy.faqHeadline} items={copy.faq} />
+
+	<!-- Pilot request: the main conversion -->
+	<section id="pilot" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
+		<div class="max-w-container mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+			<div>
+				<span class="section-label mb-4 block">{copy.pilot.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.pilot.headline}</h2>
+				<p class="text-lg text-muted leading-relaxed m-0 mb-8">{copy.pilot.sub}</p>
+				<ul class="list-none p-0 m-0 space-y-3 mb-10">
+					{copy.pilot.points.map((p) => (
+						<li class="flex items-start gap-3 text-base text-white/90 leading-relaxed">
+							<Icon name="hugeicons:checkmark-circle-02" class="w-5 h-5 text-primary shrink-0 mt-0.5" />
+							<span>{p}</span>
+						</li>
+					))}
+				</ul>
+				<div class="flex items-start gap-5 border-t border-border pt-8">
+					<img src="/images/team/alesia-kunz.webp" alt={`Alesia Kunz, ${copy.pilot.role}`} width="320" height="320" loading="lazy" decoding="async" class="w-16 h-16 rounded-full object-cover ring-2 ring-primary/30 shrink-0" />
+					<div>
+						<p class="text-base text-white leading-relaxed m-0 mb-3">{copy.pilot.contact}</p>
+						<p class="text-sm font-semibold text-white m-0">Alesia Kunz</p>
+						<p class="text-sm text-muted m-0">{copy.pilot.role}</p>
+					</div>
+				</div>
+			</div>
+
+			<LeadForm name="founder-pilot" lang={lang} error={copy.error} form={copy.pilot.form} />
+		</div>
+	</section>
+
+	<!-- Founder waitlist: measures founder interest, secondary to the pilot.
+	     Marketing email consent: double opt-in still to be set up (pending privacy review). -->
+	<section id="warteliste" class="py-16 md:py-20 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
+		<div class="max-w-xl mx-auto text-center">
+			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-3">{copy.waitlist.headline}</h2>
+			<p class="text-base text-muted leading-relaxed m-0 mb-6">{copy.waitlist.body}</p>
+			<form name="founder-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col gap-3 text-left" data-lead-form>
+				<input type="hidden" name="form-name" value="founder-waitlist" />
+				<input type="hidden" name="language" value={lang} />
+				<input type="text" name="bot-field" class="hidden" tabindex="-1" autocomplete="off" />
+				<div class="flex flex-col sm:flex-row gap-3">
+					<label class="sr-only" for={`waitlist-email-${lang}`}>{copy.waitlist.email}</label>
+					<input id={`waitlist-email-${lang}`} type="email" name="email" autocomplete="email" required placeholder={copy.waitlist.email} class={`${inputClass} !rounded-full !px-5 !py-3`} />
+					<button type="submit" class="bg-white text-dark border-none rounded-full px-6 py-3 text-sm font-semibold cursor-pointer hover:bg-white/90 transition-colors font-sans whitespace-nowrap disabled:opacity-50">{copy.waitlist.submit}</button>
+				</div>
+				<label class="flex items-start gap-2.5 cursor-pointer text-xs text-muted leading-relaxed">
+					<input type="checkbox" name="consent" required class="mt-0.5 w-4 h-4 shrink-0 cursor-pointer accent-primary" />
+					<span>{copy.waitlist.consent} <a href={privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{copy.waitlist.privacy}</a></span>
+				</label>
+				<p class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300 m-0" data-form-error role="alert">{copy.waitlist.error}</p>
+				<p class="hidden p-3 rounded-lg text-xs bg-green-500/10 border border-green-500/20 text-green-300 m-0" data-form-success role="status">{copy.waitlist.success}</p>
+			</form>
+			<p class="text-xs text-white/50 m-0 mt-8">{copy.disclaimer}</p>
+		</div>
+		<!-- Submits the waitlist inline; does not rely on LeadForm being on the page -->
+		<LeadFormHandler />
+	</section>
+
+	<Footer currentLang={lang} privacyLabel={content.footer.privacyLabel} termsLabel={content.footer.termsLabel} demoHref="#pilot" />
+
+	<!-- Mobile sticky CTA: appears after the hero, hides while the pilot form is on screen -->
+	<StickyCta label={copy.cta} href="#pilot" hideWhileVisible="#pilot" />
+</BaseLayout>
+

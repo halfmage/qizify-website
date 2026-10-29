@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import TrustBar from '../TrustBar.astro';
+import Hero from '../Hero.astro';
+import LogosSlider from '../LogosSlider.astro';
+import HomeValue from '../HomeValue.astro';
+import LearningResults from '../LearningResults.astro';
+import Companions from '../Companions.astro';
+import Testimonials from '../Testimonials.astro';
+import WhyChooseUs from '../WhyChooseUs.astro';
+import StartSteps from '../StartSteps.astro';
+import FAQ from '../FAQ.astro';
+import CTAFooter from '../CTAFooter.astro';
+import Footer from '../Footer.astro';
+import StickyCta from '../StickyCta.astro';
+import DemoRequestModal from '../DemoRequestModal.astro';
+import enContent from '../../content/en.json';
+import deContent from '../../content/de.json';
+import { homepage } from '../../content/homepage';
+
+// Homepage = the AI learning platform and its companions, for / and /de. The
+// apprenticeship product page (AusbildungPage) carries the former homepage content.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+const content = lang === 'de' ? deContent : enContent;
+const h = homepage[lang];
+// Rendered by Hero and preloaded by BaseLayout: one path for both
+const heroImage = '/images/hero/hero-background.webp';
+
+// Shared with the apprenticeship FAQ. Fail the build rather than drop it silently.
+const dataFaq = content.faq.items.find((item) => 'id' in item && item.id === 'data-protection');
+if (!dataFaq) throw new Error(`HomePage: FAQ item "data-protection" missing in ${lang}.json`);
+const faqItems = [...h.faqBefore, { question: dataFaq.question, answer: dataFaq.answer }, ...h.faqAfter];
+---
+
+<BaseLayout
+	title={h.title}
+	description={h.description}
+	lang={lang}
+	currentPath={h.path}
+	heroImage={heroImage}
+>
+	<Header
+		logo={content.nav.logo}
+		menu={content.nav.menu}
+		cta={content.nav.cta}
+		currentLang={lang}
+		currentPath={h.path}
+	/>
+
+	<Hero
+		eyebrow={h.hero.eyebrow}
+		headline={h.hero.headline}
+		subheadline={h.hero.subheadline}
+		ctaPrimary={h.ctaLabel}
+		ctaSecondary={h.hero.ctaSecondary}
+		ctaSecondaryHref="#product-preview"
+		image={heroImage}
+		stats={h.hero.stats}
+		trustLine={h.hero.trustLine}
+		awardHref="#why-choose-us"
+		currentLang={lang}
+	>
+		<TrustBar slot="belowHero" currentLang={lang} center={true} />
+	</Hero>
+
+	<LogosSlider
+		headline={content.trustedBy.headline}
+		logos={content.trustedBy.logos}
+	/>
+
+	<HomeValue
+		label={h.value.label}
+		lines={h.value.lines}
+		sentence={h.value.sentence}
+	/>
+
+	<LearningResults
+		badge={h.features.badge}
+		headline={h.features.headline}
+		features={h.features.items}
+		compliance={content.learningResults.compliance}
+		showScreenshot={false}
+	/>
+
+	<Companions
+		id={h.companions.id}
+		label={h.companions.label}
+		headline={h.companions.headline}
+		subheadline={h.companions.subheadline}
+		items={h.companions.items}
+	/>
+
+	<Testimonials
+		headline={content.testimonials.headline}
+		items={content.testimonials.items}
+		currentLang={lang}
+	/>
+
+	<WhyChooseUs
+		currentLang={lang}
+		headline={content.whyChooseUs.headline}
+		items={content.whyChooseUs.items}
+	/>
+
+	<StartSteps
+		label={h.steps.label}
+		headline={h.steps.headline}
+		steps={h.steps.items}
+	/>
+
+	<FAQ
+		headline={content.faq.headline}
+		items={faqItems}
+	/>
+
+	<CTAFooter
+		label={h.cta.label}
+		headline={h.cta.headline}
+		subheadline={h.cta.subheadline}
+		button={h.ctaLabel}
+		note={h.cta.note}
+		calendly
+		currentLang={lang}
+	/>
+
+	<Footer
+		currentLang={lang}
+		privacyLabel={content.footer.privacyLabel}
+		termsLabel={content.footer.termsLabel}
+	/>
+
+	<StickyCta label={h.ctaLabel} />
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

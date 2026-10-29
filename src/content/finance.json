@@ -1,0 +1,372 @@
+{
+  "de": {
+    "path": "/de/finanz-begleiter",
+    "title": "Finanzbildung als White-Label: KI-Begleiter für Ihre Marke",
+    "description": "Finanzbildung online, unter Ihrer Marke: KI-Begleiter für Banken, Arbeitgeber und Stiftungen mit Finanz-Check, Lernweg und Coach. Verkauft nichts.",
+    "breadcrumb": "Finanz-Begleiter",
+    "cta": "Gespräch vereinbaren",
+    "hero": {
+      "eyebrow": "Finanz-Begleiter",
+      "headline": "Finanzbildung",
+      "headlineAccent": "unter Ihrer Marke.",
+      "sub": "Ein KI-Begleiter, der erklärt und nichts verkauft. Mit Ihren Inhalten, in Ihrem Design, gehostet in Deutschland.",
+      "secondary": "So funktioniert es",
+      "note": "Der erste Prototyp steht in zwei Wochen.",
+      "audience": "Für Banken und Sparkassen, Arbeitgeber, Stiftungen und Bildungsprogramme.",
+      "imageCaption": "Beispieldarstellung mit fiktiven Daten.",
+      "imageAlt": "Finanz-Begleiter: Der Coach erklärt, was Teilzeit für Netto und Rente bedeutet, mit Quelle und einem Was-wäre-wenn-Rechner"
+    },
+    "how": {
+      "label": "So funktioniert es",
+      "headline": "Prüfen. Lernen. Fragen.",
+      "steps": [
+        {
+          "icon": "hugeicons:pulse-02",
+          "title": "Finanz-Check",
+          "body": "Ein kurzer Check zeigt, wo jemand steht: Budget, Notgroschen, Schulden, Sparen, Vorsorge. Als Orientierung, nicht als Urteil."
+        },
+        {
+          "icon": "hugeicons:mortarboard-02",
+          "title": "Lernweg",
+          "body": "Kurze Lektionen in drei Stufen, passend zum Check. Mit Fortschritt, Lernserie und Zertifikat."
+        },
+        {
+          "icon": "hugeicons:ai-chat-02",
+          "title": "Coach mit Rechner",
+          "body": "Fragen zu Geld, Job und Alltag, rund um die Uhr. Jede Antwort mit Quelle, Zahlen als Beispielrechnung mit den eigenen Angaben."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/solutions/financial-companion-check-de.webp",
+          "alt": "Finanz-Check mit sechs Bereichen, Start-Plan und Übersicht, welche Daten der Begleiter nutzt"
+        },
+        {
+          "src": "/images/solutions/financial-companion-path-de.webp",
+          "alt": "Lernweg mit drei Stufen, Themen, Lernserie und Zertifikat"
+        }
+      ]
+    },
+    "trust": {
+      "label": "Warum es funktioniert",
+      "headline": "Vertrauen entsteht, wenn niemand verkauft.",
+      "sub": "Junge Menschen sind misstrauisch, wenn hinter einem Finanztipp ein Verkauf steckt. Ein Begleiter, der neutral erklärt, stärkt Ihre Marke mehr als jede Produktwerbung.",
+      "items": [
+        {
+          "title": "Erklärt, verkauft nichts",
+          "body": "Keine Produktempfehlungen, keine Werbung. Der Coach sagt das selbst in jedem Gespräch."
+        },
+        {
+          "title": "Jede Antwort mit Quelle",
+          "body": "Aus Ihren Inhalten und geprüften Lektionen. So lässt sich jede Aussage nachlesen."
+        },
+        {
+          "title": "Rechner statt Schätzungen",
+          "body": "Was-wäre-wenn-Rechnungen mit den eigenen Angaben, klar als Beispiel gekennzeichnet."
+        },
+        {
+          "title": "Beratung nur auf Wunsch",
+          "body": "Wer mehr will, kann von sich aus Kontakt zu Ihrer Beratung aufnehmen. Diesen Weg richten wir auf Wunsch ein."
+        }
+      ]
+    },
+    "audiences": {
+      "label": "Für wen",
+      "headline": "Für Banken, Arbeitgeber und Stiftungen.",
+      "items": [
+        {
+          "icon": "hugeicons:bank",
+          "title": "Finanzbildung für Banken und Sparkassen",
+          "body": "Junge Kundinnen und Kunden früh erreichen, mit Finanzbildung statt Werbung."
+        },
+        {
+          "icon": "hugeicons:user-group",
+          "title": "Finanzbildung für Mitarbeitende und Azubis",
+          "body": "Für Azubis und junge Mitarbeitende. Ein Finanz-Check am Anfang und am Ende zeigt, was sich verändert hat."
+        },
+        {
+          "icon": "hugeicons:school",
+          "title": "Finanzbildung für Stiftungen und Schulen",
+          "body": "Neutral, mit Quellen und ohne Werbung: passend für Bildungsarbeit mit Schulen und Jugendlichen."
+        }
+      ]
+    },
+    "brand": {
+      "label": "Ihre Marke",
+      "headline": "In zwei Wochen zum ersten Prototyp.",
+      "points": [
+        "Ihr Name und Ihr Design",
+        "Ihre Inhalte und Themen",
+        "Live nach rund einem Monat",
+        "Gehostet in Deutschland"
+      ],
+      "platform": {
+        "pre": "Läuft auf derselben Lernplattform wie unser",
+        "link": "KI-Tutor für die Ausbildung",
+        "href": "/de/ki-tutor-ausbildung",
+        "post": ". Die Plattform wurde mit dem KI-Preis des BMWE 2025 ausgezeichnet."
+      }
+    },
+    "limits": {
+      "headline": "Was der Begleiter nicht tut",
+      "items": [
+        "Er gibt keine Anlage-, Versicherungs- oder Steuerberatung und empfiehlt keine Produkte.",
+        "Er bewertet keine Bonität und trifft keine Entscheidungen über Kredite.",
+        "Er zeigt keine Werbung und verkauft nichts, auch nicht in Ihrem Auftrag."
+      ]
+    },
+    "contact": {
+      "label": "Kontakt",
+      "headline": "Wie sieht Ihr Begleiter aus?",
+      "sub": "In 30 Minuten zeigen wir den Finanz-Begleiter und klären, für wen er bei Ihnen da sein soll.",
+      "person": "Das Gespräch führe ich selbst. Wir schauen gemeinsam, welche Themen und welches Design zu Ihnen passen.",
+      "role": "CEO von LearnSlice",
+      "form": {
+        "name": "Name",
+        "org": "Organisation",
+        "type": "Art der Organisation",
+        "choose": "Bitte wählen (optional)",
+        "typeOptions": [
+          "Bank oder Sparkasse",
+          "Versicherung",
+          "Arbeitgeber",
+          "Stiftung oder Bildungsträger",
+          "Schule oder Jugendprogramm",
+          "Fintech",
+          "Andere"
+        ],
+        "email": "E-Mail",
+        "message": "Für wen soll der Begleiter da sein?",
+        "optional": "Optional",
+        "submit": "Gespräch anfragen",
+        "note": "30 Minuten · Antwort innerhalb von 1 Werktag",
+        "calendly": "Oder direkt einen Termin wählen",
+        "success": "Vielen Dank. Wir melden uns innerhalb von 1 Werktag mit Terminvorschlägen.",
+        "successCalendly": "Schneller geht es direkt im Kalender ›",
+        "privacy": {
+          "pre": "Mit dem Absenden akzeptieren Sie die",
+          "link": "Datenschutzerklärung",
+          "post": "."
+        }
+      }
+    },
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie an info@learnslice.com.",
+    "faqHeadline": "Fragen und Antworten",
+    "faq": [
+      {
+        "question": "Was ist der Finanz-Begleiter?",
+        "answer": "Der Finanz-Begleiter ist ein KI-Begleiter für Finanzbildung von LearnSlice, den Banken, Arbeitgeber, Stiftungen und Bildungsprogramme unter ihrer eigenen Marke anbieten. Er verbindet einen Finanz-Check, einen Lernweg in drei Stufen und einen Coach, der mit Quellen erklärt und nichts verkauft. Die Daten liegen in Deutschland."
+      },
+      {
+        "question": "Ist das Finanzberatung?",
+        "answer": "Nein. Der Begleiter erklärt allgemein und mit Quelle und rechnet Beispiele mit den Angaben, die Nutzerinnen und Nutzer selbst machen. Er gibt keine Anlage-, Versicherungs- oder Steuerberatung und empfiehlt keine Produkte."
+      },
+      {
+        "question": "Basiert der Finanz-Check auf einer Finanzanalyse?",
+        "answer": "Der Finanz-Check ist eine Orientierung für Lernende, keine Finanzanalyse. Er zeigt, welche Themen sich gerade lohnen, und führt in die passenden Lektionen."
+      },
+      {
+        "question": "Wie schnell ist der Begleiter live?",
+        "answer": "Auf unserer bestehenden Plattform steht der erste Prototyp meist nach zwei Wochen. Live gehen kann der Begleiter nach rund einem Monat."
+      },
+      {
+        "question": "Können wir eigene Inhalte und unser Design nutzen?",
+        "answer": "Ja. Name, Farben und Logo kommen von Ihnen, ebenso Ihre Inhalte und Themen. Der Begleiter antwortet daraus und nennt die Quelle."
+      },
+      {
+        "question": "Wo liegen die Daten?",
+        "answer": "Auf Servern in Deutschland. Die Daten werden nicht zum Training von KI-Modellen genutzt und nicht für Werbung verwendet. Den Rahmen regelt der Auftragsverarbeitungsvertrag."
+      },
+      {
+        "question": "Was kostet ein Finanz-Begleiter?",
+        "answer": "Das hängt von Inhalten, Design und Nutzerzahl ab. Den Rahmen nennen wir Ihnen im ersten Gespräch."
+      }
+    ],
+    "disclaimer": "Der Finanz-Begleiter gibt allgemeine Informationen und ersetzt keine Anlage-, Versicherungs- oder Steuerberatung."
+  },
+  "en": {
+    "path": "/financial-companion",
+    "title": "White-label financial education with an AI coach",
+    "description": "AI financial education for banks, employers and foundations: money check, learning path and a coach with sources. Explains, sells nothing. Hosted in Germany.",
+    "breadcrumb": "Financial Companion",
+    "cta": "Book a call",
+    "hero": {
+      "eyebrow": "Financial Companion",
+      "headline": "Financial education",
+      "headlineAccent": "under your brand.",
+      "sub": "An AI companion that explains and sells nothing. With your content, in your design, hosted in Germany.",
+      "secondary": "How it works",
+      "note": "The first prototype is ready in two weeks.",
+      "audience": "For banks and savings banks, employers, foundations and education programmes.",
+      "imageCaption": "Example screen with fictional data.",
+      "imageAlt": "Financial Companion: the coach explains what part-time work means for net pay and pension, with a source and a what-if calculator"
+    },
+    "how": {
+      "label": "How it works",
+      "headline": "Check. Learn. Ask.",
+      "steps": [
+        {
+          "icon": "hugeicons:pulse-02",
+          "title": "Money check",
+          "body": "A short check shows where someone stands: budget, emergency fund, debt, saving, provision. As orientation, not a verdict."
+        },
+        {
+          "icon": "hugeicons:mortarboard-02",
+          "title": "Learning path",
+          "body": "Short lessons in three levels, matched to the check. With progress, streaks and a certificate."
+        },
+        {
+          "icon": "hugeicons:ai-chat-02",
+          "title": "Coach with calculator",
+          "body": "Questions about money, work and everyday life, around the clock. Every answer with a source, numbers as an example calculation with the user's own figures."
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/solutions/financial-companion-check-en.webp",
+          "alt": "Money check with six areas, a starter plan and an overview of which data the companion uses"
+        },
+        {
+          "src": "/images/solutions/financial-companion-path-en.webp",
+          "alt": "Learning path with three levels, topics, a learning streak and a certificate"
+        }
+      ]
+    },
+    "trust": {
+      "label": "Why it works",
+      "headline": "Trust grows when nobody is selling.",
+      "sub": "Young people are wary when a money tip hides a sale. A companion that explains neutrally does more for your brand than any product ad.",
+      "items": [
+        {
+          "title": "Explains, sells nothing",
+          "body": "No product recommendations, no ads. The coach says so itself in every conversation."
+        },
+        {
+          "title": "Every answer with a source",
+          "body": "From your content and reviewed lessons, so every statement can be looked up."
+        },
+        {
+          "title": "Calculators, not guesses",
+          "body": "What-if calculations with the user's own figures, clearly marked as examples."
+        },
+        {
+          "title": "Advice only on request",
+          "body": "Anyone who wants more can contact your advisers on their own initiative. We set up that path if you want it."
+        }
+      ]
+    },
+    "audiences": {
+      "label": "Who it's for",
+      "headline": "For banks, employers and foundations.",
+      "items": [
+        {
+          "icon": "hugeicons:bank",
+          "title": "Financial education for banks",
+          "body": "Reach young customers early, with financial education instead of advertising."
+        },
+        {
+          "icon": "hugeicons:user-group",
+          "title": "Financial education for employees and apprentices",
+          "body": "For apprentices and young employees. A money check at the start and the end shows what has changed."
+        },
+        {
+          "icon": "hugeicons:school",
+          "title": "Financial education for foundations and schools",
+          "body": "Neutral, sourced and ad-free: a fit for educational work with schools and young people."
+        }
+      ]
+    },
+    "brand": {
+      "label": "Your brand",
+      "headline": "A first prototype in two weeks.",
+      "points": [
+        "Your name and your design",
+        "Your content and topics",
+        "Live in about a month",
+        "Hosted in Germany"
+      ],
+      "platform": {
+        "pre": "Runs on the same learning platform as our",
+        "link": "AI tutor for apprenticeships",
+        "href": "/ai-tutor-apprenticeships",
+        "post": ". The platform won the BMWE AI Prize 2025."
+      }
+    },
+    "limits": {
+      "headline": "What the companion does not do",
+      "items": [
+        "It gives no investment, insurance or tax advice and recommends no products.",
+        "It does not assess creditworthiness or decide on loans.",
+        "It shows no ads and sells nothing, not even on your behalf."
+      ]
+    },
+    "contact": {
+      "label": "Contact",
+      "headline": "What would your companion look like?",
+      "sub": "In 30 minutes we show the Financial Companion and work out who it should be there for in your organisation.",
+      "person": "I run the call myself. Together we look at which topics and which design fit you.",
+      "role": "CEO of LearnSlice",
+      "form": {
+        "name": "Name",
+        "org": "Organisation",
+        "type": "Type of organisation",
+        "choose": "Please choose (optional)",
+        "typeOptions": [
+          "Bank or savings bank",
+          "Insurer",
+          "Employer",
+          "Foundation or education provider",
+          "School or youth programme",
+          "Fintech",
+          "Other"
+        ],
+        "email": "Email",
+        "message": "Who should the companion be for?",
+        "optional": "Optional",
+        "submit": "Request a call",
+        "note": "30 minutes · reply within 1 business day",
+        "calendly": "Or pick a slot directly",
+        "success": "Thank you. We will email calendar options within 1 business day.",
+        "successCalendly": "Faster: pick a slot in the calendar ›",
+        "privacy": {
+          "pre": "By sending this form you accept our",
+          "link": "Privacy Policy",
+          "post": "."
+        }
+      }
+    },
+    "error": "Something went wrong. Please try again or email info@learnslice.com.",
+    "faqHeadline": "Questions and answers",
+    "faq": [
+      {
+        "question": "What is the Financial Companion?",
+        "answer": "The Financial Companion is an AI companion for financial education by LearnSlice that banks, employers, foundations and education programmes offer under their own brand. It combines a money check, a three-level learning path and a coach that explains with sources and sells nothing. Data is stored in Germany."
+      },
+      {
+        "question": "Is this financial advice?",
+        "answer": "No. The companion explains in general terms with sources and calculates examples with the figures users enter themselves. It gives no investment, insurance or tax advice and recommends no products."
+      },
+      {
+        "question": "Is the money check a financial analysis?",
+        "answer": "The money check is orientation for learners, not a financial analysis. It shows which topics are worth looking at now and leads to the matching lessons."
+      },
+      {
+        "question": "How quickly can the companion go live?",
+        "answer": "On our existing platform the first prototype is usually ready in two weeks. The companion can go live in about a month."
+      },
+      {
+        "question": "Can we use our own content and design?",
+        "answer": "Yes. Name, colours and logo come from you, as do your content and topics. The companion answers from them and names the source."
+      },
+      {
+        "question": "Where is the data stored?",
+        "answer": "On servers in Germany. Data is not used to train AI models and not used for advertising. The data processing agreement sets the rules."
+      },
+      {
+        "question": "What does a Financial Companion cost?",
+        "answer": "It depends on content, design and the number of users. We give you the range in the first call."
+      }
+    ],
+    "disclaimer": "The Financial Companion provides general information and does not replace investment, insurance or tax advice."
+  }
+}

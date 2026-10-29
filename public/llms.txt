@@ -1,6 +1,6 @@
 # LearnSlice
 
-> German e-learning software company. Two lines of business: a custom development partner that builds learning platforms, AI tutors and assessment software for organisations that own their content, and LearnSlice, an AI learning platform for German apprenticeship training (Ausbildung).
+> AI learning platform from Düsseldorf. LearnSlice turns an organisation's content and goals into a personal AI tutor for every learner: learning path, job simulations and quizzes, answers 24/7 with sources, and analytics. Ready-made companions (AI tutor for apprenticeships), example companions (financial literacy; founder companion in development), custom companions, and custom e-learning development.
 
 ## About
 
@@ -71,14 +71,19 @@ Reference customers include FH Dortmund, the University of Cologne, and Carl-Sev
 
 ## Vocational Professions Covered
 
-- Kauffrau/Kaufmann für Büromanagement (Office Management)
-- Kauffrau/Kaufmann für Spedition und Logistikdienstleistung
-- Fachkraft für Lagerlogistik (Warehouse Logistics)
-- Fachinformatiker Systemintegration
-- Fachinformatiker Anwendungsentwicklung
-- Fachinformatiker Digitale Vernetzung
-- Fachinformatiker Daten- und Prozessanalyse
-- KFZ-Mechatroniker (Automotive Mechatronics)
+Each profession ships with its full IHK framework curriculum (Ausbildungsrahmenplan) as a learning plan.
+
+- Industriekaufmann/-frau (Industrial Clerk)
+- Kaufmann/-frau für Büromanagement (Office Management Clerk)
+- Fachkraft für Lagerlogistik (Warehouse Logistics Specialist)
+- Fachinformatiker/-in Anwendungsentwicklung (IT Specialist, Application Development)
+- Fachinformatiker/-in Systemintegration (IT Specialist, System Integration)
+- Fachinformatiker/-in Daten- und Prozessanalyse (IT Specialist, Data and Process Analysis)
+- Fachinformatiker/-in Digitale Vernetzung (IT Specialist, Digital Networking)
+- Mechatroniker/-in (Mechatronics Technician)
+- Elektroniker/-in für Betriebstechnik (Electronics Technician for Industrial Engineering)
+- Elektroniker/-in für Maschinen und Antriebstechnik (Electronics Technician for Machines and Drive Technology)
+- Kfz-Mechatroniker/-in (Automotive Mechatronics Technician)
 
 ## Company
 
@@ -106,6 +111,12 @@ Reference customers include FH Dortmund, the University of Cologne, and Carl-Sev
 - German: https://learnslice.com/de/
 - Custom e-learning development and engineering services: https://learnslice.com/solutions
 - Individuelle E-Learning-Entwicklung: https://learnslice.com/de/loesungen
+- AI tutor for apprenticeship training (IHK exam prep, onboarding, upskilling): https://learnslice.com/ai-tutor-apprenticeships
+- KI-Tutor für die Ausbildung (IHK-Prüfungsvorbereitung, Einarbeitung, Upskilling): https://learnslice.com/de/ki-tutor-ausbildung
+- Founder Companion, in development with pilot partners (checks financial plan and pitch deck, rehearses bank, customer and investor conversations, supports growth planning after founding, coach view for founder advisors, chambers, economic development agencies, incubators and accelerators; no legal or tax advice): https://learnslice.com/founder-companion
+- Gründer-Begleiter, in Entwicklung mit Pilotpartnern: https://learnslice.com/de/gruender-begleiter
+- Financial Companion, white-label financial education (money check, three-level learning path, AI coach with sources and what-if calculators; explains, gives no investment, insurance or tax advice, sells nothing; hosted in Germany): https://learnslice.com/financial-companion
+- Finanz-Begleiter, Finanzbildung unter Ihrer Marke: https://learnslice.com/de/finanz-begleiter
 - AI tutor for US training providers, with live demo: https://learnslice.com/us
 - Research and evidence: https://learnslice.com/research
 - Blog: https://learnslice.com/blog

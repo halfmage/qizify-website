@@ -1,0 +1,67 @@
+---
+import { Icon } from 'astro-icon/components';
+
+// Product line on the homepage: ready companions, example builds and the custom option.
+interface Companion {
+	title: string;
+	body: string;
+	image?: string;
+	imageAlt?: string;
+	icon?: string;
+	href?: string;
+	linkLabel?: string;
+}
+
+interface Props {
+	label: string;
+	headline: string;
+	subheadline: string;
+	items: Companion[];
+	// Section anchor, localised so the URL reads naturally (#begleiter / #companions).
+	id?: string;
+}
+
+const { label, headline, subheadline, items, id = 'begleiter' } = Astro.props;
+---
+
+<section class="py-20 md:py-32 px-6 md:px-8" id={id}>
+	<div class="max-w-container mx-auto">
+		<div class="text-center mb-14 md:mb-16">
+			<span class="section-label mb-4 block">{label}</span>
+			<h2 class="text-heading md:text-display-sm text-white m-0 max-w-[800px] mx-auto">{headline}</h2>
+			<p class="text-lg leading-relaxed text-muted m-0 mt-4 max-w-2xl mx-auto">{subheadline}</p>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+			{items.map((item) => (
+				<article class="card-hover-glow card-hover-glow-primary bg-surface border border-border rounded-2xl overflow-hidden flex flex-col">
+					<!-- Fixed frame, screenshot shown whole (contain), so wide UIs are never cut -->
+					<div class="w-full aspect-[16/10] p-4 md:p-6 flex items-center justify-center border-b border-border bg-gradient-to-br from-primary/15 to-accent/10">
+						{item.image ? (
+							<img
+								src={item.image}
+								alt={item.imageAlt ?? ''}
+								class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg ring-1 ring-white/10 shadow-2xl shadow-black/40"
+								loading="lazy"
+								decoding="async"
+								width="1450"
+								height="760"
+							/>
+						) : (
+							<Icon name={item.icon ?? 'hugeicons:sparkles'} class="w-14 h-14 text-primary" aria-hidden="true" />
+						)}
+					</div>
+					<div class="p-6 md:p-8 flex flex-col gap-3 flex-1">
+						<h3 class="text-xl font-semibold text-white m-0 leading-snug">{item.title}</h3>
+						<p class="text-base leading-relaxed text-muted m-0 flex-1">{item.body}</p>
+						{item.href && item.linkLabel && (
+							<a href={item.href} class="text-sm text-primary hover:text-white transition-colors mt-2">
+								{item.linkLabel} &rsaquo;
+							</a>
+						)}
+					</div>
+				</article>
+			))}
+		</div>
+	</div>
+</section>
