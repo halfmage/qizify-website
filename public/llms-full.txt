@@ -13,7 +13,7 @@ Type: Homepage: AI learning platform
 
 AI learning platform
 
-For apprentices, new hires and your whole team: LearnSlice turns your content into a tutor that takes every learner to their goal. 24/7.
+For your apprentices, employees or customers: LearnSlice turns your content into a tutor that takes every learner to their goal. 24/7.
 
 **Study with 50 master’s students at FH Dortmund:** 100% of answers cite a source · 80% reached near-complete mastery · 70% found the learning pace right
 
@@ -87,7 +87,7 @@ Type: Startseite: KI-Lernplattform
 
 KI-Lernplattform
 
-Für Azubis, neue Mitarbeitende und Ihr ganzes Team: LearnSlice macht aus Ihren Inhalten einen Tutor, der jede Person zu ihrem Ziel führt. Rund um die Uhr.
+Für Ihre Azubis, Mitarbeitenden oder Kundschaft: LearnSlice macht aus Ihren Inhalten einen Tutor, der jede Person zu ihrem Ziel führt. Rund um die Uhr.
 
 **Studie mit 50 Masterstudierenden der FH Dortmund:** 100% der Antworten mit Quelle · 80% erreichten nahezu volles Verständnis · 70% fanden ihr Lerntempo passend
 
