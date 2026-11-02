@@ -138,7 +138,7 @@ const labelClass = 'flex flex-col gap-1.5 text-sm font-medium text-white/80';
 			<span>{c.consent} <a href={c.privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{c.privacy}</a></span>
 		</label>
 		<p class="text-xs text-muted/80 leading-relaxed m-0">{c.purpose}</p>
-		<Fragment slot="success">{c.success} {c.successUpsell}{' '}<a href="#demo-request" data-modal-trigger="demo-request" class="underline font-medium text-white">{c.successDemo}</a></Fragment>
+		<Fragment slot="success">{c.success}{' '}{c.successUpsell}{' '}<a href="#demo-request" data-modal-trigger="demo-request" class="underline font-medium text-white">{c.successDemo}</a></Fragment>
 		<Fragment slot="footer">
 			<button type="submit" class="self-start bg-primary text-white border-none rounded-full px-6 py-3 text-base font-medium cursor-pointer hover:bg-[#6a4ae0] transition-colors font-sans disabled:opacity-50">{c.submit}</button>
 			<p class="text-xs text-muted m-0">{c.azubi}</p>

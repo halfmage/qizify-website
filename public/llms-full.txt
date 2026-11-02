@@ -4413,7 +4413,7 @@ There are four routes: a Word or PDF template, an industry app, a standalone log
 
 ## Checklist: Is the Digital Solution Ready?
 
-A tool should meet these points before you roll it out. Especially after the IHK shutdown: every record must be fully exportable at any time.
+Check these points before you roll out a tool. Especially after the IHK shutdown: every record must be fully exportable at any time.
 
 <CopyBlock buttonLabel="Copy checklist" copiedLabel="Copied!">
 
@@ -5159,7 +5159,7 @@ Was im Berichtsheft stehen muss, ändert sich durch die Abschaltung nicht. Die R
 - **Selbständig geführt:** Die Einträge schreiben die Azubis selbst.
 - **Inhalt:** betriebliche Tätigkeiten, Unterweisungen und betrieblicher Unterricht sowie die Themen der Berufsschule.
 - **Freigabe:** Ausbilder prüfen mindestens monatlich und bestätigen. Bei elektronischen Nachweisen reicht eine elektronische Bestätigung, am besten mit Name und Datum im Nachweis.
-- **Minderjährige:** Erziehungsberechtigte nehmen in angemessenen Abständen Kenntnis.
+- **Minderjährige:** Erziehungsberechtigte nehmen in angemessenen Abständen Kenntnis und bestätigen das.
 - **Export:** Jeder Nachweis sollte sich jederzeit vollständig als PDF exportieren lassen. Die Abschaltung zeigt, warum.
 - **Datenschutz:** Hosting in Deutschland oder der EU, ein Auftragsverarbeitungsvertrag und getrennte Rollen für Azubis und Ausbildungsverantwortliche.
 
@@ -9115,7 +9115,7 @@ Es gibt vier Wege: eine Vorlage in Word oder PDF, eine Branchen-App, eine eigens
 
 ## Prüfliste: Ist die digitale Lösung einsatzbereit?
 
-Diese Punkte sollte ein Tool erfüllen, bevor Sie es einführen. Besonders wichtig nach der IHK-Abschaltung: Jeder Nachweis muss sich jederzeit vollständig exportieren lassen.
+Diese Punkte sollten erfüllt sein, bevor Sie ein Tool einführen. Besonders wichtig nach der IHK-Abschaltung: Jeder Nachweis muss sich jederzeit vollständig exportieren lassen.
 
 <CopyBlock buttonLabel="Prüfliste kopieren" copiedLabel="Kopiert!">
 
