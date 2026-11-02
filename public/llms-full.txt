@@ -4419,27 +4419,30 @@ A tool should meet these points before you roll it out. Especially after the IHK
 
 ### Digital Training Logbook: Pre-Rollout Checklist
 
-**Legal minimum (§ 13 BBiG)**
+**Legal minimum (§ 13 BBiG, BIBB recommendation)**
 
 - [ ] The electronic form is recorded in the training contract (§ 11 (1) sentence 2 no. 12 BBiG)
 - [ ] The competent chamber accepts the digital format
 - [ ] Entries are written daily or weekly, trainers review at least monthly
-- [ ] Workplace activities, instruction, and vocational school can be documented separately
+- [ ] Every record shows name, occupation, training year, and reporting period
+- [ ] Company and vocational school are documented separately, instruction included
+- [ ] For apprentices under 18, a legal guardian is involved
 - [ ] The complete record is available in time for exam registration
 
 **Functions**
 
-- [ ] Templates match the requirements of the competent chamber
-- [ ] Automatic reminders for entries that are due
+- [ ] The trainer sets the rhythm, daily or weekly
+- [ ] Reminders for open entries
 - [ ] Digital approval and return for revision
+- [ ] The approval is documented in the record with name and date
 - [ ] PDF export of single entries and whole periods
 - [ ] Records are kept until the final examination
 
 **Data protection and operations**
 
-- [ ] Hosting in the EU
+- [ ] Hosting in Germany or the EU
 - [ ] A data processing agreement is in place
-- [ ] Roles separate apprentice, trainer, and administration
+- [ ] Roles separate apprentices and training staff
 - [ ] Data export if you change provider
 
 </CopyBlock>
@@ -4484,7 +4487,7 @@ Yes. Under § 13 sentence 2 no. 7 BBiG, apprentices keep a written or electronic
 
 ### How often does the training logbook have to be filled in?
 
-Daily or weekly, as recommended by the BIBB Board, at about one A4 page per week. The trainer reviews the entries at least monthly. Writing several weeks at once makes it easy to miss entries. Automatic reminders help.
+Daily or weekly, as recommended by the BIBB Board, at about one A4 page per week. The trainer reviews the entries at least monthly. Writing several weeks at once makes it easy to miss entries. Reminders for open entries help.
 
 ### What happens to the IHK digital Berichtsheft?
 
@@ -5155,9 +5158,10 @@ Was im Berichtsheft stehen muss, ändert sich durch die Abschaltung nicht. Die R
 - **Rhythmus:** Azubis führen den Nachweis täglich oder wöchentlich, stichwortartig, rund eine DIN-A4-Seite pro Woche.
 - **Selbständig geführt:** Die Einträge schreiben die Azubis selbst.
 - **Inhalt:** betriebliche Tätigkeiten, Unterweisungen und betrieblicher Unterricht sowie die Themen der Berufsschule.
-- **Freigabe:** Ausbilder prüfen mindestens monatlich und bestätigen. Bei elektronischen Nachweisen reicht eine elektronische Bestätigung.
+- **Freigabe:** Ausbilder prüfen mindestens monatlich und bestätigen. Bei elektronischen Nachweisen reicht eine elektronische Bestätigung, am besten mit Name und Datum im Nachweis.
+- **Minderjährige:** Erziehungsberechtigte nehmen in angemessenen Abständen Kenntnis.
 - **Export:** Jeder Nachweis sollte sich jederzeit vollständig als PDF exportieren lassen. Die Abschaltung zeigt, warum.
-- **Datenschutz:** Hosting in der EU, ein Auftragsverarbeitungsvertrag und getrennte Rollen für Azubi, Ausbilder und Verwaltung.
+- **Datenschutz:** Hosting in Deutschland oder der EU, ein Auftragsverarbeitungsvertrag und getrennte Rollen für Azubis und Ausbildungsverantwortliche.
 
 ![Eintragsformular im LearnSlice-Berichtsheft mit Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sowie einer Bestätigung, dass der Azubi den Eintrag selbst verfasst hat](/images/blog/learnslice-berichtsheft-felder.webp)
 
@@ -9117,27 +9121,30 @@ Diese Punkte sollte ein Tool erfüllen, bevor Sie es einführen. Besonders wicht
 
 ### Digitales Berichtsheft: Prüfliste vor der Einführung
 
-**Rechtliche Mindestanforderungen (§ 13 BBiG)**
+**Rechtliche Mindestanforderungen (§ 13 BBiG, BIBB-Empfehlung)**
 
 - [ ] Die elektronische Form ist im Ausbildungsvertrag festgehalten (§ 11 Abs. 1 Satz 2 Nr. 12 BBiG)
 - [ ] Die zuständige Kammer akzeptiert das digitale Format
 - [ ] Einträge entstehen täglich oder wöchentlich, Ausbilder prüfen mindestens monatlich
-- [ ] Betriebliche Tätigkeiten, Unterweisungen und Berufsschulunterricht sind getrennt dokumentierbar
+- [ ] Jeder Nachweis nennt Name, Ausbildungsberuf, Ausbildungsjahr und Berichtszeitraum
+- [ ] Betrieb und Berufsschule werden getrennt dokumentiert, Unterweisungen eingeschlossen
+- [ ] Bei minderjährigen Azubis werden die Erziehungsberechtigten einbezogen
 - [ ] Der vollständige Nachweis liegt zur Prüfungsanmeldung vor
 
 **Funktionen**
 
-- [ ] Vorlagen entsprechen den Vorgaben der zuständigen Kammer
-- [ ] Automatische Erinnerungen an fällige Einträge
+- [ ] Der Ausbilder legt den Rhythmus fest, täglich oder wöchentlich
+- [ ] Erinnerungen an offene Einträge
 - [ ] Digitale Freigabe und Rückgabe zur Überarbeitung
+- [ ] Die Freigabe ist mit Name und Datum im Nachweis dokumentiert
 - [ ] PDF-Export einzelner Einträge und ganzer Zeiträume
 - [ ] Nachweise bleiben bis zur Abschlussprüfung erhalten
 
 **Datenschutz und Betrieb**
 
-- [ ] Hosting in der EU
+- [ ] Hosting in Deutschland oder der EU
 - [ ] Vertrag zur Auftragsverarbeitung liegt vor
-- [ ] Rollen trennen Azubi, Ausbilder und Verwaltung
+- [ ] Rollen trennen Azubis und Ausbildungsverantwortliche
 - [ ] Datenexport bei einem Anbieterwechsel möglich
 
 </CopyBlock>
@@ -9182,7 +9189,7 @@ Ja. Nach § 13 Satz 2 Nr. 7 BBiG führen Auszubildende einen schriftlichen oder 
 
 ### Wie oft muss das Berichtsheft geführt werden?
 
-Täglich oder wöchentlich, so empfiehlt es der Hauptausschuss des BIBB, mit einem Umfang von etwa einer DIN-A4-Seite pro Woche. Die Ausbilderin oder der Ausbilder prüft die Einträge mindestens monatlich. Wer mehrere Wochen auf einmal nachschreibt, vergisst leicht Einträge. Automatische Erinnerungen helfen dagegen.
+Täglich oder wöchentlich, so empfiehlt es der Hauptausschuss des BIBB, mit einem Umfang von etwa einer DIN-A4-Seite pro Woche. Die Ausbilderin oder der Ausbilder prüft die Einträge mindestens monatlich. Wer mehrere Wochen auf einmal nachschreibt, vergisst leicht Einträge. Erinnerungen an offene Einträge helfen dagegen.
 
 ### Was passiert mit dem digitalen Berichtsheft der IHK?
 
