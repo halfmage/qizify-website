@@ -1,0 +1,24 @@
+---
+// Short in-text pointer to the free-tier waitlist further down the same post, for
+// readers who decide early (e.g. right after the shutdown facts or the template).
+// Links to the BerichtsheftWaitlist anchor; scripts/check-waitlist.mjs makes sure
+// it is only used on posts that embed the waitlist. Inside `prose`, hence `not-prose`.
+import { WAITLIST_ID } from '../data/berichtsheft.mjs';
+
+interface Props {
+	lang: 'en' | 'de';
+	// Lead-in that fits the spot in the post.
+	text: string;
+}
+
+const { lang, text } = Astro.props;
+if (lang !== 'de' && lang !== 'en') throw new Error(`BerichtsheftTeaser: unsupported lang "${lang}"`);
+const button = lang === 'de' ? 'Kostenlos vormerken' : 'Join the free waitlist';
+---
+
+<aside class="not-prose my-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 rounded-xl border border-border-light bg-surface/70 px-5 py-4">
+	<p class="text-sm text-white/85 leading-relaxed m-0 flex-1">{text}</p>
+	<a href={`#${WAITLIST_ID[lang]}`} class="shrink-0 self-start sm:self-auto inline-flex items-center gap-1 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white hover:bg-[#6a4ae0] transition-colors no-underline">
+		{button}<span aria-hidden="true">&rarr;</span>
+	</a>
+</aside>

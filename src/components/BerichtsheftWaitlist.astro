@@ -19,7 +19,16 @@ const copy = {
 	de: {
 		eyebrow: 'Kostenlose Version',
 		headline: 'Das LearnSlice-Berichtsheft, kostenlos für Ausbildungsbetriebe',
-		sub: 'Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben frei oder schicken zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Die kostenlose Version startet in Kürze. Tragen Sie sich ein, dann melden wir uns zum Start.',
+		sub: 'Die kostenlose Version startet in Kürze. Tragen Sie sich ein, dann melden wir uns zum Start.',
+		features: [
+			'Azubis schreiben und reichen ein, Ausbilder geben frei oder schicken zur Überarbeitung zurück',
+			'Täglicher oder wöchentlicher Rhythmus, vom Ausbilder festgelegt',
+			'E-Mail-Erinnerung an offene Einträge',
+			'PDF-Export jedes Nachweises, Verarbeitung in Deutschland',
+		],
+		azubi: 'Sie sind Azubi? Leiten Sie diese Seite an Ihre Ausbilderin oder Ihren Ausbilder weiter.',
+		successUpsell: 'Sie möchten schon jetzt sehen, wie LearnSlice Azubis auf die IHK-Prüfung vorbereitet?',
+		successDemo: 'Demo ansehen',
 		email: 'Geschäftliche E-Mail',
 		company: 'Ausbildungsbetrieb',
 		apprentices: 'Anzahl Azubis',
@@ -32,7 +41,7 @@ const copy = {
 		consent: 'Ich möchte per E-Mail informiert werden, sobald die kostenlose Version des LearnSlice-Berichtshefts startet. Abmeldung jederzeit möglich.',
 		purpose: 'Die freiwilligen Angaben zu Azubis, Kammer und Berichtsheft nutzen wir zusammengefasst, um die kostenlose Version zu planen.',
 		privacy: 'Datenschutzerklärung',
-		submit: 'Auf die Warteliste',
+		submit: 'Kostenlos vormerken',
 		success: 'Danke, Sie stehen auf der Liste. Wir melden uns, sobald die kostenlose Version startet.',
 		error: 'Das hat nicht geklappt. Bitte versuchen Sie es noch einmal oder schreiben Sie an info@learnslice.com.',
 		privacyHref: '/de/privacy',
@@ -40,7 +49,16 @@ const copy = {
 	en: {
 		eyebrow: 'Free version',
 		headline: 'The LearnSlice Training Logbook, Free for Training Companies',
-		sub: 'Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. The free version launches soon. Join the list and we will let you know when it starts.',
+		sub: 'The free version launches soon. Join the list and we will let you know when it starts.',
+		features: [
+			'Apprentices write and submit, trainers approve or send back for revision',
+			'Daily or weekly rhythm, set by the trainer',
+			'Email reminder for open entries',
+			'PDF export of every record, processed in Germany',
+		],
+		azubi: 'Are you an apprentice? Forward this page to your trainer.',
+		successUpsell: 'Want to see now how LearnSlice prepares apprentices for the IHK exam?',
+		successDemo: 'See the demo',
 		email: 'Work email',
 		company: 'Training company',
 		apprentices: 'Number of apprentices',
@@ -53,7 +71,7 @@ const copy = {
 		consent: 'I want to be informed by email when the free version of the LearnSlice training logbook launches. Unsubscribe at any time.',
 		purpose: 'We use the optional details on apprentices, chamber and logbook in aggregated form to plan the free version.',
 		privacy: 'Privacy Policy',
-		submit: 'Join the waitlist',
+		submit: 'Join the free waitlist',
 		success: 'Thank you, you are on the list. We will let you know when the free version launches.',
 		error: 'That did not work. Please try again or write to info@learnslice.com.',
 		privacyHref: '/privacy',
@@ -75,9 +93,17 @@ const labelClass = 'flex flex-col gap-1.5 text-sm font-medium text-white/80';
 	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
 	<span class="section-label block mb-3">{c.eyebrow}</span>
 	<h2 class="text-heading-sm text-white m-0 mb-3">{c.headline}</h2>
+	<ul class="m-0 mb-4 p-0 space-y-1.5" style="list-style:none">
+		{c.features.map((f) => (
+			<li class="flex gap-2 text-sm text-white/85 leading-relaxed">
+				<span class="text-primary shrink-0" aria-hidden="true">✓</span>
+				<span>{f}</span>
+			</li>
+		))}
+	</ul>
 	<p class="text-base leading-relaxed text-muted m-0 mb-6">{c.sub}</p>
 
-	<NetlifyForm name="berichtsheft-waitlist" lang={lang} error={c.error} success={c.success} class="flex flex-col gap-4">
+	<NetlifyForm name="berichtsheft-waitlist" lang={lang} error={c.error} class="flex flex-col gap-4">
 		<input type="hidden" name="source" value={source} />
 		<div class="grid sm:grid-cols-2 gap-4">
 			<label class={labelClass}>{c.email}
@@ -112,8 +138,10 @@ const labelClass = 'flex flex-col gap-1.5 text-sm font-medium text-white/80';
 			<span>{c.consent} <a href={c.privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{c.privacy}</a></span>
 		</label>
 		<p class="text-xs text-muted/80 leading-relaxed m-0">{c.purpose}</p>
+		<Fragment slot="success">{c.success} {c.successUpsell}{' '}<a href="#demo-request" data-modal-trigger="demo-request" class="underline font-medium text-white">{c.successDemo}</a></Fragment>
 		<Fragment slot="footer">
 			<button type="submit" class="self-start bg-primary text-white border-none rounded-full px-6 py-3 text-base font-medium cursor-pointer hover:bg-[#6a4ae0] transition-colors font-sans disabled:opacity-50">{c.submit}</button>
+			<p class="text-xs text-muted m-0">{c.azubi}</p>
 		</Fragment>
 	</NetlifyForm>
 </aside>

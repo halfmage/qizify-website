@@ -4461,7 +4461,7 @@ A digital logbook adds the most value where apprentices also learn. The trainer 
 
 This is an entry in LearnSlice (German interface). Workplace activities, vocational school topics, hours, and department are fixed fields. The **curriculum link** shows which learning-plan topics were covered in the period. Before submitting, the apprentice confirms they wrote the entry themselves. The trainer sets the rhythm, for example weekly.
 
-Gaps become visible before they become a problem, well before the [IHK exam](/blog/ihk-exam-preparation-digital).
+Gaps become visible before they become a problem, well before the [IHK exam](/blog/ihk-exam-preparation-digital). We show how learning plan, logbook, and exam prep work together in LearnSlice in a [30-minute demo](#demo-request).
 
 ## How Do You Switch to a Digital Logbook?
 
@@ -9159,7 +9159,7 @@ Am meisten bringt ein digitales Berichtsheft, wenn es dort liegt, wo Azubis auch
 
 So sieht ein Eintrag in LearnSlice aus. Betriebliche Tätigkeiten, Berufsschulthemen, Stunden und Abteilung sind feste Felder. Der **Lehrplanbezug** zeigt, welche Themen aus dem Lernplan im Zeitraum bearbeitet wurden. Vor dem Einreichen bestätigt der Azubi, dass er den Eintrag selbst verfasst hat. Der Ausbilder legt den Rhythmus fest, zum Beispiel wöchentlich.
 
-So werden Lücken sichtbar, bevor sie zum Problem werden, lange vor der [IHK-Prüfung](/de/blog/ihk-pruefungsvorbereitung-digital).
+So werden Lücken sichtbar, bevor sie zum Problem werden, lange vor der [IHK-Prüfung](/de/blog/ihk-pruefungsvorbereitung-digital). Wie Lernplan, Berichtsheft und Prüfungsvorbereitung in LearnSlice zusammenspielen, zeigen wir Ihnen in einer [30-Minuten-Demo](#demo-request).
 
 ## Wie stellt man auf ein digitales Berichtsheft um?
 

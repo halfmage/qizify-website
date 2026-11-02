@@ -19,6 +19,9 @@ for (const file of (await readdir(BLOG_DIR)).filter((f) => f.endsWith('.mdx'))) 
 	if (isWaitlist && uses !== 1) {
 		errors.push(`${file}: ctaVariant "waitlist" needs exactly one <BerichtsheftWaitlist /> in the body (found ${uses}).`);
 	}
+	if (!isWaitlist && /<BerichtsheftTeaser\b/.test(text)) {
+		errors.push(`${file}: uses <BerichtsheftTeaser /> but ctaVariant is not "waitlist", so its link would jump nowhere.`);
+	}
 	if (!isWaitlist && uses > 0) {
 		errors.push(`${file}: embeds <BerichtsheftWaitlist /> but ctaVariant is not "waitlist".`);
 	}
