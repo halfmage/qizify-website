@@ -10,6 +10,7 @@ import ConsultationModal from '../components/ConsultationModal.astro';
 import enContent from '../content/en.json';
 import deContent from '../content/de.json';
 import { isTeamAuthor } from '../utils/authors.mjs';
+import { WAITLIST_ID } from '../data/berichtsheft.mjs';
 
 interface Props {
 	title: string;
@@ -26,13 +27,12 @@ interface Props {
 	faq?: { q: string; a: string }[];
 	sources?: { name: string; url: string; retrieved?: string }[];
 	about?: string[];
-	sidebarCtaOverride?: { title: string; sub: string; button: string; href: string };
-	ctaVariant?: 'demo' | 'consultation' | 'guide';
+	ctaVariant?: 'demo' | 'consultation' | 'guide' | 'waitlist';
 	ctaFooter?: { label?: string; headline: string; subheadline: string; button: string };
 	heroImage?: string;
 }
 
-const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, sources, about, sidebarCtaOverride, ctaVariant = 'demo', ctaFooter, heroImage } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, sources, about, ctaVariant = 'demo', ctaFooter, heroImage } = Astro.props;
 
 // Byline role. Defaults to the content-team title the existing named posts were
 // written under, so those are unchanged; anyone else sets authorRole explicitly.
@@ -81,18 +81,30 @@ const tocLabel = lang === 'en' ? 'On this page' : 'Auf dieser Seite';
 // AI guides (now on ironum.com) and open no modal at all; everything else keeps the demo.
 const isConsultation = ctaVariant === 'consultation';
 const isGuide = ctaVariant === 'guide';
+// 'waitlist' posts embed BerichtsheftWaitlist; every CTA on the page (nav, sidebar,
+// footer) is a plain link to its anchor, so mobile readers get the same offer.
+const isWaitlist = ctaVariant === 'waitlist';
+const WAITLIST_HREF = `#${WAITLIST_ID[lang]}`;
 // The AI guides moved to Ironum (Oct 2026); no LearnSlice post uses this variant today.
 const GUIDE_HREF = 'https://ironum.com/resources/guides/';
 const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
 // A guide post's CTAs are links, so nothing should carry a modal trigger.
-const ctaHref = isGuide ? GUIDE_HREF : undefined;
-const navCta = isGuide
+const ctaHref = isGuide ? GUIDE_HREF : isWaitlist ? WAITLIST_HREF : undefined;
+const navCta = isWaitlist
+	? (lang === 'en' ? 'Join the waitlist' : 'Auf die Warteliste')
+	: isGuide
 	? (lang === 'en' ? 'Get the guides' : 'Leitfäden holen')
 	: isConsultation
 	? content.solutions.hero.ctaPrimary
 	: content.nav.cta;
 
-const sidebarCta = isGuide
+const sidebarCopy = isWaitlist
+	? {
+		title: lang === 'en' ? 'Free training logbook' : 'Berichtsheft kostenlos',
+		sub: lang === 'en' ? 'The free version for training companies launches soon.' : 'Die kostenlose Version für Ausbildungsbetriebe startet in Kürze.',
+		button: lang === 'en' ? 'Join the waitlist' : 'Auf die Warteliste',
+	}
+	: isGuide
 	? {
 		title: lang === 'en' ? 'The longer version is free' : 'Die ausführliche Fassung, kostenlos',
 		sub: lang === 'en' ? 'Guides for product managers and product owners. No email required.' : 'Leitfäden für Product Manager und Product Owner. Ohne E-Mail-Versand.',
@@ -116,11 +128,28 @@ const sidebarCta = isGuide
 		sub: lang === 'en' ? '30-min demo, no pitch.' : '30-Min-Demo, kein Pitch.',
 		button: lang === 'en' ? 'Get demo access' : 'Demo-Zugang erhalten',
 	};
+// Links (guide, waitlist) open no modal; everything else opens the variant's modal.
+const sidebarCta = {
+	...sidebarCopy,
+	href: ctaHref ?? `#${ctaTrigger}`,
+	trigger: ctaHref ? undefined : ctaTrigger,
+};
 
 // Footer CTA: guide posts link to the lead magnet; consultation posts reuse the
 // solutions strategy-call copy (headline, sub, button, micro-proof note); demo posts
 // keep the site-wide blog CTA.
-const footerCta = isGuide
+const footerCta = isWaitlist
+	? {
+		label: lang === 'en' ? 'Free version' : 'Kostenlose Version',
+		headline: lang === 'en' ? 'The LearnSlice training logbook, free for training companies' : 'Das LearnSlice-Berichtsheft, kostenlos für Ausbildungsbetriebe',
+		subheadline: lang === 'en'
+			? 'Apprentices write and submit their entries, trainers approve them or send them back, and every record exports as a PDF. The free version launches soon.'
+			: 'Azubis schreiben und reichen ein, Ausbilder geben frei oder schicken zurück, und jeder Nachweis lässt sich als PDF exportieren. Die kostenlose Version startet in Kürze.',
+		button: lang === 'en' ? 'Join the waitlist' : 'Auf die Warteliste',
+		note: undefined,
+		href: WAITLIST_HREF,
+	}
+	: isGuide
 	? {
 		headline: lang === 'en' ? 'Practical, and ready to apply' : 'Praktisch und sofort anwendbar',
 		subheadline: lang === 'en'
@@ -224,7 +253,7 @@ const retrievedLabel = lang === 'en' ? 'checked' : 'geprüft am';
 // the day cannot shift with the build machine's time zone; written out in words in
 // English ("2 November 2026"), since 02/11/2026 reads as 11 February to US readers.
 const formatRetrieved = (d: string) =>
-	new Date(`${d}T12:00:00Z`).toLocaleDateString(lang === 'en' ? 'en-US' : 'de-DE', {
+	new Date(`${d}T12:00:00Z`).toLocaleDateString(lang === 'en' ? 'en-GB' : 'de-DE', {
 		year: 'numeric',
 		month: lang === 'en' ? 'long' : '2-digit',
 		day: lang === 'en' ? 'numeric' : '2-digit',
@@ -369,14 +398,14 @@ const formatRetrieved = (d: string) =>
 						<nav id="toc" aria-label={tocLabel} class="toc-list min-h-0 overflow-y-auto pr-1 flex flex-col border-l border-border text-sm"></nav>
 					</div>
 					<a
-						href={sidebarCtaOverride ? sidebarCtaOverride.href : isGuide ? GUIDE_HREF : `#${ctaTrigger}`}
-						data-modal-trigger={sidebarCtaOverride || isGuide ? undefined : ctaTrigger}
+						href={sidebarCta.href}
+						data-modal-trigger={sidebarCta.trigger}
 						class="group block shrink-0 rounded-lg border border-border bg-surface p-5 hover:border-primary/40 transition-colors"
 					>
-						<p class="text-white font-semibold text-sm mb-1">{(sidebarCtaOverride ?? sidebarCta).title}</p>
-						<p class="text-muted text-xs mb-3 leading-relaxed">{(sidebarCtaOverride ?? sidebarCta).sub}</p>
+						<p class="text-white font-semibold text-sm mb-1">{sidebarCta.title}</p>
+						<p class="text-muted text-xs mb-3 leading-relaxed">{sidebarCta.sub}</p>
 						<span class="inline-flex items-center gap-1 text-primary text-sm font-medium">
-							{(sidebarCtaOverride ?? sidebarCta).button}
+							{sidebarCta.button}
 							<span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
 						</span>
 					</a>

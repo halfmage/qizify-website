@@ -19,7 +19,6 @@ interface Props {
 }
 
 const { name, lang, error, success, class: className = 'flex flex-col gap-5', messageSize = 'sm' } = Astro.props;
-const errorSize = 'text-xs';
 const successSize = messageSize === 'xs' ? 'text-xs' : 'text-sm';
 ---
 
@@ -28,7 +27,7 @@ const successSize = messageSize === 'xs' ? 'text-xs' : 'text-sm';
 	<input type="hidden" name="language" value={lang} />
 	<input type="text" name="bot-field" class="hidden" tabindex="-1" autocomplete="off" />
 	<slot />
-	<p class={`hidden p-3 rounded-lg ${errorSize} bg-red-500/10 border border-red-500/20 text-red-300 m-0`} data-form-error role="alert">{error}</p>
+	<p class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300 m-0" data-form-error role="alert">{error}</p>
 	<p class={`hidden p-3 rounded-lg ${successSize} bg-green-500/10 border border-green-500/20 text-green-300 m-0`} data-form-success role="status">
 		<slot name="success">{success}</slot>
 	</p>

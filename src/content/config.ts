@@ -24,9 +24,12 @@ const blog = defineCollection({
 		// ctaVariant: which conversion path the shared BlogLayout renders.
 		// 'demo' (default) = product-demo CTA + DemoRequestModal (Azubi platform posts).
 		// 'consultation' = strategy-call CTA + ConsultationModal (solutions / custom-dev posts).
+		// 'waitlist' = nav, sidebar and footer CTAs link to the in-post BerichtsheftWaitlist
+		// (anchor from src/data/berichtsheft.mjs), no modal. The post must embed the waitlist;
+		// scripts/check-waitlist.mjs fails the build otherwise.
 		// 'guide' = links to the AI guides (now on ironum.com), no modal. For informational
 		// posts whose reader wants to learn rather than buy.
-		ctaVariant: z.enum(['demo', 'consultation', 'guide']).default('demo'),
+		ctaVariant: z.enum(['demo', 'consultation', 'guide', 'waitlist']).default('demo'),
 		// ctaFooter: optional per-post copy for the closing CTA block. Only used with
 		// the 'demo' variant, for campaign posts whose reader needs a different promise
 		// than the site-wide blog CTA. Button still opens the demo modal.
@@ -58,15 +61,6 @@ const blog = defineCollection({
 		// about: the main entities the post is about (plain names), emitted as
 		// schema.org `about` so engines can match the page to the topic.
 		about: z.array(z.string()).optional(),
-		// sidebarCta: optional override for the sticky sidebar card. `href` is a plain
-		// link (usually an in-page anchor such as #kostenlos) and opens no modal. Used
-		// by posts with their own inline offer, e.g. the Berichtsheft waitlist.
-		sidebarCta: z.object({
-			title: z.string(),
-			sub: z.string(),
-			button: z.string(),
-			href: z.string(),
-		}).optional(),
 		faq: z.array(z.object({
 			q: z.string(),
 			a: z.string(),

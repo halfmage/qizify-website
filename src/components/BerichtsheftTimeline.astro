@@ -1,72 +1,122 @@
 ---
 // Timeline of the IHK digital Berichtsheft shutdown. Plain HTML so it stays sharp and
-// readable on phones and is indexable text. Every date here is sourced from IHK pages
-// (snapshots in docs/strategy/berichtsheft-free-tier/, retrieved 2026-11-02).
+// readable on phones and is indexable text. Dates come from src/data/berichtsheft.mjs;
+// the IHK pages behind them are listed with retrieval dates in the `sources`
+// frontmatter of /de/blog/ihk-berichtsheft-alternative.
 // Sits inside the blog `prose` container, hence `not-prose`.
 //
-// The highlighted ("current") step is derived from the build date, so the graphic
-// never tells readers to export after the deadline: until 31.12.2026 the export step
-// is current, from 01.01.2027 the "no access" step is. A rebuild in January updates it.
+// Which step is highlighted depends on today's date in Germany: until the shutdown
+// date the export window is current, afterwards the "no access" step. The server
+// renders the state for the build date, and a small script re-checks it in the
+// reader's browser, so a page built in December is still right in January.
+import {
+	IHK_SHUTDOWN_DATE,
+	IHK_NO_NEW_COMPANIES_DATE,
+	IHK_KARLSRUHE_SHUTDOWN_DATE,
+	BERICHTSHEFT_STATUS_DATE,
+} from '../data/berichtsheft.mjs';
+
 interface Props {
 	lang: 'en' | 'de';
 }
 
-type Step = { date: string; datePast?: string; head: string; text: string };
+const { lang } = Astro.props;
+if (lang !== 'de' && lang !== 'en') throw new Error(`BerichtsheftTimeline: unsupported lang "${lang}"`);
 
-const copy: Record<'de' | 'en', { label: string; title: string; steps: Step[]; note: string }> = {
-	de: {
+const fmt = (iso: string, style: 'short' | 'long') =>
+	new Date(`${iso}T12:00:00Z`).toLocaleDateString(lang === 'en' ? 'en-GB' : 'de-DE', {
+		day: style === 'short' && lang === 'de' ? '2-digit' : 'numeric',
+		month: style === 'short' ? (lang === 'de' ? '2-digit' : 'short') : 'long',
+		year: 'numeric',
+		timeZone: 'UTC',
+	});
+const dayAfter = (iso: string) => {
+	const d = new Date(`${iso}T12:00:00Z`);
+	d.setUTCDate(d.getUTCDate() + 1);
+	return d.toISOString().slice(0, 10);
+};
+
+const shutdown = fmt(IHK_SHUTDOWN_DATE, 'short');
+const firstDayAfter = fmt(dayAfter(IHK_SHUTDOWN_DATE), 'short');
+const t = lang === 'de'
+	? {
 		label: 'Zeitplan',
 		title: 'Die Abschaltung des IHK-Berichtshefts',
 		steps: [
-			{ date: '22.09.2025', head: 'Keine neuen Betriebe', text: 'Neue Betriebe werden im Serviceportal Bildung nicht mehr freigeschaltet.' },
-			{ date: 'Jetzt bis 31.12.2026', datePast: 'Bis 31.12.2026', head: 'Sichern und neu wählen', text: 'Azubis exportieren ihre Nachweise als PDF. Betrieb und Azubi vereinbaren die neue Form.' },
-			{ date: '31.12.2026', head: 'Abschaltung', text: 'Das Digitale Berichtsheft wird laut mehreren IHKs bundesweit eingestellt.' },
-			{ date: 'ab 01.01.2027', head: 'Kein Zugriff mehr', text: 'Tool und gespeicherte Daten sind nicht mehr erreichbar. Der Nachweis wird in der neuen Form weitergeführt.' },
+			{ date: fmt(IHK_NO_NEW_COMPANIES_DATE, 'short'), head: 'Keine neuen Betriebe', text: 'Neue Betriebe werden im Serviceportal Bildung nicht mehr freigeschaltet.' },
+			{ date: `Jetzt bis ${shutdown}`, datePast: `Bis ${shutdown}`, head: 'Sichern und neu wählen', text: 'Azubis exportieren ihre Nachweise als PDF. Betrieb und Azubi vereinbaren die neue Form.' },
+			{ date: shutdown, head: 'Abschaltung', text: 'Das Digitale Berichtsheft wird laut mehreren IHKs bundesweit eingestellt.' },
+			{ date: `ab ${firstDayAfter}`, head: 'Kein Zugriff mehr', text: 'Tool und gespeicherte Daten sind nicht mehr erreichbar. Der Nachweis wird in der neuen Form weitergeführt.' },
 		],
-		note: 'Ausnahme: Die IHK Karlsruhe hat ihr Online-Portal bereits zum 30.06.2026 abgeschaltet. Quellen: IHK Hannover, IHK für Rheinhessen, IHK Karlsruhe. Stand: 2. November 2026.',
-	},
-	en: {
+		note: `Ausnahme: Die IHK Karlsruhe hat ihr Online-Portal bereits zum ${fmt(IHK_KARLSRUHE_SHUTDOWN_DATE, 'short')} abgeschaltet. Quellen: IHK Hannover, IHK für Rheinhessen, IHK Karlsruhe. Stand: ${fmt(BERICHTSHEFT_STATUS_DATE, 'long')}.`,
+	}
+	: {
 		label: 'Timeline',
 		title: 'The IHK logbook shutdown',
 		steps: [
-			{ date: '22 Sep 2025', head: 'No new companies', text: 'New companies are no longer activated in the Serviceportal Bildung.' },
-			{ date: 'Now to 31 Dec 2026', datePast: 'Until 31 Dec 2026', head: 'Export and choose', text: 'Apprentices export their records as a PDF. Company and apprentice agree on the new form.' },
-			{ date: '31 Dec 2026', head: 'Shutdown', text: 'According to several IHKs, the Digitales Berichtsheft is discontinued nationwide.' },
-			{ date: 'From 1 Jan 2027', head: 'No more access', text: 'The tool and the stored data are gone. The record continues in the new form.' },
+			{ date: fmt(IHK_NO_NEW_COMPANIES_DATE, 'short'), head: 'No new companies', text: 'New companies are no longer activated in the Serviceportal Bildung.' },
+			{ date: `Now to ${shutdown}`, datePast: `Until ${shutdown}`, head: 'Export and choose', text: 'Apprentices export their records as a PDF. Company and apprentice agree on the new form.' },
+			{ date: shutdown, head: 'Shutdown', text: 'According to several IHKs, the Digitales Berichtsheft is discontinued nationwide.' },
+			{ date: `From ${firstDayAfter}`, head: 'No more access', text: 'The tool and the stored data are gone. The record continues in the new form.' },
 		],
-		note: 'Exception: IHK Karlsruhe already shut down its online portal on 30 June 2026. Sources: IHK Hannover, IHK Rheinhessen, IHK Karlsruhe. Status: 2 November 2026.',
-	},
-};
+		note: `Exception: IHK Karlsruhe already shut down its online portal on ${fmt(IHK_KARLSRUHE_SHUTDOWN_DATE, 'long')}. Sources: IHK Hannover, IHK Rheinhessen, IHK Karlsruhe. Status: ${fmt(BERICHTSHEFT_STATUS_DATE, 'long')}.`,
+	};
 
-const { lang } = Astro.props;
-const c = copy[lang];
-if (!c) throw new Error(`BerichtsheftTimeline: unsupported lang "${lang}"`);
-
-// Current step = the export window while it is open, otherwise the "no access" step.
-const today = new Date().toISOString().slice(0, 10);
-const exportOpen = today <= '2026-12-31';
-const currentIndex = exportOpen ? 1 : 3;
-const dateLabel = (s: Step, i: number) => (!exportOpen && i === 1 && s.datePast ? s.datePast : s.date);
+// Steps 1 (export window) and 3 (no access) are the only ones that can be "current".
+const EXPORT_STEP = 1;
+const AFTER_STEP = 3;
+const berlinToday = () => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Berlin' }).format(new Date());
+const exportOpen = berlinToday() <= IHK_SHUTDOWN_DATE;
+const currentIndex = exportOpen ? EXPORT_STEP : AFTER_STEP;
 ---
 
-<figure class="not-prose my-10 rounded-xl border border-border bg-surface p-6 md:p-8">
+<figure class="not-prose my-10 rounded-xl border border-border bg-surface p-6 md:p-8" data-bh-timeline data-shutdown={IHK_SHUTDOWN_DATE}>
 	<figcaption class="m-0 mb-6">
-		<span class="section-label block mb-2">{c.label}</span>
-		<span class="block text-heading-sm text-white">{c.title}</span>
+		<span class="section-label block mb-2">{t.label}</span>
+		<span class="block text-heading-sm text-white">{t.title}</span>
 	</figcaption>
 	<ol class="m-0 p-0 relative" style="list-style:none">
-		{c.steps.map((s, i) => {
-			const now = i === currentIndex;
-			return (
-				<li class="relative pl-8 pb-6 last:pb-0" style="list-style:none" aria-current={now ? 'step' : undefined}>
-					{i < c.steps.length - 1 && <span class="absolute left-[7px] top-4 bottom-0 w-px bg-border-light" aria-hidden="true"></span>}
-					<span class={`absolute left-0 top-1 h-4 w-4 rounded-full border-2 ${now ? 'border-accent bg-accent' : 'border-primary bg-surface'}`} aria-hidden="true"></span>
-					<p class={`text-xs font-mono uppercase tracking-wider m-0 mb-1 ${now ? 'text-accent' : 'text-primary'}`}>{dateLabel(s, i)}</p>
-					<p class="text-base font-semibold text-white m-0 mb-1">{s.head}</p>
-					<p class="text-sm text-muted leading-relaxed m-0">{s.text}</p>
-				</li>
-			);
-		})}
+		{t.steps.map((s, i) => (
+			<li
+				class="group relative pl-8 pb-6 last:pb-0"
+				style="list-style:none"
+				data-step={i}
+				data-current={i === currentIndex ? 'true' : undefined}
+				aria-current={i === currentIndex ? 'step' : undefined}
+			>
+				{i < t.steps.length - 1 && <span class="absolute left-[7px] top-4 bottom-0 w-px bg-border-light" aria-hidden="true"></span>}
+				<span class="absolute left-0 top-1 h-4 w-4 rounded-full border-2 border-primary bg-surface group-data-[current=true]:border-accent group-data-[current=true]:bg-accent" aria-hidden="true"></span>
+				<p
+					class="text-xs font-mono uppercase tracking-wider m-0 mb-1 text-primary group-data-[current=true]:text-accent"
+					data-date-open={s.date}
+					data-date-past={s.datePast ?? s.date}
+				>{!exportOpen && s.datePast ? s.datePast : s.date}</p>
+				<p class="text-base font-semibold text-white m-0 mb-1">{s.head}</p>
+				<p class="text-sm text-muted leading-relaxed m-0">{s.text}</p>
+			</li>
+		))}
 	</ol>
-	<p class="text-xs text-muted/80 m-0 mt-6">{c.note}</p>
+	<p class="text-xs text-muted/80 m-0 mt-6">{t.note}</p>
 </figure>
+
+<script>
+	// Re-check the current step in the reader's browser (German date), so a page
+	// that was built before the shutdown still shows the right step afterwards.
+	const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Berlin' }).format(new Date());
+	document.querySelectorAll<HTMLElement>('[data-bh-timeline]').forEach((fig) => {
+		const open = today <= (fig.dataset.shutdown ?? '');
+		const current = open ? '1' : '3';
+		fig.querySelectorAll<HTMLElement>('li[data-step]').forEach((li) => {
+			const isCurrent = li.dataset.step === current;
+			if (isCurrent) {
+				li.dataset.current = 'true';
+				li.setAttribute('aria-current', 'step');
+			} else {
+				delete li.dataset.current;
+				li.removeAttribute('aria-current');
+			}
+			const date = li.querySelector<HTMLElement>('[data-date-open]');
+			if (date) date.textContent = (open ? date.dataset.dateOpen : date.dataset.datePast) ?? date.textContent;
+		});
+	});
+</script>

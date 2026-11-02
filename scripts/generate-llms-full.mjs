@@ -119,7 +119,7 @@ function stripTrailingCommas(src) {
 }
 
 function stackedTableToMarkdown(body, file) {
-	return body.replace(/^<StackedTable\s+headers=\{(\[[\s\S]*?\])\}\s+rows=\{(\[[\s\S]*?\])\}\s*\/>/gm, (whole, h, r) => {
+	const converted = body.replace(/^<StackedTable\s+headers=\{(\[[\s\S]*?\])\}\s+rows=\{(\[[\s\S]*?\])\}\s*\/>/gm, (whole, h, r) => {
 		let headers;
 		let rows;
 		try {
@@ -132,6 +132,13 @@ function stackedTableToMarkdown(body, file) {
 		const line = (cells) => `| ${cells.map((c) => String(c).replace(/\|/g, '\\|')).join(' | ')} |`;
 		return [line(headers), line(headers.map(() => '---')), ...rows.map(line)].join('\n');
 	});
+	// Any <StackedTable> the pattern did not match (props reordered, extra props,
+	// indented inside a list) would be deleted by cleanBody's self-closing rule.
+	// Fail instead, so a table never disappears from the corpus unnoticed.
+	if (/<StackedTable\b/.test(converted)) {
+		throw new Error(`generate-llms-full: a <StackedTable> in ${file ?? 'a post'} does not match the expected form (tag at line start, headers={[...]} then rows={[...]}, no other props).`);
+	}
+	return converted;
 }
 
 function cleanBody(body, file) {

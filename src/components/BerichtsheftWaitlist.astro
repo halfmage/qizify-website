@@ -1,6 +1,7 @@
 ---
 import NetlifyForm from './NetlifyForm.astro';
-import { formInputClass } from '../utils/forms';
+import { formInputClass as inputClass } from '../utils/forms';
+import { WAITLIST_ID } from '../data/berichtsheft.mjs';
 
 // Waitlist for the free LearnSlice Berichtsheft (manual entries, no AI). The free tier
 // is not live yet (Nov 2026), so this collects early-access sign-ups and must not
@@ -8,13 +9,10 @@ import { formInputClass } from '../utils/forms';
 // blog `prose` container, hence `not-prose`. Submission goes to the Netlify form
 // "berichtsheft-waitlist" through the shared NetlifyForm shell. Like the founder
 // waitlist, the launch email needs an explicit, required consent checkbox.
+// The anchor id comes from WAITLIST_ID, which the 'waitlist' ctaVariant links to, and
+// the hidden `source` field is the page path, so neither is typed by hand in MDX.
 interface Props {
 	lang: 'en' | 'de';
-	// Which post the sign-up came from, stored as a hidden field.
-	source: string;
-	id?: string;
-	headline?: string;
-	sub?: string;
 }
 
 const copy = {
@@ -62,21 +60,22 @@ const copy = {
 	},
 };
 
-const { lang, source, id } = Astro.props;
+const { lang } = Astro.props;
 const c = copy[lang];
 // MDX call sites are not type-checked, so fail loudly on a typo'd lang.
 if (!c) throw new Error(`BerichtsheftWaitlist: unsupported lang "${lang}"`);
-const headline = Astro.props.headline ?? c.headline;
-const sub = Astro.props.sub ?? c.sub;
-const inputClass = formInputClass;
+const id = WAITLIST_ID[lang];
+// Page path without trailing slash or the .html the static build adds,
+// e.g. /de/blog/berichtsheft-digital
+const source = Astro.url.pathname.replace(/(\.html|\/)$/, '');
 const labelClass = 'flex flex-col gap-1.5 text-sm font-medium text-white/80';
 ---
 
 <aside id={id} class="not-prose my-12 scroll-mt-28 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
 	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
 	<span class="section-label block mb-3">{c.eyebrow}</span>
-	<h2 class="text-heading-sm text-white m-0 mb-3">{headline}</h2>
-	<p class="text-base leading-relaxed text-muted m-0 mb-6">{sub}</p>
+	<h2 class="text-heading-sm text-white m-0 mb-3">{c.headline}</h2>
+	<p class="text-base leading-relaxed text-muted m-0 mb-6">{c.sub}</p>
 
 	<NetlifyForm name="berichtsheft-waitlist" lang={lang} error={c.error} success={c.success} class="flex flex-col gap-4">
 		<input type="hidden" name="source" value={source} />
