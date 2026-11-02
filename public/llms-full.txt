@@ -6697,7 +6697,7 @@ Im Alltag werden beide Begriffe oft gleich verwendet. Gemeint sind aber meist zw
 
 ### Was kostet es, einen E-Learning-Kurs erstellen zu lassen?
 
-Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute Lernzeit. Ein 20-minütiger Kurs liegt damit bei etwa 15.000 bis 25.000 Euro, einfache Durchklick-Formate darunter, interaktive Simulationen deutlich darüber. Der Preis steigt vor allem mit dem Grad der Interaktivität.
+Für einen fertigen Kurs, der in Ihrem vorhandenen System läuft, gelten Content-Preise: Die Verbände BDVT und VBT empfehlen rund 1.000 Euro pro Minute Lernzeit. Einfache Durchklick-Formate liegen darunter, verzweigte Szenarien und Simulationen deutlich darüber. Eine eigene Plattform ist darin nicht enthalten, sie wird als Software separat kalkuliert.
 
 ### Wie lange dauert die Entwicklung?
 
@@ -7318,9 +7318,9 @@ Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den 
 
 ## Ausbildungsrahmenplan: kurz erklärt
 
-Der **Ausbildungsrahmenplan** legt für einen anerkannten Ausbildungsberuf fest, was ein Betrieb vermitteln muss (sachliche Gliederung) und in welchem Ausbildungsabschnitt (zeitliche Gliederung). Er ist Teil der Ausbildungsordnung, wird vom Bundesinstitut für Berufsbildung (BIBB) mit Sachverständigen aus der Praxis erarbeitet und ist nach § 5 BBiG bundesweit verbindlich. Den geltenden Plan für Ihren Beruf finden Sie in der Berufesuche des BIBB. Für die häufigsten Ausbildungsberufe haben wir ihn [unten direkt verlinkt](#ausbildungsrahmenplan-nach-beruf-direkt-zur-verordnung).
+Der **Ausbildungsrahmenplan** legt für einen anerkannten Ausbildungsberuf fest, was ein Betrieb vermitteln muss (sachliche Gliederung) und in welchem Ausbildungsabschnitt (zeitliche Gliederung). Er ist Teil der Ausbildungsordnung, wird vom Bundesinstitut für Berufsbildung (BIBB) mit Sachverständigen aus der Praxis erarbeitet und ist nach §§ 4 und 5 BBiG bundesweit verbindlich. Den geltenden Plan für Ihren Beruf finden Sie in der Berufesuche des BIBB. Für die häufigsten Ausbildungsberufe haben wir ihn [unten direkt verlinkt](#ausbildungsrahmenplan-nach-beruf-direkt-zur-verordnung).
 
-Trotzdem wird der Ausbildungsrahmenplan in der Praxis häufig mit dem **betrieblichen Ausbildungsplan** verwechselt - oder auf eine Anlage zum Vertrag reduziert, die einmal abgeheftet und dann nie wieder geöffnet wird. Beides verschenkt das Steuerungspotenzial des Dokuments. Diese Seite erklärt, was der Ausbildungsrahmenplan genau ist, wie er aufgebaut ist und wie sich aus ihm ein Plan macht, der die Ausbildung tatsächlich trägt.
+Trotz dieser klaren Rolle wird der Ausbildungsrahmenplan in der Praxis häufig mit dem **betrieblichen Ausbildungsplan** verwechselt - oder auf eine Anlage zum Vertrag reduziert, die einmal abgeheftet und dann nie wieder geöffnet wird. Beides verschenkt das Steuerungspotenzial des Dokuments. Diese Seite erklärt, was der Ausbildungsrahmenplan genau ist, wie er aufgebaut ist und wie sich aus ihm ein Plan macht, der die Ausbildung tatsächlich trägt.
 
 ## Was ist der Ausbildungsrahmenplan? Definition und rechtliche Grundlage
 
@@ -7470,27 +7470,27 @@ Die Tabelle bildet die Zuordnung ab, nicht den Lernfortschritt. Sie ist damit ge
 
 ## Ausbildungsrahmenplan nach Beruf: direkt zur Verordnung
 
-Die Tabelle führt die 15 Ausbildungsberufe mit den meisten neuen Ausbildungsverträgen auf, laut [BIBB-Rangliste 2025](https://www.bibb.de/de/211102.php) (Erhebung zum 30. September 2025). Der Link führt jeweils zur Berufsseite des BIBB, dort liegt die geltende Ausbildungsordnung mit dem Ausbildungsrahmenplan als PDF. Stand der Angaben: November 2026.
+Die Tabelle führt die 15 Ausbildungsberufe mit den meisten neuen Ausbildungsverträgen auf, laut [BIBB-Rangliste 2025](https://www.bibb.de/de/211102.php) (Erhebung zum 30. September 2025). Der Berufsname führt jeweils zur Berufsseite des BIBB, dort liegt die geltende Ausbildungsordnung mit dem Ausbildungsrahmenplan als PDF. Stand der Angaben: November 2026.
 
-| Beruf | Ausbildungsordnung | In Kraft seit | Dauer | "Digitalisierte Arbeitswelt" enthalten | Rahmenplan |
-|---|---|---|---|---|---|
-| Kraftfahrzeugmechatroniker/-in | KfzMechaAusbV | 01.08.2013 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/nh324578) |
-| Kaufmann/-frau für Büromanagement | BüroMKfAusbV | 01.08.2025 | 36 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/kfmfb25) |
-| Verkäufer/-in | VerkEHKflAusbV | 01.08.2017 | 24 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/110815) |
-| Medizinische/-r Fachangestellte/-r | MedFAngAusbV | 01.08.2006 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/n233444) |
-| Zahnmedizinische/-r Fachangestellte/-r | ZahnmedAusbV | 01.08.2022 | 36 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/zfa22) |
-| Fachinformatiker/-in (vier Fachrichtungen) | FIAusbV | 01.08.2020 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/80000) |
-| Kaufmann/-frau im Einzelhandel | VerkEHKflAusbV | 01.08.2017 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/100815) |
-| Elektroniker/-in (Handwerk) | ElekAusbV | 01.08.2021 | 42 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/xsw478) |
-| Anlagenmechaniker/-in für Sanitär-, Heizungs- und Klimatechnik | SHKAMAusbV | 01.08.2016 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/210715) |
-| Industriekaufmann/-frau | IndKflAusbV | 01.08.2024 | 36 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/indust24) |
-| Industriemechaniker/-in | IndMetAusbV | 01.08.2007, Neufassung 2018 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/658658) |
-| Bankkaufmann/-frau | BankkflAusbV | 01.08.2020 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/006989) |
-| Kaufmann/-frau für Groß- und Außenhandelsmanagement | GuAMKflAusbV | 01.08.2020 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/87930) |
-| Fachkraft für Lagerlogistik | LWLogAusbV | 01.08.2004 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/89787i6u) |
-| Mechatroniker/-in | MechatronikerAusbV | 01.08.2011, Neufassung 2018 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/868686) |
+| Beruf (Link zum BIBB) | Ausbildungsordnung, in Kraft seit | Standardpositionen 2021 |
+|---|---|---|
+| [Kraftfahrzeugmechatroniker/-in](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/nh324578) | KfzMechaAusbV, 01.08.2013 | nein |
+| [Kaufmann/-frau für Büromanagement](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/kfmfb25) | BüroMKfAusbV, 01.08.2025 | ja |
+| [Verkäufer/-in](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/110815) | VerkEHKflAusbV, 01.08.2017 | nein |
+| [Medizinische/-r Fachangestellte/-r](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/n233444) | MedFAngAusbV, 01.08.2006 | nein |
+| [Zahnmedizinische/-r Fachangestellte/-r](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/zfa22) | ZahnmedAusbV, 01.08.2022 | ja |
+| [Fachinformatiker/-in (vier Fachrichtungen)](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/80000) | FIAusbV, 01.08.2020 | nein |
+| [Kaufmann/-frau im Einzelhandel](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/100815) | VerkEHKflAusbV, 01.08.2017 | nein |
+| [Elektroniker/-in (Handwerk)](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/xsw478) | ElekAusbV, 01.08.2021 | ja |
+| [Anlagenmechaniker/-in für Sanitär-, Heizungs- und Klimatechnik](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/210715) | SHKAMAusbV, 01.08.2016 | nein |
+| [Industriekaufmann/-frau](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/indust24) | IndKflAusbV, 01.08.2024 | ja |
+| [Industriemechaniker/-in](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/658658) | IndMetAusbV, 01.08.2007, Neufassung 2018 | nein, aber eigene Digitalisierungs-Position seit 2018 |
+| [Bankkaufmann/-frau](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/006989) | BankkflAusbV, 01.08.2020 | nein |
+| [Kaufmann/-frau für Groß- und Außenhandelsmanagement](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/87930) | GuAMKflAusbV, 01.08.2020 | nein |
+| [Fachkraft für Lagerlogistik](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/89787i6u) | LWLogAusbV, 01.08.2004 | nein |
+| [Mechatroniker/-in](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/868686) | MechatronikerAusbV, 01.08.2011, Neufassung 2018 | nein, aber eigene Digitalisierungs-Position seit 2018 |
 
-Auffällig: Nur 4 der 15 häufigsten Berufe haben bereits eine Ordnung mit den seit August 2021 geltenden Standardberufsbildpositionen. Für die übrigen gilt weiter der ältere Rahmenplan, auch wenn Themen wie Datenschutz und digitale Arbeit im Betrieb längst dazugehören. Wer in einem dieser Berufe ausbildet, kann die neue Position "Digitalisierte Arbeitswelt" freiwillig in den betrieblichen Plan aufnehmen. Der Rahmenplan ist ein Mindeststandard, darüber hinausgehen ist erlaubt.
+Auffällig: Nur 4 der 15 häufigsten Berufe haben bereits eine Ordnung mit den seit August 2021 geltenden Standardberufsbildpositionen. Industriemechaniker und Mechatroniker decken das Thema seit der Teilnovellierung 2018 mit einer eigenen Position zu Digitalisierung, Datenschutz und Informationssicherheit ab. Für die übrigen gilt weiter ein Rahmenplan ohne diese Inhalte. Wer in einem dieser Berufe ausbildet, kann die neue Position "Digitalisierte Arbeitswelt" freiwillig in den betrieblichen Plan aufnehmen. Der Rahmenplan ist ein Mindeststandard, darüber hinausgehen ist erlaubt.
 
 Für die Mechatroniker-Ausbildung zeigt unser Leitfaden [Mechatroniker ausbilden](/de/blog/mechatroniker-ausbilden), wie der Rahmenplan im Betrieb konkret umgesetzt wird. Für alle anderen Berufe hilft die [Umsetzungstabelle](#umsetzungstabelle-rahmenplan-positionen-in-den-betrieblichen-plan-überführen) oben.
 
