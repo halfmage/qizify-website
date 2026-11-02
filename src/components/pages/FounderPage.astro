@@ -6,7 +6,7 @@ import Footer from '../Footer.astro';
 import Button from '../Button.astro';
 import StickyCta from '../StickyCta.astro';
 import LeadForm from '../LeadForm.astro';
-import LeadFormHandler from '../LeadFormHandler.astro';
+import NetlifyForm from '../NetlifyForm.astro';
 import { formInputClass } from '../../utils/forms';
 import { Icon } from 'astro-icon/components';
 import enContent from '../../content/en.json';
@@ -286,10 +286,7 @@ const inputClass = formInputClass;
 		<div class="max-w-xl mx-auto text-center">
 			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-3">{copy.waitlist.headline}</h2>
 			<p class="text-base text-muted leading-relaxed m-0 mb-6">{copy.waitlist.body}</p>
-			<form name="founder-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col gap-3 text-left" data-lead-form>
-				<input type="hidden" name="form-name" value="founder-waitlist" />
-				<input type="hidden" name="language" value={lang} />
-				<input type="text" name="bot-field" class="hidden" tabindex="-1" autocomplete="off" />
+			<NetlifyForm name="founder-waitlist" lang={lang} error={copy.waitlist.error} success={copy.waitlist.success} class="flex flex-col gap-3 text-left" messageSize="xs">
 				<div class="flex flex-col sm:flex-row gap-3">
 					<label class="sr-only" for={`waitlist-email-${lang}`}>{copy.waitlist.email}</label>
 					<input id={`waitlist-email-${lang}`} type="email" name="email" autocomplete="email" required placeholder={copy.waitlist.email} class={`${inputClass} !rounded-full !px-5 !py-3`} />
@@ -299,13 +296,9 @@ const inputClass = formInputClass;
 					<input type="checkbox" name="consent" required class="mt-0.5 w-4 h-4 shrink-0 cursor-pointer accent-primary" />
 					<span>{copy.waitlist.consent} <a href={privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{copy.waitlist.privacy}</a></span>
 				</label>
-				<p class="hidden p-3 rounded-lg text-xs bg-red-500/10 border border-red-500/20 text-red-300 m-0" data-form-error role="alert">{copy.waitlist.error}</p>
-				<p class="hidden p-3 rounded-lg text-xs bg-green-500/10 border border-green-500/20 text-green-300 m-0" data-form-success role="status">{copy.waitlist.success}</p>
-			</form>
+			</NetlifyForm>
 			<p class="text-xs text-white/50 m-0 mt-8">{copy.disclaimer}</p>
 		</div>
-		<!-- Submits the waitlist inline; does not rely on LeadForm being on the page -->
-		<LeadFormHandler />
 	</section>
 
 	<Footer currentLang={lang} privacyLabel={content.footer.privacyLabel} termsLabel={content.footer.termsLabel} demoHref="#pilot" />

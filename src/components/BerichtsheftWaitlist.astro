@@ -1,0 +1,120 @@
+---
+import NetlifyForm from './NetlifyForm.astro';
+import { formInputClass } from '../utils/forms';
+
+// Waitlist for the free LearnSlice Berichtsheft (manual entries, no AI). The free tier
+// is not live yet (Nov 2026), so this collects early-access sign-ups and must not
+// read as if the product can be used today. Embedded in MDX posts; sits inside the
+// blog `prose` container, hence `not-prose`. Submission goes to the Netlify form
+// "berichtsheft-waitlist" through the shared NetlifyForm shell. Like the founder
+// waitlist, the launch email needs an explicit, required consent checkbox.
+interface Props {
+	lang: 'en' | 'de';
+	// Which post the sign-up came from, stored as a hidden field.
+	source: string;
+	id?: string;
+	headline?: string;
+	sub?: string;
+}
+
+const copy = {
+	de: {
+		eyebrow: 'Kostenlose Version',
+		headline: 'Das LearnSlice-Berichtsheft, kostenlos für Ausbildungsbetriebe',
+		sub: 'Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben frei oder schicken zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Die kostenlose Version startet in Kürze. Tragen Sie sich ein, dann melden wir uns zum Start.',
+		email: 'Geschäftliche E-Mail',
+		company: 'Ausbildungsbetrieb',
+		apprentices: 'Anzahl Azubis',
+		chamber: 'Zuständige Kammer',
+		current: 'Berichtsheft heute',
+		choose: 'Bitte wählen',
+		apprenticeOptions: ['1–3', '4–10', '11–50', 'mehr als 50'],
+		chamberOptions: ['IHK', 'HWK', 'Andere'],
+		currentOptions: ['Digitales Berichtsheft der IHK', 'Papier oder Word', 'Andere Software', 'Noch offen'],
+		consent: 'Ich möchte per E-Mail informiert werden, sobald die kostenlose Version des LearnSlice-Berichtshefts startet. Abmeldung jederzeit möglich.',
+		purpose: 'Die freiwilligen Angaben zu Azubis, Kammer und Berichtsheft nutzen wir zusammengefasst, um die kostenlose Version zu planen.',
+		privacy: 'Datenschutzerklärung',
+		submit: 'Auf die Warteliste',
+		success: 'Danke, Sie stehen auf der Liste. Wir melden uns, sobald die kostenlose Version startet.',
+		error: 'Das hat nicht geklappt. Bitte versuchen Sie es noch einmal oder schreiben Sie an info@learnslice.com.',
+		privacyHref: '/de/privacy',
+	},
+	en: {
+		eyebrow: 'Free version',
+		headline: 'The LearnSlice Training Logbook, Free for Training Companies',
+		sub: 'Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. The free version launches soon. Join the list and we will let you know when it starts.',
+		email: 'Work email',
+		company: 'Training company',
+		apprentices: 'Number of apprentices',
+		chamber: 'Competent chamber',
+		current: 'Logbook today',
+		choose: 'Please choose',
+		apprenticeOptions: ['1–3', '4–10', '11–50', 'more than 50'],
+		chamberOptions: ['IHK', 'HWK', 'Other'],
+		currentOptions: ['IHK digital logbook', 'Paper or Word', 'Other software', 'Not decided'],
+		consent: 'I want to be informed by email when the free version of the LearnSlice training logbook launches. Unsubscribe at any time.',
+		purpose: 'We use the optional details on apprentices, chamber and logbook in aggregated form to plan the free version.',
+		privacy: 'Privacy Policy',
+		submit: 'Join the waitlist',
+		success: 'Thank you, you are on the list. We will let you know when the free version launches.',
+		error: 'That did not work. Please try again or write to info@learnslice.com.',
+		privacyHref: '/privacy',
+	},
+};
+
+const { lang, source, id } = Astro.props;
+const c = copy[lang];
+// MDX call sites are not type-checked, so fail loudly on a typo'd lang.
+if (!c) throw new Error(`BerichtsheftWaitlist: unsupported lang "${lang}"`);
+const headline = Astro.props.headline ?? c.headline;
+const sub = Astro.props.sub ?? c.sub;
+const inputClass = formInputClass;
+const labelClass = 'flex flex-col gap-1.5 text-sm font-medium text-white/80';
+---
+
+<aside id={id} class="not-prose my-12 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
+	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
+	<span class="section-label block mb-3">{c.eyebrow}</span>
+	<h2 class="text-heading-sm text-white m-0 mb-3">{headline}</h2>
+	<p class="text-base leading-relaxed text-muted m-0 mb-6">{sub}</p>
+
+	<NetlifyForm name="berichtsheft-waitlist" lang={lang} error={c.error} success={c.success} class="flex flex-col gap-4">
+		<input type="hidden" name="source" value={source} />
+		<div class="grid sm:grid-cols-2 gap-4">
+			<label class={labelClass}>{c.email}
+				<input type="email" name="email" autocomplete="email" required class={inputClass} />
+			</label>
+			<label class={labelClass}>{c.company}
+				<input type="text" name="company" autocomplete="organization" required class={inputClass} />
+			</label>
+		</div>
+		<div class="grid sm:grid-cols-3 gap-4">
+			<label class={labelClass}>{c.apprentices}
+				<select name="apprentices" class={inputClass}>
+					<option value="" selected>{c.choose}</option>
+					{c.apprenticeOptions.map((o) => <option value={o}>{o}</option>)}
+				</select>
+			</label>
+			<label class={labelClass}>{c.chamber}
+				<select name="chamber" class={inputClass}>
+					<option value="" selected>{c.choose}</option>
+					{c.chamberOptions.map((o) => <option value={o}>{o}</option>)}
+				</select>
+			</label>
+			<label class={labelClass}>{c.current}
+				<select name="current-logbook" class={inputClass}>
+					<option value="" selected>{c.choose}</option>
+					{c.currentOptions.map((o) => <option value={o}>{o}</option>)}
+				</select>
+			</label>
+		</div>
+		<label class="flex items-start gap-2.5 cursor-pointer text-xs text-muted leading-relaxed">
+			<input type="checkbox" name="consent" required class="mt-0.5 w-4 h-4 shrink-0 cursor-pointer accent-primary" />
+			<span>{c.consent} <a href={c.privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{c.privacy}</a></span>
+		</label>
+		<p class="text-xs text-muted/80 leading-relaxed m-0">{c.purpose} <a href={c.privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{c.privacy}</a></p>
+		<Fragment slot="footer">
+			<button type="submit" class="self-start bg-primary text-white border-none rounded-full px-6 py-3 text-base font-medium cursor-pointer hover:bg-[#6a4ae0] transition-colors font-sans disabled:opacity-50">{c.submit}</button>
+		</Fragment>
+	</NetlifyForm>
+</aside>

@@ -7,6 +7,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { isTeamAuthor, TEAM_AUTHOR_CORPUS_LABEL } from '../src/utils/authors.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BLOG_DIR = join(ROOT, 'src/content/blog');
@@ -89,8 +90,52 @@ function parseFrontmatter(text) {
 	return { fm, body: match[2] };
 }
 
-function cleanBody(body) {
-	return body
+// <StackedTable headers={[...]} rows={[...]} /> carries real table data in its props.
+// Turn it into a Markdown table so the corpus keeps it (the generic self-closing
+// rule in cleanBody would otherwise drop the whole table).
+
+// Remove trailing commas before ] or } outside of string literals only, so a cell
+// whose text happens to contain ", ]" is left untouched.
+function stripTrailingCommas(src) {
+	let out = '';
+	let inString = false;
+	for (let i = 0; i < src.length; i++) {
+		const ch = src[i];
+		if (inString) {
+			out += ch;
+			if (ch === '\\') { out += src[++i] ?? ''; continue; }
+			if (ch === '"') inString = false;
+			continue;
+		}
+		if (ch === '"') { inString = true; out += ch; continue; }
+		if (ch === ',') {
+			let j = i + 1;
+			while (j < src.length && /\s/.test(src[j])) j++;
+			if (src[j] === ']' || src[j] === '}') continue;
+		}
+		out += ch;
+	}
+	return out;
+}
+
+function stackedTableToMarkdown(body, file) {
+	return body.replace(/^<StackedTable\s+headers=\{(\[[\s\S]*?\])\}\s+rows=\{(\[[\s\S]*?\])\}\s*\/>/gm, (whole, h, r) => {
+		let headers;
+		let rows;
+		try {
+			headers = JSON.parse(stripTrailingCommas(h));
+			rows = JSON.parse(stripTrailingCommas(r));
+		} catch (err) {
+			// Fail the build instead of letting cleanBody silently strip the table.
+			throw new Error(`generate-llms-full: could not parse <StackedTable> in ${file ?? 'a post'} (${err.message}). Use double-quoted JSON strings in headers/rows.`);
+		}
+		const line = (cells) => `| ${cells.map((c) => String(c).replace(/\|/g, '\\|')).join(' | ')} |`;
+		return [line(headers), line(headers.map(() => '---')), ...rows.map(line)].join('\n');
+	});
+}
+
+function cleanBody(body, file) {
+	return stackedTableToMarkdown(body, file)
 		.replace(/^import\s+.*?from\s+['"][^'"]+['"];?\s*$/gm, '')
 		// A self-closing component (<InlineCta lang="en" />) carries no prose, so the
 		// tag is pure noise in the corpus. Paired components like <CopyBlock> are left
@@ -403,7 +448,9 @@ for (const file of files) {
 		url,
 		keyTakeaways: Array.isArray(fm.keyTakeaways) ? fm.keyTakeaways : [],
 		faq: Array.isArray(fm.faq) ? fm.faq : [],
-		body: cleanBody(body),
+		sources: Array.isArray(fm.sources) ? fm.sources.filter((x) => x && x.url) : [],
+		author: fm.author || '',
+		body: cleanBody(body, file),
 	});
 }
 
@@ -427,6 +474,7 @@ const sections = posts.map((p) => {
 		`Language: ${p.lang}`,
 		p.publishDate && `Published: ${p.publishDate}`,
 		p.updatedDate && `Updated: ${p.updatedDate}`,
+		p.author && `Author: ${isTeamAuthor(p.author) ? TEAM_AUTHOR_CORPUS_LABEL : p.author}`,
 	].filter(Boolean).join('\n');
 
 	const takeawaysHeading = p.lang === 'en' ? 'Key Takeaways' : 'Auf einen Blick';
@@ -440,6 +488,11 @@ const sections = posts.map((p) => {
 		? `## ${faqHeading}\n\n${p.faq.map(({ q, a }) => `### ${q}\n\n${a}`).join('\n\n')}\n\n`
 		: '';
 
+	const sourcesHeading = p.lang === 'en' ? 'Sources' : 'Quellen';
+	const sourcesBlock = p.sources.length > 0
+		? `## ${sourcesHeading}\n\n${p.sources.map((x) => `- ${x.name}: ${x.url}${x.retrieved ? ` (${p.lang === 'en' ? 'checked' : 'geprüft am'} ${x.retrieved})` : ''}`).join('\n')}\n\n`
+		: '';
+
 	return `# ${p.title}
 
 ${meta}
@@ -448,7 +501,7 @@ ${p.description}
 
 ${takeawaysBlock}${p.body}
 
-${faqBlock}---
+${faqBlock}${sourcesBlock}---
 `;
 }).join('\n');
 

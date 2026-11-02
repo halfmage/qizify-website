@@ -50,6 +50,7 @@ How projects run: discovery and scoping, design and curriculum alignment, build 
 - Automated assessments: quizzes, case studies, deep dives
 - Executive analytics dashboards for training managers
 - Gamification with points, badges, and leaderboards
+- Digital Berichtsheft (Ausbildungsnachweis): apprentices write and submit entries themselves, trainers approve them or return them for revision, PDF export. A free version for training companies is planned (waitlist on the Berichtsheft guides)
 - GDPR-compliant, hosted in Germany
 
 ## LearnSlice Platform: Results
@@ -93,6 +94,9 @@ Each profession ships with its full IHK framework curriculum (Ausbildungsrahmenp
 
 ## Key Guides
 
+- Digitales Berichtsheft, rules under § 13 BBiG, template and checklist: https://learnslice.com/de/blog/berichtsheft-digital
+- Digital training logbook (Berichtsheft) in Germany, rules, template and checklist: https://learnslice.com/blog/digital-training-logbook
+- IHK Berichtsheft Alternative, what applies after the IHK tool ends on 31.12.2026, with an overview of export rules and deadlines from 14 IHKs (checked 2 November 2026), export steps and a checklist: https://learnslice.com/de/blog/ihk-berichtsheft-alternative
 - Learning platform for training providers, digitising your own courses: https://learnslice.com/blog/learning-platform-training-providers
 - Lernplattform für Bildungsträger, eigene Kurse digitalisieren: https://learnslice.com/de/blog/lernplattform-bildungstraeger
 - Custom e-learning development, cost and process: https://learnslice.com/blog/custom-e-learning-development-costs

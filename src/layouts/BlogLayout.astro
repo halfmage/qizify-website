@@ -9,6 +9,7 @@ import DemoRequestModal from '../components/DemoRequestModal.astro';
 import ConsultationModal from '../components/ConsultationModal.astro';
 import enContent from '../content/en.json';
 import deContent from '../content/de.json';
+import { isTeamAuthor } from '../utils/authors.mjs';
 
 interface Props {
 	title: string;
@@ -23,12 +24,14 @@ interface Props {
 	ogImage?: string;
 	keyTakeaways?: string[];
 	faq?: { q: string; a: string }[];
+	sources?: { name: string; url: string; retrieved?: string }[];
+	about?: string[];
 	ctaVariant?: 'demo' | 'consultation' | 'guide';
 	ctaFooter?: { label?: string; headline: string; subheadline: string; button: string };
 	heroImage?: string;
 }
 
-const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, ctaVariant = 'demo', ctaFooter, heroImage } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, sources, about, ctaVariant = 'demo', ctaFooter, heroImage } = Astro.props;
 
 // Byline role. Defaults to the content-team title the existing named posts were
 // written under, so those are unchanged; anyone else sets authorRole explicitly.
@@ -176,7 +179,7 @@ const blogPostingSchema = {
 	// Google and Bing read dateModified as the freshness signal; fall back to the publish date.
 	dateModified: (updatedDate ?? publishDate).toISOString(),
 	inLanguage: lang === 'de' ? 'de-DE' : 'en-US',
-	author: author === 'LearnSlice Team'
+	author: isTeamAuthor(author)
 		? {
 			'@type': 'Organization',
 			name: 'LearnSlice',
@@ -209,7 +212,23 @@ const blogPostingSchema = {
 		'@type': 'WebPage',
 		'@id': `https://learnslice.com${currentPath}`,
 	},
+	...(about && about.length > 0 ? { about: about.map((name) => ({ '@type': 'Thing', name })) } : {}),
+	...(sources && sources.length > 0 ? {
+		citation: sources.map((s) => ({ '@type': 'CreativeWork', name: s.name, url: s.url })),
+	} : {}),
 };
+const sourcesHeading = lang === 'en' ? 'Sources' : 'Quellen';
+const retrievedLabel = lang === 'en' ? 'checked' : 'geprüft am';
+// `retrieved` is validated as YYYY-MM-DD in content/config.ts. Parsed as UTC noon so
+// the day cannot shift with the build machine's time zone; written out in words in
+// English ("2 November 2026"), since 02/11/2026 reads as 11 February to US readers.
+const formatRetrieved = (d: string) =>
+	new Date(`${d}T12:00:00Z`).toLocaleDateString(lang === 'en' ? 'en-US' : 'de-DE', {
+		year: 'numeric',
+		month: lang === 'en' ? 'long' : '2-digit',
+		day: lang === 'en' ? 'numeric' : '2-digit',
+		timeZone: 'UTC',
+	});
 ---
 
 <BaseLayout
@@ -302,6 +321,18 @@ const blogPostingSchema = {
 			">
 				<slot />
 			</div>
+		{sources && sources.length > 0 && (
+			<section class="mt-12 pt-8 border-t border-border" aria-labelledby="sources-heading">
+				<h2 id="sources-heading" class="text-heading-sm text-white m-0 mb-4">{sourcesHeading}</h2>
+				<ol class="m-0 pl-5 space-y-2 text-sm text-muted list-decimal">
+					{sources.map((s) => (
+						<li>
+							<a href={s.url} target="_blank" rel="noopener" class="text-primary hover:underline break-words">{s.name}</a>{s.retrieved && <span>, {retrievedLabel} {formatRetrieved(s.retrieved)}</span>}
+						</li>
+					))}
+				</ol>
+			</section>
+		)}
 		<!-- Author bio -->
 			<div class="mt-16 pt-8 border-t border-border">
 				<p class="text-xs font-mono uppercase tracking-widest text-muted mb-3">
@@ -313,7 +344,7 @@ const blogPostingSchema = {
 					</div>
 					<div>
 						<p class="text-white font-semibold text-sm m-0">{author}</p>
-						{author !== 'LearnSlice Team' && (
+						{!isTeamAuthor(author) && (
 							<p class="text-muted text-xs m-0">
 								{`${bylineRole}, LearnSlice`}
 							</p>

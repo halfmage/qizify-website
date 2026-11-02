@@ -1,0 +1,38 @@
+---
+import LeadFormHandler from './LeadFormHandler.astro';
+
+// Shared shell for every Netlify lead form on the site: form-name and language hidden
+// fields, the honeypot, the inline error/success messages and the fetch handler
+// (LeadFormHandler posts every form[data-lead-form] and toggles the two messages).
+// Callers put their own fields, consent checkbox and submit button in the default slot.
+// Put extra hidden inputs in the slot as well. A custom success message (e.g. with a
+// link) goes in the "success" slot; otherwise `success` is shown as plain text.
+interface Props {
+	// Netlify form name; must stay stable, Netlify groups submissions by it.
+	name: string;
+	lang: 'en' | 'de';
+	error: string;
+	success?: string;
+	class?: string;
+	// Text size of the error/success boxes, to match the surrounding form.
+	messageSize?: 'xs' | 'sm';
+}
+
+const { name, lang, error, success, class: className = 'flex flex-col gap-5', messageSize = 'sm' } = Astro.props;
+const errorSize = 'text-xs';
+const successSize = messageSize === 'xs' ? 'text-xs' : 'text-sm';
+---
+
+<form name={name} method="POST" data-netlify="true" netlify-honeypot="bot-field" class={className} data-lead-form>
+	<input type="hidden" name="form-name" value={name} />
+	<input type="hidden" name="language" value={lang} />
+	<input type="text" name="bot-field" class="hidden" tabindex="-1" autocomplete="off" />
+	<slot />
+	<p class={`hidden p-3 rounded-lg ${errorSize} bg-red-500/10 border border-red-500/20 text-red-300 m-0`} data-form-error role="alert">{error}</p>
+	<p class={`hidden p-3 rounded-lg ${successSize} bg-green-500/10 border border-green-500/20 text-green-300 m-0`} data-form-success role="status">
+		<slot name="success">{success}</slot>
+	</p>
+	<slot name="footer" />
+</form>
+
+<LeadFormHandler />

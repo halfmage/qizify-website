@@ -1,0 +1,72 @@
+---
+// Timeline of the IHK digital Berichtsheft shutdown. Plain HTML so it stays sharp and
+// readable on phones and is indexable text. Every date here is sourced from IHK pages
+// (snapshots in docs/strategy/berichtsheft-free-tier/, retrieved 2026-11-02).
+// Sits inside the blog `prose` container, hence `not-prose`.
+//
+// The highlighted ("current") step is derived from the build date, so the graphic
+// never tells readers to export after the deadline: until 31.12.2026 the export step
+// is current, from 01.01.2027 the "no access" step is. A rebuild in January updates it.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+type Step = { date: string; datePast?: string; head: string; text: string };
+
+const copy: Record<'de' | 'en', { label: string; title: string; steps: Step[]; note: string }> = {
+	de: {
+		label: 'Zeitplan',
+		title: 'Die Abschaltung des IHK-Berichtshefts',
+		steps: [
+			{ date: '22.09.2025', head: 'Keine neuen Betriebe', text: 'Neue Betriebe werden im Serviceportal Bildung nicht mehr freigeschaltet.' },
+			{ date: 'Jetzt bis 31.12.2026', datePast: 'Bis 31.12.2026', head: 'Sichern und neu wählen', text: 'Azubis exportieren ihre Nachweise als PDF. Betrieb und Azubi vereinbaren die neue Form.' },
+			{ date: '31.12.2026', head: 'Abschaltung', text: 'Das Digitale Berichtsheft wird laut mehreren IHKs bundesweit eingestellt.' },
+			{ date: 'ab 01.01.2027', head: 'Kein Zugriff mehr', text: 'Tool und gespeicherte Daten sind nicht mehr erreichbar. Der Nachweis wird in der neuen Form weitergeführt.' },
+		],
+		note: 'Ausnahme: Die IHK Karlsruhe hat ihr Online-Portal bereits zum 30.06.2026 abgeschaltet. Quellen: IHK Hannover, IHK für Rheinhessen, IHK Karlsruhe. Stand: 2. November 2026.',
+	},
+	en: {
+		label: 'Timeline',
+		title: 'The IHK logbook shutdown',
+		steps: [
+			{ date: '22 Sep 2025', head: 'No new companies', text: 'New companies are no longer activated in the Serviceportal Bildung.' },
+			{ date: 'Now to 31 Dec 2026', datePast: 'Until 31 Dec 2026', head: 'Export and choose', text: 'Apprentices export their records as a PDF. Company and apprentice agree on the new form.' },
+			{ date: '31 Dec 2026', head: 'Shutdown', text: 'According to several IHKs, the Digitales Berichtsheft is discontinued nationwide.' },
+			{ date: 'From 1 Jan 2027', head: 'No more access', text: 'The tool and the stored data are gone. The record continues in the new form.' },
+		],
+		note: 'Exception: IHK Karlsruhe already shut down its online portal on 30 June 2026. Sources: IHK Hannover, IHK Rheinhessen, IHK Karlsruhe. Status: 2 November 2026.',
+	},
+};
+
+const { lang } = Astro.props;
+const c = copy[lang];
+if (!c) throw new Error(`BerichtsheftTimeline: unsupported lang "${lang}"`);
+
+// Current step = the export window while it is open, otherwise the "no access" step.
+const today = new Date().toISOString().slice(0, 10);
+const exportOpen = today <= '2026-12-31';
+const currentIndex = exportOpen ? 1 : 3;
+const dateLabel = (s: Step, i: number) => (!exportOpen && i === 1 && s.datePast ? s.datePast : s.date);
+---
+
+<figure class="not-prose my-10 rounded-xl border border-border bg-surface p-6 md:p-8">
+	<figcaption class="m-0 mb-6">
+		<span class="section-label block mb-2">{c.label}</span>
+		<span class="block text-heading-sm text-white">{c.title}</span>
+	</figcaption>
+	<ol class="m-0 p-0 relative" style="list-style:none">
+		{c.steps.map((s, i) => {
+			const now = i === currentIndex;
+			return (
+				<li class="relative pl-8 pb-6 last:pb-0" style="list-style:none" aria-current={now ? 'step' : undefined}>
+					{i < c.steps.length - 1 && <span class="absolute left-[7px] top-4 bottom-0 w-px bg-border-light" aria-hidden="true"></span>}
+					<span class={`absolute left-0 top-1 h-4 w-4 rounded-full border-2 ${now ? 'border-accent bg-accent' : 'border-primary bg-surface'}`} aria-hidden="true"></span>
+					<p class={`text-xs font-mono uppercase tracking-wider m-0 mb-1 ${now ? 'text-accent' : 'text-primary'}`}>{dateLabel(s, i)}</p>
+					<p class="text-base font-semibold text-white m-0 mb-1">{s.head}</p>
+					<p class="text-sm text-muted leading-relaxed m-0">{s.text}</p>
+				</li>
+			);
+		})}
+	</ol>
+	<p class="text-xs text-muted/80 m-0 mt-6">{c.note}</p>
+</figure>

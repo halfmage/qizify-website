@@ -73,6 +73,8 @@ export const DE_ONLY = new Set([
 	'/de/verteidigungsindustrie',
 	// Finanzführerschein guide (search demand is DACH-only, mostly Austria), no English counterpart.
 	'/de/blog/finanzfuehrerschein',
+	// Shutdown of the IHK digital Berichtsheft (31.12.2026), German-only search demand.
+	'/de/blog/ihk-berichtsheft-alternative',
 ]);
 
 const DE_TO_EN = Object.fromEntries(

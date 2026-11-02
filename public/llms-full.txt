@@ -913,6 +913,7 @@ Der Finanz-Begleiter gibt allgemeine Informationen und ersetzt keine Anlage-, Ve
 Source: https://learnslice.com/blog/training-mechatronics-apprentices
 Language: en
 Published: 2026-10-20
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 What year one of a mechatronics apprenticeship demands, how little classroom time apprentices get, and what the research says about AI tutors.
 
@@ -932,11 +933,25 @@ Below you will find what year one demands, how much instruction time apprentices
 
 Each country organises mechatronics apprenticeships differently, but in all three, most of the learning happens at work. Here are the three systems side by side.
 
+| Country | Length | Instruction outside the job | Source |
+| --- | --- | --- | --- |
+| Germany (Mechatroniker) | 3.5 years | About 1,020 lesson hours of technical learning fields at vocational school | KMK framework curriculum and training regulation |
+| United States (Mechatronics Technician) | 8,000-hour training term (time-based) | 144 hours of related instruction per year recommended, 576 in the 4-year competency-based framework | 29 CFR 29.5, DOL Bulletin 2013-07, apprenticeship.gov framework |
+| England (Mechatronics maintenance technician) | 42 months typical, Level 3 | Minimum of 744 off-the-job training hours | Skills England standard ST1326 |
+
 The definitions differ, so treat these as rough sizes rather than a ranking. Still, in every system an apprentice spends most of their time at work, and that is where most theory questions come up.
 
 ## What year one of a mechatronics apprenticeship demands
 
 Germany's curriculum is public and spells out, year by year, what a mechatronics apprentice has to learn, which makes it a useful reference wherever you train. The [KMK framework curriculum](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) packs five learning fields and 320 lesson hours into year one, more than any later year.
+
+| Learning field (hours) | What the curriculum requires | How to check it on the shop floor |
+| --- | --- | --- |
+| 1: Analysing functional relationships (40) | Reading block diagrams, tracing signal, material and energy flows, documenting results | Can the apprentice explain one of your machines from its block diagram? |
+| 2: Making mechanical subsystems (80) | Engineering drawings, fits and tolerances, machining, joining, measuring and measurement error | Can they read a drawing and explain why a fit is toleranced the way it is? |
+| 3: Installing electrical equipment safely (100) | Electrical quantities and calculations, DC and AC circuits, protective measures, testing to standard | Can they calculate current and power on a real circuit, then measure it? |
+| 4: Energy and information flows (60) | Basic control circuits, pneumatic and hydraulic quantities and calculations, circuit diagrams | Can they read a pneumatic diagram and predict what happens when a valve switches? |
+| 5: Working with IT systems (40) | Operating systems, networks, data protection and security, access rights, documentation | Do they know which systems they may access at work, and why? |
 
 The curriculum teaches maths and technical English inside the learning fields, not as separate ones, and it builds on the lowest German school-leaving certificate. And English appears in all five fields, from vocabulary to product manuals. An apprentice who struggles with either struggles a little everywhere.
 
@@ -947,6 +962,13 @@ Early gaps also cost later. German mechatronics apprentices sit Part 1 of their
 ## What the research says about AI tutors
 
 In a study of IT apprentices, researchers at Germany's Federal Institute for Vocational Education and Training (BIBB) found generative AI already firmly part of their working day. The question is what it does to learning. There is no randomised study of AI tutors in apprenticeship training yet, as far as we could find. There are four studies close enough to learn from.
+
+| Study | Setting | What happened | Lesson for apprentice training |
+| --- | --- | --- | --- |
+| BIBB experiment, Germany (Datenreport 2026, C3.3) | 27 second-year IT apprentices, with and without ChatGPT | The ChatGPT group solved more tasks, faster, with less frustration, but understood code no better and on some tasks worse. Many copied AI code unchecked. | Speed is not understanding |
+| Bastani et al., PNAS 2025 | Nearly 1,000 high school maths students in Turkey, randomised by class | Plain ChatGPT: 48% better in practice, 17% worse on the later exam without AI. Hint-only tutor: 127% better in practice, no harm on the exam, but no gain either. | An answer machine can hurt; guardrails remove the harm |
+| Kestin et al., Scientific Reports 2025 | 194 students in a Harvard physics course, AI tutor at home vs active-learning class | Median learning gains more than double those of the in-class group, in less time (median 49 minutes with the tutor vs a 60-minute lesson). | A carefully designed tutor can teach well |
+| Brynjolfsson et al., QJE 2025 | 5,172 customer support agents, AI assistant rolled out over time | Productivity up 15% on average and about 30% for less experienced agents. Agents with two months on the job performed like untreated agents with over six. | Novices gain most, and the gains stuck when the AI was down |
 
 None of these is an apprenticeship study, and each has limits: 27 apprentices, one school, two physics lessons, one company. Still, they all point in the same direction. **The result depends less on whether learners use AI than on what the AI is built to do.**
 
@@ -1035,6 +1057,7 @@ After a study with IT apprentices, researchers at Germany's Federal Institute fo
 Source: https://learnslice.com/blog/prevent-apprenticeship-dropout
 Language: en
 Published: 2026-10-13
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Apprenticeship dropout starts early: two thirds of early terminations in Germany happen in year one. A month-by-month plan with warning signs for trainers.
 
@@ -1109,6 +1132,16 @@ Sorted by where a company can act, the reasons fall into three groups:
 The table shows the typical situation, the warning sign and what you do for each period. In Germany, probation lasts one to four months depending on the contract ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html), the Vocational Training Act). Adjust the rows to your contract.
 
 <picture><source media="(max-width: 640px)" srcset="/images/blog/abbruch-erstes-jahr-mobile.svg" /><img src="/images/blog/abbruch-erstes-jahr.svg" alt="Timeline of the first apprenticeship year: monthly contact before the start, 34.7 percent of early terminations during probation, 32.9 percent in the rest of the first year, conversations in weeks 2, 6 and 12, then every three months" /></picture>
+
+| Period | Typical situation | Warning sign | What you do |
+| --- | --- | --- | --- |
+| Between contract and start | Months without contact, the apprentice only hears from friends what an apprenticeship is "really" like | No reply to invitations, doubts in conversation | Get in touch once a month, explain the training plan and the first day, meet the rest of the intake |
+| Weeks 1 to 2 | New surroundings, many names, rules, protective equipment | Often stands alone, asks nothing | Assign a buddy from the second year, first conversation in week 2 |
+| Months 1 to 2 | First vocational school blocks, theory meets workshop | Unsure about basics such as Ohm's law, training log (Berichtsheft, the record apprentices must keep) stays empty | Ask which topic school is covering right now, look at the training log weekly |
+| Months 3 to 4 | Probation ends, the decision "do I stay?" is often made here | More days absent, vague answers, suddenly no more questions | Probation review with specific questions, feedback in both directions |
+| Months 5 to 6 | First vocational school grades, first routine | Poor grades are kept quiet, withdrawal from the team | Talk about grades openly, targeted help instead of pressure, organise learning support if needed |
+| Months 7 to 9 | Routine instead of novelty, motivation drops | Little progress in the learning plan, conflicts with colleagues, complaints about hours | Give tasks with a visible result, mediate conflicts early, check working hours |
+| Months 10 to 12 | First year ends, taking stock | Apprentice talks about other trades or university | Annual review: what went well, what should change, what comes in the second year |
 
 **Between contract and start.** There are often several months between signing and the first day. During that time, the company is just a name on paper for the future apprentice. A message or a photo of the future workplace costs you five minutes. What belongs in the first eight weeks is in our [apprentice onboarding checklist](/blog/apprentice-onboarding).
 
@@ -1215,6 +1248,7 @@ The first point of contact is the training advisers (Ausbildungsberater) at your
 Source: https://learnslice.com/blog/apprenticeships-defence-industry-germany
 Language: en
 Published: 2026-10-01
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Which trades Germany's defence industry trains, how many apprenticeship contracts end early and why the first year decides. 8 trades, official BIBB data.
 
@@ -1408,6 +1442,7 @@ From the metal and electrical trades, ready today are Mechatroniker (mechatronic
 Source: https://learnslice.com/blog/ai-tutor-for-existing-lms
 Language: en
 Published: 2026-09-10
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Your LMS has AI built in and learners still ignore it. Here is what it is actually designed to do, what a real tutor adds, and how to connect one without migrating.
 
@@ -1623,6 +1658,7 @@ There is no honest single number, because the work is driven by your content rat
 Source: https://learnslice.com/blog/learning-platform-training-providers
 Language: en
 Published: 2026-08-31
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 How training providers digitise their own course offering instead of renting ready-made content: the five building blocks, what it costs and how a project runs.
 
@@ -1843,6 +1879,7 @@ Source: https://learnslice.com/blog/custom-ai-open-source-models
 Language: en
 Published: 2026-07-30
 Updated: 2026-10-12
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Run custom AI on open models like gpt-oss, Qwen or Kimi K2 in the EU: GPU servers from about 900 euros a month, safe licenses, and when an API is cheaper.
 
@@ -2029,6 +2066,7 @@ That is the point of building on an open model. With a genuine custom build on o
 Source: https://learnslice.com/blog/custom-ai-tutor-development
 Language: en
 Published: 2026-07-21
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Custom AI tutor development: build, buy, or license white-label, what grounding and adaptivity really cost, and how to vet an AI tutor provider.
 
@@ -2205,6 +2243,7 @@ Source: https://learnslice.com/blog/custom-e-learning-development-costs
 Language: en
 Published: 2026-07-01
 Updated: 2026-10-04
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Custom e-learning development in 2026: price benchmarks per module, platform, and AI tutor, how a project runs, and how to choose a vendor.
 
@@ -2438,6 +2477,7 @@ In most cases yes, because this is where the value over off-the-shelf software l
 Source: https://learnslice.com/blog/does-ai-learning-help-apprentices
 Language: en
 Published: 2026-06-12
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Does an AI learning platform really help apprentices? What a university pilot found, and why it matters for dual students sitting the IHK exam.
 
@@ -2587,6 +2627,7 @@ Source: https://learnslice.com/blog/ai-learning-platform-apprentices
 Language: en
 Published: 2026-06-05
 Updated: 2026-07-01
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Criteria for choosing a digital apprenticeship platform: the 8-point selection checklist, what trainers should look for, and how to test it risk-free.
 
@@ -2696,6 +2737,7 @@ Source: https://learnslice.com/blog/apprenticeship-framework-plan-explained
 Language: en
 Published: 2026-05-26
 Updated: 2026-10-04
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 What the Ausbildungsrahmenplan regulates, how it is structured, and how to turn it into a company-specific plan. With a conversion table as a Word download.
 
@@ -2943,6 +2985,7 @@ Source: https://learnslice.com/blog/gdpr-compliant-ai-tools-for-trainers
 Language: en
 Published: 2026-05-26
 Updated: 2026-07-01
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Which AI tools are trainers allowed to use? The 7-point check for 2026: DPA, EU hosting, training-data opt-out. Plus 3 costly pitfalls from real practice.
 
@@ -3090,6 +3133,7 @@ The short answer: ask for the data processing agreement, the list of sub-process
 Source: https://learnslice.com/blog/save-time-mentoring-apprentices
 Language: en
 Published: 2026-05-16
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Practical ways for trainers, team leads, and managers to mentor apprentices in less time without losing quality. Grounded in § 14 BBiG and the AEVO.
 
@@ -3250,6 +3294,7 @@ Source: https://learnslice.com/blog/apprenticeship-plan-template-free
 Language: en
 Published: 2026-04-19
 Updated: 2026-10-04
+Author: Daniel
 
 Free apprenticeship plan template aligned with § 14 BBiG: Word download, copy-paste sample, trainer checklist, and when to graduate to a dynamic, AI-powered plan.
 
@@ -3483,6 +3528,7 @@ The plan is the planning layer; the training logbook (Berichtsheft under § 13 s
 Source: https://learnslice.com/blog/private-ai-employee-onboarding
 Language: en
 Published: 2026-04-15
+Author: Daniel
 
 ChatGPT leaks your onboarding playbooks. A private AI coach trained on company data cuts new-hire ramp time and keeps sensitive data inside your firewall.
 
@@ -3631,6 +3677,7 @@ Source: https://learnslice.com/blog/digitize-apprenticeship-training
 Language: en
 Published: 2026-04-01
 Updated: 2026-05-13
+Author: Daniel
 
 Step-by-step guide to digitizing vocational training in your company - from learning platforms and AI coaching to digital exam preparation and reporting.
 
@@ -3754,6 +3801,7 @@ Source: https://learnslice.com/blog/ihk-exam-tips
 Language: en
 Published: 2026-03-28
 Updated: 2026-05-13
+Author: Daniel
 
 Help your apprentices pass their IHK exam with these 10 proven strategies - from study plans and digital tools to time management on exam day.
 
@@ -3881,6 +3929,7 @@ Source: https://learnslice.com/blog/reduce-trainer-workload
 Language: en
 Published: 2026-03-25
 Updated: 2026-10-01
+Author: Daniel
 
 Overburdened trainers cost productivity and training quality. Seven practical strategies to reduce supervision effort in apprenticeship programs.
 
@@ -3997,6 +4046,7 @@ Source: https://learnslice.com/blog/apprentice-onboarding
 Language: en
 Published: 2026-03-22
 Updated: 2026-10-01
+Author: Daniel
 
 A week-by-week checklist for onboarding new apprentices, with current BIBB data on early contract cancellations and training costs.
 
@@ -4129,6 +4179,7 @@ Source: https://learnslice.com/blog/ai-in-vocational-training
 Language: en
 Published: 2026-03-21
 Updated: 2026-05-13
+Author: Daniel
 
 How AI-powered learning platforms are transforming vocational training in Germany: personalized learning paths, automated exam prep and 24/7 coaching.
 
@@ -4251,40 +4302,53 @@ AI in vocational training is no longer a future scenario: it is reality. Compani
 
 ---
 
-# Digital Training Logbook: Template and Checklist
+# Digital Training Logbook (Berichtsheft): Template, Checklist
 
 Source: https://learnslice.com/blog/digital-training-logbook
 Language: en
 Published: 2026-03-19
-Updated: 2026-09-09
+Updated: 2026-11-02
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Digital training logbook (Berichtsheft) in Germany: legal requirements, benefits over paper, and the switch. With an entry template and selection checklist to copy.
+Digital training logbook in Germany: what § 13 BBiG and the BIBB recommendation require, and what applies after the IHK tool ends in 2026. With template.
 
-![Apprentice writing notes at a desk with a laptop and training materials](/images/blog/pexels-mikhail-nilov-9242810.webp)
+## Key Takeaways
 
-## What Is a Training Logbook (Berichtsheft)?
+- A digital training logbook (Berichtsheft) is allowed for all German training contracts from 1 October 2017. The form, written or electronic, is stated in the training contract (§ 13 sentence 2 no. 7 and § 11 (1) sentence 2 no. 12 BBiG).
+- Without a presented training record there is no admission to the final examination (§ 43 (1) no. 2 BBiG).
+- The BIBB recommendation of 1 September 2020 calls for daily or weekly entries, about one A4 page per week. Trainers review at least monthly, and for digital records an electronic confirmation is enough.
+- The logbook is always free for apprentices; the company provides the template or software (§ 14 (1) no. 3 BBiG).
+- According to several IHK chambers, the IHK's Digitales Berichtsheft in the Serviceportal Bildung ends nationwide on 31 December 2026. Apprentices must export their records before then.
 
-The training logbook - known as the Berichtsheft in German - is a mandatory record of an apprentice's training activities. Every apprentice in Germany must maintain one throughout their apprenticeship. It documents what was learned, when, and how, serving as both a learning tool and a legal requirement for [IHK](https://www.ihk.de) exam admission.
+![Apprentices working on digital documentation at a laptop](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
-For decades, this meant paper forms: handwritten entries, physical signatures, and folders that got lost, damaged, or forgotten. Today, digital training logbooks offer a faster, more reliable, and legally compliant alternative. But switching from paper to digital requires understanding the legal framework, choosing the right tool, and implementing it properly.
+**A digital training logbook is the electronic version of the training record (Ausbildungsnachweis, Berichtsheft) that apprentices in Germany keep under § 13 BBiG.** Apprentices note daily or weekly what they did in the company and at vocational school. The trainer reviews the entries and approves them digitally. Digital records are allowed for all training contracts from 1 October 2017. Without a complete record, there is no admission to the final examination.
 
-## Legal Requirements: What the Law Says
+## What Does § 13 BBiG Require From the Logbook?
 
-### [BBiG](https://www.gesetze-im-internet.de/bbig_2005/) Section 13 - The Apprentice's Obligation
+The Vocational Training Act (BBiG) obliges apprentices to keep **a written or electronic training record** ([§ 13 sentence 2 no. 7 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). The electronic form applies to all contracts from 1 October 2017 ([§ 103 (3) BBiG](https://www.gesetze-im-internet.de/bbig_2005/__103.html)). Which form applies is set in the training contract ([§ 11 (1) sentence 2 no. 12 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__11.html)). The company must encourage apprentices to keep the record, review it regularly, and let them write it at the workplace ([§ 14 (2) BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
 
-Under the German Vocational Training Act (Berufsbildungsgesetz, BBiG), Section 13, apprentices are required to maintain a written record of their training. This training logbook must be kept regularly and presented to the trainer for review. Importantly, the law does not prescribe a specific format - paper or digital are both legally valid.
+The details are set out in the [BIBB Board recommendation](https://www.bibb.de/dokumente/pdf/HA156.pdf) of 1 September 2020. It is not a legal norm, but the chambers are asked to adopt it:
 
-### IHK Exam Admission
+- **Rhythm:** daily or weekly, in note form, about one A4 page per week, kept by the apprentices themselves
+- **Required details:** name, training year, and reporting period on every daily or weekly sheet
+- **Content:** workplace activities, instruction and in-company teaching, and vocational school topics, ideally with time spent
+- **Approval:** trainers review at least monthly and confirm accuracy and completeness, for digital records also electronically
+- **Minors:** a legal guardian takes note at appropriate intervals and confirms this
 
-The IHK (Chamber of Industry and Commerce) requires a properly maintained training logbook as a prerequisite for exam admission. If the logbook is incomplete or missing, the apprentice may be denied access to their final exam. This makes consistent documentation not just a bureaucratic task but a career-critical one.
+*Note: This article is not legal advice. Your competent chamber gives binding information.*
 
-### Digital Signatures and Approval
+## What Happens to the IHK Digital Logbook?
 
-Since 2020, the legal framework explicitly permits digital training logbooks. Digital signatures from both the apprentice and the trainer are accepted by all IHK chambers, provided the system ensures authenticity and traceability. There is no requirement for handwritten signatures when a proper digital solution is used.
+The IHK's Digitales Berichtsheft in the Serviceportal Bildung will be **discontinued nationwide on 31 December 2026**, according to several IHKs ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). After that there is no access to the stored records ([IHK Rheinhessen](https://www.ihk.de/rheinhessen/aus-und-weiterbildung/ausbildungsvertraege-und-berichtshefte/berichtsheft-faq-7047286)), and export is no longer possible ([IHK Limburg](https://www.ihk.de/limburg/bildung/ausbildung/serviceportal-bildung-digitales-berichtsheft-4968660)). Apprentices should therefore export their records in time and save them locally ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). Companies that used the IHK tool need a new solution.
+
+Of 14 IHKs whose pages we reviewed on 2 November 2026, 13 name 31 December 2026 as the last day. IHK Karlsruhe names 30 June 2026 for its online portal. An overview per IHK, export steps, and a checklist for the switch are in our German article [IHK Berichtsheft Alternative](/de/blog/ihk-berichtsheft-alternative).
+
+**Before the end of 2026:** approve open entries, have every affected apprentice export their records as a PDF, keep a copy in the company, and start the new logbook with the week after the last exported entry.
 
 ## Training Logbook Template to Copy
 
-The structure below meets the requirements of § 13 BBiG and drops into any word processor, wiki, or logbook tool. Create one copy per reporting period.
+This structure covers the minimum details of the BIBB recommendation and drops into any word processor, wiki, or logbook tool. Create one copy per week.
 
 <CopyBlock buttonLabel="Copy template" copiedLabel="Copied!">
 
@@ -4332,62 +4396,24 @@ The structure below meets the requirements of § 13 BBiG and drops into any word
 
 </CopyBlock>
 
-## Why Switch From Paper to Digital?
+## What Are the Options for a Digital Training Logbook?
 
-Companies that still use paper-based training logbooks face a set of persistent problems:
+There are four routes: a Word or PDF template, an industry app, a standalone logbook app, or a learning platform with a logbook. They differ mainly in how much manual work reminders, approval, and export still take.
 
-- **Lost or damaged records** - Paper gets misplaced, coffee-stained, or left at home on the day it is needed
-- **Inconsistent entries** - Without structured prompts, entries vary wildly in quality and detail
-- **Delayed reviews** - Trainers must physically collect, read, and sign logbooks - a process that often falls behind
-- **No analytics** - Paper provides zero visibility into patterns, gaps, or progress trends
-- **Storage and retrieval** - Physical archives are space-consuming and hard to search
+| Route | What it is | Good for | Limit |
+| --- | --- | --- | --- |
+| Word or PDF template | The BIBB samples or your own template, shared by email or folder | few apprentices, no budget | reminders and approvals are manual |
+| Industry app | Apps from trade associations, for example in the skilled trades | companies whose industry offers one | only for some occupations |
+| Standalone logbook app | Software only for the training record | many apprentices, a clear approval process | learning and exam prep stay separate |
+| Learning platform with logbook | Record, learning progress, and exam prep in one place | companies that want more than documentation | more setup effort |
 
-Digital logbooks solve all of these issues while adding capabilities that paper simply cannot offer.
+**Start for free:** The [BIBB recommendation](https://www.bibb.de/dokumente/pdf/HA156.pdf) includes samples for daily and weekly records, including versions linked to the framework training plan. It also names industry apps, for example for the bakery, roofing, hairdressing, and metal trades, landscaping, and automotive occupations. Ask your chamber first which formats it accepts.
 
-## Paper vs. Digital Training Logbook
+**The logbook is always free for apprentices.** Record books, forms, and IT programs are provided by the company ([§ 14 (1) no. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)). Apprentices do not need to buy anything. The company tells them which form applies.
 
-| Criterion | Paper Logbook | Digital Logbook |
-|---|---|---|
-| Availability | Only where the physical copy is | Accessible from any device, anywhere |
-| Entry quality | Unstructured, inconsistent | Guided templates ensure completeness |
-| Trainer review | Must collect and sign physically | Review and approve with one click |
-| Signature process | Handwritten, often delayed | Digital signature, instant |
-| Search and retrieval | Manual, time-consuming | Full-text search in seconds |
-| Loss or damage risk | High (paper degrades, gets lost) | Low (cloud-backed, always available) |
-| Analytics and insights | None | Progress tracking, gap detection |
-| IHK compliance | Accepted | Accepted (since 2020 explicitly) |
-| Integration with learning tools | Not possible | Syncs with learning platforms |
-| Environmental impact | Paper, printing, storage | Paperless |
+## Checklist: Is the Digital Solution Ready?
 
-## Features to Look for in a Digital Training Logbook
-
-Not every digital logbook tool is equally useful. When evaluating options, prioritize these features:
-
-### Structured Entry Templates
-
-The tool should provide templates that guide apprentices through their entries: what they did, what they learned, which IHK topic area it relates to, and any open questions. This ensures consistent quality without requiring the trainer to correct every entry.
-
-### Trainer Review and Approval Workflow
-
-Trainers need the ability to review entries, leave comments, and approve with a digital signature - all within the platform. Look for notification features that alert trainers when entries are pending review, so nothing falls through the cracks.
-
-### IHK-Aligned Structure
-
-The logbook should map entries to the IHK framework plan for the relevant profession, with content modeled on IHK topic areas and format. This makes it easy to verify that all required training areas are being covered over the course of the apprenticeship.
-
-### Mobile Access
-
-Apprentices should be able to make entries from their phone or tablet - especially useful for those in practical rotations, workshops, or field assignments where a desktop computer is not available.
-
-### Export and Archiving
-
-When exam time comes, the system must be able to generate a complete, formatted export of the training logbook suitable for IHK submission. PDF export is the standard, but check that the format meets your local IHK chamber's requirements.
-
-![Young apprentice operating a CNC machine in a technical workshop](/images/blog/pexels-mikhail-nilov-9242206.webp)
-
-## Checklist: Is the Digital Solution Actually Ready?
-
-The criteria from the previous section as a list to work through before you commit to a tool.
+A tool should meet these points before you roll it out. Especially after the IHK shutdown: every record must be fully exportable at any time.
 
 <CopyBlock buttonLabel="Copy checklist" copiedLabel="Copied!">
 
@@ -4395,110 +4421,112 @@ The criteria from the previous section as a list to work through before you comm
 
 **Legal minimum (§ 13 BBiG)**
 
-- [ ] The training company agrees to electronic record keeping (explicitly permitted since the 2020 BBiG amendment)
+- [ ] The electronic form is recorded in the training contract (§ 11 (1) sentence 2 no. 12 BBiG)
 - [ ] The competent chamber accepts the digital format
-- [ ] Entries are created promptly, as a rule weekly
+- [ ] Entries are written daily or weekly, trainers review at least monthly
 - [ ] Workplace activities, instruction, and vocational school can be documented separately
-- [ ] Trainers can review and sign off entries regularly
 - [ ] The complete record is available in time for exam registration
 
-**Functionality**
+**Functions**
 
 - [ ] Templates match the requirements of the competent chamber
-- [ ] Occupational fields and departments are preconfigured
 - [ ] Automatic reminders for entries that are due
-- [ ] Digital approval with no switch back to paper
-- [ ] PDF export in a chamber-compliant format
-- [ ] Audit-proof archiving through to the final examination
+- [ ] Digital approval and return for revision
+- [ ] PDF export of single entries and whole periods
+- [ ] Records are kept until the final examination
 
 **Data protection and operations**
 
 - [ ] Hosting in the EU
 - [ ] A data processing agreement is in place
-- [ ] The role model separates apprentice, trainer, and administration
-- [ ] Your own data can be exported if you change provider
-
+- [ ] Roles separate apprentice, trainer, and administration
+- [ ] Data export if you change provider
 
 </CopyBlock>
 
-## Integrating the Training Logbook With Your Learning Platform
+## Can Apprentices Write the Logbook With AI?
 
-The real power of a digital training logbook emerges when it connects to a broader digital training ecosystem. Here is what that integration looks like in practice:
+Only as help with wording their own notes, not as a replacement. Two rules set the frame.
 
-**Automatic learning documentation** - When an apprentice completes modules on a digital learning platform, those activities can automatically populate the training logbook. This reduces manual entry effort and ensures completeness.
+1. **Kept by the apprentice, confirmed by the trainer.** Under the BIBB recommendation, apprentices keep the record themselves. A text an AI invents without their own notes does not meet that.
+2. **Trade secrets stay in the company.** Apprentices must keep business secrets confidential ([§ 13 sentence 2 no. 6 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Customer names, prices, or internal processes do not belong in a public chatbot.
 
-**IHK progress mapping** - A connected system can track which IHK topic areas have been covered in both practical work and digital learning, making it easy to identify gaps months before the exam. For more on digital exam preparation, see our [guide to digital IHK exam prep](/blog/ihk-exam-preparation-digital).
+Decide in the company whether and which AI tools are allowed. Our [checklist for GDPR-compliant AI tools](/blog/gdpr-compliant-ai-tools-for-trainers) shows what to look for.
 
-**Trainer dashboard** - Instead of reviewing logbooks one by one, trainers see a dashboard showing all apprentices, their documentation status, and any entries awaiting approval. This is part of the broader strategy to [reduce trainer workload](/blog/reduce-trainer-workload) through digitization.
+## Connecting the Logbook to a Learning Platform
 
-**Knowledge connection** - Logbook entries can link to relevant resources in the company knowledge base or learning platform, creating a web of connected learning rather than isolated documentation.
+A digital logbook adds the most value where apprentices also learn. The trainer then sees the record and the learning progress in one place. LearnSlice, a learning platform for apprenticeships based in Düsseldorf, combines both.
 
-## Implementation: A Step-by-Step Guide
+![Entry form in the LearnSlice logbook (German interface) with fields for workplace activities, vocational school topics, total hours, department, curriculum link, and a confirmation that the apprentice wrote the entry](/images/blog/learnslice-berichtsheft-felder.webp)
 
-### Step 1: Choose a Compliant Tool
+This is an entry in LearnSlice (German interface). Workplace activities, vocational school topics, hours, and department are fixed fields. The **curriculum link** shows which learning-plan topics were covered in the period. Before submitting, the apprentice confirms they wrote the entry themselves. The trainer sets the rhythm, for example weekly.
 
-Select a digital logbook solution that meets IHK requirements, simplifies GDPR compliance through EU-based data hosting, and integrates with your existing training infrastructure. Avoid generic note-taking apps - they lack the structure, approval workflows, and export capabilities you need.
+Gaps become visible before they become a problem, well before the [IHK exam](/blog/ihk-exam-preparation-digital).
 
-### Step 2: Get Trainer Buy-In
+## How Do You Switch to a Digital Logbook?
 
-Trainers are the gatekeepers of logbook quality. Involve them early in the selection process, demonstrate how the digital tool saves them time, and provide training on the review and approval workflow. The shift from paper to digital should feel like a relief, not an additional burden.
+In five steps:
 
-### Step 3: Onboard Apprentices
+1. **Check the training contract.** Is the electronic form agreed? If not, ask your chamber how to record the change.
+2. **Start with a pilot group.** A few apprentices and trainers test first, then everyone follows.
+3. **Brief everyone.** One hour is enough to show how to write, review, and approve entries.
+4. **Set fixed rules.** For example: entries by Friday noon, approval by Monday.
+5. **Ask for feedback after four to six weeks.** What works, what does not? Adjust the process.
 
-Introduce the digital logbook during the first week of [apprentice onboarding](/blog/apprentice-onboarding). Walk through the entry process, show examples of good entries, and set clear expectations for frequency and quality. Make it part of the standard onboarding checklist.
-
-### Step 4: Establish a Review Rhythm
-
-Define how often trainers review entries - weekly is the most common cadence. Set up notifications so reviews do not pile up. The faster the feedback loop, the better the entry quality becomes over time.
-
-### Step 5: Monitor and Optimize
-
-Use the analytics features to identify patterns. Are certain apprentices consistently late with entries? Are some IHK topic areas underdocumented? Use this data to adjust the training plan and provide targeted support.
-
-## The Financial Case for Going Digital
-
-The direct costs of paper logbooks are small - paper, printing, storage. But the indirect costs are substantial. Trainer time spent collecting, reviewing, and chasing incomplete logbooks adds up to **2-4 hours per week** across a typical cohort. At €45/hour, that is **€4,680 to €9,360 per year** in trainer time alone.
-
-Digital logbooks can cut review time by an estimated 50-70%, while improving documentation quality and ensuring IHK compliance. Set against the broader cost of apprenticeship training, about **€26,200 per apprentice per year** according to the [BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php), every efficiency gain matters. Our [savings calculator](/apprenticeship-savings-calculator) shows what less trainer time and fewer early contract cancellations could be worth for your company.
-
-Curious about your specific savings potential? Try our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator).
-
-## Common Concerns Addressed
-
-**"Will the IHK accept a digital logbook?"** - Yes. All IHK chambers accept digital training logbooks. The legal basis has been clear since the 2020 amendment, and digital submissions are increasingly preferred.
-
-**"What about data privacy?"** - Choose a solution with EU-based data hosting that simplifies GDPR compliance. Apprentice data should be encrypted, access-controlled, and deletable upon request.
-
-**"Our trainers are not tech-savvy."** - Modern digital logbook tools are designed to be simpler than paper. If a trainer can use email, they can approve a logbook entry. The learning curve is measured in minutes, not days.
-
-**Ready to replace paper logbooks with a smarter solution?** [Book a free demo of LearnSlice](/companies) to see how digital training logbooks integrate with AI-powered learning paths, automated IHK exam prep, and trainer analytics. Start saving time from day one, and [calculate your potential savings](/apprenticeship-savings-calculator) to see the full financial impact.
+A digital logbook saves paper, but above all it saves catch-up work before exam registration. Choose a solution that follows the BIBB recommendation, exports completely, and that your trainers will actually use.
 
 
 ## Frequently Asked Questions
 
 ### Is a digital training logbook legally valid in Germany?
 
-Yes. Section 13 of the Vocational Training Act does not prescribe a specific format, and since 2020 the legal framework explicitly permits digital training logbooks. All IHK chambers accept them. The content requirements are identical to paper; only the implementation differs.
+Yes. Under § 13 sentence 2 no. 7 BBiG, apprentices keep a written or electronic training record. This applies to all training contracts concluded from 1 October 2017. The form that applies is stated in the training contract (§ 11 (1) sentence 2 no. 12 BBiG). The content requirements are the same on paper and digitally.
 
 ### How often does the training logbook have to be filled in?
 
-Entries have to be created promptly, as a rule weekly. This is where paper most often fails: apprentices catch up weeks or months at a time and entries end up missing. Automatic reminders for entries that are due are the single biggest practical advantage of going digital.
+Daily or weekly, as recommended by the BIBB Board, at about one A4 page per week. The trainer reviews the entries at least monthly. Writing several weeks at once makes it easy to miss entries. Automatic reminders help.
+
+### What happens to the IHK digital Berichtsheft?
+
+Several IHK chambers state that the Digitales Berichtsheft in the Serviceportal Bildung will be discontinued nationwide on 31 December 2026. From 1 January 2027 there is no access to the tool or the stored records, and no export either. Apprentices have to export their records before then. If training continues, the company and the apprentice agree on a new form.
 
 ### What happens if the training logbook is incomplete?
 
-A properly maintained logbook is a prerequisite for admission to the final examination. If it is missing or has gaps, the apprentice can be denied access to the exam. The complete record therefore has to be available in time for exam registration.
+Presenting the training record is a condition for admission to the final examination under § 43 (1) no. 2 BBiG, and under § 36 (1) no. 2 HwO in the skilled trades. Whether and how gaps can be filled is decided case by case by the competent chamber. Plan so the record is complete by exam registration at the latest.
 
 ### Does a digital training logbook need a handwritten signature?
 
-No. Digital sign-off by both the apprentice and the trainer is accepted by all IHK chambers, provided the system ensures authenticity and traceability. What matters is that trainers review and approve entries regularly, not the form the signature takes.
+No. According to the BIBB Board recommendation, confirmation of electronic records can also be documented electronically, for example by an electronic approval or confirming emails with a simple electronic signature. What matters is that trainers review and confirm entries regularly, not the form of the signature.
 
-### What should a digital solution be able to do?
+### Where is it decided whether the logbook is kept digitally?
 
-Templates that match the requirements of the competent chamber, automatic reminders for entries that are due, digital approval with no switch back to paper, a clean PDF export in a chamber-compliant format, and audit-proof archiving through to the final examination. On data protection, look for EU hosting and a role model that separates apprentice, trainer, and administration.
+In the training contract. § 11 (1) sentence 2 no. 12 BBiG requires the form of the training record to be stated there. For existing contracts, check the agreed form before switching. Your competent chamber can tell you how a change has to be documented.
 
-### Who has to agree to keeping the record digitally?
+### Is a digital training logbook free for apprentices?
 
-The training company. It is best to record electronic record keeping in the training contract before you switch. For existing contracts, check the agreed form of the training record first.
+Yes. Training companies provide training materials free of charge (§ 14 (1) no. 3 BBiG). The BIBB recommendation explicitly names record books, forms, and IT programs.
+
+### Is the training logbook graded in the exam?
+
+No. According to the BIBB Board recommendation, the training record is not graded in intermediate or final examinations. If the training regulation or the chamber requires it, it must be brought to the oral examination and shown to the examination board.
+
+### Can apprentices write the logbook with AI?
+
+According to the BIBB recommendation, apprentices keep the record themselves, and the trainer confirms that it is correct and complete. AI can help sort one's own notes, but the content must reflect the work actually done, and trade secrets do not belong in public chatbots. If in doubt, agree the rules with the trainer and the chamber.
+
+## Sources
+
+- BIBB Board recommendation on keeping training records, 1 September 2020 (BAnz AT 02.10.2020 S1): https://www.bibb.de/dokumente/pdf/HA156.pdf (checked 2026-11-02)
+- Gesetze im Internet: § 11 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__11.html (checked 2026-11-02)
+- Gesetze im Internet: § 13 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__13.html (checked 2026-11-02)
+- Gesetze im Internet: § 14 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__14.html (checked 2026-11-02)
+- Gesetze im Internet: § 43 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__43.html (checked 2026-11-02)
+- Gesetze im Internet: § 103 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__103.html (checked 2026-11-02)
+- Gesetze im Internet: § 36 HwO: https://www.gesetze-im-internet.de/hwo/__36.html (checked 2026-11-02)
+- IHK Hannover: Digitales Berichtsheft (German): https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974 (checked 2026-11-02)
+- IHK Rheinhessen: Digitales Berichtsheft (German): https://www.ihk.de/rheinhessen/aus-und-weiterbildung/ausbildungsvertraege-und-berichtshefte/berichtsheft-faq-7047286 (checked 2026-11-02)
+- IHK Limburg: Digitales Berichtsheft (German): https://www.ihk.de/limburg/bildung/ausbildung/serviceportal-bildung-digitales-berichtsheft-4968660 (checked 2026-11-02)
+- IHK Karlsruhe: Digitales Berichtsheft (German): https://www.ihk.de/karlsruhe/fachthemen/ausbildung/ihk-online-portal/ihk-berichtsheft-info-fuer-auszubildende-4491810 (checked 2026-11-02)
 
 ---
 
@@ -4508,6 +4536,7 @@ Source: https://learnslice.com/blog/reduce-training-costs
 Language: en
 Published: 2026-03-18
 Updated: 2026-10-01
+Author: Daniel
 
 Five strategies for German companies to cut apprenticeship costs, with current BIBB cost figures and a worked example: learning platforms, digital onboarding and IHK exam prep.
 
@@ -4624,6 +4653,7 @@ Source: https://learnslice.com/blog/ai-tools-vocational-training
 Language: en
 Published: 2026-03-15
 Updated: 2026-05-13
+Author: Daniel
 
 What AI tools are available for apprenticeship training? From chatbots and learning platforms to exam generators - an overview for training managers.
 
@@ -4797,6 +4827,7 @@ Source: https://learnslice.com/blog/ihk-exam-preparation-digital
 Language: en
 Published: 2026-03-14
 Updated: 2026-09-09
+Author: Daniel
 
 Preparing for an IHK (Chamber of Commerce) exam? Compare prep courses at 500 to 2,000 euros with digital practice, plus a 6-month study plan and checklist.
 
@@ -4996,11 +5027,213 @@ Commercial occupations such as office management clerk, IT occupations such as I
 
 ---
 
+# IHK Berichtsheft Alternative: Was nach dem 31.12.2026 gilt
+
+Source: https://learnslice.com/de/blog/ihk-berichtsheft-alternative
+Language: de
+Published: 2026-11-02
+Updated: 2026-11-02
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
+
+Das digitale Berichtsheft der IHK endet laut mehreren IHKs am 31.12.2026. Was Betriebe jetzt tun müssen, welche Alternativen es gibt, mit Checkliste.
+
+## Auf einen Blick
+
+- Das Digitale Berichtsheft im Serviceportal Bildung wird laut mehreren IHKs zum 31. Dezember 2026 bundesweit eingestellt. Ab dem 1. Januar 2027 ist kein Zugriff mehr auf das Tool und die gespeicherten Daten möglich. Ausnahme: Die IHK Karlsruhe hat ihr Online-Portal bereits zum 30. Juni 2026 abgeschaltet.
+- Nach der Abschaltung ist auch kein Export mehr möglich. Azubis müssen ihre Nachweise vorher selbst exportieren und sichern.
+- Von 14 IHKs, deren Seiten LearnSlice am 2. November 2026 ausgewertet hat, nennen 13 den 31. Dezember 2026 als letzten Tag, die IHK Karlsruhe für ihr Online-Portal den 30. Juni 2026. 10 schreiben ausdrücklich, dass danach kein Zugriff oder kein Export mehr möglich ist.
+- Die Pflicht zum Ausbildungsnachweis bleibt. Er ist weiterhin Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG).
+- Für laufende Ausbildungen vereinbaren Betrieb und Azubi eine neue Form, zum Beispiel Papier, Word oder eine digitale Lösung.
+- Wer neu wählt, sollte auf den Datenexport achten. Die Abschaltung zeigt, warum: Ohne Export ist der Nachweis weg.
+
+![Ausbilder und Auszubildender gemeinsam am Laptop in der Werkstatt](/images/blog/pexels-pavel-danilyuk-7658312.webp)
+
+Das Digitale Berichtsheft der IHK wird laut mehreren IHKs zum **31. Dezember 2026 bundesweit eingestellt**. Ab dem 1. Januar 2027 kommen weder Azubis noch Ausbilder an die gespeicherten Nachweise. Die Pflicht zum Berichtsheft bleibt: Ohne vollständigen Nachweis gibt es keine Zulassung zur Abschlussprüfung.
+
+Hier lesen Sie, was Betriebe bis Jahresende erledigen müssen und welche Alternativen es gibt.
+
+*Stand: 2. November 2026. Alle Angaben zur Abschaltung stammen von den Websites der jeweiligen IHK. Maßgeblich ist immer Ihre zuständige Kammer.*
+
+## Wann wird das IHK-Berichtsheft abgeschaltet?
+
+Laut mehreren IHKs am 31. Dezember 2026. Im Bezirk der IHK Karlsruhe endete das Online-Portal bereits am 30. Juni 2026 ([IHK Karlsruhe](https://www.ihk.de/karlsruhe/fachthemen/ausbildung/ihk-online-portal/ihk-berichtsheft-info-fuer-auszubildende-4491810)). Die wichtigsten Punkte von den IHK-Seiten:
+
+- **Termin:** "Das Digitale Berichtsheft im Serviceportal Bildung wird bundesweit zum 31. Dezember 2026 eingestellt" ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974), ebenso [IHK Nordschwarzwald](https://www.ihk.de/nordschwarzwald/aus-und-weiterbildung/ausbildung/ausbildung-digital/serviceportal-bildung-berichtsheft/service-digitales-berichtsheft-wird-eingestellt-6821804)).
+- **Danach kein Zugriff:** Ab dem 1. Januar 2027 ist kein Zugriff mehr auf das digitale Berichtsheft und die darin gespeicherten Daten möglich ([IHK für Rheinhessen](https://www.ihk.de/rheinhessen/aus-und-weiterbildung/ausbildungsvertraege-und-berichtshefte/berichtsheft-faq-7047286)).
+- **Keine neuen Betriebe:** Neue Betriebe werden seit dem 22. September 2025 nicht mehr freigeschaltet ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)).
+- **Export nur bis Jahresende:** "Beachten Sie zusätzlich, dass ein Export nach dem 31.12.2026 nicht mehr möglich sein wird" ([IHK Limburg](https://www.ihk.de/limburg/bildung/ausbildung/serviceportal-bildung-digitales-berichtsheft-4968660)).
+- **Azubis exportieren:** Die Auszubildenden sollen ihre Berichtshefte rechtzeitig exportieren und lokal abspeichern ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)).
+- **Pflicht bleibt:** "Ausbildungsnachweise sind weiterhin Voraussetzung für die Zulassung zu Prüfungen" ([IHK für Rheinhessen](https://www.ihk.de/rheinhessen/aus-und-weiterbildung/ausbildungsvertraege-und-berichtshefte/berichtsheft-faq-7047286)).
+
+Eine bestimmte Nachfolgelösung schreibt das Gesetz nicht vor. Die IHK Hannover etwa spricht aus rechtlichen Gründen keine Empfehlung für einen Anbieter aus. Sie lässt Papier und digitale Lösungen anderer Anbieter zu, sofern sie der BIBB-Empfehlung entsprechen ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)).
+
+## Wie regeln die IHKs Export und Abschaltung?
+
+Wir haben am 2. November 2026 die Seiten von 14 IHKs zur Abschaltung ausgewertet. **13 nennen den 31. Dezember 2026 als letzten Tag. Die IHK Karlsruhe nennt für ihr Online-Portal den 30. Juni 2026. 10 der 14 IHKs schreiben ausdrücklich, dass danach kein Zugriff oder kein Export mehr möglich ist.** 9 nennen ausdrücklich die Azubis als diejenigen, die den Export erledigen. Laut IHK Region Stuttgart können nur Azubis exportieren.
+
+| IHK | Nutzbar bis | Export | Danach |
+| --- | --- | --- | --- |
+| Hannover | 31.12.2026 | Azubis exportieren rechtzeitig und speichern lokal | ab 01.01.2027 kein Zugriff, neue Betriebe seit 22.09.2025 nicht mehr freigeschaltet |
+| Rheinhessen | einschließlich 31.12.2026 | Azubis laden alle Nachweise herunter und sichern sie dauerhaft | ab 01.01.2027 kein Zugriff auf Tool und Daten |
+| Region Stuttgart | 31.12.2026 | nur Azubis, PDF mit allen Einträgen | nach dem 31.12.2026 weder Export noch Nutzung |
+| Nordschwarzwald | 31.12.2026 | Azubis exportieren und speichern lokal | keine Empfehlung für einen Anbieter |
+| Braunschweig | 31.12.2026 | Azubis exportieren und speichern lokal, Leitfaden als PDF | Vorlagen für halbdigitale oder handschriftliche Führung |
+| Aschaffenburg | 31.12.2026 | Azubis exportieren und speichern lokal | keine Empfehlung für einen Anbieter |
+| Oldenburgische IHK | 31.12.2026 | Betriebe sollen ihre Azubis zum Export auffordern | kein Zugriff, Support endet, neue Berichtsheftvariante vereinbaren |
+| Limburg | 31.12.2026 | exportieren und lokal speichern, Anleitung als PDF | Export nach dem 31.12.2026 nicht mehr möglich |
+| Hanau-Gelnhausen-Schlüchtern | 31.12.2026 | exportieren und lokal speichern, Anleitung als PDF | Export danach nicht mehr möglich, Anmeldung jetzt über Meine IHK Digital |
+| Frankfurt am Main | 31.12.2026 | exportieren und lokal speichern, Anleitung als PDF | Export danach nicht mehr möglich |
+| Lahn-Dill | 31.12.2026 | exportieren und lokal speichern | Export danach nicht mehr möglich |
+| Hamburg (Handelskammer) | 31.12.2026 | Azubis exportieren und speichern lokal als PDF | nach der Abschaltung kein Zugriff |
+| Ostwürttemberg | 31.12.2026 | Export als PDF-Datei möglich | Tools anderer Anbieter zulässig, wenn sie der BIBB-Empfehlung entsprechen |
+| Karlsruhe | 30.06.2026 (Online-Portal der IHK Karlsruhe) | Azubis exportieren und löschen danach die Inhalte | Export und Nutzung nach dem 30.06.2026 nicht mehr möglich |
+
+Die Links zu allen 14 IHK-Seiten stehen in den Quellen am Ende des Beitrags. Die Seiten der übrigen IHKs haben wir nicht ausgewertet. Was für Ihren Betrieb gilt, steht auf der Website Ihrer IHK.
+
+## Was müssen Betriebe bis zum 31.12.2026 tun?
+
+Betroffen sind alle Betriebe, deren Azubis das IHK-Tool nutzen und deren Ausbildung über den Jahreswechsel läuft. Kurz gesagt: Daten sichern, neue Form vereinbaren, lückenlos weiterschreiben.
+
+1. **Alle betroffenen Azubis informieren.** Den Export erledigen die Azubis. Die Sicherung hängt also an ihnen. Die Oldenburgische IHK bittet Betriebe, ihre Azubis zum rechtzeitigen Export aufzufordern ([Oldenburgische IHK](https://www.ihk.de/oldenburg/geschaeftsfelder/ausbildungweiterbildung/ausbildung/tipps-zur-ausbildung/serviceportal-bildung-5235638)).
+2. **Offene Einträge vorher prüfen.** Bestätigen Sie alles, was im Portal noch auf Ihre Prüfung wartet, bevor Ihre Azubis exportieren.
+3. **Den Export kontrollieren.** Lassen Sie sich die PDF-Dateien zeigen und legen Sie eine Kopie im Betrieb ab. Prüfen Sie, ob alle Wochen bis zum Exportdatum enthalten sind.
+4. **Neue Form vereinbaren.** Wenn die Ausbildung über den 31. Dezember 2026 hinausgeht, vereinbaren Betrieb und Azubi die Fortführung in einer neuen Berichtsheftvariante. Die Form des Ausbildungsnachweises, schriftlich oder elektronisch, steht im Ausbildungsvertrag ([§ 11 Abs. 1 Satz 2 Nr. 12 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__11.html)). Fragen Sie Ihre IHK, ob und wie Sie den Wechsel festhalten müssen.
+5. **Ab dem 1. Januar 2027 lückenlos weiterschreiben.** Der neue Nachweis setzt dort an, wo der Export endet. Für die Prüfungsanmeldung muss der Nachweis vollständig vorliegen ([§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)).
+
+### So exportieren Azubis das Berichtsheft
+
+Die IHK Region Stuttgart beschreibt den Export in fünf Schritten ([Anleitung](https://www.ihk.de/stuttgart/fuer-unternehmen/fachkraefte-und-ausbildung/ausbildung/digitales-berichtsheft-anleitung-export-6960548)):
+
+1. Die Seite meineihk.service.ihk.de/landing/bildung aufrufen.
+2. Auf "Zum digitalen Berichtsheft" klicken und mit E-Mail-Adresse und Passwort anmelden.
+3. Die Kachel "Berichtsheftverwaltung" öffnen.
+4. Unter "Berichtsheft herunterladen" den "Berichtsheftexport aller Einträge" wählen. Es entsteht eine PDF-Datei mit allen Einträgen.
+5. Die PDF-Datei an einem sicheren Ort speichern.
+
+<CopyBlock buttonLabel="Checkliste kopieren" copiedLabel="Kopiert!">
+
+### Checkliste: Abschaltung des IHK-Berichtshefts
+
+**Bis Anfang Dezember 2026**
+
+- [ ] Liste aller Azubis, die das Digitale Berichtsheft der IHK nutzen
+- [ ] Alle betroffenen Azubis schriftlich über die Abschaltung zum 31.12.2026 informiert
+- [ ] Offene Einträge im Portal geprüft und freigegeben
+- [ ] Neue Form des Berichtshefts ab 01.01.2027 gewählt und mit den Azubis vereinbart
+- [ ] Mit der IHK geklärt, ob der Wechsel festgehalten werden muss
+
+**Bis 31.12.2026**
+
+- [ ] Jeder Azubi hat seine Nachweise als PDF exportiert
+- [ ] Exporte auf Vollständigkeit geprüft (alle Wochen bis zum Exportdatum)
+- [ ] Kopie der Exporte im Betrieb abgelegt
+
+**Ab 01.01.2027**
+
+- [ ] Erster Eintrag im neuen Berichtsheft schließt an den letzten exportierten Zeitraum an
+- [ ] Rhythmus festgelegt: täglich oder wöchentlich, Prüfung durch Ausbilder mindestens monatlich
+- [ ] Alter Export und neuer Nachweis liegen zur Prüfungsanmeldung gemeinsam vor
+
+</CopyBlock>
+
+## Welche Alternativen zum IHK-Berichtsheft gibt es?
+
+Es gibt drei Wege: das Berichtsheft auf Papier oder in Word führen, eine eigenständige Berichtsheft-Software nutzen oder eine Lernplattform mit Berichtsheft wählen.
+
+| Weg | Was es ist | Kosten | Worauf achten |
+| --- | --- | --- | --- |
+| Papier oder Word | Die Muster der BIBB-Empfehlung für tägliche oder wöchentliche Nachweise, ausgedruckt oder als Datei | keine | Erinnerungen und Freigaben laufen von Hand |
+| Berichtsheft-Software | Software nur für den Ausbildungsnachweis | je nach Anbieter | Datenexport, EU-Hosting, Auftragsverarbeitungsvertrag |
+| Lernplattform mit Berichtsheft | Nachweis, Lernstand und Prüfungsvorbereitung an einem Ort | je nach Anbieter | ob das Berichtsheft auch einzeln nutzbar ist |
+
+Ein Muster zum Kopieren, das die Mindestangaben der BIBB-Empfehlung abdeckt, finden Sie in unserem Beitrag [Berichtsheft digital führen](/de/blog/berichtsheft-digital#berichtsheft-vorlage-zum-kopieren).
+
+## Worauf kommt es bei der neuen Lösung an?
+
+Was im Berichtsheft stehen muss, ändert sich durch die Abschaltung nicht. Die Regeln stehen in der [Empfehlung des BIBB-Hauptausschusses](https://www.bibb.de/dokumente/pdf/HA156.pdf). Die IHK Hannover etwa lässt Produkte anderer Anbieter zu, sofern sie dieser Empfehlung entsprechen.
+
+- **Rhythmus:** Azubis führen den Nachweis täglich oder wöchentlich, stichwortartig, rund eine DIN-A4-Seite pro Woche.
+- **Selbständig geführt:** Die Einträge schreiben die Azubis selbst.
+- **Inhalt:** betriebliche Tätigkeiten, Unterweisungen und betrieblicher Unterricht sowie die Themen der Berufsschule.
+- **Freigabe:** Ausbilder prüfen mindestens monatlich und bestätigen. Bei elektronischen Nachweisen reicht eine elektronische Bestätigung.
+- **Export:** Jeder Nachweis sollte sich jederzeit vollständig als PDF exportieren lassen. Die Abschaltung zeigt, warum.
+- **Datenschutz:** Hosting in der EU, ein Auftragsverarbeitungsvertrag und getrennte Rollen für Azubi, Ausbilder und Verwaltung.
+
+![Eintragsformular im LearnSlice-Berichtsheft mit Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sowie einer Bestätigung, dass der Azubi den Eintrag selbst verfasst hat](/images/blog/learnslice-berichtsheft-felder.webp)
+
+So sieht ein Eintrag im LearnSlice-Berichtsheft aus. Betriebliche Tätigkeiten, Berufsschulthemen, Stunden und Abteilung sind feste Felder. Vor dem Einreichen bestätigt der Azubi, dass er den Eintrag selbst verfasst hat. Danach gibt der Ausbilder frei oder schickt ihn zur Überarbeitung zurück.
+
+## Was gilt beim Wechsel mitten im Ausbildungsjahr?
+
+Bei laufenden Ausbildungen fällt die Umstellung mitten ins Ausbildungsjahr. Zwei Dinge machen sie einfacher:
+
+- **Den Schnitt sauber setzen.** Der neue Nachweis beginnt mit der Woche nach dem letzten exportierten Eintrag. So gibt es keine Lücke und keine doppelte Woche. Zur Prüfungsanmeldung gehören dann beide Teile.
+- **Den Ausbildungsrahmenplan im Blick behalten.** Ein Wechsel ist ein guter Anlass zu prüfen, welche Positionen des [Ausbildungsrahmenplans](/de/blog/ausbildungsrahmenplan-erklaert) bisher im Berichtsheft auftauchen und welche noch fehlen. Wie die Abschlussprüfung aufgebaut ist, zeigt unser Beitrag zur [IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital).
+
+*Hinweis: Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer.*
+
+
+## Häufig gestellte Fragen
+
+### Wann wird das digitale Berichtsheft der IHK abgeschaltet?
+
+Das Digitale Berichtsheft im Serviceportal Bildung wird laut mehreren IHKs zum 31. Dezember 2026 bundesweit eingestellt. Die IHK Karlsruhe hat ihr Online-Portal bereits zum 30. Juni 2026 abgeschaltet. Bis zum 31. Dezember 2026 können bestehende Nutzer Berichte führen, einsehen und herunterladen. Ab dem 1. Januar 2027 ist kein Zugriff mehr möglich. Neue Betriebe werden seit dem 22. September 2025 nicht mehr freigeschaltet.
+
+### Werden meine Berichtshefte automatisch in ein neues System übernommen?
+
+Nein. Ab dem 1. Januar 2027 ist laut IHK für Rheinhessen kein Zugriff mehr auf das digitale Berichtsheft und die gespeicherten Daten möglich, und laut IHK Limburg ist dann auch kein Export mehr möglich. Die bisherigen Nachweise müssen vor dem 31. Dezember 2026 exportiert und gesichert werden.
+
+### Wer kann das Berichtsheft aus dem IHK-Portal exportieren?
+
+Die Auszubildenden. Laut IHK Hannover sollen sie ihre Berichtshefte rechtzeitig exportieren und lokal speichern. Die Oldenburgische IHK bittet Betriebe, ihre Azubis zum rechtzeitigen Export aufzufordern.
+
+### Muss das Berichtsheft nach der Abschaltung weiter geführt werden?
+
+Ja. Die Pflicht zum Führen des Ausbildungsnachweises ergibt sich aus § 13 BBiG und bleibt unverändert. Der vorgelegte Ausbildungsnachweis ist nach § 43 Abs. 1 Nr. 2 BBiG Voraussetzung für die Zulassung zur Abschlussprüfung.
+
+### Gibt es eine kostenlose Alternative zum IHK-Berichtsheft?
+
+Ja. Papier- oder Word-Vorlagen kosten nichts, die BIBB-Empfehlung enthält Muster für tägliche und wöchentliche Nachweise. LearnSlice bereitet eine kostenlose Version seines Berichtshefts für Ausbildungsbetriebe vor.
+
+### Muss der Ausbildungsvertrag geändert werden, wenn wir das Berichtsheft-Tool wechseln?
+
+Die Form des Ausbildungsnachweises, also schriftlich oder elektronisch, steht nach § 11 Abs. 1 Satz 2 Nr. 12 BBiG im Ausbildungsvertrag. Ob und wie ein Wechsel festgehalten werden muss, beantwortet Ihre IHK. Die Oldenburgische IHK bittet, die Fortführung mit einer neuen Berichtsheftvariante mit dem Azubi zu vereinbaren.
+
+### Betrifft die Abschaltung auch Handwerksbetriebe?
+
+Abgeschaltet wird das Angebot der Industrie- und Handelskammern im Serviceportal Bildung. Für Ausbildungen im Handwerk gibt die zuständige Handwerkskammer Auskunft, welche Formen des Berichtshefts sie anbietet und annimmt.
+
+## Quellen
+
+- BIBB-Hauptausschuss: Empfehlung für das Führen von Ausbildungsnachweisen vom 1. September 2020 (BAnz AT 02.10.2020 S1): https://www.bibb.de/dokumente/pdf/HA156.pdf (geprüft am 2026-11-02)
+- Gesetze im Internet: § 11 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__11.html (geprüft am 2026-11-02)
+- Gesetze im Internet: § 13 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__13.html (geprüft am 2026-11-02)
+- Gesetze im Internet: § 43 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__43.html (geprüft am 2026-11-02)
+- IHK Hannover: Digitales Berichtsheft: https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974 (geprüft am 2026-11-02)
+- IHK Nordschwarzwald: Digitales Berichtsheft: https://www.ihk.de/nordschwarzwald/aus-und-weiterbildung/ausbildung/ausbildung-digital/serviceportal-bildung-berichtsheft/service-digitales-berichtsheft-wird-eingestellt-6821804 (geprüft am 2026-11-02)
+- Oldenburgische IHK: Digitales Berichtsheft: https://www.ihk.de/oldenburg/geschaeftsfelder/ausbildungweiterbildung/ausbildung/tipps-zur-ausbildung/serviceportal-bildung-5235638 (geprüft am 2026-11-02)
+- IHK Rheinhessen: Digitales Berichtsheft: https://www.ihk.de/rheinhessen/aus-und-weiterbildung/ausbildungsvertraege-und-berichtshefte/berichtsheft-faq-7047286 (geprüft am 2026-11-02)
+- IHK Limburg: Digitales Berichtsheft: https://www.ihk.de/limburg/bildung/ausbildung/serviceportal-bildung-digitales-berichtsheft-4968660 (geprüft am 2026-11-02)
+- IHK Hannover: Digitales Berichtsheft gibt es nur noch bis Ende 2026: https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/aktuell/digitales-berichtsheft-gibt-es-nur-noch-bis-ende-2026-6743960 (geprüft am 2026-11-02)
+- IHK Region Stuttgart: Anleitung zum Export des Digitalen Berichtshefts: https://www.ihk.de/stuttgart/fuer-unternehmen/fachkraefte-und-ausbildung/ausbildung/digitales-berichtsheft-anleitung-export-6960548 (geprüft am 2026-11-02)
+- IHK Region Stuttgart: Digitales Berichtsheft: https://www.ihk.de/stuttgart/fuer-unternehmen/fachkraefte-und-ausbildung/ausbildung/serviceportal-bildung-berichtsheft-4845240 (geprüft am 2026-11-02)
+- IHK Braunschweig: Digitales Berichtsheft: https://www.ihk.de/braunschweig/aus-und-weiterbildung/ausbildung/formulare/digitales-berichtsheft2-6191464 (geprüft am 2026-11-02)
+- IHK Aschaffenburg: Digitales Berichtsheft: https://www.ihk.de/aschaffenburg/bildung/ausbildung/ausbildungsnachweis-berichtsheft-2514754 (geprüft am 2026-11-02)
+- IHK Hanau-Gelnhausen-Schlüchtern: Digitales Berichtsheft: https://www.ihk.de/hanau/ausbildung/ausbildung/ausbildungsberatung/serviceportal-bildung-berichtsheft-5167058 (geprüft am 2026-11-02)
+- IHK Frankfurt am Main: Digitales Berichtsheft: https://www.frankfurt-main.ihk.de/aus-und-weiterbildung/ausbildung/ausbildungsberatung/ausbilderinfos/digitales-berichtsheft-5183790 (geprüft am 2026-11-02)
+- IHK Lahn-Dill: Digitales Berichtsheft: https://www.ihk.de/lahn-dill/bildung/ausbildungsberatung/ausbildungsdokumente/digitales-berichtsheft2-7079618 (geprüft am 2026-11-02)
+- IHK Karlsruhe: Digitales Berichtsheft: https://www.ihk.de/karlsruhe/fachthemen/ausbildung/ihk-online-portal/ihk-berichtsheft-info-fuer-auszubildende-4491810 (geprüft am 2026-11-02)
+- IHK Ostwürttemberg: Digitales Berichtsheft: https://www.ihk.de/ostwuerttemberg/produktmarken/aus-und-weiterbildung/ausbildung/service-fuer-ausbildungsbetriebe/ausbildungsbetrieb-und-ausbilder-werden/ihk-digitales-berichtsheft-ab-20-12-2023-6011326 (geprüft am 2026-11-02)
+- Handelskammer Hamburg: Digitales Berichtsheft: https://www.ihk.de/hamburg/ausbildung-weiterbildung/serviceportal-bildung-berichtsheft-5159702 (geprüft am 2026-11-02)
+
+---
+
 # Finanzführerschein: Was er ist und wer ihn anbietet
 
 Source: https://learnslice.com/de/blog/finanzfuehrerschein
 Language: de
 Published: 2026-10-29
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Finanzführerschein in Österreich und Deutschland: wer ihn anbietet, für wen er gedacht ist, was drin ist und wie Schulen und Betriebe teilnehmen.
 
@@ -5049,6 +5282,14 @@ In Deutschland gibt es kein landesweites Programm. Die Angebote sind lokal und u
 Wenn Sie in Deutschland einen Finanzführerschein an Ihre Schule holen wollen, fragen Sie zuerst bei der örtlichen Schuldnerberatung und bei den Stiftungen regionaler Banken nach.
 
 ## Die Programme im Überblick
+
+| Programm | Region | Für wen | Format | Träger und Kosten laut Anbieter |
+| --- | --- | --- | --- | --- |
+| OÖ Finanzführerschein | Oberösterreich | Polytechnische Schulen, Fachschulen, Lehrlinge, Maßnahmen | Drei Stufen, Module, Zertifikat | Land OÖ, Schuldnerhilfe OÖ und Arbeiterkammer |
+| FSW-Finanzführerschein | Wien | Polytechnische Schulen, Fach- und Berufsschulen | BASIC und PROFESSIONAL, je fünf Module, max. 15 Personen | Finanziert vom Fonds Soziales Wien |
+| NÖ Finanzführerschein | Niederösterreich | Polytechnische Schulen | Fünf Module, davon zwei E-Learning, 8 bis 15 Personen | Unterlagen werden gestellt |
+| FinanzFührerschein | Essen, bundesweit bestellbar | 13 bis 15 und 16 bis 19 Jahre | Handouts, Übungsbögen, Prüfung auf Prüfungsbögen | Kostenlos für Essener Einrichtungen, sonst über den Verlag |
+| Online-Angebot einer Bank, z. B. Raiffeisenbank Straubing | regional | ab 15 Jahren | Online lernen, Abschlusstest, Urkunde | Kostenlos |
 
 Stand: Oktober 2026, nach Angaben der Anbieter. Teilnahmebedingungen und Kosten können sich ändern.
 
@@ -5123,6 +5364,7 @@ Einzelne Bezeichnungen werden als eingetragene Marke geführt, zum Beispiel der 
 Source: https://learnslice.com/de/blog/mechatroniker-ausbilden
 Language: de
 Published: 2026-10-20
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Fünf Lernfelder, 320 Stunden, Metall und Elektro gleichzeitig: Was Mechatroniker-Azubis im ersten Jahr lernen müssen und wie Ausbilder gegensteuern.
 
@@ -5143,6 +5385,14 @@ Wenn Sie Mechatroniker ausbilden, sehen Sie hier, was der Rahmenlehrplan im erst
 Der [Rahmenlehrplan der KMK](https://www.kmk.org/fileadmin/Dateien/pdf/Bildung/BeruflicheBildung/rlp/Mechatroniker98-01-30-Stand-18-02-23.pdf) sieht für das erste Jahr fünf Lernfelder vor. Zusammen sind es 320 Unterrichtsstunden, mehr als in jedem anderen Ausbildungsjahr. Er baut auf dem Hauptschulabschluss auf. Mathematik, Naturwissenschaften und Fachenglisch vermittelt er innerhalb der Lernfelder, nicht als eigene Lernfelder.
 
 Die Tabelle zeigt pro Lernfeld, was der Plan verlangt, und eine Frage, mit der Sie in der Werkstatt prüfen, ob es angekommen ist. Offizielle Zahlen dazu, wo Mechatroniker-Azubis am häufigsten scheitern, haben wir nicht gefunden. Die [Berufsbildungsstatistik](https://www.bibb.de/dokumente/pdf/dazubi_daten.pdf) erfasst nur Abschlussprüfungen, keine Teilprüfungen.
+
+| Lernfeld (Stunden) | Was der Rahmenlehrplan verlangt | So prüfen Sie es in der Werkstatt | Was hilft |
+| --- | --- | --- | --- |
+| LF 1: Funktionszusammenhänge analysieren (40) | Blockschaltbilder lesen, Signal-, Stoff- und Energiefluss erkennen, Ergebnisse dokumentieren | Kann der Azubi eine Anlage aus Ihrem Betrieb anhand ihres Blockschaltbilds erklären? | Eine echte Anlage als roten Faden für das ganze erste Jahr wählen |
+| LF 2: Mechanische Teilsysteme herstellen (80) | Konstruktionszeichnungen, Passungen und Toleranzen, Spanen, Fügen, Messen und Messfehler | Liest er eine Zeichnung und begründet, warum eine Passung so toleriert ist? | Zeichnung und Werkstück immer zusammen besprechen, nicht nacheinander |
+| LF 3: Elektrische Betriebsmittel installieren (100) | Elektrische Größen und Berechnungen, Gleich- und Wechselstrom, Schutzmaßnahmen, Prüfen nach Vorschrift | Rechnet er Strom und Leistung an einer realen Schaltung aus und misst dann nach? | Rechnung und Messung an derselben Schaltung, damit Formeln einen Sinn bekommen |
+| LF 4: Energie- und Informationsflüsse untersuchen (60) | Steuerungstechnische Grundschaltungen, Pneumatik und Hydraulik mit Größen und Berechnungen, Schaltpläne | Kann er einen Pneumatikschaltplan lesen und vorhersagen, was beim Schalten passiert? | Erst vorhersagen lassen, dann ausprobieren |
+| LF 5: Kommunizieren mit DV-Systemen (40) | Betriebssysteme, Netzwerke, Datenschutz und Datensicherheit, Zugriffsrechte, Dokumentation | Weiß er, auf welche Systeme er im Betrieb zugreifen darf und warum? | Die eigenen IT-Regeln des Betriebs als Lernmaterial nutzen |
 
 Noch etwas steht in allen fünf Lernfeldern: Englisch, von Fachbegriffen bis zu Handbüchern. Wer mit Englisch kämpft, kämpft also nicht in einem Lernfeld, sondern überall ein bisschen.
 
@@ -5263,6 +5513,7 @@ Die Autoren einer BIBB-Studie mit Fachinformatik-Azubis halten Verbote weder fü
 Source: https://learnslice.com/de/blog/ausbildungsabbruch-verhindern
 Language: de
 Published: 2026-10-13
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Zwei Drittel aller gelösten Ausbildungsverträge enden im ersten Jahr. Ein Monatsplan mit Warnsignalen, Gesprächsfragen und konkreten Schritten für Ausbilder.
 
@@ -5337,6 +5588,16 @@ Sortiert man die Gründe danach, wo ein Betrieb ansetzen kann, ergeben sich drei
 Die Tabelle zeigt für jeden Zeitraum die typische Situation, das Warnsignal und was Sie tun. Die Probezeit dauert je nach Vertrag einen bis vier Monate ([§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html)). Passen Sie die Zeilen an Ihren Vertrag an.
 
 <picture><source media="(max-width: 640px)" srcset="/images/blog/abbruch-erstes-jahr-de-mobile.svg" /><img src="/images/blog/abbruch-erstes-jahr-de.svg" alt="Zeitleiste des ersten Ausbildungsjahres: vor dem Start monatlich melden, 34,7 Prozent der Vertragslösungen in der Probezeit, 32,9 Prozent im Rest des ersten Jahres, Gespräche in Woche 2, 6 und 12, danach alle drei Monate" /></picture>
+
+| Zeitraum | Typische Situation | Warnsignal | Was Sie tun |
+| --- | --- | --- | --- |
+| Zwischen Vertrag und Start | Monate ohne Kontakt, der Azubi hört nur von Freunden, wie Ausbildung „wirklich“ ist | Keine Rückmeldung auf Einladungen, Zweifel im Gespräch | Einmal im Monat melden, Ausbildungsplan und ersten Tag erklären, Kennenlerntreffen mit dem Jahrgang |
+| Woche 1 bis 2 | Neue Umgebung, viele Namen, Regeln, Schutzausrüstung | Steht oft allein, fragt nichts | Paten aus dem zweiten Lehrjahr benennen, erstes Gespräch in Woche 2 |
+| Monat 1 bis 2 | Erste Berufsschulblöcke, Theorie trifft Werkstatt | Unsicher bei Grundlagen wie dem ohmschen Gesetz, Berichtsheft bleibt leer | Kurz nachfragen, welches Thema in der Schule gerade dran ist, Berichtsheft wöchentlich ansehen |
+| Monat 3 bis 4 | Probezeit endet, die Entscheidung „bleibe ich?“ fällt oft hier | Mehr Fehltage, vage Antworten, plötzlich keine Fragen mehr | Probezeitgespräch mit konkreten Fragen, Rückmeldung in beide Richtungen |
+| Monat 5 bis 6 | Erste Noten aus der Berufsschule, erste Routine | Schlechte Noten werden verschwiegen, Rückzug im Team | Noten offen ansprechen, gezielte Hilfe statt Druck, bei Bedarf Lernförderung organisieren |
+| Monat 7 bis 9 | Alltag statt Neuheit, Motivation sinkt | Kaum Fortschritt im Lernplan, Konflikte mit Kollegen, Klagen über Arbeitszeiten | Aufgaben mit sichtbarem Ergebnis geben, Konflikte früh moderieren, Arbeitszeiten prüfen |
+| Monat 10 bis 12 | Erstes Jahr endet, Bilanz | Azubi spricht über andere Berufe oder ein Studium | Jahresgespräch: Was lief gut, was soll anders werden, was kommt im zweiten Jahr |
 
 **Zwischen Vertrag und Start.** Oft liegen zwischen Unterschrift und erstem Tag mehrere Monate. In dieser Zeit ist der Betrieb für den künftigen Azubi nur ein Name auf Papier. Eine Nachricht oder ein Foto vom künftigen Arbeitsplatz kostet Sie fünf Minuten. Was in die ersten acht Wochen gehört, finden Sie in unserer [Checkliste zum Azubi-Onboarding](/de/blog/azubi-onboarding).
 
@@ -5443,6 +5704,7 @@ Erste Anlaufstelle sind die Ausbildungsberater Ihrer Kammer. Dazu kommen VerAplu
 Source: https://learnslice.com/de/blog/ausbildung-ruestungsindustrie
 Language: de
 Published: 2026-10-01
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Welche Berufe die Rüstungsindustrie braucht, wie viele Ausbildungsverträge vorzeitig enden und warum das erste Jahr entscheidet. 8 Berufe, BIBB-Daten.
 
@@ -5626,6 +5888,7 @@ Aus den Metall- und Elektroberufen sind heute Mechatroniker, Elektroniker für B
 Source: https://learnslice.com/de/blog/ki-tutor-in-lms-integrieren
 Language: de
 Published: 2026-09-10
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Ihr LMS hat KI an Bord und die Lernenden ignorieren sie. Was die Funktion wirklich kann, was ein echter Lernbegleiter leistet und wie die Anbindung ohne Migration läuft.
 
@@ -5841,6 +6104,7 @@ Eine seriöse Einzelzahl gibt es nicht, weil der Aufwand von Ihren Inhalten getr
 Source: https://learnslice.com/de/blog/lernplattform-bildungstraeger
 Language: de
 Published: 2026-08-31
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Eigene Lernplattform für Bildungsträger: wie Sie Ihr Kursangebot digitalisieren, statt fertige Kurse zu mieten. Mit Kosten, Ablauf und Prüfungssimulation.
 
@@ -6055,6 +6319,7 @@ Source: https://learnslice.com/de/blog/individuelle-ki-open-source-modelle
 Language: de
 Published: 2026-07-30
 Updated: 2026-10-12
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Individuelle KI auf Open-Source-Modellen wie Kimi K2 und gpt-oss, vom KI-Tutor bis zum Wissensassistenten: auf Ihren Daten, EU-gehostet, Ihr Eigentum.
 
@@ -6241,6 +6506,7 @@ Genau darum baut man auf einem offenen Modell. Bei einer echten Individualentwic
 Source: https://learnslice.com/de/blog/ki-lernbegleiter-entwickeln-lassen
 Language: de
 Published: 2026-07-21
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 KI-Lernbegleiter: kaufen, White-Label lizenzieren oder entwickeln lassen. Was Verankerung und Adaptivität kosten und wie Sie einen KI-Tutor-Anbieter prüfen.
 
@@ -6416,6 +6682,7 @@ Das ist Verhandlungssache und gehört vor Projektstart schriftlich geklärt. Bei
 Source: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
 Language: de
 Published: 2026-07-01
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Synchrone Lernzeit nachweisen, prüfsichere Nachweise, Barrierefreiheit nach BFSG und förderfähige KI: der praktische Leitfaden für AZAV-zugelassene Bildungsträger.
 
@@ -6504,6 +6771,7 @@ Source: https://learnslice.com/de/blog/e-learning-entwickeln-lassen
 Language: de
 Published: 2026-07-01
 Updated: 2026-11-02
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Was kostet es, E-Learning entwickeln oder erstellen zu lassen? Preise 2026 für Modul, Plattform und KI-Tutor, dazu Ablauf und Anbieter-Checkliste.
 
@@ -6734,6 +7002,7 @@ In den meisten Fällen ja, denn genau hier liegt der Mehrwert gegenüber Standar
 Source: https://learnslice.com/de/blog/lohnt-sich-ki-in-der-ausbildung
 Language: de
 Published: 2026-06-12
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Bringt KI in der Ausbildung wirklich etwas? Was ein Uni-Pilot zeigt, und warum es duale Studierende mit IHK-Prüfung besonders entlastet.
 
@@ -6883,6 +7152,7 @@ Source: https://learnslice.com/de/blog/ki-lernplattform-azubis
 Language: de
 Published: 2026-06-05
 Updated: 2026-07-01
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Kriterien für eine digitale Azubi-Ausbildungsplattform: die 8-Punkte-Auswahl-Checkliste, worauf Ausbilder achten und wie Sie risikofrei mit eigenen Azubis testen.
 
@@ -6992,6 +7262,7 @@ Source: https://learnslice.com/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder
 Language: de
 Published: 2026-05-26
 Updated: 2026-11-02
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Welche KI-Tools dürfen Ausbilder einsetzen? Der 7-Punkte-Check für 2026: AVV, EU-Hosting, Trainingsdaten-Opt-out. Plus 3 teure Fallstricke aus der Praxis.
 
@@ -7149,6 +7420,7 @@ Die kurze Antwort: Lassen Sie sich Auftragsverarbeitungsvertrag, die Liste der U
 Source: https://learnslice.com/de/blog/azubi-betreuung-zeit-sparen
 Language: de
 Published: 2026-05-16
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Wie Ausbilder, Teamleads und Führungskräfte Azubis in weniger Zeit betreuen, ohne an Qualität zu verlieren. Auf Basis von § 14 BBiG und AEVO.
 
@@ -7309,6 +7581,7 @@ Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
 Published: 2026-05-04
 Updated: 2026-11-02
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den betrieblichen Plan überführen. Mit Umsetzungstabelle als Word-Vorlage zum Download.
 
@@ -7520,7 +7793,7 @@ Der Ausbildungsrahmenplan und der **schriftliche Ausbildungsnachweis** - umgangs
 
 In Papier-Berichtsheften muss diese Verknüpfung manuell hergestellt werden - mit dem entsprechenden Aufwand. Ein digitales Berichtsheft kann den Bezug zum Rahmenplan automatisch abbilden: jeder Eintrag wird der entsprechenden Position zugeordnet, und am Ende des Ausbildungsjahres steht eine Übersicht, welche Inhalte des Rahmenplans bereits "sitzen" und welche noch nicht - als Grundlage für Zwischengespräche und die IHK-Zwischenprüfung.
 
-Genau so funktioniert das digitale Berichtsheft in LearnSlice: jeder Wocheneintrag wird einer Position aus dem Ausbildungsrahmenplan zugeordnet, inklusive der vier modernisierten Standardberufsbildpositionen. Wie die Zuordnung in der Praxis aussieht und wie sie sich für Ihren Beruf konfigurieren lässt, sehen Sie in einer kurzen [Demo](/de/companies). Eine ausführliche Darstellung der Berichtsheft-Pflicht und der praktischen Umsetzung steht in [Berichtsheft digital führen](/de/blog/berichtsheft-digital).
+In LearnSlice zeigt jeder Berichtsheft-Eintrag unter "Lehrplanbezug" die Themen, die der Azubi im jeweiligen Zeitraum im Lernplan bearbeitet hat. Für Berufe wie Fachinformatiker/-in, Mechatroniker/-in oder Industriekaufmann/-frau ist der Lernplan aus dem Ausbildungsrahmenplan aufgebaut. Wie das für Ihren Beruf aussieht, sehen Sie in einer kurzen [Demo](/de/companies). Eine ausführliche Darstellung der Berichtsheft-Pflicht und der praktischen Umsetzung steht in [Berichtsheft digital führen](/de/blog/berichtsheft-digital).
 
 ## Warum der Ausbildungsrahmenplan allein die Ausbildung nicht steuert
 
@@ -7601,6 +7874,7 @@ Source: https://learnslice.com/de/blog/ausbildungsplan-vorlage-kostenlos
 Language: de
 Published: 2026-04-19
 Updated: 2026-10-04
+Author: Daniel
 
 Kostenlose Ausbildungsplan-Vorlage nach § 14 BBiG: Word-Datei zum Download, Ausbilder-Checkliste und wann sich der Sprung zur KI-gestützten Lösung lohnt.
 
@@ -7835,6 +8109,7 @@ Source: https://learnslice.com/de/blog/ausbildungsplan-erstellen-ki
 Language: de
 Published: 2026-04-15
 Updated: 2026-05-13
+Author: Daniel
 
 Ausbildungsplan erstellen, der IHK-Rahmenplan mit Ihrem Unternehmenswissen verbindet: rechtssicher, personalisiert pro Azubi, DSGVO-konform statt ChatGPT.
 
@@ -7992,6 +8267,7 @@ Source: https://learnslice.com/de/blog/ausbildung-digitalisieren
 Language: de
 Published: 2026-04-01
 Updated: 2026-05-13
+Author: Daniel
 
 Berufsausbildung im Unternehmen digitalisieren, Schritt für Schritt: Lernplattformen, KI-Coaching und digitale IHK-Prüfungsvorbereitung im Überblick.
 
@@ -8140,6 +8416,7 @@ Source: https://learnslice.com/de/blog/ihk-pruefung-tipps
 Language: de
 Published: 2026-03-28
 Updated: 2026-11-02
+Author: Daniel
 
 10 Tipps für die IHK-Abschlussprüfung: Lernplan, Original-Prüfungen, Zeitmanagement am Prüfungstag und was gilt, wenn es knapp wird (Ergänzungsprüfung, Wiederholung).
 
@@ -8293,6 +8570,7 @@ Source: https://learnslice.com/de/blog/ausbilder-entlasten
 Language: de
 Published: 2026-03-25
 Updated: 2026-10-01
+Author: Daniel
 
 Überlastete Ausbilder kosten Produktivität und Qualität. Sieben praktische Strategien, um den Betreuungsaufwand in der Ausbildung spürbar zu senken.
 
@@ -8409,6 +8687,7 @@ Source: https://learnslice.com/de/blog/azubi-onboarding
 Language: de
 Published: 2026-03-22
 Updated: 2026-10-01
+Author: Daniel
 
 Checkliste für die ersten 8 Wochen mit Ihrem neuen Azubi, sofort einsetzbar. Mit aktuellen BIBB-Zahlen zu vorzeitig gelösten Verträgen und Ausbildungskosten.
 
@@ -8598,6 +8877,7 @@ Source: https://learnslice.com/de/blog/ki-in-der-ausbildung
 Language: de
 Published: 2026-03-21
 Updated: 2026-05-13
+Author: Daniel
 
 Wie KI-Lernplattformen die Berufsausbildung transformieren: personalisierte Lernpfade, automatisierte Prüfungsvorbereitung, Coaching rund um die Uhr.
 
@@ -8720,52 +9000,53 @@ KI in der Ausbildung ist kein Zukunftsszenario mehr, sondern Realität. Unterneh
 
 ---
 
-# Berichtsheft digital führen: Vorlage + Prüfliste (§ 13 BBiG)
+# Digitales Berichtsheft: kostenlose Vorlage + Prüfliste 2026
 
 Source: https://learnslice.com/de/blog/berichtsheft-digital
 Language: de
 Published: 2026-03-19
 Updated: 2026-11-02
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Digitaler Ausbildungsnachweis statt Papier: was § 13 BBiG verlangt, wer zustimmen muss und wie der Umstieg klappt. Mit Berichtsheft-Vorlage zum Kopieren.
+Berichtsheft digital führen: was § 13 BBiG und die BIBB-Empfehlung verlangen und was nach dem Aus des IHK-Berichtshefts gilt. Mit Vorlage und Prüfliste.
+
+## Auf einen Blick
+
+- Ein digitales Berichtsheft ist für alle Ausbildungsverträge ab dem 1. Oktober 2017 erlaubt. Die Form, schriftlich oder elektronisch, steht im Ausbildungsvertrag (§ 13 Satz 2 Nr. 7 und § 11 Abs. 1 Satz 2 Nr. 12 BBiG).
+- Ohne vorgelegten Ausbildungsnachweis gibt es keine Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG).
+- Die BIBB-Empfehlung vom 1. September 2020 sieht tägliche oder wöchentliche Einträge vor, rund eine DIN-A4-Seite pro Woche. Ausbilder prüfen mindestens monatlich, bei digitalen Nachweisen reicht eine elektronische Bestätigung.
+- Für Azubis ist das Berichtsheft immer kostenlos, der Betrieb stellt Vorlage oder Software (§ 14 Abs. 1 Nr. 3 BBiG).
+- Das Digitale Berichtsheft der IHK im Serviceportal Bildung wird laut mehreren IHKs zum 31. Dezember 2026 bundesweit eingestellt. Azubis müssen ihre Nachweise vorher exportieren.
 
 ![Auszubildende arbeiten am Laptop an digitaler Dokumentation](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
-## Berichtsheft digital: das Wichtigste in Kürze
+**Ein digitales Berichtsheft ist der elektronisch geführte Ausbildungsnachweis nach § 13 BBiG.** Azubis halten darin täglich oder wöchentlich fest, was sie im Betrieb und in der Berufsschule gemacht haben. Der Ausbilder prüft die Einträge und gibt sie digital frei. Erlaubt ist das für alle Ausbildungsverträge ab dem 1. Oktober 2017. Ohne vollständigen Nachweis gibt es keine Zulassung zur Abschlussprüfung.
 
-- **Erlaubt:** Für Ausbildungsverträge ab dem 1. Oktober 2017 darf der Ausbildungsnachweis schriftlich oder elektronisch geführt werden ([§ 13 Satz 2 Nr. 7 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Die Form steht im Ausbildungsvertrag.
-- **Pflicht für die Prüfung:** Ohne vorgelegten Ausbildungsnachweis keine Zulassung zur Abschlussprüfung ([§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)).
-- **Rhythmus:** täglich oder wöchentlich, rund eine DIN-A4-Seite pro Woche. Ausbilder prüfen mindestens monatlich ([Empfehlung des BIBB-Hauptausschusses](https://www.bibb.de/dokumente/pdf/HA156.pdf)).
-- **Freigabe:** Bei digitalen Nachweisen reicht eine elektronische Bestätigung, eine Unterschrift auf Papier ist nicht nötig.
-- **Kosten:** Für Azubis immer kostenlos. Das Tool zahlt der Betrieb ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
+## Was verlangt § 13 BBiG vom Berichtsheft?
 
-## Warum das Berichtsheft so wichtig ist
+Das Berufsbildungsgesetz verpflichtet Azubis, **einen schriftlichen oder elektronischen Ausbildungsnachweis** zu führen ([§ 13 Satz 2 Nr. 7 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Die elektronische Form gilt für alle Verträge ab dem 1. Oktober 2017 ([§ 103 Abs. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__103.html)). Welche Form gilt, steht im Ausbildungsvertrag ([§ 11 Abs. 1 Satz 2 Nr. 12 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__11.html)). Der Betrieb muss Azubis zum Führen anhalten, die Nachweise regelmäßig durchsehen und sie am Arbeitsplatz schreiben lassen ([§ 14 Abs. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
 
-Das Berichtsheft (auch Ausbildungsnachweis genannt) ist weit mehr als eine Pflichtübung. Es dokumentiert den gesamten Ausbildungsverlauf, und seine Vorlage ist eine **Zulassungsvoraussetzung zur Abschlussprüfung** nach [§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html). Ohne vorgelegtes Berichtsheft keine Prüfungszulassung.
+Die Details beschreibt die [Empfehlung des BIBB-Hauptausschusses](https://www.bibb.de/dokumente/pdf/HA156.pdf) vom 1. September 2020. Sie ist keine Rechtsnorm, die Kammern sollen sie aber umsetzen:
 
-Trotzdem wird das Berichtsheft in vielen Betrieben stiefmütterlich behandelt. Azubis füllen es Wochen oder Monate verspätet aus, Ausbilder unterschreiben stapelweise Seiten auf einmal, und am Ende fehlen Einträge. Das Resultat: Stress vor der Prüfungsanmeldung und im schlimmsten Fall eine gefährdete Zulassung.
-
-Bei 29,7 % vorzeitig gelösten Ausbildungsverträgen ([BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037), Jahr 2024) und Bruttokosten von rund **26.200 € pro Azubi und Jahr** ([BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)) ist jede vermeidbare Komplikation ein Risiko, das Unternehmen nicht eingehen sollten.
-
-## Rechtliche Anforderungen nach BBiG §13
-
-Das Berufsbildungsgesetz verpflichtet Auszubildende, **einen schriftlichen oder elektronischen Ausbildungsnachweis** zu führen ([§ 13 Satz 2 Nr. 7 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Die elektronische Form gilt für alle Verträge, die ab dem 1. Oktober 2017 geschlossen wurden ([§ 103 Abs. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__103.html)). Welche Form im Betrieb gilt, wird im Ausbildungsvertrag festgehalten ([§ 11 Abs. 1 Satz 2 Nr. 12 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__11.html)). Die Ausbildenden müssen ihre Azubis zum Führen anhalten, die Nachweise regelmäßig durchsehen und Gelegenheit geben, sie am Arbeitsplatz zu führen ([§ 14 Abs. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
-
-Wie das im Detail aussieht, beschreibt die [Empfehlung des BIBB-Hauptausschusses für das Führen von Ausbildungsnachweisen](https://www.bibb.de/dokumente/pdf/HA156.pdf) vom 1. September 2020. Sie ist keine Rechtsnorm, wurde aber den Kammern mit der Bitte übergeben, entsprechende Regelungen zu treffen. Die wesentlichen Anforderungen:
-
-- **Regelmäßige Führung:** täglich oder wöchentlich, stichwortartig, etwa eine DIN-A4-Seite pro Woche, von Azubis selbständig geführt
+- **Rhythmus:** täglich oder wöchentlich, stichwortartig, etwa eine DIN-A4-Seite pro Woche, von Azubis selbständig geführt
 - **Pflichtangaben:** Name, Ausbildungsjahr und Berichtszeitraum auf jeder Tages- oder Wochenübersicht
 - **Inhalt:** betriebliche Tätigkeiten, Unterweisungen und betrieblicher Unterricht sowie die Themen der Berufsschule, möglichst mit Zeitdauer
-- **Prüfung und Freigabe:** Ausbilder prüfen mindestens monatlich und bestätigen Richtigkeit und Vollständigkeit, bei digitalen Nachweisen auch per elektronischer Freigabe
+- **Freigabe:** Ausbilder prüfen mindestens monatlich und bestätigen Richtigkeit und Vollständigkeit, bei digitalen Nachweisen auch elektronisch
 - **Minderjährige:** Eine gesetzliche Vertretung nimmt in angemessenen Abständen Kenntnis und bestätigt das
 
-Ob auf Papier oder digital, die inhaltlichen Anforderungen bleiben gleich. Der Unterschied liegt in der Umsetzung.
+*Hinweis: Dieser Beitrag ersetzt keine Rechtsberatung. Verbindliche Auskunft gibt die zuständige Kammer.*
 
-*Hinweis: Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer.*
+## Was passiert mit dem digitalen Berichtsheft der IHK?
+
+Das Digitale Berichtsheft der IHK im Serviceportal Bildung wird laut mehreren IHKs zum **31. Dezember 2026 bundesweit eingestellt** ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). Danach sind die gespeicherten Nachweise weder abrufbar ([IHK für Rheinhessen](https://www.ihk.de/rheinhessen/aus-und-weiterbildung/ausbildungsvertraege-und-berichtshefte/berichtsheft-faq-7047286)) noch exportierbar ([IHK Limburg](https://www.ihk.de/limburg/bildung/ausbildung/serviceportal-bildung-digitales-berichtsheft-4968660)). Die Azubis sollen ihre Berichtshefte deshalb rechtzeitig exportieren und lokal speichern ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). Betriebe, die das IHK-Tool genutzt haben, brauchen eine neue Lösung.
+
+Von 14 IHKs, deren Seiten wir am 2. November 2026 ausgewertet haben, nennen 13 den 31. Dezember 2026 als letzten Tag. Die IHK Karlsruhe nennt für ihr Online-Portal den 30. Juni 2026. Die Übersicht je IHK, eine Export-Anleitung und eine Checkliste für den Jahreswechsel stehen in unserem Beitrag [IHK Berichtsheft Alternative: Was nach dem 31.12.2026 gilt](/de/blog/ihk-berichtsheft-alternative).
+
+**Vor Jahresende:** offene Einträge freigeben, alle betroffenen Azubis ihre Nachweise als PDF exportieren lassen, eine Kopie im Betrieb ablegen und das neue Berichtsheft mit der Woche nach dem letzten exportierten Eintrag beginnen.
 
 ## Berichtsheft-Vorlage zum Kopieren
 
-Die folgende Struktur deckt die Mindestanforderungen der BIBB-Empfehlung ab und lässt sich in jedes Textprogramm, Wiki oder Berichtsheft-Tool übernehmen. Legen Sie pro Berichtszeitraum eine Kopie an.
+Diese Struktur deckt die Mindestangaben der BIBB-Empfehlung ab und passt in jedes Textprogramm, Wiki oder Berichtsheft-Tool. Legen Sie pro Woche eine Kopie an.
 
 <CopyBlock buttonLabel="Vorlage kopieren" copiedLabel="Kopiert!">
 
@@ -8813,76 +9094,24 @@ Die folgende Struktur deckt die Mindestanforderungen der BIBB-Empfehlung ab und 
 
 </CopyBlock>
 
-## Digitales Berichtsheft: welche Möglichkeiten es gibt
+## Welche Möglichkeiten gibt es für ein digitales Berichtsheft?
 
-Wer vom Papier wegwill, hat vier Wege. Sie unterscheiden sich vor allem darin, wie viel Arbeit Erinnerungen, Freigabe und Export noch machen.
+Es gibt vier Wege: eine Vorlage in Word oder PDF, eine Branchen-App, eine eigenständige Berichtsheft-App oder eine Lernplattform mit Berichtsheft. Sie unterscheiden sich vor allem darin, wie viel Handarbeit Erinnerungen, Freigabe und Export noch machen.
 
 | Weg | Was es ist | Gut für | Grenze |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Vorlage in Word oder PDF | Die BIBB-Muster oder eine eigene Vorlage, per E-Mail oder Ablage ausgetauscht | wenige Azubis, kein Budget | Erinnerungen und Freigaben laufen von Hand |
-| Angebot der Kammer oder Branche | Formulare oder Apps, die Kammern und Branchenverbände bereitstellen | Betriebe, deren Kammer oder Branche eine Lösung anbietet | je nach Region und Beruf sehr unterschiedlich |
+| Branchen-App | Apps von Branchenverbänden, etwa im Handwerk | Betriebe, deren Branche eine Lösung anbietet | nur für einzelne Berufe |
 | Eigenständige Berichtsheft-App | Software nur für den Ausbildungsnachweis | viele Azubis, klarer Freigabeprozess | Lernen und Prüfungsvorbereitung bleiben getrennt |
-| Lernplattform mit Berichtsheft | Nachweis, Lernstand und Prüfungsvorbereitung an einem Ort | Betriebe, die mehr als Dokumentation wollen | höherer Einführungsaufwand |
+| Lernplattform mit Berichtsheft | Nachweis, Lernstand und Prüfungsvorbereitung an einem Ort | Betriebe, die mehr als Dokumentation wollen | mehr Einführungsaufwand |
 
-**Kostenlos starten:** Die [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) enthält Muster für tägliche und wöchentliche Nachweise, auch mit Bezug zum Ausbildungsrahmenplan. Sie nennt außerdem Branchen-Apps, etwa für das Bäcker-, Dachdecker-, Friseur- und Metallhandwerk, den Garten- und Landschaftsbau und Kfz-Berufe. Fragen Sie zuerst bei Ihrer zuständigen Kammer, welche Formate sie annimmt.
+**Kostenlos starten:** Die [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) enthält Muster für tägliche und wöchentliche Nachweise, auch mit Bezug zum Ausbildungsrahmenplan. Sie nennt außerdem Branchen-Apps, etwa für das Bäcker-, Dachdecker-, Friseur- und Metallhandwerk, den Garten- und Landschaftsbau und Kfz-Berufe. Fragen Sie zuerst Ihre Kammer, welche Formate sie annimmt.
 
-**Für Azubis ist das Berichtsheft immer kostenlos.** Nachweishefte, Formblätter und IT-Programme stellt der Betrieb zur Verfügung ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)). Wer als Azubi nach "Berichtsheft kostenlos" sucht, muss also nichts kaufen, sondern fragt im Betrieb nach der vereinbarten Form.
+**Für Azubis ist das Berichtsheft immer kostenlos.** Nachweishefte, Formblätter und IT-Programme stellt der Betrieb ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)). Azubis müssen also nichts kaufen. Welche Form gilt, erfahren sie im Betrieb.
 
-## Berichtsheft mit KI schreiben: was geht und was nicht
+## Prüfliste: Ist die digitale Lösung einsatzbereit?
 
-KI-Tools sind für viele Azubis naheliegend: Stichpunkte diktieren, die KI macht daraus einen sauberen Wochenbericht. Zwei Regeln setzen dafür den Rahmen.
-
-1. **Selbständig geführt, vom Ausbilder bestätigt.** Nach der BIBB-Empfehlung führen Azubis den Nachweis selbständig, der Ausbilder bestätigt Richtigkeit und Vollständigkeit. Ein Text, den eine KI ohne eigene Notizen erfindet, erfüllt das nicht. Hilfe beim Formulieren aus den eigenen Stichpunkten ist etwas anderes als ein ausgedachter Bericht.
-2. **Betriebsgeheimnisse bleiben im Betrieb.** Azubis sind zur Verschwiegenheit über Betriebs- und Geschäftsgeheimnisse verpflichtet ([§ 13 Satz 2 Nr. 6 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Kundennamen, Preise oder interne Abläufe gehören nicht in einen öffentlichen Chatbot.
-
-Praktisch heißt das: Legen Sie im Betrieb fest, ob und welche KI-Werkzeuge für das Berichtsheft genutzt werden dürfen, und bevorzugen Sie Lösungen mit EU-Hosting, bei denen Ihre Daten nicht zum Training verwendet werden. Worauf Sie bei der Auswahl achten, zeigt unser [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
-
-## Papier vs. digital: Der Vergleich
-
-Viele Betriebe nutzen immer noch Papiervorlagen oder einfache Word-Dokumente. Die folgende Tabelle zeigt, wo digitale Lösungen klare Vorteile bieten:
-
-| Kriterium | Papier-Berichtsheft | Digitales Berichtsheft |
-|-----------|--------------------|-----------------------|
-| Verfügbarkeit | Nur am Ablageort | Jederzeit, überall (Cloud) |
-| Zeitaufwand Azubi | Hoch (manuelles Schreiben) | Gering (Vorlagen, Autovervollständigung) |
-| Prüfung durch Ausbilder | Zeitaufwendig, oft verspätet | Sofortige Benachrichtigung, digitale Freigabe |
-| Vollständigkeitskontrolle | Manuell, fehleranfällig | Automatische Erinnerungen bei fehlenden Einträgen |
-| Verlustrisiko | Hoch (Papier geht verloren) | Minimal (Cloud-Backup) |
-| IHK-Einreichung | Physische Kopie oder Scan | Digitaler Export (PDF) |
-| Datenschutz | Schwer nachvollziehbar | Vereinfacht die DSGVO-Konformität durch Zugriffskontrollen |
-| Integration mit Lernplattform | Nicht möglich | Nahtlose Verknüpfung mit Lernfortschritt |
-
-## Worauf Sie bei einer digitalen Lösung achten sollten
-
-Nicht jede App oder Software ist für die Berichtsheftführung geeignet. Achten Sie auf folgende Funktionen:
-
-### Vorlagen und Strukturierung
-
-Eine gute Lösung bietet vorgefertigte Vorlagen, die den IHK-Anforderungen entsprechen. Idealerweise sind Berufsfelder und Abteilungen hinterlegt, sodass Azubis schnell und strukturiert dokumentieren können.
-
-### Erinnerungen und Fristen
-
-Automatische Erinnerungen per E-Mail oder Push-Benachrichtigung helfen dabei, dass Einträge tatsächlich wöchentlich erstellt werden - nicht erst kurz vor der Prüfung.
-
-![Dialog zum Anlegen eines neuen Berichtsheft-Eintrags in LearnSlice mit vom Ausbilder festgelegtem Rhythmus und Zeitraum](/images/blog/learnslice-berichtsheft-neuer-eintrag.png)
-
-In LearnSlice legt der Ausbilder den Rhythmus fest (z. B. monatlich), und der Azubi erstellt seinen Eintrag mit einem Klick für den vorgegebenen Zeitraum. So bleibt die Dokumentation lückenlos, ohne dass jemand Fristen im Kopf behalten muss.
-
-### Digitale Freigabe
-
-Ausbilder sollten Einträge digital prüfen und freigeben können, ohne Papier anfassen zu müssen. Das spart beiden Seiten Zeit und schafft einen lückenlosen Nachweis.
-
-### Export und Archivierung
-
-Die Lösung muss einen sauberen PDF-Export ermöglichen, der den IHK-Vorgaben entspricht. Zusätzlich sollte eine revisionssichere Archivierung möglich sein.
-
-### Datenschutz
-
-Achten Sie auf Datenhosting in der EU. Das vereinfacht die DSGVO-Konformität und hält sensible Azubi-Daten unter europäischer Jurisdiktion.
-
-## Prüfliste: Ist die digitale Lösung wirklich einsatzbereit?
-
-Die Kriterien aus dem vorigen Abschnitt als Liste zum Abhaken, bevor Sie sich für ein Tool entscheiden.
+Diese Punkte sollte ein Tool erfüllen, bevor Sie es einführen. Besonders wichtig nach der IHK-Abschaltung: Jeder Nachweis muss sich jederzeit vollständig exportieren lassen.
 
 <CopyBlock buttonLabel="Prüfliste kopieren" copiedLabel="Kopiert!">
 
@@ -8894,83 +9123,55 @@ Die Kriterien aus dem vorigen Abschnitt als Liste zum Abhaken, bevor Sie sich f�
 - [ ] Die zuständige Kammer akzeptiert das digitale Format
 - [ ] Einträge entstehen täglich oder wöchentlich, Ausbilder prüfen mindestens monatlich
 - [ ] Betriebliche Tätigkeiten, Unterweisungen und Berufsschulunterricht sind getrennt dokumentierbar
-- [ ] Ausbilder können Einträge regelmäßig prüfen und abzeichnen
 - [ ] Der vollständige Nachweis liegt zur Prüfungsanmeldung vor
 
-**Funktionsumfang**
+**Funktionen**
 
 - [ ] Vorlagen entsprechen den Vorgaben der zuständigen Kammer
-- [ ] Berufsfelder und Abteilungen sind hinterlegt
 - [ ] Automatische Erinnerungen an fällige Einträge
-- [ ] Digitale Freigabe ohne Medienbruch
-- [ ] PDF-Export im kammerkonformen Format
-- [ ] Revisionssichere Archivierung bis zur Abschlussprüfung
+- [ ] Digitale Freigabe und Rückgabe zur Überarbeitung
+- [ ] PDF-Export einzelner Einträge und ganzer Zeiträume
+- [ ] Nachweise bleiben bis zur Abschlussprüfung erhalten
 
 **Datenschutz und Betrieb**
 
 - [ ] Hosting in der EU
-- [ ] Auftragsverarbeitungsvertrag liegt vor
-- [ ] Rollenkonzept trennt Azubi, Ausbilder und Verwaltung
-- [ ] Export der eigenen Daten bei einem Anbieterwechsel möglich
-
+- [ ] Vertrag zur Auftragsverarbeitung liegt vor
+- [ ] Rollen trennen Azubi, Ausbilder und Verwaltung
+- [ ] Datenexport bei einem Anbieterwechsel möglich
 
 </CopyBlock>
 
-## Integration mit Lernplattformen
+## Darf man das Berichtsheft mit KI schreiben?
 
-Der größte Mehrwert eines digitalen Berichtshefts entsteht, wenn es in eine umfassende Lernplattform eingebettet ist. Denn dann wird die Dokumentation nicht zur isolierten Pflichtaufgabe, sondern Teil eines zusammenhängenden Lernprozesses.
+Nur als Hilfe beim Formulieren eigener Notizen, nicht als Ersatz. Zwei Regeln setzen den Rahmen.
 
-Beispiel: Ein Azubi absolviert ein Lernmodul zur Kundenberatung auf einer KI-gestützten Plattform. Der Abschluss wird automatisch im Berichtsheft dokumentiert - inklusive Thema, Datum und Lernergebnis. Der Ausbilder sieht den Eintrag sofort in seinem Dashboard und kann ihn freigeben.
+1. **Selbständig geführt, vom Ausbilder bestätigt.** Nach der BIBB-Empfehlung führen Azubis den Nachweis selbständig. Ein Text, den eine KI ohne eigene Notizen erfindet, erfüllt das nicht.
+2. **Betriebsgeheimnisse bleiben im Betrieb.** Azubis sind zur Verschwiegenheit verpflichtet ([§ 13 Satz 2 Nr. 6 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Kundennamen, Preise oder interne Abläufe gehören nicht in einen öffentlichen Chatbot.
 
-![Berichtsheft-Eintrag in LearnSlice mit strukturierten Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Abteilung und automatischem Lehrplanbezug](/images/blog/learnslice-berichtsheft-eintrag.png)
+Legen Sie im Betrieb fest, ob und welche KI-Werkzeuge erlaubt sind. Worauf Sie bei der Auswahl achten, zeigt unser [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
 
-So sieht ein Eintrag in LearnSlice aus: Betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sind strukturiert vorgegeben. Über den **Lehrplanbezug** verknüpft die Plattform automatisch die im Lernplan bearbeiteten Themen mit dem jeweiligen Zeitraum, und per Klick wird der fertige Eintrag als IHK-konformes PDF exportiert.
+## Berichtsheft und Lernplattform verbinden
 
-Diese Verknüpfung bietet mehrere Vorteile:
+Am meisten bringt ein digitales Berichtsheft, wenn es dort liegt, wo Azubis auch lernen. Dann sieht der Ausbilder Nachweis und Lernstand an einem Ort. LearnSlice, eine Lernplattform für die Ausbildung aus Düsseldorf, verbindet beides.
 
-- **Weniger Aufwand** - Einträge werden teilweise vorbefüllt, der Azubi prüft und ergänzt sie
-- **Bessere Nachvollziehbarkeit** - Lernfortschritt und Dokumentation stimmen überein
-- **Frühwarnsystem** - Lücken in der Ausbildung werden sichtbar, bevor sie zum Problem werden
+![Eintragsformular im LearnSlice-Berichtsheft mit Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sowie einer Bestätigung, dass der Azubi den Eintrag selbst verfasst hat](/images/blog/learnslice-berichtsheft-felder.webp)
 
-Plattformen wie LearnSlice verbinden KI-gestütztes Lernen, das an IHK-Themenbereichen und -Format orientiert ist, mit strukturierter Ausbildungsdokumentation. Bei Ausbildungskosten von rund 26.200 € pro Azubi und Jahr (laut [BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)) zählt jede eingesparte Ausbilderstunde und jeder Vertrag, der nicht vorzeitig endet. Was das für Ihr Unternehmen bedeutet, berechnen Sie mit unserem [Ausbildungskosten-Rechner](/de/ausbildungskosten-rechner).
+So sieht ein Eintrag in LearnSlice aus. Betriebliche Tätigkeiten, Berufsschulthemen, Stunden und Abteilung sind feste Felder. Der **Lehrplanbezug** zeigt, welche Themen aus dem Lernplan im Zeitraum bearbeitet wurden. Vor dem Einreichen bestätigt der Azubi, dass er den Eintrag selbst verfasst hat. Der Ausbilder legt den Rhythmus fest, zum Beispiel wöchentlich.
 
-## Tipps für die Umstellung
+So werden Lücken sichtbar, bevor sie zum Problem werden, lange vor der [IHK-Prüfung](/de/blog/ihk-pruefungsvorbereitung-digital).
 
-Der Wechsel von Papier auf digital muss nicht kompliziert sein. Hier sind bewährte Schritte:
+## Wie stellt man auf ein digitales Berichtsheft um?
 
-### 1. Ausbildungsvertrag prüfen
+In fünf Schritten:
 
-Die Form des Ausbildungsnachweises steht im Ausbildungsvertrag. Prüfen Sie, ob dort die elektronische Führung vereinbart ist. Falls nicht, klären Sie mit Ihrer zuständigen Kammer, wie die Änderung bei laufenden Verträgen dokumentiert wird.
+1. **Ausbildungsvertrag prüfen.** Steht dort die elektronische Form? Falls nicht, fragen Sie Ihre Kammer, wie die Änderung festgehalten wird.
+2. **Mit einer Pilotgruppe starten.** Ein paar Azubis und Ausbilder testen zuerst, dann folgen alle.
+3. **Kurz einweisen.** Eine Stunde reicht, um Eintragen, Prüfen und Freigeben zu zeigen.
+4. **Feste Regeln setzen.** Zum Beispiel: Einträge bis Freitagmittag, Freigabe bis Montag.
+5. **Nach vier bis sechs Wochen nachfragen.** Was läuft, was hakt? Passen Sie den Ablauf an.
 
-### 2. Pilotgruppe starten
-
-Beginnen Sie mit einer kleinen Gruppe von Azubis und Ausbildern. So sammeln Sie Erfahrungen und können Prozesse anpassen, bevor Sie den Rollout auf alle Azubis ausweiten.
-
-### 3. Schulung durchführen
-
-Investieren Sie eine Stunde in die Einführung der neuen Lösung. Zeigen Sie Azubis und Ausbildern, wie Einträge erstellt, geprüft und freigegeben werden.
-
-### 4. Verbindliche Regeln festlegen
-
-Definieren Sie klare Fristen: Einträge bis Freitagmittag, Freigabe durch Ausbilder bis Montag. Automatische Erinnerungen helfen bei der Einhaltung.
-
-### 5. Feedback einholen
-
-Nach vier bis sechs Wochen sollten Sie Feedback von Azubis und Ausbildern einholen. Was funktioniert gut? Wo gibt es Probleme? Passen Sie den Prozess entsprechend an.
-
-## Häufige Fehler vermeiden
-
-- **Zu spät umstellen** - Starten Sie nicht erst im dritten Lehrjahr. Je früher die digitale Dokumentation beginnt, desto besser.
-- **Keine Verbindlichkeit** - Ohne klare Regeln und Konsequenzen wird das digitale Berichtsheft genauso vernachlässigt wie das Papierheft.
-- **Isolierte Lösung wählen** - Ein Tool, das nur das Berichtsheft abdeckt, schöpft das Potenzial der Digitalisierung nicht aus. Suchen Sie nach Lösungen, die Dokumentation, Lernen und [Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital) verbinden.
-
-## Fazit
-
-Das digitale Berichtsheft ist mehr als ein Ersatz für Papier. Richtig eingesetzt, wird es zum zentralen Baustein einer modernen Ausbildung - mit weniger Verwaltungsaufwand, besserer Nachvollziehbarkeit und direkter Verknüpfung zum Lernfortschritt. Unternehmen, die den Umstieg jetzt angehen, vermeiden nicht nur Probleme bei der Prüfungszulassung, sondern senken aktiv ihre [Ausbildungskosten](/de/blog/ausbildungskosten-senken).
-
-**Für Ausbildungsverantwortliche:** Erleben Sie in einer kostenlosen Demo, wie LearnSlice digitale Berichtsheftführung mit KI-gestütztem Lernen verbindet. [Demo vereinbaren](/de/companies)
-
-**Für Geschäftsführung und HR-Leitung:** Digitale Dokumentation reduziert Verwaltungsaufwand und sichert die IHK-Prüfungszulassung Ihrer Azubis. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+Ein digitales Berichtsheft spart Papier, vor allem aber Nacharbeit vor der Prüfungsanmeldung. Wählen Sie eine Lösung, die der BIBB-Empfehlung folgt, sich vollständig exportieren lässt und die Ihre Ausbilder wirklich nutzen.
 
 
 ## Häufig gestellte Fragen
@@ -8981,7 +9182,11 @@ Ja. Nach § 13 Satz 2 Nr. 7 BBiG führen Auszubildende einen schriftlichen oder 
 
 ### Wie oft muss das Berichtsheft geführt werden?
 
-Täglich oder wöchentlich, so empfiehlt es der Hauptausschuss des BIBB, mit einem Umfang von etwa einer DIN-A4-Seite pro Woche. Die Ausbilderin oder der Ausbilder prüft die Einträge mindestens monatlich. In der Praxis scheitert es am Nachholen: Azubis schreiben Wochen oder Monate auf einmal nach, und am Ende fehlen Einträge. Automatische Erinnerungen lösen vor allem dieses Problem.
+Täglich oder wöchentlich, so empfiehlt es der Hauptausschuss des BIBB, mit einem Umfang von etwa einer DIN-A4-Seite pro Woche. Die Ausbilderin oder der Ausbilder prüft die Einträge mindestens monatlich. Wer mehrere Wochen auf einmal nachschreibt, vergisst leicht Einträge. Automatische Erinnerungen helfen dagegen.
+
+### Was passiert mit dem digitalen Berichtsheft der IHK?
+
+Laut mehreren IHKs wird das Digitale Berichtsheft im Serviceportal Bildung zum 31. Dezember 2026 bundesweit eingestellt. Ab dem 1. Januar 2027 ist kein Zugriff auf das Tool und die gespeicherten Nachweise mehr möglich, auch kein Export. Azubis müssen ihre Nachweise vorher exportieren. Läuft die Ausbildung weiter, vereinbaren Betrieb und Azubi eine neue Form.
 
 ### Was passiert, wenn das Berichtsheft unvollständig ist?
 
@@ -8990,10 +9195,6 @@ Der vorgelegte Ausbildungsnachweis ist nach § 43 Abs. 1 Nr. 2 BBiG eine Vorauss
 ### Braucht ein digitales Berichtsheft eine handschriftliche Unterschrift?
 
 Nein. Nach der Empfehlung des BIBB-Hauptausschusses kann die Bestätigung bei elektronischen Nachweisen auch elektronisch dokumentiert werden, etwa durch eine elektronische Freigabe oder bestätigende E-Mails mit einfacher elektronischer Signatur. Wichtig ist, dass Ausbilder die Einträge regelmäßig prüfen und bestätigen, nicht die Form der Unterschrift.
-
-### Was muss eine digitale Lösung mindestens können?
-
-Vorlagen, die den Vorgaben der zuständigen Kammer entsprechen, automatische Erinnerungen an fällige Einträge, digitale Freigabe ohne Medienbruch, sauberen PDF-Export im kammerkonformen Format und eine revisionssichere Archivierung bis zur Abschlussprüfung. Beim Datenschutz zählt Hosting in der EU und ein Rollenkonzept, das Azubi, Ausbilder und Verwaltung trennt.
 
 ### Wo wird festgelegt, ob das Berichtsheft digital geführt wird?
 
@@ -9009,7 +9210,21 @@ Nein. Laut Empfehlung des BIBB-Hauptausschusses wird der Ausbildungsnachweis in 
 
 ### Darf ich das Berichtsheft mit KI schreiben?
 
-Der Nachweis ist nach der BIBB-Empfehlung von Auszubildenden selbständig zu führen, und der Ausbilder bestätigt Richtigkeit und Vollständigkeit. KI kann helfen, eigene Stichpunkte zu ordnen oder Diktiertes zu glätten. Die Inhalte müssen aber die tatsächlich erledigten Tätigkeiten wiedergeben, und Betriebsgeheimnisse gehören nicht in öffentliche Chatbots. Im Zweifel klären Sie die Regeln mit Ausbilder und Kammer.
+Der Nachweis ist nach der BIBB-Empfehlung von Auszubildenden selbständig zu führen, und der Ausbilder bestätigt Richtigkeit und Vollständigkeit. KI kann helfen, eigene Stichpunkte zu ordnen. Die Inhalte müssen aber die tatsächlich erledigten Tätigkeiten wiedergeben, und Betriebsgeheimnisse gehören nicht in öffentliche Chatbots. Im Zweifel klären Sie die Regeln mit Ausbilder und Kammer.
+
+## Quellen
+
+- BIBB-Hauptausschuss: Empfehlung für das Führen von Ausbildungsnachweisen vom 1. September 2020 (BAnz AT 02.10.2020 S1): https://www.bibb.de/dokumente/pdf/HA156.pdf (geprüft am 2026-11-02)
+- Gesetze im Internet: § 11 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__11.html (geprüft am 2026-11-02)
+- Gesetze im Internet: § 13 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__13.html (geprüft am 2026-11-02)
+- Gesetze im Internet: § 14 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__14.html (geprüft am 2026-11-02)
+- Gesetze im Internet: § 43 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__43.html (geprüft am 2026-11-02)
+- Gesetze im Internet: § 103 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__103.html (geprüft am 2026-11-02)
+- Gesetze im Internet: § 36 HwO: https://www.gesetze-im-internet.de/hwo/__36.html (geprüft am 2026-11-02)
+- IHK Hannover: Digitales Berichtsheft: https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974 (geprüft am 2026-11-02)
+- IHK Rheinhessen: Digitales Berichtsheft: https://www.ihk.de/rheinhessen/aus-und-weiterbildung/ausbildungsvertraege-und-berichtshefte/berichtsheft-faq-7047286 (geprüft am 2026-11-02)
+- IHK Limburg: Digitales Berichtsheft: https://www.ihk.de/limburg/bildung/ausbildung/serviceportal-bildung-digitales-berichtsheft-4968660 (geprüft am 2026-11-02)
+- IHK Karlsruhe: Digitales Berichtsheft: https://www.ihk.de/karlsruhe/fachthemen/ausbildung/ihk-online-portal/ihk-berichtsheft-info-fuer-auszubildende-4491810 (geprüft am 2026-11-02)
 
 ---
 
@@ -9019,6 +9234,7 @@ Source: https://learnslice.com/de/blog/ausbildungskosten-senken
 Language: de
 Published: 2026-03-18
 Updated: 2026-10-01
+Author: Daniel
 
 Ausbildungskosten pro Azubi senken, auch im Einzelhandel: Lernplattformen, schlankes Onboarding und KI-gestütztes Training, mit aktuellen BIBB-Zahlen und Rechenbeispiel.
 
@@ -9163,6 +9379,7 @@ Source: https://learnslice.com/de/blog/ki-tools-ausbildung
 Language: de
 Published: 2026-03-15
 Updated: 2026-05-13
+Author: Daniel
 
 Welche KI-Tools gibt es für die Berufsausbildung? Chatbots, Lernplattformen und Prüfungsgeneratoren im Überblick für Ausbildungsverantwortliche.
 
@@ -9338,6 +9555,7 @@ Source: https://learnslice.com/de/blog/ihk-pruefungsvorbereitung-digital
 Language: de
 Published: 2026-03-14
 Updated: 2026-11-02
+Author: Daniel
 
 IHK-Prüfungsvorbereitung für Ausbilder: wie die Abschlussprüfung aufgebaut ist, Prüfungstermine 2026/27, Notenschlüssel, alte Prüfungen und ein 6-Monats-Lernplan zum Kopieren.
 

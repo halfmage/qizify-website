@@ -46,6 +46,18 @@ const blog = defineCollection({
 		// embedded double quotes (German "Anführungszeichen"); embedded single
 		// quotes must be doubled ('') per YAML spec, or use double-quoted YAML
 		// with \" for embedded doubles.
+		// sources: primary sources the post relies on. Rendered as a visible
+		// "Quellen"/"Sources" list under the article AND emitted as `citation` in the
+		// BlogPosting JSON-LD, so AI engines and Google see the same sources a reader
+		// does. `retrieved` is the date the source was checked (YYYY-MM-DD).
+		sources: z.array(z.object({
+			name: z.string(),
+			url: z.string().url(),
+			retrieved: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'retrieved must be YYYY-MM-DD').optional(),
+		})).optional(),
+		// about: the main entities the post is about (plain names), emitted as
+		// schema.org `about` so engines can match the page to the topic.
+		about: z.array(z.string()).optional(),
 		faq: z.array(z.object({
 			q: z.string(),
 			a: z.string(),
