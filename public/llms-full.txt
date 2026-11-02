@@ -5087,7 +5087,7 @@ Banken, Arbeitgeber und Stiftungen, die ihren Jugendlichen über den Kurs hinaus
 
 ![Lernweg im Finanz-Begleiter von LearnSlice mit drei Stufen, Themen wie Notgroschen und Sparen, einer Lernserie und einem Zertifikat. Beispieldarstellung mit fiktiven Daten.](/images/solutions/financial-companion-path-de.webp)
 
-*LearnSlice ist mit keinem der in diesem Beitrag genannten Programme verbunden. Die Angaben beruhen auf den verlinkten Seiten der Anbieter und Medien, Stand Oktober 2026. Dieser Beitrag ist eine allgemeine Information und keine Finanz-, Rechts- oder Datenschutzberatung.*
+<p class="not-prose text-xs leading-relaxed text-white/50 mt-10">LearnSlice ist mit keinem der in diesem Beitrag genannten Programme verbunden. Die Angaben beruhen auf den verlinkten Seiten der Anbieter und Medien, Stand Oktober 2026. Dieser Beitrag ist eine allgemeine Information und keine Finanz-, Rechts- oder Datenschutzberatung.</p>
 
 
 ## Häufig gestellte Fragen
@@ -5918,6 +5918,8 @@ Ein LMS ist ein Verteilsystem: Kurs anlegen, Inhalte hochladen, Teilnahme dokume
 
 **Das Lizenzmodell arbeitet gegen Sie.** Bildungsträger verdienen an Kohorten, eine Lizenz pro Teilnehmer verteuert also genau das Wachstum, das Sie anstreben. Und der über Jahre kuratierte Fragenpool, meist das wertvollste Gut im Haus, liegt am Ende im System eines Dritten.
 
+Wer sein LMS behalten will, muss es nicht ablösen: Ein [KI-Tutor lässt sich auch ins bestehende LMS integrieren](/de/blog/ki-tutor-in-lms-integrieren). Kurse, Einschreibungen und Zertifikate bleiben dann, wo sie sind.
+
 ## Vom Rahmenstoffplan zum Lernpfad: fünf Bausteine
 
 Der Aufbau ist bei jeder geregelten Prüfung derselbe:
@@ -6335,7 +6337,7 @@ Ein fokussierter KI-Tutor für ein mittelständisches Team landet meist im fünf
 
 1. **Verankerung in Ihrem Wissen.** Ihre Inhalte zu indexieren und den Abruf präzise und mit Quellenangabe hinzubekommen (RAG) ist der Kern eines echten Tutors und einer der größten Treiber für Nutzen und Kosten.
 2. **Adaptivität.** Personalisierte Lernpfade und ein Kompetenzmodell, das auf jeden Lernenden reagiert, kosten mehr als ein starrer Frage-Antwort-Ablauf, sind aber oft der eigentliche Grund für die Entwicklung.
-3. **Integrationen.** Anbindungen an Ihr LMS, ein Single Sign-on (SSO) oder Standards wie xAPI und SCORM treiben den Aufwand.
+3. **Integrationen.** Anbindungen an Ihr LMS, ein Single Sign-on (SSO) oder Standards wie xAPI und SCORM treiben den Aufwand. Wie die Anbindung ohne Plattformwechsel läuft, zeigt unser Leitfaden [KI-Tutor ins bestehende LMS integrieren](/de/blog/ki-tutor-in-lms-integrieren).
 4. **Umfang und Nutzungsrechte.** Mehr Rollen, mehr Sprachen, White-Label-Branding und die Übergabe des vollen Eigentums schlagen sich im Preis nieder.
 
 ## Woran Sie einen guten KI-Tutor-Anbieter erkennen
@@ -6496,14 +6498,14 @@ Klein und konkret. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nut
 
 ---
 
-# E-Learning entwickeln lassen: Kosten, Ablauf, Anbieter 2026
+# E-Learning entwickeln lassen: Was kostet es? Preise 2026
 
 Source: https://learnslice.com/de/blog/e-learning-entwickeln-lassen
 Language: de
 Published: 2026-07-01
-Updated: 2026-10-04
+Updated: 2026-11-02
 
-Individuelle E-Learning-Entwicklung 2026: Preise für Modul, Plattform und KI-Tutor, Projektablauf und woran Sie den richtigen Partner erkennen.
+Was kostet es, E-Learning entwickeln oder erstellen zu lassen? Preise 2026 für Modul, Plattform und KI-Tutor, dazu Ablauf und Anbieter-Checkliste.
 
 ## Auf einen Blick
 
@@ -6515,7 +6517,7 @@ Individuelle E-Learning-Entwicklung 2026: Preise für Modul, Plattform und KI-Tu
 
 ![Zwei Fachleute besprechen an einem Laptop ein individuelles E-Learning-Projekt](/images/blog/custom-elearning-consultation.webp)
 
-## Wann sich Individualentwicklung lohnt
+## E-Learning entwickeln lassen: Wann sich Individualentwicklung lohnt
 
 Individualentwicklung lohnt sich, sobald Standardsoftware Ihre Anforderungen nicht mehr abdeckt: wenn die Inhalte zu speziell sind, die Abläufe zu individuell, die Datenschutzanforderungen zu hoch oder wenn Sie KI und eigenes Unternehmenswissen einbinden wollen.
 
@@ -6531,7 +6533,7 @@ Genau darum geht es in diesem Leitfaden: **was eine Individualentwicklung wirkli
 
 ## E-Learning-Content oder E-Learning-Software? Der wichtige Unterschied
 
-Bevor Sie über Kosten sprechen, klären Sie, was Sie eigentlich beauftragen. Hinter "E-Learning entwickeln lassen" stecken zwei sehr unterschiedliche Dinge, und sie werden unterschiedlich bepreist.
+Bevor Sie über Kosten sprechen, klären Sie, was Sie eigentlich beauftragen. Hinter "E-Learning entwickeln lassen" und "E-Learning erstellen lassen" stecken zwei sehr unterschiedliche Dinge, und sie werden unterschiedlich bepreist. Wer einen Kurs erstellen lässt, meint meist Content. Wer eine Lösung entwickeln lässt, meint Software.
 
 - **E-Learning-Content:** einzelne Lerninhalte wie Web Based Trainings (WBT), Erklärvideos, Microlearning oder Kursmodule. Sie werden pro Lernstunde oder pro Minute abgerechnet und laufen meist in einem bestehenden System.
 - **E-Learning-Software:** die Plattform selbst. Eine individuelle Lernplattform, eine Lern-App, ein individueller KI-Chatbot fürs Lernen (ein Lern-Chatbot oder KI-Lernassistent, der auf Ihrem eigenen Unternehmenswissen antwortet), eine Simulation, ein Serious Game oder eine KI-gestützte Lernanwendung. Hier wird Software gebaut, nicht nur Inhalt produziert.
@@ -6688,6 +6690,14 @@ E-Learning entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie struktur
 ### Was kostet es, E-Learning entwickeln zu lassen?
 
 Das hängt vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute Lernzeit, also etwa 15.000 bis 25.000 Euro für ein 20-minütiges Modul. Eine individuelle Lernplattform kostet nach Angaben spezialisierter Entwicklungsdienstleister je nach Umfang etwa 13.000 bis 90.000 Euro. Ein Serious Game beginnt bei rund 15.000 Euro pro Modul und erreicht bei kompletten Trainingslösungen 30.000 bis 80.000 Euro. Der größte Kostentreiber ist der Grad der Interaktivität.
+
+### E-Learning erstellen lassen oder entwickeln lassen: Was ist der Unterschied?
+
+Im Alltag werden beide Begriffe oft gleich verwendet. Gemeint sind aber meist zwei Aufträge: Wer E-Learning erstellen lässt, bestellt in der Regel Inhalte wie Kurse, WBTs oder Erklärvideos, die in einem vorhandenen System laufen. Wer E-Learning entwickeln lässt, beauftragt Software, also eine eigene Lernplattform, eine Lern-App oder einen KI-Tutor. Klären Sie vor der Anfrage, welchen der beiden Aufträge Sie meinen, sonst sind die Angebote nicht vergleichbar.
+
+### Was kostet es, einen E-Learning-Kurs erstellen zu lassen?
+
+Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute Lernzeit. Ein 20-minütiger Kurs liegt damit bei etwa 15.000 bis 25.000 Euro, einfache Durchklick-Formate darunter, interaktive Simulationen deutlich darüber. Der Preis steigt vor allem mit dem Grad der Interaktivität.
 
 ### Wie lange dauert die Entwicklung?
 
@@ -7292,7 +7302,7 @@ Als Kapazitätsrückgewinnung. Ein Ausbilder, der einen erheblichen Teil seiner 
 Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
 Published: 2026-05-04
-Updated: 2026-10-04
+Updated: 2026-11-02
 
 Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den betrieblichen Plan überführen. Mit Umsetzungstabelle als Word-Vorlage zum Download.
 
@@ -7306,9 +7316,9 @@ Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den 
 
 ![Ausbilderin und Auszubildender besprechen den Ausbildungsrahmenplan am Bildschirm](/images/blog/pexels-mikhail-nilov-6592550.webp)
 
-## Ausbildungsrahmenplan erklärt: Warum dieses Dokument den Maßstab für jede Berufsausbildung setzt
+## Ausbildungsrahmenplan: kurz erklärt
 
-Der **Ausbildungsrahmenplan** ist das rechtlich verbindliche Rückgrat jeder dualen Berufsausbildung in Deutschland. Er legt fest, welche Fertigkeiten, Kenntnisse und Fähigkeiten ein Ausbildungsbetrieb über die gesamte Ausbildungsdauer hinweg vermitteln muss - geordnet nach sachlicher und zeitlicher Gliederung. Wer eine Ausbildung beginnt, verändert oder digitalisiert, kommt an diesem Dokument nicht vorbei.
+Der **Ausbildungsrahmenplan** legt für einen anerkannten Ausbildungsberuf fest, was ein Betrieb vermitteln muss (sachliche Gliederung) und in welchem Ausbildungsabschnitt (zeitliche Gliederung). Er ist Teil der Ausbildungsordnung, wird vom Bundesinstitut für Berufsbildung (BIBB) mit Sachverständigen aus der Praxis erarbeitet und ist nach § 5 BBiG bundesweit verbindlich. Den geltenden Plan für Ihren Beruf finden Sie in der Berufesuche des BIBB. Für die häufigsten Ausbildungsberufe haben wir ihn [unten direkt verlinkt](#ausbildungsrahmenplan-nach-beruf-direkt-zur-verordnung).
 
 Trotzdem wird der Ausbildungsrahmenplan in der Praxis häufig mit dem **betrieblichen Ausbildungsplan** verwechselt - oder auf eine Anlage zum Vertrag reduziert, die einmal abgeheftet und dann nie wieder geöffnet wird. Beides verschenkt das Steuerungspotenzial des Dokuments. Diese Seite erklärt, was der Ausbildungsrahmenplan genau ist, wie er aufgebaut ist und wie sich aus ihm ein Plan macht, der die Ausbildung tatsächlich trägt.
 
@@ -7329,6 +7339,19 @@ Ausbildungsordnungen sind Rechtsverordnungen des Bundes; sie werden nach § 4 [B
 Punkt 4 ist also der Ausbildungsrahmenplan im engeren Sinne. Er ist der von der Bundesregierung verbindlich vorgegebene Mindeststandard - kein Vorschlag, sondern eine Norm. Der Ausbildungsbetrieb darf darüber hinausgehen, aber nicht dahinter zurückbleiben.
 
 Der Plan wird vom **[Bundesinstitut für Berufsbildung](https://www.bibb.de) (BIBB)** in Abstimmung mit Sozialpartnern, Sachverständigen aus der Praxis und den zuständigen Stellen entwickelt. Bei einer Neuordnung oder Modernisierung eines Ausbildungsberufs entstehen sowohl der Rahmenlehrplan für die Berufsschule als auch der Ausbildungsrahmenplan für den Betrieb in einem koordinierten Verfahren.
+
+## Ausbildungsordnung, Ausbildungsrahmenplan, Rahmenlehrplan: der Unterschied
+
+Kurz gesagt: Die Ausbildungsordnung ist das Gesamtdokument für einen Beruf, der Ausbildungsrahmenplan ist ein Teil davon und regelt den Betrieb. Der Rahmenlehrplan regelt die Berufsschule und ist ein eigenes Dokument. Der Begriff "Ausbildungsrahmenlehrplan", der oft gesucht wird, vermischt die beiden.
+
+| Dokument | Was es regelt | Wer es erlässt | Gilt für |
+|---|---|---|---|
+| Ausbildungsordnung | Berufsbezeichnung, Dauer, Berufsbild, Ausbildungsrahmenplan und Prüfungsanforderungen (§ 5 BBiG) | Zuständiges Bundesministerium als Rechtsverordnung (§ 4 BBiG), erarbeitet mit dem BIBB | den Ausbildungsberuf insgesamt |
+| Ausbildungsrahmenplan | Was im Betrieb vermittelt wird und in welchem Ausbildungsabschnitt | Teil der Ausbildungsordnung | den Ausbildungsbetrieb |
+| Rahmenlehrplan | Den Unterricht an der Berufsschule, gegliedert in Lernfelder | Kultusministerkonferenz (KMK), umgesetzt von den Ländern | die Berufsschule |
+| Betrieblicher Ausbildungsplan | Die Umsetzung des Rahmenplans im eigenen Betrieb | Der ausbildende Betrieb (§ 14 BBiG) | einen Betrieb, oft pro Azubi |
+
+Für den Betrieb heißt das: Verbindlich ist der Ausbildungsrahmenplan aus der Ausbildungsordnung. Den Rahmenlehrplan brauchen Sie, um betriebliche Einsätze mit dem Berufsschulstoff abzustimmen, er ist für den Betrieb aber keine Vorgabe.
 
 ## Wie ist der Ausbildungsrahmenplan aufgebaut? Sachliche und zeitliche Gliederung
 
@@ -7445,6 +7468,32 @@ Je eine Zeile pro Position aus dem Rahmenplan Ihres Berufs. Übernehmen Sie den 
 
 Die Tabelle bildet die Zuordnung ab, nicht den Lernfortschritt. Sie ist damit genau das, was § 14 BBiG verlangt, und genau das, was sie im Alltag nicht leisten kann: Sobald mehrere Berufe, Standorte oder Jahrgänge zusammenkommen, wächst der Pflegeaufwand schneller als der Nutzen.
 
+## Ausbildungsrahmenplan nach Beruf: direkt zur Verordnung
+
+Die Tabelle führt die 15 Ausbildungsberufe mit den meisten neuen Ausbildungsverträgen auf, laut [BIBB-Rangliste 2025](https://www.bibb.de/de/211102.php) (Erhebung zum 30. September 2025). Der Link führt jeweils zur Berufsseite des BIBB, dort liegt die geltende Ausbildungsordnung mit dem Ausbildungsrahmenplan als PDF. Stand der Angaben: November 2026.
+
+| Beruf | Ausbildungsordnung | In Kraft seit | Dauer | "Digitalisierte Arbeitswelt" enthalten | Rahmenplan |
+|---|---|---|---|---|---|
+| Kraftfahrzeugmechatroniker/-in | KfzMechaAusbV | 01.08.2013 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/nh324578) |
+| Kaufmann/-frau für Büromanagement | BüroMKfAusbV | 01.08.2025 | 36 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/kfmfb25) |
+| Verkäufer/-in | VerkEHKflAusbV | 01.08.2017 | 24 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/110815) |
+| Medizinische/-r Fachangestellte/-r | MedFAngAusbV | 01.08.2006 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/n233444) |
+| Zahnmedizinische/-r Fachangestellte/-r | ZahnmedAusbV | 01.08.2022 | 36 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/zfa22) |
+| Fachinformatiker/-in (vier Fachrichtungen) | FIAusbV | 01.08.2020 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/80000) |
+| Kaufmann/-frau im Einzelhandel | VerkEHKflAusbV | 01.08.2017 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/100815) |
+| Elektroniker/-in (Handwerk) | ElekAusbV | 01.08.2021 | 42 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/xsw478) |
+| Anlagenmechaniker/-in für Sanitär-, Heizungs- und Klimatechnik | SHKAMAusbV | 01.08.2016 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/210715) |
+| Industriekaufmann/-frau | IndKflAusbV | 01.08.2024 | 36 Monate | ja | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/indust24) |
+| Industriemechaniker/-in | IndMetAusbV | 01.08.2007, Neufassung 2018 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/658658) |
+| Bankkaufmann/-frau | BankkflAusbV | 01.08.2020 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/006989) |
+| Kaufmann/-frau für Groß- und Außenhandelsmanagement | GuAMKflAusbV | 01.08.2020 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/87930) |
+| Fachkraft für Lagerlogistik | LWLogAusbV | 01.08.2004 | 36 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/89787i6u) |
+| Mechatroniker/-in | MechatronikerAusbV | 01.08.2011, Neufassung 2018 | 42 Monate | nein | [beim BIBB](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/profile/apprenticeship/868686) |
+
+Auffällig: Nur 4 der 15 häufigsten Berufe haben bereits eine Ordnung mit den seit August 2021 geltenden Standardberufsbildpositionen. Für die übrigen gilt weiter der ältere Rahmenplan, auch wenn Themen wie Datenschutz und digitale Arbeit im Betrieb längst dazugehören. Wer in einem dieser Berufe ausbildet, kann die neue Position "Digitalisierte Arbeitswelt" freiwillig in den betrieblichen Plan aufnehmen. Der Rahmenplan ist ein Mindeststandard, darüber hinausgehen ist erlaubt.
+
+Für die Mechatroniker-Ausbildung zeigt unser Leitfaden [Mechatroniker ausbilden](/de/blog/mechatroniker-ausbilden), wie der Rahmenplan im Betrieb konkret umgesetzt wird. Für alle anderen Berufe hilft die [Umsetzungstabelle](#umsetzungstabelle-rahmenplan-positionen-in-den-betrieblichen-plan-überführen) oben.
+
 ## Wo Sie den Ausbildungsrahmenplan finden - und wie Sie prüfen, ob er aktuell ist
 
 Ausbildungsordnungen werden in der jeweils aktuellen Fassung über das **Bundesinstitut für Berufsbildung (BIBB)** veröffentlicht. Auf der BIBB-Seite ist für jeden anerkannten Ausbildungsberuf die geltende Ausbildungsordnung samt Rahmenplan auffindbar. Parallel dazu stellen die zuständigen Stellen - bei den meisten Berufen die Industrie- und Handelskammern, bei Handwerksberufen die Handwerkskammern - praxisnahe Erläuterungen und Umsetzungshilfen zur Verfügung.
@@ -7513,6 +7562,10 @@ Ja. Er ist Bestandteil der Ausbildungsordnung, die als Rechtsverordnung im Bunde
 ### Wer erstellt den Ausbildungsrahmenplan?
 
 Der Plan wird im Auftrag des Bundes vom Bundesinstitut für Berufsbildung (BIBB) gemeinsam mit Sachverständigen aus Wirtschaft und Sozialpartnern entwickelt. Erlassen wird er als Teil der Ausbildungsordnung nach § 4 BBiG durch das zuständige Fachministerium im Einvernehmen mit dem für Bildung und Berufsbildung zuständigen Bundesministerium. Einzelne Betriebe oder IHKs erstellen ihn nicht selbst.
+
+### Was ist der Unterschied zwischen Ausbildungsordnung und Ausbildungsrahmenplan?
+
+Die Ausbildungsordnung ist die Rechtsverordnung für einen Ausbildungsberuf. Sie legt nach § 5 BBiG Berufsbezeichnung, Ausbildungsdauer, Berufsbild, Ausbildungsrahmenplan und Prüfungsanforderungen fest. Der Ausbildungsrahmenplan ist also ein Teil der Ausbildungsordnung, nämlich die Anleitung, was der Betrieb wann vermittelt.
 
 ### Was ist der Unterschied zwischen Ausbildungsrahmenplan und Rahmenlehrplan?
 
