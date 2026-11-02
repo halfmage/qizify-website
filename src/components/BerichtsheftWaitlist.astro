@@ -72,7 +72,7 @@ const inputClass = formInputClass;
 const labelClass = 'flex flex-col gap-1.5 text-sm font-medium text-white/80';
 ---
 
-<aside id={id} class="not-prose my-12 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
+<aside id={id} class="not-prose my-12 scroll-mt-28 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
 	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
 	<span class="section-label block mb-3">{c.eyebrow}</span>
 	<h2 class="text-heading-sm text-white m-0 mb-3">{headline}</h2>
@@ -112,7 +112,7 @@ const labelClass = 'flex flex-col gap-1.5 text-sm font-medium text-white/80';
 			<input type="checkbox" name="consent" required class="mt-0.5 w-4 h-4 shrink-0 cursor-pointer accent-primary" />
 			<span>{c.consent} <a href={c.privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{c.privacy}</a></span>
 		</label>
-		<p class="text-xs text-muted/80 leading-relaxed m-0">{c.purpose} <a href={c.privacyHref} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">{c.privacy}</a></p>
+		<p class="text-xs text-muted/80 leading-relaxed m-0">{c.purpose}</p>
 		<Fragment slot="footer">
 			<button type="submit" class="self-start bg-primary text-white border-none rounded-full px-6 py-3 text-base font-medium cursor-pointer hover:bg-[#6a4ae0] transition-colors font-sans disabled:opacity-50">{c.submit}</button>
 		</Fragment>

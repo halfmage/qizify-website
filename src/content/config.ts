@@ -58,6 +58,15 @@ const blog = defineCollection({
 		// about: the main entities the post is about (plain names), emitted as
 		// schema.org `about` so engines can match the page to the topic.
 		about: z.array(z.string()).optional(),
+		// sidebarCta: optional override for the sticky sidebar card. `href` is a plain
+		// link (usually an in-page anchor such as #kostenlos) and opens no modal. Used
+		// by posts with their own inline offer, e.g. the Berichtsheft waitlist.
+		sidebarCta: z.object({
+			title: z.string(),
+			sub: z.string(),
+			button: z.string(),
+			href: z.string(),
+		}).optional(),
 		faq: z.array(z.object({
 			q: z.string(),
 			a: z.string(),

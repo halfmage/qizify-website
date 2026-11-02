@@ -26,12 +26,13 @@ interface Props {
 	faq?: { q: string; a: string }[];
 	sources?: { name: string; url: string; retrieved?: string }[];
 	about?: string[];
+	sidebarCtaOverride?: { title: string; sub: string; button: string; href: string };
 	ctaVariant?: 'demo' | 'consultation' | 'guide';
 	ctaFooter?: { label?: string; headline: string; subheadline: string; button: string };
 	heroImage?: string;
 }
 
-const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, sources, about, ctaVariant = 'demo', ctaFooter, heroImage } = Astro.props;
+const { title, description, lang, publishDate, updatedDate, author, authorRole, tags, slug, ogImage, keyTakeaways, faq, sources, about, sidebarCtaOverride, ctaVariant = 'demo', ctaFooter, heroImage } = Astro.props;
 
 // Byline role. Defaults to the content-team title the existing named posts were
 // written under, so those are unchanged; anyone else sets authorRole explicitly.
@@ -368,14 +369,14 @@ const formatRetrieved = (d: string) =>
 						<nav id="toc" aria-label={tocLabel} class="toc-list min-h-0 overflow-y-auto pr-1 flex flex-col border-l border-border text-sm"></nav>
 					</div>
 					<a
-						href={isGuide ? GUIDE_HREF : `#${ctaTrigger}`}
-						data-modal-trigger={isGuide ? undefined : ctaTrigger}
+						href={sidebarCtaOverride ? sidebarCtaOverride.href : isGuide ? GUIDE_HREF : `#${ctaTrigger}`}
+						data-modal-trigger={sidebarCtaOverride || isGuide ? undefined : ctaTrigger}
 						class="group block shrink-0 rounded-lg border border-border bg-surface p-5 hover:border-primary/40 transition-colors"
 					>
-						<p class="text-white font-semibold text-sm mb-1">{sidebarCta.title}</p>
-						<p class="text-muted text-xs mb-3 leading-relaxed">{sidebarCta.sub}</p>
+						<p class="text-white font-semibold text-sm mb-1">{(sidebarCtaOverride ?? sidebarCta).title}</p>
+						<p class="text-muted text-xs mb-3 leading-relaxed">{(sidebarCtaOverride ?? sidebarCta).sub}</p>
 						<span class="inline-flex items-center gap-1 text-primary text-sm font-medium">
-							{sidebarCta.button}
+							{(sidebarCtaOverride ?? sidebarCta).button}
 							<span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">&rarr;</span>
 						</span>
 					</a>
