@@ -6991,7 +6991,7 @@ Das hängt davon ab, wie viele Azubis Sie haben, welche Berufe Sie abdecken und 
 Source: https://learnslice.com/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder
 Language: de
 Published: 2026-05-26
-Updated: 2026-07-01
+Updated: 2026-11-02
 
 Welche KI-Tools dürfen Ausbilder einsetzen? Der 7-Punkte-Check für 2026: AVV, EU-Hosting, Trainingsdaten-Opt-out. Plus 3 teure Fallstricke aus der Praxis.
 
@@ -7007,9 +7007,9 @@ Welche KI-Tools dürfen Ausbilder einsetzen? Der 7-Punkte-Check für 2026: AVV, 
 
 ## DSGVO-konforme KI-Tools für Ausbilder: Warum die Frage 2026 keine theoretische mehr ist
 
-Die Datenschutz-Grundverordnung (DSGVO) ist seit acht Jahren in Kraft, ChatGPT seit dreieinhalb. Die Schnittmenge **DSGVO-konforme KI-Tools für Ausbilder** ist im Jahr 2026 keine akademische Diskussion mehr. Die Landesdatenschutzbehörden haben begonnen, Beschäftigtendatenverarbeitung mit generativer KI systematisch zu prüfen, die Industrie- und Handelskammern fragen bei Ausbildungsbetrieben gezielt nach Datenschutzkonzepten für eingesetzte Lernsoftware, und der EU AI Act ergänzt die DSGVO um eigene Pflichten, die für Hochrisiko-Anwendungen im Beschäftigungs- und Bildungskontext besonders relevant sind.
+**Kurz gesagt:** Ein KI-Tool dürfen Ausbilder mit Azubi-Daten nur nutzen, wenn der Arbeitgeber es beauftragt hat. Dazu gehören ein Auftragsverarbeitungsvertrag (Art. 28 DSGVO), eine klare Rechtsgrundlage, ein abgeschalteter Trainingsdaten-Zugriff und eine nachvollziehbare Kette der Unterauftragsverarbeiter. Ein privater ChatGPT-Account erfüllt das nicht. Die sieben Prüfpunkte unten zeigen, wie Sie ein Tool in einer Stunde vorprüfen.
 
-Stand: Mai 2026. Geltende Rechtslage in Deutschland und EU.
+Stand: November 2026. Geltende Rechtslage in Deutschland und der EU. *Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Rechtsberatung. Im Einzelfall entscheiden Ihre Datenschutzbeauftragten oder eine Anwältin bzw. ein Anwalt.*
 
 Für Ausbilderinnen und Ausbilder, die einen ChatGPT-Tab offen haben und gleichzeitig Berichtsheft-Feedback formulieren wollen, ist die Lage damit unangenehm konkret geworden. Dieser Beitrag legt sieben Prüfkriterien offen, die über die Zulässigkeit eines KI-Tools entscheiden, benennt drei Fallstricke aus der betrieblichen Praxis und ordnet die wichtigsten Kategorien von KI-Werkzeugen so ein, dass eine fundierte Auswahl möglich wird, auch ohne eigene Rechtsabteilung.
 
@@ -7017,7 +7017,7 @@ Für Ausbilderinnen und Ausbilder, die einen ChatGPT-Tab offen haben und gleichz
 
 DSGVO-Konformität bei einem KI-Tool ist kein Siegel, das man aufkleben kann. Sie ist eine Kette aus vier Elementen, die alle vorliegen müssen: eine **Rechtsgrundlage** nach Art. 6 Abs. 1 DSGVO, ein **Auftragsverarbeitungsvertrag** nach Art. 28 DSGVO mit dem Anbieter, dokumentierte **technisch-organisatorische Maßnahmen** nach Art. 32 DSGVO und, im Regelfall, eine **Datenschutz-Folgenabschätzung** nach Art. 35 DSGVO. Fehlt ein Glied, ist die Verarbeitung rechtswidrig.
 
-Im Ausbildungskontext kommt eine Besonderheit hinzu. Auszubildende sind nach § 26 Bundesdatenschutzgesetz (BDSG) Beschäftigte. Datenverarbeitungen im Ausbildungsverhältnis stützen sich daher in aller Regel nicht auf eine Einwilligung, sondern auf § 26 Abs. 1 BDSG: zulässig, soweit für die Durchführung des Ausbildungsverhältnisses erforderlich. Diese Einschränkung ist der eigentliche Hebel. Sie zwingt zur Konkretisierung des Verarbeitungszwecks. Ein Allzweck-Chatbot ohne Use-Case-Eingrenzung leistet das schwerer als ein vertikales Werkzeug für die Ausbildung.
+Im Ausbildungskontext kommt eine Besonderheit hinzu. Auszubildende sind Beschäftigte (§ 26 Abs. 8 BDSG). Lange galt § 26 Abs. 1 BDSG als Rechtsgrundlage für Datenverarbeitung im Beschäftigungsverhältnis. Das [Bundesarbeitsgericht hat am 8. Mai 2025 entschieden](https://www.bundesarbeitsgericht.de/entscheidung/8-azr-209-21/) (8 AZR 209/21), dass diese Vorschrift nicht mehr anzuwenden ist, weil sie die Anforderungen des Art. 88 DSGVO nicht erfüllt. Seitdem stützt sich die Verarbeitung direkt auf Art. 6 Abs. 1 DSGVO, im Ausbildungsverhältnis meist auf Buchstabe b: zulässig, soweit für die Durchführung des Ausbildungsvertrags erforderlich. Eine Einwilligung ist wegen der Abhängigkeit selten das Mittel der Wahl. Die Erforderlichkeit ist der eigentliche Hebel. Sie zwingt zur Konkretisierung des Verarbeitungszwecks. Ein Allzweck-Chatbot ohne Use-Case-Eingrenzung leistet das schwerer als ein vertikales Werkzeug für die Ausbildung.
 
 ## Die sieben Prüfkriterien im Detail
 
@@ -7025,7 +7025,7 @@ Sieben Kriterien lassen sich aus DSGVO, BDSG und der gängigen Aufsichtspraxis a
 
 1. **Hosting-Region.** Wo läuft der Dienst physisch? EU-Hosting reduziert das Drittlandsrisiko, beseitigt es aber nur dann, wenn auch die Modellverarbeitung in der EU stattfindet.
 2. **Auftragsverarbeitungsvertrag.** Liegt ein AVV nach Art. 28 DSGVO vor, der Verarbeitungsgegenstand, -dauer, Art und Zweck, Datenkategorien sowie Betroffene benennt? Ohne diesen Vertrag ist die Verarbeitung formal unzulässig.
-3. **Trainingsdaten-Opt-out.** Werden Eingaben für das Modelltraining verwendet? Wenn ja, lässt sich das vertraglich und technisch deaktivieren? OpenAI bietet das für ChatGPT-Team und Enterprise standardmäßig, in der kostenlosen Version nur per Datenkontrollen-Einstellung.
+3. **Trainingsdaten-Opt-out.** Werden Eingaben für das Modelltraining verwendet? Wenn ja, lässt sich das vertraglich und technisch deaktivieren? Bei Geschäftskunden-Tarifen ist das oft vertraglich ausgeschlossen, in Verbraucherversionen häufig nur per Einstellung. Verlassen Sie sich nicht auf die Einstellung, sondern auf den Vertrag.
 4. **Löschkonzept.** Werden Daten nach Vertragsende oder nach Ablauf einer definierten Aufbewahrungsfrist tatsächlich gelöscht, und wird das nachweislich dokumentiert?
 5. **Unterauftragsverarbeiter.** Welche Sub-Prozessoren sind eingebunden? Art. 28 Abs. 2 DSGVO verlangt eine vorherige schriftliche Genehmigung des Verantwortlichen, bevor ein weiterer Auftragsverarbeiter eingesetzt wird.
 6. **Protokollierung.** Existiert ein Audit-Log, das nachweist, wer wann welche personenbezogenen Daten verarbeitet hat? Ohne dieses Log lassen sich Auskunfts- und Löschpflichten praktisch nicht erfüllen.
@@ -7035,17 +7035,17 @@ Diese sieben Punkte sind keine Wunschliste. Sie sind die Mindestanforderungen, d
 
 ## Drei Fallstricke, die in der Praxis am häufigsten passieren
 
-In den Datenschutzberatungen rund um KI in der Ausbildung tauchen drei Fehlerbilder immer wieder auf. Sie sind nicht exotisch, sondern Folge naheliegender, gut gemeinter Entscheidungen.
+Beim Einsatz von KI in der Ausbildung tauchen drei Fehlerbilder immer wieder auf. Sie sind nicht exotisch, sondern Folge naheliegender, gut gemeinter Entscheidungen.
 
-**Erstens: der private ChatGPT-Account auf Azubi-Daten.** Ein Ausbilder loggt sich mit seinem privaten Account ein und füttert ChatGPT mit dem Berichtsheft-Eintrag eines Auszubildenden, um Formulierungshilfe zu bekommen. Es gibt keine Rechtsgrundlage. Der Arbeitgeber hat OpenAI nicht beauftragt, keinen AVV geschlossen und auch keine Information nach Art. 13 DSGVO erteilt. Selbst wenn niemand merkt, was passiert ist: Die Verarbeitung ist unzulässig. Wer das anders sieht, sollte sich vergegenwärtigen, dass im kostenlosen Plan die Eingaben standardmäßig zum Modelltraining verwendet werden, sofern man dies nicht selbst deaktiviert.
+**Erstens: der private ChatGPT-Account auf Azubi-Daten.** Ein Ausbilder loggt sich mit seinem privaten Account ein und füttert ChatGPT mit dem Berichtsheft-Eintrag eines Auszubildenden, um Formulierungshilfe zu bekommen. Es gibt keine Rechtsgrundlage. Der Arbeitgeber hat OpenAI nicht beauftragt, keinen AVV geschlossen und auch keine Information nach Art. 13 DSGVO erteilt. Selbst wenn niemand merkt, was passiert ist: Die Verarbeitung ist unzulässig. Hinzu kommt, dass Verbraucherversionen Eingaben zum Modelltraining nutzen können, solange das niemand in den Einstellungen abschaltet.
 
-**Zweitens: aktivierte KI-Funktionen in bestehenden Tools.** Microsoft Copilot wird in einem bestehenden Microsoft-365-Tenant aktiviert, weil das Unternehmen ohnehin Microsoft-Lizenzen hat. Der bestehende AVV mit Microsoft deckt jedoch nicht automatisch die Copilot-Verarbeitung ab. Eine Erweiterung ist erforderlich, und je nach Datenfluss auch eine eigene Folgenabschätzung. Dasselbe Muster zeigt sich bei "KI-Erweiterungen" in HR- und LMS-Systemen.
+**Zweitens: aktivierte KI-Funktionen in bestehenden Tools.** Microsoft Copilot wird in einem bestehenden Microsoft-365-Tenant aktiviert, weil das Unternehmen ohnehin Microsoft-Lizenzen hat. Ob der bestehende Vertrag die neue KI-Verarbeitung abdeckt, welche Daten Copilot dabei erreicht und ob die Folgenabschätzung angepasst werden muss, wird dabei oft nicht geprüft. Genau das gehört vor die Aktivierung, nicht danach. Dasselbe Muster zeigt sich bei "KI-Erweiterungen" in HR- und LMS-Systemen.
 
-**Drittens: EU-Frontend, US-Backend.** Ein Anbieter wirbt mit "EU-Hosting" und meint damit den Web-Auftritt und die Benutzerdatenbank. Das eigentliche Sprachmodell läuft jedoch über eine API in den USA. Damit findet eine Datenübermittlung in ein Drittland statt, mit allen Konsequenzen, die Schrems II für solche Konstellationen aufgestellt hat. Standardvertragsklauseln allein heilen das nicht, wenn der Anbieter dem US Cloud Act unterliegt.
+**Drittens: EU-Frontend, US-Backend.** Ein Anbieter wirbt mit "EU-Hosting" und meint damit den Web-Auftritt und die Benutzerdatenbank. Das eigentliche Sprachmodell läuft jedoch über eine API in den USA. Damit findet eine Datenübermittlung in ein Drittland statt, die der Anbieter offenlegen muss. Zulässig ist sie zum Beispiel, wenn der US-Anbieter unter dem [EU-US Data Privacy Framework](https://eur-lex.europa.eu/eli/dec_impl/2023/1795/oj) zertifiziert ist. Das [Gericht der EU hat eine Klage dagegen am 3. September 2025 abgewiesen](https://curia.europa.eu/site/upload/docs/application/pdf/2025-09/cp250106en.pdf), ein Rechtsmittel zum EuGH ist aber möglich. Das Problem ist deshalb weniger das Verbot als die fehlende Transparenz: Wer "EU-Hosting" bewirbt und das US-Backend verschweigt, hat Ihnen eine wesentliche Information vorenthalten, die in Ihr Verarbeitungsverzeichnis gehört.
 
 ## Welche KI-Funktionen Ausbilder im Alltag wirklich brauchen
 
-Bevor Sie ein Tool auswählen, fixieren Sie den Use Case. Die meisten Ausbilder benötigen nicht "KI", sondern eine konkrete Funktion. In der Beratungspraxis bei Mittelständlern kristallisieren sich fünf wiederkehrende Anwendungsfelder heraus.
+Bevor Sie ein Tool auswählen, fixieren Sie den Use Case. Die meisten Ausbilder benötigen nicht "KI", sondern eine konkrete Funktion. In mittelständischen Ausbildungsbetrieben kehren fünf Anwendungsfelder immer wieder.
 
 - Erstellung individueller Lernpfade entlang des [Ausbildungsrahmenplans](/de/blog/ausbildungsrahmenplan-erklaert) für einen konkreten Azubi
 - Formulierungshilfe für Feedback auf Berichtsheft-Einträge, ohne das [digitale Berichtsheft](/de/blog/berichtsheft-digital) selbst zu verlassen
@@ -7061,8 +7061,8 @@ Drei Kategorien dominieren den Markt im Jahr 2026. Sie unterscheiden sich nicht 
 
 | Kategorie | Typischer Use Case | AVV-Verfügbarkeit | DSGVO-Risiko | Funktionsbreite |
 |---|---|---|---|---|
-| Allzweck-Chatbots (ChatGPT Team, Copilot, Claude) | Recherche, Formulierung, generische Texte | Vorhanden für Team-/Enterprise-Tarife | Mittel bis hoch, abhängig von Hosting und Sub-Prozessoren | Sehr breit, dafür Verarbeitungszweck offen |
-| EU-gehostete LLM-Plattformen (Aleph Alpha, Mistral via Scaleway) | Eigenentwicklung interner KI-Funktionen | Vorhanden, mit EU-Sub-Prozessor-Kette | Niedrig bis mittel | Hoch, erfordert eigene Implementierung |
+| Allzweck-Chatbots (ChatGPT, Copilot, Claude) | Recherche, Formulierung, generische Texte | Vorhanden für Geschäftskunden-Tarife | Mittel bis hoch, abhängig von Hosting und Sub-Prozessoren | Sehr breit, dafür Verarbeitungszweck offen |
+| EU-gehostete Modelle (z. B. Mistral, Open-Source-Modelle auf EU-Servern) | Eigenentwicklung interner KI-Funktionen | Vorhanden, mit EU-Sub-Prozessor-Kette | Niedrig bis mittel | Hoch, erfordert eigene Implementierung |
 | Vertikale Ausbildungs-Plattformen (z. B. LearnSlice) | Lernpfade, Berichtsheft-Feedback, Prüfungsfragen | Vertraglich Bestandteil, AVV mit Verarbeitungsverzeichnis | Niedrig, weil Zweck definiert | Auf den Ausbildungs-Use-Case zugeschnitten |
 
 Die Einordnung ist bewusst grobkörnig. Sie ersetzt nicht die individuelle Prüfung, hilft aber bei der Vorauswahl. Wer einen detaillierten Vergleich mit konkreten Anbietern braucht, findet eine bewertete Übersicht in der [Marktübersicht zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
@@ -7085,6 +7085,12 @@ Eine KI-gestützte Leistungsbewertung, die ohne menschliche Letztverantwortung �
 
 Art. 22 Abs. 2 DSGVO kennt Ausnahmen (Vertragsbezug, gesetzliche Erlaubnis, ausdrückliche Einwilligung), Art. 22 Abs. 3 verlangt für zwei dieser Ausnahmen mindestens "das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung". Praktisch heißt das: Eine KI darf Vorschläge machen, der Mensch entscheidet, und der Auszubildende kann widersprechen. Wer das Verhältnis umdreht, baut ein juristisches Problem ein, das niemand sieht, bis es jemand sieht.
 
+## EU AI Act: was für KI in der Ausbildung dazukommt
+
+Neben der DSGVO gilt die [KI-Verordnung der EU](https://eur-lex.europa.eu/eli/reg/2024/1689/oj). Für die Ausbildung ist vor allem Anhang III wichtig: Er stuft KI-Systeme in der allgemeinen und beruflichen Bildung als Hochrisiko ein, etwa solche, die Lernergebnisse bewerten oder den Lernprozess danach steuern. Dasselbe gilt im Beschäftigungsbereich für KI, die Leistung und Verhalten bewertet oder Entscheidungen über das Arbeitsverhältnis beeinflusst.
+
+Die Pflichten für diese Hochrisiko-Systeme gelten nach der Änderung durch die [Verordnung (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj/deu) ab dem 2. Dezember 2027, nicht wie ursprünglich geplant ab August 2026. Das verschafft Zeit, ändert aber die Richtung nicht. Wer heute ein Tool auswählt, sollte fragen, wie der Anbieter sich auf diese Pflichten vorbereitet und welche Dokumentation er Ihnen als Betreiber liefern wird.
+
 ## Fünf-Schritte-Auswahlpfad für Ausbilder ohne IT-Abteilung
 
 Die meisten Mittelstands-Ausbildungsbetriebe haben weder einen eigenen Datenschutzbeauftragten in Vollzeit noch eine KI-Strategie auf Vorstandsebene. Für diese Realität funktioniert ein pragmatischer Auswahlpfad in fünf Schritten besser als ein Lastenheft.
@@ -7093,9 +7099,9 @@ Die meisten Mittelstands-Ausbildungsbetriebe haben weder einen eigenen Datenschu
 2. **AVV anfragen, bevor Sie testen.** Verlangen Sie das AVV-Muster vor dem ersten Test, nicht danach. Wer keinen AVV liefert, ist raus.
 3. **Hosting und Sub-Prozessoren prüfen.** Lassen Sie sich die Liste der Unterauftragsverarbeiter mit Sitzland geben. Achten Sie auf EU-Frontend / US-Backend-Konstellationen.
 4. **Trainingsdaten-Opt-out vertraglich absichern.** "Wir verwenden Ihre Daten nicht für Training" gehört in den AVV oder in eine Vertragsanlage, nicht in eine Marketingbroschüre.
-5. **DSFA-Bedarf klären.** Wenn die Verarbeitung Beschäftigtendaten in nennenswertem Umfang berührt oder Bewertungselemente enthält, ist eine DSFA nach Art. 35 DSGVO regelmäßig erforderlich. Dafür gibt es Vorlagen bei den Landesdatenschutzbehörden.
+5. **DSFA-Bedarf klären.** Wenn die Verarbeitung Beschäftigtendaten in nennenswertem Umfang berührt oder Bewertungselemente enthält, ist eine DSFA nach Art. 35 DSGVO häufig erforderlich. Die [Muss-Liste der Datenschutzkonferenz](https://www.datenschutzkonferenz-online.de/media/ah/20181017_ah_DSK_DSFA_Muss-Liste_Version_1.1_Deutsch.pdf) nennt KI zur Bewertung persönlicher Aspekte ausdrücklich. Vorlagen gibt es bei den Landesdatenschutzbehörden.
 
-Dieser Pfad ersetzt keine Rechtsberatung. Er filtert aber rund neunzig Prozent der Tools heraus, die sich bei genauerem Hinsehen als nicht ausbildungstauglich erweisen. Für den Rest beginnt die eigentliche fachliche Bewertung. Wer hier zusätzlich [seine Ausbilder operativ entlasten](/de/blog/ausbilder-entlasten) möchte, wird die Kombination aus klarer Compliance-Linie und scharfem Use Case nicht nur als Pflicht erleben, sondern als Beschleuniger.
+Dieser Pfad ersetzt keine Rechtsberatung. Er filtert aber die meisten Tools früh heraus, die sich bei genauerem Hinsehen als nicht ausbildungstauglich erweisen. Für den Rest beginnt die eigentliche fachliche Bewertung. Wer hier zusätzlich [seine Ausbilder operativ entlasten](/de/blog/ausbilder-entlasten) möchte, wird die Kombination aus klarer Compliance-Linie und scharfem Use Case nicht nur als Pflicht erleben, sondern als Beschleuniger.
 
 ## Fazit: Compliance ist kein Funktionsverzicht
 
@@ -7110,7 +7116,7 @@ Bildungsträger und Weiterbildungsanbieter, die ihren Stand bei Datensouveränit
 
 ### Darf ich als Ausbilder ChatGPT mit Azubi-Daten benutzen?
 
-Mit dem privaten ChatGPT-Account regelmäßig nicht. Es fehlt der Auftragsverarbeitungsvertrag nach Art. 28 DSGVO zwischen Ihrem Arbeitgeber und OpenAI, und in der kostenlosen Version werden Eingaben standardmäßig zur Modellverbesserung herangezogen, sofern dies nicht aktiv in den Datenkontrollen deaktiviert wird. Für den dienstlichen Einsatz braucht es einen ChatGPT-Team- oder Enterprise-Vertrag des Arbeitgebers, idealerweise mit EU-Daten-Residenz, oder ein vertikales Tool mit eigenem AVV.
+Mit dem privaten ChatGPT-Account regelmäßig nicht. Es fehlt der Auftragsverarbeitungsvertrag nach Art. 28 DSGVO zwischen Ihrem Arbeitgeber und OpenAI, und in Verbraucherversionen können Eingaben zur Modellverbesserung genutzt werden, solange das nicht in den Einstellungen abgeschaltet ist. Für den dienstlichen Einsatz braucht es einen Geschäftskunden-Vertrag des Arbeitgebers mit AVV oder ein vertikales Tool mit eigenem AVV. Ob und für welche Tarife eine Datenhaltung in der EU angeboten wird, lassen Sie sich vom Anbieter schriftlich bestätigen.
 
 ### Was ist ein Auftragsverarbeitungsvertrag (AVV) und brauche ich ihn wirklich?
 
@@ -7118,15 +7124,15 @@ Der AVV nach Art. 28 DSGVO ist verpflichtend, sobald ein externer Anbieter perso
 
 ### Reicht es, wenn das KI-Tool auf EU-Servern liegt?
 
-Hosting in der EU ist eine notwendige, aber keine hinreichende Bedingung. Entscheidend ist zusätzlich, ob die Unterauftragsverarbeiter (insbesondere das eigentliche Sprachmodell) ebenfalls in der EU sitzen oder ob Daten an US-Anbieter weitergegeben werden. Ein EU-Frontend mit US-Backend löst das Drittlandsproblem nicht und führt regelmäßig zu derselben Diskussion, die Schrems II angestoßen hat.
+EU-Hosting allein sagt wenig. Entscheidend ist, wo die Unterauftragsverarbeiter sitzen, insbesondere das eigentliche Sprachmodell. Läuft das Modell bei einem US-Anbieter, ist das eine Drittlandsübermittlung. Sie ist zulässig, wenn der Anbieter unter dem EU-US Data Privacy Framework zertifiziert ist oder andere Garantien greifen. Viele Ausbildungsbetriebe bevorzugen trotzdem eine durchgehende EU-Verarbeitung, weil das die Dokumentation vereinfacht und von politischen Entwicklungen in den USA unabhängig macht.
 
 ### Brauche ich eine Datenschutz-Folgenabschätzung (DSFA), wenn ich KI mit Azubi-Daten einsetze?
 
-In den meisten Fällen ja. Art. 35 Abs. 1 DSGVO verlangt eine DSFA bei voraussichtlich hohem Risiko, insbesondere beim Einsatz neuer Technologien. Art. 35 Abs. 3 Buchstabe a) nennt darüber hinaus explizit die systematische und umfassende Bewertung persönlicher Aspekte auf Basis automatisierter Verarbeitung. KI-gestützte Lern- und Bewertungssysteme im Ausbildungsverhältnis erfüllen beide Voraussetzungen typischerweise.
+Häufig ja. Art. 35 Abs. 1 DSGVO verlangt eine DSFA bei voraussichtlich hohem Risiko, insbesondere beim Einsatz neuer Technologien. Die Muss-Liste der Datenschutzkonferenz nennt ausdrücklich den Einsatz künstlicher Intelligenz zur Steuerung der Interaktion mit Betroffenen oder zur Bewertung persönlicher Aspekte. KI-gestützte Lern- und Bewertungssysteme im Ausbildungsverhältnis fallen oft darunter. Ob es im Einzelfall nötig ist, klären Sie mit Ihrer oder Ihrem Datenschutzbeauftragten.
 
 ### Auf welcher Rechtsgrundlage dürfen Auszubildende ein KI-Tool nutzen, das ich bereitstelle?
 
-In der Regel auf § 26 Abs. 1 BDSG, also der Verarbeitung im Beschäftigungsverhältnis, sofern der Einsatz für die Durchführung des Ausbildungsverhältnisses erforderlich ist. Eine Einwilligung nach Art. 6 Abs. 1 Buchstabe a) DSGVO ist im Beschäftigungskontext meist nicht das Mittel der Wahl, weil die Freiwilligkeit angesichts des Abhängigkeitsverhältnisses regelmäßig fraglich ist.
+Direkt auf Art. 6 Abs. 1 DSGVO, meist Buchstabe b (Durchführung des Ausbildungsvertrags), sofern der Einsatz dafür erforderlich ist. § 26 Abs. 1 BDSG trägt nach einem Urteil des Bundesarbeitsgerichts vom 8. Mai 2025 (8 AZR 209/21) nicht mehr als eigene Rechtsgrundlage. Eine Einwilligung ist im Ausbildungsverhältnis meist nicht das Mittel der Wahl, weil die Freiwilligkeit angesichts der Abhängigkeit regelmäßig fraglich ist.
 
 ### Was unterscheidet ein vertikales Ausbildungs-Tool von einem allgemeinen KI-Assistenten?
 
@@ -8133,9 +8139,9 @@ Vergleichen Sie auch, wie dieser Ansatz gegenüber [traditionellen Ausbildungsme
 Source: https://learnslice.com/de/blog/ihk-pruefung-tipps
 Language: de
 Published: 2026-03-28
-Updated: 2026-05-13
+Updated: 2026-11-02
 
-10 Strategien für die IHK-Abschlussprüfung: Lernpläne, Prüfungssimulationen und Zeitmanagement am Prüfungstag, von Azubis erprobt.
+10 Tipps für die IHK-Abschlussprüfung: Lernplan, Original-Prüfungen, Zeitmanagement am Prüfungstag und was gilt, wenn es knapp wird (Ergänzungsprüfung, Wiederholung).
 
 ![LearnSlice IHK-Lernpfad mit strukturierten Prüfungsthemen und Fortschrittsanzeige](/images/blog/learnslice-ihk-lernpfad.png)
 
@@ -8143,7 +8149,9 @@ Updated: 2026-05-13
 
 Die [IHK](https://www.ihk.de)-Abschlussprüfung ist der entscheidende Meilenstein jeder Berufsausbildung. Sie bestimmt nicht nur den Ausbildungsabschluss, sondern beeinflusst auch die Startposition auf dem Arbeitsmarkt. Trotzdem bereiten sich viele Azubis zu spät, zu unstrukturiert oder mit den falschen Materialien vor.
 
-2024 wurden **29,7 %** der Ausbildungsverträge vorzeitig gelöst ([BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037)), und wer die Prüfung erreicht, will sie auch bestehen. Die gute Nachricht: Mit der richtigen Strategie und den passenden Werkzeugen lässt sich die Prüfung souverän meistern. Hier sind 10 bewährte Tipps, die wirklich funktionieren.
+Die gute Nachricht: Laut [BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/download/21037) bestanden 2024 **90,5 Prozent** aller Prüflinge die Abschlussprüfung im ersten Versuch. Die schlechte: Bei der ersten Wiederholung waren es nur noch 65,0 Prozent. Es lohnt sich also, gleich beim ersten Mal gut vorbereitet zu sein. Hier sind 10 Tipps, die wirklich funktionieren, und am Ende, was gilt, wenn es doch knapp wird.
+
+Wie die Prüfung aufgebaut ist, wann die Termine 2026/27 liegen und wie der 100-Punkte-Schlüssel funktioniert, steht in unserem [Leitfaden zur IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital). Dort gibt es auch einen 6-Monats-Lernplan zum Kopieren.
 
 ## Ihr Lernplan: Von 6 Monaten bis zum Prüfungstag
 
@@ -8194,7 +8202,7 @@ KI-basierte Plattformen erkennen automatisch, welche Themenbereiche noch Übung 
 
 Theorie lernen ist wichtig, aber die Prüfungssituation selbst ist etwas anderes. Zeitdruck, unbekannte Fragestellungen und Nervosität können das Ergebnis erheblich beeinflussen. Prüfungssimulationen unter realistischen Bedingungen sind deshalb unverzichtbar.
 
-Nutzen Sie KI-generierte Prüfungsfragen, die an IHK-Themenbereichen und -Format orientiert sind. Simulieren Sie die Prüfung mindestens 5-mal unter Echtbedingungen: volle Zeitbegrenzung, keine Hilfsmittel (außer den erlaubten), ruhiger Raum.
+Am besten üben Sie mit **Original-Prüfungen früherer Termine**. Für kaufmännische Berufe vertreibt laut [AkA](https://www.ihk-aka.de/faq) der U-Form-Verlag übrig gebliebene Aufgabensätze, für gewerblich-technische Berufe gibt es die [Prüfungsbücher der PAL](https://www.ihk.de/stuttgart/pal/weitere-informationen/publikationen-artikel-5281986) im Buchhandel. Oft liegen auch im Betrieb oder in der Berufsschule Sätze vor. Ergänzen Sie das mit KI-generierten Übungsfragen zu Ihren Schwachstellen. Simulieren Sie die Prüfung mindestens 5-mal unter Echtbedingungen: volle Zeitbegrenzung, nur die erlaubten Hilfsmittel, ruhiger Raum.
 
 ![Azubi lernt konzentriert mit digitalen Materialien](/images/blog/pexels-a-darmel-7706924.webp)
 
@@ -8220,6 +8228,8 @@ Am Prüfungstag entscheidet Zeitmanagement über Erfolg und Misserfolg. Folgende
 4. **Schwierige Aufgaben markieren** - Kommen Sie später darauf zurück
 5. **Puffer einplanen** - Halten Sie 10-15 Minuten zum Überprüfen frei
 
+Packen Sie am Vorabend nur, was laut Merkblatt Ihrer IHK erlaubt ist, etwa einen bestimmten Taschenrechner. Ein nicht zugelassenes Hilfsmittel auf dem Tisch kann teuer werden.
+
 ### Tipp 9: Umgang mit Prüfungsstress
 
 Nervosität vor der Prüfung ist normal und sogar hilfreich - in Maßen. Wenn der Stress jedoch überhandnimmt, helfen diese Techniken:
@@ -8230,9 +8240,17 @@ Nervosität vor der Prüfung ist normal und sogar hilfreich - in Maßen. Wenn de
 
 ### Tipp 10: Vergessen Sie den Praxisteil nicht
 
-Die IHK-Abschlussprüfung besteht aus einem schriftlichen und einem praktischen Teil. Viele Azubis konzentrieren sich zu stark auf die Theorie und vernachlässigen die praktische Vorbereitung. Üben Sie betriebliche Aufgaben, Projektpräsentationen und das Fachgespräch rechtzeitig.
+Neben den schriftlichen Bereichen gibt es je nach Beruf einen praktischen oder mündlichen Teil, etwa ein fallbezogenes Fachgespräch, eine Projektarbeit mit Präsentation oder eine Arbeitsaufgabe. Welcher, steht in Ihrer Ausbildungsordnung. Viele Azubis konzentrieren sich zu stark auf die Theorie. Üben Sie betriebliche Aufgaben, Präsentationen und das Fachgespräch rechtzeitig.
 
 Sprechen Sie mit Ihrem Ausbilder und bitten Sie um Feedback zu Ihren praktischen Fähigkeiten. Üben Sie die Präsentation Ihres Projekts mehrfach - idealerweise vor Kollegen, die kritische Fragen stellen.
+
+## Wenn es knapp wird: Ergänzungsprüfung und Wiederholung
+
+**Mündliche Ergänzungsprüfung.** Liegt ein schriftlicher Prüfungsbereich unter ausreichend und kann eine mündliche Prüfung über das Bestehen entscheiden, können Sie in bestimmten Bereichen eine Ergänzungsprüfung beantragen. Bei Kaufleuten für Büromanagement sind das "Kundenbeziehungsprozesse" oder "Wirtschafts- und Sozialkunde", die Prüfung dauert etwa 15 Minuten, und das schriftliche und das mündliche Ergebnis werden im Verhältnis 2 zu 1 gewichtet ([§ 16 BüroMKfAusbV](https://www.gesetze-im-internet.de/b_romkfausbv_2025/__16.html)). Bei Industriekaufleuten gilt dasselbe für zwei andere Bereiche ([§ 15 IndKflAusbV](https://www.gesetze-im-internet.de/indkflausbv/__15.html)). Welche Bereiche in Ihrem Beruf infrage kommen, steht in Ihrer Ausbildungsordnung.
+
+**Wiederholung.** Die Abschlussprüfung kann zweimal wiederholt werden ([§ 37 Abs. 1 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__37.html)). Bei einer gestreckten Prüfung lässt sich Teil 1 nicht eigenständig wiederholen. Auf Ihr Verlangen verlängert sich die Ausbildung bis zur nächstmöglichen Wiederholungsprüfung, höchstens um ein Jahr ([§ 21 Abs. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__21.html)). Bestandene Prüfungsleistungen müssen nach der Musterprüfungsordnung in der Regel nicht wiederholt werden, wenn Sie sich innerhalb von zwei Jahren zur Wiederholung anmelden. Was genau für Sie gilt, sagt Ihnen Ihre IHK.
+
+*Hinweis: Dieser Beitrag gibt einen allgemeinen Überblick. Verbindlich sind Ihre Ausbildungsordnung und die Prüfungsordnung Ihrer IHK.*
 
 ## So unterstützen Unternehmen ihre Azubis
 
@@ -8248,6 +8266,24 @@ Eine bestandene IHK-Prüfung ist kein Zufall, sondern das Ergebnis strukturierte
 
 **Für Geschäftsführung und HR-Leitung:** Jede bestandene IHK-Prüfung schützt Ihre Investition von im Schnitt rund 26.200 € pro Azubi und Jahr (BIBB). [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
+
+## Häufig gestellte Fragen
+
+### Wie viele Azubis bestehen die IHK-Prüfung?
+
+Laut BIBB-Datenreport 2026 bestanden 2024 90,5 Prozent der Prüflinge die Abschlussprüfung im ersten Versuch, in Industrie und Handel 92,3 Prozent. Bei der ersten Wiederholung waren es nur noch 65,0 Prozent.
+
+### Wie oft kann ich die IHK-Abschlussprüfung wiederholen?
+
+Zweimal (§ 37 Abs. 1 BBiG). Bei einer gestreckten Abschlussprüfung kann Teil 1 nicht eigenständig wiederholt werden. Auf Ihr Verlangen verlängert sich die Ausbildung bis zur nächstmöglichen Wiederholungsprüfung, höchstens um ein Jahr (§ 21 Abs. 3 BBiG).
+
+### Was ist eine mündliche Ergänzungsprüfung?
+
+Wenn ein schriftlicher Prüfungsbereich schlechter als ausreichend bewertet wurde und eine mündliche Prüfung über das Bestehen entscheiden kann, können Sie in bestimmten Bereichen eine Ergänzungsprüfung beantragen. Bei Kaufleuten für Büromanagement sind das Kundenbeziehungsprozesse oder Wirtschafts- und Sozialkunde, sie dauert etwa 15 Minuten. Welche Bereiche infrage kommen, steht in Ihrer Ausbildungsordnung.
+
+### Wo bekomme ich alte IHK-Prüfungen?
+
+Für kaufmännische Berufe beim U-Form-Verlag, der laut AkA ihre Veröffentlichungen vertreibt, auch übrig gebliebene Aufgabensätze früherer Prüfungen. Für gewerblich-technische Berufe sind die Prüfungsbücher der PAL über den Buchhandel erhältlich. Fragen Sie auch im Betrieb und in der Berufsschule, dort liegen oft Sätze vor.
 
 ---
 
@@ -8689,15 +8725,23 @@ KI in der Ausbildung ist kein Zukunftsszenario mehr, sondern Realität. Unterneh
 Source: https://learnslice.com/de/blog/berichtsheft-digital
 Language: de
 Published: 2026-03-19
-Updated: 2026-09-09
+Updated: 2026-11-02
 
 Digitaler Ausbildungsnachweis statt Papier: was § 13 BBiG verlangt, wer zustimmen muss und wie der Umstieg klappt. Mit Berichtsheft-Vorlage zum Kopieren.
 
 ![Auszubildende arbeiten am Laptop an digitaler Dokumentation](/images/blog/pexels-mikhail-nilov-9242810.webp)
 
+## Berichtsheft digital: das Wichtigste in Kürze
+
+- **Erlaubt:** Für Ausbildungsverträge ab dem 1. Oktober 2017 darf der Ausbildungsnachweis schriftlich oder elektronisch geführt werden ([§ 13 Satz 2 Nr. 7 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Die Form steht im Ausbildungsvertrag.
+- **Pflicht für die Prüfung:** Ohne vorgelegten Ausbildungsnachweis keine Zulassung zur Abschlussprüfung ([§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)).
+- **Rhythmus:** täglich oder wöchentlich, rund eine DIN-A4-Seite pro Woche. Ausbilder prüfen mindestens monatlich ([Empfehlung des BIBB-Hauptausschusses](https://www.bibb.de/dokumente/pdf/HA156.pdf)).
+- **Freigabe:** Bei digitalen Nachweisen reicht eine elektronische Bestätigung, eine Unterschrift auf Papier ist nicht nötig.
+- **Kosten:** Für Azubis immer kostenlos. Das Tool zahlt der Betrieb ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
+
 ## Warum das Berichtsheft so wichtig ist
 
-Das Berichtsheft (auch Ausbildungsnachweis genannt) ist weit mehr als eine Pflichtübung. Es dokumentiert den gesamten Ausbildungsverlauf und ist eine **Zulassungsvoraussetzung zur [IHK](https://www.ihk.de)-Abschlussprüfung** gemäß [BBiG](https://www.gesetze-im-internet.de/bbig_2005/) §13. Ohne ordnungsgemäß geführtes Berichtsheft - keine Prüfungszulassung.
+Das Berichtsheft (auch Ausbildungsnachweis genannt) ist weit mehr als eine Pflichtübung. Es dokumentiert den gesamten Ausbildungsverlauf, und seine Vorlage ist eine **Zulassungsvoraussetzung zur Abschlussprüfung** nach [§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html). Ohne vorgelegtes Berichtsheft keine Prüfungszulassung.
 
 Trotzdem wird das Berichtsheft in vielen Betrieben stiefmütterlich behandelt. Azubis füllen es Wochen oder Monate verspätet aus, Ausbilder unterschreiben stapelweise Seiten auf einmal, und am Ende fehlen Einträge. Das Resultat: Stress vor der Prüfungsanmeldung und im schlimmsten Fall eine gefährdete Zulassung.
 
@@ -8705,20 +8749,23 @@ Bei 29,7 % vorzeitig gelösten Ausbildungsverträgen ([BIBB-Datenreport 2026](ht
 
 ## Rechtliche Anforderungen nach BBiG §13
 
-Das Berufsbildungsgesetz schreibt vor, dass Auszubildende einen Ausbildungsnachweis führen müssen. Seit der Novellierung des BBiG 2020 ist ausdrücklich klargestellt, dass der Nachweis **auch elektronisch geführt werden darf** - sofern der Ausbildungsbetrieb zustimmt. Auch in Österreich (Lehrlingsausbildung) und der Schweiz (Berufslehre) setzen sich digitale Ausbildungsnachweise zunehmend durch. Die IHK- und HWK-Kammern in Deutschland akzeptieren digitale Berichtshefte flächendeckend.
+Das Berufsbildungsgesetz verpflichtet Auszubildende, **einen schriftlichen oder elektronischen Ausbildungsnachweis** zu führen ([§ 13 Satz 2 Nr. 7 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Die elektronische Form gilt für alle Verträge, die ab dem 1. Oktober 2017 geschlossen wurden ([§ 103 Abs. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__103.html)). Welche Form im Betrieb gilt, wird im Ausbildungsvertrag festgehalten ([§ 11 Abs. 1 Satz 2 Nr. 12 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__11.html)). Die Ausbildenden müssen ihre Azubis zum Führen anhalten, die Nachweise regelmäßig durchsehen und Gelegenheit geben, sie am Arbeitsplatz zu führen ([§ 14 Abs. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
 
-Die wesentlichen Anforderungen im Überblick:
+Wie das im Detail aussieht, beschreibt die [Empfehlung des BIBB-Hauptausschusses für das Führen von Ausbildungsnachweisen](https://www.bibb.de/dokumente/pdf/HA156.pdf) vom 1. September 2020. Sie ist keine Rechtsnorm, wurde aber den Kammern mit der Bitte übergeben, entsprechende Regelungen zu treffen. Die wesentlichen Anforderungen:
 
-- **Regelmäßige Führung** - Einträge müssen zeitnah erstellt werden (in der Regel wöchentlich)
-- **Inhaltliche Vollständigkeit** - Betriebliche Tätigkeiten, Unterweisungen und Berufsschulunterricht müssen dokumentiert werden
-- **Unterschrift bzw. Freigabe** - Ausbilder müssen die Einträge regelmäßig prüfen und abzeichnen
-- **Aufbewahrung** - Das Berichtsheft muss bis zur Prüfung vollständig vorliegen
+- **Regelmäßige Führung:** täglich oder wöchentlich, stichwortartig, etwa eine DIN-A4-Seite pro Woche, von Azubis selbständig geführt
+- **Pflichtangaben:** Name, Ausbildungsjahr und Berichtszeitraum auf jeder Tages- oder Wochenübersicht
+- **Inhalt:** betriebliche Tätigkeiten, Unterweisungen und betrieblicher Unterricht sowie die Themen der Berufsschule, möglichst mit Zeitdauer
+- **Prüfung und Freigabe:** Ausbilder prüfen mindestens monatlich und bestätigen Richtigkeit und Vollständigkeit, bei digitalen Nachweisen auch per elektronischer Freigabe
+- **Minderjährige:** Eine gesetzliche Vertretung nimmt in angemessenen Abständen Kenntnis und bestätigt das
 
-Ob auf Papier oder digital - die inhaltlichen Anforderungen bleiben gleich. Der Unterschied liegt in der Umsetzung.
+Ob auf Papier oder digital, die inhaltlichen Anforderungen bleiben gleich. Der Unterschied liegt in der Umsetzung.
+
+*Hinweis: Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer.*
 
 ## Berichtsheft-Vorlage zum Kopieren
 
-Die folgende Struktur erfüllt die Anforderungen aus § 13 BBiG und lässt sich in jedes Textprogramm, Wiki oder Berichtsheft-Tool übernehmen. Legen Sie pro Berichtszeitraum eine Kopie an.
+Die folgende Struktur deckt die Mindestanforderungen der BIBB-Empfehlung ab und lässt sich in jedes Textprogramm, Wiki oder Berichtsheft-Tool übernehmen. Legen Sie pro Berichtszeitraum eine Kopie an.
 
 <CopyBlock buttonLabel="Vorlage kopieren" copiedLabel="Kopiert!">
 
@@ -8765,6 +8812,30 @@ Die folgende Struktur erfüllt die Anforderungen aus § 13 BBiG und lässt sich 
 *Gesamtstunden im Berichtszeitraum:* [Summe]
 
 </CopyBlock>
+
+## Digitales Berichtsheft: welche Möglichkeiten es gibt
+
+Wer vom Papier wegwill, hat vier Wege. Sie unterscheiden sich vor allem darin, wie viel Arbeit Erinnerungen, Freigabe und Export noch machen.
+
+| Weg | Was es ist | Gut für | Grenze |
+|---|---|---|---|
+| Vorlage in Word oder PDF | Die BIBB-Muster oder eine eigene Vorlage, per E-Mail oder Ablage ausgetauscht | wenige Azubis, kein Budget | Erinnerungen und Freigaben laufen von Hand |
+| Angebot der Kammer oder Branche | Formulare oder Apps, die Kammern und Branchenverbände bereitstellen | Betriebe, deren Kammer oder Branche eine Lösung anbietet | je nach Region und Beruf sehr unterschiedlich |
+| Eigenständige Berichtsheft-App | Software nur für den Ausbildungsnachweis | viele Azubis, klarer Freigabeprozess | Lernen und Prüfungsvorbereitung bleiben getrennt |
+| Lernplattform mit Berichtsheft | Nachweis, Lernstand und Prüfungsvorbereitung an einem Ort | Betriebe, die mehr als Dokumentation wollen | höherer Einführungsaufwand |
+
+**Kostenlos starten:** Die [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) enthält Muster für tägliche und wöchentliche Nachweise, auch mit Bezug zum Ausbildungsrahmenplan. Sie nennt außerdem Branchen-Apps, etwa für das Bäcker-, Dachdecker-, Friseur- und Metallhandwerk, den Garten- und Landschaftsbau und Kfz-Berufe. Fragen Sie zuerst bei Ihrer zuständigen Kammer, welche Formate sie annimmt.
+
+**Für Azubis ist das Berichtsheft immer kostenlos.** Nachweishefte, Formblätter und IT-Programme stellt der Betrieb zur Verfügung ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)). Wer als Azubi nach "Berichtsheft kostenlos" sucht, muss also nichts kaufen, sondern fragt im Betrieb nach der vereinbarten Form.
+
+## Berichtsheft mit KI schreiben: was geht und was nicht
+
+KI-Tools sind für viele Azubis naheliegend: Stichpunkte diktieren, die KI macht daraus einen sauberen Wochenbericht. Zwei Regeln setzen dafür den Rahmen.
+
+1. **Selbständig geführt, vom Ausbilder bestätigt.** Nach der BIBB-Empfehlung führen Azubis den Nachweis selbständig, der Ausbilder bestätigt Richtigkeit und Vollständigkeit. Ein Text, den eine KI ohne eigene Notizen erfindet, erfüllt das nicht. Hilfe beim Formulieren aus den eigenen Stichpunkten ist etwas anderes als ein ausgedachter Bericht.
+2. **Betriebsgeheimnisse bleiben im Betrieb.** Azubis sind zur Verschwiegenheit über Betriebs- und Geschäftsgeheimnisse verpflichtet ([§ 13 Satz 2 Nr. 6 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__13.html)). Kundennamen, Preise oder interne Abläufe gehören nicht in einen öffentlichen Chatbot.
+
+Praktisch heißt das: Legen Sie im Betrieb fest, ob und welche KI-Werkzeuge für das Berichtsheft genutzt werden dürfen, und bevorzugen Sie Lösungen mit EU-Hosting, bei denen Ihre Daten nicht zum Training verwendet werden. Worauf Sie bei der Auswahl achten, zeigt unser [7-Punkte-Check zu DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
 
 ## Papier vs. digital: Der Vergleich
 
@@ -8819,9 +8890,9 @@ Die Kriterien aus dem vorigen Abschnitt als Liste zum Abhaken, bevor Sie sich f�
 
 **Rechtliche Mindestanforderungen (§ 13 BBiG)**
 
-- [ ] Der Ausbildungsbetrieb stimmt der elektronischen Führung zu (seit der BBiG-Novelle 2020 ausdrücklich zulässig)
+- [ ] Die elektronische Form ist im Ausbildungsvertrag festgehalten (§ 11 Abs. 1 Satz 2 Nr. 12 BBiG)
 - [ ] Die zuständige Kammer akzeptiert das digitale Format
-- [ ] Einträge entstehen zeitnah, in der Regel wöchentlich
+- [ ] Einträge entstehen täglich oder wöchentlich, Ausbilder prüfen mindestens monatlich
 - [ ] Betriebliche Tätigkeiten, Unterweisungen und Berufsschulunterricht sind getrennt dokumentierbar
 - [ ] Ausbilder können Einträge regelmäßig prüfen und abzeichnen
 - [ ] Der vollständige Nachweis liegt zur Prüfungsanmeldung vor
@@ -8857,7 +8928,7 @@ So sieht ein Eintrag in LearnSlice aus: Betriebliche Tätigkeiten, Berufsschulth
 
 Diese Verknüpfung bietet mehrere Vorteile:
 
-- **Weniger Aufwand** - Einträge werden teilweise automatisch erstellt
+- **Weniger Aufwand** - Einträge werden teilweise vorbefüllt, der Azubi prüft und ergänzt sie
 - **Bessere Nachvollziehbarkeit** - Lernfortschritt und Dokumentation stimmen überein
 - **Frühwarnsystem** - Lücken in der Ausbildung werden sichtbar, bevor sie zum Problem werden
 
@@ -8869,7 +8940,7 @@ Der Wechsel von Papier auf digital muss nicht kompliziert sein. Hier sind bewäh
 
 ### 1. Ausbildungsvertrag prüfen
 
-Stellen Sie sicher, dass der Ausbildungsvertrag die elektronische Führung des Berichtshefts erlaubt. Falls nicht, ist eine einfache Ergänzung nötig.
+Die Form des Ausbildungsnachweises steht im Ausbildungsvertrag. Prüfen Sie, ob dort die elektronische Führung vereinbart ist. Falls nicht, klären Sie mit Ihrer zuständigen Kammer, wie die Änderung bei laufenden Verträgen dokumentiert wird.
 
 ### 2. Pilotgruppe starten
 
@@ -8906,27 +8977,39 @@ Das digitale Berichtsheft ist mehr als ein Ersatz für Papier. Richtig eingesetz
 
 ### Ist ein digitales Berichtsheft rechtlich zulässig?
 
-Ja. Seit der Novellierung des Berufsbildungsgesetzes 2020 ist ausdrücklich klargestellt, dass der Ausbildungsnachweis auch elektronisch geführt werden darf, sofern der Ausbildungsbetrieb zustimmt. Die IHK- und HWK-Kammern akzeptieren digitale Berichtshefte flächendeckend. Die inhaltlichen Anforderungen bleiben dieselben wie auf Papier, nur die Umsetzung unterscheidet sich.
+Ja. Nach § 13 Satz 2 Nr. 7 BBiG führen Auszubildende einen schriftlichen oder elektronischen Ausbildungsnachweis. Das gilt für alle Ausbildungsverträge, die ab dem 1. Oktober 2017 geschlossen wurden. Welche Form gilt, steht im Ausbildungsvertrag (§ 11 Abs. 1 Satz 2 Nr. 12 BBiG). Die inhaltlichen Anforderungen sind auf Papier und digital dieselben.
 
 ### Wie oft muss das Berichtsheft geführt werden?
 
-Die Einträge müssen zeitnah entstehen, in der Regel wöchentlich. Genau daran scheitert die Papierführung am häufigsten: Azubis holen Wochen oder Monate auf einmal nach, und am Ende fehlen Einträge. Ein digitales Berichtsheft mit automatischen Erinnerungen an fällige Einträge löst vor allem dieses Problem.
+Täglich oder wöchentlich, so empfiehlt es der Hauptausschuss des BIBB, mit einem Umfang von etwa einer DIN-A4-Seite pro Woche. Die Ausbilderin oder der Ausbilder prüft die Einträge mindestens monatlich. In der Praxis scheitert es am Nachholen: Azubis schreiben Wochen oder Monate auf einmal nach, und am Ende fehlen Einträge. Automatische Erinnerungen lösen vor allem dieses Problem.
 
 ### Was passiert, wenn das Berichtsheft unvollständig ist?
 
-Das ordnungsgemäß geführte Berichtsheft ist nach § 13 des Berufsbildungsgesetzes eine Zulassungsvoraussetzung zur Abschlussprüfung. Fehlt es oder ist es lückenhaft, kann die Zulassung verweigert werden. Der vollständige Nachweis muss deshalb spätestens zur Prüfungsanmeldung vorliegen.
+Der vorgelegte Ausbildungsnachweis ist nach § 43 Abs. 1 Nr. 2 BBiG eine Voraussetzung für die Zulassung zur Abschlussprüfung, im Handwerk entsprechend § 36 Abs. 1 Nr. 2 HwO. Ob und wie Lücken nachgeholt werden können, klärt im Einzelfall die zuständige Kammer. Planen Sie deshalb so, dass der Nachweis spätestens zur Prüfungsanmeldung vollständig vorliegt.
 
 ### Braucht ein digitales Berichtsheft eine handschriftliche Unterschrift?
 
-Nein. Eine digitale Freigabe durch Azubi und Ausbilder wird von den Kammern akzeptiert, sofern das System Authentizität und Nachvollziehbarkeit sicherstellt. Wichtig ist, dass Ausbilder die Einträge regelmäßig prüfen und abzeichnen, nicht die Form der Unterschrift.
+Nein. Nach der Empfehlung des BIBB-Hauptausschusses kann die Bestätigung bei elektronischen Nachweisen auch elektronisch dokumentiert werden, etwa durch eine elektronische Freigabe oder bestätigende E-Mails mit einfacher elektronischer Signatur. Wichtig ist, dass Ausbilder die Einträge regelmäßig prüfen und bestätigen, nicht die Form der Unterschrift.
 
 ### Was muss eine digitale Lösung mindestens können?
 
 Vorlagen, die den Vorgaben der zuständigen Kammer entsprechen, automatische Erinnerungen an fällige Einträge, digitale Freigabe ohne Medienbruch, sauberen PDF-Export im kammerkonformen Format und eine revisionssichere Archivierung bis zur Abschlussprüfung. Beim Datenschutz zählt Hosting in der EU und ein Rollenkonzept, das Azubi, Ausbilder und Verwaltung trennt.
 
-### Wer muss der digitalen Führung zustimmen?
+### Wo wird festgelegt, ob das Berichtsheft digital geführt wird?
 
-Der Ausbildungsbetrieb. Halten Sie die elektronische Führung am besten im Ausbildungsvertrag fest, bevor Sie umstellen. Bei bestehenden Verträgen lohnt sich vorab ein Blick in die vereinbarte Form des Ausbildungsnachweises.
+Im Ausbildungsvertrag. § 11 Abs. 1 Satz 2 Nr. 12 BBiG verlangt, dass die Form des Ausbildungsnachweises dort steht. Bei bestehenden Verträgen lohnt vor der Umstellung ein Blick in die vereinbarte Form. Wie eine Änderung zu dokumentieren ist, beantwortet Ihre zuständige Kammer.
+
+### Ist ein digitales Berichtsheft für Azubis kostenlos?
+
+Ja. Ausbildende stellen Ausbildungsmittel kostenlos zur Verfügung (§ 14 Abs. 1 Nr. 3 BBiG). Die BIBB-Empfehlung nennt dabei ausdrücklich Nachweishefte, Formblätter und IT-Programme.
+
+### Wird das Berichtsheft in der Prüfung bewertet?
+
+Nein. Laut Empfehlung des BIBB-Hauptausschusses wird der Ausbildungsnachweis in Zwischen- und Abschlussprüfungen nicht bewertet. Sieht die Ausbildungsordnung oder die Kammer es vor, muss er aber zur mündlichen Prüfung mitgebracht und dem Prüfungsausschuss vorgelegt werden.
+
+### Darf ich das Berichtsheft mit KI schreiben?
+
+Der Nachweis ist nach der BIBB-Empfehlung von Auszubildenden selbständig zu führen, und der Ausbilder bestätigt Richtigkeit und Vollständigkeit. KI kann helfen, eigene Stichpunkte zu ordnen oder Diktiertes zu glätten. Die Inhalte müssen aber die tatsächlich erledigten Tätigkeiten wiedergeben, und Betriebsgeheimnisse gehören nicht in öffentliche Chatbots. Im Zweifel klären Sie die Regeln mit Ausbilder und Kammer.
 
 ---
 
@@ -9249,36 +9332,74 @@ Ja - die Einführung von KI-Tools, die das Verhalten oder die Leistung von Azubi
 
 ---
 
-# IHK Prüfungsvorbereitung: 6-Monats-Lernplan + Checkliste
+# IHK-Prüfungsvorbereitung: Ablauf, Termine 2027 und Lernplan
 
 Source: https://learnslice.com/de/blog/ihk-pruefungsvorbereitung-digital
 Language: de
 Published: 2026-03-14
-Updated: 2026-09-09
+Updated: 2026-11-02
 
-IHK Prüfungsvorbereitung digital: KI-generierte Prüfungsfragen und adaptive Wiederholung in vier Schritten. Mit 6-Monats-Lernplan und Checkliste zum Kopieren.
+IHK-Prüfungsvorbereitung für Ausbilder: wie die Abschlussprüfung aufgebaut ist, Prüfungstermine 2026/27, Notenschlüssel, alte Prüfungen und ein 6-Monats-Lernplan zum Kopieren.
 
 ## Auf einen Blick
 
-- Digitale IHK-Prüfungsvorbereitung ersetzt veraltete Materialien und teure externe Kurse (500 bis 2.000 Euro pro Person) durch personalisierte Lernpfade, KI-generierte Prüfungsfragen im IHK-Format und adaptive Wiederholung, rund um die Uhr verfügbar.
-- Der Ablauf hat vier Schritte: Wissensstand per Einstufungstest ermitteln, strukturierte Lernpfade entlang des IHK-Rahmenplans, adaptive Wiederholung schwacher Themen und regelmäßige Prüfungssimulationen unter realistischen Bedingungen.
-- Beginnen Sie mindestens sechs Monate vor der Prüfung, üben Sie lieber täglich kurz als selten lang, und investieren Sie Lernzeit gezielt in erkannte Schwächen statt in vertraute Themen.
-- Prüfungsinhalte haften besser, wenn IHK-Theorie mit den echten Prozessen Ihres Betriebs verknüpft wird. Der Azubi lernt im Kontext seiner tatsächlichen Arbeit und wird zugleich schneller produktiv.
-- Für Ausbilder spart digitale Prüfungsvorbereitung geschätzt 40 bis 80 Stunden pro Prüfungszyklus, vor allem durch automatische Fragenerstellung, Sofortauswertung und datenbasierte Schwächenanalyse.
+- Die schriftlichen IHK-Abschlussprüfungen sind in den meisten Berufen bundeseinheitlich. Die Aufgaben schreiben AkA und ZPA Nord-West (kaufmännisch) sowie die PAL (gewerblich-technisch). Ausnahme: In Baden-Württemberg ist der schriftliche Teil eine gemeinsame Prüfung von Berufsschule und IHK.
+- Nächste bundeseinheitliche Termine: kaufmännisch 24./25. November 2026 und 27./28. April 2027, gewerblich-technisch 1./2. Dezember 2026 und 11./12. Mai 2027. Mündliche und praktische Termine nennt die eigene IHK.
+- Bewertet wird nach dem 100-Punkte-Schlüssel, ab 50 Punkten gilt eine Leistung als ausreichend. 2024 bestanden laut BIBB 90,5 Prozent die Abschlussprüfung im ersten Versuch.
+- Beginnen Sie sechs Monate vor dem Termin, üben Sie mit Original-Prüfungen und Simulationen unter Prüfungsbedingungen und investieren Sie Lernzeit gezielt in erkannte Schwächen.
+- Prüfungsinhalte haften besser, wenn die Theorie mit den echten Prozessen Ihres Betriebs verknüpft wird. Der Azubi lernt im Kontext seiner tatsächlichen Arbeit und wird zugleich schneller produktiv.
 
 ![LearnSlice IHK-Lernpfad mit strukturierten Prüfungsthemen und Fortschrittsanzeige](/images/blog/learnslice-ihk-lernpfad.png)
 
 ## Warum digitale IHK-Prüfungsvorbereitung?
 
-Die [IHK](https://www.ihk.de)-Abschlussprüfung ist der wichtigste Meilenstein in jeder Berufsausbildung. Doch die Vorbereitung darauf ist oft ineffizient: Azubis lernen mit veralteten Materialien, Ausbilder haben wenig Zeit für individuelle Unterstützung, und externe Vorbereitungskurse kosten **€500 bis €2.000 pro Person**.
+Die [IHK](https://www.ihk.de)-Abschlussprüfung ist der wichtigste Meilenstein in jeder Berufsausbildung. Die gute Nachricht vorweg: 2024 bestanden laut [BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/download/21037) 90,5 Prozent aller Prüflinge im ersten Versuch. Wer durchfällt, hat es danach aber deutlich schwerer: Bei der ersten Wiederholung bestanden nur noch 65,0 Prozent. Die Vorbereitung auf den ersten Versuch ist also der Hebel.
 
-Digitale Lernplattformen mit KI-Unterstützung ändern das grundlegend. Sie bieten personalisierte Lernpfade, Prüfungsfragen orientiert an IHK-Themenbereichen und -Format, sowie adaptive Wiederholung - rund um die Uhr verfügbar.
+Trotzdem ist sie oft ineffizient: Azubis lernen mit veralteten Materialien, Ausbilder haben wenig Zeit für individuelle Unterstützung, und externe Kurse kosten Geld und Arbeitszeit. Dieser Leitfaden zeigt zuerst, wie die Prüfung aufgebaut ist und wann sie stattfindet, dann wie digitale Vorbereitung mit personalisierten Lernpfaden und Simulationen funktioniert.
+
+## Wie die IHK-Abschlussprüfung aufgebaut ist
+
+**Wer die Aufgaben schreibt.** Die schriftlichen Aufgaben entstehen zentral. Für kaufmännische Berufe sind das die [AkA in Nürnberg](https://www.ihk-aka.de/wir-ueber-uns), die im Wesentlichen die großen Berufe abdeckt, und die [ZPA Nord-West in Köln](https://www.ihk-zpa.de/opencms/pages/Wir_ueber_uns/Aufgaben/) für kleinere Berufe. Für gewerblich-technische Berufe erstellt die PAL bei der IHK Region Stuttgart die Aufgaben. Die schriftlichen Prüfungen finden bundeseinheitlich statt, mit einer Ausnahme: [In Baden-Württemberg](https://www.ihk.de/karlsruhe/fachthemen/ausbildung/pruefungen-ausbildung/pruefungstermine-zwischen-und-abschlusspruefungen-2462322) ist der schriftliche Teil eine gemeinsame Prüfung von Berufsschule und IHK mit eigenen Terminen.
+
+**Gestreckte Abschlussprüfung.** In vielen modernisierten Berufen findet die Abschlussprüfung in zwei zeitlich getrennten Teilen statt ([§ 5 Abs. 2 Satz 1 Nr. 1 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__5.html)). Teil 1 liegt etwa in der Mitte der Ausbildung, bei Industriekaufleuten im vierten Ausbildungshalbjahr ([§ 6 IndKflAusbV](https://www.gesetze-im-internet.de/indkflausbv/__6.html)), Teil 2 am Ende. Beide Teile zählen für das Gesamtergebnis. Wichtig für die Planung: Teil 1 lässt sich nicht eigenständig wiederholen ([§ 37 Abs. 1 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__37.html)). Wer Teil 1 unterschätzt, schleppt das Ergebnis in die Gesamtnote.
+
+**Mündlich und praktisch.** Neben den schriftlichen Bereichen gibt es je nach Beruf ein fallbezogenes Fachgespräch, eine Projektarbeit oder eine praktische Arbeitsaufgabe. Welche, legt die Ausbildungsordnung fest. Die Termine dafür vergibt die eigene IHK.
+
+## Prüfungstermine 2026 und 2027
+
+Die bundeseinheitlichen schriftlichen Termine, Stand November 2026:
+
+| Prüfung | Winter 2026/27 | Sommer 2027 | Quelle |
+|---|---|---|---|
+| Kaufmännische Berufe (AkA), Abschlussprüfung und Teil 2 | 24./25. November 2026 | 27./28. April 2027 | [AkA](https://www.ihk-aka.de/pruefungen) |
+| Gewerblich-technische Berufe (PAL), Abschlussprüfung und Teil 2 | 1./2. Dezember 2026 | 11./12. Mai 2027 | [PAL](https://www.ihk.de/stuttgart/pal/pruefungstermine-uebersicht) |
+
+Bei der PAL hängt der genaue Tag vom Beruf ab, einzelne Berufe haben eigene Termine, Mechatroniker schreiben Teil 2 im Sommer 2027 zum Beispiel am 11. Mai, Industriemechaniker am 12. Mai. Für Teil 1 gibt es eigene Termine, etwa für Kaufleute für Büromanagement computergestützt am 25./26. Februar 2027. In Baden-Württemberg gelten für den schriftlichen Teil eigene Termine, die das Kultusministerium festlegt. Prüfen Sie den Termin Ihres Berufs immer in der Übersicht von AkA oder PAL und bei Ihrer IHK.
+
+## So wird bewertet: der 100-Punkte-Schlüssel
+
+Alle Prüfungsleistungen werden nach dem 100-Punkte-Schlüssel bewertet. Die [Musterprüfungsordnung des BIBB-Hauptausschusses](https://www.bibb.de/dokumente/pdf/HA120.pdf) in der Fassung vom 7. Oktober 2025 ordnet die Punkte so zu:
+
+| Punkte | Note |
+|---|---|
+| 100 bis 92 | sehr gut (1,0 bis 1,4) |
+| 91 bis 81 | gut (1,5 bis 2,4) |
+| 80 bis 67 | befriedigend (2,5 bis 3,4) |
+| 66 bis 50 | ausreichend (3,5 bis 4,4) |
+| 49 bis 30 | mangelhaft (4,5 bis 5,4) |
+| 29 bis 0 | ungenügend (5,5 bis 6,0) |
+
+Verbindlich ist die Prüfungsordnung Ihrer IHK. Ältere Fassungen arbeiten teils noch ohne Dezimalnoten. Ob die gesamte Prüfung bestanden ist, regelt die Ausbildungsordnung. Bei Industriekaufleuten etwa braucht es ein ausreichendes Gesamtergebnis, ein ausreichendes Ergebnis in Teil 2, mindestens zwei ausreichende Prüfungsbereiche in Teil 2 und keinen ungenügenden Prüfungsbereich ([§ 14 IndKflAusbV](https://www.gesetze-im-internet.de/indkflausbv/__14.html)). Wird es knapp, kann in bestimmten Prüfungsbereichen eine mündliche Ergänzungsprüfung den Ausschlag geben. Wie das funktioniert und was bei Nichtbestehen gilt, steht in unseren [Tipps zur IHK-Prüfung](/de/blog/ihk-pruefung-tipps#wenn-es-knapp-wird-ergänzungsprüfung-und-wiederholung).
+
+## Alte Prüfungen und offizielle Übungsaufgaben
+
+Nichts bereitet so genau auf das Format vor wie Original-Aufgaben früherer Termine. Für kaufmännische Berufe vertreibt laut [AkA](https://www.ihk-aka.de/faq) der U-Form-Verlag sämtliche Veröffentlichungen von AkA und ZPA Nord-West, darunter übrig gebliebene Aufgabensätze früherer Prüfungen, solange der Vorrat reicht. Die [Prüfungsbücher der PAL](https://www.ihk.de/stuttgart/pal/weitere-informationen/publikationen-artikel-5281986) für gewerblich-technische Berufe gibt es über den Buchhandel, laut [IHK Rhein-Neckar](https://www.ihk.de/rhein-neckar/ausbildung-weiterbildung/ausbildung/pruefungen-ausbildung/abschlusspruefungen-ausbildung/bestelladressen-pruefungsaufgaben-932364) beim Christiani-Verlag. Original-Prüfungen und KI-generierte Übungsfragen ergänzen sich: die einen zeigen das echte Format, die anderen liefern beliebig viele weitere Übungen zu den Schwachstellen.
 
 ## Welche IHK-Berufe profitieren besonders?
 
 ### Kaufmännische Berufe
 
-- **Kauffrau/Kaufmann für Büromanagement** - Der beliebteste Ausbildungsberuf in Deutschland. Die Prüfung umfasst Büroprozesse, Auftragsbearbeitung und Wirtschafts-/Sozialkunde.
+- **Kauffrau/Kaufmann für Büromanagement** - Laut BIBB-Rangliste 2025 der Beruf mit den zweitmeisten neuen Ausbildungsverträgen. Seit August 2025 gilt eine neue Ausbildungsordnung: Teil 1 wird computergestützt geprüft, in Teil 2 gehören unter anderem Kundenbeziehungsprozesse und Wirtschafts- und Sozialkunde zu den Prüfungsbereichen.
 - **Kauffrau/Kaufmann für Spedition und Logistikdienstleistung** - Komplexe Prüfungsinhalte zu Transportrecht, Zollverfahren und Logistikplanung.
 
 ### IT-Berufe
@@ -9288,9 +9409,9 @@ Digitale Lernplattformen mit KI-Unterstützung ändern das grundlegend. Sie biet
 - **Fachinformatiker Digitale Vernetzung** - IoT, Cloud-Infrastruktur und Netzwerkarchitektur.
 - **Fachinformatiker Daten- und Prozessanalyse** - Datenmodellierung, Prozessoptimierung und Business Intelligence.
 
-### Technische Berufe
+### Gewerblich-technische Berufe
 
-- **KFZ-Mechatroniker** - Fahrzeugtechnik, Diagnose und Hochvolttechnologie.
+- **Mechatroniker und Industriemechaniker** - Prüfungen mit PAL-Aufgaben, viel Technik-Theorie plus praktische Arbeitsaufgabe.
 - **Fachkraft für Lagerlogistik** - Lagerwirtschaft, Kommissionierung und Güterumschlag.
 
 ## So funktioniert digitale Prüfungsvorbereitung
@@ -9301,7 +9422,7 @@ Bevor das Lernen beginnt, analysiert die KI den aktuellen Wissensstand des Azubi
 
 ### Schritt 2: Strukturierte Lernpfade
 
-Die Lerninhalte sind nach dem [IHK-Rahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) strukturiert und an die regionalen Anforderungen angepasst. Jedes Thema wird in verdauliche Einheiten unterteilt:
+Die Lerninhalte folgen dem [Ausbildungsrahmenplan](/de/blog/ausbildungsrahmenplan-erklaert) und den Prüfungsanforderungen der Ausbildungsordnung. Jedes Thema wird in verdauliche Einheiten unterteilt:
 
 - **Theoriewissen** - Kompakte Erklärungen und Zusammenfassungen
 - **Praxisbeispiele** - Realistische Fallstudien aus dem Berufsalltag
@@ -9315,7 +9436,7 @@ Die KI erkennt, welche Themen der Azubi bereits beherrscht und welche noch Übun
 
 ### Schritt 4: Prüfungssimulationen
 
-Regelmäßige Prüfungssimulationen unter realistischen Bedingungen bereiten Azubis optimal auf den Ernstfall vor. Die KI generiert Prüfungsfragen, die dem IHK-Format und Schwierigkeitsgrad entsprechen.
+Regelmäßige Prüfungssimulationen unter realistischen Bedingungen bereiten Azubis optimal auf den Ernstfall vor. Die KI generiert Prüfungsfragen im Format der jeweiligen Prüfungsbereiche. Ergänzen Sie sie mit Original-Prüfungen früherer Termine.
 
 ## 6-Monats-Lernplan zum Kopieren
 
@@ -9379,28 +9500,12 @@ Aus den vier Schritten wird ein Plan, sobald sie auf einen Zeitraum gelegt werde
 |-----------|-------------|---------------|
 | Verfügbarkeit | Kurszeiten | 24/7 |
 | Personalisierung | Für alle gleich | Individuell angepasst |
-| Kosten | 500 bis 2.000 Euro pro Kurs | In Plattformlizenz enthalten |
+| Kosten | Kursgebühr pro Person und Kurs | In Plattformlizenz enthalten |
 | Prüfungsfragen | Begrenzte Sammlung | KI-generiert, unbegrenzt |
 | Fortschrittskontrolle | Manuell | Automatische Analytics |
 | Schwächenanalyse | Subjektiv | Datenbasiert |
 
-## Tipps für die optimale Nutzung
-
-1. **Früh anfangen** - Beginnen Sie die digitale Prüfungsvorbereitung mindestens 6 Monate vor der Prüfung
-2. **Regelmäßig üben** - Kurze, tägliche Lerneinheiten sind effektiver als lange Lernmarathons
-3. **Schwächen priorisieren** - Nutzen Sie die KI-Analyse, um gezielt an Schwachstellen zu arbeiten
-4. **Prüfungssimulationen ernst nehmen** - Simulieren Sie die Prüfungsbedingungen so realistisch wie möglich
-5. **Unternehmenswissen einbeziehen** - Verknüpfen Sie IHK-Theorie mit der Praxis in Ihrem Betrieb
-
-## 10 Tipps für den IHK-Prüfungserfolg
-
-Neben der Wahl der richtigen Plattform kommt es auf die persönliche Strategie an. Wir haben die [10 effektivsten Strategien für die IHK-Prüfungsvorbereitung](/de/blog/ihk-pruefung-tipps) zusammengestellt, von Lernplanung und Zeitmanagement bis zu Techniken für den Prüfungstag.
-
-Die wichtigsten Punkte:
-- Starten Sie mindestens 6 Monate vor der Prüfung
-- Nutzen Sie KI-generierte Übungsprüfungen unter realistischen Bedingungen
-- Investieren Sie Lernzeit in erkannte Schwächen, nicht in vertraute Themen
-- Bilden Sie kleine Lerngruppen von 3-4 Azubis für gegenseitige Unterstützung
+Für Ihre Azubis selbst haben wir einen eigenen Beitrag: [IHK-Prüfung bestehen, 10 Tipps für Azubis](/de/blog/ihk-pruefung-tipps), von der Lernroutine über den Prüfungstag bis zur Frage, was bei einem knappen Ergebnis gilt. Geben Sie ihn gern weiter.
 
 ## Die Rolle von Unternehmenswissen in der Prüfungsvorbereitung
 
@@ -9414,10 +9519,8 @@ Das hat zwei Vorteile: Prüfungsinhalte bleiben besser haften, weil sie in reale
 
 Die traditionelle IHK-Prüfungsvorbereitung ist eine der zeitintensivsten Aufgaben für Ausbilder. Sie umfasst das Beschaffen von Übungsfragen, Durchführen von Übungsrunden, Korrektur von Probeprüfungen und individuelle Schwächenarbeit, alles zusätzlich zur regulären Betreuung.
 
-Nach unserer Berechnung kann digitale Prüfungsvorbereitung geschätzt 40-80 Stunden Ausbilderzeit pro Prüfungszyklus einsparen. Bei €45/Stunde entspricht das €1.800-€3.600 pro Azubi an freigewordener Ausbilderkapazität.
-
-Die Zeitersparnis kommt aus drei Bereichen:
-- **Fragenerstellung**: KI generiert unbegrenzt Übungsfragen im IHK-Format und ersetzt manuelle Fragenrecherche
+Digitale Vorbereitung nimmt davon vor allem drei Aufgaben ab:
+- **Fragenerstellung**: KI generiert unbegrenzt Übungsfragen im Prüfungsformat und ersetzt manuelle Fragenrecherche
 - **Automatische Auswertung**: Sofortiges Feedback auf Probeprüfungen beseitigt den Korrektur-Engpass
 - **Schwächenanalyse**: KI identifiziert, welche Azubis Hilfe brauchen und bei welchen Themen, sodass Ausbilder nur dort eingreifen, wo es zählt
 
@@ -9425,28 +9528,36 @@ Einen umfassenderen Überblick, wie Sie Ausbilderzeit über alle Ausbildungsakti
 
 ## Fazit
 
-Digitale IHK-Prüfungsvorbereitung mit KI-Unterstützung ist effizienter, günstiger und effektiver als traditionelle Methoden. Azubis profitieren von personalisierten Lernpfaden und unbegrenzten Übungsmöglichkeiten. Unternehmen sparen Kosten für externe Kurse und Ausbilderzeit.
+Gute IHK-Prüfungsvorbereitung beginnt mit dem Wissen, wie die Prüfung aufgebaut ist, wann sie stattfindet und wie bewertet wird. Digitale Plattformen mit KI ergänzen das um personalisierte Lernpfade, unbegrenzte Übungsfragen und eine Schwächenanalyse, die Ausbilder sonst von Hand erstellen. Zusammen mit Original-Prüfungen früherer Termine ist das die solideste Vorbereitung auf den ersten Versuch.
 
 **Möchten Sie sehen, wie KI-gestützte IHK-Prüfungsvorbereitung funktioniert?** [Buchen Sie eine kostenlose Demo](/de/companies) und erleben Sie LearnSlice in Aktion. Erfahren Sie auch, wie Sie [Ihre gesamten Ausbildungskosten senken](/de/blog/ausbildungskosten-senken) können. Bildungsträger und Kursanbieter, die eigene Lehrgänge auf eine Sachkundeprüfung ausrichten, finden den passenden Weg unter [Lernplattform für Bildungsträger](/de/blog/lernplattform-bildungstraeger).
 
 
 ## Häufig gestellte Fragen
 
+### Wann sind die IHK-Abschlussprüfungen 2026/27?
+
+Die bundeseinheitlichen schriftlichen Termine der AkA für kaufmännische Berufe sind der 24. und 25. November 2026 sowie der 27. und 28. April 2027. Für gewerblich-technische Berufe nennt die PAL den 1. und 2. Dezember 2026 sowie den 11. und 12. Mai 2027, je nach Beruf an einem der beiden Tage, mit wenigen Ausnahmen. In Baden-Württemberg gelten für den schriftlichen Teil eigene Termine. Mündliche und praktische Termine teilt die zuständige IHK mit.
+
+### Ab wie vielen Punkten ist die IHK-Prüfung bestanden?
+
+Bewertet wird nach dem 100-Punkte-Schlüssel. Ab 50 Punkten ist eine Leistung ausreichend. Für das Bestehen der gesamten Abschlussprüfung legt jede Ausbildungsordnung eigene Regeln fest, meist ein ausreichendes Gesamtergebnis plus Mindestergebnisse in einzelnen Prüfungsbereichen.
+
 ### Wie bereite ich Azubis auf die IHK-Prüfung vor?
 
-Am wirksamsten in vier Schritten: den Wissensstand mit einem Einstufungstest ermitteln, entlang des IHK-Rahmenplans strukturiert lernen, schwache Themen adaptiv wiederholen und regelmäßig unter realistischen Bedingungen Prüfungssimulationen schreiben. Digitale Plattformen mit KI übernehmen Fragenerstellung und Auswertung, sodass Ausbilder nur dort eingreifen, wo es zählt.
+In vier Schritten: den Wissensstand mit einem Einstufungstest ermitteln, entlang des Ausbildungsrahmenplans und der Prüfungsanforderungen strukturiert lernen, schwache Themen gezielt wiederholen und regelmäßig unter Prüfungsbedingungen simulieren, am besten auch mit Original-Prüfungen früherer Termine.
 
 ### Wann sollte die IHK-Prüfungsvorbereitung beginnen?
 
 Mindestens sechs Monate vor dem Prüfungstermin. Kurze, tägliche Lerneinheiten sind wirksamer als lange Lernmarathons kurz vor der Prüfung. So bleibt genug Zeit, erkannte Schwächen gezielt zu wiederholen und mehrere Prüfungssimulationen einzubauen.
 
-### Was kostet IHK-Prüfungsvorbereitung?
+### Wo bekomme ich alte IHK-Prüfungen zum Üben?
 
-Externe Vorbereitungskurse kosten typischerweise 500 bis 2.000 Euro pro Person. Bei digitalen Lernplattformen ist die Prüfungsvorbereitung in der Plattformlizenz enthalten, mit unbegrenzten KI-generierten Übungsfragen statt einer begrenzten Sammlung. Den finanziellen Effekt für Ihren Betrieb überschlagen Sie mit dem Ausbildungskosten-Rechner.
+Für kaufmännische Berufe vertreibt der U-Form-Verlag laut AkA sämtliche Veröffentlichungen der AkA und der ZPA Nord-West, auch übrig gebliebene Aufgabensätze früherer Prüfungen, solange der Vorrat reicht. Die Prüfungsbücher der PAL für gewerblich-technische Berufe sind über den Buchhandel erhältlich.
 
 ### Sind KI-generierte Prüfungsfragen zuverlässig für die IHK-Prüfung?
 
-Gute Plattformen generieren Fragen entlang der IHK-Themenbereiche, der Standardberufsbildpositionen und des Prüfungsformats, angepasst an die regionalen Anforderungen des Berufs. Der Vorteil gegenüber einer festen Fragensammlung ist die praktisch unbegrenzte Zahl an Übungsfragen und die adaptive Wiederholung genau der Themen, die noch nicht sitzen.
+Gute Plattformen generieren Fragen entlang der Prüfungsanforderungen der Ausbildungsordnung und im Format der jeweiligen Prüfungsbereiche. Der Vorteil gegenüber einer festen Fragensammlung ist die praktisch unbegrenzte Übungsmenge. Original-Prüfungen früherer Termine ersetzen sie nicht, beides ergänzt sich.
 
 ### Welche Ausbildungsberufe profitieren besonders von digitaler Prüfungsvorbereitung?
 
