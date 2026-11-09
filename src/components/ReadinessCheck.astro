@@ -13,12 +13,12 @@ const questions = [
 		{ t: 'Teilweise, manuell', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'nachweise', text: 'Könnten Sie Anwesenheit und Lernfortschritt jederzeit prüfsicher exportieren, wenn morgen eine Prüfung anstünde?', options: [
+	{ dim: 'nachweise', text: 'Könnten Sie Anwesenheit und Lernfortschritt jederzeit vorlegen, wenn morgen eine Prüfung anstünde?', options: [
 		{ t: 'Ja, auf Knopfdruck', s: 2 },
 		{ t: 'Ja, aber mit Aufwand', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'bfsg', text: 'Sind Ihre Lernplattform und Inhalte barrierefrei, wie es das BFSG verlangt?', options: [
+	{ dim: 'bfsg', text: 'Sind Ihre Lernplattform und Inhalte barrierefrei?', options: [
 		{ t: 'Ja, geprüft', s: 2 },
 		{ t: 'In Arbeit', s: 1 },
 		{ t: 'Unklar oder nein', s: 0 },
@@ -53,7 +53,7 @@ const questions = [
 		{ t: 'In Planung', s: 1 },
 		{ t: 'Nein', s: 0 },
 	] },
-	{ dim: 'foerderung', text: 'Wissen Sie, welche Förderwege Ihre Digitalisierung mitfinanzieren, etwa ESF Plus oder Mittel der Bundesagentur für Arbeit?', options: [
+	{ dim: 'foerderung', text: 'Wissen Sie, welche Förderwege für Ihre Digitalisierung infrage kommen?', options: [
 		{ t: 'Ja, eingeplant', s: 2 },
 		{ t: 'Grob bekannt', s: 1 },
 		{ t: 'Nein', s: 0 },
@@ -125,14 +125,14 @@ const config = {
 			.map((q) => [q.dim, Object.fromEntries(q.options.map((o) => [o.t, o.s]))]),
 	),
 	earlyStepsTitle: 'Ihre ersten Schritte',
-	gateIntro: '{n} Handlungsfelder haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie zu jedem den konkreten nächsten Schritt und passende Förderwege.',
-	gateIntroOne: 'Ein Handlungsfeld haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie den konkreten nächsten Schritt und passende Förderwege.',
+	gateIntro: '{n} Handlungsfelder haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie zu jedem den konkreten nächsten Schritt.',
+	gateIntroOne: 'Ein Handlungsfeld haben wir für Sie identifiziert. Im vollständigen Maßnahmenplan sehen Sie den konkreten nächsten Schritt.',
 	gateIntroNoGaps: 'Starke Ausgangslage. Sehen Sie Ihre vollständige Einordnung und die nächsten Schritte, um den Vorsprung auszubauen.',
-	gateIntroEarly: 'Ihr Startpunkt mit viel Potenzial. Der Plan zeigt Ihre ersten konkreten Schritte und passende Förderwege.',
+	gateIntroEarly: 'Ihr Startpunkt mit viel Potenzial. Der Plan zeigt Ihre ersten konkreten Schritte.',
 	gateBulletsTitle: 'Im vollständigen Maßnahmenplan:',
 	gateBullets: [
 		'Priorisierte Handlungsfelder mit konkreten nächsten Schritten',
-		'Passende Förderwege für Ihre Situation (ESF Plus, BA)',
+		'Hinweise, wie Sie mögliche Förderwege klären',
 		'Als PDF zum Teilen mit Geschäftsführung und Team',
 	],
 	gateBulletsNoGaps: [
@@ -143,8 +143,8 @@ const config = {
 	earlyCta: 'Der Einstieg ist kleiner als gedacht. Aus diesen ersten Schritten machen wir eine machbare Roadmap. Kostenloses 30-Minuten-Strategiegespräch, kein Pitch.',
 	starter: [
 		{ title: 'Klein und konkret starten', body: 'Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich festlegen.' },
-		{ title: 'Von Anfang an richtig aufsetzen', body: 'AZAV-Nachweise und Barrierefreiheit gleich mitdenken, statt später teuer nachzurüsten. Ohne Altsystem ist genau das jetzt einfach.' },
-		{ title: 'Souverän und förderfähig', body: 'Daten in Deutschland und passende Förderwege wie ESF Plus von Beginn an einplanen. So bleibt der Einstieg planbar und finanzierbar.' },
+		{ title: 'Von Anfang an richtig aufsetzen', body: 'AZAV-Nachweise und Barrierefreiheit von Anfang an mitdenken.' },
+		{ title: 'Souverän und planbar', body: 'Datenverarbeitung in Deutschland und mögliche Förderwege von Beginn an mitdenken.' },
 	],
 	earlyFields: [
 		{ dim: 'ziel', label: 'Ziel' },
@@ -152,16 +152,16 @@ const config = {
 		{ dim: 'zeithorizont', label: 'Start' },
 	],
 	recos: {
-		sync: { title: 'Synchrone Lernzeit sauber dokumentieren', body: 'Seit Juli 2025 verlangen die AZAV-Beirat-Empfehlungen, synchrone Lernzeit gesondert nachzuweisen. Eine automatische Erfassung ersetzt fehleranfällige Handlisten.' },
-		nachweise: { title: 'Nachweise exportierbar machen', body: 'Exportierbare Nachweise zu Anwesenheit und Fortschritt sparen Aufwand bei jeder Prüfung und Erfolgskontrolle.' },
-		bfsg: { title: 'Barrierefreiheit nach BFSG angehen', body: 'Das BFSG gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist WCAG 2.1 AA. Ob Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab.' },
-		adaptiv: { title: 'Adaptive, barrierefreie Lernpfade', body: 'In der Reha (SGB IX) brauchen unterschiedliche Lernbedarfe barrierefreie, anpassbare Lernwege.' },
-		ki: { title: 'KI-Lernbegleitung auf Ihren Inhalten', body: 'Ein KI-Lerncoach auf Ihrem geprüften Material, mit belegten Quellen, entlastet Ihr Personal spürbar.' },
-		euki: { title: 'EU-KI-Verordnung berücksichtigen', body: 'Manche Bildungs-KI (etwa zur Zugangs- oder Leistungsbewertung) gilt als hochriskant, mit Pflichten ab Dezember 2027. Aufsicht, Transparenz und belegte Quellen sind schon heute gute Praxis.' },
+		sync: { title: 'Unterricht und Selbstlernanteile trennen', body: 'Asynchrone Anteile zählen laut den Empfehlungen des AZAV-Beirats seit Juli 2025 nicht als Unterrichtsstunden und werden gesondert auf dem Zertifikat ausgewiesen. Eine Erfassung im System kann die Trennung erleichtern.' },
+		nachweise: { title: 'Nachweise exportierbar machen', body: 'Exportierbare Nachweise zu Anwesenheit und Fortschritt können den Aufwand bei Prüfungen senken.' },
+		bfsg: { title: 'Barrierefreiheit nach BFSG prüfen', body: 'Laut Bundesfachstelle Barrierefreiheit fallen E-Books für Verbraucher unter das BFSG, interaktive Lernangebote, die keine elektronische Fassung eines Buches sind, nicht. Eine Plattform kann aber die Bedingungen für den elektronischen Geschäftsverkehr erfüllen müssen.' },
+		adaptiv: { title: 'Adaptive, barrierefreie Lernpfade', body: 'Prüfen Sie, ob Ihre Lernpfade unterschiedliche Lernbedarfe abdecken und barrierefrei nutzbar sind.' },
+		ki: { title: 'KI-Lernbegleitung auf Ihren Inhalten', body: 'Ein KI-Lerncoach auf Ihrem geprüften Material, mit belegten Quellen, kann Ihr Personal entlasten.' },
+		euki: { title: 'EU-KI-Verordnung berücksichtigen', body: 'KI-Systeme für den Zugang zu Bildungseinrichtungen oder die Bewertung von Lernergebnissen stehen in Anhang III der KI-Verordnung, mit Pflichten ab dem 2. Dezember 2027. Aufsicht, Transparenz und belegte Quellen sind schon heute gute Praxis.' },
 		daten: { title: 'Datenverarbeitung in Deutschland sichern', body: 'Verarbeitung in Deutschland oder der EU, ein AVV und keine Weitergabe an Dritt-Modelle sind die Grundlage für datenschutzkonforme, souveräne KI.' },
 		plattform: { title: 'Erweiterbare Plattform statt starrem Tool', body: 'Bestehende Systeme lassen sich um KI und fehlende Funktionen ergänzen, ohne kompletten Umstieg.' },
-		kikompetenz: { title: 'KI-Kompetenz aufbauen', body: 'Seit Februar 2025 verlangt die EU-KI-Verordnung, dass Sie die KI-Kompetenz Ihres Personals fördern.' },
-		foerderung: { title: 'Förderwege einplanen', body: 'Programme wie ESF Plus fördern Digitalisierung und Weiterbildung. Ob sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, prüfen wir gemeinsam.' },
+		kikompetenz: { title: 'KI-Kompetenz aufbauen', body: 'Anbieter und Betreiber von KI-Systemen müssen nach Artikel 4 der KI-Verordnung Maßnahmen ergreifen, um die Entwicklung der KI-Kompetenz ihres Personals zu unterstützen.' },
+		foerderung: { title: 'Förderwege einplanen', body: 'Ob für ein Projekt Fördermittel infrage kommen, klären Sie vorab mit dem jeweiligen Fördergeber. Wir gehen die Möglichkeiten gern mit Ihnen durch.' },
 	},
 };
 ---
@@ -288,7 +288,7 @@ const config = {
 			<ul class="flex flex-col gap-4 list-none p-0 m-0 mb-8" id="rc-fields"></ul>
 
 			<div class="bg-input-bg border border-border-light rounded-xl p-5 mb-8">
-				<p class="text-sm text-white/90 leading-relaxed m-0"><span class="font-medium text-white">Förderung:</span> Viele dieser Schritte lassen sich fördern. Programme wie ESF Plus unterstützen Digitalisierung und Weiterbildung. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab und prüfen wir gemeinsam und ehrlich.</p>
+				<p class="text-sm text-white/90 leading-relaxed m-0"><span class="font-medium text-white">Förderung:</span> Ob für diese Schritte Fördermittel infrage kommen, klären Sie vorab mit dem jeweiligen Fördergeber. Wir gehen die Möglichkeiten gern mit Ihnen durch.</p>
 			</div>
 
 			<div class="mb-8 -mt-2" data-print-hide>

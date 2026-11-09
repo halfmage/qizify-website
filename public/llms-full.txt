@@ -2242,15 +2242,15 @@ That is negotiable and should be settled in writing before the project starts. W
 Source: https://learnslice.com/blog/custom-e-learning-development-costs
 Language: en
 Published: 2026-07-01
-Updated: 2026-10-04
+Updated: 2026-11-09
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Custom e-learning development in 2026: price benchmarks per module, platform, and AI tutor, how a project runs, and how to choose a vendor.
+Custom e-learning costs: average internal cost of about $10,000 to $50,000 per finished hour (Chapman Alliance, 2010), the process, and vendor checks.
 
 ## Key Takeaways
 
 - Custom e-learning development means commissioning a solution built for you rather than buying off-the-shelf software. It spans single learning modules, custom learning platforms and learning chatbots (AI tutors), simulations, serious games, and AI-driven learning apps.
-- Cost depends heavily on type and interactivity. A Chapman Alliance survey of 249 organisations (2010) put the average cost per finished hour at about 10,000 dollars for basic e-learning, 18,600 for interactive and 50,400 for advanced, simulation-based content. Interactivity is the single biggest cost driver.
+- Cost depends heavily on type and interactivity. A Chapman Alliance survey of 249 organisations (2010) put the average internal cost per finished hour at about 10,000 dollars for basic e-learning, 18,600 for interactive and 50,400 for advanced, simulation-based content. Interactivity is the single biggest cost driver.
 - A first usable module is often ready in 6 to 8 weeks; a complete solution with several building blocks takes 3 to 6 months. Budget for ongoing operation and iteration, not just the build.
 - Off-the-shelf software is cheap and instant but rarely fits your processes exactly. Custom development costs more up front, but you own the result, can extend it freely, and can build in AI and your own knowledge. As a one-time investment rather than a recurring per-user licence, it pays off over the years, especially for anyone training large groups: training providers, universities, and course providers.
 - When choosing a vendor, look for both instructional design and software engineering, hosting that meets your data rules (GDPR, UK GDPR, FERPA or HIPAA where they apply), accessibility to WCAG AA, a clear agreement on who owns the code, and a partner who plans for operation and scale.
@@ -2284,16 +2284,16 @@ If the AI tutor is the piece you care about most, our guide to [custom AI tutor 
 
 ## How Much Does Custom E-Learning Development Cost?
 
-Cost depends mainly on the type and the level of interactivity. In short: expect roughly 10,000 to 50,000 dollars per finished hour of custom content, a full custom platform from the mid five figures into six figures, and a serious game from about 15,000 dollars. Here are the market reference points at a glance:
+Cost depends mainly on the type and the level of interactivity. For content, a 2010 Chapman Alliance survey put the average internal cost at roughly 10,000 to 50,000 dollars per finished hour, so treat it as orientation. Platforms and serious games are software projects, and their price depends on scope. Here are the reference points at a glance:
 
-| Type of development | Typical cost | Timeline |
+| Type of development | Cost reference | Timeline |
 |---|---|---|
-| Learning module / WBT (content) | about 10,000 (basic) to 50,000 dollars (advanced) per finished hour | 8 to 12 weeks per finished hour |
-| Custom learning platform / software | mid five figures into six figures, depending on scope | 3 to 6 months |
-| Serious game / simulation | from ~15,000 dollars per module | 6 weeks to 6 months |
-| Operation and iteration | ongoing, often a share of build cost per year | continuous |
+| Learning module / WBT (content) | average internal cost of about 10,000 (basic) to 50,000 dollars (advanced) per finished hour (Chapman Alliance, 2010) | 8 to 12 weeks per finished hour |
+| Custom learning platform / software | depends on scope | 3 to 6 months |
+| Serious game / simulation | depends on scope | 6 weeks to 6 months |
+| Operation and iteration | ongoing, depends on scope | continuous |
 
-These are industry reference points, not quotes. The content figures come from a [Chapman Alliance survey of 249 organisations](https://www.slideshare.net/slideshow/cost-to-develop-elearning/69322684) (averages of 10,054, 18,583 and 50,371 dollars per finished hour for basic, interactive and advanced e-learning); the survey dates from 2010, so treat them as orientation rather than current quotes. Development times come from the [Chapman Alliance development-time research](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860), the platform and game figures from specialist development vendors. For most mid-sized projects that means a five-figure investment that pays back in trainer time and licences avoided, not a six-figure gamble. A 30-minute call turns these ranges into a real number for your case. Your actual price moves with four levers:
+These are reference points, not quotes. The content figures come from a [Chapman Alliance survey of 249 organisations](https://www.slideshare.net/slideshow/cost-to-develop-elearning/69322684) (average internal costs of 10,054, 18,583 and 50,371 dollars per finished hour for basic, interactive and advanced e-learning); the survey dates from 2010, so treat them as orientation rather than current quotes. Development times come from the [Chapman Alliance development-time research](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860). Platforms and serious games depend too much on scope for a general figure. A 30-minute call turns this into a real number for your case. Your actual price moves with four levers:
 
 1. **Interactivity.** By far the biggest cost driver. The Chapman Alliance development-time research (249 organisations, 2010) puts the average at 79 hours of production per finished hour for basic, 184 for interactive and 490 for advanced, simulation-based e-learning. A click-through course is cheap; a branching simulation is expensive.
 2. **Integrations.** Connections to existing systems such as HR software, an existing LMS, or single sign-on add effort.
@@ -2332,7 +2332,7 @@ There are three routes, and the right one depends on how specific your requireme
 
 | Criterion | Standard LMS (buy or rent) | Custom development |
 |---|---|---|
-| Entry cost | low, often from a few hundred dollars per month | higher, one-off from the mid five figures |
+| Entry cost | low, often from a few hundred dollars per month | higher, one-off, depends on scope |
 | Cost over the years | recurring per-user licence fees, ongoing | one-time investment, then only operation |
 | Fit to your processes | limited, you adapt to it | exact, it adapts to you |
 | Time to value | instant | weeks to months |
@@ -2436,7 +2436,7 @@ Commissioning custom e-learning is not a leap in the dark if you go about it in 
 
 ### How much does custom e-learning development cost?
 
-It depends on the type. Per finished hour of content, a Chapman Alliance survey of 249 organisations (2010) found average costs of about 10,000 dollars for basic e-learning (pages and a quiz), 18,600 for interactive e-learning and 50,400 for advanced, simulation-based courses. A custom learning platform is a software project, typically from the mid five figures into six figures depending on scope. The single biggest cost driver is the level of interactivity.
+It depends on the type. Per finished hour of content, a Chapman Alliance survey of 249 organisations (2010) found average internal costs of about 10,000 dollars for basic e-learning (pages and a quiz), 18,600 for interactive e-learning and 50,400 for advanced, simulation-based courses. A custom learning platform is a software project, so its price depends on scope. The single biggest cost driver is the level of interactivity.
 
 ### What are the benefits of custom e-learning development?
 
@@ -2469,6 +2469,11 @@ Yes, a custom learning chatbot is one of the most common use cases. Unlike a gen
 ### Is AI worth it in custom learning software?
 
 In most cases yes, because this is where the value over off-the-shelf software lives. AI can tailor learning paths per person, pull in your own company knowledge, and give feedback. To keep that compliant with your privacy rules, the AI processing has to be planned in from the start, including where it runs and a guarantee that your data does not train external models.
+
+## Sources
+
+- Chapman Alliance (2010): Cost to develop e-learning, survey of 249 organisations: https://www.slideshare.net/slideshow/cost-to-develop-elearning/69322684 (checked 2026-11-09)
+- Chapman Alliance (2010): How long does it take to create learning?: https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860 (checked 2026-11-09)
 
 ---
 
@@ -4045,7 +4050,7 @@ The key is choosing tools that integrate well with German vocational training re
 Source: https://learnslice.com/blog/apprentice-onboarding
 Language: en
 Published: 2026-03-22
-Updated: 2026-10-01
+Updated: 2026-11-09
 Author: Daniel
 
 A week-by-week checklist for onboarding new apprentices, with current BIBB data on early contract cancellations and training costs.
@@ -4054,13 +4059,13 @@ A week-by-week checklist for onboarding new apprentices, with current BIBB data 
 
 ## Why Onboarding Makes or Breaks an Apprenticeship
 
-The first weeks of an apprenticeship set the tone for everything that follows. A well-structured onboarding process builds confidence, accelerates learning, and establishes the habits that carry an apprentice through to their [IHK](https://www.ihk.de) exam. A chaotic start does the opposite, and the data shows why that matters.
+The first weeks of an apprenticeship set the tone for everything that follows. A well-structured onboarding process can build confidence and establish the habits that carry an apprentice through to their [IHK](https://www.ihk.de) exam. The data shows how much is at stake early on.
 
 According to the [BIBB Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037), **29.7%** of all apprenticeship contracts started in Germany were cancelled early in 2024. Most of these cancellations come early: **34.7%** fell within the probation period, which lasts at most four months under [§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html), and a further **32.9%** within the rest of the first twelve months. BIBB points out that this rate is not a dropout rate, as many apprentices continue their training in another company or occupation. For the employer, however, every early cancellation ends an investment. According to the [BIBB cost-benefit survey 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php), gross training costs average about **€26,200 per apprentice per year**, or about **€8,100** net once the apprentice's productive output is taken into account.
 
 How these cancellations are spread across the first year, and how the rates have developed in eight metal and electrical trades, is shown in our [analysis of apprenticeships in Germany's defence industry](/blog/apprenticeships-defence-industry-germany).
 
-The start of an apprenticeship is something a company can shape directly. A documented onboarding plan gives apprentices clear expectations from day one and helps trainers spot problems before they lead to a cancelled contract. This checklist gives you a practical, week-by-week framework to get it right.
+The start of an apprenticeship is something a company can shape directly. A documented onboarding plan gives apprentices clear expectations from day one and can help trainers spot problems early. This checklist gives you a practical, week-by-week framework to get it right.
 
 ## The 8-Week Onboarding Checklist
 
@@ -4075,6 +4080,19 @@ The first week is about making the apprentice feel welcome, oriented, and equipp
 - Introduce the digital learning platform (e.g., LearnSlice) and walk through the first module
 - Set up the [digital training logbook](/blog/digital-training-logbook) and explain documentation expectations
 - Share a written overview of the full 8-week onboarding plan so the apprentice knows what is ahead
+
+#### A Sample Day-One Agenda
+
+Keep day one short on content and long on people. The timing below is a starting point, so adapt it to your company and trade.
+
+| When | What happens | Led by |
+|---|---|---|
+| First hour | Personal welcome, working hours, breaks, who to ask | Trainer |
+| Morning | Workplace tour, team introductions, safety information where required | Trainer or mentor |
+| Midday | Lunch with the mentor or another apprentice | Mentor |
+| Afternoon | Equipment and logins, first look at the learning platform | Trainer |
+| End of day | Short check-in: what was unclear, what happens tomorrow | Trainer |
+
 
 ### Weeks 2-3: Understanding the IHK Path and Company Processes
 
@@ -4130,9 +4148,19 @@ The final phase of onboarding transitions the apprentice toward genuine autonomy
 
 *The trainer hours are suggested planning values, not measured averages. The intended curve runs from 8-10 hours in week one down to 2-3 hours by week eight, as the apprentice takes on more work independently.*
 
-## How Digital Tools Accelerate Onboarding
+### What the First Two Weeks Should Achieve
 
-A checklist alone is helpful. A checklist combined with the right digital infrastructure is transformative. Here is how technology supports each phase:
+By the end of week two, the apprentice should:
+
+- Know their mentor, their trainer, and who to ask for what
+- Have working access to every tool they need
+- Have completed the safety briefings that apply to their workplace
+- Understand the 8-week plan and what comes next
+- Have set up their training logbook and know what to record
+
+## How Digital Tools Support Onboarding
+
+A checklist alone is helpful. Digital tools can support each phase:
 
 **Self-service knowledge access:** Instead of asking the trainer every question, apprentices search a digital knowledge base or ask an AI coaching assistant first. Many routine questions can then be answered without interrupting the trainer.
 
@@ -4148,15 +4176,13 @@ A checklist alone is helpful. A checklist combined with the right digital infras
 
 When onboarding fails, the costs compound. If a contract is cancelled during probation, the company loses the trainer time and training costs invested so far, has to recruit again, and the cycle starts over. The alternative of hiring trained staff later is becoming more expensive: according to the [BIBB cost-benefit survey](https://www.bibb.de/de/pressemitteilung_210430.php), filling a skilled position from the external labour market cost about **€13,700** on average in 2022/23. Compared with earlier surveys, these recruiting costs rose by 65%, while net training costs rose by 28%.
 
-Even when the apprentice stays but had a rocky start, the consequences linger: longer time-to-productivity, lower engagement, and more trainer time required throughout the entire apprenticeship.
-
 Use our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator) to see how structured onboarding impacts your bottom line.
 
 ## Common Onboarding Mistakes to Avoid
 
 1. **Information overload in week one:** Spreading orientation over two weeks is better than cramming everything into a single day
 2. **No written plan:** If the plan only exists in the trainer's head, it is not a plan. It is improvisation
-3. **Skipping the feedback loops:** Weekly check-ins catch problems early, before they lead to a cancelled contract. Which questions work in these check-ins is covered in our [plan to prevent apprenticeship dropout](/blog/prevent-apprenticeship-dropout).
+3. **Skipping the feedback loops:** Weekly check-ins give you a regular chance to spot problems early. Which questions work in these check-ins is covered in our [plan to prevent apprenticeship dropout](/blog/prevent-apprenticeship-dropout).
 4. **Ignoring the digital training logbook:** Starting late creates a backlog that is stressful and hard to fix
 5. **Treating every apprentice the same:** Use learning analytics to personalize the pace and focus areas
 
@@ -4164,12 +4190,46 @@ Use our [Apprenticeship Savings Calculator](/apprenticeship-savings-calculator) 
 
 This checklist is designed to be adapted. Every company is different, and every profession has its own requirements. The framework stays the same (eight weeks, progressive autonomy, regular feedback), but the specific tasks and milestones should reflect your industry and IHK requirements.
 
-The most important factor is consistency. When every apprentice goes through the same structured process, quality becomes repeatable. Trainers spend less time reinventing the wheel, and apprentices know exactly what is expected of them.
+The most important factor is consistency. When every apprentice goes through the same structured process, apprentices know what is expected of them and trainers can reuse the plan.
 
 Choose tools that simplify GDPR compliance through EU-based data hosting, offer content modeled on IHK topic areas and format, and allow you to customize learning paths with your company-specific knowledge.
 
-**Want to see how LearnSlice supports structured apprentice onboarding?** [Book a free demo](/companies) and discover how digital learning paths, AI coaching, and automated progress tracking can reduce your onboarding effort while giving every apprentice the best possible start. [Calculate your savings](/apprenticeship-savings-calculator) to see the financial impact.
+**Want to see how LearnSlice supports structured apprentice onboarding?** [Book a free demo](/companies) and discover how digital learning paths, AI coaching, and automated progress tracking can support your onboarding. [Calculate your savings](/apprenticeship-savings-calculator) to see the financial impact.
 
+_This information is for general orientation and does not replace legal advice. For questions about your training contracts, contact your chamber or a lawyer._
+
+
+## Frequently Asked Questions
+
+### What should happen on an apprentice's first day?
+
+Keep it short on content and long on people: a personal welcome, working hours and breaks, a workplace tour with team introductions, safety information where required, then equipment and logins. End with a short check-in on what was unclear and what happens tomorrow.
+
+### What should an apprentice do in the first week?
+
+The first week is for orientation. The apprentice meets a personal mentor, receives all equipment and logins, gets the safety briefings that apply, sets up the training logbook, and receives the written onboarding plan. Avoid loading them with tasks.
+
+### What should an apprentice achieve in the first two weeks?
+
+By the end of week two, the apprentice should know who to ask, have working access to every tool, have completed the required safety briefings, understand the onboarding plan, and have set up the training logbook.
+
+### How long should apprentice onboarding take?
+
+This checklist runs for eight weeks, moving from orientation to supervised tasks to growing independence. In Germany, probation lasts between one and four months under section 20 BBiG. If yours is short, bring the first review forward so it happens before probation ends.
+
+### How much trainer time does onboarding take?
+
+As a planning value, allow 8 to 10 hours in week one, falling to 2 to 3 hours by week eight as the apprentice works more independently. These are suggested values, not measured averages.
+
+### Why does the start of an apprenticeship matter so much?
+
+According to the BIBB Datenreport 2026, 29.7% of apprenticeship contracts started in Germany were cancelled early in 2024. Of these cancellations, 34.7% fell within probation and a further 32.9% within the rest of the first twelve months.
+
+## Sources
+
+- BIBB: Datenreport zum Berufsbildungsbericht 2026: https://www.bibb.de/dienst/publikationen/de/21037 (checked 2026-11-09)
+- BIBB: Press release on the cost-benefit survey 2022/23: https://www.bibb.de/de/pressemitteilung_210430.php (checked 2026-11-09)
+- Gesetze im Internet: § 20 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__20.html (checked 2026-11-09)
 
 ---
 
@@ -6108,6 +6168,7 @@ Eine seriöse Einzelzahl gibt es nicht, weil der Aufwand von Ihren Inhalten getr
 Source: https://learnslice.com/de/blog/lernplattform-bildungstraeger
 Language: de
 Published: 2026-08-31
+Updated: 2026-11-09
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Eigene Lernplattform für Bildungsträger: wie Sie Ihr Kursangebot digitalisieren, statt fertige Kurse zu mieten. Mit Kosten, Ablauf und Prüfungssimulation.
@@ -6182,7 +6243,7 @@ Ein LMS ist ein Verteilsystem: Kurs anlegen, Inhalte hochladen, Teilnahme dokume
 
 **Es fehlt die Bestehensprognose.** Standardauswertungen zeigen Kursfortschritt und Bearbeitungsquoten. Sie beantworten aber nicht die Frage, auf die es kurz vor dem Termin ankommt: Wer aus dieser Kohorte würde heute bestehen, und woran liegt es bei den anderen? Ohne diese Antwort steuern Ihre Dozenten nach Gefühl.
 
-**Nachweise entstehen nicht nebenbei.** Bei AZAV-zugelassenen Maßnahmen müssen Lernzeiten dokumentiert und die synchrone, also live betreute Lernzeit gesondert nachvollziehbar sein, dazu kommt Barrierefreiheit nach dem BFSG. Wer das hinterher aus einem Standardsystem rekonstruiert, sitzt vor jedem Audit tagelang in Tabellen. Worauf es dabei ankommt, steht in unserem Leitfaden zu [AZAV und Digitalisierung](/de/blog/azav-digitalisierung-bildungstraeger).
+**Nachweise entstehen nicht nebenbei.** Bei AZAV-zugelassenen Maßnahmen werden asynchrone Anteile laut den Empfehlungen des Beirats gesondert auf dem Zertifikat ausgewiesen, und zum Qualitätsmanagement gehört die Erfassung von Teilnehmerpräsenz und Abbruchquoten. Planen Sie das von Anfang an ein. Worauf es dabei ankommt, steht in unserem Leitfaden zu [AZAV und Digitalisierung](/de/blog/azav-digitalisierung-bildungstraeger).
 
 **Das Lizenzmodell arbeitet gegen Sie.** Bildungsträger verdienen an Kohorten, eine Lizenz pro Teilnehmer verteuert also genau das Wachstum, das Sie anstreben. Und der über Jahre kuratierte Fragenpool, meist das wertvollste Gut im Haus, liegt am Ende im System eines Dritten.
 
@@ -6293,7 +6354,7 @@ Das hängt an Ihren Kohortengrößen. Eine Lizenz pro Teilnehmer skaliert mit Ih
 
 ### Ist eine eigene Lernplattform mit dem Bildungsgutschein vereinbar?
 
-Ja, sofern Ihre Maßnahme AZAV-zugelassen bleibt. Wichtig ist, dass die Plattform genau die Nachweise erzeugt, die eine Zertifizierungsstelle sehen will: dokumentierte Lernzeiten, insbesondere getrennt ausgewiesene synchrone Lernzeit, nachvollziehbare Teilnahme und Barrierefreiheit nach dem BFSG. Diese Anforderungen gehören von Anfang an in die Anforderungsliste, nicht nachträglich.
+Ja, sofern Ihre Maßnahme AZAV-zugelassen bleibt. Wichtig ist, dass die Plattform die nötigen Angaben liefert: Unterrichtsstunden getrennt von asynchronen Anteilen, die Teilnehmerpräsenz und die erreichten Lehrgangsziele. Diese Anforderungen gehören von Anfang an in die Anforderungsliste, nicht nachträglich.
 
 ### Für welche anderen Prüfungen funktioniert derselbe Aufbau?
 
@@ -6686,86 +6747,123 @@ Das ist Verhandlungssache und gehört vor Projektstart schriftlich geklärt. Bei
 Source: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
 Language: de
 Published: 2026-07-01
+Updated: 2026-11-09
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Synchrone Lernzeit nachweisen, prüfsichere Nachweise, Barrierefreiheit nach BFSG und förderfähige KI: der praktische Leitfaden für AZAV-zugelassene Bildungsträger.
+Unterricht und Selbstlernanteile abgrenzen, Lernerfolgskontrolle im Maßnahmekonzept, BFSG und KI-Pflichten: Leitfaden für AZAV-Bildungsträger.
 
 ## Auf einen Blick
 
-- Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone (live betreute) Lernzeit gesondert und nachvollziehbar zu dokumentieren.
-- Anwesenheit und Lernfortschritt sollten jederzeit prüfsicher exportierbar sein, statt in Handlisten verstreut zu liegen.
-- Das BFSG gilt seit Juni 2025 mit Übergangsfristen bis 2030; Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA.
-- Programme wie ESF Plus und Mittel der Bundesagentur für Arbeit können Digitalisierungsprojekte mitfinanzieren; die Anrechenbarkeit in Maßnahmekosten hängt von der Zulassung ab.
-- Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich auf ein Gesamtprojekt festlegen.
+- Seit dem 1. Juli 2025 werden asynchrone Anteile laut den Empfehlungen des AZAV-Beirats gesondert auf dem Zertifikat ausgewiesen und zählen nicht als Unterrichtsstunden.
+- Zum Qualitätsmanagement nennt der Beirat unter anderem die Überwachung von Lernprozessen sowie die Erfassung von Teilnehmerpräsenz und Abbruchquoten.
+- Für Lernplattformen muss beim BFSG laut Bundesfachstelle Barrierefreiheit differenziert werden: E-Books für Verbraucher fallen darunter, interaktive Lernangebote, die keine elektronische Fassung eines Buches sind, nicht. Eine Plattform kann aber die Bedingungen für Dienstleistungen im elektronischen Geschäftsverkehr erfüllen müssen.
+- Kosten für asynchrone Anteile können laut Beirat in die Gesamtkalkulation einbezogen werden, sind aber gesondert auszuweisen.
+- Ein klar abgegrenztes Pilotprojekt hilft, den Nutzen zu prüfen, bevor Sie sich auf ein Gesamtprojekt festlegen.
 
 ![EU-Sterne, Vorhängeschloss und digitale Europakarte als Sinnbild für AZAV-konforme Digitalisierung bei Bildungsträgern](/images/blog/dsgvo-eu-compliance.webp)
 
 ## Warum AZAV und Digitalisierung 2026 zusammengehören
 
-Für AZAV-zugelassene Bildungsträger ist Digitalisierung längst keine Kür mehr. Teilnehmende erwarten digitale Lernwege, Prüfungen werden anspruchsvoller, und mehrere regulatorische Entwicklungen treffen gleichzeitig aufeinander: die AZAV-Empfehlungen zur synchronen Lernzeit, das Barrierefreiheitsstärkungsgesetz (BFSG), die EU-KI-Verordnung und der wachsende Anspruch an souveräne Datenverarbeitung.
+Für AZAV-zugelassene Bildungsträger treffen bei digitalen Maßnahmen mehrere Regelwerke aufeinander: die Empfehlungen des AZAV-Beirats, das Fernunterrichtsschutzgesetz (FernUSG), das Barrierefreiheitsstärkungsgesetz (BFSG) und die EU-KI-Verordnung.
 
-Die gute Nachricht: Wer diese Themen zusammen denkt, muss nicht alles auf einmal umbauen. Dieser Leitfaden ordnet die wichtigsten Punkte für die Praxis und zeigt, wo sich der Einstieg lohnt. Eine schnelle Selbsteinschätzung liefert der [Digital-Readiness-Check für AZAV, BFSG und KI](/de/digital-readiness-check).
+Dieser Leitfaden ordnet die wichtigsten Punkte für die Praxis und zeigt, was jeweils zu klären ist. Eine schnelle Selbsteinschätzung liefert der [Digital-Readiness-Check für AZAV, BFSG und KI](/de/digital-readiness-check).
 
-## Synchrone Lernzeit sauber dokumentieren
+## Unterricht und Selbstlernanteile sauber trennen
 
-Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, live betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Für Bildungsträger heißt das konkret: Sie sollten jederzeit belegen können, welcher Anteil Ihres digitalen Lernens live begleitet stattfindet und welcher im Selbststudium.
+Seit dem 1. Juli 2025 zählen asynchrone Anteile laut den [Empfehlungen des Beirats nach § 182 SGB III](https://www.arbeitsagentur.de/datei/dok_ba032840.pdf) nicht zu den Unterrichts- oder Maßnahmestunden und werden gesondert auf dem Zertifikat ausgewiesen. Für Bildungsträger heißt das konkret: Sie müssen auseinanderhalten können, welcher Anteil Ihres digitalen Lernens Unterricht ist und welcher Selbststudium. Eine Erfassung im Lernsystem kann diese Trennung erleichtern.
 
-In der Praxis scheitert das oft an verstreuten Handlisten und Tabellen, die niemand gerne pflegt und die bei einer Prüfung Aufwand bedeuten. Eine automatische Erfassung im Lernsystem nimmt dem Team diese Arbeit ab und macht den Nachweis auf Knopfdruck möglich. Der Unterschied zeigt sich spätestens dann, wenn eine Erfolgskontrolle ansteht.
+## Anwesenheit und Lernprozesse nachvollziehbar erfassen
 
-## Prüfsichere Nachweise statt Zettelwirtschaft
+Zum Qualitätsmanagement nennt der Beirat unter anderem die Überwachung von Lernprozessen sowie die Erfassung der Teilnehmerpräsenz, der Abbruchquoten und der erreichten Lehrgangsziele. Prüfen Sie deshalb, ob Sie diese Angaben heute zusammenhängend vorlegen könnten.
 
-Eng verbunden ist die Frage nach Nachweisen zu Anwesenheit und Lernfortschritt. Könnten Sie beides exportieren, wenn morgen eine Prüfung anstünde? Bei vielen Trägern lautet die ehrliche Antwort: ja, aber mit erheblichem Aufwand.
+Ein System, das Anwesenheit, Lernaktivität und Fortschritt strukturiert erfasst, kann diese Arbeit vereinfachen und intern zeigen, wo Teilnehmende Unterstützung brauchen.
 
-Ein System, das Anwesenheit, Lernaktivität und Fortschritt strukturiert erfasst, verwandelt diesen Aufwand in einen Export. Das entlastet nicht nur die Qualitätsbeauftragten, sondern schafft auch intern Klarheit darüber, wo Teilnehmende auf Kurs sind und wo eine Intervention sinnvoll ist.
+## Lernerfolgskontrolle und asynchrone Anteile im Maßnahmekonzept
 
-## Barrierefreiheit nach BFSG mitdenken
+Wer digitale oder kombinierte Maßnahmen zulassen will, muss im Maßnahmekonzept erklären, wie gelernt und kontrolliert wird. Maßgeblich sind die [Empfehlungen des Beirats nach § 182 SGB III](https://www.arbeitsagentur.de/datei/dok_ba032840.pdf) (Stand: 17.06.2026). Drei Punkte daraus prägen die Konzeption:
 
-Das BFSG gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab. In der Reha (SGB IX) kommt der Anspruch hinzu, dass Lernende mit unterschiedlichem Bedarf einen passenden, barrierefreien Lernweg erhalten.
+- **Unterricht heißt direkte Interaktion.** Während der gesamten Dauer führen Lehr- und Fachkräfte den Unterricht durch oder begleiten ihn aktiv. Ein Forum oder eine Hotline reicht laut Beirat nicht aus. Auch die bloße Möglichkeit, bei Bedarf Kontakt aufzunehmen, ist kein synchroner Unterricht: Die Interaktion muss im Konzept für einen definierten Zeitraum verbindlich vorgesehen sein.
+- **Die Lernerfolgskontrolle gehört ins Konzept.** Setzen Sie im Unterricht interaktive Medien, Projekt- und Gruppenarbeit oder innovative Lernformen ein, muss das Konzept konkret darstellen, wie synchroner Informationsaustausch und Lernerfolgskontrolle sichergestellt werden.
+- **Asynchrone Anteile zählen nicht als Unterrichtsstunden.** Selbstlerneinheiten, Lehrbriefe oder Learning Nuggets werden gesondert auf dem Zertifikat ausgewiesen. Das Konzept muss darlegen, wie sie in das pädagogische Gesamtkonzept eingebettet sind und wie die Zielerreichung in der Selbstlernphase sichergestellt wird.
 
-Wer Barrierefreiheit von Anfang an einplant, statt sie später teuer nachzurüsten, ist im Vorteil. Gerade Träger ohne großes Altsystem können hier vieles gleich richtig aufsetzen.
+### Wann zusätzlich das Fernunterrichtsschutzgesetz greift
 
-## KI verantwortungsvoll und förderfähig einsetzen
+Ein Lehrgang kann auch unter das FernUSG fallen. Fernunterricht liegt nach [§ 1 FernUSG](https://www.gesetze-im-internet.de/fernusg/__1.html) vor, wenn Kenntnisse und Fähigkeiten auf vertraglicher Grundlage und gegen Entgelt vermittelt werden, Lehrende und Lernende dabei ausschließlich oder überwiegend räumlich getrennt sind und der Lernerfolg überwacht wird. Als räumlich getrennt gilt laut [Zentralstelle für Fernunterricht (ZFU)](https://zfu.de/veranstaltende/fernunterricht), wenn mehr als die Hälfte der Kenntnisse mithilfe von Medien vermittelt wird und der Austausch asynchron läuft. Die Überwachung des Lernerfolgs kann demnach durch Korrektur- und Prüfungsaufgaben oder mündlich im begleitenden Unterricht erfolgen.
 
-KI-Unterstützung ist für Bildungsträger attraktiv, will aber sauber gemacht sein. Seit Februar 2025 verlangt die EU-KI-Verordnung, die KI-Kompetenz des Personals zu fördern. Bestimmte Bildungs-KI, etwa zur Zugangs- oder Leistungsbewertung, kann als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027.
+Die Schwelle für die Überwachung ist niedrig. Laut ZFU reicht eine einmalige Abschlussprüfung, und auch die Möglichkeit, einem betreuenden Online-Tutor per Telefon, Chat oder Messenger Fragen zu stellen, gilt als Lernzielerfolgskontrolle. Reine computergestützte Tests wie Multiple-Choice-Aufgaben können den individuellen Lernerfolg laut ZFU dagegen in der Regel nicht feststellen. Anders liegt es beim virtuellen Klassenraum oder Live-Chat: Dort ist Kontakt wie in Präsenz möglich, sodass laut ZFU keine räumliche Trennung vorliegt.
 
-Ein KI-Lernbegleiter, der ausschließlich aus Ihren geprüften Inhalten antwortet, Quellen belegt und menschliche Aufsicht vorsieht, bleibt nachvollziehbar und entlastet zugleich Ihr Personal. Worauf es bei der Auswahl datenschutzkonformer Werkzeuge ankommt, lesen Sie im Beitrag zu [DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+Fernlehrgänge bedürfen nach [§ 12 FernUSG](https://www.gesetze-im-internet.de/fernusg/__12.html) der Zulassung. Ein ohne erforderliche Zulassung geschlossener Fernunterrichtsvertrag ist nach [§ 7 FernUSG](https://www.gesetze-im-internet.de/fernusg/__7.html) nichtig.
 
-## Förderung: Digitalisierung finanzierbar machen
+Ist ein Angebot zulassungspflichtig und soll es nach AZAV zugelassen werden, legen Sie die Berechtigung der ZFU bei Ihrer fachkundigen Stelle vor. Seit Juni 2026 stellt der Beirat zudem klar, dass sich Konzept und Kalkulation nach FernUSG in der Regel nicht eins zu eins auf die AZAV übertragen lassen. Oft braucht es eine Anpassung, etwa eine tutorielle Begleitung oder Lernerfolgskontrolle, die verbindlich in synchroner Form vorgesehen ist.
 
-Viele dieser Schritte lassen sich fördern. Programme wie ESF Plus unterstützen Digitalisierung und Weiterbildung, hinzu kommen Mittel der Bundesagentur für Arbeit. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab. Diese Anrechenbarkeit sollten Sie vor einer Zusage mit einer fachkundigen Stelle klären.
+### Was das für KI-Lernbegleiter bedeutet
 
-Der Finanzierungshebel ist für Bildungsträger oft entscheidend, weil die Mittel projektbezogen und nicht als große Investition gedacht sind. Genau dafür eignet sich ein klein geschnittener Einstieg.
+Die Unterrichtsdefinition des Beirats nennt Lehr- und Fachkräfte, KI-Lernbegleiter kommen darin nicht vor. Ob und wie ein KI-Lernbegleiter im Maßnahmekonzept berücksichtigt werden kann, klären Sie deshalb vor dem Antrag mit Ihrer fachkundigen Stelle. Ob Ihr Lehrgang unter das FernUSG fällt, beantwortet die ZFU.
+
+## Barrierefreiheit nach BFSG prüfen
+
+Das BFSG gilt für bestimmte Produkte sowie für bestimmte Dienstleistungen, die [nach dem 28. Juni 2025 für Verbraucher erbracht werden](https://www.gesetze-im-internet.de/bfsg/__1.html). Für Dienstleistungserbringer enthält [§ 38 BFSG](https://www.gesetze-im-internet.de/bfsg/__38.html) Übergangsbestimmungen bis zum 27. Juni 2030. Kleinstunternehmen, die Dienstleistungen anbieten, sind nach [§ 3 Abs. 3 BFSG](https://www.gesetze-im-internet.de/bfsg/__3.html) ausgenommen.
+
+Für Lernplattformen muss man laut [Bundesfachstelle Barrierefreiheit](https://www.bundesfachstelle-barrierefreiheit.de/DE/Fachwissen/Produkte-und-Dienstleistungen/Barrierefreiheitsstaerkungsgesetz/FAQ/faq_node.html) differenzieren: E-Books, die Verbraucher über eine Lernmedienplattform abrufen, fallen unter das BFSG, interaktive Lernangebote, die keine elektronische Fassung eines Buches sind, nicht. Eine Plattform kann aber die Bedingungen für Dienstleistungen im elektronischen Geschäftsverkehr erfüllen müssen, zum Beispiel wenn über sie eine Dienstleistung verkauft wird. Dienstleistungen, die ausschließlich im B2B-Bereich angeboten werden, sollten laut Bundesfachstelle nicht betroffen sein. Als technischen Bezugspunkt für Informations- und Kommunikationstechnik nennt sie die EN 301 549.
+
+## KI verantwortungsvoll einsetzen
+
+Anbieter und Betreiber von KI-Systemen müssen nach Artikel 4 der [KI-Verordnung](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/deu) in der Fassung der [Verordnung (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj/deu) Maßnahmen ergreifen, um die Entwicklung der KI-Kompetenz ihres Personals zu unterstützen. KI-Systeme für den Zugang zu Bildungseinrichtungen oder die Bewertung von Lernergebnissen stehen in Anhang III. Die Pflichten für solche Hochrisiko-Systeme gelten ab dem 2. Dezember 2027.
+
+Ein KI-Lernbegleiter, der ausschließlich aus Ihren geprüften Inhalten antwortet, Quellen belegt und menschliche Aufsicht vorsieht, lässt sich leichter nachvollziehen und kontrollieren. Worauf es bei der Auswahl datenschutzkonformer Werkzeuge ankommt, lesen Sie im Beitrag zu [DSGVO-konformen KI-Tools](/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder).
+
+## Kosten für asynchrone Anteile kalkulieren
+
+Kosten im Zusammenhang mit asynchronen Bestandteilen können laut Beirat in die Gesamtkostenkalkulation einbezogen und anteilig auf die Unterrichts- oder Maßnahmestunden umgelegt werden. Sie sind gesondert auszuweisen. Für die Kosten je Stunde wird die Gesamtsumme, einschließlich der asynchronen Kosten, durch die Zahl der synchronen Stunden geteilt. Ob für ein Digitalisierungsprojekt weitere Fördermittel infrage kommen, klären Sie vorab mit dem jeweiligen Fördergeber.
 
 ## So gelingt der Einstieg
 
-Sie brauchen keine große Umstellung. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen an einem klar abgegrenzten Anwendungsfall, etwa der Nachweisführung oder einem KI-gestützten Übungsbereich, bevor Sie sich auf ein Gesamtprojekt festlegen. So bleibt das Risiko gering und der Nutzen wird früh sichtbar. Wenn es dabei um Ihr Kursangebot selbst geht und nicht nur um die Nachweisführung, lesen Sie weiter unter [Lernplattform für Bildungsträger: eigene Kurse digitalisieren](/de/blog/lernplattform-bildungstraeger).
+In einem klar abgegrenzten Pilotprojekt, etwa zur Nachweisführung oder einem KI-gestützten Übungsbereich, prüfen Sie den Nutzen, bevor Sie sich auf ein Gesamtprojekt festlegen. Wenn es dabei um Ihr Kursangebot selbst geht und nicht nur um die Nachweisführung, lesen Sie weiter unter [Lernplattform für Bildungsträger: eigene Kurse digitalisieren](/de/blog/lernplattform-bildungstraeger).
 
 Wo Sie heute stehen, sehen Sie in wenigen Minuten mit dem [Digital-Readiness-Check](/de/digital-readiness-check). Für einen konkreten Fahrplan aus Ihren Handlungsfeldern vereinbaren Sie ein kostenloses Strategiegespräch, ohne Pitch. Wie wir individuelle Lösungen bauen, zeigt die Seite zur [individuellen E-Learning-Entwicklung](/de/loesungen).
 
-_Diese Angaben dienen der Orientierung und ersetzen keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: Juli 2026._
+_Diese Angaben dienen der Orientierung und ersetzen keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: November 2026._
 
 
 ## Häufig gestellte Fragen
 
-### Muss synchrone Lernzeit bei AZAV gesondert nachgewiesen werden?
+### Wie werden asynchrone Anteile bei AZAV-Maßnahmen ausgewiesen?
 
-Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, live betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Bildungsträger sollten jederzeit belegen können, welcher Anteil des digitalen Lernens live begleitet stattfindet. Die konkrete Umsetzung hängt von der fachkundigen Stelle und Ihrer Zulassung ab.
+Laut den Empfehlungen des Beirats nach § 182 SGB III (Stand 17.06.2026) zählen asynchrone Anteile nicht zu den Unterrichts- oder Maßnahmestunden. Sie werden gesondert auf dem Zertifikat ausgewiesen. Unterricht setzt dagegen voraus, dass eine direkte, unmittelbare Interaktion mit den Lehr- und Fachkräften jederzeit möglich und im Konzept für einen definierten Zeitraum verbindlich vorgesehen ist. Die bloße Möglichkeit, Kontakt aufzunehmen, reicht nicht.
+
+### Was muss das AZAV-Maßnahmekonzept zur Lernerfolgskontrolle enthalten?
+
+Laut den Empfehlungen des Beirats muss das Konzept bei interaktiven Medien, Projekt- und Gruppenarbeit oder innovativen Lernformen konkret darstellen, wie synchroner Informationsaustausch und Lernerfolgskontrolle sichergestellt werden. Bei asynchronen Anteilen ist darzulegen, wie die Zielerreichung in der Selbstlernphase sichergestellt wird.
+
+### Braucht eine AZAV-Maßnahme mit Selbstlernanteilen eine ZFU-Zulassung?
+
+Das hängt vom Einzelfall ab. Fernunterricht ist die vertraglich vereinbarte, entgeltliche Vermittlung von Kenntnissen und Fähigkeiten, bei der Lehrende und Lernende ausschließlich oder überwiegend räumlich getrennt sind und der Lernerfolg überwacht wird. Ist ein Angebot zulassungspflichtig, wird die Berechtigung der ZFU bei der fachkundigen Stelle vorgelegt. Ob Ihr Lehrgang betroffen ist, beantwortet die ZFU.
 
 ### Gilt das BFSG auch für Lernplattformen von Bildungsträgern?
 
-Das Barrierefreiheitsstärkungsgesetz gilt seit Juni 2025 mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab.
+Laut Bundesfachstelle Barrierefreiheit muss man differenzieren. E-Books, die Verbraucher über Lernmedienplattformen abrufen, fallen unter das BFSG, interaktive Lernangebote, die keine elektronische Fassung eines Buches sind, nicht. Eine Plattform kann aber die Bedingungen für Dienstleistungen im elektronischen Geschäftsverkehr erfüllen müssen, zum Beispiel wenn über sie eine Dienstleistung verkauft wird.
 
-### Kann KI in einem AZAV-Umfeld eingesetzt werden?
+### Was verlangt die KI-Verordnung von Bildungsträgern?
 
-Ja, mit Sorgfalt. Seit Februar 2025 verlangt die EU-KI-Verordnung, die KI-Kompetenz des Personals zu fördern. Bestimmte Bildungs-KI kann als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027. Antworten aus geprüftem Material, belegte Quellen und menschliche Aufsicht sind gute Praxis.
+Anbieter und Betreiber von KI-Systemen müssen nach Artikel 4 Maßnahmen ergreifen, um die Entwicklung der KI-Kompetenz ihres Personals zu unterstützen. KI-Systeme für den Zugang zu Bildungseinrichtungen oder die Bewertung von Lernergebnissen stehen in Anhang III. Die Pflichten für solche Hochrisiko-Systeme gelten ab dem 2. Dezember 2027.
 
-### Welche Förderung gibt es für die Digitalisierung von Weiterbildung?
+### Wie werden Kosten für asynchrone Anteile kalkuliert?
 
-Programme wie ESF Plus fördern Digitalisierung und Weiterbildung, hinzu kommen Mittel der Bundesagentur für Arbeit. Ob sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab und sollte vorab mit einer fachkundigen Stelle geklärt werden.
+Laut Beirat können sie in die Gesamtkostenkalkulation einbezogen und anteilig auf die Unterrichts- oder Maßnahmestunden umgelegt werden. Sie sind gesondert auszuweisen. Für die Kosten je Stunde wird die Gesamtsumme durch die Zahl der synchronen Stunden geteilt.
 
-### Wie fangen Bildungsträger mit der Digitalisierung am besten an?
+## Quellen
 
-Klein und konkret. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen an einem klar abgegrenzten Anwendungsfall, bevor Sie sich auf ein Gesamtprojekt festlegen. Ohne Altsystem lassen sich Nachweise und Barrierefreiheit gleich richtig aufsetzen.
+- Bundesagentur für Arbeit: Empfehlungen des Beirats nach § 182 SGB III, Stand 17.06.2026: https://www.arbeitsagentur.de/datei/dok_ba032840.pdf (geprüft am 2026-11-09)
+- Gesetze im Internet: § 1 FernUSG: https://www.gesetze-im-internet.de/fernusg/__1.html (geprüft am 2026-11-09)
+- Gesetze im Internet: § 7 FernUSG: https://www.gesetze-im-internet.de/fernusg/__7.html (geprüft am 2026-11-09)
+- Gesetze im Internet: § 12 FernUSG: https://www.gesetze-im-internet.de/fernusg/__12.html (geprüft am 2026-11-09)
+- Zentralstelle für Fernunterricht: Fernunterricht: https://zfu.de/veranstaltende/fernunterricht (geprüft am 2026-11-09)
+- Gesetze im Internet: § 1 BFSG: https://www.gesetze-im-internet.de/bfsg/__1.html (geprüft am 2026-11-09)
+- Gesetze im Internet: § 3 BFSG: https://www.gesetze-im-internet.de/bfsg/__3.html (geprüft am 2026-11-09)
+- Gesetze im Internet: § 38 BFSG: https://www.gesetze-im-internet.de/bfsg/__38.html (geprüft am 2026-11-09)
+- Bundesfachstelle Barrierefreiheit: FAQ zum BFSG: https://www.bundesfachstelle-barrierefreiheit.de/DE/Fachwissen/Produkte-und-Dienstleistungen/Barrierefreiheitsstaerkungsgesetz/FAQ/faq_node.html (geprüft am 2026-11-09)
+- EUR-Lex: Verordnung (EU) 2024/1689 (KI-Verordnung): https://eur-lex.europa.eu/eli/reg/2024/1689/oj/deu (geprüft am 2026-11-09)
+- EUR-Lex: Verordnung (EU) 2026/1744: https://eur-lex.europa.eu/eli/reg/2026/1744/oj/deu (geprüft am 2026-11-09)
 
 ---
 
@@ -6774,7 +6872,7 @@ Klein und konkret. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nut
 Source: https://learnslice.com/de/blog/e-learning-entwickeln-lassen
 Language: de
 Published: 2026-07-01
-Updated: 2026-11-02
+Updated: 2026-11-09
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Was kostet es, E-Learning entwickeln oder erstellen zu lassen? Preise 2026 für Modul, Plattform und KI-Tutor, dazu Ablauf und Anbieter-Checkliste.
@@ -6782,7 +6880,7 @@ Was kostet es, E-Learning entwickeln oder erstellen zu lassen? Preise 2026 für 
 ## Auf einen Blick
 
 - E-Learning entwickeln lassen heißt: Sie beauftragen eine maßgeschneiderte Lösung statt einer Standardsoftware. Das reicht von einzelnen Lernmodulen über individuelle Lernplattformen und Lern-Chatbots (KI-Lernassistenten) bis zu Serious Games und KI-gestützten Lernanwendungen.
-- Die Kosten hängen stark vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute. Eine individuelle Lernplattform liegt nach Angaben von Entwicklungsdienstleistern bei etwa 13.000 bis 90.000 Euro, ein Serious Game beginnt bei rund 15.000 Euro. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
+- Die Kosten hängen stark vom Typ ab. Die Honorarempfehlung 2026 von BDVT und VBT nennt keinen Preis pro E-Learning-Minute, aber Tagessätze für Konzeption, Vor- und Nacharbeit: ab 1.500 Euro (Starter), ab 2.000 Euro (Professionals) und ab 3.300 Euro (Senior-Professionals). Eine individuelle Lernplattform liegt nach Angaben von Entwicklungsdienstleistern bei etwa 13.000 bis 90.000 Euro, ein Serious Game beginnt bei rund 15.000 Euro. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
 - Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung mit mehreren Bausteinen in 3 bis 6 Monaten. Planen Sie laufende Kosten für Betrieb und Weiterentwicklung ein.
 - Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet einmalig mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen. Als einmalige Investition statt laufender Lizenzgebühren pro Nutzer rechnet es sich über die Jahre besonders für alle, die große Gruppen schulen oder ausbilden, etwa Bildungsträger, Hochschulen und Kursanbieter.
 - Achten Sie bei der Auswahl auf beides: didaktische und technische Kompetenz, DSGVO-konformes EU-Hosting, eine klare Regelung zum Eigentum am Code und einen Anbieter, der Betrieb und Skalierung mitdenkt.
@@ -6816,16 +6914,16 @@ Wenn vor allem der KI-Tutor für Sie zählt, geht unser Leitfaden [KI-Lernbeglei
 
 ## Was kostet es, E-Learning entwickeln zu lassen?
 
-Die Kosten hängen vor allem vom Typ und vom Grad der Interaktivität ab. Kurz gesagt: professionell produzierte Lernmodule kosten rund 1.000 Euro pro Minute, eine individuelle Lernplattform etwa 13.000 bis 90.000 Euro und ein Serious Game ab 15.000 Euro. Zur Orientierung die marktüblichen Richtwerte im Überblick:
+Die Kosten hängen vor allem vom Typ und vom Grad der Interaktivität ab. Kurz gesagt: Für Lernmodule gibt es keinen Minutenpreis der Verbände, BDVT und VBT nennen für die Konzeption aber Tagessätze ab 1.500 bis ab 3.300 Euro. Eine individuelle Lernplattform liegt bei etwa 13.000 bis 90.000 Euro und ein Serious Game ab 15.000 Euro. Zur Orientierung die marktüblichen Richtwerte im Überblick:
 
 | Art der Entwicklung | Typische Kosten | Zeitrahmen |
 |---|---|---|
-| Lernmodul / WBT (Content) | ca. 1.000 Euro pro Minute (Empfehlung BDVT/VBT) | 8 bis 12 Wochen pro Lernstunde |
+| Lernmodul / WBT (Content) | nach Aufwand, Konzeption ab 1.500 bis ab 3.300 Euro pro Tag (Honorarempfehlung BDVT/VBT 2026) | 8 bis 12 Wochen pro Lernstunde |
 | Individuelle Lernplattform / Lernsoftware | ca. 13.000 bis 90.000 Euro je nach Umfang | 3 bis 6 Monate |
 | Serious Game / Simulation | ab ca. 15.000 Euro pro Modul, 30.000 bis 80.000 Euro komplett | 6 Wochen bis 6 Monate |
 | Betrieb und Weiterentwicklung | laufend, häufig ein Anteil der Entwicklungskosten pro Jahr | dauerhaft |
 
-Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [Honorarempfehlung der Verbände BDVT und VBT](https://www.bdvt.de/bdvt/teilen/honorar-empfehlungen.php), die [Entwicklungszeit-Studie der Chapman Alliance](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860) sowie auf Angaben spezialisierter Entwicklungsdienstleister. Für die meisten Projekte im Mittelstand bedeutet das eine fünfstellige Investition, die sich über eingesparte Zeit und vermiedene Lizenzkosten rechnet, kein sechsstelliges Wagnis. Ein 30-minütiges Gespräch macht aus diesen Spannen eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
+Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [Honorarempfehlung 2026 von BDVT und VBT](https://www.bdvt.de/bdvt-wAssets/docs/Berufsstaendische-Informationen/Honorarempfehlung.pdf), die [Entwicklungszeit-Studie der Chapman Alliance](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860) sowie auf Angaben spezialisierter Entwicklungsdienstleister. Die Honorarempfehlung gilt für Training, Beratung und Coaching und enthält keinen Preis für die E-Learning-Produktion. Sie dient hier als Orientierung für den Konzeptionsaufwand, ihre Beträge sind Untergrenzen ohne Mehrwertsteuer und Spesen. Für die meisten Projekte im Mittelstand bedeutet das eine fünfstellige Investition, die sich über eingesparte Zeit und vermiedene Lizenzkosten rechnet, kein sechsstelliges Wagnis. Ein 30-minütiges Gespräch macht aus diesen Spannen eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
 
 1. **Interaktivität.** Der mit Abstand größte Kostentreiber. Die Entwicklungszeit-Studie der Chapman Alliance (249 Organisationen, 2010) beziffert den Aufwand pro fertiger Lernstunde im Schnitt auf 79 Stunden Entwicklung bei einfachem, 184 bei interaktivem und 490 bei fortgeschrittenem, simulationsbasiertem E-Learning. Ein einfacher Durchklick-Kurs ist günstig, eine verzweigte Simulation teuer.
 2. **Integrationen.** Anbindungen an bestehende Systeme wie HR-Software, ein vorhandenes LMS oder ein Single Sign-on (SSO) treiben den Aufwand.
@@ -6961,7 +7059,7 @@ E-Learning entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie struktur
 
 ### Was kostet es, E-Learning entwickeln zu lassen?
 
-Das hängt vom Typ ab. Für professionell produzierte Lernmodule empfehlen die Verbände BDVT und VBT rund 1.000 Euro pro Minute Lernzeit, also etwa 15.000 bis 25.000 Euro für ein 20-minütiges Modul. Eine individuelle Lernplattform kostet nach Angaben spezialisierter Entwicklungsdienstleister je nach Umfang etwa 13.000 bis 90.000 Euro. Ein Serious Game beginnt bei rund 15.000 Euro pro Modul und erreicht bei kompletten Trainingslösungen 30.000 bis 80.000 Euro. Der größte Kostentreiber ist der Grad der Interaktivität.
+Das hängt vom Typ ab. Für Lernmodule gibt es keinen Minutenpreis der Verbände, der Preis ergibt sich aus dem Aufwand. Die Honorarempfehlung 2026 von BDVT und VBT gilt für Training, Beratung und Coaching und nennt für Konzeption, Vor- und Nacharbeit Tagessätze ab 1.500 Euro (Starter), ab 2.000 Euro (Professionals) und ab 3.300 Euro (Senior-Professionals), jeweils zuzüglich Mehrwertsteuer und Spesen. Eine individuelle Lernplattform kostet nach Angaben spezialisierter Entwicklungsdienstleister je nach Umfang etwa 13.000 bis 90.000 Euro. Ein Serious Game beginnt bei rund 15.000 Euro pro Modul und erreicht bei kompletten Trainingslösungen 30.000 bis 80.000 Euro. Der größte Kostentreiber ist der Grad der Interaktivität.
 
 ### E-Learning erstellen lassen oder entwickeln lassen: Was ist der Unterschied?
 
@@ -6969,7 +7067,7 @@ Im Alltag werden beide Begriffe oft gleich verwendet. Gemeint sind aber meist zw
 
 ### Was kostet es, einen E-Learning-Kurs erstellen zu lassen?
 
-Für einen fertigen Kurs, der in Ihrem vorhandenen System läuft, gelten Content-Preise: Die Verbände BDVT und VBT empfehlen rund 1.000 Euro pro Minute Lernzeit. Einfache Durchklick-Formate liegen darunter, verzweigte Szenarien und Simulationen deutlich darüber. Eine eigene Plattform ist darin nicht enthalten, sie wird als Software separat kalkuliert.
+Für einen fertigen Kurs, der in Ihrem vorhandenen System läuft, gelten Content-Preise, die sich aus dem Aufwand für Konzeption und Produktion ergeben. Für die Konzeption nennt die Honorarempfehlung 2026 von BDVT und VBT Tagessätze ab 1.500 bis ab 3.300 Euro, je nach Erfahrung. Einfache Durchklick-Formate brauchen weniger Entwicklungszeit, verzweigte Szenarien und Simulationen deutlich mehr. Eine eigene Plattform ist darin nicht enthalten, sie wird als Software separat kalkuliert.
 
 ### Wie lange dauert die Entwicklung?
 
@@ -6998,6 +7096,12 @@ Ja, ein individueller Lern-Chatbot ist einer der häufigsten Anwendungsfälle. A
 ### Lohnt sich KI in individueller Lernsoftware?
 
 In den meisten Fällen ja, denn genau hier liegt der Mehrwert gegenüber Standardsoftware. KI kann Lernpfade pro Person anpassen, Ihr eigenes Unternehmenswissen einbinden und Feedback geben. Damit das DSGVO-konform bleibt, muss die KI-Verarbeitung von Anfang an mitgeplant werden, inklusive EU-Hosting und Trainingsdaten-Opt-out.
+
+## Quellen
+
+- BDVT: Honorarempfehlung 2026 für Training, Beratung und Coaching: https://www.bdvt.de/bdvt-wAssets/docs/Berufsstaendische-Informationen/Honorarempfehlung.pdf (geprüft am 2026-11-09)
+- BDVT: Honorar-Empfehlungen (gemeinsam mit VBT): https://www.bdvt.de/bdvt/teilen/honorar-empfehlungen.php (geprüft am 2026-11-09)
+- Chapman Alliance (2010): How long does it take to create learning?: https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860 (geprüft am 2026-11-09)
 
 ---
 
@@ -8076,6 +8180,8 @@ Für kleinere Betriebe mit stabilen Prozessen ist die Word-Vorlage der richtige 
 
 **Sehen Sie in 30 Minuten, wie ein dynamischer Ausbildungsplan bei Ihnen aussehen würde.** In einer kurzen Demo zeigen wir an einem echten Beispiel, wie LearnSlice den IHK-Rahmenplan mit Ihren Arbeitsanweisungen verbindet und daraus personalisierte Lernpfade pro Azubi baut - DSGVO-konform, auf europäischen Servern. [Demo buchen](/de/companies).
 
+Nutzen Ihre Azubis noch das digitale Berichtsheft der IHK? Lesen Sie, [was nach dem 31.12.2026 gilt](/de/blog/ihk-berichtsheft-alternative).
+
 Weiterlesen: [Ausbildungsplan erstellen mit KI](/de/blog/ausbildungsplan-erstellen-ki) · [Ausbildung digitalisieren: Der komplette Leitfaden](/de/blog/ausbildung-digitalisieren) · [Berichtsheft digital führen](/de/blog/berichtsheft-digital) · [KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung)
 
 
@@ -8690,7 +8796,7 @@ Ausbilder zu entlasten ist kein Luxus, sondern wirtschaftliche Notwendigkeit. Di
 Source: https://learnslice.com/de/blog/azubi-onboarding
 Language: de
 Published: 2026-03-22
-Updated: 2026-10-01
+Updated: 2026-11-09
 Author: Daniel
 
 Checkliste für die ersten 8 Wochen mit Ihrem neuen Azubi, sofort einsetzbar. Mit aktuellen BIBB-Zahlen zu vorzeitig gelösten Verträgen und Ausbildungskosten.
@@ -8699,13 +8805,13 @@ Checkliste für die ersten 8 Wochen mit Ihrem neuen Azubi, sofort einsetzbar. Mi
 
 ## Warum strukturiertes Onboarding entscheidend ist
 
-Der erste Tag, die erste Woche, die ersten zwei Monate: Diese Phase prägt die gesamte Ausbildung. Trotzdem läuft das Onboarding in vielen Betrieben nach dem Prinzip "Learning by Doing", ohne klaren Plan, ohne definierte Meilensteine und ohne systematische Begleitung.
+Der erste Tag, die erste Woche, die ersten zwei Monate: In dieser Phase legen Sie die Grundlage für die Ausbildung.
 
 Laut [BIBB-Datenreport 2026](https://www.bibb.de/dienst/publikationen/de/21037) wurden 2024 **29,7 %** aller begonnenen Ausbildungsverträge vorzeitig gelöst. Die meisten Lösungen erfolgen früh: **34,7 %** in der Probezeit, die nach [§ 20 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__20.html) höchstens vier Monate dauert, weitere **32,9 %** im übrigen ersten Ausbildungsjahr. Das BIBB betont, dass die Lösungsquote keine Abbruchquote ist, denn viele Azubis setzen ihre Ausbildung in einem anderen Betrieb oder Beruf fort. Für den Ausbildungsbetrieb endet mit jeder vorzeitigen Lösung trotzdem eine Investition. Nach der [BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php) liegen die Bruttoausbildungskosten im Durchschnitt bei rund **26.200 € pro Azubi und Jahr**, nach Abzug der produktiven Leistungen der Azubis bei rund **8.100 €** netto.
 
 Wann genau Verträge gelöst werden und wie sich die Quoten in acht Metall- und Elektroberufen entwickelt haben, zeigt unser [Datencheck zur Ausbildung in der Rüstungsindustrie](/de/blog/ausbildung-ruestungsindustrie).
 
-Den Start in die Ausbildung kann der Betrieb direkt gestalten. Ein durchdachtes Onboarding-Programm gibt neuen Azubis Sicherheit und klare Erwartungen und hilft Ausbildern, Probleme zu erkennen, bevor sie zu einer Vertragslösung führen. Mit der folgenden 8-Wochen-Checkliste gelingt der Start.
+Den Start in die Ausbildung kann der Betrieb direkt gestalten. Ein durchdachtes Onboarding-Programm gibt neuen Azubis klare Erwartungen und kann Ausbildern helfen, Probleme früh zu erkennen. Mit der folgenden 8-Wochen-Checkliste gelingt der Start.
 
 ## Die 8-Wochen-Checkliste im Überblick
 
@@ -8722,7 +8828,7 @@ Den Start in die Ausbildung kann der Betrieb direkt gestalten. Ein durchdachtes 
 
 ## Woche 1: Orientierung und Willkommen
 
-Die erste Woche ist die wichtigste. Hier entscheidet sich, ob sich der neue Azubi willkommen fühlt und Vertrauen in das Unternehmen entwickelt.
+In der ersten Woche geht es darum, dass sich der neue Azubi willkommen fühlt und orientieren kann.
 
 ### Vor dem ersten Tag
 
@@ -8833,7 +8939,7 @@ Die achte Woche markiert den formellen Abschluss des Onboardings. Das bedeutet n
 
 ### Fehler 1: Kein fester Ansprechpartner
 
-Ohne einen klar benannten Paten oder Mentor fühlen sich Azubis verloren. Definieren Sie von Tag eins eine Person, an die sich der Azubi mit allen Fragen wenden kann.
+Ohne einen klar benannten Paten oder Mentor fehlt Azubis eine feste Anlaufstelle. Definieren Sie von Tag eins eine Person, an die sich der Azubi mit allen Fragen wenden kann.
 
 ### Fehler 2: Zu viel auf einmal
 
@@ -8841,19 +8947,19 @@ Neue Azubis können nicht in der ersten Woche alles lernen. Strukturieren Sie di
 
 ### Fehler 3: Kein Feedback in den ersten Wochen
 
-Azubis brauchen frühzeitige Rückmeldung. Warten Sie nicht bis zum Ende der Probezeit. Regelmäßige kurze Check-ins sind deutlich wirksamer als ein einziges großes Gespräch. Welche Fragen in diesen Gesprächen wirklich etwas zutage bringen, steht in unserem Plan gegen den [Ausbildungsabbruch im ersten Jahr](/de/blog/ausbildungsabbruch-verhindern).
+Azubis brauchen frühzeitige Rückmeldung. Warten Sie nicht bis zum Ende der Probezeit. Planen Sie regelmäßige kurze Check-ins ein, statt auf ein einziges großes Gespräch zu setzen. Welche Fragen in diesen Gesprächen wirklich etwas zutage bringen, steht in unserem Plan gegen den [Ausbildungsabbruch im ersten Jahr](/de/blog/ausbildungsabbruch-verhindern).
 
 ### Fehler 4: Digitale Tools ignorieren
 
-Ein strukturiertes Onboarding lässt sich durch digitale Plattformen erheblich vereinfachen. Automatische Lernpfade, Checklisten und Fortschrittskontrolle entlasten den Ausbilder und geben dem Azubi Orientierung. Erfahren Sie mehr in unserem Beitrag zu [Ausbilder entlasten: 7 Wege, den Betreuungsaufwand zu reduzieren](/de/blog/ausbilder-entlasten).
+Ein strukturiertes Onboarding lässt sich durch digitale Plattformen vereinfachen. Automatische Lernpfade, Checklisten und Fortschrittskontrolle können den Ausbilder entlasten und dem Azubi Orientierung geben. Erfahren Sie mehr in unserem Beitrag zu [Ausbilder entlasten: 7 Wege, den Betreuungsaufwand zu reduzieren](/de/blog/ausbilder-entlasten).
 
 ## Der wirtschaftliche Nutzen guten Onboardings
 
 Gutes Onboarding kann sich auf mehreren Ebenen auszahlen:
 
-- **Schnellere Einarbeitung:** Ein klarer Plan verhindert, dass Wochen ohne Orientierung vergehen
-- **Weniger vorzeitige Vertragslösungen:** Azubis, die sich gut begleitet fühlen, bleiben eher
-- **Weniger Ausbilder-Zeitaufwand:** Durch Standardisierung und digitale Unterstützung
+- **Klare Einarbeitung:** Ein schriftlicher Plan gibt für jede Woche Orientierung
+- **Vorzeitigen Vertragslösungen vorbeugen:** Probleme können früher auffallen
+- **Planbarer Ausbilder-Zeitaufwand:** Durch Standardisierung und digitale Unterstützung
 - **Geschützte Investition:** Jede vermiedene Lösung sichert die bereits investierten Ausbildungskosten
 
 Zum Vergleich: Die Besetzung einer Fachkräftestelle über den externen Arbeitsmarkt kostete laut [BIBB](https://www.bibb.de/de/pressemitteilung_210430.php) 2022/23 durchschnittlich rund **13.700 €**. Diese Personalgewinnungskosten sind gegenüber früheren Erhebungen um 65 % gestiegen, die Nettoausbildungskosten um 28 %.
@@ -8862,16 +8968,50 @@ Berechnen Sie Ihr konkretes Einsparpotenzial mit unserem [Ausbildungskosten-Rech
 
 ## Datenschutz beim digitalen Onboarding
 
-Beim Einsatz digitaler Tools im Onboarding fallen personenbezogene Daten an, etwa Lernfortschritte, Bewertungen, persönliche Informationen. Wählen Sie eine Plattform mit EU-Datenhosting, die die DSGVO-Konformität vereinfacht. So schützen Sie die Daten Ihrer Azubis und vermeiden rechtliche Risiken.
+Beim Einsatz digitaler Tools im Onboarding fallen personenbezogene Daten an, etwa Lernfortschritte, Bewertungen, persönliche Informationen. Wählen Sie eine Plattform mit EU-Datenhosting, die die DSGVO-Konformität vereinfacht. Das kann den Schutz der Daten Ihrer Azubis erleichtern.
 
 ## Fazit
 
-Ein strukturiertes 8-Wochen-Onboarding ist die beste Investition in den Ausbildungserfolg. Es gibt Azubis Orientierung, beschleunigt die Einarbeitung und kann vorzeitigen Vertragslösungen vorbeugen. Mit digitalen Lernplattformen lässt sich der Prozess standardisieren und skalieren, ohne dass die persönliche Betreuung zu kurz kommt.
+Ein strukturiertes 8-Wochen-Onboarding gibt Azubis Orientierung und kann vorzeitigen Vertragslösungen vorbeugen. Mit digitalen Lernplattformen lässt sich der Prozess standardisieren und skalieren, ohne dass die persönliche Betreuung zu kurz kommt.
 
-**Für Ausbildungsverantwortliche:** Sehen Sie in einer kostenlosen Demo, wie LearnSlice das Onboarding Ihrer Azubis mit digitalen Lernpfaden und KI-Coaching beschleunigt. [Demo vereinbaren](/de/companies)
+**Für Ausbildungsverantwortliche:** Sehen Sie in einer kostenlosen Demo, wie LearnSlice das Onboarding Ihrer Azubis mit digitalen Lernpfaden und KI-Coaching unterstützt. [Demo vereinbaren](/de/companies)
 
-**Für Geschäftsführung und HR-Leitung:** Strukturiertes Onboarding kann vorzeitigen Vertragslösungen vorbeugen und verkürzt die Einarbeitung. Das schützt Ihre Investition in die Ausbildung. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
+**Für Geschäftsführung und HR-Leitung:** Strukturiertes Onboarding kann vorzeitigen Vertragslösungen vorbeugen. Das schützt Ihre Investition in die Ausbildung. [Einsparpotenzial berechnen](/de/ausbildungskosten-rechner)
 
+_Diese Angaben dienen der allgemeinen Orientierung und ersetzen keine Rechtsberatung. Bei Fragen zu Ihren Ausbildungsverträgen wenden Sie sich an Ihre Kammer oder einen Rechtsanwalt._
+
+
+## Häufig gestellte Fragen
+
+### Was gehört in den Einarbeitungsplan für Azubis?
+
+Vor dem ersten Tag: Arbeitsplatz, Zugänge und ein fester Pate. In Woche 1: Begrüßung, Rundgang, Sicherheitsunterweisung und Berichtsheft. Danach folgen Unternehmensprozesse, der Lernpfad, betreute Aufgaben, Feedback-Gespräche und in Woche 8 ein erstes Assessment mit Zielvereinbarung.
+
+### Was sollte am ersten Tag der Ausbildung passieren?
+
+Persönliche Begrüßung durch den Ausbilder, Rundgang, Vorstellung des Teams, Übergabe von Arbeitsplatz und Arbeitsmitteln sowie die wichtigsten Regeln wie Arbeitszeiten, Pausen und Ansprechpartner. Dazu kommt die erste Einführung in die digitale Lernplattform.
+
+### Was gehört in die erste Woche eines neuen Azubis?
+
+Sicherheitsunterweisung durchführen und dokumentieren, Unternehmen und Werte vermitteln, erste einfache Aufgaben zum Kennenlernen der Abläufe geben und das digitale Berichtsheft einrichten. Ein täglicher Check-in von 10 bis 15 Minuten gibt dem Azubi Sicherheit.
+
+### Wie lange sollte das Azubi-Onboarding dauern?
+
+Diese Checkliste umfasst acht Wochen, von der Orientierung über betreute Aufgaben bis zur wachsenden Selbstständigkeit. Die Probezeit dauert nach § 20 BBiG mindestens einen und höchstens vier Monate. Ist sie kurz, ziehen Sie das erste Assessment so vor, dass es vor dem Ende der Probezeit stattfindet.
+
+### Wann sollte das erste Feedback-Gespräch stattfinden?
+
+Nach etwa einem Monat, also in Woche 5, ist ein strukturiertes Gespräch von 45 bis 60 Minuten sinnvoll. Planen Sie zusätzlich kurze tägliche Check-ins in Woche 1 und wöchentliche Gespräche ab Woche 2 ein.
+
+### Warum ist der Start in die Ausbildung so wichtig?
+
+Laut BIBB-Datenreport 2026 wurden 2024 29,7 % aller begonnenen Ausbildungsverträge vorzeitig gelöst. Von diesen Lösungen erfolgten 34,7 % in der Probezeit und weitere 32,9 % im übrigen ersten Ausbildungsjahr.
+
+## Quellen
+
+- BIBB: Datenreport zum Berufsbildungsbericht 2026: https://www.bibb.de/dienst/publikationen/de/21037 (geprüft am 2026-11-09)
+- BIBB: Pressemitteilung zur Kosten-Nutzen-Erhebung 2022/23: https://www.bibb.de/de/pressemitteilung_210430.php (geprüft am 2026-11-09)
+- Gesetze im Internet: § 20 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__20.html (geprüft am 2026-11-09)
 
 ---
 

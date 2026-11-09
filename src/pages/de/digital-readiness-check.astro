@@ -15,23 +15,23 @@ const ctaLabel = 'Strategiegespräch buchen';
 const faq = [
 	{
 		q: 'Was ist der AZAV- und BFSG-Digital-Readiness-Check?',
-		a: 'Eine kostenlose Selbsteinschätzung in wenigen Minuten: Sie beantworten Fragen zu synchroner Lernzeit, prüfsicheren Nachweisen, Barrierefreiheit, KI-Einsatz, Datensouveränität und Förderung. Sie erhalten sofort einen Score und, nach kurzer Eintragung, einen personalisierten Maßnahmenplan mit priorisierten Handlungsfeldern und passenden Förderwegen. Die Einschätzung dient der Orientierung und ersetzt keine Rechtsberatung oder AZAV-Prüfung.',
+		a: 'Eine kostenlose Selbsteinschätzung in wenigen Minuten: Sie beantworten Fragen zu Unterricht und Selbstlernanteilen, Nachweisen, Barrierefreiheit, KI-Einsatz, Datensouveränität und Förderung. Sie erhalten sofort einen Score und, nach kurzer Eintragung, einen personalisierten Maßnahmenplan mit priorisierten Handlungsfeldern. Die Einschätzung dient der Orientierung und ersetzt keine Rechtsberatung oder AZAV-Prüfung.',
 	},
 	{
-		q: 'Was verlangt die AZAV bei synchroner (betreuter) Lernzeit?',
-		a: 'Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Für Bildungsträger heißt das: Sie sollten jederzeit belegen können, welcher Anteil des digitalen Lernens live begleitet stattfindet. Eine automatische Erfassung im System ersetzt fehleranfällige Handlisten und erleichtert jede Prüfung.',
+		q: 'Wie trennt die AZAV Unterricht und asynchrone Anteile?',
+		a: 'Laut den Empfehlungen des Beirats nach § 182 SGB III zählen asynchrone Anteile seit Juli 2025 nicht zu den Unterrichts- oder Maßnahmestunden und werden gesondert auf dem Zertifikat ausgewiesen. Unterricht setzt eine direkte Interaktion mit den Lehr- und Fachkräften voraus, die im Konzept für einen definierten Zeitraum verbindlich vorgesehen ist. Die bloße Möglichkeit, Kontakt aufzunehmen, reicht nicht.',
 	},
 	{
 		q: 'Ab wann und für wen gilt das BFSG für digitale Lernangebote?',
-		a: 'Das Barrierefreiheitsstärkungsgesetz (BFSG) gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab. In der Reha (SGB IX) kommt der Anspruch auf barrierefreie, anpassbare Lernwege hinzu.',
+		a: 'Das Barrierefreiheitsstärkungsgesetz (BFSG) gilt für bestimmte Produkte sowie für bestimmte Dienstleistungen, die nach dem 28. Juni 2025 für Verbraucher erbracht werden, mit Übergangsbestimmungen bis zum 27. Juni 2030. Laut Bundesfachstelle Barrierefreiheit fallen E-Books, die Verbraucher über eine Lernmedienplattform abrufen, darunter, interaktive Lernangebote, die keine elektronische Fassung eines Buches sind, nicht. Eine Plattform kann aber die Bedingungen für Dienstleistungen im elektronischen Geschäftsverkehr erfüllen müssen, zum Beispiel wenn über sie eine Dienstleistung verkauft wird.',
 	},
 	{
 		q: 'Was bedeutet die KI-Kompetenz-Pflicht der EU-KI-Verordnung?',
-		a: 'Seit Februar 2025 verlangt die EU-KI-Verordnung, dass Organisationen die KI-Kompetenz ihres Personals fördern. Unabhängig davon können bestimmte Bildungs-KI (etwa zur Zugangs- oder Leistungsbewertung) als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027. Menschliche Aufsicht, Transparenz und belegte Quellen sind schon heute gute Praxis.',
+		a: 'Anbieter und Betreiber von KI-Systemen müssen nach Artikel 4 der KI-Verordnung Maßnahmen ergreifen, um die Entwicklung der KI-Kompetenz ihres Personals zu unterstützen. KI-Systeme für den Zugang zu Bildungseinrichtungen oder die Bewertung von Lernergebnissen stehen in Anhang III, die Pflichten für solche Hochrisiko-Systeme gelten ab dem 2. Dezember 2027.',
 	},
 	{
 		q: 'Welche Förderwege gibt es für die Digitalisierung von Weiterbildung?',
-		a: 'Programme wie ESF Plus fördern Digitalisierung und Weiterbildung; hinzu kommen Mittel der Bundesagentur für Arbeit. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab. Genau das lässt sich im Vorfeld gemeinsam und ehrlich prüfen.',
+		a: 'Das hängt vom Projekt und vom Fördergeber ab. Klären Sie vorab mit dem jeweiligen Fördergeber, ob ein Vorhaben infrage kommt. Kosten für asynchrone Anteile können laut Beirat in die Gesamtkalkulation einer AZAV-Maßnahme einbezogen werden, sind aber gesondert auszuweisen.',
 	},
 	{
 		q: 'Bleiben meine Daten in Deutschland?',
@@ -52,7 +52,7 @@ const faqPageSchema = {
 
 <BaseLayout
 	title="AZAV- & BFSG-Digital-Readiness-Check für Bildungsträger | LearnSlice"
-	description="In 3 Minuten sehen Sie, wo Ihr digitales Angebot bei AZAV, BFSG, KI und Datensouveränität steht. Personalisierter Maßnahmenplan mit passenden Förderwegen, sofort nach dem Check."
+	description="In 3 Minuten sehen Sie, wo Ihr digitales Angebot bei AZAV, BFSG, KI und Datensouveränität steht. Personalisierter Maßnahmenplan, sofort nach dem Check."
 	lang={lang}
 	currentPath={currentPath}
 	breadcrumbTitle="Digital-Readiness-Check"
@@ -96,22 +96,22 @@ const faqPageSchema = {
 	<section class="px-6 md:px-8 pb-16 md:pb-24">
 		<div class="max-w-3xl mx-auto">
 			<h2 class="text-heading-sm md:text-heading text-white mt-0 mb-4">Digital-Readiness für Bildungsträger: AZAV, BFSG und KI im Überblick</h2>
-			<p class="text-base text-muted leading-relaxed mb-4">Die Digitalisierung von Aus- und Weiterbildung steht 2026 unter neuen Vorzeichen. Für Bildungsträger, Weiterbildungsanbieter und Reha-Einrichtungen kommen mehrere Anforderungen zusammen: die AZAV-Empfehlungen zur synchronen Lernzeit, das Barrierefreiheitsstärkungsgesetz (BFSG), die EU-KI-Verordnung und der Anspruch an souveräne Datenverarbeitung. Der Digital-Readiness-Check zeigt Ihnen in wenigen Minuten, wo Ihr digitales Angebot heute steht und welche Schritte sich lohnen. Die folgenden Abschnitte fassen zusammen, worauf es ankommt.</p>
+			<p class="text-base text-muted leading-relaxed mb-4">Die Digitalisierung von Aus- und Weiterbildung steht 2026 unter neuen Vorzeichen. Für Bildungsträger, Weiterbildungsanbieter und Reha-Einrichtungen kommen mehrere Anforderungen zusammen: die Empfehlungen des AZAV-Beirats, das Barrierefreiheitsstärkungsgesetz (BFSG) und die EU-KI-Verordnung. Der Digital-Readiness-Check zeigt Ihnen in wenigen Minuten, wo Ihr digitales Angebot heute steht und welche Schritte sich lohnen. Die folgenden Abschnitte fassen zusammen, worauf es ankommt.</p>
 
-			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">AZAV: synchrone Lernzeit und prüfsichere Nachweise</h2>
-			<p class="text-base text-muted leading-relaxed mb-4">Seit Juli 2025 empfiehlt der AZAV-Beirat, synchrone, betreute Lernzeit gesondert und nachvollziehbar zu dokumentieren. Praktisch bedeutet das: Sie sollten jederzeit belegen können, welcher Anteil Ihres digitalen Lernens live begleitet stattfindet, und Anwesenheit sowie Lernfortschritt prüfsicher exportieren, falls morgen eine Erfolgskontrolle ansteht. Eine automatische Erfassung im System ersetzt fehleranfällige Handlisten und spart Aufwand bei jeder Prüfung. Die Details lesen Sie im Leitfaden <a href="/de/blog/azav-digitalisierung-bildungstraeger" class="text-primary hover:underline">AZAV und Digitalisierung</a>.</p>
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">AZAV: Unterricht, Selbstlernanteile und Nachweise</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Seit Juli 2025 zählen asynchrone Anteile laut den Empfehlungen des AZAV-Beirats nicht zu den Unterrichts- oder Maßnahmestunden und werden gesondert auf dem Zertifikat ausgewiesen. Zum Qualitätsmanagement nennt der Beirat außerdem die Erfassung von Teilnehmerpräsenz und Abbruchquoten. Eine Erfassung im System kann beides erleichtern. Die Details lesen Sie im Leitfaden <a href="/de/blog/azav-digitalisierung-bildungstraeger" class="text-primary hover:underline">AZAV und Digitalisierung</a>.</p>
 
-			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">BFSG: Barrierefreiheit wird zum Standard</h2>
-			<p class="text-base text-muted leading-relaxed mb-4">Das BFSG gilt seit Juni 2025, mit Übergangsfristen bis 2030. Maßstab für digitale Lernangebote ist in der Regel WCAG 2.1 AA. Ob und in welchem Umfang Sie betroffen sind, hängt von Angebot und Unternehmensgröße ab. In der Reha (SGB IX) kommt der Anspruch hinzu, dass Lernende mit unterschiedlichem Bedarf einen passenden, barrierefreien Lernweg erhalten. Wer Barrierefreiheit früh mitdenkt, vermeidet teures Nachrüsten.</p>
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">BFSG: Was für Lernplattformen gilt</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Das BFSG gilt für bestimmte Produkte sowie für bestimmte Dienstleistungen gegenüber Verbrauchern, mit Übergangsbestimmungen bis zum 27. Juni 2030. Für Lernplattformen muss man laut Bundesfachstelle Barrierefreiheit differenzieren: E-Books für Verbraucher fallen darunter, interaktive Lernangebote, die keine elektronische Fassung eines Buches sind, nicht. Eine Plattform kann aber die Bedingungen für Dienstleistungen im elektronischen Geschäftsverkehr erfüllen müssen. Kleinstunternehmen, die Dienstleistungen anbieten, sind ausgenommen.</p>
 
 			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">EU-KI-Verordnung: KI-Kompetenz und verantwortungsvoller Einsatz</h2>
-			<p class="text-base text-muted leading-relaxed mb-4">Seit Februar 2025 verlangt die EU-KI-Verordnung, dass Organisationen die KI-Kompetenz ihres Personals fördern. Unabhängig davon können bestimmte Bildungs-KI, etwa zur Zugangs- oder Leistungsbewertung, als hochriskant gelten, mit weitergehenden Pflichten ab Dezember 2027. Ein KI-Lernbegleiter, der ausschließlich aus Ihren geprüften Inhalten antwortet, Quellen belegt und menschliche Aufsicht vorsieht, entlastet Ihr Personal und bleibt nachvollziehbar. Mehr dazu in unserem Beitrag zu <a href="/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder" class="text-primary hover:underline">DSGVO-konformen KI-Tools</a>.</p>
+			<p class="text-base text-muted leading-relaxed mb-4">Anbieter und Betreiber von KI-Systemen müssen nach Artikel 4 der KI-Verordnung Maßnahmen ergreifen, um die Entwicklung der KI-Kompetenz ihres Personals zu unterstützen. KI-Systeme für den Zugang zu Bildungseinrichtungen oder die Bewertung von Lernergebnissen stehen in Anhang III, die Pflichten für solche Hochrisiko-Systeme gelten ab dem 2. Dezember 2027. Ein KI-Lernbegleiter, der ausschließlich aus Ihren geprüften Inhalten antwortet, Quellen belegt und menschliche Aufsicht vorsieht, lässt sich leichter nachvollziehen und kontrollieren. Mehr dazu in unserem Beitrag zu <a href="/de/blog/dsgvo-konforme-ki-tools-fuer-ausbilder" class="text-primary hover:underline">DSGVO-konformen KI-Tools</a>.</p>
 
 			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">Datensouveränität: Verarbeitung in Deutschland und der EU</h2>
-			<p class="text-base text-muted leading-relaxed mb-4">Für datenschutzkonforme, souveräne Lösungen sind die Verarbeitung in Deutschland oder der EU, ein Auftragsverarbeitungsvertrag (AVV) und der Verzicht auf die Weitergabe von Lernerdaten an Dritt-Modelle die Grundlage. Gerade im öffentlichen und geförderten Umfeld wird das zunehmend zum Kriterium, nicht zum Komfortmerkmal. Wie wir das technisch umsetzen, zeigen unsere <a href="/de/loesungen" class="text-primary hover:underline">Lösungen</a> und die <a href="/de/forschung" class="text-primary hover:underline">Forschung</a> dahinter.</p>
+			<p class="text-base text-muted leading-relaxed mb-4">Für datenschutzkonforme, souveräne Lösungen sind die Verarbeitung in Deutschland oder der EU, ein Auftragsverarbeitungsvertrag (AVV) und der Verzicht auf die Weitergabe von Lernerdaten an Dritt-Modelle die Grundlage. Wie wir das technisch umsetzen, zeigen unsere <a href="/de/loesungen" class="text-primary hover:underline">Lösungen</a> und die <a href="/de/forschung" class="text-primary hover:underline">Forschung</a> dahinter.</p>
 
-			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">Förderung: Digitalisierung finanzierbar machen</h2>
-			<p class="text-base text-muted leading-relaxed mb-4">Viele dieser Schritte lassen sich fördern. Programme wie ESF Plus unterstützen Digitalisierung und Weiterbildung, hinzu kommen Mittel der Bundesagentur für Arbeit. Ob und wie sich ein Projekt in Ihren Maßnahmekosten abbilden lässt, hängt von Ihrer Zulassung ab. Ein fokussiertes Pilotprojekt in wenigen Wochen zeigt den Nutzen, bevor Sie sich festlegen. Weitere Praxis finden Sie im Beitrag <a href="/de/blog/ausbildung-digitalisieren" class="text-primary hover:underline">Ausbildung digitalisieren</a>.</p>
+			<h2 class="text-heading-sm md:text-heading text-white mt-10 mb-4">Förderung und Kosten</h2>
+			<p class="text-base text-muted leading-relaxed mb-4">Ob für ein Digitalisierungsprojekt Fördermittel infrage kommen, klären Sie vorab mit dem jeweiligen Fördergeber. Kosten für asynchrone Anteile können laut Beirat in die Gesamtkalkulation einer AZAV-Maßnahme einbezogen werden, sind aber gesondert auszuweisen. In einem klar abgegrenzten Pilotprojekt prüfen Sie den Nutzen, bevor Sie sich festlegen. Weitere Praxis finden Sie im Beitrag <a href="/de/blog/ausbildung-digitalisieren" class="text-primary hover:underline">Ausbildung digitalisieren</a>.</p>
 
 			<h2 class="text-heading-sm md:text-heading text-white mt-12 mb-6">Häufige Fragen</h2>
 			<div class="flex flex-col gap-3">
@@ -126,7 +126,7 @@ const faqPageSchema = {
 				))}
 			</div>
 
-			<p class="text-xs text-muted leading-relaxed mt-8 m-0">Diese Angaben dienen der Orientierung und ersetzen keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: Juli 2026.</p>
+			<p class="text-xs text-muted leading-relaxed mt-8 m-0">Diese Angaben dienen der Orientierung und ersetzen keine Rechtsberatung oder AZAV-Prüfung. Stand der rechtlichen Angaben: November 2026.</p>
 		</div>
 	</section>
 
