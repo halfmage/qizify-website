@@ -27,6 +27,7 @@
 # German old pages → DE homepage
 /de/team/                       /de             301
 /de/pricing/                    /de             301
+/de/preise/                     /de#cta-footer  301
 /de/education/                  /de             301
 /de/contact/                    /de             301
 /de/faq/                        /de             301
