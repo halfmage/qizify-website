@@ -45,31 +45,28 @@ export const ANNOUNCEMENT = {
 /** Landing page for the free Berichtsheft, per language. Registered in page-pairs.mjs. */
 export const LANDING_PATH = { de: '/de/berichtsheft-kostenlos', en: '/free-training-logbook' };
 
-const AZUBI_SHARE = {
+/**
+ * Share copy for apprentices who want to pass the offer on to their trainer.
+ * AzubiShare uses the system share sheet where available (phones: mail, WhatsApp, ...),
+ * otherwise it copies the text and link. A mailto: link alone did nothing for visitors
+ * without a desktop mail app (webmail users), so it is not used.
+ */
+export const AZUBI_SHARE = {
 	de: {
-		link: 'Ausbilder per E-Mail informieren',
-		subject: 'Digitales Berichtsheft kostenlos',
-		body: 'Hallo,\n\nfür unser Berichtsheft gibt es hier eine kostenlose digitale Lösung für Ausbildungsbetriebe:\n',
+		button: 'Link an Ausbilder senden',
+		copied: 'Link kopiert. Jetzt per Mail oder Chat weiterleiten.',
+		failed: 'Kopieren nicht möglich. Bitte die Adresse dieser Seite weiterleiten.',
+		title: 'Digitales Berichtsheft kostenlos',
+		text: 'Für unser Berichtsheft gibt es eine kostenlose digitale Lösung für Ausbildungsbetriebe:',
 	},
 	en: {
-		link: 'Tell your trainer by email',
-		subject: 'Free digital training logbook',
-		body: 'Hello,\n\nhere is a free digital training logbook (Berichtsheft) for training companies:\n',
+		button: 'Send the link to your trainer',
+		copied: 'Link copied. Now forward it by email or chat.',
+		failed: 'Copying is not possible. Please forward the address of this page.',
+		title: 'Free digital training logbook',
+		text: 'Here is a free digital training logbook (Berichtsheft) for training companies:',
 	},
 };
-
-/** Link text for apprentices who want to pass the offer on to their trainer. */
-export const AZUBI_SHARE_LINK = { de: AZUBI_SHARE.de.link, en: AZUBI_SHARE.en.link };
-
-/**
- * mailto: link an apprentice sends to their trainer, with the landing page URL.
- * No recipient: the apprentice picks the trainer's address in their own mail app.
- */
-export function azubiMailto(lang) {
-	const c = AZUBI_SHARE[lang];
-	const url = `https://learnslice.com${LANDING_PATH[lang]}`;
-	return `mailto:?subject=${encodeURIComponent(c.subject)}&body=${encodeURIComponent(`${c.body}${url}\n`)}`;
-}
 
 const APP_SIGNUP = 'https://app.learnslice.com/sign-up';
 

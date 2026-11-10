@@ -1,0 +1,55 @@
+---
+// "Send the link to your trainer" for apprentices. Phones get the system share sheet
+// (mail, WhatsApp, Teams, ...); browsers without it copy text + link and say so.
+// Counted in Simple Analytics as berichtsheft_azubi_share (no UI). Several instances
+// per page are fine: the script binds every [data-azubi-share] once.
+import { AZUBI_SHARE, LANDING_PATH } from '../data/berichtsheft.mjs';
+
+interface Props {
+	lang: 'en' | 'de';
+	class?: string;
+}
+
+const { lang, class: className = '' } = Astro.props;
+const c = AZUBI_SHARE[lang];
+const url = `https://learnslice.com${LANDING_PATH[lang]}`;
+---
+
+<span class="inline">
+	<button
+		type="button"
+		data-azubi-share
+		data-url={url}
+		data-title={c.title}
+		data-text={c.text}
+		data-copied={c.copied}
+		data-failed={c.failed}
+		class:list={['inline bg-transparent border-0 p-0 m-0 [font:inherit] text-inherit underline cursor-pointer hover:text-primary', className]}
+	>{c.button}</button>
+	<span data-azubi-share-status role="status" aria-live="polite" class="block mt-1 text-primary"></span>
+</span>
+
+<script>
+	document.querySelectorAll<HTMLButtonElement>('[data-azubi-share]').forEach((btn) => {
+		if (btn.dataset.bound) return;
+		btn.dataset.bound = '1';
+		const status = btn.parentElement?.querySelector<HTMLElement>('[data-azubi-share-status]');
+		const { url = '', title = '', text = '', copied = '', failed = '' } = btn.dataset;
+		const say = (msg: string) => { if (status) status.textContent = msg; };
+		btn.addEventListener('click', async () => {
+			try { (window as any).sa_event?.('berichtsheft_azubi_share', { page: location.pathname }); } catch {}
+			// Share sheet on phones and tablets; desktop browsers mostly skip to copy.
+			if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+				try { await navigator.share({ title, text, url }); return; } catch (e) {
+					if ((e as DOMException)?.name === 'AbortError') return;
+				}
+			}
+			try {
+				await navigator.clipboard.writeText(`${text}\n${url}`);
+				say(copied);
+			} catch {
+				say(`${failed} ${url}`);
+			}
+		});
+	});
+</script>

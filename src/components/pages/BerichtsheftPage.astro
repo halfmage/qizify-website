@@ -13,7 +13,8 @@ import enContent from '../../content/en.json';
 import deContent from '../../content/de.json';
 import berichtsheft from '../../content/berichtsheft.json';
 import { SITE } from '../../utils/page-pairs.mjs';
-import { signupUrl, azubiMailto, AZUBI_SHARE_LINK } from '../../data/berichtsheft.mjs';
+import { signupUrl } from '../../data/berichtsheft.mjs';
+import AzubiShare from '../AzubiShare.astro';
 
 // Free Berichtsheft landing page, for /de/berichtsheft-kostenlos and
 // /free-training-logbook. Launched with the free tier on 2026-11-10.
@@ -230,7 +231,7 @@ const softwareSchema = {
 			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.final.headline}</h2>
 			<p class="text-lg text-muted leading-relaxed m-0 mb-8 text-balance">{copy.final.sub}</p>
 			<Button variant="primary" size="lg" href={href('final')} class="!rounded-full">{copy.cta}</Button>
-			<p class="text-sm text-white/70 m-0 mt-4 text-balance">{copy.final.note}{' '}<a href={azubiMailto(lang)} data-sa-event="berichtsheft_azubi_share" class="text-white underline hover:text-primary">{AZUBI_SHARE_LINK[lang]}</a></p>
+			<p class="text-sm text-white/70 m-0 mt-4 text-balance">{copy.final.note}{' '}<AzubiShare lang={lang} class="text-white" /></p>
 		</div>
 		<p class="text-xs text-white/50 text-center m-0 mt-12 max-w-2xl mx-auto">{copy.disclaimer}</p>
 	</section>

@@ -1,5 +1,6 @@
 ---
-import { SIGNUP_ID, LANDING_PATH, CTA_LABEL, FREE_LIMIT_NOTE, AZUBI_SHARE_LINK, azubiMailto, signupUrl, pathSlug } from '../data/berichtsheft.mjs';
+import { SIGNUP_ID, LANDING_PATH, CTA_LABEL, FREE_LIMIT_NOTE, signupUrl, pathSlug } from '../data/berichtsheft.mjs';
+import AzubiShare from './AzubiShare.astro';
 
 // Sign-up block for the free LearnSlice Berichtsheft (live since 2026-11-10; it
 // replaced the pre-launch waitlist form). Embedded in MDX posts, inside the blog
@@ -67,5 +68,5 @@ const href = signupUrl(`${pathSlug(Astro.url.pathname)}-block`);
 		</a>
 		<a href={LANDING_PATH[lang]} class="text-sm text-white/85 underline hover:text-white">{c.more}</a>
 	</div>
-	<p class="text-xs text-muted m-0 mt-5">{c.azubi} <a href={azubiMailto(lang)} data-sa-event="berichtsheft_azubi_share" class="text-white/85 underline hover:text-white">{AZUBI_SHARE_LINK[lang]}</a></p>
+	<p class="text-xs text-muted m-0 mt-5">{c.azubi} <AzubiShare lang={lang} class="text-white/85" /></p>
 </aside>
