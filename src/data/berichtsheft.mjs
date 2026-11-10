@@ -37,7 +37,10 @@ export const FREE_LIMIT_NOTE = {
 	en: `Free for ${FREE_AUSBILDER_LIMIT} trainer and up to ${FREE_AZUBI_LIMIT} apprentices. No payment details.`,
 };
 /** Hero pill on the homepage and the apprenticeship page. Remove both usages when the campaign ends. */
-export const ANNOUNCEMENT_LABEL = { de: 'Neu: Digitales Berichtsheft kostenlos', en: 'New: free digital training logbook' };
+export const ANNOUNCEMENT = {
+	de: { badge: 'Neu', label: 'Digitales Berichtsheft kostenlos' },
+	en: { badge: 'New', label: 'Free digital training logbook' },
+};
 
 /** Landing page for the free Berichtsheft, per language. Registered in page-pairs.mjs. */
 export const LANDING_PATH = { de: '/de/berichtsheft-kostenlos', en: '/free-training-logbook' };

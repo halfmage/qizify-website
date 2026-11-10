@@ -26,7 +26,7 @@ interface Props {
 	// Optional link for the award, e.g. to a WhyChooseUs section on the same page. Without it the award is plain text.
 	awardHref?: string;
 	// Optional pill link above the eyebrow, for a launch or campaign (e.g. the free Berichtsheft).
-	announcement?: { label: string; href: string };
+	announcement?: { badge?: string; label: string; href: string };
 	currentLang: 'en' | 'de';
 }
 
@@ -58,8 +58,15 @@ const headlineLines = headline.split('\n');
 	<div class="relative z-10 max-w-container mx-auto w-full px-6 lg:px-8">
 		<div class="max-w-2xl text-left flex flex-col items-start">
 			{announcement && (
-				<a href={announcement.href} class="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-white hover:bg-primary/20 transition-colors no-underline mb-5">
-					{announcement.label}<span aria-hidden="true">&rarr;</span>
+				<!-- Gradient hairline border (primary to accent) around a blurred dark pill, with a soft violet glow -->
+				<a href={announcement.href} class="group mb-6 inline-flex rounded-full p-px bg-gradient-to-r from-primary via-primary/50 to-accent/70 shadow-[0_0_32px_rgba(124,92,252,0.35)] hover:shadow-[0_0_44px_rgba(124,92,252,0.55)] transition-shadow no-underline">
+					<span class="inline-flex items-center gap-3 rounded-full bg-dark/85 backdrop-blur-md py-1.5 pl-1.5 pr-4 text-sm md:text-base font-medium text-white">
+						{announcement.badge && (
+							<span class="rounded-full bg-primary px-2.5 py-1 font-mono text-[11px] md:text-xs font-semibold uppercase tracking-widest text-white">{announcement.badge}</span>
+						)}
+						{announcement.label}
+						<span aria-hidden="true" class="text-primary transition-transform group-hover:translate-x-1">&rarr;</span>
+					</span>
 				</a>
 			)}
 			{eyebrow && <p class="text-base md:text-lg font-semibold text-white/70 m-0 mb-3">{eyebrow}</p>}

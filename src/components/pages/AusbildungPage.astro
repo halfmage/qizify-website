@@ -19,7 +19,7 @@ import StickyCta from '../StickyCta.astro';
 import DemoRequestModal from '../DemoRequestModal.astro';
 import enContent from '../../content/en.json';
 import { homepage } from '../../content/homepage';
-import { LANDING_PATH, ANNOUNCEMENT_LABEL } from '../../data/berichtsheft.mjs';
+import { LANDING_PATH, ANNOUNCEMENT } from '../../data/berichtsheft.mjs';
 import deContent from '../../content/de.json';
 
 // Apprenticeship product page (the former homepage), rendered for both languages:
@@ -66,7 +66,7 @@ const heroImage = '/images/hero/ausbildung-hero.webp';
 	/>
 	
 	<Hero
-		announcement={{ label: ANNOUNCEMENT_LABEL[lang], href: LANDING_PATH[lang] }}
+		announcement={{ ...ANNOUNCEMENT[lang], href: LANDING_PATH[lang] }}
 		eyebrow={meta.eyebrow}
 		headline={content.hero.headline}
 		subheadline={content.hero.subheadline}
