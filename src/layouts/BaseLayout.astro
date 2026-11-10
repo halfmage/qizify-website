@@ -247,12 +247,19 @@ const breadcrumbSchema = {
 		</main>
 
 		<script>
-			// Free-Berichtsheft sign-up clicks, counted in Simple Analytics only (no UI).
+			// Free-Berichtsheft sign-up clicks (and links tagged data-sa-event), counted in
+			// Simple Analytics only (no UI).
 			// Every app sign-up link carries utm_content = page + placement (see
 			// src/data/berichtsheft.mjs), which goes along as event metadata. The link leaves
 			// the site, so a plain left click waits for the event (at most 400 ms) before it
 			// navigates; with an ad blocker the timeout navigates anyway.
 			document.addEventListener('click', (e) => {
+				// Other tracked links (e.g. the Azubi mailto) carry their event name in data-sa-event.
+				const tagged = (e.target as Element | null)?.closest?.('a[data-sa-event]') as HTMLAnchorElement | null;
+				if (tagged) {
+					try { (window as any).sa_event?.(tagged.dataset.saEvent, { page: location.pathname }); } catch {}
+					return;
+				}
 				const link = (e.target as Element | null)?.closest?.('a[href^="https://app.learnslice.com/sign-up"]') as HTMLAnchorElement | null;
 				if (!link) return;
 				const sa = (window as any).sa_event;

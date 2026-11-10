@@ -6,12 +6,14 @@ import Footer from '../Footer.astro';
 import Button from '../Button.astro';
 import StickyCta from '../StickyCta.astro';
 import DemoRequestModal from '../DemoRequestModal.astro';
+import TrustBar from '../TrustBar.astro';
+import AnnouncementPill from '../AnnouncementPill.astro';
 import { Icon } from 'astro-icon/components';
 import enContent from '../../content/en.json';
 import deContent from '../../content/de.json';
 import berichtsheft from '../../content/berichtsheft.json';
 import { SITE } from '../../utils/page-pairs.mjs';
-import { signupUrl } from '../../data/berichtsheft.mjs';
+import { signupUrl, azubiMailto, AZUBI_SHARE_LINK } from '../../data/berichtsheft.mjs';
 
 // Free Berichtsheft landing page, for /de/berichtsheft-kostenlos and
 // /free-training-logbook. Launched with the free tier on 2026-11-10.
@@ -70,6 +72,8 @@ const softwareSchema = {
 	<!-- Hero: the vision as the promise, the limit stated up front -->
 	<section class="relative overflow-hidden pt-32 md:pt-40 pb-10 md:pb-14 px-6 md:px-8">
 		<div class="max-w-3xl mx-auto text-center relative z-10">
+			<!-- Deadline hook for IHK switchers; the attributed date is in the switch section -->
+			<AnnouncementPill {...copy.hero.pill} class="mb-7" />
 			<h1 class="text-display-sm md:text-display text-white m-0 tracking-tight">
 				<span class="block text-base md:text-lg font-semibold text-white/70 tracking-normal mb-3">{copy.hero.eyebrow}<span class="sr-only">:</span></span>
 				{copy.hero.headline}{' '}<br /><span class="gradient-text-primary">{copy.hero.headlineAccent}</span>
@@ -82,9 +86,6 @@ const softwareSchema = {
 				</Button>
 			</div>
 			<p class="text-sm text-white/70 m-0 mt-4">{copy.hero.note}</p>
-			<p class="text-sm text-muted m-0 mt-6 text-balance">
-				{copy.hero.deadline}{' '}<a href={copy.hero.deadlineHref} class="text-primary underline hover:text-white">{copy.hero.deadlineLink}</a>
-			</p>
 		</div>
 	</section>
 
@@ -95,6 +96,9 @@ const softwareSchema = {
 			</div>
 		</div>
 	</section>
+
+	<!-- Who is behind the free tool: the site-wide facts (FH Dortmund, BMWE-funded research, hosting) -->
+	<TrustBar currentLang={lang} center={true} />
 
 	<!-- Answer first (quotable for search and AI answers), then the reason it is free -->
 	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
@@ -152,6 +156,10 @@ const softwareSchema = {
 					</li>
 				))}
 			</ul>
+			<div class="flex flex-col items-center gap-3 mt-12">
+				<Button variant="primary" size="lg" href={href('features')} class="!rounded-full">{copy.cta}</Button>
+				<p class="text-sm text-white/70 m-0">{copy.features.cta.note}</p>
+			</div>
 		</div>
 	</section>
 
@@ -177,23 +185,27 @@ const softwareSchema = {
 					<h3 class="text-lg font-semibold text-white m-0">{copy.plans.premium.name}</h3>
 					<p class="text-sm text-muted m-0 mt-3">{copy.plans.premium.priceNote}</p>
 					<p class="text-sm font-semibold text-white m-0 mt-6 mb-2.5">{copy.plans.premium.heading}</p>
-					<ul class="list-none p-0 m-0 space-y-2.5">
+					<ul class="list-none p-0 m-0 space-y-2.5 flex-1">
 						{copy.plans.premium.items.map((f) => (
 							<li class="flex items-start gap-2 text-sm text-white/90"><Icon name="hugeicons:checkmark-circle-02" class="w-4 h-4 text-primary shrink-0 mt-0.5" />{f}</li>
 						))}
 					</ul>
+					<!-- Premium path for companies that outgrow Free: the 30-minute demo (no price on the website) -->
+					<Button variant="secondary" href="#demo-request" data-modal-trigger="demo-request" class="!rounded-full mt-7 self-start !border-white/30 !text-white hover:!border-white/60 hover:!bg-white/5">{copy.plans.premium.cta}</Button>
 				</div>
 			</div>
-			<p class="text-sm text-muted text-center m-0 mt-6">{copy.plans.upgradeNote}</p>
+			<p class="text-base text-white/85 text-center m-0 mt-8 text-balance">{copy.plans.moreThanFree}</p>
+			<p class="text-sm text-muted text-center m-0 mt-2">{copy.plans.upgradeNote}</p>
 		</div>
 	</section>
 
 	<!-- Switching from the IHK tool -->
-	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+	<section id="wechsel" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
 		<div class="max-w-3xl mx-auto">
 			<div class="text-center mb-10">
 				<span class="section-label mb-4 block">{copy.switch.label}</span>
 				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.switch.headline}</h2>
+				<p class="text-base text-muted m-0 mt-4 text-balance">{copy.switch.intro}{' '}<a href={copy.switch.introLink.href} class="text-primary underline hover:text-white">{copy.switch.introLink.label}</a></p>
 			</div>
 			<ol class="list-none p-0 m-0 space-y-5">
 				{copy.switch.steps.map((step, i) => (
@@ -218,7 +230,7 @@ const softwareSchema = {
 			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.final.headline}</h2>
 			<p class="text-lg text-muted leading-relaxed m-0 mb-8 text-balance">{copy.final.sub}</p>
 			<Button variant="primary" size="lg" href={href('final')} class="!rounded-full">{copy.cta}</Button>
-			<p class="text-sm text-white/70 m-0 mt-4 text-balance">{copy.final.note}</p>
+			<p class="text-sm text-white/70 m-0 mt-4 text-balance">{copy.final.note}{' '}<a href={azubiMailto(lang)} data-sa-event="berichtsheft_azubi_share" class="text-white underline hover:text-primary">{AZUBI_SHARE_LINK[lang]}</a></p>
 		</div>
 		<p class="text-xs text-white/50 text-center m-0 mt-12 max-w-2xl mx-auto">{copy.disclaimer}</p>
 	</section>

@@ -1,0 +1,23 @@
+---
+// Pill link for a launch or a deadline: optional solid badge, gradient hairline border
+// (primary to accent) around a blurred dark pill, soft violet glow that grows on hover.
+// Used by Hero (homepage, apprenticeship page) and the free-Berichtsheft landing page.
+interface Props {
+	href: string;
+	label: string;
+	badge?: string;
+	class?: string;
+}
+
+const { href, label, badge, class: className = '' } = Astro.props;
+---
+
+<a href={href} class:list={['group inline-flex rounded-full p-px bg-gradient-to-r from-primary via-primary/50 to-accent/70 shadow-[0_0_32px_rgba(124,92,252,0.35)] hover:shadow-[0_0_44px_rgba(124,92,252,0.55)] transition-shadow no-underline', className]}>
+	<span class="inline-flex items-center gap-3 rounded-full bg-dark/85 backdrop-blur-md py-1.5 pl-1.5 pr-4 text-sm md:text-base font-medium text-white">
+		{badge && (
+			<span class="rounded-full bg-primary px-2.5 py-1 font-mono text-[11px] md:text-xs font-semibold uppercase tracking-widest text-white whitespace-nowrap">{badge}</span>
+		)}
+		{label}
+		<span aria-hidden="true" class="text-primary transition-transform group-hover:translate-x-1">&rarr;</span>
+	</span>
+</a>

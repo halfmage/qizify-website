@@ -1,7 +1,7 @@
 {
   "de": {
     "path": "/de/berichtsheft-kostenlos",
-    "title": "Digitales Berichtsheft kostenlos für Ausbildungsbetriebe",
+    "title": "Digitales Berichtsheft online, kostenlos | LearnSlice",
     "description": "Das digitale Berichtsheft online, kostenlos für 1 Ausbilder und bis zu 3 Azubis: Freigabe, Erinnerung, PDF-Export, Hosting in Deutschland. Ohne Zahlungsdaten.",
     "breadcrumb": "Berichtsheft kostenlos",
     "cta": "Kostenlos starten",
@@ -12,14 +12,16 @@
       "sub": "Azubis schreiben online, Ausbilder geben frei, jeder Nachweis als PDF. Kostenlos für 1 Ausbilder und bis zu 3 Azubis.",
       "secondary": "So funktioniert es",
       "note": "Ohne Zahlungsdaten, ohne Laufzeit.",
-      "deadline": "Laut mehreren IHKs endet ihr digitales Berichtsheft am 31.12.2026.",
-      "deadlineLink": "Was jetzt gilt",
-      "deadlineHref": "/de/blog/ihk-berichtsheft-alternative",
-      "imageAlt": "Eintragsformular im LearnSlice-Berichtsheft mit Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sowie einer Bestätigung, dass der Azubi den Eintrag selbst verfasst hat"
+      "imageAlt": "Eintragsformular im LearnSlice-Berichtsheft mit Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sowie einer Bestätigung, dass der Azubi den Eintrag selbst verfasst hat",
+      "pill": {
+        "badge": "31.12.2026",
+        "label": "Vom IHK-Berichtsheft wechseln",
+        "href": "#wechsel"
+      }
     },
     "answer": {
       "headline": "Was ist das kostenlose LearnSlice-Berichtsheft?",
-      "body": "Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für Betriebe mit 1 Ausbilder und bis zu 3 Azubis ist es kostenlos. LearnSlice ist ein Unternehmen aus Düsseldorf, das Berichtsheft wird in Deutschland gehostet."
+      "body": "Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für 1 Ausbilder und bis zu 3 Azubis ist es kostenlos, gehostet in Deutschland."
     },
     "why": {
       "label": "Warum kostenlos",
@@ -28,7 +30,7 @@
     },
     "how": {
       "label": "So funktioniert es",
-      "headline": "Schreiben. Prüfen. Exportieren.",
+      "headline": "Das Berichtsheft online: schreiben, prüfen, exportieren.",
       "steps": [
         {
           "icon": "hugeicons:note-edit",
@@ -51,13 +53,34 @@
       "label": "Im kostenlosen Tarif",
       "headline": "Alles, was ein Berichtsheft braucht.",
       "items": [
-        { "title": "Täglich oder wöchentlich", "body": "Der Ausbilder legt den Rhythmus pro Azubi fest." },
-        { "title": "Erinnerung per E-Mail", "body": "Offene Einträge? Ein Klick, und der Azubi bekommt eine Erinnerung." },
-        { "title": "Minderjährige Azubis", "body": "Hinterlegte Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF." },
-        { "title": "Punkte für jeden Bericht", "body": "Azubis sammeln Punkte, wenn sie ihren Bericht einreichen." },
-        { "title": "Nachweise bleiben erhalten", "body": "Lesen und PDF-Export bleiben möglich, auch nach einem Tarifwechsel." },
-        { "title": "Hosting in Deutschland", "body": "Den Vertrag zur Auftragsverarbeitung schließen Sie bei der Registrierung ab." }
-      ]
+        {
+          "title": "Täglich oder wöchentlich",
+          "body": "Der Ausbilder legt den Rhythmus pro Azubi fest."
+        },
+        {
+          "title": "Erinnerung per E-Mail",
+          "body": "Offene Einträge? Ein Klick, und der Azubi bekommt eine Erinnerung."
+        },
+        {
+          "title": "Minderjährige Azubis",
+          "body": "Hinterlegte Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF."
+        },
+        {
+          "title": "Punkte für jeden Bericht",
+          "body": "Azubis sammeln Punkte, wenn sie ihren Bericht einreichen."
+        },
+        {
+          "title": "Nachweise bleiben erhalten",
+          "body": "Lesen und PDF-Export bleiben möglich, auch nach einem Tarifwechsel."
+        },
+        {
+          "title": "Hosting in Deutschland",
+          "body": "Den Vertrag zur Auftragsverarbeitung schließen Sie bei der Registrierung ab."
+        }
+      ],
+      "cta": {
+        "note": "Konto anlegen, Azubis einladen, fertig."
+      }
     },
     "plans": {
       "label": "Tarife",
@@ -66,27 +89,59 @@
         "name": "Free",
         "price": "0 €",
         "priceNote": "ohne Zahlungsdaten",
-        "items": ["Digitales Berichtsheft", "Freigabe, Erinnerung, Punkte, PDF-Export", "1 Ausbilder, bis zu 3 Azubis"]
+        "items": [
+          "Digitales Berichtsheft",
+          "Freigabe, Erinnerung, Punkte, PDF-Export",
+          "1 Ausbilder, bis zu 3 Azubis"
+        ]
       },
       "premium": {
         "name": "LearnSlice Premium",
         "priceNote": "pro Azubi, Ausbilder kostenlos",
         "heading": "Alles aus Free, plus:",
-        "items": ["KI-Tutor für IHK-Prüfung und Einarbeitung", "Quizze und Prüfungssimulationen", "Lernplan und Lernstatistiken", "Eigene Dokumente als Wissensbasis", "Beliebig viele Azubis"]
+        "items": [
+          "KI-Tutor für IHK-Prüfung und Einarbeitung",
+          "Quizze und Prüfungssimulationen",
+          "Lernplan und Lernstatistiken",
+          "Eigene Dokumente als Wissensbasis",
+          "Beliebig viele Azubis"
+        ],
+        "cta": "Premium in der Demo ansehen"
       },
-      "upgradeNote": "Upgrade jederzeit in der App unter Einstellungen, Abrechnung."
+      "upgradeNote": "Upgrade jederzeit in der App unter Einstellungen, Abrechnung.",
+      "moreThanFree": "Mehr als 3 Azubis? Starten Sie kostenlos und schalten Sie Premium in der App frei, oder lassen Sie sich Premium in 30 Minuten zeigen."
     },
     "switch": {
-      "label": "Wechsel vom IHK-Berichtsheft",
-      "headline": "In fünf Schritten umstellen.",
+      "label": "In fünf Schritten",
+      "headline": "Vom IHK-Berichtsheft wechseln.",
       "steps": [
-        { "title": "Alte Einträge sichern", "body": "Azubis exportieren ihre Einträge vor dem 31.12.2026 als PDF aus dem IHK-Tool. Laut mehreren IHKs gibt es danach keinen Zugriff mehr." },
-        { "title": "Konto anlegen", "body": "Kostenloses Konto für Ihren Betrieb anlegen, ohne Zahlungsdaten." },
-        { "title": "Azubis einladen", "body": "Bis zu 3 Azubis per E-Mail einladen und den Rhythmus festlegen." },
-        { "title": "Schnitt setzen", "body": "Der neue Nachweis beginnt mit der Woche nach dem letzten exportierten Eintrag. Zur Prüfungsanmeldung gehören beide Teile." },
-        { "title": "Form klären", "body": "Die elektronische Form gehört in den Ausbildungsvertrag. Welche Formate Ihre Kammer annimmt, erfahren Sie dort." }
+        {
+          "title": "Alte Einträge sichern",
+          "body": "Azubis exportieren ihre Einträge vorher als PDF aus dem IHK-Tool und speichern sie."
+        },
+        {
+          "title": "Konto anlegen",
+          "body": "Kostenloses Konto für Ihren Betrieb anlegen, ohne Zahlungsdaten."
+        },
+        {
+          "title": "Azubis einladen",
+          "body": "Bis zu 3 Azubis per E-Mail einladen und den Rhythmus festlegen."
+        },
+        {
+          "title": "Schnitt setzen",
+          "body": "Der neue Nachweis beginnt mit der Woche nach dem letzten exportierten Eintrag. Zur Prüfungsanmeldung gehören beide Teile."
+        },
+        {
+          "title": "Form klären",
+          "body": "Die elektronische Form gehört in den Ausbildungsvertrag. Welche Formate Ihre Kammer annimmt, erfahren Sie dort."
+        }
       ],
-      "note": "LearnSlice übernimmt keine Daten aus dem IHK-Tool. Die exportierten PDFs bewahren Sie getrennt auf."
+      "note": "LearnSlice übernimmt keine Daten aus dem IHK-Tool. Die exportierten PDFs bewahren Sie getrennt auf.",
+      "intro": "Laut mehreren IHKs endet ihr digitales Berichtsheft am 31.12.2026, danach gibt es keinen Zugriff mehr.",
+      "introLink": {
+        "label": "Was jetzt gilt",
+        "href": "/de/blog/ihk-berichtsheft-alternative"
+      }
     },
     "faqHeadline": "Häufige Fragen zum kostenlosen Berichtsheft",
     "faq": [
@@ -100,7 +155,11 @@
       },
       {
         "question": "Ist ein digitales Berichtsheft erlaubt?",
-        "answer": "Ja. Das BBiG lässt einen schriftlichen oder elektronischen Ausbildungsnachweis zu (§ 13 Satz 2 Nr. 7 BBiG). Die elektronische Form wird im Ausbildungsvertrag festgehalten. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt Ihre zuständige Kammer."
+        "answer": "Ja. Das BBiG lässt einen schriftlichen oder elektronischen Ausbildungsnachweis zu (§ 13 Satz 2 Nr. 7 BBiG). Die elektronische Form wird im Ausbildungsvertrag festgehalten. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt Ihre zuständige Kammer.",
+        "link": {
+          "href": "/de/blog/berichtsheft-digital",
+          "label": "Vorlage und Prüfliste zum digitalen Berichtsheft"
+        }
       },
       {
         "question": "Kann ich Einträge aus dem IHK-Berichtsheft übernehmen?",
@@ -128,7 +187,7 @@
   },
   "en": {
     "path": "/free-training-logbook",
-    "title": "Free Digital Training Logbook (Berichtsheft) for Companies",
+    "title": "Free Digital Training Logbook (Berichtsheft) | LearnSlice",
     "description": "The digital training logbook (Berichtsheft), free for 1 trainer and up to 3 apprentices: approval, reminders, PDF export, hosted in Germany. No payment details.",
     "breadcrumb": "Free Training Logbook",
     "cta": "Start for free",
@@ -139,14 +198,16 @@
       "sub": "Apprentices write online, trainers approve, every record as a PDF. Free for 1 trainer and up to 3 apprentices.",
       "secondary": "How it works",
       "note": "No payment details, no contract term.",
-      "deadline": "According to several IHKs, their digital Berichtsheft ends on 31 December 2026.",
-      "deadlineLink": "What applies now",
-      "deadlineHref": "/blog/digital-training-logbook",
-      "imageAlt": "Entry form in the LearnSlice logbook (German interface) with fields for workplace activities, vocational school topics, total hours and department, and a confirmation that the apprentice wrote the entry"
+      "imageAlt": "Entry form in the LearnSlice logbook (German interface) with fields for workplace activities, vocational school topics, total hours and department, and a confirmation that the apprentice wrote the entry",
+      "pill": {
+        "badge": "31.12.2026",
+        "label": "Switch from the IHK logbook",
+        "href": "#wechsel"
+      }
     },
     "answer": {
       "headline": "What is the free LearnSlice training logbook?",
-      "body": "The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is free for companies with 1 trainer and up to 3 apprentices. LearnSlice is a company based in Düsseldorf, and the logbook is hosted in Germany."
+      "body": "The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is free for 1 trainer and up to 3 apprentices, hosted in Germany."
     },
     "why": {
       "label": "Why free",
@@ -155,7 +216,7 @@
     },
     "how": {
       "label": "How it works",
-      "headline": "Write. Review. Export.",
+      "headline": "The logbook online: write, review, export.",
       "steps": [
         {
           "icon": "hugeicons:note-edit",
@@ -178,13 +239,34 @@
       "label": "In the free plan",
       "headline": "Everything a logbook needs.",
       "items": [
-        { "title": "Daily or weekly", "body": "The trainer sets the rhythm per apprentice." },
-        { "title": "Email reminders", "body": "Open entries? One click, and the apprentice gets a reminder." },
-        { "title": "Apprentices under 18", "body": "Registered parents or guardians receive submitted entries by email as a PDF." },
-        { "title": "Points for every report", "body": "Apprentices earn points when they submit their report." },
-        { "title": "Records stay available", "body": "Reading and PDF export stay possible, even after a plan change." },
-        { "title": "Hosted in Germany", "body": "You accept the data processing agreement when you sign up." }
-      ]
+        {
+          "title": "Daily or weekly",
+          "body": "The trainer sets the rhythm per apprentice."
+        },
+        {
+          "title": "Email reminders",
+          "body": "Open entries? One click, and the apprentice gets a reminder."
+        },
+        {
+          "title": "Apprentices under 18",
+          "body": "Registered parents or guardians receive submitted entries by email as a PDF."
+        },
+        {
+          "title": "Points for every report",
+          "body": "Apprentices earn points when they submit their report."
+        },
+        {
+          "title": "Records stay available",
+          "body": "Reading and PDF export stay possible, even after a plan change."
+        },
+        {
+          "title": "Hosted in Germany",
+          "body": "You accept the data processing agreement when you sign up."
+        }
+      ],
+      "cta": {
+        "note": "Create an account, invite your apprentices, done."
+      }
     },
     "plans": {
       "label": "Plans",
@@ -193,27 +275,59 @@
         "name": "Free",
         "price": "€0",
         "priceNote": "no payment details",
-        "items": ["Digital training logbook", "Approval, reminders, points, PDF export", "1 trainer, up to 3 apprentices"]
+        "items": [
+          "Digital training logbook",
+          "Approval, reminders, points, PDF export",
+          "1 trainer, up to 3 apprentices"
+        ]
       },
       "premium": {
         "name": "LearnSlice Premium",
         "priceNote": "per apprentice, trainers free",
         "heading": "Everything in Free, plus:",
-        "items": ["AI tutor for the IHK exam and onboarding", "Quizzes and exam simulations", "Learning plan and learning analytics", "Your own documents as a knowledge base", "Any number of apprentices"]
+        "items": [
+          "AI tutor for the IHK exam and onboarding",
+          "Quizzes and exam simulations",
+          "Learning plan and learning analytics",
+          "Your own documents as a knowledge base",
+          "Any number of apprentices"
+        ],
+        "cta": "See Premium in a demo"
       },
-      "upgradeNote": "Upgrade any time in the app under Settings, Billing."
+      "upgradeNote": "Upgrade any time in the app under Settings, Billing.",
+      "moreThanFree": "More than 3 apprentices? Start for free and unlock Premium in the app, or let us show you Premium in 30 minutes."
     },
     "switch": {
-      "label": "Switching from the IHK logbook",
-      "headline": "Switch in five steps.",
+      "label": "In five steps",
+      "headline": "Switch from the IHK logbook.",
       "steps": [
-        { "title": "Save old entries", "body": "Apprentices export their entries from the IHK tool as a PDF before 31 December 2026. According to several IHKs, there is no access afterwards." },
-        { "title": "Create an account", "body": "Create a free account for your company, no payment details." },
-        { "title": "Invite apprentices", "body": "Invite up to 3 apprentices by email and set the rhythm." },
-        { "title": "Make a clean cut", "body": "The new record starts with the week after the last exported entry. Both parts belong to the exam registration." },
-        { "title": "Confirm the format", "body": "The electronic form belongs in the training contract. Your chamber tells you which formats it accepts." }
+        {
+          "title": "Save old entries",
+          "body": "Apprentices export their entries from the IHK tool as a PDF beforehand and save them."
+        },
+        {
+          "title": "Create an account",
+          "body": "Create a free account for your company, no payment details."
+        },
+        {
+          "title": "Invite apprentices",
+          "body": "Invite up to 3 apprentices by email and set the rhythm."
+        },
+        {
+          "title": "Make a clean cut",
+          "body": "The new record starts with the week after the last exported entry. Both parts belong to the exam registration."
+        },
+        {
+          "title": "Confirm the format",
+          "body": "The electronic form belongs in the training contract. Your chamber tells you which formats it accepts."
+        }
       ],
-      "note": "LearnSlice does not import data from the IHK tool. Keep the exported PDFs separately."
+      "note": "LearnSlice does not import data from the IHK tool. Keep the exported PDFs separately.",
+      "intro": "According to several IHKs, their digital Berichtsheft ends on 31 December 2026, with no access afterwards.",
+      "introLink": {
+        "label": "What applies now",
+        "href": "/blog/digital-training-logbook"
+      }
     },
     "faqHeadline": "Questions about the free training logbook",
     "faq": [
@@ -227,7 +341,11 @@
       },
       {
         "question": "Is a digital training logbook allowed?",
-        "answer": "Yes. The BBiG allows a written or electronic training record (§ 13 sentence 2 no. 7 BBiG). The electronic form is recorded in the training contract. Your competent chamber gives binding information on your apprenticeship."
+        "answer": "Yes. The BBiG allows a written or electronic training record (§ 13 sentence 2 no. 7 BBiG). The electronic form is recorded in the training contract. Your competent chamber gives binding information on your apprenticeship.",
+        "link": {
+          "href": "/blog/digital-training-logbook",
+          "label": "Template and checklist for the digital logbook"
+        }
       },
       {
         "question": "Can I import entries from the IHK logbook?",

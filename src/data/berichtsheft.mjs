@@ -45,6 +45,32 @@ export const ANNOUNCEMENT = {
 /** Landing page for the free Berichtsheft, per language. Registered in page-pairs.mjs. */
 export const LANDING_PATH = { de: '/de/berichtsheft-kostenlos', en: '/free-training-logbook' };
 
+const AZUBI_SHARE = {
+	de: {
+		link: 'Ausbilder per E-Mail informieren',
+		subject: 'Digitales Berichtsheft kostenlos',
+		body: 'Hallo,\n\nfür unser Berichtsheft gibt es hier eine kostenlose digitale Lösung für Ausbildungsbetriebe:\n',
+	},
+	en: {
+		link: 'Tell your trainer by email',
+		subject: 'Free digital training logbook',
+		body: 'Hello,\n\nhere is a free digital training logbook (Berichtsheft) for training companies:\n',
+	},
+};
+
+/** Link text for apprentices who want to pass the offer on to their trainer. */
+export const AZUBI_SHARE_LINK = { de: AZUBI_SHARE.de.link, en: AZUBI_SHARE.en.link };
+
+/**
+ * mailto: link an apprentice sends to their trainer, with the landing page URL.
+ * No recipient: the apprentice picks the trainer's address in their own mail app.
+ */
+export function azubiMailto(lang) {
+	const c = AZUBI_SHARE[lang];
+	const url = `https://learnslice.com${LANDING_PATH[lang]}`;
+	return `mailto:?subject=${encodeURIComponent(c.subject)}&body=${encodeURIComponent(`${c.body}${url}\n`)}`;
+}
+
 const APP_SIGNUP = 'https://app.learnslice.com/sign-up';
 
 /**

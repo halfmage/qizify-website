@@ -466,7 +466,11 @@ function buildBerichtsheftSection(c, lang) {
 	parts.push(`- **${c.plans.free.name} (${c.plans.free.price}, ${c.plans.free.priceNote}):** ${c.plans.free.items.join('; ')}`);
 	parts.push(`- **${c.plans.premium.name} (${c.plans.premium.priceNote}):** ${c.plans.premium.heading} ${c.plans.premium.items.join('; ')}`);
 	parts.push('');
+	parts.push(c.plans.moreThanFree);
+	parts.push('');
 	parts.push(`## ${c.switch.headline}`);
+	parts.push('');
+	parts.push(c.switch.intro);
 	parts.push('');
 	c.switch.steps.forEach((st, i) => parts.push(`${i + 1}. **${st.title}:** ${st.body}`));
 	parts.push('');
