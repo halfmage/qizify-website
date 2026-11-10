@@ -59,11 +59,6 @@ const headlineLines = headline.split('\n');
 	<div class="relative z-10 max-w-container mx-auto w-full px-6 lg:px-8">
 		<div class="max-w-2xl text-left flex flex-col items-start">
 			{announcement && <AnnouncementPill {...announcement} class="mb-6" />}
-						{announcement.label}
-						<span aria-hidden="true" class="text-primary transition-transform group-hover:translate-x-1">&rarr;</span>
-					</span>
-				</a>
-			)}
 			{eyebrow && <p class="text-base md:text-lg font-semibold text-white/70 m-0 mb-3">{eyebrow}</p>}
 
 			<h1 class="text-display-sm md:text-display text-white m-0 tracking-tight">
