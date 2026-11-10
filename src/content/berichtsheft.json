@@ -19,7 +19,7 @@
     },
     "answer": {
       "headline": "Was ist das kostenlose LearnSlice-Berichtsheft?",
-      "body": "Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für Betriebe mit 1 Ausbilder und bis zu 3 Azubis ist es dauerhaft kostenlos. LearnSlice ist ein Unternehmen aus Düsseldorf, das Berichtsheft wird in Deutschland gehostet."
+      "body": "Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für Betriebe mit 1 Ausbilder und bis zu 3 Azubis ist es kostenlos. LearnSlice ist ein Unternehmen aus Düsseldorf, das Berichtsheft wird in Deutschland gehostet."
     },
     "why": {
       "label": "Warum kostenlos",
@@ -65,7 +65,7 @@
       "free": {
         "name": "Free",
         "price": "0 €",
-        "priceNote": "dauerhaft kostenlos",
+        "priceNote": "ohne Zahlungsdaten",
         "items": ["Digitales Berichtsheft", "Freigabe, Erinnerung, Punkte, PDF-Export", "1 Ausbilder, bis zu 3 Azubis"]
       },
       "premium": {
@@ -92,7 +92,7 @@
     "faq": [
       {
         "question": "Ist das LearnSlice-Berichtsheft wirklich kostenlos?",
-        "answer": "Ja, dauerhaft, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und Lernplan."
+        "answer": "Ja, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und Lernplan."
       },
       {
         "question": "Was passiert ab dem vierten Azubi?",
@@ -146,7 +146,7 @@
     },
     "answer": {
       "headline": "What is the free LearnSlice training logbook?",
-      "body": "The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is permanently free for companies with 1 trainer and up to 3 apprentices. LearnSlice is a company based in Düsseldorf, and the logbook is hosted in Germany."
+      "body": "The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is free for companies with 1 trainer and up to 3 apprentices. LearnSlice is a company based in Düsseldorf, and the logbook is hosted in Germany."
     },
     "why": {
       "label": "Why free",
@@ -192,7 +192,7 @@
       "free": {
         "name": "Free",
         "price": "€0",
-        "priceNote": "free forever",
+        "priceNote": "no payment details",
         "items": ["Digital training logbook", "Approval, reminders, points, PDF export", "1 trainer, up to 3 apprentices"]
       },
       "premium": {
@@ -219,7 +219,7 @@
     "faq": [
       {
         "question": "Is the LearnSlice training logbook really free?",
-        "answer": "Yes, permanently, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and learning plan is paid."
+        "answer": "Yes, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and learning plan is paid."
       },
       {
         "question": "What happens from the fourth apprentice?",

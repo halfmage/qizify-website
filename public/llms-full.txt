@@ -592,7 +592,7 @@ Azubis schreiben online, Ausbilder geben frei, jeder Nachweis als PDF. Kostenlos
 
 ## Was ist das kostenlose LearnSlice-Berichtsheft?
 
-Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für Betriebe mit 1 Ausbilder und bis zu 3 Azubis ist es dauerhaft kostenlos. LearnSlice ist ein Unternehmen aus Düsseldorf, das Berichtsheft wird in Deutschland gehostet.
+Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für Betriebe mit 1 Ausbilder und bis zu 3 Azubis ist es kostenlos. LearnSlice ist ein Unternehmen aus Düsseldorf, das Berichtsheft wird in Deutschland gehostet.
 
 ## Jeder Ausbildungsbetrieb sollte ein einfaches digitales Berichtsheft haben.
 
@@ -615,7 +615,7 @@ Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung 
 
 ## Kostenlos starten, upgraden nur bei Bedarf.
 
-- **Free (0 €, dauerhaft kostenlos):** Digitales Berichtsheft; Freigabe, Erinnerung, Punkte, PDF-Export; 1 Ausbilder, bis zu 3 Azubis
+- **Free (0 €, ohne Zahlungsdaten):** Digitales Berichtsheft; Freigabe, Erinnerung, Punkte, PDF-Export; 1 Ausbilder, bis zu 3 Azubis
 - **LearnSlice Premium (pro Azubi, Ausbilder kostenlos):** Alles aus Free, plus: KI-Tutor für IHK-Prüfung und Einarbeitung; Quizze und Prüfungssimulationen; Lernplan und Lernstatistiken; Eigene Dokumente als Wissensbasis; Beliebig viele Azubis
 
 ## In fünf Schritten umstellen.
@@ -632,7 +632,7 @@ LearnSlice übernimmt keine Daten aus dem IHK-Tool. Die exportierten PDFs bewahr
 
 ### Ist das LearnSlice-Berichtsheft wirklich kostenlos?
 
-Ja, dauerhaft, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und Lernplan.
+Ja, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und Lernplan.
 
 ### Was passiert ab dem vierten Azubi?
 
@@ -672,7 +672,7 @@ Apprentices write online, trainers approve, every record as a PDF. Free for 1 tr
 
 ## What is the free LearnSlice training logbook?
 
-The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is permanently free for companies with 1 trainer and up to 3 apprentices. LearnSlice is a company based in Düsseldorf, and the logbook is hosted in Germany.
+The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is free for companies with 1 trainer and up to 3 apprentices. LearnSlice is a company based in Düsseldorf, and the logbook is hosted in Germany.
 
 ## Every training company should have a simple digital logbook.
 
@@ -695,7 +695,7 @@ The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a 
 
 ## Start free, upgrade only if you need to.
 
-- **Free (€0, free forever):** Digital training logbook; Approval, reminders, points, PDF export; 1 trainer, up to 3 apprentices
+- **Free (€0, no payment details):** Digital training logbook; Approval, reminders, points, PDF export; 1 trainer, up to 3 apprentices
 - **LearnSlice Premium (per apprentice, trainers free):** Everything in Free, plus: AI tutor for the IHK exam and onboarding; Quizzes and exam simulations; Learning plan and learning analytics; Your own documents as a knowledge base; Any number of apprentices
 
 ## Switch in five steps.
@@ -712,7 +712,7 @@ LearnSlice does not import data from the IHK tool. Keep the exported PDFs separa
 
 ### Is the LearnSlice training logbook really free?
 
-Yes, permanently, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and learning plan is paid.
+Yes, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and learning plan is paid.
 
 ### What happens from the fourth apprentice?
 
