@@ -140,7 +140,7 @@ const softwareSchema = {
 					<h3 class="font-mono text-label uppercase tracking-widest text-white/50 m-0 mb-6">{copy.compare.before}</h3>
 					<ul class="list-none p-0 m-0 space-y-4">
 						{copy.compare.rows.map(([before]) => (
-							<li class="flex items-start gap-3 text-base text-white/50"><Icon name="hugeicons:cancel-circle" class="w-5 h-5 text-white/30 shrink-0 mt-0.5" /><span class="line-through decoration-white/20">{before}</span></li>
+							<li class="flex items-start gap-3 text-base text-white/50"><Icon name="hugeicons:cancel-circle" class="w-5 h-5 text-white/30 shrink-0 mt-0.5" /><span>{before}</span></li>
 						))}
 					</ul>
 				</div>
@@ -159,14 +159,14 @@ const softwareSchema = {
 	</section>
 
 	<!-- Vision: editorial statement, signed -->
-	<section class="relative overflow-hidden py-20 md:py-32 px-6 md:px-8 border-t border-border/50">
+	<section class="relative overflow-hidden py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
 		<div class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(124,92,252,0.18),transparent_70%)]" aria-hidden="true"></div>
 		<div class="relative max-w-4xl mx-auto text-center">
 			<span class="section-label mb-6 block">{copy.why.label}</span>
 			<h2 class="text-[clamp(1.9rem,1.1rem+3vw,3.25rem)] leading-[1.1] font-semibold tracking-[-0.03em] text-white m-0 text-balance">
 				{copy.why.headline.split(/(?<=\.)\s+/).map((line, i) => <span class={`block ${i > 0 ? 'gradient-text-primary' : ''}`}>{line}</span>)}
 			</h2>
-			<p class="text-lg text-muted leading-relaxed m-0 mt-8 max-w-2xl mx-auto text-left md:text-center">{copy.why.body}</p>
+			<p class="text-lg text-muted leading-relaxed m-0 mt-6 max-w-xl mx-auto text-balance">{copy.why.body}</p>
 		</div>
 	</section>
 

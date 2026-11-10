@@ -596,7 +596,7 @@ Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Az
 
 ## Das Berichtsheft ist Pflicht. Das Werkzeug dafür sollte nichts kosten.
 
-Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Jeder von ihnen verdient ein einfaches digitales Berichtsheft. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen.
+Gesetzliche Pflicht und Voraussetzung für die Prüfungszulassung (§ 13 und § 43 BBiG). Deshalb kostet es bei uns nichts. Wir verdienen am KI-Tutor, den Sie nur buchen, wenn Sie wollen.
 
 ## Schluss mit Ordnern, Mappen und Nachfragen.
 
@@ -604,7 +604,7 @@ Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung 
 - Papier und Word: Unterschreiben, scannen, abheften. Mit LearnSlice: Freigabe per Klick, Name und Datum stehen im Nachweis.
 - Papier und Word: Nachfragen, wer noch fehlt. Mit LearnSlice: Erinnerung an offene Einträge mit einem Klick.
 - Papier und Word: Vor der Prüfung alles zusammensuchen. Mit LearnSlice: Ganze Zeiträume als PDF exportieren.
-- Papier und Word: Eltern minderjähriger Azubis extra informieren. Mit LearnSlice: Erziehungsberechtigte erhalten eingereichte Einträge als PDF.
+- Papier und Word: Eltern minderjähriger Azubis extra informieren. Mit LearnSlice: Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF-Link.
 
 ## Das Berichtsheft online: schreiben, prüfen, exportieren.
 
@@ -616,7 +616,7 @@ Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung 
 
 - **Täglich oder wöchentlich:** Der Ausbilder legt den Rhythmus pro Azubi fest.
 - **Erinnerung per E-Mail:** Offene Einträge? Ein Klick, und der Azubi bekommt eine Erinnerung.
-- **Minderjährige Azubis:** Hinterlegte Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF.
+- **Minderjährige Azubis:** Hinterlegte Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF-Link.
 - **Punkte für jeden Bericht:** Azubis sammeln Punkte, wenn sie ihren Bericht einreichen.
 - **Nachweise bleiben erhalten:** Lesen und PDF-Export bleiben möglich, auch nach einem Tarifwechsel.
 - **Hosting in Deutschland:** Den Vertrag zur Auftragsverarbeitung schließen Sie bei der Registrierung ab.
@@ -688,7 +688,7 @@ The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) 
 
 ## The logbook is mandatory. The tool for it should cost nothing.
 
-The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. Every one of them deserves a simple digital logbook. We earn money with the AI tutor for exams and onboarding, which you only book if you want it.
+A legal duty and a condition for exam admission (§ 13 and § 43 BBiG). That is why it costs nothing with us. We earn money with the AI tutor, which you only book if you want it.
 
 ## No more folders, signature runs and chasing.
 
@@ -696,7 +696,7 @@ The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a 
 - Paper and Word: Sign, scan, file. With LearnSlice: One-click approval, name and date appear in the record.
 - Paper and Word: Ask around who is still missing. With LearnSlice: Remind about open entries with one click.
 - Paper and Word: Hunt for everything before the exam. With LearnSlice: Export whole periods as a PDF.
-- Paper and Word: Inform parents of minors separately. With LearnSlice: Parents or guardians receive submitted entries as a PDF.
+- Paper and Word: Inform parents of minors separately. With LearnSlice: Parents or guardians receive submitted entries by email as a PDF link.
 
 ## The logbook online: write, review, export.
 
@@ -708,7 +708,7 @@ The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a 
 
 - **Daily or weekly:** The trainer sets the rhythm per apprentice.
 - **Email reminders:** Open entries? One click, and the apprentice gets a reminder.
-- **Apprentices under 18:** Registered parents or guardians receive submitted entries by email as a PDF.
+- **Apprentices under 18:** Registered parents or guardians receive submitted entries by email as a PDF link.
 - **Points for every report:** Apprentices earn points when they submit their report.
 - **Records stay available:** Reading and PDF export stay possible, even after a plan change.
 - **Hosted in Germany:** You accept the data processing agreement when you sign up.

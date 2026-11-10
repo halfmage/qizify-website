@@ -34,7 +34,7 @@
     "why": {
       "label": "Unsere Vision",
       "headline": "Das Berichtsheft ist Pflicht. Das Werkzeug dafür sollte nichts kosten.",
-      "body": "Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Jeder von ihnen verdient ein einfaches digitales Berichtsheft. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen."
+      "body": "Gesetzliche Pflicht und Voraussetzung für die Prüfungszulassung (§ 13 und § 43 BBiG). Deshalb kostet es bei uns nichts. Wir verdienen am KI-Tutor, den Sie nur buchen, wenn Sie wollen."
     },
     "how": {
       "label": "So funktioniert es",
@@ -71,7 +71,7 @@
         },
         {
           "title": "Minderjährige Azubis",
-          "body": "Hinterlegte Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF."
+          "body": "Hinterlegte Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF-Link."
         },
         {
           "title": "Punkte für jeden Bericht",
@@ -236,7 +236,7 @@
         ],
         [
           "Eltern minderjähriger Azubis extra informieren",
-          "Erziehungsberechtigte erhalten eingereichte Einträge als PDF"
+          "Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF-Link"
         ]
       ]
     },
@@ -296,7 +296,7 @@
     "why": {
       "label": "Our vision",
       "headline": "The logbook is mandatory. The tool for it should cost nothing.",
-      "body": "The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. Every one of them deserves a simple digital logbook. We earn money with the AI tutor for exams and onboarding, which you only book if you want it."
+      "body": "A legal duty and a condition for exam admission (§ 13 and § 43 BBiG). That is why it costs nothing with us. We earn money with the AI tutor, which you only book if you want it."
     },
     "how": {
       "label": "How it works",
@@ -333,7 +333,7 @@
         },
         {
           "title": "Apprentices under 18",
-          "body": "Registered parents or guardians receive submitted entries by email as a PDF."
+          "body": "Registered parents or guardians receive submitted entries by email as a PDF link."
         },
         {
           "title": "Points for every report",
@@ -498,7 +498,7 @@
         ],
         [
           "Inform parents of minors separately",
-          "Parents or guardians receive submitted entries as a PDF"
+          "Parents or guardians receive submitted entries by email as a PDF link"
         ]
       ]
     },
