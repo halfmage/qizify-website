@@ -434,6 +434,56 @@ function buildFinanceSection(c, lang) {
 
 const financeSections = buildFinanceSection(finance.en, 'en') + '\n' + buildFinanceSection(finance.de, 'de');
 
+// ---- Free Berichtsheft page ---------------------------------------------------
+const berichtsheft = JSON.parse(await readFile(join(CONTENT_DIR, 'berichtsheft.json'), 'utf8'));
+
+function buildBerichtsheftSection(c, lang) {
+	const parts = [];
+	parts.push(`# ${c.hero.eyebrow}: ${c.hero.headline} ${c.hero.headlineAccent}`);
+	parts.push('');
+	parts.push(`Source: ${SITE}${c.path}\nLanguage: ${lang}\nType: ${lang === 'de' ? 'Produktseite, kostenloser Tarif' : 'Product page, free plan'}`);
+	parts.push('');
+	parts.push(`${c.hero.sub} ${c.hero.note}`);
+	parts.push('');
+	parts.push(`## ${c.answer.headline}`);
+	parts.push('');
+	parts.push(c.answer.body);
+	parts.push('');
+	parts.push(`## ${c.why.headline}`);
+	parts.push('');
+	parts.push(c.why.body);
+	parts.push('');
+	parts.push(`## ${c.how.headline}`);
+	parts.push('');
+	for (const st of c.how.steps) parts.push(`- **${st.title}:** ${st.body}`);
+	parts.push('');
+	parts.push(`## ${c.features.headline}`);
+	parts.push('');
+	for (const f of c.features.items) parts.push(`- **${f.title}:** ${f.body}`);
+	parts.push('');
+	parts.push(`## ${c.plans.headline}`);
+	parts.push('');
+	parts.push(`- **${c.plans.free.name} (${c.plans.free.price}, ${c.plans.free.priceNote}):** ${c.plans.free.items.join('; ')}`);
+	parts.push(`- **${c.plans.premium.name} (${c.plans.premium.priceNote}):** ${c.plans.premium.heading} ${c.plans.premium.items.join('; ')}`);
+	parts.push('');
+	parts.push(`## ${c.switch.headline}`);
+	parts.push('');
+	c.switch.steps.forEach((st, i) => parts.push(`${i + 1}. **${st.title}:** ${st.body}`));
+	parts.push('');
+	parts.push(c.switch.note);
+	parts.push('');
+	parts.push(`## ${c.faqHeadline}`);
+	parts.push('');
+	for (const f of c.faq) parts.push(`### ${f.question}\n\n${f.answer}\n`);
+	parts.push(c.disclaimer);
+	parts.push('');
+	parts.push('---');
+	parts.push('');
+	return parts.join('\n');
+}
+
+const berichtsheftSections = buildBerichtsheftSection(berichtsheft.de, 'de') + '\n' + buildBerichtsheftSection(berichtsheft.en, 'en');
+
 // ---- Blog corpus -------------------------------------------------------------
 
 const files = (await readdir(BLOG_DIR)).filter((f) => f.endsWith('.mdx')).sort();
@@ -512,9 +562,9 @@ ${faqBlock}${sourcesBlock}---
 `;
 }).join('\n');
 
-const corpus = header + homepageSections + '\n' + apprenticeshipSections + '\n' + founderSections + '\n' + financeSections + '\n' + sections;
+const corpus = header + homepageSections + '\n' + apprenticeshipSections + '\n' + berichtsheftSections + '\n' + founderSections + '\n' + financeSections + '\n' + sections;
 await writeFile(OUTPUT, corpus, 'utf8');
 
 const sizeKB = (corpus.length / 1024).toFixed(1);
 const enriched = posts.filter(p => p.keyTakeaways.length > 0 || p.faq.length > 0).length;
-console.log(`llms-full.txt written: homepage, apprenticeship, founder and finance pages (DE+EN) + ${posts.length} posts (${enriched} with takeaways/FAQ), ${sizeKB} KB → ${OUTPUT}`);
+console.log(`llms-full.txt written: homepage, apprenticeship, free Berichtsheft, founder and finance pages (DE+EN) + ${posts.length} posts (${enriched} with takeaways/FAQ), ${sizeKB} KB → ${OUTPUT}`);

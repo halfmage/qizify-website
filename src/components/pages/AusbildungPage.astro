@@ -19,6 +19,7 @@ import StickyCta from '../StickyCta.astro';
 import DemoRequestModal from '../DemoRequestModal.astro';
 import enContent from '../../content/en.json';
 import { homepage } from '../../content/homepage';
+import { LANDING_PATH } from '../../data/berichtsheft.mjs';
 import deContent from '../../content/de.json';
 
 // Apprenticeship product page (the former homepage), rendered for both languages:
@@ -65,6 +66,7 @@ const heroImage = '/images/hero/ausbildung-hero.webp';
 	/>
 	
 	<Hero
+		announcement={{ label: lang === 'de' ? 'Neu: Digitales Berichtsheft kostenlos' : 'New: free digital training logbook', href: LANDING_PATH[lang] }}
 		eyebrow={meta.eyebrow}
 		headline={content.hero.headline}
 		subheadline={content.hero.subheadline}

@@ -1,0 +1,74 @@
+---
+import { SIGNUP_ID, LANDING_PATH, FREE_AUSBILDER_LIMIT, FREE_AZUBI_LIMIT, signupUrl, pathSlug } from '../data/berichtsheft.mjs';
+
+// Sign-up block for the free LearnSlice Berichtsheft (live since 2026-11-10; it
+// replaced the pre-launch waitlist form). Embedded in MDX posts, inside the blog
+// `prose` container, hence `not-prose`. The primary button goes straight to the app
+// sign-up with campaign parameters (utm_content = post slug); the secondary link goes
+// to the landing page. Feature claims must match the free plan in learnslice-sme
+// (lib/plan.ts): Berichtsheft only, no AI, 1 Ausbilder, up to 3 Azubis.
+// The anchor id comes from SIGNUP_ID, which the 'berichtsheft' ctaVariant links to.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const copy = {
+	de: {
+		eyebrow: 'Kostenloser Tarif',
+		headline: 'Das LearnSlice-Berichtsheft, kostenlos für Ausbildungsbetriebe',
+		features: [
+			'Azubis schreiben und reichen ein, Ausbilder geben frei oder schicken zur Überarbeitung zurück',
+			'Täglicher oder wöchentlicher Rhythmus, vom Ausbilder festgelegt',
+			'E-Mail-Erinnerung an offene Einträge',
+			'PDF-Export jedes Nachweises, Hosting in Deutschland',
+		],
+		limit: `Kostenlos für ${FREE_AUSBILDER_LIMIT} Ausbilder und bis zu ${FREE_AZUBI_LIMIT} Azubis. Ohne Zahlungsdaten.`,
+		button: 'Kostenlos starten',
+		more: 'So funktioniert das kostenlose Berichtsheft',
+		azubi: 'Sie sind Azubi? Leiten Sie diese Seite an Ihre Ausbilderin oder Ihren Ausbilder weiter.',
+	},
+	en: {
+		eyebrow: 'Free plan',
+		headline: 'The LearnSlice Training Logbook, Free for Training Companies',
+		features: [
+			'Apprentices write and submit, trainers approve or send back for revision',
+			'Daily or weekly rhythm, set by the trainer',
+			'Email reminder for open entries',
+			'PDF export of every record, hosted in Germany',
+		],
+		limit: `Free for ${FREE_AUSBILDER_LIMIT} trainer and up to ${FREE_AZUBI_LIMIT} apprentices. No payment details.`,
+		button: 'Start for free',
+		more: 'How the free logbook works',
+		azubi: 'Are you an apprentice? Forward this page to your trainer.',
+	},
+};
+
+const { lang } = Astro.props;
+const c = copy[lang];
+// MDX call sites are not type-checked, so fail loudly on a typo'd lang.
+if (!c) throw new Error(`BerichtsheftSignup: unsupported lang "${lang}"`);
+const id = SIGNUP_ID[lang];
+const href = signupUrl(pathSlug(Astro.url.pathname));
+---
+
+<aside id={id} class="not-prose my-12 scroll-mt-28 rounded-xl border border-border-light bg-surface/70 p-6 md:p-8 relative overflow-hidden">
+	<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
+	<span class="section-label block mb-3">{c.eyebrow}</span>
+	<h2 class="text-heading-sm text-white m-0 mb-3">{c.headline}</h2>
+	<ul class="m-0 mb-4 p-0 space-y-1.5" style="list-style:none">
+		{c.features.map((f) => (
+			<li class="flex gap-2 text-sm text-white/85 leading-relaxed">
+				<span class="text-primary shrink-0" aria-hidden="true">✓</span>
+				<span>{f}</span>
+			</li>
+		))}
+	</ul>
+	<p class="text-base leading-relaxed text-muted m-0 mb-6">{c.limit}</p>
+	<div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+		<a href={href} class="self-start inline-flex items-center gap-1 rounded-full bg-primary px-6 py-3 text-base font-medium text-white hover:bg-[#6a4ae0] transition-colors no-underline">
+			{c.button}<span aria-hidden="true">&rarr;</span>
+		</a>
+		<a href={LANDING_PATH[lang]} class="text-sm text-white/85 underline hover:text-white">{c.more}</a>
+	</div>
+	<p class="text-xs text-muted m-0 mt-5">{c.azubi}</p>
+</aside>

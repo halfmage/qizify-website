@@ -25,10 +25,12 @@ interface Props {
 	imagePosition?: string;
 	// Optional link for the award, e.g. to a WhyChooseUs section on the same page. Without it the award is plain text.
 	awardHref?: string;
+	// Optional pill link above the eyebrow, for a launch or campaign (e.g. the free Berichtsheft).
+	announcement?: { label: string; href: string };
 	currentLang: 'en' | 'de';
 }
 
-const { eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, ctaSecondaryHref, stats = [], trustLine, image = '/images/hero/hero-background.webp', awardHref, imagePosition = 'object-[70%_center]', currentLang } = Astro.props;
+const { announcement, eyebrow, headline, subheadline, ctaPrimary, ctaSecondary, ctaSecondaryHref, stats = [], trustLine, image = '/images/hero/hero-background.webp', awardHref, imagePosition = 'object-[70%_center]', currentLang } = Astro.props;
 const secondaryHref = ctaSecondaryHref ?? (currentLang === 'de' ? '/de/ausbildungskosten-rechner' : '/apprenticeship-savings-calculator');
 
 const headlineLines = headline.split('\n');
@@ -55,6 +57,11 @@ const headlineLines = headline.split('\n');
 	<!-- Apple-style hero: product name, one promise, one sentence, two buttons. Proof follows below the product. -->
 	<div class="relative z-10 max-w-container mx-auto w-full px-6 lg:px-8">
 		<div class="max-w-2xl text-left flex flex-col items-start">
+			{announcement && (
+				<a href={announcement.href} class="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-white hover:bg-primary/20 transition-colors no-underline mb-5">
+					{announcement.label}<span aria-hidden="true">&rarr;</span>
+				</a>
+			)}
 			{eyebrow && <p class="text-base md:text-lg font-semibold text-white/70 m-0 mb-3">{eyebrow}</p>}
 
 			<h1 class="text-display-sm md:text-display text-white m-0 tracking-tight">

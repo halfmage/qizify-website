@@ -1,0 +1,233 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import FAQ from '../FAQ.astro';
+import Footer from '../Footer.astro';
+import Button from '../Button.astro';
+import StickyCta from '../StickyCta.astro';
+import DemoRequestModal from '../DemoRequestModal.astro';
+import { Icon } from 'astro-icon/components';
+import enContent from '../../content/en.json';
+import deContent from '../../content/de.json';
+import berichtsheft from '../../content/berichtsheft.json';
+import { SITE } from '../../utils/page-pairs.mjs';
+import { signupUrl } from '../../data/berichtsheft.mjs';
+
+// Free Berichtsheft landing page, for /de/berichtsheft-kostenlos and
+// /free-training-logbook. Launched with the free tier on 2026-11-10.
+// Copy: src/content/berichtsheft.json (also feeds public/llms-full.txt).
+// Every feature claim must match the free plan in learnslice-sme (lib/plan.ts and the
+// Berichtsheft routes). Rules: no competitor or IHK successor tool named, nothing that
+// implies LearnSlice is the only free option, no Premium price on the page (it is shown
+// in the app), legal statements only with the BBiG section and a pointer to the Kammer.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+const content = lang === 'de' ? deContent : enContent;
+const copy = berichtsheft[lang];
+const heroImage = '/images/blog/learnslice-berichtsheft-felder.webp';
+// 1200x630 JPG, same card as the Berichtsheft guide
+const ogImage = '/images/blog/pexels-mikhail-nilov-9242810.jpg';
+const href = (placement: string) => signupUrl(`landing-${lang}-${placement}`);
+
+// The page is about the free Berichtsheft, not the AI platform, so BaseLayout's
+// platform SoftwareApplication is switched off and this one is emitted instead.
+const softwareSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'SoftwareApplication',
+	name: lang === 'de' ? 'LearnSlice-Berichtsheft' : 'LearnSlice Training Logbook',
+	applicationCategory: 'BusinessApplication',
+	operatingSystem: 'Web',
+	url: `${SITE}${copy.path}`,
+	description: copy.answer.body,
+	inLanguage: lang === 'de' ? 'de-DE' : 'en',
+	offers: {
+		'@type': 'Offer',
+		price: '0',
+		priceCurrency: 'EUR',
+		description: copy.plans.free.items.join(', '),
+	},
+	publisher: { '@type': 'Organization', name: 'LearnSlice', url: SITE },
+};
+---
+
+<BaseLayout
+	title={copy.title}
+	description={copy.description}
+	lang={lang}
+	currentPath={copy.path}
+	breadcrumbTitle={copy.breadcrumb}
+	ogImage={ogImage}
+	heroImage={heroImage}
+	softwareSchema={false}
+>
+	<script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+
+	<Header logo={content.nav.logo} menu={content.nav.menu} cta={copy.cta} ctaHref={href('nav')} currentLang={lang} currentPath={copy.path} />
+
+	<!-- Hero: the vision as the promise, the limit stated up front -->
+	<section class="relative overflow-hidden pt-32 md:pt-40 pb-10 md:pb-14 px-6 md:px-8">
+		<div class="max-w-3xl mx-auto text-center relative z-10">
+			<h1 class="text-display-sm md:text-display text-white m-0 tracking-tight">
+				<span class="block text-base md:text-lg font-semibold text-white/70 tracking-normal mb-3">{copy.hero.eyebrow}<span class="sr-only">:</span></span>
+				{copy.hero.headline}{' '}<br /><span class="gradient-text-primary">{copy.hero.headlineAccent}</span>
+			</h1>
+			<p class="text-lg md:text-xl leading-relaxed text-white/80 text-balance m-0 mt-6">{copy.hero.sub}</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-3 mt-9">
+				<Button variant="primary" size="lg" href={href('hero')} class="!rounded-full">{copy.cta}</Button>
+				<Button variant="secondary" size="lg" href="#so-funktioniert" class="!rounded-full !border-white/30 !text-white hover:!border-white/60 hover:!bg-white/5">
+					{copy.hero.secondary} <span class="ml-1.5" aria-hidden="true">&rsaquo;</span>
+				</Button>
+			</div>
+			<p class="text-sm text-white/70 m-0 mt-4">{copy.hero.note}</p>
+			<p class="text-sm text-muted m-0 mt-6 text-balance">
+				{copy.hero.deadline}{' '}<a href={copy.hero.deadlineHref} class="text-primary underline hover:text-white">{copy.hero.deadlineLink}</a>
+			</p>
+		</div>
+	</section>
+
+	<section class="px-6 md:px-8 pb-16 md:pb-24">
+		<div class="max-w-4xl mx-auto">
+			<div class="relative p-3 md:p-6 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/45 ring-1 ring-primary/25 overflow-hidden">
+				<img src={heroImage} alt={copy.hero.imageAlt} width="1200" height="700" loading="eager" fetchpriority="high" decoding="async" class="w-full h-auto block rounded-xl shadow-2xl shadow-black/40" />
+			</div>
+		</div>
+	</section>
+
+	<!-- Answer first (quotable for search and AI answers), then the reason it is free -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="text-heading-sm md:text-heading text-white m-0 mb-4">{copy.answer.headline}</h2>
+			<p class="text-lg text-muted leading-relaxed m-0">{copy.answer.body}</p>
+			<div class="mt-12 bg-surface border border-border rounded-2xl p-7 md:p-9 relative overflow-hidden">
+				<div class="absolute inset-y-0 left-0 w-1 bg-accent" aria-hidden="true"></div>
+				<span class="section-label mb-3 block">{copy.why.label}</span>
+				<h2 class="text-heading-sm text-white m-0 mb-4 text-balance">{copy.why.headline}</h2>
+				<p class="text-base text-muted leading-relaxed m-0">{copy.why.body}</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- How it works: write, review, export -->
+	<section id="so-funktioniert" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{copy.how.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.how.headline}</h2>
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-border rounded-xl overflow-hidden">
+				{copy.how.steps.map((step, i) => (
+					<div class="bg-surface p-7">
+						<div class="flex items-center gap-3 mb-3">
+							<div class="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+								<Icon name={step.icon} class="w-5 h-5 text-primary" />
+							</div>
+							<h3 class="text-base font-semibold text-white m-0 flex-1">{step.title}</h3>
+							<span class="font-mono text-label text-primary/70 shrink-0">{String(i + 1).padStart(2, '0')}</span>
+						</div>
+						<p class="text-sm text-muted leading-relaxed m-0">{step.body}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- What the free plan includes -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-container mx-auto">
+			<div class="text-center mb-12 max-w-2xl mx-auto">
+				<span class="section-label mb-4 block">{copy.features.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.features.headline}</h2>
+			</div>
+			<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6 list-none p-0 m-0 max-w-5xl mx-auto">
+				{copy.features.items.map((item) => (
+					<li class="flex items-start gap-3">
+						<Icon name="hugeicons:checkmark-circle-02" class="w-5 h-5 text-primary shrink-0 mt-0.5" />
+						<div>
+							<h3 class="text-base font-semibold text-white m-0 mb-1">{item.title}</h3>
+							<p class="text-sm text-muted leading-relaxed m-0">{item.body}</p>
+						</div>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<!-- Free vs Premium -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-4xl mx-auto">
+			<div class="text-center mb-12">
+				<span class="section-label mb-4 block">{copy.plans.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0 text-balance">{copy.plans.headline}</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div class="bg-surface border border-primary/50 rounded-2xl p-7 flex flex-col">
+					<h3 class="text-lg font-semibold text-white m-0">{copy.plans.free.name}</h3>
+					<p class="m-0 mt-3"><span class="text-4xl font-semibold text-white">{copy.plans.free.price}</span> <span class="text-sm text-muted">{copy.plans.free.priceNote}</span></p>
+					<ul class="list-none p-0 m-0 mt-6 space-y-2.5 flex-1">
+						{copy.plans.free.items.map((f) => (
+							<li class="flex items-start gap-2 text-sm text-white/90"><Icon name="hugeicons:checkmark-circle-02" class="w-4 h-4 text-primary shrink-0 mt-0.5" />{f}</li>
+						))}
+					</ul>
+					<Button variant="primary" href={href('plans')} class="!rounded-full mt-7 self-start">{copy.cta}</Button>
+				</div>
+				<div class="bg-surface border border-border rounded-2xl p-7 flex flex-col">
+					<h3 class="text-lg font-semibold text-white m-0">{copy.plans.premium.name}</h3>
+					<p class="text-sm text-muted m-0 mt-3">{copy.plans.premium.priceNote}</p>
+					<p class="text-sm font-semibold text-white m-0 mt-6 mb-2.5">{copy.plans.premium.heading}</p>
+					<ul class="list-none p-0 m-0 space-y-2.5">
+						{copy.plans.premium.items.map((f) => (
+							<li class="flex items-start gap-2 text-sm text-white/90"><Icon name="hugeicons:checkmark-circle-02" class="w-4 h-4 text-primary shrink-0 mt-0.5" />{f}</li>
+						))}
+					</ul>
+				</div>
+			</div>
+			<p class="text-sm text-muted text-center m-0 mt-6">{copy.plans.upgradeNote}</p>
+		</div>
+	</section>
+
+	<!-- Switching from the IHK tool -->
+	<section class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50">
+		<div class="max-w-3xl mx-auto">
+			<div class="text-center mb-10">
+				<span class="section-label mb-4 block">{copy.switch.label}</span>
+				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.switch.headline}</h2>
+			</div>
+			<ol class="list-none p-0 m-0 space-y-5">
+				{copy.switch.steps.map((step, i) => (
+					<li class="flex items-start gap-4">
+						<span class="w-8 h-8 rounded-full bg-primary/15 text-primary font-mono text-sm flex items-center justify-center shrink-0">{i + 1}</span>
+						<div>
+							<h3 class="text-base font-semibold text-white m-0 mb-1">{step.title}</h3>
+							<p class="text-sm text-muted leading-relaxed m-0">{step.body}</p>
+						</div>
+					</li>
+				))}
+			</ol>
+			<p class="text-sm text-white/70 m-0 mt-8">{copy.switch.note}</p>
+		</div>
+	</section>
+
+	<FAQ headline={copy.faqHeadline} items={copy.faq} />
+
+	<!-- Final CTA -->
+	<section id="start" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
+		<div class="max-w-3xl mx-auto text-center">
+			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.final.headline}</h2>
+			<p class="text-lg text-muted leading-relaxed m-0 mb-8 text-balance">{copy.final.sub}</p>
+			<Button variant="primary" size="lg" href={href('final')} class="!rounded-full">{copy.cta}</Button>
+			<p class="text-sm text-white/70 m-0 mt-4 text-balance">{copy.final.note}</p>
+		</div>
+		<p class="text-xs text-white/50 text-center m-0 mt-12 max-w-2xl mx-auto">{copy.disclaimer}</p>
+	</section>
+
+	<!-- Footer keeps its "request demo" link: the modal below is the Premium path -->
+	<Footer currentLang={lang} privacyLabel={content.footer.privacyLabel} termsLabel={content.footer.termsLabel} />
+
+	<!-- Mobile sticky CTA: appears after the hero, hides while the final CTA is on screen -->
+	<StickyCta label={copy.cta} href={href('sticky')} hideWhileVisible="#start" />
+
+	<DemoRequestModal currentLang={lang} />
+</BaseLayout>

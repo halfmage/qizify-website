@@ -582,6 +582,166 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
+# Digitales Berichtsheft: Das Berichtsheft ist Pflicht. Das Werkzeug ist kostenlos.
+
+Source: https://learnslice.com/de/berichtsheft-kostenlos
+Language: de
+Type: Produktseite, kostenloser Tarif
+
+Azubis schreiben online, Ausbilder geben frei, jeder Nachweis als PDF. Kostenlos für 1 Ausbilder und bis zu 3 Azubis. Ohne Zahlungsdaten, ohne Laufzeit.
+
+## Was ist das kostenlose LearnSlice-Berichtsheft?
+
+Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst und reichen sie ein, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für Betriebe mit 1 Ausbilder und bis zu 3 Azubis ist es dauerhaft kostenlos. LearnSlice ist ein Unternehmen aus Düsseldorf, das Berichtsheft wird in Deutschland gehostet.
+
+## Jeder Ausbildungsbetrieb sollte ein einfaches digitales Berichtsheft haben.
+
+Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Deshalb kostet das Berichtsheft bei uns nichts. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen.
+
+## Schreiben. Prüfen. Exportieren.
+
+- **Azubi schreibt:** Betriebliche Tätigkeiten, Berufsschule und Stunden in festen Feldern, im Rhythmus, den der Ausbilder festlegt. Vor dem Einreichen bestätigt der Azubi, dass er den Eintrag selbst verfasst hat.
+- **Ausbilder prüft:** Freigeben oder zur Überarbeitung zurückschicken. Die Freigabe steht mit Name und Datum im Nachweis.
+- **PDF für die Prüfung:** Einzelne Einträge oder ganze Zeiträume als PDF exportieren, zum Beispiel für die Prüfungsanmeldung.
+
+## Alles, was ein Berichtsheft braucht.
+
+- **Täglich oder wöchentlich:** Der Ausbilder legt den Rhythmus pro Azubi fest.
+- **Erinnerung per E-Mail:** Offene Einträge? Ein Klick, und der Azubi bekommt eine Erinnerung.
+- **Minderjährige Azubis:** Hinterlegte Erziehungsberechtigte erhalten eingereichte Einträge per E-Mail als PDF.
+- **Punkte für jeden Bericht:** Azubis sammeln Punkte, wenn sie ihren Bericht einreichen.
+- **Nachweise bleiben erhalten:** Lesen und PDF-Export bleiben möglich, auch nach einem Tarifwechsel.
+- **Hosting in Deutschland:** Den Vertrag zur Auftragsverarbeitung schließen Sie bei der Registrierung ab.
+
+## Kostenlos starten, upgraden nur bei Bedarf.
+
+- **Free (0 €, dauerhaft kostenlos):** Digitales Berichtsheft; Freigabe, Erinnerung, Punkte, PDF-Export; 1 Ausbilder, bis zu 3 Azubis
+- **LearnSlice Premium (pro Azubi, Ausbilder kostenlos):** Alles aus Free, plus: KI-Tutor für IHK-Prüfung und Einarbeitung; Quizze und Prüfungssimulationen; Lernplan und Lernstatistiken; Eigene Dokumente als Wissensbasis; Beliebig viele Azubis
+
+## In fünf Schritten umstellen.
+
+1. **Alte Einträge sichern:** Azubis exportieren ihre Einträge vor dem 31.12.2026 als PDF aus dem IHK-Tool. Laut mehreren IHKs gibt es danach keinen Zugriff mehr.
+2. **Konto anlegen:** Kostenloses Konto für Ihren Betrieb anlegen, ohne Zahlungsdaten.
+3. **Azubis einladen:** Bis zu 3 Azubis per E-Mail einladen und den Rhythmus festlegen.
+4. **Schnitt setzen:** Der neue Nachweis beginnt mit der Woche nach dem letzten exportierten Eintrag. Zur Prüfungsanmeldung gehören beide Teile.
+5. **Form klären:** Die elektronische Form gehört in den Ausbildungsvertrag. Welche Formate Ihre Kammer annimmt, erfahren Sie dort.
+
+LearnSlice übernimmt keine Daten aus dem IHK-Tool. Die exportierten PDFs bewahren Sie getrennt auf.
+
+## Häufige Fragen zum kostenlosen Berichtsheft
+
+### Ist das LearnSlice-Berichtsheft wirklich kostenlos?
+
+Ja, dauerhaft, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und Lernplan.
+
+### Was passiert ab dem vierten Azubi?
+
+Für mehr als 3 Azubis oder einen zweiten Ausbilder brauchen Sie LearnSlice Premium. Abgerechnet wird pro Azubi, Ausbilder sind kostenlos.
+
+### Ist ein digitales Berichtsheft erlaubt?
+
+Ja. Das BBiG lässt einen schriftlichen oder elektronischen Ausbildungsnachweis zu (§ 13 Satz 2 Nr. 7 BBiG). Die elektronische Form wird im Ausbildungsvertrag festgehalten. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt Ihre zuständige Kammer.
+
+### Kann ich Einträge aus dem IHK-Berichtsheft übernehmen?
+
+Nein, eine automatische Übernahme gibt es nicht. Azubis exportieren ihre bisherigen Einträge als PDF aus dem IHK-Tool und bewahren sie auf. In LearnSlice beginnt der Nachweis mit dem nächsten Berichtszeitraum.
+
+### Ist KI im kostenlosen Tarif enthalten?
+
+Nein. Im kostenlosen Tarif schreiben Azubis ihre Einträge selbst, ohne KI. Der KI-Tutor für IHK-Prüfung und Einarbeitung gehört zu LearnSlice Premium.
+
+### Was passiert mit den Nachweisen, wenn wir Premium kündigen?
+
+Ihre Organisation wechselt in den kostenlosen Tarif, das Berichtsheft bleibt erhalten. Bei mehr als 3 Azubis schreiben die 3 am längsten registrierten weiter. Alle anderen können ihre Nachweise lesen und als PDF exportieren.
+
+### Müssen Azubis für das Berichtsheft bezahlen?
+
+Nein. Der Betrieb stellt Ausbildungsmittel kostenlos zur Verfügung (§ 14 Abs. 1 Nr. 3 BBiG). Das Konto legt der Ausbildungsbetrieb an und lädt die Azubis ein.
+
+Allgemeine Information, keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer. LearnSlice ist kein Angebot der Industrie- und Handelskammern und steht mit ihnen in keiner Verbindung.
+
+---
+
+# Digital training logbook: The logbook is mandatory. The tool is free.
+
+Source: https://learnslice.com/free-training-logbook
+Language: en
+Type: Product page, free plan
+
+Apprentices write online, trainers approve, every record as a PDF. Free for 1 trainer and up to 3 apprentices. No payment details, no contract term.
+
+## What is the free LearnSlice training logbook?
+
+The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write and submit their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is permanently free for companies with 1 trainer and up to 3 apprentices. LearnSlice is a company based in Düsseldorf, and the logbook is hosted in Germany.
+
+## Every training company should have a simple digital logbook.
+
+The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. That is why the logbook costs nothing. We earn money with the AI tutor for exams and onboarding, which you only book if you want it.
+
+## Write. Review. Export.
+
+- **Apprentice writes:** Workplace activities, vocational school and hours in fixed fields, in the rhythm the trainer sets. Before submitting, the apprentice confirms they wrote the entry themselves.
+- **Trainer reviews:** Approve or send back for revision. The approval appears in the record with name and date.
+- **PDF for the exam:** Export single entries or whole periods as a PDF, for example for the exam registration.
+
+## Everything a logbook needs.
+
+- **Daily or weekly:** The trainer sets the rhythm per apprentice.
+- **Email reminders:** Open entries? One click, and the apprentice gets a reminder.
+- **Apprentices under 18:** Registered parents or guardians receive submitted entries by email as a PDF.
+- **Points for every report:** Apprentices earn points when they submit their report.
+- **Records stay available:** Reading and PDF export stay possible, even after a plan change.
+- **Hosted in Germany:** You accept the data processing agreement when you sign up.
+
+## Start free, upgrade only if you need to.
+
+- **Free (€0, free forever):** Digital training logbook; Approval, reminders, points, PDF export; 1 trainer, up to 3 apprentices
+- **LearnSlice Premium (per apprentice, trainers free):** Everything in Free, plus: AI tutor for the IHK exam and onboarding; Quizzes and exam simulations; Learning plan and learning analytics; Your own documents as a knowledge base; Any number of apprentices
+
+## Switch in five steps.
+
+1. **Save old entries:** Apprentices export their entries from the IHK tool as a PDF before 31 December 2026. According to several IHKs, there is no access afterwards.
+2. **Create an account:** Create a free account for your company, no payment details.
+3. **Invite apprentices:** Invite up to 3 apprentices by email and set the rhythm.
+4. **Make a clean cut:** The new record starts with the week after the last exported entry. Both parts belong to the exam registration.
+5. **Confirm the format:** The electronic form belongs in the training contract. Your chamber tells you which formats it accepts.
+
+LearnSlice does not import data from the IHK tool. Keep the exported PDFs separately.
+
+## Questions about the free training logbook
+
+### Is the LearnSlice training logbook really free?
+
+Yes, permanently, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and learning plan is paid.
+
+### What happens from the fourth apprentice?
+
+For more than 3 apprentices or a second trainer you need LearnSlice Premium. It is billed per apprentice, and trainers are free.
+
+### Is a digital training logbook allowed?
+
+Yes. The BBiG allows a written or electronic training record (§ 13 sentence 2 no. 7 BBiG). The electronic form is recorded in the training contract. Your competent chamber gives binding information on your apprenticeship.
+
+### Can I import entries from the IHK logbook?
+
+No, there is no automatic import. Apprentices export their previous entries from the IHK tool as a PDF and keep them. In LearnSlice the record starts with the next reporting period.
+
+### Is AI included in the free plan?
+
+No. In the free plan apprentices write their entries themselves, without AI. The AI tutor for the IHK exam and onboarding is part of LearnSlice Premium.
+
+### What happens to the records if we cancel Premium?
+
+Your organisation moves to the free plan and the logbook is kept. With more than 3 apprentices, the 3 registered longest keep writing. All others can read their records and export them as a PDF.
+
+### Do apprentices have to pay for the logbook?
+
+No. The company provides training materials free of charge (§ 14 (1) no. 3 BBiG). The training company creates the account and invites its apprentices.
+
+General information, not legal advice. Your competent chamber gives binding information on your apprenticeship. LearnSlice is not an offer of the Chambers of Industry and Commerce (IHK) and is not affiliated with them.
+
+---
+
 # Founder Companion: From financial plan to approval.
 
 Source: https://learnslice.com/founder-companion
@@ -4367,7 +4527,7 @@ AI in vocational training is no longer a future scenario: it is reality. Compani
 Source: https://learnslice.com/blog/digital-training-logbook
 Language: en
 Published: 2026-03-19
-Updated: 2026-11-02
+Updated: 2026-11-10
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Digital training logbook in Germany: what § 13 BBiG and the BIBB recommendation require, and what applies after the IHK tool ends in 2026. With template.
@@ -5095,7 +5255,7 @@ Commercial occupations such as office management clerk, IT occupations such as I
 Source: https://learnslice.com/de/blog/ihk-berichtsheft-alternative
 Language: de
 Published: 2026-11-02
-Updated: 2026-11-02
+Updated: 2026-11-10
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Das digitale Berichtsheft der IHK endet laut mehreren IHKs am 31.12.2026. Was Betriebe jetzt tun müssen, welche Alternativen es gibt, mit Checkliste.
@@ -5257,7 +5417,7 @@ Ja. Die Pflicht zum Führen des Ausbildungsnachweises ergibt sich aus § 13 BBiG
 
 ### Gibt es eine kostenlose Alternative zum IHK-Berichtsheft?
 
-Ja. Papier- oder Word-Vorlagen kosten nichts, die BIBB-Empfehlung enthält Muster für tägliche und wöchentliche Nachweise. LearnSlice bereitet eine kostenlose Version seines Berichtshefts für Ausbildungsbetriebe vor.
+Ja. Papier- oder Word-Vorlagen kosten nichts, die BIBB-Empfehlung enthält Muster für tägliche und wöchentliche Nachweise. Das LearnSlice-Berichtsheft ist für Betriebe mit 1 Ausbilder und bis zu 3 Azubis kostenlos, mit digitaler Freigabe und PDF-Export.
 
 ### Muss der Ausbildungsvertrag geändert werden, wenn wir das Berichtsheft-Tool wechseln?
 
@@ -9149,7 +9309,7 @@ KI in der Ausbildung ist kein Zukunftsszenario mehr, sondern Realität. Unterneh
 Source: https://learnslice.com/de/blog/berichtsheft-digital
 Language: de
 Published: 2026-03-19
-Updated: 2026-11-02
+Updated: 2026-11-10
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Berichtsheft digital führen: was § 13 BBiG und die BIBB-Empfehlung verlangen und was nach dem Aus des IHK-Berichtshefts gilt. Mit Vorlage und Prüfliste.
