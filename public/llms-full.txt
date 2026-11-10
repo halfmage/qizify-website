@@ -582,21 +582,29 @@ IHK-Prüfung. Onboarding. Upskilling. Eine Plattform. Azubis, die in Wochen stat
 
 ---
 
-# Digitales Berichtsheft: Das Berichtsheft ist Pflicht. Das Werkzeug ist kostenlos.
+# Für Ausbildungsbetriebe: Berichtsheft online. Freigabe per Klick. Kostenlos.
 
 Source: https://learnslice.com/de/berichtsheft-kostenlos
 Language: de
 Type: Produktseite, kostenloser Tarif
 
-Azubis schreiben online, Ausbilder geben frei, jeder Nachweis als PDF. Kostenlos für 1 Ausbilder und bis zu 3 Azubis. Ohne Zahlungsdaten, ohne Laufzeit.
+Azubis schreiben am PC oder Handy, Sie geben mit einem Klick frei, jeder Nachweis liegt als PDF bereit. Für 1 Ausbilder und bis zu 3 Azubis. Ohne Zahlungsdaten, ohne Laufzeit.
 
 ## Was ist das kostenlose LearnSlice-Berichtsheft?
 
 Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für 1 Ausbilder und bis zu 3 Azubis ist es kostenlos, gehostet in Deutschland.
 
-## Jeder Ausbildungsbetrieb sollte ein einfaches digitales Berichtsheft haben.
+## Das Berichtsheft ist Pflicht. Das Werkzeug dafür sollte nichts kosten.
 
-Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Deshalb kostet das Berichtsheft bei uns nichts. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen.
+Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Jeder von ihnen verdient ein einfaches digitales Berichtsheft. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen.
+
+## Schluss mit Ordnern, Mappen und Nachfragen.
+
+- Papier und Word: Einträge per Mail oder im Ordner einsammeln. Mit LearnSlice: Azubis reichen online ein, am PC oder Handy.
+- Papier und Word: Unterschreiben, scannen, abheften. Mit LearnSlice: Freigabe per Klick, Name und Datum stehen im Nachweis.
+- Papier und Word: Nachfragen, wer noch fehlt. Mit LearnSlice: Erinnerung an offene Einträge mit einem Klick.
+- Papier und Word: Vor der Prüfung alles zusammensuchen. Mit LearnSlice: Ganze Zeiträume als PDF exportieren.
+- Papier und Word: Eltern minderjähriger Azubis extra informieren. Mit LearnSlice: Erziehungsberechtigte erhalten eingereichte Einträge als PDF.
 
 ## Das Berichtsheft online: schreiben, prüfen, exportieren.
 
@@ -666,21 +674,29 @@ Allgemeine Information, keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Aus
 
 ---
 
-# Digital training logbook: The logbook is mandatory. The tool is free.
+# For training companies: Training logbook online. One-click approval. Free.
 
 Source: https://learnslice.com/free-training-logbook
 Language: en
 Type: Product page, free plan
 
-Apprentices write online, trainers approve, every record as a PDF. Free for 1 trainer and up to 3 apprentices. No payment details, no contract term.
+Apprentices write on a PC or phone, you approve with one click, every record is ready as a PDF. For 1 trainer and up to 3 apprentices. No payment details, no contract term.
 
 ## What is the free LearnSlice training logbook?
 
 The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is free for 1 trainer and up to 3 apprentices, hosted in Germany.
 
-## Every training company should have a simple digital logbook.
+## The logbook is mandatory. The tool for it should cost nothing.
 
-The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. That is why the logbook costs nothing. We earn money with the AI tutor for exams and onboarding, which you only book if you want it.
+The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. Every one of them deserves a simple digital logbook. We earn money with the AI tutor for exams and onboarding, which you only book if you want it.
+
+## No more folders, signature runs and chasing.
+
+- Paper and Word: Collect entries by email or in a folder. With LearnSlice: Apprentices submit online, on a PC or phone.
+- Paper and Word: Sign, scan, file. With LearnSlice: One-click approval, name and date appear in the record.
+- Paper and Word: Ask around who is still missing. With LearnSlice: Remind about open entries with one click.
+- Paper and Word: Hunt for everything before the exam. With LearnSlice: Export whole periods as a PDF.
+- Paper and Word: Inform parents of minors separately. With LearnSlice: Parents or guardians receive submitted entries as a PDF.
 
 ## The logbook online: write, review, export.
 

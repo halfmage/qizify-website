@@ -453,6 +453,10 @@ function buildBerichtsheftSection(c, lang) {
 	parts.push('');
 	parts.push(c.why.body);
 	parts.push('');
+	parts.push(`## ${c.compare.headline}`);
+	parts.push('');
+	for (const [before, after] of c.compare.rows) parts.push(`- ${c.compare.before}: ${before}. ${c.compare.after}: ${after}.`);
+	parts.push('');
 	parts.push(`## ${c.how.headline}`);
 	parts.push('');
 	for (const st of c.how.steps) parts.push(`- **${st.title}:** ${st.body}`);

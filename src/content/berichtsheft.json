@@ -6,10 +6,10 @@
     "breadcrumb": "Berichtsheft kostenlos",
     "cta": "Kostenlos starten",
     "hero": {
-      "eyebrow": "Digitales Berichtsheft",
-      "headline": "Das Berichtsheft ist Pflicht.",
-      "headlineAccent": "Das Werkzeug ist kostenlos.",
-      "sub": "Azubis schreiben online, Ausbilder geben frei, jeder Nachweis als PDF. Kostenlos für 1 Ausbilder und bis zu 3 Azubis.",
+      "eyebrow": "Für Ausbildungsbetriebe",
+      "headline": "Berichtsheft online. Freigabe per Klick.",
+      "headlineAccent": "Kostenlos.",
+      "sub": "Azubis schreiben am PC oder Handy, Sie geben mit einem Klick frei, jeder Nachweis liegt als PDF bereit. Für 1 Ausbilder und bis zu 3 Azubis.",
       "secondary": "So funktioniert es",
       "note": "Ohne Zahlungsdaten, ohne Laufzeit.",
       "imageAlt": "Eintragsformular im LearnSlice-Berichtsheft mit Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sowie einer Bestätigung, dass der Azubi den Eintrag selbst verfasst hat",
@@ -17,6 +17,50 @@
         "badge": "31.12.2026",
         "label": "Vom IHK-Berichtsheft wechseln",
         "href": "#wechsel"
+      },
+      "facts": [
+        "Ohne Zahlungsdaten",
+        "Ohne Laufzeit",
+        "Hosting in Deutschland"
+      ],
+      "countdown": {
+        "one": "Noch 1 Tag",
+        "many": "Noch {n} Tage"
+      },
+      "mock": {
+        "caption": "Beispieldarstellung",
+        "initials": "LM",
+        "name": "Lea M.",
+        "role": "Elektronikerin, 2. Ausbildungsjahr",
+        "period": "KW 45 · 02.11. bis 06.11.2026",
+        "fields": [
+          {
+            "label": "Betrieb",
+            "value": "Schaltschrank verdrahtet, Messprotokoll mit dem Ausbilder geprüft"
+          },
+          {
+            "label": "Berufsschule",
+            "value": "Lernfeld 3: Steuerungen analysieren"
+          }
+        ],
+        "hoursLabel": "Stunden",
+        "hours": "38,5",
+        "approved": "Freigegeben von J. Becker · 09.11.2026",
+        "stamp": "Freigegeben",
+        "chips": [
+          {
+            "icon": "hugeicons:notification-01",
+            "text": "Erinnerung gesendet"
+          },
+          {
+            "icon": "hugeicons:pdf-02",
+            "text": "PDF: KW 36 bis 45"
+          },
+          {
+            "icon": "hugeicons:star",
+            "text": "Punkte gesammelt"
+          }
+        ]
       }
     },
     "answer": {
@@ -24,9 +68,13 @@
       "body": "Das LearnSlice-Berichtsheft ist ein digitaler Ausbildungsnachweis im Browser. Azubis schreiben ihre Einträge selbst, Ausbilder geben sie frei oder schicken sie zur Überarbeitung zurück, und jeder Nachweis lässt sich als PDF exportieren. Für 1 Ausbilder und bis zu 3 Azubis ist es kostenlos, gehostet in Deutschland."
     },
     "why": {
-      "label": "Warum kostenlos",
-      "headline": "Jeder Ausbildungsbetrieb sollte ein einfaches digitales Berichtsheft haben.",
-      "body": "Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Deshalb kostet das Berichtsheft bei uns nichts. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen."
+      "label": "Unsere Vision",
+      "headline": "Das Berichtsheft ist Pflicht. Das Werkzeug dafür sollte nichts kosten.",
+      "body": "Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Jeder von ihnen verdient ein einfaches digitales Berichtsheft. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen.",
+      "signature": {
+        "name": "Alesia Kunz",
+        "role": "CEO, LearnSlice"
+      }
     },
     "how": {
       "label": "So funktioniert es",
@@ -179,11 +227,59 @@
       }
     ],
     "final": {
-      "headline": "Bereit für 2027?",
+      "headline": "Heute anlegen. Nächste Woche freigeben.",
       "sub": "Konto anlegen, Azubis einladen, ersten Eintrag freigeben. Kostenlos für 1 Ausbilder und bis zu 3 Azubis.",
       "note": "Ohne Zahlungsdaten. Sie sind Azubi? Leiten Sie diese Seite an Ihre Ausbilderin oder Ihren Ausbilder weiter."
     },
-    "disclaimer": "Allgemeine Information, keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer. LearnSlice ist kein Angebot der Industrie- und Handelskammern und steht mit ihnen in keiner Verbindung."
+    "disclaimer": "Allgemeine Information, keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer. LearnSlice ist kein Angebot der Industrie- und Handelskammern und steht mit ihnen in keiner Verbindung.",
+    "value": {
+      "items": [
+        {
+          "big": "0 €",
+          "text": "für 1 Ausbilder und bis zu 3 Azubis"
+        },
+        {
+          "big": "1 Klick",
+          "text": "zur Freigabe, mit Name und Datum im Nachweis"
+        },
+        {
+          "big": "1 PDF",
+          "text": "für ganze Zeiträume, etwa zur Prüfungsanmeldung"
+        },
+        {
+          "big": "0 Ordner",
+          "text": "kein Papier, keine Unterschriftenmappe"
+        }
+      ]
+    },
+    "compare": {
+      "label": "Vorher, nachher",
+      "headline": "Schluss mit Ordnern, Mappen und Nachfragen.",
+      "before": "Papier und Word",
+      "after": "Mit LearnSlice",
+      "rows": [
+        [
+          "Einträge per Mail oder im Ordner einsammeln",
+          "Azubis reichen online ein, am PC oder Handy"
+        ],
+        [
+          "Unterschreiben, scannen, abheften",
+          "Freigabe per Klick, Name und Datum stehen im Nachweis"
+        ],
+        [
+          "Nachfragen, wer noch fehlt",
+          "Erinnerung an offene Einträge mit einem Klick"
+        ],
+        [
+          "Vor der Prüfung alles zusammensuchen",
+          "Ganze Zeiträume als PDF exportieren"
+        ],
+        [
+          "Eltern minderjähriger Azubis extra informieren",
+          "Erziehungsberechtigte erhalten eingereichte Einträge als PDF"
+        ]
+      ]
+    }
   },
   "en": {
     "path": "/free-training-logbook",
@@ -192,10 +288,10 @@
     "breadcrumb": "Free Training Logbook",
     "cta": "Start for free",
     "hero": {
-      "eyebrow": "Digital training logbook",
-      "headline": "The logbook is mandatory.",
-      "headlineAccent": "The tool is free.",
-      "sub": "Apprentices write online, trainers approve, every record as a PDF. Free for 1 trainer and up to 3 apprentices.",
+      "eyebrow": "For training companies",
+      "headline": "Training logbook online. One-click approval.",
+      "headlineAccent": "Free.",
+      "sub": "Apprentices write on a PC or phone, you approve with one click, every record is ready as a PDF. For 1 trainer and up to 3 apprentices.",
       "secondary": "How it works",
       "note": "No payment details, no contract term.",
       "imageAlt": "Entry form in the LearnSlice logbook (German interface) with fields for workplace activities, vocational school topics, total hours and department, and a confirmation that the apprentice wrote the entry",
@@ -203,6 +299,50 @@
         "badge": "31.12.2026",
         "label": "Switch from the IHK logbook",
         "href": "#wechsel"
+      },
+      "facts": [
+        "No payment details",
+        "No contract term",
+        "Hosted in Germany"
+      ],
+      "countdown": {
+        "one": "1 day left",
+        "many": "{n} days left"
+      },
+      "mock": {
+        "caption": "Example",
+        "initials": "LM",
+        "name": "Lea M.",
+        "role": "Electronics technician, 2nd year",
+        "period": "Week 45 · 2 to 6 Nov 2026",
+        "fields": [
+          {
+            "label": "Company",
+            "value": "Wired a control cabinet, checked the test report with the trainer"
+          },
+          {
+            "label": "Vocational school",
+            "value": "Learning field 3: analysing controls"
+          }
+        ],
+        "hoursLabel": "Hours",
+        "hours": "38.5",
+        "approved": "Approved by J. Becker · 9 Nov 2026",
+        "stamp": "Approved",
+        "chips": [
+          {
+            "icon": "hugeicons:notification-01",
+            "text": "Reminder sent"
+          },
+          {
+            "icon": "hugeicons:pdf-02",
+            "text": "PDF: weeks 36 to 45"
+          },
+          {
+            "icon": "hugeicons:star",
+            "text": "Points earned"
+          }
+        ]
       }
     },
     "answer": {
@@ -210,9 +350,13 @@
       "body": "The LearnSlice training logbook is a digital Ausbildungsnachweis (Berichtsheft) in the browser. Apprentices write their own entries, trainers approve them or send them back for revision, and every record exports as a PDF. It is free for 1 trainer and up to 3 apprentices, hosted in Germany."
     },
     "why": {
-      "label": "Why free",
-      "headline": "Every training company should have a simple digital logbook.",
-      "body": "The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. That is why the logbook costs nothing. We earn money with the AI tutor for exams and onboarding, which you only book if you want it."
+      "label": "Our vision",
+      "headline": "The logbook is mandatory. The tool for it should cost nothing.",
+      "body": "The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. Every one of them deserves a simple digital logbook. We earn money with the AI tutor for exams and onboarding, which you only book if you want it.",
+      "signature": {
+        "name": "Alesia Kunz",
+        "role": "CEO, LearnSlice"
+      }
     },
     "how": {
       "label": "How it works",
@@ -365,10 +509,58 @@
       }
     ],
     "final": {
-      "headline": "Ready for 2027?",
+      "headline": "Set it up today. Approve next week.",
       "sub": "Create an account, invite your apprentices, approve the first entry. Free for 1 trainer and up to 3 apprentices.",
       "note": "No payment details. Are you an apprentice? Forward this page to your trainer."
     },
-    "disclaimer": "General information, not legal advice. Your competent chamber gives binding information on your apprenticeship. LearnSlice is not an offer of the Chambers of Industry and Commerce (IHK) and is not affiliated with them."
+    "disclaimer": "General information, not legal advice. Your competent chamber gives binding information on your apprenticeship. LearnSlice is not an offer of the Chambers of Industry and Commerce (IHK) and is not affiliated with them.",
+    "value": {
+      "items": [
+        {
+          "big": "€0",
+          "text": "for 1 trainer and up to 3 apprentices"
+        },
+        {
+          "big": "1 click",
+          "text": "to approve, with name and date in the record"
+        },
+        {
+          "big": "1 PDF",
+          "text": "for whole periods, e.g. for the exam registration"
+        },
+        {
+          "big": "0 folders",
+          "text": "no paper, no signature folder"
+        }
+      ]
+    },
+    "compare": {
+      "label": "Before, after",
+      "headline": "No more folders, signature runs and chasing.",
+      "before": "Paper and Word",
+      "after": "With LearnSlice",
+      "rows": [
+        [
+          "Collect entries by email or in a folder",
+          "Apprentices submit online, on a PC or phone"
+        ],
+        [
+          "Sign, scan, file",
+          "One-click approval, name and date appear in the record"
+        ],
+        [
+          "Ask around who is still missing",
+          "Remind about open entries with one click"
+        ],
+        [
+          "Hunt for everything before the exam",
+          "Export whole periods as a PDF"
+        ],
+        [
+          "Inform parents of minors separately",
+          "Parents or guardians receive submitted entries as a PDF"
+        ]
+      ]
+    }
   }
 }
