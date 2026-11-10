@@ -8,6 +8,7 @@ import StickyCta from '../StickyCta.astro';
 import DemoRequestModal from '../DemoRequestModal.astro';
 import TrustBar from '../TrustBar.astro';
 import AnnouncementPill from '../AnnouncementPill.astro';
+import AppScreenshot from '../AppScreenshot.astro';
 import { Icon } from 'astro-icon/components';
 import enContent from '../../content/en.json';
 import deContent from '../../content/de.json';
@@ -31,7 +32,6 @@ const { lang } = Astro.props;
 const content = lang === 'de' ? deContent : enContent;
 const copy = berichtsheft[lang];
 // Real app screenshots (sample data, 2880x1800): how-it-works and features sections.
-// The hero is an HTML mock-up.
 const heroLines = copy.hero.headline.split(/(?<=\.)\s+/);
 // 1200x630 JPG, same card as the Berichtsheft guide
 const ogImage = '/images/blog/pexels-mikhail-nilov-9242810.jpg';
@@ -71,11 +71,11 @@ const softwareSchema = {
 
 	<Header logo={content.nav.logo} menu={content.nav.menu} cta={copy.cta} ctaHref={href('nav')} currentLang={lang} currentPath={copy.path} />
 
-	<!-- Hero: punchy promise left, a living Berichtsheft entry right (stamp = the signature moment) -->
+	<!-- Hero: punchy promise left, the real app (all entries view) right -->
 	<section class="bh-hero relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-24 px-6 md:px-8">
 		<div class="absolute inset-0 glow-aurora opacity-70 pointer-events-none" aria-hidden="true"></div>
 		<div class="bh-ruled absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-		<div class="relative z-10 max-w-container mx-auto grid lg:grid-cols-[1.05fr_1fr] gap-14 lg:gap-12 items-center">
+		<div class="relative z-10 max-w-container mx-auto grid lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)] gap-14 lg:gap-16 items-center">
 			<div class="text-center lg:text-left">
 				<div class="bh-rise" style="--d:0ms" data-deadline-pill>
 					<AnnouncementPill {...copy.hero.pill} class="mb-7" />
@@ -101,45 +101,17 @@ const softwareSchema = {
 				</ul>
 			</div>
 
-			<!-- Mock-up of one approved entry, built in HTML so it stays sharp and translatable -->
-			<figure class="relative m-0 mx-auto w-full max-w-[520px] bh-rise" style="--d:200ms" aria-label={copy.hero.mock.caption}>
-				<div class="relative">
-				<div class="absolute -inset-6 rounded-[2rem] bg-primary/20 blur-3xl" aria-hidden="true"></div>
-				<div class="absolute inset-0 translate-x-4 translate-y-4 rotate-[3deg] rounded-2xl bg-surface/80 border border-border" aria-hidden="true"></div>
-				<div class="relative rounded-2xl bg-[#202024] border border-border-light shadow-2xl shadow-black/60 p-6 md:p-7">
-					<div class="flex items-center gap-3 pb-5 border-b border-border">
-						<span class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-sm font-semibold text-white">{copy.hero.mock.initials}</span>
-						<div class="flex-1 min-w-0">
-							<p class="text-sm font-semibold text-white m-0">{copy.hero.mock.name}</p>
-							<p class="text-xs text-muted m-0 truncate">{copy.hero.mock.role}</p>
-						</div>
-						<span class="font-mono text-[11px] uppercase tracking-widest text-primary">{copy.hero.mock.period.split(' · ')[0]}</span>
-					</div>
-					<p class="font-mono text-xs text-muted m-0 mt-4">{copy.hero.mock.period}</p>
-					<dl class="m-0 mt-4 space-y-4">
-						{copy.hero.mock.fields.map((f) => (
-							<div>
-								<dt class="text-xs font-medium text-white/60 mb-1">{f.label}</dt>
-								<dd class="m-0 text-sm text-white bh-lines">{f.value}</dd>
-							</div>
-						))}
-						<div class="flex items-baseline justify-between">
-							<dt class="text-xs font-medium text-white/60">{copy.hero.mock.hoursLabel}</dt>
-							<dd class="m-0 font-mono text-lg text-white">{copy.hero.mock.hours}</dd>
-						</div>
-					</dl>
-					<p class="flex items-center gap-2 text-xs text-white/80 m-0 mt-6 pt-4 border-t border-border">
-						<Icon name="hugeicons:checkmark-circle-02" class="w-4 h-4 text-primary shrink-0" />{copy.hero.mock.approved}
-					</p>
-					<span class="bh-stamp" aria-hidden="true">{copy.hero.mock.stamp}</span>
+			<!-- Real app screenshot (sample data). Desktop: large and bleeding off the right edge.
+			     Phones: the crop without the sidebar, full width. -->
+			<figure class="relative m-0 min-w-0 bh-rise" style="--d:200ms">
+				<div class="absolute -inset-8 rounded-[2.5rem] bg-primary/25 blur-3xl" aria-hidden="true"></div>
+				<div class="relative lg:w-[150%] xl:w-[165%] rounded-2xl p-2 md:p-2.5 bg-gradient-to-br from-primary/60 via-primary/25 to-accent/40 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)]">
+					<picture>
+						<source media="(max-width: 767px)" srcset={copy.screens.entries.mobileSrc} width={copy.screens.entries.mobileWidth} height={copy.screens.entries.mobileHeight} />
+						<img src={copy.screens.entries.src} alt={copy.screens.entries.alt} width="2880" height="1800" loading="eager" fetchpriority="high" decoding="async" class="block w-full h-auto rounded-xl" />
+					</picture>
 				</div>
-				{copy.hero.mock.chips.map((chip, i) => (
-					<span class={`bh-chip bh-chip-${i} hidden sm:inline-flex items-center gap-2 rounded-full bg-dark/90 backdrop-blur border border-border-light px-3.5 py-2 text-xs font-medium text-white shadow-xl shadow-black/40`} aria-hidden="true">
-						<Icon name={chip.icon} class="w-4 h-4 text-primary" />{chip.text}
-					</span>
-				))}
-				</div>
-				<figcaption class="text-[11px] text-white/45 text-center lg:text-right mt-12">{copy.hero.mock.caption}</figcaption>
+				<figcaption class="relative text-[11px] text-white/45 mt-4 text-center lg:text-left">{copy.screens.note}</figcaption>
 			</figure>
 		</div>
 	</section>
@@ -197,14 +169,7 @@ const softwareSchema = {
 			<h2 class="text-[clamp(1.9rem,1.1rem+3vw,3.25rem)] leading-[1.1] font-semibold tracking-[-0.03em] text-white m-0 text-balance">
 				{copy.why.headline.split(/(?<=\.)\s+/).map((line, i) => <span class={`block ${i > 0 ? 'gradient-text-primary' : ''}`}>{line}</span>)}
 			</h2>
-			<p class="text-lg text-muted leading-relaxed m-0 mt-8 max-w-2xl mx-auto">{copy.why.body}</p>
-			<div class="inline-flex items-center gap-3 mt-10">
-				<img src="/images/team/alesia-kunz.webp" alt="" width="320" height="320" loading="lazy" decoding="async" class="w-12 h-12 rounded-full object-cover ring-2 ring-primary/40" />
-				<span class="text-left">
-					<span class="block text-sm font-semibold text-white">{copy.why.signature.name}</span>
-					<span class="block text-sm text-muted">{copy.why.signature.role}</span>
-				</span>
-			</div>
+			<p class="text-lg text-muted leading-relaxed m-0 mt-8 max-w-2xl mx-auto text-left md:text-center">{copy.why.body}</p>
 		</div>
 	</section>
 
@@ -216,7 +181,7 @@ const softwareSchema = {
 				<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.answer.headline}</h2>
 				<p class="text-lg text-muted leading-relaxed m-0">{copy.answer.body}</p>
 			</div>
-			<div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
+			<div class="grid grid-cols-1 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-10 items-center">
 				<div>
 					<h3 class="text-heading-sm text-white m-0 mb-6">{copy.how.headline}</h3>
 					<ol class="list-none p-0 m-0 relative">
@@ -235,12 +200,7 @@ const softwareSchema = {
 						))}
 					</ol>
 				</div>
-				<figure class="m-0">
-					<div class="relative p-2 md:p-3 rounded-2xl bg-gradient-to-b from-primary/20 to-primary/45 ring-1 ring-primary/25 shadow-[0_30px_80px_-20px_rgba(124,92,252,0.45)]">
-						<img src={copy.screens.entries.src} alt={copy.screens.entries.alt} width="2880" height="1800" loading="lazy" decoding="async" class="w-full h-auto block rounded-xl" />
-					</div>
-					<figcaption class="flex justify-between gap-4 text-sm text-white/75 mt-4"><span>{copy.screens.entries.caption}</span><span class="text-xs text-white/40 shrink-0">{copy.screens.note}</span></figcaption>
-				</figure>
+				<AppScreenshot {...copy.screens.apprentices} note={copy.screens.note} hint={copy.screens.hint} />
 			</div>
 		</div>
 	</section>
@@ -252,12 +212,6 @@ const softwareSchema = {
 				<span class="section-label mb-4 block">{copy.features.label}</span>
 				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.features.headline}</h2>
 			</div>
-			<figure class="m-0 mb-14 max-w-5xl mx-auto">
-				<div class="relative p-2 md:p-3 rounded-2xl bg-gradient-to-b from-primary/20 to-primary/45 ring-1 ring-primary/25 shadow-[0_30px_80px_-20px_rgba(124,92,252,0.45)]">
-					<img src={copy.screens.apprentices.src} alt={copy.screens.apprentices.alt} width="2880" height="1800" loading="lazy" decoding="async" class="w-full h-auto block rounded-xl" />
-				</div>
-				<figcaption class="flex justify-between gap-4 text-sm text-white/75 mt-4"><span>{copy.screens.apprentices.caption}</span><span class="text-xs text-white/40 shrink-0">{copy.screens.note}</span></figcaption>
-			</figure>
 			<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6 list-none p-0 m-0 max-w-5xl mx-auto">
 				{copy.features.items.map((item) => (
 					<li class="flex items-start gap-3">
@@ -339,11 +293,18 @@ const softwareSchema = {
 
 	<!-- Final CTA -->
 	<section id="start" class="py-16 md:py-24 px-6 md:px-8 border-t border-border/50 scroll-mt-20">
-		<div class="max-w-3xl mx-auto text-center">
-			<h2 class="text-heading md:text-display-sm text-white m-0 mb-4">{copy.final.headline}</h2>
-			<p class="text-lg text-muted leading-relaxed m-0 mb-8 text-balance">{copy.final.sub}</p>
-			<Button variant="primary" size="lg" href={href('final')} class="!rounded-full">{copy.cta}</Button>
-			<p class="text-sm text-white/70 m-0 mt-4 text-balance">{copy.final.note}{' '}<AzubiShare lang={lang} class="text-white" /></p>
+		<!-- Closing panel: same aurora and gradient hairline as the hero, so the page ends where it started -->
+		<div class="relative max-w-5xl mx-auto rounded-3xl p-px bg-gradient-to-br from-primary via-primary/40 to-accent/60 shadow-[0_0_80px_-20px_rgba(124,92,252,0.55)]">
+			<div class="relative overflow-hidden rounded-3xl bg-[#1d1d21] px-6 py-14 md:px-16 md:py-20 text-center">
+				<div class="absolute inset-0 glow-aurora opacity-60 pointer-events-none" aria-hidden="true"></div>
+				<div class="bh-ruled absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+				<div class="relative">
+					<h2 class="text-[clamp(1.9rem,1.1rem+3vw,3.25rem)] leading-[1.08] font-semibold tracking-[-0.03em] text-white m-0 mb-5 text-balance">{copy.final.headline}</h2>
+					<p class="text-lg text-white/80 leading-relaxed m-0 mb-9 max-w-xl mx-auto text-balance">{copy.final.sub}</p>
+					<Button variant="primary" size="lg" href={href('final')} class="!rounded-full shadow-[0_10px_40px_-8px_rgba(124,92,252,0.7)]">{copy.cta} <span class="ml-1.5" aria-hidden="true">&rarr;</span></Button>
+					<p class="text-sm text-white/75 m-0 mt-5 max-w-lg mx-auto text-balance">{copy.final.note}{' '}<AzubiShare lang={lang} class="text-white" /></p>
+				</div>
+			</div>
 		</div>
 		<p class="text-xs text-white/50 text-center m-0 mt-12 max-w-2xl mx-auto">{copy.disclaimer}</p>
 	</section>
@@ -371,12 +332,6 @@ const softwareSchema = {
 		background-image: repeating-linear-gradient(to bottom, transparent 0 39px, rgba(255, 255, 255, 0.045) 39px 40px);
 		mask-image: radial-gradient(ellipse 70% 65% at 70% 45%, black 20%, transparent 75%);
 	}
-	/* Handwriting-line underlay for the mock entry fields */
-	.bh-lines {
-		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-		background-size: 100% 1.6em;
-		line-height: 1.6em;
-	}
 	/* Staggered entrance */
 	.bh-rise {
 		animation: bh-rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
@@ -386,43 +341,7 @@ const softwareSchema = {
 		from { opacity: 0; transform: translateY(14px); }
 		to { opacity: 1; transform: none; }
 	}
-	/* The approval stamp lands once, in the brand accent */
-	.bh-stamp {
-		position: absolute;
-		right: 1.5rem;
-		top: 6.4rem;
-		padding: 0.35rem 0.9rem;
-		border: 2.5px solid #f4a261;
-		border-radius: 0.5rem;
-		color: #f4a261;
-		font-family: 'JetBrains Mono', monospace;
-		font-weight: 700;
-		font-size: 0.95rem;
-		letter-spacing: 0.18em;
-		text-transform: uppercase;
-		transform: rotate(-9deg);
-		background: rgba(244, 162, 97, 0.08);
-		box-shadow: 0 0 30px rgba(244, 162, 97, 0.25);
-		animation: bh-stamp 520ms cubic-bezier(0.3, 1.6, 0.5, 1) 900ms both;
-	}
-	@keyframes bh-stamp {
-		from { opacity: 0; transform: rotate(-9deg) scale(1.9); }
-		to { opacity: 1; transform: rotate(-9deg) scale(1); }
-	}
-	/* Floating feature chips around the entry */
-	.bh-chip { position: absolute; animation: bh-float 6s ease-in-out infinite, bh-rise 700ms both; }
-	.bh-chip-0 { left: -1.5rem; top: -1.1rem; animation-delay: 0s, 1100ms; }
-	.bh-chip-1 { right: -1.75rem; top: -1.1rem; animation-delay: -2s, 1250ms; }
-	.bh-chip-2 { left: 10%; bottom: -1.1rem; animation-delay: -4s, 1400ms; }
-	@keyframes bh-float {
-		0%, 100% { translate: 0 0; }
-		50% { translate: 0 -8px; }
-	}
-	/* Narrow cards: the period line spans the full width, so the stamp moves to the hours row */
-	@media (max-width: 639px) {
-		.bh-stamp { top: auto; bottom: 4.1rem; right: 5rem; font-size: 0.75rem; padding: 0.25rem 0.6rem; }
-	}
 	@media (prefers-reduced-motion: reduce) {
-		.bh-rise, .bh-stamp, .bh-chip { animation: none; }
+		.bh-rise { animation: none; }
 	}
 </style>

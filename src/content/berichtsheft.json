@@ -25,41 +25,6 @@
       "countdown": {
         "one": "Noch 1 Tag",
         "many": "Noch {n} Tage"
-      },
-      "mock": {
-        "caption": "Beispieldarstellung",
-        "initials": "LM",
-        "name": "Lea M.",
-        "role": "Elektronikerin, 2. Ausbildungsjahr",
-        "period": "KW 45 · 02.11. bis 06.11.2026",
-        "fields": [
-          {
-            "label": "Betrieb",
-            "value": "Schaltschrank verdrahtet, Messprotokoll mit dem Ausbilder geprüft"
-          },
-          {
-            "label": "Berufsschule",
-            "value": "Lernfeld 3: Steuerungen analysieren"
-          }
-        ],
-        "hoursLabel": "Stunden",
-        "hours": "38,5",
-        "approved": "Genehmigt von J. Becker · 09.11.2026",
-        "stamp": "Genehmigt",
-        "chips": [
-          {
-            "icon": "hugeicons:notification-01",
-            "text": "Erinnerung gesendet"
-          },
-          {
-            "icon": "hugeicons:pdf-02",
-            "text": "PDF: KW 36 bis 45"
-          },
-          {
-            "icon": "hugeicons:star",
-            "text": "Punkte gesammelt"
-          }
-        ]
       }
     },
     "answer": {
@@ -69,11 +34,7 @@
     "why": {
       "label": "Unsere Vision",
       "headline": "Das Berichtsheft ist Pflicht. Das Werkzeug dafür sollte nichts kosten.",
-      "body": "Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Jeder von ihnen verdient ein einfaches digitales Berichtsheft. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen.",
-      "signature": {
-        "name": "Alesia Kunz",
-        "role": "CEO, LearnSlice"
-      }
+      "body": "Der Ausbildungsnachweis ist Pflicht (§ 13 Satz 2 Nr. 7 BBiG) und Voraussetzung für die Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG). Viele Betriebe bilden mit wenig Zeit und ohne IT-Abteilung aus. Jeder von ihnen verdient ein einfaches digitales Berichtsheft. Geld verdienen wir mit dem KI-Tutor für Prüfung und Einarbeitung, den Sie nur buchen, wenn Sie ihn wollen."
     },
     "how": {
       "label": "So funktioniert es",
@@ -284,13 +245,20 @@
       "entries": {
         "src": "/images/berichtsheft/berichtsheft-alle-eintraege-de.webp",
         "caption": "Alle Einträge auf einen Blick: prüfen, genehmigen, als PDF laden.",
-        "alt": "LearnSlice-Berichtsheft in der Ansicht für Ausbilder: alle Einträge mit Zeitraum, Stunden und Status wie Entwurf, Eingereicht, Zurückgewiesen und Genehmigt, mit Prüfen-Button und PDF-Download"
+        "alt": "LearnSlice-Berichtsheft in der Ansicht für Ausbilder: alle Einträge mit Zeitraum, Stunden und Status wie Entwurf, Eingereicht, Zurückgewiesen und Genehmigt, mit Prüfen-Button und PDF-Download",
+        "mobileSrc": "/images/berichtsheft/berichtsheft-alle-eintraege-de-mobile.webp",
+        "mobileWidth": 2280,
+        "mobileHeight": 1380
       },
       "apprentices": {
         "src": "/images/berichtsheft/berichtsheft-auszubildende-de.webp",
         "caption": "Wer noch fehlt, sehen Sie sofort. Erinnern mit einem Klick.",
-        "alt": "Ansicht Meine Auszubildenden: Ausbildungszeitraum, wöchentlicher Rhythmus, offene Einträge wie 3 fehlen oder 1 zurückgewiesen, mit Erinnern-Button"
-      }
+        "alt": "Ansicht Meine Auszubildenden: Ausbildungszeitraum, wöchentlicher Rhythmus, offene Einträge wie 3 fehlen oder 1 zurückgewiesen, mit Erinnern-Button",
+        "mobileSrc": "/images/berichtsheft/berichtsheft-auszubildende-de-mobile.webp",
+        "mobileWidth": 2280,
+        "mobileHeight": 1340
+      },
+      "hint": "Zum Ansehen seitlich wischen"
     }
   },
   "en": {
@@ -319,41 +287,6 @@
       "countdown": {
         "one": "1 day left",
         "many": "{n} days left"
-      },
-      "mock": {
-        "caption": "Example",
-        "initials": "LM",
-        "name": "Lea M.",
-        "role": "Electronics technician, 2nd year",
-        "period": "Week 45 · 2 to 6 Nov 2026",
-        "fields": [
-          {
-            "label": "Company",
-            "value": "Wired a control cabinet, checked the test report with the trainer"
-          },
-          {
-            "label": "Vocational school",
-            "value": "Learning field 3: analysing controls"
-          }
-        ],
-        "hoursLabel": "Hours",
-        "hours": "38.5",
-        "approved": "Approved by J. Becker · 9 Nov 2026",
-        "stamp": "Approved",
-        "chips": [
-          {
-            "icon": "hugeicons:notification-01",
-            "text": "Reminder sent"
-          },
-          {
-            "icon": "hugeicons:pdf-02",
-            "text": "PDF: weeks 36 to 45"
-          },
-          {
-            "icon": "hugeicons:star",
-            "text": "Points earned"
-          }
-        ]
       }
     },
     "answer": {
@@ -363,11 +296,7 @@
     "why": {
       "label": "Our vision",
       "headline": "The logbook is mandatory. The tool for it should cost nothing.",
-      "body": "The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. Every one of them deserves a simple digital logbook. We earn money with the AI tutor for exams and onboarding, which you only book if you want it.",
-      "signature": {
-        "name": "Alesia Kunz",
-        "role": "CEO, LearnSlice"
-      }
+      "body": "The training record is mandatory in Germany (§ 13 sentence 2 no. 7 BBiG) and a condition for admission to the final exam (§ 43 (1) no. 2 BBiG). Many companies train apprentices with little time and no IT department. Every one of them deserves a simple digital logbook. We earn money with the AI tutor for exams and onboarding, which you only book if you want it."
     },
     "how": {
       "label": "How it works",
@@ -578,13 +507,20 @@
       "entries": {
         "src": "/images/berichtsheft/berichtsheft-alle-eintraege-en.webp",
         "caption": "Every entry at a glance: review, approve, download as a PDF.",
-        "alt": "LearnSlice training log, trainer view: all entries with period, hours and status such as Draft, Submitted, Rejected and Approved, with a Review button and PDF download"
+        "alt": "LearnSlice training log, trainer view: all entries with period, hours and status such as Draft, Submitted, Rejected and Approved, with a Review button and PDF download",
+        "mobileSrc": "/images/berichtsheft/berichtsheft-alle-eintraege-en-mobile.webp",
+        "mobileWidth": 2280,
+        "mobileHeight": 1380
       },
       "apprentices": {
         "src": "/images/berichtsheft/berichtsheft-auszubildende-en.webp",
         "caption": "See at once who is missing. Remind with one click.",
-        "alt": "Apprentices view: training period, weekly rhythm, open entries such as 3 missing or 1 rejected, with a Remind button"
-      }
+        "alt": "Apprentices view: training period, weekly rhythm, open entries such as 3 missing or 1 rejected, with a Remind button",
+        "mobileSrc": "/images/berichtsheft/berichtsheft-auszubildende-en-mobile.webp",
+        "mobileWidth": 2280,
+        "mobileHeight": 1340
+      },
+      "hint": "Swipe to see more"
     }
   }
 }

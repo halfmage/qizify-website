@@ -1,0 +1,30 @@
+---
+// App screenshot in the brand frame. Desktop shows the full 2880x1800 shot. Phones get a
+// crop without the sidebar at a readable width (880 px) inside a swipeable strip,
+// because the whole desktop UI squeezed to 340 px is unreadable.
+interface Props {
+	src: string;
+	mobileSrc: string;
+	mobileWidth: number;
+	mobileHeight: number;
+	alt: string;
+	caption: string;
+	note: string;
+	hint: string;
+}
+
+const { src, mobileSrc, mobileWidth, mobileHeight, alt, caption, note, hint } = Astro.props;
+---
+
+<figure class="m-0 min-w-0 max-w-full">
+	<div class="relative p-2 md:p-3 rounded-2xl bg-gradient-to-b from-primary/20 to-primary/45 ring-1 ring-primary/25 shadow-[0_30px_80px_-20px_rgba(124,92,252,0.45)]">
+		<div class="overflow-x-auto md:overflow-visible rounded-xl overscroll-x-contain [scrollbar-width:thin]">
+			<picture>
+				<source media="(max-width: 767px)" srcset={mobileSrc} width={mobileWidth} height={mobileHeight} />
+				<img src={src} alt={alt} width="2880" height="1800" loading="lazy" decoding="async" class="block h-auto rounded-xl w-[880px] max-w-none md:w-full md:max-w-full" />
+			</picture>
+		</div>
+	</div>
+	<p class="md:hidden flex items-center gap-1.5 text-xs text-white/50 m-0 mt-3" aria-hidden="true">{hint} <span>&rarr;</span></p>
+	<figcaption class="flex justify-between gap-4 text-sm text-white/75 mt-3 md:mt-4"><span>{caption}</span><span class="text-xs text-white/40 shrink-0">{note}</span></figcaption>
+</figure>
