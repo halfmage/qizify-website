@@ -259,6 +259,13 @@
         "mobileHeight": 1340
       },
       "hint": "Zum Ansehen seitlich wischen"
+    },
+    "appLegal": {
+      "pre": "Für die Nutzung der App gelten die",
+      "terms": "AGB",
+      "and": "und die",
+      "privacy": "Datenschutzhinweise",
+      "post": "von app.learnslice.com."
     }
   },
   "en": {
@@ -521,6 +528,13 @@
         "mobileHeight": 1340
       },
       "hint": "Swipe to see more"
+    },
+    "appLegal": {
+      "pre": "Use of the app is governed by the",
+      "terms": "terms",
+      "and": "and the",
+      "privacy": "privacy notice",
+      "post": "of app.learnslice.com."
     }
   }
 }
