@@ -18,7 +18,7 @@ import DemoRequestModal from '../DemoRequestModal.astro';
 import enContent from '../../content/en.json';
 import deContent from '../../content/de.json';
 import { homepage } from '../../content/homepage';
-import { LANDING_PATH } from '../../data/berichtsheft.mjs';
+import { LANDING_PATH, ANNOUNCEMENT_LABEL } from '../../data/berichtsheft.mjs';
 
 // Homepage = the AI learning platform and its companions, for / and /de. The
 // apprenticeship product page (AusbildungPage) carries the former homepage content.
@@ -54,7 +54,7 @@ const faqItems = [...h.faqBefore, { question: dataFaq.question, answer: dataFaq.
 	/>
 
 	<Hero
-		announcement={{ label: lang === 'de' ? 'Neu: Digitales Berichtsheft kostenlos' : 'New: free digital training logbook', href: LANDING_PATH[lang] }}
+		announcement={{ label: ANNOUNCEMENT_LABEL[lang], href: LANDING_PATH[lang] }}
 		eyebrow={h.hero.eyebrow}
 		headline={h.hero.headline}
 		subheadline={h.hero.subheadline}

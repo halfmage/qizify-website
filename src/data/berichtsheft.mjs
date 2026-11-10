@@ -29,6 +29,16 @@ export const SIGNUP_ID = { de: 'kostenlos', en: 'free-version' };
 export const FREE_AUSBILDER_LIMIT = 1;
 export const FREE_AZUBI_LIMIT = 3;
 
+/** Shared CTA copy for every free-Berichtsheft button, block and sidebar. */
+export const CTA_LABEL = { de: 'Kostenlos starten', en: 'Start for free' };
+/** The free-plan limit in one sentence, wherever the offer is summarised. */
+export const FREE_LIMIT_NOTE = {
+	de: `Kostenlos für ${FREE_AUSBILDER_LIMIT} Ausbilder und bis zu ${FREE_AZUBI_LIMIT} Azubis. Ohne Zahlungsdaten.`,
+	en: `Free for ${FREE_AUSBILDER_LIMIT} trainer and up to ${FREE_AZUBI_LIMIT} apprentices. No payment details.`,
+};
+/** Hero pill on the homepage and the apprenticeship page. Remove both usages when the campaign ends. */
+export const ANNOUNCEMENT_LABEL = { de: 'Neu: Digitales Berichtsheft kostenlos', en: 'New: free digital training logbook' };
+
 /** Landing page for the free Berichtsheft, per language. Registered in page-pairs.mjs. */
 export const LANDING_PATH = { de: '/de/berichtsheft-kostenlos', en: '/free-training-logbook' };
 

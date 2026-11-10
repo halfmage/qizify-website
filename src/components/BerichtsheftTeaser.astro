@@ -3,7 +3,7 @@
 // post, for readers who decide early (e.g. right after the shutdown facts or the
 // template). Links to the BerichtsheftSignup anchor; scripts/check-berichtsheft-cta.mjs
 // makes sure it is only used on posts that embed that block. Inside `prose`, hence `not-prose`.
-import { SIGNUP_ID } from '../data/berichtsheft.mjs';
+import { SIGNUP_ID, CTA_LABEL } from '../data/berichtsheft.mjs';
 
 interface Props {
 	lang: 'en' | 'de';
@@ -13,7 +13,7 @@ interface Props {
 
 const { lang, text } = Astro.props;
 if (lang !== 'de' && lang !== 'en') throw new Error(`BerichtsheftTeaser: unsupported lang "${lang}"`);
-const button = lang === 'de' ? 'Kostenlos starten' : 'Start for free';
+const button = CTA_LABEL[lang];
 ---
 
 <aside class="not-prose my-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 rounded-xl border border-border-light bg-surface/70 px-5 py-4">

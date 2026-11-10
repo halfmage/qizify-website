@@ -10,7 +10,7 @@ import ConsultationModal from '../components/ConsultationModal.astro';
 import enContent from '../content/en.json';
 import deContent from '../content/de.json';
 import { isTeamAuthor } from '../utils/authors.mjs';
-import { SIGNUP_ID, FREE_AUSBILDER_LIMIT, FREE_AZUBI_LIMIT, signupUrl } from '../data/berichtsheft.mjs';
+import { SIGNUP_ID, FREE_AUSBILDER_LIMIT, FREE_AZUBI_LIMIT, CTA_LABEL, FREE_LIMIT_NOTE, signupUrl } from '../data/berichtsheft.mjs';
 
 interface Props {
 	title: string;
@@ -92,7 +92,7 @@ const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
 // A guide post's CTAs are links, so nothing should carry a modal trigger.
 const ctaHref = isGuide ? GUIDE_HREF : isBerichtsheft ? SIGNUP_ANCHOR : undefined;
 const navCta = isBerichtsheft
-	? (lang === 'en' ? 'Start for free' : 'Kostenlos starten')
+	? CTA_LABEL[lang]
 	: isGuide
 	? (lang === 'en' ? 'Get the guides' : 'Leitfäden holen')
 	: isConsultation
@@ -102,10 +102,8 @@ const navCta = isBerichtsheft
 const sidebarCopy = isBerichtsheft
 	? {
 		title: lang === 'en' ? 'Free training logbook' : 'Berichtsheft kostenlos',
-		sub: lang === 'en'
-			? `For ${FREE_AUSBILDER_LIMIT} trainer and up to ${FREE_AZUBI_LIMIT} apprentices. No payment details.`
-			: `Für ${FREE_AUSBILDER_LIMIT} Ausbilder und bis zu ${FREE_AZUBI_LIMIT} Azubis. Ohne Zahlungsdaten.`,
-		button: lang === 'en' ? 'Start for free' : 'Kostenlos starten',
+		sub: FREE_LIMIT_NOTE[lang],
+		button: CTA_LABEL[lang],
 	}
 	: isGuide
 	? {
@@ -148,7 +146,7 @@ const footerCta = isBerichtsheft
 		subheadline: lang === 'en'
 			? `Apprentices write and submit their entries, trainers approve them or send them back, and every record exports as a PDF. Free for ${FREE_AUSBILDER_LIMIT} trainer and up to ${FREE_AZUBI_LIMIT} apprentices.`
 			: `Azubis schreiben und reichen ein, Ausbilder geben frei oder schicken zurück, und jeder Nachweis lässt sich als PDF exportieren. Kostenlos für ${FREE_AUSBILDER_LIMIT} Ausbilder und bis zu ${FREE_AZUBI_LIMIT} Azubis.`,
-		button: lang === 'en' ? 'Start for free' : 'Kostenlos starten',
+		button: CTA_LABEL[lang],
 		note: lang === 'en' ? 'No payment details. Upgrade only if you want more.' : 'Ohne Zahlungsdaten. Upgrade nur, wenn Sie mehr wollen.',
 		href: signupUrl(`${slug}-footer`),
 	}
