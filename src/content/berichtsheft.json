@@ -12,7 +12,6 @@
       "sub": "Azubis schreiben am PC oder Handy, Sie geben mit einem Klick frei, jeder Nachweis liegt als PDF bereit. Für 1 Ausbilder und bis zu 3 Azubis.",
       "secondary": "So funktioniert es",
       "note": "Ohne Zahlungsdaten, ohne Laufzeit.",
-      "imageAlt": "Eintragsformular im LearnSlice-Berichtsheft mit Feldern für betriebliche Tätigkeiten, Berufsschulthemen, Gesamtstunden und Abteilung sowie einer Bestätigung, dass der Azubi den Eintrag selbst verfasst hat",
       "pill": {
         "badge": "31.12.2026",
         "label": "Vom IHK-Berichtsheft wechseln",
@@ -45,8 +44,8 @@
         ],
         "hoursLabel": "Stunden",
         "hours": "38,5",
-        "approved": "Freigegeben von J. Becker · 09.11.2026",
-        "stamp": "Freigegeben",
+        "approved": "Genehmigt von J. Becker · 09.11.2026",
+        "stamp": "Genehmigt",
         "chips": [
           {
             "icon": "hugeicons:notification-01",
@@ -279,6 +278,19 @@
           "Erziehungsberechtigte erhalten eingereichte Einträge als PDF"
         ]
       ]
+    },
+    "screens": {
+      "note": "Beispieldaten",
+      "entries": {
+        "src": "/images/berichtsheft/berichtsheft-alle-eintraege-de.webp",
+        "caption": "Alle Einträge auf einen Blick: prüfen, genehmigen, als PDF laden.",
+        "alt": "LearnSlice-Berichtsheft in der Ansicht für Ausbilder: alle Einträge mit Zeitraum, Stunden und Status wie Entwurf, Eingereicht, Zurückgewiesen und Genehmigt, mit Prüfen-Button und PDF-Download"
+      },
+      "apprentices": {
+        "src": "/images/berichtsheft/berichtsheft-auszubildende-de.webp",
+        "caption": "Wer noch fehlt, sehen Sie sofort. Erinnern mit einem Klick.",
+        "alt": "Ansicht Meine Auszubildenden: Ausbildungszeitraum, wöchentlicher Rhythmus, offene Einträge wie 3 fehlen oder 1 zurückgewiesen, mit Erinnern-Button"
+      }
     }
   },
   "en": {
@@ -294,7 +306,6 @@
       "sub": "Apprentices write on a PC or phone, you approve with one click, every record is ready as a PDF. For 1 trainer and up to 3 apprentices.",
       "secondary": "How it works",
       "note": "No payment details, no contract term.",
-      "imageAlt": "Entry form in the LearnSlice logbook (German interface) with fields for workplace activities, vocational school topics, total hours and department, and a confirmation that the apprentice wrote the entry",
       "pill": {
         "badge": "31.12.2026",
         "label": "Switch from the IHK logbook",
@@ -561,6 +572,19 @@
           "Parents or guardians receive submitted entries as a PDF"
         ]
       ]
+    },
+    "screens": {
+      "note": "Sample data",
+      "entries": {
+        "src": "/images/berichtsheft/berichtsheft-alle-eintraege-en.webp",
+        "caption": "Every entry at a glance: review, approve, download as a PDF.",
+        "alt": "LearnSlice training log, trainer view: all entries with period, hours and status such as Draft, Submitted, Rejected and Approved, with a Review button and PDF download"
+      },
+      "apprentices": {
+        "src": "/images/berichtsheft/berichtsheft-auszubildende-en.webp",
+        "caption": "See at once who is missing. Remind with one click.",
+        "alt": "Apprentices view: training period, weekly rhythm, open entries such as 3 missing or 1 rejected, with a Remind button"
+      }
     }
   }
 }

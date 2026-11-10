@@ -30,8 +30,8 @@ interface Props {
 const { lang } = Astro.props;
 const content = lang === 'de' ? deContent : enContent;
 const copy = berichtsheft[lang];
-// Real product screenshot, shown in the how-it-works section (the hero is an HTML mock-up)
-const screenshot = '/images/blog/learnslice-berichtsheft-felder.webp';
+// Real app screenshots (sample data, 2880x1800): how-it-works and features sections.
+// The hero is an HTML mock-up.
 const heroLines = copy.hero.headline.split(/(?<=\.)\s+/);
 // 1200x630 JPG, same card as the Berichtsheft guide
 const ogImage = '/images/blog/pexels-mikhail-nilov-9242810.jpg';
@@ -235,9 +235,12 @@ const softwareSchema = {
 						))}
 					</ol>
 				</div>
-				<div class="relative p-3 md:p-5 rounded-3xl bg-gradient-to-b from-primary/15 to-primary/40 ring-1 ring-primary/25">
-					<img src={screenshot} alt={copy.hero.imageAlt} width="1200" height="700" loading="lazy" decoding="async" class="w-full h-auto block rounded-xl shadow-2xl shadow-black/40" />
-				</div>
+				<figure class="m-0">
+					<div class="relative p-2 md:p-3 rounded-2xl bg-gradient-to-b from-primary/20 to-primary/45 ring-1 ring-primary/25 shadow-[0_30px_80px_-20px_rgba(124,92,252,0.45)]">
+						<img src={copy.screens.entries.src} alt={copy.screens.entries.alt} width="2880" height="1800" loading="lazy" decoding="async" class="w-full h-auto block rounded-xl" />
+					</div>
+					<figcaption class="flex justify-between gap-4 text-sm text-white/75 mt-4"><span>{copy.screens.entries.caption}</span><span class="text-xs text-white/40 shrink-0">{copy.screens.note}</span></figcaption>
+				</figure>
 			</div>
 		</div>
 	</section>
@@ -249,6 +252,12 @@ const softwareSchema = {
 				<span class="section-label mb-4 block">{copy.features.label}</span>
 				<h2 class="text-heading md:text-display-sm text-white m-0">{copy.features.headline}</h2>
 			</div>
+			<figure class="m-0 mb-14 max-w-5xl mx-auto">
+				<div class="relative p-2 md:p-3 rounded-2xl bg-gradient-to-b from-primary/20 to-primary/45 ring-1 ring-primary/25 shadow-[0_30px_80px_-20px_rgba(124,92,252,0.45)]">
+					<img src={copy.screens.apprentices.src} alt={copy.screens.apprentices.alt} width="2880" height="1800" loading="lazy" decoding="async" class="w-full h-auto block rounded-xl" />
+				</div>
+				<figcaption class="flex justify-between gap-4 text-sm text-white/75 mt-4"><span>{copy.screens.apprentices.caption}</span><span class="text-xs text-white/40 shrink-0">{copy.screens.note}</span></figcaption>
+			</figure>
 			<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6 list-none p-0 m-0 max-w-5xl mx-auto">
 				{copy.features.items.map((item) => (
 					<li class="flex items-start gap-3">
