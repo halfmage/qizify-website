@@ -24,12 +24,13 @@ const blog = defineCollection({
 		// ctaVariant: which conversion path the shared BlogLayout renders.
 		// 'demo' (default) = product-demo CTA + DemoRequestModal (Azubi platform posts).
 		// 'consultation' = strategy-call CTA + ConsultationModal (solutions / custom-dev posts).
-		// 'waitlist' = nav, sidebar and footer CTAs link to the in-post BerichtsheftWaitlist
-		// (anchor from src/data/berichtsheft.mjs), no modal. The post must embed the waitlist;
-		// scripts/check-waitlist.mjs fails the build otherwise.
+		// 'berichtsheft' = free-Berichtsheft posts: the nav CTA links to the in-post
+		// BerichtsheftSignup (anchor from src/data/berichtsheft.mjs), sidebar and footer go
+		// to the app sign-up. The post must embed the block once;
+		// scripts/check-berichtsheft-cta.mjs fails the build otherwise.
 		// 'guide' = links to the AI guides (now on ironum.com), no modal. For informational
 		// posts whose reader wants to learn rather than buy.
-		ctaVariant: z.enum(['demo', 'consultation', 'guide', 'waitlist']).default('demo'),
+		ctaVariant: z.enum(['demo', 'consultation', 'guide', 'berichtsheft']).default('demo'),
 		// ctaFooter: optional per-post copy for the closing CTA block. Only used with
 		// the 'demo' variant, for campaign posts whose reader needs a different promise
 		// than the site-wide blog CTA. Button still opens the demo modal.

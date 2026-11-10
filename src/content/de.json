@@ -8,6 +8,7 @@
         "children": [
           { "label": "KI-Lernplattform", "description": "Ein persönlicher Tutor für jede Person: Lernpfad, Antworten rund um die Uhr, Simulationen, Analytics", "href": "/de", "icon": "hugeicons:sparkles", "featured": true },
           { "label": "KI-Tutor für die Ausbildung", "description": "IHK-Prüfung, Einarbeitung, Upskilling", "href": "/de/ki-tutor-ausbildung", "icon": "hugeicons:mortarboard-01" },
+          { "label": "Berichtsheft kostenlos", "description": "Digitaler Ausbildungsnachweis für bis zu 3 Azubis", "href": "/de/berichtsheft-kostenlos", "icon": "hugeicons:note-edit" },
           { "label": "Finanz-Begleiter", "description": "Finanzbildung unter Ihrer Marke", "href": "/de/finanz-begleiter", "icon": "hugeicons:bank" },
           { "label": "Gründer-Begleiter", "description": "Finanzplan, Pitch Deck, Bankgespräch", "href": "/de/gruender-begleiter", "icon": "hugeicons:rocket-01" },
           { "label": "Ihr eigener Begleiter", "description": "Ihr Thema, Ihre Inhalte, Ihre Marke", "href": "/de/loesungen#eigener-begleiter", "icon": "hugeicons:puzzle" }

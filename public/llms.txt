@@ -50,7 +50,7 @@ How projects run: discovery and scoping, design and curriculum alignment, build 
 - Automated assessments: quizzes, case studies, deep dives
 - Executive analytics dashboards for training managers
 - Gamification with points, badges, and leaderboards
-- Digital Berichtsheft (Ausbildungsnachweis): apprentices write and submit entries themselves, trainers approve them or return them for revision, PDF export. A free version for training companies is planned (waitlist on the Berichtsheft guides)
+- Digital Berichtsheft (Ausbildungsnachweis): apprentices write and submit entries themselves, trainers approve them or return them for revision, PDF export. Free since November 2026 for training companies with 1 trainer and up to 3 apprentices, no AI, no payment details: https://learnslice.com/de/berichtsheft-kostenlos (English: https://learnslice.com/free-training-logbook)
 - GDPR-compliant, hosted in Germany
 
 ## LearnSlice Platform: Results
@@ -117,6 +117,8 @@ Each profession ships with its full IHK framework curriculum (Ausbildungsrahmenp
 - Individuelle E-Learning-Entwicklung: https://learnslice.com/de/loesungen
 - AI tutor for apprenticeship training (IHK exam prep, onboarding, upskilling): https://learnslice.com/ai-tutor-apprenticeships
 - KI-Tutor für die Ausbildung (IHK-Prüfungsvorbereitung, Einarbeitung, Upskilling): https://learnslice.com/de/ki-tutor-ausbildung
+- Free digital training logbook (Berichtsheft) for training companies, free for 1 trainer and up to 3 apprentices (approval, reminders, PDF export, hosted in Germany; no AI): https://learnslice.com/free-training-logbook
+- Digitales Berichtsheft kostenlos für Ausbildungsbetriebe: https://learnslice.com/de/berichtsheft-kostenlos
 - Founder Companion, in development with pilot partners (checks financial plan and pitch deck, rehearses bank, customer and investor conversations, supports growth planning after founding, coach view for founder advisors, chambers, economic development agencies, incubators and accelerators; no legal or tax advice): https://learnslice.com/founder-companion
 - Gründer-Begleiter, in Entwicklung mit Pilotpartnern: https://learnslice.com/de/gruender-begleiter
 - Financial Companion, white-label financial education (money check, three-level learning path, AI coach with sources and what-if calculators; explains, gives no investment, insurance or tax advice, sells nothing; hosted in Germany): https://learnslice.com/financial-companion

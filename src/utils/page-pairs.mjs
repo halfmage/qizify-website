@@ -24,6 +24,7 @@ export const EN_TO_DE = {
 	'/ai-tutor-apprenticeships': '/de/ki-tutor-ausbildung',
 	'/founder-companion': '/de/gruender-begleiter',
 	'/financial-companion': '/de/finanz-begleiter',
+	'/free-training-logbook': '/de/berichtsheft-kostenlos',
 	'/apprenticeship-savings-calculator': '/de/ausbildungskosten-rechner',
 	'/learnslice-vs-publisher-lms': '/de/learnslice-vs-verlags-lms',
 	'/learnslice-vs-video-ihk-tools': '/de/learnslice-vs-video-ihk-tools',
