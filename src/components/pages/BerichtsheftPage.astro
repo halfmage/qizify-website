@@ -75,8 +75,8 @@ const softwareSchema = {
 	<section class="bh-hero relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-24 px-6 md:px-8">
 		<div class="absolute inset-0 glow-aurora opacity-70 pointer-events-none" aria-hidden="true"></div>
 		<div class="bh-ruled absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-		<div class="relative z-10 max-w-container mx-auto grid lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)] gap-14 lg:gap-16 items-center">
-			<div class="text-center lg:text-left">
+		<div class="relative z-10 max-w-container mx-auto grid xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-14 xl:gap-14 items-center">
+			<div class="text-center xl:text-left">
 				<div class="bh-rise" style="--d:0ms" data-deadline-pill>
 					<AnnouncementPill {...copy.hero.pill} class="mb-7" />
 				</div>
@@ -87,31 +87,28 @@ const softwareSchema = {
 						<span class="block gradient-text-primary">{copy.hero.headlineAccent}</span>
 					</span>
 				</h1>
-				<p class="bh-rise text-lg md:text-xl leading-relaxed text-white/80 text-balance m-0 mt-7 max-w-xl mx-auto lg:mx-0" style="--d:160ms">{copy.hero.sub}</p>
-				<div class="bh-rise flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mt-9" style="--d:240ms">
+				<p class="bh-rise text-lg md:text-xl leading-relaxed text-white/80 text-balance m-0 mt-7 max-w-xl mx-auto xl:mx-0" style="--d:160ms">{copy.hero.sub}</p>
+				<div class="bh-rise flex flex-col sm:flex-row justify-center xl:justify-start gap-3 mt-9" style="--d:240ms">
 					<Button variant="primary" size="lg" href={href('hero')} class="!rounded-full shadow-[0_10px_40px_-8px_rgba(124,92,252,0.7)]">{copy.cta} <span class="ml-1.5" aria-hidden="true">&rarr;</span></Button>
 					<Button variant="secondary" size="lg" href="#so-funktioniert" class="!rounded-full !border-white/30 !text-white hover:!border-white/60 hover:!bg-white/5">
 						{copy.hero.secondary} <span class="ml-1.5" aria-hidden="true">&rsaquo;</span>
 					</Button>
 				</div>
-				<ul class="bh-rise flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-2 list-none p-0 m-0 mt-6" style="--d:320ms">
+				<ul class="bh-rise flex flex-wrap justify-center xl:justify-start gap-x-5 gap-y-2 list-none p-0 m-0 mt-6" style="--d:320ms">
 					{copy.hero.facts.map((f) => (
 						<li class="inline-flex items-center gap-1.5 text-sm text-white/75"><Icon name="hugeicons:checkmark-circle-02" class="w-4 h-4 text-primary" />{f}</li>
 					))}
 				</ul>
 			</div>
 
-			<!-- Real app screenshot (sample data). Desktop: large and bleeding off the right edge.
-			     Phones: the crop without the sidebar, full width. -->
-			<figure class="relative m-0 min-w-0 bh-rise" style="--d:200ms">
+			<!-- Real app screenshot (sample data), fitted to the column. The crop without the
+			     sidebar keeps the table (entries, status, Prüfen, PDF) readable at this size. -->
+			<figure class="relative m-0 min-w-0 w-full max-w-3xl mx-auto bh-rise" style="--d:200ms">
 				<div class="absolute -inset-8 rounded-[2.5rem] bg-primary/25 blur-3xl" aria-hidden="true"></div>
-				<div class="relative lg:w-[150%] xl:w-[165%] rounded-2xl p-2 md:p-2.5 bg-gradient-to-br from-primary/60 via-primary/25 to-accent/40 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)]">
-					<picture>
-						<source media="(max-width: 767px)" srcset={copy.screens.entries.mobileSrc} width={copy.screens.entries.mobileWidth} height={copy.screens.entries.mobileHeight} />
-						<img src={copy.screens.entries.src} alt={copy.screens.entries.alt} width="2880" height="1800" loading="eager" fetchpriority="high" decoding="async" class="block w-full h-auto rounded-xl" />
-					</picture>
+				<div class="relative rounded-2xl p-2 md:p-2.5 bg-gradient-to-br from-primary/60 via-primary/25 to-accent/40 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)]">
+					<img src={copy.screens.entries.mobileSrc} alt={copy.screens.entries.alt} width={copy.screens.entries.mobileWidth} height={copy.screens.entries.mobileHeight} loading="eager" fetchpriority="high" decoding="async" class="block w-full h-auto rounded-xl" />
 				</div>
-				<figcaption class="relative text-[11px] text-white/45 mt-4 text-center lg:text-left">{copy.screens.note}</figcaption>
+				<figcaption class="relative text-[11px] text-white/45 mt-4 text-center xl:text-left">{copy.screens.note}</figcaption>
 			</figure>
 		</div>
 	</section>
