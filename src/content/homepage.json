@@ -2,7 +2,7 @@
   "de": {
     "path": "/de",
     "title": "KI-Lernplattform mit persönlichem KI-Tutor | LearnSlice",
-    "description": "LearnSlice macht aus Ihren Inhalten und Zielen einen persönlichen KI-Tutor für jede Person: Lernpfad, Jobsimulationen, Quizze, Analytics. Server in Deutschland.",
+    "description": "LearnSlice macht aus Ihren Inhalten und Zielen einen persönlichen KI-Tutor für jede Person: Lernpfad, Jobsimulationen, Quizze, Analytics. DSGVO-konform.",
     "ctaLabel": "Kostenlose Demo buchen",
     "hero": {
       "eyebrow": "KI-Lernplattform",
@@ -113,7 +113,7 @@
         },
         {
           "title": "Einsatz im Alltag",
-          "body": "Danach läuft der Tutor per Lizenz weiter: auf Servern in Deutschland, auf einem dedizierten EU-Server oder bei Ihnen."
+          "body": "Danach läuft der Tutor per Lizenz weiter: auf unserer Plattform (Hosting in Deutschland, KI in der EU), auf einem dedizierten EU-Server oder bei Ihnen."
         }
       ]
     },
@@ -155,7 +155,7 @@
   "en": {
     "path": "/",
     "title": "AI Learning Platform with a Personal AI Tutor | LearnSlice",
-    "description": "LearnSlice turns your content and goals into a personal AI tutor for every learner: learning path, job simulations, quizzes and analytics. Hosted in Germany.",
+    "description": "LearnSlice turns your content and goals into a personal AI tutor for every learner: learning path, job simulations, quizzes and analytics. GDPR-compliant.",
     "ctaLabel": "Book a free demo",
     "hero": {
       "eyebrow": "AI learning platform",
@@ -266,7 +266,7 @@
         },
         {
           "title": "Everyday use",
-          "body": "After that the tutor runs on a licence: on servers in Germany, on a dedicated EU server, or on yours."
+          "body": "After that the tutor runs on a licence: on our platform (hosted in Germany, AI in the EU), on a dedicated EU server, or on yours."
         }
       ]
     },

@@ -124,7 +124,7 @@
         "description": "Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Erlebnis, das Azubis bei der Stange hält und Abschlussquoten steigert."
       }
     ],
-    "compliance": "DSGVO-konform betrieben. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur."
+    "compliance": "DSGVO-konform betrieben. Hosting in Deutschland, KI-Verarbeitung in der EU, oder in Ihrer eigenen Infrastruktur."
   },
   "madeForCompany": {
     "headline": "Für Unternehmen, Schulen und Agenturen",
@@ -236,7 +236,7 @@
       {
         "icon": "hugeicons:security-check",
         "title": "Gehostet in\nDeutschland",
-        "description": "DSGVO-konform betrieben, Server in Deutschland, Lokales LLM"
+        "description": "DSGVO-konform betrieben, Server in Deutschland, KI-Verarbeitung in der EU"
       }
     ]
   },
@@ -341,7 +341,7 @@
     "items": [
       "Mit der FH Dortmund entwickelt",
       "Öffentlich geförderte Forschung (BMWE)",
-      "Gehostet in Deutschland"
+      "Hosting in Deutschland, KI in der EU"
     ],
     "link": "Zur Forschung"
   },
@@ -418,11 +418,11 @@
       "colA": "LearnSlice",
       "colB": "Allgemeine KI-Tools",
       "rows": [
-        { "property": "Ort der Datenverarbeitung", "a": "Gehostet in Deutschland", "b": "Anbieter-Cloud, Region variiert, oft außerhalb der EU" },
+        { "property": "Ort der Datenverarbeitung", "a": "Hosting in Deutschland, KI-Verarbeitung in der EU", "b": "Anbieter-Cloud, Region variiert, oft außerhalb der EU" },
         { "property": "Lernerdaten für Training genutzt", "a": "Nein", "b": "Abhängig von den Anbieterbedingungen, je nach Tarif" },
         { "property": "Primäre Wissensquelle", "a": "Ihr Lehrplan und Ihre Dokumente", "b": "Allgemeines Modellwissen" },
         { "property": "Quellenangaben", "a": "Inline-Quellen zu den Textstellen", "b": "Standardmäßig nicht vorhanden" },
-        { "property": "Kostenmodell", "a": "Feste, selbst gehostete Infrastruktur", "b": "Nutzungsbasierte Abrechnung pro Token" }
+        { "property": "Kostenmodell", "a": "Feste Lizenz pro Azubi", "b": "Nutzungsbasierte Abrechnung pro Token" }
       ]
     },
     "audiences": {
@@ -431,7 +431,7 @@
       "items": [
         {
           "role": "Für Führungskräfte",
-          "body": "Eine glaubwürdige, konforme Wahl: mit einer deutschen Hochschule in einem geförderten Projekt entwickelt, mit Lernerdaten, die in Deutschland gehostet und nie zum Training des Modells genutzt werden."
+          "body": "Eine glaubwürdige, konforme Wahl: mit einer deutschen Hochschule in einem geförderten Projekt entwickelt, mit Lernerdaten, die in Deutschland gehostet, in der EU verarbeitet und nie zum Training des Modells genutzt werden."
         },
         {
           "role": "Für Lehrende",

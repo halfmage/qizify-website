@@ -41,7 +41,7 @@ All companions run on the same platform. Start with a ready-made companion or on
 
 1. **Demo and goal:** In 30 minutes we show you the platform and clarify your goal, your learners and your content.
 2. **Fixed-price pilot:** 10 weeks with your learners and your content, at a fixed price and with goals agreed up front.
-3. **Everyday use:** After that the tutor runs on a licence: on servers in Germany, on a dedicated EU server, or on yours.
+3. **Everyday use:** After that the tutor runs on a licence: on our platform (hosted in Germany, AI in the EU), on a dedicated EU server, or on yours.
 
 ## Frequently Asked Questions
 
@@ -115,7 +115,7 @@ Alle Begleiter laufen auf derselben Plattform. Starten Sie mit einem fertigen Be
 
 1. **Demo und Ziel:** In 30 Minuten zeigen wir Ihnen die Plattform und klären Ihr Ziel, Ihre Lernenden und Ihre Inhalte.
 2. **Pilot zum Festpreis:** 10 Wochen mit Ihren Lernenden und Ihren Inhalten, zu einem festen Preis und mit vorher vereinbarten Zielen.
-3. **Einsatz im Alltag:** Danach läuft der Tutor per Lizenz weiter: auf Servern in Deutschland, auf einem dedizierten EU-Server oder bei Ihnen.
+3. **Einsatz im Alltag:** Danach läuft der Tutor per Lizenz weiter: auf unserer Plattform (Hosting in Deutschland, KI in der EU), auf einem dedizierten EU-Server oder bei Ihnen.
 
 ## Häufige Fragen
 
@@ -218,7 +218,7 @@ Real-time dashboards show apprentice status, progress trends, and team-wide perf
 
 Points, badges, and leaderboards turn daily practice into a motivating experience that keeps apprentices engaged and completing their learning paths.
 
-Run GDPR-compliant. Hosted in Germany or on your own infrastructure.
+Run GDPR-compliant. Hosted in Germany with AI processing in the EU, or on your own infrastructure.
 
 ## Vocational Professions
 
@@ -298,7 +298,7 @@ Federal Ministry award
 
 ### Hosted in Germany
 
-Run GDPR-compliant, German servers, local LLM.
+Run GDPR-compliant, German servers, AI processing in the EU.
 
 ## Frequently Asked Questions
 
@@ -432,7 +432,7 @@ Echtzeit-Dashboards zeigen Azubi-Status, Fortschrittstrends und teamweite Leistu
 
 Punkte, Badges und Ranglisten machen tägliches Lernen zu einem motivierenden Erlebnis, das Azubis bei der Stange hält und Abschlussquoten steigert.
 
-DSGVO-konform betrieben. Gehostet in Deutschland oder in Ihrer eigenen Infrastruktur.
+DSGVO-konform betrieben. Hosting in Deutschland, KI-Verarbeitung in der EU, oder in Ihrer eigenen Infrastruktur.
 
 ## Ausbildungsberufe
 
@@ -512,7 +512,7 @@ Unterstützt durch das Bundesministerium
 
 ### Gehostet in Deutschland
 
-DSGVO-konform betrieben, Server in Deutschland, Lokales LLM
+DSGVO-konform betrieben, Server in Deutschland, KI-Verarbeitung in der EU
 
 ## Häufig gestellte Fragen
 

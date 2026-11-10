@@ -123,7 +123,7 @@
         "description": "Points, badges, and leaderboards turn daily practice into a motivating experience that keeps apprentices engaged and completing their learning paths."
       }
     ],
-    "compliance": "Run GDPR-compliant. Hosted in Germany or on your own infrastructure."
+    "compliance": "Run GDPR-compliant. Hosted in Germany with AI processing in the EU, or on your own infrastructure."
   },
   "madeForCompany": {
     "headline": "Built for Companies, Schools, and Agencies",
@@ -235,7 +235,7 @@
       {
         "icon": "hugeicons:security-check",
         "title": "Hosted in\nGermany",
-        "description": "Run GDPR-compliant, German servers, local LLM."
+        "description": "Run GDPR-compliant, German servers, AI processing in the EU."
       }
     ]
   },
@@ -341,7 +341,7 @@
     "items": [
       "Co-developed with FH Dortmund",
       "Federally funded research (BMWE)",
-      "Hosted in Germany"
+      "Hosted in Germany, AI in the EU"
     ],
     "link": "Read the research"
   },
@@ -418,11 +418,11 @@
       "colA": "LearnSlice",
       "colB": "General AI tools",
       "rows": [
-        { "property": "Data-processing location", "a": "Hosted in Germany", "b": "Vendor cloud, region varies, often outside the EU" },
+        { "property": "Data-processing location", "a": "Hosted in Germany, AI processing in the EU", "b": "Vendor cloud, region varies, often outside the EU" },
         { "property": "Learner data used for training", "a": "No", "b": "Governed by vendor terms, varies by plan" },
         { "property": "Primary knowledge source", "a": "Your curriculum and documents", "b": "General model knowledge" },
         { "property": "Source attribution", "a": "Inline citations to retrieved passages", "b": "Not provided by default" },
-        { "property": "Cost model", "a": "Fixed self-hosted infrastructure", "b": "Usage-based per-token pricing" }
+        { "property": "Cost model", "a": "Fixed licence per apprentice", "b": "Usage-based per-token pricing" }
       ]
     },
     "audiences": {
@@ -431,7 +431,7 @@
       "items": [
         {
           "role": "For leaders",
-          "body": "A credible, compliant choice: co-developed with a German university in a federally funded project, with learner data hosted in Germany and never used to train the model."
+          "body": "A credible, compliant choice: co-developed with a German university in a federally funded project, with learner data hosted in Germany, processed in the EU and never used to train the model."
         },
         {
           "role": "For teachers",

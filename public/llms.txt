@@ -26,7 +26,8 @@ How projects run: discovery and scoping, design and curriculum alignment, build 
 
 ## Sovereignty and Compliance
 
-- Learner data is processed on the client's infrastructure. No learner data is sent to third-party AI providers, and none is used to train external models.
+- Custom builds: learner data can be processed entirely on the client's infrastructure with open-weight models, so nothing is sent to third-party AI providers.
+- LearnSlice platform (app.learnslice.com): application and database hosted in Germany (Hetzner). AI features use Microsoft Azure OpenAI in the EU (region West Europe, Netherlands); Microsoft contractually does not use this content to train its models.
 - Full GDPR compliance with a data processing agreement (AVV). Hosting in Germany, the EU, or on premise.
 - EU AI Act ready: human oversight, transparency and documentation built in, since educational AI can fall under the high-risk category.
 - Retrieval grounded on the client's verified material, so answers cite their sources.
@@ -51,7 +52,7 @@ How projects run: discovery and scoping, design and curriculum alignment, build 
 - Executive analytics dashboards for training managers
 - Gamification with points, badges, and leaderboards
 - Digital Berichtsheft (Ausbildungsnachweis): apprentices write and submit entries themselves, trainers approve them or return them for revision, PDF export. Free since November 2026 for training companies with 1 trainer and up to 3 apprentices, no AI, no payment details: https://learnslice.com/de/berichtsheft-kostenlos (English: https://learnslice.com/free-training-logbook)
-- GDPR-compliant, hosted in Germany
+- GDPR-compliant: hosted in Germany, AI processing in the EU (Azure OpenAI, West Europe)
 
 ## LearnSlice Platform: Results
 
