@@ -15,7 +15,10 @@ export const MANIFEST_URL = `https://${HOST}/${MANIFEST_NAME}`;
 const ENDPOINTS = ['https://search.seznam.cz/indexnow', 'https://api.indexnow.org/indexnow'];
 
 // Never throws: IndexNow must not be able to fail a build or a deploy.
+// `timeoutMs` is the budget for the whole call, shared by the endpoints, so a hanging
+// first endpoint cannot push the caller past its own limit.
 export async function submitUrls(urls, timeoutMs = 15000) {
+	const perEndpointMs = Math.floor(timeoutMs / ENDPOINTS.length);
 	const body = JSON.stringify({
 		host: HOST,
 		key: KEY,
@@ -30,7 +33,7 @@ export async function submitUrls(urls, timeoutMs = 15000) {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json; charset=utf-8' },
 				body,
-				signal: AbortSignal.timeout(timeoutMs),
+				signal: AbortSignal.timeout(perEndpointMs),
 			});
 
 			console.log(`[indexnow] submitted ${urls.length} URLs to ${name} → HTTP ${res.status}`);
