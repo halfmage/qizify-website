@@ -6,29 +6,40 @@ export const HOST = 'learnslice.com';
 export const MANIFEST_NAME = 'indexnow-manifest.json';
 export const MANIFEST_URL = `https://${HOST}/${MANIFEST_NAME}`;
 
-const ENDPOINT = 'https://api.indexnow.org/indexnow';
+// Tried in order, the first success wins. Engines in the IndexNow network pass
+// submissions on to each other, so one accepted call reaches Bing as well.
+// Bing's own endpoints (api.indexnow.org, bing.com) answer 403
+// "UserForbiddedToAccessSite" for this host although the key file is valid, and Bing
+// Webmaster Tools showed no submission ever arriving. Submissions through Seznam do
+// show up there (checked 2026-11-11), so Seznam goes first and Bing stays as fallback.
+const ENDPOINTS = ['https://search.seznam.cz/indexnow', 'https://api.indexnow.org/indexnow'];
 
 // Never throws: IndexNow must not be able to fail a build or a deploy.
 export async function submitUrls(urls, timeoutMs = 15000) {
-	try {
-		const res = await fetch(ENDPOINT, {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json; charset=utf-8' },
-			body: JSON.stringify({
-				host: HOST,
-				key: KEY,
-				keyLocation: `https://${HOST}/${KEY}.txt`,
-				urlList: urls,
-			}),
-			signal: AbortSignal.timeout(timeoutMs),
-		});
+	const body = JSON.stringify({
+		host: HOST,
+		key: KEY,
+		keyLocation: `https://${HOST}/${KEY}.txt`,
+		urlList: urls,
+	});
 
-		console.log(`[indexnow] submitted ${urls.length} URLs → HTTP ${res.status}`);
+	for (const endpoint of ENDPOINTS) {
+		const name = new URL(endpoint).host;
+		try {
+			const res = await fetch(endpoint, {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json; charset=utf-8' },
+				body,
+				signal: AbortSignal.timeout(timeoutMs),
+			});
 
-		if (!res.ok) console.warn(`[indexnow] non-success response: ${await res.text()}`);
-		return res.ok;
-	} catch (err) {
-		console.warn(`[indexnow] submission failed: ${err.message}`);
-		return false;
+			console.log(`[indexnow] submitted ${urls.length} URLs to ${name} → HTTP ${res.status}`);
+
+			if (res.ok) return true;
+			console.warn(`[indexnow] non-success response from ${name}: ${await res.text()}`);
+		} catch (err) {
+			console.warn(`[indexnow] submission to ${name} failed: ${err.message}`);
+		}
 	}
+	return false;
 }
