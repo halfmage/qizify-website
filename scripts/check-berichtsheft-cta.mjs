@@ -43,6 +43,10 @@ const LIMIT_FILES = [
 	'src/content/blog/berichtsheft-digital.mdx',
 	'src/content/blog/digital-training-logbook.mdx',
 	'src/content/blog/ihk-berichtsheft-alternative.mdx',
+	'src/content/blog/azubi-onboarding.mdx',
+	'src/content/blog/apprentice-onboarding.mdx',
+	'src/content/blog/ihk-pruefung-tipps.mdx',
+	'src/content/blog/ihk-exam-tips.mdx',
 	'public/llms.txt',
 ];
 const LIMIT_PATTERNS = [

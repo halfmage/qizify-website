@@ -1,7 +1,9 @@
 import { MANIFEST_URL, submitUrls } from '../../scripts/indexnow-client.mjs';
 
 // Netlify runs this function after a deploy finishes (the file name is the trigger).
-// It sends the URLs the build queued in the manifest.
+// It sends the URLs the build queued in the manifest to IndexNow. Which endpoint that
+// is (currently Seznam, which passes submissions on to Bing) is decided in
+// scripts/indexnow-client.mjs.
 //
 // "Finished" does not guarantee "live": a deploy can finish without being published.
 // So only submit once the live manifest carries this deploy's id. Otherwise Bing could
@@ -44,6 +46,7 @@ export default async (req) => {
 		return new Response('nothing queued');
 	}
 
-	await submitUrls(urls, 4000);
-	return new Response('done');
+	const ok = await submitUrls(urls, 4000);
+	if (!ok) console.warn(`[indexnow] no endpoint accepted the ${urls.length} URLs, the next deploy sends its own changes plus this deploy's again`);
+	return new Response(ok ? 'done' : 'failed');
 };
