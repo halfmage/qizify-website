@@ -37,6 +37,7 @@ export const EN_TO_DE = {
 	'/blog/apprentice-onboarding': '/de/blog/azubi-onboarding',
 	'/blog/apprenticeship-plan-template-free': '/de/blog/ausbildungsplan-vorlage-kostenlos',
 	'/blog/digital-training-logbook': '/de/blog/berichtsheft-digital',
+	'/blog/training-logbook-software-comparison': '/de/blog/berichtsheft-software-vergleich',
 	'/blog/digitize-apprenticeship-training': '/de/blog/ausbildung-digitalisieren',
 	'/blog/ihk-exam-preparation-digital': '/de/blog/ihk-pruefungsvorbereitung-digital',
 	'/blog/ihk-exam-tips': '/de/blog/ihk-pruefung-tipps',

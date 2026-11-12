@@ -1092,6 +1092,125 @@ Der Finanz-Begleiter gibt allgemeine Informationen und ersetzt keine Anlage-, Ve
 
 ---
 
+# Training Logbook Software: Free Plan or Free Trial?
+
+Source: https://learnslice.com/blog/training-logbook-software-comparison
+Language: en
+Published: 2026-11-12
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
+
+Training logbook (Berichtsheft) software for German companies: what free means, what a trial shows and 9 questions to ask every provider.
+
+## Key Takeaways
+
+- Free to try is not the same as free to use. A trial is time-limited, a free plan has no trial period but fixed limits.
+- An apprenticeship usually lasts two to three years (§ 5 (1) no. 2 BBiG). The software has to last the whole apprenticeship, not just a trial.
+- The most important question for every provider: can we get all records as a PDF at any time, also after cancelling? Without a complete record there is no admission to the final examination (§ 43 (1) no. 2 BBiG).
+
+![Young woman in a beanie and glasses looking at her smartphone in front of a blackboard](/images/blog/pexels-karola-g-6256195.webp)
+
+"Free" can mean two things for training logbook software and apps: a plan that stays free as long as you stay within its limits, or a time-limited trial after which a subscription starts. For a tool your apprentices use for two to three years, that is a big difference.
+
+Companies whose apprentices use the IHK's digital Berichtsheft have to choose now: it ends on 31 December 2026, according to several IHKs ([what that means](/blog/digital-training-logbook#what-happens-to-the-ihk-digital-logbook)). The company pays for the new solution, not the apprentice ([§ 14 (1) no. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
+
+## Free Plan, Trial, Subscription: What Is the Difference?
+
+Logbook software comes with three pricing models. A provider can also combine two of them.
+
+| Model | What it means | Ask |
+| --- | --- | --- |
+| Free plan | No trial period, but fixed limits, for example on apprentices, trainers or features | Where are the limits, and what happens when we go over them? |
+| Trial | Usable for a limited time, paid afterwards | What happens to the entries if we do not subscribe afterwards? |
+| Subscription | Ongoing price, for example per apprentice, per trainer or a flat rate per company | Which term, which notice period, and how are users counted? |
+
+## What a Trial Shows and What It Does Not
+
+A trial is useful for trying out how the software works. Some points only show up over the course of the apprenticeship, though. So clarify them with the provider beforehand:
+
+- **The record must be complete.** Without it there is no admission to the final examination ([§ 43 (1) no. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)). If you do not subscribe after the trial, the part written so far still has to be kept.
+- **Switching takes work.** Exporting, making a clean cut, presenting two parts for the exam. That is exactly what companies whose apprentices use the IHK tool are facing right now.
+- **Costs grow.** Calculate the price for the number of apprentices you will be training at the same time in three years, not for today.
+
+## 9 Questions to Ask Every Provider
+
+Ask every provider the same questions. The most important come first: export and data protection.
+
+<CopyBlock buttonLabel="Copy questions" copiedLabel="Copied!">
+
+### Checklist: Comparing Training Logbook Software
+
+**Data**
+
+- [ ] Can we get all records as a PDF at any time, also after cancelling or changing plans?
+- [ ] Is there a data processing agreement, also on the free plan?
+- [ ] Where is the data hosted: Germany, the EU or elsewhere?
+
+**Costs**
+
+- [ ] What happens with the next apprentice if we go over a limit?
+- [ ] What does the free plan include, and what applies only during the trial?
+- [ ] How is billing done, and with which term and notice period?
+
+**Practice**
+
+- [ ] Does the entry form cover the minimum requirements of the BIBB recommendation, such as company activities, instruction and vocational school topics?
+- [ ] Does the trainer's approval appear in the record with name and date?
+- [ ] Are there reminders for missing entries?
+
+</CopyBlock>
+
+Clarify first: which form of record does your chamber accept? IHK Hannover, for example, accepts other providers' products if they meet the [BIBB recommendation](https://www.bibb.de/dokumente/pdf/HA156.pdf) ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). What the record must contain is covered in our post [Digital Training Logbook](/blog/digital-training-logbook).
+
+## How LearnSlice Answers the Questions
+
+So you can see what concrete answers can look like, here are ours:
+
+| Question | LearnSlice training logbook |
+| --- | --- |
+| Export | Single entries or whole periods as a PDF. After cancelling Premium, all records stay readable and can be exported. With more than 3 apprentices, the 3 registered longest keep writing |
+| Data protection | Hosting in Germany, data processing agreement concluded at sign-up |
+| Free | 1 trainer and up to 3 apprentices, no minimum term, no payment details, no AI |
+| With the next apprentice | LearnSlice Premium, billed per apprentice, trainers free |
+| Practice | One-click approval with name and date. Reminders by email |
+
+## When Is a Subscription Worth It?
+
+For a few apprentices, a free route is often enough, including the BIBB samples on paper or in Word. A subscription pays off more when you train many apprentices or need more than the record, such as [exam preparation](/blog/ihk-exam-preparation-digital). Then ask whether the logbook stays usable on its own.
+
+*Disclosure: This post is by LearnSlice, and LearnSlice offers a training logbook itself. That is why we do not name other providers, do not rate other offerings and do not rank anyone. The questions above fit every solution, including ours.*
+
+*Note: This post gives a general overview and is not legal advice. Your chamber gives binding information about your training relationship. LearnSlice is not an offering of the German chambers of commerce (IHKs) and is not affiliated with them. LearnSlice information as of 12 November 2026.*
+
+
+## Frequently Asked Questions
+
+### Is there free training logbook software for companies?
+
+Yes. The LearnSlice training logbook, for example, is free for 1 trainer and up to 3 apprentices, with no minimum term and no payment details. When comparing, check whether an offer has a free plan or a time-limited trial, and ask what happens to your records afterwards or when you go over a limit.
+
+### What is the difference between a free plan and a trial?
+
+A trial is time-limited. After that you subscribe or stop using the offer. A free plan has no trial period but has limits, for example on the number of apprentices or on features. For a logbook that runs through the whole apprenticeship, what matters most is what happens to the data when a trial ends.
+
+### Do we need a data processing agreement for logbook software?
+
+Usually yes, if a provider stores your apprentices' personal data on your behalf (Art. 28 GDPR). Ask whether the agreement is also offered on the free plan or during the trial, and where the data is hosted.
+
+### Is a subscription worth it if we only have one apprentice?
+
+Not necessarily. For one or a few apprentices, a free plan or the samples in the BIBB recommendation on paper or in Word are often enough. A subscription pays off more when you have many apprentices or need features beyond the logbook, such as exam preparation.
+
+## Sources
+
+- Gesetze im Internet: § 5 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__5.html (checked 2026-11-12)
+- Gesetze im Internet: § 14 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__14.html (checked 2026-11-12)
+- Gesetze im Internet: § 43 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__43.html (checked 2026-11-12)
+- BIBB Board: Recommendation on keeping training records of 1 September 2020 (BAnz AT 02.10.2020 S1): https://www.bibb.de/dokumente/pdf/HA156.pdf (checked 2026-11-02)
+- IHK Hannover: Digitales Berichtsheft: https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974 (checked 2026-11-02)
+- Regulation (EU) 2016/679 (GDPR), Art. 28: Processor: https://eur-lex.europa.eu/eli/reg/2016/679/oj (checked 2026-11-12)
+
+---
+
 # Training Mechatronics Apprentices: Where AI Tutors Help
 
 Source: https://learnslice.com/blog/training-mechatronics-apprentices
@@ -4654,7 +4773,7 @@ There are four routes: a Word or PDF template, an industry app, a standalone log
 | Standalone logbook app | Software only for the training record | many apprentices, a clear approval process | learning and exam prep stay separate |
 | Learning platform with logbook | Record, learning progress, and exam prep in one place | companies that want more than documentation | more setup effort |
 
-**Start for free:** The [BIBB recommendation](https://www.bibb.de/dokumente/pdf/HA156.pdf) includes samples for daily and weekly records, including versions linked to the framework training plan. It also names industry apps, for example for the bakery, roofing, hairdressing, and metal trades, landscaping, and automotive occupations. Ask your chamber first which formats it accepts.
+**Start for free:** The [BIBB recommendation](https://www.bibb.de/dokumente/pdf/HA156.pdf) includes samples for daily and weekly records, including versions linked to the framework training plan. It also names industry apps, for example for the bakery, roofing, hairdressing, and metal trades, landscaping, and automotive occupations. Ask your chamber first which formats it accepts. How to compare logbook software is covered in [free plan, trial or subscription](/blog/training-logbook-software-comparison).
 
 **The logbook is always free for apprentices.** Record books, forms, and IT programs are provided by the company ([§ 14 (1) no. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)). Apprentices do not need to buy anything. The company tells them which form applies.
 
@@ -5277,6 +5396,125 @@ Commercial occupations such as office management clerk, IT occupations such as I
 
 ---
 
+# Berichtsheft-Software vergleichen: kostenlos oder Testphase?
+
+Source: https://learnslice.com/de/blog/berichtsheft-software-vergleich
+Language: de
+Published: 2026-11-12
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
+
+Berichtsheft-Software für Betriebe: Was kostenlos heißt, was eine Testphase zeigt und welche 9 Fragen Sie jedem Anbieter stellen sollten.
+
+## Auf einen Blick
+
+- Kostenlos testen ist nicht dasselbe wie kostenlos nutzen. Eine Testphase ist befristet, ein kostenloser Tarif hat keine Testfrist, dafür feste Grenzen.
+- Eine Ausbildung dauert in der Regel zwei bis drei Jahre (§ 5 Abs. 1 Nr. 2 BBiG). Die Software muss also über die ganze Ausbildung tragen, nicht nur über eine Testphase.
+- Die wichtigste Frage an jeden Anbieter: Kommen wir jederzeit als PDF an alle Nachweise, auch nach einer Kündigung? Ohne vollständigen Nachweis gibt es keine Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG).
+
+![Junge Frau mit Mütze und Brille schaut vor einer Tafel auf ihr Smartphone](/images/blog/pexels-karola-g-6256195.webp)
+
+"Kostenlos" kann bei Berichtsheft-Software und Berichtsheft-Apps zweierlei heißen: ein Tarif, der kostenlos bleibt, solange Sie seine Grenzen einhalten, oder eine befristete Testphase, nach der ein Abo beginnt. Für ein Werkzeug, das Ihre Azubis zwei bis drei Jahre lang nutzen, ist das ein großer Unterschied.
+
+Für Betriebe, deren Azubis das Digitale Berichtsheft der IHK nutzen, steht die Wahl jetzt an: Es endet laut mehreren IHKs am 31. Dezember 2026 ([was dabei gilt](/de/blog/ihk-berichtsheft-alternative)). Bezahlen muss die neue Lösung der Betrieb, nicht der Azubi ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
+
+## Kostenlos, Testphase, Abo: Was ist der Unterschied?
+
+Bei Berichtsheft-Software gibt es drei Preismodelle. Ein Anbieter kann auch zwei davon kombinieren.
+
+| Modell | Was es heißt | Fragen Sie |
+| --- | --- | --- |
+| Kostenloser Tarif | Keine Testfrist, dafür feste Grenzen, etwa bei Azubis, Ausbildern oder Funktionen | Wo liegen die Grenzen, und was passiert beim Überschreiten? |
+| Testphase | Befristet nutzbar, danach kostenpflichtig | Was passiert mit den Einträgen, wenn wir danach nicht buchen? |
+| Abo | Laufender Preis, zum Beispiel pro Azubi, pro Ausbilder oder pauschal pro Betrieb | Welche Laufzeit, welche Kündigungsfrist, und wie wird gezählt? |
+
+## Was eine Testphase zeigt und was nicht
+
+Eine Testphase ist sinnvoll, um die Bedienung auszuprobieren. Einige Punkte zeigen sich aber erst im Lauf der Ausbildung. Klären Sie sie deshalb vorher mit dem Anbieter:
+
+- **Der Nachweis muss vollständig sein.** Ohne ihn gibt es keine Zulassung zur Abschlussprüfung ([§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)). Buchen Sie nach der Testphase nicht, muss der bisherige Teil trotzdem erhalten bleiben.
+- **Ein Wechsel kostet Arbeit.** Exportieren, einen sauberen Schnitt setzen, zur Prüfung zwei Teile vorlegen. Genau das steht gerade bei Betrieben an, deren Azubis das IHK-Tool nutzen.
+- **Die Kosten wachsen mit.** Rechnen Sie den Preis für die Zahl der Azubis aus, die Sie in drei Jahren gleichzeitig ausbilden, nicht für heute.
+
+## 9 Fragen an jeden Anbieter
+
+Stellen Sie jedem Anbieter dieselben Fragen. Die wichtigsten stehen zuerst: Export und Datenschutz.
+
+<CopyBlock buttonLabel="Fragen kopieren" copiedLabel="Kopiert!">
+
+### Checkliste: Berichtsheft-Software vergleichen
+
+**Daten**
+
+- [ ] Kommen wir jederzeit als PDF an alle Nachweise, auch nach Kündigung oder Tarifwechsel?
+- [ ] Gibt es einen Auftragsverarbeitungsvertrag, auch im kostenlosen Tarif?
+- [ ] Wo werden die Daten gehostet: Deutschland, EU oder außerhalb?
+
+**Kosten**
+
+- [ ] Was passiert beim nächsten Azubi, wenn wir eine Grenze überschreiten?
+- [ ] Was ist im kostenlosen Tarif enthalten, was nur in der Testphase?
+- [ ] Wie wird abgerechnet, und mit welcher Laufzeit und Kündigungsfrist?
+
+**Praxis**
+
+- [ ] Deckt das Eintragsformular die Mindestangaben der BIBB-Empfehlung ab, etwa betriebliche Tätigkeiten, Unterweisungen und Berufsschulthemen?
+- [ ] Steht die Freigabe des Ausbilders mit Name und Datum im Nachweis?
+- [ ] Gibt es Erinnerungen bei fehlenden Einträgen?
+
+</CopyBlock>
+
+Vorher zu klären: Welche Form des Nachweises nimmt Ihre Kammer an? Die IHK Hannover etwa lässt Produkte anderer Anbieter zu, sofern sie der [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) entsprechen ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). Was im Nachweis stehen muss, zeigt unser Beitrag [Berichtsheft digital führen](/de/blog/berichtsheft-digital).
+
+## So beantwortet LearnSlice die Fragen
+
+Damit Sie sehen, wie konkrete Antworten aussehen können, hier unsere:
+
+| Frage | LearnSlice-Berichtsheft |
+| --- | --- |
+| Export | Einzelne Einträge oder ganze Zeiträume als PDF. Nach Kündigung von Premium bleiben alle Nachweise lesbar und exportierbar. Bei mehr als 3 Azubis schreiben die 3 am längsten registrierten weiter |
+| Datenschutz | Hosting in Deutschland, Vertrag zur Auftragsverarbeitung bei der Registrierung |
+| Kostenlos | 1 Ausbilder und bis zu 3 Azubis, ohne Laufzeit, ohne Zahlungsdaten, ohne KI |
+| Beim nächsten Azubi | LearnSlice Premium, abgerechnet pro Azubi, Ausbilder kostenlos |
+| Praxis | Freigabe mit einem Klick, mit Name und Datum. Erinnerung per E-Mail |
+
+## Wann lohnt sich ein Abo?
+
+Für wenige Azubis reicht oft ein kostenloser Weg, auch die Muster der BIBB-Empfehlung auf Papier oder in Word. Ein Abo lohnt sich eher, wenn Sie viele Azubis betreuen oder mehr als den Nachweis brauchen, etwa [Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital). Fragen Sie dann, ob das Berichtsheft auch einzeln nutzbar bleibt.
+
+*Transparenzhinweis: Dieser Beitrag ist von LearnSlice, und LearnSlice bietet selbst ein Berichtsheft an. Wir nennen deshalb keine anderen Anbieter, bewerten keine fremden Angebote und vergeben keine Rangliste. Die Fragen oben passen auf jede Lösung, auch auf unsere.*
+
+*Hinweis: Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer. LearnSlice ist kein Angebot der Industrie- und Handelskammern und steht mit ihnen in keiner Verbindung. Stand der Angaben zu LearnSlice: 12. November 2026.*
+
+
+## Häufig gestellte Fragen
+
+### Gibt es kostenlose Berichtsheft-Software für Betriebe?
+
+Ja. Das LearnSlice-Berichtsheft etwa ist für 1 Ausbilder und bis zu 3 Azubis kostenlos, ohne Laufzeit und ohne Zahlungsdaten. Achten Sie beim Vergleich darauf, ob ein Angebot einen kostenlosen Tarif hat oder eine befristete Testphase, und fragen Sie, was danach oder beim Überschreiten einer Grenze mit Ihren Nachweisen passiert.
+
+### Was ist der Unterschied zwischen kostenlosem Tarif und Testphase?
+
+Eine Testphase ist befristet. Danach buchen Sie oder nutzen das Angebot nicht weiter. Ein kostenloser Tarif hat keine Testfrist, aber Grenzen, zum Beispiel bei der Zahl der Azubis oder der Funktionen. Für ein Berichtsheft, das über die ganze Ausbildung läuft, zählt vor allem, was nach dem Ende einer Testphase mit den Daten passiert.
+
+### Brauchen wir für Berichtsheft-Software einen Auftragsverarbeitungsvertrag?
+
+In der Regel ja, wenn ein Anbieter personenbezogene Daten Ihrer Azubis in Ihrem Auftrag speichert (Art. 28 DSGVO). Fragen Sie, ob der Vertrag auch im kostenlosen Tarif oder in der Testphase angeboten wird und wo die Daten gehostet sind.
+
+### Lohnt sich ein Abo, wenn wir nur einen Azubi haben?
+
+Nicht unbedingt. Für einen oder wenige Azubis reichen oft ein kostenloser Tarif oder die Muster der BIBB-Empfehlung auf Papier oder in Word. Ein Abo lohnt sich eher, wenn Sie viele Azubis haben oder Funktionen über das Berichtsheft hinaus brauchen, etwa Prüfungsvorbereitung.
+
+## Quellen
+
+- Gesetze im Internet: § 5 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__5.html (geprüft am 2026-11-12)
+- Gesetze im Internet: § 14 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__14.html (geprüft am 2026-11-12)
+- Gesetze im Internet: § 43 BBiG: https://www.gesetze-im-internet.de/bbig_2005/__43.html (geprüft am 2026-11-12)
+- BIBB-Hauptausschuss: Empfehlung für das Führen von Ausbildungsnachweisen vom 1. September 2020 (BAnz AT 02.10.2020 S1): https://www.bibb.de/dokumente/pdf/HA156.pdf (geprüft am 2026-11-02)
+- IHK Hannover: Digitales Berichtsheft: https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974 (geprüft am 2026-11-02)
+- Verordnung (EU) 2016/679 (DSGVO), Art. 28: Auftragsverarbeiter: https://eur-lex.europa.eu/eli/reg/2016/679/oj (geprüft am 2026-11-12)
+
+---
+
 # IHK Berichtsheft Alternative: Was nach dem 31.12.2026 gilt
 
 Source: https://learnslice.com/de/blog/ihk-berichtsheft-alternative
@@ -5396,7 +5634,7 @@ Es gibt drei Wege: das Berichtsheft auf Papier oder in Word führen, eine eigens
 | Berichtsheft-Software | Software nur für den Ausbildungsnachweis | je nach Anbieter | Datenexport, EU-Hosting, Auftragsverarbeitungsvertrag |
 | Lernplattform mit Berichtsheft | Nachweis, Lernstand und Prüfungsvorbereitung an einem Ort | je nach Anbieter | ob das Berichtsheft auch einzeln nutzbar ist |
 
-Ein Muster zum Kopieren, das die Mindestangaben der BIBB-Empfehlung abdeckt, finden Sie in unserem Beitrag [Berichtsheft digital führen](/de/blog/berichtsheft-digital#berichtsheft-vorlage-zum-kopieren).
+Ein Muster zum Kopieren, das die Mindestangaben der BIBB-Empfehlung abdeckt, finden Sie in unserem Beitrag [Berichtsheft digital führen](/de/blog/berichtsheft-digital#berichtsheft-vorlage-zum-kopieren). Welche Fragen Sie Anbietern von Berichtsheft-Software stellen sollten, steht in unserem [Vergleich von kostenlosem Tarif, Testphase und Abo](/de/blog/berichtsheft-software-vergleich).
 
 ## Worauf kommt es bei der neuen Lösung an?
 
@@ -9440,7 +9678,7 @@ Es gibt vier Wege: eine Vorlage in Word oder PDF, eine Branchen-App, eine eigens
 | Eigenständige Berichtsheft-App | Software nur für den Ausbildungsnachweis | viele Azubis, klarer Freigabeprozess | Lernen und Prüfungsvorbereitung bleiben getrennt |
 | Lernplattform mit Berichtsheft | Nachweis, Lernstand und Prüfungsvorbereitung an einem Ort | Betriebe, die mehr als Dokumentation wollen | mehr Einführungsaufwand |
 
-**Kostenlos starten:** Die [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) enthält Muster für tägliche und wöchentliche Nachweise, auch mit Bezug zum Ausbildungsrahmenplan. Sie nennt außerdem Branchen-Apps, etwa für das Bäcker-, Dachdecker-, Friseur- und Metallhandwerk, den Garten- und Landschaftsbau und Kfz-Berufe. Fragen Sie zuerst Ihre Kammer, welche Formate sie annimmt.
+**Kostenlos starten:** Die [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) enthält Muster für tägliche und wöchentliche Nachweise, auch mit Bezug zum Ausbildungsrahmenplan. Sie nennt außerdem Branchen-Apps, etwa für das Bäcker-, Dachdecker-, Friseur- und Metallhandwerk, den Garten- und Landschaftsbau und Kfz-Berufe. Fragen Sie zuerst Ihre Kammer, welche Formate sie annimmt. Wie Sie Berichtsheft-Software vergleichen, zeigt unser Beitrag [kostenlos, Testphase oder Abo](/de/blog/berichtsheft-software-vergleich).
 
 **Für Azubis ist das Berichtsheft immer kostenlos.** Nachweishefte, Formblätter und IT-Programme stellt der Betrieb ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)). Azubis müssen also nichts kaufen. Welche Form gilt, erfahren sie im Betrieb.
 

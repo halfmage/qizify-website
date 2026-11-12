@@ -38,19 +38,16 @@ for (const file of (await readdir(BLOG_DIR)).filter((f) => f.endsWith('.mdx'))) 
 
 // Free-plan limits typed as plain text (landing copy, posts, AI feeds) must match the
 // constants in src/data/berichtsheft.mjs, which mirror learnslice-sme lib/plan.ts.
+// Every blog post is scanned, so a new post that states the limits is covered
+// without anyone having to remember to add it here.
 const LIMIT_FILES = [
 	'src/content/berichtsheft.json',
-	'src/content/blog/berichtsheft-digital.mdx',
-	'src/content/blog/digital-training-logbook.mdx',
-	'src/content/blog/ihk-berichtsheft-alternative.mdx',
-	'src/content/blog/azubi-onboarding.mdx',
-	'src/content/blog/apprentice-onboarding.mdx',
-	'src/content/blog/ihk-pruefung-tipps.mdx',
-	'src/content/blog/ihk-exam-tips.mdx',
 	'public/llms.txt',
+	...(await readdir(BLOG_DIR)).filter((f) => f.endsWith('.mdx')).map((f) => `src/content/blog/${f}`),
 ];
 const LIMIT_PATTERNS = [
-	[/bis (?:zu )?(\d+) Azubis/g, FREE_AZUBI_LIMIT],
+	// Not after a number: "5 bis 10 Azubis" is a range, not the free limit.
+	[/(?<!\d\s)bis (?:zu )?(\d+) Azubis/g, FREE_AZUBI_LIMIT],
 	[/up to (\d+) apprentices/g, FREE_AZUBI_LIMIT],
 	[/(\d+) Ausbilder(?:in)? und bis/g, FREE_AUSBILDER_LIMIT],
 	[/(\d+) trainers? and up to/g, FREE_AUSBILDER_LIMIT],

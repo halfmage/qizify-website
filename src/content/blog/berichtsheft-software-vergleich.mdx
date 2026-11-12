@@ -1,0 +1,137 @@
+---
+title: "Berichtsheft-Software vergleichen: kostenlos oder Testphase?"
+description: "Berichtsheft-Software für Betriebe: Was kostenlos heißt, was eine Testphase zeigt und welche 9 Fragen Sie jedem Anbieter stellen sollten."
+publishDate: 2026-11-12
+author: "LearnSlice Team"
+tags: ["Berichtsheft", "Ausbilder", "Software"]
+lang: "de"
+translationSlug: "training-logbook-software-comparison"
+ctaVariant: "berichtsheft"
+ogImage: "/images/blog/pexels-karola-g-6256195.jpg"
+heroImage: "/images/blog/pexels-karola-g-6256195.webp"
+keyTakeaways:
+  - "Kostenlos testen ist nicht dasselbe wie kostenlos nutzen. Eine Testphase ist befristet, ein kostenloser Tarif hat keine Testfrist, dafür feste Grenzen."
+  - "Eine Ausbildung dauert in der Regel zwei bis drei Jahre (§ 5 Abs. 1 Nr. 2 BBiG). Die Software muss also über die ganze Ausbildung tragen, nicht nur über eine Testphase."
+  - "Die wichtigste Frage an jeden Anbieter: Kommen wir jederzeit als PDF an alle Nachweise, auch nach einer Kündigung? Ohne vollständigen Nachweis gibt es keine Zulassung zur Abschlussprüfung (§ 43 Abs. 1 Nr. 2 BBiG)."
+about: ["Ausbildungsnachweis", "Berichtsheft", "Berufsbildungsgesetz", "Software"]
+sources:
+  - name: "Gesetze im Internet: § 5 BBiG"
+    url: "https://www.gesetze-im-internet.de/bbig_2005/__5.html"
+    retrieved: "2026-11-12"
+  - name: "Gesetze im Internet: § 14 BBiG"
+    url: "https://www.gesetze-im-internet.de/bbig_2005/__14.html"
+    retrieved: "2026-11-12"
+  - name: "Gesetze im Internet: § 43 BBiG"
+    url: "https://www.gesetze-im-internet.de/bbig_2005/__43.html"
+    retrieved: "2026-11-12"
+  - name: "BIBB-Hauptausschuss: Empfehlung für das Führen von Ausbildungsnachweisen vom 1. September 2020 (BAnz AT 02.10.2020 S1)"
+    url: "https://www.bibb.de/dokumente/pdf/HA156.pdf"
+    retrieved: "2026-11-02"
+  - name: "IHK Hannover: Digitales Berichtsheft"
+    url: "https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974"
+    retrieved: "2026-11-02"
+  - name: "Verordnung (EU) 2016/679 (DSGVO), Art. 28: Auftragsverarbeiter"
+    url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    retrieved: "2026-11-12"
+faq:
+  - q: "Gibt es kostenlose Berichtsheft-Software für Betriebe?"
+    a: "Ja. Das LearnSlice-Berichtsheft etwa ist für 1 Ausbilder und bis zu 3 Azubis kostenlos, ohne Laufzeit und ohne Zahlungsdaten. Achten Sie beim Vergleich darauf, ob ein Angebot einen kostenlosen Tarif hat oder eine befristete Testphase, und fragen Sie, was danach oder beim Überschreiten einer Grenze mit Ihren Nachweisen passiert."
+  - q: "Was ist der Unterschied zwischen kostenlosem Tarif und Testphase?"
+    a: "Eine Testphase ist befristet. Danach buchen Sie oder nutzen das Angebot nicht weiter. Ein kostenloser Tarif hat keine Testfrist, aber Grenzen, zum Beispiel bei der Zahl der Azubis oder der Funktionen. Für ein Berichtsheft, das über die ganze Ausbildung läuft, zählt vor allem, was nach dem Ende einer Testphase mit den Daten passiert."
+  - q: "Brauchen wir für Berichtsheft-Software einen Auftragsverarbeitungsvertrag?"
+    a: "In der Regel ja, wenn ein Anbieter personenbezogene Daten Ihrer Azubis in Ihrem Auftrag speichert (Art. 28 DSGVO). Fragen Sie, ob der Vertrag auch im kostenlosen Tarif oder in der Testphase angeboten wird und wo die Daten gehostet sind."
+  - q: "Lohnt sich ein Abo, wenn wir nur einen Azubi haben?"
+    a: "Nicht unbedingt. Für einen oder wenige Azubis reichen oft ein kostenloser Tarif oder die Muster der BIBB-Empfehlung auf Papier oder in Word. Ein Abo lohnt sich eher, wenn Sie viele Azubis haben oder Funktionen über das Berichtsheft hinaus brauchen, etwa Prüfungsvorbereitung."
+---
+import CopyBlock from '../../components/CopyBlock.astro';
+import BerichtsheftSignup from '../../components/BerichtsheftSignup.astro';
+import StackedTable from '../../components/StackedTable.astro';
+import TrialVsTrainingBar from '../../components/TrialVsTrainingBar.astro';
+import AppScreenshot from '../../components/AppScreenshot.astro';
+import berichtsheft from '../../content/berichtsheft.json';
+
+![Junge Frau mit Mütze und Brille schaut vor einer Tafel auf ihr Smartphone](/images/blog/pexels-karola-g-6256195.webp)
+
+"Kostenlos" kann bei Berichtsheft-Software und Berichtsheft-Apps zweierlei heißen: ein Tarif, der kostenlos bleibt, solange Sie seine Grenzen einhalten, oder eine befristete Testphase, nach der ein Abo beginnt. Für ein Werkzeug, das Ihre Azubis zwei bis drei Jahre lang nutzen, ist das ein großer Unterschied.
+
+Für Betriebe, deren Azubis das Digitale Berichtsheft der IHK nutzen, steht die Wahl jetzt an: Es endet laut mehreren IHKs am 31. Dezember 2026 ([was dabei gilt](/de/blog/ihk-berichtsheft-alternative)). Bezahlen muss die neue Lösung der Betrieb, nicht der Azubi ([§ 14 Abs. 1 Nr. 3 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__14.html)).
+
+## Kostenlos, Testphase, Abo: Was ist der Unterschied?
+
+Bei Berichtsheft-Software gibt es drei Preismodelle. Ein Anbieter kann auch zwei davon kombinieren.
+
+<StackedTable
+  headers={["Modell", "Was es heißt", "Fragen Sie"]}
+  rows={[
+    ["Kostenloser Tarif", "Keine Testfrist, dafür feste Grenzen, etwa bei Azubis, Ausbildern oder Funktionen", "Wo liegen die Grenzen, und was passiert beim Überschreiten?"],
+    ["Testphase", "Befristet nutzbar, danach kostenpflichtig", "Was passiert mit den Einträgen, wenn wir danach nicht buchen?"],
+    ["Abo", "Laufender Preis, zum Beispiel pro Azubi, pro Ausbilder oder pauschal pro Betrieb", "Welche Laufzeit, welche Kündigungsfrist, und wie wird gezählt?"],
+  ]}
+/>
+
+## Was eine Testphase zeigt und was nicht
+
+Eine Testphase ist sinnvoll, um die Bedienung auszuprobieren. Einige Punkte zeigen sich aber erst im Lauf der Ausbildung. Klären Sie sie deshalb vorher mit dem Anbieter:
+
+<TrialVsTrainingBar lang="de" />
+
+- **Der Nachweis muss vollständig sein.** Ohne ihn gibt es keine Zulassung zur Abschlussprüfung ([§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)). Buchen Sie nach der Testphase nicht, muss der bisherige Teil trotzdem erhalten bleiben.
+- **Ein Wechsel kostet Arbeit.** Exportieren, einen sauberen Schnitt setzen, zur Prüfung zwei Teile vorlegen. Genau das steht gerade bei Betrieben an, deren Azubis das IHK-Tool nutzen.
+- **Die Kosten wachsen mit.** Rechnen Sie den Preis für die Zahl der Azubis aus, die Sie in drei Jahren gleichzeitig ausbilden, nicht für heute.
+
+## 9 Fragen an jeden Anbieter
+
+Stellen Sie jedem Anbieter dieselben Fragen. Die wichtigsten stehen zuerst: Export und Datenschutz.
+
+<CopyBlock buttonLabel="Fragen kopieren" copiedLabel="Kopiert!">
+
+### Checkliste: Berichtsheft-Software vergleichen
+
+**Daten**
+
+- [ ] Kommen wir jederzeit als PDF an alle Nachweise, auch nach Kündigung oder Tarifwechsel?
+- [ ] Gibt es einen Auftragsverarbeitungsvertrag, auch im kostenlosen Tarif?
+- [ ] Wo werden die Daten gehostet: Deutschland, EU oder außerhalb?
+
+**Kosten**
+
+- [ ] Was passiert beim nächsten Azubi, wenn wir eine Grenze überschreiten?
+- [ ] Was ist im kostenlosen Tarif enthalten, was nur in der Testphase?
+- [ ] Wie wird abgerechnet, und mit welcher Laufzeit und Kündigungsfrist?
+
+**Praxis**
+
+- [ ] Deckt das Eintragsformular die Mindestangaben der BIBB-Empfehlung ab, etwa betriebliche Tätigkeiten, Unterweisungen und Berufsschulthemen?
+- [ ] Steht die Freigabe des Ausbilders mit Name und Datum im Nachweis?
+- [ ] Gibt es Erinnerungen bei fehlenden Einträgen?
+
+</CopyBlock>
+
+Vorher zu klären: Welche Form des Nachweises nimmt Ihre Kammer an? Die IHK Hannover etwa lässt Produkte anderer Anbieter zu, sofern sie der [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) entsprechen ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). Was im Nachweis stehen muss, zeigt unser Beitrag [Berichtsheft digital führen](/de/blog/berichtsheft-digital).
+
+## So beantwortet LearnSlice die Fragen
+
+Damit Sie sehen, wie konkrete Antworten aussehen können, hier unsere:
+
+<StackedTable
+  headers={["Frage", "LearnSlice-Berichtsheft"]}
+  rows={[
+    ["Export", "Einzelne Einträge oder ganze Zeiträume als PDF. Nach Kündigung von Premium bleiben alle Nachweise lesbar und exportierbar. Bei mehr als 3 Azubis schreiben die 3 am längsten registrierten weiter"],
+    ["Datenschutz", "Hosting in Deutschland, Vertrag zur Auftragsverarbeitung bei der Registrierung"],
+    ["Kostenlos", "1 Ausbilder und bis zu 3 Azubis, ohne Laufzeit, ohne Zahlungsdaten, ohne KI"],
+    ["Beim nächsten Azubi", "LearnSlice Premium, abgerechnet pro Azubi, Ausbilder kostenlos"],
+    ["Praxis", "Freigabe mit einem Klick, mit Name und Datum. Erinnerung per E-Mail"],
+  ]}
+/>
+
+<AppScreenshot {...berichtsheft.de.screens.entries} note={berichtsheft.de.screens.note} hint={berichtsheft.de.screens.hint} />
+
+<BerichtsheftSignup lang="de" />
+
+## Wann lohnt sich ein Abo?
+
+Für wenige Azubis reicht oft ein kostenloser Weg, auch die Muster der BIBB-Empfehlung auf Papier oder in Word. Ein Abo lohnt sich eher, wenn Sie viele Azubis betreuen oder mehr als den Nachweis brauchen, etwa [Prüfungsvorbereitung](/de/blog/ihk-pruefungsvorbereitung-digital). Fragen Sie dann, ob das Berichtsheft auch einzeln nutzbar bleibt.
+
+*Transparenzhinweis: Dieser Beitrag ist von LearnSlice, und LearnSlice bietet selbst ein Berichtsheft an. Wir nennen deshalb keine anderen Anbieter, bewerten keine fremden Angebote und vergeben keine Rangliste. Die Fragen oben passen auf jede Lösung, auch auf unsere.*
+
+*Hinweis: Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer. LearnSlice ist kein Angebot der Industrie- und Handelskammern und steht mit ihnen in keiner Verbindung. Stand der Angaben zu LearnSlice: 12. November 2026.*
