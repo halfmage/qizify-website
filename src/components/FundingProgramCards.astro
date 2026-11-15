@@ -3,7 +3,8 @@
 // for the e-learning funding posts. Figures from the guidelines: MID-Digitalisierung
 // (MB.NRW 2026 Nr. 10) and Digitalbonus Bayern (BayMBl. 2024 Nr. 315, as amended
 // BayMBl. 2025 Nr. 435), checked 2026-11-15. Update both languages together.
-// Plain HTML so it stays readable on phones. Sits inside `prose`, hence `not-prose`.
+// From sm up, both cards share one row grid (CSS subgrid), so every row lines up
+// across the two cards even when one text wraps. Sits inside `prose`, hence `not-prose`.
 interface Props {
 	lang: 'en' | 'de';
 }
@@ -14,17 +15,19 @@ if (lang !== 'de' && lang !== 'en') throw new Error(`FundingProgramCards: unsupp
 const t = lang === 'de'
 	? {
 		label: 'Auf einen Blick',
+		rows: ['Zweck', 'Wer', 'Läuft bis'],
 		programs: [
-			{ region: 'NRW', name: 'MID-Digitalisierung', rate: '50 %', max: 'höchstens 15.000 Euro', who: 'KMU mit Sitz in NRW', for: 'Für ein Produkt, das Sie am Markt anbieten', until: 'bis 31.12.2029' },
-			{ region: 'Bayern', name: 'Digitalbonus', rate: 'bis 50 %', max: 'höchstens 7.500 Euro, im Plus 30.000 Euro', who: 'Kleine Unternehmen mit Betriebsstätte in Bayern', for: 'Für den Einsatz in Ihrer Betriebsstätte', until: 'bis 31.12.2027' },
+			{ region: 'NRW', name: 'MID-Digitalisierung', rate: '50 %', max: 'höchstens 15.000 Euro', extra: '', for: 'Ein Produkt, das Sie am Markt anbieten', who: 'KMU mit Sitz in NRW', until: '31.12.2029' },
+			{ region: 'Bayern', name: 'Digitalbonus', rate: 'bis 50 %', max: 'höchstens 7.500 Euro', extra: 'Plus: einmalig bis 30.000 Euro', for: 'Einsatz in Ihrer Betriebsstätte', who: 'Kleine Unternehmen in Bayern', until: '31.12.2027' },
 		],
 		note: 'Gefördert werden Leistungen externer Anbieter. Antrag immer vor der Beauftragung, ein Rechtsanspruch besteht nicht.',
 	}
 	: {
 		label: 'At a glance',
+		rows: ['Purpose', 'Who', 'Runs until'],
 		programs: [
-			{ region: 'North Rhine-Westphalia', name: 'MID-Digitalisierung', rate: '50%', max: 'up to 15,000 euros', who: 'SMEs registered in NRW', for: 'For a product you bring to market', until: 'until 31 Dec 2029' },
-			{ region: 'Bavaria', name: 'Digitalbonus', rate: 'up to 50%', max: 'up to 7,500 euros, 30,000 in Plus', who: 'Small companies with a site in Bavaria', for: 'For use at your own site', until: 'until 31 Dec 2027' },
+			{ region: 'North Rhine-Westphalia', name: 'MID-Digitalisierung', rate: '50%', max: 'up to 15,000 euros', extra: '', for: 'A product you bring to market', who: 'SMEs registered in NRW', until: '31 Dec 2029' },
+			{ region: 'Bavaria', name: 'Digitalbonus', rate: 'up to 50%', max: 'up to 7,500 euros', extra: 'Plus: once, up to 30,000 euros', for: 'Use at your own site', who: 'Small companies in Bavaria', until: '31 Dec 2027' },
 		],
 		note: 'Work by external providers is what gets funded. Always apply before placing the order. There is no legal entitlement.',
 	};
@@ -32,16 +35,24 @@ const t = lang === 'de'
 
 <figure class="not-prose my-10">
 	<figcaption class="section-label block mb-4">{t.label}</figcaption>
-	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-y-0">
 		{t.programs.map((p) => (
-			<div class="rounded-xl border border-border bg-surface p-6">
-				<span class="block font-mono text-label uppercase tracking-wider text-muted">{p.region}</span>
-				<span class="block text-lg font-semibold text-white mt-1">{p.name}</span>
-				<span class="block text-display-sm text-primary font-semibold mt-4 leading-none">{p.rate}</span>
-				<span class="block text-sm text-white mt-2">{p.max}</span>
-				<span class="block text-sm font-semibold text-white mt-4">{p.for}</span>
-				<span class="block text-sm text-muted mt-1">{p.who}</span>
-				<span class="block text-sm text-muted">{p.until}</span>
+			<div class="rounded-xl border border-border bg-surface px-6 py-5 sm:row-span-5 sm:grid sm:grid-rows-subgrid">
+				<div>
+					<span class="block font-mono text-label uppercase tracking-wider text-muted">{p.region}</span>
+					<span class="block text-lg font-semibold text-white mt-1">{p.name}</span>
+				</div>
+				<div class="mt-4 pb-5 border-b border-border">
+					<span class="block text-display-sm text-primary font-semibold leading-none">{p.rate}</span>
+					<span class="block text-sm text-white mt-2">{p.max}</span>
+					{p.extra && <span class="block text-sm text-muted mt-0.5">{p.extra}</span>}
+				</div>
+				{[p.for, p.who, p.until].map((v, i) => (
+					<div class="pt-4">
+						<span class="block font-mono text-[11px] uppercase tracking-wider text-muted">{t.rows[i]}</span>
+						<span class={`block text-sm text-white mt-1 ${i === 0 ? 'font-semibold' : ''}`}>{v}</span>
+					</div>
+				))}
 			</div>
 		))}
 	</div>
