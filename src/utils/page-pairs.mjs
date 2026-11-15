@@ -55,6 +55,7 @@ export const EN_TO_DE = {
 	'/blog/apprenticeships-defence-industry-germany': '/de/blog/ausbildung-ruestungsindustrie',
 	'/blog/prevent-apprenticeship-dropout': '/de/blog/ausbildungsabbruch-verhindern',
 	'/blog/training-mechatronics-apprentices': '/de/blog/mechatroniker-ausbilden',
+	'/blog/e-learning-funding-germany': '/de/blog/e-learning-foerderung',
 };
 
 // Pages that exist only in one language and therefore should not emit
