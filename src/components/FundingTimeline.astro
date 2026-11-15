@@ -6,7 +6,8 @@
 // order may be placed, so the NRW step points to NRW.BANK instead of claiming a moment.
 // The NRW application includes a non-binding offer (Nr. 7.2 g). The order step is
 // highlighted so the one rule that loses the grant stands out.
-// Stacked cards on phones, one row per step (title left, text right) from md. Sits inside `prose`, hence `not-prose`.
+// A vertical stepper: numbered dot and connecting line on the left, title and text on
+// the right, the same layout on phones and desktop. Sits inside `prose`, hence `not-prose`.
 interface Props {
 	lang: 'en' | 'de';
 }
@@ -25,6 +26,7 @@ const t = lang === 'de'
 			{ title: 'Beauftragen', body: 'Auftrag unterschreiben, Projekt starten.', key: true },
 			{ title: 'Nachweis', body: 'Rechnung, Zahlungsnachweis, kurzer Projektbericht (NRW).' },
 		],
+		keyLabel: 'Erst hier',
 		warning: 'Ein unterschriebener Auftrag vor dem Antrag gilt als Projektbeginn. Dann gibt es keine Förderung.',
 	}
 	: {
@@ -37,8 +39,10 @@ const t = lang === 'de'
 			{ title: 'Place the order', body: 'Sign the order, start the project.', key: true },
 			{ title: 'Proof', body: 'Invoice, proof of payment, short project report (NRW).' },
 		],
+		keyLabel: 'Only now',
 		warning: 'A signed order before the application counts as the project start. Then there is no funding.',
 	};
+const last = t.steps.length - 1;
 ---
 
 <figure class="not-prose my-10 rounded-xl border border-border bg-surface p-6 md:p-8">
@@ -47,17 +51,27 @@ const t = lang === 'de'
 		<span class="block text-heading-sm text-white">{t.title}</span>
 	</figcaption>
 
-	<ol class="grid grid-cols-1 gap-3" style="list-style:none;margin:0;padding:0">
+	<ol style="list-style:none;margin:0;padding:0">
 		{t.steps.map((s, i) => (
-			<li class={`rounded-lg p-4 m-0 md:flex md:items-baseline md:gap-6 ${s.key ? 'bg-primary/20 ring-1 ring-primary' : 'bg-white/5'}`} style="list-style:none">
-				<span class="block md:w-52 md:shrink-0">
-					<span class={`block font-mono text-label ${s.key ? 'text-white' : 'text-primary'}`}>{String(i + 1).padStart(2, '0')}</span>
-					<span class="block text-base font-semibold text-white mt-1 leading-snug">{s.title}</span>
-				</span>
-				<span class="block text-sm text-muted mt-2 md:mt-0 leading-relaxed">{s.body}</span>
+			<li class="relative grid grid-cols-[2rem_1fr] gap-x-4 m-0" style="list-style:none">
+				{i < last && <span class="absolute left-4 top-8 bottom-0 w-px -translate-x-1/2 bg-border" aria-hidden="true"></span>}
+				<span
+					class={`relative z-10 flex h-8 w-8 items-center justify-center rounded-full font-mono text-xs ${s.key ? 'bg-primary text-white' : 'bg-zinc-900 text-primary ring-1 ring-border'}`}
+					aria-hidden="true"
+				>{String(i + 1).padStart(2, '0')}</span>
+				<div class={`pt-1 ${i < last ? 'pb-6' : ''}`}>
+					<span class="flex flex-wrap items-center gap-2">
+						<span class="text-base font-semibold text-white leading-snug">{s.title}</span>
+						{s.key && <span class="rounded-full bg-primary/20 px-2 py-0.5 font-mono text-[11px] uppercase tracking-wider text-white ring-1 ring-primary">{t.keyLabel}</span>}
+					</span>
+					<span class="block text-sm text-muted mt-1 leading-relaxed">{s.body}</span>
+				</div>
 			</li>
 		))}
 	</ol>
 
-	<p class="text-sm text-white m-0 mt-6 border-l-2 border-accent pl-3">{t.warning}</p>
+	<p class="m-0 mt-6 pt-5 border-t border-border grid grid-cols-[2rem_1fr] gap-x-4 text-sm text-white">
+		<span class="flex h-8 w-8 items-center justify-center rounded-full bg-accent/15 text-accent font-semibold" aria-hidden="true">!</span>
+		<span class="self-center">{t.warning}</span>
+	</p>
 </figure>
