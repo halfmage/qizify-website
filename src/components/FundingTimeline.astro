@@ -1,0 +1,63 @@
+---
+// "Apply before ordering" sequence for the e-learning funding posts. In both programmes
+// a binding order counts as the start of the project, and started projects are not
+// funded (MID-Digitalisierung Nr. 4.6, Digitalbonus Bayern Nr. 4.1). Bavaria allows the
+// start once the electronic receipt is confirmed; the NRW guideline does not say when the
+// order may be placed, so the NRW step points to NRW.BANK instead of claiming a moment.
+// The NRW application includes a non-binding offer (Nr. 7.2 g). The order step is
+// highlighted so the one rule that loses the grant stands out.
+// Stacked cards on phones, one row per step (title left, text right) from md. Sits inside `prose`, hence `not-prose`.
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+if (lang !== 'de' && lang !== 'en') throw new Error(`FundingTimeline: unsupported lang "${lang}"`);
+
+const t = lang === 'de'
+	? {
+		label: 'Reihenfolge',
+		title: 'Erst der Antrag, dann der Auftrag',
+		steps: [
+			{ title: 'Angebot einholen', body: 'Unverbindlich, mit Projektbeschreibung, Kosten netto und Zeitplan. In NRW gehört es zum Antrag.' },
+			{ title: 'Antrag stellen', body: 'NRW: Förderportal und Losverfahren. Bayern: selbst über ELSTER.' },
+			{ title: 'Freigabe abwarten', body: 'Bayern: Eingangsbestätigung des Antrags. NRW: mit der NRW.BANK klären, ab wann Sie beauftragen dürfen.' },
+			{ title: 'Beauftragen', body: 'Auftrag unterschreiben, Projekt starten.', key: true },
+			{ title: 'Nachweis', body: 'Rechnung, Zahlungsnachweis, kurzer Projektbericht (NRW).' },
+		],
+		warning: 'Ein unterschriebener Auftrag vor dem Antrag gilt als Projektbeginn. Dann gibt es keine Förderung.',
+	}
+	: {
+		label: 'Sequence',
+		title: 'Application first, order second',
+		steps: [
+			{ title: 'Get a quote', body: 'Non-binding, with project description, net costs and timeline. In NRW it is part of the application.' },
+			{ title: 'Apply', body: 'NRW: funding portal and lottery. Bavaria: yourself via ELSTER.' },
+			{ title: 'Wait for the go-ahead', body: 'Bavaria: confirmation that the application was received. NRW: ask NRW.BANK when you may place the order.' },
+			{ title: 'Place the order', body: 'Sign the order, start the project.', key: true },
+			{ title: 'Proof', body: 'Invoice, proof of payment, short project report (NRW).' },
+		],
+		warning: 'A signed order before the application counts as the project start. Then there is no funding.',
+	};
+---
+
+<figure class="not-prose my-10 rounded-xl border border-border bg-surface p-6 md:p-8">
+	<figcaption class="m-0 mb-6">
+		<span class="section-label block mb-2">{t.label}</span>
+		<span class="block text-heading-sm text-white">{t.title}</span>
+	</figcaption>
+
+	<ol class="grid grid-cols-1 gap-3" style="list-style:none;margin:0;padding:0">
+		{t.steps.map((s, i) => (
+			<li class={`rounded-lg p-4 m-0 md:flex md:items-baseline md:gap-6 ${s.key ? 'bg-primary/20 ring-1 ring-primary' : 'bg-white/5'}`} style="list-style:none">
+				<span class="block md:w-52 md:shrink-0">
+					<span class={`block font-mono text-label ${s.key ? 'text-white' : 'text-primary'}`}>{String(i + 1).padStart(2, '0')}</span>
+					<span class="block text-base font-semibold text-white mt-1 leading-snug">{s.title}</span>
+				</span>
+				<span class="block text-sm text-muted mt-2 md:mt-0 leading-relaxed">{s.body}</span>
+			</li>
+		))}
+	</ol>
+
+	<p class="text-sm text-white m-0 mt-6 border-l-2 border-accent pl-3">{t.warning}</p>
+</figure>

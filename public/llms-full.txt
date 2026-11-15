@@ -1092,6 +1092,131 @@ Der Finanz-Begleiter gibt allgemeine Informationen und ersetzt keine Anlage-, Ve
 
 ---
 
+# E-Learning Funding in Germany 2026: What NRW and Bavaria Pay
+
+Source: https://learnslice.com/blog/e-learning-funding-germany
+Language: en
+Published: 2026-11-15
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
+
+E-learning and AI learning software funding in Germany: MID-Digitalisierung (NRW), Digitalbonus Bayern, § 82 SGB III. Rates, limits and what is not paid.
+
+## Key Takeaways
+
+- Two state programmes fund the development of AI learning software in Germany: MID-Digitalisierung in North Rhine-Westphalia (50 percent, up to 15,000 euros) and the Digitalbonus in Bavaria (up to 50 percent, up to 7,500 or 30,000 euros).
+- The purpose decides: MID-Digitalisierung funds products intended for the market. The Digitalbonus funds solutions used at your site in Bavaria, but not standard software such as office software.
+- Apply before you place the order. A binding order counts as the start of the project, and started projects are not funded.
+- Federal training funding under § 82 SGB III pays for courses by approved providers with more than 120 hours, not for software in your company.
+
+![Two people planning a digital project together at a laptop](/images/blog/this11.webp)
+
+For developing AI learning software, North Rhine-Westphalia pays up to 15,000 euros, Bavaria up to 7,500 euros and, once, up to 30,000 euros for particularly innovative projects. Yet most searches for e-learning funding in Germany end at training subsidies, and those pay for courses, not software.
+
+This is for companies with a German entity and training providers in Germany. All figures come from the funding bodies' guidelines (in German), as of November 2026.
+
+## Which funding pays for what?
+
+| Programme | Who applies | What is paid for | Software? |
+| --- | --- | --- | --- |
+| MID-Digitalisierung (NRW) | SMEs registered in NRW | Developing new digital products with AI for the market | Yes, as a development contract with an external provider |
+| Digitalbonus (Bavaria) | Small companies with a site in Bavaria | Digitalising products, services and processes in your own company | Yes, if the project needs it. No standard software |
+| Employee training (§ 82 SGB III) | Employer or employee | Courses by approved providers with more than 120 hours | No |
+| Einstiegsqualifizierung (pre-apprenticeship) | Training company | Subsidy towards pay for apprenticeship applicants, 4 to 12 months | No |
+
+Which of the two fits depends on the purpose. NRW funds products for the market, such as a learning platform a training provider sells to clients. Bavaria funds solutions for your own site, such as an [AI learning companion](/blog/custom-ai-tutor-development) for your apprentices. What such a project costs is covered in [custom e-learning development costs](/blog/custom-e-learning-development-costs).
+
+## MID-Digitalisierung in North Rhine-Westphalia
+
+Key points from the [guideline](https://recht.nrw.de/mbnrw/2026-10/), valid until the end of 2029:
+
+- **Who:** SMEs registered in NRW that are not linked to the contractor.
+- **What:** the concept, prototype or further development of a digital product using a key technology such as AI. It must be new or clearly improve on the state of the art, and be demonstrably intended for the market.
+- **How much:** 50 percent of net costs, up to 15,000 euros. The grant must be at least 4,000 euros, so the project must cost at least 8,000 euros net.
+- **Who builds it:** a provider of your choice with a registered seat in the EU, no certification needed, but no subcontractors or freelancers either.
+- **Process:** register on the funding portal, a monthly lottery if there are many applicants, then the full application. Once every two years.
+
+The product must address a specific target group and have realistic market prospects. A learning tool only for your own apprentices does not meet this.
+
+## Digitalbonus in Bavaria
+
+Key points from the [guideline](https://www.gesetze-bayern.de/Content/Document/BayVV_7071_W_14585/True), valid until the end of 2027:
+
+- **Who:** commercial companies under 50 full-time equivalents with no more than 10 million euros in turnover or balance sheet total, with a site in Bavaria where the solution is used. No liberal professions.
+- **What:** developing, introducing or improving products, services and processes, for example with AI. It funds work by external providers including the software needed. Standard software such as conventional office software does not count.
+- **How much:** up to 50 percent, from 4,000 euros in costs. Up to 7,500 euros, or once up to 30,000 euros in the Plus track for particularly innovative projects.
+- **Process:** you apply yourself with your ELSTER business account. Service providers may not do it for you.
+
+## Apply before you order
+
+In short: get a non-binding quote, apply, wait for the go-ahead, and only then sign the order. In Bavaria you may start once the application receipt is confirmed. In NRW, check the timing with NRW.BANK.
+
+## What is not funded
+
+- **Standard software** such as conventional office software in the Bavarian Digitalbonus.
+- **Learning tools only for your own company** in MID-Digitalisierung, where the product must be intended for the market.
+- **Solutions you also want to sell to other companies** in the Bavarian Digitalbonus, if they would be fundable there too (No. 4.3 of the guideline).
+- **Software and licences** in the sister programme MID-Digitale Prozesse, which only funds consulting ([NRW.BANK](https://www.nrwbank.de/mid-digitale-prozesse)).
+- **Projects that are already ordered.**
+
+## What about the Federal Employment Agency?
+
+Under [§ 82 SGB III](https://www.gesetze-im-internet.de/sgb_3/__82.html) it funds training for your employees in courses by approved providers with more than 120 hours. The money goes to the training provider, not to a software vendor.
+
+Training on company-specific software is not eligible, according to the [agency](https://www.arbeitsagentur.de/unternehmen/finanziell/foerderung-von-weiterbildung). What that means for providers is covered in [learning platform for training providers](/blog/learning-platform-training-providers).
+
+## Other German states
+
+Other states fund SME digitalisation too, with their own rules. You can search for more programmes in the [funding database](https://www.foerderdatenbank.de) of the Federal Ministry for Economic Affairs and Energy (in German).
+
+## What you need from your development partner
+
+- a project description with goal, technology and expected result
+- a net cost breakdown by work package
+- a timeline
+- for NRW: a registered seat in the EU and work without subcontractors
+
+LearnSlice builds with its own team, without subcontractors, and provides these documents for your application. You submit the application yourself, and the funding body decides. See what we build under [custom e-learning development](/solutions).
+
+*Disclosure: this article is by LearnSlice, which offers custom development itself. We do not provide grant consulting and have no influence on funding decisions.*
+
+*Note: this article is a general overview and does not replace grant or legal advice. The guidelines and the funding bodies are binding: NRW.BANK, Digitalbonus.Bayern and the employer service of the Federal Employment Agency. Information as of 15 November 2026.*
+
+
+## Frequently Asked Questions
+
+### Is there funding in Germany for developing learning software?
+
+Yes, through state programmes. In North Rhine-Westphalia, MID-Digitalisierung funds the development of new digital products using key technologies such as AI that are intended for the market, at 50 percent of net costs, up to 15,000 euros. In Bavaria, the Digitalbonus funds small companies at up to 50 percent, up to 7,500 euros (Standard) or 30,000 euros (Plus). There is no legal entitlement.
+
+### Are licences for learning platforms funded?
+
+Both programmes focus on development and rollout. MID-Digitalisierung funds project-related spending on external services. The Bavarian Digitalbonus funds work by external providers including the software needed for it, but excludes standard software such as conventional office software. Ask the funding body whether a licence counts in your project.
+
+### When do we have to apply?
+
+Before you place the order. In both programmes a project counts as started once a binding order is given, and started projects are not funded. In Bavaria you may start once the electronic application receipt is confirmed.
+
+### Can the Federal Employment Agency pay for learning software in our company?
+
+No. Training funding under § 82 SGB III pays for courses by approved training providers with more than 120 hours, plus a wage subsidy depending on company size. According to the agency, training on company-specific software is not eligible.
+
+### Can the development partner apply on our behalf?
+
+Not for the Bavarian Digitalbonus: you apply yourself with your ELSTER business account, and third parties may not use the certificate. Your partner can supply the documents you need, such as a project description, a cost breakdown and a timeline.
+
+## Sources
+
+- MB.NRW 2026 No. 10: MID-Digitalisierung guideline (German): https://recht.nrw.de/mbnrw/2026-10/ (checked 2026-11-15)
+- NRW.BANK: MID-Digitale Prozesse (German): https://www.nrwbank.de/mid-digitale-prozesse (checked 2026-11-15)
+- Bavarian Ministry of Economic Affairs: Digitalbonus guideline (BayMBl. 2024 No. 315, last amended BayMBl. 2025 No. 435, German): https://www.gesetze-bayern.de/Content/Document/BayVV_7071_W_14585/True (checked 2026-11-15)
+- Digitalbonus.Bayern: how to apply (German): https://www.digitalbonus.bayern/ (checked 2026-11-15)
+- Gesetze im Internet: § 82 SGB III (German): https://www.gesetze-im-internet.de/sgb_3/__82.html (checked 2026-11-15)
+- Federal Employment Agency: funding for further training (German): https://www.arbeitsagentur.de/unternehmen/finanziell/foerderung-von-weiterbildung (checked 2026-11-15)
+- Gesetze im Internet: § 54a SGB III, Einstiegsqualifizierung (German): https://www.gesetze-im-internet.de/sgb_3/__54a.html (checked 2026-11-15)
+- Federal Ministry for Economic Affairs and Energy: funding database (German): https://www.foerderdatenbank.de (checked 2026-11-15)
+
+---
+
 # Training Logbook Software: Free Plan or Free Trial?
 
 Source: https://learnslice.com/blog/training-logbook-software-comparison
@@ -2604,6 +2729,8 @@ These are reference points, not quotes. The content figures come from a [Chapman
 4. **Scope and rights.** More content, more languages, more roles, and handing over full ownership all show up in the price.
 
 On pricing models, you will meet three: **fixed price** (predictable when scope is clear), **time and material** (flexible when scope is open), and **per finished hour** (typical for pure content). For software projects where scope sharpens over time, a mix is common: a fixed frame plus iterative development.
+
+Companies with a German entity can get state funding of up to 50 percent for development: in North Rhine-Westphalia for SMEs that bring a learning product to market, in Bavaria for small companies using the solution at their own site. You apply before placing the order, and approval is not guaranteed. See [e-learning funding in Germany](/blog/e-learning-funding-germany) for the conditions.
 
 To weigh the economics against your current setup, run a plain comparison of time saved, licence costs avoided, and faster skill-building. For how that calculation looks in a training context, see our [overview of AI tools for vocational training](/blog/ai-tools-vocational-training).
 
@@ -5396,6 +5523,131 @@ Commercial occupations such as office management clerk, IT occupations such as I
 
 ---
 
+# E-Learning-Förderung 2026: Was NRW und Bayern bezahlen
+
+Source: https://learnslice.com/de/blog/e-learning-foerderung
+Language: de
+Published: 2026-11-15
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
+
+Förderung für E-Learning und KI-Lernsoftware: MID-Digitalisierung NRW, Digitalbonus Bayern, § 82 SGB III. Quoten, Grenzen und was nicht bezahlt wird.
+
+## Auf einen Blick
+
+- Für die Entwicklung von KI-Lernsoftware gibt es vor allem zwei Landesprogramme: MID-Digitalisierung in NRW (50 Prozent, höchstens 15.000 Euro) und den Digitalbonus Bayern (bis zu 50 Prozent, höchstens 7.500 oder 30.000 Euro).
+- Der Zweck entscheidet: MID-Digitalisierung fördert Produkte, die für den Markt bestimmt sind. Der Digitalbonus fördert Lösungen, die in Ihrer Betriebsstätte in Bayern zum Einsatz kommen, aber keine Standard-Software wie Bürosoftware.
+- Den Antrag stellen Sie vor der Beauftragung. Ein verbindlicher Auftrag gilt als Beginn des Vorhabens, und begonnene Vorhaben werden nicht gefördert.
+- Die Weiterbildungsförderung nach § 82 SGB III bezahlt Kurse zugelassener Träger mit mehr als 120 Stunden, keine Software für Ihren Betrieb.
+
+![Zwei Personen planen gemeinsam am Laptop ein Digitalisierungsprojekt](/images/blog/this11.webp)
+
+Für die Entwicklung von KI-Lernsoftware zahlt NRW bis zu 15.000 Euro, Bayern bis zu 7.500 Euro und für besonders innovative Vorhaben einmalig bis zu 30.000 Euro. Wer nach E-Learning-Förderung sucht, landet trotzdem meist bei der Weiterbildungsförderung, und die bezahlt Kurse, keine Software.
+
+Alle Angaben stammen aus den Richtlinien der Förderstellen, Stand November 2026.
+
+## Welche Förderung bezahlt was?
+
+| Programm | Wer beantragt | Was bezahlt wird | Software? |
+| --- | --- | --- | --- |
+| MID-Digitalisierung (NRW) | KMU mit Sitz in NRW | Entwicklung neuer digitaler Produkte mit KI für den Markt | Ja, als Entwicklungsauftrag an einen externen Anbieter |
+| Digitalbonus (Bayern) | Kleine Unternehmen mit Betriebsstätte in Bayern | Digitalisierung von Produkten, Dienstleistungen und Prozessen im eigenen Betrieb | Ja, wenn für das Vorhaben nötig. Keine Standard-Software |
+| Weiterbildung (§ 82 SGB III) | Arbeitgeber oder Beschäftigte | Kurse zugelassener Träger mit mehr als 120 Stunden | Nein |
+| Einstiegsqualifizierung | Ausbildungsbetrieb | Zuschuss zur Vergütung von Ausbildungsbewerbern, 4 bis 12 Monate | Nein |
+
+Welches der beiden Programme passt, hängt vom Zweck ab. NRW fördert Produkte für den Markt, etwa eine Lernplattform, die ein Bildungsträger an Kunden verkauft. Bayern fördert Lösungen für Ihre eigene Betriebsstätte, etwa einen [KI-Lernbegleiter](/de/blog/ki-lernbegleiter-entwickeln-lassen) für Ihre Azubis. Was so ein Projekt kostet, zeigt [E-Learning entwickeln lassen](/de/blog/e-learning-entwickeln-lassen).
+
+## MID-Digitalisierung in NRW
+
+Die Eckpunkte aus der [Richtlinie](https://recht.nrw.de/mbnrw/2026-10/), gültig bis Ende 2029:
+
+- **Wer:** KMU mit Sitz in NRW, die nicht mit dem Auftragnehmer verbunden sind.
+- **Was:** Konzeption, Prototyp oder Weiterentwicklung eines digitalen Produkts mit einer Schlüsseltechnologie wie KI. Es muss neu sein oder den Stand der Technik deutlich verbessern und nachweislich für den Markt bestimmt sein.
+- **Wie viel:** 50 Prozent der Nettoausgaben, höchstens 15.000 Euro. Die Förderung beträgt mindestens 4.000 Euro, das Projekt kostet also mindestens 8.000 Euro netto.
+- **Wer entwickelt:** ein Anbieter Ihrer Wahl mit Sitz in der EU, ohne Zertifizierung, aber auch ohne Unterauftragnehmer oder Freiberufler.
+- **Ablauf:** Registrierung im Förderportal, bei vielen Interessenten ein monatliches Losverfahren, dann der Antrag. Einmal in zwei Jahren.
+
+Das Produkt muss eine konkrete Zielgruppe ansprechen und eine realistische Marktverwertung erwarten lassen. Ein Lernwerkzeug nur für Ihre eigenen Azubis erfüllt das nicht.
+
+## Digitalbonus in Bayern
+
+Die Eckpunkte aus der [Richtlinie](https://www.gesetze-bayern.de/Content/Document/BayVV_7071_W_14585/True), gültig bis Ende 2027:
+
+- **Wer:** gewerbliche Unternehmen unter 50 Vollzeitstellen und mit höchstens 10 Millionen Euro Umsatz oder Bilanzsumme, mit einer Betriebsstätte in Bayern, in der die Lösung zum Einsatz kommt. Keine freien Berufe.
+- **Was:** Entwicklung, Einführung oder Verbesserung von Produkten, Dienstleistungen und Prozessen, etwa mit KI. Gefördert werden Leistungen externer Anbieter einschließlich der nötigen Software. Standard-Software wie herkömmliche Bürosoftware zählt nicht.
+- **Wie viel:** bis zu 50 Prozent, ab 4.000 Euro Kosten. Höchstens 7.500 Euro, im Plus für besonders innovative Vorhaben einmalig bis 30.000 Euro.
+- **Ablauf:** Sie beantragen selbst mit Ihrem ELSTER-Unternehmenskonto. Dienstleister dürfen das nicht für Sie tun.
+
+## Antrag vor Auftrag
+
+Kurz: unverbindliches Angebot einholen, Antrag stellen, Freigabe abwarten, erst dann den Auftrag unterschreiben. In Bayern dürfen Sie starten, sobald der Eingang des Antrags bestätigt ist. In NRW klären Sie den Zeitpunkt mit der NRW.BANK.
+
+## Was nicht gefördert wird
+
+- **Standard-Software** wie herkömmliche Bürosoftware im Digitalbonus Bayern.
+- **Lernwerkzeuge nur für den eigenen Betrieb** in MID-Digitalisierung, das Produkt muss für den Markt bestimmt sein.
+- **Lösungen, die Sie gegen Entgelt auch anderen Unternehmen anbieten wollen,** im Digitalbonus Bayern, wenn sie dort selbst förderfähig wären (Nr. 4.3 der Richtlinie).
+- **Software und Lizenzen** im Schwesterprogramm MID-Digitale Prozesse. Es fördert nur Beratung ([NRW.BANK](https://www.nrwbank.de/mid-digitale-prozesse)).
+- **Vorhaben, die schon beauftragt sind.**
+
+## Und die Agentur für Arbeit?
+
+Sie fördert nach [§ 82 SGB III](https://www.gesetze-im-internet.de/sgb_3/__82.html) die Weiterbildung Ihrer Beschäftigten in Kursen zugelassener Träger mit mehr als 120 Stunden. Das Geld fließt an den Bildungsträger, nicht an einen Softwareanbieter.
+
+Schulungen zu einer betriebsspezifischen Software sind laut [Bundesagentur](https://www.arbeitsagentur.de/unternehmen/finanziell/foerderung-von-weiterbildung) nicht förderfähig. Was das für Träger bedeutet, steht in [Lernplattform für Bildungsträger](/de/blog/lernplattform-bildungstraeger).
+
+## Andere Bundesländer
+
+Auch andere Länder fördern die Digitalisierung im Mittelstand, mit eigenen Regeln. Weitere Programme finden Sie in der [Förderdatenbank](https://www.foerderdatenbank.de) des Bundeswirtschaftsministeriums.
+
+## Was Sie vom Entwicklungspartner brauchen
+
+- eine Projektbeschreibung mit Ziel, Technologie und Ergebnis
+- eine Kostenaufstellung netto, nach Leistungen aufgeteilt
+- einen Zeitplan
+- für NRW: Sitz in der EU und Arbeit ohne Unteraufträge
+
+LearnSlice entwickelt mit eigenem Team, ohne Unteraufträge, und liefert diese Unterlagen für Ihren Antrag. Den Antrag stellen Sie selbst, und ob gefördert wird, entscheidet die Förderstelle. Was wir bauen, sehen Sie unter [Individuelle E-Learning-Entwicklung](/de/loesungen).
+
+*Transparenzhinweis: Dieser Beitrag ist von LearnSlice, und LearnSlice bietet selbst individuelle Entwicklung an. Wir leisten keine Fördermittelberatung und nehmen keinen Einfluss auf Förderentscheidungen.*
+
+*Hinweis: Dieser Beitrag gibt einen allgemeinen Überblick und ersetzt keine Förder- oder Rechtsberatung. Verbindlich sind die Richtlinien und die Auskunft der Förderstellen: NRW.BANK, Digitalbonus.Bayern und der Arbeitgeber-Service der Agentur für Arbeit. Stand der Angaben: 15. November 2026.*
+
+
+## Häufig gestellte Fragen
+
+### Gibt es eine Förderung für die Entwicklung von Lernsoftware?
+
+Ja, über Landesprogramme. In NRW fördert MID-Digitalisierung die Entwicklung neuer digitaler Produkte mit Schlüsseltechnologien wie KI, die für den Markt bestimmt sind, mit 50 Prozent der Nettoausgaben, höchstens 15.000 Euro. In Bayern fördert der Digitalbonus kleine Unternehmen mit bis zu 50 Prozent, höchstens 7.500 Euro im Standard und 30.000 Euro im Plus. Einen Rechtsanspruch gibt es nicht.
+
+### Werden Lizenzen für Lernplattformen gefördert?
+
+Beide Programme sind auf Entwicklung und Einführung ausgerichtet. MID-Digitalisierung fördert projektbezogene Ausgaben für externe Leistungen. Der Digitalbonus Bayern fördert Leistungen externer Anbieter einschließlich der dafür nötigen Software, schließt aber Standard-Software wie herkömmliche Bürosoftware aus. Ob eine Lizenz in Ihrem Vorhaben zählt, klären Sie mit der Förderstelle.
+
+### Wann muss der Förderantrag gestellt werden?
+
+Vor der Beauftragung. In beiden Programmen gilt ein Vorhaben als begonnen, sobald ein verbindlicher Auftrag erteilt ist, und begonnene Vorhaben werden nicht gefördert. In Bayern dürfen Sie starten, sobald der Eingang des elektronischen Antrags bestätigt ist.
+
+### Kann die Agentur für Arbeit Lernsoftware für unseren Betrieb bezahlen?
+
+Nein. Die Weiterbildungsförderung nach § 82 SGB III bezahlt Kurse zugelassener Bildungsträger mit mehr als 120 Stunden, dazu je nach Betriebsgröße einen Zuschuss zum Arbeitsentgelt. Schulungen zu einer betriebsspezifischen Software sind nach Angaben der Bundesagentur nicht förderfähig.
+
+### Darf der Entwicklungspartner den Antrag für uns stellen?
+
+Beim Digitalbonus Bayern nicht: Sie beantragen selbst über Ihr ELSTER-Unternehmenskonto, Dritte dürfen das Zertifikat nicht nutzen. Ihr Partner kann aber die Unterlagen liefern, die Sie für den Antrag brauchen, etwa Projektbeschreibung, Kostenaufstellung und Zeitplan.
+
+## Quellen
+
+- MB.NRW 2026 Nr. 10: Richtlinie zum Teilprogramm MID-Digitalisierung: https://recht.nrw.de/mbnrw/2026-10/ (geprüft am 2026-11-15)
+- NRW.BANK: MID-Digitale Prozesse: https://www.nrwbank.de/mid-digitale-prozesse (geprüft am 2026-11-15)
+- Bayerisches Staatsministerium für Wirtschaft: Richtlinie Digitalbonus (BayMBl. 2024 Nr. 315, zuletzt geändert BayMBl. 2025 Nr. 435): https://www.gesetze-bayern.de/Content/Document/BayVV_7071_W_14585/True (geprüft am 2026-11-15)
+- Digitalbonus.Bayern: Antragstellung: https://www.digitalbonus.bayern/ (geprüft am 2026-11-15)
+- Gesetze im Internet: § 82 SGB III: https://www.gesetze-im-internet.de/sgb_3/__82.html (geprüft am 2026-11-15)
+- Bundesagentur für Arbeit: Förderung von Weiterbildung: https://www.arbeitsagentur.de/unternehmen/finanziell/foerderung-von-weiterbildung (geprüft am 2026-11-15)
+- Gesetze im Internet: § 54a SGB III (Einstiegsqualifizierung): https://www.gesetze-im-internet.de/sgb_3/__54a.html (geprüft am 2026-11-15)
+- Bundesministerium für Wirtschaft und Energie: Förderdatenbank: https://www.foerderdatenbank.de (geprüft am 2026-11-15)
+
+---
+
 # Berichtsheft-Software vergleichen: kostenlos oder Testphase?
 
 Source: https://learnslice.com/de/blog/berichtsheft-software-vergleich
@@ -7356,6 +7608,8 @@ Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [
 4. **Umfang und Nutzungsrechte.** Mehr Inhalte, mehr Sprachen, mehr Rollen und die Übergabe des vollen Eigentums schlagen sich im Preis nieder.
 
 Beim Preismodell begegnen Ihnen drei Varianten: **Festpreis** (Planbarkeit bei klarem Umfang), **Abrechnung nach Aufwand** (Time and Material, flexibel bei offenem Umfang) und **Abrechnung pro Lernstunde** (typisch bei reinem Content). Für Softwareprojekte, deren Umfang sich erst im Verlauf klärt, ist eine Mischung üblich: ein fixer Rahmen plus iterative Weiterentwicklung.
+
+Für die Entwicklung gibt es Landesförderung von bis zu 50 Prozent: in NRW für KMU, die ein Lernprodukt am Markt anbieten, in Bayern für kleine Unternehmen, die die Lösung im eigenen Betrieb einsetzen. Der Antrag kommt vor dem Auftrag, eine Zusage gibt es nicht. Was dabei gilt, zeigt unser Überblick [E-Learning-Förderung 2026](/de/blog/e-learning-foerderung).
 
 Wenn Sie die Wirtschaftlichkeit gegenüber der bisherigen Lösung durchrechnen wollen, hilft ein nüchterner Vergleich aus eingesparter Zeit, vermiedenen Lizenzkosten und schnellerem Kompetenzaufbau. Wie so eine Rechnung im Ausbildungskontext aussieht, zeigt unser [Überblick zu KI-Tools für die Ausbildung](/de/blog/ki-tools-ausbildung).
 
