@@ -148,6 +148,9 @@ function cleanBody(body, file) {
 		// tag is pure noise in the corpus. Paired components like <CopyBlock> are left
 		// alone: their children are the content, and dropping the line would keep it.
 		.replace(/^<[A-Z][\w.]*(?:\s[^>]*?)?\/>[ \t]*\n\n?/gm, '')
+		// Site-relative links ([text](/de/...), images too) cannot be followed outside the
+		// site, so they get the host. Protocol-relative (//) and anchor-only links stay.
+		.replace(/\]\(\/(?!\/)/g, `](${SITE}/`)
 		.replace(/^\s*\n+/, '');
 }
 
