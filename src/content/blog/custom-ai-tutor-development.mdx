@@ -1,7 +1,8 @@
 ---
 title: "Custom AI Tutor Development: Build, Buy, or White-Label"
-description: "Custom AI tutor development: build, buy, or license white-label, what grounding and adaptivity really cost, and how to vet an AI tutor provider."
+description: "Custom AI tutor development: build, buy, or license white-label, what drives the cost of grounding and adaptivity, and how to vet an AI tutor provider."
 publishDate: 2026-07-21
+updatedDate: 2026-11-20
 author: "LearnSlice Team"
 tags: ["Custom AI Tutor", "AI Tutor Development", "Adaptive Learning", "Learning Software", "Cost", "GDPR"]
 lang: "en"
@@ -12,12 +13,12 @@ ctaVariant: "consultation"
 keyTakeaways:
   - "A custom AI tutor is a learning assistant built around your own curriculum and data, not a generic chatbot. It answers from your content, guides each learner along an adaptive path, gives feedback, and runs under your brand and your data-protection rules."
   - "You have three routes: buy a ready-made platform, license a white-label product, or commission a custom build. Build is the right route when the tutor has to fit your content exactly, carry your brand, keep data in your control, and belong to you."
-  - "Building a custom AI tutor typically runs from about 30,000 to 150,000 dollars, with a lightweight prototype from around 5,000 to 15,000 dollars and a full enterprise build reaching into six figures. Budget for ongoing model and hosting costs of roughly 500 to 5,000 dollars per month, not just the build."
+  - "The cost of a custom AI tutor depends on scope: how deeply it is grounded in your content, how adaptive it is and what it connects to. A prototype is often ready in 6 to 8 weeks, a full tutor in 3 to 6 months. Budget for ongoing model and hosting costs, not just the build."
   - "The biggest cost drivers are how deeply the tutor is grounded in your own knowledge (RAG), how adaptive it is, and which systems it connects to (LMS, SSO, xAPI or SCORM). A first usable version is often ready in 6 to 8 weeks; a full solution takes 3 to 6 months."
   - "Vet an AI tutor provider on more than generic dev skills: grounding tested on your own content, guardrails against wrong answers, real adaptivity, no lock-in to one model, EU or on-premises hosting with a training-data opt-out, and ownership of the result."
 faq:
   - q: "How much does it cost to build a custom AI tutor?"
-    a: "As a market reference, a custom AI tutor typically runs from about 30,000 to 150,000 dollars. A lightweight prototype with guided dialogue and your content is often around 5,000 to 15,000 dollars, while a full enterprise build with deep integrations and adaptive learning reaches into six figures and beyond. On top of the build, budget for ongoing model and hosting costs of roughly 500 to 5,000 dollars per month. These are industry ranges, not quotes; the real number depends on grounding, adaptivity, and integrations."
+    a: "It depends on scope, so there is no reliable general figure. The price moves with how deeply the tutor is grounded in your content, how adaptive it is, what it integrates with, and the rights you need. A prototype with guided dialogue and your content is the cheapest start; a full enterprise build with deep integrations costs the most. On top of the build, budget for ongoing model and hosting costs. Ask for a fixed price on a first release with a written scope."
   - q: "Should we build an AI tutor or buy one?"
     a: "Buy a ready-made platform when your needs are standard and speed matters most. License a white-label product when you want your brand on someone else's engine. Commission a custom build when the tutor has to answer from your own content, fit your processes, keep data in your control, and belong to you. For organisations that train large groups, a one-time build often costs less over the years than an open-ended per-user licence."
   - q: "How long does it take to build an AI tutor?"
@@ -32,6 +33,8 @@ faq:
     a: "It can and should be, but only if it is built that way from the start. Look for hosting in Germany or the EU, a data processing agreement, a clean role and deletion model, and a clear separation between your data and any publicly trained models, including a training-data opt-out. A custom build has the advantage that data protection and sovereignty are designed in from the ground up."
   - q: "How is a custom AI tutor grounded in our own content?"
     a: "Through retrieval-augmented generation (RAG): your documents, courses, and knowledge are indexed, and the tutor retrieves the relevant passages before it answers, with source citations. This keeps answers accurate and on-curriculum rather than invented. The quality of that grounding is one of the biggest factors in both the value and the cost of the build."
+  - q: "How do we choose an AI tutoring platform development company?"
+    a: "First decide which gap matters most: general software agencies bring engineering, e-learning agencies bring instructional design, freelancers bring speed, and specialist AI tutor developers combine learning design and engineering. Then test every candidate on your own content: grounded answers with sources, a way to measure accuracy, real adaptivity, a free choice of model and hosting, and a plan for operation after launch."
   - q: "Who owns the code and the AI tutor after the project?"
     a: "That is negotiable and should be settled in writing before the project starts. With genuine custom development, the rights to the code and content you commission should sit with you, so you are not permanently locked to one vendor. Get ownership, usage rights, and handover of the source code contractually guaranteed."
 ---
@@ -106,27 +109,36 @@ Past a certain number of learners, a build can come in below the accumulating li
 
 ## How Much Does It Cost to Build an AI Tutor?
 
-Cost depends mainly on how deeply the tutor is grounded in your knowledge, how adaptive it is, and what it connects to. In short: expect a prototype from the mid four figures, a full custom build in the five to six figures, plus ongoing running costs. Here are the market reference points at a glance:
+Cost depends mainly on how deeply the tutor is grounded in your knowledge, how adaptive it is, and what it connects to. There is no reliable general figure, so the overview below shows scope and timeline:
 
-| Scope | Typical build cost | Timeline |
+| Scope | Cost | Timeline |
 |---|---|---|
-| Prototype / proof of concept (guided dialogue, your content) | ~5,000 to 15,000 dollars | 6 to 8 weeks |
-| Custom AI tutor (adaptive paths, integrations, reporting) | ~30,000 to 150,000 dollars | 3 to 6 months |
-| Full enterprise build (deep LMS integration, multiple roles and languages) | 150,000 dollars and up | 4 to 8 months |
-| Operation (model API, hosting, iteration) | ~500 to 5,000 dollars per month | ongoing |
+| Prototype / proof of concept (guided dialogue, your content) | depends on scope, the cheapest start | 6 to 8 weeks |
+| Custom AI tutor (adaptive paths, integrations, reporting) | depends on scope | 3 to 6 months |
+| Full enterprise build (deep LMS integration, multiple roles and languages) | depends on scope, the largest investment | 4 to 8 months |
+| Operation (model API, hosting, iteration) | ongoing, depends on usage | ongoing |
 
-These are industry reference points reported by specialist development vendors, not quotes. A subscription tool, by contrast, runs from roughly 39 to 449 dollars per month for small teams, and enterprise per-seat pricing runs from a few dollars to over 100 dollars per user per month. That is the number a one-time build has to beat over time.
-
-A focused AI tutor for a mid-sized team usually lands in the five figures, not the six-figure territory people fear, and it earns that back in per-seat licences replaced and trainer time saved. A short scoping call turns these ranges into a real number. Your actual price moves with four levers:
+The number a one-time build has to beat is the subscription route: per-user or per-month fees for the same learners over the same years. A build earns its cost back in per-seat licences replaced and trainer time saved. A short scoping call turns this into a real number for your case. Your actual price moves with four levers:
 
 1. **Grounding in your knowledge.** Indexing your content and getting retrieval accurate and source-cited (RAG) is the core of a real tutor and one of the biggest drivers of both value and cost.
 2. **Adaptivity.** Personalised learning paths and a mastery model that reacts to each learner cost more than a fixed question-and-answer flow, but they are often the whole reason for building.
 3. **Integrations.** Connections to your LMS, single sign-on (SSO), or standards such as xAPI and SCORM add effort.
 4. **Scope and rights.** More roles, more languages, white-label branding, and full handover of ownership all show up in the price.
 
-## How to Vet an AI Tutor Provider
+## How to Choose an AI Tutoring Platform Development Company
 
-An AI tutor lives or dies on a few things a generic dev shop rarely gets right. Vet a provider on these before you commit:
+Four kinds of partners build AI tutors. Each brings a different strength and leaves a different gap, so match the type to what your project needs most:
+
+| Partner type | Strength | Typical gap |
+|---|---|---|
+| General software agency | engineering, integrations, scale | learning design, and testing whether AI answers are grounded and correct |
+| E-learning content agency | instructional design, course production | software engineering and running an AI system after launch |
+| Freelancer | low cost, fast start | continuity, operation, security reviews |
+| Specialist AI tutor developer | learning design, grounding and engineering in one team | fewer references outside its core sectors, so ask for cases close to yours |
+
+*Disclosure: This post is by LearnSlice, and LearnSlice develops custom AI tutors itself.*
+
+Whichever type you talk to, an AI tutor lives or dies on a few things a generic dev shop rarely gets right. Vet a provider on these before you commit:
 
 - **Grounding, tested on your own content.** Ask to see the tutor answer from your material with correct source citations, not a demo on generic data. Weak retrieval is the most common reason an AI tutor gives wrong or vague answers.
 - **Accuracy and guardrails.** How does the provider stop the tutor inventing answers, and how do they measure it? Look for an evaluation set, sensible behaviour when the answer is not in your content, and a way to review and correct responses.

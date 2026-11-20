@@ -2086,6 +2086,7 @@ There is no honest single number, because the work is driven by your content rat
 Source: https://learnslice.com/blog/learning-platform-training-providers
 Language: en
 Published: 2026-08-31
+Updated: 2026-11-20
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 How training providers digitise their own course offering instead of renting ready-made content: the five building blocks, what it costs and how a project runs.
@@ -2209,16 +2210,16 @@ If you already prepare people for one of these, the hard part is behind you. You
 
 ## Cost and Timeline
 
-A platform of this kind is neither a weekend project nor a seven-figure programme. The cost benchmarks below are derived in more detail in our guide to [custom e-learning development costs](https://learnslice.com/blog/custom-e-learning-development-costs); the timings are what we plan for in our own projects.
+A platform of this kind is neither a weekend project nor a seven-figure programme. The cost drivers are covered in more detail in our guide to [custom e-learning development costs](https://learnslice.com/blog/custom-e-learning-development-costs); the timings are what we plan for in our own projects.
 
-| Scope | Typical cost | Timeline |
+| Scope | Cost | Timeline |
 | --- | --- | --- |
-| First usable version: one subject area, question bank, mock exam | low five figures | 6 to 8 weeks |
-| Full platform: all subject areas, adaptivity, analytics, roles | roughly 13,000 to 90,000 euros depending on scope | 3 to 6 months |
+| First usable version: one subject area, question bank, mock exam | depends on scope, the cheapest start | 6 to 8 weeks |
+| Full platform: all subject areas, adaptivity, analytics, roles | depends on scope | 3 to 6 months |
 | A further exam on the existing base | substantially less, mostly content and mapping | weeks rather than months |
-| Operation, maintenance, content updates | ongoing, often a share of build cost per year | permanent |
+| Operation, maintenance, content updates | ongoing, depends on scope | permanent |
 
-The entry point does not have to be large. A sensible first scope is one subject area, your existing question bank and a working mock exam. That sits in the low five figures and is in front of a real cohort in 6 to 8 weeks, so you watch your own pass rate before deciding whether to extend it. If the number does not move, you have spent a contained amount and learned something.
+The entry point does not have to be large. A sensible first scope is one subject area, your existing question bank and a working mock exam. That is the cheapest start and is in front of a real cohort in 6 to 8 weeks, so you watch your own pass rate before deciding whether to extend it. If the number does not move, you have spent a contained amount and learned something.
 
 Whether that beats renting is arithmetic you can do yourself: licence cost per learner times cohort size times years on one side, one-off build plus running cost on the other. The larger and steadier your intake, the sooner it tips. There is also a line that rarely makes it into the calculation, which is that the question bank and the teaching logic inside it stay yours.
 
@@ -2261,7 +2262,7 @@ A standard LMS is built to distribute content: create a course, upload material,
 
 ### How much does a custom exam preparation platform cost?
 
-As a benchmark, specialist development firms put a custom learning platform at roughly 13,000 to 90,000 euros depending on scope, and broader industry pricing surveys put full custom projects anywhere from about 5,000 to over 100,000 dollars. A first usable version covering one subject area with a working mock exam is often ready in 6 to 8 weeks, a complete platform in 3 to 6 months, plus ongoing cost for operation and content updates.
+The price of a custom learning platform depends on scope; there is no reliable general figure. A first usable version covering one subject area with a working mock exam is often ready in 6 to 8 weeks, a complete platform in 3 to 6 months, plus ongoing cost for operation and content updates.
 
 ### Does it pay off against a per-learner licence?
 
@@ -2494,15 +2495,16 @@ That is the point of building on an open model. With a genuine custom build on o
 Source: https://learnslice.com/blog/custom-ai-tutor-development
 Language: en
 Published: 2026-07-21
+Updated: 2026-11-20
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Custom AI tutor development: build, buy, or license white-label, what grounding and adaptivity really cost, and how to vet an AI tutor provider.
+Custom AI tutor development: build, buy, or license white-label, what drives the cost of grounding and adaptivity, and how to vet an AI tutor provider.
 
 ## Key Takeaways
 
 - A custom AI tutor is a learning assistant built around your own curriculum and data, not a generic chatbot. It answers from your content, guides each learner along an adaptive path, gives feedback, and runs under your brand and your data-protection rules.
 - You have three routes: buy a ready-made platform, license a white-label product, or commission a custom build. Build is the right route when the tutor has to fit your content exactly, carry your brand, keep data in your control, and belong to you.
-- Building a custom AI tutor typically runs from about 30,000 to 150,000 dollars, with a lightweight prototype from around 5,000 to 15,000 dollars and a full enterprise build reaching into six figures. Budget for ongoing model and hosting costs of roughly 500 to 5,000 dollars per month, not just the build.
+- The cost of a custom AI tutor depends on scope: how deeply it is grounded in your content, how adaptive it is and what it connects to. A prototype is often ready in 6 to 8 weeks, a full tutor in 3 to 6 months. Budget for ongoing model and hosting costs, not just the build.
 - The biggest cost drivers are how deeply the tutor is grounded in your own knowledge (RAG), how adaptive it is, and which systems it connects to (LMS, SSO, xAPI or SCORM). A first usable version is often ready in 6 to 8 weeks; a full solution takes 3 to 6 months.
 - Vet an AI tutor provider on more than generic dev skills: grounding tested on your own content, guardrails against wrong answers, real adaptivity, no lock-in to one model, EU or on-premises hosting with a training-data opt-out, and ownership of the result.
 
@@ -2576,27 +2578,36 @@ Past a certain number of learners, a build can come in below the accumulating li
 
 ## How Much Does It Cost to Build an AI Tutor?
 
-Cost depends mainly on how deeply the tutor is grounded in your knowledge, how adaptive it is, and what it connects to. In short: expect a prototype from the mid four figures, a full custom build in the five to six figures, plus ongoing running costs. Here are the market reference points at a glance:
+Cost depends mainly on how deeply the tutor is grounded in your knowledge, how adaptive it is, and what it connects to. There is no reliable general figure, so the overview below shows scope and timeline:
 
-| Scope | Typical build cost | Timeline |
+| Scope | Cost | Timeline |
 |---|---|---|
-| Prototype / proof of concept (guided dialogue, your content) | ~5,000 to 15,000 dollars | 6 to 8 weeks |
-| Custom AI tutor (adaptive paths, integrations, reporting) | ~30,000 to 150,000 dollars | 3 to 6 months |
-| Full enterprise build (deep LMS integration, multiple roles and languages) | 150,000 dollars and up | 4 to 8 months |
-| Operation (model API, hosting, iteration) | ~500 to 5,000 dollars per month | ongoing |
+| Prototype / proof of concept (guided dialogue, your content) | depends on scope, the cheapest start | 6 to 8 weeks |
+| Custom AI tutor (adaptive paths, integrations, reporting) | depends on scope | 3 to 6 months |
+| Full enterprise build (deep LMS integration, multiple roles and languages) | depends on scope, the largest investment | 4 to 8 months |
+| Operation (model API, hosting, iteration) | ongoing, depends on usage | ongoing |
 
-These are industry reference points reported by specialist development vendors, not quotes. A subscription tool, by contrast, runs from roughly 39 to 449 dollars per month for small teams, and enterprise per-seat pricing runs from a few dollars to over 100 dollars per user per month. That is the number a one-time build has to beat over time.
-
-A focused AI tutor for a mid-sized team usually lands in the five figures, not the six-figure territory people fear, and it earns that back in per-seat licences replaced and trainer time saved. A short scoping call turns these ranges into a real number. Your actual price moves with four levers:
+The number a one-time build has to beat is the subscription route: per-user or per-month fees for the same learners over the same years. A build earns its cost back in per-seat licences replaced and trainer time saved. A short scoping call turns this into a real number for your case. Your actual price moves with four levers:
 
 1. **Grounding in your knowledge.** Indexing your content and getting retrieval accurate and source-cited (RAG) is the core of a real tutor and one of the biggest drivers of both value and cost.
 2. **Adaptivity.** Personalised learning paths and a mastery model that reacts to each learner cost more than a fixed question-and-answer flow, but they are often the whole reason for building.
 3. **Integrations.** Connections to your LMS, single sign-on (SSO), or standards such as xAPI and SCORM add effort.
 4. **Scope and rights.** More roles, more languages, white-label branding, and full handover of ownership all show up in the price.
 
-## How to Vet an AI Tutor Provider
+## How to Choose an AI Tutoring Platform Development Company
 
-An AI tutor lives or dies on a few things a generic dev shop rarely gets right. Vet a provider on these before you commit:
+Four kinds of partners build AI tutors. Each brings a different strength and leaves a different gap, so match the type to what your project needs most:
+
+| Partner type | Strength | Typical gap |
+|---|---|---|
+| General software agency | engineering, integrations, scale | learning design, and testing whether AI answers are grounded and correct |
+| E-learning content agency | instructional design, course production | software engineering and running an AI system after launch |
+| Freelancer | low cost, fast start | continuity, operation, security reviews |
+| Specialist AI tutor developer | learning design, grounding and engineering in one team | fewer references outside its core sectors, so ask for cases close to yours |
+
+*Disclosure: This post is by LearnSlice, and LearnSlice develops custom AI tutors itself.*
+
+Whichever type you talk to, an AI tutor lives or dies on a few things a generic dev shop rarely gets right. Vet a provider on these before you commit:
 
 - **Grounding, tested on your own content.** Ask to see the tutor answer from your material with correct source citations, not a demo on generic data. Weak retrieval is the most common reason an AI tutor gives wrong or vague answers.
 - **Accuracy and guardrails.** How does the provider stop the tutor inventing answers, and how do they measure it? Look for an evaluation set, sensible behaviour when the answer is not in your content, and a way to review and correct responses.
@@ -2629,7 +2640,7 @@ The lowest-risk way into a custom AI tutor is not a six-month contract; it is a 
 
 ### How much does it cost to build a custom AI tutor?
 
-As a market reference, a custom AI tutor typically runs from about 30,000 to 150,000 dollars. A lightweight prototype with guided dialogue and your content is often around 5,000 to 15,000 dollars, while a full enterprise build with deep integrations and adaptive learning reaches into six figures and beyond. On top of the build, budget for ongoing model and hosting costs of roughly 500 to 5,000 dollars per month. These are industry ranges, not quotes; the real number depends on grounding, adaptivity, and integrations.
+It depends on scope, so there is no reliable general figure. The price moves with how deeply the tutor is grounded in your content, how adaptive it is, what it integrates with, and the rights you need. A prototype with guided dialogue and your content is the cheapest start; a full enterprise build with deep integrations costs the most. On top of the build, budget for ongoing model and hosting costs. Ask for a fixed price on a first release with a written scope.
 
 ### Should we build an AI tutor or buy one?
 
@@ -2659,6 +2670,10 @@ It can and should be, but only if it is built that way from the start. Look for 
 
 Through retrieval-augmented generation (RAG): your documents, courses, and knowledge are indexed, and the tutor retrieves the relevant passages before it answers, with source citations. This keeps answers accurate and on-curriculum rather than invented. The quality of that grounding is one of the biggest factors in both the value and the cost of the build.
 
+### How do we choose an AI tutoring platform development company?
+
+First decide which gap matters most: general software agencies bring engineering, e-learning agencies bring instructional design, freelancers bring speed, and specialist AI tutor developers combine learning design and engineering. Then test every candidate on your own content: grounded answers with sources, a way to measure accuracy, real adaptivity, a free choice of model and hosting, and a plan for operation after launch.
+
 ### Who owns the code and the AI tutor after the project?
 
 That is negotiable and should be settled in writing before the project starts. With genuine custom development, the rights to the code and content you commission should sit with you, so you are not permanently locked to one vendor. Get ownership, usage rights, and handover of the source code contractually guaranteed.
@@ -2670,7 +2685,7 @@ That is negotiable and should be settled in writing before the project starts. W
 Source: https://learnslice.com/blog/custom-e-learning-development-costs
 Language: en
 Published: 2026-07-01
-Updated: 2026-11-09
+Updated: 2026-11-20
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Custom e-learning costs: average internal cost of about $10,000 to $50,000 per finished hour (Chapman Alliance, 2010), the process, and vendor checks.
@@ -2728,7 +2743,34 @@ These are reference points, not quotes. The content figures come from a [Chapman
 3. **AI and personalisation.** Adaptive learning paths and pulling in your own company knowledge cost more, but they are often the whole reason for going custom.
 4. **Scope and rights.** More content, more languages, more roles, and handing over full ownership all show up in the price.
 
-On pricing models, you will meet three: **fixed price** (predictable when scope is clear), **time and material** (flexible when scope is open), and **per finished hour** (typical for pure content). For software projects where scope sharpens over time, a mix is common: a fixed frame plus iterative development.
+### Which pricing models are common?
+
+You will meet four pricing models. Which one fits depends on how clear your scope is.
+
+| Pricing model | How it is billed | Fits when | Watch out for |
+|---|---|---|---|
+| Fixed price | one agreed price for a defined scope | scope and acceptance criteria are clear | change requests cost extra, so the scope must be in writing |
+| Time and material | hours or days actually worked | scope is still open or will change | needs a budget cap and regular reporting |
+| Per finished hour | a rate per hour of learner-facing content | pure content production (WBT, modules) | says nothing about platform or software cost |
+| Licence or subscription | per user or per month for finished software | standard needs, fast start | cost grows with every learner, and you own nothing |
+
+For software projects whose scope sharpens over time, a mix is common: a fixed price for the first release, then iterative development.
+
+### How much does a custom LMS cost?
+
+There is no reliable public benchmark for a custom learning management system, because "LMS" covers anything from a simple course portal to a multi-tenant platform with AI. The same five factors move the price every time:
+
+- **Roles and tenants:** learners only, or also trainers, admins and several client organisations with separate data
+- **Integrations:** single sign-on, HR software, an existing LMS or SCORM content, video hosting
+- **Reporting:** simple completion lists, or dashboards and exports for audits
+- **AI features:** a tutor that answers from your own material, quizzes generated from your documents, adaptive learning paths
+- **Starting point:** built from scratch, or customised from an existing engine, which is usually faster and cheaper
+
+Set the build against what the licence route would cost over the same years for the same number of learners (see the comparison table below). Ask every vendor for a fixed price on a first release with a written scope, not an open-ended estimate.
+
+### How much does it cost to develop an e-learning app?
+
+An e-learning app costs more than a web platform with the same features once it has to be built natively for iOS and Android, work offline or pass app store review. A web app that runs in the browser and can be added to the home screen (a progressive web app) covers most training use cases with one codebase for desktop and phone. Decide first whether your learners really need native features such as offline use on the road. That one decision moves the budget more than most single features.
 
 Companies with a German entity can get state funding of up to 50 percent for development: in North Rhine-Westphalia for SMEs that bring a learning product to market, in Bavaria for small companies using the solution at their own site. You apply before placing the order, and approval is not guaranteed. See [e-learning funding in Germany](https://learnslice.com/blog/e-learning-funding-germany) for the conditions.
 
@@ -2762,7 +2804,7 @@ There are three routes, and the right one depends on how specific your requireme
 
 | Criterion | Standard LMS (buy or rent) | Custom development |
 |---|---|---|
-| Entry cost | low, often from a few hundred dollars per month | higher, one-off, depends on scope |
+| Entry cost | low, monthly per user or plan | higher, one-off, depends on scope |
 | Cost over the years | recurring per-user licence fees, ongoing | one-time investment, then only operation |
 | Fit to your processes | limited, you adapt to it | exact, it adapts to you |
 | Time to value | instant | weeks to months |
@@ -2871,6 +2913,14 @@ It depends on the type. Per finished hour of content, a Chapman Alliance survey 
 ### What are the benefits of custom e-learning development?
 
 Custom e-learning fits your processes instead of forcing you into a vendor's logic, you own the code and the content, and you can build in AI that answers from your own material. It also replaces recurring per-user licences with a one-time build plus running costs, which pays off fastest for organisations that train large groups.
+
+### Which pricing models are common for e-learning development?
+
+Four: a fixed price for a defined scope, time and material for open scopes, a rate per finished hour for pure content production, and a licence or subscription for finished software. For custom software, a fixed price for the first release followed by iterative development is common.
+
+### How much does a custom LMS cost?
+
+There is no reliable public benchmark, because the term covers anything from a simple course portal to a multi-tenant platform with AI. The price moves with roles and tenants, integrations such as single sign-on, reporting, AI features, and whether the vendor builds from scratch or customises an existing engine. Compare the build with the licence cost of a standard LMS over the same years and ask for a fixed price on a first release.
 
 ### How long does development take?
 
@@ -6849,7 +6899,7 @@ Eine seriöse Einzelzahl gibt es nicht, weil der Aufwand von Ihren Inhalten getr
 Source: https://learnslice.com/de/blog/lernplattform-bildungstraeger
 Language: de
 Published: 2026-08-31
-Updated: 2026-11-09
+Updated: 2026-11-20
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 Eigene Lernplattform für Bildungsträger: wie Sie Ihr Kursangebot digitalisieren, statt fertige Kurse zu mieten. Mit Kosten, Ablauf und Prüfungssimulation.
@@ -6967,16 +7017,16 @@ Wer heute schon auf eine dieser Prüfungen vorbereitet, hat den schwierigen Teil
 
 ## Was das kostet und wie lange es dauert
 
-Eine eigene Prüfungsplattform ist kein Wochenendprojekt und kein Millionenvorhaben. Die folgenden Kostenrichtwerte haben wir im Beitrag [E-Learning entwickeln lassen](https://learnslice.com/de/blog/e-learning-entwickeln-lassen) im Detail hergeleitet; die Zeitangaben entsprechen dem, was wir in eigenen Projekten ansetzen.
+Eine eigene Prüfungsplattform ist kein Wochenendprojekt und kein Millionenvorhaben. Die Kostentreiber haben wir im Beitrag [E-Learning entwickeln lassen](https://learnslice.com/de/blog/e-learning-entwickeln-lassen) im Detail hergeleitet; die Zeitangaben entsprechen dem, was wir in eigenen Projekten ansetzen.
 
-| Umfang | Typische Kosten | Zeitrahmen |
+| Umfang | Kosten | Zeitrahmen |
 | --- | --- | --- |
-| Erster nutzbarer Stand: ein Sachgebiet, Fragenpool, Prüfungssimulation | im unteren fünfstelligen Bereich | 6 bis 8 Wochen |
-| Vollständige Plattform: alle Sachgebiete, Adaptivität, Auswertung, Rollen | ca. 13.000 bis 90.000 Euro je nach Umfang | 3 bis 6 Monate |
+| Erster nutzbarer Stand: ein Sachgebiet, Fragenpool, Prüfungssimulation | je nach Umfang, der günstigste Einstieg | 6 bis 8 Wochen |
+| Vollständige Plattform: alle Sachgebiete, Adaptivität, Auswertung, Rollen | je nach Umfang | 3 bis 6 Monate |
 | Weitere Prüfung auf bestehender Basis | deutlich weniger, im Wesentlichen Inhalt und Mapping | Wochen statt Monate |
-| Betrieb, Pflege, inhaltliche Aktualisierung | laufend, häufig ein Anteil der Entwicklungskosten pro Jahr | dauerhaft |
+| Betrieb, Pflege, inhaltliche Aktualisierung | laufend, je nach Umfang | dauerhaft |
 
-Der Einstieg muss nicht groß sein. Sinnvoll ist ein Zuschnitt auf ein Sachgebiet, Ihren vorhandenen Fragenpool und eine funktionierende Prüfungssimulation. Das liegt im unteren fünfstelligen Bereich und ist nach 6 bis 8 Wochen bei einer echten Kohorte im Einsatz. Sie sehen also an Ihrer eigenen Bestehensquote, ob sich etwas bewegt, bevor Sie über den Ausbau entscheiden. Bewegt sich nichts, haben Sie einen überschaubaren Betrag ausgegeben und wissen mehr als vorher.
+Der Einstieg muss nicht groß sein. Sinnvoll ist ein Zuschnitt auf ein Sachgebiet, Ihren vorhandenen Fragenpool und eine funktionierende Prüfungssimulation. Das ist der günstigste Einstieg und nach 6 bis 8 Wochen bei einer echten Kohorte im Einsatz. Sie sehen also an Ihrer eigenen Bestehensquote, ob sich etwas bewegt, bevor Sie über den Ausbau entscheiden. Bewegt sich nichts, haben Sie einen überschaubaren Betrag ausgegeben und wissen mehr als vorher.
 
 Ob sich das gegenüber einem Mietmodell rechnet, können Sie selbst überschlagen: Lizenzkosten pro Teilnehmer mal Kohortengröße mal Jahre auf der einen Seite, einmalige Entwicklung plus Betrieb auf der anderen. Je größer und stabiler Ihre Jahrgänge, desto früher kippt die Rechnung. Dazu kommt ein Posten, der selten in der Kalkulation auftaucht: Fragenpool und Didaktik bleiben Ihr Eigentum.
 
@@ -7027,7 +7077,7 @@ Nach § 7 der Bewachungsverordnung sind es sieben Sachgebiete: Recht der öffent
 
 ### Was kostet eine eigene Plattform für die Prüfungsvorbereitung?
 
-Als Orientierung: Eine individuelle Lernplattform liegt nach Angaben spezialisierter Entwicklungsdienstleister bei etwa 13.000 bis 90.000 Euro, je nach Umfang. Ein erster nutzbarer Stand mit einem Sachgebiet und funktionierender Prüfungssimulation ist häufig in 6 bis 8 Wochen erreichbar, eine vollständige Lösung in 3 bis 6 Monaten. Dazu kommen laufende Kosten für Betrieb und Weiterentwicklung.
+Der Preis einer individuellen Lernplattform hängt vom Umfang ab, eine allgemeine Zahl gibt es nicht. Ein erster nutzbarer Stand mit einem Sachgebiet und funktionierender Prüfungssimulation ist häufig in 6 bis 8 Wochen erreichbar, eine vollständige Lösung in 3 bis 6 Monaten. Dazu kommen laufende Kosten für Betrieb und Weiterentwicklung.
 
 ### Rechnet sich das gegenüber einer Lizenz pro Teilnehmer?
 
@@ -7252,6 +7302,7 @@ Genau darum baut man auf einem offenen Modell. Bei einer echten Individualentwic
 Source: https://learnslice.com/de/blog/ki-lernbegleiter-entwickeln-lassen
 Language: de
 Published: 2026-07-21
+Updated: 2026-11-20
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
 KI-Lernbegleiter: kaufen, White-Label lizenzieren oder entwickeln lassen. Was Verankerung und Adaptivität kosten und wie Sie einen KI-Tutor-Anbieter prüfen.
@@ -7260,7 +7311,7 @@ KI-Lernbegleiter: kaufen, White-Label lizenzieren oder entwickeln lassen. Was Ve
 
 - Ein KI-Lernbegleiter ist ein Lernassistent, der auf Ihren eigenen Inhalten und Daten aufsetzt, kein generischer Chatbot. Er antwortet aus Ihrem Wissen, führt jeden Lernenden über einen adaptiven Lernpfad, gibt Feedback und läuft unter Ihrer Marke und Ihren Datenschutzregeln.
 - Sie haben drei Wege: eine fertige Plattform kaufen, ein White-Label-Produkt lizenzieren oder individuell entwickeln lassen. Entwickeln lassen ist richtig, wenn der KI-Tutor exakt zu Ihren Inhalten passen, Ihre Marke tragen, die Datenhoheit bei Ihnen lassen und Ihnen gehören soll.
-- Ein individueller KI-Lernbegleiter kostet nach Angaben spezialisierter Entwicklungsdienstleister meist etwa 30.000 bis 150.000 Euro, ein erster Prototyp (Proof of Concept) rund 5.000 bis 15.000 Euro, eine umfangreiche Enterprise-Lösung reicht in den sechsstelligen Bereich. Planen Sie laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat ein, nicht nur die Entwicklung.
+- Die Kosten eines individuellen KI-Lernbegleiters hängen vom Umfang ab: wie tief er in Ihren Inhalten verankert ist, wie adaptiv er ist und was er anbindet. Ein Prototyp steht oft nach 6 bis 8 Wochen, ein vollständiger Tutor nach 3 bis 6 Monaten. Planen Sie laufende Kosten für Modell-API und Hosting ein, nicht nur die Entwicklung.
 - Die größten Kostentreiber sind die Verankerung im eigenen Wissen (RAG), der Grad der Adaptivität und die Anbindung an Ihre Systeme (LMS, SSO, xAPI oder SCORM). Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung in 3 bis 6 Monaten.
 - Prüfen Sie einen KI-Tutor-Anbieter an mehr als generischem Dev-Können: Verankerung an Ihren eigenen Inhalten getestet, Leitplanken gegen falsche Antworten, echte Adaptivität, keine Bindung an ein Modell, EU- oder On-Premises-Hosting mit Trainingsdaten-Opt-out und Eigentum am Ergebnis.
 
@@ -7334,18 +7385,16 @@ Ab einer gewissen Nutzerzahl kann die Entwicklung unter den auflaufenden Lizenzg
 
 ## Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?
 
-Die Kosten hängen vor allem davon ab, wie tief der Tutor in Ihrem Wissen verankert ist, wie adaptiv er ist und was er anbindet. Kurz gesagt: Ein erster Prototyp liegt im mittleren vierstelligen Bereich, eine vollständige Lösung im fünf- bis sechsstelligen Bereich, dazu kommen laufende Betriebskosten. Zur Orientierung die marktüblichen Richtwerte im Überblick:
+Die Kosten hängen vor allem davon ab, wie tief der Tutor in Ihrem Wissen verankert ist, wie adaptiv er ist und was er anbindet. Eine allgemeine Zahl gibt es nicht, der Überblick zeigt deshalb Umfang und Zeitrahmen:
 
-| Umfang | Typische Entwicklungskosten | Zeitrahmen |
+| Umfang | Kosten | Zeitrahmen |
 |---|---|---|
-| Prototyp / Proof of Concept (geführter Dialog, Ihre Inhalte) | ca. 5.000 bis 15.000 Euro | 6 bis 8 Wochen |
-| Individueller KI-Lernbegleiter (adaptive Pfade, Integrationen, Reporting) | ca. 30.000 bis 150.000 Euro | 3 bis 6 Monate |
-| Umfangreiche Enterprise-Lösung (tiefe LMS-Integration, viele Rollen und Sprachen) | 150.000 Euro und mehr | 4 bis 8 Monate |
-| Betrieb (Modell-API, Hosting, Weiterentwicklung) | ca. 500 bis 5.000 Euro pro Monat | dauerhaft |
+| Prototyp / Proof of Concept (geführter Dialog, Ihre Inhalte) | je nach Umfang, der günstigste Einstieg | 6 bis 8 Wochen |
+| Individueller KI-Lernbegleiter (adaptive Pfade, Integrationen, Reporting) | je nach Umfang | 3 bis 6 Monate |
+| Umfangreiche Enterprise-Lösung (tiefe LMS-Integration, viele Rollen und Sprachen) | je nach Umfang, der aufwendigste | 4 bis 8 Monate |
+| Betrieb (Modell-API, Hosting, Weiterentwicklung) | laufend, je nach Nutzung | dauerhaft |
 
-Diese Werte sind Branchenrichtwerte spezialisierter Entwicklungsdienstleister, keine Angebote. Ein Abo-Tool kostet zum Vergleich je nach Anbieter grob 6 bis 20 Euro pro Monat im Consumer-Bereich, Team-Plattformen beginnen bei rund 99 Euro pro Monat, B2B-Wissensbots liegen ab etwa 490 Euro pro Monat. An dieser Summe muss sich eine Eigenentwicklung über die Zeit messen lassen.
-
-Ein fokussierter KI-Tutor für ein mittelständisches Team landet meist im fünfstelligen Bereich, nicht im gefürchteten sechsstelligen, und verdient das über ersetzte Lizenzen pro Platz und gesparte Ausbilderzeit zurück. Ein kurzes Scoping-Gespräch macht daraus eine belastbare Zahl. Ihr konkreter Preis bewegt sich mit vier Hebeln:
+Messen lassen muss sich eine Eigenentwicklung am Abo-Weg: Gebühren pro Nutzer oder Monat für dieselben Lernenden über dieselben Jahre. Eine Eigenentwicklung verdient ihre Kosten über ersetzte Lizenzen pro Platz und gesparte Ausbilderzeit zurück. Ein kurzes Scoping-Gespräch macht daraus eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
 
 1. **Verankerung in Ihrem Wissen.** Ihre Inhalte zu indexieren und den Abruf präzise und mit Quellenangabe hinzubekommen (RAG) ist der Kern eines echten Tutors und einer der größten Treiber für Nutzen und Kosten.
 2. **Adaptivität.** Personalisierte Lernpfade und ein Kompetenzmodell, das auf jeden Lernenden reagiert, kosten mehr als ein starrer Frage-Antwort-Ablauf, sind aber oft der eigentliche Grund für die Entwicklung.
@@ -7354,7 +7403,18 @@ Ein fokussierter KI-Tutor für ein mittelständisches Team landet meist im fünf
 
 ## Woran Sie einen guten KI-Tutor-Anbieter erkennen
 
-Ein KI-Tutor steht und fällt mit ein paar Dingen, die ein generischer Softwaredienstleister selten richtig hinbekommt. Prüfen Sie einen Anbieter vor der Beauftragung an diesen Punkten:
+KI-Tutoren bauen vier Arten von Partnern. Jede bringt eine andere Stärke mit und lässt eine andere Lücke, wählen Sie den Typ also nach dem, was Ihr Projekt am dringendsten braucht:
+
+| Partnertyp | Stärke | Typische Lücke |
+|---|---|---|
+| Allgemeine Softwareagentur | Entwicklung, Integrationen, Skalierung | Didaktik und die Prüfung, ob KI-Antworten belegt und richtig sind |
+| E-Learning-Agentur | Didaktik, Kursproduktion | Softwareentwicklung und der Betrieb eines KI-Systems nach dem Start |
+| Freelancer | geringe Kosten, schneller Start | Kontinuität, Betrieb, Sicherheitsprüfungen |
+| Spezialisierter KI-Tutor-Entwickler | Didaktik, Quellenbindung und Entwicklung in einem Team | weniger Referenzen außerhalb der eigenen Kernbranchen, fragen Sie nach Fällen nahe an Ihrem |
+
+*Transparenzhinweis: Dieser Beitrag ist von LearnSlice, und LearnSlice entwickelt selbst individuelle KI-Tutoren.*
+
+Egal mit welchem Typ Sie sprechen: Ein KI-Tutor steht und fällt mit ein paar Dingen, die ein generischer Softwaredienstleister selten richtig hinbekommt. Prüfen Sie einen Anbieter vor der Beauftragung an diesen Punkten:
 
 - **Verankerung, an Ihren eigenen Inhalten getestet.** Lassen Sie sich zeigen, wie der Tutor aus Ihrem Material mit korrekten Quellenangaben antwortet, nicht als Demo auf generischen Daten. Schwacher Abruf ist der häufigste Grund für falsche oder vage Antworten.
 - **Genauigkeit und Leitplanken.** Wie verhindert der Anbieter, dass der Tutor Antworten erfindet, und wie wird das gemessen? Achten Sie auf ein Testset, sinnvolles Verhalten, wenn die Antwort nicht in Ihren Inhalten steht, und eine Möglichkeit, Antworten zu prüfen und zu korrigieren.
@@ -7387,7 +7447,7 @@ Der risikoärmste Einstieg in einen eigenen KI-Tutor ist kein Sechs-Monats-Vertr
 
 ### Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?
 
-Als Marktrichtwert kostet ein individueller KI-Lernbegleiter meist etwa 30.000 bis 150.000 Euro. Ein erster Prototyp (Proof of Concept) mit geführtem Dialog und Ihren Inhalten liegt oft bei rund 5.000 bis 15.000 Euro, eine umfangreiche Enterprise-Lösung mit tiefen Integrationen und adaptivem Lernen erreicht den sechsstelligen Bereich und darüber. Hinzu kommen laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat. Das sind Branchenrichtwerte, keine Angebote; der konkrete Preis hängt von Verankerung, Adaptivität und Integrationen ab.
+Das hängt vom Umfang ab, eine allgemeine Zahl gibt es nicht. Den Preis bewegen die Verankerung in Ihren Inhalten, die Adaptivität, die Integrationen und die Nutzungsrechte. Ein Prototyp mit geführtem Dialog und Ihren Inhalten ist der günstigste Einstieg, eine Enterprise-Lösung mit tiefen Integrationen der aufwendigste. Hinzu kommen laufende Kosten für Modell-API und Hosting. Fragen Sie nach einem Festpreis für ein erstes Release mit schriftlichem Umfang.
 
 ### Sollten wir einen KI-Tutor kaufen oder entwickeln lassen?
 
@@ -7416,6 +7476,10 @@ Er kann und sollte es sein, aber nur, wenn er von Anfang an so gebaut wird. Acht
 ### Wie wird ein KI-Lernbegleiter in unseren eigenen Inhalten verankert?
 
 Über Retrieval-Augmented Generation (RAG): Ihre Dokumente, Kurse und Ihr Wissen werden indexiert, und der KI-Tutor ruft die passenden Stellen ab, bevor er antwortet, mit Quellenangabe. So bleiben die Antworten korrekt und am Lehrplan statt erfunden. Die Qualität dieser Verankerung ist einer der größten Faktoren für Nutzen und Kosten der Entwicklung.
+
+### Wie finden wir den passenden Entwicklungspartner für einen KI-Tutor?
+
+Klären Sie zuerst, welche Lücke am meisten zählt: Allgemeine Softwareagenturen bringen Entwicklung mit, E-Learning-Agenturen Didaktik, Freelancer Tempo, und spezialisierte KI-Tutor-Entwickler verbinden Didaktik und Entwicklung. Testen Sie dann jeden Kandidaten an Ihren eigenen Inhalten: belegte Antworten mit Quellen, eine messbare Genauigkeit, echte Adaptivität, freie Wahl von Modell und Hosting und einen Plan für den Betrieb nach dem Start.
 
 ### Wem gehören der Code und der KI-Tutor nach dem Projekt?
 
@@ -7553,15 +7617,15 @@ Laut Beirat können sie in die Gesamtkostenkalkulation einbezogen und anteilig a
 Source: https://learnslice.com/de/blog/e-learning-entwickeln-lassen
 Language: de
 Published: 2026-07-01
-Updated: 2026-11-09
+Updated: 2026-11-20
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Was kostet es, E-Learning entwickeln oder erstellen zu lassen? Preise 2026 für Modul, Plattform und KI-Tutor, dazu Ablauf und Anbieter-Checkliste.
+Was kostet es, E-Learning entwickeln oder erstellen zu lassen? Tagessätze, Preistreiber und Preismodelle 2026 für Modul, Plattform und KI-Tutor, mit Checkliste.
 
 ## Auf einen Blick
 
 - E-Learning entwickeln lassen heißt: Sie beauftragen eine maßgeschneiderte Lösung statt einer Standardsoftware. Das reicht von einzelnen Lernmodulen über individuelle Lernplattformen und Lern-Chatbots (KI-Lernassistenten) bis zu Serious Games und KI-gestützten Lernanwendungen.
-- Die Kosten hängen stark vom Typ ab. Die Honorarempfehlung 2026 von BDVT und VBT nennt keinen Preis pro E-Learning-Minute, aber Tagessätze für Konzeption, Vor- und Nacharbeit: ab 1.500 Euro (Starter), ab 2.000 Euro (Professionals) und ab 3.300 Euro (Senior-Professionals). Eine individuelle Lernplattform liegt nach Angaben von Entwicklungsdienstleistern bei etwa 13.000 bis 90.000 Euro, ein Serious Game beginnt bei rund 15.000 Euro. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
+- Die Kosten hängen stark vom Typ ab. Die Honorarempfehlung 2026 von BDVT und VBT nennt keinen Preis pro E-Learning-Minute, aber Tagessätze für Konzeption, Vor- und Nacharbeit: ab 1.500 Euro (Starter), ab 2.000 Euro (Professionals) und ab 3.300 Euro (Senior-Professionals). Lernplattformen und Serious Games sind Softwareprojekte, ihr Preis hängt vom Umfang ab. Der größte Kostentreiber ist laut der Entwicklungszeit-Studie der Chapman Alliance der Grad der Interaktivität.
 - Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung mit mehreren Bausteinen in 3 bis 6 Monaten. Planen Sie laufende Kosten für Betrieb und Weiterentwicklung ein.
 - Standardsoftware ist günstig und sofort startklar, passt aber selten exakt zu Ihren Prozessen. Individualentwicklung kostet einmalig mehr, dafür gehört Ihnen das Ergebnis, es lässt sich frei erweitern und mit KI und eigenem Wissen füllen. Als einmalige Investition statt laufender Lizenzgebühren pro Nutzer rechnet es sich über die Jahre besonders für alle, die große Gruppen schulen oder ausbilden, etwa Bildungsträger, Hochschulen und Kursanbieter.
 - Achten Sie bei der Auswahl auf beides: didaktische und technische Kompetenz, DSGVO-konformes EU-Hosting, eine klare Regelung zum Eigentum am Code und einen Anbieter, der Betrieb und Skalierung mitdenkt.
@@ -7582,7 +7646,7 @@ Genau darum geht es in diesem Leitfaden: **was eine Individualentwicklung wirkli
   <p class="m-0 mt-4"><a href="/de/loesungen" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Leistungen und Projekte ansehen</a></p>
 </div>
 
-## E-Learning-Content oder E-Learning-Software? Der wichtige Unterschied
+## E-Learning erstellen lassen oder entwickeln lassen? Content oder Software
 
 Bevor Sie über Kosten sprechen, klären Sie, was Sie eigentlich beauftragen. Hinter "E-Learning entwickeln lassen" und "E-Learning erstellen lassen" stecken zwei sehr unterschiedliche Dinge, und sie werden unterschiedlich bepreist. Wer einen Kurs erstellen lässt, meint meist Content. Wer eine Lösung entwickeln lässt, meint Software.
 
@@ -7595,23 +7659,50 @@ Wenn vor allem der KI-Tutor für Sie zählt, geht unser Leitfaden [KI-Lernbeglei
 
 ## Was kostet es, E-Learning entwickeln zu lassen?
 
-Die Kosten hängen vor allem vom Typ und vom Grad der Interaktivität ab. Kurz gesagt: Für Lernmodule gibt es keinen Minutenpreis der Verbände, BDVT und VBT nennen für die Konzeption aber Tagessätze ab 1.500 bis ab 3.300 Euro. Eine individuelle Lernplattform liegt bei etwa 13.000 bis 90.000 Euro und ein Serious Game ab 15.000 Euro. Zur Orientierung die marktüblichen Richtwerte im Überblick:
+Die Kosten hängen vor allem vom Typ und vom Grad der Interaktivität ab. Kurz gesagt: Für Lernmodule gibt es keinen Minutenpreis der Verbände, BDVT und VBT nennen für die Konzeption aber Tagessätze ab 1.500 bis ab 3.300 Euro. Lernplattformen und Serious Games sind Softwareprojekte, ihr Preis hängt vom Umfang ab. Die Richtwerte im Überblick:
 
-| Art der Entwicklung | Typische Kosten | Zeitrahmen |
+| Art der Entwicklung | Kosten | Zeitrahmen |
 |---|---|---|
 | Lernmodul / WBT (Content) | nach Aufwand, Konzeption ab 1.500 bis ab 3.300 Euro pro Tag (Honorarempfehlung BDVT/VBT 2026) | 8 bis 12 Wochen pro Lernstunde |
-| Individuelle Lernplattform / Lernsoftware | ca. 13.000 bis 90.000 Euro je nach Umfang | 3 bis 6 Monate |
-| Serious Game / Simulation | ab ca. 15.000 Euro pro Modul, 30.000 bis 80.000 Euro komplett | 6 Wochen bis 6 Monate |
-| Betrieb und Weiterentwicklung | laufend, häufig ein Anteil der Entwicklungskosten pro Jahr | dauerhaft |
+| Individuelle Lernplattform / Lernsoftware | je nach Umfang | 3 bis 6 Monate |
+| Serious Game / Simulation | je nach Umfang | 6 Wochen bis 6 Monate |
+| Betrieb und Weiterentwicklung | laufend, je nach Umfang | dauerhaft |
 
-Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [Honorarempfehlung 2026 von BDVT und VBT](https://www.bdvt.de/bdvt-wAssets/docs/Berufsstaendische-Informationen/Honorarempfehlung.pdf), die [Entwicklungszeit-Studie der Chapman Alliance](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860) sowie auf Angaben spezialisierter Entwicklungsdienstleister. Die Honorarempfehlung gilt für Training, Beratung und Coaching und enthält keinen Preis für die E-Learning-Produktion. Sie dient hier als Orientierung für den Konzeptionsaufwand, ihre Beträge sind Untergrenzen ohne Mehrwertsteuer und Spesen. Für die meisten Projekte im Mittelstand bedeutet das eine fünfstellige Investition, die sich über eingesparte Zeit und vermiedene Lizenzkosten rechnet, kein sechsstelliges Wagnis. Ein 30-minütiges Gespräch macht aus diesen Spannen eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
+Diese Werte sind Branchenrichtwerte, keine Angebote. Sie stützen sich auf die [Honorarempfehlung 2026 von BDVT und VBT](https://www.bdvt.de/bdvt-wAssets/docs/Berufsstaendische-Informationen/Honorarempfehlung.pdf) und die [Entwicklungszeit-Studie der Chapman Alliance](https://www.slideshare.net/slideshow/how-long-does-it-take-to-create-learning/5198860). Lernplattformen und Serious Games hängen zu stark vom Umfang ab, um eine allgemeine Zahl zu nennen. Die Honorarempfehlung gilt für Training, Beratung und Coaching und enthält keinen Preis für die E-Learning-Produktion. Sie dient hier als Orientierung für den Konzeptionsaufwand, ihre Beträge sind Untergrenzen ohne Mehrwertsteuer und Spesen. Ein 30-minütiges Gespräch macht daraus eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
 
 1. **Interaktivität.** Der mit Abstand größte Kostentreiber. Die Entwicklungszeit-Studie der Chapman Alliance (249 Organisationen, 2010) beziffert den Aufwand pro fertiger Lernstunde im Schnitt auf 79 Stunden Entwicklung bei einfachem, 184 bei interaktivem und 490 bei fortgeschrittenem, simulationsbasiertem E-Learning. Ein einfacher Durchklick-Kurs ist günstig, eine verzweigte Simulation teuer.
 2. **Integrationen.** Anbindungen an bestehende Systeme wie HR-Software, ein vorhandenes LMS oder ein Single Sign-on (SSO) treiben den Aufwand.
 3. **KI und Personalisierung.** Adaptive Lernpfade und die Einbindung eigenen Unternehmenswissens kosten mehr, sind aber oft der eigentliche Grund für die Individualentwicklung.
 4. **Umfang und Nutzungsrechte.** Mehr Inhalte, mehr Sprachen, mehr Rollen und die Übergabe des vollen Eigentums schlagen sich im Preis nieder.
 
-Beim Preismodell begegnen Ihnen drei Varianten: **Festpreis** (Planbarkeit bei klarem Umfang), **Abrechnung nach Aufwand** (Time and Material, flexibel bei offenem Umfang) und **Abrechnung pro Lernstunde** (typisch bei reinem Content). Für Softwareprojekte, deren Umfang sich erst im Verlauf klärt, ist eine Mischung üblich: ein fixer Rahmen plus iterative Weiterentwicklung.
+### Welche Preismodelle sind üblich?
+
+Ihnen begegnen vier Preismodelle. Welches passt, hängt davon ab, wie klar Ihr Umfang ist.
+
+| Preismodell | Abrechnung | Passt, wenn | Darauf achten |
+|---|---|---|---|
+| Festpreis | ein vereinbarter Preis für einen definierten Umfang | Umfang und Abnahmekriterien klar sind | Änderungswünsche kosten extra, der Umfang muss schriftlich stehen |
+| Nach Aufwand (Time and Material) | tatsächlich geleistete Stunden oder Tage | der Umfang noch offen ist oder sich ändert | braucht eine Budgetobergrenze und regelmäßige Berichte |
+| Pro Lernstunde | ein Satz pro fertiger Lernstunde | reine Content-Produktion (WBT, Module) | sagt nichts über Plattform- oder Softwarekosten |
+| Lizenz oder Abo | pro Nutzer oder Monat für fertige Software | Standardbedarf, schneller Start | Kosten wachsen mit jedem Lernenden, das Eigentum bleibt beim Anbieter |
+
+Für Softwareprojekte, deren Umfang sich erst im Verlauf klärt, ist eine Mischung üblich: ein Festpreis für das erste Release, danach iterative Weiterentwicklung.
+
+### Was kostet eine individuelle Lernplattform?
+
+Eine allgemeine Zahl gibt es nicht, weil "Lernplattform" vom einfachen Kursportal bis zur mandantenfähigen Plattform mit KI alles abdeckt. Den Preis bewegen jedes Mal dieselben fünf Faktoren:
+
+- **Rollen und Mandanten:** nur Lernende, oder auch Ausbilder, Admins und mehrere Kundenorganisationen mit getrennten Daten
+- **Integrationen:** Single Sign-on, HR-Software, ein vorhandenes LMS oder SCORM-Inhalte, Videohosting
+- **Auswertungen:** einfache Abschlusslisten, oder Dashboards und Exporte für Audits
+- **KI-Funktionen:** ein Tutor, der aus Ihren eigenen Unterlagen antwortet, Quizze aus Ihren Dokumenten, adaptive Lernpfade
+- **Ausgangspunkt:** von Grund auf neu gebaut, oder auf Basis einer bestehenden Lern-Engine angepasst, was meist schneller und günstiger ist
+
+Stellen Sie die Entwicklung den Lizenzkosten gegenüber, die ein Standard-LMS über dieselben Jahre für dieselbe Zahl an Lernenden kosten würde (siehe Vergleichstabelle unten). Fragen Sie jeden Anbieter nach einem Festpreis für ein erstes Release mit schriftlichem Umfang, nicht nach einer offenen Schätzung.
+
+### Was kostet es, eine Lern-App entwickeln zu lassen?
+
+Eine Lern-App kostet mehr als eine Webplattform mit denselben Funktionen, sobald sie nativ für iOS und Android gebaut werden, offline funktionieren oder durch die Prüfung der App Stores muss. Eine Web-App, die im Browser läuft und sich auf den Startbildschirm legen lässt (Progressive Web App), deckt die meisten Lernszenarien mit einer Codebasis für Desktop und Smartphone ab. Klären Sie zuerst, ob Ihre Lernenden wirklich native Funktionen brauchen, etwa die Offline-Nutzung unterwegs. Diese eine Entscheidung bewegt das Budget stärker als die meisten Einzelfunktionen.
 
 Für die Entwicklung gibt es Landesförderung von bis zu 50 Prozent: in NRW für KMU, die ein Lernprodukt am Markt anbieten, in Bayern für kleine Unternehmen, die die Lösung im eigenen Betrieb einsetzen. Der Antrag kommt vor dem Auftrag, eine Zusage gibt es nicht. Was dabei gilt, zeigt unser Überblick [E-Learning-Förderung 2026](https://learnslice.com/de/blog/e-learning-foerderung).
 
@@ -7645,7 +7736,7 @@ Es gibt drei Wege, und der richtige hängt davon ab, wie speziell Ihre Anforderu
 
 | Kriterium | Standard-LMS (Kauf oder Miete) | E-Learning entwickeln lassen |
 |---|---|---|
-| Einstiegskosten | niedrig, oft ab 99 bis 249 Euro pro Monat | höher, einmalig ab ca. 13.000 Euro |
+| Einstiegskosten | niedrig, monatlich pro Nutzer oder Paket | höher, einmalig, je nach Umfang |
 | Kosten über die Jahre | laufende Lizenzgebühren pro Nutzer, dauerhaft | einmalige Investition, danach nur Betrieb |
 | Passung zu Ihren Prozessen | begrenzt, Sie passen sich an | exakt, die Software passt sich an |
 | Zeit bis zum Start | sofort startklar | Wochen bis Monate |
@@ -7742,7 +7833,7 @@ E-Learning entwickeln zu lassen ist kein Sprung ins Ungewisse, wenn Sie struktur
 
 ### Was kostet es, E-Learning entwickeln zu lassen?
 
-Das hängt vom Typ ab. Für Lernmodule gibt es keinen Minutenpreis der Verbände, der Preis ergibt sich aus dem Aufwand. Die Honorarempfehlung 2026 von BDVT und VBT gilt für Training, Beratung und Coaching und nennt für Konzeption, Vor- und Nacharbeit Tagessätze ab 1.500 Euro (Starter), ab 2.000 Euro (Professionals) und ab 3.300 Euro (Senior-Professionals), jeweils zuzüglich Mehrwertsteuer und Spesen. Eine individuelle Lernplattform kostet nach Angaben spezialisierter Entwicklungsdienstleister je nach Umfang etwa 13.000 bis 90.000 Euro. Ein Serious Game beginnt bei rund 15.000 Euro pro Modul und erreicht bei kompletten Trainingslösungen 30.000 bis 80.000 Euro. Der größte Kostentreiber ist der Grad der Interaktivität.
+Das hängt vom Typ ab. Für Lernmodule gibt es keinen Minutenpreis der Verbände, der Preis ergibt sich aus dem Aufwand. Die Honorarempfehlung 2026 von BDVT und VBT gilt für Training, Beratung und Coaching und nennt für Konzeption, Vor- und Nacharbeit Tagessätze ab 1.500 Euro (Starter), ab 2.000 Euro (Professionals) und ab 3.300 Euro (Senior-Professionals), jeweils zuzüglich Mehrwertsteuer und Spesen. Eine individuelle Lernplattform oder ein Serious Game ist ein Softwareprojekt, der Preis hängt vom Umfang ab: Rollen, Integrationen, Auswertungen und KI-Funktionen. Der größte Kostentreiber ist der Grad der Interaktivität.
 
 ### E-Learning erstellen lassen oder entwickeln lassen: Was ist der Unterschied?
 
@@ -7751,6 +7842,14 @@ Im Alltag werden beide Begriffe oft gleich verwendet. Gemeint sind aber meist zw
 ### Was kostet es, einen E-Learning-Kurs erstellen zu lassen?
 
 Für einen fertigen Kurs, der in Ihrem vorhandenen System läuft, gelten Content-Preise, die sich aus dem Aufwand für Konzeption und Produktion ergeben. Für die Konzeption nennt die Honorarempfehlung 2026 von BDVT und VBT Tagessätze ab 1.500 bis ab 3.300 Euro, je nach Erfahrung. Einfache Durchklick-Formate brauchen weniger Entwicklungszeit, verzweigte Szenarien und Simulationen deutlich mehr. Eine eigene Plattform ist darin nicht enthalten, sie wird als Software separat kalkuliert.
+
+### Welche Preismodelle sind bei der E-Learning-Entwicklung üblich?
+
+Vier: ein Festpreis für einen definierten Umfang, Abrechnung nach Aufwand bei offenem Umfang, ein Satz pro fertiger Lernstunde bei reiner Content-Produktion und Lizenz oder Abo bei fertiger Software. Bei individueller Software ist ein Festpreis für das erste Release mit anschließender iterativer Weiterentwicklung üblich.
+
+### Was kostet eine individuelle Lernplattform?
+
+Der Preis bewegt sich mit Rollen und Mandanten, Integrationen wie Single Sign-on, Auswertungen, KI-Funktionen und der Frage, ob der Anbieter von Grund auf neu baut oder eine bestehende Lern-Engine anpasst. Stellen Sie die Entwicklung den Lizenzkosten eines Standard-LMS über dieselben Jahre gegenüber und fragen Sie nach einem Festpreis für ein erstes Release.
 
 ### Wie lange dauert die Entwicklung?
 
