@@ -2214,12 +2214,12 @@ A platform of this kind is neither a weekend project nor a seven-figure programm
 
 | Scope | Cost | Timeline |
 | --- | --- | --- |
-| First usable version: one subject area, question bank, mock exam | depends on scope, the cheapest start | 6 to 8 weeks |
+| First usable version: one subject area, question bank, mock exam | depends on scope; smallest entry point | 6 to 8 weeks |
 | Full platform: all subject areas, adaptivity, analytics, roles | depends on scope | 3 to 6 months |
 | A further exam on the existing base | substantially less, mostly content and mapping | weeks rather than months |
 | Operation, maintenance, content updates | ongoing, depends on scope | permanent |
 
-The entry point does not have to be large. A sensible first scope is one subject area, your existing question bank and a working mock exam. That is the cheapest start and is in front of a real cohort in 6 to 8 weeks, so you watch your own pass rate before deciding whether to extend it. If the number does not move, you have spent a contained amount and learned something.
+The entry point does not have to be large. A sensible first scope is one subject area, your existing question bank and a working mock exam. That is the smallest starting scope and is in front of a real cohort in 6 to 8 weeks, so you watch your own pass rate before deciding whether to extend it. If the number does not move, you have spent a contained amount and learned something.
 
 Whether that beats renting is arithmetic you can do yourself: licence cost per learner times cohort size times years on one side, one-off build plus running cost on the other. The larger and steadier your intake, the sooner it tips. There is also a line that rarely makes it into the calculation, which is that the question bank and the teaching logic inside it stay yours.
 
@@ -2504,7 +2504,7 @@ Custom AI tutor development: build, buy, or license white-label, what drives the
 
 - A custom AI tutor is a learning assistant built around your own curriculum and data, not a generic chatbot. It answers from your content, guides each learner along an adaptive path, gives feedback, and runs under your brand and your data-protection rules.
 - You have three routes: buy a ready-made platform, license a white-label product, or commission a custom build. Build is the right route when the tutor has to fit your content exactly, carry your brand, keep data in your control, and belong to you.
-- The cost of a custom AI tutor depends on scope: how deeply it is grounded in your content, how adaptive it is and what it connects to. A prototype is often ready in 6 to 8 weeks, a full tutor in 3 to 6 months. Budget for ongoing model and hosting costs, not just the build.
+- As industry reference values, depending on scope: a prototype from around 5,000 to 15,000 dollars, a custom AI tutor from about 20,000 to 150,000 dollars, a full enterprise build from 100,000 dollars. Budget for ongoing model and hosting costs of roughly 500 to 5,000 dollars per month, depending on scope and usage, not just the build.
 - The biggest cost drivers are how deeply the tutor is grounded in your own knowledge (RAG), how adaptive it is, and which systems it connects to (LMS, SSO, xAPI or SCORM). A first usable version is often ready in 6 to 8 weeks; a full solution takes 3 to 6 months.
 - Vet an AI tutor provider on more than generic dev skills: grounding tested on your own content, guardrails against wrong answers, real adaptivity, no lock-in to one model, EU or on-premises hosting with a training-data opt-out, and ownership of the result.
 
@@ -2515,6 +2515,12 @@ Custom AI tutor development: build, buy, or license white-label, what drives the
 If you are researching how to get a custom AI tutor, you have probably already decided that a generic chatbot is not enough. The real question is not whether a personalised AI mentor would help your learners. It is how you get one that actually fits: buy a ready-made platform, license a white-label product, or commission a custom build around your own content.
 
 That decision is what this guide is about. Most organisations arrive here because a finished tool falls short at a point that matters: it does not know their curriculum, it cannot carry their brand, or its data handling rules it out. A wrong choice costs twice: the budget, and the months lost to a tutor nobody ends up using. You do not need convincing that a tailored AI tutor would help. You need to know what it costs, how a build runs, and how to tell a serious development partner from an expensive mistake.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Looking for a partner to build your AI tutor?</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">LearnSlice builds custom AI tutors grounded in your own content, as fixed-price projects, hosted where your data has to stay and owned by you. After the first call, you know the price range for your project.</p>
+  <p class="m-0 mt-4 flex flex-wrap items-center gap-x-4 gap-y-3"><a href="/solutions#project-inquiry" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Request a quote</a><a href="/solutions" class="text-sm text-accent underline underline-offset-4">See services and projects</a></p>
+</div>
 
 ## What a Custom AI Tutor Is, and When to Build Your Own
 
@@ -2578,14 +2584,16 @@ Past a certain number of learners, a build can come in below the accumulating li
 
 ## How Much Does It Cost to Build an AI Tutor?
 
-Cost depends mainly on how deeply the tutor is grounded in your knowledge, how adaptive it is, and what it connects to. There is no reliable general figure, so the overview below shows scope and timeline:
+Cost depends mainly on how deeply the tutor is grounded in your knowledge, how adaptive it is, and what it connects to. Here are the industry reference values at a glance, each depending on scope:
 
-| Scope | Cost | Timeline |
+| Scope | Typical build cost | Timeline |
 |---|---|---|
-| Prototype / proof of concept (guided dialogue, your content) | depends on scope, the cheapest start | 6 to 8 weeks |
-| Custom AI tutor (adaptive paths, integrations, reporting) | depends on scope | 3 to 6 months |
-| Full enterprise build (deep LMS integration, multiple roles and languages) | depends on scope, the largest investment | 4 to 8 months |
-| Operation (model API, hosting, iteration) | ongoing, depends on usage | ongoing |
+| Prototype / proof of concept (guided dialogue, your content) | ~5,000 to 15,000 dollars, depending on scope | 6 to 8 weeks |
+| Custom AI tutor (adaptive paths, integrations, reporting) | ~20,000 to 150,000 dollars, depending on scope | 3 to 6 months |
+| Full enterprise build (deep LMS integration, multiple roles and languages) | from 100,000 dollars, depending on scope | 4 to 8 months |
+| Operation (model API, hosting, iteration) | ~500 to 5,000 dollars per month, depending on scope and usage | ongoing |
+
+These are reference values reported by specialist development vendors, not quotes. **Want the number for your project?** Request a [no-obligation quote](https://learnslice.com/solutions#project-inquiry) and you get a price range for your case after the first call.
 
 The number a one-time build has to beat is the subscription route: per-user or per-month fees for the same learners over the same years. A build earns its cost back in per-seat licences replaced and trainer time saved. A short scoping call turns this into a real number for your case. Your actual price moves with four levers:
 
@@ -2603,7 +2611,7 @@ Four kinds of partners build AI tutors. Each brings a different strength and lea
 | General software agency | engineering, integrations, scale | learning design, and testing whether AI answers are grounded and correct |
 | E-learning content agency | instructional design, course production | software engineering and running an AI system after launch |
 | Freelancer | low cost, fast start | continuity, operation, security reviews |
-| Specialist AI tutor developer | learning design, grounding and engineering in one team | fewer references outside its core sectors, so ask for cases close to yours |
+| Specialist AI tutor developer | learning design, grounding and engineering in one team | smaller team, less capacity for very large rollouts at once, and fewer references outside its core sectors |
 
 *Disclosure: This post is by LearnSlice, and LearnSlice develops custom AI tutors itself.*
 
@@ -2640,7 +2648,7 @@ The lowest-risk way into a custom AI tutor is not a six-month contract; it is a 
 
 ### How much does it cost to build a custom AI tutor?
 
-It depends on scope, so there is no reliable general figure. The price moves with how deeply the tutor is grounded in your content, how adaptive it is, what it integrates with, and the rights you need. A prototype with guided dialogue and your content is the cheapest start; a full enterprise build with deep integrations costs the most. On top of the build, budget for ongoing model and hosting costs. Ask for a fixed price on a first release with a written scope.
+As industry reference values, depending on scope: a prototype with guided dialogue and your content is often around 5,000 to 15,000 dollars, a custom AI tutor with adaptive paths and integrations about 20,000 to 150,000 dollars, and a full enterprise build 100,000 dollars and up. On top of the build, budget roughly 500 to 5,000 dollars per month for model and hosting costs, depending on scope and usage. These are reference values reported by specialist development vendors, not quotes; the real number depends on grounding, adaptivity and integrations.
 
 ### Should we build an AI tutor or buy one?
 
@@ -2672,7 +2680,7 @@ Through retrieval-augmented generation (RAG): your documents, courses, and knowl
 
 ### How do we choose an AI tutoring platform development company?
 
-First decide which gap matters most: general software agencies bring engineering, e-learning agencies bring instructional design, freelancers bring speed, and specialist AI tutor developers combine learning design and engineering. Then test every candidate on your own content: grounded answers with sources, a way to measure accuracy, real adaptivity, a free choice of model and hosting, and a plan for operation after launch.
+First decide which gap matters most: general software agencies bring engineering, e-learning agencies bring instructional design, freelancers bring speed, and specialist AI tutor developers combine learning design and engineering. Then test every candidate on your own content: grounded answers with sources, a way to measure accuracy, real adaptivity, a free choice of model and hosting, and a plan for operation after launch. Disclosure: LearnSlice is itself a specialist AI tutor developer.
 
 ### Who owns the code and the AI tutor after the project?
 
@@ -7021,12 +7029,12 @@ Eine eigene Prüfungsplattform ist kein Wochenendprojekt und kein Millionenvorha
 
 | Umfang | Kosten | Zeitrahmen |
 | --- | --- | --- |
-| Erster nutzbarer Stand: ein Sachgebiet, Fragenpool, Prüfungssimulation | je nach Umfang, der günstigste Einstieg | 6 bis 8 Wochen |
+| Erster nutzbarer Stand: ein Sachgebiet, Fragenpool, Prüfungssimulation | je nach Umfang, kleinster Einstieg | 6 bis 8 Wochen |
 | Vollständige Plattform: alle Sachgebiete, Adaptivität, Auswertung, Rollen | je nach Umfang | 3 bis 6 Monate |
 | Weitere Prüfung auf bestehender Basis | deutlich weniger, im Wesentlichen Inhalt und Mapping | Wochen statt Monate |
 | Betrieb, Pflege, inhaltliche Aktualisierung | laufend, je nach Umfang | dauerhaft |
 
-Der Einstieg muss nicht groß sein. Sinnvoll ist ein Zuschnitt auf ein Sachgebiet, Ihren vorhandenen Fragenpool und eine funktionierende Prüfungssimulation. Das ist der günstigste Einstieg und nach 6 bis 8 Wochen bei einer echten Kohorte im Einsatz. Sie sehen also an Ihrer eigenen Bestehensquote, ob sich etwas bewegt, bevor Sie über den Ausbau entscheiden. Bewegt sich nichts, haben Sie einen überschaubaren Betrag ausgegeben und wissen mehr als vorher.
+Der Einstieg muss nicht groß sein. Sinnvoll ist ein Zuschnitt auf ein Sachgebiet, Ihren vorhandenen Fragenpool und eine funktionierende Prüfungssimulation. Das ist der kleinste Einstieg und nach 6 bis 8 Wochen bei einer echten Kohorte im Einsatz. Sie sehen also an Ihrer eigenen Bestehensquote, ob sich etwas bewegt, bevor Sie über den Ausbau entscheiden. Bewegt sich nichts, haben Sie einen überschaubaren Betrag ausgegeben und wissen mehr als vorher.
 
 Ob sich das gegenüber einem Mietmodell rechnet, können Sie selbst überschlagen: Lizenzkosten pro Teilnehmer mal Kohortengröße mal Jahre auf der einen Seite, einmalige Entwicklung plus Betrieb auf der anderen. Je größer und stabiler Ihre Jahrgänge, desto früher kippt die Rechnung. Dazu kommt ein Posten, der selten in der Kalkulation auftaucht: Fragenpool und Didaktik bleiben Ihr Eigentum.
 
@@ -7305,13 +7313,13 @@ Published: 2026-07-21
 Updated: 2026-11-20
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-KI-Lernbegleiter: kaufen, White-Label lizenzieren oder entwickeln lassen. Was Verankerung und Adaptivität kosten und wie Sie einen KI-Tutor-Anbieter prüfen.
+KI-Lernbegleiter: kaufen, White-Label lizenzieren oder entwickeln lassen. Was die Kosten für Verankerung und Adaptivität treibt und wie Sie einen KI-Tutor-Anbieter prüfen.
 
 ## Auf einen Blick
 
 - Ein KI-Lernbegleiter ist ein Lernassistent, der auf Ihren eigenen Inhalten und Daten aufsetzt, kein generischer Chatbot. Er antwortet aus Ihrem Wissen, führt jeden Lernenden über einen adaptiven Lernpfad, gibt Feedback und läuft unter Ihrer Marke und Ihren Datenschutzregeln.
 - Sie haben drei Wege: eine fertige Plattform kaufen, ein White-Label-Produkt lizenzieren oder individuell entwickeln lassen. Entwickeln lassen ist richtig, wenn der KI-Tutor exakt zu Ihren Inhalten passen, Ihre Marke tragen, die Datenhoheit bei Ihnen lassen und Ihnen gehören soll.
-- Die Kosten eines individuellen KI-Lernbegleiters hängen vom Umfang ab: wie tief er in Ihren Inhalten verankert ist, wie adaptiv er ist und was er anbindet. Ein Prototyp steht oft nach 6 bis 8 Wochen, ein vollständiger Tutor nach 3 bis 6 Monaten. Planen Sie laufende Kosten für Modell-API und Hosting ein, nicht nur die Entwicklung.
+- Branchenrichtwerte, je nach Umfang: ein Prototyp (Proof of Concept) ca. 5.000 bis 15.000 Euro, ein individueller KI-Lernbegleiter ca. 20.000 bis 150.000 Euro, eine Enterprise-Lösung ab 100.000 Euro. Planen Sie laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat ein, je nach Umfang und Nutzung, nicht nur die Entwicklung.
 - Die größten Kostentreiber sind die Verankerung im eigenen Wissen (RAG), der Grad der Adaptivität und die Anbindung an Ihre Systeme (LMS, SSO, xAPI oder SCORM). Ein erstes nutzbares Modul steht oft in 6 bis 8 Wochen bereit, eine komplette Lösung in 3 bis 6 Monaten.
 - Prüfen Sie einen KI-Tutor-Anbieter an mehr als generischem Dev-Können: Verankerung an Ihren eigenen Inhalten getestet, Leitplanken gegen falsche Antworten, echte Adaptivität, keine Bindung an ein Modell, EU- oder On-Premises-Hosting mit Trainingsdaten-Opt-out und Eigentum am Ergebnis.
 
@@ -7322,6 +7330,12 @@ KI-Lernbegleiter: kaufen, White-Label lizenzieren oder entwickeln lassen. Was Ve
 Wenn Sie recherchieren, wie Sie einen eigenen KI-Lernbegleiter bekommen, haben Sie sich vermutlich schon entschieden, dass ein generischer Chatbot nicht genügt. Die eigentliche Frage ist nicht, ob ein personalisierter KI-Mentor Ihren Lernenden helfen würde. Sie lautet: Wie bekommen Sie einen, der wirklich passt, indem Sie eine fertige Plattform kaufen, ein White-Label-Produkt lizenzieren oder eine individuelle Lösung rund um Ihre eigenen Inhalte entwickeln lassen?
 
 Um diese Entscheidung geht es in diesem Leitfaden. Die meisten Organisationen kommen hierher, weil ein fertiges Tool an einer zentralen Stelle klemmt: Es kennt den eigenen Lehrplan nicht, es kann die eigene Marke nicht tragen, oder sein Umgang mit Daten schließt es aus. Eine falsche Wahl kostet doppelt: das Budget und die Monate, die mit einem Tool vergehen, das am Ende niemand nutzt. Dass ein maßgeschneiderter KI-Tutor helfen würde, müssen wir Ihnen nicht erklären. Sie wollen wissen, was er kostet, wie eine Entwicklung abläuft und woran Sie einen seriösen Entwicklungspartner erkennen.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Sie suchen einen Partner für Ihren KI-Lernbegleiter?</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">LearnSlice entwickelt individuelle KI-Tutoren, die aus Ihren eigenen Inhalten antworten, als Festpreisprojekt und in Ihrem Besitz. Hosting in Deutschland, KI in der EU. Nach dem Erstgespräch kennen Sie den Preisrahmen für Ihr Projekt.</p>
+  <p class="m-0 mt-4 flex flex-wrap items-center gap-x-4 gap-y-3"><a href="/de/loesungen#project-inquiry" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Kostenschätzung anfordern</a><a href="/de/loesungen" class="text-sm text-accent underline underline-offset-4">Leistungen und Projekte ansehen</a></p>
+</div>
 
 ## Was ein KI-Lernbegleiter ist, und wann sich ein eigener lohnt
 
@@ -7385,14 +7399,16 @@ Ab einer gewissen Nutzerzahl kann die Entwicklung unter den auflaufenden Lizenzg
 
 ## Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?
 
-Die Kosten hängen vor allem davon ab, wie tief der Tutor in Ihrem Wissen verankert ist, wie adaptiv er ist und was er anbindet. Eine allgemeine Zahl gibt es nicht, der Überblick zeigt deshalb Umfang und Zeitrahmen:
+Die Kosten hängen vor allem davon ab, wie tief der Tutor in Ihrem Wissen verankert ist, wie adaptiv er ist und was er anbindet. Die Branchenrichtwerte im Überblick, jeweils je nach Umfang:
 
-| Umfang | Kosten | Zeitrahmen |
+| Umfang | Typische Entwicklungskosten | Zeitrahmen |
 |---|---|---|
-| Prototyp / Proof of Concept (geführter Dialog, Ihre Inhalte) | je nach Umfang, der günstigste Einstieg | 6 bis 8 Wochen |
-| Individueller KI-Lernbegleiter (adaptive Pfade, Integrationen, Reporting) | je nach Umfang | 3 bis 6 Monate |
-| Umfangreiche Enterprise-Lösung (tiefe LMS-Integration, viele Rollen und Sprachen) | je nach Umfang, der aufwendigste | 4 bis 8 Monate |
-| Betrieb (Modell-API, Hosting, Weiterentwicklung) | laufend, je nach Nutzung | dauerhaft |
+| Prototyp / Proof of Concept (geführter Dialog, Ihre Inhalte) | ca. 5.000 bis 15.000 Euro, je nach Umfang | 6 bis 8 Wochen |
+| Individueller KI-Lernbegleiter (adaptive Pfade, Integrationen, Reporting) | ca. 20.000 bis 150.000 Euro, je nach Umfang | 3 bis 6 Monate |
+| Umfangreiche Enterprise-Lösung (tiefe LMS-Integration, viele Rollen und Sprachen) | ab 100.000 Euro, je nach Umfang | 4 bis 8 Monate |
+| Betrieb (Modell-API, Hosting, Weiterentwicklung) | ca. 500 bis 5.000 Euro pro Monat, je nach Umfang und Nutzung | dauerhaft |
+
+Diese Werte sind Richtwerte spezialisierter Entwicklungsdienstleister, keine Angebote. **Sie möchten die Zahl für Ihr Projekt?** Fordern Sie eine [unverbindliche Kostenschätzung](https://learnslice.com/de/loesungen#project-inquiry) an, nach dem Erstgespräch kennen Sie den Preisrahmen für Ihren Fall.
 
 Messen lassen muss sich eine Eigenentwicklung am Abo-Weg: Gebühren pro Nutzer oder Monat für dieselben Lernenden über dieselben Jahre. Eine Eigenentwicklung verdient ihre Kosten über ersetzte Lizenzen pro Platz und gesparte Ausbilderzeit zurück. Ein kurzes Scoping-Gespräch macht daraus eine belastbare Zahl für Ihren Fall. Ihr konkreter Preis bewegt sich mit vier Hebeln:
 
@@ -7403,14 +7419,14 @@ Messen lassen muss sich eine Eigenentwicklung am Abo-Weg: Gebühren pro Nutzer o
 
 ## Woran Sie einen guten KI-Tutor-Anbieter erkennen
 
-KI-Tutoren bauen vier Arten von Partnern. Jede bringt eine andere Stärke mit und lässt eine andere Lücke, wählen Sie den Typ also nach dem, was Ihr Projekt am dringendsten braucht:
+Vier Arten von Partnern bauen KI-Tutoren. Jede bringt eine andere Stärke mit und lässt eine andere Lücke, wählen Sie den Typ also nach dem, was Ihr Projekt am dringendsten braucht:
 
 | Partnertyp | Stärke | Typische Lücke |
 |---|---|---|
 | Allgemeine Softwareagentur | Entwicklung, Integrationen, Skalierung | Didaktik und die Prüfung, ob KI-Antworten belegt und richtig sind |
 | E-Learning-Agentur | Didaktik, Kursproduktion | Softwareentwicklung und der Betrieb eines KI-Systems nach dem Start |
 | Freelancer | geringe Kosten, schneller Start | Kontinuität, Betrieb, Sicherheitsprüfungen |
-| Spezialisierter KI-Tutor-Entwickler | Didaktik, Quellenbindung und Entwicklung in einem Team | weniger Referenzen außerhalb der eigenen Kernbranchen, fragen Sie nach Fällen nahe an Ihrem |
+| Spezialisierter KI-Tutor-Entwickler | Didaktik, Quellenbindung und Entwicklung in einem Team | kleineres Team, weniger Kapazität für sehr große Rollouts auf einmal und weniger Referenzen außerhalb der Kernbranchen |
 
 *Transparenzhinweis: Dieser Beitrag ist von LearnSlice, und LearnSlice entwickelt selbst individuelle KI-Tutoren.*
 
@@ -7447,7 +7463,7 @@ Der risikoärmste Einstieg in einen eigenen KI-Tutor ist kein Sechs-Monats-Vertr
 
 ### Was kostet es, einen KI-Lernbegleiter entwickeln zu lassen?
 
-Das hängt vom Umfang ab, eine allgemeine Zahl gibt es nicht. Den Preis bewegen die Verankerung in Ihren Inhalten, die Adaptivität, die Integrationen und die Nutzungsrechte. Ein Prototyp mit geführtem Dialog und Ihren Inhalten ist der günstigste Einstieg, eine Enterprise-Lösung mit tiefen Integrationen der aufwendigste. Hinzu kommen laufende Kosten für Modell-API und Hosting. Fragen Sie nach einem Festpreis für ein erstes Release mit schriftlichem Umfang.
+Als Branchenrichtwert, je nach Umfang: Ein Prototyp (Proof of Concept) mit geführtem Dialog und Ihren Inhalten liegt oft bei ca. 5.000 bis 15.000 Euro, ein individueller KI-Lernbegleiter mit adaptiven Pfaden und Integrationen bei ca. 20.000 bis 150.000 Euro, eine Enterprise-Lösung mit tiefen Integrationen ab 100.000 Euro. Hinzu kommen laufende Kosten für Modell-API und Hosting von etwa 500 bis 5.000 Euro pro Monat, je nach Umfang und Nutzung. Das sind Richtwerte spezialisierter Entwicklungsdienstleister, keine Angebote; der konkrete Preis hängt von Verankerung, Adaptivität und Integrationen ab.
 
 ### Sollten wir einen KI-Tutor kaufen oder entwickeln lassen?
 
@@ -7479,7 +7495,7 @@ Er kann und sollte es sein, aber nur, wenn er von Anfang an so gebaut wird. Acht
 
 ### Wie finden wir den passenden Entwicklungspartner für einen KI-Tutor?
 
-Klären Sie zuerst, welche Lücke am meisten zählt: Allgemeine Softwareagenturen bringen Entwicklung mit, E-Learning-Agenturen Didaktik, Freelancer Tempo, und spezialisierte KI-Tutor-Entwickler verbinden Didaktik und Entwicklung. Testen Sie dann jeden Kandidaten an Ihren eigenen Inhalten: belegte Antworten mit Quellen, eine messbare Genauigkeit, echte Adaptivität, freie Wahl von Modell und Hosting und einen Plan für den Betrieb nach dem Start.
+Klären Sie zuerst, welche Lücke am meisten zählt: Allgemeine Softwareagenturen bringen Entwicklung mit, E-Learning-Agenturen Didaktik, Freelancer Tempo, und spezialisierte KI-Tutor-Entwickler verbinden Didaktik und Entwicklung. Testen Sie dann jeden Kandidaten an Ihren eigenen Inhalten: belegte Antworten mit Quellen, eine messbare Genauigkeit, echte Adaptivität, freie Wahl von Modell und Hosting und einen Plan für den Betrieb nach dem Start. Transparenzhinweis: LearnSlice ist selbst ein spezialisierter KI-Tutor-Entwickler.
 
 ### Wem gehören der Code und der KI-Tutor nach dem Projekt?
 
