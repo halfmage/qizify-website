@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+	/* Headings hyphenate only when needed (blog H1/H2 use hyphens-auto so long German
+	   compounds fit on phones). Only words of 10+ letters split, at least 5 letters on
+	   each side, so "Tabelle" stays whole while "Mindestausbildungsvergütung" can break. */
+	h1, h2, h3 {
+		hyphenate-limit-chars: 10 5 5;
+	}
+
 	html {
 		font-family: 'Inter Variable', 'Inter', system-ui, sans-serif;
 		-webkit-font-smoothing: antialiased;

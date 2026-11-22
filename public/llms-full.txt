@@ -5732,7 +5732,7 @@ Language: de
 Published: 2026-11-22
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Mindestausbildungsvergütung 2027: 764 Euro im ersten Lehrjahr. Alle Sätze, warum das Jahr des Ausbildungsbeginns zählt und was ein Ausbildungsplatz mindestens kostet.
+Mindestausbildungsvergütung 2027: 764 Euro im ersten Lehrjahr. Alle Sätze, warum das Startjahr zählt und was ein Ausbildungsplatz mindestens kostet.
 
 ## Auf einen Blick
 
