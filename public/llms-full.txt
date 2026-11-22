@@ -6171,7 +6171,7 @@ Betroffen sind alle Betriebe, deren Azubis das IHK-Tool nutzen und deren Ausbild
 
 Die IHK Region Stuttgart beschreibt den Export in fünf Schritten ([Anleitung](https://www.ihk.de/stuttgart/fuer-unternehmen/fachkraefte-und-ausbildung/ausbildung/digitales-berichtsheft-anleitung-export-6960548)):
 
-1. Die Seite meineihk.service.ihk.de/landing/bildung aufrufen.
+1. Die Seite [meineihk.service.ihk.de](https://meineihk.service.ihk.de/landing/bildung) (Bereich Bildung) aufrufen.
 2. Auf "Zum digitalen Berichtsheft" klicken und mit E-Mail-Adresse und Passwort anmelden.
 3. Die Kachel "Berichtsheftverwaltung" öffnen.
 4. Unter "Berichtsheft herunterladen" den "Berichtsheftexport aller Einträge" wählen. Es entsteht eine PDF-Datei mit allen Einträgen.
