@@ -56,6 +56,7 @@ export const EN_TO_DE = {
 	'/blog/prevent-apprenticeship-dropout': '/de/blog/ausbildungsabbruch-verhindern',
 	'/blog/training-mechatronics-apprentices': '/de/blog/mechatroniker-ausbilden',
 	'/blog/e-learning-funding-germany': '/de/blog/e-learning-foerderung',
+	'/blog/minimum-apprentice-pay-germany-2027': '/de/blog/mindestausbildungsverguetung-2027',
 };
 
 // Pages that exist only in one language and therefore should not emit
