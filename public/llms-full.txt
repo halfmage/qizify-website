@@ -3917,7 +3917,7 @@ Frame it as capacity recovery. A trainer who spends a meaningful share of their 
 Source: https://learnslice.com/blog/apprenticeship-plan-template-free
 Language: en
 Published: 2026-04-19
-Updated: 2026-10-04
+Updated: 2026-11-22
 Author: Daniel
 
 Free apprenticeship plan template aligned with § 14 BBiG: Word download, copy-paste sample, trainer checklist, and when to graduate to a dynamic, AI-powered plan.
@@ -3947,6 +3947,19 @@ Before the sample is useful, the mandatory components need to be clear. Without 
 **5. Learning and performance reviews.** Mid-term reviews, assessments, and IHK interim/final exams as milestones.
 
 § 11 paragraph 1 number 2 BBiG additionally requires that "the type, factual and temporal structure, and objective of the vocational training" be included in the contract record. In practice, the plan is used as an annex to the apprenticeship contract.
+
+## New Training Ordinances 2026 and 2027: When You Need to Update the Plan
+
+A template is only as current as the framework plan (Ausbildungsrahmenplan) behind it. When an occupation is re-issued, the content and time structure change, and often the exam structure too. Two waves affect many companies right now:
+
+**Construction trades since 1 August 2026.** According to [BIBB](https://www.bibb.de/dokumente/pdf/finalpmbauwirtschaftsberufe2026neu.pdf), 19 new training ordinances for the construction industry are in force: 16 three-year and three two-year occupations, from finishing-trades worker (Ausbaufacharbeiter) to carpenter (Zimmerer). Two changes matter most for the training plan:
+
+- The 16 three-year occupations now use the split final exam (gestreckte Abschluss- or Gesellenprüfung). The intermediate exam is gone, and the result of part 1 counts towards the final grade ([DIHK](https://www.dihk.de/de/serviceportal/qualifizierung/bauberufe-modernisiert-19-neue-ausbildungsordnungen-in-kraft-185578)). In the plan, the "intermediate exam" milestone becomes an exam that already counts.
+- The content puts new weight on working with existing buildings, energy efficiency and sustainable materials. According to BIBB, inter-company training (überbetriebliche Ausbildung) remains a core part with at least 30 weeks, and it belongs in the time structure with dates.
+
+**Re-issued occupations from 1 August 2027.** These include [farmer (Landwirt/Landwirtin)](https://www.bibb.de/de/pressemitteilung_230440.php), where at least one area from crops and one from livestock must be chosen, and [technical model maker (Technischer Modellbauer/Technische Modellbauerin)](https://www.bibb.de/dokumente/pdf/pressemitteilungtechnischermodellbauer_.pdf), where three specialisations become one occupation with deployment areas and additive manufacturing becomes its own area. The full list is in the [BIBB occupation search](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/new_modernised_occupations_by_year/2027).
+
+For contracts starting from August 2027 in these occupations, the plan has to follow the new framework plan. Which version applies to contracts already running is best checked with your chamber. And because the plan is attached to the contract: apprenticeships starting in 2027 also have new minimum pay rates, listed in our overview of [minimum apprentice pay in Germany 2027](https://learnslice.com/blog/minimum-apprentice-pay-germany-2027).
 
 ## Free Apprenticeship Plan Template - Copy-Paste Sample
 
@@ -4136,6 +4149,10 @@ The BBiG does not explicitly require the written form for the plan itself, only 
 ### How often does the plan need to be updated?
 
 There is no fixed legal rhythm. Technically the plan should be adjusted promptly when processes, rotations, or responsible people change, and reviewed at minimum every six months.
+
+### Which training ordinances change in 2026 and 2027?
+
+According to BIBB, 19 new training ordinances for the construction trades came into force on 1 August 2026, including bricklayer (Maurer), carpenter (Zimmerer), road builder (Straßenbauer) and drywall installer (Trockenbaumonteur). On 1 August 2027, modernised ordinances come into force for occupations including farmer (Landwirt) and technical model maker (Technischer Modellbauer). For apprenticeships in these occupations, the company plan has to follow the new framework plan. Your chamber can tell you which version applies to a contract that is already running.
 
 ### Is a digital template legally equivalent to the paper version?
 
