@@ -624,7 +624,7 @@ Gesetzliche Pflicht und Voraussetzung für die Prüfungszulassung (§ 13 und § 
 ## Kostenlos starten, upgraden nur bei Bedarf.
 
 - **Free (0 €, ohne Zahlungsdaten):** Digitales Berichtsheft; Freigabe, Erinnerung, Punkte, PDF-Export; 1 Ausbilder, bis zu 3 Azubis
-- **LearnSlice Premium (pro Azubi, Ausbilder kostenlos):** Alles aus Free, plus: KI-Tutor für IHK-Prüfung und Einarbeitung; Quizze und Prüfungssimulationen; Lernplan und Lernstatistiken; Eigene Dokumente als Wissensbasis; Beliebig viele Azubis
+- **LearnSlice Premium (pro Azubi und Monat, jährlich abgerechnet, zzgl. MwSt. Ausbilder kostenlos.):** Alles aus Free, plus: KI-Tutor für IHK-Prüfung und Einarbeitung; Quizze und Prüfungssimulationen; Lernplan und Lernstatistiken; Eigene Dokumente als Wissensbasis; Beliebig viele Azubis
 
 Mehr als 3 Azubis? Starten Sie kostenlos und schalten Sie Premium in der App frei, oder lassen Sie sich Premium in 30 Minuten zeigen.
 
@@ -716,7 +716,7 @@ A legal duty and a condition for exam admission (§ 13 and § 43 BBiG). That is 
 ## Start free, upgrade only if you need to.
 
 - **Free (€0, no payment details):** Digital training logbook; Approval, reminders, points, PDF export; 1 trainer, up to 3 apprentices
-- **LearnSlice Premium (per apprentice, trainers free):** Everything in Free, plus: AI tutor for the IHK exam and onboarding; Quizzes and exam simulations; Learning plan and learning analytics; Your own documents as a knowledge base; Any number of apprentices
+- **LearnSlice Premium (per apprentice per month, billed yearly, plus VAT. Trainers free.):** Everything in Free, plus: AI tutor for the IHK exam and onboarding; Quizzes and exam simulations; Learning plan and learning analytics; Your own documents as a knowledge base; Any number of apprentices
 
 More than 3 apprentices? Start for free and unlock Premium in the app, or let us show you Premium in 30 minutes.
 
@@ -8748,7 +8748,7 @@ Als Kapazitätsrückgewinnung. Ein Ausbilder, der einen erheblichen Teil seiner 
 
 ---
 
-# Ausbildungsrahmenplan: Aufbau und Umsetzungstabelle
+# Ausbildungsrahmenplan: Aufbau und Plan für Ihren Beruf
 
 Source: https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert
 Language: de
@@ -8756,7 +8756,7 @@ Published: 2026-05-04
 Updated: 2026-11-02
 Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
 
-Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den betrieblichen Plan überführen. Mit Umsetzungstabelle als Word-Vorlage zum Download.
+Was der Ausbildungsrahmenplan regelt, wie sachliche und zeitliche Gliederung aufgebaut sind und wie daraus Ihr betrieblicher Plan wird. Mit kostenlosem Plan-Generator und Word-Vorlage.
 
 ## Auf einen Blick
 
@@ -8773,6 +8773,12 @@ Was im Ausbildungsrahmenplan steht, wie er aufgebaut ist und wie Sie ihn in den 
 Der **Ausbildungsrahmenplan** legt für einen anerkannten Ausbildungsberuf fest, was ein Betrieb vermitteln muss (sachliche Gliederung) und in welchem Ausbildungsabschnitt (zeitliche Gliederung). Er ist Teil der Ausbildungsordnung, wird vom Bundesinstitut für Berufsbildung (BIBB) mit Sachverständigen aus der Praxis erarbeitet und ist nach §§ 4 und 5 BBiG bundesweit verbindlich. Den geltenden Plan für Ihren Beruf finden Sie in der Berufesuche des BIBB. Für die häufigsten Ausbildungsberufe haben wir ihn [unten direkt verlinkt](#ausbildungsrahmenplan-nach-beruf-direkt-zur-verordnung).
 
 Trotz dieser klaren Rolle wird der Ausbildungsrahmenplan in der Praxis häufig mit dem **betrieblichen Ausbildungsplan** verwechselt - oder auf eine Anlage zum Vertrag reduziert, die einmal abgeheftet und dann nie wieder geöffnet wird. Beides verschenkt das Steuerungspotenzial des Dokuments. Diese Seite erklärt, was der Ausbildungsrahmenplan genau ist, wie er aufgebaut ist und wie sich aus ihm ein Plan macht, der die Ausbildung tatsächlich trägt.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Elektroniker/-in für Maschinen und Antriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
+  <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsrahmenplan-erklaert" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
+</div>
 
 ## Was ist der Ausbildungsrahmenplan? Definition und rechtliche Grundlage
 
@@ -9093,6 +9099,12 @@ Für neue Verträge muss der Plan dem neuen [Ausbildungsrahmenplan](https://lear
 ## Ausbildungsplan-Vorlage (kostenlos) - Muster zum direkten Übernehmen
 
 Die folgende Vorlage gibt es als Word-Datei zum Herunterladen oder als Text zum Kopieren in jedes Textverarbeitungsprogramm. Sie erfüllt die Mindestanforderungen aus § 14 BBiG und lässt sich für jeden Ausbildungsberuf befüllen.
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+  <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Elektroniker/-in für Maschinen und Antriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
+  <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsplan-vorlage" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
+</div>
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Ausbildungsplan-Vorlage als Word-Datei (.docx)</p>
