@@ -1092,6 +1092,137 @@ Der Finanz-Begleiter gibt allgemeine Informationen und ersetzt keine Anlage-, Ve
 
 ---
 
+# Minimum Apprentice Pay in Germany 2027: Rates and Budget
+
+Source: https://learnslice.com/blog/minimum-apprentice-pay-germany-2027
+Language: en
+Published: 2026-11-22
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
+
+Germany's minimum apprentice pay for 2027 is 764 euros in year one. All rates, why the start year decides, and what an apprenticeship costs at the legal floor.
+
+## Key Takeaways
+
+- For apprenticeships starting in 2027, the statutory minimum pay (Mindestausbildungsvergütung) is 764 euros in year one, 902 in year two, 1,031 in year three and 1,070 in year four, per month (Federal Law Gazette 2026 I No. 287).
+- What counts is the year the apprenticeship started, not the calendar year. An apprentice who started in 2026 is entitled to at least 854 euros in year two, not 902.
+- Rates for years two to four follow from fixed uplifts of 18, 35 and 40 percent on the year-one amount (Section 17 (2) BBiG).
+- Over a three-year apprenticeship starting in 2027, the legal floor adds up to 32,364 euros of gross pay, 1,704 euros more than for a 2026 start.
+- Companies bound by a collective agreement may pay the agreed rate. For companies that are not bound, pay is as a rule not appropriate if it falls more than 20 percent below the relevant collective agreement.
+
+![Training managers reviewing cost figures on a laptop](https://learnslice.com/images/blog/pexels-yankrukov-7698811.webp)
+
+From 1 January 2027, Germany's statutory minimum pay for apprentices (*Mindestausbildungsvergütung*) rises to **764 euros** per month in the first year. The new rates have been in the Federal Law Gazette since 7 October 2026. For budgeting, that one number is not enough, because one detail is easy to miss: the floor depends on the **year the apprenticeship started**, not on the calendar year. An apprentice who started in August 2026 does not move to the new table in 2027.
+
+This article shows the 2027 rates next to 2026, how they are calculated, who the floor actually affects, and what an apprenticeship starting in 2027 costs at minimum.
+
+## The 2027 Rates at a Glance
+
+Monthly minimum pay under Section 17 (2) BBiG for apprenticeships starting between 1 January and 31 December 2027 ([BGBl. 2026 I Nr. 287](https://www.gesetze-im-internet.de/bbimindvergfbek_2027/BJNR11F0A0026.html)), compared with the previous year ([2026 announcement](https://www.gesetze-im-internet.de/bbimindvergfbek_2026/BJNR0EB0A0025.html)):
+
+| Training year | Start 2026 | Start 2027 | Increase |
+|---|---|---|---|
+| Year 1 | €724 | **€764** | +€40 |
+| Year 2 | €854 | **€902** | +€48 |
+| Year 3 | €977 | **€1,031** | +€54 |
+| Year 4 | €1,014 | **€1,070** | +€56 |
+
+[BIBB](https://www.bibb.de/de/pressemitteilung_229684.php) puts the year-one increase at just under 5.6 percent.
+
+## The Start Year Decides
+
+Section 17 (2) BBiG states that the updated amount applies to apprenticeships **that begin in the year of the update**. The uplifts for years two to four are calculated from that amount. Each intake therefore keeps its own table.
+
+An example for a company that hires every August. In September 2027, these floors apply:
+
+| Intake | Training year in Sept. 2027 | Statutory floor |
+|---|---|---|
+| Started August 2027 | Year 1 | €764 (2027 table) |
+| Started August 2026 | Year 2 | €854 (2026 table) |
+
+The second-year apprentice has a lower floor than the 2027 table shows for year two (€902). This is only the legal minimum. Whatever the apprenticeship contract or a collective agreement says applies regardless, and many companies pay more anyway. For planning, this means: new contracts starting in 2027 must meet the new rates, and the announcement does not change existing contracts.
+
+## How the Amount Is Calculated
+
+Since 2024, the year-one amount is updated every year (Section 17 (2) BBiG):
+
+- **Basis:** how average apprentice pay developed over the two calendar years before the announcement. BIBB has done the calculation since 2023.
+- **Uplifts:** the year-one amount plus 18 percent for year two, 35 percent for year three and 40 percent for year four. That gives 902, 1,031 and 1,070 euros.
+- **Publication:** the responsible federal ministry publishes the rates in the Federal Law Gazette by 1 November at the latest. For 2027 this happened on 7 October 2026.
+
+The next update, for apprenticeships starting in 2028, will therefore be published by 1 November 2027 at the latest. If you advertise 2028 places in spring 2027, you will not know the floor yet.
+
+## Who the Floor Actually Affects
+
+For most companies, the statutory minimum is not the number on the payslip. According to [BIBB](https://www.bibb.de/de/pressemitteilung_229684.php), only three to four percent of new apprenticeship contracts since 2020 were agreed at the minimum in year one. Apprentices in companies bound by collective agreements earned 1,209 euros gross per month on average across all training years in 2025.
+
+Which limit applies to your company depends on whether you are bound by a collective agreement:
+
+- **Bound by a collective agreement:** pay set by an applicable agreement counts as appropriate even if it is below the minimum (Section 17 (3) BBiG).
+- **Not bound:** even above the floor, pay is as a rule not appropriate if it falls more than 20 percent below the collective agreement that covers the apprenticeship (Section 17 (4) BBiG). For many companies, this is the higher limit.
+- **Part-time apprenticeships:** pay may be reduced, but not by a higher percentage than working time (Section 17 (5) BBiG). At 75 percent of normal hours, that means at least 573 euros in year one for a 2027 start.
+- **Benefits in kind:** can be counted at the official social-security values, but not beyond 75 percent of gross pay (Section 17 (6) BBiG).
+
+Your chamber (IHK or Handwerkskammer) can tell you which collective agreement is relevant for your sector and region.
+
+## What an Apprenticeship Starting in 2027 Costs at Minimum
+
+The statutory floor, added up over the length of the apprenticeship:
+
+| Duration | Start 2026 | Start 2027 | Difference |
+|---|---|---|---|
+| 3 years | €30,660 | **€32,364** | +€1,704 |
+| 3.5 years | €36,744 | **€38,784** | +€2,040 |
+
+*Calculation: monthly rate × 12 per training year; for 3.5 years, six months of year four. Gross pay, excluding employer social-security contributions.*
+
+Pay is only part of the cost. According to the [BIBB cost-benefit survey](https://www.bibb.de/de/pressemitteilung_210430.php) (training year 2022/2023), an apprentice costs German companies around 26,200 euros gross per year on average. Besides pay, that includes the cost of training staff, chamber fees and learning material. How these items break down and where companies can save is covered in our article on [reducing training costs](https://learnslice.com/blog/reduce-training-costs). You can run the numbers for your company with the [apprenticeship savings calculator](https://learnslice.com/apprenticeship-savings-calculator).
+
+## Checklist for Training Companies
+
+- **Check 2027 contracts:** if contracts starting in 2027 are already signed, the agreed amounts should reach at least 764 / 902 / 1,031 / 1,070 euros.
+- **Clarify collective agreements:** if you are bound, the agreement applies. If not, factor in the 20 percent limit against the relevant agreement.
+- **Plan each intake separately:** each intake keeps the table of its start year. An overview per intake prevents payroll errors.
+- **Calculate part-time separately:** pay may be cut at most in proportion to the reduced hours.
+- **Note the 2028 budget:** rates for apprenticeships starting in 2028 will be published by November 2027.
+
+## Where the Bigger Cost Lever Is
+
+Pay is set by law or by collective agreement. What companies can influence is the time trainers spend on administration, such as reviewing and signing off training records. That is where the LearnSlice Training Logbook comes in: apprentices write and submit, trainers approve or send back for revision.
+
+*Note: this article is general information and not legal advice. For binding information on your apprenticeship, contact the responsible chamber.*
+
+
+## Frequently Asked Questions
+
+### What is the minimum apprentice pay in Germany for 2027?
+
+For apprenticeships starting between 1 January and 31 December 2027, it is 764 euros per month in year one, 902 in year two, 1,031 in year three and 1,070 in year four. The legal basis is the announcement of 30 September 2026 (Federal Law Gazette 2026 I No. 287).
+
+### Do ongoing apprenticeships move to the new rates in 2027?
+
+No. The statutory floor depends on the year the apprenticeship started. An apprenticeship that began in 2026 keeps the 2026 table in its later years, so at least 854 euros in year two and 977 in year three. Higher amounts agreed in the contract or a collective agreement are not affected.
+
+### Does the minimum apply to companies bound by a collective agreement?
+
+Under Section 17 (3) BBiG, pay set by an applicable collective agreement counts as appropriate even if it is below the statutory minimum, so bound companies may follow their agreement. According to BIBB, apprentices in companies bound by collective agreements earned 1,209 euros gross per month on average across all training years in 2025, well above the floor.
+
+### What applies to part-time apprenticeships?
+
+In a part-time apprenticeship, pay may be reduced, but the percentage cut may not exceed the percentage cut in working time (Section 17 (5) BBiG). At 75 percent of normal hours, the year-one floor for a 2027 start is therefore 573 euros.
+
+### Who sets the amount?
+
+The Vocational Training Act (BBiG) updates the year-one amount every year based on how average apprentice pay has developed. The Federal Institute for Vocational Education and Training (BIBB) calculates the update, and the responsible federal ministry publishes the rates in the Federal Law Gazette by 1 November at the latest.
+
+## Sources
+
+- Gesetze im Internet: Announcement on the minimum apprentice pay for 2027, BGBl. 2026 I Nr. 287: https://www.gesetze-im-internet.de/bbimindvergfbek_2027/BJNR11F0A0026.html (checked 2026-11-22)
+- Gesetze im Internet: Announcement on the minimum apprentice pay for 2026: https://www.gesetze-im-internet.de/bbimindvergfbek_2026/BJNR0EB0A0025.html (checked 2026-11-22)
+- Gesetze im Internet: Section 17 BBiG (pay entitlement and minimum pay): https://www.gesetze-im-internet.de/bbig_2005/__17.html (checked 2026-11-22)
+- BIBB press release 31/2026: Minimum apprentice pay rises to 764 euros in 2027: https://www.bibb.de/de/pressemitteilung_229684.php (checked 2026-11-22)
+
+---
+
 # E-Learning Funding in Germany 2026: What NRW and Bavaria Pay
 
 Source: https://learnslice.com/blog/e-learning-funding-germany
@@ -5100,7 +5231,7 @@ Five strategies for German companies to cut apprenticeship costs, with current B
 
 ## What Does an Apprentice Really Cost?
 
-According to the latest [BIBB cost-benefit survey](https://www.bibb.de/de/pressemitteilung_210430.php) (training year 2022/23), an apprentice costs German companies about **€26,200 per year** in gross costs, averaged across all training years. This covers the apprentice's pay, the cost of trainers, and other costs such as chamber fees, learning materials and work clothing. Apprentices also produce output worth about €18,100 per year, which covers about 70% of the cost, so the average **net cost is about €8,100 per year**. The figures vary considerably by company size, sector and region, and for about one apprentice in four the output exceeds the gross cost.
+According to the latest [BIBB cost-benefit survey](https://www.bibb.de/de/pressemitteilung_210430.php) (training year 2022/23), an apprentice costs German companies about **€26,200 per year** in gross costs, averaged across all training years. This covers the apprentice's pay, the cost of trainers, and other costs such as chamber fees, learning materials and work clothing. Apprentices also produce output worth about €18,100 per year, which covers about 70% of the cost, so the average **net cost is about €8,100 per year**. The figures vary considerably by company size, sector and region, and for about one apprentice in four the output exceeds the gross cost. The statutory pay floor for apprenticeships starting in 2027, and what it adds up to over the full apprenticeship, is in our overview of [minimum apprentice pay in Germany 2027](https://learnslice.com/blog/minimum-apprentice-pay-germany-2027).
 
 BIBB describes hiring skilled workers on the external market as expensive and uncertain. It puts the average cost of recruiting a skilled worker on the external market at about **€13,700**, around 60% of the average total net cost of a three-year apprenticeship. Compared with earlier BIBB surveys, recruiting costs rose 65%, net training costs 28% ([full BIBB report](https://www.bibb.de/dienst/publikationen/de/20504)).
 
@@ -5580,6 +5711,137 @@ Good platforms generate questions along the IHK topic areas, the standard occupa
 ### Which apprenticeship occupations benefit most from digital exam preparation?
 
 Commercial occupations such as office management clerk, IT occupations such as IT specialists across all four specialisms, and technical occupations such as automotive mechatronics technician and warehouse logistics specialist. Wherever extensive theory has to be linked to practice, personalised adaptive learning shows its strength.
+
+---
+
+# Mindestausbildungsvergütung 2027: Tabelle und Kostenplanung
+
+Source: https://learnslice.com/de/blog/mindestausbildungsverguetung-2027
+Language: de
+Published: 2026-11-22
+Author: LearnSlice Team (LearnSlice UG, Düsseldorf)
+
+Mindestausbildungsvergütung 2027: 764 Euro im ersten Jahr. Alle Sätze, warum das Jahr des Ausbildungsbeginns zählt und was ein Ausbildungsplatz mindestens kostet.
+
+## Auf einen Blick
+
+- Für Ausbildungen, die 2027 beginnen, beträgt die Mindestausbildungsvergütung 764 Euro im ersten, 902 Euro im zweiten, 1.031 Euro im dritten und 1.070 Euro im vierten Ausbildungsjahr (BGBl. 2026 I Nr. 287).
+- Maßgeblich ist das Jahr des Ausbildungsbeginns, nicht das Kalenderjahr. Wer 2026 angefangen hat, bekommt im zweiten Jahr mindestens 854 Euro, nicht 902 Euro.
+- Die Sätze für das zweite bis vierte Jahr ergeben sich aus festen Aufschlägen von 18, 35 und 40 Prozent auf den Betrag des ersten Jahres (§ 17 Abs. 2 BBiG).
+- Über eine dreijährige Ausbildung mit Start 2027 summiert sich die gesetzliche Untergrenze auf 32.364 Euro Bruttovergütung, 1.704 Euro mehr als bei Start 2026.
+- Tarifgebundene Betriebe dürfen nach ihrem Tarifvertrag zahlen. Für nicht tarifgebundene Betriebe ist eine Vergütung in der Regel nicht angemessen, wenn sie den einschlägigen Tarif um mehr als 20 Prozent unterschreitet.
+
+![Ausbildungsverantwortliche prüfen Kostenzahlen am Laptop](https://learnslice.com/images/blog/pexels-yankrukov-7698811.webp)
+
+Ab dem 1. Januar 2027 steigt die Mindestausbildungsvergütung im ersten Ausbildungsjahr auf **764 Euro** im Monat. Das steht seit dem 7. Oktober 2026 im Bundesgesetzblatt. Für die Budgetplanung reicht diese eine Zahl aber nicht, denn ein Detail wird oft übersehen: Die Untergrenze hängt am **Jahr des Ausbildungsbeginns**, nicht am Kalenderjahr. Wer im August 2026 angefangen hat, rutscht 2027 nicht automatisch in die neue Tabelle.
+
+Dieser Beitrag zeigt die Sätze 2027 im Vergleich zu 2026, wie sie berechnet werden, wen die Untergrenze tatsächlich betrifft und was ein Ausbildungsplatz mit Start 2027 mindestens kostet.
+
+## Die Sätze 2027 auf einen Blick
+
+Die monatliche Mindestvergütung nach § 17 Abs. 2 BBiG für Ausbildungen, die zwischen dem 1. Januar und dem 31. Dezember 2027 beginnen ([BGBl. 2026 I Nr. 287](https://www.gesetze-im-internet.de/bbimindvergfbek_2027/BJNR11F0A0026.html)), im Vergleich zum Vorjahr ([Bekanntmachung 2026](https://www.gesetze-im-internet.de/bbimindvergfbek_2026/BJNR0EB0A0025.html)):
+
+| Ausbildungsjahr | Beginn 2026 | Beginn 2027 | Plus |
+|---|---|---|---|
+| 1. Jahr | 724 € | **764 €** | +40 € |
+| 2. Jahr | 854 € | **902 €** | +48 € |
+| 3. Jahr | 977 € | **1.031 €** | +54 € |
+| 4. Jahr | 1.014 € | **1.070 €** | +56 € |
+
+Das [BIBB](https://www.bibb.de/de/pressemitteilung_229684.php) beziffert den Anstieg im ersten Jahr auf knapp 5,6 Prozent.
+
+## Entscheidend ist das Jahr des Ausbildungsbeginns
+
+§ 17 Abs. 2 BBiG regelt, dass der fortgeschriebene Betrag für Ausbildungen gilt, **die im Jahr der Fortschreibung begonnen werden**. Die Aufschläge für das zweite bis vierte Jahr werden auf Grundlage dieses Betrages berechnet. Jeder Ausbildungsjahrgang behält also seine eigene Tabelle.
+
+Ein Beispiel für einen Betrieb, der jedes Jahr im August einstellt. Im September 2027 gelten diese Untergrenzen:
+
+| Jahrgang | Ausbildungsjahr im Sept. 2027 | Gesetzliche Untergrenze |
+|---|---|---|
+| Beginn August 2027 | 1. Jahr | 764 € (Tabelle 2027) |
+| Beginn August 2026 | 2. Jahr | 854 € (Tabelle 2026) |
+
+Der Azubi im zweiten Jahr hat damit eine niedrigere Untergrenze, als die Tabelle 2027 für das zweite Jahr ausweist (902 €). Das ist nur die gesetzliche Mindestgrenze. Was im Ausbildungsvertrag oder im Tarifvertrag steht, gilt unabhängig davon, und viele Betriebe zahlen ohnehin mehr. Für die Planung heißt das: Neue Verträge mit Beginn 2027 müssen die neuen Sätze einhalten, laufende Verträge werden durch die Bekanntmachung nicht verändert.
+
+## Wie der Betrag berechnet wird
+
+Seit 2024 wird der Betrag für das erste Jahr jedes Jahr fortgeschrieben (§ 17 Abs. 2 BBiG):
+
+- **Grundlage:** die Entwicklung der durchschnittlichen Ausbildungsvergütungen der beiden Kalenderjahre vor der Bekanntgabe. Seit 2023 übernimmt das BIBB die Berechnung.
+- **Aufschläge:** auf den Betrag des ersten Jahres kommen 18 Prozent für das zweite, 35 Prozent für das dritte und 40 Prozent für das vierte Jahr. Daraus ergeben sich 902, 1.031 und 1.070 Euro.
+- **Bekanntgabe:** das zuständige Bundesministerium veröffentlicht die Sätze spätestens bis zum 1. November im Bundesgesetzblatt. Für 2027 ist das am 7. Oktober 2026 passiert.
+
+Die nächste Fortschreibung für Ausbildungen mit Beginn 2028 erscheint damit spätestens bis zum 1. November 2027. Wer Ausbildungsplätze für 2028 schon im Frühjahr 2027 ausschreibt, kennt die Untergrenze zu diesem Zeitpunkt noch nicht.
+
+## Wen die Untergrenze tatsächlich betrifft
+
+Für die meisten Betriebe ist die Mindestausbildungsvergütung nicht die Zahl, die am Ende auf der Abrechnung steht. Laut [BIBB](https://www.bibb.de/de/pressemitteilung_229684.php) wurden seit 2020 nur drei bis vier Prozent der neu abgeschlossenen Ausbildungsverhältnisse im ersten Jahr auf Höhe der Mindestvergütung vereinbart. Azubis in tarifgebundenen Betrieben erhielten 2025 im Schnitt aller Ausbildungsjahre 1.209 Euro brutto im Monat.
+
+Welche Grenze für Ihren Betrieb gilt, hängt von der Tarifbindung ab:
+
+- **Tarifgebundene Betriebe:** Eine geltende tarifliche Vergütung ist auch dann angemessen, wenn sie unter der Mindestvergütung liegt (§ 17 Abs. 3 BBiG).
+- **Nicht tarifgebundene Betriebe:** Auch oberhalb der Untergrenze ist die Vergütung in der Regel nicht angemessen, wenn sie den Tarif, in dessen Geltungsbereich die Ausbildung fällt, um mehr als 20 Prozent unterschreitet (§ 17 Abs. 4 BBiG). Für viele Betriebe ist diese Grenze die höhere.
+- **Teilzeitausbildung:** Die Vergütung darf gekürzt werden, aber prozentual nicht stärker als die Arbeitszeit (§ 17 Abs. 5 BBiG). Bei 75 Prozent Arbeitszeit sind das im ersten Jahr mit Start 2027 mindestens 573 Euro.
+- **Sachleistungen:** Sie können zu den Sachbezugswerten angerechnet werden, jedoch nicht über 75 Prozent der Bruttovergütung hinaus (§ 17 Abs. 6 BBiG).
+
+Welcher Tarifvertrag für Ihre Branche und Region einschlägig ist, kann Ihnen die zuständige Kammer sagen.
+
+## Was ein Ausbildungsplatz mit Start 2027 mindestens kostet
+
+Die gesetzliche Untergrenze, aufsummiert über die Ausbildungsdauer:
+
+| Dauer | Beginn 2026 | Beginn 2027 | Differenz |
+|---|---|---|---|
+| 3 Jahre | 30.660 € | **32.364 €** | +1.704 € |
+| 3,5 Jahre | 36.744 € | **38.784 €** | +2.040 € |
+
+*Rechnung: Monatssatz × 12 je Ausbildungsjahr, bei 3,5 Jahren sechs Monate im vierten Jahr. Bruttovergütung ohne Arbeitgeberanteile zur Sozialversicherung.*
+
+Die Vergütung ist aber nur ein Teil der Kosten. Laut [BIBB-Kosten-Nutzen-Erhebung](https://www.bibb.de/de/pressemitteilung_210430.php) (Ausbildungsjahr 2022/2023) kostet ein Azubi im Schnitt rund 26.200 Euro brutto pro Jahr. Darin stecken neben der Vergütung auch die Kosten für das Ausbildungspersonal, Kammergebühren und Lernmaterial. Wie sich diese Posten zusammensetzen und wo Betriebe ansetzen können, steht in unserem Beitrag [Ausbildungskosten senken](https://learnslice.com/de/blog/ausbildungskosten-senken). Mit dem [Ausbildungskosten-Rechner](https://learnslice.com/de/ausbildungskosten-rechner) können Sie die Werte für Ihren Betrieb durchspielen.
+
+## Checkliste für Ausbildungsbetriebe
+
+- **Verträge für 2027 prüfen:** Liegen bereits unterschriebene Verträge mit Beginn 2027 vor, sollten die vereinbarten Beträge mindestens 764 / 902 / 1.031 / 1.070 Euro erreichen.
+- **Tarifbezug klären:** Ist der Betrieb tarifgebunden, gilt der Tarif. Wenn nicht, die 20-Prozent-Grenze zum einschlägigen Tarif mitrechnen.
+- **Jahrgänge getrennt planen:** Für jeden Ausbildungsjahrgang gilt die Tabelle seines Startjahres. Eine Übersicht je Jahrgang verhindert Fehler in der Gehaltsabrechnung.
+- **Teilzeit gesondert rechnen:** Kürzung der Vergütung höchstens im Verhältnis der gekürzten Arbeitszeit.
+- **Budget 2028 vormerken:** Die Sätze für Ausbildungen mit Beginn 2028 kommen spätestens im November 2027.
+
+## Wo der größere Kostenhebel liegt
+
+Die Vergütung ist gesetzlich oder tariflich vorgegeben. Beeinflussen können Betriebe vor allem die Zeit, die Ausbilderinnen und Ausbilder in Verwaltung stecken, etwa in das Prüfen und Abzeichnen von Ausbildungsnachweisen. Hier setzt das LearnSlice-Berichtsheft an: Azubis schreiben und reichen ein, Ausbilder geben frei oder schicken zur Überarbeitung zurück.
+
+*Hinweis: Dieser Beitrag dient der allgemeinen Information und ersetzt keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer.*
+
+
+## Häufig gestellte Fragen
+
+### Wie hoch ist die Mindestausbildungsvergütung 2027?
+
+Für Ausbildungen mit Beginn zwischen dem 1. Januar und dem 31. Dezember 2027 beträgt sie monatlich 764 Euro im ersten, 902 Euro im zweiten, 1.031 Euro im dritten und 1.070 Euro im vierten Ausbildungsjahr. Grundlage ist die Bekanntmachung vom 30. September 2026 (BGBl. 2026 I Nr. 287).
+
+### Steigt die Vergütung laufender Ausbildungen 2027 automatisch auf die neuen Sätze?
+
+Nein. Die gesetzliche Untergrenze richtet sich nach dem Jahr, in dem die Ausbildung begonnen hat. Für eine Ausbildung mit Start 2026 gelten auch im zweiten und dritten Jahr die Sätze der Tabelle 2026, also mindestens 854 und 977 Euro. Höhere Beträge aus Vertrag oder Tarifvertrag bleiben davon unberührt.
+
+### Gilt die Mindestausbildungsvergütung auch für tarifgebundene Betriebe?
+
+Laut § 17 Abs. 3 BBiG ist auch eine geltende tarifvertragliche Vergütung angemessen, wenn sie unter der Mindestvergütung liegt. Tarifgebundene Betriebe dürfen sich dann nach dem Tarifvertrag richten. Nach Angaben des BIBB lagen die tariflichen Vergütungen 2025 im Schnitt aller Ausbildungsjahre bei 1.209 Euro brutto im Monat, also deutlich über der Untergrenze.
+
+### Was gilt bei einer Ausbildung in Teilzeit?
+
+Bei einer Teilzeitberufsausbildung darf die Vergütung unterschritten werden, die prozentuale Kürzung darf aber nicht höher sein als die prozentuale Kürzung der Arbeitszeit (§ 17 Abs. 5 BBiG). Bei 75 Prozent der Arbeitszeit liegt die Untergrenze im ersten Jahr mit Start 2027 damit bei 573 Euro.
+
+### Wer legt die Höhe fest?
+
+Das BBiG schreibt den Betrag für das erste Jahr jährlich fort, orientiert an der Entwicklung der durchschnittlichen Ausbildungsvergütungen. Das BIBB berechnet die Fortschreibung, das zuständige Bundesministerium macht die Sätze bis spätestens 1. November im Bundesgesetzblatt bekannt.
+
+## Quellen
+
+- Gesetze im Internet: Bekanntmachung zur Fortschreibung der Höhe der Mindestvergütung (2027), BGBl. 2026 I Nr. 287: https://www.gesetze-im-internet.de/bbimindvergfbek_2027/BJNR11F0A0026.html (geprüft am 2026-11-22)
+- Gesetze im Internet: Bekanntmachung zur Fortschreibung der Höhe der Mindestvergütung (2026): https://www.gesetze-im-internet.de/bbimindvergfbek_2026/BJNR0EB0A0025.html (geprüft am 2026-11-22)
+- Gesetze im Internet: § 17 BBiG (Vergütungsanspruch und Mindestvergütung): https://www.gesetze-im-internet.de/bbig_2005/__17.html (geprüft am 2026-11-22)
+- BIBB-Pressemitteilung 31/2026: Mindestausbildungsvergütung steigt 2027 auf 764 Euro: https://www.bibb.de/de/pressemitteilung_229684.php (geprüft am 2026-11-22)
 
 ---
 
@@ -8779,7 +9041,7 @@ Nein. § 14 Absatz 1 Nummer 1 BBiG verpflichtet den Ausbildenden, einen betriebl
 Source: https://learnslice.com/de/blog/ausbildungsplan-vorlage-kostenlos
 Language: de
 Published: 2026-04-19
-Updated: 2026-10-04
+Updated: 2026-11-22
 Author: Daniel
 
 Kostenlose Ausbildungsplan-Vorlage nach § 14 BBiG: Word-Datei zum Download, Ausbilder-Checkliste und wann sich der Sprung zur KI-gestützten Lösung lohnt.
@@ -8809,6 +9071,19 @@ Bevor das Muster sinnvoll benutzt werden kann, gehören die Pflichtbestandteile 
 **5. Lern- und Leistungskontrollen.** Zwischengespräche, Beurteilungen und IHK-Zwischen- bzw. Abschlussprüfungen als Meilensteine.
 
 § 11 Absatz 1 Nummer 2 BBiG verlangt zudem, dass "Art, sachliche und zeitliche Gliederung sowie Ziel der Berufsausbildung" in die Vertragsniederschrift aufgenommen werden. Der Plan wird daher in der Praxis als Anlage zum Ausbildungsvertrag genutzt.
+
+## Neue Ausbildungsordnungen 2026 und 2027: Wann Sie den Plan anpassen müssen
+
+Eine Vorlage ist nur so aktuell wie der Ausbildungsrahmenplan, auf dem sie beruht. Wird ein Beruf neu geordnet, ändern sich sachliche und zeitliche Gliederung und oft auch die Prüfungsstruktur. Zwei Wellen betreffen viele Betriebe gerade direkt:
+
+**Bauberufe seit 1. August 2026.** Laut [BIBB](https://www.bibb.de/dokumente/pdf/finalpmbauwirtschaftsberufe2026neu.pdf) sind 19 neue Ausbildungsordnungen in der Bauwirtschaft in Kraft, 16 dreijährige und drei zweijährige, vom Ausbaufacharbeiter bis zum Zimmerer. Für den Ausbildungsplan sind zwei Änderungen besonders wichtig:
+
+- In den 16 dreijährigen Berufen gilt jetzt die gestreckte Abschluss- bzw. Gesellenprüfung. Die Zwischenprüfung entfällt, das Ergebnis von Teil 1 zählt für die Abschlussnote ([DIHK](https://www.dihk.de/de/serviceportal/qualifizierung/bauberufe-modernisiert-19-neue-ausbildungsordnungen-in-kraft-185578)). Im Plan wird aus dem Meilenstein "Zwischenprüfung" also eine Prüfung, die bereits in die Note eingeht.
+- Inhaltlich sind Bauen im Bestand, Energieeffizienz und nachhaltige Baustoffe neu gewichtet. Die überbetriebliche Ausbildung bleibt laut BIBB mit mindestens 30 Wochen ein zentraler Bestandteil und gehört mit Terminen in die zeitliche Gliederung.
+
+**Neuordnungen zum 1. August 2027.** Modernisiert werden unter anderem [Landwirt/Landwirtin](https://www.bibb.de/de/pressemitteilung_230440.php) (künftig mindestens ein Einsatzgebiet aus Pflanze und eines aus Tier) und [Technischer Modellbauer/Technische Modellbauerin](https://www.bibb.de/dokumente/pdf/pressemitteilungtechnischermodellbauer_.pdf) (aus drei Fachrichtungen wird ein Monoberuf mit Einsatzgebieten, additive Fertigung als eigenes Einsatzgebiet). Die vollständige Liste steht in der [BIBB-Berufesuche](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/new_modernised_occupations_by_year/2027).
+
+Für Verträge mit Beginn ab August 2027 in diesen Berufen muss der Plan dem neuen Rahmenplan folgen. Welche Fassung für bereits laufende Verträge gilt, klären Sie am besten mit Ihrer Kammer. Und weil der Plan als Anlage zum Vertrag dient: Für Ausbildungen mit Beginn 2027 gelten auch neue Untergrenzen bei der Vergütung, die Sätze stehen in unserer Übersicht zur [Mindestausbildungsvergütung 2027](https://learnslice.com/de/blog/mindestausbildungsverguetung-2027).
 
 ## Ausbildungsplan-Vorlage (kostenlos) - Muster zum direkten Übernehmen
 
@@ -9000,6 +9275,10 @@ Das BBiG verlangt die Schriftform nicht explizit für den Plan selbst, wohl aber
 ### Wie oft muss der Ausbildungsplan aktualisiert werden?
 
 Rechtlich gibt es keinen festen Rhythmus. Fachlich sollte der Plan bei Prozessänderungen, Rotationen oder personellen Wechseln zeitnah angepasst und mindestens halbjährlich überprüft werden.
+
+### Welche Ausbildungsordnungen ändern sich 2026 und 2027?
+
+Zum 1. August 2026 sind laut BIBB 19 neue Ausbildungsordnungen in der Bauwirtschaft in Kraft getreten, darunter Maurer, Zimmerer, Straßenbauer und Trockenbaumonteur. Zum 1. August 2027 treten modernisierte Ordnungen unter anderem für Landwirt und Technischer Modellbauer in Kraft. Für Ausbildungen in diesen Berufen muss der betriebliche Plan dem neuen Ausbildungsrahmenplan folgen. Welche Fassung für einen bereits laufenden Vertrag gilt, beantwortet die zuständige Kammer.
 
 ### Ist eine digitale Vorlage rechtlich gleichwertig zur Papierversion?
 
@@ -10193,7 +10472,7 @@ Ausbildungskosten pro Azubi senken, auch im Einzelhandel: Lernplattformen, schla
 
 ## Was kostet ein Azubi wirklich?
 
-Laut der aktuellen [BIBB-Kosten-Nutzen-Erhebung](https://www.bibb.de/de/pressemitteilung_210430.php) (Ausbildungsjahr 2022/2023) kostet ein Azubi deutsche Betriebe im Durchschnitt über alle Ausbildungsjahre rund **€26.200 pro Jahr** an Bruttokosten. Dazu zählen die Personalkosten für die Auszubildenden, die Kosten für das Ausbildungspersonal und sonstige Kosten wie Kammergebühren, Lernmaterialien und Arbeitskleidung. Gleichzeitig erbringen Azubis produktive Leistungen im Wert von rund €18.100, die etwa 70 % der Kosten decken. Die **Nettokosten liegen damit bei rund €8.100 pro Jahr**. Je nach Betriebsgröße, Ausbildungsbereich und Region gibt es deutliche Unterschiede, bei etwa jedem vierten Azubi übersteigen die Erträge sogar die Bruttokosten.
+Laut der aktuellen [BIBB-Kosten-Nutzen-Erhebung](https://www.bibb.de/de/pressemitteilung_210430.php) (Ausbildungsjahr 2022/2023) kostet ein Azubi deutsche Betriebe im Durchschnitt über alle Ausbildungsjahre rund **€26.200 pro Jahr** an Bruttokosten. Dazu zählen die Personalkosten für die Auszubildenden, die Kosten für das Ausbildungspersonal und sonstige Kosten wie Kammergebühren, Lernmaterialien und Arbeitskleidung. Gleichzeitig erbringen Azubis produktive Leistungen im Wert von rund €18.100, die etwa 70 % der Kosten decken. Die **Nettokosten liegen damit bei rund €8.100 pro Jahr**. Je nach Betriebsgröße, Ausbildungsbereich und Region gibt es deutliche Unterschiede, bei etwa jedem vierten Azubi übersteigen die Erträge sogar die Bruttokosten. Die gesetzliche Untergrenze der Vergütung für Ausbildungen mit Beginn 2027 und was sie über die gesamte Ausbildungsdauer kostet, steht in unserer Übersicht zur [Mindestausbildungsvergütung 2027](https://learnslice.com/de/blog/mindestausbildungsverguetung-2027).
 
 Die Gewinnung von Fachkräften über den externen Markt ist laut BIBB teuer und unsicher. Die Besetzung einer Fachkräftestelle kostet durchschnittlich rund **€13.700**, etwa 60 % der durchschnittlichen Gesamtnettokosten einer dreijährigen Ausbildung. Im Vergleich zu früheren BIBB-Erhebungen stiegen die Personalgewinnungskosten um 65 %, die Nettoausbildungskosten um 28 % ([BIBB-Report](https://www.bibb.de/dienst/publikationen/de/20504)).
 
