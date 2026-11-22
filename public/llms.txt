@@ -105,6 +105,8 @@ Each profession ships with its full IHK framework curriculum (Ausbildungsrahmenp
 - Custom AI on open-source models, personalised and sovereign: https://learnslice.com/blog/custom-ai-open-source-models
 - GDPR-compliant AI tools, the 7-point check: https://learnslice.com/blog/gdpr-compliant-ai-tools-for-trainers
 - AZAV und Digitalisierung für Bildungsträger: https://learnslice.com/de/blog/azav-digitalisierung-bildungstraeger
+- Mindestausbildungsvergütung 2027, Sätze je Ausbildungsjahr (764 / 902 / 1.031 / 1.070 Euro), warum das Jahr des Ausbildungsbeginns zählt, Kosten über die Ausbildungsdauer: https://learnslice.com/de/blog/mindestausbildungsverguetung-2027
+- Minimum apprentice pay in Germany 2027, rates per training year, why the start year decides, cost over a full apprenticeship: https://learnslice.com/blog/minimum-apprentice-pay-germany-2027
 - Ausbildungsabbruch verhindern, Plan für die ersten 12 Monate: https://learnslice.com/de/blog/ausbildungsabbruch-verhindern
 - Preventing apprenticeship dropout, a plan for the first year: https://learnslice.com/blog/prevent-apprenticeship-dropout
 - Mechatroniker ausbilden, Lernfelder im ersten Jahr, Prüfungsgewichtung und KI-Werkzeuge: https://learnslice.com/de/blog/mechatroniker-ausbilden

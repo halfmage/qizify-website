@@ -1151,6 +1151,10 @@ Since 2024, the year-one amount is updated every year (Section 17 (2) BBiG):
 
 The next update, for apprenticeships starting in 2028, will therefore be published by 1 November 2027 at the latest. If you advertise 2028 places in spring 2027, you will not know the floor yet.
 
+## Does the German Minimum Wage Apply to Apprentices?
+
+No. The Minimum Wage Act (MiLoG) explicitly does not cover the pay of people in vocational training ([Section 22 (3) MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)). Apprentices in training under the BBiG are covered by the minimum apprentice pay under Section 17 BBiG instead.
+
 ## Who the Floor Actually Affects
 
 For most companies, the statutory minimum is not the number on the payslip. According to [BIBB](https://www.bibb.de/de/pressemitteilung_229684.php), only three to four percent of new apprenticeship contracts since 2020 were agreed at the minimum in year one. Apprentices in companies bound by collective agreements earned 1,209 euros gross per month on average across all training years in 2025.
@@ -1187,7 +1191,7 @@ Pay is only part of the cost. According to the [BIBB cost-benefit survey](https:
 
 ## Where the Bigger Cost Lever Is
 
-Pay is set by law or by collective agreement. What companies can influence is the time trainers spend on administration, such as reviewing and signing off training records. That is where the LearnSlice Training Logbook comes in: apprentices write and submit, trainers approve or send back for revision.
+Pay is set by law or by collective agreement. What companies can influence is the time trainers spend on administration, such as reviewing and signing off training records. That is where the LearnSlice Training Logbook comes in: apprentices write and submit, trainers approve or send back for revision. This matters right now: according to several IHK chambers, the IHK's own digital training logbook shuts down on 31 December 2026. What that means for companies is covered in our guide to the [digital training logbook](https://learnslice.com/blog/digital-training-logbook).
 
 *Note: this article is general information and not legal advice. For binding information on your apprenticeship, contact the responsible chamber.*
 
@@ -1210,6 +1214,10 @@ Under Section 17 (3) BBiG, pay set by an applicable collective agreement counts 
 
 In a part-time apprenticeship, pay may be reduced, but the percentage cut may not exceed the percentage cut in working time (Section 17 (5) BBiG). At 75 percent of normal hours, the year-one floor for a 2027 start is therefore 573 euros.
 
+### Does the German minimum wage apply to apprentices?
+
+No. Under Section 22 (3) of the Minimum Wage Act (MiLoG), the act does not cover the pay of people in vocational training. Apprentices in training under the BBiG are covered by the minimum apprentice pay under Section 17 BBiG instead, which for a 2027 start is at least 764 euros in year one.
+
 ### Who sets the amount?
 
 The Vocational Training Act (BBiG) updates the year-one amount every year based on how average apprentice pay has developed. The Federal Institute for Vocational Education and Training (BIBB) calculates the update, and the responsible federal ministry publishes the rates in the Federal Law Gazette by 1 November at the latest.
@@ -1219,6 +1227,7 @@ The Vocational Training Act (BBiG) updates the year-one amount every year based 
 - Gesetze im Internet: Announcement on the minimum apprentice pay for 2027, BGBl. 2026 I Nr. 287: https://www.gesetze-im-internet.de/bbimindvergfbek_2027/BJNR11F0A0026.html (checked 2026-11-22)
 - Gesetze im Internet: Announcement on the minimum apprentice pay for 2026: https://www.gesetze-im-internet.de/bbimindvergfbek_2026/BJNR0EB0A0025.html (checked 2026-11-22)
 - Gesetze im Internet: Section 17 BBiG (pay entitlement and minimum pay): https://www.gesetze-im-internet.de/bbig_2005/__17.html (checked 2026-11-22)
+- Gesetze im Internet: Section 22 MiLoG (personal scope): https://www.gesetze-im-internet.de/milog/__22.html (checked 2026-11-22)
 - BIBB press release 31/2026: Minimum apprentice pay rises to 764 euros in 2027: https://www.bibb.de/de/pressemitteilung_229684.php (checked 2026-11-22)
 
 ---
@@ -3959,7 +3968,7 @@ A template is only as current as the framework plan (Ausbildungsrahmenplan) behi
 
 **Re-issued occupations from 1 August 2027.** These include [farmer (Landwirt/Landwirtin)](https://www.bibb.de/de/pressemitteilung_230440.php), where at least one area from crops and one from livestock must be chosen, and [technical model maker (Technischer Modellbauer/Technische Modellbauerin)](https://www.bibb.de/dokumente/pdf/pressemitteilungtechnischermodellbauer_.pdf), where three specialisations become one occupation with deployment areas and additive manufacturing becomes its own area. The full list is in the [BIBB occupation search](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/new_modernised_occupations_by_year/2027).
 
-For contracts starting from August 2027 in these occupations, the plan has to follow the new framework plan. Which version applies to contracts already running is best checked with your chamber. And because the plan is attached to the contract: apprenticeships starting in 2027 also have new minimum pay rates, listed in our overview of [minimum apprentice pay in Germany 2027](https://learnslice.com/blog/minimum-apprentice-pay-germany-2027).
+For contracts starting from August 2027 in these occupations, the plan has to follow the new [framework plan (Ausbildungsrahmenplan)](https://learnslice.com/blog/apprenticeship-framework-plan-explained). Which version applies to contracts already running is best checked with your chamber. And because the plan is attached to the contract: apprenticeships starting in 2027 also have new minimum pay rates, listed in our overview of [minimum apprentice pay in Germany 2027](https://learnslice.com/blog/minimum-apprentice-pay-germany-2027).
 
 ## Free Apprenticeship Plan Template - Copy-Paste Sample
 
@@ -5750,7 +5759,7 @@ Mindestausbildungsvergütung 2027: 764 Euro im ersten Jahr. Alle Sätze, warum d
 
 ![Ausbildungsverantwortliche prüfen Kostenzahlen am Laptop](https://learnslice.com/images/blog/pexels-yankrukov-7698811.webp)
 
-Ab dem 1. Januar 2027 steigt die Mindestausbildungsvergütung im ersten Ausbildungsjahr auf **764 Euro** im Monat. Das steht seit dem 7. Oktober 2026 im Bundesgesetzblatt. Für die Budgetplanung reicht diese eine Zahl aber nicht, denn ein Detail wird oft übersehen: Die Untergrenze hängt am **Jahr des Ausbildungsbeginns**, nicht am Kalenderjahr. Wer im August 2026 angefangen hat, rutscht 2027 nicht automatisch in die neue Tabelle.
+Ab dem 1. Januar 2027 steigt die Mindestausbildungsvergütung, also die gesetzliche Untergrenze der Ausbildungsvergütung, im ersten Ausbildungsjahr auf **764 Euro** im Monat. Das steht seit dem 7. Oktober 2026 im Bundesgesetzblatt. Für die Budgetplanung reicht diese eine Zahl aber nicht, denn ein Detail wird oft übersehen: Die Untergrenze hängt am **Jahr des Ausbildungsbeginns**, nicht am Kalenderjahr. Wer im August 2026 angefangen hat, rutscht 2027 nicht automatisch in die neue Tabelle.
 
 Dieser Beitrag zeigt die Sätze 2027 im Vergleich zu 2026, wie sie berechnet werden, wen die Untergrenze tatsächlich betrifft und was ein Ausbildungsplatz mit Start 2027 mindestens kostet.
 
@@ -5790,6 +5799,10 @@ Seit 2024 wird der Betrag für das erste Jahr jedes Jahr fortgeschrieben (§ 17 
 
 Die nächste Fortschreibung für Ausbildungen mit Beginn 2028 erscheint damit spätestens bis zum 1. November 2027. Wer Ausbildungsplätze für 2028 schon im Frühjahr 2027 ausschreibt, kennt die Untergrenze zu diesem Zeitpunkt noch nicht.
 
+## Gilt der gesetzliche Mindestlohn für Azubis?
+
+Nein. Das Mindestlohngesetz regelt die Vergütung von Personen in Berufsausbildung ausdrücklich nicht ([§ 22 Abs. 3 MiLoG](https://www.gesetze-im-internet.de/milog/__22.html)). Für Azubis in einer Ausbildung nach dem BBiG gilt stattdessen die Mindestausbildungsvergütung nach § 17 BBiG.
+
 ## Wen die Untergrenze tatsächlich betrifft
 
 Für die meisten Betriebe ist die Mindestausbildungsvergütung nicht die Zahl, die am Ende auf der Abrechnung steht. Laut [BIBB](https://www.bibb.de/de/pressemitteilung_229684.php) wurden seit 2020 nur drei bis vier Prozent der neu abgeschlossenen Ausbildungsverhältnisse im ersten Jahr auf Höhe der Mindestvergütung vereinbart. Azubis in tarifgebundenen Betrieben erhielten 2025 im Schnitt aller Ausbildungsjahre 1.209 Euro brutto im Monat.
@@ -5826,7 +5839,7 @@ Die Vergütung ist aber nur ein Teil der Kosten. Laut [BIBB-Kosten-Nutzen-Erhebu
 
 ## Wo der größere Kostenhebel liegt
 
-Die Vergütung ist gesetzlich oder tariflich vorgegeben. Beeinflussen können Betriebe vor allem die Zeit, die Ausbilderinnen und Ausbilder in Verwaltung stecken, etwa in das Prüfen und Abzeichnen von Ausbildungsnachweisen. Hier setzt das LearnSlice-Berichtsheft an: Azubis schreiben und reichen ein, Ausbilder geben frei oder schicken zur Überarbeitung zurück.
+Die Vergütung ist gesetzlich oder tariflich vorgegeben. Beeinflussen können Betriebe vor allem die Zeit, die Ausbilderinnen und Ausbilder in Verwaltung stecken, etwa in das Prüfen und Abzeichnen von Ausbildungsnachweisen. Hier setzt das LearnSlice-Berichtsheft an: Azubis schreiben und reichen ein, Ausbilder geben frei oder schicken zur Überarbeitung zurück. Gerade jetzt relevant: Das Digitale Berichtsheft der IHK wird laut mehreren IHKs zum 31. Dezember 2026 eingestellt. Was das für Betriebe bedeutet, steht in unserem Beitrag zur [IHK-Berichtsheft-Alternative](https://learnslice.com/de/blog/ihk-berichtsheft-alternative).
 
 *Hinweis: Dieser Beitrag dient der allgemeinen Information und ersetzt keine Rechtsberatung. Verbindliche Auskunft zu Ihrem Ausbildungsverhältnis gibt die zuständige Kammer.*
 
@@ -5849,6 +5862,10 @@ Laut § 17 Abs. 3 BBiG ist auch eine geltende tarifvertragliche Vergütung angem
 
 Bei einer Teilzeitberufsausbildung darf die Vergütung unterschritten werden, die prozentuale Kürzung darf aber nicht höher sein als die prozentuale Kürzung der Arbeitszeit (§ 17 Abs. 5 BBiG). Bei 75 Prozent der Arbeitszeit liegt die Untergrenze im ersten Jahr mit Start 2027 damit bei 573 Euro.
 
+### Gilt der gesetzliche Mindestlohn für Auszubildende?
+
+Nein. Nach § 22 Abs. 3 MiLoG regelt das Mindestlohngesetz die Vergütung von Personen in Berufsausbildung nicht. Für Azubis in einer Ausbildung nach dem BBiG gilt stattdessen die Mindestausbildungsvergütung nach § 17 BBiG, für Ausbildungsbeginn 2027 also mindestens 764 Euro im ersten Jahr.
+
 ### Wer legt die Höhe fest?
 
 Das BBiG schreibt den Betrag für das erste Jahr jährlich fort, orientiert an der Entwicklung der durchschnittlichen Ausbildungsvergütungen. Das BIBB berechnet die Fortschreibung, das zuständige Bundesministerium macht die Sätze bis spätestens 1. November im Bundesgesetzblatt bekannt.
@@ -5858,6 +5875,7 @@ Das BBiG schreibt den Betrag für das erste Jahr jährlich fort, orientiert an d
 - Gesetze im Internet: Bekanntmachung zur Fortschreibung der Höhe der Mindestvergütung (2027), BGBl. 2026 I Nr. 287: https://www.gesetze-im-internet.de/bbimindvergfbek_2027/BJNR11F0A0026.html (geprüft am 2026-11-22)
 - Gesetze im Internet: Bekanntmachung zur Fortschreibung der Höhe der Mindestvergütung (2026): https://www.gesetze-im-internet.de/bbimindvergfbek_2026/BJNR0EB0A0025.html (geprüft am 2026-11-22)
 - Gesetze im Internet: § 17 BBiG (Vergütungsanspruch und Mindestvergütung): https://www.gesetze-im-internet.de/bbig_2005/__17.html (geprüft am 2026-11-22)
+- Gesetze im Internet: § 22 MiLoG (persönlicher Anwendungsbereich): https://www.gesetze-im-internet.de/milog/__22.html (geprüft am 2026-11-22)
 - BIBB-Pressemitteilung 31/2026: Mindestausbildungsvergütung steigt 2027 auf 764 Euro: https://www.bibb.de/de/pressemitteilung_229684.php (geprüft am 2026-11-22)
 
 ---
@@ -9100,7 +9118,7 @@ Eine Vorlage ist nur so aktuell wie der Ausbildungsrahmenplan, auf dem sie beruh
 
 **Neuordnungen zum 1. August 2027.** Modernisiert werden unter anderem [Landwirt/Landwirtin](https://www.bibb.de/de/pressemitteilung_230440.php) (künftig mindestens ein Einsatzgebiet aus Pflanze und eines aus Tier) und [Technischer Modellbauer/Technische Modellbauerin](https://www.bibb.de/dokumente/pdf/pressemitteilungtechnischermodellbauer_.pdf) (aus drei Fachrichtungen wird ein Monoberuf mit Einsatzgebieten, additive Fertigung als eigenes Einsatzgebiet). Die vollständige Liste steht in der [BIBB-Berufesuche](https://www.bibb.de/dienst/berufesuche/de/index_berufesuche.php/new_modernised_occupations_by_year/2027).
 
-Für Verträge mit Beginn ab August 2027 in diesen Berufen muss der Plan dem neuen Rahmenplan folgen. Welche Fassung für bereits laufende Verträge gilt, klären Sie am besten mit Ihrer Kammer. Und weil der Plan als Anlage zum Vertrag dient: Für Ausbildungen mit Beginn 2027 gelten auch neue Untergrenzen bei der Vergütung, die Sätze stehen in unserer Übersicht zur [Mindestausbildungsvergütung 2027](https://learnslice.com/de/blog/mindestausbildungsverguetung-2027).
+Für Verträge mit Beginn ab August 2027 in diesen Berufen muss der Plan dem neuen [Ausbildungsrahmenplan](https://learnslice.com/de/blog/ausbildungsrahmenplan-erklaert) folgen. Welche Fassung für bereits laufende Verträge gilt, klären Sie am besten mit Ihrer Kammer. Und weil der Plan als Anlage zum Vertrag dient: Für Ausbildungen mit Beginn 2027 gelten auch neue Untergrenzen bei der Vergütung, die Sätze stehen in unserer Übersicht zur [Mindestausbildungsvergütung 2027](https://learnslice.com/de/blog/mindestausbildungsverguetung-2027).
 
 ## Ausbildungsplan-Vorlage (kostenlos) - Muster zum direkten Übernehmen
 
