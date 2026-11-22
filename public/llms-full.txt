@@ -8776,7 +8776,7 @@ Trotz dieser klaren Rolle wird der Ausbildungsrahmenplan in der Praxis häufig m
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Elektroniker/-in für Maschinen und Antriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
   <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsrahmenplan-erklaert" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
 </div>
 
@@ -9102,7 +9102,7 @@ Die folgende Vorlage gibt es als Word-Datei zum Herunterladen oder als Text zum 
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Elektroniker/-in für Maschinen und Antriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
+  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
   <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsplan-vorlage" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
 </div>
 
