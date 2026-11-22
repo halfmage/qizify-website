@@ -1,0 +1,29 @@
+---
+// Two to three key figures as tiles inside a blog post. Every figure needs a source,
+// shown in the `source` line under the tiles. Sits inside the blog `prose`
+// container, hence `not-prose`.
+interface Stat {
+	value: string;
+	label: string;
+}
+
+interface Props {
+	stats: Stat[];
+	source: string;
+}
+
+const { stats, source } = Astro.props;
+if (!stats?.length || !source) throw new Error('StatTiles: needs stats and a source');
+---
+
+<figure class="not-prose my-10">
+	<div class={`grid gap-3 ${stats.length === 3 ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2'}`}>
+		{stats.map((s) => (
+			<div class="rounded-xl border border-border bg-surface p-4 md:p-5">
+				<p class="text-xl md:text-3xl font-semibold font-mono text-accent m-0 mb-2 whitespace-nowrap">{s.value}</p>
+				<p class="text-sm text-muted leading-snug m-0">{s.label}</p>
+			</div>
+		))}
+	</div>
+	<figcaption class="text-xs text-muted/80 m-0 mt-3">{source}</figcaption>
+</figure>

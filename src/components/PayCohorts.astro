@@ -1,0 +1,83 @@
+---
+// Shows why the start year decides the Mindestausbildungsvergütung: two intakes
+// (August 2026 and August 2027) side by side across training years, with the
+// overlapping year 2027/28 highlighted. Plain HTML so it stays sharp on phones and
+// is indexable text. Values come from src/data/mindestverguetung.mjs.
+// Sits inside the blog `prose` container, hence `not-prose`.
+import { MIN_PAY } from '../data/mindestverguetung.mjs';
+
+interface Props {
+	lang: 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+if (lang !== 'de' && lang !== 'en') throw new Error(`PayCohorts: unsupported lang "${lang}"`);
+
+const de = lang === 'de';
+// Non-breaking space keeps "1.031 €" on one line in the narrow phone columns.
+const eur = (n: number) => (de ? `${n.toLocaleString('de-DE')}\u00a0€` : `€${n.toLocaleString('en-GB')}`);
+const periods = ['2026/27', '2027/28', '2028/29', '2029/30'];
+const HIGHLIGHT = 1; // 2027/28: both intakes are in training
+// Each row: which period the first training year falls in, and the start-year table.
+const rows = [
+	{ label: de ? 'Beginn August 2026' : 'Start August 2026', offset: 0, rates: MIN_PAY[2026].slice(0, 3) },
+	{ label: de ? 'Beginn August 2027' : 'Start August 2027', offset: 1, rates: MIN_PAY[2027].slice(0, 3) },
+];
+const yearLabel = (i: number) => (de ? `${i + 1}. Jahr` : `Year ${i + 1}`);
+
+const t = de
+	? {
+		label: 'Beispiel',
+		title: 'Jeder Jahrgang behält seine Tabelle',
+		period: 'Ausbildungsjahr',
+		note: `Im Ausbildungsjahr 2027/28 liegt die Untergrenze für den Jahrgang 2026 im zweiten Jahr bei ${eur(MIN_PAY[2026][1])}, nicht bei ${eur(MIN_PAY[2027][1])}. Dreijährige Ausbildung, Monatsbeträge brutto. Quelle: Bekanntmachungen 2026 und 2027 nach § 17 BBiG.`,
+	}
+	: {
+		label: 'Example',
+		title: 'Each intake keeps its own table',
+		period: 'Training year',
+		note: `In training year 2027/28, the floor for the 2026 intake in year two is ${eur(MIN_PAY[2026][1])}, not ${eur(MIN_PAY[2027][1])}. Three-year apprenticeship, gross monthly amounts. Source: 2026 and 2027 announcements under Section 17 BBiG.`,
+	};
+---
+
+<figure class="not-prose my-10 rounded-xl border border-border bg-surface p-5 md:p-8">
+	<figcaption class="m-0 mb-6">
+		<span class="section-label block mb-2">{t.label}</span>
+		<span class="block text-heading-sm text-white">{t.title}</span>
+	</figcaption>
+
+	<div class="grid grid-cols-4 gap-1.5 md:gap-2 mb-2" aria-hidden="true">
+		{periods.map((p, i) => (
+			<span class={`text-[11px] md:text-xs font-mono text-center ${i === HIGHLIGHT ? 'text-accent' : 'text-muted'}`}>{p}</span>
+		))}
+	</div>
+
+	{rows.map((r) => (
+		<div class="mb-4 last:mb-0">
+			<p class="text-sm font-semibold text-white m-0 mb-1.5">{r.label}</p>
+			<ol class="grid grid-cols-4 gap-1.5 md:gap-2" style="list-style:none;margin:0;padding:0">
+				{periods.map((p, i) => {
+					const k = i - r.offset;
+					const has = k >= 0 && k < r.rates.length;
+					return (
+						<li
+							style="list-style:none;margin:0"
+							class={`rounded-lg px-1 py-2 text-center ${has ? (i === HIGHLIGHT ? 'border border-accent bg-accent/10' : 'border border-border-light') : ''}`}
+							aria-hidden={has ? undefined : 'true'}
+						>
+							{has && (
+								<>
+									<span class="sr-only">{t.period} {p}: </span>
+									<span class="block text-[13px] md:text-base font-semibold font-mono text-white whitespace-nowrap">{eur(r.rates[k])}</span>
+									<span class="block text-[11px] md:text-xs text-muted">{yearLabel(k)}</span>
+								</>
+							)}
+						</li>
+					);
+				})}
+			</ol>
+		</div>
+	))}
+
+	<p class="text-xs text-muted/80 m-0 mt-5 leading-relaxed">{t.note}</p>
+</figure>
