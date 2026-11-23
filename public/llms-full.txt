@@ -624,7 +624,7 @@ Gesetzliche Pflicht und Voraussetzung für die Prüfungszulassung (§ 13 und § 
 ## Kostenlos starten, upgraden nur bei Bedarf.
 
 - **Free (0 €, ohne Zahlungsdaten):** Digitales Berichtsheft; Freigabe, Erinnerung, Punkte, PDF-Export; 1 Ausbilder, bis zu 3 Azubis
-- **LearnSlice Premium (pro Azubi und Monat, jährlich abgerechnet, zzgl. MwSt. Ausbilder kostenlos.):** Alles aus Free, plus: KI-Tutor für IHK-Prüfung und Einarbeitung; Quizze und Prüfungssimulationen; Lernplan und Lernstatistiken; Eigene Dokumente als Wissensbasis; Beliebig viele Azubis
+- **LearnSlice Premium (pro Azubi und Monat, jährlich abgerechnet, zzgl. MwSt. Ausbilder kostenlos.):** Alles aus Free, plus: KI-Tutor für IHK-Prüfung und Einarbeitung; Quizze und Prüfungssimulationen; Persönlicher Lernplan je Azubi, Lernstatistiken; Eigene Dokumente als Wissensbasis; Beliebig viele Azubis
 
 Mehr als 3 Azubis? Starten Sie kostenlos und schalten Sie Premium in der App frei, oder lassen Sie sich Premium in 30 Minuten zeigen.
 
@@ -644,7 +644,7 @@ LearnSlice übernimmt keine Daten aus dem IHK-Tool. Die exportierten PDFs bewahr
 
 ### Ist das LearnSlice-Berichtsheft wirklich kostenlos?
 
-Ja, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und Lernplan.
+Ja, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und persönlichem Lernplan.
 
 ### Was passiert ab dem vierten Azubi?
 
@@ -716,7 +716,7 @@ A legal duty and a condition for exam admission (§ 13 and § 43 BBiG). That is 
 ## Start free, upgrade only if you need to.
 
 - **Free (€0, no payment details):** Digital training logbook; Approval, reminders, points, PDF export; 1 trainer, up to 3 apprentices
-- **LearnSlice Premium (per apprentice per month, billed yearly, plus VAT. Trainers free.):** Everything in Free, plus: AI tutor for the IHK exam and onboarding; Quizzes and exam simulations; Learning plan and learning analytics; Your own documents as a knowledge base; Any number of apprentices
+- **LearnSlice Premium (per apprentice per month, billed yearly, plus VAT. Trainers free.):** Everything in Free, plus: AI tutor for the IHK exam and onboarding; Quizzes and exam simulations; Personal learning plan per apprentice, learning analytics; Your own documents as a knowledge base; Any number of apprentices
 
 More than 3 apprentices? Start for free and unlock Premium in the app, or let us show you Premium in 30 minutes.
 
@@ -736,7 +736,7 @@ LearnSlice does not import data from the IHK tool. Keep the exported PDFs separa
 
 ### Is the LearnSlice training logbook really free?
 
-Yes, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and learning plan is paid.
+Yes, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and personal learning plan is paid.
 
 ### What happens from the fourth apprentice?
 

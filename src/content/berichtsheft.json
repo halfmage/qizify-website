@@ -111,7 +111,7 @@
         "items": [
           "KI-Tutor für IHK-Prüfung und Einarbeitung",
           "Quizze und Prüfungssimulationen",
-          "Lernplan und Lernstatistiken",
+          "Persönlicher Lernplan je Azubi, Lernstatistiken",
           "Eigene Dokumente als Wissensbasis",
           "Beliebig viele Azubis"
         ],
@@ -157,7 +157,7 @@
     "faq": [
       {
         "question": "Ist das LearnSlice-Berichtsheft wirklich kostenlos?",
-        "answer": "Ja, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und Lernplan."
+        "answer": "Ja, für 1 Ausbilder und bis zu 3 Azubis. Sie brauchen keine Zahlungsdaten. Kostenpflichtig ist nur LearnSlice Premium mit KI-Tutor, Quizzen und persönlichem Lernplan."
       },
       {
         "question": "Was passiert ab dem vierten Azubi?",
@@ -382,7 +382,7 @@
         "items": [
           "AI tutor for the IHK exam and onboarding",
           "Quizzes and exam simulations",
-          "Learning plan and learning analytics",
+          "Personal learning plan per apprentice, learning analytics",
           "Your own documents as a knowledge base",
           "Any number of apprentices"
         ],
@@ -428,7 +428,7 @@
     "faq": [
       {
         "question": "Is the LearnSlice training logbook really free?",
-        "answer": "Yes, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and learning plan is paid."
+        "answer": "Yes, for 1 trainer and up to 3 apprentices. You do not need payment details. Only LearnSlice Premium with the AI tutor, quizzes and personal learning plan is paid."
       },
       {
         "question": "What happens from the fourth apprentice?",
