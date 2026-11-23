@@ -3926,7 +3926,7 @@ The problem is less the existence of templates than their quality. Most template
 
 This page delivers both: a structured free template you can download or copy-paste - and an honest look at when the template is enough and when it stops serving the day-to-day training reality.
 
-## What a Legally Sound Apprenticeship Plan Template Must Contain
+## What a Complete Apprenticeship Plan Template Must Contain
 
 Before the sample is useful, the mandatory components need to be clear. Without them, the document isn't an apprenticeship plan in the BBiG sense - no matter how nicely it's formatted.
 
@@ -4130,7 +4130,7 @@ Further reading: [AI in vocational training](https://learnslice.com/blog/ai-in-v
 
 ### Is a free template enough to register the apprenticeship contract with the chamber?
 
-In most chamber districts yes, provided the template cleanly reflects the factual and temporal structure from the training ordinance and is submitted as an annex to the apprenticeship contract. Incompletely filled templates routinely trigger follow-up questions from the chamber.
+What matters is not whether the template is free but whether it is filled in completely. Chambers usually expect the factual and temporal structure from the training ordinance, applied to your company, as an annex to the apprenticeship contract. The responsible chamber decides what exactly it requires; if in doubt, ask there. Incompletely filled templates routinely trigger follow-up questions.
 
 ### Is there an official apprenticeship plan template from the IHK?
 
@@ -9067,7 +9067,7 @@ Das Problem ist weniger die Existenz einer Vorlage als ihre Qualität. Die meist
 
 Diese Seite liefert beides: eine strukturierte, kostenlose Vorlage zum Download oder Kopieren - und einen ehrlichen Blick darauf, wann die Vorlage reicht und wann sie für die Ausbildungspraxis nicht mehr genügt.
 
-## Was eine rechtssichere Ausbildungsplan-Vorlage mindestens enthalten muss
+## Was eine vollständige Ausbildungsplan-Vorlage mindestens enthalten muss
 
 Bevor das Muster sinnvoll benutzt werden kann, gehören die Pflichtbestandteile klar. Ohne sie ist das Dokument kein Ausbildungsplan im Sinne des BBiG - egal wie hübsch die Vorlage formatiert ist.
 
@@ -9279,7 +9279,7 @@ Weiterlesen: [Ausbildungsplan erstellen mit KI](https://learnslice.com/de/blog/a
 
 ### Reicht eine kostenlose Vorlage, um den Ausbildungsvertrag bei der IHK einzureichen?
 
-In den meisten Kammerbezirken ja, vorausgesetzt, die Vorlage bildet die sachliche und zeitliche Gliederung nach der Ausbildungsordnung sauber ab und wird als Anlage zum Ausbildungsvertrag eingereicht. Unvollständig ausgefüllte Vorlagen führen regelmäßig zu Rückfragen der IHK.
+Entscheidend ist nicht, ob die Vorlage kostenlos ist, sondern ob sie vollständig ausgefüllt ist. Die Kammern erwarten in der Regel die sachliche und zeitliche Gliederung nach der Ausbildungsordnung, bezogen auf Ihren Betrieb, als Anlage zum Ausbildungsvertrag. Was genau verlangt wird, legt die zuständige Kammer fest; fragen Sie im Zweifel dort nach. Unvollständig ausgefüllte Vorlagen führen regelmäßig zu Rückfragen.
 
 ### Gibt es eine offizielle Ausbildungsplan-Vorlage der IHK?
 
