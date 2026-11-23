@@ -118,6 +118,7 @@
         "cta": "Premium in der Demo ansehen"
       },
       "upgradeNote": "Upgrade jederzeit in der App unter Einstellungen, Abrechnung.",
+      "planGenerator": { "text": "Noch kein betrieblicher Ausbildungsplan für den neuen Jahrgang?", "link": "Kostenlos in 2 Minuten erstellen" },
       "moreThanFree": "Mehr als 3 Azubis? Starten Sie kostenlos und schalten Sie Premium in der App frei, oder lassen Sie sich Premium in 30 Minuten zeigen."
     },
     "switch": {
@@ -388,6 +389,7 @@
         "cta": "See Premium in a demo"
       },
       "upgradeNote": "Upgrade any time in the app under Settings, Billing.",
+      "planGenerator": { "text": "No company training plan for the new cohort yet?", "link": "Create one free in 2 minutes (in German)" },
       "moreThanFree": "More than 3 apprentices? Start for free and unlock Premium in the app, or let us show you Premium in 30 minutes."
     },
     "switch": {

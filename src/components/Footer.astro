@@ -1,4 +1,5 @@
 ---
+import { planGeneratorUrl } from '../data/plan-generator.mjs';
 import FundingNotice from './FundingNotice.astro';
 
 interface Props {
@@ -25,6 +26,7 @@ const footerColumns = currentLang === 'en'
 			links: [
 				{ label: 'Home', href: '/' },
 				{ label: 'Savings Calculator', href: '/apprenticeship-savings-calculator' },
+				{ label: 'Training Plan Generator', href: planGeneratorUrl('footer') },
 					{ label: 'Research', href: '/research' },
 				{ label: 'Blog', href: '/blog' },
 				{ label: 'Request Demo', href: demoHref },
@@ -63,6 +65,7 @@ const footerColumns = currentLang === 'en'
 			links: [
 				{ label: 'Startseite', href: '/de' },
 				{ label: 'Einsparungsrechner', href: '/de/ausbildungskosten-rechner' },
+				{ label: 'Ausbildungsplan-Generator', href: planGeneratorUrl('footer') },
 				{ label: 'Digital-Readiness-Check', href: '/de/digital-readiness-check' },
 					{ label: 'Forschung', href: '/de/forschung' },
 				{ label: 'Blog', href: '/de/blog' },
