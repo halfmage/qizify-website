@@ -30,7 +30,10 @@ const blog = defineCollection({
 		// scripts/check-berichtsheft-cta.mjs fails the build otherwise.
 		// 'guide' = links to the AI guides (now on ironum.com), no modal. For informational
 		// posts whose reader wants to learn rather than buy.
-		ctaVariant: z.enum(['demo', 'consultation', 'guide', 'berichtsheft']).default('demo'),
+		// 'plan-generator' = Ausbildungsplan posts: nav, sidebar and footer link to the free
+		// generator in the app (src/data/plan-generator.mjs), no modal. German posts only,
+		// the generator's plan is German.
+		ctaVariant: z.enum(['demo', 'consultation', 'guide', 'berichtsheft', 'plan-generator']).default('demo'),
 		// ctaFooter: optional per-post copy for the closing CTA block. Only used with
 		// the 'demo' variant, for campaign posts whose reader needs a different promise
 		// than the site-wide blog CTA. Button still opens the demo modal.

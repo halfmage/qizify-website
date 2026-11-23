@@ -1,0 +1,33 @@
+---
+// In-text box that sends readers to the free Ausbildungsplan generator in the
+// app. Used in posts about the Ausbildungsplan / Ausbildungsrahmenplan. Inside
+// `prose`, hence `not-prose`.
+import { PLAN_CTA_LABEL, PLAN_OCCUPATIONS, planGeneratorUrl } from '../data/plan-generator.mjs';
+
+interface Props {
+	lang: 'en' | 'de';
+	// Page and placement for utm_content, e.g. "ausbildungsplan-vorlage-kostenlos-box".
+	content: string;
+	// Optional heading that fits the spot in the post.
+	title?: string;
+}
+
+const { lang, content, title } = Astro.props;
+if (lang !== 'de' && lang !== 'en') throw new Error(`PlanGeneratorBox: unsupported lang "${lang}"`);
+const occupations = PLAN_OCCUPATIONS[lang].join(', ');
+const copy = lang === 'de'
+	? {
+		title: title ?? 'Ausbildungsplan automatisch erstellen (kostenlos)',
+		body: `Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für ${occupations}.`,
+	}
+	: {
+		title: title ?? 'Generate the company training plan (free)',
+		body: `Pick the occupation and the start month: you get the content and time structure from the official framework plan, with calendar months, as a PDF. No sign-up. The plan itself is in German. Available for ${occupations}.`,
+	};
+---
+
+<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
+	<p class="m-0 text-base text-white font-medium">{copy.title}</p>
+	<p class="m-0 mt-2 text-sm text-muted leading-relaxed">{copy.body}</p>
+	<p class="m-0 mt-4"><a href={planGeneratorUrl(content)} class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">{PLAN_CTA_LABEL[lang]}</a></p>
+</div>

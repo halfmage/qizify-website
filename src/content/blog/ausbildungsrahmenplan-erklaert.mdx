@@ -6,6 +6,7 @@ updatedDate: 2026-11-02
 author: "LearnSlice Team"
 tags: ["Ausbildungsrahmenplan", "Ausbildungsordnung", "Ausbildung", "BBiG"]
 lang: "de"
+ctaVariant: "plan-generator"
 translationSlug: "apprenticeship-framework-plan-explained"
 ogImage: "/images/blog/pexels-mikhail-nilov-6592550.jpg"
 keyTakeaways:
@@ -32,6 +33,8 @@ faq:
   - q: 'Wo finde ich den Ausbildungsrahmenplan für meinen Beruf?'
     a: 'Über die Berufsdatenbank des BIBB, über das jeweilige Verkündungsblatt der Ausbildungsordnung oder über die Service-Seiten der zuständigen IHK bzw. Handwerkskammer. Wichtig ist, jeweils die geltende Fassung zu prüfen - bei Neuordnungen gilt die alte Fassung nur für Verträge, die vor dem Stichtag geschlossen wurden.'
 ---
+
+import PlanGeneratorBox from '../../components/PlanGeneratorBox.astro';
 import CopyBlock from '../../components/CopyBlock.astro';
 import BerichtsheftSignup from '../../components/BerichtsheftSignup.astro';
 
@@ -43,11 +46,7 @@ Der **Ausbildungsrahmenplan** legt für einen anerkannten Ausbildungsberuf fest,
 
 Trotz dieser klaren Rolle wird der Ausbildungsrahmenplan in der Praxis häufig mit dem **betrieblichen Ausbildungsplan** verwechselt - oder auf eine Anlage zum Vertrag reduziert, die einmal abgeheftet und dann nie wieder geöffnet wird. Beides verschenkt das Steuerungspotenzial des Dokuments. Diese Seite erklärt, was der Ausbildungsrahmenplan genau ist, wie er aufgebaut ist und wie sich aus ihm ein Plan macht, der die Ausbildung tatsächlich trägt.
 
-<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
-  <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
-  <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsrahmenplan-erklaert" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
-</div>
+<PlanGeneratorBox lang="de" content="ausbildungsrahmenplan-erklaert-box" />
 
 ## Was ist der Ausbildungsrahmenplan? Definition und rechtliche Grundlage
 

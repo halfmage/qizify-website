@@ -11,6 +11,7 @@ import enContent from '../content/en.json';
 import deContent from '../content/de.json';
 import { isTeamAuthor } from '../utils/authors.mjs';
 import { SIGNUP_ID, FREE_AUSBILDER_LIMIT, FREE_AZUBI_LIMIT, CTA_LABEL, FREE_LIMIT_NOTE, signupUrl } from '../data/berichtsheft.mjs';
+import { planGeneratorUrl } from '../data/plan-generator.mjs';
 
 interface Props {
 	title: string;
@@ -85,14 +86,25 @@ const isGuide = ctaVariant === 'guide';
 // 2026-11-10). The nav CTA jumps to that block, which states the free-plan limits;
 // sidebar and footer go straight to the app sign-up, tagged with the post slug.
 const isBerichtsheft = ctaVariant === 'berichtsheft';
+// 'plan-generator' posts (Ausbildungsplan / Rahmenplan) send every CTA to the free
+// generator in the app, tagged with the post slug and placement.
+const isPlanGenerator = ctaVariant === 'plan-generator';
 const SIGNUP_ANCHOR = `#${SIGNUP_ID[lang]}`;
 // The AI guides moved to Ironum (Oct 2026); no LearnSlice post uses this variant today.
 const GUIDE_HREF = 'https://ironum.com/resources/guides/';
 const ctaTrigger = isConsultation ? 'project-inquiry' : 'demo-request';
 // A guide post's CTAs are links, so nothing should carry a modal trigger.
-const ctaHref = isGuide ? GUIDE_HREF : isBerichtsheft ? SIGNUP_ANCHOR : undefined;
+const ctaHref = isGuide
+	? GUIDE_HREF
+	: isBerichtsheft
+	? SIGNUP_ANCHOR
+	: isPlanGenerator
+	? planGeneratorUrl(`${slug}-nav`)
+	: undefined;
 const navCta = isBerichtsheft
 	? CTA_LABEL[lang]
+	: isPlanGenerator
+	? (lang === 'en' ? 'Create training plan' : 'Ausbildungsplan erstellen')
 	: isGuide
 	? (lang === 'en' ? 'Get the guides' : 'Leitfäden holen')
 	: isConsultation
@@ -104,6 +116,12 @@ const sidebarCopy = isBerichtsheft
 		title: lang === 'en' ? 'Free training logbook' : 'Berichtsheft kostenlos',
 		sub: FREE_LIMIT_NOTE[lang],
 		button: CTA_LABEL[lang],
+	}
+	: isPlanGenerator
+	? {
+		title: lang === 'en' ? 'Training plan in 2 minutes' : 'Ausbildungsplan in 2 Minuten',
+		sub: lang === 'en' ? 'Free, no sign-up, as a PDF.' : 'Kostenlos, ohne Anmeldung, als PDF.',
+		button: lang === 'en' ? 'Create plan' : 'Plan erstellen',
 	}
 	: isGuide
 	? {
@@ -132,7 +150,11 @@ const sidebarCopy = isBerichtsheft
 // Links (guide, berichtsheft) open no modal; everything else opens the variant's modal.
 const sidebarCta = {
 	...sidebarCopy,
-	href: isBerichtsheft ? signupUrl(`${slug}-sidebar`) : ctaHref ?? `#${ctaTrigger}`,
+	href: isBerichtsheft
+		? signupUrl(`${slug}-sidebar`)
+		: isPlanGenerator
+		? planGeneratorUrl(`${slug}-sidebar`)
+		: ctaHref ?? `#${ctaTrigger}`,
 	trigger: ctaHref ? undefined : ctaTrigger,
 };
 
@@ -149,6 +171,17 @@ const footerCta = isBerichtsheft
 		button: CTA_LABEL[lang],
 		note: lang === 'en' ? 'No payment details. Upgrade only if you want more.' : 'Ohne Zahlungsdaten. Upgrade nur, wenn Sie mehr wollen.',
 		href: signupUrl(`${slug}-footer`),
+	}
+	: isPlanGenerator
+	? {
+		label: lang === 'en' ? 'Free tool' : 'Kostenloses Werkzeug',
+		headline: lang === 'en' ? 'Your company training plan in 2 minutes' : 'Ihr betrieblicher Ausbildungsplan in 2 Minuten',
+		subheadline: lang === 'en'
+			? 'Pick the occupation and the start month: you get the content and time structure from the official framework plan, with calendar months and columns for department, trainer and date, as a PDF.'
+			: 'Beruf und Ausbildungsbeginn wählen: Sie erhalten die sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten und Spalten für Abteilung, Ausbilder und Datum, als PDF.',
+		button: lang === 'en' ? 'Create the plan' : 'Plan erstellen',
+		note: lang === 'en' ? 'No sign-up. The plan itself is in German.' : 'Ohne Anmeldung, ohne Zahlungsdaten.',
+		href: planGeneratorUrl(`${slug}-footer`),
 	}
 	: isGuide
 	? {

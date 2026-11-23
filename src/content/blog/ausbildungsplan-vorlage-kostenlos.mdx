@@ -6,6 +6,7 @@ updatedDate: 2026-11-22
 author: "Daniel"
 tags: ["Ausbildungsplan", "Vorlage", "Ausbildung", "BBiG"]
 lang: "de"
+ctaVariant: "plan-generator"
 translationSlug: "apprenticeship-plan-template-free"
 ogImage: "/images/blog/pexels-yankrukov-7794078.jpg"
 faq:
@@ -24,6 +25,8 @@ faq:
   - q: "Wie hängt der Ausbildungsplan mit dem Berichtsheft zusammen?"
     a: "Der Ausbildungsplan ist die Planungsebene, das Berichtsheft (Ausbildungsnachweis nach § 13 Satz 2 Nummer 7 BBiG) ist die Dokumentationsebene. Ein digitales Berichtsheft kann direkt auf den Plan verweisen und die Umsetzung pro Woche nachvollziehbar machen."
 ---
+
+import PlanGeneratorBox from '../../components/PlanGeneratorBox.astro';
 import CopyBlock from '../../components/CopyBlock.astro';
 import BerichtsheftSignup from '../../components/BerichtsheftSignup.astro';
 
@@ -70,11 +73,7 @@ Für neue Verträge muss der Plan dem neuen [Ausbildungsrahmenplan](/de/blog/aus
 
 Die folgende Vorlage gibt es als Word-Datei zum Herunterladen oder als Text zum Kopieren in jedes Textverarbeitungsprogramm. Sie erfüllt die Mindestanforderungen aus § 14 BBiG und lässt sich für jeden Ausbildungsberuf befüllen.
 
-<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
-  <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
-  <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsplan-vorlage" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
-</div>
+<PlanGeneratorBox lang="de" content="ausbildungsplan-vorlage-kostenlos-box" />
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Ausbildungsplan-Vorlage als Word-Datei (.docx)</p>

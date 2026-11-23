@@ -3375,6 +3375,7 @@ The **Ausbildungsrahmenplan** (literally "training framework plan") is the legal
 
 In daily practice the framework plan is often confused with the **company-specific training plan**, or treated as an appendix that gets filed once and never opened again. Both approaches waste the document's steering value. This guide explains exactly what the Ausbildungsrahmenplan is, how it is built, and how to turn it into a plan that actually carries the apprenticeship.
 
+
 ## What Is the Ausbildungsrahmenplan? Definition and Legal Basis
 
 The Ausbildungsrahmenplan is the legally binding national minimum standard for company-based vocational training in a recognised German apprenticeship occupation. It is part of the training ordinance (Ausbildungsordnung), which sets out the skills, knowledge, and competences the training company must convey across the full apprenticeship duration, organised by learning area and by training year.
@@ -3958,6 +3959,7 @@ For new contracts, the plan has to follow the new [framework plan (Ausbildungsra
 ## Free Apprenticeship Plan Template - Copy-Paste Sample
 
 The following template is available as a Word file to download, or as text to copy into any word processor. It meets the minimum requirements under § 14 BBiG and can be filled in for any apprenticeship profession.
+
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Apprenticeship plan template as a Word file (.docx)</p>
@@ -6543,6 +6545,7 @@ Wie das in Betrieben mit besonders hohen Anforderungen an Sicherheit und Datenho
 4. **Planen Sie im dritten Halbjahr eine Mechanik-Wiederholung** vor Teil 1.
 5. **Testen Sie jedes KI-Werkzeug mit den drei Fragen,** bevor Sie es freigeben.
 
+
 ## Quellen
 
 Dieser Beitrag gibt allgemeine Informationen und ersetzt keine Rechts- oder Personalberatung im Einzelfall. Fragen zu Prüfung und Ausbildungszeit klären Sie mit Ihrer IHK.
@@ -8774,12 +8777,6 @@ Der **Ausbildungsrahmenplan** legt für einen anerkannten Ausbildungsberuf fest,
 
 Trotz dieser klaren Rolle wird der Ausbildungsrahmenplan in der Praxis häufig mit dem **betrieblichen Ausbildungsplan** verwechselt - oder auf eine Anlage zum Vertrag reduziert, die einmal abgeheftet und dann nie wieder geöffnet wird. Beides verschenkt das Steuerungspotenzial des Dokuments. Diese Seite erklärt, was der Ausbildungsrahmenplan genau ist, wie er aufgebaut ist und wie sich aus ihm ein Plan macht, der die Ausbildung tatsächlich trägt.
 
-<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
-  <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
-  <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsrahmenplan-erklaert" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
-</div>
-
 ## Was ist der Ausbildungsrahmenplan? Definition und rechtliche Grundlage
 
 Der Ausbildungsrahmenplan ist der rechtlich verbindliche Mindeststandard für die betriebliche Ausbildung eines anerkannten Ausbildungsberufs. Er ist Teil der **Ausbildungsordnung** und legt fest, welche Fertigkeiten, Kenntnisse und Fähigkeiten ein Ausbildungsbetrieb über die gesamte Ausbildungsdauer hinweg vermitteln muss, gegliedert nach Lerngebieten und Ausbildungsjahren.
@@ -9101,12 +9098,6 @@ Für neue Verträge muss der Plan dem neuen [Ausbildungsrahmenplan](https://lear
 Die folgende Vorlage gibt es als Word-Datei zum Herunterladen oder als Text zum Kopieren in jedes Textverarbeitungsprogramm. Sie erfüllt die Mindestanforderungen aus § 14 BBiG und lässt sich für jeden Ausbildungsberuf befüllen.
 
 <div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
-  <p class="m-0 text-base text-white font-medium">Ausbildungsplan automatisch erstellen (kostenlos)</p>
-  <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Beruf und Ausbildungsbeginn wählen, fertig: sachliche und zeitliche Gliederung aus dem Ausbildungsrahmenplan, mit Kalendermonaten, als PDF. Ohne Anmeldung. Verfügbar für Mechatroniker/-in, Elektroniker/-in für Betriebstechnik, Fachinformatiker/-in, Industriekaufmann/-frau und Kaufmann/-frau für Büromanagement.</p>
-  <p class="m-0 mt-4"><a href="https://app.learnslice.com/ausbildungsplan?utm_source=blog&utm_medium=cta&utm_campaign=ausbildungsplan-vorlage" class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Plan in 2 Minuten erstellen</a></p>
-</div>
-
-<div class="not-prose my-10 rounded-2xl border border-accent/40 border-l-4 border-l-accent bg-accent/[0.08] px-6 py-5">
   <p class="m-0 text-base text-white font-medium">Ausbildungsplan-Vorlage als Word-Datei (.docx)</p>
   <p class="m-0 mt-2 text-sm text-muted leading-relaxed">Dieselbe Vorlage zum Ausfüllen: alle Abschnitte als Tabellen, Unterschriftenfeld, Änderungshistorie und die Checkliste unten. Kostenlos, ohne Anmeldung, der Download startet sofort.</p>
   <p class="m-0 mt-4"><a href="/downloads/ausbildungsplan-vorlage.docx" download class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-dark no-underline">Word-Vorlage herunterladen</a></p>
@@ -9344,6 +9335,7 @@ Bevor es um Personalisierung geht, gehören die Pflichtbausteine geklärt. Ohne 
 **5. Lern- und Leistungskontrollen.** Zwischengespräche, Beurteilungen und - mit Blick auf die IHK - die Vorbereitung auf die gestreckte Abschlussprüfung oder Zwischenprüfung gehören in den Plan.
 
 Bausteine 1 und 2 bilden den statutarischen Kern aus § 14 Absatz 1 Nummer 1 BBiG. Die Bausteine 3 bis 5 sind gute Praxis und machen den Plan im Alltag nutzbar. Und genau an dieser Stelle hören die meisten Vorlagen auf.
+
 
 ## Warum ein statischer Ausbildungsplan in der Praxis schnell veraltet
 
