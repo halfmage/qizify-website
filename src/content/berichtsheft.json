@@ -105,7 +105,8 @@
       },
       "premium": {
         "name": "LearnSlice Premium",
-        "priceNote": "pro Azubi, Ausbilder kostenlos",
+        "price": "20 €",
+        "priceNote": "pro Azubi und Monat, jährlich abgerechnet, zzgl. MwSt. Ausbilder kostenlos.",
         "heading": "Alles aus Free, plus:",
         "items": [
           "KI-Tutor für IHK-Prüfung und Einarbeitung",
@@ -374,7 +375,8 @@
       },
       "premium": {
         "name": "LearnSlice Premium",
-        "priceNote": "per apprentice, trainers free",
+        "price": "€20",
+        "priceNote": "per apprentice per month, billed yearly, plus VAT. Trainers free.",
         "heading": "Everything in Free, plus:",
         "items": [
           "AI tutor for the IHK exam and onboarding",
