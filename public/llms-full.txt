@@ -6044,7 +6044,7 @@ Stellen Sie jedem Anbieter dieselben Fragen. Die wichtigsten stehen zuerst: Expo
 
 </CopyBlock>
 
-Vorher zu klären: Welche Form des Nachweises nimmt Ihre Kammer an? Die IHK Hannover etwa lässt Produkte anderer Anbieter zu, sofern sie der [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) entsprechen ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). Was im Nachweis stehen muss, zeigt unser Beitrag [Berichtsheft digital führen](https://learnslice.com/de/blog/berichtsheft-digital).
+Vorher zu klären: Welche Form des Nachweises nimmt Ihre Kammer an? Die IHK Hannover etwa lässt Produkte anderer Anbieter zu, sofern sie der [BIBB-Empfehlung](https://www.bibb.de/dokumente/pdf/HA156.pdf) entsprechen ([IHK Hannover](https://www.ihk.de/hannover/hauptnavigation/ausbildung-und-weiterbildung/ausbildung/ausbildung-a-z/digitales-berichtsheft-5184974)). Was im Nachweis stehen muss, zeigt unser Beitrag zum [digitalen Berichtsheft mit Vorlage](https://learnslice.com/de/blog/berichtsheft-digital).
 
 ## So beantwortet LearnSlice die Fragen
 
@@ -6215,7 +6215,7 @@ Es gibt drei Wege: das Berichtsheft auf Papier oder in Word führen, eine eigens
 | Berichtsheft-Software | Software nur für den Ausbildungsnachweis | je nach Anbieter | Datenexport, EU-Hosting, Auftragsverarbeitungsvertrag |
 | Lernplattform mit Berichtsheft | Nachweis, Lernstand und Prüfungsvorbereitung an einem Ort | je nach Anbieter | ob das Berichtsheft auch einzeln nutzbar ist |
 
-Ein Muster zum Kopieren, das die Mindestangaben der BIBB-Empfehlung abdeckt, finden Sie in unserem Beitrag [Berichtsheft digital führen](https://learnslice.com/de/blog/berichtsheft-digital#berichtsheft-vorlage-zum-kopieren). Welche Fragen Sie Anbietern von Berichtsheft-Software stellen sollten, steht in unserem [Vergleich von kostenlosem Tarif, Testphase und Abo](https://learnslice.com/de/blog/berichtsheft-software-vergleich). Eine Software-Option ist das [kostenlose Berichtsheft online von LearnSlice](https://learnslice.com/de/berichtsheft-kostenlos) für 1 Ausbilder und bis zu 3 Azubis, mit digitaler Freigabe und PDF-Export, ohne KI-Funktionen.
+Ein Muster zum Kopieren, das die Mindestangaben der BIBB-Empfehlung abdeckt, finden Sie in unserem [Beitrag zum digitalen Berichtsheft](https://learnslice.com/de/blog/berichtsheft-digital#berichtsheft-vorlage-zum-kopieren). Welche Fragen Sie Anbietern von Berichtsheft-Software stellen sollten, steht in unserem [Vergleich von kostenlosem Tarif, Testphase und Abo](https://learnslice.com/de/blog/berichtsheft-software-vergleich). Eine Software-Option ist das [kostenlose Berichtsheft online von LearnSlice](https://learnslice.com/de/berichtsheft-kostenlos) für 1 Ausbilder und bis zu 3 Azubis, mit digitaler Freigabe und PDF-Export, ohne KI-Funktionen.
 
 *Transparenzhinweis: Dieser Beitrag ist von LearnSlice, und LearnSlice bietet selbst ein Berichtsheft an.*
 
@@ -9729,7 +9729,7 @@ Sprechen Sie mit Ihrem Ausbilder und bitten Sie um Feedback zu Ihren praktischen
 
 Unternehmen investieren pro Azubi im Schnitt rund **26.200 € brutto pro Jahr** ([BIBB-Kosten-Nutzen-Erhebung 2022/23](https://www.bibb.de/de/pressemitteilung_210430.php)). Es liegt also auch im Interesse des Betriebs, dass Azubis die Prüfung bestehen. Digitale Lernplattformen ermöglichen Ausbildern, den Fortschritt ihrer Azubis in Echtzeit zu verfolgen und gezielt einzugreifen, wenn jemand Hilfe braucht.
 
-Auch das Berichtsheft gehört zur Prüfungsvorbereitung: Zur Abschlussprüfung wird unter anderem zugelassen, wer den Ausbildungsnachweis vorgelegt hat ([§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)). LearnSlice, eine KI-Lernplattform für die Ausbildung aus Düsseldorf, bietet Betrieben dafür ein [digitales Berichtsheft](https://learnslice.com/de/berichtsheft-kostenlos), kostenlos für 1 Ausbilder und bis zu 3 Azubis und ohne KI-Funktionen.
+Auch das Berichtsheft gehört zur Prüfungsvorbereitung: Zur Abschlussprüfung wird unter anderem zugelassen, wer den Ausbildungsnachweis vorgelegt hat ([§ 43 Abs. 1 Nr. 2 BBiG](https://www.gesetze-im-internet.de/bbig_2005/__43.html)). LearnSlice, eine KI-Lernplattform für die Ausbildung aus Düsseldorf, bietet Betrieben dafür ein [kostenloses Berichtsheft online](https://learnslice.com/de/berichtsheft-kostenlos) für 1 Ausbilder und bis zu 3 Azubis und ohne KI-Funktionen.
 
 Erfahren Sie, wie Sie als Unternehmen [Ihre Ausbildungskosten senken](https://learnslice.com/de/blog/ausbildungskosten-senken) und [Ausbilder effektiv entlasten](https://learnslice.com/de/blog/ausbilder-entlasten) können.
 
@@ -9945,7 +9945,7 @@ In der ersten Woche geht es darum, dass sich der neue Azubi willkommen fühlt un
 - Täglicher kurzer Check-in mit dem Ausbilder (10-15 Minuten)
 - Digitales Berichtsheft einrichten und erklären
 
-Für das Berichtsheft brauchen Sie als kleiner Betrieb kein Budget. LearnSlice, eine KI-Lernplattform für die Ausbildung aus Düsseldorf, bietet ein [digitales Berichtsheft](https://learnslice.com/de/berichtsheft-kostenlos), das für 1 Ausbilder und bis zu 3 Azubis kostenlos ist. Azubis schreiben ihre Einträge selbst, der Ausbilder gibt sie frei oder zur Überarbeitung zurück, der Nachweis lässt sich als PDF exportieren. Die kostenlose Version enthält keine KI-Funktionen.
+Für das Berichtsheft brauchen Sie als kleiner Betrieb kein Budget. LearnSlice, eine KI-Lernplattform für die Ausbildung aus Düsseldorf, bietet ein [kostenloses Berichtsheft online](https://learnslice.com/de/berichtsheft-kostenlos) für 1 Ausbilder und bis zu 3 Azubis. Azubis schreiben ihre Einträge selbst, der Ausbilder gibt sie frei oder zur Überarbeitung zurück, der Nachweis lässt sich als PDF exportieren. Die kostenlose Version enthält keine KI-Funktionen.
 
 ## Woche 2-3: Unternehmen und Fachliches Fundament
 
